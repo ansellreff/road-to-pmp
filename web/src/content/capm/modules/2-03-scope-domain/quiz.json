@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the main purpose of the Scope performance domain?",
+    "options": [
+      "To deliver as many features as possible",
+      "To ensure the project includes all the work required, and only the work required",
+      "To finish the project as early as possible",
+      "To assign team members to activities"
+    ],
+    "answer": 1,
+    "explanation": "The Scope domain ensures that all required work is included and that no unnecessary work is performed, which protects cost, schedule and value.",
+    "ref": "PMBOK 8, Guide 2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which statement describes product scope?",
+    "options": [
+      "The work performed to deliver the result",
+      "The approved budget for the product",
+      "The features, functions and characteristics of the product, service or result",
+      "The list of project team members"
+    ],
+    "answer": 2,
+    "explanation": "Product scope describes the result itself: its features, functions and characteristics. Project scope is the work performed to deliver it.",
+    "ref": "PMBOK 8, Guide 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Which three items make up the scope baseline?",
+    "options": [
+      "Project scope statement, WBS and WBS dictionary",
+      "Project charter, scope statement and WBS",
+      "Requirements documentation, WBS and activity list",
+      "Scope management plan, scope statement and WBS"
+    ],
+    "answer": 0,
+    "explanation": "The scope baseline is the approved scope statement, the WBS and its WBS dictionary. The charter, requirements documentation and scope management plan are not part of it.",
+    "ref": "PMBOK 8, Guide section 4, Scope baseline",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 245,
+        "label": "PMBOK 8, Guide section 4, Scope baseline"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What is the lowest level of the work breakdown structure?",
+    "options": [
+      "Activity",
+      "Control account",
+      "Planning package",
+      "Work package"
+    ],
+    "answer": 3,
+    "explanation": "The work package is the lowest level of the WBS. Activities are created later, when work packages are decomposed for the schedule, and are not part of the WBS.",
+    "ref": "PMBOK 8, Guide section 4, Scope baseline",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 245,
+        "label": "PMBOK 8, Guide section 4, Scope baseline"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A project manager needs the detailed description, responsible organization and acceptance criteria of one WBS component. Where is this found?",
+    "options": [
+      "Project charter",
+      "WBS dictionary",
+      "Requirements traceability matrix",
+      "Scope management plan"
+    ],
+    "answer": 1,
+    "explanation": "The WBS dictionary supports the WBS with detailed information about each component, such as description of work, responsible organization, milestones and acceptance criteria.",
+    "ref": "PMBOK 8, Guide section 4, Scope baseline",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 245,
+        "label": "PMBOK 8, Guide section 4, Scope baseline"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which technique is used to create the WBS?",
+    "options": [
+      "Inspection",
+      "Benchmarking",
+      "Decomposition",
+      "Variance analysis"
+    ],
+    "answer": 2,
+    "explanation": "Decomposition divides and subdivides the project scope and deliverables into smaller, more manageable parts.",
+    "ref": "PMBOK 8, Guide section 5, Decomposition",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decomposition"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What does the 100 percent rule say about the WBS?",
+    "options": [
+      "The WBS includes all product and project work, with nothing left out and nothing extra",
+      "Every work package must be 100% complete before the next starts",
+      "All team members must approve the WBS",
+      "The WBS must be finished before the charter is signed"
+    ],
+    "answer": 0,
+    "explanation": "The WBS represents all product and project work, including project management work. Lower levels roll up to higher levels, so nothing is left out and no extra work is performed.",
+    "ref": "PMBOK 8, Guide section 5, Decomposition",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decomposition"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which process produces the requirements documentation?",
+    "options": [
+      "Define Scope",
+      "Plan Scope Management",
+      "Validate Scope",
+      "Elicit and Analyze Requirements"
+    ],
+    "answer": 3,
+    "explanation": "Elicit and Analyze Requirements (older name: Collect Requirements) determines, documents and manages stakeholder needs and requirements.",
+    "ref": "PMBOK 8, Guide 2.2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 145,
+        "label": "PMBOK 8, Guide 2.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "\"The system must respond to a search within two seconds.\" What type of requirement is this?",
+    "options": [
+      "Functional requirement",
+      "Nonfunctional requirement",
+      "Transition requirement",
+      "Business requirement"
+    ],
+    "answer": 1,
+    "explanation": "Nonfunctional requirements specify how well the product must perform: performance, reliability, security and similar. Functional requirements describe what the product does.",
+    "ref": "PMBOK 8, Guide section 4, Requirements documentation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 235,
+        "label": "PMBOK 8, Guide section 4, Requirements documentation"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Data conversion and user training needed to move from the old system to the new one are examples of:",
+    "options": [
+      "Quality requirements",
+      "Project requirements",
+      "Transition and readiness requirements",
+      "Stakeholder requirements"
+    ],
+    "answer": 2,
+    "explanation": "Transition and readiness requirements describe temporary capabilities needed to move from the current state to the desired future state.",
+    "ref": "PMBOK 8, Guide section 4, Requirements documentation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 235,
+        "label": "PMBOK 8, Guide section 4, Requirements documentation"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which document links each requirement from its origin to the deliverable that satisfies it?",
+    "options": [
+      "Requirements traceability matrix",
+      "WBS dictionary",
+      "Project scope statement",
+      "Requirements management plan"
+    ],
+    "answer": 0,
+    "explanation": "The requirements traceability matrix is a grid that links requirements from their origin to the deliverables that satisfy them, and helps manage changes to product scope.",
+    "ref": "PMBOK 8, Guide section 4, Requirements traceability matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 236,
+        "label": "PMBOK 8, Guide section 4, Requirements traceability matrix"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Where are project exclusions documented?",
+    "options": [
+      "Project charter",
+      "WBS",
+      "Requirements traceability matrix",
+      "Project scope statement"
+    ],
+    "answer": 3,
+    "explanation": "The project scope statement includes the scope description, deliverables, acceptance criteria and project exclusions. Stating what is out of scope helps manage expectations.",
+    "ref": "PMBOK 8, Guide section 4, Project scope statement",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 233,
+        "label": "PMBOK 8, Guide section 4, Project scope statement"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What does the scope management plan describe?",
+    "options": [
+      "The detailed list of deliverables",
+      "How the scope will be defined, developed, monitored, controlled and validated",
+      "The requirements of each stakeholder",
+      "The cost of each work package"
+    ],
+    "answer": 1,
+    "explanation": "The scope management plan describes how scope will be managed. It does not contain the scope itself, and it is not part of the scope baseline.",
+    "ref": "PMBOK 8, Guide section 4, Scope management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 246,
+        "label": "PMBOK 8, Guide section 4, Scope management plan"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which process formalizes acceptance of the completed project deliverables?",
+    "options": [
+      "Monitor and Control Scope",
+      "Define Scope",
+      "Validate Scope",
+      "Close Project or Phase"
+    ],
+    "answer": 2,
+    "explanation": "Validate Scope formalizes acceptance of completed deliverables by the customer or sponsor. Its main output is accepted deliverables.",
+    "ref": "PMBOK 8, Guide 2.2.2.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 149,
+        "label": "PMBOK 8, Guide 2.2.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which of the following is an output of Monitor and Control Scope and an input to Validate Scope?",
+    "options": [
+      "Verified deliverables",
+      "Accepted deliverables",
+      "Project charter",
+      "Final report"
+    ],
+    "answer": 0,
+    "explanation": "Monitor and Control Scope checks deliverables for correctness and produces verified deliverables. These are the input to Validate Scope, which produces accepted deliverables.",
+    "ref": "PMBOK 8, Guide Figure 2-19",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 149,
+        "label": "PMBOK 8, Guide Figure 2-19"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "During Validate Scope the customer refuses to accept a deliverable. What should the project manager do?",
+    "options": [
+      "Close the phase and move on",
+      "Ask the sponsor to accept it instead",
+      "Remove the deliverable from the scope baseline",
+      "Document the reasons and raise a change request for defect repair"
+    ],
+    "answer": 3,
+    "explanation": "Deliverables that are not accepted are documented with the reasons, and a change request is raised to repair the defect. Change requests are an output of Validate Scope.",
+    "ref": "PMBOK 8, Guide Figure 2-19",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 149,
+        "label": "PMBOK 8, Guide Figure 2-19"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A developer adds an extra report that the customer never asked for, hoping to please them. This is an example of:",
+    "options": [
+      "Scope creep",
+      "Gold plating",
+      "Progressive elaboration",
+      "Rolling wave planning"
+    ],
+    "answer": 1,
+    "explanation": "Gold plating is the team adding extras that were not requested. It is not acceptable: it uses time and money for work outside the approved scope.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide 2.2.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 147,
+        "label": "PMBOK 8, Guide 2.2.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A stakeholder keeps asking team members for small additions. They are added without any review, and the project falls behind. What is this called?",
+    "options": [
+      "Decomposition",
+      "Gold plating",
+      "Scope creep",
+      "Scope validation"
+    ],
+    "answer": 2,
+    "explanation": "Scope creep is the uncontrolled expansion of scope without adjusting time, cost and resources. It is prevented by sending every change through change control.",
+    "ref": "PMBOK 8, Glossary (scope creep)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 378,
+        "label": "PMBOK 8, Glossary (scope creep)"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Which statement about a control account is correct?",
+    "options": [
+      "It is a management control point where scope, budget and schedule are integrated and compared with earned value",
+      "It is the lowest level of the WBS",
+      "It is a bank account for project funds",
+      "It can belong to several work packages"
+    ],
+    "answer": 0,
+    "explanation": "A control account integrates scope, budget and schedule for performance measurement. It has two or more work packages, and each work package belongs to only one control account.",
+    "ref": "PMBOK 8, Guide section 4, Scope baseline",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 245,
+        "label": "PMBOK 8, Guide section 4, Scope baseline"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "In a project using an adaptive approach, what corresponds to the WBS?",
+    "options": [
+      "The project charter",
+      "The definition of done",
+      "The burndown chart",
+      "The product backlog"
+    ],
+    "answer": 3,
+    "explanation": "In agile projects the WBS corresponds to the product backlog, where work items are broken down into epics, features and user stories.",
+    "ref": "PMBOK 8, Guide 2.2.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 147,
+        "label": "PMBOK 8, Guide 2.2.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "What is the definition of done?",
+    "options": [
+      "The date on which the project ends",
+      "A checklist of all the criteria a deliverable must meet to be considered ready for customer use",
+      "The sponsor's signature on the final report",
+      "The list of completed work packages"
+    ],
+    "answer": 1,
+    "explanation": "The definition of done is a checklist of all criteria that must be met so that a deliverable can be considered ready for customer use.",
+    "ref": "PMBOK 8, Guide 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "The team brainstorms ideas for requirements and then votes to rank them. Which technique is this?",
+    "options": [
+      "Focus group",
+      "Benchmarking",
+      "Nominal group technique",
+      "Document analysis"
+    ],
+    "answer": 2,
+    "explanation": "The nominal group technique adds a voting step to brainstorming so that the ideas can be ranked and prioritized.",
+    "ref": "PMBOK 8, Guide section 5, Nominal group",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 289,
+        "label": "PMBOK 8, Guide section 5, Nominal group"
+      }
+    ]
+  }
+]

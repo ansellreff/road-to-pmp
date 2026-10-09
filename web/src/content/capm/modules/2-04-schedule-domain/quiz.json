@@ -1,0 +1,462 @@
+[
+  {
+    "id": "q1",
+    "q": "What are the three processes of the Schedule performance domain?",
+    "options": [
+      "Define Activities, Sequence Activities, Control Schedule",
+      "Plan Schedule Management, Estimate Durations, Close Schedule",
+      "Plan Schedule Management, Develop Schedule, Monitor and Control Schedule",
+      "Develop Schedule, Validate Schedule, Report Schedule"
+    ],
+    "answer": 2,
+    "explanation": "The 8th edition has three Schedule processes. Defining, sequencing and estimating activities are steps inside Develop Schedule.",
+    "ref": "PMBOK 8, Guide 2.3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 153,
+        "label": "PMBOK 8, Guide 2.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What is the correct order of the four steps for developing the schedule?",
+    "options": [
+      "Define activities, determine sequence, estimate effort and duration, adjust",
+      "Estimate effort and duration, define activities, determine sequence, adjust",
+      "Determine sequence, define activities, adjust, estimate effort and duration",
+      "Define activities, estimate effort and duration, adjust, determine sequence"
+    ],
+    "answer": 0,
+    "explanation": "First the activities are defined, then sequenced, then estimated, and finally the draft schedule is adjusted until it is acceptable.",
+    "ref": "PMBOK 8, Guide Figure 2-23",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 156,
+        "label": "PMBOK 8, Guide Figure 2-23"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "What does the schedule management plan contain?",
+    "options": [
+      "The start and finish dates of every activity",
+      "The list of all milestones",
+      "The approved schedule baseline dates",
+      "How the schedule will be developed, managed and controlled, including units of measure and control thresholds"
+    ],
+    "answer": 3,
+    "explanation": "The schedule management plan gives guidance on how the schedule will be managed: level of accuracy, units of measure, control thresholds, reporting formats. It contains no dates.",
+    "ref": "PMBOK 8, Guide 2.3.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 154,
+        "label": "PMBOK 8, Guide 2.3.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Schedule activities are created by decomposing which of the following?",
+    "options": [
+      "The project charter",
+      "Work packages",
+      "The milestone list",
+      "The risk register"
+    ],
+    "answer": 1,
+    "explanation": "Define activities decomposes the work packages of the WBS into schedule activities, which are the basis for estimating, scheduling and controlling the work.",
+    "ref": "PMBOK 8, Guide 2.3.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 154,
+        "label": "PMBOK 8, Guide 2.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "What is the duration of a milestone?",
+    "options": [
+      "One day",
+      "The duration of the activity before it",
+      "Zero",
+      "It depends on the project calendar"
+    ],
+    "answer": 2,
+    "explanation": "A milestone is a significant point or event in the project, so it has zero duration.",
+    "ref": "PMBOK 8, Guide section 4, Milestone list",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Milestone list"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Testing cannot start until coding has finished. Which logical relationship is this?",
+    "options": [
+      "Finish-to-start",
+      "Start-to-start",
+      "Finish-to-finish",
+      "Start-to-finish"
+    ],
+    "answer": 0,
+    "explanation": "In a finish-to-start relationship the successor cannot start until the predecessor has finished. It is the most commonly used relationship.",
+    "ref": "PMBOK 8, Guide section 5, Precedence diagramming method",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 290,
+        "label": "PMBOK 8, Guide section 5, Precedence diagramming method"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which logical relationship is very rarely used?",
+    "options": [
+      "Finish-to-start",
+      "Finish-to-finish",
+      "Start-to-start",
+      "Start-to-finish"
+    ],
+    "answer": 3,
+    "explanation": "Start-to-finish, in which the successor cannot finish until the predecessor has started, is very rarely used. Finish-to-start is the most common.",
+    "ref": "PMBOK 8, Guide section 5, Precedence diagramming method",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 290,
+        "label": "PMBOK 8, Guide section 5, Precedence diagramming method"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Leveling the concrete cannot begin until pouring the foundation begins. Which relationship is this?",
+    "options": [
+      "Finish-to-start",
+      "Start-to-start",
+      "Finish-to-finish",
+      "Start-to-finish"
+    ],
+    "answer": 1,
+    "explanation": "In a start-to-start relationship the successor cannot start until the predecessor has started.",
+    "ref": "PMBOK 8, Guide section 5, Precedence diagramming method",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 290,
+        "label": "PMBOK 8, Guide section 5, Precedence diagramming method"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "In the precedence diagramming method, how are activities shown?",
+    "options": [
+      "As arrows",
+      "As bars on a time scale",
+      "As nodes, linked by logical relationships",
+      "As rows in a table"
+    ],
+    "answer": 2,
+    "explanation": "The precedence diagramming method represents activities as nodes and links them with one or more logical relationships to show the sequence of work.",
+    "ref": "PMBOK 8, Guide section 5, Precedence diagramming method",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 290,
+        "label": "PMBOK 8, Guide section 5, Precedence diagramming method"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "After the concrete is poured, the team must wait three days for it to cure before building the walls. The three days are:",
+    "options": [
+      "A lag",
+      "A lead",
+      "Total float",
+      "A milestone"
+    ],
+    "answer": 0,
+    "explanation": "A lag is the amount of time a successor activity is delayed with respect to its predecessor. A lead advances the successor.",
+    "ref": "PMBOK 8, Guide section 5, Leads and lags",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 284,
+        "label": "PMBOK 8, Guide section 5, Leads and lags"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Landscaping is scheduled to start two weeks before the punch list is complete. This is an example of:",
+    "options": [
+      "A lag",
+      "A discretionary dependency",
+      "A start-to-finish relationship",
+      "A lead"
+    ],
+    "answer": 3,
+    "explanation": "A lead is the amount of time a successor activity can be advanced with respect to its predecessor. This is a finish-to-start relationship with a two-week lead.",
+    "ref": "PMBOK 8, Guide section 5, Leads and lags",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 284,
+        "label": "PMBOK 8, Guide section 5, Leads and lags"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "The walls cannot be built until the foundation is complete. What type of dependency is this?",
+    "options": [
+      "Discretionary",
+      "Mandatory",
+      "External",
+      "Preferential"
+    ],
+    "answer": 1,
+    "explanation": "Mandatory dependencies, also called hard logic, are legally or contractually required or inherent in the nature of the work, often because of physical limitations.",
+    "ref": "PMBOK 8, Guide section 5, Dependency determination and integration",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 271,
+        "label": "PMBOK 8, Guide section 5, Dependency determination and integration"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "The team decides to complete the plumbing before starting the electrical work because that is good practice, although both could be done in parallel. What type of dependency is this?",
+    "options": [
+      "Mandatory",
+      "External",
+      "Discretionary",
+      "Hard logic"
+    ],
+    "answer": 2,
+    "explanation": "Discretionary dependencies, also called soft or preferred logic, are based on good practice where another sequence would also be acceptable.",
+    "ref": "PMBOK 8, Guide section 5, Dependency determination and integration",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 271,
+        "label": "PMBOK 8, Guide section 5, Dependency determination and integration"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Early in a project, with very little detail available, the project manager estimates the duration from a similar project completed last year. Which technique is this?",
+    "options": [
+      "Analogous estimating",
+      "Parametric estimating",
+      "Bottom-up estimating",
+      "Three-point estimating"
+    ],
+    "answer": 0,
+    "explanation": "Analogous estimating uses historical data from a similar activity or project. It is less costly and quicker than other techniques, but also less accurate.",
+    "ref": "PMBOK 8, Guide section 5, Analogous estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Analogous estimating"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A crew can install 25 meters of cable per hour and 1,000 meters must be installed. Using parametric estimating, how long will the work take?",
+    "options": [
+      "25 hours",
+      "250 hours",
+      "400 hours",
+      "40 hours"
+    ],
+    "answer": 3,
+    "explanation": "Parametric estimating multiplies the quantity of work by the time per unit: 1,000 meters ÷ 25 meters per hour = 40 hours.",
+    "ref": "PMBOK 8, Guide section 5, Parametric estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 289,
+        "label": "PMBOK 8, Guide section 5, Parametric estimating"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Which estimating technique adds up the estimates of the lower-level components of the WBS?",
+    "options": [
+      "Analogous estimating",
+      "Bottom-up estimating",
+      "Parametric estimating",
+      "Expert judgment"
+    ],
+    "answer": 1,
+    "explanation": "Bottom-up estimating aggregates the estimates of the lower-level components. It is the most detailed and the most time-consuming technique.",
+    "ref": "PMBOK 8, Guide section 5, Bottom-up estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 254,
+        "label": "PMBOK 8, Guide section 5, Bottom-up estimating"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "An activity has an optimistic estimate of 4 days, a most likely estimate of 6 days and a pessimistic estimate of 14 days. What is the expected duration using the triangular distribution?",
+    "options": [
+      "6 days",
+      "7 days",
+      "8 days",
+      "24 days"
+    ],
+    "answer": 2,
+    "explanation": "Triangular distribution is a simple average: (4 + 6 + 14) ÷ 3 = 8 days.",
+    "ref": "PMBOK 8, Guide section 5, Multipoint estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 288,
+        "label": "PMBOK 8, Guide section 5, Multipoint estimating"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Using the same estimates (optimistic 4, most likely 6, pessimistic 14 days), what is the expected duration using the beta (PERT) formula?",
+    "options": [
+      "7 days",
+      "8 days",
+      "6 days",
+      "9 days"
+    ],
+    "answer": 0,
+    "explanation": "The beta or PERT formula weights the most likely estimate four times: (4 + 4×6 + 14) ÷ 6 = 42 ÷ 6 = 7 days.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Multipoint estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 288,
+        "label": "PMBOK 8, Guide section 5, Multipoint estimating"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "What is the difference between effort and duration?",
+    "options": [
+      "There is no difference",
+      "Effort is measured in days, duration in hours",
+      "Effort includes weekends, duration does not",
+      "Effort is the number of labor units required; duration is the number of work periods needed with the estimated resources"
+    ],
+    "answer": 3,
+    "explanation": "Effort is the labor units needed to complete the work. Duration is the number of work periods needed, which depends on how many resources are assigned.",
+    "ref": "PMBOK 8, Guide 2.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 152,
+        "label": "PMBOK 8, Guide 2.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A manager doubles the number of people on an activity and expects it to take half the time, but it takes longer than planned. Which concept explains this?",
+    "options": [
+      "Rolling wave planning",
+      "The law of diminishing returns",
+      "A discretionary dependency",
+      "Analogous estimating"
+    ],
+    "answer": 1,
+    "explanation": "Adding resources yields progressively smaller gains. Too many resources can even increase duration because of knowledge transfer, learning curves and extra coordination.",
+    "ref": "PMBOK 8, Guide 2.3.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 154,
+        "label": "PMBOK 8, Guide 2.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "What is rolling wave planning?",
+    "options": [
+      "Planning all work in full detail at the start",
+      "Moving unfinished work to the next phase",
+      "Planning near-term work in detail and future work at a higher level",
+      "Planning only the milestones"
+    ],
+    "answer": 2,
+    "explanation": "Rolling wave planning is an iterative technique: near-term work is planned in detail and later work at a higher level, to be detailed as more information becomes available.",
+    "ref": "PMBOK 8, Guide section 5, Rolling wave planning",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Rolling wave planning"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "In a predictive project, how can the schedule baseline be changed?",
+    "options": [
+      "Only through an approved change request, using integrated change control",
+      "By the project manager updating the scheduling tool",
+      "By the team at the daily meeting",
+      "It can never be changed"
+    ],
+    "answer": 0,
+    "explanation": "Any change to the schedule baseline can only be approved through the Assess and Implement Changes process by applying integrated change control.",
+    "ref": "PMBOK 8, Guide 2.3.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 158,
+        "label": "PMBOK 8, Guide 2.3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "In an adaptive project, what is velocity?",
+    "options": [
+      "The number of team members per iteration",
+      "The speed at which change requests are approved",
+      "The length of an iteration",
+      "The rate at which deliverables are produced, validated and accepted per iteration"
+    ],
+    "answer": 3,
+    "explanation": "Velocity is the rate at which deliverables are produced, validated and accepted in the given time per iteration. It is used to track and forecast progress.",
+    "ref": "PMBOK 8, Guide 2.3.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 158,
+        "label": "PMBOK 8, Guide 2.3.2.3"
+      }
+    ]
+  }
+]
