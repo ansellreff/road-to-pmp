@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "Why do agile teams prefer counting finished features over reporting \"percent done\"?",
+    "options": [
+      "Finished features are easier to estimate in hours",
+      "Finished features are empirical data, while percent done is a prediction that often proves wrong",
+      "Percent done is forbidden by the Agile Manifesto",
+      "Finished features do not need to be tested"
+    ],
+    "answer": 1,
+    "explanation": "Surrogate measures such as percent done depend on the team's ability to predict completion. Finished, working features are empirical and show the true state of the project.",
+    "ref": "Agile Practice Guide, 5.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 92,
+        "label": "Agile Practice Guide, 5.5"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A project is reported green every month, then turns red one month before release. What is this called?",
+    "options": [
+      "A spike",
+      "Gold plating",
+      "Scope creep",
+      "A watermelon project"
+    ],
+    "answer": 3,
+    "explanation": "A watermelon project is green on the outside and red on the inside: the status looks fine because there is no empirical data until late in the project.",
+    "ref": "Agile Practice Guide, 5.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 92,
+        "label": "Agile Practice Guide, 5.5"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "What does a burndown chart show?",
+    "options": [
+      "Work remaining versus the time left in a timebox",
+      "Work completed against the total scope",
+      "The number of defects found per release",
+      "The cost variance of each iteration"
+    ],
+    "answer": 0,
+    "explanation": "A burndown chart is a graphical representation of the work remaining versus the time left in a timebox.",
+    "ref": "PMBOK 8, Guide section 5, Burndown chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burndown chart"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A product owner added several stories during a release. Which chart makes that added scope easiest to see?",
+    "options": [
+      "Iteration burndown chart",
+      "Gantt chart",
+      "Burnup chart",
+      "Cause-and-effect diagram"
+    ],
+    "answer": 2,
+    "explanation": "A burnup chart draws the total work as a line across the top and the completed work rising from zero. When scope is added, the top line moves up, so the change is visible.",
+    "ref": "PMBOK 8, Guide section 5, Burnup chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burnup chart"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Halfway through an iteration, the actual line on the burndown chart is above the ideal line. What does this mean?",
+    "options": [
+      "The team is ahead of plan",
+      "More work remains than planned, so the team is behind",
+      "Scope has been removed",
+      "The chart has been drawn incorrectly"
+    ],
+    "answer": 1,
+    "explanation": "The burndown chart plots work remaining. An actual line above the ideal line means more work remains than planned at that point, so the team is behind.",
+    "ref": "PMBOK 8, Guide section 5, Burndown chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burndown chart"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "A team completed 18, 22 and 20 story points in its last three iterations. 100 points remain. About how many iterations are left?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Average velocity = (18 + 22 + 20) ÷ 3 = 20 points per iteration. 100 ÷ 20 = 5 iterations.",
+    "ref": "PMBOK 8, Guide section 5, Velocity",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Velocity"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A director wants to rank three teams by their velocity. What is the best response?",
+    "options": [
+      "Agree, because velocity is an objective measure of productivity",
+      "Agree, but only after converting story points to hours",
+      "Ask each team to raise its velocity by 10% first",
+      "Explain that velocity is specific to each team and should not be used to compare or judge teams"
+    ],
+    "answer": 3,
+    "explanation": "Velocity is a lightweight, team-specific planning aid. Story points differ between teams, and using velocity to compare or rank people creates fear and a loss of transparency.",
+    "ref": "Agile Practice Guide, 5.5.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "What tends to happen when velocity becomes a target set by management?",
+    "options": [
+      "Estimates become more accurate",
+      "The team needs fewer retrospectives",
+      "Teams inflate estimates, split work unnaturally or sacrifice quality",
+      "Lead time always falls"
+    ],
+    "answer": 2,
+    "explanation": "Making velocity a target creates perverse incentives: teams may inflate estimates, split work unnaturally or cut quality to meet the number.",
+    "ref": "Agile Practice Guide, 5.5.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A customer requests a feature on day 1. The team starts work on day 11 and delivers on day 15. What is the lead time?",
+    "options": [
+      "14 days",
+      "4 days",
+      "10 days",
+      "11 days"
+    ],
+    "answer": 0,
+    "explanation": "Lead time runs from the customer's request to delivery: day 1 to day 15 is 14 days. The 4 days from start of work to delivery is the cycle time.",
+    "ref": "Agile Practice Guide, Glossary (lead time)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 184,
+        "label": "Agile Practice Guide, Glossary (lead time)"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Which metric measures the elapsed time from when work on an item starts to when it is finished?",
+    "options": [
+      "Lead time",
+      "Throughput",
+      "Velocity",
+      "Cycle time"
+    ],
+    "answer": 3,
+    "explanation": "Cycle time is the total elapsed time from the start of a work item to its completion. Lead time starts earlier, at the request.",
+    "ref": "Agile Practice Guide, Glossary (cycle time)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 181,
+        "label": "Agile Practice Guide, Glossary (cycle time)"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "What is throughput?",
+    "options": [
+      "The number of items waiting in a queue",
+      "The number of work items finished per time period",
+      "The total story points in the backlog",
+      "The time an item spends waiting"
+    ],
+    "answer": 1,
+    "explanation": "Throughput is the count of work items finished per time period. Stable throughput lets a team forecast and spot sudden drops in productivity.",
+    "ref": "Agile Practice Guide, 5.5.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "On a cumulative flow diagram, the \"in test\" band grows wider every week. What does this indicate?",
+    "options": [
+      "Testing is ahead of development",
+      "Throughput is increasing",
+      "A bottleneck: work is entering testing faster than it leaves",
+      "The team's velocity has stabilized"
+    ],
+    "answer": 2,
+    "explanation": "A band that keeps widening shows items accumulating in that state. Growing queues signal bottlenecks and hidden delays.",
+    "ref": "Agile Practice Guide, 5.5.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which metric is a direct indicator of product quality and of whether the team's pace is sustainable?",
+    "options": [
+      "Queue length",
+      "Throughput",
+      "Lead time",
+      "Escaped defects and rework"
+    ],
+    "answer": 3,
+    "explanation": "Escaped defects are issues found after release. Together with the effort spent fixing them, they indicate product quality and the sustainability of the pace.",
+    "ref": "Agile Practice Guide, 5.5.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which of these is an outcome measure rather than a flow measure?",
+    "options": [
+      "Customer satisfaction or Net Promoter Score",
+      "Cycle time",
+      "Work in process",
+      "Queue length"
+    ],
+    "answer": 0,
+    "explanation": "Flow metrics show how efficiently the team delivers. Outcome measures such as customer satisfaction, business value delivered and adoption show what was delivered and its effect.",
+    "ref": "Agile Practice Guide, 5.5.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 94,
+        "label": "Agile Practice Guide, 5.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which statement about an information radiator is correct?",
+    "options": [
+      "It is a confidential report sent to the sponsor",
+      "It is updated once, at the end of the project",
+      "It is a visible display, easy to update, placed where people can readily see it",
+      "It must be produced by scheduling software"
+    ],
+    "answer": 2,
+    "explanation": "An information radiator is a visible, physical display that shares information with the rest of the organization. It is posted where people can see it, is easy to update and is updated often.",
+    "ref": "PMBOK 8, Guide section 5, Information radiators",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 278,
+        "label": "PMBOK 8, Guide section 5, Information radiators"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A column on the team's board is close to its work-in-progress limit. What should team members do?",
+    "options": [
+      "Raise the limit so more work can start",
+      "Swarm: help finish the work in that column before starting new work",
+      "Move the items back to the backlog",
+      "Wait for the next retrospective"
+    ],
+    "answer": 1,
+    "explanation": "When a column approaches its work-in-progress limit, team members can swarm around the current work to help those working on the tasks that are slowing the flow.",
+    "ref": "PMBOK 8, Guide section 5, Visual controls",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 317,
+        "label": "PMBOK 8, Guide section 5, Visual controls"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A sponsor asks when the remaining 45 stories will be finished. What is the best way to answer?",
+    "options": [
+      "Give a range with a confidence level, based on the team's throughput",
+      "Give a single fixed date and commit to it",
+      "Say that agile teams do not forecast",
+      "Give the date in the original plan"
+    ],
+    "answer": 0,
+    "explanation": "Combining stable throughput with an up-to-date item count allows probabilistic forecasts. Forecasts should be presented as ranges or confidence levels, never as single-point commitments.",
+    "ref": "Agile Practice Guide, 5.5.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 95,
+        "label": "Agile Practice Guide, 5.5.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "What is the main purpose of a retrospective?",
+    "options": [
+      "To show working product to stakeholders",
+      "To decide which stories go into the next iteration",
+      "To identify who caused the iteration's problems",
+      "To let the team learn from its work and improve its process"
+    ],
+    "answer": 3,
+    "explanation": "The retrospective allows the team to learn about, improve and adapt its process. It is not about blame.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A retrospective produces twelve improvement ideas. What should the team do?",
+    "options": [
+      "Commit to all twelve in the next iteration",
+      "Pass the list to the product owner to decide",
+      "Rank them and take on only as many as it has capacity to complete",
+      "Record them and review them at the end of the project"
+    ],
+    "answer": 2,
+    "explanation": "The team ranks the improvement items and limits them to its capacity. Trying to improve too many things and finishing none is much worse than completing a few.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A flow-based team does not use iterations. When should it hold a retrospective?",
+    "options": [
+      "Never, because retrospectives need iterations",
+      "After a release, when a few weeks have passed, or when work is stuck",
+      "Only at the end of the project",
+      "Only when the sponsor asks for one"
+    ],
+    "answer": 1,
+    "explanation": "A team does not need iterations to retrospect. It may do so when it ships something, when more than a few weeks have passed, when work is not flowing, or at any other milestone.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "How does a retrospective differ from a demonstration (review)?",
+    "options": [
+      "The retrospective is attended by customers; the demonstration is not",
+      "The retrospective happens before the iteration; the demonstration after",
+      "There is no difference",
+      "The retrospective examines how the team works; the demonstration examines the product"
+    ],
+    "answer": 3,
+    "explanation": "A demonstration presents completed product to stakeholders for feedback. A retrospective is the team exploring its work and results to improve its process.",
+    "ref": "PMBOK 8, Guide section 5, Retrospectives",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Retrospectives"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "What must be true of the setting for a retrospective to work?",
+    "options": [
+      "It is psychologically safe, so members can speak candidly without fear of blame",
+      "Senior management attends to approve the actions",
+      "Only quantitative data is discussed",
+      "It is skipped when the iteration went well"
+    ],
+    "answer": 0,
+    "explanation": "A retrospective needs a psychologically safe space where every member can speak candidly and share feedback without fear of blame or retaliation. It uses both qualitative and quantitative data.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  }
+]

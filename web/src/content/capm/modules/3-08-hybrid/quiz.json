@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a hybrid development approach?",
+    "options": [
+      "An approach that uses two agile frameworks together",
+      "An approach in which the project is run by two project managers",
+      "A combination of elements from adaptive and predictive approaches",
+      "A predictive approach with more phase gates"
+    ],
+    "answer": 2,
+    "explanation": "A hybrid development approach combines adaptive and predictive approaches, taking some elements from each.",
+    "ref": "PMBOK 8, Standard 4.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 88,
+        "label": "PMBOK 8, Standard 4.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A company develops a new high-tech product with much uncertainty, then must train thousands of users in a defined, repeatable way. Which hybrid pattern fits?",
+    "options": [
+      "Agile development followed by a predictive rollout",
+      "Predictive development followed by an agile rollout",
+      "A fully predictive approach",
+      "A fully agile approach with no planning"
+    ],
+    "answer": 0,
+    "explanation": "When development is uncertain and complex but the rollout is defined and repeatable, an agile development life cycle followed by a predictive rollout phase fits.",
+    "ref": "Agile Practice Guide, 3.10.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 49,
+        "label": "Agile Practice Guide, 3.10.3"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "An engineering firm is building a routine facility, but with a roofing material it has never used. What is the best approach?",
+    "options": [
+      "Run the whole project with an agile approach",
+      "Cancel the project until the material is proven elsewhere",
+      "Treat the roof like any other part of the plan",
+      "A largely predictive approach, with small-scale trials of the roofing handled in an agile way"
+    ],
+    "answer": 3,
+    "explanation": "A small agile element within a mainly predictive project suits a routine project with one uncertain part. Trial installations uncover issues early and let the team improve by experiment.",
+    "ref": "Agile Practice Guide, 3.10.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 50,
+        "label": "Agile Practice Guide, 3.10.5"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A team works in an agile way, but one component comes from a vendor that will deliver it once and will not work incrementally. Which pattern is this?",
+    "options": [
+      "A largely predictive approach with an agile component",
+      "A largely agile approach with a predictive component",
+      "Agile development followed by a predictive rollout",
+      "A blend of Scrum and Kanban"
+    ],
+    "answer": 1,
+    "explanation": "A largely agile approach with a predictive component is used when one element is non-negotiable or cannot be done in an agile way, such as a single integration of an external component.",
+    "ref": "Agile Practice Guide, 3.10.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 50,
+        "label": "Agile Practice Guide, 3.10.6"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A team uses short iterations, daily coordination meetings and retrospectives, but still estimates up front and tracks progress predictively. How should this approach be described?",
+    "options": [
+      "Hybrid",
+      "Agile",
+      "Predictive",
+      "Incremental"
+    ],
+    "answer": 0,
+    "explanation": "Using both sets of practices is a hybrid. Calling it agile would be misleading because it does not fully embody the agile mindset, and calling it predictive would be inaccurate.",
+    "ref": "Agile Practice Guide, 3.10.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 49,
+        "label": "Agile Practice Guide, 3.10.3"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "In PMI's Disciplined Agile tool kit, which level of hybrid has a predictive approach as the dominant contributor, with some adaptive elements?",
+    "options": [
+      "Hybrid level 3",
+      "Hybrid level 2",
+      "Hybrid level 1",
+      "Hybrid level 0"
+    ],
+    "answer": 2,
+    "explanation": "At hybrid level 1 a predictive approach dominates and some adaptive elements ease specific pain points. At level 2 both contribute significantly. At level 3 the adaptive approach dominates.",
+    "ref": "PMBOK 8, Standard 4.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 88,
+        "label": "PMBOK 8, Standard 4.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which two dimensions does the Stacey matrix plot?",
+    "options": [
+      "Cost and schedule",
+      "Requirements uncertainty and technical uncertainty",
+      "Power and interest",
+      "Probability and impact"
+    ],
+    "answer": 1,
+    "explanation": "The Stacey matrix plots the level of agreement on what is needed (requirements uncertainty) against the level of certainty on how to deliver it (technical uncertainty).",
+    "ref": "Agile Practice Guide, 3.10.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 45,
+        "label": "Agile Practice Guide, 3.10.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "On the Stacey matrix, a project has clear requirements and well-understood technology. Which approach works well?",
+    "options": [
+      "Adaptive",
+      "None; the project is chaotic",
+      "Flow-based agile only",
+      "Predictive"
+    ],
+    "answer": 3,
+    "explanation": "Where both the requirements and the technology are certain, traditional predictive approaches work well.",
+    "ref": "Agile Practice Guide, 3.10.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 45,
+        "label": "Agile Practice Guide, 3.10.1"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "In the Cynefin framework, what is the recommended way to act in the complex domain?",
+    "options": [
+      "Apply good practice",
+      "Analyze fully, then plan",
+      "Probe, sense and respond",
+      "Wait until the situation becomes clear"
+    ],
+    "answer": 2,
+    "explanation": "In the complex domain, outcomes emerge through experimentation and learning, so the recommended approach is to probe, sense and respond. This aligns with agile practices.",
+    "ref": "Agile Practice Guide, 3.10.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 45,
+        "label": "Agile Practice Guide, 3.10.1"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Which three categories does the agile suitability filter assess?",
+    "options": [
+      "Culture, team and project",
+      "Scope, schedule and cost",
+      "People, process and business environment",
+      "Risk, quality and procurement"
+    ],
+    "answer": 0,
+    "explanation": "The model assesses organizational and project attributes in three categories: culture, team and project.",
+    "ref": "Agile Practice Guide, X3.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 166,
+        "label": "Agile Practice Guide, X3.1"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "On the suitability filter's radar chart, the scores cluster near the center. What does this suggest?",
+    "options": [
+      "A predictive approach",
+      "The questionnaire was filled in wrongly",
+      "A hybrid approach",
+      "An agile approach"
+    ],
+    "answer": 3,
+    "explanation": "Values clustered around the center indicate a good fit for agile approaches. Values around the outside indicate predictive, and values in the middle portion indicate hybrid.",
+    "ref": "Agile Practice Guide, X3.2.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 168,
+        "label": "Agile Practice Guide, X3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "The suitability filter points to a hybrid approach, but after discussion all stakeholders want a largely agile approach. What should the team do?",
+    "options": [
+      "Use hybrid, because the tool's result is binding",
+      "Follow the stakeholder consensus and manage the mismatches as risks",
+      "Repeat the questionnaire until it says agile",
+      "Escalate to the PMO to overrule the stakeholders"
+    ],
+    "answer": 1,
+    "explanation": "The tool is a high-level diagnostic whose value is the conversation it encourages. The final decision rests with the people involved, and mismatches are inputs to risk management.",
+    "ref": "Agile Practice Guide, X3.2.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 168,
+        "label": "Agile Practice Guide, X3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Who should complete the agile suitability filter?",
+    "options": [
+      "A group of stakeholders, such as the sponsor, team, customer and governance representatives",
+      "The project manager alone",
+      "An external auditor",
+      "The PMO, without the team"
+    ],
+    "answer": 0,
+    "explanation": "The questionnaire is completed as a group. A diverse group avoids limited perspectives and personal bias and gives a comprehensive evaluation.",
+    "ref": "Agile Practice Guide, X3.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 167,
+        "label": "Agile Practice Guide, X3.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which factor points most strongly toward a predictive approach?",
+    "options": [
+      "A high degree of innovation",
+      "Value from frequent user feedback",
+      "Rigorous safety requirements and heavy regulatory oversight",
+      "Unstable scope"
+    ],
+    "answer": 2,
+    "explanation": "Products with rigorous safety requirements need significant up-front planning, and heavily regulated environments require set processes and documentation. Both favor a predictive approach.",
+    "ref": "PMBOK 8, Standard 4.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 90,
+        "label": "PMBOK 8, Standard 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which organizational characteristic favors an adaptive approach?",
+    "options": [
+      "A fixed functional hierarchy",
+      "A culture of managing and directing against baselines",
+      "Very large project teams",
+      "A culture that accepts uncertainty and values self-managed teams"
+    ],
+    "answer": 3,
+    "explanation": "Adaptive approaches fit better in a culture that embraces uncertainty and emphasizes self-managed teams, flexible thinking and innovation.",
+    "ref": "PMBOK 8, Standard 4.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 90,
+        "label": "PMBOK 8, Standard 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "An organization used to predictive projects wants to move toward agile. What is the recommended way to start?",
+    "options": [
+      "Switch every project to agile at once",
+      "Try the new techniques on a less risky project, adding them gradually",
+      "Start with the largest, most complex project",
+      "Wait until every employee is certified"
+    ],
+    "answer": 1,
+    "explanation": "A gradual transition is recommended: add iterative, then incremental techniques, starting on a less risky project with low to medium uncertainty, before moving to more complex projects.",
+    "ref": "Agile Practice Guide, 3.10.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 52,
+        "label": "Agile Practice Guide, 3.10.8"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A team uses Scrum roles and events, a kanban board with WIP limits, and XP engineering practices. What is this an example of?",
+    "options": [
+      "A hybrid of predictive and adaptive approaches",
+      "A violation of the Scrum framework",
+      "A blend of agile approaches",
+      "A predictive life cycle"
+    ],
+    "answer": 2,
+    "explanation": "Agile teams rarely limit themselves to one agile approach. Coordinated use of Scrum, the Kanban Method and XP practices is one of the most common blends.",
+    "ref": "Agile Practice Guide, 3.11",
+    "links": [
+      {
+        "book": "agile",
+        "page": 52,
+        "label": "Agile Practice Guide, 3.11"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "An agile team's work is often interrupted by delays and impediments. Which tailoring option fits?",
+    "options": [
+      "Make work visible on a kanban board and experiment with WIP limits",
+      "Lengthen the iterations to three months",
+      "Stop holding retrospectives",
+      "Add a formal change control board"
+    ],
+    "answer": 0,
+    "explanation": "When the flow of work is often interrupted, the guide suggests making work visible with kanban boards and experimenting with limits for the areas of the work process to improve flow.",
+    "ref": "Agile Practice Guide, 3.12",
+    "links": [
+      {
+        "book": "agile",
+        "page": 53,
+        "label": "Agile Practice Guide, 3.12"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "The quality of a team's product increments is poor. Which tailoring option does the Agile Practice Guide suggest?",
+    "options": [
+      "Add a final inspection phase at the end of the project",
+      "Use test-driven development practices",
+      "Reduce the number of demonstrations",
+      "Increase the team's velocity target"
+    ],
+    "answer": 1,
+    "explanation": "Test-driven development practices are a mistake-proofing discipline that makes it difficult for defects to remain undetected.",
+    "ref": "Agile Practice Guide, 3.12",
+    "links": [
+      {
+        "book": "agile",
+        "page": 53,
+        "label": "Agile Practice Guide, 3.12"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "When may agile approaches not be useful?",
+    "options": [
+      "When requirements are uncertain",
+      "When stakeholders are available throughout",
+      "When the technology is new",
+      "When the organization cannot deliver intermediate value"
+    ],
+    "answer": 3,
+    "explanation": "Agile is about frequent delivery that creates feedback. When the organization cannot deliver intermediate value, agile approaches may not be useful.",
+    "ref": "Agile Practice Guide, 3.10.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 50,
+        "label": "Agile Practice Guide, 3.10.7"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A project builds software adaptively and installs it in a new data center that is built predictively. Why is a hybrid approach suitable here?",
+    "options": [
+      "The two deliverables have different characteristics, so each uses the approach that fits it",
+      "Hybrid approaches are always cheaper",
+      "Hybrid approaches need no planning",
+      "The sponsor cannot choose between the two"
+    ],
+    "answer": 0,
+    "explanation": "Hybrid approaches are useful when deliverables can be modularized or developed by different teams. One deliverable can be developed adaptively and the other predictively.",
+    "ref": "PMBOK 8, Standard 4.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 88,
+        "label": "PMBOK 8, Standard 4.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which statement best reflects how a life cycle should be chosen?",
+    "options": [
+      "Agile is always better than predictive",
+      "Predictive is always safer than agile",
+      "Choose the life cycle, or combination, that fits the project, its risks and the culture, and revisit the choice",
+      "Use whichever approach the team used last time"
+    ],
+    "answer": 2,
+    "explanation": "The goal is to produce business value in the best way for the current environment, whether agile or predictive. The team picks what works for the project, the risks and the culture, and revisits the decision periodically.",
+    "ref": "Agile Practice Guide, 3.10.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 50,
+        "label": "Agile Practice Guide, 3.10.7"
+      }
+    ]
+  }
+]

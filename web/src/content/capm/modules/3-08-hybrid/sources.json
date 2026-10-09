@@ -1,0 +1,87 @@
+[
+  {
+    "book": "agile",
+    "page": 45,
+    "label": "Agile Practice Guide, 3.10"
+  },
+  {
+    "book": "agile",
+    "page": 45,
+    "label": "Agile Practice Guide, 3.10.1"
+  },
+  {
+    "book": "agile",
+    "page": 47,
+    "label": "Agile Practice Guide, 3.10.2"
+  },
+  {
+    "book": "agile",
+    "page": 49,
+    "label": "Agile Practice Guide, 3.10.3"
+  },
+  {
+    "book": "agile",
+    "page": 49,
+    "label": "Agile Practice Guide, 3.10.4"
+  },
+  {
+    "book": "agile",
+    "page": 50,
+    "label": "Agile Practice Guide, 3.10.5"
+  },
+  {
+    "book": "agile",
+    "page": 50,
+    "label": "Agile Practice Guide, 3.10.6"
+  },
+  {
+    "book": "agile",
+    "page": 50,
+    "label": "Agile Practice Guide, 3.10.7"
+  },
+  {
+    "book": "agile",
+    "page": 52,
+    "label": "Agile Practice Guide, 3.10.8"
+  },
+  {
+    "book": "agile",
+    "page": 52,
+    "label": "Agile Practice Guide, 3.11"
+  },
+  {
+    "book": "agile",
+    "page": 53,
+    "label": "Agile Practice Guide, 3.12"
+  },
+  {
+    "book": "agile",
+    "page": 166,
+    "label": "Agile Practice Guide, X3.1"
+  },
+  {
+    "book": "agile",
+    "page": 167,
+    "label": "Agile Practice Guide, X3.2.1"
+  },
+  {
+    "book": "agile",
+    "page": 168,
+    "label": "Agile Practice Guide, X3.2.3"
+  },
+  {
+    "book": "agile",
+    "page": 183,
+    "label": "Agile Practice Guide, Glossary (hybrid approach)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 88,
+    "label": "PMBOK 8, Standard 4.2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 90,
+    "label": "PMBOK 8, Standard 4.3"
+  }
+]

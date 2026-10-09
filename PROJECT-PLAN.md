@@ -32,6 +32,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Session 17 done: modules 3.3 (XP, lean, Lean Startup, the Kanban Method, Crystal, FDD, DSDM and the scaling frameworks) and 3.4 (servant leadership, agile team attributes, T-shaped skills, multitasking, team spaces, psychological safety, levels of conflict). **Domain 3 is half done: 4 of 8.** | You: study 3.3 and 3.4. Next: Session 18, modules 3.5 (agile planning, user stories, estimation) and 3.6 (prioritization and delivering value) |
 | 2026-10-10 | At your request, an **Issues log** was added at the end of this file: every problem met so far (40 entries) with how it was handled and where to look. It is updated at the end of every session from now on. | You: skim it once. Next: Session 18 |
 | 2026-10-10 | Session 18 done: modules 3.5 (planning levels, backlog items, user stories, INVEST, story points, planning poker, velocity, spikes) and 3.6 (value-driven delivery, MoSCoW, Kano, WSJF, MVP vs MMP vs MBI, demonstrations, releasing, technical debt). Issues 41 to 43 added to the log. | You: study 3.5 and 3.6. Next: Session 19, modules 3.7 (metrics, charts, retrospectives) and 3.8 (hybrid approaches), which completes Domain 3 |
+| 2026-10-10 | Session 19 done: modules 3.7 (why agile measures finished work, velocity, burndown and burnup charts, flow metrics, cumulative flow diagram, information radiators, retrospectives) and 3.8 (hybrid approaches, the four hybrid patterns, Stacey matrix, Cynefin, the agile suitability filter, blending agile approaches). **Domain 3 is complete: 8 of 8 modules.** Domains 1 to 3 together are 73% of the exam. Issues 44 to 46 added to the log. | You: study 3.7 and 3.8. Next: Session 20, the study plan and exam countdown feature |
 
 ## How your progress is saved
 
@@ -114,7 +115,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 8 | Feature: spaced repetition for flashcards (plus source links to the PDFs) |
 | ✅ | 9 to 14 | Domain 2: 12 modules (all done) |
 | ✅ | 15 | Feature: dashboard and practice of missed questions |
-| 🟡 | 16 to 19 | Domain 3: 8 modules (Sessions 16 to 18 done: 3.1 to 3.6) |
+| ✅ | 16 to 19 | Domain 3: 8 modules |
 | ⬜ | 20 | Feature: study plan and exam countdown |
 | ⬜ | 21 to 24 | Domain 4: 7 modules |
 | ⬜ | 25 | Full catch-up, requested 2026-10-10: review every module against every book in `PMI Learning Material/`, improve where a book adds exam value, and give you a list of any extra PDFs worth adding |
@@ -173,13 +174,13 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **29 of 38 modules done** (591 quiz questions, 838 flashcards).
+Overall: **31 of 38 modules done** (635 quiz questions, 903 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
 | ✅ | 1. PM Fundamentals and Core Concepts | 11 / 11 |
 | ✅ | 2. Predictive, Plan-Based Methodologies | 12 / 12 |
-| 🟡 | 3. Agile Frameworks / Methodologies | 6 / 8 |
+| ✅ | 3. Agile Frameworks / Methodologies | 8 / 8 |
 | ⬜ | 4. Business Analysis Frameworks | 0 / 7 |
 
 **Domain 1: PM Fundamentals and Core Concepts**
@@ -225,8 +226,8 @@ Overall: **29 of 38 modules done** (591 quiz questions, 838 flashcards).
 | ✅ | 3.4 Servant Leadership and Agile Teams | 2026-10-10 |
 | ✅ | 3.5 Agile Planning, User Stories and Estimation | 2026-10-10 |
 | ✅ | 3.6 Prioritization and Delivering Value | 2026-10-10 |
-| ⬜ | 3.7 Metrics, Charts and Retrospectives | |
-| ⬜ | 3.8 Hybrid Approaches and Choosing a Life Cycle | |
+| ✅ | 3.7 Metrics, Charts and Retrospectives | 2026-10-10 |
+| ✅ | 3.8 Hybrid Approaches and Choosing a Life Cycle | 2026-10-10 |
 
 **Domain 4: Business Analysis Frameworks**
 
@@ -302,6 +303,7 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 17 | Links to newly added books showed "This page does not exist". The local server read the book list only when it started. | The server reads `books.json` on every request, so a new book works immediately. A missing book now gives a plain message naming it. | `web/vite.config.ts` |
 | 18 | Source links cannot work on the future public website, because the PDFs are licensed to you and must never be uploaded. | Links are shown only when the app runs locally. Online, the same place shows the book and page as text. | `Sources.tsx` |
 | 42 | A glossary term in a practice guide could not be linked: the link went to the book's first page. | The linker now understands `Glossary (term)` for these books and opens the page that defines the term. A term that is not found is an error. | `link_sources.py` |
+| 46 | Three quiz references in module 3.8 named a neighbouring section, not the one that holds the fact (for example 3.10.5 where 3.10.6 was meant). The linker cannot catch this, because both sections exist. | Found by listing every link with its page and comparing it with the page I had read. The references were corrected. This page-by-page check is now done for every new module. | Module 3.8 `quiz.json` |
 
 ### Books in your folder
 
@@ -329,6 +331,8 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 32 | The 8th edition lists tools alphabetically, which is hard to study. | Module 2.12 groups them into eight families by purpose. The grouping is my own arrangement, as older editions did. | Module 2.12 |
 | 33 | The four Agile Manifesto values cannot sensibly be reworded. | The four values are quoted; the twelve principles are paraphrased. | Module 3.1 |
 | 43 | INVEST and the three Cs are tested but appear in none of PMI's guides, so the section on them cannot cite a page that contains them. | The section cites the nearest real entries (user stories, definition of ready) and says in its own text that INVEST comes from outside PMI's guides. Same approach as item 31. | Module 3.5 |
+| 44 | The Agile Practice Guide (Second Edition) no longer recommends velocity as a measure outside the team, and does not describe burndown charts. Both are still standard exam material. | Module 3.7 teaches velocity and burn charts from the PMBOK Guide's own entries, teaches the flow metrics the practice guide prefers, and carries an edition note explaining the difference. | Module 3.7, "Velocity" |
+| 45 | Module 3.8 (hybrid) overlaps module 1.6, which already introduces hybrid approaches and the factors for choosing one. | 3.8 goes deeper where 1.6 is brief: the four hybrid patterns with examples, the three hybrid levels, Stacey, Cynefin and the suitability filter. The choosing factors are kept as one short table. | Modules 1.6 and 3.8 |
 
 ### App features
 

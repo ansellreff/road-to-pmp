@@ -1,0 +1,82 @@
+[
+  {
+    "book": "agile",
+    "page": 86,
+    "label": "Agile Practice Guide, 5.2.7"
+  },
+  {
+    "book": "agile",
+    "page": 92,
+    "label": "Agile Practice Guide, 5.5"
+  },
+  {
+    "book": "agile",
+    "page": 93,
+    "label": "Agile Practice Guide, 5.5.1"
+  },
+  {
+    "book": "agile",
+    "page": 93,
+    "label": "Agile Practice Guide, 5.5.2"
+  },
+  {
+    "book": "agile",
+    "page": 94,
+    "label": "Agile Practice Guide, 5.5.3"
+  },
+  {
+    "book": "agile",
+    "page": 95,
+    "label": "Agile Practice Guide, 5.5.4"
+  },
+  {
+    "book": "agile",
+    "page": 95,
+    "label": "Agile Practice Guide, 5.5.5"
+  },
+  {
+    "book": "agile",
+    "page": 181,
+    "label": "Agile Practice Guide, Glossary (cycle time)"
+  },
+  {
+    "book": "agile",
+    "page": 183,
+    "label": "Agile Practice Guide, Glossary (flow metrics)"
+  },
+  {
+    "book": "agile",
+    "page": 184,
+    "label": "Agile Practice Guide, Glossary (lead time)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 255,
+    "label": "PMBOK 8, Guide section 5, Burndown chart"
+  },
+  {
+    "book": "pmbok8",
+    "page": 255,
+    "label": "PMBOK 8, Guide section 5, Burnup chart"
+  },
+  {
+    "book": "pmbok8",
+    "page": 278,
+    "label": "PMBOK 8, Guide section 5, Information radiators"
+  },
+  {
+    "book": "pmbok8",
+    "page": 299,
+    "label": "PMBOK 8, Guide section 5, Retrospectives"
+  },
+  {
+    "book": "pmbok8",
+    "page": 316,
+    "label": "PMBOK 8, Guide section 5, Velocity"
+  },
+  {
+    "book": "pmbok8",
+    "page": 317,
+    "label": "PMBOK 8, Guide section 5, Visual controls"
+  }
+]

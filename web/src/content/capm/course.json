@@ -52,8 +52,8 @@
         { "id": "3-04-servant-leadership-teams", "title": "Servant Leadership and Agile Teams", "ready": true },
         { "id": "3-05-planning-stories-estimation", "title": "Agile Planning, User Stories and Estimation", "ready": true },
         { "id": "3-06-prioritization-value", "title": "Prioritization and Delivering Value", "ready": true },
-        { "id": "3-07-metrics-retrospectives", "title": "Metrics, Charts and Retrospectives", "ready": false },
-        { "id": "3-08-hybrid", "title": "Hybrid Approaches and Choosing a Life Cycle", "ready": false }
+        { "id": "3-07-metrics-retrospectives", "title": "Metrics, Charts and Retrospectives", "ready": true },
+        { "id": "3-08-hybrid", "title": "Hybrid Approaches and Choosing a Life Cycle", "ready": true }
       ]
     },
     {
