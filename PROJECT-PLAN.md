@@ -14,6 +14,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Session 4 done: modules 1.4 and 1.5 (the six principles) written. PMI Code of Ethics PDF added to the materials folder by you. | You: study 1.4 and 1.5. Next: Session 5, modules 1.6 and 1.7 (development approaches, focus areas) |
 | 2026-10-10 | Session 5 done: modules 1.6 (phases and development approaches) and 1.7 (the five focus areas) written. | You: study 1.6 and 1.7. Next: Session 6, modules 1.8 and 1.9 (performance domains and tailoring; constraints, risks, issues) |
 | 2026-10-10 | Session 6 done: modules 1.8 (performance domains and tailoring) and 1.9 (constraints, risks, issues and assumptions) written. | You: study 1.8 and 1.9. Next: Session 7, modules 1.10 and 1.11 (leadership and ethics; 7th edition terms), which completes Domain 1 |
+| 2026-10-10 | Session 7 done: modules 1.10 (leadership, emotional intelligence, ethics) and 1.11 (7th edition and Process Groups terms) written. **Domain 1 is complete: 11 of 11 modules.** Process Groups: A Practice Guide added by you and extracted. | You: study 1.10 and 1.11. Next: Session 8, the spaced repetition feature |
 
 ## How your progress is saved
 
@@ -78,7 +79,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 4 | Modules 1.4, 1.5: the 6 principles |
 | ✅ | 5 | Modules 1.6, 1.7: development approaches, the 5 focus areas |
 | ✅ | 6 | Modules 1.8, 1.9: performance domains and tailoring; constraints, risks, issues |
-| ⬜ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. (Code of Ethics PDF is in the materials folder) |
+| ✅ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. (Code of Ethics PDF is in the materials folder) |
 | ⬜ | 8 | Feature: spaced repetition for flashcards |
 | ⬜ | 9 to 14 | Domain 2: 12 modules |
 | ⬜ | 15 | Feature: dashboard and "practice my weakest topics" quiz |
@@ -139,11 +140,11 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **9 of 38 modules done** (147 quiz questions, 204 flashcards).
+Overall: **11 of 38 modules done** (184 quiz questions, 260 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
-| 🟡 | 1. PM Fundamentals and Core Concepts | 9 / 11 |
+| ✅ | 1. PM Fundamentals and Core Concepts | 11 / 11 |
 | ⬜ | 2. Predictive, Plan-Based Methodologies | 0 / 12 |
 | ⬜ | 3. Agile Frameworks / Methodologies | 0 / 8 |
 | ⬜ | 4. Business Analysis Frameworks | 0 / 7 |
@@ -161,8 +162,8 @@ Overall: **9 of 38 modules done** (147 quiz questions, 204 flashcards).
 | ✅ | 1.7 The 5 Focus Areas: Initiating to Closing | 2026-10-10 |
 | ✅ | 1.8 The 7 Performance Domains and Tailoring | 2026-10-10 |
 | ✅ | 1.9 Constraints, Risks, Issues and Assumptions | 2026-10-10 |
-| ⬜ | 1.10 Leadership Skills, Emotional Intelligence and Ethics | |
-| ⬜ | 1.11 7th Edition Terms You May Still See (12 Principles, 8 Domains) | |
+| ✅ | 1.10 Leadership Skills, Emotional Intelligence and Ethics | 2026-10-10 |
+| ✅ | 1.11 7th Edition Terms You May Still See (12 Principles, 8 Domains) | 2026-10-10 |
 
 **Domain 2: Predictive, Plan-Based Methodologies**
 

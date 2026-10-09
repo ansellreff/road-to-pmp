@@ -1,0 +1,232 @@
+[
+  {
+    "id": "q1",
+    "q": "Which statement best distinguishes leadership from management?",
+    "options": [
+      "Leadership relies on positional power; management relies on inspiration",
+      "Leadership guides and influences people toward a vision; management directs work through position, systems and control",
+      "Leadership is only for executives; management is for project managers",
+      "They are identical"
+    ],
+    "answer": 1,
+    "explanation": "Management directs using positional power, focuses on systems and near-term goals. Leadership guides and influences, focuses on relationships and long-range vision. A project manager needs both.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Leadership"
+  },
+  {
+    "id": "q2",
+    "q": "What are the four key areas of emotional intelligence?",
+    "options": [
+      "Forming, storming, norming, performing",
+      "Responsibility, respect, fairness, honesty",
+      "Self-awareness, self-management, social awareness, social skills",
+      "Avoid, mitigate, transfer, accept"
+    ],
+    "answer": 2,
+    "explanation": "Emotional intelligence models converge on self-awareness, self-management, social awareness and social skills. Some add motivation as a fifth.",
+    "ref": "PMBOK 8, Guide section 5, Interpersonal skills"
+  },
+  {
+    "id": "q3",
+    "q": "A project manager receives an angry email from a stakeholder, pauses, and decides to reply calmly the next morning instead of reacting immediately. Which area of emotional intelligence is this?",
+    "options": ["Self-management", "Social awareness", "Social skills", "Shared ownership"],
+    "answer": 0,
+    "explanation": "Self-management (self-regulation) is the ability to control and redirect disruptive feelings and impulses, and to think before acting.",
+    "ref": "PMBOK 8, Guide section 5, Interpersonal skills"
+  },
+  {
+    "id": "q4",
+    "q": "During a meeting, a project manager notices from a team member's body language that she is uncomfortable with the plan, and asks for her view. Which area of emotional intelligence is this?",
+    "options": ["Self-awareness", "Self-management", "Motivation", "Social awareness"],
+    "answer": 3,
+    "explanation": "Social awareness is about empathy: understanding other people's feelings, including reading non-verbal cues and body language.",
+    "ref": "PMBOK 8, Guide section 5, Interpersonal skills"
+  },
+  {
+    "id": "q5",
+    "q": "What is servant leadership?",
+    "options": [
+      "Doing the team's work for them",
+      "Leading by focusing on the needs and development of team members to enable the highest team performance",
+      "Following the sponsor's instructions without question",
+      "Making all decisions centrally and issuing instructions"
+    ],
+    "answer": 1,
+    "explanation": "Servant leadership focuses on understanding and addressing the needs and development of team members, in service of the project's objectives.",
+    "ref": "PMBOK 8, Guide section 5, Servant leadership"
+  },
+  {
+    "id": "q6",
+    "q": "A team has no designated project manager. Decisions are made by the team members, and one of them acts as facilitator, a role that rotates. This is an example of:",
+    "options": [
+      "Centralized management and leadership",
+      "Forcing",
+      "Distributed management and leadership",
+      "A functional organization"
+    ],
+    "answer": 2,
+    "explanation": "In distributed management and leadership, decision-making and authority are decentralized among individuals and teams, and a team may self-organize with a facilitator.",
+    "ref": "PMBOK 8, Guide section 5, Distributed management and leadership"
+  },
+  {
+    "id": "q7",
+    "q": "Which is a common source of conflict on projects?",
+    "options": [
+      "Scarce resources, scheduling priorities and personal work styles",
+      "Having a project charter",
+      "Too much recognition",
+      "Clear role definitions"
+    ],
+    "answer": 0,
+    "explanation": "Sources of conflict include scarce resources, scheduling priorities and personal work styles. Clear roles and ground rules reduce conflict.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management"
+  },
+  {
+    "id": "q8",
+    "q": "Two team members disagree strongly about a design. What should happen first?",
+    "options": [
+      "The sponsor decides",
+      "The project manager issues a formal warning",
+      "The project manager removes one of them from the team",
+      "The team members try to resolve it themselves"
+    ],
+    "answer": 3,
+    "explanation": "Team members are initially responsible for resolving their differences. If the conflict escalates, the project manager helps facilitate a resolution.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management"
+  },
+  {
+    "id": "q9",
+    "q": "When a project manager needs to step into a conflict, how should it usually be addressed?",
+    "options": [
+      "Late, in public, by assigning blame",
+      "Early, in private, using a direct and collaborative approach",
+      "By email to the whole team",
+      "Only at project closing"
+    ],
+    "answer": 1,
+    "explanation": "Conflict should be addressed early and usually in private, using a direct, collaborative approach. Formal procedures come only if disruptive conflict continues.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management"
+  },
+  {
+    "id": "q10",
+    "q": "Which conflict resolution technique incorporates multiple viewpoints through open dialogue and typically leads to consensus and a win-win result?",
+    "options": ["Force / direct", "Withdraw / avoid", "Collaborate / problem-solve", "Smooth / accommodate"],
+    "answer": 2,
+    "explanation": "Collaborate/problem-solve requires a cooperative attitude and open dialogue, and typically leads to consensus and commitment.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management"
+  },
+  {
+    "id": "q11",
+    "q": "In a safety emergency, the project manager overrules a disagreement and gives a direct order. Which technique is this?",
+    "options": ["Force / direct", "Compromise / reconcile", "Smooth / accommodate", "Collaborate / problem-solve"],
+    "answer": 0,
+    "explanation": "Forcing pushes one viewpoint, usually from a power position, to resolve an emergency. It is win-lose but has its place.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management"
+  },
+  {
+    "id": "q12",
+    "q": "Both parties in a dispute give up part of what they wanted so that work can continue. Which technique is this?",
+    "options": ["Withdraw / avoid", "Force / direct", "Collaborate / problem-solve", "Compromise / reconcile"],
+    "answer": 3,
+    "explanation": "Compromise brings some degree of satisfaction to all parties to partially or temporarily resolve the conflict. It can end up lose-lose.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management"
+  },
+  {
+    "id": "q13",
+    "q": "What are the four values of the PMI Code of Ethics and Professional Conduct?",
+    "options": [
+      "Integrity, loyalty, courage, discipline",
+      "Responsibility, respect, fairness, honesty",
+      "Scope, schedule, cost, quality",
+      "Trust, empathy, vision, results"
+    ],
+    "answer": 1,
+    "explanation": "The global project management community identified responsibility, respect, fairness and honesty as the most important values.",
+    "ref": "PMI Code of Ethics, 1.4"
+  },
+  {
+    "id": "q14",
+    "q": "To whom does the PMI Code of Ethics apply?",
+    "options": [
+      "Only to certified PMPs",
+      "Only to PMI employees",
+      "PMI members, certification holders, certification applicants and PMI volunteers",
+      "Anyone who has read the PMBOK Guide"
+    ],
+    "answer": 2,
+    "explanation": "The Code applies to PMI members, PMI certification holders, applicants commencing a certification process, and PMI volunteers.",
+    "ref": "PMI Code of Ethics, 1.2"
+  },
+  {
+    "id": "q15",
+    "q": "What is the difference between aspirational and mandatory standards in the Code?",
+    "options": [
+      "Aspirational standards describe conduct we strive for; mandatory standards are firm requirements whose violation leads to disciplinary procedures",
+      "Aspirational standards apply to members; mandatory standards apply to non-members",
+      "Aspirational standards are optional reading; mandatory standards are for managers only",
+      "There is no difference"
+    ],
+    "answer": 0,
+    "explanation": "Aspirational standards describe the conduct practitioners strive to uphold. Mandatory standards establish firm requirements; violations are subject to disciplinary procedures before PMI's Ethics Review Committee.",
+    "ref": "PMI Code of Ethics, 1.5"
+  },
+  {
+    "id": "q16",
+    "q": "A project manager is on the panel selecting a supplier and realizes that one bidder is owned by her brother. What should she do?",
+    "options": [
+      "Say nothing, but try to be objective",
+      "Quietly give her brother's company a lower score to appear neutral",
+      "Resign from the organization",
+      "Disclose the conflict of interest and refrain from the decision until stakeholders consent to a way forward"
+    ],
+    "answer": 3,
+    "explanation": "The Code requires proactive, full disclosure of real or potential conflicts of interest, and staying out of the decision until there is disclosure, an approved mitigation plan and stakeholder consent.",
+    "ref": "PMI Code of Ethics, 4.3.1 and 4.3.2"
+  },
+  {
+    "id": "q17",
+    "q": "A project is behind schedule. The sponsor asks for the status report to show only the tasks that are on track. What should the project manager do?",
+    "options": [
+      "Comply, since the sponsor funds the project",
+      "Report the accurate status, including the delay",
+      "Delay the report until the project recovers",
+      "Report on-track tasks now and mention the delay only if asked"
+    ],
+    "answer": 1,
+    "explanation": "Honesty requires accurate and timely information, including bad news. Half-truths and withholding information that makes a statement misleading violate the mandatory standards.",
+    "ref": "PMI Code of Ethics, 5.2.3 and 5.3.1"
+  },
+  {
+    "id": "q18",
+    "q": "Which value of the Code covers the duty to disclose conflicts of interest and to act impartially?",
+    "options": ["Responsibility", "Respect", "Fairness", "Honesty"],
+    "answer": 2,
+    "explanation": "Fairness is the duty to make decisions and act impartially and objectively, free from competing self-interest, prejudice and favoritism.",
+    "ref": "PMI Code of Ethics, chapter 4"
+  },
+  {
+    "id": "q19",
+    "q": "You suspect, without any evidence, that a colleague falsified a timesheet. According to the Code, what applies?",
+    "options": [
+      "Ethics complaints should be filed only when substantiated by facts",
+      "You must file a formal ethics complaint immediately",
+      "You should tell the rest of the team about your suspicion",
+      "You should retaliate by reporting other things about them"
+    ],
+    "answer": 0,
+    "explanation": "The Code requires that ethics complaints are filed only when substantiated by facts, and it also asks practitioners to avoid gossip and unconfirmed information.",
+    "ref": "PMI Code of Ethics, 2.3.4 and 3.2.6"
+  },
+  {
+    "id": "q20",
+    "q": "You are offered the lead role on a project that needs expertise you do not yet have. What does the Code expect?",
+    "options": [
+      "Accept and hide the gap",
+      "Decline every assignment outside your current skills",
+      "Accept and ask the team to cover for you",
+      "Give stakeholders timely and complete information about the gaps so they can decide"
+    ],
+    "answer": 3,
+    "explanation": "Practitioners accept assignments consistent with their qualifications. For a stretch assignment, they disclose the gaps so stakeholders can make an informed decision.",
+    "ref": "PMI Code of Ethics, 2.2.3"
+  }
+]

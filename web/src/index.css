@@ -54,6 +54,10 @@ body {
   .lesson h2:first-child {
     @apply mt-0;
   }
+  .lesson h3 {
+    font-stretch: 88%;
+    @apply mt-8 mb-2 font-ui text-xl font-bold tracking-tight;
+  }
   .lesson p {
     @apply my-4;
   }
