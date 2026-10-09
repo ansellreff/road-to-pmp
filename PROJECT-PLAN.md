@@ -9,6 +9,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-09 | Plan approved. This tracker created. | Session 0: install Node.js and Git |
 | 2026-10-09 | Isolated environment set up (portable Node.js + Git in `.tools`, Python in `.venv`). Instructor outline read. App skeleton built with first sample module (1.1). Runs on localhost. | You: review the app in the browser. Then Session 2 (GitHub + Vercel) |
 | 2026-10-09 | Switched reference to PMBOK 8th edition: module 1.1 rewritten (15 quiz questions, 22 flashcards), Domains 1 and 2 re-planned (38 modules total). Added "Your progress in this module" panel to undo or reset any mark. Local Git repository created with first commit. | You: create GitHub repository and Vercel project (steps in chat). Then Session 3: module 1.2 |
+| 2026-10-10 | Visual redesign with the frontend-design plugin: "project schedule" look, exam blueprint strip, milestone diamonds, index-card flashcards, local fonts. Going online is on hold at your request. | You: review the new look. Then either go online (GitHub + Vercel) or Session 3: module 1.2 |
 
 ## How your progress is saved
 
@@ -41,6 +42,7 @@ Study for and pass PMI certifications using my own platform, in this order:
 | Progress saving | In the browser (localStorage) with export/import backup. Cloud sync later |
 | Language | English only |
 | Devices | Desktop first, mobile layout after |
+| Visual design | Styled like a project schedule. Colors: paper `#F4F6F8`, ink `#14213D`, schedule blue `#2B4FD8` (in progress), green `#1B7F6B` (done), critical red `#C81E3A` (mistakes only), amber `#B97A00` (examples and notes). Fonts: Archivo for the interface, Literata for lesson text, both stored in the project so it works offline. Tokens live in `web/src/index.css` |
 | Isolation | Nothing installed in Windows. Node.js and Git are portable copies in `.tools/`, Python libraries in `.venv/`. Deleting the project folder removes everything |
 | Book edition | **PMBOK Guide 8th edition is the primary reference** (decided 2026-10-09): 6 principles, 7 performance domains, 5 focus areas. Lessons add a short "edition note" where the 7th edition worded things differently, and module 1.11 bridges the 7th-edition terms (12 principles, 8 domains) that the instructor course and some exam questions may still use |
 
@@ -176,6 +178,7 @@ Overall: **1 of 38 modules done.**
 | ✅ | Quizzes with explanations and review | 2026-10-09 |
 | ✅ | Flashcards with "I know this / still learning" | 2026-10-09 |
 | ✅ | Per-module progress panel: undo lesson mark, clear quiz score, reset flashcards | 2026-10-09 |
+| ✅ | Visual redesign: exam blueprint strip, milestone path, index-card flashcards | 2026-10-10 |
 | ⬜ | Spaced repetition for flashcards | |
 | ⬜ | Dashboard: progress per domain, streak, weakest-topics quiz | |
 | ⬜ | Study plan with exam date countdown | |

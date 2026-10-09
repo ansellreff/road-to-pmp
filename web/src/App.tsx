@@ -1,4 +1,5 @@
 import { Link, Route, Routes } from 'react-router-dom'
+import Milestone from './components/Milestone'
 import NotFound from './components/NotFound'
 import Home from './pages/Home'
 import CoursePage from './pages/CoursePage'
@@ -7,15 +8,15 @@ import ModulePage from './pages/ModulePage'
 export default function App() {
   return (
     <div className="min-h-screen">
-      <header className="border-b border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-4xl items-center justify-between px-4 py-3">
-          <Link to="/" className="text-lg font-bold text-indigo-700">
+      <header className="border-b border-ink bg-surface">
+        <div className="mx-auto flex max-w-5xl items-center px-4 py-3 sm:px-6">
+          <Link to="/" className="title flex items-center gap-2 text-xl">
+            <Milestone value={1} size={20} />
             Road to PMI
           </Link>
-          <span className="text-sm text-slate-500">Personal study platform</span>
         </div>
       </header>
-      <main className="mx-auto max-w-4xl px-4 py-8">
+      <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/:courseId" element={<CoursePage />} />

@@ -1,9 +1,17 @@
 import { Link, useParams } from 'react-router-dom'
+import ExamBlueprint from '../components/ExamBlueprint'
+import Milestone from '../components/Milestone'
 import NotFound from '../components/NotFound'
-import ProgressBar from '../components/ProgressBar'
 import { getCourse } from '../lib/content'
 import { moduleCompletion, moduleKey, useProgress } from '../lib/progress'
-import { courseCompletion } from './Home'
+import { percent } from '../lib/stats'
+import { link } from '../lib/ui'
+
+function status(value: number): string {
+  if (value >= 1) return 'Complete'
+  if (value > 0) return `${percent(value)} done`
+  return 'Not started'
+}
 
 export default function CoursePage() {
   const { courseId } = useParams()
@@ -13,51 +21,58 @@ export default function CoursePage() {
 
   return (
     <div>
-      <Link to="/" className="text-sm text-indigo-700 hover:underline">
-        ← All certifications
+      <Link to="/" className={`${link} text-sm`}>
+        Your certification path
       </Link>
-      <h1 className="mt-2 text-2xl font-bold text-slate-900">{course.title}</h1>
-      <p className="text-slate-500">{course.subtitle}</p>
-      <ProgressBar value={courseCompletion(course, progress)} className="mt-4 max-w-md" />
+      <h1 className="title mt-3 text-4xl sm:text-5xl">{course.title}</h1>
+      <p className="mt-1 text-muted">
+        {course.subtitle}. {course.exam.questions} questions in {course.exam.minutes} minutes.
+      </p>
+      <div className="mt-8">
+        <ExamBlueprint course={course} progress={progress} />
+      </div>
 
-      <div className="mt-8 space-y-8">
+      <div className="mt-12 space-y-12">
         {course.domains.map((domain, i) => (
-          <section key={domain.id}>
-            <div className="flex items-baseline justify-between gap-4">
-              <h2 className="text-lg font-semibold text-slate-900">
+          <section key={domain.id} id={domain.id} className="scroll-mt-6">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b-2 border-ink pb-2">
+              <h2 className="title text-2xl">
                 Domain {i + 1}: {domain.title}
               </h2>
-              <span className="shrink-0 rounded-full bg-indigo-100 px-2.5 py-0.5 text-xs font-medium text-indigo-800">
-                {domain.weight}% of exam
-              </span>
+              <p className="text-sm text-muted">
+                {domain.weight}% of the exam, about {Math.round((domain.weight / 100) * course.exam.questions)} questions
+              </p>
             </div>
-            <ul className="mt-3 divide-y divide-slate-100 overflow-hidden rounded-xl border border-slate-200 bg-white">
+            <ol>
               {domain.modules.map((m, j) => {
-                const label = `${i + 1}.${j + 1}  ${m.title}`
-                if (!m.ready) {
-                  return (
-                    <li key={m.id} className="flex items-center justify-between gap-4 px-4 py-3 text-slate-400">
-                      <span>{label}</span>
-                      <span className="shrink-0 text-xs">Coming soon</span>
-                    </li>
-                  )
-                }
+                const value = m.ready ? moduleCompletion(progress, moduleKey(course.id, m.id)) : 0
                 return (
-                  <li key={m.id}>
-                    <Link
-                      to={`/${course.id}/${m.id}`}
-                      className="flex flex-col gap-2 px-4 py-3 hover:bg-indigo-50 sm:flex-row sm:items-center sm:justify-between sm:gap-4"
+                  <li
+                    key={m.id}
+                    className="relative grid grid-cols-[1.5rem_2.75rem_1fr] items-center gap-x-2 border-b border-line py-3 before:absolute before:top-0 before:bottom-0 before:left-[8.5px] before:w-px before:bg-line first:before:top-1/2 last:before:bottom-1/2 sm:grid-cols-[1.5rem_2.75rem_1fr_auto]"
+                  >
+                    <span className="relative">
+                      <Milestone value={value} planned={!m.ready} />
+                    </span>
+                    <span className="tabular-nums text-muted">
+                      {i + 1}.{j + 1}
+                    </span>
+                    {m.ready ? (
+                      <Link to={`/${course.id}/${m.id}`} className="font-semibold hover:text-plan hover:underline">
+                        {m.title}
+                      </Link>
+                    ) : (
+                      <span className="text-muted">{m.title}</span>
+                    )}
+                    <span
+                      className={`col-start-3 text-sm sm:col-start-4 ${value >= 1 ? 'font-semibold text-done' : 'text-muted'}`}
                     >
-                      <span className="font-medium text-slate-800">{label}</span>
-                      <ProgressBar
-                        value={moduleCompletion(progress, moduleKey(course.id, m.id))}
-                        className="sm:w-40 sm:shrink-0"
-                      />
-                    </Link>
+                      {m.ready ? status(value) : 'Not written yet'}
+                    </span>
                   </li>
                 )
               })}
-            </ul>
+            </ol>
           </section>
         ))}
       </div>

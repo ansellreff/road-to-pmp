@@ -1,5 +1,5 @@
-import type { ReactNode } from 'react'
 import { clearCards, clearQuiz, moduleKey, setLessonDone, useProgress } from '../lib/progress'
+import { btnQuiet } from '../lib/ui'
 
 const formatDate = (iso: string) => new Date(iso).toLocaleDateString(undefined, { dateStyle: 'medium' })
 
@@ -14,12 +14,10 @@ export default function ModuleProgress({ courseId, moduleId }: { courseId: strin
   const deckSize = progress.cardTotals[key]
 
   return (
-    <section className="mt-10 rounded-xl border border-slate-200 bg-white p-5">
-      <h2 className="font-semibold text-slate-900">Your progress in this module</h2>
-      <p className="mt-1 text-sm text-slate-500">
-        Saved automatically in this browser. You can change or remove any mark at any time.
-      </p>
-      <dl className="mt-3 divide-y divide-slate-100 text-sm">
+    <section className="mt-16 max-w-3xl border-t-2 border-ink pt-5">
+      <h2 className="title text-xl">Your progress in this module</h2>
+      <p className="mt-1 text-sm text-muted">Saved in this browser as you go. You can undo any of it here.</p>
+      <dl className="mt-3">
         <Row
           label="Lesson"
           value={lessonDate ? `Completed on ${formatDate(lessonDate)}` : 'Not completed'}
@@ -30,16 +28,16 @@ export default function ModuleProgress({ courseId, moduleId }: { courseId: strin
           label="Quiz"
           value={
             quiz
-              ? `Best ${quiz.best}/${quiz.total}, last ${quiz.last}/${quiz.total}, ${quiz.attempts} attempt${quiz.attempts === 1 ? '' : 's'}`
-              : 'Not taken yet'
+              ? `Best ${quiz.best} of ${quiz.total}, last ${quiz.last} of ${quiz.total}, ${quiz.attempts} ${quiz.attempts === 1 ? 'attempt' : 'attempts'}`
+              : 'Not taken'
           }
           action={quiz ? 'Clear quiz score' : undefined}
           onAction={() => clearQuiz(key)}
         />
         <Row
           label="Flashcards"
-          value={rated ? `${known} of ${deckSize ?? rated} marked as known` : 'Not started'}
-          action={rated ? 'Reset all cards' : undefined}
+          value={rated ? `${known} of ${deckSize ?? rated} known` : 'Not started'}
+          action={rated ? 'Reset flashcards' : undefined}
           onAction={() => clearCards(key)}
         />
       </dl>
@@ -47,18 +45,15 @@ export default function ModuleProgress({ courseId, moduleId }: { courseId: strin
   )
 }
 
-function Row(props: { label: string; value: ReactNode; action?: string; onAction: () => void }) {
+function Row(props: { label: string; value: string; action?: string; onAction: () => void }) {
   return (
-    <div className="flex flex-wrap items-center justify-between gap-2 py-2.5">
+    <div className="flex flex-wrap items-center justify-between gap-2 border-b border-line py-3">
       <div>
-        <dt className="inline font-medium text-slate-800">{props.label}: </dt>
-        <dd className="inline text-slate-600">{props.value}</dd>
+        <dt className="inline font-semibold">{props.label}: </dt>
+        <dd className="inline text-muted">{props.value}</dd>
       </div>
       {props.action && (
-        <button
-          onClick={props.onAction}
-          className="rounded-lg border border-slate-300 bg-white px-3 py-1 text-xs hover:bg-slate-100"
-        >
+        <button onClick={props.onAction} className={btnQuiet}>
           {props.action}
         </button>
       )}

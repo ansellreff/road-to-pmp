@@ -1,0 +1,11 @@
+{
+  "enabledPlugins": {
+    "frontend-design@anthropic-plugin-directory": true,
+    "productivity@anthropic-plugin-directory": true,
+    "claude-md-management@anthropic-plugin-directory": true,
+    "supabase@anthropic-plugin-directory": true,
+    "figma@anthropic-plugin-directory": true,
+    "design@anthropic-plugin-directory": true,
+    "pdf-viewer@anthropic-plugin-directory": true
+  }
+}

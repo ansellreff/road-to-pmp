@@ -5,6 +5,8 @@ import ModuleProgress from '../components/ModuleProgress'
 import NotFound from '../components/NotFound'
 import Quiz from '../components/Quiz'
 import { findModule, getCourse } from '../lib/content'
+import { moduleNumber } from '../lib/stats'
+import { link } from '../lib/ui'
 
 const tabs = [
   { id: 'lesson', label: 'Lesson' },
@@ -22,23 +24,23 @@ export default function ModulePage() {
 
   return (
     <div>
-      <Link to={`/${course.id}`} className="text-sm text-indigo-700 hover:underline">
-        ← {course.title} modules
+      <Link to={`/${course.id}`} className={`${link} text-sm`}>
+        All {course.title} modules
       </Link>
-      <p className="mt-2 text-sm text-slate-500">{domain.title}</p>
-      <h1 className="text-2xl font-bold text-slate-900">{module.title}</h1>
+      <p className="mt-4 text-sm text-muted">
+        Module {moduleNumber(course, module.id)} in {domain.title}
+      </p>
+      <h1 className="title mt-1 max-w-3xl text-3xl sm:text-4xl">{module.title}</h1>
 
-      <nav className="mt-5 flex gap-1 border-b border-slate-200">
+      <nav className="mt-6 flex gap-6 border-b border-ink" aria-label="Module sections">
         {tabs.map((t) => (
           <NavLink
             key={t.id}
             to={t.id === 'lesson' ? base : `${base}/${t.id}`}
             end
             className={({ isActive }) =>
-              `-mb-px border-b-2 px-4 py-2 text-sm font-medium ${
-                isActive
-                  ? 'border-indigo-600 text-indigo-700'
-                  : 'border-transparent text-slate-500 hover:text-slate-800'
+              `title -mb-px border-b-4 pb-2 text-lg ${
+                isActive ? 'border-plan' : 'border-transparent font-medium text-muted hover:text-ink'
               }`
             }
           >
@@ -48,7 +50,7 @@ export default function ModulePage() {
       </nav>
 
       {/* key remounts the tab when switching modules so no state leaks between them */}
-      <div className="mt-6" key={`${base}/${tab}`}>
+      <div className="mt-8" key={`${base}/${tab}`}>
         {tab === 'lesson' && <Lesson courseId={course.id} moduleId={module.id} />}
         {tab === 'quiz' && <Quiz courseId={course.id} moduleId={module.id} />}
         {tab === 'flashcards' && <Flashcards courseId={course.id} moduleId={module.id} />}

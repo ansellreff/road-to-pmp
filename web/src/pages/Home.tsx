@@ -1,53 +1,84 @@
 import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import ProgressBar from '../components/ProgressBar'
+import ExamBlueprint from '../components/ExamBlueprint'
+import Milestone from '../components/Milestone'
 import { allModules, courses, type Course } from '../lib/content'
-import {
-  exportProgress,
-  importProgress,
-  moduleCompletion,
-  moduleKey,
-  resetProgress,
-  useProgress,
-  type Progress,
-} from '../lib/progress'
+import { exportProgress, importProgress, resetProgress, useProgress, type Progress } from '../lib/progress'
+import { courseCompletion, moduleNumber, nextModule, percent } from '../lib/stats'
+import { btnDanger, btnPrimary, btnQuiet, link } from '../lib/ui'
 
-export function courseCompletion(course: Course, progress: Progress): number {
-  const modules = allModules(course)
-  const sum = modules.reduce((acc, m) => acc + moduleCompletion(progress, moduleKey(course.id, m.id)), 0)
-  return modules.length ? sum / modules.length : 0
-}
+// The planned order of certifications. One with content in src/content becomes a live course.
+const path = [
+  { id: 'capm', name: 'CAPM' },
+  { id: 'pmp', name: 'PMP' },
+  { id: 'pmi-acp', name: 'PMI-ACP' },
+  { id: 'pmi-sp', name: 'PMI-SP' },
+]
 
 export default function Home() {
   const progress = useProgress()
   return (
-    <div className="space-y-10">
+    <div className="space-y-14">
       <section>
-        <h1 className="text-2xl font-bold text-slate-900">Your certifications</h1>
-        <div className="mt-4 grid gap-4 sm:grid-cols-2">
-          {courses.map((course) => {
-            const modules = allModules(course)
-            const ready = modules.filter((m) => m.ready).length
+        <h1 className="title text-4xl sm:text-5xl">Your certification path</h1>
+        <ol className="mt-8 grid grid-cols-4">
+          {path.map((step, i) => {
+            const course = courses.find((c) => c.id === step.id)
+            const done = course ? courseCompletion(course, progress) : 0
             return (
-              <Link
-                key={course.id}
-                to={`/${course.id}`}
-                className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-indigo-300 hover:shadow"
-              >
-                <div className="text-xl font-bold text-slate-900">{course.title}</div>
-                <div className="text-sm text-slate-500">{course.subtitle}</div>
-                <div className="mt-3 text-sm text-slate-600">
-                  {ready} of {modules.length} modules available · exam: {course.exam.questions} questions,{' '}
-                  {course.exam.minutes} minutes
-                </div>
-                <ProgressBar value={courseCompletion(course, progress)} className="mt-4" />
-              </Link>
+              <li key={step.id} className="relative pr-2">
+                {i < path.length - 1 && <span className="absolute left-0 right-0 top-[13px] h-0.5 bg-line" />}
+                <span className="relative block w-fit bg-paper pr-2">
+                  <Milestone value={done} planned={!course} size={28} />
+                </span>
+                <span className="title mt-2 block text-lg sm:text-2xl">
+                  {course ? <Link to={`/${course.id}`}>{step.name}</Link> : step.name}
+                </span>
+                <span className="block text-sm text-muted">{course ? `${percent(done)} complete` : 'Planned'}</span>
+              </li>
             )
           })}
-        </div>
+        </ol>
       </section>
+
+      {courses.map((course) => (
+        <CourseSummary key={course.id} course={course} progress={progress} />
+      ))}
+
       <Backup />
     </div>
+  )
+}
+
+function CourseSummary({ course, progress }: { course: Course; progress: Progress }) {
+  const modules = allModules(course)
+  const written = modules.filter((m) => m.ready).length
+  const next = nextModule(course, progress)
+  return (
+    <section className="border-t-2 border-ink pt-6">
+      <h2 className="title text-3xl">{course.title}</h2>
+      <p className="text-muted">
+        {course.subtitle}. {course.exam.questions} questions in {course.exam.minutes} minutes.
+      </p>
+      <div className="mt-6">
+        <ExamBlueprint course={course} progress={progress} />
+      </div>
+      <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
+        {next ? (
+          <Link to={`/${course.id}/${next.id}`} className={btnPrimary}>
+            Continue with {moduleNumber(course, next.id)} {next.title}
+          </Link>
+        ) : (
+          <span className="text-sm text-muted">You have finished every module written so far.</span>
+        )}
+        <Link to={`/${course.id}`} className={link}>
+          See all {modules.length} modules
+        </Link>
+        <span className="text-sm text-muted">
+          {written} of {modules.length} written so far
+        </span>
+      </div>
+    </section>
   )
 }
 
@@ -62,15 +93,16 @@ function Backup() {
     a.download = `road-to-pmi-progress-${new Date().toISOString().slice(0, 10)}.json`
     a.click()
     URL.revokeObjectURL(a.href)
+    setMessage('Backup downloaded.')
   }
 
   async function upload(file: File | undefined) {
     if (!file) return
     try {
       importProgress(await file.text())
-      setMessage('Progress restored.')
+      setMessage('Progress restored from backup.')
     } catch (e) {
-      setMessage(e instanceof Error ? e.message : 'Could not read that file.')
+      setMessage(e instanceof Error ? e.message : 'That file could not be read. Choose a backup downloaded from this page.')
     }
     if (fileInput.current) fileInput.current.value = ''
   }
@@ -78,26 +110,26 @@ function Backup() {
   function reset() {
     if (window.confirm('Delete all progress saved in this browser? This cannot be undone.')) {
       resetProgress()
-      setMessage('Progress cleared.')
+      setMessage('All progress deleted.')
     }
   }
 
-  const button = 'rounded-lg border border-slate-300 bg-white px-3 py-1.5 text-sm hover:bg-slate-100'
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-5">
-      <h2 className="font-semibold text-slate-900">Progress backup</h2>
-      <p className="mt-1 text-sm text-slate-600">
-        Progress is saved in this browser only. Download a backup to keep it safe or to move it to another device.
+    <section className="border-t border-line pt-6">
+      <h2 className="title text-xl">Your saved progress</h2>
+      <p className="mt-1 max-w-2xl text-sm text-muted">
+        Progress saves automatically in this browser and stays after you close it. To use it on another device, download
+        a backup here and restore it there.
       </p>
-      <div className="mt-3 flex flex-wrap gap-2">
-        <button className={button} onClick={download}>
+      <div className="mt-4 flex flex-wrap gap-2">
+        <button className={btnQuiet} onClick={download}>
           Download backup
         </button>
-        <button className={button} onClick={() => fileInput.current?.click()}>
+        <button className={btnQuiet} onClick={() => fileInput.current?.click()}>
           Restore from backup
         </button>
-        <button className={`${button} text-red-700`} onClick={reset}>
-          Reset progress
+        <button className={btnDanger} onClick={reset}>
+          Delete all progress
         </button>
         <input
           ref={fileInput}
@@ -107,7 +139,11 @@ function Backup() {
           onChange={(e) => upload(e.target.files?.[0])}
         />
       </div>
-      {message && <p className="mt-2 text-sm text-slate-600">{message}</p>}
+      {message && (
+        <p className="mt-3 text-sm" role="status">
+          {message}
+        </p>
+      )}
     </section>
   )
 }
