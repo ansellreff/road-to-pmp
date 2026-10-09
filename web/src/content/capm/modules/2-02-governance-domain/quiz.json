@@ -1,0 +1,462 @@
+[
+  {
+    "id": "q1",
+    "q": "Which Governance process produces the project charter?",
+    "options": [
+      "Integrate and Align Project Plans",
+      "Manage Project Execution",
+      "Initiate Project or Phase",
+      "Close Project or Phase"
+    ],
+    "answer": 2,
+    "explanation": "Initiate Project or Phase officially authorizes the project by creating a project charter or similar document. Its outputs are the charter and the assumption log.",
+    "ref": "PMBOK 8, Guide 2.1.6.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 122,
+        "label": "PMBOK 8, Guide 2.1.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which is an input to the Initiate Project or Phase process?",
+    "options": [
+      "The business case",
+      "Work performance data",
+      "Accepted deliverables",
+      "The final report"
+    ],
+    "answer": 0,
+    "explanation": "Inputs include the business documents (business case, benefits management plan), agreements, EEFs and OPAs.",
+    "ref": "PMBOK 8, Guide 2.1.6.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 122,
+        "label": "PMBOK 8, Guide 2.1.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "What is the main output of the Integrate and Align Project Plans process?",
+    "options": [
+      "Project charter",
+      "Project management plan",
+      "Lessons learned register",
+      "Work performance reports"
+    ],
+    "answer": 1,
+    "explanation": "This process consolidates and aligns all plan components into a unified project management plan.",
+    "ref": "PMBOK 8, Guide 2.1.6.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 123,
+        "label": "PMBOK 8, Guide 2.1.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "How much planning detail does the PMBOK Guide recommend?",
+    "options": [
+      "As much detail as possible before any work starts",
+      "No planning in adaptive projects",
+      "The same fixed level for every project",
+      "Enough to move forward appropriately, but not more detailed than necessary"
+    ],
+    "answer": 3,
+    "explanation": "The time spent planning should fit the circumstances: sufficient to move forward in an appropriate manner, but not more detailed than necessary.",
+    "ref": "PMBOK 8, Guide 2.1.6.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 123,
+        "label": "PMBOK 8, Guide 2.1.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A company needs a common commodity service that it does not provide itself, and wants to shift delivery risk to another party. Which sourcing decision fits best?",
+    "options": [
+      "Insource, because control is always better",
+      "Outsource (buy)",
+      "Cancel the project",
+      "Delay the decision until closing"
+    ],
+    "answer": 1,
+    "explanation": "Outsourcing is often less expensive when goods or services are common, brings in missing expertise, and transfers delivery risk to the supplier.",
+    "ref": "PMBOK 8, Guide Table 2-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 126,
+        "label": "PMBOK 8, Guide Table 2-3"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which technique is used in Plan Sourcing Strategy to decide whether work is done internally or bought from outside?",
+    "options": [
+      "Earned value analysis",
+      "Tuckman ladder",
+      "Make-or-buy analysis",
+      "Storytelling"
+    ],
+    "answer": 2,
+    "explanation": "Make-or-buy analysis determines whether work or deliverables are better accomplished internally or purchased from outside sources.",
+    "ref": "PMBOK 8, Guide 2.1.6.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 124,
+        "label": "PMBOK 8, Guide 2.1.6.3"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which process leads and performs the work defined in the project management plan and implements approved changes?",
+    "options": [
+      "Manage Project Execution",
+      "Monitor and Control Project Performance",
+      "Assess and Implement Changes",
+      "Initiate Project or Phase"
+    ],
+    "answer": 0,
+    "explanation": "Manage Project Execution performs the planned work and implements approved changes, including corrective actions, preventive actions and defect remediation.",
+    "ref": "PMBOK 8, Guide 2.1.6.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 126,
+        "label": "PMBOK 8, Guide 2.1.6.4"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which of the following are outputs of Manage Project Execution?",
+    "options": [
+      "Project charter and assumption log",
+      "Work performance reports and forecasts",
+      "Approved change requests",
+      "Deliverables and work performance data"
+    ],
+    "answer": 3,
+    "explanation": "Outputs include deliverables, work performance data, the issue log and change requests. Reports come from monitoring and controlling; approved change requests are an input.",
+    "ref": "PMBOK 8, Guide 2.1.6.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 126,
+        "label": "PMBOK 8, Guide 2.1.6.4"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What is the difference between quality assurance and quality control?",
+    "options": [
+      "There is none; the terms are interchangeable",
+      "Quality assurance concerns using project processes effectively; quality control concerns deliverables meeting specifications",
+      "Quality assurance is done by the customer; quality control by the sponsor",
+      "Quality assurance happens only at closing"
+    ],
+    "answer": 1,
+    "explanation": "Quality assurance is about using processes effectively (standards, compliance, audits). Quality control is about deliverables meeting defined specifications (testing, defects).",
+    "ref": "PMBOK 8, Guide 2.1.6.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 128,
+        "label": "PMBOK 8, Guide 2.1.6.5"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "An independent reviewer checks whether the project team is following the organization's required procedures. This is:",
+    "options": [
+      "Quality control",
+      "Validate Scope",
+      "A quality audit, part of quality assurance",
+      "Defect repair"
+    ],
+    "answer": 2,
+    "explanation": "Audits examine whether processes are being followed, which is quality assurance. Inspecting or testing a deliverable would be quality control.",
+    "ref": "PMBOK 8, Guide 2.1.6.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 128,
+        "label": "PMBOK 8, Guide 2.1.6.5"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "A senior engineer 'just knows' from years of experience when a design will fail, but finds it hard to explain why. This is an example of:",
+    "options": [
+      "Tacit knowledge",
+      "Explicit knowledge",
+      "Work performance data",
+      "An organizational process asset"
+    ],
+    "answer": 0,
+    "explanation": "Tacit knowledge is personal, embedded in a person's mind, experience-based and difficult to articulate. Explicit knowledge can be codified in words, pictures or numbers.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What is the best way to share tacit knowledge within a project?",
+    "options": [
+      "Store it in a database",
+      "Write it in the project charter",
+      "Email a procedure to the team",
+      "Through conversation and interaction, such as mentoring and face-to-face work"
+    ],
+    "answer": 3,
+    "explanation": "Tacit knowledge is shared through conversations and interactions: mentoring, team building, face-to-face work and storytelling, in a trusting environment.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "When should lessons learned be captured?",
+    "options": [
+      "Only at the end of the project",
+      "Throughout the project and at its closure",
+      "Only when the project fails",
+      "Only if the sponsor asks"
+    ],
+    "answer": 1,
+    "explanation": "Managing knowledge involves more than obtaining lessons learned at the end. Teams decide how and when lessons learned and retrospectives are conducted throughout the project.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which process tracks, reviews and reports overall progress and produces work performance reports?",
+    "options": [
+      "Manage Project Execution",
+      "Manage Project Knowledge",
+      "Monitor and Control Project Performance",
+      "Integrate and Align Project Plans"
+    ],
+    "answer": 2,
+    "explanation": "Monitor and Control Project Performance takes work performance information and produces work performance reports, change requests and forecasts.",
+    "ref": "PMBOK 8, Guide 2.1.6.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 131,
+        "label": "PMBOK 8, Guide 2.1.6.7"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A team is measured only on the number of features delivered, so it starts producing many small, low-value features. Which measurement pitfall is this?",
+    "options": [
+      "The Hawthorne effect",
+      "Confirmation bias",
+      "Correlation versus causation",
+      "A lagging indicator"
+    ],
+    "answer": 0,
+    "explanation": "The Hawthorne effect: the act of measuring something influences behavior. Measuring only output volume encourages volume over value.",
+    "ref": "PMBOK 8, Guide 2.1.6.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A dashboard shows total website page views, which keep rising but do not help anyone decide anything. This is:",
+    "options": [
+      "A leading indicator",
+      "A baseline",
+      "A SMART metric",
+      "A vanity metric"
+    ],
+    "answer": 3,
+    "explanation": "A vanity metric shows data but does not provide useful information for making decisions.",
+    "ref": "PMBOK 8, Guide 2.1.6.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "In a predictive project, when do changes start to be formally controlled?",
+    "options": [
+      "From the first day of the project",
+      "Once baselines are established",
+      "Only during closing",
+      "Never; changes are informal"
+    ],
+    "answer": 1,
+    "explanation": "In predictive approaches, changes are not formally controlled until baselines are established. After that, all changes go through the formal process.",
+    "ref": "PMBOK 8, Guide 2.1.6.8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.8"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A stakeholder asks the project manager to add a feature after the scope baseline is approved. What should the project manager do FIRST?",
+    "options": [
+      "Add the feature to keep the stakeholder happy",
+      "Refuse, because the baseline is fixed",
+      "Document the request and assess its impact on schedule, cost and other aspects",
+      "Ask the team to work overtime"
+    ],
+    "answer": 2,
+    "explanation": "Changes should be documented and analyzed for impact, including schedule and cost, before a decision is made by the designated person or change control board.",
+    "ref": "PMBOK 8, Guide 2.1.6.8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.8"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "What is the role of a change control board (CCB)?",
+    "options": [
+      "To review, evaluate, approve, defer or reject changes, and record and communicate the decisions",
+      "To perform the project work",
+      "To write the business case",
+      "To verify deliverables for correctness"
+    ],
+    "answer": 0,
+    "explanation": "The CCB is a formally established group responsible for reviewing, evaluating, approving, deferring or rejecting changes, and documenting and communicating its decisions.",
+    "ref": "PMBOK 8, Guide 2.1.6.8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.8"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "How are changes typically managed in an adaptive project?",
+    "options": [
+      "Through a formal change control board for every item",
+      "Changes are not allowed",
+      "By rewriting the project charter",
+      "Through backlog management: the change becomes a backlog item and is prioritized"
+    ],
+    "answer": 3,
+    "explanation": "In adaptive approaches a proposed change is recorded as a product backlog item, its impact is analyzed and it is prioritized. Low priority means deferred; not added means rejected.",
+    "ref": "PMBOK 8, Guide 2.1.6.8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.8"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A project is cancelled halfway because funding was withdrawn. Which statement is correct?",
+    "options": [
+      "No closing is needed for a cancelled project",
+      "Close Project or Phase still applies, including documenting the reasons for termination",
+      "The project manager should keep the team working until told otherwise",
+      "Only the sponsor performs closing"
+    ],
+    "answer": 1,
+    "explanation": "Close Project or Phase finalizes both successful and unsuccessful projects, and includes investigating and documenting why a project was terminated early.",
+    "ref": "PMBOK 8, Guide 2.1.6.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 136,
+        "label": "PMBOK 8, Guide 2.1.6.9"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which is a required input before a project can be closed normally?",
+    "options": [
+      "Work performance data",
+      "A new business case",
+      "Accepted deliverables",
+      "The make-or-buy analysis"
+    ],
+    "answer": 2,
+    "explanation": "Accepted deliverables are an input to Close Project or Phase. Closing confirms that deliverables were delivered and formally accepted by the customer.",
+    "ref": "PMBOK 8, Guide 2.1.6.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 136,
+        "label": "PMBOK 8, Guide 2.1.6.9"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which of the following is an output of Close Project or Phase?",
+    "options": [
+      "Final report and transition of the final product, service or result",
+      "Project charter",
+      "Project management plan",
+      "Approved change requests"
+    ],
+    "answer": 0,
+    "explanation": "Outputs include the final product, service or result transition, the final report, lessons learned register updates and organizational process asset updates.",
+    "ref": "PMBOK 8, Guide 2.1.6.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 136,
+        "label": "PMBOK 8, Guide 2.1.6.9"
+      }
+    ]
+  }
+]

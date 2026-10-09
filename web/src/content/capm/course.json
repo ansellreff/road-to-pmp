@@ -27,8 +27,8 @@
       "title": "Predictive, Plan-Based Methodologies",
       "weight": 17,
       "modules": [
-        { "id": "2-01-processes-inputs-outputs", "title": "How Predictive Projects Flow: Processes, Inputs and Outputs", "ready": false },
-        { "id": "2-02-governance-domain", "title": "Governance Domain: Charter, Plan, Change Control, Closing", "ready": false },
+        { "id": "2-01-processes-inputs-outputs", "title": "How Predictive Projects Flow: Processes, Inputs and Outputs", "ready": true },
+        { "id": "2-02-governance-domain", "title": "Governance Domain: Charter, Plan, Change Control, Closing", "ready": true },
         { "id": "2-03-scope-domain", "title": "Scope Domain: Requirements and the WBS", "ready": false },
         { "id": "2-04-schedule-domain", "title": "Schedule Domain: Activities and Estimating", "ready": false },
         { "id": "2-05-critical-path", "title": "Critical Path Method: Forward Pass, Backward Pass, Float", "ready": false },

@@ -1,0 +1,382 @@
+[
+  {
+    "id": "q1",
+    "q": "In project management, what does ITTO stand for?",
+    "options": [
+      "Initiating, tracking, transferring, operating",
+      "Inputs, tools and techniques, and outputs",
+      "Integration, time, team, and objectives",
+      "Issues, threats, tasks, and opportunities"
+    ],
+    "answer": 1,
+    "explanation": "Each process is described by its inputs, tools and techniques, and outputs. The 8th edition lists sample ITTOs for each of its 40 processes.",
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which document formally authorizes the existence of a project and gives the project manager authority to apply organizational resources?",
+    "options": [
+      "Project management plan",
+      "Business case",
+      "Project charter",
+      "Benefits management plan"
+    ],
+    "answer": 2,
+    "explanation": "The project charter is issued by the project initiator or sponsor, formally authorizes the project and provides the project manager with authority to use organizational resources.",
+    "ref": "PMBOK 8, Guide section 4, Project charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 230,
+        "label": "PMBOK 8, Guide section 4, Project charter"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Who issues the project charter?",
+    "options": [
+      "The project initiator or sponsor",
+      "The project team",
+      "The end users",
+      "The change control board"
+    ],
+    "answer": 0,
+    "explanation": "The charter is issued by the project initiator or sponsor. The project manager may help develop it, but does not authorize their own project.",
+    "ref": "PMBOK 8, Guide section 4, Project charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 230,
+        "label": "PMBOK 8, Guide section 4, Project charter"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "When should the project manager be identified and assigned?",
+    "options": [
+      "After the project management plan is approved",
+      "When executing begins",
+      "Only once the first deliverable is due",
+      "As early as possible, ideally during charter development and always before planning begins"
+    ],
+    "answer": 3,
+    "explanation": "The project manager should be assigned as early as possible, ideally during development of the charter and always before planning begins.",
+    "ref": "PMBOK 8, Guide 2.1.6.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 122,
+        "label": "PMBOK 8, Guide 2.1.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "What is the business case?",
+    "options": [
+      "A list of all project risks",
+      "A documented economic feasibility study used to establish the validity of the benefits of the project",
+      "The detailed project schedule",
+      "The record of approved changes"
+    ],
+    "answer": 1,
+    "explanation": "The business case is a documented economic feasibility study. It gives the reasons and objectives for the project and is used at the end to measure success.",
+    "ref": "PMBOK 8, Guide section 4, Business case",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Business case"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Why are the business case and the benefits management plan called business documents instead of project documents?",
+    "options": [
+      "They are written by the project team during executing",
+      "They are confidential",
+      "They are developed before the project is initiated and are referenced again after it is completed",
+      "They contain no financial information"
+    ],
+    "answer": 2,
+    "explanation": "Both are developed prior to the project and referenced after it, so they are business documents, not project documents or components of the project management plan.",
+    "ref": "PMBOK 8, Guide section 4, Business case",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Business case"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What does the project management plan describe?",
+    "options": [
+      "How the project will be executed, monitored and controlled, and closed",
+      "Why the organization should invest in the project",
+      "The daily tasks of each team member",
+      "The list of issues found so far"
+    ],
+    "answer": 0,
+    "explanation": "The project management plan describes how the project will be executed, monitored and controlled, and closed. It is the basis for all project decisions and a living document.",
+    "ref": "PMBOK 8, Guide section 4, Project management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 231,
+        "label": "PMBOK 8, Guide section 4, Project management plan"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which of the following is a project document and NOT a component of the project management plan?",
+    "options": [
+      "Risk management plan",
+      "Schedule baseline",
+      "Scope management plan",
+      "Risk register"
+    ],
+    "answer": 3,
+    "explanation": "The risk register is a project document. The risk management plan, scope management plan and schedule baseline are parts of the project management plan.",
+    "ref": "PMBOK 8, Guide section 4, Project documents",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 230,
+        "label": "PMBOK 8, Guide section 4, Project documents"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "How can a baseline be changed?",
+    "options": [
+      "By any team member, whenever the work requires it",
+      "Only through formal change control procedures",
+      "It can never be changed",
+      "By the customer sending an email"
+    ],
+    "answer": 1,
+    "explanation": "A baseline is the approved version of a work product. It can be changed only using formal change control procedures and is the basis for comparison with actual results.",
+    "ref": "PMBOK 8, Glossary (baseline)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 370,
+        "label": "PMBOK 8, Glossary (baseline)"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A team member records: 'Activity 7 started on 3 May, 120 hours spent so far.' This is an example of:",
+    "options": [
+      "Work performance information",
+      "A work performance report",
+      "Work performance data",
+      "A change request"
+    ],
+    "answer": 2,
+    "explanation": "Raw observations and measurements taken while the work is performed are work performance data. They have not yet been compared with the plan.",
+    "ref": "PMBOK 8, Guide section 4, Work performance data",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, Work performance data"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "After comparing actual costs with the budget, the project manager concludes that the project is 8% over budget. This conclusion is:",
+    "options": [
+      "Work performance information",
+      "Work performance data",
+      "An enterprise environmental factor",
+      "A deliverable"
+    ],
+    "answer": 0,
+    "explanation": "Work performance information is data analyzed in comparison with the plan, which gives it context and shows how the project is performing.",
+    "ref": "PMBOK 8, Guide section 4, Work performance information",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance information"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What is the correct sequence?",
+    "options": [
+      "Work performance reports, then information, then data",
+      "Work performance information, then data, then reports",
+      "Work performance data, then reports, then information",
+      "Work performance data, then information, then reports"
+    ],
+    "answer": 3,
+    "explanation": "Raw data is collected during executing, analyzed into information by the controlling processes, and compiled into reports for stakeholders.",
+    "ref": "PMBOK 8, Guide section 4, Work performance reports",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance reports"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What is a change request?",
+    "options": [
+      "An informal suggestion mentioned in a meeting",
+      "A formal proposal to modify a document, deliverable or baseline",
+      "A complaint from a stakeholder",
+      "The final report at project closure"
+    ],
+    "answer": 1,
+    "explanation": "A change request is a formal proposal to modify a document, deliverable or baseline, and may be initiated inside or outside the project.",
+    "ref": "PMBOK 8, Guide section 4, Change requests",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Change requests"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "The project is two weeks behind schedule, so the project manager requests approval to add a second shift to catch up. Which type of change request is this?",
+    "options": [
+      "Preventive action",
+      "Defect repair",
+      "Corrective action",
+      "Update"
+    ],
+    "answer": 2,
+    "explanation": "A corrective action realigns current performance with the plan. A preventive action protects future performance; a defect repair fixes a nonconforming deliverable.",
+    "ref": "PMBOK 8, Guide Figure 2-11",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide Figure 2-11"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which statement about verified and accepted deliverables is correct?",
+    "options": [
+      "The team verifies a deliverable for correctness first; the customer or authorized stakeholder then accepts it",
+      "The customer verifies first; the team then accepts",
+      "They are the same thing",
+      "A deliverable is accepted before it is built"
+    ],
+    "answer": 0,
+    "explanation": "Verified deliverables have been checked for correctness and become the input to formal acceptance. Accepted deliverables have been validated against criteria and approved.",
+    "ref": "PMBOK 8, Guide section 4, Verified deliverables",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, Verified deliverables"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Nine people vote on three options. The results are 4, 3 and 2 votes. The option with 4 votes is chosen. Which decision-making method was used?",
+    "options": [
+      "Unanimity",
+      "Majority",
+      "Autocratic",
+      "Plurality"
+    ],
+    "answer": 3,
+    "explanation": "With plurality the largest block decides even without a majority. A majority would need more than 50%, which is at least 5 of 9.",
+    "ref": "PMBOK 8, Guide section 5, Decision-making",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decision-making"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Which of the following is a leading indicator?",
+    "options": [
+      "The number of deliverables completed last month",
+      "Key stakeholders are not available or engaged",
+      "The cost variance at the end of the phase",
+      "The total resources consumed"
+    ],
+    "answer": 1,
+    "explanation": "Leading indicators give early warning of future problems, such as disengaged stakeholders or unclear success criteria. The other options measure the past and are lagging indicators.",
+    "ref": "PMBOK 8, Guide 2.1.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 119,
+        "label": "PMBOK 8, Guide 2.1.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "What does the acronym SMART stand for?",
+    "options": [
+      "Simple, manageable, accurate, relevant, tested",
+      "Strategic, measurable, agile, reliable, tracked",
+      "Specific, measurable, achievable, realistic, time-bound",
+      "Scoped, monitored, approved, reported, tailored"
+    ],
+    "answer": 2,
+    "explanation": "SMART criteria help set clear, attainable and meaningful goals: specific, measurable, achievable, realistic and time-bound.",
+    "ref": "PMBOK 8, Guide 2.1.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 119,
+        "label": "PMBOK 8, Guide 2.1.5"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Which governance model is typically used on more predictive projects?",
+    "options": [
+      "Structured governance, with a sponsor, PMO leader, governance board and project manager",
+      "Self-governance by the team alone",
+      "No governance",
+      "Governance by the end users"
+    ],
+    "answer": 0,
+    "explanation": "Structured governance is often used on more predictive projects. Self-governance, where the team ensures value is delivered, is more common on adaptive projects.",
+    "ref": "PMBOK 8, Guide 2.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 116,
+        "label": "PMBOK 8, Guide 2.1.2"
+      }
+    ]
+  }
+]

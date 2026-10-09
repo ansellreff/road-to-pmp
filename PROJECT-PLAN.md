@@ -18,6 +18,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Source links added: every quiz question and every module now lists its book sections, with links that open the PDF from your materials folder at the right page (works on this PC only). Module 1.11 marked with a red * as additional information and removed from progress totals. Session 8 done: spaced repetition for flashcards, with a "Review due cards" session on the home page. | You: click a source link to confirm the PDF opens at the right page; try rating some flashcards. Next: Session 9, Domain 2 modules 2.1 and 2.2 |
 | 2026-10-10 | Lesson sources moved: each lesson section now shows its source and PDF link directly under its heading (86 sections across 11 modules). Open question: one of the PDFs asked you for a password. | You: tell me which book and which browser showed the password prompt. Next: Session 9, modules 2.1 and 2.2 |
 | 2026-10-10 | Password prompt fixed: Edge cannot open PMI's protected PMBOK PDFs, so the source links now use unlocked local copies (`.cache/pdf/`). The local server also answers byte-range requests properly. | You: click a source link and confirm the book opens at the right page. Next: Session 9, modules 2.1 and 2.2 |
+| 2026-10-10 | Session 9 done: Domain 2 started. Modules 2.1 (how predictive projects flow: charter, plan, work performance data, change requests) and 2.2 (the nine Governance processes) written, with a source under every lesson section. | You: study 2.1 and 2.2. Next: Session 10, modules 2.3 (Scope and the WBS) and 2.4 (Schedule) |
 
 ## How your progress is saved
 
@@ -97,7 +98,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 6 | Modules 1.8, 1.9: performance domains and tailoring; constraints, risks, issues |
 | ✅ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. (Code of Ethics PDF is in the materials folder) |
 | ✅ | 8 | Feature: spaced repetition for flashcards (plus source links to the PDFs) |
-| ⬜ | 9 to 14 | Domain 2: 12 modules |
+| 🟡 | 9 to 14 | Domain 2: 12 modules (Session 9 done: 2.1, 2.2) |
 | ⬜ | 15 | Feature: dashboard and "practice my weakest topics" quiz |
 | ⬜ | 16 to 19 | Domain 3: 8 modules |
 | ⬜ | 20 | Feature: study plan and exam countdown |
@@ -156,12 +157,12 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **11 of 38 modules done** (184 quiz questions, 260 flashcards).
+Overall: **13 of 38 modules done** (225 quiz questions, 318 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
 | ✅ | 1. PM Fundamentals and Core Concepts | 11 / 11 |
-| ⬜ | 2. Predictive, Plan-Based Methodologies | 0 / 12 |
+| 🟡 | 2. Predictive, Plan-Based Methodologies | 2 / 12 |
 | ⬜ | 3. Agile Frameworks / Methodologies | 0 / 8 |
 | ⬜ | 4. Business Analysis Frameworks | 0 / 7 |
 
@@ -185,8 +186,8 @@ Overall: **11 of 38 modules done** (184 quiz questions, 260 flashcards).
 
 | Status | Module | Done on |
 |---|---|---|
-| ⬜ | 2.1 How Predictive Projects Flow: Processes, Inputs and Outputs | |
-| ⬜ | 2.2 Governance Domain: Charter, Plan, Change Control, Closing | |
+| ✅ | 2.1 How Predictive Projects Flow: Processes, Inputs and Outputs | 2026-10-10 |
+| ✅ | 2.2 Governance Domain: Charter, Plan, Change Control, Closing | 2026-10-10 |
 | ⬜ | 2.3 Scope Domain: Requirements and the WBS | |
 | ⬜ | 2.4 Schedule Domain: Activities and Estimating | |
 | ⬜ | 2.5 Critical Path Method: Forward Pass, Backward Pass, Float | |

@@ -128,10 +128,13 @@ def resolve(part: str) -> tuple[str, int] | None:
     if named and book == "pmbok8":
         listing = (218, 249) if named.group(1) == "4" else (250, 321)
         name = named.group(2).strip()
-        for candidate in (name, name.split(" and ")[0]):
-            page = find_line(book, rf"^[^A-Za-z\n]*{re.escape(candidate)}\.", *listing, flags=0)
-            if page:
-                return book, page
+        # An entry starts its own line. Only if there is none, accept a bulleted sub-entry
+        # (some tools, such as "Interpersonal skills", are listed inside another entry).
+        for prefix in (r"^", r"^[^A-Za-z\n]+"):
+            for candidate in (name, name.split(" and ")[0]):
+                page = find_line(book, rf"{prefix}{re.escape(candidate)}\.", *listing, flags=0)
+                if page:
+                    return book, page
 
     # A section heading looks like "3.4<space>Focus on Value" (the books use an en space).
     number = re.search(r"\b(x?\d+(?:\.\d+)+)\b", part, re.IGNORECASE)
