@@ -10,7 +10,7 @@
 
 ## What the critical path method does
 
-@source PMBOK 8, Guide section 5, Critical path method (CPM)
+@source PMBOK 8, Guide section 5, Critical path method (CPM); Practice Standard for Scheduling, 2.2.1; Practice Standard for Scheduling, 3.4.1.1
 
 The **critical path method (CPM)** estimates the **minimum project duration** and shows how much **scheduling flexibility (float)** each activity has. It works on the network diagram and ignores resource limits.
 
@@ -18,13 +18,16 @@ The **critical path method (CPM)** estimates the **minimum project duration** an
 |---|---|
 | **Path** | A sequence of activities from the start of the network to the end |
 | **Critical path** | The **longest** path. It determines the shortest time in which the project can be finished. |
-| **Critical activity** | An activity on the critical path |
+| **Critical path activity** | An activity on the critical path |
 | **Near-critical path** | A path with very little float. A small delay turns it into a critical path. |
 | **Float (slack)** | The time an activity can be delayed without causing a problem |
 
 - A project can have **more than one critical path**. More critical paths means **more risk**.
 - The critical path can **change** during the project, when durations or logic change.
 - The early and late dates are not the actual schedule. They are **time windows** within which each activity may be done.
+- The critical path is not fixed once and for all. It should be **reviewed after every schedule update**.
+
+**Critical path activity or critical activity?** PMI's scheduling standard separates the two. A **critical path activity** is on the critical path. A **critical activity** is any activity vital to the project's success, usually because it is high risk, **even if it is not on the critical path**. Every critical path activity is a critical activity, but not the other way round.
 
 ## Finding the critical path by adding up paths
 
@@ -97,7 +100,7 @@ Start at the end of the network and work **backward**.
 
 ## Total float and free float
 
-@source PMBOK 8, Guide section 5, Critical path method (CPM); PMBOK 8, Guide Figure 5-4
+@source PMBOK 8, Guide section 5, Critical path method (CPM); PMBOK 8, Guide Figure 5-4; Practice Standard for Scheduling, 3.4.2
 
 | | Meaning | Formula |
 |---|---|---|
@@ -115,17 +118,19 @@ Start at the end of the network and work **backward**.
 
 - Activities with **zero total float** (A, C, E, F) form the **critical path**. The result matches the path method.
 - Activity **B** has 5 days of total float but **zero free float**: any delay to B pushes D, even though the project end is safe.
-- Float is **shared along a path**. B and D share the same 5 days. If B uses 3 of them, D has only 2 left.
+- **Total float is shared along a path; free float belongs to one activity.** B and D share the same 5 days. If B uses 3 of them, D has only 2 left.
+- Watch float after each update. **Shrinking total float** is a threat to the project end date. **Shrinking free float** means the next activities may start late.
 - A critical activity delayed by 2 days delays the project by **2 days**. A non-critical activity delays the project only by the amount its delay **exceeds its total float**.
 
 ## Negative float
 
-@source PMBOK 8, Guide section 5, Critical path method (CPM); PMBOK 8, Guide section 5, Schedule compression
+@source PMBOK 8, Guide section 5, Critical path method (CPM); PMBOK 8, Guide section 5, Schedule compression; Practice Standard for Scheduling, 3.4.4
 
 **Negative float** appears when an imposed date or constraint is **earlier than the logic and durations allow**. It means the schedule cannot meet the required date as planned.
 
 - Example: the calculation shows 17 days, but the customer needs the result in 15. The critical path has **−2 days** of float.
 - The response is to change durations, logic, leads and lags, or to **compress the schedule**.
+- **Date constraints** such as "must start on" or "finish no later than" remove flexibility and can distort the critical path. They should be used only when logic cannot model the situation, and the reason should be noted.
 
 ## Schedule compression: crashing and fast tracking
 
@@ -161,7 +166,7 @@ Example of leveling: Sue is assigned 16 hours of work on the same day. One of he
 
 ## Other schedule analysis techniques
 
-@source PMBOK 8, Guide section 5, Schedule network analysis; PMBOK 8, Guide section 5, What-if analysis; PMBOK 8, Guide section 5, Simulation; PMBOK 8, Guide section 5, Critical chain method; PMBOK 8, Guide section 4, Project schedule network diagram
+@source PMBOK 8, Guide section 5, Schedule network analysis; PMBOK 8, Guide section 5, What-if analysis; PMBOK 8, Guide section 5, Simulation; PMBOK 8, Guide section 5, Critical chain method; Practice Standard for Scheduling, 2.2.2; PMBOK 8, Guide section 4, Project schedule network diagram
 
 | Technique | What it does |
 |---|---|
@@ -169,6 +174,16 @@ Example of leveling: Sue is assigned 16 hours of work on the same day. One of he
 | **What-if analysis** | Evaluates scenarios ("what if the supplier is two weeks late?") to predict their effect on the schedule |
 | **Simulation (Monte Carlo analysis)** | Runs the schedule many times with different assumptions to show the range and probability of possible finish dates |
 | **Critical chain method** | Places **buffers** on schedule paths to account for limited resources and uncertainty, and protects the project due date with a shared project buffer |
+
+The **critical chain** is the longest **resource-leveled** path through the schedule, including buffers. It is often different from the critical path. Safety time is taken out of the individual activities and collected in buffers:
+
+| Buffer | Where it sits | Purpose |
+|---|---|---|
+| **Project buffer** | At the end, between the last activity and the delivery date | Protects the project end date |
+| **Feeding buffer** | Where a chain of non-critical activities joins the critical chain | Stops delays on side paths from reaching the critical chain |
+| **Resource buffer** | Along the critical chain | An early warning that a resource will be needed soon. It adds no time. |
+
+Progress is managed by watching how fast the project buffer is used up (**buffer management**).
 
 - **Path convergence** (an activity with several predecessors) and **path divergence** (several successors) are points of **higher schedule risk**.
 
@@ -186,4 +201,4 @@ Example of leveling: Sue is assigned 16 hours of work on the same day. One of he
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 5 (critical path method, schedule compression, resource optimization technique and related entries). The six-activity example is my own, calculated with the same day-1 convention as the Guide's Figure 5-4. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 5 (critical path method, schedule compression, resource optimization technique and related entries); Practice Standard for Scheduling, Third Edition, sections 2.2.1, 2.2.2, 3.4.1, 3.4.2 and 3.4.4 (critical path, critical chain and buffers, float, date constraints). The six-activity example is my own, calculated with the same day-1 convention as the Guide's Figure 5-4. Written in original wording for personal study.*

@@ -2,5 +2,6 @@
   "pmbok8": { "title": "PMBOK Guide, Eighth Edition", "file": "PMBOK Guide 8th Edition.pdf" },
   "pmbok7": { "title": "PMBOK Guide, Seventh Edition", "file": "PMBOK Guide 7th Edition.pdf" },
   "ethics": { "title": "PMI Code of Ethics and Professional Conduct", "file": "PMI Code of Ethics and Professional Conduct.pdf" },
-  "processgroups": { "title": "Process Groups: A Practice Guide", "file": "Process Groups A Practice Guide.pdf" }
+  "processgroups": { "title": "Process Groups: A Practice Guide", "file": "Process Groups A Practice Guide.pdf" },
+  "scheduling": { "title": "Practice Standard for Scheduling, Third Edition", "file": "Practice Standard for Scheduling - Third Edition.pdf" }
 }

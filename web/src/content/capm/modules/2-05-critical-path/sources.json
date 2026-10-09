@@ -53,5 +53,35 @@
     "book": "pmbok8",
     "page": 320,
     "label": "PMBOK 8, Guide section 5, What-if analysis"
+  },
+  {
+    "book": "scheduling",
+    "page": 29,
+    "label": "Practice Standard for Scheduling, 2.2.1"
+  },
+  {
+    "book": "scheduling",
+    "page": 33,
+    "label": "Practice Standard for Scheduling, 2.2.2"
+  },
+  {
+    "book": "scheduling",
+    "page": 86,
+    "label": "Practice Standard for Scheduling, 3.4.1.1"
+  },
+  {
+    "book": "scheduling",
+    "page": 87,
+    "label": "Practice Standard for Scheduling, 3.4.1.2"
+  },
+  {
+    "book": "scheduling",
+    "page": 87,
+    "label": "Practice Standard for Scheduling, 3.4.2"
+  },
+  {
+    "book": "scheduling",
+    "page": 91,
+    "label": "Practice Standard for Scheduling, 3.4.4"
   }
 ]

@@ -10,12 +10,17 @@
     ],
     "answer": 2,
     "explanation": "The critical path is the longest sequence of activities. Its length is the minimum time in which the project can be completed.",
-    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM); Practice Standard for Scheduling, 3.4.1.1",
     "links": [
       {
         "book": "pmbok8",
         "page": 265,
         "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      },
+      {
+        "book": "scheduling",
+        "page": 86,
+        "label": "Practice Standard for Scheduling, 3.4.1.1"
       }
     ]
   },
@@ -190,12 +195,17 @@
     ],
     "answer": 0,
     "explanation": "Total float is measured against the project finish date. The second option describes free float.",
-    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM); Practice Standard for Scheduling, 3.4.2",
     "links": [
       {
         "book": "pmbok8",
         "page": 265,
         "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      },
+      {
+        "book": "scheduling",
+        "page": 87,
+        "label": "Practice Standard for Scheduling, 3.4.2"
       }
     ]
   },
@@ -210,12 +220,17 @@
     ],
     "answer": 3,
     "explanation": "Free float protects the next activity. An activity can have total float but zero free float, if any delay would push its successor.",
-    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM); Practice Standard for Scheduling, 3.4.2",
     "links": [
       {
         "book": "pmbok8",
         "page": 265,
         "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      },
+      {
+        "book": "scheduling",
+        "page": 87,
+        "label": "Practice Standard for Scheduling, 3.4.2"
       }
     ]
   },
@@ -281,7 +296,7 @@
   },
   {
     "id": "q15",
-    "q": "To finish earlier, the project manager approves overtime and brings in two more people for a critical activity. Which technique is this?",
+    "q": "To finish earlier, the project manager approves overtime and brings in two more people for an activity on the critical path. Which technique is this?",
     "options": [
       "Fast tracking",
       "Resource leveling",
@@ -341,7 +356,7 @@
   },
   {
     "id": "q18",
-    "q": "Three activities could be crashed by one day each. A is critical and costs $500 to crash. B is not critical and costs $100. C is critical and costs $300. Which should be crashed first?",
+    "q": "Three activities could be crashed by one day each. A is on the critical path and costs $500 to crash. B is not on the critical path and costs $100. C is on the critical path and costs $300. Which should be crashed first?",
     "options": [
       "C",
       "A",
@@ -349,7 +364,7 @@
       "A and B together"
     ],
     "answer": 0,
-    "explanation": "Crash only critical activities, and among them choose the least incremental cost. B is cheapest but not on the critical path, so shortening it does not shorten the project.",
+    "explanation": "Crash only activities on the critical path, and among them choose the least incremental cost. B is cheapest but not on the critical path, so shortening it does not shorten the project.",
     "ref": "PMBOK 8, Guide section 5, Schedule compression",
     "links": [
       {
@@ -430,12 +445,77 @@
     ],
     "answer": 0,
     "explanation": "A project can have several critical paths. Each has zero float, so there are more activities whose delay would delay the project.",
-    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "ref": "Practice Standard for Scheduling, 3.4.1.1; PMBOK 8, Guide section 5, Critical path method (CPM)",
     "links": [
+      {
+        "book": "scheduling",
+        "page": 86,
+        "label": "Practice Standard for Scheduling, 3.4.1.1"
+      },
       {
         "book": "pmbok8",
         "page": 265,
         "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Activities X and Y are on the same non-critical path and share 6 days of total float. X finishes 4 days late. How much total float does Y have now?",
+    "options": [
+      "6 days",
+      "2 days",
+      "0 days",
+      "10 days"
+    ],
+    "answer": 1,
+    "explanation": "Total float is shared among the activities on a path. When X uses 4 of the 6 days, only 2 remain for the activities that follow it.",
+    "ref": "Practice Standard for Scheduling, 3.4.2",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 87,
+        "label": "Practice Standard for Scheduling, 3.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "In the critical chain method, where is the project buffer placed?",
+    "options": [
+      "Inside each activity's duration",
+      "Where a non-critical chain joins the critical chain",
+      "At the start of the project",
+      "At the end of the project, between the last activity and the delivery date"
+    ],
+    "answer": 3,
+    "explanation": "The project buffer is added at the end to protect the delivery date. A feeding buffer sits where a non-critical chain joins the critical chain.",
+    "ref": "Practice Standard for Scheduling, 2.2.2",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 33,
+        "label": "Practice Standard for Scheduling, 2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "According to PMI's scheduling standard, what is the difference between a critical path activity and a critical activity?",
+    "options": [
+      "There is no difference",
+      "A critical activity always has negative float",
+      "A critical path activity is on the critical path; a critical activity is vital to project success and may be off the critical path",
+      "A critical activity is one that costs the most"
+    ],
+    "answer": 2,
+    "explanation": "Critical activities are those vital to project success, normally high risk, even when they are not on the critical path. All critical path activities are also critical activities.",
+    "ref": "Practice Standard for Scheduling, 3.4.1.2",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 87,
+        "label": "Practice Standard for Scheduling, 3.4.1.2"
       }
     ]
   }

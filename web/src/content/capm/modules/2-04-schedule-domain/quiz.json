@@ -130,12 +130,17 @@
     ],
     "answer": 3,
     "explanation": "Start-to-finish, in which the successor cannot finish until the predecessor has started, is very rarely used. Finish-to-start is the most common.",
-    "ref": "PMBOK 8, Guide section 5, Precedence diagramming method",
+    "ref": "PMBOK 8, Guide section 5, Precedence diagramming method; Practice Standard for Scheduling, 3.4.8",
     "links": [
       {
         "book": "pmbok8",
         "page": 290,
         "label": "PMBOK 8, Guide section 5, Precedence diagramming method"
+      },
+      {
+        "book": "scheduling",
+        "page": 97,
+        "label": "Practice Standard for Scheduling, 3.4.8"
       }
     ]
   },
@@ -330,12 +335,17 @@
     ],
     "answer": 2,
     "explanation": "Triangular distribution is a simple average: (4 + 6 + 14) ÷ 3 = 8 days.",
-    "ref": "PMBOK 8, Guide section 5, Multipoint estimating",
+    "ref": "PMBOK 8, Guide section 5, Multipoint estimating; Practice Standard for Scheduling, 3.4.3",
     "links": [
       {
         "book": "pmbok8",
         "page": 288,
         "label": "PMBOK 8, Guide section 5, Multipoint estimating"
+      },
+      {
+        "book": "scheduling",
+        "page": 89,
+        "label": "Practice Standard for Scheduling, 3.4.3"
       }
     ]
   },
@@ -350,8 +360,13 @@
     ],
     "answer": 0,
     "explanation": "The beta or PERT formula weights the most likely estimate four times: (4 + 4×6 + 14) ÷ 6 = 42 ÷ 6 = 7 days.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Multipoint estimating",
+    "ref": "Practice Standard for Scheduling, 3.4.3; PMBOK 8, Guide section 5, Multipoint estimating",
     "links": [
+      {
+        "book": "scheduling",
+        "page": 89,
+        "label": "Practice Standard for Scheduling, 3.4.3"
+      },
       {
         "book": "pmbok8",
         "page": 288,

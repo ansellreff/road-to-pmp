@@ -1,30 +1,172 @@
 [
-  { "id": "c1", "front": "Critical path", "back": "The longest path through the network. It determines the shortest possible project duration." },
-  { "id": "c2", "front": "Critical path method (CPM)", "back": "A method to estimate the minimum project duration and the float on each path, using a forward and a backward pass. It ignores resource limits." },
-  { "id": "c3", "front": "Total float of a critical activity", "back": "Normally zero. Any delay to it delays the project." },
-  { "id": "c4", "front": "Forward pass", "back": "Works from the project start to the end and calculates early start (ES) and early finish (EF)." },
-  { "id": "c5", "front": "Backward pass", "back": "Works from the project end to the start and calculates late finish (LF) and late start (LS)." },
-  { "id": "c6", "front": "Early finish formula (day-1 convention)", "back": "EF = ES + duration − 1. With the day-0 convention: EF = ES + duration." },
-  { "id": "c7", "front": "Late start formula (day-1 convention)", "back": "LS = LF − duration + 1. With the day-0 convention: LS = LF − duration." },
-  { "id": "c8", "front": "Forward pass at a merge (several predecessors)", "back": "Take the LARGEST early finish of the predecessors." },
-  { "id": "c9", "front": "Backward pass where an activity has several successors", "back": "Take the SMALLEST late start of the successors." },
-  { "id": "c10", "front": "Total float", "back": "The time an activity can be delayed without delaying the project finish date. LS − ES, or LF − EF." },
-  { "id": "c11", "front": "Free float", "back": "The time an activity can be delayed without delaying the early start of its successor." },
-  { "id": "c12", "front": "Total float vs free float", "back": "Total float protects the project end date. Free float protects the next activity." },
-  { "id": "c13", "front": "Is float owned by one activity?", "back": "No. Total float is shared along a path. If an earlier activity uses it, less is left for later ones." },
-  { "id": "c14", "front": "Negative float", "back": "Occurs when an imposed date or constraint is earlier than logic and durations allow. The schedule cannot meet the date as planned." },
-  { "id": "c15", "front": "Near-critical path", "back": "A path with very little float. A small delay can turn it into a critical path." },
-  { "id": "c16", "front": "Can a project have more than one critical path?", "back": "Yes. More critical paths means higher schedule risk." },
-  { "id": "c17", "front": "Schedule compression", "back": "Shortening the schedule duration without reducing the project scope. Two techniques: crashing and fast tracking." },
-  { "id": "c18", "front": "Crashing", "back": "Shortening the schedule for the least incremental cost by adding resources (overtime, more people, paying for faster delivery). Increases cost." },
-  { "id": "c19", "front": "Fast tracking", "back": "Performing in parallel activities that are normally done in sequence. Increases risk and may cause rework." },
-  { "id": "c20", "front": "Which activities should be compressed?", "back": "Only those on the critical path. Shortening a non-critical activity does not shorten the project." },
-  { "id": "c21", "front": "Which critical activity to crash first?", "back": "The one with the least additional cost per unit of time saved." },
-  { "id": "c22", "front": "Resource leveling", "back": "Adjusts start and finish dates to resolve overallocated or limited resources. May change the critical path and delay the project." },
-  { "id": "c23", "front": "Resource smoothing", "back": "Adjusts activities only within their free and total float. The critical path and finish date do not change." },
-  { "id": "c24", "front": "Schedule network analysis", "back": "The overall technique for generating the schedule model. It uses the critical path method, resource optimization and modeling techniques." },
-  { "id": "c25", "front": "What-if analysis", "back": "Evaluating scenarios to predict their effect on project objectives, such as the schedule." },
-  { "id": "c26", "front": "Monte Carlo analysis", "back": "The most common simulation technique. Runs the model many times with varying inputs to show the range and probability of possible outcomes." },
-  { "id": "c27", "front": "Critical chain method", "back": "A schedule method that places buffers on schedule paths to account for limited resources and project uncertainties." },
-  { "id": "c28", "front": "Path convergence and path divergence", "back": "Convergence: an activity with several predecessors. Divergence: an activity with several successors. Both are points of higher schedule risk." }
+  {
+    "id": "c1",
+    "front": "Critical path",
+    "back": "The longest path through the network. It determines the shortest possible project duration."
+  },
+  {
+    "id": "c2",
+    "front": "Critical path method (CPM)",
+    "back": "A method to estimate the minimum project duration and the float on each path, using a forward and a backward pass. It ignores resource limits."
+  },
+  {
+    "id": "c3",
+    "front": "Total float of a critical activity",
+    "back": "Normally zero. Any delay to it delays the project."
+  },
+  {
+    "id": "c4",
+    "front": "Forward pass",
+    "back": "Works from the project start to the end and calculates early start (ES) and early finish (EF)."
+  },
+  {
+    "id": "c5",
+    "front": "Backward pass",
+    "back": "Works from the project end to the start and calculates late finish (LF) and late start (LS)."
+  },
+  {
+    "id": "c6",
+    "front": "Early finish formula (day-1 convention)",
+    "back": "EF = ES + duration − 1. With the day-0 convention: EF = ES + duration."
+  },
+  {
+    "id": "c7",
+    "front": "Late start formula (day-1 convention)",
+    "back": "LS = LF − duration + 1. With the day-0 convention: LS = LF − duration."
+  },
+  {
+    "id": "c8",
+    "front": "Forward pass at a merge (several predecessors)",
+    "back": "Take the LARGEST early finish of the predecessors."
+  },
+  {
+    "id": "c9",
+    "front": "Backward pass where an activity has several successors",
+    "back": "Take the SMALLEST late start of the successors."
+  },
+  {
+    "id": "c10",
+    "front": "Total float",
+    "back": "The time an activity can be delayed without delaying the project finish date. LS − ES, or LF − EF."
+  },
+  {
+    "id": "c11",
+    "front": "Free float",
+    "back": "The time an activity can be delayed without delaying the early start of its successor."
+  },
+  {
+    "id": "c12",
+    "front": "Total float vs free float",
+    "back": "Total float protects the project end date. Free float protects the next activity."
+  },
+  {
+    "id": "c13",
+    "front": "Is total float owned by one activity?",
+    "back": "No. Total float is shared along a path: if an earlier activity uses it, less is left for later ones. Free float belongs to an individual activity."
+  },
+  {
+    "id": "c14",
+    "front": "Negative float",
+    "back": "Occurs when an imposed date or constraint is earlier than logic and durations allow. The schedule cannot meet the date as planned."
+  },
+  {
+    "id": "c15",
+    "front": "Near-critical path",
+    "back": "A path with very little float. A small delay can turn it into a critical path."
+  },
+  {
+    "id": "c16",
+    "front": "Can a project have more than one critical path?",
+    "back": "Yes. More critical paths means higher schedule risk."
+  },
+  {
+    "id": "c17",
+    "front": "Schedule compression",
+    "back": "Shortening the schedule duration without reducing the project scope. Two techniques: crashing and fast tracking."
+  },
+  {
+    "id": "c18",
+    "front": "Crashing",
+    "back": "Shortening the schedule for the least incremental cost by adding resources (overtime, more people, paying for faster delivery). Increases cost."
+  },
+  {
+    "id": "c19",
+    "front": "Fast tracking",
+    "back": "Performing in parallel activities that are normally done in sequence. Increases risk and may cause rework."
+  },
+  {
+    "id": "c20",
+    "front": "Which activities should be compressed?",
+    "back": "Only those on the critical path. Shortening a non-critical activity does not shorten the project."
+  },
+  {
+    "id": "c21",
+    "front": "Which critical activity to crash first?",
+    "back": "The one with the least additional cost per unit of time saved."
+  },
+  {
+    "id": "c22",
+    "front": "Resource leveling",
+    "back": "Adjusts start and finish dates to resolve overallocated or limited resources. May change the critical path and delay the project."
+  },
+  {
+    "id": "c23",
+    "front": "Resource smoothing",
+    "back": "Adjusts activities only within their free and total float. The critical path and finish date do not change."
+  },
+  {
+    "id": "c24",
+    "front": "Schedule network analysis",
+    "back": "The overall technique for generating the schedule model. It uses the critical path method, resource optimization and modeling techniques."
+  },
+  {
+    "id": "c25",
+    "front": "What-if analysis",
+    "back": "Evaluating scenarios to predict their effect on project objectives, such as the schedule."
+  },
+  {
+    "id": "c26",
+    "front": "Monte Carlo analysis",
+    "back": "The most common simulation technique. Runs the model many times with varying inputs to show the range and probability of possible outcomes."
+  },
+  {
+    "id": "c27",
+    "front": "Critical chain method",
+    "back": "A schedule method that places buffers on schedule paths to account for limited resources and project uncertainties."
+  },
+  {
+    "id": "c28",
+    "front": "Path convergence and path divergence",
+    "back": "Convergence: an activity with several predecessors. Divergence: an activity with several successors. Both are points of higher schedule risk."
+  },
+  {
+    "id": "c29",
+    "front": "Critical path activity vs critical activity",
+    "back": "Critical path activity: on the critical path. Critical activity: vital to project success, usually high risk, even if it is not on the critical path."
+  },
+  {
+    "id": "c30",
+    "front": "Critical chain",
+    "back": "The longest resource-leveled path through the schedule, including buffers. Often different from the critical path."
+  },
+  {
+    "id": "c31",
+    "front": "Project buffer",
+    "back": "Critical chain: time added at the end of the project, between the last activity and the delivery date, to protect the end date."
+  },
+  {
+    "id": "c32",
+    "front": "Feeding buffer",
+    "back": "Critical chain: time added where a chain of non-critical activities feeds into the critical chain."
+  },
+  {
+    "id": "c33",
+    "front": "Resource buffer",
+    "back": "Critical chain: an early warning placed along the critical chain that a resource will be needed. It adds no time to the project."
+  },
+  {
+    "id": "c34",
+    "front": "Open-ended activity",
+    "back": "An activity lacking a predecessor, a successor or both. It creates a false appearance of float. Only the start and finish milestones may be open-ended."
+  }
 ]

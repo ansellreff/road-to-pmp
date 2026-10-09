@@ -80,7 +80,7 @@ Develop Schedule analyzes sequences, durations, resource requirements and constr
 
 ## Step 2: Determine sequence
 
-@source PMBOK 8, Guide section 5, Precedence diagramming method; PMBOK 8, Guide Figure 5-13
+@source PMBOK 8, Guide section 5, Precedence diagramming method; PMBOK 8, Guide Figure 5-13; Practice Standard for Scheduling, 3.4.8
 
 The **precedence diagramming method (PDM)** shows activities as **nodes** (boxes) linked by arrows that show their logical relationships. The **predecessor** comes before; the **successor** depends on it.
 
@@ -89,11 +89,12 @@ The **precedence diagramming method (PDM)** shows activities as **nodes** (boxes
 | **Finish-to-start (FS)** | The successor cannot **start** until the predecessor has **finished** | Install the operating system after the hardware is assembled |
 | **Finish-to-finish (FF)** | The successor cannot **finish** until the predecessor has **finished** | Editing cannot finish until writing has finished |
 | **Start-to-start (SS)** | The successor cannot **start** until the predecessor has **started** | Leveling concrete cannot start until pouring has started |
-| **Start-to-finish (SF)** | The successor cannot **finish** until the predecessor has **started** | The old system cannot be switched off until the new one has started |
+| **Start-to-finish (SF)** | The successor cannot **finish** until the predecessor has **started** | Delivery of a piece of equipment cannot finish until the activity that installs it has started |
 
 - **FS is the most commonly used.** **SF is very rarely used.**
 - Every activity except the first and the last should have at least one predecessor and one successor.
 - Closed loops are not allowed.
+- An activity with no predecessor or no successor is an **open end**. It hides the real logic and creates a false appearance of float. Only the project start and finish milestones may be open-ended.
 
 ## Types of dependencies
 
@@ -110,7 +111,7 @@ Two attributes apply at the same time: a dependency is mandatory **or** discreti
 
 ## Leads and lags
 
-@source PMBOK 8, Guide section 5, Leads and lags
+@source PMBOK 8, Guide section 5, Leads and lags; Practice Standard for Scheduling, 3.4.7
 
 | | Meaning | Example |
 |---|---|---|
@@ -120,6 +121,7 @@ Two attributes apply at the same time: a dependency is mandatory **or** discreti
 - A lead is often shown as a **negative lag** in scheduling software.
 - Duration estimates do **not** include leads or lags.
 - Leads and lags should not replace proper schedule logic.
+- Both **add schedule risk**, because they are hard to see in the schedule. Where possible, a lag is better shown as its own activity (for example "Cure concrete, 3 days").
 
 ## Step 3: Estimate effort and duration
 
@@ -140,7 +142,7 @@ Two attributes apply at the same time: a dependency is mandatory **or** discreti
 
 ## Estimating techniques
 
-@source PMBOK 8, Guide section 5, Analogous estimating; PMBOK 8, Guide section 5, Parametric estimating; PMBOK 8, Guide section 5, Bottom-up estimating; PMBOK 8, Guide section 5, Multipoint estimating
+@source PMBOK 8, Guide section 5, Analogous estimating; PMBOK 8, Guide section 5, Parametric estimating; PMBOK 8, Guide section 5, Bottom-up estimating; PMBOK 8, Guide section 5, Multipoint estimating; Practice Standard for Scheduling, 3.4.3
 
 | Technique | How it works | When to use it | Accuracy |
 |---|---|---|---|
@@ -160,6 +162,8 @@ Adaptive teams estimate in relative terms with **story points**, **planning poke
 |---|---|---|
 | **Triangular** (simple average): (O + M + P) ÷ 3 | (4 + 6 + 14) ÷ 3 | **8 days** |
 | **Beta, or PERT** (weighted average): (O + 4M + P) ÷ 6 | (4 + 24 + 14) ÷ 6 | **7 days** |
+
+The three estimates are defined as: **optimistic**, the shortest duration under the most favorable conditions; **most likely**, the duration that will occur most often; **pessimistic**, the duration under the least favorable conditions.
 
 If a question says "PERT", "beta" or "weighted", use the formula with **4M and 6**. If it says "triangular" or "simple average", divide by **3**.
 
@@ -218,4 +222,4 @@ Monitors the status of the project to **update the schedule** and **manage chang
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.3 (Schedule performance domain) and sections 4 and 5. The beta (PERT) formula, the start-to-finish example, the effort, duration and elapsed time comparison, and the table of schedule formats follow standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.3 (Schedule performance domain) and sections 4 and 5; Practice Standard for Scheduling, Third Edition, sections 3.4.3, 3.4.5, 3.4.7 and 3.4.8 (the beta or PERT formula, open ends, leads and lags, and the start-to-finish example). The effort, duration and elapsed time comparison and the table of schedule formats follow standard PMI teaching. Written in original wording for personal study.*

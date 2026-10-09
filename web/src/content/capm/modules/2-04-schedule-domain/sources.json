@@ -113,5 +113,20 @@
     "book": "pmbok8",
     "page": 301,
     "label": "PMBOK 8, Guide section 5, Rolling wave planning"
+  },
+  {
+    "book": "scheduling",
+    "page": 89,
+    "label": "Practice Standard for Scheduling, 3.4.3"
+  },
+  {
+    "book": "scheduling",
+    "page": 96,
+    "label": "Practice Standard for Scheduling, 3.4.7"
+  },
+  {
+    "book": "scheduling",
+    "page": 97,
+    "label": "Practice Standard for Scheduling, 3.4.8"
   }
 ]
