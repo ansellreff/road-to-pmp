@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a user story?",
+    "options": [
+      "A complete technical specification",
+      "A report of what users did last month",
+      "A brief description of an outcome for a specific user, and a promise for a conversation to clarify details",
+      "A test script"
+    ],
+    "answer": 2,
+    "explanation": "A user story is a brief description of an outcome from a specific stakeholder's perspective, and is a promise for a conversation to clarify the details.",
+    "ref": "PMBOK 8, Guide section 4, User stories",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, User stories"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which is the usual format of a user story?",
+    "options": [
+      "As a (role), I want (goal), so that (benefit)",
+      "The system shall (function) within (time)",
+      "Given (budget), deliver (scope) by (date)",
+      "If (risk), then (response)"
+    ],
+    "answer": 0,
+    "explanation": "A typical user story describes the role (who benefits), the goal (what they need to accomplish) and the motivation or benefit.",
+    "ref": "PMBOK 8, Guide section 4, User stories",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, User stories"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "In the three Cs of a user story, what does \"confirmation\" refer to?",
+    "options": [
+      "The sponsor's signature",
+      "The index card the story is written on",
+      "The discussion between the team and the product owner",
+      "The acceptance criteria that show the story is done"
+    ],
+    "answer": 3,
+    "explanation": "Card is the short written story, conversation is the discussion that fills in details, and confirmation is the acceptance criteria used to verify it.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 4, User stories",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, User stories"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What does the \"S\" in INVEST stand for?",
+    "options": [
+      "Specific",
+      "Small",
+      "Scheduled",
+      "Stable"
+    ],
+    "answer": 1,
+    "explanation": "INVEST: independent, negotiable, valuable, estimable, small, testable. A small story fits within one iteration.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 4, User stories",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, User stories"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "What does a story point measure?",
+    "options": [
+      "The number of hours a story will take",
+      "The business value of a story in money",
+      "The relative effort needed to implement a user story",
+      "The number of people needed"
+    ],
+    "answer": 2,
+    "explanation": "A story point is a unit used to estimate the relative level of effort needed to implement a user story. It reflects relative effort or complexity, not absolute time.",
+    "ref": "Agile Practice Guide, Glossary (story point)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 187,
+        "label": "Agile Practice Guide, Glossary (story point)"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Why do many agile teams estimate in story points instead of hours?",
+    "options": [
+      "Teams are typically better at comparing work items than at predicting precise durations",
+      "Hours cannot be recorded in agile tools",
+      "Story points are required by law",
+      "Story points make it easy to compare teams"
+    ],
+    "answer": 0,
+    "explanation": "Story points rest on the understanding that teams are better at comparing items than at predicting exact durations. Estimating hours takes longer and is less reliable in dynamic environments.",
+    "ref": "PMBOK 8, Guide section 5, Agile release planning",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Agile release planning"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "In planning poker, team members choose their estimate privately and then:",
+    "options": [
+      "The product owner picks the final number",
+      "The lowest number is always used",
+      "The scrum master averages the numbers in secret",
+      "All cards are revealed at the same time, and differences are discussed"
+    ],
+    "answer": 3,
+    "explanation": "Each team member privately selects a card, and when everyone is ready all cards are revealed together. This prevents the first number mentioned from anchoring the others.",
+    "ref": "Practice Standard for Project Estimating, 4.3",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 63,
+        "label": "Practice Standard for Project Estimating, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "What is velocity?",
+    "options": [
+      "The speed at which the product owner writes stories",
+      "The rate at which the team produces, validates and accepts deliverables in a set interval",
+      "The number of hours worked per day",
+      "The number of defects found per iteration"
+    ],
+    "answer": 1,
+    "explanation": "Velocity is a measure of a team's productivity rate at which deliverables are produced, validated and accepted within a predefined interval.",
+    "ref": "PMBOK 8, Guide section 5, Velocity",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Velocity"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A release has 150 story points of work remaining. The team's average velocity is 25 points per iteration. How many iterations are needed?",
+    "options": [
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Iterations needed = remaining points ÷ velocity = 150 ÷ 25 = 6.",
+    "ref": "PMBOK 8, Guide section 5, Velocity",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Velocity"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Team A has a velocity of 30 and Team B has a velocity of 50. What can be concluded?",
+    "options": [
+      "Nothing about their relative productivity, because story points are specific to each team",
+      "Team B is more productive",
+      "Team A needs more people",
+      "Team B's stories are easier"
+    ],
+    "answer": 0,
+    "explanation": "Relative estimates are specific to the team doing the estimating, so they cannot be compared with other teams' numbers.",
+    "ref": "Practice Standard for Project Estimating, 4.3",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 63,
+        "label": "Practice Standard for Project Estimating, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "At the end of an iteration, one 8-point story is 90% complete. How many of its points count toward velocity?",
+    "options": [
+      "8",
+      "7",
+      "4",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "Velocity counts deliverables that are produced, validated and accepted. An unfinished story earns nothing until it meets the definition of done.",
+    "ref": "PMBOK 8, Guide section 5, Velocity",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Velocity"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What does agile release planning provide?",
+    "options": [
+      "A task list for tomorrow",
+      "A high-level timeline of the release, typically 3 to 6 months, based on the product roadmap and vision",
+      "The detailed design of each feature",
+      "The final project budget"
+    ],
+    "answer": 1,
+    "explanation": "Agile release planning gives a high-level summary timeline of the release schedule, typically 3 to 6 months, and determines the number of iterations in the release.",
+    "ref": "PMBOK 8, Guide section 5, Agile release planning",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Agile release planning"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which sequence correctly goes from the broadest plan to the most detailed?",
+    "options": [
+      "Iteration plan, release plan, roadmap, vision",
+      "Release plan, vision, iteration plan, roadmap",
+      "Vision, roadmap, release plan, iteration plan",
+      "Roadmap, vision, iteration plan, release plan"
+    ],
+    "answer": 2,
+    "explanation": "The product vision drives the roadmap, the roadmap drives release planning, and release planning drives iteration planning.",
+    "ref": "PMBOK 8, Guide section 5, Agile release planning",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Agile release planning"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A backlog item is too large to complete in one iteration and spans many related stories. What is it usually called?",
+    "options": [
+      "An epic",
+      "A task",
+      "A spike",
+      "A timebox"
+    ],
+    "answer": 0,
+    "explanation": "An epic is a large body of work that is broken down into features and user stories small enough to fit in an iteration.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 4, Backlog",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 219,
+        "label": "PMBOK 8, Guide section 4, Backlog"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "The team cannot estimate a story because it does not know whether a third-party interface supports a needed function. What should it do?",
+    "options": [
+      "Guess a large number and start building",
+      "Remove the story from the backlog",
+      "Ask the product owner to estimate it",
+      "Run a spike: a timeboxed piece of research to answer the question"
+    ],
+    "answer": 3,
+    "explanation": "A spike is a timeboxed user story or task created to research a question or resolve a problem.",
+    "ref": "Agile Practice Guide, Glossary (spike)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 187,
+        "label": "Agile Practice Guide, Glossary (spike)"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "What is a timebox?",
+    "options": [
+      "A tool for recording hours worked",
+      "A short, fixed period of time in which work is to be completed",
+      "A deadline that can be extended when needed",
+      "A list of tasks"
+    ],
+    "answer": 1,
+    "explanation": "A timebox is a short, fixed period of time in which work is to be completed. When it ends, unfinished work returns to the backlog.",
+    "ref": "Agile Practice Guide, Glossary (timebox)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 188,
+        "label": "Agile Practice Guide, Glossary (timebox)"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "What is the definition of ready?",
+    "options": [
+      "A checklist showing a deliverable is ready for customer use",
+      "The date the team is available",
+      "A checklist showing a user story has all the information the team needs to begin work on it",
+      "The product owner's approval of a release"
+    ],
+    "answer": 2,
+    "explanation": "The definition of ready is a checklist for a user-centric requirement that has all the information the team needs to begin working on it. The definition of done covers completion.",
+    "ref": "Agile Practice Guide, Glossary (definition of ready)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 182,
+        "label": "Agile Practice Guide, Glossary (definition of ready)"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Who should estimate the size of user stories?",
+    "options": [
+      "The team that will do the work",
+      "The product owner alone",
+      "The project sponsor",
+      "An external estimating department"
+    ],
+    "answer": 0,
+    "explanation": "Relative estimating is done by the team doing the work, using what the group knows. The product owner explains the story but does not estimate it.",
+    "ref": "Practice Standard for Project Estimating, 4.3",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 63,
+        "label": "Practice Standard for Project Estimating, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "During iteration planning, who decides how many stories the team will commit to?",
+    "options": [
+      "The product owner",
+      "The scrum master",
+      "The customer",
+      "The team, based on its capacity"
+    ],
+    "answer": 3,
+    "explanation": "Teams consider their capacity and story size so they do not commit to more than they can complete in one iteration.",
+    "ref": "Agile Practice Guide, 5.2.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 83,
+        "label": "Agile Practice Guide, 5.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Two team members will be on holiday during the next iteration. What should the team do in iteration planning?",
+    "options": [
+      "Commit to the same amount of work as usual",
+      "Plan only the amount of work that fits its reduced capacity",
+      "Cancel the iteration",
+      "Extend the iteration by a week"
+    ],
+    "answer": 1,
+    "explanation": "When people are unavailable the team cannot finish the same amount as before. With reduced capacity, a team plans only for work that meets that capacity.",
+    "ref": "Agile Practice Guide, 5.2.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 83,
+        "label": "Agile Practice Guide, 5.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "What is backlog refinement?",
+    "options": [
+      "Deleting the backlog at the end of the project",
+      "A meeting to demonstrate finished work",
+      "The progressive elaboration and reprioritization of backlog content to identify work for upcoming iterations",
+      "Assigning tasks to individuals"
+    ],
+    "answer": 2,
+    "explanation": "Backlog refinement means constantly reviewing, revising, ranking and editing the backlog so that the items for upcoming iterations are ready.",
+    "ref": "PMBOK 8, Guide section 5, Backlog refinement",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 254,
+        "label": "PMBOK 8, Guide section 5, Backlog refinement"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A story is estimated at 40 points, far larger than any other on the team's scale. What does this suggest?",
+    "options": [
+      "The story should be split into smaller stories",
+      "The team should work overtime",
+      "The story should be done first",
+      "The scale should be changed to hours"
+    ],
+    "answer": 0,
+    "explanation": "A very large estimate signals that the item is too big and too uncertain. Stories should be small enough to complete within an iteration, so it is split.",
+    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 82,
+        "label": "Agile Practice Guide, 5.2.2"
+      }
+    ]
+  }
+]

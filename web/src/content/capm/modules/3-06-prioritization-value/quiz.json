@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "Who ranks the work in the backlog, and on what basis?",
+    "options": [
+      "The scrum master, by technical difficulty",
+      "The product owner, by business value",
+      "The development team, by personal preference",
+      "The sponsor, by cost"
+    ],
+    "answer": 1,
+    "explanation": "The product owner is responsible for guiding the direction of the product and ranks the work based on its business value.",
+    "ref": "Agile Practice Guide, 4.4.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 67,
+        "label": "Agile Practice Guide, 4.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What does MoSCoW stand for?",
+    "options": [
+      "Measure, organize, select, control, work",
+      "Major, optional, standard, critical, wanted",
+      "Must have, should have, could have, will not have",
+      "Minimum, optimal, sufficient, complete, wide"
+    ],
+    "answer": 2,
+    "explanation": "MoSCoW sorts items into must have, should have, could have and will not have. It is fast for workshops but coarse and subjective.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A release is running short of time. Using MoSCoW, which items should be dropped first?",
+    "options": [
+      "Could have",
+      "Must have",
+      "Should have",
+      "All items equally"
+    ],
+    "answer": 0,
+    "explanation": "Could-have items are nice to have and are the first to go. Must-have items are essential to the release and are never dropped.",
+    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "In Kano analysis, which type of feature is expected by customers, causes dissatisfaction when missing, and goes unnoticed when present?",
+    "options": [
+      "Delighter",
+      "Performance",
+      "Indifferent",
+      "Basic"
+    ],
+    "answer": 3,
+    "explanation": "Kano classifies features as basic, performance or delighter. A basic feature is taken for granted; only its absence is noticed.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A hotel surprises a guest with a free room upgrade. In Kano terms, what kind of feature is this?",
+    "options": [
+      "Basic",
+      "Delighter",
+      "Performance",
+      "Must have"
+    ],
+    "answer": 1,
+    "explanation": "A delighter is unexpected. Its presence pleases the customer and its absence is not missed.",
+    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "How is weighted shortest job first (WSJF) calculated?",
+    "options": [
+      "Job size divided by cost of delay",
+      "Cost of delay multiplied by job size",
+      "Cost of delay divided by job size",
+      "Business value minus effort"
+    ],
+    "answer": 2,
+    "explanation": "WSJF ranks work by dividing its cost of delay by its job size, favoring items that deliver the highest value in the shortest time.",
+    "ref": "Agile Practice Guide, Glossary (weighted shortest job first)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 188,
+        "label": "Agile Practice Guide, Glossary (weighted shortest job first)"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Item A has a cost of delay of 12 and a size of 6. Item B has a cost of delay of 9 and a size of 3. Using WSJF, which goes first?",
+    "options": [
+      "Item B, with a score of 3",
+      "Item A, with a score of 2",
+      "Item A, because its cost of delay is higher",
+      "They are equal"
+    ],
+    "answer": 0,
+    "explanation": "A: 12 ÷ 6 = 2. B: 9 ÷ 3 = 3. The higher WSJF score goes first, so B is done before A.",
+    "ref": "Agile Practice Guide, Glossary (weighted shortest job first)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 188,
+        "label": "Agile Practice Guide, Glossary (weighted shortest job first)"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "In which technique do stakeholders \"spend\" a fixed budget of money or points on the items they want most?",
+    "options": [
+      "Kano analysis",
+      "Stack ranking",
+      "MoSCoW",
+      "Buy a feature / 100-point method"
+    ],
+    "answer": 3,
+    "explanation": "In buy-a-feature or the $100 test, stakeholders spend a budget on items. It surfaces true preferences.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What is the main purpose of a minimum viable product (MVP)?",
+    "options": [
+      "To be the final product",
+      "To learn: to test assumptions and get feedback from real users with the smallest version possible",
+      "To include every requested feature",
+      "To meet a contract deadline"
+    ],
+    "answer": 1,
+    "explanation": "Focused on learning, the MVP is the smallest version of a product that allows a team to validate assumptions and gain feedback from real users.",
+    "ref": "Agile Practice Guide, Glossary (minimum viable product)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 184,
+        "label": "Agile Practice Guide, Glossary (minimum viable product)"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Which term describes the smallest version of a product with enough features to be offered to the market and deliver value customers will pay for?",
+    "options": [
+      "Minimum viable product (MVP)",
+      "Minimum business increment (MBI)",
+      "Minimum marketable product (MMP)",
+      "Product backlog"
+    ],
+    "answer": 2,
+    "explanation": "The MMP is focused on release: the smallest version of a product with enough features to be offered to the market.",
+    "ref": "Agile Practice Guide, Glossary (minimum marketable product)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 184,
+        "label": "Agile Practice Guide, Glossary (minimum marketable product)"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "What is a minimum business increment (MBI)?",
+    "options": [
+      "The smallest deliverable piece of functionality that has value to the business",
+      "The smallest team that can do the work",
+      "The lowest acceptable budget",
+      "The first sprint of a project"
+    ],
+    "answer": 0,
+    "explanation": "The MBI is the smallest deliverable piece of functionality that has value to the business, helping the organization realize that value quickly.",
+    "ref": "Agile Practice Guide, Glossary (minimum business increment)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 184,
+        "label": "Agile Practice Guide, Glossary (minimum business increment)"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Why does frequent delivery of small increments reduce risk?",
+    "options": [
+      "Because small increments need no testing",
+      "Because the customer cannot change their mind",
+      "Because documentation is skipped",
+      "Because wrong requirements and integration problems are found early, when they are cheap to fix"
+    ],
+    "answer": 3,
+    "explanation": "Frequent delivery limits the cost of getting requirements wrong and reveals integration or environment issues early.",
+    "ref": "Agile Practice Guide, 5.2.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 87,
+        "label": "Agile Practice Guide, 5.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What confirms that an increment is actually valuable?",
+    "options": [
+      "A status report saying it is complete",
+      "Releasing it, so customers and stakeholders can judge whether the outcome is worth the investment",
+      "The team's estimate",
+      "The number of story points it had"
+    ],
+    "answer": 1,
+    "explanation": "Only a released increment allows customers and stakeholders to decide whether the outcome is worth the investment.",
+    "ref": "Agile Practice Guide, 5.2.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 87,
+        "label": "Agile Practice Guide, 5.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "As a general guideline, how often should a team demonstrate working product?",
+    "options": [
+      "Once at the end of the project",
+      "Every six months",
+      "At least once every two weeks",
+      "Only when the sponsor asks"
+    ],
+    "answer": 2,
+    "explanation": "As a general guideline, demonstrate whatever the team has as a working product at least once every two weeks, which is frequent enough to prevent heading in the wrong direction.",
+    "ref": "Agile Practice Guide, 5.2.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 85,
+        "label": "Agile Practice Guide, 5.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A senior stakeholder wants to know how the agile project is progressing. What is the best response?",
+    "options": [
+      "Invite them to the next demonstration and show them the team's information radiator",
+      "Write a 30-page status report",
+      "Tell them to wait until the project ends",
+      "Ask the team to stop work and prepare slides"
+    ],
+    "answer": 0,
+    "explanation": "Agile teams show progress through working product in demonstrations and keep status visible on information radiators, instead of producing lengthy reports.",
+    "ref": "Agile Practice Guide, 5.2.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 85,
+        "label": "Agile Practice Guide, 5.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "An increment meets the definition of done. Who decides whether and when it is released?",
+    "options": [
+      "The scrum master",
+      "The development team",
+      "The change control board",
+      "The product owner"
+    ],
+    "answer": 3,
+    "explanation": "Once the definition of done is met the increment can be released. The product owner decides which release option balances customer benefit, risk and overhead.",
+    "ref": "Agile Practice Guide, 5.2.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 87,
+        "label": "Agile Practice Guide, 5.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "What is technical debt?",
+    "options": [
+      "Money owed to a software supplier",
+      "The deferred cost of work not done at an earlier point in the product's life",
+      "The cost of the team's equipment",
+      "The budget overrun at the end of a project"
+    ],
+    "answer": 1,
+    "explanation": "Technical debt is the deferred cost of work not done earlier, such as shortcuts and missing tests. It makes later changes slower and is reduced by refactoring.",
+    "ref": "Agile Practice Guide, Glossary (technical debt)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 188,
+        "label": "Agile Practice Guide, Glossary (technical debt)"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "To meet a deadline, a manager tells the team to skip automated tests for the next three sprints. What is the most likely result?",
+    "options": [
+      "Permanently higher velocity",
+      "Lower risk",
+      "Growing technical debt that slows later work",
+      "Higher customer satisfaction"
+    ],
+    "answer": 2,
+    "explanation": "Skipping quality work defers its cost. The debt accumulates, and every later change becomes harder and slower.",
+    "ref": "Agile Practice Guide, Glossary (technical debt)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 188,
+        "label": "Agile Practice Guide, Glossary (technical debt)"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "What is continuous delivery?",
+    "options": [
+      "Delivering feature increments to customers immediately, often using small batches and automation",
+      "Working without breaks",
+      "Delivering the whole product once at the end",
+      "Holding a meeting every day"
+    ],
+    "answer": 0,
+    "explanation": "Continuous delivery is the practice of delivering feature increments immediately to customers, often through small batches of work and automation technology.",
+    "ref": "Agile Practice Guide, Glossary (continuous delivery)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 181,
+        "label": "Agile Practice Guide, Glossary (continuous delivery)"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Besides business value, which factor often moves a backlog item earlier in the order?",
+    "options": [
+      "It is the easiest to document",
+      "The team finds it the most enjoyable",
+      "It was requested most recently",
+      "It carries high risk or uncertainty, so doing it early gives learning sooner"
+    ],
+    "answer": 3,
+    "explanation": "High-risk items are often done early so that problems surface while there is still time and budget to respond. Dependencies and effort also influence the order.",
+    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "How does agile stakeholder engagement differ from a predictive approach?",
+    "options": [
+      "Stakeholders are excluded until the end",
+      "Stakeholders are involved continuously and give feedback on working product every iteration",
+      "Stakeholders write the code",
+      "Stakeholders approve each task"
+    ],
+    "answer": 1,
+    "explanation": "Agile projects require continuous feedback on features and user stories to keep the product aligned with stakeholder needs.",
+    "ref": "PMBOK 8, Guide 2.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 179,
+        "label": "PMBOK 8, Guide 2.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which prioritization technique produces a single ordered list with no ties?",
+    "options": [
+      "MoSCoW",
+      "Kano analysis",
+      "Stack ranking (forced ranking)",
+      "Value versus effort matrix"
+    ],
+    "answer": 2,
+    "explanation": "Stack ranking gives one ordered list with no ties. It is clarifying, sparks debate and needs a single decision owner.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  }
+]

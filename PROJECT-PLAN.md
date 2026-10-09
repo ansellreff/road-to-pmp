@@ -31,6 +31,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Your feedback recorded: the Dashboard and Practice pages work but look raw; a proper redesign is in the UI/UX backlog for Session 27. Session 16 done: Domain 3 started with modules 3.1 (agile mindset, the 4 values and 12 principles, iterative vs incremental) and 3.2 (Scrum: roles, events, artifacts, definition of done). The Agile Practice Guide, Second Edition, is the eleventh source book. | You: study 3.1 and 3.2. Next: Session 17, modules 3.3 (XP, Lean, Kanban) and 3.4 (servant leadership and agile teams) |
 | 2026-10-10 | Session 17 done: modules 3.3 (XP, lean, Lean Startup, the Kanban Method, Crystal, FDD, DSDM and the scaling frameworks) and 3.4 (servant leadership, agile team attributes, T-shaped skills, multitasking, team spaces, psychological safety, levels of conflict). **Domain 3 is half done: 4 of 8.** | You: study 3.3 and 3.4. Next: Session 18, modules 3.5 (agile planning, user stories, estimation) and 3.6 (prioritization and delivering value) |
 | 2026-10-10 | At your request, an **Issues log** was added at the end of this file: every problem met so far (40 entries) with how it was handled and where to look. It is updated at the end of every session from now on. | You: skim it once. Next: Session 18 |
+| 2026-10-10 | Session 18 done: modules 3.5 (planning levels, backlog items, user stories, INVEST, story points, planning poker, velocity, spikes) and 3.6 (value-driven delivery, MoSCoW, Kano, WSJF, MVP vs MMP vs MBI, demonstrations, releasing, technical debt). Issues 41 to 43 added to the log. | You: study 3.5 and 3.6. Next: Session 19, modules 3.7 (metrics, charts, retrospectives) and 3.8 (hybrid approaches), which completes Domain 3 |
 
 ## How your progress is saved
 
@@ -113,7 +114,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 8 | Feature: spaced repetition for flashcards (plus source links to the PDFs) |
 | ✅ | 9 to 14 | Domain 2: 12 modules (all done) |
 | ✅ | 15 | Feature: dashboard and practice of missed questions |
-| 🟡 | 16 to 19 | Domain 3: 8 modules (Sessions 16 and 17 done: 3.1 to 3.4) |
+| 🟡 | 16 to 19 | Domain 3: 8 modules (Sessions 16 to 18 done: 3.1 to 3.6) |
 | ⬜ | 20 | Feature: study plan and exam countdown |
 | ⬜ | 21 to 24 | Domain 4: 7 modules |
 | ⬜ | 25 | Full catch-up, requested 2026-10-10: review every module against every book in `PMI Learning Material/`, improve where a book adds exam value, and give you a list of any extra PDFs worth adding |
@@ -172,13 +173,13 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **27 of 38 modules done** (547 quiz questions, 780 flashcards).
+Overall: **29 of 38 modules done** (591 quiz questions, 838 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
 | ✅ | 1. PM Fundamentals and Core Concepts | 11 / 11 |
 | ✅ | 2. Predictive, Plan-Based Methodologies | 12 / 12 |
-| 🟡 | 3. Agile Frameworks / Methodologies | 4 / 8 |
+| 🟡 | 3. Agile Frameworks / Methodologies | 6 / 8 |
 | ⬜ | 4. Business Analysis Frameworks | 0 / 7 |
 
 **Domain 1: PM Fundamentals and Core Concepts**
@@ -222,8 +223,8 @@ Overall: **27 of 38 modules done** (547 quiz questions, 780 flashcards).
 | ✅ | 3.2 Scrum | 2026-10-10 |
 | ✅ | 3.3 XP, Lean, Kanban and Other Methods | 2026-10-10 |
 | ✅ | 3.4 Servant Leadership and Agile Teams | 2026-10-10 |
-| ⬜ | 3.5 Agile Planning, User Stories and Estimation | |
-| ⬜ | 3.6 Prioritization and Delivering Value | |
+| ✅ | 3.5 Agile Planning, User Stories and Estimation | 2026-10-10 |
+| ✅ | 3.6 Prioritization and Delivering Value | 2026-10-10 |
 | ⬜ | 3.7 Metrics, Charts and Retrospectives | |
 | ⬜ | 3.8 Hybrid Approaches and Choosing a Life Cycle | |
 
@@ -300,6 +301,7 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 16 | The Agile Practice Guide failure in item 15 was silent: every check passed with every link wrong. | For the practice standards and guides, a section that cannot be found is now an error, not a quiet link to the first page. PMBOK Guide references are looked up differently and still fall back to the parent section. | `link_sources.py`, `TOC_BOOKS` |
 | 17 | Links to newly added books showed "This page does not exist". The local server read the book list only when it started. | The server reads `books.json` on every request, so a new book works immediately. A missing book now gives a plain message naming it. | `web/vite.config.ts` |
 | 18 | Source links cannot work on the future public website, because the PDFs are licensed to you and must never be uploaded. | Links are shown only when the app runs locally. Online, the same place shows the book and page as text. | `Sources.tsx` |
+| 42 | A glossary term in a practice guide could not be linked: the link went to the book's first page. | The linker now understands `Glossary (term)` for these books and opens the page that defines the term. A term that is not found is an error. | `link_sources.py` |
 
 ### Books in your folder
 
@@ -311,6 +313,7 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 22 | No book in the folder covers quality or procurement specifically. | Module 2.11 rests on the PMBOK Guide (Appendix X4 and section 5) plus standard teaching. A candidate for an extra PDF in Session 25. | Module 2.11 |
 | 23 | Your Agile Practice Guide is the Second Edition, with different section numbers and wording from the first edition most courses use. It says "supportive leadership" where exam material says "servant leadership", and covers Scrum only briefly. | Written from your edition, using the exam's familiar terms and saying where they are the same thing. Scrum details come from the Scrum Guide and standard teaching, listed in the footer. | Modules 3.1 to 3.4 |
 | 24 | *Choose Your WoW!* (Disciplined Agile) is in the folder but was not used for module 3.3. | It matches only one row of the scaling table. Left for the full catch-up in Session 25. | Module 3.3 |
+| 41 | The Agile Practice Guide (Second Edition) says little about user stories and estimating, the core of module 3.5. | Sources were combined: the PMBOK Guide's entries on backlog, user stories, release planning and velocity; the Agile Practice Guide's glossary; and the Estimating standard's section on relative estimating. | Module 3.5 |
 
 ### Individual lessons
 
@@ -325,6 +328,7 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 31 | Twice a section cited a page that did not support it (adaptive risk in 2.10, levels of conflict in 3.4). | 2.10 was rewritten from the Risk practice guide. 3.4 now cites only the page on the leader's role in conflict and says in its text that the five-level model is from outside the guide. | Modules 2.10, 3.4 |
 | 32 | The 8th edition lists tools alphabetically, which is hard to study. | Module 2.12 groups them into eight families by purpose. The grouping is my own arrangement, as older editions did. | Module 2.12 |
 | 33 | The four Agile Manifesto values cannot sensibly be reworded. | The four values are quoted; the twelve principles are paraphrased. | Module 3.1 |
+| 43 | INVEST and the three Cs are tested but appear in none of PMI's guides, so the section on them cannot cite a page that contains them. | The section cites the nearest real entries (user stories, definition of ready) and says in its own text that INVEST comes from outside PMI's guides. Same approach as item 31. | Module 3.5 |
 
 ### App features
 

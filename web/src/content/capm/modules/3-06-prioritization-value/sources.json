@@ -1,0 +1,77 @@
+[
+  {
+    "book": "agile",
+    "page": 24,
+    "label": "Agile Practice Guide, 2.1"
+  },
+  {
+    "book": "agile",
+    "page": 67,
+    "label": "Agile Practice Guide, 4.4.2"
+  },
+  {
+    "book": "agile",
+    "page": 81,
+    "label": "Agile Practice Guide, 5.2.1"
+  },
+  {
+    "book": "agile",
+    "page": 85,
+    "label": "Agile Practice Guide, 5.2.6"
+  },
+  {
+    "book": "agile",
+    "page": 87,
+    "label": "Agile Practice Guide, 5.2.8"
+  },
+  {
+    "book": "agile",
+    "page": 181,
+    "label": "Agile Practice Guide, Glossary (continuous delivery)"
+  },
+  {
+    "book": "agile",
+    "page": 182,
+    "label": "Agile Practice Guide, Glossary (demonstrations)"
+  },
+  {
+    "book": "agile",
+    "page": 184,
+    "label": "Agile Practice Guide, Glossary (minimum business increment)"
+  },
+  {
+    "book": "agile",
+    "page": 184,
+    "label": "Agile Practice Guide, Glossary (minimum marketable product)"
+  },
+  {
+    "book": "agile",
+    "page": 184,
+    "label": "Agile Practice Guide, Glossary (minimum viable product)"
+  },
+  {
+    "book": "agile",
+    "page": 186,
+    "label": "Agile Practice Guide, Glossary (refactoring)"
+  },
+  {
+    "book": "agile",
+    "page": 188,
+    "label": "Agile Practice Guide, Glossary (technical debt)"
+  },
+  {
+    "book": "agile",
+    "page": 188,
+    "label": "Agile Practice Guide, Glossary (weighted shortest job first)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 179,
+    "label": "PMBOK 8, Guide 2.5.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 292,
+    "label": "PMBOK 8, Guide section 5, Prioritization/ranking"
+  }
+]

@@ -118,6 +118,16 @@ def resolve(part: str) -> tuple[str, int] | None:
 
     if book in TOC_BOOKS:
         # Their tables of contents list every section: "3.3.2. Title  [p83]" or "3.4.2 TITLE  [p87]".
+        # "Glossary (story point)" opens the glossary page that defines the term.
+        if "glossary" in lowered:
+            start = re.search(r"^\s*Glossary\s+\[p(\d+)\]", toc(book), re.MULTILINE | re.IGNORECASE)
+            first = int(start.group(1)) if start else TOC_BOOKS[book]
+            term = re.search(r"\(([^)]+)\)", part)
+            if not term:
+                return book, first
+            page = find_line(book, rf"^{re.escape(term.group(1))}\s*(\([^)]*\)\s*)?\.", first)
+            return (book, page) if page else None
+
         # Section numbers may carry an annex or appendix letter: "A3.2", "X1.4".
         number = re.search(r"\b([AX]?\d+(?:\.\d+)+)\b", part)
         section = re.search(r"sections? (\d+)", lowered)

@@ -1,0 +1,77 @@
+[
+  {
+    "book": "agile",
+    "page": 81,
+    "label": "Agile Practice Guide, 5.2.1"
+  },
+  {
+    "book": "agile",
+    "page": 82,
+    "label": "Agile Practice Guide, 5.2.2"
+  },
+  {
+    "book": "agile",
+    "page": 83,
+    "label": "Agile Practice Guide, 5.2.3"
+  },
+  {
+    "book": "agile",
+    "page": 182,
+    "label": "Agile Practice Guide, Glossary (definition of ready)"
+  },
+  {
+    "book": "agile",
+    "page": 183,
+    "label": "Agile Practice Guide, Glossary (iteration planning)"
+  },
+  {
+    "book": "agile",
+    "page": 187,
+    "label": "Agile Practice Guide, Glossary (spike)"
+  },
+  {
+    "book": "agile",
+    "page": 187,
+    "label": "Agile Practice Guide, Glossary (story point)"
+  },
+  {
+    "book": "agile",
+    "page": 188,
+    "label": "Agile Practice Guide, Glossary (timebox)"
+  },
+  {
+    "book": "agile",
+    "page": 188,
+    "label": "Agile Practice Guide, Glossary (user story)"
+  },
+  {
+    "book": "estimating",
+    "page": 63,
+    "label": "Practice Standard for Project Estimating, 4.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 219,
+    "label": "PMBOK 8, Guide section 4, Backlog"
+  },
+  {
+    "book": "pmbok8",
+    "page": 248,
+    "label": "PMBOK 8, Guide section 4, User stories"
+  },
+  {
+    "book": "pmbok8",
+    "page": 251,
+    "label": "PMBOK 8, Guide section 5, Agile release planning"
+  },
+  {
+    "book": "pmbok8",
+    "page": 254,
+    "label": "PMBOK 8, Guide section 5, Backlog refinement"
+  },
+  {
+    "book": "pmbok8",
+    "page": 316,
+    "label": "PMBOK 8, Guide section 5, Velocity"
+  }
+]
