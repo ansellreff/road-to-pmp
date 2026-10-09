@@ -1,0 +1,482 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a risk?",
+    "options": [
+      "A problem that has already occurred",
+      "An uncertain event or condition that, if it occurs, has a positive or negative effect on objectives",
+      "Any event that harms the project",
+      "A requirement that has not been approved"
+    ],
+    "answer": 1,
+    "explanation": "A risk is uncertain and lies in the future, and its effect can be positive (opportunity) or negative (threat).",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A key supplier has just gone out of business and deliveries have stopped. What is this?",
+    "options": [
+      "A risk",
+      "An opportunity",
+      "An issue",
+      "An assumption"
+    ],
+    "answer": 2,
+    "explanation": "An issue is a current condition that has already occurred and needs action. A risk is a potential future event that has not yet occurred.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Which statement about opportunities is correct?",
+    "options": [
+      "They are risks with a positive effect on objectives and are managed in the same processes as threats",
+      "They are not risks",
+      "They are recorded in the issue log",
+      "They are ignored in risk management"
+    ],
+    "answer": 0,
+    "explanation": "Opportunities are positive risks. The Risk domain aims to increase the probability and impact of opportunities and decrease those of threats.",
+    "ref": "PMBOK 8, Guide 2.7.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 199,
+        "label": "PMBOK 8, Guide 2.7.2"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Which term describes the degree of uncertainty an organization is willing to accept in anticipation of a reward?",
+    "options": [
+      "Risk threshold",
+      "Risk exposure",
+      "Risk trigger",
+      "Risk appetite"
+    ],
+    "answer": 3,
+    "explanation": "Risk appetite is the degree of uncertainty an organization or individual is willing to accept. The risk threshold is the measurable acceptable variation that reflects it.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Which document describes how risk management activities will be structured and performed, including risk categories and timing?",
+    "options": [
+      "Risk register",
+      "Risk management plan",
+      "Risk report",
+      "Issue log"
+    ],
+    "answer": 1,
+    "explanation": "The risk management plan describes how risk management will be done. It does not list the individual risks; those are in the risk register.",
+    "ref": "PMBOK 8, Guide section 4, Risk management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 239,
+        "label": "PMBOK 8, Guide section 4, Risk management plan"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Where are the identified individual risks, their owners and their responses recorded?",
+    "options": [
+      "Risk management plan",
+      "Risk report",
+      "Risk register",
+      "Project charter"
+    ],
+    "answer": 2,
+    "explanation": "The risk register captures the details of identified individual project risks. It is updated by every later risk process.",
+    "ref": "PMBOK 8, Guide section 4, Risk register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 242,
+        "label": "PMBOK 8, Guide section 4, Risk register"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What does the risk report present?",
+    "options": [
+      "Sources of overall project risk and summary information on individual risks",
+      "The detailed description of each risk",
+      "The project budget",
+      "The list of stakeholders"
+    ],
+    "answer": 0,
+    "explanation": "The risk report presents information on sources of overall project risk, together with summary information on the identified individual risks.",
+    "ref": "PMBOK 8, Guide section 4, Risk report",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 243,
+        "label": "PMBOK 8, Guide section 4, Risk report"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "When are risks identified?",
+    "options": [
+      "Only during planning",
+      "Only by the project manager at the start",
+      "Only when something goes wrong",
+      "Iteratively, throughout the project"
+    ],
+    "answer": 3,
+    "explanation": "Not all risks can be identified at the outset. Risk identification is iterative, so that emerging risks are found as the project evolves.",
+    "ref": "PMBOK 8, Guide 2.7.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Which risk identification technique examines strengths and weaknesses and then the opportunities and threats that arise from them?",
+    "options": [
+      "Prompt list",
+      "SWOT analysis",
+      "Decision tree analysis",
+      "Sensitivity analysis"
+    ],
+    "answer": 1,
+    "explanation": "SWOT analysis widens risk identification by including internally generated risks: opportunities that arise from strengths and threats from weaknesses.",
+    "ref": "PMBOK 8, Guide section 5, SWOT (strengths, weaknesses, opportunities, threats) analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 309,
+        "label": "PMBOK 8, Guide section 5, SWOT (strengths, weaknesses, opportunities, threats) analysis"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Which tool maps each risk's probability of occurrence against its impact in order to prioritize risks?",
+    "options": [
+      "Decision tree",
+      "Tornado diagram",
+      "Probability and impact matrix",
+      "Risk breakdown structure"
+    ],
+    "answer": 2,
+    "explanation": "The probability and impact matrix is a grid for mapping the probability of each risk and its impact on objectives. It is the main tool of qualitative analysis.",
+    "ref": "PMBOK 8, Guide section 5, Probability and impact matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 292,
+        "label": "PMBOK 8, Guide section 5, Probability and impact matrix"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "A risk has a probability of 0.5 and an impact of 0.4. What is its risk score?",
+    "options": [
+      "0.20",
+      "0.90",
+      "0.10",
+      "1.25"
+    ],
+    "answer": 0,
+    "explanation": "Risk score = probability × impact = 0.5 × 0.4 = 0.20.",
+    "ref": "PMBOK 8, Guide section 5, Probability and impact matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 292,
+        "label": "PMBOK 8, Guide section 5, Probability and impact matrix"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What is the main difference between qualitative and quantitative risk analysis?",
+    "options": [
+      "Qualitative is done only at the end of the project",
+      "Quantitative is always required; qualitative is optional",
+      "There is no difference",
+      "Qualitative prioritizes individual risks by probability and impact; quantitative numerically analyzes their combined effect on overall objectives"
+    ],
+    "answer": 3,
+    "explanation": "Qualitative analysis evaluates individual risks to prioritize them. Quantitative analysis, when required, puts numbers on the combined effect of risks on the project.",
+    "ref": "PMBOK 8, Guide 2.7.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "A threat has a 20% probability and would cost $50,000 if it occurs. What is its expected monetary value?",
+    "options": [
+      "−$50,000",
+      "−$10,000",
+      "−$2,500",
+      "−$40,000"
+    ],
+    "answer": 1,
+    "explanation": "EMV = probability × impact = 0.20 × −$50,000 = −$10,000. Threats are entered as negative values.",
+    "ref": "PMBOK 8, Guide section 5, Decision tree analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decision tree analysis"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A project has two risks: a 10% chance of losing $80,000 and a 40% chance of saving $30,000. What is the total expected monetary value?",
+    "options": [
+      "−$8,000",
+      "−$50,000",
+      "+$4,000",
+      "+$12,000"
+    ],
+    "answer": 2,
+    "explanation": "Threat: 0.10 × −80,000 = −$8,000. Opportunity: 0.40 × +30,000 = +$12,000. Total = −8,000 + 12,000 = +$4,000.",
+    "ref": "PMBOK 8, Guide section 5, Decision tree analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decision tree analysis"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "The team buys insurance against storm damage to the construction site. Which risk response strategy is this?",
+    "options": [
+      "Transfer",
+      "Mitigate",
+      "Avoid",
+      "Accept"
+    ],
+    "answer": 0,
+    "explanation": "Transfer shifts ownership of a threat to a third party who bears the impact, usually for a risk premium. Insurance, warranties and performance bonds are examples.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "To reduce the chance that a new system fails in production, the team adds an extra round of testing and builds a prototype. Which strategy is this?",
+    "options": [
+      "Avoid",
+      "Transfer",
+      "Accept",
+      "Mitigate"
+    ],
+    "answer": 3,
+    "explanation": "Mitigation reduces the probability and/or impact of a threat. Conducting more tests and developing a prototype are typical mitigation actions.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A feature depends on unproven technology. The team removes the feature from the project scope so the threat can no longer occur. Which strategy is this?",
+    "options": [
+      "Mitigate",
+      "Avoid",
+      "Escalate",
+      "Transfer"
+    ],
+    "answer": 1,
+    "explanation": "Avoidance eliminates the threat entirely, reducing its probability to zero, for example by removing its cause or reducing scope.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "The team decides to take no action on a low-priority threat but sets aside a contingency reserve in case it occurs. Which strategy is this?",
+    "options": [
+      "Passive acceptance",
+      "Mitigation",
+      "Active acceptance",
+      "Transfer"
+    ],
+    "answer": 2,
+    "explanation": "Acceptance takes no proactive action. Establishing a contingency reserve is active acceptance; simply reviewing the threat periodically is passive acceptance.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A threat is identified that affects the whole program and is beyond the project manager's authority. What should the project manager do?",
+    "options": [
+      "Escalate it to the appropriate level",
+      "Accept it",
+      "Mitigate it using the project budget",
+      "Ignore it"
+    ],
+    "answer": 0,
+    "explanation": "Escalation is appropriate when a threat is outside the project's scope or the response would exceed the project manager's authority. It is then managed at program or portfolio level.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "To make sure the project finishes early and earns a bonus, the organization assigns its most talented people to it. Which opportunity strategy is this?",
+    "options": [
+      "Enhance",
+      "Share",
+      "Accept",
+      "Exploit"
+    ],
+    "answer": 3,
+    "explanation": "Exploit seeks to ensure the opportunity definitely happens, raising its probability to 100%. Assigning the most talented resources is the standard example.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for opportunities",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 307,
+        "label": "PMBOK 8, Guide section 5, Strategies for opportunities"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A company forms a joint venture with a partner that is better placed to win a large contract. Which opportunity strategy is this?",
+    "options": [
+      "Exploit",
+      "Share",
+      "Enhance",
+      "Escalate"
+    ],
+    "answer": 1,
+    "explanation": "Sharing transfers ownership of an opportunity to a third party so that it shares the benefit. Partnerships and joint ventures are examples.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for opportunities",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 307,
+        "label": "PMBOK 8, Guide section 5, Strategies for opportunities"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "To reduce the risk of a late supplier, the team hires a second supplier. This creates a new risk that the two suppliers' parts may not fit together. What is this new risk called?",
+    "options": [
+      "Residual risk",
+      "Overall risk",
+      "Secondary risk",
+      "Risk trigger"
+    ],
+    "answer": 2,
+    "explanation": "A secondary risk arises as a direct result of implementing a risk response. A residual risk is what remains after the responses have been implemented.",
+    "ref": "The Standard for Risk Management, 4.6",
+    "links": [
+      {
+        "book": "riskstd",
+        "page": 52,
+        "label": "The Standard for Risk Management, 4.6"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A team member identifies a new risk during execution. What should be done first?",
+    "options": [
+      "Record it in the risk register and analyze it",
+      "Implement a response immediately",
+      "Add money to the budget",
+      "Wait for the next phase"
+    ],
+    "answer": 0,
+    "explanation": "A new risk is recorded in the risk register, then analyzed and prioritized, and only then is a response planned.",
+    "ref": "PMBOK 8, Guide 2.7.2.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 203,
+        "label": "PMBOK 8, Guide 2.7.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "What is the purpose of a risk audit?",
+    "options": [
+      "To calculate the expected monetary value of each risk",
+      "To identify new stakeholders",
+      "To approve change requests",
+      "To examine how effective the risk management process is"
+    ],
+    "answer": 3,
+    "explanation": "Periodic risk audits determine strengths and weaknesses in how risks are being handled, and help to improve risk management.",
+    "ref": "The Standard for Risk Management, 4.8",
+    "links": [
+      {
+        "book": "riskstd",
+        "page": 56,
+        "label": "The Standard for Risk Management, 4.8"
+      }
+    ]
+  }
+]

@@ -24,6 +24,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Practice Standard for Scheduling (Third Edition) added as a fifth source book, at your suggestion. Modules 2.4 and 2.5 now cite it: the PERT formula has a real page source, and 2.5 gained critical path activity vs critical activity, shared total float, date constraints and the three critical chain buffers (3 new questions, 6 new flashcards). | You: restart `start.bat` once so the new book's links open. Next: Session 12, modules 2.7 and 2.8 |
 | 2026-10-10 | Session 12 done: modules 2.7 (earned value management: PV, EV, AC, variances, indices, EAC, ETC, VAC, TCPI, with one worked example throughout) and 2.8 (Stakeholders domain: register, power/interest grid, engagement matrix, communication methods, channels, communication model) written. The Standard for Earned Value Management added as a sixth source book. **Half of CAPM is done: 19 of 38 modules.** | You: restart `start.bat` once; study 2.7 and 2.8. Next: Session 13, modules 2.9 (Resources domain) and 2.10 (Risk domain). Still unused in your folder: the WBS and Estimating practice standards (for 2.3, 2.4, 2.6) |
 | 2026-10-10 | Fixed: links to the two new books (Scheduling, Earned Value) showed "This page does not exist". The local server read the book list only at startup; it now reads it on every request, so new books work without a restart. | You: click a source link in module 2.5 or 2.7 to confirm. Next: Session 13, modules 2.9 and 2.10 |
+| 2026-10-10 | Session 13 done: modules 2.9 (Resources domain: RACI, acquiring and leading the team, Tuckman ladder, conflict resolution, motivation models) and 2.10 (Risk domain: risk vs issue, appetite and threshold, risk register, qualitative and quantitative analysis, EMV, response strategies for threats and opportunities) written. The Standard for Risk Management added as a seventh source book. | You: study 2.9 and 2.10. Next: Session 14, modules 2.11 (quality and procurement) and 2.12 (tools and techniques), which completes Domain 2. Still unused in your folder: the WBS and Estimating practice standards and the Risk practice guide |
 
 ## How your progress is saved
 
@@ -41,7 +42,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 - A link opens the PDF from `PMI Learning Material/` in a new browser tab at the page where that section starts. "PDF page" is the page number your PDF viewer shows, not the number printed on the page.
 - The links work only when the platform runs on this PC (`start.bat`). The PDFs are licensed to you personally and are never uploaded, so on the future website the same place shows the book and page as plain text.
 - Flashcards do not have a page each; they use the module's source list.
-- The two PMBOK Guides, the Practice Standard for Scheduling and The Standard for Earned Value Management are protected by PMI in a way the Edge browser cannot open (it asks for a password). The links therefore use unlocked copies stored in `.cache/pdf/`, made by `tools/unlock_pdfs.py` at your request on 2026-10-10. The copies stay on this PC, are excluded from Git, and still carry your name and member ID on each page. Your original files are untouched.
+- The two PMBOK Guides, the Practice Standard for Scheduling, The Standard for Earned Value Management and The Standard for Risk Management are protected by PMI in a way the Edge browser cannot open (it asks for a password). The links therefore use unlocked copies stored in `.cache/pdf/`, made by `tools/unlock_pdfs.py` at your request on 2026-10-10. The copies stay on this PC, are excluded from Git, and still carry your name and member ID on each page. Your original files are untouched.
 - If a PDF is renamed or a new book is added, update `web/src/content/books.json`, then run `tools/extract_pdf.py` and `tools/unlock_pdfs.py`. The running server picks up a new book straight away; no restart is needed.
 - A red **\*** marks a module as additional information that is not part of the exam (currently only 1.11). It does not count toward progress.
 
@@ -103,7 +104,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 6 | Modules 1.8, 1.9: performance domains and tailoring; constraints, risks, issues |
 | ✅ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. (Code of Ethics PDF is in the materials folder) |
 | ✅ | 8 | Feature: spaced repetition for flashcards (plus source links to the PDFs) |
-| 🟡 | 9 to 14 | Domain 2: 12 modules (Sessions 9 to 12 done: 2.1 to 2.8) |
+| 🟡 | 9 to 14 | Domain 2: 12 modules (Sessions 9 to 13 done: 2.1 to 2.10) |
 | ⬜ | 15 | Feature: dashboard and "practice my weakest topics" quiz |
 | ⬜ | 16 to 19 | Domain 3: 8 modules |
 | ⬜ | 20 | Feature: study plan and exam countdown |
@@ -162,7 +163,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **19 of 38 modules done** (364 quiz questions, 510 flashcards).
+Overall: **21 of 38 modules done** (411 quiz questions, 586 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -199,8 +200,8 @@ Overall: **19 of 38 modules done** (364 quiz questions, 510 flashcards).
 | ✅ | 2.6 Finance Domain: Cost Estimating and Budget | 2026-10-10 |
 | ✅ | 2.7 Earned Value Management | 2026-10-10 |
 | ✅ | 2.8 Stakeholders Domain: Engagement and Communication | 2026-10-10 |
-| ⬜ | 2.9 Resources Domain: Team and Physical Resources | |
-| ⬜ | 2.10 Risk Domain | |
+| ✅ | 2.9 Resources Domain: Team and Physical Resources | 2026-10-10 |
+| ✅ | 2.10 Risk Domain | 2026-10-10 |
 | ⬜ | 2.11 Quality and Procurement | |
 | ⬜ | 2.12 Common Tools and Techniques | |
 

@@ -1,0 +1,462 @@
+[
+  {
+    "id": "q1",
+    "q": "Which process in the Resources domain deals with guiding, developing and managing the people on the project?",
+    "options": [
+      "Monitor and Control Resourcing",
+      "Acquire Resources",
+      "Estimate Resources",
+      "Lead the Team"
+    ],
+    "answer": 3,
+    "explanation": "Lead the Team covers the people: developing competencies, giving feedback and resolving conflict. Monitor and Control Resourcing covers physical and virtual resources.",
+    "ref": "PMBOK 8, Guide 2.6.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 189,
+        "label": "PMBOK 8, Guide 2.6.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A crane that the project rented has not arrived on the planned date. Which process deals with this?",
+    "options": [
+      "Lead the Team",
+      "Monitor and Control Resourcing",
+      "Plan Resource Management",
+      "Manage Stakeholder Engagement"
+    ],
+    "answer": 1,
+    "explanation": "Monitor and Control Resourcing ensures that the physical and virtual resources assigned to the project are available as planned, and takes corrective action when they are not.",
+    "ref": "PMBOK 8, Guide 2.6.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 192,
+        "label": "PMBOK 8, Guide 2.6.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Which document sets the team's values, agreements and operating guidelines, such as how decisions are made and conflicts are resolved?",
+    "options": [
+      "Team charter",
+      "Project charter",
+      "Resource breakdown structure",
+      "Stakeholder register"
+    ],
+    "answer": 0,
+    "explanation": "The team charter establishes the values, agreements and operating guidelines for the team. It works best when the team develops it.",
+    "ref": "PMBOK 8, Guide section 4, Team charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 247,
+        "label": "PMBOK 8, Guide section 4, Team charter"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "In a RACI chart, how many people should be accountable for one task?",
+    "options": [
+      "As many as needed",
+      "At least two",
+      "Exactly one",
+      "None, if someone is responsible"
+    ],
+    "answer": 2,
+    "explanation": "Only one person is accountable for any one task, to avoid confusion about who is ultimately in charge.",
+    "ref": "PMBOK 8, Guide section 5, Responsibility assignment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Responsibility assignment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "What do the letters RACI stand for?",
+    "options": [
+      "Review, approve, check, implement",
+      "Responsible, accountable, consulted, informed",
+      "Required, assigned, completed, inspected",
+      "Resource, activity, cost, issue"
+    ],
+    "answer": 1,
+    "explanation": "A RACI chart is a responsibility assignment matrix showing who is responsible, accountable, consulted and informed for each piece of work.",
+    "ref": "PMBOK 8, Guide section 5, Responsibility assignment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Responsibility assignment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which of the following is a hierarchical representation of resources by category and type?",
+    "options": [
+      "Work breakdown structure",
+      "Organizational breakdown structure",
+      "Responsibility assignment matrix",
+      "Resource breakdown structure"
+    ],
+    "answer": 3,
+    "explanation": "The resource breakdown structure shows resources by category (labor, materials, equipment, supplies) and type (such as skill level).",
+    "ref": "PMBOK 8, Guide section 4, Resource breakdown structure",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 237,
+        "label": "PMBOK 8, Guide section 4, Resource breakdown structure"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What does a resource calendar show?",
+    "options": [
+      "The working days and shifts when each specific resource is available",
+      "The project milestones",
+      "The cost of each resource",
+      "The team's holidays only"
+    ],
+    "answer": 0,
+    "explanation": "A resource calendar identifies the working days and shifts during which each specific resource is available, and for how long.",
+    "ref": "PMBOK 8, Guide section 4, Resource calendar",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 237,
+        "label": "PMBOK 8, Guide section 4, Resource calendar"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "In a matrix organization, a key engineer the project needs is controlled by a functional manager. What should the project manager do?",
+    "options": [
+      "Take the engineer without asking",
+      "Cancel the activity",
+      "Negotiate with the functional manager",
+      "Complain to the customer"
+    ],
+    "answer": 2,
+    "explanation": "The project manager often has no direct control over resource selection and must negotiate with and influence those who can provide the resources.",
+    "ref": "PMBOK 8, Guide 2.6.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 187,
+        "label": "PMBOK 8, Guide 2.6.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A proposal named a specific expert who would work on the project if the contract was won. This is an example of:",
+    "options": [
+      "Negotiation",
+      "Preassignment",
+      "Colocation",
+      "Resource leveling"
+    ],
+    "answer": 1,
+    "explanation": "Preassignment is when resources are determined in advance, for example when specific people are named in a competitive proposal.",
+    "ref": "PMBOK 8, Guide section 5, Preassignment",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 290,
+        "label": "PMBOK 8, Guide section 5, Preassignment"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Placing the most active team members in the same physical location to improve teamwork is called:",
+    "options": [
+      "A virtual team",
+      "Preassignment",
+      "Team building",
+      "Colocation"
+    ],
+    "answer": 3,
+    "explanation": "Colocation places many or all of the most active team members in the same location to enhance their ability to perform as a team.",
+    "ref": "PMBOK 8, Guide section 5, Colocation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 256,
+        "label": "PMBOK 8, Guide section 5, Colocation"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "A project team has just been assembled. Members are polite, work independently and are learning their roles. Which Tuckman stage is this?",
+    "options": [
+      "Forming",
+      "Storming",
+      "Norming",
+      "Performing"
+    ],
+    "answer": 0,
+    "explanation": "In forming, team members meet and learn about the project and their roles. They tend to be independent and not yet open with each other.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Team members disagree openly about the technical approach and how the project should be run. Which Tuckman stage is this?",
+    "options": [
+      "Forming",
+      "Norming",
+      "Storming",
+      "Adjourning"
+    ],
+    "answer": 2,
+    "explanation": "In storming the team begins to address the work and the decisions, and differing ideas clash. The environment can become counterproductive if members are not open.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Team members have started to adjust their work habits to support each other and are learning to trust one another. Which Tuckman stage is this?",
+    "options": [
+      "Storming",
+      "Norming",
+      "Performing",
+      "Forming"
+    ],
+    "answer": 1,
+    "explanation": "In norming, members begin to work together, adjust their habits and behaviors and learn to trust one another. Performing comes next, when the team works as an interdependent unit.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which statement about the Tuckman stages is correct?",
+    "options": [
+      "Every team passes through all five stages exactly once, in order",
+      "Teams always start at storming",
+      "The stages apply only to agile teams",
+      "A team can get stuck in a stage, go back to an earlier one, or skip one"
+    ],
+    "answer": 3,
+    "explanation": "The stages usually occur in order, but a team may get stuck or regress, and members who have worked together before may skip a stage.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Two team members are in conflict. The project manager brings them together, and they discuss all viewpoints openly until they agree on a solution both support. Which technique is this?",
+    "options": [
+      "Collaborate / problem-solve",
+      "Compromise / reconcile",
+      "Smooth / accommodate",
+      "Force / direct"
+    ],
+    "answer": 0,
+    "explanation": "Collaborating incorporates multiple viewpoints through open dialogue and typically leads to consensus and commitment: a win-win.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "During a safety emergency, the project manager tells the team exactly what to do, without discussion. Which conflict resolution technique is this?",
+    "options": [
+      "Withdraw / avoid",
+      "Collaborate / problem-solve",
+      "Force / direct",
+      "Smooth / accommodate"
+    ],
+    "answer": 2,
+    "explanation": "Forcing pushes one viewpoint at the expense of others, usually from a position of power. It gives a win-lose result and suits emergencies.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A project manager says, \"Let's focus on what we agree on,\" and plays down the points of difference to keep harmony. Which technique is this?",
+    "options": [
+      "Compromise / reconcile",
+      "Smooth / accommodate",
+      "Force / direct",
+      "Collaborate / problem-solve"
+    ],
+    "answer": 1,
+    "explanation": "Smoothing emphasizes areas of agreement over areas of difference, and concedes one's position to maintain harmony and relationships.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Each side gives up something so that everyone is partly satisfied. Which technique is this?",
+    "options": [
+      "Withdraw / avoid",
+      "Force / direct",
+      "Smooth / accommodate",
+      "Compromise / reconcile"
+    ],
+    "answer": 3,
+    "explanation": "Compromising searches for solutions that bring some degree of satisfaction to all parties. It resolves the conflict partially or temporarily and can be lose-lose.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Two team members have a disagreement about their work. Who is initially responsible for resolving it?",
+    "options": [
+      "The team members themselves",
+      "The sponsor",
+      "The human resources department",
+      "The customer"
+    ],
+    "answer": 0,
+    "explanation": "Project team members are initially responsible for resolving their own conflicts. If the conflict escalates, the project manager helps to facilitate a resolution.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "According to Herzberg, what is the effect of a good salary and good working conditions?",
+    "options": [
+      "They are the strongest motivators",
+      "They have no effect at all",
+      "They prevent dissatisfaction but do not by themselves create satisfaction",
+      "They replace the need for recognition"
+    ],
+    "answer": 2,
+    "explanation": "Salary, company policies and the physical environment are hygiene factors. If insufficient they cause dissatisfaction, but even when sufficient they do not lead to satisfaction.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A manager believes that people work only for money, avoid responsibility and must be closely supervised. Which theory describes this view?",
+    "options": [
+      "Theory Y",
+      "Theory X",
+      "Theory of needs",
+      "Hierarchy of needs"
+    ],
+    "answer": 1,
+    "explanation": "McGregor's Theory X assumes people work only for income and need a hands-on, top-down management style. Theory Y assumes people are intrinsically motivated to do good work.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which three needs does McClelland's theory of needs describe?",
+    "options": [
+      "Autonomy, mastery and purpose",
+      "Physiological, safety and social",
+      "Salary, policy and environment",
+      "Achievement, power and affiliation"
+    ],
+    "answer": 3,
+    "explanation": "McClelland states that people are driven by needs for achievement, power and affiliation. Autonomy, mastery and purpose are Pink's intrinsic motivators.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which statement about virtual teams is correct?",
+    "options": [
+      "They widen the choice of people, and make communication planning more important",
+      "They remove the need for a communications plan",
+      "They cannot be used on projects",
+      "They always cost more than colocated teams"
+    ],
+    "answer": 0,
+    "explanation": "Virtual teams allow experts from anywhere to join and reduce travel costs, but communication planning becomes increasingly important.",
+    "ref": "PMBOK 8, Guide section 5, Virtual teams",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 317,
+        "label": "PMBOK 8, Guide section 5, Virtual teams"
+      }
+    ]
+  }
+]

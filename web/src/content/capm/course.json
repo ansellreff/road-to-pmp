@@ -35,8 +35,8 @@
         { "id": "2-06-finance-domain", "title": "Finance Domain: Cost Estimating and Budget", "ready": true },
         { "id": "2-07-earned-value", "title": "Earned Value Management", "ready": true },
         { "id": "2-08-stakeholders-domain", "title": "Stakeholders Domain: Engagement and Communication", "ready": true },
-        { "id": "2-09-resources-domain", "title": "Resources Domain: Team and Physical Resources", "ready": false },
-        { "id": "2-10-risk-domain", "title": "Risk Domain", "ready": false },
+        { "id": "2-09-resources-domain", "title": "Resources Domain: Team and Physical Resources", "ready": true },
+        { "id": "2-10-risk-domain", "title": "Risk Domain", "ready": true },
         { "id": "2-11-quality-procurement", "title": "Quality and Procurement", "ready": false },
         { "id": "2-12-tools-techniques", "title": "Common Tools and Techniques", "ready": false }
       ]
