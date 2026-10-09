@@ -13,17 +13,22 @@ const here = path.dirname(fileURLToPath(import.meta.url))
  */
 function localBooks(): Plugin {
   const folder = path.resolve(here, '../PMI Learning Material')
-  const books: Record<string, { file: string }> = JSON.parse(
-    fs.readFileSync(path.resolve(here, 'src/content/books.json'), 'utf8'),
-  )
+  // Read on every request, so a book added to books.json works without restarting the server.
+  const bookList = (): Record<string, { file: string }> =>
+    JSON.parse(fs.readFileSync(path.resolve(here, 'src/content/books.json'), 'utf8'))
   return {
     name: 'local-books',
     apply: 'serve',
     configureServer(server) {
       server.middlewares.use('/books', (req, res, next) => {
         const id = decodeURIComponent((req.url ?? '').split(/[?#]/)[0]).replace(/^\//, '').replace(/\.pdf$/, '')
-        const book = books[id]
-        if (!book) return next()
+        const book = bookList()[id]
+        if (!book) {
+          res.statusCode = 404
+          res.setHeader('Content-Type', 'text/plain; charset=utf-8')
+          res.end(`No book with the id "${id}" is listed in web/src/content/books.json.`)
+          return
+        }
         // Edge's viewer cannot open PMI's protected PDFs, so tools/unlock_pdfs.py keeps a
         // readable copy of those in .cache/pdf. Use it when present, else the original.
         const readable = path.resolve(here, '../.cache/pdf', `${id}.pdf`)
