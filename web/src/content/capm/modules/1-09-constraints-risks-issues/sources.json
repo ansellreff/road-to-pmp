@@ -2,6 +2,11 @@
   {
     "book": "pmbok8",
     "page": 197,
+    "label": "PMBOK 8, Guide 2.7.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 197,
     "label": "PMBOK 8, Guide 2.7.1 and Glossary"
   },
   {
@@ -21,8 +26,18 @@
   },
   {
     "book": "pmbok8",
+    "page": 228,
+    "label": "PMBOK 8, Guide section 4, Issue log"
+  },
+  {
+    "book": "pmbok8",
     "page": 370,
     "label": "PMBOK 8, Glossary (assumption)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 370,
+    "label": "PMBOK 8, Glossary (baseline)"
   },
   {
     "book": "pmbok8",
@@ -31,8 +46,38 @@
   },
   {
     "book": "pmbok8",
+    "page": 371,
+    "label": "PMBOK 8, Glossary (contingency reserve)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 374,
+    "label": "PMBOK 8, Glossary (management reserve)"
+  },
+  {
+    "book": "pmbok8",
     "page": 375,
     "label": "PMBOK 8, Glossary (opportunity)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 377,
+    "label": "PMBOK 8, Glossary (risk acceptance)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 377,
+    "label": "PMBOK 8, Glossary (risk appetite)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 378,
+    "label": "PMBOK 8, Glossary (risk escalation)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 378,
+    "label": "PMBOK 8, Glossary (risk mitigation)"
   },
   {
     "book": "pmbok8",

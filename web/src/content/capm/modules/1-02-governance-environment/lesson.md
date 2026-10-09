@@ -8,6 +8,8 @@
 
 ## Two levels of governance
 
+@source PMBOK 8, Standard 1.3.2
+
 **Organizational governance** provides direction and control through policies, processes, procedures and decisions, so the organization meets its strategic and operational goals. It is usually overseen by an executive committee or senior leaders, and it is shaped by laws, industry regulations, standards and the organization's own policies.
 
 It affects portfolios, programs and projects by:
@@ -37,9 +39,13 @@ Project governance also helps prioritize initiatives and allocate resources. A t
 
 ## The project environment
 
+@source PMBOK 8, Standard 2.2
+
 Every project operates inside an internal and an external environment. These influences can be favorable, unfavorable or neutral. PMI sorts them into two categories: **EEFs** and **OPAs**.
 
 ## Enterprise environmental factors (EEFs)
+
+@source PMBOK 8, Standard 2.2.1
 
 EEFs are **conditions not directly influenced by the project team that impact, constrain or direct the project**. They are inputs to many project management processes, especially planning. They can help or limit your options, and they influence how you tailor your approach.
 
@@ -69,6 +75,8 @@ EEFs are **conditions not directly influenced by the project team that impact, c
 
 ## Organizational process assets (OPAs)
 
+@source PMBOK 8, Standard 2.2.2; PMBOK 8, Standard 2.2.3; PMBOK 8, Standard 2.2.4
+
 OPAs are the **plans, processes, documents, templates and knowledge repositories** specific to and used by the performing organization. They include lessons learned and historical information from earlier projects. They are inputs to many processes.
 
 OPAs are **internal** to the organization, so the team can often update or add to them. They fall into two groups:
@@ -94,6 +102,8 @@ OPAs are **internal** to the organization, so the team can often update or add t
 
 ## EEF or OPA?
 
+@source PMBOK 8, Standard 2.2
+
 | | EEF | OPA |
 |---|---|---|
 | What it is | A condition around the project | An asset the organization owns |
@@ -105,6 +115,8 @@ OPAs are **internal** to the organization, so the team can often update or add t
 A quick way to decide: a **law, a market, a culture or an existing system** is an EEF. A **template, a procedure or a lesson learned** is an OPA.
 
 ## Organizational structures
+
+@source PMBOK 8, Standard 2.2.5; PMBOK 8, Standard 2.2.5, Table 2-1
 
 There is no one-size-fits-all structure. The right one depends on the organization's size, industry, geographic spread, strategy and project complexity. What matters for the exam is how each structure affects the project manager.
 

@@ -67,7 +67,8 @@ export default function ModulePage() {
         {tab === 'flashcards' && <Flashcards courseId={course.id} moduleId={module.id} />}
       </div>
 
-      <ModuleSources courseId={course.id} moduleId={module.id} />
+      {/* The lesson shows each source under its own section, so the full list is only for the other tabs. */}
+      {tab !== 'lesson' && <ModuleSources courseId={course.id} moduleId={module.id} />}
       <ModuleProgress courseId={course.id} moduleId={module.id} />
     </div>
   )

@@ -8,6 +8,8 @@
 
 ## What a performance domain is
 
+@source PMBOK 8, Guide section 2
+
 Performance domains are **interactive, interrelated and interdependent** areas of focus that work together to achieve the desired results. They are not handled as separate silos. A project leader pays attention to stakeholders, schedule, risk and the rest from the first day to the last, however and whenever value is delivered.
 
 **Principles and domains.** Principles guide mindset and behavior. Performance domains are the broad areas of focus in which that mindset and behavior are shown. The principles are the foundation; the domains hold the processes.
@@ -26,6 +28,8 @@ Each domain is presented the same way in the Guide:
 
 ## The seven domains
 
+@source PMBOK 8, Guide section 2; PMBOK 8, Guide 2.1
+
 | Domain | What it is about |
 |---|---|
 | **Governance** | The framework, functions and processes that guide decisions and activities to optimize value delivery. It integrates everything else: strategic alignment, decision-making, change, quality assurance, knowledge and success criteria |
@@ -39,6 +43,8 @@ Each domain is presented the same way in the Guide:
 Governance can be **lightweight** for adaptive work, **moderate** for hybrid, and **comprehensive** for large predictive projects.
 
 ## The 40 processes
+
+@source PMBOK 8, Guide Table 2-1
 
 The Guide presents 40 processes to describe the mechanics of the domains. Each lists a **sampling** of inputs, tools and techniques, and outputs (ITTOs). They are **illustrative, not comprehensive, and not prescriptive**: a technical description, not a required methodology.
 
@@ -65,6 +71,8 @@ Patterns worth noticing:
 
 ## Tailoring
 
+@source PMBOK 8, Guide section 3; PMBOK 8, Guide 3.2
+
 **Tailoring** is the deliberate adaptation of the project management approach, governance and processes to make them suitable for the environment and fit for the work at hand. It is driven by the principles, and by organizational values and culture.
 
 **Why tailor?** No single approach fits all projects. Too few processes makes management ineffective; too many is costly and wasteful. A nuclear reactor project needs far more rigor than an office building, and a team of 200 needs far more coordination than a team of 10. Projects must balance competing demands: speed, cost, value, quality, compliance and sustainability, stakeholder expectations, and adapting to change.
@@ -78,6 +86,8 @@ Benefits of tailoring:
 Limits: organizational policy or a contract may **mandate** a particular approach.
 
 ## What can be tailored
+
+@source PMBOK 8, Guide 3.3
 
 **1. Life cycle and development approach.** Choosing the phases and choosing predictive, adaptive or hybrid.
 
@@ -95,6 +105,8 @@ Limits: organizational policy or a contract may **mandate** a particular approac
 
 ## The four-step tailoring process
 
+@source PMBOK 8, Guide 3.4
+
 1. **Select the initial development approach.** Use knowledge of the product and the delivery cadence. A **suitability filter** helps: a decision-making tool, not a rigid procedure, that evaluates culture, team and project factors to see whether predictive, adaptive or hybrid fits best.
 2. **Tailor for the organization.** Add, remove and reconfigure elements to fit organizational requirements and policy.
 3. **Tailor for the project.** Adjust for size, criticality and other factors, looking at three attributes: the **product or deliverable**, the **project team** and the **culture**.
@@ -111,6 +123,8 @@ Questions to ask when tailoring for the project:
 | Culture | Buy-in, trust, empowerment, organizational culture |
 
 ## Diagnostics: when to tailor further
+
+@source PMBOK 8, Guide 3.6; PMBOK 8, Guide Table 3-1
 
 Retrospectives and lessons learned show where the current way of working needs adjusting.
 

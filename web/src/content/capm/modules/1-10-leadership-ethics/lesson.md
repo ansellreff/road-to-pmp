@@ -8,6 +8,8 @@
 
 ## Leadership and management
 
+@source PMBOK 8, Guide section 5, Leadership; Process Groups: A Practice Guide, 3.3.2
+
 **Leadership** is the knowledge, skills and behaviors needed to guide, motivate and direct a team toward its goals. It includes negotiation, resilience, communication, problem-solving, critical thinking and interpersonal skills. The 8th edition puts it plainly: the common denominator in all projects is people, and people can be counted, but they are not numbers.
 
 The classic PMI comparison:
@@ -28,6 +30,8 @@ Neither is better. Managing keeps the work organized; leading keeps people commi
 
 ## Leadership structures and styles
 
+@source PMBOK 8, Guide section 5, Centralized management and leadership; PMBOK 8, Guide section 5, Servant leadership
+
 | Term | Meaning |
 |---|---|
 | **Centralized management and leadership** | Top-down. Decision-making and authority sit with top management |
@@ -38,6 +42,8 @@ Neither is better. Managing keeps the work organized; leading keeps people commi
 Leadership activities should be practiced by **all** team members, whether management is centralized or distributed.
 
 ## Emotional intelligence
+
+@source PMBOK 8, Guide section 5, Interpersonal skills
 
 **Emotional intelligence** is the ability to identify, assess and manage your own emotions and those of other people, as well as the collective emotions of groups.
 
@@ -51,6 +57,8 @@ Leadership activities should be practiced by **all** team members, whether manag
 - Some models add a fifth area, **motivation**: understanding what drives and inspires people.
 
 ## What makes a high-performing team
+
+@source PMBOK 8, Guide 2.6.2.4.2
 
 Effective leadership aims at these characteristics:
 
@@ -67,6 +75,8 @@ Effective leadership aims at these characteristics:
 Team development models (the Tuckman ladder) and motivation theories (Herzberg, McClelland, McGregor, Pink) are covered with the Resources domain in module 2.9.
 
 ## Conflict management
+
+@source PMBOK 8, Guide section 5, Conflict management
 
 **Conflict is inevitable** on projects. Common sources are **scarce resources, scheduling priorities and personal work styles**. Team ground rules, clear roles and good communication planning reduce it. Managed well, differences of opinion improve creativity and decisions.
 
@@ -91,6 +101,8 @@ Which to use depends on the importance and intensity of the conflict, time press
 
 ## The PMI Code of Ethics and Professional Conduct
 
+@source PMI Code of Ethics, 1.2; PMI Code of Ethics, 1.5
+
 **Purpose:** to instill confidence in the project management profession and to help individuals become better practitioners.
 
 **Who it applies to:**
@@ -114,7 +126,11 @@ One act can violate both kinds at once.
 
 ## The four values
 
+@source PMI Code of Ethics, 1.4
+
 ### Responsibility
+
+@source PMI Code of Ethics, chapter 2
 
 **Our duty to take ownership for the decisions we make or fail to make, the actions we take or fail to take, and the resulting consequences.**
 
@@ -138,6 +154,8 @@ Mandatory:
 
 ### Respect
 
+@source PMI Code of Ethics, chapter 3
+
 **Our duty to show a high regard for ourselves, others and the resources entrusted to us** (people, money, reputation, the safety of others, and natural resources).
 
 Aspirational:
@@ -157,6 +175,8 @@ Mandatory:
 - respect the property rights of others, including intellectual property
 
 ### Fairness
+
+@source PMI Code of Ethics, chapter 4
 
 **Our duty to make decisions and act impartially and objectively.** Conduct must be free from competing self-interest, prejudice and favoritism.
 
@@ -178,6 +198,8 @@ Mandatory:
 A **conflict of interest** arises when you can influence a decision for one party that could affect another party to which you also owe loyalty. The **appearance** of a conflict is treated as a conflict.
 
 ### Honesty
+
+@source PMI Code of Ethics, chapter 5
 
 **Our duty to understand the truth and act in a truthful manner, both in our communications and in our conduct.**
 

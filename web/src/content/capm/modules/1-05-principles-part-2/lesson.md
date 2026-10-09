@@ -8,6 +8,8 @@
 
 ## Principle 4: Be an Accountable Leader
 
+@source PMBOK 8, Standard 3.6
+
 Projects need leadership more than routine operations do. They bring together organizations, departments and vendors that do not normally work together, the stakes are higher, and many people try to influence the outcome. That creates confusion and conflict. High-performing projects show leadership behaviors **more often and from more people** than low-performing ones.
 
 **Accountable leadership** means being responsible for, and taking ownership of, the project's target objectives, the actions taken and the decisions made. When you accept or pull a piece of work, you are accountable for carrying it out.
@@ -37,6 +39,8 @@ Results of this principle: better team performance, more trust and morale, bette
 > Example from the book: on a government megaproject, vendor teams clash over shift rotations. The conventional response is to enforce the contract and tell each vendor to sort out its own staff. An accountable leader instead brings the vendors together to find the root cause and agree on adjusted rotations, which resolves the conflict and protects quality and productivity.
 
 ## Principle 5: Integrate Sustainability Within All Project Areas
+
+@source PMBOK 8, Standard 3.7
 
 **Sustainability** means meeting present needs without compromising the ability of future generations to meet their own needs. In projects it means considering **people, the planet, society and value** in every area and every phase. Project managers, teams and sponsors are **jointly accountable** for it.
 
@@ -76,6 +80,8 @@ Sustainability widens the orientation of project management in two directions: f
 
 ## Principle 6: Build an Empowered Culture
 
+@source PMBOK 8, Standard 3.8
+
 An empowered culture needs **mutual trust** among stakeholders and team members, and **full clarity** on roles, responsibilities, team agreements and guiding processes. With these in place, people contribute ideas freely and proactively, and collaboration produces more than the sum of individual efforts.
 
 The book's headline for this principle: **stakeholders determine the success of projects.**
@@ -95,6 +101,8 @@ Project teams often build their **own culture** within the cultures of the organ
 Empowered teams affect every domain. They can propose speeding up, slowing down or stopping activities; they help cut unplanned spending; they help define risk thresholds; and they shape how stakeholders are engaged.
 
 ## The six principles at a glance
+
+@source PMBOK 8, Standard 3.1
 
 | Principle | One-line essence | Dimension |
 |---|---|---|

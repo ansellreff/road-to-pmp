@@ -11,6 +11,16 @@
   },
   {
     "book": "ethics",
+    "page": 6,
+    "label": "PMI Code of Ethics, 1.5"
+  },
+  {
+    "book": "ethics",
+    "page": 7,
+    "label": "PMI Code of Ethics, chapter 2"
+  },
+  {
+    "book": "ethics",
     "page": 8,
     "label": "PMI Code of Ethics, 2.2.3"
   },
@@ -18,6 +28,11 @@
     "book": "ethics",
     "page": 9,
     "label": "PMI Code of Ethics, 2.3.4 and 3.2.6"
+  },
+  {
+    "book": "ethics",
+    "page": 10,
+    "label": "PMI Code of Ethics, chapter 3"
   },
   {
     "book": "ethics",
@@ -33,6 +48,21 @@
     "book": "ethics",
     "page": 14,
     "label": "PMI Code of Ethics, 5.2.3 and 5.3.1"
+  },
+  {
+    "book": "ethics",
+    "page": 14,
+    "label": "PMI Code of Ethics, chapter 5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 191,
+    "label": "PMBOK 8, Guide 2.6.2.4.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 255,
+    "label": "PMBOK 8, Guide section 5, Centralized management and leadership"
   },
   {
     "book": "pmbok8",
@@ -58,5 +88,10 @@
     "book": "pmbok8",
     "page": 302,
     "label": "PMBOK 8, Guide section 5, Servant leadership"
+  },
+  {
+    "book": "processgroups",
+    "page": 83,
+    "label": "Process Groups: A Practice Guide, 3.3.2"
   }
 ]

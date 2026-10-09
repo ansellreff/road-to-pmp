@@ -9,6 +9,8 @@
 
 ## The four terms side by side
 
+@source PMBOK 8, Guide 2.7.1
+
 | | Assumption | Constraint | Risk | Issue |
 |---|---|---|---|---|
 | What it is | A factor considered true, real or certain without proof | A limiting factor that affects execution | An uncertain event or condition that, if it occurs, affects objectives | A current condition or situation that may affect objectives |
@@ -22,11 +24,15 @@ The four are linked. **An assumption that turns out false becomes a risk or an i
 
 ## Assumptions
 
+@source PMBOK 8, Glossary (assumption)
+
 An **assumption** is a factor in the planning process considered to be true, real or certain **without proof or demonstration**. Planning is impossible without them: you assume staff will be available, prices will hold, a permit will be granted.
 
 Because they are unproven, every assumption carries risk. Good practice is to write them down and check them as the project proceeds.
 
 ## Constraints
+
+@source PMBOK 8, Glossary (constraint)
 
 A **constraint** is a **limiting factor** that affects the execution of a portfolio, program, project or process. Examples: a fixed deadline, a budget cap, a required technology, a regulation, limited staff.
 
@@ -36,12 +42,16 @@ Projects must balance **competing constraints**. The classic set is **scope, sch
 
 ## The assumption log
 
+@source PMBOK 8, Guide section 4, Assumption log
+
 The **assumption log** is a project document that records **all assumptions and constraints** throughout the project. Entries are added, updated or closed as the project goes on.
 
 - **High-level** (strategic and operational) constraints are normally identified in the **business case** before the project starts, and flow into the **project charter**.
 - **Lower-level** activity and task assumptions arise throughout the project, for example when defining specifications, estimates and schedule activities.
 
 ## Risk
+
+@source PMBOK 8, Guide 2.7.1
 
 A **risk** is an uncertain event or condition that, if it occurs, has a **positive or negative** effect on one or more objectives.
 
@@ -59,6 +69,8 @@ The **risk register** is the repository where the outputs of the risk processes 
 
 ## Risk classification
 
+@source PMBOK 8, Guide Figure 2-46
+
 | | What it means | Label |
 |---|---|---|
 | **Known-known** | Facts and requirements. Managed as part of scope. **Not a risk** | Facts |
@@ -67,6 +79,8 @@ The **risk register** is the repository where the outputs of the risk processes 
 | **Unknown-unknown** | The knowledge does not exist within reach. Cannot be foreseen | Emergent risk |
 
 ## Issue
+
+@source PMBOK 8, Guide 2.7.1; PMBOK 8, Guide section 4, Issue log
 
 An **issue** is a current condition or situation that may have an impact on one or more objectives. It **has already occurred** and may need immediate action or management attention.
 
@@ -79,11 +93,15 @@ The **issue log** is the project document where issues are recorded and monitore
 
 ## Risk appetite, threshold and exposure
 
+@source PMBOK 8, Guide 2.7.1; PMBOK 8, Glossary (risk appetite)
+
 - **Risk appetite:** the degree of uncertainty an organization or individual is willing to accept in anticipation of a reward.
 - **Risk threshold:** the measure of acceptable variation around an objective, reflecting the risk appetite. A threshold of ±5% around a cost objective shows a *lower* appetite than ±10%.
 - **Risk exposure:** an aggregate measure of the potential impact of all risks at a given point in time.
 
 ## Risk responses
+
+@source PMBOK 8, Glossary (risk acceptance)
 
 A **risk response** is an action, planned or implemented, to address a threat or opportunity.
 
@@ -99,6 +117,8 @@ Module 2.10 covers the Risk domain in full.
 
 ## Reserves
 
+@source PMBOK 8, Glossary (contingency reserve); PMBOK 8, Glossary (management reserve)
+
 A **reserve** is a provision in the plan to deal with cost or schedule risk.
 
 | | Contingency reserve | Management reserve |
@@ -110,9 +130,13 @@ A **reserve** is a provision in the plan to deal with cost or schedule risk.
 
 ## Baseline
 
+@source PMBOK 8, Glossary (baseline)
+
 A **baseline** is the approved version of a work product. It can be changed only through **formal change control**, and it is used as the basis for comparison with actual results. Constraints are often expressed as baselines: the scope, schedule and cost baselines.
 
 ## Resilience, uncertainty and related terms
+
+@source PMBOK 8, Guide 2.7.1
 
 - **Uncertainty:** a lack of understanding and awareness of issues, events, the path to follow or the solutions to pursue.
 - **Ambiguity:** a state of being unclear, where the cause of events is hard to identify or there are many options to choose from.

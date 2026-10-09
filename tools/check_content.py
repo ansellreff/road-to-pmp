@@ -4,11 +4,15 @@ Usage: python tools/check_content.py
 Exits with code 1 if any problem is found.
 """
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
 
 CONTENT = Path(__file__).resolve().parent.parent / "web" / "src" / "content"
+
+# Lesson sections that summarize the module and so carry no source of their own.
+SUMMARY_SECTION = re.compile(r"Key points|Exam tips|How to handle it in the exam|Other terms that shifted", re.IGNORECASE)
 
 
 def check_quiz(path: Path, problems: list[str]) -> int:
@@ -72,8 +76,25 @@ def main() -> None:
             for name in ("lesson.md", "quiz.json", "flashcards.json"):
                 if not (folder / name).is_file():
                     problems.append(f"{folder}: missing {name}")
-            if (folder / "lesson.md").is_file() and len((folder / "lesson.md").read_text(encoding="utf-8")) < 1500:
-                problems.append(f"{folder}/lesson.md: suspiciously short")
+            if (folder / "lesson.md").is_file():
+                lesson = (folder / "lesson.md").read_text(encoding="utf-8")
+                if len(lesson) < 1500:
+                    problems.append(f"{folder}/lesson.md: suspiciously short")
+                # Every section needs a source under its heading, except the summaries.
+                untagged = [
+                    heading
+                    for heading, body in re.findall(r"^## (.+)\n+(.*)$", lesson, re.MULTILINE)
+                    if not body.startswith("@source ") and not SUMMARY_SECTION.match(heading)
+                ]
+                if untagged:
+                    problems.append(f"{folder}/lesson.md: sections without @source: {untagged}")
+                linked = {s["label"] for s in json.loads((folder / "sources.json").read_text(encoding="utf-8"))} \
+                    if (folder / "sources.json").is_file() else set()
+                for line in lesson.splitlines():
+                    if line.startswith("@source "):
+                        for ref in (r.strip() for r in line[8:].split(";")):
+                            if ref and ref not in linked:
+                                problems.append(f"{folder}/lesson.md: source not linked (run tools/link_sources.py): {ref}")
             if (folder / "quiz.json").is_file():
                 questions += check_quiz(folder / "quiz.json", problems)
             if (folder / "flashcards.json").is_file():

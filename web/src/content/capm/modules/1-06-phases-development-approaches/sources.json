@@ -11,6 +11,21 @@
   },
   {
     "book": "pmbok8",
+    "page": 82,
+    "label": "PMBOK 8, Standard 4.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 84,
+    "label": "PMBOK 8, Standard 4.2, Figure 4-3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 84,
+    "label": "PMBOK 8, Standard 4.2.1"
+  },
+  {
+    "book": "pmbok8",
     "page": 84,
     "label": "PMBOK 8, Standard 4.2.1 and 4.3.1"
   },
@@ -23,6 +38,11 @@
     "book": "pmbok8",
     "page": 88,
     "label": "PMBOK 8, Standard 4.2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 90,
+    "label": "PMBOK 8, Standard 4.3"
   },
   {
     "book": "pmbok8",

@@ -1,12 +1,17 @@
-"""Turn the text reference of every quiz question into book + PDF page links.
+"""Turn text references into book + PDF page links.
 
-For each question's "ref" (for example "PMBOK 8, Standard 1.2") this finds the
-PDF page where that section, figure, table or tool description starts, and
-writes it into the question as "links". It also writes sources.json for each
-module: the list of all sections that module draws on.
+References come from two places in each module:
+  - quiz.json: each question's "ref", for example "PMBOK 8, Standard 1.2"
+  - lesson.md: an "@source ref; ref" line under a section heading
+
+For each reference this finds the PDF page where that section, figure, table,
+glossary term or tool description starts. It writes the result into each quiz
+question as "links", and writes sources.json for the module: every reference
+used, with its book and page. The app reads both.
 
 Usage: python tools/link_sources.py
 Needs the extracted book text in .cache/books/ (see tools/extract_pdf.py).
+Exits with code 1 if a reference cannot be matched to a book.
 """
 import json
 import re
@@ -24,6 +29,7 @@ REGIONS = {
 }
 
 _pages: dict[str, list[str]] = {}
+_tocs: dict[str, str] = {}
 
 
 def pages(book: str) -> list[str]:
@@ -33,6 +39,12 @@ def pages(book: str) -> list[str]:
             sys.exit(f"No extracted text for '{book}'. Run tools/extract_pdf.py first.")
         _pages[book] = [f.read_text(encoding="utf-8") for f in files]
     return _pages[book]
+
+
+def toc(book: str) -> str:
+    if book not in _tocs:
+        _tocs[book] = (CACHE / book / "toc.txt").read_text(encoding="utf-8")
+    return _tocs[book]
 
 
 def find_line(book: str, pattern: str, first: int = 1, last: int | None = None, flags: int = re.IGNORECASE) -> int | None:
@@ -78,10 +90,12 @@ def resolve(part: str) -> tuple[str, int] | None:
         return book, 4
 
     if book == "processgroups":
+        # Its table of contents lists every section as "3.3.2. Title  [p83]".
+        number = re.search(r"\b(\d+(?:\.\d+)+)\b", part)
         section = re.search(r"sections? (\d+)", lowered)
-        if section:
-            toc = (CACHE / book / "toc.txt").read_text(encoding="utf-8")
-            hit = re.search(rf"^{section.group(1)}\. .*\[p(\d+)\]", toc, re.MULTILINE)
+        wanted = number.group(1) if number else section.group(1) if section else None
+        if wanted:
+            hit = re.search(rf"^\s*{re.escape(wanted)}\. .*\[p(\d+)\]", toc(book), re.MULTILINE)
             if hit:
                 return book, int(hit.group(1))
         return book, 22
@@ -124,53 +138,65 @@ def resolve(part: str) -> tuple[str, int] | None:
     if number:
         wanted = number.group(1)
         while "." in wanted:
-            page = find_line(book, rf"^{re.escape(wanted)}:?\s+[A-Z]\w+ ?[A-Za-z]", *region, flags=0)
+            page = find_line(book, rf"^{re.escape(wanted)}:?\s+[A-Z][a-z]", *region, flags=0)
             if page:
                 return book, page
             wanted = wanted.rpartition(".")[0]  # fall back to the parent section
 
     section = re.search(r"section (\d+)", lowered)
     if section:
-        folder_toc = (CACHE / book / "toc.txt").read_text(encoding="utf-8")
-        hits = re.findall(rf"^\s*(?:Section )?{section.group(1)}[:.] .*\[p(\d+)\]", folder_toc, re.MULTILINE)
+        hits = re.findall(rf"^\s*(?:Section )?{section.group(1)}[:.] .*\[p(\d+)\]", toc(book), re.MULTILINE)
         for hit in hits:
             if region[0] <= int(hit) <= region[1]:
                 return book, int(hit)
     return book, region[0]
 
 
+def split_refs(text: str) -> list[str]:
+    return [part.strip() for part in text.split(";") if part.strip()]
+
+
 def main() -> None:
     unresolved = []
-    for quiz_file in sorted(CONTENT.glob("*/modules/*/quiz.json")):
+    for module in sorted(p.parent for p in CONTENT.glob("*/modules/*/quiz.json")):
+        found: dict[str, dict] = {}
+
+        def link(part: str, where: str) -> dict | None:
+            result = resolve(part)
+            if not result:
+                # A reference such as "PMI standard teaching" names no book: shown as text only.
+                if "teaching" in part.lower():
+                    return None
+                unresolved.append(f"{module.name} ({where}): {part}")
+                return None
+            entry = {"book": result[0], "page": result[1], "label": part}
+            found[part] = entry
+            return entry
+
+        quiz_file = module / "quiz.json"
         questions = json.loads(quiz_file.read_text(encoding="utf-8"))
-        module_sources: dict[tuple[str, int], str] = {}
         for q in questions:
-            links = []
-            for part in re.split(r";", q.get("ref", "")):
-                found = resolve(part)
-                if found:
-                    book, page = found
-                    label = part.strip()
-                    links.append({"book": book, "page": page, "label": label})
-                    module_sources.setdefault((book, page), label)
-            q["links"] = links
-            if not links:
-                unresolved.append(f"{quiz_file.parent.name} [{q['id']}]: {q.get('ref')}")
+            q["links"] = [e for e in (link(part, q["id"]) for part in split_refs(q.get("ref", ""))) if e]
         quiz_file.write_text(json.dumps(questions, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
-        sources = [
-            {"book": book, "page": page, "label": label}
-            for (book, page), label in sorted(module_sources.items())
-        ]
-        (quiz_file.parent / "sources.json").write_text(
-            json.dumps(sources, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
-        )
-        print(f"{quiz_file.parent.name}: {len(questions)} questions, {len(sources)} source pages")
+        lesson = module / "lesson.md"
+        sections = 0
+        if lesson.is_file():
+            for line in lesson.read_text(encoding="utf-8").splitlines():
+                if line.startswith("@source "):
+                    sections += 1
+                    for part in split_refs(line[len("@source "):]):
+                        link(part, "lesson")
+
+        sources = sorted(found.values(), key=lambda e: (e["book"], e["page"], e["label"]))
+        (module / "sources.json").write_text(json.dumps(sources, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        print(f"{module.name}: {len(questions)} questions, {sections} lesson sections, {len(sources)} references")
 
     if unresolved:
-        print(f"\n{len(unresolved)} question(s) have no book reference:")
+        print(f"\n{len(unresolved)} reference(s) could not be matched to a book:")
         for line in unresolved:
             print(" -", line)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

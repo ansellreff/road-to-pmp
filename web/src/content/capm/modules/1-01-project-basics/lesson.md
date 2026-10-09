@@ -9,6 +9,8 @@
 
 ## What is a project?
 
+@source PMBOK 8, Standard 1.2; PMBOK 8, Standard 1.3.1
+
 A project is a **temporary initiative in a unique context undertaken to create value**.
 
 **Temporary** means the work has a defined beginning and end. It does not mean short, and the deliverables usually live on long after the project closes. A project normally ends when one of these is true:
@@ -27,6 +29,8 @@ A project is a **temporary initiative in a unique context undertaken to create v
 
 ## Why projects get started
 
+@source PMBOK 8, Standard 1.3.2.1
+
 Leaders authorize projects to respond to factors such as:
 
 - meeting regulatory, legal or social requirements
@@ -37,6 +41,8 @@ Leaders authorize projects to respond to factors such as:
 Every project should link back to the organization's strategic objectives and business value.
 
 ## What is project management?
+
+@source PMBOK 8, Standard 1.2
 
 Project management is the application of **knowledge, skills, tools and techniques** to project activities **to meet or exceed the intended value**.
 
@@ -51,6 +57,8 @@ Related terms:
 
 ## Programs
 
+@source PMBOK 8, Standard 1.2; PMBOK 8, Standard 1.3.4
+
 A program is a group of **related** projects and program activities managed in a **coordinated** manner to obtain benefits not available from managing them individually.
 
 A program is *not* just a large project. It creates synergy by connecting resources and aligning its projects, and it drives significant organizational change.
@@ -59,11 +67,15 @@ A program is *not* just a large project. It creates synergy by connecting resour
 
 ## Portfolios
 
+@source PMBOK 8, Standard 1.3.4
+
 A portfolio is a collection of programs, projects and operations managed as a group to **maximize overall value delivery** and achieve strategic objectives, meet mandatory obligations, or generate income.
 
 Portfolio management means **selecting, prioritizing, managing and optimizing** the organization's programs and projects in line with its strategy. The components do not have to be related to each other. Portfolio management is the link between strategy and execution.
 
 ## Operations
+
+@source PMBOK 8, Standard 1.3.3
 
 Operations management is about the **efficient, ongoing production** of products and services: turning inputs (materials, energy, labor) into outputs. Ongoing operations are outside the scope of a project.
 
@@ -73,6 +85,8 @@ Portfolios, programs, projects and operations often share the same stakeholders 
 
 ## Side-by-side comparison
 
+@source PMBOK 8, Standard 1.3.4
+
 | | Project | Program | Portfolio | Operations |
 |---|---|---|---|---|
 | What it is | Temporary initiative in a unique context | Related projects managed together | Programs, projects and operations grouped for strategy | Ongoing production of products and services |
@@ -81,6 +95,8 @@ Portfolios, programs, projects and operations often share the same stakeholders 
 | Components related? | n/a | Yes | Not necessarily | n/a |
 
 ## From deliverable to value
+
+@source PMBOK 8, Standard 1.2; PMBOK 8, Standard 2.1
 
 | Term | Meaning | Example |
 |---|---|---|
@@ -96,6 +112,8 @@ Two more terms: an **artifact** is a document or other item created to help mana
 
 ## The value delivery system
 
+@source PMBOK 8, Standard 2.1.1
+
 Portfolios, programs, projects, products and operations together form the organization's **value delivery system**: the strategic business activities that build, sustain or advance the organization. It sits inside the internal environment (policies, governance, methods), which sits inside the external environment (economy, competition, laws).
 
 Information flows both ways:
@@ -104,6 +122,8 @@ Information flows both ways:
 - **Up:** operations send back information for fixes and adjustments; programs and projects report performance and progress; portfolios report portfolio performance to senior leadership.
 
 ## Assessing project success
+
+@source PMBOK 8, Standard 2.1.2
 
 **Project success** is the shared view of beneficiaries, stakeholders and participants that the project delivered value worth the effort and expense. It has two dimensions:
 

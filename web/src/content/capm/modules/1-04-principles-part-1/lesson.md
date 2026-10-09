@@ -9,11 +9,15 @@
 
 ## What a principle is
 
+@source PMBOK 8, Standard section 3
+
 In some professions principles are laws. In project management they are **not prescriptive**. They are foundational guidelines for strategy, decision-making and problem-solving, meant to reinforce the right mindset. The PMBOK standard is therefore called a **principle-based** standard.
 
 How a principle is applied depends on context: the organization, the project, the deliverables, the team and the stakeholders. The principles **complement** each other and may overlap, but no principle contradicts another.
 
 ## The six principles and the mindset
+
+@source PMBOK 8, Standard 3.1
 
 | Mindset dimension | What it emphasizes | Principles |
 |---|---|---|
@@ -26,6 +30,8 @@ The project management mindset is sometimes called a **growth mindset**. The val
 > **Edition note.** The 7th edition had **12 principles** (stewardship, team, stakeholders, value, systems thinking, leadership, tailoring, quality, complexity, risk, adaptability and resiliency, change). The 8th edition consolidates them into **six**. Module 1.11 maps the old list to the new one.
 
 ## Principles and performance domains
+
+@source PMBOK 8, Standard 3.2
 
 - **Principles = mindset.** They guide how you think and behave.
 - **Performance domains = mechanics.** They contain the knowledge, processes and methods used to deliver.
@@ -40,6 +46,8 @@ The seven performance domains are **Governance, Scope (including quality), Sched
 | Integrate Sustainability; Build an Empowered Culture | All seven |
 
 ## Principle 1: Adopt a Holistic View
+
+@source PMBOK 8, Standard 3.3
 
 Understand and manage the project by considering **all its components and their interdependencies as part of a larger system**. This is **systems thinking**: seeing relationships and patterns, not isolated snapshots.
 
@@ -56,6 +64,8 @@ A project managed holistically shows:
 > Example from the book: an NGO runs a public health campaign by producing materials and events. Midway, it learns the local government has a similar initiative with grant funding. By looking beyond its own plan and aligning with that initiative, it gains resources and reach, at the price of stricter rules.
 
 ## Principle 2: Focus on Value
+
+@source PMBOK 8, Standard 3.4
 
 **Value is the ultimate success indicator and driver of projects.** It is the overall worth of the outcomes and the net benefit to stakeholders. It can be measured (return on investment) or described qualitatively (testimonials, societal benefit).
 
@@ -76,6 +86,8 @@ Value can be realized **during the project, at the end, or after completion**. T
 In practice this principle keeps governance "right-sized" (value, not bureaucracy) and guards scope against **scope creep and gold plating**.
 
 ## Principle 3: Embed Quality Into Processes and Deliverables
+
+@source PMBOK 8, Standard 3.5
 
 **Quality** is the degree to which the inherent characteristics of a deliverable or process help meet or exceed the project's target objectives. It applies to **both** what you produce and how you produce it.
 

@@ -1,6 +1,11 @@
 [
   {
     "book": "pmbok8",
+    "page": 59,
+    "label": "PMBOK 8, Standard 3.1"
+  },
+  {
+    "book": "pmbok8",
     "page": 69,
     "label": "PMBOK 8, Standard 3.6"
   },
@@ -13,6 +18,16 @@
     "book": "pmbok8",
     "page": 71,
     "label": "PMBOK 8, Standard 3.6.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 71,
+    "label": "PMBOK 8, Standard 3.7"
+  },
+  {
+    "book": "pmbok8",
+    "page": 72,
+    "label": "PMBOK 8, Standard 3.7, Figure 3-6"
   },
   {
     "book": "pmbok8",

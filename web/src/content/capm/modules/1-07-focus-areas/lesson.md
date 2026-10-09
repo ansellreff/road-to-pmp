@@ -8,6 +8,8 @@
 
 ## What the Focus Areas are
 
+@source PMBOK 8, Standard 4.5
+
 The Focus Areas group the fundamental actions that take place over the course of any project. They are carried out through formal processes, informal practices, policies, procedures or techniques. They may be iterative, continuous or overlapping, and are performed when planned or when needed, in the project as a whole and within each phase.
 
 > **Edition note.** Older editions, the PMI *Process Groups: A Practice Guide*, most exam-prep courses and many exam questions call these the **five Process Groups**. The five names are identical. If you see "Process Group", read "Focus Area".
@@ -21,6 +23,8 @@ The Focus Areas group the fundamental actions that take place over the course of
 | **Closing** | Formally complete or close the project, phase or contract | Final acceptance, handover to operations |
 
 ## Initiating
+
+@source PMBOK 8, Standard 4.5.1
 
 Actions performed to **define a new project or a new phase** of an existing project. It often includes **formal authorization** to start.
 
@@ -41,6 +45,8 @@ This is captured in the **project charter** and the **stakeholder register**.
 
 ## Planning
 
+@source PMBOK 8, Standard 4.5.2
+
 Actions that **establish the intended scope, define and refine the objectives, and develop the course of action** to reach them.
 
 - Output: the **project management plan** in a predictive setting, or artifacts such as a **product backlog** in an adaptive one.
@@ -58,6 +64,8 @@ How planning differs by approach:
 
 ## Executing
 
+@source PMBOK 8, Standard 4.5.3
+
 Actions performed to **complete the work** in line with the currently agreed course of action. Includes coordinating resources, managing stakeholder engagement and performing the project's activities.
 
 - This is where the chosen development approach is **most visible**.
@@ -66,6 +74,8 @@ Actions performed to **complete the work** in line with the currently agreed cou
 **Key benefit:** drives focused execution to achieve the value represented by the integrated baseline.
 
 ## Monitoring and Controlling
+
+@source PMBOK 8, Standard 4.5.4
 
 Actions required to **track, measure, review and regulate** the progress and performance of the project, **identify** where changes to the plan are needed, and **initiate** those changes.
 
@@ -85,6 +95,8 @@ When a variance is found, the project management team determines what **correcti
 
 ## Closing
 
+@source PMBOK 8, Standard 4.5.5
+
 Actions performed to **formally complete or close a project, phase or contract**, or to **terminate** a project before completion.
 
 - Includes verifying that the work of the other Focus Areas is finished before declaring completion.
@@ -95,6 +107,8 @@ Actions performed to **formally complete or close a project, phase or contract**
 **Key benefit:** phases, projects and contracts are closed out properly.
 
 ## Focus Areas are not phases
+
+@source PMBOK 8, Standard 4.5.6
 
 This is the most tested idea in this topic.
 

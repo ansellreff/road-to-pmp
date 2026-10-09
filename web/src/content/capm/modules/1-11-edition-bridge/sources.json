@@ -22,6 +22,21 @@
   {
     "book": "pmbok8",
     "page": 362,
+    "label": "PMBOK 8, Appendix X5.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 362,
+    "label": "PMBOK 8, Appendix X5.2 and X5.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 362,
+    "label": "PMBOK 8, Appendix X5.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 362,
     "label": "PMBOK 8, Appendix X5.4"
   },
   {
@@ -36,7 +51,22 @@
   },
   {
     "book": "processgroups",
+    "page": 42,
+    "label": "Process Groups: A Practice Guide, 1.7.5"
+  },
+  {
+    "book": "processgroups",
+    "page": 90,
+    "label": "Process Groups: A Practice Guide, section 4"
+  },
+  {
+    "book": "processgroups",
     "page": 90,
     "label": "Process Groups: A Practice Guide, sections 4 to 8"
+  },
+  {
+    "book": "processgroups",
+    "page": 98,
+    "label": "Process Groups: A Practice Guide, section 5"
   }
 ]

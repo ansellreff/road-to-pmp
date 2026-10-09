@@ -17,6 +17,11 @@
   {
     "book": "pmbok8",
     "page": 49,
+    "label": "PMBOK 8, Standard 2.4.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 49,
     "label": "PMBOK 8, Standard 2.4.6"
   },
   {
@@ -26,12 +31,37 @@
   },
   {
     "book": "pmbok8",
+    "page": 50,
+    "label": "PMBOK 8, Standard 2.5.1"
+  },
+  {
+    "book": "pmbok8",
     "page": 52,
     "label": "PMBOK 8, Standard 2.5.1.1"
   },
   {
     "book": "pmbok8",
+    "page": 54,
+    "label": "PMBOK 8, Standard 2.5.1.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 55,
+    "label": "PMBOK 8, Standard 2.5.1.3"
+  },
+  {
+    "book": "pmbok8",
     "page": 55,
     "label": "PMBOK 8, Standard 2.5.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 56,
+    "label": "PMBOK 8, Standard 2.5.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 56,
+    "label": "PMBOK 8, Standard 2.5.4"
   }
 ]

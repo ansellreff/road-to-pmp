@@ -16,6 +16,11 @@
   },
   {
     "book": "pmbok8",
+    "page": 115,
+    "label": "PMBOK 8, Guide 2.1"
+  },
+  {
+    "book": "pmbok8",
     "page": 208,
     "label": "PMBOK 8, Guide section 3"
   },
@@ -26,8 +31,23 @@
   },
   {
     "book": "pmbok8",
+    "page": 209,
+    "label": "PMBOK 8, Guide 3.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 210,
+    "label": "PMBOK 8, Guide 3.3.2"
+  },
+  {
+    "book": "pmbok8",
     "page": 210,
     "label": "PMBOK 8, Guide 3.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 210,
+    "label": "PMBOK 8, Guide 3.4.1"
   },
   {
     "book": "pmbok8",
@@ -38,6 +58,11 @@
     "book": "pmbok8",
     "page": 214,
     "label": "PMBOK 8, Guide 3.4.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 215,
+    "label": "PMBOK 8, Guide 3.6"
   },
   {
     "book": "pmbok8",

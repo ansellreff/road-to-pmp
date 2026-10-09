@@ -9,6 +9,8 @@
 
 ## Why this module exists
 
+@source PMBOK 8, Appendix X5.3
+
 PMI states that the 8th edition was built mainly from two earlier sources: the **PMBOK Guide, 7th edition (2021)** and **Process Groups: A Practice Guide (2022)**. It combined the 7th edition's principles and performance domains with the practice guide's processes.
 
 The instructor course you are following alongside this one still teaches "the 12 principles", "the 8 performance domains" and "the 49 processes". You need to recognize both vocabularies.
@@ -23,6 +25,8 @@ The instructor course you are following alongside this one still teaches "the 12
 | Tailoring | A principle and a section | A section only |
 
 ## The 12 principles and where they went
+
+@source PMBOK 8, Appendix X5, Table X5-2; PMBOK 7, Standard section 3
 
 | 7th edition principle | Short name | In the 8th edition |
 |---|---|---|
@@ -60,6 +64,8 @@ What each of the 12 means, in one line:
 
 ## The 8 performance domains of the 7th edition
 
+@source PMBOK 7, Guide section 2
+
 | 7th edition domain | What it covers | Closest home in the 8th edition |
 |---|---|---|
 | **Stakeholders** | Identifying, understanding and engaging stakeholders | Stakeholders domain |
@@ -74,6 +80,8 @@ What each of the 12 means, in one line:
 The right-hand column is my own mapping by subject matter. PMI does not publish a one-to-one table for the domains.
 
 ## Process Groups, Knowledge Areas and the 49 processes
+
+@source Process Groups: A Practice Guide, 1.7.5; Process Groups: A Practice Guide, section 4
 
 The **five Process Groups** are the five Focus Areas under their old name: Initiating, Planning, Executing, Monitoring and Controlling, Closing.
 
@@ -102,6 +110,8 @@ How the 49 processes are distributed:
 
 ## How the Knowledge Areas map to the 8th edition domains
 
+@source PMBOK 8, Guide Table 2-1
+
 | Knowledge Area (old) | Performance domain (8th) |
 |---|---|
 | Integration | Governance |
@@ -116,6 +126,8 @@ How the 49 processes are distributed:
 | Procurement | Governance (Plan Sourcing Strategy) and the Procurement appendix |
 
 ## Process names that changed
+
+@source Process Groups: A Practice Guide, section 5; PMBOK 8, Guide Table 2-1
 
 | Process Groups guide (49) | 8th edition (40) |
 |---|---|

@@ -9,6 +9,8 @@
 
 ## Project life cycle and phases
 
+@source PMBOK 8, Standard 4.1
+
 The **project life cycle** is the foundational framework for managing a project, whatever work or approach is used.
 
 A **project phase** is a collection of logically related project activities that culminates in the completion of one or more deliverables and/or outcomes. Phases can be **sequential**, **transitional** or **overlapping**.
@@ -18,6 +20,8 @@ Phases have attributes such as name, number, duration, resource requirements, **
 The project life cycle is **independent of the product life cycle**. A product lives on long after the project that created it.
 
 ## Phase gates
+
+@source PMBOK 8, Standard 4.1
 
 A **phase gate** usually sits at the end of a phase, before the next begins. It includes a review, also called a **stage gate, gate review, iteration review or decision point review**, to check that the exit criteria were met. Performance is compared with project and business documents, and a decision follows:
 
@@ -32,6 +36,8 @@ Gates can also be placed at the **start** of a phase (pre-phase gates) to confir
 
 ## What changes over the life of a project
 
+@source PMBOK 8, Standard 4.1, Figure 4-1
+
 | Characteristic | At the start | Toward the end |
 |---|---|---|
 | Risk and uncertainty | Highest | Decrease as decisions are made and deliverables accepted |
@@ -43,6 +49,8 @@ This is why involving stakeholders and resolving uncertainty **early** is cheape
 
 ## Development approach
 
+@source PMBOK 8, Standard 4.2
+
 A **development approach** is the means used to create and evolve the product, service or result during the project life cycle. It defines how the project will be managed and executed.
 
 Do not confuse it with the **development phase**, which is the stage of a life cycle where deliverables are actually built and tested.
@@ -50,6 +58,8 @@ Do not confuse it with the **development phase**, which is the stage of a life c
 The approach is usually chosen by the **project manager in consultation with the project management team**.
 
 ## Predictive approach
+
+@source PMBOK 8, Standard 4.2.1
 
 Also called **waterfall, plan-driven or traditional**.
 
@@ -64,6 +74,8 @@ Good fit: large investments, heavy regulation, work where iterating costs far mo
 **Predictive with incremental delivery.** The whole scope is still understood and planned up front, but the product is delivered in parts. Each increment adds to the previous one. Stakeholders get value earlier, while overall scope and timeline stay largely fixed.
 
 ## Adaptive approach
+
+@source PMBOK 8, Standard 4.2.2
 
 Also called **change-driven or agile**.
 
@@ -91,6 +103,8 @@ Good fit: design projects, new product development, and digital or software proj
 
 ## The inverted triangle
 
+@source PMBOK 8, Standard 4.2, Figure 4-3
+
 In a predictive project, **scope is fixed** and budget and schedule may have to vary to deliver it. In an adaptive project the triangle is inverted: **budget and schedule are fixed** (the team and the timeboxes) and **scope varies**.
 
 | | Fixed | Variable |
@@ -99,6 +113,8 @@ In a predictive project, **scope is fixed** and budget and schedule may have to 
 | Adaptive | Budget, schedule | Scope |
 
 ## Hybrid approach
+
+@source PMBOK 8, Standard 4.2.3
 
 A **combination of predictive and adaptive** elements. The 8th edition is clear that **most projects today benefit from a hybrid approach**: it gives flexibility for what is uncertain while keeping control over what is predictable.
 
@@ -114,6 +130,8 @@ Examples: a custom home (iterate on the design, then build once); software built
 Disciplined Agile describes three levels: **Level 1** predictive dominates with some adaptive elements; **Level 2** both contribute significantly; **Level 3** adaptive dominates with some predictive elements.
 
 ## Choosing an approach
+
+@source PMBOK 8, Standard 4.3
 
 Factors fall into three groups. Different deliverables within one project may need different approaches.
 
@@ -137,6 +155,8 @@ Factors fall into three groups. Different deliverables within one project may ne
 | Team size | Depends on scope | Smaller teams, often three to nine people |
 
 ## Delivery cadence
+
+@source PMBOK 8, Standard 4.4
 
 | Cadence | Meaning | Example |
 |---|---|---|

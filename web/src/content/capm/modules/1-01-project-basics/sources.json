@@ -12,12 +12,22 @@
   {
     "book": "pmbok8",
     "page": 32,
+    "label": "PMBOK 8, Standard 1.3.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 32,
     "label": "PMBOK 8, Standard 1.3.3"
   },
   {
     "book": "pmbok8",
     "page": 33,
     "label": "PMBOK 8, Standard 1.3.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 36,
+    "label": "PMBOK 8, Standard 2.1"
   },
   {
     "book": "pmbok8",

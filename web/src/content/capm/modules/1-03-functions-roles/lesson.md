@@ -9,6 +9,8 @@
 
 ## Functions associated with projects
 
+@source PMBOK 8, Standard 2.4
+
 A function is a kind of contribution a project needs. PMI lists seven common ones. The list is not exhaustive, and the needs of the project decide which are used.
 
 | Function | What it does | Who typically performs it |
@@ -28,6 +30,8 @@ Two details worth knowing:
 
 ## How the work is coordinated
 
+@source PMBOK 8, Standard 2.4
+
 - **Centralized coordination:** a designated project manager or similar role leads and guides. Common in predictive projects.
 - **Decentralized coordination:** team members self-organize and self-manage. Common in agile projects.
 - **Hybrid coordination:** centralized overall, with self-organizing teams for parts of the work.
@@ -35,6 +39,8 @@ Two details worth knowing:
 Whichever is used, it is the collective effort of the project team that delivers the outcomes, benefits and value.
 
 ## The project management team
+
+@source PMBOK 8, Standard 2.5.1
 
 The **project management team** may be only a project manager, or several people who share project management activities. It guides the team to achieve the goals and deliver value, and performs functions such as facilitating, mentoring and managing the processes.
 
@@ -47,6 +53,8 @@ The **project management team** may be only a project manager, or several people
 **Leadership style.** Leaders should be versatile. **Situational leadership** means adjusting the style to the needs of the team, the urgency of the task and the complexity of the project, for example being more directive in a critical phase and more supportive when the team can work autonomously.
 
 ## Five competencies of a project management team
+
+@source PMBOK 8, Standard 2.5.1.1; PMBOK 8, Standard 2.5.1.2; PMBOK 8, Standard 2.5.1.3
 
 | Competency | Meaning | Examples |
 |---|---|---|
@@ -64,6 +72,8 @@ The **project management team** may be only a project manager, or several people
 
 ## Sponsor, customer or product owner
 
+@source PMBOK 8, Standard 2.5.2
+
 These roles provide **decision leadership outside the project management team's authority**. They:
 
 - communicate the organization's vision, goals and expectations
@@ -78,11 +88,15 @@ Their active involvement raises the chance of success. An absent sponsor is a re
 
 ## Project team, end users and other stakeholders
 
+@source PMBOK 8, Standard 2.5.3; PMBOK 8, Standard 2.5.4
+
 The **project team** is the set of individuals who perform the project's work and are directly responsible for achieving its objectives. Its size and composition depend on the project's type, scale and complexity.
 
 **End users and other key stakeholders** (customers, regulators, influencers) should be engaged in continuous dialogue. Their feedback is gathered throughout the life cycle and checked through repeated verification and validation, so the product actually meets their needs. A deliverable that nobody uses delivers no value.
 
 ## Product management and the product life cycle
+
+@source PMBOK 8, Standard 2.3
 
 **Product management** integrates people, data, processes and business systems to create, develop and maintain a product or service throughout its life cycle. It is a separate discipline from project management.
 
