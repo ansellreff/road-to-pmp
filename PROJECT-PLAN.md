@@ -26,6 +26,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Fixed: links to the two new books (Scheduling, Earned Value) showed "This page does not exist". The local server read the book list only at startup; it now reads it on every request, so new books work without a restart. | You: click a source link in module 2.5 or 2.7 to confirm. Next: Session 13, modules 2.9 and 2.10 |
 | 2026-10-10 | Session 13 done: modules 2.9 (Resources domain: RACI, acquiring and leading the team, Tuckman ladder, conflict resolution, motivation models) and 2.10 (Risk domain: risk vs issue, appetite and threshold, risk register, qualitative and quantitative analysis, EMV, response strategies for threats and opportunities) written. The Standard for Risk Management added as a seventh source book. | You: study 2.9 and 2.10. Next: Session 14, modules 2.11 (quality and procurement) and 2.12 (tools and techniques), which completes Domain 2. Still unused in your folder: the WBS and Estimating practice standards and the Risk practice guide |
 | 2026-10-10 | Catch-up done at your request: the WBS practice standard, the Estimating practice standard and the Risk practice guide are now source books (ten in total). Module 2.3 gained the WBS rules (what a WBS does not show, top-down and bottom-up); 2.4 gained relative estimating, planning poker and estimating biases; 2.6 now sources the rough order of magnitude range; 2.10 gained a predictive vs adaptive risk comparison. 6 new questions, 12 new flashcards. | You: skim the changed sections. Next: Session 14, modules 2.11 and 2.12 |
+| 2026-10-10 | Session 14 done: modules 2.11 (quality and procurement: assurance vs control, quality tools, bid documents, contract types, disputes) and 2.12 (common tools and techniques, grouped by purpose) written. **Domain 2 is complete: 12 of 12 modules.** Domains 1 and 2 together are 53% of the exam. | You: study 2.11 and 2.12. Next: Session 15, the dashboard and weak-area quiz feature |
 
 ## How your progress is saved
 
@@ -105,7 +106,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 6 | Modules 1.8, 1.9: performance domains and tailoring; constraints, risks, issues |
 | ✅ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. (Code of Ethics PDF is in the materials folder) |
 | ✅ | 8 | Feature: spaced repetition for flashcards (plus source links to the PDFs) |
-| 🟡 | 9 to 14 | Domain 2: 12 modules (Sessions 9 to 13 done: 2.1 to 2.10) |
+| ✅ | 9 to 14 | Domain 2: 12 modules (all done) |
 | ⬜ | 15 | Feature: dashboard and "practice my weakest topics" quiz |
 | ⬜ | 16 to 19 | Domain 3: 8 modules |
 | ⬜ | 20 | Feature: study plan and exam countdown |
@@ -164,7 +165,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **21 of 38 modules done** (417 quiz questions, 598 flashcards).
+Overall: **23 of 38 modules done** (461 quiz questions, 664 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -203,8 +204,8 @@ Overall: **21 of 38 modules done** (417 quiz questions, 598 flashcards).
 | ✅ | 2.8 Stakeholders Domain: Engagement and Communication | 2026-10-10 |
 | ✅ | 2.9 Resources Domain: Team and Physical Resources | 2026-10-10 |
 | ✅ | 2.10 Risk Domain | 2026-10-10 |
-| ⬜ | 2.11 Quality and Procurement | |
-| ⬜ | 2.12 Common Tools and Techniques | |
+| ✅ | 2.11 Quality and Procurement | 2026-10-10 |
+| ✅ | 2.12 Common Tools and Techniques | 2026-10-10 |
 
 **Domain 3: Agile Frameworks / Methodologies**
 

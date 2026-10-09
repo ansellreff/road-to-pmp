@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "Which statement about quality and grade is correct?",
+    "options": [
+      "Low grade is always a problem",
+      "Low quality is always a problem; low grade may be acceptable",
+      "Quality and grade mean the same thing",
+      "High grade guarantees high quality"
+    ],
+    "answer": 1,
+    "explanation": "Quality is the degree to which requirements are met. Grade is a category of features. A simple product that works as promised is low grade but good quality.",
+    "ref": "PMI standard teaching; PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What does \"prevention over inspection\" mean?",
+    "options": [
+      "Inspections should never be done",
+      "Defects should be found by the customer",
+      "Quality should be planned and built in, because preventing defects costs less than finding and fixing them",
+      "Only the final product needs to be checked"
+    ],
+    "answer": 2,
+    "explanation": "Quality is built into processes and deliverables. The cost of preventing mistakes is generally much lower than the cost of correcting them after they are found.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "An independent team from the PMO reviews whether the project is following the organization's quality procedures. What is this?",
+    "options": [
+      "A quality audit",
+      "An inspection",
+      "A bidder conference",
+      "A control chart"
+    ],
+    "answer": 0,
+    "explanation": "A quality audit is a structured, independent process to determine whether activities comply with policies, processes and procedures. It is a quality assurance technique.",
+    "ref": "PMBOK 8, Guide section 5, Audits",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 253,
+        "label": "PMBOK 8, Guide section 5, Audits"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A team member examines a finished component to check that it conforms to the documented standard. What is this?",
+    "options": [
+      "A quality audit",
+      "Benchmarking",
+      "A make-or-buy analysis",
+      "An inspection"
+    ],
+    "answer": 3,
+    "explanation": "An inspection is the examination of a work product to determine whether it conforms to documented standards. It is a quality control technique.",
+    "ref": "PMBOK 8, Guide section 5, Inspections",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 279,
+        "label": "PMBOK 8, Guide section 5, Inspections"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Which tool helps a team trace a problem back to its root cause by branching possible causes off a problem statement?",
+    "options": [
+      "Control chart",
+      "Cause-and-effect diagram",
+      "Histogram",
+      "Scatter diagram"
+    ],
+    "answer": 1,
+    "explanation": "A cause-and-effect diagram, also called a fishbone or Ishikawa diagram, breaks the causes of a problem into branches to find the main or root cause.",
+    "ref": "PMBOK 8, Guide section 5, Cause-and-effect diagram",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Cause-and-effect diagram"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which tool is used to determine whether a process is stable and has predictable performance?",
+    "options": [
+      "Flowchart",
+      "Pareto chart",
+      "Control chart",
+      "Checklist"
+    ],
+    "answer": 2,
+    "explanation": "Control charts show whether a process is stable, using statistically calculated upper and lower control limits.",
+    "ref": "PMBOK 8, Guide section 5, Control charts",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Control charts"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What is the difference between control limits and specification limits?",
+    "options": [
+      "Control limits are calculated from the process; specification limits come from the requirements",
+      "They are the same thing",
+      "Specification limits are calculated statistically; control limits come from the customer",
+      "Control limits apply only to cost"
+    ],
+    "answer": 0,
+    "explanation": "Specification limits reflect the maximum and minimum values allowed by the requirements. Control limits are determined statistically and show the natural capability of a stable process.",
+    "ref": "PMBOK 8, Guide section 5, Control charts",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Control charts"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "On a control chart, seven consecutive points fall above the mean, all within the control limits. What does this indicate?",
+    "options": [
+      "The process is in control",
+      "The specification limits are wrong",
+      "Nothing; only points outside the limits matter",
+      "The process is out of control and should be investigated"
+    ],
+    "answer": 3,
+    "explanation": "The rule of seven: seven points in a row on one side of the mean indicate a non-random cause, so the process is considered out of control even inside the limits.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Control charts",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Control charts"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A team wants to know which few causes are responsible for most of the defects. Which tool should it use?",
+    "options": [
+      "Scatter diagram",
+      "Pareto chart",
+      "Flowchart",
+      "Control chart"
+    ],
+    "answer": 1,
+    "explanation": "A Pareto chart ranks causes from most to least frequent, showing the vital few. It reflects the 80/20 principle: about 80% of problems come from 20% of causes.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Root cause analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Root cause analysis"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "What is the purpose of a make-or-buy analysis?",
+    "options": [
+      "To choose the contract type",
+      "To select the best seller",
+      "To decide whether work is best done by the project team or purchased from outside",
+      "To close a contract"
+    ],
+    "answer": 2,
+    "explanation": "A make-or-buy analysis determines whether work or deliverables can best be accomplished by the project team or should be purchased from outside sources.",
+    "ref": "PMBOK 8, Appendix X4.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 351,
+        "label": "PMBOK 8, Appendix X4.3"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The buyer has a complex requirement and wants sellers to propose how they would solve it. Which bid document should be used?",
+    "options": [
+      "Request for proposal (RFP)",
+      "Request for quote (RFQ)",
+      "Request for information (RFI)",
+      "Purchase order"
+    ],
+    "answer": 0,
+    "explanation": "An RFP is used for a complex scope where the buyer wants the vendor to provide a solution. An RFQ is used when price is the main factor; an RFI gathers information.",
+    "ref": "PMBOK 8, Appendix X4.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 353,
+        "label": "PMBOK 8, Appendix X4.5"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "The buyer needs 200 standard laptops and price is the main deciding factor. Which bid document fits best?",
+    "options": [
+      "Request for information (RFI)",
+      "Request for proposal (RFP)",
+      "Statement of work",
+      "Request for quote (RFQ)"
+    ],
+    "answer": 3,
+    "explanation": "An RFQ is used when price is the main deciding factor and the proposed solution is readily available.",
+    "ref": "PMBOK 8, Appendix X4.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 353,
+        "label": "PMBOK 8, Appendix X4.5"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What is the purpose of a bidder conference?",
+    "options": [
+      "To sign the contract",
+      "To answer sellers' questions so that all bidders have the same information",
+      "To negotiate the price with the preferred seller",
+      "To audit the seller"
+    ],
+    "answer": 1,
+    "explanation": "After the bid documents are distributed, the buyer holds a bidder conference to respond to bidder questions and provide clarifying information to all.",
+    "ref": "PMBOK 8, Appendix X4.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 353,
+        "label": "PMBOK 8, Appendix X4.5"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Only one supplier holds the patent for a required component. Which selection method applies?",
+    "options": [
+      "Least cost",
+      "Fixed budget",
+      "Single source",
+      "Qualifications only"
+    ],
+    "answer": 2,
+    "explanation": "Single-source procurement is used when only one supplier can satisfy the technical requirements, for example because of patents or exclusive rights.",
+    "ref": "PMBOK 8, Appendix X4.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 354,
+        "label": "PMBOK 8, Appendix X4.6"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "In which type of contract does the seller carry most of the cost risk?",
+    "options": [
+      "Fixed-price",
+      "Cost-reimbursable",
+      "Time and materials",
+      "Cost plus fixed fee"
+    ],
+    "answer": 0,
+    "explanation": "A fixed-price contract sets a predetermined fee for a clearly defined scope, transferring cost risk to the seller and giving the buyer budget predictability.",
+    "ref": "PMBOK 8, Appendix X4.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 356,
+        "label": "PMBOK 8, Appendix X4.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A research project has an uncertain scope. Which contract type is most suitable, and who carries the cost risk?",
+    "options": [
+      "Fixed-price; the seller",
+      "Fixed-price; the buyer",
+      "Cost-reimbursable; the seller",
+      "Cost-reimbursable; the buyer"
+    ],
+    "answer": 3,
+    "explanation": "Cost-reimbursable contracts pay the seller's actual costs plus a fee. They are used when scope is uncertain or the project is high risk, and the buyer carries the risk of cost escalation.",
+    "ref": "PMBOK 8, Appendix X4.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 356,
+        "label": "PMBOK 8, Appendix X4.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A company hires two consultants at an hourly rate for a task whose scope is not yet clear. Which contract type is this?",
+    "options": [
+      "Fixed-price",
+      "Time and materials",
+      "Target-cost",
+      "Cost plus award fee"
+    ],
+    "answer": 1,
+    "explanation": "A time and materials contract pays for the actual time and materials used at agreed rates. It is a hybrid, often used for smaller jobs or when scope is unclear.",
+    "ref": "PMBOK 8, Appendix X4.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 356,
+        "label": "PMBOK 8, Appendix X4.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "The scope of work is clearly and completely defined and is not expected to change. Which contract type is the buyer most likely to prefer?",
+    "options": [
+      "Cost-reimbursable",
+      "Time and materials",
+      "Fixed-price",
+      "Cost plus incentive fee"
+    ],
+    "answer": 2,
+    "explanation": "With a well-defined scope the work can be estimated accurately, so a fixed-price contract gives the buyer budget certainty.",
+    "ref": "PMBOK 8, Appendix X4.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 356,
+        "label": "PMBOK 8, Appendix X4.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A dispute arises with a seller over the cost of a change. What should be tried first?",
+    "options": [
+      "Negotiation",
+      "Litigation",
+      "Arbitration",
+      "Terminating the contract"
+    ],
+    "answer": 0,
+    "explanation": "Negotiation, direct discussion between the parties without a third party, is the first step. Litigation is the last option when all other means are exhausted.",
+    "ref": "PMBOK 8, Appendix X4.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 357,
+        "label": "PMBOK 8, Appendix X4.9"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "In which dispute resolution method does a neutral third party hear both sides and make a binding decision?",
+    "options": [
+      "Negotiation",
+      "Mediation",
+      "A bidder conference",
+      "Arbitration"
+    ],
+    "answer": 3,
+    "explanation": "In arbitration an arbitrator or panel hears both sides and makes a binding decision. In mediation the third party only facilitates the parties' own agreement.",
+    "ref": "PMBOK 8, Appendix X4.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 357,
+        "label": "PMBOK 8, Appendix X4.9"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Why is procurement not a separate performance domain in the 8th edition?",
+    "options": [
+      "Because projects never buy anything",
+      "Because project procurement is usually integrated into the organization's procurement department and its established processes",
+      "Because procurement is only for agile projects",
+      "Because contracts are not legally binding"
+    ],
+    "answer": 1,
+    "explanation": "Project procurements typically extend from the organization's procurement department, using its processes, policies and vendor relationships. The topic is covered in Appendix X4.",
+    "ref": "PMBOK 8, Appendix X4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 350,
+        "label": "PMBOK 8, Appendix X4.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which document describes how the team will acquire goods and services from outside the performing organization?",
+    "options": [
+      "Statement of work",
+      "Quality management plan",
+      "Procurement management plan",
+      "Request for quote"
+    ],
+    "answer": 2,
+    "explanation": "The procurement management plan is a component of the project management plan that describes how goods and services will be acquired from outside the organization.",
+    "ref": "PMBOK 8, Guide section 4, Procurement management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 229,
+        "label": "PMBOK 8, Guide section 4, Procurement management plan"
+      }
+    ]
+  }
+]

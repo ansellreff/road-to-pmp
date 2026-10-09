@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "What is expert judgment?",
+    "options": [
+      "A decision made only by the project manager",
+      "A software tool for scheduling",
+      "Judgment based on expertise in an application area, discipline or industry, from any person or group with specialized knowledge",
+      "A vote taken by the whole team"
+    ],
+    "answer": 2,
+    "explanation": "Expert judgment may be provided by any group or person with specialized education, knowledge, skill, experience or training.",
+    "ref": "PMBOK 8, Guide section 5, Expert judgment",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 275,
+        "label": "PMBOK 8, Guide section 5, Expert judgment"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "The team needs to produce a large number of ideas in a short time, without judging them at first. Which technique fits?",
+    "options": [
+      "Brainstorming",
+      "Variance analysis",
+      "Benchmarking",
+      "Multicriteria decision analysis"
+    ],
+    "answer": 0,
+    "explanation": "Brainstorming is used to identify a list of ideas in a short period of time, in a group led by a facilitator.",
+    "ref": "PMBOK 8, Guide section 5, Brainstorming",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 254,
+        "label": "PMBOK 8, Guide section 5, Brainstorming"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A project needs the opinions of 3,000 users located in six countries, and needs them quickly. Which technique is most suitable?",
+    "options": [
+      "Interviews",
+      "Focus groups",
+      "Observation",
+      "Questionnaires and surveys"
+    ],
+    "answer": 3,
+    "explanation": "Questionnaires and surveys collect information quickly from a large number of respondents, and suit geographically dispersed audiences.",
+    "ref": "PMBOK 8, Guide section 5, Questionnaires and surveys",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Questionnaires and surveys"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "The team compares its processes with those of leading organizations to find best practices and ideas for improvement. Which technique is this?",
+    "options": [
+      "Root cause analysis",
+      "Benchmarking",
+      "Trend analysis",
+      "Brainstorming"
+    ],
+    "answer": 1,
+    "explanation": "Benchmarking compares actual or planned products, processes and practices with those of comparable organizations to identify best practices.",
+    "ref": "PMBOK 8, Guide section 5, Benchmarking",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 254,
+        "label": "PMBOK 8, Guide section 5, Benchmarking"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "The same defect keeps reappearing after each repair. Which technique should the team use?",
+    "options": [
+      "Trend analysis",
+      "Voting",
+      "Root cause analysis",
+      "Alternative analysis"
+    ],
+    "answer": 2,
+    "explanation": "Root cause analysis determines the basic underlying reason for a variance, defect or risk. When the root causes are removed, the problem does not recur.",
+    "ref": "PMBOK 8, Guide section 5, Root cause analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Root cause analysis"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "The project manager compares actual performance with the baseline to determine the size and cause of the difference. Which technique is this?",
+    "options": [
+      "Variance analysis",
+      "Trend analysis",
+      "What-if analysis",
+      "Document analysis"
+    ],
+    "answer": 0,
+    "explanation": "Variance analysis determines the cause and degree of difference between the baseline and actual performance.",
+    "ref": "PMBOK 8, Guide section 5, Variance analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Variance analysis"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Using the results of the last six months, the project manager forecasts whether the project will stay within budget. Which technique is this?",
+    "options": [
+      "Variance analysis",
+      "Root cause analysis",
+      "Stakeholder analysis",
+      "Trend analysis"
+    ],
+    "answer": 3,
+    "explanation": "Trend analysis uses mathematical models to forecast future outcomes based on historical results. It warns in advance if problems are likely.",
+    "ref": "PMBOK 8, Guide section 5, Trend analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 315,
+        "label": "PMBOK 8, Guide section 5, Trend analysis"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "The team must select one of several possible approaches for doing the work. Which data analysis technique evaluates the options?",
+    "options": [
+      "Reserve analysis",
+      "Alternative analysis",
+      "Variance analysis",
+      "Benchmarking"
+    ],
+    "answer": 1,
+    "explanation": "Alternative analysis evaluates identified options in order to select the options or approaches to use when performing the work of the project.",
+    "ref": "PMBOK 8, Guide section 5, Alternative analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Alternative analysis"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "After a workshop, the team has 90 ideas on sticky notes and wants to sort them into groups for review. Which tool fits?",
+    "options": [
+      "Control chart",
+      "Burndown chart",
+      "Affinity diagram",
+      "Decision tree"
+    ],
+    "answer": 2,
+    "explanation": "An affinity diagram shows large numbers of ideas classified into groups for review and analysis.",
+    "ref": "PMBOK 8, Guide section 5, Affinity diagram",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 250,
+        "label": "PMBOK 8, Guide section 5, Affinity diagram"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Twelve people vote on a proposal and seven support it. Which decision-making method produced the decision?",
+    "options": [
+      "Majority",
+      "Unanimity",
+      "Plurality",
+      "Autocratic"
+    ],
+    "answer": 0,
+    "explanation": "A majority is support from more than 50% of the group. Seven of twelve is 58%.",
+    "ref": "PMBOK 8, Guide section 5, Voting",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 319,
+        "label": "PMBOK 8, Guide section 5, Voting"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Ten people vote on three options. The results are 4, 3 and 3, and the option with 4 votes is selected. Which method is this?",
+    "options": [
+      "Majority",
+      "Unanimity",
+      "Autocratic",
+      "Plurality"
+    ],
+    "answer": 3,
+    "explanation": "With plurality the largest block decides even though a majority (more than 50%, here at least 6) is not achieved.",
+    "ref": "PMBOK 8, Guide section 5, Voting",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 319,
+        "label": "PMBOK 8, Guide section 5, Voting"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A team scores three suppliers against weighted criteria such as price, experience and delivery time, and ranks them by total score. Which technique is this?",
+    "options": [
+      "Plurality voting",
+      "Multicriteria decision analysis",
+      "Brainstorming",
+      "Trend analysis"
+    ],
+    "answer": 1,
+    "explanation": "Multicriteria decision analysis uses a decision matrix: criteria are weighted and applied to all alternatives to give each a score, and the alternatives are ranked.",
+    "ref": "PMBOK 8, Guide section 5, Multicriteria decision analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 288,
+        "label": "PMBOK 8, Guide section 5, Multicriteria decision analysis"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What does the \"M\" in the MoSCoW prioritization method stand for?",
+    "options": [
+      "Maybe",
+      "Measurable",
+      "Must have",
+      "Minimum"
+    ],
+    "answer": 2,
+    "explanation": "MoSCoW stands for must have, should have, could have and will not have. It is used to prioritize requirements.",
+    "ref": "PMBOK 8, Guide section 5, Prioritization/ranking",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 292,
+        "label": "PMBOK 8, Guide section 5, Prioritization/ranking"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which skill is the ability to guide a group event to a successful decision or conclusion, ensuring that everyone participates and all contributions are considered?",
+    "options": [
+      "Facilitation",
+      "Negotiation",
+      "Benchmarking",
+      "Expert judgment"
+    ],
+    "answer": 0,
+    "explanation": "Facilitation is the ability to effectively guide a group event to a successful decision, solution or conclusion.",
+    "ref": "PMBOK 8, Guide section 5, Facilitation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 275,
+        "label": "PMBOK 8, Guide section 5, Facilitation"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "What is a project management information system (PMIS)?",
+    "options": [
+      "The list of all stakeholders",
+      "The project's communication plan",
+      "A type of contract",
+      "An information system of tools used to gather, integrate and disseminate the outputs of project management processes"
+    ],
+    "answer": 3,
+    "explanation": "A PMIS gives access to tools such as scheduling software, work authorization, configuration management and information distribution systems.",
+    "ref": "PMBOK 8, Guide section 5, Project management information system (PMIS)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 296,
+        "label": "PMBOK 8, Guide section 5, Project management information system (PMIS)"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A team keeps a large board on the wall, updated by hand, showing the status of every task so that anyone walking by can see it. What is this called?",
+    "options": [
+      "A risk register",
+      "An information radiator",
+      "A stakeholder register",
+      "A decision matrix"
+    ],
+    "answer": 1,
+    "explanation": "An information radiator is a visible, physical display that shares information with the organization. It is easy to update and often maintained by hand.",
+    "ref": "PMBOK 8, Guide section 5, Information radiators",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 278,
+        "label": "PMBOK 8, Guide section 5, Information radiators"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "What does a burndown chart show?",
+    "options": [
+      "The cost of each activity",
+      "The work completed toward a milestone",
+      "The work remaining against the time left in a timebox",
+      "The number of defects found"
+    ],
+    "answer": 2,
+    "explanation": "A burndown chart shows the work remaining versus the time left in a timebox. A burnup chart shows the work completed toward a milestone.",
+    "ref": "PMBOK 8, Guide section 5, Burndown chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burndown chart"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "In a brief daily meeting, team members say what they did yesterday, what they will do today and what is blocking them. What is this meeting called?",
+    "options": [
+      "Daily coordination meeting",
+      "Retrospective",
+      "Kickoff meeting",
+      "Bidder conference"
+    ],
+    "answer": 0,
+    "explanation": "A daily coordination meeting reviews progress from the previous day, declares intentions for the current day and highlights obstacles.",
+    "ref": "PMBOK 8, Guide section 5, Daily coordination meeting",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 267,
+        "label": "PMBOK 8, Guide section 5, Daily coordination meeting"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "What is the main purpose of a retrospective?",
+    "options": [
+      "To demonstrate the product to the customer",
+      "To approve change requests",
+      "To select a seller",
+      "To explore how the team worked and how to improve the process"
+    ],
+    "answer": 3,
+    "explanation": "A retrospective is a regular workshop in which participants explore their work and results in order to improve both the process and the product.",
+    "ref": "PMBOK 8, Guide section 5, Retrospectives",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Retrospectives"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which of the following is good meeting management practice?",
+    "options": [
+      "Inviting everyone in the organization",
+      "Distributing an agenda with the objectives, and recording actions with the person responsible",
+      "Letting the meeting run until all topics are exhausted",
+      "Avoiding written notes"
+    ],
+    "answer": 1,
+    "explanation": "Good practice includes preparing and distributing the agenda, starting and finishing on time, inviting the appropriate participants, staying on topic and recording all actions with owners.",
+    "ref": "PMBOK 8, Guide section 5, Meeting management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Meeting management"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "In team discussions one senior person always speaks first and the others simply agree. Which approach would best reduce this effect?",
+    "options": [
+      "Autocratic decision-making",
+      "A longer meeting",
+      "Collecting each person's input individually before discussion, or revealing all votes at the same time",
+      "Removing the senior person from the project"
+    ],
+    "answer": 2,
+    "explanation": "Structured methods such as the nominal group technique gather everyone's input before discussion, and simultaneous voting minimizes groupthink and the influence of dominant members.",
+    "ref": "PMBOK 8, Guide section 5, Nominal group",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 289,
+        "label": "PMBOK 8, Guide section 5, Nominal group"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which technique involves acknowledging, clarifying and confirming what the other person says, in order to reduce misunderstanding?",
+    "options": [
+      "Active listening",
+      "Benchmarking",
+      "Influencing",
+      "Plurality"
+    ],
+    "answer": 0,
+    "explanation": "Active listening uses techniques such as acknowledging, clarifying and confirming to reduce misunderstandings, especially in cross-cultural settings.",
+    "ref": "PMBOK 8, Guide section 5, Active listening",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 250,
+        "label": "PMBOK 8, Guide section 5, Active listening"
+      }
+    ]
+  }
+]
