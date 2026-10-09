@@ -1,0 +1,402 @@
+[
+  {
+    "id": "q1",
+    "q": "How does the Agile Practice Guide describe agile?",
+    "options": [
+      "A software tool",
+      "A mindset defined by four values, guided by twelve principles and shown through many practices",
+      "A single methodology with fixed steps",
+      "A type of contract"
+    ],
+    "answer": 1,
+    "explanation": "Agile is a mindset defined by the Agile Manifesto values, guided by its principles and enabled by various practices that teams select based on their needs.",
+    "ref": "Agile Practice Guide, 2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 25,
+        "label": "Agile Practice Guide, 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which of the following is one of the four values of the Agile Manifesto?",
+    "options": [
+      "Processes and tools over individuals and interactions",
+      "Following a plan over responding to change",
+      "Customer collaboration over contract negotiation",
+      "Comprehensive documentation over working software"
+    ],
+    "answer": 2,
+    "explanation": "The four values favor individuals and interactions, working software, customer collaboration and responding to change. The other options reverse the values.",
+    "ref": "Agile Practice Guide, 2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 25,
+        "label": "Agile Practice Guide, 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "The Agile Manifesto values \"working software over comprehensive documentation\". What does this mean?",
+    "options": [
+      "Documentation still has value, but a working product is valued more",
+      "Agile teams produce no documentation",
+      "Documentation must be finished before any work starts",
+      "Only the customer writes documentation"
+    ],
+    "answer": 0,
+    "explanation": "The Manifesto says there is value in the items on the right, but the items on the left are valued more. Agile teams still document; they do not let documentation replace a working result.",
+    "ref": "Agile Practice Guide, 2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 25,
+        "label": "Agile Practice Guide, 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "According to the agile principles, what is the highest priority?",
+    "options": [
+      "Following the project plan",
+      "Keeping costs under budget",
+      "Producing complete documentation",
+      "Satisfying the customer through early and continuous delivery of value"
+    ],
+    "answer": 3,
+    "explanation": "The first principle states that the highest priority is to satisfy the customer through early and continuous delivery of something valuable.",
+    "ref": "Agile Practice Guide, 2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 25,
+        "label": "Agile Practice Guide, 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "According to the agile principles, what is the primary measure of progress?",
+    "options": [
+      "Percent of the budget spent",
+      "A working product",
+      "The number of meetings held",
+      "The number of documents approved"
+    ],
+    "answer": 1,
+    "explanation": "A working, functional deliverable that provides value is the primary measure of progress in agile.",
+    "ref": "Agile Practice Guide, 3.9.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 44,
+        "label": "Agile Practice Guide, 3.9.2"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Late in an agile project the customer asks for a significant change to a feature. How should the team respond?",
+    "options": [
+      "Reject it, because the scope is fixed",
+      "Send it to the change control board and wait",
+      "Welcome it and have the product owner prioritize it in the backlog",
+      "Add it secretly without telling the product owner"
+    ],
+    "answer": 2,
+    "explanation": "The agile principles welcome changing requirements, even late in development. Change is handled by reprioritizing the backlog, not through a formal change control process.",
+    "ref": "Agile Practice Guide, 2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 25,
+        "label": "Agile Practice Guide, 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which type of work is agile best suited to?",
+    "options": [
+      "High-uncertainty work involving new design and problem-solving",
+      "Definable work with proven procedures",
+      "Routine operational work",
+      "Work with no customer"
+    ],
+    "answer": 0,
+    "explanation": "High-uncertainty projects have high rates of change, complexity and risk. Agile approaches explore feasibility in short cycles and adapt quickly from feedback.",
+    "ref": "Agile Practice Guide, 2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 24,
+        "label": "Agile Practice Guide, 2.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "A team shows the customer rough, unfinished prototypes several times and improves the design after each round. Which characteristic is this?",
+    "options": [
+      "Incremental",
+      "Predictive",
+      "Sequential",
+      "Iterative"
+    ],
+    "answer": 3,
+    "explanation": "Iterations allow feedback on partially completed or unfinished work in order to improve and modify it.",
+    "ref": "Agile Practice Guide, 3.9",
+    "links": [
+      {
+        "book": "agile",
+        "page": 41,
+        "label": "Agile Practice Guide, 3.9"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A team delivers a finished, usable part of the product to the customer every month. Which characteristic is this?",
+    "options": [
+      "Iterative",
+      "Incremental",
+      "Predictive",
+      "Rolling wave"
+    ],
+    "answer": 1,
+    "explanation": "Increments provide finished deliverables that the customer may be able to use immediately.",
+    "ref": "Agile Practice Guide, 3.9",
+    "links": [
+      {
+        "book": "agile",
+        "page": 41,
+        "label": "Agile Practice Guide, 3.9"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "How do agile approaches relate to iterative and incremental approaches?",
+    "options": [
+      "Agile is neither iterative nor incremental",
+      "Agile is iterative only",
+      "Agile combines both: the team iterates over the product to create finished increments",
+      "Agile is incremental only"
+    ],
+    "answer": 2,
+    "explanation": "Agile approaches use both iterative and incremental characteristics, which gives early feedback and frequent delivery of value.",
+    "ref": "Agile Practice Guide, 3.9",
+    "links": [
+      {
+        "book": "agile",
+        "page": 41,
+        "label": "Agile Practice Guide, 3.9"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "How long is an iteration in a typical agile approach?",
+    "options": [
+      "1 to 4 weeks",
+      "1 to 2 days",
+      "3 to 6 months",
+      "One year"
+    ],
+    "answer": 0,
+    "explanation": "Some agile approaches use iterations that are generally 1 to 4 weeks long, with a demonstration of what was accomplished at the end of each.",
+    "ref": "Agile Practice Guide, 3.9.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 44,
+        "label": "Agile Practice Guide, 3.9.2"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Which statement about planning is correct?",
+    "options": [
+      "Agile projects do not plan",
+      "Only predictive projects plan",
+      "Planning happens only at the end of a project",
+      "All approaches plan; they differ in how much planning is done and when"
+    ],
+    "answer": 3,
+    "explanation": "Every life cycle includes planning. Predictive approaches plan as much as possible up front; agile teams plan and replan as information arrives from frequent deliveries.",
+    "ref": "Agile Practice Guide, 3.9.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 43,
+        "label": "Agile Practice Guide, 3.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What is the relationship between Lean, agile and Kanban?",
+    "options": [
+      "Lean is a subset of Kanban",
+      "Agile and the Kanban Method are both descended from lean thinking",
+      "They are unrelated",
+      "Kanban is a subset of Scrum"
+    ],
+    "answer": 1,
+    "explanation": "Lean thinking is the superset. Agile and the Kanban Method share lean concepts such as focus on value, small batch sizes and elimination of waste.",
+    "ref": "Agile Practice Guide, 2.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 28,
+        "label": "Agile Practice Guide, 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which approach is known as the \"start where you are\" approach because a team can apply it to its existing way of working?",
+    "options": [
+      "Scrum",
+      "Extreme Programming",
+      "The Kanban Method",
+      "The critical path method"
+    ],
+    "answer": 2,
+    "explanation": "The Kanban Method is less prescriptive and less disruptive than some agile approaches, so teams can begin applying it with relative ease.",
+    "ref": "Agile Practice Guide, 2.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 28,
+        "label": "Agile Practice Guide, 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A team holds daily meetings and uses a task board, but delivers nothing to the customer for a year and resists every change. What is the best description?",
+    "options": [
+      "The team is doing agile practices without an agile mindset",
+      "The team is fully agile",
+      "The team is using Kanban",
+      "The team is using an incremental approach"
+    ],
+    "answer": 0,
+    "explanation": "The agile mindset is about being agile, not simply doing agile. It means living the values: delivering value early, adapting quickly and learning from feedback.",
+    "ref": "Agile Practice Guide, 4.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 56,
+        "label": "Agile Practice Guide, 4.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A project will build a standard warehouse using a design the company has built twenty times. Requirements are stable. Which approach fits best?",
+    "options": [
+      "Agile, because it is always better",
+      "Kanban, with no plan",
+      "Iterative, with many prototypes",
+      "Predictive"
+    ],
+    "answer": 3,
+    "explanation": "For defined, repeatable projects with little uncertainty or likelihood of change, a predictive \"plan the work, work the plan\" approach is appropriate and efficient.",
+    "ref": "Agile Practice Guide, 3.10",
+    "links": [
+      {
+        "book": "agile",
+        "page": 45,
+        "label": "Agile Practice Guide, 3.10"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "In which year was the Manifesto for Agile Software Development published?",
+    "options": [
+      "1986",
+      "2001",
+      "2011",
+      "2017"
+    ],
+    "answer": 1,
+    "explanation": "Software industry thought leaders published the Manifesto in 2001, although many of the techniques existed years or decades earlier.",
+    "ref": "Agile Practice Guide, 2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 25,
+        "label": "Agile Practice Guide, 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which agile principle is the basis for the retrospective?",
+    "options": [
+      "Working software is the primary measure of progress",
+      "Simplicity is essential",
+      "At regular intervals the team reflects on how to become more effective and adjusts",
+      "Business people and developers work together daily"
+    ],
+    "answer": 2,
+    "explanation": "The twelfth principle asks the team to reflect at regular intervals on how to become more effective and then tune its behavior. The retrospective puts this into practice.",
+    "ref": "Agile Practice Guide, 2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 25,
+        "label": "Agile Practice Guide, 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "When does a typical predictive project deliver business value, compared with an agile project?",
+    "options": [
+      "Predictive: usually at the end. Agile: early and frequently.",
+      "Predictive: every week. Agile: at the end.",
+      "Both only at the end",
+      "Neither delivers value"
+    ],
+    "answer": 0,
+    "explanation": "A serialized predictive project does not typically deliver business value until the end. Agile delivers the highest-value work first, which can give an earlier return on investment.",
+    "ref": "Agile Practice Guide, 3.9.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 43,
+        "label": "Agile Practice Guide, 3.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "What does \"simplicity\" mean in the agile principles?",
+    "options": [
+      "Using only simple tools",
+      "Hiring fewer people",
+      "Writing short documents",
+      "Maximizing the amount of work not done"
+    ],
+    "answer": 3,
+    "explanation": "Simplicity is described as the art of maximizing the amount of work not done: avoid building what is not needed.",
+    "ref": "Agile Practice Guide, 2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 25,
+        "label": "Agile Practice Guide, 2.2"
+      }
+    ]
+  }
+]

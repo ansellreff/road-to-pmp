@@ -8,5 +8,6 @@
   "riskstd": { "title": "The Standard for Risk Management in Portfolios, Programs, and Projects", "file": "The Standard for Risk Management in Portfolios, Programs, and Projects.pdf" },
   "wbs": { "title": "Practice Standard for Work Breakdown Structures, Third Edition", "file": "Practice Standard for Work Breakdown Structures – Third Edition.pdf" },
   "estimating": { "title": "Practice Standard for Project Estimating, Second Edition", "file": "Practice Standard for Project Estimating - Second Edition.pdf" },
-  "riskguide": { "title": "Risk Management in Portfolios, Programs, and Projects: A Practice Guide", "file": "Risk Management in Portfolios, Programs, and Projects A Practice Guide.pdf" }
+  "riskguide": { "title": "Risk Management in Portfolios, Programs, and Projects: A Practice Guide", "file": "Risk Management in Portfolios, Programs, and Projects A Practice Guide.pdf" },
+  "agile": { "title": "Agile Practice Guide, Second Edition", "file": "Agile Practice Guide.pdf" }
 }

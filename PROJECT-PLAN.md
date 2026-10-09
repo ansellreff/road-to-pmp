@@ -28,6 +28,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Catch-up done at your request: the WBS practice standard, the Estimating practice standard and the Risk practice guide are now source books (ten in total). Module 2.3 gained the WBS rules (what a WBS does not show, top-down and bottom-up); 2.4 gained relative estimating, planning poker and estimating biases; 2.6 now sources the rough order of magnitude range; 2.10 gained a predictive vs adaptive risk comparison. 6 new questions, 12 new flashcards. | You: skim the changed sections. Next: Session 14, modules 2.11 and 2.12 |
 | 2026-10-10 | Session 14 done: modules 2.11 (quality and procurement: assurance vs control, quality tools, bid documents, contract types, disputes) and 2.12 (common tools and techniques, grouped by purpose) written. **Domain 2 is complete: 12 of 12 modules.** Domains 1 and 2 together are 53% of the exam. | You: study 2.11 and 2.12. Next: Session 15, the dashboard and weak-area quiz feature |
 | 2026-10-10 | Session 15 done: Dashboard page (study streak, per-domain progress and quiz average, modules to revisit) and Practice missed questions page. Per-question quiz results and study days are now saved; existing progress is kept. New Session 25 added at your request: a full catch-up of every module against every book, with a list of extra PDFs worth adding. | You: take a quiz, get something wrong on purpose, then open Dashboard and try the practice. Next: Session 16, modules 3.1 and 3.2 (Agile Practice Guide) |
+| 2026-10-10 | Your feedback recorded: the Dashboard and Practice pages work but look raw; a proper redesign is in the UI/UX backlog for Session 27. Session 16 done: Domain 3 started with modules 3.1 (agile mindset, the 4 values and 12 principles, iterative vs incremental) and 3.2 (Scrum: roles, events, artifacts, definition of done). The Agile Practice Guide, Second Edition, is the eleventh source book. | You: study 3.1 and 3.2. Next: Session 17, modules 3.3 (XP, Lean, Kanban) and 3.4 (servant leadership and agile teams) |
 
 ## How your progress is saved
 
@@ -110,7 +111,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 8 | Feature: spaced repetition for flashcards (plus source links to the PDFs) |
 | ✅ | 9 to 14 | Domain 2: 12 modules (all done) |
 | ✅ | 15 | Feature: dashboard and practice of missed questions |
-| ⬜ | 16 to 19 | Domain 3: 8 modules |
+| 🟡 | 16 to 19 | Domain 3: 8 modules (Session 16 done: 3.1, 3.2) |
 | ⬜ | 20 | Feature: study plan and exam countdown |
 | ⬜ | 21 to 24 | Domain 4: 7 modules |
 | ⬜ | 25 | Full catch-up, requested 2026-10-10: review every module against every book in `PMI Learning Material/`, improve where a book adds exam value, and give you a list of any extra PDFs worth adding |
@@ -125,6 +126,7 @@ Every content session ends with the source linker (`tools/link_sources.py`), the
 - Dark mode
 - More interactive buttons and feedback
 - Phone-width layout check
+- **Dashboard and Practice pages look raw and unpolished** (your feedback, 2026-10-10, after trying them). They work; redesign them properly: stronger visual hierarchy, a real chart for domain progress instead of a plain table, better spacing, and a more finished practice flow
 - Wide lesson tables (for example the 40-process table in module 1.8) are cramped in the reading column: let wide tables use the full page width
 
 Add ideas here as they come up.
@@ -168,13 +170,13 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **23 of 38 modules done** (461 quiz questions, 664 flashcards).
+Overall: **25 of 38 modules done** (503 quiz questions, 721 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
 | ✅ | 1. PM Fundamentals and Core Concepts | 11 / 11 |
 | ✅ | 2. Predictive, Plan-Based Methodologies | 12 / 12 |
-| ⬜ | 3. Agile Frameworks / Methodologies | 0 / 8 |
+| 🟡 | 3. Agile Frameworks / Methodologies | 2 / 8 |
 | ⬜ | 4. Business Analysis Frameworks | 0 / 7 |
 
 **Domain 1: PM Fundamentals and Core Concepts**
@@ -214,8 +216,8 @@ Overall: **23 of 38 modules done** (461 quiz questions, 664 flashcards).
 
 | Status | Module | Done on |
 |---|---|---|
-| ⬜ | 3.1 Agile Mindset, Values and Principles | |
-| ⬜ | 3.2 Scrum | |
+| ✅ | 3.1 Agile Mindset, Values and Principles | 2026-10-10 |
+| ✅ | 3.2 Scrum | 2026-10-10 |
 | ⬜ | 3.3 XP, Lean, Kanban and Other Methods | |
 | ⬜ | 3.4 Servant Leadership and Agile Teams | |
 | ⬜ | 3.5 Agile Planning, User Stories and Estimation | |

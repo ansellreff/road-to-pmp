@@ -46,8 +46,8 @@
       "title": "Agile Frameworks / Methodologies",
       "weight": 20,
       "modules": [
-        { "id": "3-01-agile-mindset", "title": "Agile Mindset, Values and Principles", "ready": false },
-        { "id": "3-02-scrum", "title": "Scrum", "ready": false },
+        { "id": "3-01-agile-mindset", "title": "Agile Mindset, Values and Principles", "ready": true },
+        { "id": "3-02-scrum", "title": "Scrum", "ready": true },
         { "id": "3-03-xp-lean-kanban", "title": "XP, Lean, Kanban and Other Methods", "ready": false },
         { "id": "3-04-servant-leadership-teams", "title": "Servant Leadership and Agile Teams", "ready": false },
         { "id": "3-05-planning-stories-estimation", "title": "Agile Planning, User Stories and Estimation", "ready": false },

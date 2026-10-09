@@ -38,6 +38,7 @@ TOC_BOOKS = {
     "wbs": 18,
     "estimating": 12,
     "riskguide": 16,
+    "agile": 18,
 }
 
 _pages: dict[str, list[str]] = {}
@@ -91,6 +92,8 @@ def which_book(part: str) -> str | None:
         return "estimating"
     if "risk management: a practice guide" in lowered:
         return "riskguide"
+    if "agile practice guide" in lowered:
+        return "agile"
     return None
 
 
@@ -115,13 +118,20 @@ def resolve(part: str) -> tuple[str, int] | None:
 
     if book in TOC_BOOKS:
         # Their tables of contents list every section: "3.3.2. Title  [p83]" or "3.4.2 TITLE  [p87]".
-        number = re.search(r"\b(\d+(?:\.\d+)+)\b", part)
+        # Section numbers may carry an annex or appendix letter: "A3.2", "X1.4".
+        number = re.search(r"\b([AX]?\d+(?:\.\d+)+)\b", part)
         section = re.search(r"sections? (\d+)", lowered)
         wanted = number.group(1) if number else section.group(1) if section else None
         if wanted:
-            hit = re.search(rf"^\s*(?:CHAPTER )?{re.escape(wanted)}[.:]? .*\[p(\d+)\]", toc(book), re.MULTILINE)
+            hit = re.search(
+                # \s, not a plain space: some books put an en space after the section number.
+                rf"^\s*(?:CHAPTER |Section )?{re.escape(wanted)}[.:]?\s.*\[p(\d+)\]", toc(book), re.MULTILINE
+            )
             if hit:
                 return book, int(hit.group(1))
+            # A section was named but is not in the contents: report it instead of
+            # silently linking to the first page.
+            return None
         return book, TOC_BOOKS[book]
 
     regions = REGIONS[book]

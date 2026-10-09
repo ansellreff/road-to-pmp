@@ -1,0 +1,42 @@
+[
+  {
+    "book": "agile",
+    "page": 24,
+    "label": "Agile Practice Guide, 2.1"
+  },
+  {
+    "book": "agile",
+    "page": 25,
+    "label": "Agile Practice Guide, 2.2"
+  },
+  {
+    "book": "agile",
+    "page": 28,
+    "label": "Agile Practice Guide, 2.3"
+  },
+  {
+    "book": "agile",
+    "page": 41,
+    "label": "Agile Practice Guide, 3.9"
+  },
+  {
+    "book": "agile",
+    "page": 43,
+    "label": "Agile Practice Guide, 3.9.1"
+  },
+  {
+    "book": "agile",
+    "page": 44,
+    "label": "Agile Practice Guide, 3.9.2"
+  },
+  {
+    "book": "agile",
+    "page": 45,
+    "label": "Agile Practice Guide, 3.10"
+  },
+  {
+    "book": "agile",
+    "page": 56,
+    "label": "Agile Practice Guide, 4.1"
+  }
+]

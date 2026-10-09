@@ -1,0 +1,447 @@
+[
+  {
+    "id": "q1",
+    "q": "What is Scrum?",
+    "options": [
+      "A scaling framework for many teams",
+      "A project scheduling tool",
+      "A single-team process framework for managing product development in sprints",
+      "A type of contract"
+    ],
+    "answer": 2,
+    "explanation": "Scrum is a single-team process framework consisting of roles, events, artifacts and rules, using an iterative approach to deliver working products.",
+    "ref": "Agile Practice Guide, A3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 143,
+        "label": "Agile Practice Guide, A3.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "How long is a sprint?",
+    "options": [
+      "One month or less, with a consistent length",
+      "Exactly one week",
+      "Any length the customer chooses each time",
+      "Three to six months"
+    ],
+    "answer": 0,
+    "explanation": "Scrum runs on timeboxes of one month or less with consistent durations, called sprints, each producing a potentially releasable increment.",
+    "ref": "Agile Practice Guide, A3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 143,
+        "label": "Agile Practice Guide, A3.2"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Which are the three roles in a Scrum team?",
+    "options": [
+      "Project manager, sponsor, team member",
+      "Scrum master, project manager, tester",
+      "Product owner, business analyst, developer",
+      "Product owner, development team, scrum master"
+    ],
+    "answer": 3,
+    "explanation": "The Scrum team consists of a product owner, a development team and a scrum master. Scrum has no project manager role.",
+    "ref": "Agile Practice Guide, A3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 143,
+        "label": "Agile Practice Guide, A3.2"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Who is responsible for maximizing the value of the product and ordering the product backlog?",
+    "options": [
+      "The scrum master",
+      "The product owner",
+      "The development team",
+      "The sponsor"
+    ],
+    "answer": 1,
+    "explanation": "The product owner is responsible for maximizing the value of the product and ranks the work based on its business value.",
+    "ref": "Agile Practice Guide, 4.4.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 67,
+        "label": "Agile Practice Guide, 4.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Which statement best describes the scrum master?",
+    "options": [
+      "The manager who assigns tasks to team members",
+      "The person who decides which features to build",
+      "A servant leader who upholds the Scrum process, coaches the team and removes impediments",
+      "The customer's representative"
+    ],
+    "answer": 2,
+    "explanation": "The scrum master helps ensure the Scrum process is followed and coaches the team on removing impediments. The role is a supportive leader, not a boss.",
+    "ref": "Agile Practice Guide, A3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 143,
+        "label": "Agile Practice Guide, A3.2"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "What does it mean that the development team is cross-functional?",
+    "options": [
+      "It has all the skills needed to deliver the working product without depending on people outside the team",
+      "Each member belongs to several teams",
+      "It reports to several managers",
+      "It works in different time zones"
+    ],
+    "answer": 0,
+    "explanation": "A cross-functional team has everything it needs within the team to deliver the working product, so it can finish work quickly without external dependencies.",
+    "ref": "Agile Practice Guide, A3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 143,
+        "label": "Agile Practice Guide, A3.2"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "During sprint planning, who decides how much work the team will take into the sprint?",
+    "options": [
+      "The product owner",
+      "The scrum master",
+      "The sponsor",
+      "The development team"
+    ],
+    "answer": 3,
+    "explanation": "The team considers its capacity and story size so that it does not commit to more than it can complete in one iteration. The product owner sets priorities; the team decides how much fits.",
+    "ref": "Agile Practice Guide, 5.2.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 83,
+        "label": "Agile Practice Guide, 5.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which of the following is a Scrum artifact?",
+    "options": [
+      "Sprint review",
+      "Sprint backlog",
+      "Daily scrum",
+      "Scrum master"
+    ],
+    "answer": 1,
+    "explanation": "The three Scrum artifacts are the product backlog, the sprint backlog and the increment. The sprint review and daily scrum are events.",
+    "ref": "Agile Practice Guide, A3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 143,
+        "label": "Agile Practice Guide, A3.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What is the product backlog?",
+    "options": [
+      "The list of defects found in testing",
+      "The work selected for the current sprint",
+      "The ordered list of all the work for the product",
+      "The team's improvement actions"
+    ],
+    "answer": 2,
+    "explanation": "The backlog is the ordered list of all the work for a team. It does not need to be complete before work starts and changes as more is learned.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "What is the maximum length of the daily scrum?",
+    "options": [
+      "15 minutes",
+      "30 minutes",
+      "1 hour",
+      "As long as needed to solve the problems raised"
+    ],
+    "answer": 0,
+    "explanation": "The daily coordination meeting is timeboxed to no longer than 15 minutes.",
+    "ref": "Agile Practice Guide, 5.2.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 84,
+        "label": "Agile Practice Guide, 5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "During the daily scrum, two developers start a detailed discussion about how to fix a technical problem. What should happen?",
+    "options": [
+      "Extend the meeting until the problem is solved",
+      "Cancel the sprint",
+      "Ask the product owner to decide",
+      "Note the problem in a parking lot and let those involved solve it after the meeting"
+    ],
+    "answer": 3,
+    "explanation": "Daily coordination meetings are for realizing there are problems, not for solving them. Issues go to a parking lot and are handled in a separate discussion.",
+    "ref": "Agile Practice Guide, 5.2.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 84,
+        "label": "Agile Practice Guide, 5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Which of the following is a common mistake with the daily scrum?",
+    "options": [
+      "Keeping it to 15 minutes",
+      "Turning it into a status report to a manager",
+      "Letting any team member facilitate it",
+      "Reviewing the task board"
+    ],
+    "answer": 1,
+    "explanation": "A typical antipattern is that the daily meeting becomes a status meeting. It exists for the team to self-organize and make commitments to one another.",
+    "ref": "Agile Practice Guide, 5.2.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 84,
+        "label": "Agile Practice Guide, 5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What is the purpose of the sprint review?",
+    "options": [
+      "To improve the team's way of working",
+      "To plan the next sprint in detail",
+      "To demonstrate the working increment to stakeholders and get feedback",
+      "To assign tasks for the day"
+    ],
+    "answer": 2,
+    "explanation": "The team demonstrates completed work at the end of the iteration. The product owner accepts or declines stories and feedback shapes what comes next.",
+    "ref": "Agile Practice Guide, 5.2.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 85,
+        "label": "Agile Practice Guide, 5.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "What is the purpose of the sprint retrospective?",
+    "options": [
+      "For the team to learn from its work and improve its process",
+      "To show the product to the customer",
+      "To decide who is to blame for defects",
+      "To update the product roadmap"
+    ],
+    "answer": 0,
+    "explanation": "The retrospective allows the team to learn about, improve and adapt its process. It is not about blame.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A retrospective produces 14 possible improvements. What should the team do?",
+    "options": [
+      "Start all 14 in the next sprint",
+      "Ignore them, because the sprint is already planned",
+      "Give them to the scrum master to implement alone",
+      "Rank them and choose a small number the team has capacity to complete"
+    ],
+    "answer": 3,
+    "explanation": "The team should limit the action items to its capacity. Trying to improve too many things and finishing none is worse than completing a few.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Who accepts or declines the completed stories at the demonstration?",
+    "options": [
+      "The scrum master",
+      "The product owner",
+      "The development team",
+      "The project sponsor"
+    ],
+    "answer": 1,
+    "explanation": "The product owner sees the demonstration and accepts or declines stories.",
+    "ref": "Agile Practice Guide, 5.2.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 85,
+        "label": "Agile Practice Guide, 5.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "What is the definition of done?",
+    "options": [
+      "The date the sprint ends",
+      "The list of items in the sprint backlog",
+      "The team's shared checklist of what an increment must meet to be considered finished",
+      "The product owner's vision for the product"
+    ],
+    "answer": 2,
+    "explanation": "A clear definition of done gives the team a shared view of what ready to ship means: integrated, tested, compliant, documented and accepted.",
+    "ref": "Agile Practice Guide, 5.2.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 87,
+        "label": "Agile Practice Guide, 5.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "At the end of a sprint, one story is coded but not yet tested, so it does not meet the definition of done. What should happen?",
+    "options": [
+      "It is not counted as done and returns to the product backlog to be re-prioritized",
+      "It is demonstrated as complete",
+      "The sprint is extended by a few days",
+      "The definition of done is relaxed for this sprint"
+    ],
+    "answer": 0,
+    "explanation": "Work that does not meet the definition of done is not done. The sprint length is fixed, so the item goes back to the backlog.",
+    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 87,
+        "label": "Agile Practice Guide, 5.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "In the middle of a sprint, a stakeholder asks a developer to add an urgent new feature. What should the developer do?",
+    "options": [
+      "Add it to the sprint immediately",
+      "Refuse and ignore the request",
+      "Ask the scrum master to approve it",
+      "Direct the stakeholder to the product owner, who can add it to the product backlog and prioritize it"
+    ],
+    "answer": 3,
+    "explanation": "The product owner owns the backlog and its order. New requests go to the product owner, so the team can stay focused on the sprint's work.",
+    "ref": "PMI standard teaching; Agile Practice Guide, 4.4.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 67,
+        "label": "Agile Practice Guide, 4.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "When does backlog refinement usually take place, and what is it for?",
+    "options": [
+      "At the end of the project, to archive the backlog",
+      "During the sprint, to prepare and clarify stories for upcoming sprints",
+      "Only before the first sprint, to write every story",
+      "During the retrospective, to assign blame"
+    ],
+    "answer": 1,
+    "explanation": "Refinement sessions are typically held in the middle of an iteration to get stories ready for upcoming iterations, so the team understands them and their relative size.",
+    "ref": "Agile Practice Guide, 5.2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 82,
+        "label": "Agile Practice Guide, 5.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which three questions are answered in the daily scrum?",
+    "options": [
+      "Who is late, who is absent, who is on leave",
+      "What is the budget, what is the schedule, what is the scope",
+      "What I completed, what I plan to complete next, what my impediments are",
+      "What went well, what went badly, what to improve"
+    ],
+    "answer": 2,
+    "explanation": "Each person says what they completed since the last meeting, what they plan to complete before the next one and what impediments they have.",
+    "ref": "Agile Practice Guide, 5.2.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 84,
+        "label": "Agile Practice Guide, 5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which statement about the sprint review and the retrospective is correct?",
+    "options": [
+      "The review inspects the product with stakeholders; the retrospective inspects the process within the team",
+      "Both are attended only by the scrum master",
+      "The retrospective comes before the review",
+      "They are two names for the same meeting"
+    ],
+    "answer": 0,
+    "explanation": "The review demonstrates the working product and gathers feedback. The retrospective, the last event of the sprint, is where the team improves its way of working.",
+    "ref": "Agile Practice Guide, 5.2.6; Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 85,
+        "label": "Agile Practice Guide, 5.2.6"
+      },
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  }
+]
