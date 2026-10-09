@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the critical path?",
+    "options": [
+      "The path with the most activities",
+      "The shortest path through the network",
+      "The longest path through the network, which determines the shortest possible project duration",
+      "The path with the most expensive activities"
+    ],
+    "answer": 2,
+    "explanation": "The critical path is the longest sequence of activities. Its length is the minimum time in which the project can be completed.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A network has three paths with durations of 14, 21 and 18 days. What is the project duration?",
+    "options": [
+      "21 days",
+      "14 days",
+      "18 days",
+      "53 days"
+    ],
+    "answer": 0,
+    "explanation": "The project duration equals the longest path, which is the critical path: 21 days.",
+    "ref": "PMBOK 8, Guide Figure 5-4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 266,
+        "label": "PMBOK 8, Guide Figure 5-4"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Activity A (4 days) is followed by B (6 days) and C (2 days). B and C are both followed by D (3 days). What is the critical path and its duration?",
+    "options": [
+      "A – C – D, 9 days",
+      "A – B – C – D, 15 days",
+      "A – C – D, 13 days",
+      "A – B – D, 13 days"
+    ],
+    "answer": 3,
+    "explanation": "Path A – B – D = 4 + 6 + 3 = 13 days. Path A – C – D = 4 + 2 + 3 = 9 days. The longer path, A – B – D, is critical.",
+    "ref": "PMBOK 8, Guide Figure 5-4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 266,
+        "label": "PMBOK 8, Guide Figure 5-4"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "In the same network (A 4 days, then B 6 days and C 2 days in parallel, then D 3 days), what is the total float of activity C?",
+    "options": [
+      "0 days",
+      "4 days",
+      "2 days",
+      "6 days"
+    ],
+    "answer": 1,
+    "explanation": "C runs in parallel with B. B takes 6 days and C takes 2, so C can slip 6 − 2 = 4 days without delaying D or the project.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "What does the forward pass calculate?",
+    "options": [
+      "Late start and late finish dates",
+      "The cost of each activity",
+      "Early start and early finish dates",
+      "The resources needed for each activity"
+    ],
+    "answer": 2,
+    "explanation": "The forward pass begins at the project start and calculates the earliest possible start and finish dates. The backward pass calculates the late dates.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Using the convention that the project starts on day 1, an activity has an early start of day 6 and a duration of 5 days. What is its early finish?",
+    "options": [
+      "Day 10",
+      "Day 11",
+      "Day 9",
+      "Day 12"
+    ],
+    "answer": 0,
+    "explanation": "With the day-1 convention, EF = ES + duration − 1 = 6 + 5 − 1 = day 10. The activity occupies days 6, 7, 8, 9 and 10.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Using the day-1 convention, an activity must finish no later than day 20 and has a duration of 4 days. What is its late start?",
+    "options": [
+      "Day 16",
+      "Day 15",
+      "Day 24",
+      "Day 17"
+    ],
+    "answer": 3,
+    "explanation": "With the day-1 convention, LS = LF − duration + 1 = 20 − 4 + 1 = day 17. The activity occupies days 17, 18, 19 and 20.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "An activity has an early start of day 8 and a late start of day 12. What is its total float?",
+    "options": [
+      "20 days",
+      "4 days",
+      "8 days",
+      "0 days"
+    ],
+    "answer": 1,
+    "explanation": "Total float = late start − early start = 12 − 8 = 4 days.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "During a forward pass, an activity has two predecessors with early finishes of day 9 and day 14. Using the day-1 convention, what is its early start?",
+    "options": [
+      "Day 10",
+      "Day 14",
+      "Day 15",
+      "Day 24"
+    ],
+    "answer": 2,
+    "explanation": "Where paths merge in a forward pass, take the largest early finish. The activity cannot start until both predecessors are done: day 14 + 1 = day 15.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "What is total float?",
+    "options": [
+      "The time an activity can be delayed without delaying the project finish date or violating a constraint",
+      "The time an activity can be delayed without delaying the early start of its successor",
+      "The time between two milestones",
+      "The extra budget held for unknown risks"
+    ],
+    "answer": 0,
+    "explanation": "Total float is measured against the project finish date. The second option describes free float.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "What is free float?",
+    "options": [
+      "Float that costs nothing to use",
+      "The float of the whole project",
+      "The time an activity can be delayed without delaying the project finish date",
+      "The time an activity can be delayed without affecting the early start of its successor"
+    ],
+    "answer": 3,
+    "explanation": "Free float protects the next activity. An activity can have total float but zero free float, if any delay would push its successor.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "An activity on the critical path is delayed by 3 days and nothing else changes. What happens to the project?",
+    "options": [
+      "Nothing, because float absorbs the delay",
+      "The project finishes 3 days late",
+      "The project finishes 3 days early",
+      "The critical path becomes shorter"
+    ],
+    "answer": 1,
+    "explanation": "Critical activities have zero total float, so any delay to one of them delays the project finish date by the same amount.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "An activity with 5 days of total float is delayed by 7 days. By how much is the project delayed?",
+    "options": [
+      "7 days",
+      "0 days",
+      "2 days",
+      "5 days"
+    ],
+    "answer": 2,
+    "explanation": "The first 5 days are absorbed by the float. The remaining 7 − 5 = 2 days delay the project.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "The schedule calculation shows a critical path with −4 days of total float. What does this mean?",
+    "options": [
+      "The schedule cannot meet an imposed date as currently planned",
+      "The project will finish 4 days early",
+      "There is an error in the network diagram",
+      "The activity can be delayed 4 days"
+    ],
+    "answer": 0,
+    "explanation": "Negative float occurs when a constraint or imposed date is earlier than the logic and durations allow. It shows how much time must be recovered.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "To finish earlier, the project manager approves overtime and brings in two more people for a critical activity. Which technique is this?",
+    "options": [
+      "Fast tracking",
+      "Resource leveling",
+      "Resource smoothing",
+      "Crashing"
+    ],
+    "answer": 3,
+    "explanation": "Crashing shortens the schedule by adding resources for the least incremental cost. It usually increases cost.",
+    "ref": "PMBOK 8, Guide section 5, Schedule compression",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Schedule compression"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "To save time, the team starts building the foundation before all the architectural drawings are complete. Which technique is this, and what is its main downside?",
+    "options": [
+      "Crashing; higher cost",
+      "Fast tracking; higher risk and possible rework",
+      "Resource leveling; a later finish date",
+      "Rolling wave planning; less detail"
+    ],
+    "answer": 1,
+    "explanation": "Fast tracking performs activities in parallel that are normally done in sequence. It may result in rework and increased risk.",
+    "ref": "PMBOK 8, Guide section 5, Schedule compression",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Schedule compression"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "The schedule must be shortened by one week and there is no additional budget. Which option should the project manager consider first?",
+    "options": [
+      "Crashing the critical path",
+      "Reducing the scope without telling the customer",
+      "Fast tracking activities on the critical path",
+      "Crashing activities that have float"
+    ],
+    "answer": 2,
+    "explanation": "Fast tracking overlaps activities and does not directly require more money, though it adds risk. Crashing adds resources and therefore cost.",
+    "ref": "PMBOK 8, Guide section 5, Schedule compression",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Schedule compression"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Three activities could be crashed by one day each. A is critical and costs $500 to crash. B is not critical and costs $100. C is critical and costs $300. Which should be crashed first?",
+    "options": [
+      "C",
+      "A",
+      "B",
+      "A and B together"
+    ],
+    "answer": 0,
+    "explanation": "Crash only critical activities, and among them choose the least incremental cost. B is cheapest but not on the critical path, so shortening it does not shorten the project.",
+    "ref": "PMBOK 8, Guide section 5, Schedule compression",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Schedule compression"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A team member is assigned to two activities on the same day. The project manager moves one activity later, and the project end date moves out by two days. Which technique was used?",
+    "options": [
+      "Resource smoothing",
+      "Fast tracking",
+      "Crashing",
+      "Resource leveling"
+    ],
+    "answer": 3,
+    "explanation": "Resource leveling adjusts start and finish dates to resolve overallocation. It may change the critical path and delay the finish date.",
+    "ref": "PMBOK 8, Guide section 5, Resource optimization technique",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 298,
+        "label": "PMBOK 8, Guide section 5, Resource optimization technique"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which statement about resource smoothing is correct?",
+    "options": [
+      "It always delays the project",
+      "Activities are delayed only within their free and total float, so the critical path does not change",
+      "It adds resources to critical activities",
+      "It removes all float from the schedule"
+    ],
+    "answer": 1,
+    "explanation": "Resource smoothing uses only available float. The critical path is not changed and the completion date is not delayed, but it may not optimize every resource.",
+    "ref": "PMBOK 8, Guide section 5, Resource optimization technique",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 298,
+        "label": "PMBOK 8, Guide section 5, Resource optimization technique"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which technique runs the schedule many times with different assumptions to show the probability of finishing by a given date?",
+    "options": [
+      "Critical path method",
+      "Decomposition",
+      "Simulation, such as Monte Carlo analysis",
+      "Resource leveling"
+    ],
+    "answer": 2,
+    "explanation": "Simulation models the combined effect of risks and uncertainty. Monte Carlo analysis is the most common technique and calculates many possible schedule outcomes.",
+    "ref": "PMBOK 8, Guide section 5, Simulation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 302,
+        "label": "PMBOK 8, Guide section 5, Simulation"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A schedule has two critical paths. What does this mean for the project?",
+    "options": [
+      "Schedule risk is higher, because a delay on either path delays the project",
+      "The project will take twice as long",
+      "The network diagram contains an error",
+      "The project has more float"
+    ],
+    "answer": 0,
+    "explanation": "A project can have several critical paths. Each has zero float, so there are more activities whose delay would delay the project.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  }
+]

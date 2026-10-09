@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "Which are the four processes of the Finance performance domain?",
+    "options": [
+      "Plan Cost Management, Estimate Costs, Approve Budget, Close Finances",
+      "Plan Financial Management, Estimate Costs, Develop Budget, Monitor and Control Finances",
+      "Estimate Costs, Develop Schedule, Develop Budget, Validate Costs",
+      "Plan Financial Management, Fund Project, Pay Suppliers, Audit Costs"
+    ],
+    "answer": 1,
+    "explanation": "The Finance domain has three planning processes (Plan Financial Management, Estimate Costs, Develop Budget) and one monitoring and controlling process.",
+    "ref": "PMBOK 8, Guide 2.4.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 166,
+        "label": "PMBOK 8, Guide 2.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which process produces the cost baseline?",
+    "options": [
+      "Estimate Costs",
+      "Plan Financial Management",
+      "Develop Budget",
+      "Monitor and Control Finances"
+    ],
+    "answer": 2,
+    "explanation": "Develop Budget (older name: Determine Budget) aggregates the estimated costs of activities or work packages to establish an authorized cost baseline.",
+    "ref": "PMBOK 8, Guide 2.4.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 169,
+        "label": "PMBOK 8, Guide 2.4.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "What is the cost baseline?",
+    "options": [
+      "The approved, time-phased project budget, excluding management reserves",
+      "The total of all money the organization has available",
+      "The first rough estimate in the charter",
+      "The actual costs recorded to date"
+    ],
+    "answer": 0,
+    "explanation": "The cost baseline is the approved version of the time-phased project budget, excluding management reserves. It changes only through formal change control.",
+    "ref": "PMBOK 8, Guide section 4, Cost baseline",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 223,
+        "label": "PMBOK 8, Guide section 4, Cost baseline"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Work package estimates total $200,000. The contingency reserve is $20,000 and the management reserve is $10,000. What is the cost baseline?",
+    "options": [
+      "$200,000",
+      "$230,000",
+      "$210,000",
+      "$220,000"
+    ],
+    "answer": 3,
+    "explanation": "Cost baseline = cost estimates + contingency reserve = $200,000 + $20,000 = $220,000. Management reserve is not part of the cost baseline.",
+    "ref": "PMBOK 8, Guide Figure 2-25",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 166,
+        "label": "PMBOK 8, Guide Figure 2-25"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Using the same figures (estimates $200,000, contingency $20,000, management reserve $10,000), what is the total project budget?",
+    "options": [
+      "$220,000",
+      "$230,000",
+      "$200,000",
+      "$210,000"
+    ],
+    "answer": 1,
+    "explanation": "Project budget = cost baseline + management reserve = $220,000 + $10,000 = $230,000.",
+    "ref": "PMBOK 8, Guide Figure 2-25",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 166,
+        "label": "PMBOK 8, Guide Figure 2-25"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "What is a contingency reserve for?",
+    "options": [
+      "Unforeseen work that nobody could identify",
+      "Bonuses for the project team",
+      "Identified risks with planned responses, also called known-unknowns",
+      "Changes requested by the customer"
+    ],
+    "answer": 2,
+    "explanation": "Contingency reserve is budget within the cost baseline allocated for identified risks. Management reserve covers unforeseen work (unknown-unknowns).",
+    "ref": "PMBOK 8, Guide section 5, Reserve analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Reserve analysis"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which statement about management reserve is correct?",
+    "options": [
+      "It is set aside in addition to the cost baseline, for unforeseen work within the project scope",
+      "It is part of the cost baseline",
+      "It is used for identified risks",
+      "It is spent by any team member as needed"
+    ],
+    "answer": 0,
+    "explanation": "Management reserve is time or money that management sets aside in addition to the baseline and releases for unforeseen work that is within scope.",
+    "ref": "PMBOK 8, Guide 2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 164,
+        "label": "PMBOK 8, Guide 2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "During initiating, with very little information, the project manager gives an estimate of $100,000 with a range of −25% to +75%. What is this type of estimate called?",
+    "options": [
+      "Definitive estimate",
+      "Bottom-up estimate",
+      "Parametric estimate",
+      "Rough order of magnitude estimate"
+    ],
+    "answer": 3,
+    "explanation": "A rough order of magnitude (ROM) estimate is made early and has a wide range, typically −25% to +75%. A definitive estimate narrows to about −5% to +10%.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 4, Cost estimates",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 224,
+        "label": "PMBOK 8, Guide section 4, Cost estimates"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What happens to the accuracy of cost estimates as the project progresses?",
+    "options": [
+      "It decreases",
+      "It increases",
+      "It stays the same",
+      "It becomes irrelevant"
+    ],
+    "answer": 1,
+    "explanation": "Cost estimates are reviewed and refined as more detail becomes available. The accuracy of an estimate increases as the project progresses through its life cycle.",
+    "ref": "PMBOK 8, Guide section 4, Cost estimates",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 224,
+        "label": "PMBOK 8, Guide section 4, Cost estimates"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Flooring costs $40 per square meter and 500 square meters are needed. The estimate of $20,000 is an example of:",
+    "options": [
+      "Analogous estimating",
+      "Bottom-up estimating",
+      "Parametric estimating",
+      "Three-point estimating"
+    ],
+    "answer": 2,
+    "explanation": "Parametric estimating uses a statistical relationship or rate: quantity × cost per unit.",
+    "ref": "PMBOK 8, Guide section 5, Parametric estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 289,
+        "label": "PMBOK 8, Guide section 5, Parametric estimating"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which technique rolls cost estimates up from work packages to control accounts and then to the whole project?",
+    "options": [
+      "Cost aggregation",
+      "Funding limit reconciliation",
+      "Reserve analysis",
+      "Earned value analysis"
+    ],
+    "answer": 0,
+    "explanation": "Cost aggregation sums the estimates by work package in line with the WBS, then for the higher levels such as control accounts, and finally for the entire project.",
+    "ref": "PMBOK 8, Guide section 5, Cost aggregation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Cost aggregation"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Planned spending for the next quarter is higher than the funds the organization will release in that quarter. Which technique deals with this?",
+    "options": [
+      "Cost aggregation",
+      "Crashing",
+      "Cost of quality",
+      "Funding limit reconciliation"
+    ],
+    "answer": 3,
+    "explanation": "Funding limit reconciliation compares planned expenditure with funding limits. A variance may require rescheduling work to level out the rate of spending.",
+    "ref": "PMBOK 8, Guide section 5, Funding limit reconciliation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 276,
+        "label": "PMBOK 8, Guide section 5, Funding limit reconciliation"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Training the team in the correct procedure before work starts is which type of quality cost?",
+    "options": [
+      "Appraisal cost",
+      "Prevention cost",
+      "Internal failure cost",
+      "External failure cost"
+    ],
+    "answer": 1,
+    "explanation": "Prevention costs are spent to prevent poor quality: training, documenting processes, proper equipment and time to do it right.",
+    "ref": "PMBOK 8, Guide Figure 5-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 264,
+        "label": "PMBOK 8, Guide Figure 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Testing and inspecting deliverables are examples of which type of quality cost?",
+    "options": [
+      "Prevention cost",
+      "Internal failure cost",
+      "Appraisal cost",
+      "External failure cost"
+    ],
+    "answer": 2,
+    "explanation": "Appraisal costs are spent on evaluating, measuring, auditing and testing. Together with prevention costs they form the cost of conformance.",
+    "ref": "PMBOK 8, Guide Figure 5-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 264,
+        "label": "PMBOK 8, Guide Figure 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A customer finds a defect after delivery and the company repairs it under warranty. Which type of quality cost is this?",
+    "options": [
+      "External failure cost",
+      "Internal failure cost",
+      "Appraisal cost",
+      "Prevention cost"
+    ],
+    "answer": 0,
+    "explanation": "Failures found by the customer are external failure costs: warranty work, liabilities and lost business. Rework and scrap found by the project are internal failure costs.",
+    "ref": "PMBOK 8, Guide Figure 5-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 264,
+        "label": "PMBOK 8, Guide Figure 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Which of the following belongs to the cost of nonconformance?",
+    "options": [
+      "Training",
+      "Inspections",
+      "Documenting processes",
+      "Rework"
+    ],
+    "answer": 3,
+    "explanation": "The cost of nonconformance is money spent because of failures: rework and scrap (internal), warranty work and lost business (external).",
+    "ref": "PMBOK 8, Guide section 5, Cost of quality (CoQ)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Cost of quality (CoQ)"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A project has already spent $400,000 and is going badly. When deciding whether to continue, how should the $400,000 be treated?",
+    "options": [
+      "As the main reason to continue",
+      "As a sunk cost that should not influence the decision",
+      "As a variable cost",
+      "As part of the management reserve"
+    ],
+    "answer": 1,
+    "explanation": "Money already spent that cannot be recovered is a sunk cost. Decisions should be based on future costs and benefits only.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide 2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 164,
+        "label": "PMBOK 8, Guide 2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Office rent shared by all projects in the company is an example of:",
+    "options": [
+      "A direct cost",
+      "A variable cost",
+      "An indirect cost",
+      "A sunk cost"
+    ],
+    "answer": 2,
+    "explanation": "Indirect costs (overhead) are shared across several projects and cannot be charged to one project alone. Direct costs belong to a single project.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 4, Cost estimates",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 224,
+        "label": "PMBOK 8, Guide section 4, Cost estimates"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Which statement about the financial management plan is correct?",
+    "options": [
+      "It describes how project costs will be estimated, budgeted, managed, monitored and controlled",
+      "It contains the approved cost of each work package",
+      "It is the same as the cost baseline",
+      "It is written at the end of the project"
+    ],
+    "answer": 0,
+    "explanation": "The financial management plan is the output of Plan Financial Management and gives guidance on how finances will be managed. It contains no cost figures.",
+    "ref": "PMBOK 8, Guide 2.4.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 167,
+        "label": "PMBOK 8, Guide 2.4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Project A has a payback period of 2 years. Project B has a payback period of 4 years. Based on payback period alone, which should be chosen?",
+    "options": [
+      "Project B, because longer is better",
+      "Either, because payback period does not matter",
+      "Neither, because both are too long",
+      "Project A, because it recovers the investment sooner"
+    ],
+    "answer": 3,
+    "explanation": "Payback period is the time needed to earn back the investment, so shorter is better. For ROI, NPV and IRR, higher is better.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide 2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 164,
+        "label": "PMBOK 8, Guide 2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Money invested in buying equipment and buildings is called:",
+    "options": [
+      "Operational expenditure (OpEx)",
+      "Capital expenditure (CapEx)",
+      "Sunk cost",
+      "Management reserve"
+    ],
+    "answer": 1,
+    "explanation": "CapEx is money invested to acquire, upgrade and maintain physical assets. OpEx covers the ongoing costs of running day-to-day operations, such as wages and rent.",
+    "ref": "PMBOK 8, Guide 2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 164,
+        "label": "PMBOK 8, Guide 2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which of the following is an output of Monitor and Control Finances?",
+    "options": [
+      "Project charter",
+      "Cost baseline (first version)",
+      "Cost forecasts and change requests",
+      "Financial management plan (first version)"
+    ],
+    "answer": 2,
+    "explanation": "Monitor and Control Finances produces work performance information, revenue and cost forecasts and change requests, and may update the cost baseline.",
+    "ref": "PMBOK 8, Guide Figure 2-30",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 170,
+        "label": "PMBOK 8, Guide Figure 2-30"
+      }
+    ]
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "book": "pmbok8",
+    "page": 232,
+    "label": "PMBOK 8, Guide section 4, Project schedule network diagram"
+  },
+  {
+    "book": "pmbok8",
+    "page": 264,
+    "label": "PMBOK 8, Guide section 5, Critical chain method"
+  },
+  {
+    "book": "pmbok8",
+    "page": 265,
+    "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 266,
+    "label": "PMBOK 8, Guide Figure 5-4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 298,
+    "label": "PMBOK 8, Guide Figure 5-18"
+  },
+  {
+    "book": "pmbok8",
+    "page": 298,
+    "label": "PMBOK 8, Guide section 5, Resource optimization technique"
+  },
+  {
+    "book": "pmbok8",
+    "page": 301,
+    "label": "PMBOK 8, Guide Figure 5-20"
+  },
+  {
+    "book": "pmbok8",
+    "page": 301,
+    "label": "PMBOK 8, Guide section 5, Schedule compression"
+  },
+  {
+    "book": "pmbok8",
+    "page": 302,
+    "label": "PMBOK 8, Guide section 5, Schedule network analysis"
+  },
+  {
+    "book": "pmbok8",
+    "page": 302,
+    "label": "PMBOK 8, Guide section 5, Simulation"
+  },
+  {
+    "book": "pmbok8",
+    "page": 320,
+    "label": "PMBOK 8, Guide section 5, What-if analysis"
+  }
+]
