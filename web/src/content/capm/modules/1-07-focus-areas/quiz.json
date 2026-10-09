@@ -10,15 +10,34 @@
     ],
     "answer": 2,
     "explanation": "The five Focus Areas are Initiating, Planning, Executing, Monitoring and Controlling, and Closing.",
-    "ref": "PMBOK 8, Standard 4.5"
+    "ref": "PMBOK 8, Standard 4.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 92,
+        "label": "PMBOK 8, Standard 4.5"
+      }
+    ]
   },
   {
     "id": "q2",
     "q": "In earlier PMI publications, the Project Management Focus Areas were known as:",
-    "options": ["Process Groups", "Knowledge Areas", "Performance Domains", "Phase gates"],
+    "options": [
+      "Process Groups",
+      "Knowledge Areas",
+      "Performance Domains",
+      "Phase gates"
+    ],
     "answer": 0,
     "explanation": "The 8th edition renames the Process Groups as Project Management Focus Areas. The five names are unchanged.",
-    "ref": "PMBOK 8, Standard section 4"
+    "ref": "PMBOK 8, Standard section 4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard section 4"
+      }
+    ]
   },
   {
     "id": "q3",
@@ -31,15 +50,34 @@
     ],
     "answer": 3,
     "explanation": "Focus Areas are not project phases. If a project is divided into phases, the Focus Area actions interact within each phase, and they often overlap.",
-    "ref": "PMBOK 8, Standard 4.5.6"
+    "ref": "PMBOK 8, Standard 4.5.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 96,
+        "label": "PMBOK 8, Standard 4.5.6"
+      }
+    ]
   },
   {
     "id": "q4",
     "q": "In which Focus Area is the project formally authorized?",
-    "options": ["Planning", "Initiating", "Executing", "Closing"],
+    "options": [
+      "Planning",
+      "Initiating",
+      "Executing",
+      "Closing"
+    ],
     "answer": 1,
     "explanation": "Initiating defines a new project or phase and often includes the formal authorization to start it.",
-    "ref": "PMBOK 8, Standard 4.5.1"
+    "ref": "PMBOK 8, Standard 4.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.1"
+      }
+    ]
   },
   {
     "id": "q5",
@@ -52,7 +90,14 @@
     ],
     "answer": 0,
     "explanation": "Initial scope, committed funding, identified stakeholders and assigned roles are captured in artifacts such as the project charter and stakeholder register.",
-    "ref": "PMBOK 8, Standard 4.5.1"
+    "ref": "PMBOK 8, Standard 4.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.1"
+      }
+    ]
   },
   {
     "id": "q6",
@@ -65,15 +110,34 @@
     ],
     "answer": 2,
     "explanation": "Business documents generally originate outside the project but are used as inputs to it. The business case and benefits management plan are the main examples.",
-    "ref": "PMBOK 8, Standard 4.5.1"
+    "ref": "PMBOK 8, Standard 4.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.1"
+      }
+    ]
   },
   {
     "id": "q7",
     "q": "As the team learns more, it keeps refining and adding detail to the project management plan. What is this called?",
-    "options": ["Gold plating", "Scope creep", "Fast tracking", "Progressive elaboration"],
+    "options": [
+      "Gold plating",
+      "Scope creep",
+      "Fast tracking",
+      "Progressive elaboration"
+    ],
     "answer": 3,
     "explanation": "The ongoing refinement of the plan as more information becomes available is progressive elaboration. It shows that planning is iterative.",
-    "ref": "PMBOK 8, Standard 4.5.2"
+    "ref": "PMBOK 8, Standard 4.5.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.2"
+      }
+    ]
   },
   {
     "id": "q8",
@@ -86,23 +150,54 @@
     ],
     "answer": 1,
     "explanation": "Predictive approaches front-load planning. Adaptive approaches start with brief high-level planning (roadmapping) followed by frequent planning and replanning.",
-    "ref": "PMBOK 8, Standard 4.5.2"
+    "ref": "PMBOK 8, Standard 4.5.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.2"
+      }
+    ]
   },
   {
     "id": "q9",
     "q": "Coordinating resources, managing stakeholder engagement and performing the project's activities belong to which Focus Area?",
-    "options": ["Executing", "Initiating", "Closing", "Planning"],
+    "options": [
+      "Executing",
+      "Initiating",
+      "Closing",
+      "Planning"
+    ],
     "answer": 0,
     "explanation": "Executing completes the work in line with the currently agreed course of action, including coordinating resources and engaging stakeholders.",
-    "ref": "PMBOK 8, Standard 4.5.3"
+    "ref": "PMBOK 8, Standard 4.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.3"
+      }
+    ]
   },
   {
     "id": "q10",
     "q": "A project manager compares actual progress with the plan, finds a schedule variance and recommends a corrective action. Which Focus Area is this?",
-    "options": ["Planning", "Executing", "Monitoring and Controlling", "Closing"],
+    "options": [
+      "Planning",
+      "Executing",
+      "Monitoring and Controlling",
+      "Closing"
+    ],
     "answer": 2,
     "explanation": "Monitoring and Controlling tracks, measures and reviews performance, identifies where changes are needed and initiates them.",
-    "ref": "PMBOK 8, Standard 4.5.4"
+    "ref": "PMBOK 8, Standard 4.5.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.4"
+      }
+    ]
   },
   {
     "id": "q11",
@@ -115,7 +210,14 @@
     ],
     "answer": 3,
     "explanation": "It is performed in parallel with the other Focus Areas for each phase and for the project as a whole. It is not a separate, stand-alone area.",
-    "ref": "PMBOK 8, Standard 4.5.4"
+    "ref": "PMBOK 8, Standard 4.5.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.4"
+      }
+    ]
   },
   {
     "id": "q12",
@@ -128,7 +230,14 @@
     ],
     "answer": 1,
     "explanation": "Monitoring gathers, compares and reports performance. Controlling analyzes variances, assesses trends, evaluates alternatives and recommends corrections.",
-    "ref": "PMBOK 8, Standard 4.5.4"
+    "ref": "PMBOK 8, Standard 4.5.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.4"
+      }
+    ]
   },
   {
     "id": "q13",
@@ -141,7 +250,14 @@
     ],
     "answer": 0,
     "explanation": "The Closing Focus Area also covers terminating a project before completion, including suspension or early closure.",
-    "ref": "PMBOK 8, Standard 4.5.5"
+    "ref": "PMBOK 8, Standard 4.5.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.5"
+      }
+    ]
   },
   {
     "id": "q14",
@@ -154,7 +270,14 @@
     ],
     "answer": 2,
     "explanation": "Closing verifies the achievement of outputs, outcomes and benefits and closes out phases, projects and contracts, including the transition to operations.",
-    "ref": "PMBOK 8, Standard 4.5.5"
+    "ref": "PMBOK 8, Standard 4.5.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.5"
+      }
+    ]
   },
   {
     "id": "q15",
@@ -167,7 +290,14 @@
     ],
     "answer": 3,
     "explanation": "In adaptive development the Focus Areas interact within short iterations and are revisited regularly, allowing continuous refinement.",
-    "ref": "PMBOK 8, Standard 4.5.6, Figure 4-14"
+    "ref": "PMBOK 8, Standard 4.5.6, Figure 4-14",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 97,
+        "label": "PMBOK 8, Standard 4.5.6, Figure 4-14"
+      }
+    ]
   },
   {
     "id": "q16",
@@ -180,6 +310,13 @@
     ],
     "answer": 1,
     "explanation": "The project management plan can and should be changed whenever such a change would enhance the value proposition of the project.",
-    "ref": "PMBOK 8, Standard 4.5.3"
+    "ref": "PMBOK 8, Standard 4.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.3"
+      }
+    ]
   }
 ]

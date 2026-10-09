@@ -3,7 +3,9 @@ import Flashcards from '../components/Flashcards'
 import Lesson from '../components/Lesson'
 import ModuleProgress from '../components/ModuleProgress'
 import NotFound from '../components/NotFound'
+import NotOnExamNote, { ExamStar } from '../components/NotOnExam'
 import Quiz from '../components/Quiz'
+import ModuleSources from '../components/Sources'
 import { findModule, getCourse } from '../lib/content'
 import { moduleNumber } from '../lib/stats'
 import { link } from '../lib/ui'
@@ -30,7 +32,16 @@ export default function ModulePage() {
       <p className="mt-4 text-sm text-muted">
         Module {moduleNumber(course, module.id)} in {domain.title}
       </p>
-      <h1 className="title mt-1 max-w-3xl text-3xl sm:text-4xl">{module.title}</h1>
+      <h1 className="title mt-1 max-w-3xl text-3xl sm:text-4xl">
+        {module.title}
+        {module.supplementary && (
+          <>
+            {' '}
+            <ExamStar />
+          </>
+        )}
+      </h1>
+      {module.supplementary && <NotOnExamNote className="mt-2" />}
 
       <nav className="mt-6 flex gap-6 border-b border-ink" aria-label="Module sections">
         {tabs.map((t) => (
@@ -56,6 +67,7 @@ export default function ModulePage() {
         {tab === 'flashcards' && <Flashcards courseId={course.id} moduleId={module.id} />}
       </div>
 
+      <ModuleSources courseId={course.id} moduleId={module.id} />
       <ModuleProgress courseId={course.id} moduleId={module.id} />
     </div>
   )

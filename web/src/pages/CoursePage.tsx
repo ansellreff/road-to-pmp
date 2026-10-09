@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import ExamBlueprint from '../components/ExamBlueprint'
 import Milestone from '../components/Milestone'
 import NotFound from '../components/NotFound'
+import NotOnExamNote, { ExamStar } from '../components/NotOnExam'
 import { getCourse } from '../lib/content'
 import { moduleCompletion, moduleKey, useProgress } from '../lib/progress'
 import { percent } from '../lib/stats'
@@ -57,13 +58,21 @@ export default function CoursePage() {
                     <span className="tabular-nums text-muted">
                       {i + 1}.{j + 1}
                     </span>
-                    {m.ready ? (
-                      <Link to={`/${course.id}/${m.id}`} className="font-semibold hover:text-plan hover:underline">
-                        {m.title}
-                      </Link>
-                    ) : (
-                      <span className="text-muted">{m.title}</span>
-                    )}
+                    <span>
+                      {m.ready ? (
+                        <Link to={`/${course.id}/${m.id}`} className="font-semibold hover:text-plan hover:underline">
+                          {m.title}
+                        </Link>
+                      ) : (
+                        <span className="text-muted">{m.title}</span>
+                      )}
+                      {m.supplementary && (
+                        <>
+                          {' '}
+                          <ExamStar />
+                        </>
+                      )}
+                    </span>
                     <span
                       className={`col-start-3 text-sm sm:col-start-4 ${value >= 1 ? 'font-semibold text-done' : 'text-muted'}`}
                     >
@@ -73,6 +82,7 @@ export default function CoursePage() {
                 )
               })}
             </ol>
+            {domain.modules.some((m) => m.supplementary) && <NotOnExamNote className="mt-3 text-sm" />}
           </section>
         ))}
       </div>

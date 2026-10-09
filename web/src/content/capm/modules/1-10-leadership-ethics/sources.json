@@ -1,0 +1,62 @@
+[
+  {
+    "book": "ethics",
+    "page": 5,
+    "label": "PMI Code of Ethics, 1.2"
+  },
+  {
+    "book": "ethics",
+    "page": 6,
+    "label": "PMI Code of Ethics, 1.4"
+  },
+  {
+    "book": "ethics",
+    "page": 8,
+    "label": "PMI Code of Ethics, 2.2.3"
+  },
+  {
+    "book": "ethics",
+    "page": 9,
+    "label": "PMI Code of Ethics, 2.3.4 and 3.2.6"
+  },
+  {
+    "book": "ethics",
+    "page": 12,
+    "label": "PMI Code of Ethics, chapter 4"
+  },
+  {
+    "book": "ethics",
+    "page": 13,
+    "label": "PMI Code of Ethics, 4.3.1 and 4.3.2"
+  },
+  {
+    "book": "ethics",
+    "page": 14,
+    "label": "PMI Code of Ethics, 5.2.3 and 5.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 261,
+    "label": "PMBOK 8, Guide section 5, Conflict management"
+  },
+  {
+    "book": "pmbok8",
+    "page": 273,
+    "label": "PMBOK 8, Guide section 5, Distributed management and leadership"
+  },
+  {
+    "book": "pmbok8",
+    "page": 281,
+    "label": "PMBOK 8, Guide section 5, Leadership"
+  },
+  {
+    "book": "pmbok8",
+    "page": 282,
+    "label": "PMBOK 8, Guide section 5, Interpersonal skills"
+  },
+  {
+    "book": "pmbok8",
+    "page": 302,
+    "label": "PMBOK 8, Guide section 5, Servant leadership"
+  }
+]

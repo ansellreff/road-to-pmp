@@ -4,6 +4,7 @@ import { loadQuiz, type Question } from '../lib/content'
 import { moduleKey, recordQuiz, useProgress } from '../lib/progress'
 import { btnPrimary, btnQuiet } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
+import { SourceItem } from './Sources'
 
 export default function Quiz({ courseId, moduleId }: { courseId: string; moduleId: string }) {
   const questions = useLoaded(() => loadQuiz(courseId, moduleId))
@@ -144,7 +145,18 @@ function QuestionView(props: {
       {revealed && (
         <div className="mt-4 border-l-4 border-ink pl-4">
           <p className="font-reading leading-relaxed">{question.explanation}</p>
-          {question.ref && <p className="mt-1 text-sm text-muted">Source: {question.ref}</p>}
+          {question.links?.length ? (
+            <ul className="mt-2 space-y-2 text-sm">
+              {question.links.map((source) => (
+                <li key={`${source.book}-${source.page}`}>
+                  <span className="text-muted">Source: </span>
+                  <SourceItem source={source} />
+                </li>
+              ))}
+            </ul>
+          ) : (
+            question.ref && <p className="mt-1 text-sm text-muted">Source: {question.ref}</p>
+          )}
         </div>
       )}
     </div>

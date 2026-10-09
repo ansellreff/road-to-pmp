@@ -10,15 +10,34 @@
     ],
     "answer": 0,
     "explanation": "A phase groups logically related activities and ends with the completion of one or more deliverables and/or outcomes.",
-    "ref": "PMBOK 8, Standard 4.1"
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
   },
   {
     "id": "q2",
     "q": "At the end of the design phase, senior managers review whether the exit criteria were met and decide whether the project should continue. This review is a:",
-    "options": ["Retrospective", "Phase gate", "Kickoff meeting", "Daily standup"],
+    "options": [
+      "Retrospective",
+      "Phase gate",
+      "Kickoff meeting",
+      "Daily standup"
+    ],
     "answer": 1,
     "explanation": "A phase gate (stage gate, gate review) checks that outcomes or exit criteria were achieved and leads to a go/no-go decision.",
-    "ref": "PMBOK 8, Standard 4.1"
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
   },
   {
     "id": "q3",
@@ -31,15 +50,34 @@
     ],
     "answer": 3,
     "explanation": "Gate decisions include continuing, continuing with modification, ending the project or phase, remaining in the phase, repeating it, or parking the project temporarily.",
-    "ref": "PMBOK 8, Standard 4.1"
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
   },
   {
     "id": "q4",
     "q": "When are risk and uncertainty usually greatest in a project?",
-    "options": ["At closing", "Just before handover", "At the start", "They stay constant throughout"],
+    "options": [
+      "At closing",
+      "Just before handover",
+      "At the start",
+      "They stay constant throughout"
+    ],
     "answer": 2,
     "explanation": "Risk and uncertainty are usually greatest at the start and decrease as decisions are reached and deliverables accepted.",
-    "ref": "PMBOK 8, Standard 4.1"
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
   },
   {
     "id": "q5",
@@ -52,7 +90,14 @@
     ],
     "answer": 1,
     "explanation": "The cost of changes rises as the project moves toward completion, which is why early stakeholder input is valuable.",
-    "ref": "PMBOK 8, Standard 4.1, Figure 4-1"
+    "ref": "PMBOK 8, Standard 4.1, Figure 4-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 82,
+        "label": "PMBOK 8, Standard 4.1, Figure 4-1"
+      }
+    ]
   },
   {
     "id": "q6",
@@ -65,23 +110,54 @@
     ],
     "answer": 0,
     "explanation": "The development approach is the method (predictive, adaptive or hybrid). It differs from the development phase, which is a stage where deliverables are created and tested.",
-    "ref": "PMBOK 8, Standard 4.2"
+    "ref": "PMBOK 8, Standard 4.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 82,
+        "label": "PMBOK 8, Standard 4.2"
+      }
+    ]
   },
   {
     "id": "q7",
     "q": "A project will build a bridge. Requirements are well understood, safety regulations are strict and changes after construction starts are extremely costly. Which approach fits best?",
-    "options": ["Adaptive", "Continuous delivery", "Predictive", "Flow-based"],
+    "options": [
+      "Adaptive",
+      "Continuous delivery",
+      "Predictive",
+      "Flow-based"
+    ],
     "answer": 2,
     "explanation": "Clear and stable requirements, rigorous safety and regulatory needs, and costly changes all point to a predictive approach.",
-    "ref": "PMBOK 8, Standard 4.2.1 and 4.3.1"
+    "ref": "PMBOK 8, Standard 4.2.1 and 4.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 84,
+        "label": "PMBOK 8, Standard 4.2.1 and 4.3.1"
+      }
+    ]
   },
   {
     "id": "q8",
     "q": "A startup is creating a new mobile app. Customer needs are unclear and the team expects features to change after each round of user testing. Which approach fits best?",
-    "options": ["Predictive", "Waterfall", "Single delivery", "Adaptive"],
+    "options": [
+      "Predictive",
+      "Waterfall",
+      "Single delivery",
+      "Adaptive"
+    ],
     "answer": 3,
     "explanation": "High uncertainty, changing requirements and the value of frequent feedback point to an adaptive approach.",
-    "ref": "PMBOK 8, Standard 4.2.2"
+    "ref": "PMBOK 8, Standard 4.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 86,
+        "label": "PMBOK 8, Standard 4.2.2"
+      }
+    ]
   },
   {
     "id": "q9",
@@ -94,7 +170,14 @@
     ],
     "answer": 1,
     "explanation": "Predictive is also called waterfall, plan-driven or traditional. Adaptive is also called change-driven or agile.",
-    "ref": "PMBOK 8, Standard 4.2.1"
+    "ref": "PMBOK 8, Standard 4.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 84,
+        "label": "PMBOK 8, Standard 4.2.1"
+      }
+    ]
   },
   {
     "id": "q10",
@@ -107,23 +190,54 @@
     ],
     "answer": 0,
     "explanation": "Iterative focuses on refining and improving through repeated cycles. Incremental delivers the product in small usable segments that each add value.",
-    "ref": "PMBOK 8, Standard 4.2.2"
+    "ref": "PMBOK 8, Standard 4.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 86,
+        "label": "PMBOK 8, Standard 4.2.2"
+      }
+    ]
   },
   {
     "id": "q11",
     "q": "In an adaptive project with fixed timeboxes and a fixed team, an unexpected change appears. Which constraint normally varies to absorb it?",
-    "options": ["Budget", "Schedule", "Scope", "Team size"],
+    "options": [
+      "Budget",
+      "Schedule",
+      "Scope",
+      "Team size"
+    ],
     "answer": 2,
     "explanation": "This is the inverted triangle: when budget and schedule are fixed, unexpected changes are managed by varying scope.",
-    "ref": "PMBOK 8, Standard 4.2, Figure 4-3"
+    "ref": "PMBOK 8, Standard 4.2, Figure 4-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 84,
+        "label": "PMBOK 8, Standard 4.2, Figure 4-3"
+      }
+    ]
   },
   {
     "id": "q12",
     "q": "A company develops software using short iterations, while the data center that will host it is built from a detailed up-front plan. The overall project is using:",
-    "options": ["A purely predictive approach", "A purely adaptive approach", "No defined approach", "A hybrid approach"],
+    "options": [
+      "A purely predictive approach",
+      "A purely adaptive approach",
+      "No defined approach",
+      "A hybrid approach"
+    ],
     "answer": 3,
     "explanation": "One deliverable is adaptive and the other predictive, which is the book's own example of a hybrid approach.",
-    "ref": "PMBOK 8, Standard 4.2.3"
+    "ref": "PMBOK 8, Standard 4.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 88,
+        "label": "PMBOK 8, Standard 4.2.3"
+      }
+    ]
   },
   {
     "id": "q13",
@@ -136,23 +250,54 @@
     ],
     "answer": 1,
     "explanation": "The standard states that most projects can strongly benefit from a hybrid approach; relying on only one approach is no longer sufficient for modern complexity.",
-    "ref": "PMBOK 8, Standard 4.2.3"
+    "ref": "PMBOK 8, Standard 4.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 88,
+        "label": "PMBOK 8, Standard 4.2.3"
+      }
+    ]
   },
   {
     "id": "q14",
     "q": "A team limits the number of items being worked on at the same time and visualizes work on a board, aiming for continuous flow. This describes:",
-    "options": ["Kanban", "The critical path method", "A phase gate", "Earned value management"],
+    "options": [
+      "Kanban",
+      "The critical path method",
+      "A phase gate",
+      "Earned value management"
+    ],
     "answer": 0,
     "explanation": "Kanban is a visual workflow management method that limits work in process (WIP), based on lean principles.",
-    "ref": "PMBOK 8, Standard 4.2.2"
+    "ref": "PMBOK 8, Standard 4.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 86,
+        "label": "PMBOK 8, Standard 4.2.2"
+      }
+    ]
   },
   {
     "id": "q15",
     "q": "A software team releases a working update to users every two weeks on a fixed schedule. Which delivery cadence is this?",
-    "options": ["Single delivery", "Multiple deliveries with no fixed schedule", "Periodic deliveries", "No delivery"],
+    "options": [
+      "Single delivery",
+      "Multiple deliveries with no fixed schedule",
+      "Periodic deliveries",
+      "No delivery"
+    ],
     "answer": 2,
     "explanation": "Periodic deliveries are like multiple deliveries but on a regular, fixed schedule. They are common in adaptive approaches.",
-    "ref": "PMBOK 8, Standard 4.4"
+    "ref": "PMBOK 8, Standard 4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 92,
+        "label": "PMBOK 8, Standard 4.4"
+      }
+    ]
   },
   {
     "id": "q16",
@@ -165,7 +310,14 @@
     ],
     "answer": 3,
     "explanation": "Adaptive approaches fit cultures that embrace uncertainty, self-managed teams, flexible thinking and innovation, and often work better with smaller teams.",
-    "ref": "PMBOK 8, Standard 4.3.3"
+    "ref": "PMBOK 8, Standard 4.3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 91,
+        "label": "PMBOK 8, Standard 4.3.3"
+      }
+    ]
   },
   {
     "id": "q17",
@@ -178,6 +330,13 @@
     ],
     "answer": 1,
     "explanation": "The choice is typically made by the project manager in consultation with the project management team, based on the nature of the project.",
-    "ref": "PMBOK 8, Standard 4.2"
+    "ref": "PMBOK 8, Standard 4.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 82,
+        "label": "PMBOK 8, Standard 4.2"
+      }
+    ]
   }
 ]

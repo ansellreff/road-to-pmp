@@ -10,7 +10,14 @@
     ],
     "answer": 1,
     "explanation": "Management directs using positional power, focuses on systems and near-term goals. Leadership guides and influences, focuses on relationships and long-range vision. A project manager needs both.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Leadership"
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
   },
   {
     "id": "q2",
@@ -23,23 +30,54 @@
     ],
     "answer": 2,
     "explanation": "Emotional intelligence models converge on self-awareness, self-management, social awareness and social skills. Some add motivation as a fifth.",
-    "ref": "PMBOK 8, Guide section 5, Interpersonal skills"
+    "ref": "PMBOK 8, Guide section 5, Interpersonal skills",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 282,
+        "label": "PMBOK 8, Guide section 5, Interpersonal skills"
+      }
+    ]
   },
   {
     "id": "q3",
     "q": "A project manager receives an angry email from a stakeholder, pauses, and decides to reply calmly the next morning instead of reacting immediately. Which area of emotional intelligence is this?",
-    "options": ["Self-management", "Social awareness", "Social skills", "Shared ownership"],
+    "options": [
+      "Self-management",
+      "Social awareness",
+      "Social skills",
+      "Shared ownership"
+    ],
     "answer": 0,
     "explanation": "Self-management (self-regulation) is the ability to control and redirect disruptive feelings and impulses, and to think before acting.",
-    "ref": "PMBOK 8, Guide section 5, Interpersonal skills"
+    "ref": "PMBOK 8, Guide section 5, Interpersonal skills",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 282,
+        "label": "PMBOK 8, Guide section 5, Interpersonal skills"
+      }
+    ]
   },
   {
     "id": "q4",
     "q": "During a meeting, a project manager notices from a team member's body language that she is uncomfortable with the plan, and asks for her view. Which area of emotional intelligence is this?",
-    "options": ["Self-awareness", "Self-management", "Motivation", "Social awareness"],
+    "options": [
+      "Self-awareness",
+      "Self-management",
+      "Motivation",
+      "Social awareness"
+    ],
     "answer": 3,
     "explanation": "Social awareness is about empathy: understanding other people's feelings, including reading non-verbal cues and body language.",
-    "ref": "PMBOK 8, Guide section 5, Interpersonal skills"
+    "ref": "PMBOK 8, Guide section 5, Interpersonal skills",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 282,
+        "label": "PMBOK 8, Guide section 5, Interpersonal skills"
+      }
+    ]
   },
   {
     "id": "q5",
@@ -52,7 +90,14 @@
     ],
     "answer": 1,
     "explanation": "Servant leadership focuses on understanding and addressing the needs and development of team members, in service of the project's objectives.",
-    "ref": "PMBOK 8, Guide section 5, Servant leadership"
+    "ref": "PMBOK 8, Guide section 5, Servant leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 302,
+        "label": "PMBOK 8, Guide section 5, Servant leadership"
+      }
+    ]
   },
   {
     "id": "q6",
@@ -65,7 +110,14 @@
     ],
     "answer": 2,
     "explanation": "In distributed management and leadership, decision-making and authority are decentralized among individuals and teams, and a team may self-organize with a facilitator.",
-    "ref": "PMBOK 8, Guide section 5, Distributed management and leadership"
+    "ref": "PMBOK 8, Guide section 5, Distributed management and leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 273,
+        "label": "PMBOK 8, Guide section 5, Distributed management and leadership"
+      }
+    ]
   },
   {
     "id": "q7",
@@ -78,7 +130,14 @@
     ],
     "answer": 0,
     "explanation": "Sources of conflict include scarce resources, scheduling priorities and personal work styles. Clear roles and ground rules reduce conflict.",
-    "ref": "PMBOK 8, Guide section 5, Conflict management"
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
   },
   {
     "id": "q8",
@@ -91,7 +150,14 @@
     ],
     "answer": 3,
     "explanation": "Team members are initially responsible for resolving their differences. If the conflict escalates, the project manager helps facilitate a resolution.",
-    "ref": "PMBOK 8, Guide section 5, Conflict management"
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
   },
   {
     "id": "q9",
@@ -104,31 +170,74 @@
     ],
     "answer": 1,
     "explanation": "Conflict should be addressed early and usually in private, using a direct, collaborative approach. Formal procedures come only if disruptive conflict continues.",
-    "ref": "PMBOK 8, Guide section 5, Conflict management"
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
   },
   {
     "id": "q10",
     "q": "Which conflict resolution technique incorporates multiple viewpoints through open dialogue and typically leads to consensus and a win-win result?",
-    "options": ["Force / direct", "Withdraw / avoid", "Collaborate / problem-solve", "Smooth / accommodate"],
+    "options": [
+      "Force / direct",
+      "Withdraw / avoid",
+      "Collaborate / problem-solve",
+      "Smooth / accommodate"
+    ],
     "answer": 2,
     "explanation": "Collaborate/problem-solve requires a cooperative attitude and open dialogue, and typically leads to consensus and commitment.",
-    "ref": "PMBOK 8, Guide section 5, Conflict management"
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
   },
   {
     "id": "q11",
     "q": "In a safety emergency, the project manager overrules a disagreement and gives a direct order. Which technique is this?",
-    "options": ["Force / direct", "Compromise / reconcile", "Smooth / accommodate", "Collaborate / problem-solve"],
+    "options": [
+      "Force / direct",
+      "Compromise / reconcile",
+      "Smooth / accommodate",
+      "Collaborate / problem-solve"
+    ],
     "answer": 0,
     "explanation": "Forcing pushes one viewpoint, usually from a power position, to resolve an emergency. It is win-lose but has its place.",
-    "ref": "PMBOK 8, Guide section 5, Conflict management"
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
   },
   {
     "id": "q12",
     "q": "Both parties in a dispute give up part of what they wanted so that work can continue. Which technique is this?",
-    "options": ["Withdraw / avoid", "Force / direct", "Collaborate / problem-solve", "Compromise / reconcile"],
+    "options": [
+      "Withdraw / avoid",
+      "Force / direct",
+      "Collaborate / problem-solve",
+      "Compromise / reconcile"
+    ],
     "answer": 3,
     "explanation": "Compromise brings some degree of satisfaction to all parties to partially or temporarily resolve the conflict. It can end up lose-lose.",
-    "ref": "PMBOK 8, Guide section 5, Conflict management"
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
   },
   {
     "id": "q13",
@@ -141,7 +250,14 @@
     ],
     "answer": 1,
     "explanation": "The global project management community identified responsibility, respect, fairness and honesty as the most important values.",
-    "ref": "PMI Code of Ethics, 1.4"
+    "ref": "PMI Code of Ethics, 1.4",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 6,
+        "label": "PMI Code of Ethics, 1.4"
+      }
+    ]
   },
   {
     "id": "q14",
@@ -154,7 +270,14 @@
     ],
     "answer": 2,
     "explanation": "The Code applies to PMI members, PMI certification holders, applicants commencing a certification process, and PMI volunteers.",
-    "ref": "PMI Code of Ethics, 1.2"
+    "ref": "PMI Code of Ethics, 1.2",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 5,
+        "label": "PMI Code of Ethics, 1.2"
+      }
+    ]
   },
   {
     "id": "q15",
@@ -167,7 +290,14 @@
     ],
     "answer": 0,
     "explanation": "Aspirational standards describe the conduct practitioners strive to uphold. Mandatory standards establish firm requirements; violations are subject to disciplinary procedures before PMI's Ethics Review Committee.",
-    "ref": "PMI Code of Ethics, 1.5"
+    "ref": "PMI Code of Ethics, 1.5",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 6,
+        "label": "PMI Code of Ethics, 1.5"
+      }
+    ]
   },
   {
     "id": "q16",
@@ -180,7 +310,14 @@
     ],
     "answer": 3,
     "explanation": "The Code requires proactive, full disclosure of real or potential conflicts of interest, and staying out of the decision until there is disclosure, an approved mitigation plan and stakeholder consent.",
-    "ref": "PMI Code of Ethics, 4.3.1 and 4.3.2"
+    "ref": "PMI Code of Ethics, 4.3.1 and 4.3.2",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 13,
+        "label": "PMI Code of Ethics, 4.3.1 and 4.3.2"
+      }
+    ]
   },
   {
     "id": "q17",
@@ -193,15 +330,34 @@
     ],
     "answer": 1,
     "explanation": "Honesty requires accurate and timely information, including bad news. Half-truths and withholding information that makes a statement misleading violate the mandatory standards.",
-    "ref": "PMI Code of Ethics, 5.2.3 and 5.3.1"
+    "ref": "PMI Code of Ethics, 5.2.3 and 5.3.1",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 14,
+        "label": "PMI Code of Ethics, 5.2.3 and 5.3.1"
+      }
+    ]
   },
   {
     "id": "q18",
     "q": "Which value of the Code covers the duty to disclose conflicts of interest and to act impartially?",
-    "options": ["Responsibility", "Respect", "Fairness", "Honesty"],
+    "options": [
+      "Responsibility",
+      "Respect",
+      "Fairness",
+      "Honesty"
+    ],
     "answer": 2,
     "explanation": "Fairness is the duty to make decisions and act impartially and objectively, free from competing self-interest, prejudice and favoritism.",
-    "ref": "PMI Code of Ethics, chapter 4"
+    "ref": "PMI Code of Ethics, chapter 4",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 12,
+        "label": "PMI Code of Ethics, chapter 4"
+      }
+    ]
   },
   {
     "id": "q19",
@@ -214,7 +370,14 @@
     ],
     "answer": 0,
     "explanation": "The Code requires that ethics complaints are filed only when substantiated by facts, and it also asks practitioners to avoid gossip and unconfirmed information.",
-    "ref": "PMI Code of Ethics, 2.3.4 and 3.2.6"
+    "ref": "PMI Code of Ethics, 2.3.4 and 3.2.6",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 9,
+        "label": "PMI Code of Ethics, 2.3.4 and 3.2.6"
+      }
+    ]
   },
   {
     "id": "q20",
@@ -227,6 +390,13 @@
     ],
     "answer": 3,
     "explanation": "Practitioners accept assignments consistent with their qualifications. For a stretch assignment, they disclose the gaps so stakeholders can make an informed decision.",
-    "ref": "PMI Code of Ethics, 2.2.3"
+    "ref": "PMI Code of Ethics, 2.2.3",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 8,
+        "label": "PMI Code of Ethics, 2.2.3"
+      }
+    ]
   }
 ]

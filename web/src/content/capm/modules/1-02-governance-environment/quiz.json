@@ -10,7 +10,14 @@
     ],
     "answer": 3,
     "explanation": "EEFs are conditions around the project that the team does not control. Templates, procedures and lessons learned are organizational process assets.",
-    "ref": "PMBOK 8, Standard 2.2.1"
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
   },
   {
     "id": "q2",
@@ -23,7 +30,14 @@
     ],
     "answer": 0,
     "explanation": "Templates belong to the organization's policies, processes and procedures, which are OPAs.",
-    "ref": "PMBOK 8, Standard 2.2.3"
+    "ref": "PMBOK 8, Standard 2.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 43,
+        "label": "PMBOK 8, Standard 2.2.3"
+      }
+    ]
   },
   {
     "id": "q3",
@@ -36,7 +50,14 @@
     ],
     "answer": 2,
     "explanation": "Legal restrictions come from outside the organization and cannot be changed by the team, so they are external EEFs.",
-    "ref": "PMBOK 8, Standard 2.2.1.2"
+    "ref": "PMBOK 8, Standard 2.2.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 42,
+        "label": "PMBOK 8, Standard 2.2.1.2"
+      }
+    ]
   },
   {
     "id": "q4",
@@ -49,7 +70,14 @@
     ],
     "answer": 1,
     "explanation": "Organizational culture is internal, but the team cannot change it and it constrains the project, so it is an internal EEF. Internal does not automatically mean OPA.",
-    "ref": "PMBOK 8, Standard 2.2.1.1"
+    "ref": "PMBOK 8, Standard 2.2.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1.1"
+      }
+    ]
   },
   {
     "id": "q5",
@@ -62,7 +90,14 @@
     ],
     "answer": 2,
     "explanation": "EEFs can be internal or external, but the team does not control them. OPAs are always internal to the organization and can often be updated by the team.",
-    "ref": "PMBOK 8, Standard 2.2"
+    "ref": "PMBOK 8, Standard 2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 40,
+        "label": "PMBOK 8, Standard 2.2"
+      }
+    ]
   },
   {
     "id": "q6",
@@ -75,7 +110,14 @@
     ],
     "answer": 1,
     "explanation": "Lessons learned are kept in organizational knowledge repositories, the group of OPAs that is updated throughout the project.",
-    "ref": "PMBOK 8, Standard 2.2.4"
+    "ref": "PMBOK 8, Standard 2.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 44,
+        "label": "PMBOK 8, Standard 2.2.4"
+      }
+    ]
   },
   {
     "id": "q7",
@@ -88,7 +130,14 @@
     ],
     "answer": 0,
     "explanation": "Policies, processes and procedures are usually set by the PMO or another function outside the project and change only by following organizational policy. Knowledge repositories are updated continually.",
-    "ref": "PMBOK 8, Standard 2.2.2"
+    "ref": "PMBOK 8, Standard 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 42,
+        "label": "PMBOK 8, Standard 2.2.2"
+      }
+    ]
   },
   {
     "id": "q8",
@@ -101,7 +150,14 @@
     ],
     "answer": 3,
     "explanation": "Organizational governance covers the whole organization. Project governance is the adaptable framework for one project and must stay aligned with the organizational level.",
-    "ref": "PMBOK 8, Standard 1.3.2"
+    "ref": "PMBOK 8, Standard 1.3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 30,
+        "label": "PMBOK 8, Standard 1.3.2"
+      }
+    ]
   },
   {
     "id": "q9",
@@ -114,7 +170,14 @@
     ],
     "answer": 2,
     "explanation": "RACI (responsible, accountable, consulted, informed) defines roles and decision responsibilities, which is part of what project governance provides.",
-    "ref": "PMBOK 8, Standard 1.3.2"
+    "ref": "PMBOK 8, Standard 1.3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 30,
+        "label": "PMBOK 8, Standard 1.3.2"
+      }
+    ]
   },
   {
     "id": "q10",
@@ -127,23 +190,54 @@
     ],
     "answer": 1,
     "explanation": "A steering committee overseeing milestones, standards and escalations is a classic project governance body.",
-    "ref": "PMBOK 8, Standard 1.3.2"
+    "ref": "PMBOK 8, Standard 1.3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 30,
+        "label": "PMBOK 8, Standard 1.3.2"
+      }
+    ]
   },
   {
     "id": "q11",
     "q": "In which organizational structure does the project manager have the MOST authority?",
-    "options": ["Functional", "Weak matrix", "Balanced matrix", "Project-oriented"],
+    "options": [
+      "Functional",
+      "Weak matrix",
+      "Balanced matrix",
+      "Project-oriented"
+    ],
     "answer": 3,
     "explanation": "In a project-oriented structure the project manager's authority and resource availability are high to almost total.",
-    "ref": "PMBOK 8, Standard 2.2.5, Table 2-1"
+    "ref": "PMBOK 8, Standard 2.2.5, Table 2-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 45,
+        "label": "PMBOK 8, Standard 2.2.5, Table 2-1"
+      }
+    ]
   },
   {
     "id": "q12",
     "q": "A project manager works part-time on the project, has little authority, and must ask the heads of engineering and finance each time people are needed. The organization most likely has a:",
-    "options": ["Functional structure", "Strong matrix structure", "Project-oriented structure", "Hybrid structure with full project authority"],
+    "options": [
+      "Functional structure",
+      "Strong matrix structure",
+      "Project-oriented structure",
+      "Hybrid structure with full project authority"
+    ],
     "answer": 0,
     "explanation": "Work grouped by job function, a part-time project manager role and low authority describe a functional structure (a weak matrix would look similar).",
-    "ref": "PMBOK 8, Standard 2.2.5, Table 2-1"
+    "ref": "PMBOK 8, Standard 2.2.5, Table 2-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 45,
+        "label": "PMBOK 8, Standard 2.2.5, Table 2-1"
+      }
+    ]
   },
   {
     "id": "q13",
@@ -156,7 +250,14 @@
     ],
     "answer": 1,
     "explanation": "A strong matrix gives the project manager a full-time designated role, moderate to high authority and moderate to high resource availability.",
-    "ref": "PMBOK 8, Standard 2.2.5, Table 2-1"
+    "ref": "PMBOK 8, Standard 2.2.5, Table 2-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 45,
+        "label": "PMBOK 8, Standard 2.2.5, Table 2-1"
+      }
+    ]
   },
   {
     "id": "q14",
@@ -169,15 +270,34 @@
     ],
     "answer": 2,
     "explanation": "Existing infrastructure and IT systems are internal EEFs. Exchange rates, competitors and government standards are external.",
-    "ref": "PMBOK 8, Standard 2.2.1.1"
+    "ref": "PMBOK 8, Standard 2.2.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1.1"
+      }
+    ]
   },
   {
     "id": "q15",
     "q": "The organization allows project teams to adapt its standard templates and checklists to the needs of each project. What is this called?",
-    "options": ["Gold plating", "Scope creep", "Benchmarking", "Tailoring"],
+    "options": [
+      "Gold plating",
+      "Scope creep",
+      "Benchmarking",
+      "Tailoring"
+    ],
     "answer": 3,
     "explanation": "Adapting standard processes, templates and life cycles to a specific project is tailoring. Tailoring guidelines are themselves an OPA.",
-    "ref": "PMBOK 8, Standard 2.2.2"
+    "ref": "PMBOK 8, Standard 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 42,
+        "label": "PMBOK 8, Standard 2.2.2"
+      }
+    ]
   },
   {
     "id": "q16",
@@ -190,6 +310,13 @@
     ],
     "answer": 0,
     "explanation": "Both are inputs to many project management processes. EEFs in particular are inputs to most planning processes.",
-    "ref": "PMBOK 8, Standard 2.2.1 and 2.2.2"
+    "ref": "PMBOK 8, Standard 2.2.1 and 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1 and 2.2.2"
+      }
+    ]
   }
 ]

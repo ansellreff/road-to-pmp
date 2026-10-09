@@ -1,0 +1,42 @@
+[
+  {
+    "book": "pmbok7",
+    "page": 48,
+    "label": "PMBOK 7, Standard section 3"
+  },
+  {
+    "book": "pmbok7",
+    "page": 102,
+    "label": "PMBOK 7, Guide section 2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 114,
+    "label": "PMBOK 8, Guide Table 2-1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 115,
+    "label": "PMBOK 8, Guide 2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 362,
+    "label": "PMBOK 8, Appendix X5.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 364,
+    "label": "PMBOK 8, Appendix X5, Table X5-2"
+  },
+  {
+    "book": "processgroups",
+    "page": 22,
+    "label": "Process Groups: A Practice Guide"
+  },
+  {
+    "book": "processgroups",
+    "page": 90,
+    "label": "Process Groups: A Practice Guide, sections 4 to 8"
+  }
+]

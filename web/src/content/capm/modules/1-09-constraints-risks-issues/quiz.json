@@ -10,39 +10,94 @@
     ],
     "answer": 2,
     "explanation": "A risk is uncertain and in the future, and its effect can be positive or negative. A problem that has occurred is an issue.",
-    "ref": "PMBOK 8, Guide 2.7.1 and Glossary"
+    "ref": "PMBOK 8, Guide 2.7.1 and Glossary",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1 and Glossary"
+      }
+    ]
   },
   {
     "id": "q2",
     "q": "The only crane on site broke down this morning and work has stopped. This is:",
-    "options": ["An issue", "A risk", "An assumption", "An opportunity"],
+    "options": [
+      "An issue",
+      "A risk",
+      "An assumption",
+      "An opportunity"
+    ],
     "answer": 0,
     "explanation": "It has already occurred and is affecting the project now, so it is an issue. It should be recorded in the issue log and acted on.",
-    "ref": "PMBOK 8, Guide 2.7.1"
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
   },
   {
     "id": "q3",
     "q": "During planning, the team writes: 'We expect the city to grant the building permit within 30 days.' No confirmation exists yet. This is best described as:",
-    "options": ["A constraint", "An issue", "A baseline", "An assumption"],
+    "options": [
+      "A constraint",
+      "An issue",
+      "A baseline",
+      "An assumption"
+    ],
     "answer": 3,
     "explanation": "An assumption is a factor considered true, real or certain without proof or demonstration.",
-    "ref": "PMBOK 8, Glossary"
+    "ref": "PMBOK 8, Glossary (assumption)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 370,
+        "label": "PMBOK 8, Glossary (assumption)"
+      }
+    ]
   },
   {
     "id": "q4",
     "q": "The customer's contract states that the system must go live before 1 January. For the project, this date is:",
-    "options": ["A risk", "A constraint", "An assumption", "An opportunity"],
+    "options": [
+      "A risk",
+      "A constraint",
+      "An assumption",
+      "An opportunity"
+    ],
     "answer": 1,
     "explanation": "A constraint is a limiting factor that affects the execution of the project. A fixed, imposed date is a schedule constraint.",
-    "ref": "PMBOK 8, Glossary"
+    "ref": "PMBOK 8, Glossary (constraint)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 371,
+        "label": "PMBOK 8, Glossary (constraint)"
+      }
+    ]
   },
   {
     "id": "q5",
     "q": "Where are assumptions and constraints recorded?",
-    "options": ["Assumption log", "Risk register", "Issue log", "Lessons learned register"],
+    "options": [
+      "Assumption log",
+      "Risk register",
+      "Issue log",
+      "Lessons learned register"
+    ],
     "answer": 0,
     "explanation": "The assumption log is the project document used to record all assumptions and constraints throughout the project.",
-    "ref": "PMBOK 8, Guide section 4"
+    "ref": "PMBOK 8, Guide section 4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 218,
+        "label": "PMBOK 8, Guide section 4"
+      }
+    ]
   },
   {
     "id": "q6",
@@ -55,15 +110,34 @@
     ],
     "answer": 2,
     "explanation": "High-level strategic and operational constraints are normally identified in the business case before initiation and then flow into the project charter.",
-    "ref": "PMBOK 8, Guide section 4, Assumption log"
+    "ref": "PMBOK 8, Guide section 4, Assumption log",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 219,
+        "label": "PMBOK 8, Guide section 4, Assumption log"
+      }
+    ]
   },
   {
     "id": "q7",
     "q": "A new tax incentive may be announced that would reduce the project's equipment cost by 10%. In risk terms this is:",
-    "options": ["A threat", "An issue", "A constraint", "An opportunity"],
+    "options": [
+      "A threat",
+      "An issue",
+      "A constraint",
+      "An opportunity"
+    ],
     "answer": 3,
     "explanation": "An opportunity is a risk that would have a positive effect on objectives.",
-    "ref": "PMBOK 8, Glossary"
+    "ref": "PMBOK 8, Glossary (opportunity)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 375,
+        "label": "PMBOK 8, Glossary (opportunity)"
+      }
+    ]
   },
   {
     "id": "q8",
@@ -76,23 +150,54 @@
     ],
     "answer": 1,
     "explanation": "Issues have already occurred or are occurring; risks are potential future events. An issue may arise from a risk that materialized or was poorly managed.",
-    "ref": "PMBOK 8, Guide 2.7.1"
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
   },
   {
     "id": "q9",
     "q": "In the risk classification, which category is NOT considered a risk because it is managed as part of scope?",
-    "options": ["Known-known", "Known-unknown", "Unknown-known", "Unknown-unknown"],
+    "options": [
+      "Known-known",
+      "Known-unknown",
+      "Unknown-known",
+      "Unknown-unknown"
+    ],
     "answer": 0,
     "explanation": "Known-knowns are facts and requirements, managed as part of scope. Known-unknowns are classic risks; unknown-unknowns are emergent risks.",
-    "ref": "PMBOK 8, Guide Figure 2-46"
+    "ref": "PMBOK 8, Guide Figure 2-46",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 198,
+        "label": "PMBOK 8, Guide Figure 2-46"
+      }
+    ]
   },
   {
     "id": "q10",
     "q": "A pandemic that nobody could have foreseen shuts down the project's supply chain. In the risk classification this is an example of:",
-    "options": ["A known-known", "A known-unknown", "An unknown-unknown (emergent risk)", "An assumption"],
+    "options": [
+      "A known-known",
+      "A known-unknown",
+      "An unknown-unknown (emergent risk)",
+      "An assumption"
+    ],
     "answer": 2,
     "explanation": "Unknown-unknowns are emergent risks: knowledge does not exist within the sphere of influence. Project resilience is how projects prepare for them.",
-    "ref": "PMBOK 8, Guide 2.7.1"
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
   },
   {
     "id": "q11",
@@ -105,7 +210,14 @@
     ],
     "answer": 3,
     "explanation": "Risk appetite is the degree of uncertainty accepted in anticipation of a reward. It is often quantified through a risk threshold.",
-    "ref": "PMBOK 8, Guide 2.7.1"
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
   },
   {
     "id": "q12",
@@ -118,31 +230,74 @@
     ],
     "answer": 1,
     "explanation": "A risk threshold is the acceptable variation around an objective. A tighter threshold (±5%) reflects a lower risk appetite than a wider one (±10%).",
-    "ref": "PMBOK 8, Guide 2.7.1"
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
   },
   {
     "id": "q13",
     "q": "A project buys insurance against storm damage to the construction site. Which risk response is this?",
-    "options": ["Transfer", "Avoid", "Mitigate", "Exploit"],
+    "options": [
+      "Transfer",
+      "Avoid",
+      "Mitigate",
+      "Exploit"
+    ],
     "answer": 0,
     "explanation": "Transference shifts the impact of a threat to a third party, together with ownership of the response. Insurance is the standard example.",
-    "ref": "PMBOK 8, Glossary"
+    "ref": "PMBOK 8, Glossary (risk transference)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 378,
+        "label": "PMBOK 8, Glossary (risk transference)"
+      }
+    ]
   },
   {
     "id": "q14",
     "q": "To lower the chance of defects, a team adds an extra round of testing before release. Which risk response is this?",
-    "options": ["Accept", "Escalate", "Mitigate", "Share"],
+    "options": [
+      "Accept",
+      "Escalate",
+      "Mitigate",
+      "Share"
+    ],
     "answer": 2,
     "explanation": "Mitigation decreases the probability of occurrence or the impact of a threat.",
-    "ref": "PMBOK 8, Glossary"
+    "ref": "PMBOK 8, Glossary (risk mitigation)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 378,
+        "label": "PMBOK 8, Glossary (risk mitigation)"
+      }
+    ]
   },
   {
     "id": "q15",
     "q": "A risk is identified that is outside the project's scope and beyond the project manager's authority. What is the appropriate response?",
-    "options": ["Ignore it", "Mitigate it using the project budget", "Exploit it", "Escalate it"],
+    "options": [
+      "Ignore it",
+      "Mitigate it using the project budget",
+      "Exploit it",
+      "Escalate it"
+    ],
     "answer": 3,
     "explanation": "Escalation transfers ownership of the risk to a relevant party in the organization when it is outside scope or the team lacks authority to address it.",
-    "ref": "PMBOK 8, Glossary"
+    "ref": "PMBOK 8, Glossary (risk escalation)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 378,
+        "label": "PMBOK 8, Glossary (risk escalation)"
+      }
+    ]
   },
   {
     "id": "q16",
@@ -155,7 +310,14 @@
     ],
     "answer": 1,
     "explanation": "Contingency reserve is time or money in the schedule or cost baseline for known risks with active responses. Management reserve is set aside in addition to the baseline for unforeseen work within scope.",
-    "ref": "PMBOK 8, Glossary"
+    "ref": "PMBOK 8, Glossary (contingency reserve)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 371,
+        "label": "PMBOK 8, Glossary (contingency reserve)"
+      }
+    ]
   },
   {
     "id": "q17",
@@ -168,7 +330,14 @@
     ],
     "answer": 0,
     "explanation": "A baseline is the approved version of a work product that can be changed using formal change control procedures and is the basis for comparison to actual results.",
-    "ref": "PMBOK 8, Glossary"
+    "ref": "PMBOK 8, Glossary (baseline)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 370,
+        "label": "PMBOK 8, Glossary (baseline)"
+      }
+    ]
   },
   {
     "id": "q18",
@@ -181,6 +350,13 @@
     ],
     "answer": 2,
     "explanation": "Overall risk is the effect of uncertainty on the project as a whole. If it is too high, the organization may choose to cancel the project.",
-    "ref": "PMBOK 8, Guide 2.7.1"
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
   }
 ]

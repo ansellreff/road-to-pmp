@@ -2,6 +2,20 @@ export interface ModuleMeta {
   id: string
   title: string
   ready: boolean
+  /** Extra reading that is not exam content. Left out of progress totals. */
+  supplementary?: boolean
+}
+
+/** A place in one of the source books. page is the PDF page, counted from 1. */
+export interface SourceLink {
+  book: string
+  page: number
+  label: string
+}
+
+export interface Book {
+  title: string
+  file: string
 }
 
 export interface Domain {
@@ -26,6 +40,8 @@ export interface Question {
   answer: number
   explanation: string
   ref?: string
+  /** Filled in by tools/link_sources.py from ref. */
+  links?: SourceLink[]
 }
 
 export interface Card {
@@ -39,6 +55,10 @@ const courseFiles = import.meta.glob<Course>('../content/*/course.json', { eager
 const lessonFiles = import.meta.glob<string>('../content/*/modules/*/lesson.md', { query: '?raw', import: 'default' })
 const quizFiles = import.meta.glob<Question[]>('../content/*/modules/*/quiz.json', { import: 'default' })
 const cardFiles = import.meta.glob<Card[]>('../content/*/modules/*/flashcards.json', { import: 'default' })
+const sourceFiles = import.meta.glob<SourceLink[]>('../content/*/modules/*/sources.json', { import: 'default' })
+
+import bookList from '../content/books.json'
+export const books: Record<string, Book> = bookList
 
 export const courses: Course[] = Object.values(courseFiles)
 
@@ -67,6 +87,11 @@ export async function loadLesson(courseId: string, moduleId: string): Promise<st
 
 export async function loadQuiz(courseId: string, moduleId: string): Promise<Question[]> {
   const load = quizFiles[path(courseId, moduleId, 'quiz.json')]
+  return load ? load() : []
+}
+
+export async function loadSources(courseId: string, moduleId: string): Promise<SourceLink[]> {
+  const load = sourceFiles[path(courseId, moduleId, 'sources.json')]
   return load ? load() : []
 }
 

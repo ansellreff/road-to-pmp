@@ -10,7 +10,14 @@
     ],
     "answer": 1,
     "explanation": "A project is temporary, takes place in a unique context, and exists to create value. Ongoing work is operations, and duration alone does not define a project.",
-    "ref": "PMBOK 8, Standard 1.2"
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
   },
   {
     "id": "q2",
@@ -23,7 +30,14 @@
     ],
     "answer": 2,
     "explanation": "Payroll is ongoing and repetitive with no planned end, which makes it operations.",
-    "ref": "PMBOK 8, Standard 1.3.3"
+    "ref": "PMBOK 8, Standard 1.3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 32,
+        "label": "PMBOK 8, Standard 1.3.3"
+      }
+    ]
   },
   {
     "id": "q3",
@@ -36,7 +50,14 @@
     ],
     "answer": 0,
     "explanation": "Temporary refers to the work having a start and a finish. Projects can last years, and their deliverables often persist long after the project ends.",
-    "ref": "PMBOK 8, Standard 1.3.1"
+    "ref": "PMBOK 8, Standard 1.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 29,
+        "label": "PMBOK 8, Standard 1.3.1"
+      }
+    ]
   },
   {
     "id": "q4",
@@ -49,7 +70,14 @@
     ],
     "answer": 3,
     "explanation": "Unique context covers differences in location, resources, risks, stakeholders and other conditions, even when the goal is the same. It is why each project needs a tailored approach.",
-    "ref": "PMBOK 8, Standard 1.3.1"
+    "ref": "PMBOK 8, Standard 1.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 29,
+        "label": "PMBOK 8, Standard 1.3.1"
+      }
+    ]
   },
   {
     "id": "q5",
@@ -62,7 +90,14 @@
     ],
     "answer": 3,
     "explanation": "A project ends when objectives are met or cannot be met, resources are gone, the need disappears, or it is terminated. Years of routine use of the deliverable is operations and happens after the project already ended.",
-    "ref": "PMBOK 8, Standard 1.3.1"
+    "ref": "PMBOK 8, Standard 1.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 29,
+        "label": "PMBOK 8, Standard 1.3.1"
+      }
+    ]
   },
   {
     "id": "q6",
@@ -75,7 +110,14 @@
     ],
     "answer": 1,
     "explanation": "Related projects managed in a coordinated manner to obtain benefits not available from managing them individually form a program.",
-    "ref": "PMBOK 8, Standard 1.2"
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
   },
   {
     "id": "q7",
@@ -88,7 +130,14 @@
     ],
     "answer": 0,
     "explanation": "Portfolio management selects, prioritizes, manages and optimizes programs and projects against strategy. Coordinating related projects is program management.",
-    "ref": "PMBOK 8, Standard 1.3.4"
+    "ref": "PMBOK 8, Standard 1.3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 33,
+        "label": "PMBOK 8, Standard 1.3.4"
+      }
+    ]
   },
   {
     "id": "q8",
@@ -101,7 +150,14 @@
     ],
     "answer": 0,
     "explanation": "The 8th edition definition is centered on the intended value. It explicitly does not endorse gold plating or scope creep.",
-    "ref": "PMBOK 8, Standard 1.2"
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
   },
   {
     "id": "q9",
@@ -114,7 +170,14 @@
     ],
     "answer": 1,
     "explanation": "Adding unrequested extras is gold plating. 'Meeting or exceeding value' means value-driven decisions, not extra scope.",
-    "ref": "PMBOK 8, Standard 1.2"
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
   },
   {
     "id": "q10",
@@ -127,7 +190,14 @@
     ],
     "answer": 3,
     "explanation": "Outcomes can be positive or negative. Positive ones are benefits; negative consequences or losses are disbenefits.",
-    "ref": "PMBOK 8, Standard 1.2"
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
   },
   {
     "id": "q11",
@@ -140,7 +210,14 @@
     ],
     "answer": 3,
     "explanation": "Value is benefits (financial and non-financial) minus investment. Different stakeholders perceive it differently.",
-    "ref": "PMBOK 8, Standard 1.2"
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
   },
   {
     "id": "q12",
@@ -153,7 +230,14 @@
     ],
     "answer": 2,
     "explanation": "Success has two dimensions: project outcomes (effectiveness in realizing value) and project management (efficiency against cost, scope, time and quality). They are assessed separately. The Sydney Opera House is the book's example.",
-    "ref": "PMBOK 8, Standard 2.1.2"
+    "ref": "PMBOK 8, Standard 2.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 39,
+        "label": "PMBOK 8, Standard 2.1.2"
+      }
+    ]
   },
   {
     "id": "q13",
@@ -166,7 +250,14 @@
     ],
     "answer": 0,
     "explanation": "Strategy comes from senior leadership, desired outcomes come from portfolios, and programs and projects hand deliverables with support information to operations.",
-    "ref": "PMBOK 8, Standard 2.1.1"
+    "ref": "PMBOK 8, Standard 2.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 38,
+        "label": "PMBOK 8, Standard 2.1.1"
+      }
+    ]
   },
   {
     "id": "q14",
@@ -179,7 +270,14 @@
     ],
     "answer": 1,
     "explanation": "Engaging operations teams early in planning strongly influences the long-term success and sustainability of the project's results.",
-    "ref": "PMBOK 8, Standard 1.3.3"
+    "ref": "PMBOK 8, Standard 1.3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 32,
+        "label": "PMBOK 8, Standard 1.3.3"
+      }
+    ]
   },
   {
     "id": "q15",
@@ -192,6 +290,13 @@
     ],
     "answer": 2,
     "explanation": "Intangible examples include goodwill, brand recognition, reputation, acquired knowledge and employee well-being. Market share, monetary assets and infrastructure are tangible.",
-    "ref": "PMBOK 8, Standard 2.1, Figure 2-1"
+    "ref": "PMBOK 8, Standard 2.1, Figure 2-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 37,
+        "label": "PMBOK 8, Standard 2.1, Figure 2-1"
+      }
+    ]
   }
 ]

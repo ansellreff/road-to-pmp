@@ -2,10 +2,27 @@
   {
     "id": "q1",
     "q": "How many project management principles does the PMBOK Guide, Seventh Edition, contain?",
-    "options": ["6", "8", "10", "12"],
+    "options": [
+      "6",
+      "8",
+      "10",
+      "12"
+    ],
     "answer": 3,
     "explanation": "The 7th edition has 12 principles. The 8th edition consolidated them into 6.",
-    "ref": "PMBOK 7, Standard section 3; PMBOK 8, Appendix X5.4"
+    "ref": "PMBOK 7, Standard section 3; PMBOK 8, Appendix X5.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 48,
+        "label": "PMBOK 7, Standard section 3"
+      },
+      {
+        "book": "pmbok8",
+        "page": 362,
+        "label": "PMBOK 8, Appendix X5.4"
+      }
+    ]
   },
   {
     "id": "q2",
@@ -18,15 +35,34 @@
     ],
     "answer": 0,
     "explanation": "Uncertainty is one of the eight performance domains of the 7th edition. In the 8th edition the nearest equivalent is the Risk domain.",
-    "ref": "PMBOK 7, Guide section 2"
+    "ref": "PMBOK 7, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 102,
+        "label": "PMBOK 7, Guide section 2"
+      }
+    ]
   },
   {
     "id": "q3",
     "q": "What are the 'five Process Groups' called in the PMBOK Guide, Eighth Edition?",
-    "options": ["Performance domains", "Knowledge Areas", "Project Management Focus Areas", "Project phases"],
+    "options": [
+      "Performance domains",
+      "Knowledge Areas",
+      "Project Management Focus Areas",
+      "Project phases"
+    ],
     "answer": 2,
     "explanation": "The 8th edition reintroduces Initiating, Planning, Executing, Monitoring and Controlling, and Closing as Project Management Focus Areas.",
-    "ref": "PMBOK 8, Appendix X5.2"
+    "ref": "PMBOK 8, Appendix X5.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 362,
+        "label": "PMBOK 8, Appendix X5.2"
+      }
+    ]
   },
   {
     "id": "q4",
@@ -39,15 +75,34 @@
     ],
     "answer": 1,
     "explanation": "The practice guide has 49 processes across 5 Process Groups and 10 Knowledge Areas. The 8th edition has 40 processes in 7 performance domains.",
-    "ref": "Process Groups: A Practice Guide"
+    "ref": "Process Groups: A Practice Guide",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 22,
+        "label": "Process Groups: A Practice Guide"
+      }
+    ]
   },
   {
     "id": "q5",
     "q": "In the 49-process model, which Process Group contains the most processes?",
-    "options": ["Initiating", "Executing", "Monitoring and Controlling", "Planning"],
+    "options": [
+      "Initiating",
+      "Executing",
+      "Monitoring and Controlling",
+      "Planning"
+    ],
     "answer": 3,
     "explanation": "Planning has 24 of the 49 processes. Initiating has 2, Executing 10, Monitoring and Controlling 12, and Closing 1.",
-    "ref": "Process Groups: A Practice Guide, sections 4 to 8"
+    "ref": "Process Groups: A Practice Guide, sections 4 to 8",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 90,
+        "label": "Process Groups: A Practice Guide, sections 4 to 8"
+      }
+    ]
   },
   {
     "id": "q6",
@@ -60,7 +115,14 @@
     ],
     "answer": 0,
     "explanation": "Initiating contains Develop Project Charter and Identify Stakeholders. In the 8th edition the first is named Initiate Project or Phase.",
-    "ref": "Process Groups: A Practice Guide, section 4"
+    "ref": "Process Groups: A Practice Guide, section 4",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 90,
+        "label": "Process Groups: A Practice Guide, section 4"
+      }
+    ]
   },
   {
     "id": "q7",
@@ -73,7 +135,14 @@
     ],
     "answer": 2,
     "explanation": "Complexity and systems thinking were merged into Adopt a Holistic View: practitioners need to 'zoom out' to see related constraints and changes.",
-    "ref": "PMBOK 8, Appendix X5, Table X5-2"
+    "ref": "PMBOK 8, Appendix X5, Table X5-2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 364,
+        "label": "PMBOK 8, Appendix X5, Table X5-2"
+      }
+    ]
   },
   {
     "id": "q8",
@@ -86,7 +155,14 @@
     ],
     "answer": 1,
     "explanation": "'Tailor based on context' was migrated to the Tailoring section, because practitioners preferred it to be discussed through concrete mechanics and examples.",
-    "ref": "PMBOK 8, Appendix X5, Table X5-2"
+    "ref": "PMBOK 8, Appendix X5, Table X5-2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 364,
+        "label": "PMBOK 8, Appendix X5, Table X5-2"
+      }
+    ]
   },
   {
     "id": "q9",
@@ -99,7 +175,14 @@
     ],
     "answer": 3,
     "explanation": "'Be a diligent, respectful, and caring steward' and 'Demonstrate leadership behaviors' were merged into Be an Accountable Leader.",
-    "ref": "PMBOK 8, Appendix X5, Table X5-2"
+    "ref": "PMBOK 8, Appendix X5, Table X5-2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 364,
+        "label": "PMBOK 8, Appendix X5, Table X5-2"
+      }
+    ]
   },
   {
     "id": "q10",
@@ -112,23 +195,54 @@
     ],
     "answer": 0,
     "explanation": "It was migrated to the Risk performance domain, where threats and opportunities are discussed through concrete mechanics.",
-    "ref": "PMBOK 8, Appendix X5, Table X5-2"
+    "ref": "PMBOK 8, Appendix X5, Table X5-2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 364,
+        "label": "PMBOK 8, Appendix X5, Table X5-2"
+      }
+    ]
   },
   {
     "id": "q11",
     "q": "The Knowledge Area called 'Cost' in older material corresponds to which 8th edition performance domain?",
-    "options": ["Governance", "Scope", "Finance", "Resources"],
+    "options": [
+      "Governance",
+      "Scope",
+      "Finance",
+      "Resources"
+    ],
     "answer": 2,
     "explanation": "Cost management content sits in the Finance performance domain, with processes such as Estimate Costs and Develop Budget.",
-    "ref": "PMBOK 8, Guide Table 2-1"
+    "ref": "PMBOK 8, Guide Table 2-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 114,
+        "label": "PMBOK 8, Guide Table 2-1"
+      }
+    ]
   },
   {
     "id": "q12",
     "q": "The 'Integration' Knowledge Area of older material corresponds most closely to which 8th edition performance domain?",
-    "options": ["Stakeholders", "Governance", "Schedule", "Risk"],
+    "options": [
+      "Stakeholders",
+      "Governance",
+      "Schedule",
+      "Risk"
+    ],
     "answer": 1,
     "explanation": "The Governance domain includes the elements of project integration management: strategic alignment, decision-making and change, and coordinating the work as an integrated system.",
-    "ref": "PMBOK 8, Guide 2.1"
+    "ref": "PMBOK 8, Guide 2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1"
+      }
+    ]
   },
   {
     "id": "q13",
@@ -141,15 +255,34 @@
     ],
     "answer": 3,
     "explanation": "Assess and Implement Changes is the Governance process in the Monitoring and Controlling Focus Area that handles change.",
-    "ref": "PMBOK 8, Guide Table 2-1"
+    "ref": "PMBOK 8, Guide Table 2-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 114,
+        "label": "PMBOK 8, Guide Table 2-1"
+      }
+    ]
   },
   {
     "id": "q14",
     "q": "A course refers to 'Create WBS'. Which 8th edition process is its counterpart?",
-    "options": ["Develop Scope Structure", "Define Scope", "Develop Schedule", "Plan Sourcing Strategy"],
+    "options": [
+      "Develop Scope Structure",
+      "Define Scope",
+      "Develop Schedule",
+      "Plan Sourcing Strategy"
+    ],
     "answer": 0,
     "explanation": "Develop Scope Structure is the Scope planning process that corresponds to Create WBS.",
-    "ref": "PMBOK 8, Guide Table 2-1"
+    "ref": "PMBOK 8, Guide Table 2-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 114,
+        "label": "PMBOK 8, Guide Table 2-1"
+      }
+    ]
   },
   {
     "id": "q15",
@@ -162,7 +295,14 @@
     ],
     "answer": 2,
     "explanation": "Practitioners supported a principle-based standard but asked for principles that were more actionable and focused, without topics such as stakeholders or tailoring appearing twice.",
-    "ref": "PMBOK 8, Appendix X5.2 and X5.4"
+    "ref": "PMBOK 8, Appendix X5.2 and X5.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 362,
+        "label": "PMBOK 8, Appendix X5.2 and X5.4"
+      }
+    ]
   },
   {
     "id": "q16",
@@ -175,7 +315,14 @@
     ],
     "answer": 1,
     "explanation": "PMI's refinement table maps the twelve older principles to five of the new principles, the Tailoring section and the Risk domain. Sustainability is the addition.",
-    "ref": "PMBOK 8, Appendix X5, Table X5-2"
+    "ref": "PMBOK 8, Appendix X5, Table X5-2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 364,
+        "label": "PMBOK 8, Appendix X5, Table X5-2"
+      }
+    ]
   },
   {
     "id": "q17",
@@ -188,6 +335,13 @@
     ],
     "answer": 3,
     "explanation": "PMI names the PMBOK Guide, Seventh Edition (2021) and Process Groups: A Practice Guide (2022) as the primary reference points for the 8th edition.",
-    "ref": "PMBOK 8, Appendix X5.3"
+    "ref": "PMBOK 8, Appendix X5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 362,
+        "label": "PMBOK 8, Appendix X5.3"
+      }
+    ]
   }
 ]

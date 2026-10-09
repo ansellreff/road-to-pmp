@@ -1,0 +1,42 @@
+[
+  {
+    "book": "pmbok8",
+    "page": 197,
+    "label": "PMBOK 8, Guide 2.7.1 and Glossary"
+  },
+  {
+    "book": "pmbok8",
+    "page": 198,
+    "label": "PMBOK 8, Guide Figure 2-46"
+  },
+  {
+    "book": "pmbok8",
+    "page": 218,
+    "label": "PMBOK 8, Guide section 4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 219,
+    "label": "PMBOK 8, Guide section 4, Assumption log"
+  },
+  {
+    "book": "pmbok8",
+    "page": 370,
+    "label": "PMBOK 8, Glossary (assumption)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 371,
+    "label": "PMBOK 8, Glossary (constraint)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 375,
+    "label": "PMBOK 8, Glossary (opportunity)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 378,
+    "label": "PMBOK 8, Glossary (risk transference)"
+  }
+]

@@ -10,7 +10,14 @@
     ],
     "answer": 1,
     "explanation": "Accountable leadership is about being responsible and taking ownership of the project's target objectives, the actions taken and the decisions made.",
-    "ref": "PMBOK 8, Standard 3.6"
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
   },
   {
     "id": "q2",
@@ -23,7 +30,14 @@
     ],
     "answer": 3,
     "explanation": "Authority is the position of control given to individuals within the organization. Leadership is about inspiring and motivating others through leading by example.",
-    "ref": "PMBOK 8, Standard 3.6"
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
   },
   {
     "id": "q3",
@@ -36,15 +50,34 @@
     ],
     "answer": 0,
     "explanation": "Leadership is not exclusive to any role. At different moments a team member or stakeholder may lead, and high-performing projects feature many people exercising leadership.",
-    "ref": "PMBOK 8, Standard 3.6"
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
   },
   {
     "id": "q4",
     "q": "A leader who is open to feedback, works for the team, supports their needs and removes barriers is demonstrating the basis of:",
-    "options": ["Autocratic leadership", "Laissez-faire leadership", "Servant leadership", "Transactional leadership"],
+    "options": [
+      "Autocratic leadership",
+      "Laissez-faire leadership",
+      "Servant leadership",
+      "Transactional leadership"
+    ],
     "answer": 2,
     "explanation": "Respectfulness, humility and availability, working for the team and removing barriers, form the basis of servant leadership.",
-    "ref": "PMBOK 8, Standard 3.6"
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
   },
   {
     "id": "q5",
@@ -57,15 +90,34 @@
     ],
     "answer": 1,
     "explanation": "The book contrasts enforcing contracts with holding cross-vendor discussions to explore the root cause and find acceptable adjustments, which resolves the conflict and protects quality and productivity.",
-    "ref": "PMBOK 8, Standard 3.6.2"
+    "ref": "PMBOK 8, Standard 3.6.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.6.2"
+      }
+    ]
   },
   {
     "id": "q6",
     "q": "Team members feel free to raise concerns, ask questions and admit mistakes without fear of punishment. The leader has created:",
-    "options": ["Gold plating", "A balanced matrix", "A governance board", "Psychological safety"],
+    "options": [
+      "Gold plating",
+      "A balanced matrix",
+      "A governance board",
+      "Psychological safety"
+    ],
     "answer": 3,
     "explanation": "Leaders foster an environment of psychological safety, where people can speak up without fear.",
-    "ref": "PMBOK 8, Standard 3.6, Figure 3-5"
+    "ref": "PMBOK 8, Standard 3.6, Figure 3-5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 70,
+        "label": "PMBOK 8, Standard 3.6, Figure 3-5"
+      }
+    ]
   },
   {
     "id": "q7",
@@ -78,7 +130,14 @@
     ],
     "answer": 0,
     "explanation": "This is the definition used for the principle Integrate Sustainability Within All Project Areas.",
-    "ref": "PMBOK 8, Standard 3.7"
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
   },
   {
     "id": "q8",
@@ -91,7 +150,14 @@
     ],
     "answer": 2,
     "explanation": "From most to least desirable: avoid, minimize, restore, compensate/offset.",
-    "ref": "PMBOK 8, Standard 3.7, Figure 3-7"
+    "ref": "PMBOK 8, Standard 3.7, Figure 3-7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 72,
+        "label": "PMBOK 8, Standard 3.7, Figure 3-7"
+      }
+    ]
   },
   {
     "id": "q9",
@@ -104,7 +170,14 @@
     ],
     "answer": 1,
     "explanation": "Compensating or offsetting is the base of the pyramid: acceptable as a minimum, but less desirable than restoring, minimizing or avoiding.",
-    "ref": "PMBOK 8, Standard 3.7, Figure 3-7"
+    "ref": "PMBOK 8, Standard 3.7, Figure 3-7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 72,
+        "label": "PMBOK 8, Standard 3.7, Figure 3-7"
+      }
+    ]
   },
   {
     "id": "q10",
@@ -117,7 +190,14 @@
     ],
     "answer": 3,
     "explanation": "The triple bottom line is people, planet and profit: social, environmental and economic.",
-    "ref": "PMBOK 8, Standard 3.7"
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
   },
   {
     "id": "q11",
@@ -130,7 +210,14 @@
     ],
     "answer": 0,
     "explanation": "Project managers, teams and sponsors are all jointly accountable for integrating sustainability across all project areas and phases.",
-    "ref": "PMBOK 8, Standard 3.7, Figure 3-6"
+    "ref": "PMBOK 8, Standard 3.7, Figure 3-6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 72,
+        "label": "PMBOK 8, Standard 3.7, Figure 3-6"
+      }
+    ]
   },
   {
     "id": "q12",
@@ -143,7 +230,14 @@
     ],
     "answer": 2,
     "explanation": "Goals should be in formal documents and confirmed by the sponsor. If they are not, the project manager should still encourage discussions about their impact.",
-    "ref": "PMBOK 8, Standard 3.7.1"
+    "ref": "PMBOK 8, Standard 3.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 73,
+        "label": "PMBOK 8, Standard 3.7.1"
+      }
+    ]
   },
   {
     "id": "q13",
@@ -156,7 +250,14 @@
     ],
     "answer": 1,
     "explanation": "Sustainability broadens project management to longer time orientations and more stakeholders, which may increase cost or complexity. There are also no universal success criteria.",
-    "ref": "PMBOK 8, Standard 3.7.1"
+    "ref": "PMBOK 8, Standard 3.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 73,
+        "label": "PMBOK 8, Standard 3.7.1"
+      }
+    ]
   },
   {
     "id": "q14",
@@ -169,7 +270,14 @@
     ],
     "answer": 3,
     "explanation": "Team agreements are behavioral parameters and working norms established by the project team and upheld through individual and team commitments.",
-    "ref": "PMBOK 8, Standard 3.8.1"
+    "ref": "PMBOK 8, Standard 3.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 77,
+        "label": "PMBOK 8, Standard 3.8.1"
+      }
+    ]
   },
   {
     "id": "q15",
@@ -182,7 +290,14 @@
     ],
     "answer": 0,
     "explanation": "They should be created at the beginning of a project to set the norms and practices for ongoing collaboration.",
-    "ref": "PMBOK 8, Standard 3.8.1"
+    "ref": "PMBOK 8, Standard 3.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 77,
+        "label": "PMBOK 8, Standard 3.8.1"
+      }
+    ]
   },
   {
     "id": "q16",
@@ -195,6 +310,13 @@
     ],
     "answer": 2,
     "explanation": "The environment should promote mutual trust among stakeholders and team members, with full clarity on roles, responsibilities, team agreements and guiding processes.",
-    "ref": "PMBOK 8, Standard 3.8"
+    "ref": "PMBOK 8, Standard 3.8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 76,
+        "label": "PMBOK 8, Standard 3.8"
+      }
+    ]
   }
 ]

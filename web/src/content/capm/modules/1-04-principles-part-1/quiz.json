@@ -10,15 +10,34 @@
     ],
     "answer": 2,
     "explanation": "The principles are not prescriptive. They are intended to reinforce the mindset and guide the behavior of people involved in projects.",
-    "ref": "PMBOK 8, Standard section 3"
+    "ref": "PMBOK 8, Standard section 3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 58,
+        "label": "PMBOK 8, Standard section 3"
+      }
+    ]
   },
   {
     "id": "q2",
     "q": "How many project management principles does the PMBOK Guide, Eighth Edition, define?",
-    "options": ["Six", "Seven", "Eight", "Twelve"],
+    "options": [
+      "Six",
+      "Seven",
+      "Eight",
+      "Twelve"
+    ],
     "answer": 0,
     "explanation": "The 8th edition has six principles. Twelve was the 7th edition; seven is the number of performance domains in the 8th edition.",
-    "ref": "PMBOK 8, Standard section 3"
+    "ref": "PMBOK 8, Standard section 3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 58,
+        "label": "PMBOK 8, Standard section 3"
+      }
+    ]
   },
   {
     "id": "q3",
@@ -31,7 +50,14 @@
     ],
     "answer": 3,
     "explanation": "The mindset has three dimensions: proactive, ownership and value-driven. Each groups two of the six principles.",
-    "ref": "PMBOK 8, Standard 3.1"
+    "ref": "PMBOK 8, Standard 3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 59,
+        "label": "PMBOK 8, Standard 3.1"
+      }
+    ]
   },
   {
     "id": "q4",
@@ -44,7 +70,14 @@
     ],
     "answer": 1,
     "explanation": "Ownership is about leader accountability and a high-performance team culture: Be an Accountable Leader and Build an Empowered Culture.",
-    "ref": "PMBOK 8, Standard 3.1"
+    "ref": "PMBOK 8, Standard 3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 59,
+        "label": "PMBOK 8, Standard 3.1"
+      }
+    ]
   },
   {
     "id": "q5",
@@ -57,7 +90,14 @@
     ],
     "answer": 0,
     "explanation": "Principles are the foundation and mindset. Performance domains hold the knowledge, processes and methods that operationalize them.",
-    "ref": "PMBOK 8, Standard 3.2"
+    "ref": "PMBOK 8, Standard 3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 60,
+        "label": "PMBOK 8, Standard 3.2"
+      }
+    ]
   },
   {
     "id": "q6",
@@ -70,7 +110,14 @@
     ],
     "answer": 2,
     "explanation": "The 8th edition domains are Governance, Scope (including quality), Schedule, Finance, Stakeholders, Resources and Risk.",
-    "ref": "PMBOK 8, Standard 3.2"
+    "ref": "PMBOK 8, Standard 3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 60,
+        "label": "PMBOK 8, Standard 3.2"
+      }
+    ]
   },
   {
     "id": "q7",
@@ -83,15 +130,34 @@
     ],
     "answer": 3,
     "explanation": "Looking at components and their interdependencies as a system to find the root cause is systems thinking, the core of Adopt a Holistic View.",
-    "ref": "PMBOK 8, Standard 3.3"
+    "ref": "PMBOK 8, Standard 3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 61,
+        "label": "PMBOK 8, Standard 3.3"
+      }
+    ]
   },
   {
     "id": "q8",
     "q": "Adopt a Holistic View is most closely associated with which concept?",
-    "options": ["Earned value", "Systems thinking", "Gold plating", "Resource leveling"],
+    "options": [
+      "Earned value",
+      "Systems thinking",
+      "Gold plating",
+      "Resource leveling"
+    ],
     "answer": 1,
     "explanation": "The principle aligns with systems thinking: seeing interrelationships in their full context and patterns rather than static snapshots.",
-    "ref": "PMBOK 8, Standard 3.3"
+    "ref": "PMBOK 8, Standard 3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 61,
+        "label": "PMBOK 8, Standard 3.3"
+      }
+    ]
   },
   {
     "id": "q9",
@@ -104,7 +170,14 @@
     ],
     "answer": 2,
     "explanation": "If misalignment persists or the project is unlikely to deliver the intended value, it may be best to terminate the effort.",
-    "ref": "PMBOK 8, Standard 3.4"
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
   },
   {
     "id": "q10",
@@ -117,7 +190,14 @@
     ],
     "answer": 0,
     "explanation": "The software is an output. The intended outcome was productivity. Adding a deliverable such as training would have enabled the higher-value outcome.",
-    "ref": "PMBOK 8, Standard 3.4.1"
+    "ref": "PMBOK 8, Standard 3.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 64,
+        "label": "PMBOK 8, Standard 3.4.1"
+      }
+    ]
   },
   {
     "id": "q11",
@@ -130,15 +210,34 @@
     ],
     "answer": 3,
     "explanation": "Value can be realized throughout the project, at the end, or following completion. The payback period may extend well beyond closeout.",
-    "ref": "PMBOK 8, Standard 3.4"
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
   },
   {
     "id": "q12",
     "q": "Which document gives the project team the justification and strategy needed to make value-based decisions?",
-    "options": ["The risk register", "The business case", "The team agreement", "The issue log"],
+    "options": [
+      "The risk register",
+      "The business case",
+      "The team agreement",
+      "The issue log"
+    ],
     "answer": 1,
     "explanation": "Project justification and organizational strategy are often detailed in a business case, which guides decisions toward the intended business value.",
-    "ref": "PMBOK 8, Standard 3.4"
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
   },
   {
     "id": "q13",
@@ -151,7 +250,14 @@
     ],
     "answer": 2,
     "explanation": "Quality concerns both the deliverable and the processes used to achieve it, measured by acceptance criteria, definition of done, fitness for use and efficiency.",
-    "ref": "PMBOK 8, Standard 3.5"
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
   },
   {
     "id": "q14",
@@ -164,22 +270,53 @@
     ],
     "answer": 0,
     "explanation": "Continuous improvement and waste elimination let teams refine processes, use resources better and meet or exceed target objectives.",
-    "ref": "PMBOK 8, Standard 3.5"
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
   },
   {
     "id": "q15",
     "q": "A team moves testing and quality reviews to the earliest possible point in the project instead of the end. This approach is called:",
-    "options": ["Gold plating", "Scope creep", "Rolling wave planning", "Shift-left"],
+    "options": [
+      "Gold plating",
+      "Scope creep",
+      "Rolling wave planning",
+      "Shift-left"
+    ],
     "answer": 3,
     "explanation": "Shift-left means prioritizing quality practices as early in the project life cycle as possible, so defects are prevented or found early.",
-    "ref": "PMBOK 8, Standard 3.5.3"
+    "ref": "PMBOK 8, Standard 3.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 68,
+        "label": "PMBOK 8, Standard 3.5.3"
+      }
+    ]
   },
   {
     "id": "q16",
     "q": "Which quality dimension asks whether a deliverable can cope with unforeseen failures and recover quickly?",
-    "options": ["Uniformity", "Resilience", "Conformity", "Efficiency"],
+    "options": [
+      "Uniformity",
+      "Resilience",
+      "Conformity",
+      "Efficiency"
+    ],
     "answer": 1,
     "explanation": "Resilience is the ability to cope with unforeseen failures and recover quickly. Conformity is about matching specifications; uniformity about parity across similar outputs.",
-    "ref": "PMBOK 8, Standard 3.5"
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
   }
 ]

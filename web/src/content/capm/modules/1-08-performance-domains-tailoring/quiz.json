@@ -10,7 +10,14 @@
     ],
     "answer": 1,
     "explanation": "A performance domain is a group of related processes critical for the effective delivery of project value.",
-    "ref": "PMBOK 8, Guide section 2"
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
   },
   {
     "id": "q2",
@@ -23,23 +30,54 @@
     ],
     "answer": 3,
     "explanation": "The domains have no weighting or order, run concurrently throughout the life cycle, and are interdependent parts of an integrated system.",
-    "ref": "PMBOK 8, Guide section 2"
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
   },
   {
     "id": "q3",
     "q": "In the Eighth Edition, quality is addressed mainly within which performance domain?",
-    "options": ["Scope", "Finance", "Schedule", "Resources"],
+    "options": [
+      "Scope",
+      "Finance",
+      "Schedule",
+      "Resources"
+    ],
     "answer": 0,
     "explanation": "The Scope performance domain includes quality. Quality assurance activities also appear in Governance.",
-    "ref": "PMBOK 8, Standard 3.2"
+    "ref": "PMBOK 8, Standard 3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 60,
+        "label": "PMBOK 8, Standard 3.2"
+      }
+    ]
   },
   {
     "id": "q4",
     "q": "How many processes does the PMBOK Guide, Eighth Edition, present across the performance domains?",
-    "options": ["12", "49", "40", "7"],
+    "options": [
+      "12",
+      "49",
+      "40",
+      "7"
+    ],
     "answer": 2,
     "explanation": "The 8th edition presents 40 processes. 49 is the count in the 6th edition and the Process Groups practice guide.",
-    "ref": "PMBOK 8, Guide section 2"
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
   },
   {
     "id": "q5",
@@ -52,7 +90,14 @@
     ],
     "answer": 1,
     "explanation": "The processes and their lists are illustrative but not comprehensive. They are a technical description, not a prescriptive framework or methodology.",
-    "ref": "PMBOK 8, Guide section 2"
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
   },
   {
     "id": "q6",
@@ -65,15 +110,34 @@
     ],
     "answer": 0,
     "explanation": "Initiating contains only Initiate Project or Phase (Governance) and Identify Stakeholders (Stakeholders).",
-    "ref": "PMBOK 8, Guide Table 2-1"
+    "ref": "PMBOK 8, Guide Table 2-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 114,
+        "label": "PMBOK 8, Guide Table 2-1"
+      }
+    ]
   },
   {
     "id": "q7",
     "q": "Which performance domain has processes in all five Focus Areas, from Initiating to Closing?",
-    "options": ["Scope", "Risk", "Stakeholders", "Governance"],
+    "options": [
+      "Scope",
+      "Risk",
+      "Stakeholders",
+      "Governance"
+    ],
     "answer": 3,
     "explanation": "Governance spans all five Focus Areas, from Initiate Project or Phase to Close Project or Phase. It integrates the other domains.",
-    "ref": "PMBOK 8, Guide Table 2-1"
+    "ref": "PMBOK 8, Guide Table 2-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 114,
+        "label": "PMBOK 8, Guide Table 2-1"
+      }
+    ]
   },
   {
     "id": "q8",
@@ -86,7 +150,14 @@
     ],
     "answer": 2,
     "explanation": "Project management activities do not provide value by themselves. For every output there should be a higher-order outcome in mind.",
-    "ref": "PMBOK 8, Guide section 2"
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
   },
   {
     "id": "q9",
@@ -99,7 +170,14 @@
     ],
     "answer": 1,
     "explanation": "Tailoring is the deliberate adaptation of the project management approach, governance and processes to align with the project's environment and objectives.",
-    "ref": "PMBOK 8, Guide section 3"
+    "ref": "PMBOK 8, Guide section 3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 208,
+        "label": "PMBOK 8, Guide section 3"
+      }
+    ]
   },
   {
     "id": "q10",
@@ -112,15 +190,34 @@
     ],
     "answer": 0,
     "explanation": "The four steps are: select the initial development approach, tailor for the organization, tailor for the project, and implement ongoing improvement.",
-    "ref": "PMBOK 8, Guide 3.4"
+    "ref": "PMBOK 8, Guide 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 210,
+        "label": "PMBOK 8, Guide 3.4"
+      }
+    ]
   },
   {
     "id": "q11",
     "q": "A small internal project is required by the standard methodology to produce a document that adds no value in its context. With appropriate approval, the team drops it. Which process-tailoring action is this?",
-    "options": ["Added", "Blended", "Aligned", "Removed"],
+    "options": [
+      "Added",
+      "Blended",
+      "Aligned",
+      "Removed"
+    ],
     "answer": 3,
     "explanation": "Process elements can be added, modified, removed, blended or aligned. Removing reduces unnecessary cost or effort.",
-    "ref": "PMBOK 8, Guide 3.3.2"
+    "ref": "PMBOK 8, Guide 3.3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 210,
+        "label": "PMBOK 8, Guide 3.3.2"
+      }
+    ]
   },
   {
     "id": "q12",
@@ -133,7 +230,14 @@
     ],
     "answer": 2,
     "explanation": "A suitability filter is not a rigid method but a decision-making tool that evaluates culture, team and project factors to support the choice of approach.",
-    "ref": "PMBOK 8, Guide 3.4.1"
+    "ref": "PMBOK 8, Guide 3.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 210,
+        "label": "PMBOK 8, Guide 3.4.1"
+      }
+    ]
   },
   {
     "id": "q13",
@@ -146,7 +250,14 @@
     ],
     "answer": 1,
     "explanation": "Tailoring that only affects the project team usually needs the project manager's approval. Tailoring that affects external groups may need PMO approval.",
-    "ref": "PMBOK 8, Guide 3.4.2"
+    "ref": "PMBOK 8, Guide 3.4.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 211,
+        "label": "PMBOK 8, Guide 3.4.2"
+      }
+    ]
   },
   {
     "id": "q14",
@@ -159,7 +270,14 @@
     ],
     "answer": 0,
     "explanation": "Tailoring is not a single, one-time exercise. Review points, phase gates and retrospectives provide opportunities to inspect and adapt.",
-    "ref": "PMBOK 8, Guide 3.4.4"
+    "ref": "PMBOK 8, Guide 3.4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 214,
+        "label": "PMBOK 8, Guide 3.4.4"
+      }
+    ]
   },
   {
     "id": "q15",
@@ -172,7 +290,14 @@
     ],
     "answer": 3,
     "explanation": "The guidance is to analyze root causes and focus on process improvements rather than just increasing verification steps.",
-    "ref": "PMBOK 8, Guide Table 3-1"
+    "ref": "PMBOK 8, Guide Table 3-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 217,
+        "label": "PMBOK 8, Guide Table 3-1"
+      }
+    ]
   },
   {
     "id": "q16",
@@ -185,14 +310,13 @@
     ],
     "answer": 2,
     "explanation": "Benefits of tailoring include more commitment from the team members who helped tailor, a stronger customer focus and more efficient use of resources.",
-    "ref": "PMBOK 8, Guide 3.2"
-  },
-  {
-    "id": "q17",
-    "q": "A question refers to '8 performance domains' including Team, Delivery, Measurement and Uncertainty. Which edition of the PMBOK Guide is it based on?",
-    "options": ["Sixth", "Seventh", "Eighth", "None"],
-    "answer": 1,
-    "explanation": "The 7th edition has eight performance domains. The 8th edition has seven: Governance, Scope, Schedule, Finance, Stakeholders, Resources and Risk.",
-    "ref": "PMBOK 7 and PMBOK 8 compared"
+    "ref": "PMBOK 8, Guide 3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 209,
+        "label": "PMBOK 8, Guide 3.2"
+      }
+    ]
   }
 ]

@@ -29,6 +29,8 @@ def check_quiz(path: Path, problems: list[str]) -> int:
         for field in ("q", "explanation", "ref"):
             if not str(q.get(field, "")).strip():
                 problems.append(f"{where}: missing {field}")
+        if not q.get("links"):
+            problems.append(f"{where}: no book page link (run tools/link_sources.py)")
     # A quiz where the answer is nearly always the same letter can be gamed.
     spread = Counter(q.get("answer") for q in questions)
     if questions and max(spread.values()) > len(questions) * 0.45:
