@@ -1,0 +1,23 @@
+[
+  { "id": "c1", "front": "The five Project Management Focus Areas", "back": "Initiating, Planning, Executing, Monitoring and Controlling, Closing." },
+  { "id": "c2", "front": "Former name of the Focus Areas", "back": "Process Groups. Same five names." },
+  { "id": "c3", "front": "Are Focus Areas the same as phases?", "back": "No. Focus Areas are groupings of management actions. All five can occur within each phase, and they overlap." },
+  { "id": "c4", "front": "Initiating Focus Area", "back": "Actions to define a new project or phase, often including formal authorization to start." },
+  { "id": "c5", "front": "Four things that happen in Initiating", "back": "Initial scope defined; initial funds committed; stakeholders identified; project management roles assigned." },
+  { "id": "c6", "front": "Artifacts of Initiating", "back": "Project charter and stakeholder register." },
+  { "id": "c7", "front": "Key benefit of Initiating", "back": "Projects are authorized only when aligned with strategic objectives, with business case, benefits and stakeholders considered from the start." },
+  { "id": "c8", "front": "Business documents", "back": "Documents that originate outside the project and are inputs to it: the business case and the benefits management plan." },
+  { "id": "c9", "front": "Planning Focus Area", "back": "Actions that establish the intended scope, define and refine objectives, and develop the course of action to reach them." },
+  { "id": "c10", "front": "Progressive elaboration", "back": "Ongoing refinement of the plan as more information becomes available. Planning is iterative." },
+  { "id": "c11", "front": "Roadmapping", "back": "Brief, high-level up-front planning used in highly iterative approaches, followed by frequent replanning." },
+  { "id": "c12", "front": "Rolling wave planning", "back": "Planning near-term work in detail and later work at a high level, adding detail as it approaches." },
+  { "id": "c13", "front": "Project management plan", "back": "The collection of knowledge and artifacts describing the course of action. The authoritative reference for how the project will be managed." },
+  { "id": "c14", "front": "Executing Focus Area", "back": "Actions to complete the work consistent with the agreed course of action: coordinating resources, engaging stakeholders, performing activities." },
+  { "id": "c15", "front": "Monitoring and Controlling Focus Area", "back": "Actions to track, measure, review and regulate progress and performance, identify needed changes and initiate them." },
+  { "id": "c16", "front": "Monitoring vs controlling", "back": "Monitoring: collect, compare and report performance. Controlling: analyze variances, assess trends, recommend corrections." },
+  { "id": "c17", "front": "When does Monitoring and Controlling take place?", "back": "In parallel with all other Focus Areas, throughout each phase and the whole project." },
+  { "id": "c18", "front": "Closing Focus Area", "back": "Actions to formally complete or close a project, phase or contract, or to terminate a project early." },
+  { "id": "c19", "front": "What is verified during Closing?", "back": "That outputs, outcomes and benefits were achieved, and that the work of the other Focus Areas is complete." },
+  { "id": "c20", "front": "Do the Focus Areas apply to agile projects?", "back": "Yes. They are independent of approach and industry. In adaptive work they are revisited in every iteration." },
+  { "id": "c21", "front": "Can the project management plan change during executing?", "back": "Yes. It can and should change whenever that would enhance the project's value." }
+]
