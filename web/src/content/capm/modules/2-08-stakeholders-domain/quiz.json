@@ -1,0 +1,462 @@
+[
+  {
+    "id": "q1",
+    "q": "How many processes does the Stakeholders performance domain have?",
+    "options": [
+      "Three",
+      "Four",
+      "Seven",
+      "Nine"
+    ],
+    "answer": 2,
+    "explanation": "There are seven: Identify Stakeholders, three engagement processes (plan, manage, monitor) and three communications processes (plan, manage, monitor).",
+    "ref": "PMBOK 8, Guide 2.5.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 175,
+        "label": "PMBOK 8, Guide 2.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What is the main output of Identify Stakeholders?",
+    "options": [
+      "Stakeholder register",
+      "Stakeholder engagement plan",
+      "Communications management plan",
+      "Project charter"
+    ],
+    "answer": 0,
+    "explanation": "Identify Stakeholders produces the stakeholder register, which holds identification information, assessment information and the classification of each stakeholder.",
+    "ref": "PMBOK 8, Guide section 4, Stakeholder register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 246,
+        "label": "PMBOK 8, Guide section 4, Stakeholder register"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "When is Identify Stakeholders performed?",
+    "options": [
+      "Once, at the start of the project",
+      "Only during closing",
+      "Only when a stakeholder complains",
+      "Periodically throughout the project, as needed"
+    ],
+    "answer": 3,
+    "explanation": "Stakeholders and their influence change as the project unfolds, so the process is performed periodically throughout the project.",
+    "ref": "PMBOK 8, Guide 2.5.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide 2.5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Halfway through the project, the project manager learns of a department that will be affected by the project and was never consulted. What should be done first?",
+    "options": [
+      "Ignore it, because planning is finished",
+      "Add the department to the stakeholder register and analyze its needs and influence",
+      "Ask the sponsor to cancel the project",
+      "Send the department the final report when the project ends"
+    ],
+    "answer": 1,
+    "explanation": "Stakeholder identification continues throughout the project. A newly found stakeholder is recorded and analyzed, and then engagement is planned.",
+    "ref": "PMBOK 8, Guide 2.5.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide 2.5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "On a power/interest grid, how should a stakeholder with high power and high interest be handled?",
+    "options": [
+      "Monitor with minimum effort",
+      "Keep informed",
+      "Manage closely",
+      "Keep satisfied"
+    ],
+    "answer": 2,
+    "explanation": "High power and high interest stakeholders are the key players and are managed closely. High power with low interest: keep satisfied. Low power with high interest: keep informed.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "A senior executive has the authority to stop the project but shows little interest in it. Which strategy fits best?",
+    "options": [
+      "Keep satisfied",
+      "Keep informed",
+      "Monitor",
+      "Ignore"
+    ],
+    "answer": 0,
+    "explanation": "High power with low interest means keep satisfied: meet their needs without overloading them with detail.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which model classifies stakeholders by power, urgency and legitimacy?",
+    "options": [
+      "Power/interest grid",
+      "Stakeholder cube",
+      "Directions of influence",
+      "Salience model"
+    ],
+    "answer": 3,
+    "explanation": "The salience model uses power, urgency and legitimacy. It is useful for large, complex stakeholder communities.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "In the directions of influence model, in which direction are suppliers, regulators and end users?",
+    "options": [
+      "Upward",
+      "Outward",
+      "Downward",
+      "Sideward"
+    ],
+    "answer": 1,
+    "explanation": "Outward covers stakeholder groups outside the project team. Upward is senior management and the sponsor, downward is the team, sideward is the project manager's peers.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What does the stakeholder engagement assessment matrix compare?",
+    "options": [
+      "The power and interest of each stakeholder",
+      "Planned and actual costs",
+      "The current and desired engagement level of each stakeholder",
+      "The number of communication channels"
+    ],
+    "answer": 2,
+    "explanation": "The matrix marks each stakeholder's current (C) and desired (D) engagement level. The gap shows where engagement effort is needed.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A stakeholder knows about the project and is neither for nor against it. What is their engagement level?",
+    "options": [
+      "Neutral",
+      "Unaware",
+      "Resistant",
+      "Supportive"
+    ],
+    "answer": 0,
+    "explanation": "A neutral stakeholder is aware of the project but neither supportive nor unsupportive.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "A stakeholder is aware of the project and actively works to make it succeed. What is their engagement level?",
+    "options": [
+      "Supportive",
+      "Neutral",
+      "Resistant",
+      "Leading"
+    ],
+    "answer": 3,
+    "explanation": "Leading means aware of the project and actively engaged in ensuring it is a success. Supportive means in favor, without the active role.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Which document describes the strategies and actions for promoting productive involvement of stakeholders?",
+    "options": [
+      "Stakeholder register",
+      "Stakeholder engagement plan",
+      "Communications management plan",
+      "Issue log"
+    ],
+    "answer": 1,
+    "explanation": "The stakeholder engagement plan is a component of the project management plan that identifies the strategies and actions required to promote productive stakeholder involvement.",
+    "ref": "PMBOK 8, Guide section 4, Stakeholder engagement plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 246,
+        "label": "PMBOK 8, Guide section 4, Stakeholder engagement plan"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which document describes how, when and by whom project information will be distributed?",
+    "options": [
+      "Stakeholder engagement plan",
+      "Stakeholder register",
+      "Communications management plan",
+      "Project charter"
+    ],
+    "answer": 2,
+    "explanation": "The communications management plan describes how, when and by whom information will be administered and disseminated, including escalation processes.",
+    "ref": "PMBOK 8, Guide section 4, Communications management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 222,
+        "label": "PMBOK 8, Guide section 4, Communications management plan"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A project manager leads a team of 7 people. How many communication channels are there?",
+    "options": [
+      "28",
+      "21",
+      "49",
+      "56"
+    ],
+    "answer": 0,
+    "explanation": "Count the project manager: n = 8. Channels = n(n − 1) ÷ 2 = 8 × 7 ÷ 2 = 28.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Communication requirements analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 260,
+        "label": "PMBOK 8, Guide section 5, Communication requirements analysis"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A team grows from 4 people to 6 people. How many communication channels are added?",
+    "options": [
+      "2",
+      "6",
+      "15",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "With 4 people: 4 × 3 ÷ 2 = 6 channels. With 6 people: 6 × 5 ÷ 2 = 15 channels. Added: 15 − 6 = 9.",
+    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Communication requirements analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 260,
+        "label": "PMBOK 8, Guide section 5, Communication requirements analysis"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "The project manager emails the weekly status report to all stakeholders. Which communication method is this?",
+    "options": [
+      "Interactive",
+      "Push",
+      "Pull",
+      "Nonverbal"
+    ],
+    "answer": 1,
+    "explanation": "Push communication is sent directly to specific recipients. It ensures the information is distributed, but not that it was received or understood.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Project documents are placed on an intranet site where hundreds of employees can read them when they wish. Which communication method is this?",
+    "options": [
+      "Push",
+      "Interactive",
+      "Pull",
+      "Formal verbal"
+    ],
+    "answer": 2,
+    "explanation": "Pull communication is used for large information sets or large audiences. Recipients access the content at their own discretion.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which communication method is a real-time, multidirectional exchange such as a meeting or a video call?",
+    "options": [
+      "Interactive",
+      "Push",
+      "Pull",
+      "Mass"
+    ],
+    "answer": 0,
+    "explanation": "Interactive communication happens between two or more parties exchanging information in real time: meetings, phone calls, videoconferences, instant messaging.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "In the communication model, who is responsible for confirming that the message was correctly understood?",
+    "options": [
+      "The receiver",
+      "The sponsor",
+      "The medium",
+      "The sender"
+    ],
+    "answer": 3,
+    "explanation": "The sender is responsible for a clear and complete message and for confirming it is correctly interpreted. The receiver is responsible for receiving it fully and responding.",
+    "ref": "PMBOK 8, Guide section 5, Communication models",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 258,
+        "label": "PMBOK 8, Guide section 5, Communication models"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A receiver replies \"Got your message.\" In the communication model, what does this acknowledgment mean?",
+    "options": [
+      "The receiver agrees with the message",
+      "The message was received, which is not the same as agreement or understanding",
+      "The receiver has understood every detail",
+      "The sender no longer has any responsibility"
+    ],
+    "answer": 1,
+    "explanation": "Acknowledgment only signals receipt. It does not necessarily mean agreement with or comprehension of the message. Feedback shows what was understood.",
+    "ref": "PMBOK 8, Guide section 5, Communication models",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 258,
+        "label": "PMBOK 8, Guide section 5, Communication models"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "During a video call, a poor connection and different native languages make the message hard to follow. In the communication model, these are examples of:",
+    "options": [
+      "Encoding",
+      "Feedback",
+      "Noise",
+      "The medium"
+    ],
+    "answer": 2,
+    "explanation": "Noise is any interference or barrier that might compromise the understanding of the message, including technology problems, distraction and cultural or language differences.",
+    "ref": "PMBOK 8, Guide section 5, Communication models",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 258,
+        "label": "PMBOK 8, Guide section 5, Communication models"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "What is the key benefit of Manage Stakeholder Engagement?",
+    "options": [
+      "It increases support and minimizes resistance from stakeholders",
+      "It produces the stakeholder register",
+      "It reduces the number of stakeholders",
+      "It creates the cost baseline"
+    ],
+    "answer": 0,
+    "explanation": "Manage Stakeholder Engagement is the process of communicating and working with stakeholders to meet their needs, address issues and foster involvement.",
+    "ref": "PMBOK 8, Guide 2.5.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 177,
+        "label": "PMBOK 8, Guide 2.5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which of the following is typically done by the project sponsor?",
+    "options": [
+      "Writing the detailed schedule",
+      "Performing the technical work",
+      "Running the daily team meeting",
+      "Approving the project charter and empowering the project manager"
+    ],
+    "answer": 3,
+    "explanation": "Sponsors initiate the project, approve the charter and the plan, assign and empower the project manager, secure resources and authorize completion.",
+    "ref": "PMBOK 8, Guide 2.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 173,
+        "label": "PMBOK 8, Guide 2.5.1"
+      }
+    ]
+  }
+]

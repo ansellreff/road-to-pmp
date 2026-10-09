@@ -69,6 +69,8 @@ def which_book(part: str) -> str | None:
         return "processgroups"
     if "practice standard for scheduling" in lowered:
         return "scheduling"
+    if "standard for earned value management" in lowered:
+        return "evm"
     return None
 
 
@@ -91,7 +93,7 @@ def resolve(part: str) -> tuple[str, int] | None:
                 return book, page
         return book, 4
 
-    if book in ("processgroups", "scheduling"):
+    if book in ("processgroups", "scheduling", "evm"):
         # Their tables of contents list every section: "3.3.2. Title  [p83]" or "3.4.2 TITLE  [p87]".
         number = re.search(r"\b(\d+(?:\.\d+)+)\b", part)
         section = re.search(r"sections? (\d+)", lowered)
@@ -100,7 +102,7 @@ def resolve(part: str) -> tuple[str, int] | None:
             hit = re.search(rf"^\s*(?:CHAPTER )?{re.escape(wanted)}[.:]? .*\[p(\d+)\]", toc(book), re.MULTILINE)
             if hit:
                 return book, int(hit.group(1))
-        return book, 22 if book == "processgroups" else 16
+        return book, {"processgroups": 22, "scheduling": 16, "evm": 14}[book]
 
     regions = REGIONS[book]
     only_glossary = "glossary" in lowered and not re.search(r"\d\.\d", part)

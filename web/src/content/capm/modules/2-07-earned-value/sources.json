@@ -1,0 +1,47 @@
+[
+  {
+    "book": "evm",
+    "page": 20,
+    "label": "The Standard for Earned Value Management, 1.3.4"
+  },
+  {
+    "book": "evm",
+    "page": 46,
+    "label": "The Standard for Earned Value Management, 3.2.2.2"
+  },
+  {
+    "book": "evm",
+    "page": 87,
+    "label": "The Standard for Earned Value Management, 4.4.1.1"
+  },
+  {
+    "book": "evm",
+    "page": 89,
+    "label": "The Standard for Earned Value Management, 4.4.1.2"
+  },
+  {
+    "book": "evm",
+    "page": 91,
+    "label": "The Standard for Earned Value Management, 4.4.1.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 274,
+    "label": "PMBOK 8, Guide section 5, Earned value (EV) analysis"
+  },
+  {
+    "book": "pmbok8",
+    "page": 311,
+    "label": "PMBOK 8, Guide Figure 5-24"
+  },
+  {
+    "book": "pmbok8",
+    "page": 311,
+    "label": "PMBOK 8, Guide section 5, To-complete performance index (TCPI)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 312,
+    "label": "PMBOK 8, Guide Table 5-1"
+  }
+]
