@@ -31,9 +31,33 @@ function localBooks(): Plugin {
           res.end(`"${book.file}" was not found in the PMI Learning Material folder.`)
           return
         }
+        const size = fs.statSync(file).size
         res.setHeader('Content-Type', 'application/pdf')
-        res.setHeader('Content-Length', fs.statSync(file).size)
         res.setHeader('Content-Disposition', 'inline')
+        res.setHeader('Accept-Ranges', 'bytes')
+        res.setHeader('Cache-Control', 'no-store')
+
+        // PDF viewers load big files in pieces ("Range: bytes=start-end"). Each piece must be
+        // answered with exactly those bytes, or the viewer misreads the file.
+        const range = /^bytes=(\d*)-(\d*)$/.exec(req.headers.range ?? '')
+        if (range && (range[1] || range[2])) {
+            const start = range[1] ? Number(range[1]) : Math.max(0, size - Number(range[2]))
+            const end = range[1] && range[2] ? Math.min(Number(range[2]), size - 1) : size - 1
+            if (start > end || start >= size) {
+              res.statusCode = 416
+              res.setHeader('Content-Range', `bytes */${size}`)
+              res.end()
+              return
+            }
+            res.statusCode = 206
+            res.setHeader('Content-Range', `bytes ${start}-${end}/${size}`)
+            res.setHeader('Content-Length', end - start + 1)
+            if (req.method === 'HEAD') return void res.end()
+            fs.createReadStream(file, { start, end }).pipe(res)
+            return
+        }
+        res.setHeader('Content-Length', size)
+        if (req.method === 'HEAD') return void res.end()
         fs.createReadStream(file).pipe(res)
       })
     },
