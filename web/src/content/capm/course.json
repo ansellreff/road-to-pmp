@@ -16,8 +16,8 @@
         { "id": "1-05-principles-part-2", "title": "The 6 Principles, Part 2: Leadership, Sustainability, Empowered Culture", "ready": true },
         { "id": "1-06-phases-development-approaches", "title": "Phases and Development Approaches: Predictive, Adaptive, Hybrid", "ready": true },
         { "id": "1-07-focus-areas", "title": "The 5 Focus Areas: Initiating to Closing", "ready": true },
-        { "id": "1-08-performance-domains-tailoring", "title": "The 7 Performance Domains and Tailoring", "ready": false },
-        { "id": "1-09-constraints-risks-issues", "title": "Constraints, Risks, Issues and Assumptions", "ready": false },
+        { "id": "1-08-performance-domains-tailoring", "title": "The 7 Performance Domains and Tailoring", "ready": true },
+        { "id": "1-09-constraints-risks-issues", "title": "Constraints, Risks, Issues and Assumptions", "ready": true },
         { "id": "1-10-leadership-ethics", "title": "Leadership Skills, Emotional Intelligence and Ethics", "ready": false },
         { "id": "1-11-edition-bridge", "title": "7th Edition Terms You May Still See (12 Principles, 8 Domains)", "ready": false }
       ]
