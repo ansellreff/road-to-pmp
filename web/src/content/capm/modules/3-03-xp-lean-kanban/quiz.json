@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "Which agile method is best known for technical practices such as pair programming, test-first programming and refactoring?",
+    "options": [
+      "Scrum",
+      "Kanban",
+      "Crystal",
+      "Extreme Programming (XP)"
+    ],
+    "answer": 3,
+    "explanation": "XP is most known for popularizing a holistic set of practices intended to improve the results of software projects, including pair programming, test-first programming and refactoring.",
+    "ref": "Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What are the five core values of XP?",
+    "options": [
+      "Commitment, focus, openness, respect, courage",
+      "Communication, simplicity, feedback, courage, respect",
+      "Transparency, inspection, adaptation, trust, speed",
+      "People, interactions, community, skills, talents"
+    ],
+    "answer": 1,
+    "explanation": "XP's core values are communication, simplicity, feedback, courage and respect. The first option lists the Scrum values.",
+    "ref": "Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Two developers work together at one computer: one writes the code while the other reviews it, and they swap regularly. What is this practice?",
+    "options": [
+      "Pair programming",
+      "Refactoring",
+      "Continuous integration",
+      "Collective code ownership"
+    ],
+    "answer": 0,
+    "explanation": "Pair programming is a primary XP technical practice in which two people develop the same piece of work together.",
+    "ref": "Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What is refactoring?",
+    "options": [
+      "Rewriting the requirements",
+      "Adding new features to the code",
+      "Improving the internal structure of the code without changing what it does",
+      "Deleting old test cases"
+    ],
+    "answer": 2,
+    "explanation": "Refactoring improves the design of existing code while keeping its behavior the same, which keeps the code easy to change.",
+    "ref": "PMI standard teaching; Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "In test-first programming, when is the test written?",
+    "options": [
+      "After the product is released",
+      "After the code is complete",
+      "Only when a defect is found",
+      "Before the code it will test"
+    ],
+    "answer": 3,
+    "explanation": "In test-first programming, also called test-driven development, the test is written before the code, and just enough code is then written to pass it.",
+    "ref": "PMI standard teaching; Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "What is the main aim of lean management?",
+    "options": [
+      "To complete as many projects as possible",
+      "To maximize customer value while minimizing waste",
+      "To write complete documentation",
+      "To fix the scope at the start"
+    ],
+    "answer": 1,
+    "explanation": "Lean management is a philosophy aimed at maximizing customer value while minimizing waste across all operations.",
+    "ref": "Agile Practice Guide, 2.3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 30,
+        "label": "Agile Practice Guide, 2.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "In Lean Startup, what is a minimum viable product (MVP)?",
+    "options": [
+      "The smallest testable version of an idea, used to collect real customer data",
+      "The final product with all features",
+      "A product with no defects",
+      "The cheapest product on the market"
+    ],
+    "answer": 0,
+    "explanation": "Teams create the smallest testable version of the idea and cycle through a build–measure–learn loop to collect real customer data.",
+    "ref": "Agile Practice Guide, 2.3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 30,
+        "label": "Agile Practice Guide, 2.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Testing an MVP shows that customers do not want the product as designed. The team changes direction before investing more. What is this called?",
+    "options": [
+      "A spike",
+      "Refactoring",
+      "A pivot",
+      "A sprint"
+    ],
+    "answer": 2,
+    "explanation": "In Lean Startup, the results either confirm the team's assumptions or reveal the need to pivot: change direction before investing further time and money.",
+    "ref": "Agile Practice Guide, 2.3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 30,
+        "label": "Agile Practice Guide, 2.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What does the word \"kanban\" mean?",
+    "options": [
+      "Continuous improvement",
+      "Small batch",
+      "Team of teams",
+      "Visual sign or card"
+    ],
+    "answer": 3,
+    "explanation": "The word kanban is literally translated as visual sign or card. Kanban boards with cards make the flow of work visible to everyone.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Which is a core property of the Kanban Method?",
+    "options": [
+      "Fixed-length sprints",
+      "Limiting work in progress",
+      "A product owner and scrum master",
+      "A sprint review every two weeks"
+    ],
+    "answer": 1,
+    "explanation": "The core properties are: visualize the workflow, limit WIP, manage flow, make process policies explicit, implement feedback loops and improve collaboratively.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "How does the Kanban Method differ from most other agile approaches?",
+    "options": [
+      "It does not prescribe timeboxed iterations",
+      "It does not visualize work",
+      "It forbids delivering to the customer",
+      "It requires a detailed plan up front"
+    ],
+    "answer": 0,
+    "explanation": "Unlike most agile approaches, the Kanban Method does not prescribe timeboxed iterations. Items are pulled through the process continuously.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "On a kanban board, the \"Test\" column has a WIP limit of 3 and already holds 3 items. A developer finishes coding another item. What should happen?",
+    "options": [
+      "Put the item in Test anyway",
+      "Raise the WIP limit to 4",
+      "The team helps finish the items in Test before pulling more work in",
+      "Start coding another new item"
+    ],
+    "answer": 2,
+    "explanation": "In the Kanban Method it is more important to complete work than to start new work. The team works together to respect WIP limits and get each item to done.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "In a pull system, when does a new item enter a stage of work?",
+    "options": [
+      "When a manager assigns it",
+      "At the start of each month",
+      "When the customer demands it",
+      "When the team has finished an item and has capacity"
+    ],
+    "answer": 3,
+    "explanation": "The Kanban Method uses a pull system: when the team completes an item, it can pull a new item into that spot.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A support team receives requests at unpredictable times and cannot commit to a fixed two-week plan. Which approach fits best?",
+    "options": [
+      "A predictive approach",
+      "The Kanban Method",
+      "Scrum with four-week sprints",
+      "Feature-driven development"
+    ],
+    "answer": 1,
+    "explanation": "The Kanban Method is useful when work arrives unpredictably and teams cannot make predictable commitments, even for short periods.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which method is a family of methodologies whose rigor is chosen by the number of people on the project and its criticality, identified by colors?",
+    "options": [
+      "Crystal",
+      "DSDM",
+      "XP",
+      "SAFe"
+    ],
+    "answer": 0,
+    "explanation": "Crystal is a family of methodologies designed to scale by project size and criticality. Different colors (Clear, Yellow, Orange, Red) mark the weight of the methodology.",
+    "ref": "Agile Practice Guide, A3.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 147,
+        "label": "Agile Practice Guide, A3.5"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Which framework is best known for fixing time, cost and quality at the outset and prioritizing scope to fit those constraints?",
+    "options": [
+      "Scrum",
+      "Kanban",
+      "Dynamic Systems Development Method (DSDM)",
+      "Crystal"
+    ],
+    "answer": 2,
+    "explanation": "DSDM is best known for constraint-driven delivery: cost, quality and time are set at the outset and scope is formally prioritized to meet them.",
+    "ref": "Agile Practice Guide, A3.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 149,
+        "label": "Agile Practice Guide, A3.7"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "In feature-driven development, what is a \"feature\"?",
+    "options": [
+      "A large phase of the project",
+      "A defect found in testing",
+      "A team of developers",
+      "A small capability with business value"
+    ],
+    "answer": 3,
+    "explanation": "In FDD, feature refers to a small, business-value capability. The project is organized around building a features list and then planning, designing and building by feature.",
+    "ref": "Agile Practice Guide, A3.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 147,
+        "label": "Agile Practice Guide, A3.6"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Four Scrum teams work on the same product. A representative from each meets two or three times a week to coordinate work and remove impediments between teams. What is this?",
+    "options": [
+      "A sprint retrospective",
+      "Scrum of Scrums",
+      "Pair programming",
+      "A daily scrum"
+    ],
+    "answer": 1,
+    "explanation": "Scrum of Scrums is used when two or more Scrum teams need to coordinate. A representative from each team reports completed work, next work and impediments.",
+    "ref": "Agile Practice Guide, A3.8.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 149,
+        "label": "Agile Practice Guide, A3.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Which statement describes Large Scale Scrum (LeSS)?",
+    "options": [
+      "Several teams share one product backlog, one product owner, one definition of done and one sprint",
+      "Each team has its own product owner and backlog",
+      "It replaces Scrum with Kanban",
+      "It is a family of methods identified by colors"
+    ],
+    "answer": 0,
+    "explanation": "LeSS keeps as much of single-team Scrum as possible: one product backlog, one definition of done, one shippable increment, one product owner and one sprint for all teams.",
+    "ref": "Agile Practice Guide, A3.8.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 151,
+        "label": "Agile Practice Guide, A3.8.3"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "How are Scrum and XP best described in relation to each other?",
+    "options": [
+      "They cannot be used together",
+      "They are two names for the same method",
+      "Scrum focuses on managing the work; XP focuses on engineering practices, and the two are often combined",
+      "XP is for hardware and Scrum is for software"
+    ],
+    "answer": 2,
+    "explanation": "Scrum provides roles, events and artifacts. XP provides technical practices. Many teams use Scrum as the framework and XP practices inside it.",
+    "ref": "PMI standard teaching; Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which of the following is waste in the lean sense?",
+    "options": [
+      "A feature the customer uses every day",
+      "A short feedback loop",
+      "A finished, delivered increment",
+      "Partially done work and features nobody asked for"
+    ],
+    "answer": 3,
+    "explanation": "Waste is anything that does not add value for the customer, such as partially done work, extra features, waiting, handoffs and defects.",
+    "ref": "PMI standard teaching; Agile Practice Guide, 2.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 28,
+        "label": "Agile Practice Guide, 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Why is the Kanban Method called the \"start where you are\" method?",
+    "options": [
+      "It requires new roles before starting",
+      "It begins with the current process, roles and titles and improves step by step",
+      "It can only be used at the start of a project",
+      "It starts with a full reorganization"
+    ],
+    "answer": 1,
+    "explanation": "Its defining principles are to start with the current state, pursue incremental change and respect current processes, roles and titles, so it is less disruptive to adopt.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  }
+]

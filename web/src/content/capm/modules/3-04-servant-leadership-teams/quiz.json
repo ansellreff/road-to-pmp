@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "What is servant leadership, which PMI's agile guide calls supportive leadership?",
+    "options": [
+      "Leading by giving detailed instructions",
+      "Leading through service to the team, meeting team members' needs so the team can perform at its best",
+      "Leading only when the team asks",
+      "Leading by doing the team's work personally"
+    ],
+    "answer": 1,
+    "explanation": "Supportive leadership is the practice of leading through service to the team, focusing on the needs and development of team members to enable the highest possible team performance.",
+    "ref": "Agile Practice Guide, 4.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "In which order does a servant leader approach project work?",
+    "options": [
+      "Process, people, purpose",
+      "People, process, purpose",
+      "Purpose, people, process",
+      "Process, purpose, people"
+    ],
+    "answer": 2,
+    "explanation": "First the purpose (the why), then the people (an environment where everyone can succeed), then the process (look for results, not a perfect process).",
+    "ref": "Agile Practice Guide, 4.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A team delivers working product every two weeks, but each release then waits six weeks in another department's approval queue. What should the servant leader do?",
+    "options": [
+      "Work with that department to streamline the process and remove the impediment",
+      "Tell the team to work faster",
+      "Lengthen the sprints to eight weeks",
+      "Stop demonstrating the product"
+    ],
+    "answer": 0,
+    "explanation": "Servant leaders remove organizational impediments. They look at processes that are lengthy and cause bottlenecks, and work with others to streamline them.",
+    "ref": "Agile Practice Guide, 4.3.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Which of the following is a characteristic of servant leadership?",
+    "options": [
+      "Controlling how each task is done",
+      "Making all decisions for the team",
+      "Tracking each person's hours closely",
+      "Coaching instead of controlling"
+    ],
+    "answer": 3,
+    "explanation": "Characteristics include listening, serving the team, helping people grow, coaching versus controlling, and promoting safety, respect and trust.",
+    "ref": "Agile Practice Guide, 4.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "When a project manager acts as a servant leader, how does the emphasis change?",
+    "options": [
+      "From serving the team to directing it",
+      "From managing coordination to facilitating collaboration",
+      "From coaching to controlling",
+      "From delivering value to writing reports"
+    ],
+    "answer": 1,
+    "explanation": "The emphasis shifts from managing coordination to facilitating collaboration. Facilitators help everyone do their best thinking and work.",
+    "ref": "Agile Practice Guide, 4.3.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "How does the project manager's position change in an agile environment?",
+    "options": [
+      "The project manager makes every technical decision",
+      "The project manager assigns all tasks daily",
+      "From being at the center of coordination to supporting the team",
+      "The project manager replaces the product owner"
+    ],
+    "answer": 2,
+    "explanation": "On an agile project, project managers shift from being at the center to supporting the team, coaching, fostering collaboration and aligning stakeholder needs.",
+    "ref": "Agile Practice Guide, 4.3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 65,
+        "label": "Agile Practice Guide, 4.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What is the typical size of the most effective agile teams?",
+    "options": [
+      "Three to nine members",
+      "One or two members",
+      "Fifteen to twenty members",
+      "At least thirty members"
+    ],
+    "answer": 0,
+    "explanation": "The most effective agile teams tend to range from three to nine members, which keeps communication manageable without formal structures.",
+    "ref": "Agile Practice Guide, 4.4.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 66,
+        "label": "Agile Practice Guide, 4.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "In a self-organizing team, who decides which team member does which piece of work?",
+    "options": [
+      "The project sponsor",
+      "The product owner",
+      "The functional manager",
+      "The team members themselves"
+    ],
+    "answer": 3,
+    "explanation": "Agile encourages self-managing teams, where team members decide who will perform the work within the next period's scope.",
+    "ref": "Agile Practice Guide, 4.4.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 66,
+        "label": "Agile Practice Guide, 4.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A tester can also write code for some parts of the product and helps wherever work is stuck. What kind of skills does this person have?",
+    "options": [
+      "I-shaped",
+      "T-shaped",
+      "Specialist only",
+      "Dispersed"
+    ],
+    "answer": 1,
+    "explanation": "A T-shaped person, or generalizing specialist, has a focused specialty plus supporting skills in other areas and good collaboration skills.",
+    "ref": "Agile Practice Guide, 4.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 73,
+        "label": "Agile Practice Guide, 4.6"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Why can focusing on one person's individual output be harmful to an agile team?",
+    "options": [
+      "Because individuals should not work hard",
+      "Because output cannot be measured",
+      "Because it can create a bottleneck; what matters is the throughput of the whole team",
+      "Because only the product owner's output matters"
+    ],
+    "answer": 2,
+    "explanation": "A single person's throughput is not relevant and may be harmful if it creates a bottleneck. The goal is flow efficiency: optimizing the delivery of finished work by the team.",
+    "ref": "Agile Practice Guide, 4.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 73,
+        "label": "Agile Practice Guide, 4.6"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "A team member is assigned 50% to project A and 50% to project B. According to PMI's agile guide, how much are they effectively dedicated to each?",
+    "options": [
+      "Somewhere between 20% and 40%",
+      "Exactly 50%",
+      "About 75%",
+      "100%, because they work harder"
+    ],
+    "answer": 0,
+    "explanation": "Because of the cost of task-switching, a person multitasking between two projects is only 20% to 40% dedicated to each, not 50%.",
+    "ref": "Agile Practice Guide, 4.7.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 74,
+        "label": "Agile Practice Guide, 4.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What is the main benefit of having team members 100% dedicated to one team?",
+    "options": [
+      "Lower salaries",
+      "Fewer meetings",
+      "More documentation",
+      "The fastest possible throughput, with no time lost to task-switching"
+    ],
+    "answer": 3,
+    "explanation": "When people are 100% dedicated to the team, the team has the fastest possible throughput. Multitasking slows the whole team and causes more mistakes.",
+    "ref": "Agile Practice Guide, 4.7.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 74,
+        "label": "Agile Practice Guide, 4.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What is psychological safety?",
+    "options": [
+      "A guarantee that nobody will be laid off",
+      "A shared belief that the team is a safe place to speak up, ask questions and admit mistakes without fear",
+      "A rule that disagreements are not allowed",
+      "Physical safety in the workplace"
+    ],
+    "answer": 1,
+    "explanation": "Psychological safety is a shared belief that the environment is safe for interpersonal risk-taking, without fear of embarrassment or retaliation.",
+    "ref": "Agile Practice Guide, 4.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 57,
+        "label": "Agile Practice Guide, 4.2"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "In the four stages of psychological safety, which stage lets people question assumptions and suggest changes without fear?",
+    "options": [
+      "Inclusion safety",
+      "Learner safety",
+      "Challenger safety",
+      "Contributor safety"
+    ],
+    "answer": 2,
+    "explanation": "The stages are inclusion, learner, contributor and challenger safety. Challenger safety, the last, enables innovation and continuous improvement.",
+    "ref": "Agile Practice Guide, 4.2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 57,
+        "label": "Agile Practice Guide, 4.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "How can a leader best strengthen psychological safety?",
+    "options": [
+      "By admitting their own mistakes, asking for help and responding to feedback without defensiveness",
+      "By criticizing mistakes in front of the team",
+      "By making all decisions alone",
+      "By cancelling retrospectives to save time"
+    ],
+    "answer": 0,
+    "explanation": "Leaders strengthen psychological safety by modeling vulnerability, admitting uncertainty, sharing mistakes and responding constructively to challenge.",
+    "ref": "Agile Practice Guide, 4.2.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 59,
+        "label": "Agile Practice Guide, 4.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Inside a two-week iteration, a team first writes all the requirements, then does all the design, then all the building. Late in the iteration it finds its assumptions were wrong. What is this pattern called?",
+    "options": [
+      "Swarming",
+      "Mobbing",
+      "A spike",
+      "A mini-waterfall"
+    ],
+    "answer": 3,
+    "explanation": "Mini-waterfalls occur when the team does all of one kind of work before the next. Collaborating on a small number of features end to end lets the team learn as it goes.",
+    "ref": "Agile Practice Guide, 4.4.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 66,
+        "label": "Agile Practice Guide, 4.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Several team members stop their own tasks to work together on one blocked item until it is finished. What is this called?",
+    "options": [
+      "Refactoring",
+      "Swarming",
+      "Task-switching",
+      "A mini-waterfall"
+    ],
+    "answer": 1,
+    "explanation": "Swarming is several team members focusing together on one item to get it finished. It limits work in progress and speeds up flow.",
+    "ref": "Agile Practice Guide, 4.4.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 66,
+        "label": "Agile Practice Guide, 4.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which of the three common agile roles ranks the work by business value?",
+    "options": [
+      "Team facilitator",
+      "Cross-functional team member",
+      "Product owner",
+      "Agile coach"
+    ],
+    "answer": 2,
+    "explanation": "The product owner is responsible for guiding the direction of the product and ranks the work based on its business value.",
+    "ref": "Agile Practice Guide, 4.4.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 67,
+        "label": "Agile Practice Guide, 4.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A developer tells the team facilitator that a missing software license has blocked her for two days. What should the facilitator do?",
+    "options": [
+      "Work to get the impediment removed so she can continue",
+      "Tell her to solve it herself",
+      "Reassign her tasks to someone else",
+      "Report her to her line manager"
+    ],
+    "answer": 0,
+    "explanation": "Removing impediments and paving the way for the team's work are core responsibilities of a servant leader.",
+    "ref": "Agile Practice Guide, 4.3.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "What is the difference between a distributed team and a dispersed team?",
+    "options": [
+      "They are the same",
+      "A distributed team works in one room; a dispersed team in two rooms",
+      "A dispersed team has no product owner",
+      "Distributed: cross-functional teams in different locations. Dispersed: each team member in a different location."
+    ],
+    "answer": 3,
+    "explanation": "Distributed teams employ cross-functional teams in different locations. Dispersed teams may have each member working in a different location.",
+    "ref": "Agile Practice Guide, 4.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 73,
+        "label": "Agile Practice Guide, 4.7"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "In a shared team room, a developer overhears two colleagues discussing a problem and offers the solution. What is this kind of information flow called?",
+    "options": [
+      "Push communication",
+      "Osmotic communication",
+      "Formal reporting",
+      "Pull communication"
+    ],
+    "answer": 1,
+    "explanation": "Osmotic communication is picking up useful information by overhearing teammates who work in the same space.",
+    "ref": "PMI standard teaching; Agile Practice Guide, 4.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 73,
+        "label": "Agile Practice Guide, 4.7"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which condition is a threat to psychological safety?",
+    "options": [
+      "A working agreement written by the team",
+      "Regular blameless retrospectives",
+      "Public criticism and blame when someone raises a problem",
+      "A leader who asks for help"
+    ],
+    "answer": 2,
+    "explanation": "Behaviors that shame or punish people for speaking up, including public criticism and assigning blame, discourage open communication.",
+    "ref": "Agile Practice Guide, 4.2.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 58,
+        "label": "Agile Practice Guide, 4.2.4"
+      }
+    ]
+  }
+]
