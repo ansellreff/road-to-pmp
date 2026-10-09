@@ -30,6 +30,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Session 15 done: Dashboard page (study streak, per-domain progress and quiz average, modules to revisit) and Practice missed questions page. Per-question quiz results and study days are now saved; existing progress is kept. New Session 25 added at your request: a full catch-up of every module against every book, with a list of extra PDFs worth adding. | You: take a quiz, get something wrong on purpose, then open Dashboard and try the practice. Next: Session 16, modules 3.1 and 3.2 (Agile Practice Guide) |
 | 2026-10-10 | Your feedback recorded: the Dashboard and Practice pages work but look raw; a proper redesign is in the UI/UX backlog for Session 27. Session 16 done: Domain 3 started with modules 3.1 (agile mindset, the 4 values and 12 principles, iterative vs incremental) and 3.2 (Scrum: roles, events, artifacts, definition of done). The Agile Practice Guide, Second Edition, is the eleventh source book. | You: study 3.1 and 3.2. Next: Session 17, modules 3.3 (XP, Lean, Kanban) and 3.4 (servant leadership and agile teams) |
 | 2026-10-10 | Session 17 done: modules 3.3 (XP, lean, Lean Startup, the Kanban Method, Crystal, FDD, DSDM and the scaling frameworks) and 3.4 (servant leadership, agile team attributes, T-shaped skills, multitasking, team spaces, psychological safety, levels of conflict). **Domain 3 is half done: 4 of 8.** | You: study 3.3 and 3.4. Next: Session 18, modules 3.5 (agile planning, user stories, estimation) and 3.6 (prioritization and delivering value) |
+| 2026-10-10 | At your request, an **Issues log** was added at the end of this file: every problem met so far (40 entries) with how it was handled and where to look. It is updated at the end of every session from now on. | You: skim it once. Next: Session 18 |
 
 ## How your progress is saved
 
@@ -262,3 +263,77 @@ Overall: **27 of 38 modules done** (547 quiz questions, 780 flashcards).
 | ⬜ | PMP |
 | ⬜ | PMI-ACP |
 | ⬜ | PMI-SP |
+
+## Issues log
+
+Every problem met in this project and how it was handled, newest group last. Read this before changing something, to see why it is the way it is. New entries are added at the end of each session.
+
+### Setup and tools
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 1 | Installing Node and Git with winget needed administrator approval, and you did not want anything installed in Windows. | Portable Node and Git in `.tools/`, Python packages in `.venv/`. `env.ps1` puts them on the path for one terminal only; `start.bat` starts the app. | `env.ps1`, `start.bat` |
+| 2 | The Claude plugin installer could not find Git, because Git existed only inside the project. | Added `.tools\git\cmd` to your user PATH (the one deliberate change outside the project) and restarted VS Code. | Windows user PATH |
+| 3 | PowerShell 5.1 strips quotes from inline Python and has no `&&`. | Scripts are written to files and run from there; commands are chained with `;`. | `tools/` |
+| 4 | Two styles (`.title`, `.lesson`) overrode Tailwind utility classes. | Moved them into `@layer components`. | `web/src/index.css` |
+
+### Content rules
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 5 | Module 1.1 was first written from the PMBOK Guide 7th edition; you wanted the 8th. | Rewritten from the 8th edition and the module list restructured. The 8th edition is the primary source for everything. | `web/src/content/capm/` |
+| 6 | The 8th edition renames many processes, and PMI's own page was not checked to confirm which edition's terms the CAPM exam uses. | Lessons teach the 8th edition names and show the older name in a column ("Older name you may see"). Still unconfirmed. | Process tables in Domain 2 lessons |
+| 7 | Module 1.11 (older editions' terms) is not exam content. | Kept, but flagged `supplementary`, marked with a red bold `*`, and excluded from progress. An edition-trivia question and card were removed from module 1.8. | `course.json`, `NotOnExam.tsx` |
+| 8 | Many commonly tested points are not in the 8th edition text (for example the PERT formula, gold plating, rule of seven, contract sub-types, Maslow, levels of conflict). | Included, taken from another PMI book in your folder where one covers it, otherwise from standard PMI teaching. Each lesson's footer lists exactly which points are not from its cited books. | The italic footer of each `lesson.md` |
+| 9 | Worked examples (critical path network, road project for earned value, risk and decision-tree numbers, RACI and engagement matrices) are my own. | Checked by hand, not by a script. Each lesson footer says so. | Lesson footers |
+| 10 | Quiz answers in module 1.1 were mostly B or C. | The content checker now fails if one letter holds more than 45% of a quiz's answers. | `tools/check_content.py` |
+
+### Sources and PDF links
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 11 | Lessons, quizzes and flashcards showed no source. | Every quiz question has a `ref`; every lesson section has an `@source` line. `tools/link_sources.py` turns these into book and page links. Flashcards use the module's source list, not a page each. | `tools/link_sources.py`, `Sources.tsx` |
+| 12 | Sources were listed at the end of a lesson, which was hard to use. | Each lesson section now shows its source directly under its heading. The checker fails if a section has none. | `Lesson.tsx`, `check_content.py` |
+| 13 | Edge asked for a password when opening the PMBOK Guides. PMI's PDFs are protected in a way Edge's viewer cannot open. | First added byte-range support to the local server (correct, but not the cause). Then, with your approval, made unlocked local copies in `.cache/pdf/`. They stay on this PC, are excluded from Git, and still carry your name and member ID. | `tools/unlock_pdfs.py`, `web/vite.config.ts` |
+| 14 | "Project management plan" linked to page 223 instead of 231, because a bulleted mention came before the real entry. | The linker looks for an entry at the start of a line first, and only then for a bulleted one. All links of that kind were rechecked. | `link_sources.py` |
+| 15 | Section headings were not found because the books put an en space, not a normal space, after the section number. This first hit the PMBOK Guide, then the Agile Practice Guide, where all 17 links opened page 18. | The linker matches any whitespace. | `link_sources.py` |
+| 16 | The Agile Practice Guide failure in item 15 was silent: every check passed with every link wrong. | For the practice standards and guides, a section that cannot be found is now an error, not a quiet link to the first page. PMBOK Guide references are looked up differently and still fall back to the parent section. | `link_sources.py`, `TOC_BOOKS` |
+| 17 | Links to newly added books showed "This page does not exist". The local server read the book list only when it started. | The server reads `books.json` on every request, so a new book works immediately. A missing book now gives a plain message naming it. | `web/vite.config.ts` |
+| 18 | Source links cannot work on the future public website, because the PDFs are licensed to you and must never be uploaded. | Links are shown only when the app runs locally. Online, the same place shows the book and page as text. | `Sources.tsx` |
+
+### Books in your folder
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 19 | Modules 2.4 and 2.5 were written without the Practice Standard for Scheduling, although it was in your folder and the plan said to use it. | Added it as a source. Module 2.5 gained critical path activity vs critical activity, shared total float, date constraints and the critical chain buffers. Module 2.4 gained a real source for the PERT formula. Standing rule: check the folder for a matching title before writing each module. | Modules 2.4, 2.5 |
+| 20 | The WBS and Estimating practice standards and the Risk practice guide were still unused. | Catch-up session: 2.3 gained the WBS rules, 2.4 relative estimating and biases, 2.6 a source for the rough order of magnitude range, 2.10 a predictive vs adaptive risk comparison. | Modules 2.3, 2.4, 2.6, 2.10 |
+| 21 | The catch-up contradicted a figure already taught: the "definitive estimate" range of −5% to +10% is from earlier PMBOK editions; the Estimating standard gives −10% to +15% as its example. | Kept −5% to +10% because exam material uses it, and added a note in the lesson explaining both. | Module 2.6, "Estimate Costs" |
+| 22 | No book in the folder covers quality or procurement specifically. | Module 2.11 rests on the PMBOK Guide (Appendix X4 and section 5) plus standard teaching. A candidate for an extra PDF in Session 25. | Module 2.11 |
+| 23 | Your Agile Practice Guide is the Second Edition, with different section numbers and wording from the first edition most courses use. It says "supportive leadership" where exam material says "servant leadership", and covers Scrum only briefly. | Written from your edition, using the exam's familiar terms and saying where they are the same thing. Scrum details come from the Scrum Guide and standard teaching, listed in the footer. | Modules 3.1 to 3.4 |
+| 24 | *Choose Your WoW!* (Disciplined Agile) is in the folder but was not used for module 3.3. | It matches only one row of the scaling table. Left for the full catch-up in Session 25. | Module 3.3 |
+
+### Individual lessons
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 25 | Critical path questions use two ways of counting days (start on day 1 or day 0). | Used day 1, as the PMBOK Guide's example does, with a note that both give the same duration, path and float. | Module 2.5 |
+| 26 | Module 2.5 first treated "critical activity" and "critical path activity" as the same. | Corrected from the Scheduling standard, which separates them. | Module 2.5 |
+| 27 | The 8th edition shows two budget arrangements (contingency reserve inside or outside the cost baseline). | Taught the standard one (inside), which matches the Guide's own definition, with an edition note. | Module 2.6 |
+| 28 | The 8th edition has no separate quality or procurement domain, and no Control Quality process. | Module 2.3 explains that deliverable checking sits in Monitor and Control Scope. Module 2.11 opens with a table of where each piece now sits. | Modules 2.3, 2.11 |
+| 29 | The 8th edition merges qualitative and quantitative risk analysis, and defining, sequencing and estimating activities, into single processes. | Lessons teach the parts separately, since the exam still asks about them, and show the older process names. | Modules 2.4, 2.10 |
+| 30 | A lesson section was tagged with "PMI standard teaching" as its source, which has no page to link to. | Replaced with the nearest real book entry; the footer carries the "standard teaching" note. | Module 2.6, "Types of cost" |
+| 31 | Twice a section cited a page that did not support it (adaptive risk in 2.10, levels of conflict in 3.4). | 2.10 was rewritten from the Risk practice guide. 3.4 now cites only the page on the leader's role in conflict and says in its text that the five-level model is from outside the guide. | Modules 2.10, 3.4 |
+| 32 | The 8th edition lists tools alphabetically, which is hard to study. | Module 2.12 groups them into eight families by purpose. The grouping is my own arrangement, as older editions did. | Module 2.12 |
+| 33 | The four Agile Manifesto values cannot sensibly be reworded. | The four values are quoted; the twelve principles are paraphrased. | Module 3.1 |
+
+### App features
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 34 | You asked whether progress survives closing the browser and wanted to be able to undo marks. | Progress is saved in the browser's local storage. Every mark can be removed in each module's progress panel. Backup download and restore on the home page. | `web/src/lib/progress.ts`, `ModuleProgress.tsx` |
+| 35 | Quizzes taken before the dashboard existed saved only a score, not each answer. | The practice list starts empty and fills from quizzes taken from 2026-10-10 on. Old scores are kept. | `progress.ts` (`answers`) |
+| 36 | Clearing a module's quiz score would have left its missed questions in the practice list. | Clearing the score also clears that module's per-question history. | `clearQuiz` in `progress.ts` |
+| 37 | Adding per-question results and study days must not break existing saves or old backups. | Added as optional fields with empty defaults, without changing the save version. Tested with an old save and a version 1 backup (21 checks). | `migrate` in `progress.ts` |
+| 38 | The Dashboard and Practice pages work but look raw and unpolished (your feedback after trying them). | Recorded in the UI/UX backlog for the polish session. Not changed yet. | UI/UX backlog above |
+| 39 | Phone layout cannot be checked with the screenshot tool, which does not render narrower than about 500 pixels. | Unverified. To be tested on a real phone or with a proper browser tool in the polish session. | UI/UX backlog |
+| 40 | Screenshots are taken with a headless browser that cannot click or show PDFs. | Pages are viewed with sample data loaded by a temporary page that is deleted afterwards. Clicking through and PDF display are always left for you to confirm. | Session reports |
