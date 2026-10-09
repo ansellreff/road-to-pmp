@@ -11,6 +11,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-09 | Switched reference to PMBOK 8th edition: module 1.1 rewritten (15 quiz questions, 22 flashcards), Domains 1 and 2 re-planned (38 modules total). Added "Your progress in this module" panel to undo or reset any mark. Local Git repository created with first commit. | You: create GitHub repository and Vercel project (steps in chat). Then Session 3: module 1.2 |
 | 2026-10-10 | Visual redesign with the frontend-design plugin: "project schedule" look, exam blueprint strip, milestone diamonds, index-card flashcards, local fonts. Going online is on hold at your request. | You: review the new look. Then either go online (GitHub + Vercel) or Session 3: module 1.2 |
 | 2026-10-10 | New plan approved (2 modules per session, a feature after each domain, go online at the end). Session 3 done: modules 1.2 and 1.3 written, content checker added (it caught and fixed unbalanced answer positions in the 1.1 quiz). | You: study and spot-check 1.2 and 1.3. Next: Session 4, modules 1.4 and 1.5 (the 6 principles) |
+| 2026-10-10 | Session 4 done: modules 1.4 and 1.5 (the six principles) written. PMI Code of Ethics PDF added to the materials folder by you. | You: study 1.4 and 1.5. Next: Session 5, modules 1.6 and 1.7 (development approaches, focus areas) |
 
 ## How your progress is saved
 
@@ -72,10 +73,10 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | Status | Session | What | 
 |---|---|---|
 | ✅ | 3 | Modules 1.2, 1.3 and the content checker |
-| ⬜ | 4 | Modules 1.4, 1.5: the 6 principles |
+| ✅ | 4 | Modules 1.4, 1.5: the 6 principles |
 | ⬜ | 5 | Modules 1.6, 1.7: development approaches, the 5 focus areas |
 | ⬜ | 6 | Modules 1.8, 1.9: performance domains and tailoring; constraints, risks, issues |
-| ⬜ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. Needs PMI's Code of Ethics PDF (free on pmi.org) in the materials folder |
+| ⬜ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. (Code of Ethics PDF is in the materials folder) |
 | ⬜ | 8 | Feature: spaced repetition for flashcards |
 | ⬜ | 9 to 14 | Domain 2: 12 modules |
 | ⬜ | 15 | Feature: dashboard and "practice my weakest topics" quiz |
@@ -135,11 +136,11 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **3 of 38 modules done** (47 quiz questions, 66 flashcards).
+Overall: **5 of 38 modules done** (79 quiz questions, 110 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
-| 🟡 | 1. PM Fundamentals and Core Concepts | 3 / 11 |
+| 🟡 | 1. PM Fundamentals and Core Concepts | 5 / 11 |
 | ⬜ | 2. Predictive, Plan-Based Methodologies | 0 / 12 |
 | ⬜ | 3. Agile Frameworks / Methodologies | 0 / 8 |
 | ⬜ | 4. Business Analysis Frameworks | 0 / 7 |
@@ -151,8 +152,8 @@ Overall: **3 of 38 modules done** (47 quiz questions, 66 flashcards).
 | ✅ | 1.1 Projects, Programs, Portfolios and Operations | 2026-10-09 |
 | ✅ | 1.2 Governance and the Project Environment (EEFs, OPAs, Structures) | 2026-10-10 |
 | ✅ | 1.3 Project Functions, Roles and Product Management | 2026-10-10 |
-| ⬜ | 1.4 The 6 Principles, Part 1: Mindset, Holistic View, Value, Quality | |
-| ⬜ | 1.5 The 6 Principles, Part 2: Leadership, Sustainability, Empowered Culture | |
+| ✅ | 1.4 The 6 Principles, Part 1: Mindset, Holistic View, Value, Quality | 2026-10-10 |
+| ✅ | 1.5 The 6 Principles, Part 2: Leadership, Sustainability, Empowered Culture | 2026-10-10 |
 | ⬜ | 1.6 Phases and Development Approaches: Predictive, Adaptive, Hybrid | |
 | ⬜ | 1.7 The 5 Focus Areas: Initiating to Closing | |
 | ⬜ | 1.8 The 7 Performance Domains and Tailoring | |

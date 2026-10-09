@@ -1,0 +1,23 @@
+[
+  { "id": "c1", "front": "Be an Accountable Leader", "back": "Guide the team with integrity, make responsible decisions, and take ownership of the project's objectives, actions and decisions." },
+  { "id": "c2", "front": "Authority vs leadership", "back": "Authority: a position of control granted by the organization. Leadership: inspiring and motivating others by example. Anyone can lead." },
+  { "id": "c3", "front": "Five characteristics of an accountable leader", "back": "Integrity, honesty and fairness; self-awareness; respectfulness, humility and availability; flexibility and adaptability; shared leadership." },
+  { "id": "c4", "front": "Shared leadership", "back": "Leadership is not exclusive to one role. A team member or stakeholder may lead at different moments. Common on high-performing projects." },
+  { "id": "c5", "front": "Servant leadership", "back": "Leading by working for the team: being open to feedback, supporting their needs and removing barriers." },
+  { "id": "c6", "front": "Self-awareness (in leadership)", "back": "Understanding your own motives, values, feelings and strengths, and how they connect to your actions." },
+  { "id": "c7", "front": "Psychological safety", "back": "An environment where people can speak up, ask questions and admit mistakes without fear. Leaders are expected to foster it." },
+  { "id": "c8", "front": "Why do projects need more leadership than operations?", "back": "They join groups that do not normally work together, carry higher stakes, and attract many influencers, which creates confusion and conflict." },
+  { "id": "c9", "front": "Sustainability (definition)", "back": "Meeting present needs without compromising the ability of future generations to meet their own needs." },
+  { "id": "c10", "front": "Sustainability pyramid, most to least desirable", "back": "Avoid, minimize, restore, compensate/offset." },
+  { "id": "c11", "front": "Triple bottom line", "back": "Social equity, environmental stewardship, economic prosperity: people, planet, profit." },
+  { "id": "c12", "front": "Who is accountable for sustainability in a project?", "back": "Project managers, teams and sponsors, jointly." },
+  { "id": "c13", "front": "Externality", "back": "A side effect the project creates for others, such as pollution or disruption. The sustainability principle asks for a strategy to address it." },
+  { "id": "c14", "front": "Where can sustainability goals be formally recorded?", "back": "As KPIs in the project charter, business case, scope statement or contracts, confirmed by the sponsor." },
+  { "id": "c15", "front": "Three challenges of sustainability in projects", "back": "Broader time horizon and more stakeholders (cost, complexity); sustainability risks when factors are unbalanced; no universal success criteria." },
+  { "id": "c16", "front": "Build an Empowered Culture", "back": "Foster proactive collaboration and unity around shared objectives among stakeholders and teams with diverse skills, knowledge and experience." },
+  { "id": "c17", "front": "What does an empowered culture require?", "back": "Mutual trust, and full clarity on roles, responsibilities, team agreements and guiding processes." },
+  { "id": "c18", "front": "Team agreements", "back": "Behavioral parameters and working norms set by the team itself at the beginning of the project, upheld by individual and team commitment." },
+  { "id": "c19", "front": "Five areas of an empowered culture", "back": "Diversity, process definition, interpersonal skills, knowledge of organizational structures, team agreements." },
+  { "id": "c20", "front": "Why is an empowered culture harder for virtual teams?", "back": "Different work styles and time zones, and no in-person interaction, make collaboration and relationship building harder." },
+  { "id": "c21", "front": "PMI's preferred first response to conflict", "back": "Collaborate to find the root cause and a workable solution, before enforcing contracts or escalating." }
+]
