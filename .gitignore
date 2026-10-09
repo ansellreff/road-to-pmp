@@ -1,0 +1,13 @@
+# Copyrighted source material: stays on this PC only
+PMI Learning Material/
+Resources from Instructor/
+
+# Local tools, environments and caches
+.tools/
+.venv/
+.cache/
+
+# App build output and dependencies
+node_modules/
+dist/
+*.local

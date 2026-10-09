@@ -1,0 +1,74 @@
+{
+  "id": "capm",
+  "title": "CAPM",
+  "subtitle": "Certified Associate in Project Management",
+  "exam": { "questions": 150, "minutes": 180 },
+  "domains": [
+    {
+      "id": "d1",
+      "title": "Project Management Fundamentals and Core Concepts",
+      "weight": 36,
+      "modules": [
+        { "id": "1-01-project-basics", "title": "Projects, Programs, Portfolios and Operations", "ready": true },
+        { "id": "1-02-governance-environment", "title": "Governance and the Project Environment (EEFs, OPAs, Structures)", "ready": false },
+        { "id": "1-03-functions-roles", "title": "Project Functions, Roles and Product Management", "ready": false },
+        { "id": "1-04-principles-part-1", "title": "The 6 Principles, Part 1: Mindset, Holistic View, Value, Quality", "ready": false },
+        { "id": "1-05-principles-part-2", "title": "The 6 Principles, Part 2: Leadership, Sustainability, Empowered Culture", "ready": false },
+        { "id": "1-06-phases-development-approaches", "title": "Phases and Development Approaches: Predictive, Adaptive, Hybrid", "ready": false },
+        { "id": "1-07-focus-areas", "title": "The 5 Focus Areas: Initiating to Closing", "ready": false },
+        { "id": "1-08-performance-domains-tailoring", "title": "The 7 Performance Domains and Tailoring", "ready": false },
+        { "id": "1-09-constraints-risks-issues", "title": "Constraints, Risks, Issues and Assumptions", "ready": false },
+        { "id": "1-10-leadership-ethics", "title": "Leadership Skills, Emotional Intelligence and Ethics", "ready": false },
+        { "id": "1-11-edition-bridge", "title": "7th Edition Terms You May Still See (12 Principles, 8 Domains)", "ready": false }
+      ]
+    },
+    {
+      "id": "d2",
+      "title": "Predictive, Plan-Based Methodologies",
+      "weight": 17,
+      "modules": [
+        { "id": "2-01-processes-inputs-outputs", "title": "How Predictive Projects Flow: Processes, Inputs and Outputs", "ready": false },
+        { "id": "2-02-governance-domain", "title": "Governance Domain: Charter, Plan, Change Control, Closing", "ready": false },
+        { "id": "2-03-scope-domain", "title": "Scope Domain: Requirements and the WBS", "ready": false },
+        { "id": "2-04-schedule-domain", "title": "Schedule Domain: Activities and Estimating", "ready": false },
+        { "id": "2-05-critical-path", "title": "Critical Path Method: Forward Pass, Backward Pass, Float", "ready": false },
+        { "id": "2-06-finance-domain", "title": "Finance Domain: Cost Estimating and Budget", "ready": false },
+        { "id": "2-07-earned-value", "title": "Earned Value Management", "ready": false },
+        { "id": "2-08-stakeholders-domain", "title": "Stakeholders Domain: Engagement and Communication", "ready": false },
+        { "id": "2-09-resources-domain", "title": "Resources Domain: Team and Physical Resources", "ready": false },
+        { "id": "2-10-risk-domain", "title": "Risk Domain", "ready": false },
+        { "id": "2-11-quality-procurement", "title": "Quality and Procurement", "ready": false },
+        { "id": "2-12-tools-techniques", "title": "Common Tools and Techniques", "ready": false }
+      ]
+    },
+    {
+      "id": "d3",
+      "title": "Agile Frameworks / Methodologies",
+      "weight": 20,
+      "modules": [
+        { "id": "3-01-agile-mindset", "title": "Agile Mindset, Values and Principles", "ready": false },
+        { "id": "3-02-scrum", "title": "Scrum", "ready": false },
+        { "id": "3-03-xp-lean-kanban", "title": "XP, Lean, Kanban and Other Methods", "ready": false },
+        { "id": "3-04-servant-leadership-teams", "title": "Servant Leadership and Agile Teams", "ready": false },
+        { "id": "3-05-planning-stories-estimation", "title": "Agile Planning, User Stories and Estimation", "ready": false },
+        { "id": "3-06-prioritization-value", "title": "Prioritization and Delivering Value", "ready": false },
+        { "id": "3-07-metrics-retrospectives", "title": "Metrics, Charts and Retrospectives", "ready": false },
+        { "id": "3-08-hybrid", "title": "Hybrid Approaches and Choosing a Life Cycle", "ready": false }
+      ]
+    },
+    {
+      "id": "d4",
+      "title": "Business Analysis Frameworks",
+      "weight": 27,
+      "modules": [
+        { "id": "4-01-ba-foundations", "title": "Business Analysis Foundations and Roles", "ready": false },
+        { "id": "4-02-needs-assessment", "title": "Needs Assessment", "ready": false },
+        { "id": "4-03-ba-stakeholder-engagement", "title": "Stakeholder Engagement in Business Analysis", "ready": false },
+        { "id": "4-04-elicitation", "title": "Elicitation", "ready": false },
+        { "id": "4-05-analysis", "title": "Analysis: Models, Requirements and Acceptance Criteria", "ready": false },
+        { "id": "4-06-traceability-monitoring", "title": "Traceability and Monitoring", "ready": false },
+        { "id": "4-07-solution-evaluation", "title": "Solution Evaluation", "ready": false }
+      ]
+    }
+  ]
+}
