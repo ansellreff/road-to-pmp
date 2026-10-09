@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import ExamBlueprint from '../components/ExamBlueprint'
 import Milestone from '../components/Milestone'
 import { allModules, courses, type Course } from '../lib/content'
-import { exportProgress, importProgress, resetProgress, useProgress, type Progress } from '../lib/progress'
+import { dueCount, exportProgress, importProgress, resetProgress, useProgress, type Progress } from '../lib/progress'
 import { courseCompletion, moduleNumber, nextModule, percent } from '../lib/stats'
 import { btnDanger, btnPrimary, btnQuiet, link } from '../lib/ui'
 
@@ -41,12 +41,34 @@ export default function Home() {
         </ol>
       </section>
 
+      <DueCards due={dueCount(progress)} />
+
       {courses.map((course) => (
         <CourseSummary key={course.id} course={course} progress={progress} />
       ))}
 
       <Backup />
     </div>
+  )
+}
+
+function DueCards({ due }: { due: number }) {
+  return (
+    <section className="flex flex-wrap items-center justify-between gap-4 border-t-2 border-ink pt-6">
+      <div>
+        <h2 className="title text-2xl">
+          {due ? `${due} ${due === 1 ? 'flashcard is' : 'flashcards are'} due for review` : 'No flashcards due today'}
+        </h2>
+        <p className="mt-1 max-w-xl text-sm text-muted">
+          Cards you know come back after 1, 3, 7, 14 and then 30 days. Cards you miss come back the same day.
+        </p>
+      </div>
+      {due > 0 && (
+        <Link to="/review" className={btnPrimary}>
+          Review due cards
+        </Link>
+      )}
+    </section>
   )
 }
 

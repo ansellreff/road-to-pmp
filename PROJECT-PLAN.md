@@ -15,13 +15,24 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Session 5 done: modules 1.6 (phases and development approaches) and 1.7 (the five focus areas) written. | You: study 1.6 and 1.7. Next: Session 6, modules 1.8 and 1.9 (performance domains and tailoring; constraints, risks, issues) |
 | 2026-10-10 | Session 6 done: modules 1.8 (performance domains and tailoring) and 1.9 (constraints, risks, issues and assumptions) written. | You: study 1.8 and 1.9. Next: Session 7, modules 1.10 and 1.11 (leadership and ethics; 7th edition terms), which completes Domain 1 |
 | 2026-10-10 | Session 7 done: modules 1.10 (leadership, emotional intelligence, ethics) and 1.11 (7th edition and Process Groups terms) written. **Domain 1 is complete: 11 of 11 modules.** Process Groups: A Practice Guide added by you and extracted. | You: study 1.10 and 1.11. Next: Session 8, the spaced repetition feature |
+| 2026-10-10 | Source links added: every quiz question and every module now lists its book sections, with links that open the PDF from your materials folder at the right page (works on this PC only). Module 1.11 marked with a red * as additional information and removed from progress totals. Session 8 done: spaced repetition for flashcards, with a "Review due cards" session on the home page. | You: click a source link to confirm the PDF opens at the right page; try rating some flashcards. Next: Session 9, Domain 2 modules 2.1 and 2.2 |
 
 ## How your progress is saved
 
 - Saved automatically in the browser the moment you click. Closing the browser or shutting down the PC does **not** reset it.
 - It is tied to one browser on one device and one address: progress on `localhost` and on the Vercel site are separate, and so are PC and phone. Use **Download backup / Restore from backup** on the home page to move it.
 - It is lost only if you clear the browser's site data, or use a private/incognito window.
+- Flashcards use spaced repetition. A card you know comes back after 1 day, then 3, 7, 14 and 30 days. A card you miss comes back the same day. The home page shows how many are due and starts a review session across all modules.
 - Every mark can be changed: in each module, the "Your progress in this module" panel lets you remove the lesson-completed mark, clear the quiz score, and reset the flashcards. A single flashcard can be re-rated any time.
+
+## Sources and PDF links
+
+- Every quiz explanation shows its source (book, section) with a link. Every module has a "Sources for this module" list under the lesson, quiz and flashcards.
+- A link opens the PDF from `PMI Learning Material/` in a new browser tab at the page where that section starts. "PDF page" is the page number your PDF viewer shows, not the number printed on the page.
+- The links work only when the platform runs on this PC (`start.bat`). The PDFs are licensed to you personally and are never uploaded, so on the future website the same place shows the book and page as plain text.
+- Flashcards do not have a page each; they use the module's source list.
+- If a PDF is renamed or a new book is added, update `web/src/content/books.json`.
+- A red **\*** marks a module as additional information that is not part of the exam (currently only 1.11). It does not count toward progress.
 
 ## How to start the app on this PC
 
@@ -80,7 +91,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 5 | Modules 1.6, 1.7: development approaches, the 5 focus areas |
 | ✅ | 6 | Modules 1.8, 1.9: performance domains and tailoring; constraints, risks, issues |
 | ✅ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. (Code of Ethics PDF is in the materials folder) |
-| ⬜ | 8 | Feature: spaced repetition for flashcards |
+| ✅ | 8 | Feature: spaced repetition for flashcards (plus source links to the PDFs) |
 | ⬜ | 9 to 14 | Domain 2: 12 modules |
 | ⬜ | 15 | Feature: dashboard and "practice my weakest topics" quiz |
 | ⬜ | 16 to 19 | Domain 3: 8 modules |
@@ -90,7 +101,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ⬜ | 26 | UI/UX polish (see backlog below) |
 | ⬜ | 27 | Go online: GitHub and Vercel, test on phone |
 
-Every content session ends with the content checker (`tools/check_content.py`) and a build passing.
+Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 
 ### UI/UX backlog (for Session 26)
 
@@ -163,7 +174,7 @@ Overall: **11 of 38 modules done** (184 quiz questions, 260 flashcards).
 | ✅ | 1.8 The 7 Performance Domains and Tailoring | 2026-10-10 |
 | ✅ | 1.9 Constraints, Risks, Issues and Assumptions | 2026-10-10 |
 | ✅ | 1.10 Leadership Skills, Emotional Intelligence and Ethics | 2026-10-10 |
-| ✅ | 1.11 7th Edition Terms You May Still See (12 Principles, 8 Domains) | 2026-10-10 |
+| ✅ | 1.11 Older Terms You May Still See (12 Principles, 49 Processes) **\*** additional information, not exam content | 2026-10-10 |
 
 **Domain 2: Predictive, Plan-Based Methodologies**
 
@@ -216,7 +227,8 @@ Overall: **11 of 38 modules done** (184 quiz questions, 260 flashcards).
 | ✅ | Flashcards with "I know this / still learning" | 2026-10-09 |
 | ✅ | Per-module progress panel: undo lesson mark, clear quiz score, reset flashcards | 2026-10-09 |
 | ✅ | Visual redesign: exam blueprint strip, milestone path, index-card flashcards | 2026-10-10 |
-| ⬜ | Spaced repetition for flashcards | |
+| ✅ | Spaced repetition for flashcards, with a review session on the home page | 2026-10-10 |
+| ✅ | Source links that open the book PDF at the right page (local only) | 2026-10-10 |
 | ⬜ | Dashboard: progress per domain, streak, weakest-topics quiz | |
 | ⬜ | Study plan with exam date countdown | |
 | ⬜ | Timed exam simulator (150 questions, 3 hours) | |

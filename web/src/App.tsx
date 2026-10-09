@@ -4,6 +4,7 @@ import NotFound from './components/NotFound'
 import Home from './pages/Home'
 import CoursePage from './pages/CoursePage'
 import ModulePage from './pages/ModulePage'
+import ReviewPage from './pages/ReviewPage'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/review" element={<ReviewPage />} />
           <Route path="/:courseId" element={<CoursePage />} />
           <Route path="/:courseId/:moduleId" element={<ModulePage />} />
           <Route path="/:courseId/:moduleId/:tab" element={<ModulePage />} />

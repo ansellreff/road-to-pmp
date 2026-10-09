@@ -1,4 +1,4 @@
-import { clearCards, clearQuiz, moduleKey, setLessonDone, useProgress } from '../lib/progress'
+import { clearCards, clearQuiz, knownCount, moduleKey, setLessonDone, useProgress } from '../lib/progress'
 import { btnQuiet } from '../lib/ui'
 
 const formatDate = (iso: string) => new Date(iso).toLocaleDateString(undefined, { dateStyle: 'medium' })
@@ -9,7 +9,7 @@ export default function ModuleProgress({ courseId, moduleId }: { courseId: strin
   const progress = useProgress()
   const lessonDate = progress.lessons[key]
   const quiz = progress.quizzes[key]
-  const known = Object.values(progress.cards[key] ?? {}).filter((s) => s === 'know').length
+  const known = knownCount(progress, key)
   const rated = Object.keys(progress.cards[key] ?? {}).length
   const deckSize = progress.cardTotals[key]
 
