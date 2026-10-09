@@ -478,5 +478,45 @@
         "label": "The Standard for Risk Management, 4.8"
       }
     ]
+  },
+  {
+    "id": "q25",
+    "q": "How does risk identification in an adaptive project typically differ from a predictive project?",
+    "options": [
+      "Adaptive projects do not manage risk",
+      "It happens continuously in every iteration, instead of mostly up front during planning",
+      "It is done only once, at the end of the project",
+      "It is done only by a dedicated risk manager"
+    ],
+    "answer": 1,
+    "explanation": "In adaptive approaches the team constantly reviews and adjusts its work, so risks are identified and addressed in each iteration. In predictive approaches most identification occurs up front.",
+    "ref": "Risk Management: A Practice Guide, 4.1.1",
+    "links": [
+      {
+        "book": "riskguide",
+        "page": 51,
+        "label": "Risk Management: A Practice Guide, 4.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "An agile team is unsure whether a new database can handle the expected load. It spends two days on a small experiment to find out before committing to the design. What is this called?",
+    "options": [
+      "A workaround",
+      "A fallback plan",
+      "A spike",
+      "A risk audit"
+    ],
+    "answer": 2,
+    "explanation": "A spike is used where risk is high, to remove an identified uncertainty early. It is a form of early de-risking.",
+    "ref": "Risk Management: A Practice Guide, 4.1.1",
+    "links": [
+      {
+        "book": "riskguide",
+        "page": 51,
+        "label": "Risk Management: A Practice Guide, 4.1.1"
+      }
+    ]
   }
 ]

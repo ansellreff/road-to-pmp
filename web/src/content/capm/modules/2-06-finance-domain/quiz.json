@@ -150,8 +150,13 @@
     ],
     "answer": 3,
     "explanation": "A rough order of magnitude (ROM) estimate is made early and has a wide range, typically −25% to +75%. A definitive estimate narrows to about −5% to +10%.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 4, Cost estimates",
+    "ref": "Practice Standard for Project Estimating, 2.4; PMBOK 8, Guide section 4, Cost estimates",
     "links": [
+      {
+        "book": "estimating",
+        "page": 32,
+        "label": "Practice Standard for Project Estimating, 2.4"
+      },
       {
         "book": "pmbok8",
         "page": 224,

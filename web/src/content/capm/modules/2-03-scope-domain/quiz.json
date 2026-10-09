@@ -130,12 +130,17 @@
     ],
     "answer": 0,
     "explanation": "The WBS represents all product and project work, including project management work. Lower levels roll up to higher levels, so nothing is left out and no extra work is performed.",
-    "ref": "PMBOK 8, Guide section 5, Decomposition",
+    "ref": "PMBOK 8, Guide section 5, Decomposition; Practice Standard for Work Breakdown Structures, 2.3.1",
     "links": [
       {
         "book": "pmbok8",
         "page": 268,
         "label": "PMBOK 8, Guide section 5, Decomposition"
+      },
+      {
+        "book": "wbs",
+        "page": 47,
+        "label": "Practice Standard for Work Breakdown Structures, 2.3.1"
       }
     ]
   },
@@ -436,6 +441,51 @@
         "book": "pmbok8",
         "page": 289,
         "label": "PMBOK 8, Guide section 5, Nominal group"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which of the following does a work breakdown structure show?",
+    "options": [
+      "The order in which the work will be done",
+      "The cost of each element",
+      "The hierarchical breakdown of the total scope of work",
+      "The people assigned to each element"
+    ],
+    "answer": 2,
+    "explanation": "A WBS describes scope only. Its elements do not account for time or sequence, do not contain costs, do not assign resources and do not imply relationships or importance.",
+    "ref": "Practice Standard for Work Breakdown Structures, 2.3.1",
+    "links": [
+      {
+        "book": "wbs",
+        "page": 47,
+        "label": "Practice Standard for Work Breakdown Structures, 2.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "While building a WBS, a team member suggests adding the element \"Install the windows\". How should this be handled?",
+    "options": [
+      "Record the deliverable (\"Windows\") in the WBS; the activity belongs in the schedule",
+      "Add it exactly as worded",
+      "Reject it, because windows are not in scope",
+      "Add it twice, under two parents, to be safe"
+    ],
+    "answer": 0,
+    "explanation": "Activities are not part of the WBS: the WBS represents the what and activities represent the how. Suggested activities are translated into their deliverables.",
+    "ref": "Practice Standard for Work Breakdown Structures, 2.3.1; Practice Standard for Work Breakdown Structures, 2.4.3",
+    "links": [
+      {
+        "book": "wbs",
+        "page": 47,
+        "label": "Practice Standard for Work Breakdown Structures, 2.3.1"
+      },
+      {
+        "book": "wbs",
+        "page": 53,
+        "label": "Practice Standard for Work Breakdown Structures, 2.4.3"
       }
     ]
   }

@@ -126,7 +126,7 @@ The **project scope statement** contains:
 
 ## Develop Scope Structure: the WBS
 
-@source PMBOK 8, Guide 2.2.2.4; PMBOK 8, Guide section 4, Scope baseline; PMBOK 8, Guide section 5, Decomposition
+@source PMBOK 8, Guide 2.2.2.4; PMBOK 8, Guide section 4, Scope baseline; PMBOK 8, Guide section 5, Decomposition; Practice Standard for Work Breakdown Structures, 2.3.1; Practice Standard for Work Breakdown Structures, 2.4.3
 
 Subdivides deliverables and project work into smaller, more manageable components. The technique is **decomposition**. The output is the **work breakdown structure (WBS)**, which completes the **scope baseline**.
 
@@ -142,7 +142,25 @@ Subdivides deliverables and project work into smaller, more manageable component
 - **The 100 percent rule.** The WBS contains **all** product and project work, including project management work. The lower levels roll up to the higher levels so that nothing is left out and no extra work is done.
 - **Do not decompose too far.** Excessive decomposition wastes management effort and makes the work less efficient.
 - Work far in the future may not be decomposable yet. It is detailed later, which is **rolling wave planning**.
-- Work packages are decomposed into **activities** later, when the schedule is developed. Activities are not part of the WBS.
+- Work packages are decomposed into **activities** later, when the schedule is developed. Activities are not part of the WBS: the WBS is the **what**, activities are the **how**.
+- The WBS turns one large, uncertain job into smaller pieces that are easier to estimate, assign and control. It is the basis for defining activities, estimating costs and resources, and identifying risks.
+
+**What a WBS does not show.** A WBS element describes scope only. It does **not** contain:
+
+| Not in the WBS | Where it is found instead |
+|---|---|
+| **Time or sequence** | The schedule |
+| **Relationships** between elements | The network diagram |
+| **Costs** | Cost estimates and the budget |
+| **Resources** | The responsibility assignment matrix and resource plans |
+| **Importance** | Position in the WBS does not mean priority |
+
+More rules for a sound WBS:
+
+- Elements are **mutually exclusive**: no work appears in two places.
+- If a parent would have **only one child**, do not decompose it.
+- Elements are numbered by level: **1** for the project, **1.1, 1.2** for the next level, **1.1.1** below that.
+- It can be built **top-down** (start from the final product and break it down) or **bottom-up** (list the deliverables, then group them). Either way, each level must add up to 100 percent of the level above.
 
 ## The scope baseline
 
@@ -215,6 +233,7 @@ Neither is acceptable. Any change to scope goes through **change control**.
 
 - "What makes up the scope baseline?" **Scope statement, WBS and WBS dictionary.** The requirements documentation and the scope management plan are common wrong options.
 - "Lowest level of the WBS?" The **work package**. Activities belong to the schedule, not the WBS.
+- A WBS shows **no dates, no sequence, no costs and no resources**. An option that says the WBS shows the order of work is wrong.
 - "Where do I find the details of a work package?" The **WBS dictionary**.
 - **Verified** comes before **accepted**. The team verifies, the customer accepts.
 - A customer rejects a deliverable: document why and raise a **change request**. Do not close the project or argue.
@@ -225,4 +244,4 @@ Neither is acceptable. Any change to scope goes through **change control**.
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.2 (Scope performance domain) and sections 4 and 5. The definitions of scope creep and gold plating follow standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.2 (Scope performance domain) and sections 4 and 5; Practice Standard for Work Breakdown Structures, Third Edition, sections 1.2, 2.3 and 2.4.3 (purpose of the WBS, the 100 percent rule and the other WBS rules, numbering, top-down and bottom-up preparation). The definitions of scope creep and gold plating follow standard PMI teaching. Written in original wording for personal study.*

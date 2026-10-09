@@ -1,5 +1,10 @@
 [
   {
+    "book": "estimating",
+    "page": 32,
+    "label": "Practice Standard for Project Estimating, 2.4"
+  },
+  {
     "book": "pmbok8",
     "page": 163,
     "label": "PMBOK 8, Guide 2.4"

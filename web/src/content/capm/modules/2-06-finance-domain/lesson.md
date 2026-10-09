@@ -48,7 +48,7 @@ Defines **how** project revenues and expenses will be estimated, budgeted, manag
 
 ## Estimate Costs
 
-@source PMBOK 8, Guide 2.4.2.2; PMBOK 8, Guide section 4, Cost estimates
+@source PMBOK 8, Guide 2.4.2.2; PMBOK 8, Guide section 4, Cost estimates; Practice Standard for Project Estimating, 2.4
 
 Develops an **approximation of the cost of the resources** needed to complete the work. It is repeated through the project as more becomes known.
 
@@ -62,6 +62,10 @@ Develops an **approximation of the cost of the resources** needed to complete th
 |---|---|---|
 | **Rough order of magnitude (ROM)** | Early, during initiating | −25% to +75% |
 | **Definitive estimate** | Later, when the work is well defined | −5% to +10% |
+
+The narrowing of the range over time is called the **cone of uncertainty**. As the range narrows, less contingency reserve is needed for estimating uncertainty.
+
+> **Note on the figures.** The ROM range of −25% to +75% is given in PMI's estimating standard. For later estimates that standard gives −10% to +15% as an example and says organizations set their own guidelines. The −5% to +10% "definitive" range is the figure from earlier PMBOK Guide editions and is the one most often used in exam preparation material.
 
 ## Cost estimating techniques
 
@@ -217,4 +221,4 @@ You are not asked to calculate NPV or IRR. You are asked to **pick the better pr
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.4 (Finance performance domain) and sections 4 and 5. The estimate accuracy ranges, the types of cost, the S-curve, who controls each reserve, and the one-line explanations of ROI, NPV, IRR and payback period follow standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.4 (Finance performance domain) and sections 4 and 5. The rough order of magnitude range and the cone of uncertainty come from the Practice Standard for Project Estimating, Second Edition, section 2.4. The definitive estimate range, the types of cost, the S-curve, who controls each reserve, and the one-line explanations of ROI, NPV, IRR and payback period follow standard PMI teaching. Written in original wording for personal study.*

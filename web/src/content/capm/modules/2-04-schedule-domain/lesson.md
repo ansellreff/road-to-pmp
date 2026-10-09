@@ -125,7 +125,7 @@ Two attributes apply at the same time: a dependency is mandatory **or** discreti
 
 ## Step 3: Estimate effort and duration
 
-@source PMBOK 8, Guide 2.3.2.2; PMBOK 8, Guide section 5, Estimation techniques
+@source PMBOK 8, Guide 2.3.2.2; PMBOK 8, Guide section 5, Estimation techniques; Practice Standard for Project Estimating, 2.4; Practice Standard for Project Estimating, 4.5
 
 | Term | Meaning | Example |
 |---|---|---|
@@ -138,11 +138,19 @@ Two attributes apply at the same time: a dependency is mandatory **or** discreti
 - The assumptions and data behind an estimate are recorded in the **basis of estimates**.
 - **More people does not always mean faster.** Because of the **law of diminishing returns**, each added resource yields less, and too many resources can even lengthen the work through coordination and learning time.
 - Some work takes a fixed time whatever the resources, such as a 24-hour stress test.
-- Estimators tend to be optimistic (the **planning fallacy**).
+- Early estimates have a **wide range**; the range narrows as scope becomes clearer. This narrowing is called the **cone of uncertainty**.
+
+Human habits that distort estimates:
+
+| Bias | What happens |
+|---|---|
+| **Optimism** (the planning fallacy) | People underestimate how long work will take |
+| **Padding** (also called buffering or sandbagging) | People quietly add extra time to each estimate. Added up over many work packages, the schedule becomes far too long. Risk should be covered by a **visible reserve**, not hidden padding. |
+| **Anchoring** | The first number mentioned pulls every later estimate toward it |
 
 ## Estimating techniques
 
-@source PMBOK 8, Guide section 5, Analogous estimating; PMBOK 8, Guide section 5, Parametric estimating; PMBOK 8, Guide section 5, Bottom-up estimating; PMBOK 8, Guide section 5, Multipoint estimating; Practice Standard for Scheduling, 3.4.3
+@source PMBOK 8, Guide section 5, Analogous estimating; PMBOK 8, Guide section 5, Parametric estimating; PMBOK 8, Guide section 5, Bottom-up estimating; PMBOK 8, Guide section 5, Multipoint estimating; Practice Standard for Scheduling, 3.4.3; Practice Standard for Project Estimating, 4.3
 
 | Technique | How it works | When to use it | Accuracy |
 |---|---|---|---|
@@ -152,7 +160,16 @@ Two attributes apply at the same time: a dependency is mandatory **or** discreti
 | **Three-point** (multipoint) | Averages an **optimistic, most likely and pessimistic** estimate | When there is uncertainty | Improves on a single guess |
 | **Expert judgment** | Relies on people with specialized knowledge | Always, alongside other techniques | Depends on the expert |
 
-Adaptive teams estimate in relative terms with **story points**, **planning poker** and **T-shirt sizing**.
+**Relative estimating** compares items with each other instead of estimating each one in hours or money. It is fast and deliberately trades accuracy for speed, which suits adaptive teams.
+
+| Relative technique | How it works |
+|---|---|
+| **Story points** | A unit the team agrees on for the relative size of a backlog item |
+| **T-shirt sizing** | Items are sized XS, S, M, L, XL. Sizes are often given Fibonacci values: 1, 2, 3, 5, 8, 13. |
+| **Planning poker** | Each member privately picks a card with a point value; all cards are revealed **at the same time**; large differences are discussed and the team votes again |
+| **Affinity grouping** | Items are placed in groups of similar size. Quick for a large number of items. |
+
+Revealing the cards together in planning poker prevents **anchoring** on the first number spoken.
 
 **Parametric example.** 1,000 meters of cable, and a crew installs 25 meters per hour: 1,000 ÷ 25 = **40 hours**.
 
@@ -222,4 +239,4 @@ Monitors the status of the project to **update the schedule** and **manage chang
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.3 (Schedule performance domain) and sections 4 and 5; Practice Standard for Scheduling, Third Edition, sections 3.4.3, 3.4.5, 3.4.7 and 3.4.8 (the beta or PERT formula, open ends, leads and lags, and the start-to-finish example). The effort, duration and elapsed time comparison and the table of schedule formats follow standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.3 (Schedule performance domain) and sections 4 and 5; Practice Standard for Scheduling, Third Edition, sections 3.4.3, 3.4.5, 3.4.7 and 3.4.8 (the beta or PERT formula, open ends, leads and lags, and the start-to-finish example); Practice Standard for Project Estimating, Second Edition, sections 2.4, 4.3 and 4.5 (evolving estimates, relative estimating, optimism, padding and anchoring). The effort, duration and elapsed time comparison and the table of schedule formats follow standard PMI teaching. Written in original wording for personal study.*

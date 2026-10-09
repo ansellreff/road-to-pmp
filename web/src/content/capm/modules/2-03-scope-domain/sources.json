@@ -108,5 +108,15 @@
     "book": "pmbok8",
     "page": 378,
     "label": "PMBOK 8, Glossary (scope creep)"
+  },
+  {
+    "book": "wbs",
+    "page": 47,
+    "label": "Practice Standard for Work Breakdown Structures, 2.3.1"
+  },
+  {
+    "book": "wbs",
+    "page": 53,
+    "label": "Practice Standard for Work Breakdown Structures, 2.4.3"
   }
 ]

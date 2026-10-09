@@ -34,7 +34,7 @@ A risk can be written as **cause, event, consequence**: "Because the supplier is
 
 ## Risk appetite, threshold and attitude
 
-@source PMBOK 8, Guide 2.7.1; The Standard for Risk Management, 2.1
+@source PMBOK 8, Guide 2.7.1; The Standard for Risk Management, 2.1; Risk Management: A Practice Guide, 2.1.4
 
 | Term | Meaning |
 |---|---|
@@ -44,6 +44,8 @@ A risk can be written as **cause, event, consequence**: "Because the supplier is
 | **Risk exposure** | The combined potential impact of all risks at a point in time |
 
 A threshold of ±5% reflects a **lower** risk appetite than ±10%.
+
+A threshold is the level of risk **below which** the organization accepts a risk and **above which** it does not. Examples: the minimum exposure for a risk to be entered in the risk register, or the maximum exposure the project can manage before the risk must be **escalated**.
 
 ## The six Risk processes
 
@@ -229,15 +231,19 @@ The same strategies apply to **overall project risk**. The most extreme form of 
 
 ## Risk in adaptive projects
 
-@source PMBOK 8, Guide 2.7.3
+@source PMBOK 8, Guide 2.7.3; Risk Management: A Practice Guide, 4.1.1
 
 The risk processes are **tailored** to the project: its size and complexity, the organization's risk appetite and thresholds, its strategic importance, and whether the approach is predictive, adaptive or hybrid. A small, simple project may use a simplified process.
 
-In adaptive projects:
+| | Predictive | Adaptive |
+|---|---|---|
+| When risks are identified | Mostly **up front** in planning, then reviewed periodically | **Continuously**, in every iteration; only high-level identification at the start |
+| How it is organized | Structured, often with dedicated risk roles and standard processes | Built into the team's regular events: daily standups, sprint planning, retrospectives |
+| Feedback | At longer intervals, such as the end of a phase, so strategies are harder to adjust | **Frequent delivery and feedback** expose risks and issues early |
+| Change | Controlled | Expected and embraced, which helps the team change course when a risk appears |
 
-- Uncertainty is higher, so risk is handled **continuously**, in each iteration, instead of mostly up front.
-- **Frequent reviews** of working increments expose risks early.
-- Requirements are kept as a **backlog** that is reprioritized as risk and knowledge change. High-risk items are often done **early**.
+- A **spike** is a short piece of work done early to remove a specific, high uncertainty (early de-risking).
+- A **hybrid** project does an initial risk identification and plan, as in predictive work, and then handles risk iteration by iteration.
 
 ## Exam tips
 
@@ -254,4 +260,4 @@ In adaptive projects:
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.7 (Risk performance domain) and sections 4 and 5; The Standard for Risk Management in Portfolios, Programs, and Projects, sections 2.1, 4.6 and 4.8 and its glossary (risk attitude, response strategies, secondary and residual risk, risk audits). The definitions of fallback plan and workaround, the three points on risk in adaptive projects, the matching of opportunity strategies to threat strategies, and the worked examples follow standard PMI teaching or are my own. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.7 (Risk performance domain) and sections 4 and 5; The Standard for Risk Management in Portfolios, Programs, and Projects, sections 2.1, 4.6 and 4.8 and its glossary (risk attitude, response strategies, secondary and residual risk, risk audits). Risk Management in Portfolios, Programs, and Projects: A Practice Guide, sections 2.1.4 and 4.1.1 (risk thresholds; risk in predictive, adaptive and hybrid projects). The definitions of fallback plan and workaround, the matching of opportunity strategies to threat strategies, and the worked examples follow standard PMI teaching or are my own. Written in original wording for personal study.*

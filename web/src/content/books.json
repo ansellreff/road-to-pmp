@@ -5,5 +5,8 @@
   "processgroups": { "title": "Process Groups: A Practice Guide", "file": "Process Groups A Practice Guide.pdf" },
   "scheduling": { "title": "Practice Standard for Scheduling, Third Edition", "file": "Practice Standard for Scheduling - Third Edition.pdf" },
   "evm": { "title": "The Standard for Earned Value Management", "file": "The Standard for Earned Value Management.pdf" },
-  "riskstd": { "title": "The Standard for Risk Management in Portfolios, Programs, and Projects", "file": "The Standard for Risk Management in Portfolios, Programs, and Projects.pdf" }
+  "riskstd": { "title": "The Standard for Risk Management in Portfolios, Programs, and Projects", "file": "The Standard for Risk Management in Portfolios, Programs, and Projects.pdf" },
+  "wbs": { "title": "Practice Standard for Work Breakdown Structures, Third Edition", "file": "Practice Standard for Work Breakdown Structures – Third Edition.pdf" },
+  "estimating": { "title": "Practice Standard for Project Estimating, Second Edition", "file": "Practice Standard for Project Estimating - Second Edition.pdf" },
+  "riskguide": { "title": "Risk Management in Portfolios, Programs, and Projects: A Practice Guide", "file": "Risk Management in Portfolios, Programs, and Projects A Practice Guide.pdf" }
 }

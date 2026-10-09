@@ -28,6 +28,18 @@ REGIONS = {
     "pmbok7": {"standard": (28, 87), "guide": (96, 291)},
 }
 
+# Books whose sections are looked up in their table of contents, with the PDF page
+# to open when a section is not found (the start of chapter 1).
+TOC_BOOKS = {
+    "processgroups": 22,
+    "scheduling": 16,
+    "evm": 14,
+    "riskstd": 18,
+    "wbs": 18,
+    "estimating": 12,
+    "riskguide": 16,
+}
+
 _pages: dict[str, list[str]] = {}
 _tocs: dict[str, str] = {}
 
@@ -73,6 +85,12 @@ def which_book(part: str) -> str | None:
         return "evm"
     if "standard for risk management" in lowered:
         return "riskstd"
+    if "work breakdown structures" in lowered:
+        return "wbs"
+    if "practice standard for project estimating" in lowered:
+        return "estimating"
+    if "risk management: a practice guide" in lowered:
+        return "riskguide"
     return None
 
 
@@ -95,7 +113,7 @@ def resolve(part: str) -> tuple[str, int] | None:
                 return book, page
         return book, 4
 
-    if book in ("processgroups", "scheduling", "evm", "riskstd"):
+    if book in TOC_BOOKS:
         # Their tables of contents list every section: "3.3.2. Title  [p83]" or "3.4.2 TITLE  [p87]".
         number = re.search(r"\b(\d+(?:\.\d+)+)\b", part)
         section = re.search(r"sections? (\d+)", lowered)
@@ -104,7 +122,7 @@ def resolve(part: str) -> tuple[str, int] | None:
             hit = re.search(rf"^\s*(?:CHAPTER )?{re.escape(wanted)}[.:]? .*\[p(\d+)\]", toc(book), re.MULTILINE)
             if hit:
                 return book, int(hit.group(1))
-        return book, {"processgroups": 22, "scheduling": 16, "evm": 14, "riskstd": 18}[book]
+        return book, TOC_BOOKS[book]
 
     regions = REGIONS[book]
     only_glossary = "glossary" in lowered and not re.search(r"\d\.\d", part)

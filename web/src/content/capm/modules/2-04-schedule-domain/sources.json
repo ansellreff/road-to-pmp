@@ -1,5 +1,20 @@
 [
   {
+    "book": "estimating",
+    "page": 32,
+    "label": "Practice Standard for Project Estimating, 2.4"
+  },
+  {
+    "book": "estimating",
+    "page": 63,
+    "label": "Practice Standard for Project Estimating, 4.3"
+  },
+  {
+    "book": "estimating",
+    "page": 70,
+    "label": "Practice Standard for Project Estimating, 4.5"
+  },
+  {
     "book": "pmbok8",
     "page": 152,
     "label": "PMBOK 8, Guide 2.3"

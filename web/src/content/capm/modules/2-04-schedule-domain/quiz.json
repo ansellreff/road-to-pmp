@@ -473,5 +473,50 @@
         "label": "PMBOK 8, Guide 2.3.2.3"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "In planning poker, why do all team members reveal their cards at the same time?",
+    "options": [
+      "To save time in the meeting",
+      "So that no one's estimate is influenced by a number someone else said first",
+      "Because the product owner decides the estimate",
+      "So that the highest card always wins"
+    ],
+    "answer": 1,
+    "explanation": "Each member privately selects a card and all cards are revealed together. This avoids anchoring, where the first number mentioned pulls the other estimates toward it.",
+    "ref": "Practice Standard for Project Estimating, 4.3; Practice Standard for Project Estimating, 4.5",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 63,
+        "label": "Practice Standard for Project Estimating, 4.3"
+      },
+      {
+        "book": "estimating",
+        "page": 70,
+        "label": "Practice Standard for Project Estimating, 4.5"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Each team member quietly adds two extra days to every estimate \"just in case\". What is the result for the project schedule?",
+    "options": [
+      "A more accurate schedule",
+      "A shorter schedule",
+      "No effect, because the additions cancel out",
+      "An oversized schedule, because the hidden buffers add up"
+    ],
+    "answer": 3,
+    "explanation": "Padding each estimate compounds across work packages and produces an oversized buffer. Uncertainty should be handled with a visible reserve instead.",
+    "ref": "Practice Standard for Project Estimating, 4.5",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 70,
+        "label": "Practice Standard for Project Estimating, 4.5"
+      }
+    ]
   }
 ]

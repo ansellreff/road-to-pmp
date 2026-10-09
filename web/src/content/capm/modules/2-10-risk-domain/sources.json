@@ -105,6 +105,16 @@
     "label": "PMBOK 8, Guide section 5, SWOT (strengths, weaknesses, opportunities, threats) analysis"
   },
   {
+    "book": "riskguide",
+    "page": 26,
+    "label": "Risk Management: A Practice Guide, 2.1.4"
+  },
+  {
+    "book": "riskguide",
+    "page": 51,
+    "label": "Risk Management: A Practice Guide, 4.1.1"
+  },
+  {
     "book": "riskstd",
     "page": 24,
     "label": "The Standard for Risk Management, 2.1"
