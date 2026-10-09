@@ -19,19 +19,39 @@ export interface CardState {
   due: string
 }
 
+/** How one quiz question has gone so far, across module quizzes and practice sessions. */
+export interface AnswerState {
+  right: number
+  wrong: number
+  /** Whether the most recent answer was correct. A question stays "to practice" until it is. */
+  lastCorrect: boolean
+}
+
 export interface Progress {
   version: 2
   lessons: Record<string, string>
   quizzes: Record<string, QuizResult>
   cards: Record<string, Record<string, CardState>>
   cardTotals: Record<string, number>
+  /** Per module, per question id. Added after version 2 shipped, so older saves simply have none. */
+  answers: Record<string, Record<string, AnswerState>>
+  /** Study actions per day (YYYY-MM-DD, local time), for the study streak. */
+  activity: Record<string, number>
 }
 
 /** Days until the next review, by box. */
 export const REVIEW_INTERVALS = [0, 1, 3, 7, 14, 30]
 
 const KEY = 'road-to-pmi-progress'
-const empty = (): Progress => ({ version: 2, lessons: {}, quizzes: {}, cards: {}, cardTotals: {} })
+const empty = (): Progress => ({
+  version: 2,
+  lessons: {},
+  quizzes: {},
+  cards: {},
+  cardTotals: {},
+  answers: {},
+  activity: {},
+})
 
 export function today(offsetDays = 0): string {
   const d = new Date()
@@ -93,11 +113,32 @@ export function useProgress(): Progress {
 
 export const moduleKey = (courseId: string, moduleId: string) => `${courseId}/${moduleId}`
 
+/** Today's count of study actions, plus one. */
+function studiedToday(): Progress['activity'] {
+  const day = today()
+  return { ...state.activity, [day]: (state.activity[day] ?? 0) + 1 }
+}
+
 export function setLessonDone(key: string, done: boolean) {
   const lessons = { ...state.lessons }
   if (done) lessons[key] = new Date().toISOString()
   else delete lessons[key]
-  commit({ ...state, lessons })
+  commit({ ...state, lessons, activity: done ? studiedToday() : state.activity })
+}
+
+/** Record the answer to one quiz question, from a module quiz or a practice session. */
+export function recordAnswer(key: string, questionId: string, correct: boolean) {
+  const previous = state.answers[key]?.[questionId]
+  const next: AnswerState = {
+    right: (previous?.right ?? 0) + (correct ? 1 : 0),
+    wrong: (previous?.wrong ?? 0) + (correct ? 0 : 1),
+    lastCorrect: correct,
+  }
+  commit({
+    ...state,
+    answers: { ...state.answers, [key]: { ...state.answers[key], [questionId]: next } },
+    activity: studiedToday(),
+  })
 }
 
 export function recordQuiz(key: string, score: number, total: number) {
@@ -121,14 +162,18 @@ export function rateCard(key: string, cardId: string, knewIt: boolean, deckSize?
     ...state,
     cards: { ...state.cards, [key]: { ...state.cards[key], [cardId]: next } },
     cardTotals: deckSize === undefined ? state.cardTotals : { ...state.cardTotals, [key]: deckSize },
+    activity: studiedToday(),
   })
   return next
 }
 
+/** Forget a module's quiz score and its per-question history. */
 export function clearQuiz(key: string) {
   const quizzes = { ...state.quizzes }
+  const answers = { ...state.answers }
   delete quizzes[key]
-  commit({ ...state, quizzes })
+  delete answers[key]
+  commit({ ...state, quizzes, answers })
 }
 
 export function clearCards(key: string) {
@@ -160,6 +205,24 @@ export function knownCount(p: Progress, key: string): number {
 /** Number of cards across all modules whose review day has arrived. */
 export function dueCount(p: Progress): number {
   return Object.values(p.cards).reduce((sum, deck) => sum + Object.values(deck).filter(isDue).length, 0)
+}
+
+/** Ids of a module's questions whose most recent answer was wrong. */
+export function missedIds(p: Progress, key: string): string[] {
+  return Object.entries(p.answers[key] ?? {})
+    .filter(([, a]) => !a.lastCorrect)
+    .map(([id]) => id)
+}
+
+/** Consecutive study days up to today. A day not yet studied today does not break the run. */
+export function studyStreak(p: Progress): number {
+  let back = p.activity[today()] ? 0 : 1
+  let days = 0
+  while (p.activity[today(-back)]) {
+    days++
+    back++
+  }
+  return days
 }
 
 /** 0..1 completion for one module: lesson read, quiz passed at 70%, cards known. */

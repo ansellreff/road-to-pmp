@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { loadQuiz, type Question } from '../lib/content'
-import { moduleKey, recordQuiz, useProgress } from '../lib/progress'
+import { moduleKey, recordAnswer, recordQuiz, useProgress } from '../lib/progress'
 import { btnPrimary, btnQuiet } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
 import { SourceItem } from './Sources'
@@ -29,6 +29,8 @@ export default function Quiz({ courseId, moduleId }: { courseId: string; moduleI
 
   function next() {
     if (picked === null) return
+    // Each answer is kept per question, so missed ones can be practiced from the dashboard.
+    recordAnswer(key, questions![index].id, isCorrect(picked, index))
     const all = [...answers, picked]
     setAnswers(all)
     setPicked(null)
@@ -105,7 +107,7 @@ export default function Quiz({ courseId, moduleId }: { courseId: string; moduleI
   )
 }
 
-function QuestionView(props: {
+export function QuestionView(props: {
   number: number
   question: Question
   picked: number | null

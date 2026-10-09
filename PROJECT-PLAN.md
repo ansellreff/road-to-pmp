@@ -27,6 +27,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Session 13 done: modules 2.9 (Resources domain: RACI, acquiring and leading the team, Tuckman ladder, conflict resolution, motivation models) and 2.10 (Risk domain: risk vs issue, appetite and threshold, risk register, qualitative and quantitative analysis, EMV, response strategies for threats and opportunities) written. The Standard for Risk Management added as a seventh source book. | You: study 2.9 and 2.10. Next: Session 14, modules 2.11 (quality and procurement) and 2.12 (tools and techniques), which completes Domain 2. Still unused in your folder: the WBS and Estimating practice standards and the Risk practice guide |
 | 2026-10-10 | Catch-up done at your request: the WBS practice standard, the Estimating practice standard and the Risk practice guide are now source books (ten in total). Module 2.3 gained the WBS rules (what a WBS does not show, top-down and bottom-up); 2.4 gained relative estimating, planning poker and estimating biases; 2.6 now sources the rough order of magnitude range; 2.10 gained a predictive vs adaptive risk comparison. 6 new questions, 12 new flashcards. | You: skim the changed sections. Next: Session 14, modules 2.11 and 2.12 |
 | 2026-10-10 | Session 14 done: modules 2.11 (quality and procurement: assurance vs control, quality tools, bid documents, contract types, disputes) and 2.12 (common tools and techniques, grouped by purpose) written. **Domain 2 is complete: 12 of 12 modules.** Domains 1 and 2 together are 53% of the exam. | You: study 2.11 and 2.12. Next: Session 15, the dashboard and weak-area quiz feature |
+| 2026-10-10 | Session 15 done: Dashboard page (study streak, per-domain progress and quiz average, modules to revisit) and Practice missed questions page. Per-question quiz results and study days are now saved; existing progress is kept. New Session 25 added at your request: a full catch-up of every module against every book, with a list of extra PDFs worth adding. | You: take a quiz, get something wrong on purpose, then open Dashboard and try the practice. Next: Session 16, modules 3.1 and 3.2 (Agile Practice Guide) |
 
 ## How your progress is saved
 
@@ -35,6 +36,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 - It is lost only if you clear the browser's site data, or use a private/incognito window.
 - Flashcards use spaced repetition. A card you know comes back after 1 day, then 3, 7, 14 and 30 days. A card you miss comes back the same day. The home page shows how many are due and starts a review session across all modules.
 - Every mark can be changed: in each module, the "Your progress in this module" panel lets you remove the lesson-completed mark, clear the quiz score, and reset the flashcards. A single flashcard can be re-rated any time.
+- The **Dashboard** (link in the top bar) shows your study streak, progress and quiz average per exam domain, and the modules to revisit. Every quiz answer is now remembered per question. A question you got wrong goes into **Practice missed questions** and leaves once you answer it correctly. Clearing a module's quiz score also clears its question history. Quizzes taken before 2026-10-10 kept their scores but have no per-question history.
 
 ## Sources and PDF links
 
@@ -107,17 +109,18 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. (Code of Ethics PDF is in the materials folder) |
 | ✅ | 8 | Feature: spaced repetition for flashcards (plus source links to the PDFs) |
 | ✅ | 9 to 14 | Domain 2: 12 modules (all done) |
-| ⬜ | 15 | Feature: dashboard and "practice my weakest topics" quiz |
+| ✅ | 15 | Feature: dashboard and practice of missed questions |
 | ⬜ | 16 to 19 | Domain 3: 8 modules |
 | ⬜ | 20 | Feature: study plan and exam countdown |
 | ⬜ | 21 to 24 | Domain 4: 7 modules |
-| ⬜ | 25 | Feature: timed exam simulator (150 questions, 180 minutes) |
-| ⬜ | 26 | UI/UX polish (see backlog below) |
-| ⬜ | 27 | Go online: GitHub and Vercel, test on phone |
+| ⬜ | 25 | Full catch-up, requested 2026-10-10: review every module against every book in `PMI Learning Material/`, improve where a book adds exam value, and give you a list of any extra PDFs worth adding |
+| ⬜ | 26 | Feature: timed exam simulator (150 questions, 180 minutes) |
+| ⬜ | 27 | UI/UX polish (see backlog below) |
+| ⬜ | 28 | Go online: GitHub and Vercel, test on phone |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 
-### UI/UX backlog (for Session 26)
+### UI/UX backlog (for Session 27)
 
 - Dark mode
 - More interactive buttons and feedback
@@ -154,7 +157,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 | ✅ | First sample module complete: 1.1 (lesson, 12 quiz questions, 16 flashcards) | 2026-10-09 |
 | 🟡 | Reviewed by you on http://localhost:5173 | |
 
-### Go online (moved to the end: Session 27)
+### Go online (moved to the end: Session 28)
 
 | Status | Milestone | Done on |
 |---|---|---|
@@ -170,7 +173,7 @@ Overall: **23 of 38 modules done** (461 quiz questions, 664 flashcards).
 | Status | Domain | Modules done |
 |---|---|---|
 | ✅ | 1. PM Fundamentals and Core Concepts | 11 / 11 |
-| 🟡 | 2. Predictive, Plan-Based Methodologies | 2 / 12 |
+| ✅ | 2. Predictive, Plan-Based Methodologies | 12 / 12 |
 | ⬜ | 3. Agile Frameworks / Methodologies | 0 / 8 |
 | ⬜ | 4. Business Analysis Frameworks | 0 / 7 |
 
