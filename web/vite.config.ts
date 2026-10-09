@@ -24,7 +24,10 @@ function localBooks(): Plugin {
         const id = decodeURIComponent((req.url ?? '').split(/[?#]/)[0]).replace(/^\//, '').replace(/\.pdf$/, '')
         const book = books[id]
         if (!book) return next()
-        const file = path.join(folder, book.file)
+        // Edge's viewer cannot open PMI's protected PDFs, so tools/unlock_pdfs.py keeps a
+        // readable copy of those in .cache/pdf. Use it when present, else the original.
+        const readable = path.resolve(here, '../.cache/pdf', `${id}.pdf`)
+        const file = fs.existsSync(readable) ? readable : path.join(folder, book.file)
         if (!fs.existsSync(file)) {
           res.statusCode = 404
           res.setHeader('Content-Type', 'text/plain; charset=utf-8')
