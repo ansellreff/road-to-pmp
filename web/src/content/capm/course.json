@@ -10,8 +10,8 @@
       "weight": 36,
       "modules": [
         { "id": "1-01-project-basics", "title": "Projects, Programs, Portfolios and Operations", "ready": true },
-        { "id": "1-02-governance-environment", "title": "Governance and the Project Environment (EEFs, OPAs, Structures)", "ready": false },
-        { "id": "1-03-functions-roles", "title": "Project Functions, Roles and Product Management", "ready": false },
+        { "id": "1-02-governance-environment", "title": "Governance and the Project Environment (EEFs, OPAs, Structures)", "ready": true },
+        { "id": "1-03-functions-roles", "title": "Project Functions, Roles and Product Management", "ready": true },
         { "id": "1-04-principles-part-1", "title": "The 6 Principles, Part 1: Mindset, Holistic View, Value, Quality", "ready": false },
         { "id": "1-05-principles-part-2", "title": "The 6 Principles, Part 2: Leadership, Sustainability, Empowered Culture", "ready": false },
         { "id": "1-06-phases-development-approaches", "title": "Phases and Development Approaches: Predictive, Adaptive, Hybrid", "ready": false },

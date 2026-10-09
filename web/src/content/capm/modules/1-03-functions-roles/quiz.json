@@ -1,0 +1,170 @@
+[
+  {
+    "id": "q1",
+    "q": "A project is running short of budget and needs two more engineers. Who is primarily responsible for securing the funding and championing the project with senior management?",
+    "options": ["The project team", "The end users", "The project sponsor", "The business analyst"],
+    "answer": 2,
+    "explanation": "Sponsors (and portfolio managers) secure funding, people, physical resources and authority, and champion the project at the organizational level.",
+    "ref": "PMBOK 8, Standard 2.4.7"
+  },
+  {
+    "id": "q2",
+    "q": "Which role typically allocates specific people and equipment from a department to the project team?",
+    "options": ["Functional or resource manager", "Product owner", "Customer", "Regulator"],
+    "answer": 0,
+    "explanation": "Functional and resource managers assign the right personnel, equipment and expertise to the team and handle resource gaps.",
+    "ref": "PMBOK 8, Standard 2.4.7"
+  },
+  {
+    "id": "q3",
+    "q": "A team decides among themselves who does which task each day, without a manager assigning work. This is an example of:",
+    "options": [
+      "Centralized coordination",
+      "Decentralized coordination",
+      "Organizational governance",
+      "Situational leadership"
+    ],
+    "answer": 1,
+    "explanation": "When team members self-organize and self-manage, coordination is decentralized. This is typical of agile projects.",
+    "ref": "PMBOK 8, Standard 2.4"
+  },
+  {
+    "id": "q4",
+    "q": "Which function involves prioritizing requirements or scope based on value, dependencies and risk?",
+    "options": [
+      "Perform work",
+      "Apply expertise",
+      "Facilitate and support",
+      "Provide organizational direction and insight"
+    ],
+    "answer": 3,
+    "explanation": "Providing direction and insight sets the course by prioritizing on value, dependencies and risk. Sponsors, portfolio managers and product owners typically do this.",
+    "ref": "PMBOK 8, Standard 2.4.6"
+  },
+  {
+    "id": "q5",
+    "q": "Helping the team reach consensus, resolve conflicts and get through change belongs to which function?",
+    "options": [
+      "Provide resources",
+      "Solicit and manage feedback",
+      "Facilitate and support",
+      "Provide organizational direction and insight"
+    ],
+    "answer": 2,
+    "explanation": "Facilitation and support encourages participation, builds consensus, resolves conflict and supports people through change.",
+    "ref": "PMBOK 8, Standard 2.4.3"
+  },
+  {
+    "id": "q6",
+    "q": "In which kind of project is the need for ongoing customer feedback usually greatest?",
+    "options": [
+      "Projects using adaptive or hybrid approaches",
+      "Projects with fully fixed and stable requirements",
+      "Projects with no external customer",
+      "Projects that are in the closing stage"
+    ],
+    "answer": 0,
+    "explanation": "In adaptive and hybrid approaches the team explores and develops the product in increments under ambiguity, so feedback is needed more often.",
+    "ref": "PMBOK 8, Standard 2.4.2"
+  },
+  {
+    "id": "q7",
+    "q": "In an organization, a finance manager leads a system upgrade project and nobody holds the title 'project manager'. According to PMI, which statement is correct?",
+    "options": [
+      "The work is not a project, because there is no project manager",
+      "The finance manager is performing the project management function, whatever the title",
+      "The project must be put on hold until a project manager is hired",
+      "Only the PMO may lead the work"
+    ],
+    "answer": 1,
+    "explanation": "The essence of project management lies in the characteristics of the project, not the title of the person leading it. Functional managers, project leads or agile roles may perform the function.",
+    "ref": "PMBOK 8, Standard 2.5.1"
+  },
+  {
+    "id": "q8",
+    "q": "Negotiation, conflict resolution and emotional intelligence belong to which competency?",
+    "options": ["Ways of working", "Business acumen", "Results", "Power skills"],
+    "answer": 3,
+    "explanation": "Power skills are the people skills a project management team applies, such as emotional intelligence, critical thinking, motivation, negotiation and conflict resolution.",
+    "ref": "PMBOK 8, Standard 2.5.1.1"
+  },
+  {
+    "id": "q9",
+    "q": "A project manager studies the company's strategy and financial position to build a stronger business case. Which competency is being applied?",
+    "options": ["Business acumen", "Power skills", "Social responsibilities", "Ways of working"],
+    "answer": 0,
+    "explanation": "Business acumen is strategic thinking and alignment with the organizational context: project selection criteria, industry knowledge, business case and financial analysis.",
+    "ref": "PMBOK 8, Standard 2.5.1.1"
+  },
+  {
+    "id": "q10",
+    "q": "Choosing between a predictive, adaptive or hybrid approach for a project is an example of which competency?",
+    "options": ["Social responsibilities", "Ways of working", "Business acumen", "Power skills"],
+    "answer": 1,
+    "explanation": "Ways of working covers understanding and applying standards, methodologies and frameworks, including selecting the appropriate project management approach.",
+    "ref": "PMBOK 8, Standard 2.5.1.1"
+  },
+  {
+    "id": "q11",
+    "q": "During a critical delivery week the project manager gives clear, direct instructions. Later, when the experienced team is working well, the manager steps back and supports them. This is:",
+    "options": ["Gold plating", "Decentralized governance", "Situational leadership", "Organizational direction"],
+    "answer": 2,
+    "explanation": "Situational leadership means adapting the leadership style to the needs of the team, the urgency of the task and the complexity of the project.",
+    "ref": "PMBOK 8, Standard 2.5.1.1"
+  },
+  {
+    "id": "q12",
+    "q": "An issue is beyond the project manager's authority to resolve. Who is the most appropriate person to help remove this obstacle?",
+    "options": ["A project team member", "The end user", "An external subject matter expert", "The project sponsor"],
+    "answer": 3,
+    "explanation": "The sponsor, customer or product owner provides decision leadership outside the project management team's authority, including removing obstacles and facilitating executive-level decisions.",
+    "ref": "PMBOK 8, Standard 2.5.2"
+  },
+  {
+    "id": "q13",
+    "q": "Who maintains and prioritizes the product backlog so the team works on the most valuable features?",
+    "options": ["The product owner", "The functional manager", "The sponsor", "The scrum master"],
+    "answer": 0,
+    "explanation": "The product owner keeps the development team focused on valuable features by maintaining and prioritizing the product backlog.",
+    "ref": "PMBOK 8, Standard 2.3"
+  },
+  {
+    "id": "q14",
+    "q": "What is the correct order of the phases in a product life cycle?",
+    "options": [
+      "Initiating, planning, executing, closing",
+      "Introduction, growth, maturity, decline/retirement",
+      "Growth, introduction, maturity, retirement",
+      "Concept, design, build, test"
+    ],
+    "answer": 1,
+    "explanation": "A product evolves through introduction, growth, maturity and decline or retirement. Initiating to closing describes project management work, not a product.",
+    "ref": "PMBOK 8, Standard 2.3"
+  },
+  {
+    "id": "q15",
+    "q": "Which statement about products and projects is correct?",
+    "options": [
+      "A project life cycle usually contains several product life cycles",
+      "A product is always retired when the project that created it closes",
+      "A product life cycle can include many projects, such as initial creation, enhancements and retirement",
+      "Product management and project management are the same discipline"
+    ],
+    "answer": 2,
+    "explanation": "Projects or programs can be started at any point in a product's life cycle to create, enhance or retire it. Product management is a separate discipline.",
+    "ref": "PMBOK 8, Standard 2.3"
+  },
+  {
+    "id": "q16",
+    "q": "A project team uses an AI tool to forecast schedule risks. What is the project management team's responsibility regarding this tool?",
+    "options": [
+      "None; the AI vendor is responsible for the results",
+      "To ensure the data is accurate and the outputs are not biased, and to keep monitoring the tool's effectiveness",
+      "To accept the AI's forecasts without review to save time",
+      "To hide the use of AI from stakeholders"
+    ],
+    "answer": 1,
+    "explanation": "The project management team should ensure accuracy of data and neutrality of outputs, select appropriate technology and monitor its integration, and work with IT to protect project information.",
+    "ref": "PMBOK 8, Standard 2.5.1.3"
+  }
+]

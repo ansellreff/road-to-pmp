@@ -1,0 +1,195 @@
+[
+  {
+    "id": "q1",
+    "q": "Which statement best describes enterprise environmental factors (EEFs)?",
+    "options": [
+      "Templates and procedures the project team can update",
+      "Lessons learned from previous projects",
+      "The approved project management plan and its baselines",
+      "Conditions not directly influenced by the project team that impact, constrain or direct the project"
+    ],
+    "answer": 3,
+    "explanation": "EEFs are conditions around the project that the team does not control. Templates, procedures and lessons learned are organizational process assets.",
+    "ref": "PMBOK 8, Standard 2.2.1"
+  },
+  {
+    "id": "q2",
+    "q": "A project manager uses the company's standard risk register template to start planning. The template is an example of:",
+    "options": [
+      "An organizational process asset",
+      "An internal enterprise environmental factor",
+      "An external enterprise environmental factor",
+      "A project governance model"
+    ],
+    "answer": 0,
+    "explanation": "Templates belong to the organization's policies, processes and procedures, which are OPAs.",
+    "ref": "PMBOK 8, Standard 2.2.3"
+  },
+  {
+    "id": "q3",
+    "q": "A new data protection law forces a project to change how it stores customer records. The law is:",
+    "options": [
+      "An organizational process asset",
+      "An internal enterprise environmental factor",
+      "An external enterprise environmental factor",
+      "An organizational knowledge repository"
+    ],
+    "answer": 2,
+    "explanation": "Legal restrictions come from outside the organization and cannot be changed by the team, so they are external EEFs.",
+    "ref": "PMBOK 8, Standard 2.2.1.2"
+  },
+  {
+    "id": "q4",
+    "q": "A company has a risk-averse culture where every decision needs several approvals. For a project in that company, this culture is:",
+    "options": [
+      "An organizational process asset, because it is internal",
+      "An internal enterprise environmental factor",
+      "An external enterprise environmental factor",
+      "Not relevant to project planning"
+    ],
+    "answer": 1,
+    "explanation": "Organizational culture is internal, but the team cannot change it and it constrains the project, so it is an internal EEF. Internal does not automatically mean OPA.",
+    "ref": "PMBOK 8, Standard 2.2.1.1"
+  },
+  {
+    "id": "q5",
+    "q": "Which is the key difference between EEFs and OPAs?",
+    "options": [
+      "EEFs are always external; OPAs are always internal",
+      "EEFs are used only in planning; OPAs are used only in closing",
+      "EEFs are conditions the team does not control; OPAs are internal assets the team can use and often update",
+      "EEFs are documents; OPAs are people"
+    ],
+    "answer": 2,
+    "explanation": "EEFs can be internal or external, but the team does not control them. OPAs are always internal to the organization and can often be updated by the team.",
+    "ref": "PMBOK 8, Standard 2.2"
+  },
+  {
+    "id": "q6",
+    "q": "During the project, the team records what went well and what went wrong after each phase. Where does this information belong?",
+    "options": [
+      "In the enterprise environmental factors",
+      "In an organizational knowledge repository",
+      "In the organization's policies and procedures",
+      "In the governance board charter"
+    ],
+    "answer": 1,
+    "explanation": "Lessons learned are kept in organizational knowledge repositories, the group of OPAs that is updated throughout the project.",
+    "ref": "PMBOK 8, Standard 2.2.4"
+  },
+  {
+    "id": "q7",
+    "q": "Which group of organizational process assets is generally NOT updated as part of the project work?",
+    "options": [
+      "Policies, processes and procedures",
+      "Lessons learned repositories",
+      "Financial data repositories",
+      "Issue and defect data repositories"
+    ],
+    "answer": 0,
+    "explanation": "Policies, processes and procedures are usually set by the PMO or another function outside the project and change only by following organizational policy. Knowledge repositories are updated continually.",
+    "ref": "PMBOK 8, Standard 2.2.2"
+  },
+  {
+    "id": "q8",
+    "q": "Which statement about organizational governance and project governance is correct?",
+    "options": [
+      "They are two names for the same thing",
+      "Project governance replaces organizational governance while the project is running",
+      "Organizational governance applies only to operations, not to projects",
+      "Organizational governance gives overall direction and control; project governance is the framework for managing an individual project within it"
+    ],
+    "answer": 3,
+    "explanation": "Organizational governance covers the whole organization. Project governance is the adaptable framework for one project and must stay aligned with the organizational level.",
+    "ref": "PMBOK 8, Standard 1.3.2"
+  },
+  {
+    "id": "q9",
+    "q": "A RACI matrix is an example of:",
+    "options": [
+      "An external enterprise environmental factor",
+      "A product life cycle",
+      "A decision-making and responsibility model used in project governance",
+      "An organizational structure type"
+    ],
+    "answer": 2,
+    "explanation": "RACI (responsible, accountable, consulted, informed) defines roles and decision responsibilities, which is part of what project governance provides.",
+    "ref": "PMBOK 8, Standard 1.3.2"
+  },
+  {
+    "id": "q10",
+    "q": "On a product launch project, a group of senior managers reviews milestones, enforces quality standards and resolves issues the project manager escalates. This group is best described as:",
+    "options": [
+      "The project team",
+      "A steering committee, part of project governance",
+      "The organizational knowledge repository",
+      "An enterprise environmental factor"
+    ],
+    "answer": 1,
+    "explanation": "A steering committee overseeing milestones, standards and escalations is a classic project governance body.",
+    "ref": "PMBOK 8, Standard 1.3.2"
+  },
+  {
+    "id": "q11",
+    "q": "In which organizational structure does the project manager have the MOST authority?",
+    "options": ["Functional", "Weak matrix", "Balanced matrix", "Project-oriented"],
+    "answer": 3,
+    "explanation": "In a project-oriented structure the project manager's authority and resource availability are high to almost total.",
+    "ref": "PMBOK 8, Standard 2.2.5, Table 2-1"
+  },
+  {
+    "id": "q12",
+    "q": "A project manager works part-time on the project, has little authority, and must ask the heads of engineering and finance each time people are needed. The organization most likely has a:",
+    "options": ["Functional structure", "Strong matrix structure", "Project-oriented structure", "Hybrid structure with full project authority"],
+    "answer": 0,
+    "explanation": "Work grouped by job function, a part-time project manager role and low authority describe a functional structure (a weak matrix would look similar).",
+    "ref": "PMBOK 8, Standard 2.2.5, Table 2-1"
+  },
+  {
+    "id": "q13",
+    "q": "In a strong matrix organization, the project manager's role is typically:",
+    "options": [
+      "Part-time with low authority",
+      "Full-time with moderate to high authority",
+      "Not a designated role at all",
+      "Full-time with no access to resources"
+    ],
+    "answer": 1,
+    "explanation": "A strong matrix gives the project manager a full-time designated role, moderate to high authority and moderate to high resource availability.",
+    "ref": "PMBOK 8, Standard 2.2.5, Table 2-1"
+  },
+  {
+    "id": "q14",
+    "q": "Which of the following is an INTERNAL enterprise environmental factor?",
+    "options": [
+      "Currency exchange rates",
+      "Competitor behavior",
+      "The organization's existing IT systems and infrastructure",
+      "Government safety standards"
+    ],
+    "answer": 2,
+    "explanation": "Existing infrastructure and IT systems are internal EEFs. Exchange rates, competitors and government standards are external.",
+    "ref": "PMBOK 8, Standard 2.2.1.1"
+  },
+  {
+    "id": "q15",
+    "q": "The organization allows project teams to adapt its standard templates and checklists to the needs of each project. What is this called?",
+    "options": ["Gold plating", "Scope creep", "Benchmarking", "Tailoring"],
+    "answer": 3,
+    "explanation": "Adapting standard processes, templates and life cycles to a specific project is tailoring. Tailoring guidelines are themselves an OPA.",
+    "ref": "PMBOK 8, Standard 2.2.2"
+  },
+  {
+    "id": "q16",
+    "q": "EEFs and OPAs are most commonly used in project management as:",
+    "options": [
+      "Inputs to many processes, especially planning",
+      "Outputs of the closing work only",
+      "Tools for measuring team performance",
+      "Deliverables handed to the customer"
+    ],
+    "answer": 0,
+    "explanation": "Both are inputs to many project management processes. EEFs in particular are inputs to most planning processes.",
+    "ref": "PMBOK 8, Standard 2.2.1 and 2.2.2"
+  }
+]

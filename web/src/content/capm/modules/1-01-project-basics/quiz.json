@@ -15,7 +15,12 @@
   {
     "id": "q2",
     "q": "A company processes employee payroll every month using the same procedure. This work is best classified as:",
-    "options": ["A project", "A program", "Operations", "A portfolio"],
+    "options": [
+      "A project",
+      "A program",
+      "Operations",
+      "A portfolio"
+    ],
     "answer": 2,
     "explanation": "Payroll is ongoing and repetitive with no planned end, which makes it operations.",
     "ref": "PMBOK 8, Standard 1.3.3"
@@ -24,12 +29,12 @@
     "id": "q3",
     "q": "In the definition of a project, what does 'temporary' mean?",
     "options": [
-      "The project is short in duration",
-      "The deliverables will not last beyond the project",
       "The project work has a defined beginning and end",
+      "The deliverables will not last beyond the project",
+      "The project is short in duration",
       "The project team is made up of contract staff"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Temporary refers to the work having a start and a finish. Projects can last years, and their deliverables often persist long after the project ends.",
     "ref": "PMBOK 8, Standard 1.3.1"
   },
@@ -38,11 +43,11 @@
     "q": "Two project teams are each building an identical warehouse design, one in a coastal city and one in a mountain town, with different suppliers, regulators and stakeholders. Why are these considered two different projects?",
     "options": [
       "Because they have different project managers",
-      "Because each is carried out in a unique context",
+      "They are not; identical designs make them one project",
       "Because warehouses are always unique products",
-      "They are not; identical designs make them one project"
+      "Because each is carried out in a unique context"
     ],
-    "answer": 1,
+    "answer": 3,
     "explanation": "Unique context covers differences in location, resources, risks, stakeholders and other conditions, even when the goal is the same. It is why each project needs a tailored approach.",
     "ref": "PMBOK 8, Standard 1.3.1"
   },
@@ -62,7 +67,12 @@
   {
     "id": "q6",
     "q": "An organization is building a new airport. Separate projects for the runway, terminal, control tower and baggage system are managed in a coordinated way, because the benefit only appears when all of them work together. This is an example of:",
-    "options": ["A portfolio", "A program", "Operations", "A project phase"],
+    "options": [
+      "A portfolio",
+      "A program",
+      "Operations",
+      "A project phase"
+    ],
     "answer": 1,
     "explanation": "Related projects managed in a coordinated manner to obtain benefits not available from managing them individually form a program.",
     "ref": "PMBOK 8, Standard 1.2"
@@ -84,19 +94,24 @@
     "id": "q8",
     "q": "Project management is the application of knowledge, skills, tools and techniques to project activities in order to:",
     "options": [
-      "Finish within budget regardless of the result",
       "Meet or exceed the intended value",
+      "Finish within budget regardless of the result",
       "Deliver as many features as possible",
       "Remove all risk from the project"
     ],
-    "answer": 1,
+    "answer": 0,
     "explanation": "The 8th edition definition is centered on the intended value. It explicitly does not endorse gold plating or scope creep.",
     "ref": "PMBOK 8, Standard 1.2"
   },
   {
     "id": "q9",
     "q": "A developer adds an extra reporting screen that the customer never requested, believing it will impress them. This is an example of:",
-    "options": ["Exceeding the intended value", "Gold plating", "A disbenefit", "Tailoring"],
+    "options": [
+      "Exceeding the intended value",
+      "Gold plating",
+      "A disbenefit",
+      "Tailoring"
+    ],
     "answer": 1,
     "explanation": "Adding unrequested extras is gold plating. 'Meeting or exceeding value' means value-driven decisions, not extra scope.",
     "ref": "PMBOK 8, Standard 1.2"
@@ -104,8 +119,13 @@
   {
     "id": "q10",
     "q": "A project delivers a new online ordering system. Order processing costs fall by 20%, but several long-time customers who prefer phone orders leave. The loss of those customers is best described as:",
-    "options": ["An output", "An artifact", "A disbenefit", "A requirement"],
-    "answer": 2,
+    "options": [
+      "An output",
+      "An artifact",
+      "A requirement",
+      "A disbenefit"
+    ],
+    "answer": 3,
     "explanation": "Outcomes can be positive or negative. Positive ones are benefits; negative consequences or losses are disbenefits.",
     "ref": "PMBOK 8, Standard 1.2"
   },
@@ -115,10 +135,10 @@
     "options": [
       "The total amount of money the project earns",
       "The number of deliverables completed",
-      "The excess of financial and non-financial benefits over the investment",
-      "The satisfaction of the project sponsor"
+      "The satisfaction of the project sponsor",
+      "The excess of financial and non-financial benefits over the investment"
     ],
-    "answer": 2,
+    "answer": 3,
     "explanation": "Value is benefits (financial and non-financial) minus investment. Different stakeholders perceive it differently.",
     "ref": "PMBOK 8, Standard 1.2"
   },
@@ -139,12 +159,12 @@
     "id": "q13",
     "q": "In a value delivery system, what do programs and projects pass on to operations?",
     "options": [
-      "The organization's strategy",
-      "Portfolio performance information",
       "Deliverables, with support and maintenance information",
+      "Portfolio performance information",
+      "The organization's strategy",
       "The desired outcomes, benefits and value"
     ],
-    "answer": 2,
+    "answer": 0,
     "explanation": "Strategy comes from senior leadership, desired outcomes come from portfolios, and programs and projects hand deliverables with support information to operations.",
     "ref": "PMBOK 8, Standard 2.1.1"
   },
@@ -164,7 +184,12 @@
   {
     "id": "q15",
     "q": "Which of these is an example of intangible business value?",
-    "options": ["Market share", "Monetary assets", "Brand recognition", "Infrastructure capabilities"],
+    "options": [
+      "Market share",
+      "Monetary assets",
+      "Brand recognition",
+      "Infrastructure capabilities"
+    ],
     "answer": 2,
     "explanation": "Intangible examples include goodwill, brand recognition, reputation, acquired knowledge and employee well-being. Market share, monetary assets and infrastructure are tangible.",
     "ref": "PMBOK 8, Standard 2.1, Figure 2-1"

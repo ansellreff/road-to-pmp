@@ -10,6 +10,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-09 | Isolated environment set up (portable Node.js + Git in `.tools`, Python in `.venv`). Instructor outline read. App skeleton built with first sample module (1.1). Runs on localhost. | You: review the app in the browser. Then Session 2 (GitHub + Vercel) |
 | 2026-10-09 | Switched reference to PMBOK 8th edition: module 1.1 rewritten (15 quiz questions, 22 flashcards), Domains 1 and 2 re-planned (38 modules total). Added "Your progress in this module" panel to undo or reset any mark. Local Git repository created with first commit. | You: create GitHub repository and Vercel project (steps in chat). Then Session 3: module 1.2 |
 | 2026-10-10 | Visual redesign with the frontend-design plugin: "project schedule" look, exam blueprint strip, milestone diamonds, index-card flashcards, local fonts. Going online is on hold at your request. | You: review the new look. Then either go online (GitHub + Vercel) or Session 3: module 1.2 |
+| 2026-10-10 | New plan approved (2 modules per session, a feature after each domain, go online at the end). Session 3 done: modules 1.2 and 1.3 written, content checker added (it caught and fixed unbalanced answer positions in the 1.1 quiz). | You: study and spot-check 1.2 and 1.3. Next: Session 4, modules 1.4 and 1.5 (the 6 principles) |
 
 ## How your progress is saved
 
@@ -64,6 +65,37 @@ Study for and pass PMI certifications using my own platform, in this order:
 
 Exam format: 150 questions, 3 hours. Checked on 2026-10-09 against several exam-prep sources that agree on these numbers; not yet checked on PMI's own page.
 
+## Roadmap to a complete CAPM course
+
+Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain**, **go online at the end**.
+
+| Status | Session | What | 
+|---|---|---|
+| ✅ | 3 | Modules 1.2, 1.3 and the content checker |
+| ⬜ | 4 | Modules 1.4, 1.5: the 6 principles |
+| ⬜ | 5 | Modules 1.6, 1.7: development approaches, the 5 focus areas |
+| ⬜ | 6 | Modules 1.8, 1.9: performance domains and tailoring; constraints, risks, issues |
+| ⬜ | 7 | Modules 1.10, 1.11: leadership and ethics; 7th edition terms. Needs PMI's Code of Ethics PDF (free on pmi.org) in the materials folder |
+| ⬜ | 8 | Feature: spaced repetition for flashcards |
+| ⬜ | 9 to 14 | Domain 2: 12 modules |
+| ⬜ | 15 | Feature: dashboard and "practice my weakest topics" quiz |
+| ⬜ | 16 to 19 | Domain 3: 8 modules |
+| ⬜ | 20 | Feature: study plan and exam countdown |
+| ⬜ | 21 to 24 | Domain 4: 7 modules |
+| ⬜ | 25 | Feature: timed exam simulator (150 questions, 180 minutes) |
+| ⬜ | 26 | UI/UX polish (see backlog below) |
+| ⬜ | 27 | Go online: GitHub and Vercel, test on phone |
+
+Every content session ends with the content checker (`tools/check_content.py`) and a build passing.
+
+### UI/UX backlog (for Session 26)
+
+- Dark mode
+- More interactive buttons and feedback
+- Phone-width layout check
+
+Add ideas here as they come up.
+
 ## Milestones
 
 Status: ⬜ not started, 🟡 in progress, ✅ done
@@ -92,7 +124,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 | ✅ | First sample module complete: 1.1 (lesson, 12 quiz questions, 16 flashcards) | 2026-10-09 |
 | 🟡 | Reviewed by you on http://localhost:5173 | |
 
-### Session 2: go online
+### Go online (moved to the end: Session 27)
 
 | Status | Milestone | Done on |
 |---|---|---|
@@ -101,13 +133,13 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 | ⬜ | Deployed on Vercel | |
 | ⬜ | Opens correctly on mobile phone | |
 
-### Sessions 3+: CAPM content (one module per session)
+### CAPM content, module by module
 
-Overall: **1 of 38 modules done.**
+Overall: **3 of 38 modules done** (47 quiz questions, 66 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
-| 🟡 | 1. PM Fundamentals and Core Concepts | 1 / 11 |
+| 🟡 | 1. PM Fundamentals and Core Concepts | 3 / 11 |
 | ⬜ | 2. Predictive, Plan-Based Methodologies | 0 / 12 |
 | ⬜ | 3. Agile Frameworks / Methodologies | 0 / 8 |
 | ⬜ | 4. Business Analysis Frameworks | 0 / 7 |
@@ -117,8 +149,8 @@ Overall: **1 of 38 modules done.**
 | Status | Module | Done on |
 |---|---|---|
 | ✅ | 1.1 Projects, Programs, Portfolios and Operations | 2026-10-09 |
-| ⬜ | 1.2 Governance and the Project Environment (EEFs, OPAs, Structures) | |
-| ⬜ | 1.3 Project Functions, Roles and Product Management | |
+| ✅ | 1.2 Governance and the Project Environment (EEFs, OPAs, Structures) | 2026-10-10 |
+| ✅ | 1.3 Project Functions, Roles and Product Management | 2026-10-10 |
 | ⬜ | 1.4 The 6 Principles, Part 1: Mindset, Holistic View, Value, Quality | |
 | ⬜ | 1.5 The 6 Principles, Part 2: Leadership, Sustainability, Empowered Culture | |
 | ⬜ | 1.6 Phases and Development Approaches: Predictive, Adaptive, Hybrid | |
