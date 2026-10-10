@@ -331,8 +331,12 @@ body {
 .glow-learning {
   --glow: var(--color-milestone);
 }
+/* Not learned yet is neutral grey with only a faint halo: it is not a mistake, so it is not red. */
 .glow-new {
-  --glow: var(--color-critical);
+  --glow: var(--color-edge);
+  box-shadow:
+    0 0 0 1px var(--glow),
+    0 0 14px color-mix(in srgb, var(--glow) 25%, transparent);
 }
 
 /* No motion for people whose device asks for less of it. */

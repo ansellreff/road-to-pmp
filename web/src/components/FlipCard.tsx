@@ -14,7 +14,8 @@ export const cardStatus = (state: CardState | undefined): CardStatus => (!state 
 export const statusLook: Record<CardStatus, { label: string; icon: IconName; glow: string; text: string; cell: string }> = {
   known: { label: 'Known', icon: 'check', glow: 'glow-known', text: 'text-done', cell: 'bg-done' },
   learning: { label: 'Still learning', icon: 'practice', glow: 'glow-learning', text: 'text-milestone', cell: 'bg-milestone' },
-  new: { label: 'Not learned yet', icon: 'cards', glow: 'glow-new', text: 'text-critical', cell: 'bg-critical' },
+  // Neutral grey, not red: a card not yet learned is not a mistake.
+  new: { label: 'Not learned yet', icon: 'cards', glow: 'glow-new', text: 'text-muted', cell: 'bg-edge' },
 }
 
 // Shared look of both faces: an index card, with a rule across the top.
