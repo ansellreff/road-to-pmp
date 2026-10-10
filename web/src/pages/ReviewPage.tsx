@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
-import FlipCard, { describeDue, RateButtons } from '../components/FlipCard'
+import FlipCard, { cardStatus, describeDue, RateButtons } from '../components/FlipCard'
 import { Notice, PageHeader, Waiting } from '../components/Page'
 import { allModules, courses, loadCards, type Card } from '../lib/content'
 import { isDue, moduleKey, rateCard, useProgress } from '../lib/progress'
@@ -41,6 +41,9 @@ export default function ReviewPage() {
   const [queue, setQueue] = useState<ReviewItem[] | null>(null)
   const [reviewed, setReviewed] = useState(0)
   const [flipped, setFlipped] = useState(false)
+  const [pausing, setPausing] = useState(false)
+  const timer = useRef(0)
+  useEffect(() => () => window.clearTimeout(timer.current), [])
 
   // The session's cards are fixed when the page opens, so rating one does not reshuffle the rest.
   useEffect(() => {
@@ -54,12 +57,17 @@ export default function ReviewPage() {
   const item = queue[0]
 
   function rate(knewIt: boolean) {
-    if (!item) return
+    if (!item || pausing) return
     rateCard(item.key, item.card.id, knewIt)
-    setFlipped(false)
     setReviewed(reviewed + 1)
-    // A missed card goes to the back of the queue and comes round again in this session.
-    setQueue(knewIt ? queue!.slice(1) : [...queue!.slice(1), item])
+    // The card stays a moment so its new colour is seen, then the next one comes.
+    setPausing(true)
+    timer.current = window.setTimeout(() => {
+      setPausing(false)
+      setFlipped(false)
+      // A missed card goes to the back of the queue and comes round again in this session.
+      setQueue((q) => (q ? (knewIt ? q.slice(1) : [...q.slice(1), item]) : q))
+    }, 650)
   }
 
   const upcoming = Object.values(progress.cards)
@@ -92,6 +100,7 @@ export default function ReviewPage() {
               flipped={flipped}
               onFlip={() => setFlipped(!flipped)}
               footer="Select the card to turn it over."
+              status={cardStatus(progress.cards[item.key]?.[item.card.id])}
             />
           </div>
           <div className="mt-4 flex flex-wrap items-center justify-between gap-3">

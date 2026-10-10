@@ -53,6 +53,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Site renamed from "Road to PMI" to **Road to PMP** at your request (browser tab, top bar, phone home screen name, backup file name). Private GitHub repository created by you: `ansellreff/road-to-pmp`, and the project is connected to it. The upload itself needs your sign-in, so it is done by double-clicking `upload.bat`. | You: double-click `upload.bat`, then import the repository on Vercel with Root Directory `web`, then send me the site address |
 | 2026-10-10 | **The platform is online: https://road-to-pmp-d82g.vercel.app** You uploaded with `upload.bat` and deployed on Vercel. Checked on the live site: all 13 click tests pass, a lesson address opens directly, search engines are told not to list it, and the books address returns no PDF. | You: open it on your phone, and bring your progress over with Download backup (on this PC) and Restore from backup (on the site). Next: Session 28d (sync), which needs a free Supabase project |
 | 2026-10-10 | **Session 29 done: navigation, side panels and a richer, more interactive look**, from your feedback after using the site. Search box with suggestions in the top bar; a Modules menu reaching every lesson from any page; a right-hand panel on lessons, quizzes, flashcards, mock exams, results and the formula sheet; previous and next through every module; cards, icons, domain colours and progress rings; the course page as cards; the home page as a "today" hub; answer feedback, confirmation messages, a streak counter, a daily goal and 13 milestones. 18 click tests pass. Sync between PC and phone is paused at your request. | You: look at http://localhost:5173, then double-click `upload.bat` to put it online, and tell me what you think of the look and the animations |
+| 2026-10-10 | **Flashcard status made visible**, from your feedback that "I know this" changed nothing you could see. Each card's edge now glows green (known), amber (still learning) or red (not learned yet), with the word in its corner; a strip above the card shows the whole deck in those colours and opens any card; a rated card stays for a moment in its new colour before the next one comes. Also on the Review cards page and in the side panel. | You: try a deck, then `upload.bat` when you are happy |
 
 ## How your progress is saved
 
@@ -501,6 +502,14 @@ Built on 2026-10-10 from four things you reported after using the site: search o
 - **Mock exams stay calm:** no animation, no message and no milestone announcement on a mock exam screen, in either mode. A milestone earned there is announced when you leave.
 - All motion is off when the device asks for reduced motion.
 
+**Flashcard status** (`web/src/components/FlipCard.tsx`)
+- Three states, each with a colour, an icon and a word, so it never depends on telling colours apart: **Known** (green), **Still learning** (amber), **Not learned yet** (red).
+- The card's edge glows in that colour and its corner carries the label, on both sides of the card.
+- Above the card, one small cell per card of the deck in its colour; the open card is outlined, and selecting a cell opens that card.
+- Counts of each state above the deck and in the side panel.
+- After you rate a card it stays about two thirds of a second in its new colour, then the next card comes.
+- "Still learning" is amber whether or not the card was known before: the saved data does not record the earlier state.
+
 **Newly saved with your progress:** the module opened last, the daily goal, and which milestones have been announced. Old saves and backup files still load.
 
 ## Session 25a audit results
@@ -784,3 +793,4 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 116 | The plan said feedback animations would be off "in real exam mode". | I kept practice mode of the mock exams calm as well, so every mock exam screen behaves the same. Module quizzes and "Practice missed questions" have the animations. | `web/src/pages/ExamPage.tsx` |
 | 117 | The daily goal needs a unit that fits lessons, questions and flashcards. | It counts study actions: each answered question, rated flashcard and completed lesson is one. The tile says so. | `GoalTile` in `web/src/pages/Home.tsx` |
 | 118 | Not every page was looked at as a picture after the page became wider: the study plan, practice, review cards, mock exam list, result and formula sheet were covered by the click tests but not viewed again. | Viewed: home (light, dark, phone), course page, lesson with panel, top menu, search suggestions (desktop and phone), real exam mode, dashboard. Tell me if any of the others looks off. | Status log |
+| 119 | Your feedback: pressing "I know this" showed nothing, because the next card appeared at once and no card showed its status. You proposed a green, yellow and red glow. | Built as you proposed, plus a label on the card and a strip showing the whole deck, since a glow alone would only show one card at a time. Red is otherwise used for wrong answers; here it means "not learned yet" as you asked. Say if you would prefer a neutral colour for new cards. A card changed from known to still learning is amber like any other still-learning card, because the earlier state is not stored. | `web/src/components/FlipCard.tsx`, `Flashcards.tsx` |

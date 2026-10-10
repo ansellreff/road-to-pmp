@@ -313,6 +313,28 @@ body {
   animation: rise 0.25s ease-out;
 }
 
+/* A flashcard's edge glows in the colour of its status: known, still learning, not learned yet. */
+.glow-known,
+.glow-learning,
+.glow-new {
+  border-color: var(--glow);
+  box-shadow:
+    0 0 0 1px var(--glow),
+    0 0 22px color-mix(in srgb, var(--glow) 45%, transparent);
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+.glow-known {
+  --glow: var(--color-done);
+}
+.glow-learning {
+  --glow: var(--color-milestone);
+}
+.glow-new {
+  --glow: var(--color-critical);
+}
+
 /* No motion for people whose device asks for less of it. */
 @media (prefers-reduced-motion: reduce) {
   *,

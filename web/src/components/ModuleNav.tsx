@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import type { Course, Domain } from '../lib/content'
 import { knownCount, moduleCompletion, moduleKey, useProgress } from '../lib/progress'
 import { percent } from '../lib/stats'
+import { StatusCounts } from './FlipCard'
 import Icon, { type IconName } from './Icon'
 import Milestone from './Milestone'
 import { PanelBlock } from './SidePanel'
@@ -55,6 +56,7 @@ export function ModuleStatus({ courseId, moduleId }: { courseId: string; moduleI
   const quiz = progress.quizzes[key]
   const deck = progress.cardTotals[key]
   const known = knownCount(progress, key)
+  const rated = Object.keys(progress.cards[key] ?? {}).length
   const base = `/${courseId}/${moduleId}`
   const rows: { to: string; icon: IconName; label: string; note: string; done: boolean }[] = [
     { to: base, icon: 'lesson', label: 'Lesson', note: progress.lessons[key] ? 'Completed' : 'Not completed', done: Boolean(progress.lessons[key]) },
@@ -86,6 +88,11 @@ export function ModuleStatus({ courseId, moduleId }: { courseId: string; moduleI
           </li>
         ))}
       </ul>
+      {deck ? (
+        <div className="mt-2 px-2">
+          <StatusCounts counts={{ known, learning: rated - known, new: Math.max(0, deck - rated) }} />
+        </div>
+      ) : null}
     </PanelBlock>
   )
 }

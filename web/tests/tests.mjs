@@ -185,19 +185,43 @@ export const tests = {
     expect(paper !== 'rgb(241, 244, 247)', 'the page background did not change in the dark theme')
   },
 
-  async 'flashcards: turn a card over and rate it'(page) {
+  async 'flashcards: a card shows its status by colour and word, and the strip shows the whole deck'(page) {
     await page.goto('/capm/1-01-project-basics/flashcards')
     await see(page, /You know 0 of \d+ cards/)
-    await page.getByRole('button', { name: 'Show the answer side' }).click()
-    await page.getByRole('button', { name: 'Show the question side' }).waitFor()
+    const total = Number((await page.getByText(/You know 0 of \d+ cards/).textContent()).match(/of (\d+)/)[1])
+    const deck = page.getByRole('list', { name: 'The cards of this deck' })
+    expect((await deck.getByRole('button', { name: /not learned yet/ }).count()) === total, 'not every card starts as not learned yet')
+    const card = page.getByRole('button', { name: /^Show the (answer|question) side/ })
+    await card.getByText('Not learned yet').first().waitFor()
+    const glow = () => card.locator('.flip-face').first().evaluate((el) => el.className.match(/glow-\w+/)?.[0])
+    expect((await glow()) === 'glow-new', 'a new card does not have the "not learned" edge')
+
+    await card.click()
+    await page.getByRole('button', { name: /^Show the question side/ }).waitFor()
     await button(page, 'I know this').click()
+    // The card stays for a moment in its new colour, then the next card comes.
+    expect((await glow()) === 'glow-known', 'the card did not turn to "known" when rated')
+    await see(page, new RegExp(`Card 2 of ${total}`))
     await see(page, /You know 1 of \d+ cards/)
-    await see(page, /Card 2 of \d+/)
+    await deck.getByRole('button', { name: 'Card 1: known' }).waitFor()
+
     await button(page, 'Still learning').click()
+    expect((await glow()) === 'glow-learning', 'the card did not turn to "still learning" when rated')
+    await see(page, new RegExp(`Card 3 of ${total}`))
+    await deck.getByRole('button', { name: 'Card 2: still learning' }).waitFor()
+
+    // A known card changed to "still learning" turns amber; the strip opens any card.
+    await deck.getByRole('button', { name: 'Card 1: known' }).click()
+    await card.getByText('Known').first().waitFor()
+    await button(page, 'Still learning').click()
+    await deck.getByRole('button', { name: 'Card 1: still learning' }).waitFor()
+    await see(page, /You know 0 of \d+ cards/)
+
     const cards = Object.values((await saved(page)).cards['capm/1-01-project-basics'])
-    expect(cards.length === 2 && cards.some((c) => c.box === 1) && cards.some((c) => c.box === 0), 'the ratings were not saved')
+    expect(cards.length === 2 && cards.every((c) => c.box === 0), 'the ratings were not saved')
     await page.goto('/review')
-    await see(page, '1 card left in this session')
+    await see(page, '2 cards left in this session')
+    await page.getByRole('button', { name: /^Show the answer side. This card: still learning/ }).waitFor()
   },
 
   async 'lesson: list of sections, jump to one, continue there next time'(page) {
