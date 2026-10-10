@@ -4,6 +4,7 @@ import ExamBlueprint from '../components/ExamBlueprint'
 import Icon, { type IconName } from '../components/Icon'
 import Milestone from '../components/Milestone'
 import Ring from '../components/Ring'
+import SyncPanel from '../components/SyncPanel'
 import { certifications, courses, findModule, getExams, type Course } from '../lib/content'
 import { buildPlan, formatDay, planMockExams } from '../lib/plan'
 import { readiness } from '../lib/readiness'
@@ -47,6 +48,7 @@ export default function Home() {
       ))}
 
       <CertificationPath progress={progress} />
+      <SyncPanel />
       <Backup />
     </div>
   )
@@ -411,8 +413,8 @@ function Backup() {
     <section className={section}>
       <h2 className={subTitle}>Your saved progress</h2>
       <p className={`${note} mt-1 max-w-2xl`}>
-        Progress saves automatically in this browser and stays after you close it. To use it on another device, download
-        a backup here and restore it there.
+        Progress saves automatically in this browser and stays after you close it. A backup file is a copy you keep
+        yourself; it also moves progress to another device without signing in.
       </p>
       <div className="mt-4 flex flex-wrap gap-2">
         <button className={btnQuiet} onClick={download}>

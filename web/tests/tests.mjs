@@ -43,6 +43,57 @@ async function inView(page, heading) {
   }, await element.elementHandle())
 }
 
+
+/**
+ * A stand-in for the Supabase project, so sync can be tested without a real sign-in email.
+ * Every browser profile given the same "remote" object shares one online copy, like two devices.
+ */
+export async function fakeSupabase(context, remote) {
+  const token = (email) =>
+    `x.${Buffer.from(JSON.stringify({ sub: 'user-1', email })).toString('base64url')}.x`
+  await context.route('https://*.supabase.co/**', async (route) => {
+    const request = route.request()
+    const url = new URL(request.url())
+    remote.calls = (remote.calls ?? 0) + 1
+    const json = (status, body) => route.fulfill({ status, contentType: 'application/json', body: body === undefined ? '' : JSON.stringify(body) })
+    const body = request.postData() ? JSON.parse(request.postData()) : {}
+    if (url.pathname === '/auth/v1/otp') return json(200, {})
+    if (url.pathname === '/auth/v1/verify') {
+      if (body.token !== '123456') return json(403, { msg: 'Token has expired or is invalid' })
+      return json(200, { access_token: token(body.email), refresh_token: 'refresh', expires_in: 3600 })
+    }
+    if (url.pathname === '/auth/v1/logout') return json(204)
+    if (url.pathname === '/rest/v1/progress') {
+      // Like the real rule: only a signed-in person reaches the row.
+      if (!request.headers().authorization?.startsWith('Bearer x.')) return json(401, { message: 'not signed in' })
+      if (request.method() === 'GET') return json(200, remote.row ? [remote.row] : [])
+      remote.row = { data: body.data, updated_at: body.updated_at }
+      remote.uploads = (remote.uploads ?? 0) + 1
+      return json(201)
+    }
+    return json(404, { message: 'not found' })
+  })
+}
+
+async function signIn(page, email = 'learner@example.com') {
+  await page.goto('/')
+  await page.getByLabel('Email address').fill(email)
+  await button(page, 'Send the sign-in email').click()
+  await see(page, `A sign-in email was sent to ${email}`)
+  await page.getByLabel('Code from the email').fill('123456')
+  await button(page, 'Sign in').click()
+  await see(page, `Signed in as ${email}`)
+}
+
+/** Waits until the shared online copy satisfies the check. */
+async function online(remote, check, what) {
+  for (let i = 0; i < 80; i++) {
+    if (remote.row && check(remote.row.data)) return
+    await new Promise((resolve) => setTimeout(resolve, 150))
+  }
+  throw new Error(`the online copy never showed: ${what}`)
+}
+
 export const tests = {
   async 'quiz: answer every question, see explanations, get a score'(page) {
     await page.goto('/capm/1-01-project-basics/quiz')
@@ -415,6 +466,84 @@ export const tests = {
     expect((await page.getByText('Milestone reached').count()) === 0, 'a milestone was announced on a mock exam screen')
     await page.goto('/dashboard')
     await see(page, 'Milestone reached: First mock exam finished')
+  },
+
+  async 'sync: nothing is sent until you sign in; then two devices share, merge and delete together'(page, context, browser, BASE) {
+    const remote = {}
+    await fakeSupabase(context, remote)
+    const L1 = 'capm/1-01-project-basics'
+    const L2 = 'capm/1-02-governance-environment'
+    const L3 = 'capm/1-03-functions-roles'
+
+    // Device A studies without signing in: nothing leaves the browser.
+    await page.goto('/capm/1-01-project-basics')
+    await button(page, 'Mark lesson as completed').click()
+    await see(page, 'Lesson completed')
+    await page.waitForTimeout(600)
+    expect(!remote.calls, `${remote.calls} requests went to the sync service before sign-in`)
+
+    // A wrong code is refused with a clear message; the right one signs in and uploads.
+    await page.goto('/')
+    await page.getByLabel('Email address').fill('learner@example.com')
+    await button(page, 'Send the sign-in email').click()
+    await page.getByLabel('Code from the email').fill('000000')
+    await button(page, 'Sign in').click()
+    await see(page, 'The sync service answered: Token has expired or is invalid')
+    await page.getByLabel('Code from the email').fill('123456')
+    await button(page, 'Sign in').click()
+    await see(page, 'Signed in as learner@example.com')
+    await online(remote, (d) => d.lessons[L1], 'lesson 1.1 from device A')
+
+    // Device B signs in with nothing of its own and receives device A's progress.
+    const contextB = await browser.newContext({ baseURL: BASE, viewport: { width: 1200, height: 900 } })
+    await fakeSupabase(contextB, remote)
+    const pageB = await contextB.newPage()
+    pageB.setDefaultTimeout(8000)
+    try {
+      await signIn(pageB)
+      await pageB.waitForFunction(([key, lesson]) => JSON.parse(localStorage.getItem(key) ?? '{}').lessons?.[lesson], [KEY, L1])
+
+      // Both devices change something before either uploads: the two are merged, nothing is lost.
+      await page.goto('/capm/1-02-governance-environment')
+      await pageB.goto('/capm/1-03-functions-roles')
+      await button(page, 'Mark lesson as completed').click()
+      await button(pageB, 'Mark lesson as completed').click()
+      await online(remote, (d) => d.lessons[L1] && d.lessons[L2] && d.lessons[L3], 'lessons 1.1, 1.2 and 1.3 merged')
+      await page.goto('/')
+      await button(page, 'Sync now').click()
+      await pageB.goto('/')
+      await button(pageB, 'Sync now').click()
+      for (const device of [page, pageB]) {
+        await device.waitForFunction(
+          ([key, a, b, c]) => {
+            const lessons = JSON.parse(localStorage.getItem(key) ?? '{}').lessons ?? {}
+            return lessons[a] && lessons[b] && lessons[c]
+          },
+          [KEY, L1, L2, L3],
+        )
+      }
+
+      // A deletion on device A reaches device B: it is not brought back by the merge.
+      await pageB.waitForTimeout(500)
+      await page.goto('/capm/1-01-project-basics')
+      await button(page, 'Remove completed mark').first().click()
+      await online(remote, (d) => !d.lessons[L1] && d.lessons[L2], 'lesson 1.1 unmarked')
+      await button(pageB, 'Sync now').click()
+      await pageB.waitForFunction(([key, lesson]) => !JSON.parse(localStorage.getItem(key) ?? '{}').lessons?.[lesson], [KEY, L1])
+      expect((await saved(pageB)).lessons[L2], 'device B lost a lesson it should have kept')
+
+      // Signing out stops the uploads and keeps the progress on the device.
+      await button(pageB, 'Sign out').click()
+      await see(pageB, 'Signed out. Your progress stays on this device.')
+      const before = remote.uploads
+      await pageB.goto('/capm/1-04-principles-part-1')
+      await button(pageB, 'Mark lesson as completed').click()
+      await pageB.waitForTimeout(5000)
+      expect(remote.uploads === before, 'a signed-out device still uploaded')
+      expect((await saved(pageB)).lessons[L2], 'signing out removed progress from the device')
+    } finally {
+      await contextB.close()
+    }
   },
 
   async 'lesson and study plan: mark complete, set and remove the exam day'(page) {

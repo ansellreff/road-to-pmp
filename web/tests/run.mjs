@@ -23,7 +23,7 @@ for (const [name, test] of Object.entries(tests)) {
   const errors = []
   page.on('pageerror', (error) => errors.push(error.message))
   try {
-    await test(page, context)
+    await test(page, context, browser, BASE)
     if (errors.length) throw new Error(`the page reported an error: ${errors[0]}`)
     console.log(`ok    ${name}`)
   } catch (error) {

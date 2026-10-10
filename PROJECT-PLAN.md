@@ -55,6 +55,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | **Session 29 done: navigation, side panels and a richer, more interactive look**, from your feedback after using the site. Search box with suggestions in the top bar; a Modules menu reaching every lesson from any page; a right-hand panel on lessons, quizzes, flashcards, mock exams, results and the formula sheet; previous and next through every module; cards, icons, domain colours and progress rings; the course page as cards; the home page as a "today" hub; answer feedback, confirmation messages, a streak counter, a daily goal and 13 milestones. 18 click tests pass. Sync between PC and phone is paused at your request. | You: look at http://localhost:5173, then double-click `upload.bat` to put it online, and tell me what you think of the look and the animations |
 | 2026-10-10 | **Flashcard status made visible**, from your feedback that "I know this" changed nothing you could see. Each card's edge now glows green (known) or amber (still learning), and is neutral grey when not learned yet, with the word in its corner; a strip above the card shows the whole deck in those colours and opens any card; a rated card stays for a moment in its new colour before the next one comes. Also on the Review cards page and in the side panel. | You: try a deck, then `upload.bat` when you are happy |
 | 2026-10-10 | **Session 30: more and better questions.** 54 new scenario questions for modules 1.1 to 1.9, so those quizzes have 17 to 20 questions instead of 11 to 14. 112 recall questions in Domains 2, 3 and 4 reworded as situations, with options and answers unchanged. Scenario questions are now about half of the bank (49%, from about a third). Question bank: 894. Sync between PC and phone is resumed at your request and waits for a Supabase project. | You: create a free Supabase project and send me its Project URL and anon public key; run `upload.bat` to publish the new questions |
+| 2026-10-10 | **Session 28d built: sync between PC and phone.** Optional sign-in by email on the home page; progress uploads a few seconds after each change and downloads when the site opens; two devices changed apart are merged; a deletion on one device reaches the others. Tested with two browser profiles against a simulated server (19 click tests pass). Not yet tested against your real Supabase project: that needs the setup below and your inbox. | You: in Supabase run `supabase/setup.sql` and set the site address (steps under "Sync between devices"); run `upload.bat`; then sign in on the PC and the phone and tell me what happens |
 
 ## How your progress is saved
 
@@ -87,6 +88,30 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 - **What is not on it:** the PDFs. Sources show as book and page number without a link. On this PC (`start.bat`) the links still open the PDFs.
 - **Progress** on the website is separate from progress on this PC and from your phone, until sync is built (Session 28d). Use Download backup and Restore from backup on the home page to move it.
 - Anyone who has the address can open the site. It is not listed by search engines.
+
+
+## Sync between devices
+
+Optional. Until you sign in on the home page, nothing leaves your browser and everything works as before.
+
+**One-time setup in your Supabase project** (`xvkdcaafiebmymkuikie`)
+1. **SQL Editor:** paste the whole of `supabase/setup.sql` and press Run. It creates one table, with a rule that each signed-in person can read and change only their own row.
+2. **Authentication, URL Configuration:** set **Site URL** to `https://road-to-pmp-d82g.vercel.app`, and add two **Redirect URLs**: `https://road-to-pmp-d82g.vercel.app` and `http://localhost:5173`. Without this the link in the sign-in email opens a page that does not exist.
+3. Optional, **Authentication, Emails:** in the "Magic Link" and "Confirm signup" templates add a line `Your code: {{ .Token }}`. Then the email also carries a 6-digit code you can type in, which is handy when you read the email on a different device from the one you are signing in on.
+
+**Using it**
+- Home page, "Sync between your devices": enter your email, open the link in the email on that device (or type the code). Do the same on each device with the same email.
+- Progress uploads about 4 seconds after a change, and downloads when you open the site or come back to its tab. "Sync now" does both at once.
+- If only one device changed since they last agreed, the other simply takes its progress, including deletions. If both changed while apart, they are merged: lessons, scores, flashcards, answers and mock exam attempts from both are kept, and where both changed the same thing the later change wins.
+- Signing out stops syncing and leaves your progress on the device.
+
+**What is stored online:** one row with a copy of your progress (the same content as the backup file) and your email address as the sign-in. The address and public key of the project are in `web/src/lib/syncConfig.ts`; both are meant to be public.
+
+**Limits**
+- Supabase's built-in email service sends only a few emails an hour. If a sign-in email does not arrive, wait before asking again.
+- A free Supabase project is paused after about a week without use and must be woken from its dashboard. Studying most days keeps it awake.
+- A deletion made on one device while the other was also changed, before either synced, can come back through the merge. Press "Sync now" on both devices before deleting things if that matters.
+- The dark or light theme, text size and last-opened certification are per device and are not synced.
 
 
 ## How to start the app on this PC
@@ -164,7 +189,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 28a | Click tests; lesson sections and resume; search; formula sheet |
 | ✅ | 28b | Weak spots and timing for mock exams; readiness estimate; mock exams in the study plan |
 | ✅ | 28c | Online at https://road-to-pmp-d82g.vercel.app from the private repository `ansellreff/road-to-pmp`. Checked with the click tests. Phone check by you still open. |
-| 🟡 | 28d | Sync between PC and phone: resumed at your request on 2026-10-10. Waiting for your Supabase project (Project URL and anon public key). |
+| 🟡 | 28d | Sync between PC and phone: built and tested against a simulated server. Waiting for your Supabase setup and a real sign-in to confirm it end to end. |
 | ✅ | 29 | Navigation, side panels and a richer look, from your feedback: search suggestions, Modules menu, right-hand panel, previous and next, cards and rings, home hub, feedback, streak, daily goal, milestones. Details under "Session 29: navigation and look, as built". |
 | ✅ | 30 | Questions: 54 new scenario questions in Domain 1; 112 questions in Domains 2 to 4 reworded as situations. Details under "Session 30: questions". |
 
@@ -834,3 +859,14 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 120 | The 54 new Domain 1 questions repeated the old give-away: the right answer was the longest option in about half of them, and three quizzes went over the 35% limit. | The checker flagged it at once. I lengthened one wrong option in 24 questions. Every Domain 1 quiz is now at 29% or less. | `tools/check_content.py --report` |
 | 121 | Writing new scenario questions for Domains 2 to 4 would have meant reading 27 lessons again, and would have put two questions on the same fact into one quiz. | I reworded existing recall questions as situations instead, keeping options, answer, explanation and source. This is cheaper and cannot introduce a wrong answer, but the result is less demanding than a freshly written scenario. Said under "Limits". | "Session 30: questions" |
 | 122 | Some reworded questions are part of the fixed mock exams, which were meant not to change. | The exams still contain the same questions with the same answers; only the wording of 112 questions is fuller. Results already saved remain valid. | `web/src/content/capm/exams.json` (unchanged) |
+
+### Sync between devices (Session 28d)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 123 | You sent the address of the Supabase dashboard page, not the project's own address. | The project's address follows from the reference in it (`https://xvkdcaafiebmymkuikie.supabase.co`). I confirmed it answers, and that the key you sent is the public "anon" key and not a secret one. | `web/src/lib/syncConfig.ts` |
+| 124 | I cannot receive your sign-in email, so I could not test a real sign-in. | The sync logic is tested with two browser profiles against a simulated server: no request before sign-in, wrong code refused, upload, second device receives, both changed and merged, deletion reaches the other device, sign-out stops uploads. The real sign-in and the real table still need you. | `web/tests/tests.mjs` (`fakeSupabase`) |
+| 125 | The plan promised sign-in by a one-time code. By default Supabase's email carries only a link, and the link only works if the site's address is registered in the project. | The app accepts both the link and a code. The setup steps register the address (needed) and show how to add the code to the email (optional). | "Sync between devices" |
+| 126 | Joining two devices by "newest wins" would lose work, and joining by "keep everything" would bring deleted things back. | Each device remembers when it last matched the online copy. If only one side changed, it simply wins, deletions included. Only when both changed are they merged. The remaining case, a deletion on one side while both changed, is stated under Limits. | `web/src/lib/sync.ts`, `web/src/lib/merge.ts` |
+| 127 | The online copy's time stamp comes back from the service written in a different format from the one sent, so comparing the two as text would always have reported a change. | Caught while writing, before any test. The two are compared as moments in time. | `syncNow` in `web/src/lib/sync.ts` |
+| 128 | No extra library was added for Supabase. | The four calls sync needs (send email, verify, read row, write row) are made directly, which keeps the site small and leaves nothing new to update. | `web/src/lib/sync.ts` |

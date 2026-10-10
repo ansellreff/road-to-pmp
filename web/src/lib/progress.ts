@@ -156,8 +156,28 @@ function read(): Progress {
 
 let state = read()
 const listeners = new Set<() => void>()
+// Told about every change made on this device, so sync knows there is something to upload.
+const changeListeners = new Set<() => void>()
 
+/** Save a change made on this device. */
 function commit(next: Progress) {
+  store(next)
+  changeListeners.forEach((l) => l())
+}
+
+/** Put progress in place without counting it as a change made here: used when sync brings it in. */
+export function replaceProgress(data: unknown) {
+  store(migrate(data))
+}
+
+export const getProgress = () => state
+
+export function onProgressChange(listener: () => void) {
+  changeListeners.add(listener)
+  return () => changeListeners.delete(listener)
+}
+
+function store(next: Progress) {
   state = next
   try {
     localStorage.setItem(KEY, JSON.stringify(state))
