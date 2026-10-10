@@ -122,7 +122,7 @@ The output **team performance assessments** judges how effective the **team as a
 
 ## The Tuckman ladder
 
-@source PMBOK 8, Guide section 5, Tuckman ladder
+@source PMBOK 8, Guide section 5, Tuckman ladder; PMBOK 6, 9.4
 
 | Stage | What happens |
 |---|---|
@@ -155,7 +155,7 @@ The output **team performance assessments** judges how effective the **team as a
 
 ## What motivates people
 
-@source PMBOK 8, Guide section 5, Motivation
+@source PMBOK 8, Guide section 5, Motivation; PMBOK 6, 9.4.2.5
 
 | Model | Main idea |
 |---|---|
@@ -204,4 +204,4 @@ Examples of what goes wrong without it: critical equipment arrives late and dela
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.6 (Resources performance domain) and sections 4 and 5. Maslow's five-level hierarchy, the note that a new member sends the team back toward forming, and the tips on rewards follow standard PMI teaching. The RACI example is my own. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.6 (Resources performance domain) and sections 4 and 5. That a team can get stuck in a stage or regress to an earlier one, and the points on recognition and rewards, are in the PMBOK Guide, Sixth Edition, sections 9.4 and 9.4.2.5. Maslow's five-level hierarchy and the note that a new member is a typical cause of regression follow standard PMI teaching. The RACI example is my own. Written in original wording for personal study.*

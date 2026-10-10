@@ -95,7 +95,7 @@ An **information radiator** is a **visible, physical display** placed where ever
 
 ## Decision-making
 
-@source PMBOK 8, Guide section 5, Decision-making; PMBOK 8, Guide section 5, Voting; PMBOK 8, Guide section 5, Multicriteria decision analysis; PMBOK 8, Guide section 5, Prioritization/ranking
+@source PMBOK 8, Guide section 5, Decision-making; PMBOK 8, Guide section 5, Voting; PMBOK 8, Guide section 5, Multicriteria decision analysis; PMBOK 8, Guide section 5, Prioritization/ranking; PMBOK 6, 6.4.2.7
 
 | Method | How the decision is reached |
 |---|---|
@@ -135,7 +135,7 @@ Agile teams often vote in ways that reveal everyone's view at once, such as **fi
 
 ## Meetings
 
-@source PMBOK 8, Guide section 5, Meetings; PMBOK 8, Guide section 5, Meeting management; PMBOK 8, Guide section 5, Daily coordination meeting; PMBOK 8, Guide section 5, Retrospectives
+@source PMBOK 8, Guide section 5, Meetings; PMBOK 8, Guide section 5, Meeting management; PMBOK 8, Guide section 5, Daily coordination meeting; PMBOK 8, Guide section 5, Retrospectives; PMBOK 6, 4.2.2.4
 
 | Meeting | Purpose |
 |---|---|
@@ -188,4 +188,4 @@ Running a good meeting:
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 5 (Tools and Techniques). The grouping of tools into eight families, the kickoff meeting, fist of five and the situation table follow standard PMI teaching or are my own arrangement. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 5 (Tools and Techniques). The kickoff meeting and fist of five are described in the PMBOK Guide, Sixth Edition, sections 4.2.2.4 and 6.4.2.7. The grouping of tools into eight families and the situation table are my own arrangement. Written in original wording for personal study.*

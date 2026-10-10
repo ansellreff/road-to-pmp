@@ -27,7 +27,7 @@ Teams may also track **qualitative** measures, for example business satisfaction
 
 ## Velocity
 
-@source PMBOK 8, Guide section 5, Velocity; Agile Practice Guide, 5.5.1
+@source PMBOK 8, Guide section 5, Velocity; Agile Practice Guide, 5.5.1; Agile Practice Guide, First Edition, 5.4.1
 
 **Velocity** is the rate at which the team produces, validates and accepts deliverables in a set interval. In practice it is the **story points completed per iteration**.
 
@@ -51,7 +51,7 @@ Three ways velocity is misused:
 
 ## Burndown and burnup charts
 
-@source PMBOK 8, Guide section 5, Burndown chart; PMBOK 8, Guide section 5, Burnup chart
+@source PMBOK 8, Guide section 5, Burndown chart; PMBOK 8, Guide section 5, Burnup chart; Agile Practice Guide, First Edition, 5.4.1
 
 | | Burndown chart | Burnup chart |
 |---|---|---|
@@ -208,4 +208,4 @@ A retrospective is a form of lessons learned meeting. The difference is **timing
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, sections 5.2.7 and 5.5 to 5.5.5 and its glossary; PMBOK Guide, Eighth Edition, the section 5 entries on burndown chart, burnup chart, velocity, information radiators, visual controls and retrospectives. The burndown and burnup comparison table, the reading rules for the ideal line, the worked numbers, the lead time example, the event comparison table and the order of review then retrospective follow standard PMI teaching or are my own. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, sections 5.2.7 and 5.5 to 5.5.5 and its glossary; PMBOK Guide, Eighth Edition, the section 5 entries on burndown chart, burnup chart, velocity, information radiators, visual controls and retrospectives. Burndown and burnup charts with a planned line, and velocity as a planning aid, are also described in the Agile Practice Guide, First Edition, section 5.4.1. The burndown and burnup comparison table, the reading rules for the ideal line, the worked numbers, the lead time example, the event comparison table and the order of review then retrospective follow standard PMI teaching or are my own. Written in original wording for personal study.*

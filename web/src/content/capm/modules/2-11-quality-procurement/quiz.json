@@ -10,8 +10,13 @@
     ],
     "answer": 1,
     "explanation": "Quality is the degree to which requirements are met. Grade is a category of features. A simple product that works as promised is low grade but good quality.",
-    "ref": "PMI standard teaching; PMBOK 8, Standard 3.5",
+    "ref": "PMBOK 6, X4.5; PMBOK 8, Standard 3.5",
     "links": [
+      {
+        "book": "pmbok6",
+        "page": 663,
+        "label": "PMBOK 6, X4.5"
+      },
       {
         "book": "pmbok8",
         "page": 66,

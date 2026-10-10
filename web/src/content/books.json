@@ -9,5 +9,8 @@
   "wbs": { "title": "Practice Standard for Work Breakdown Structures, Third Edition", "file": "Practice Standard for Work Breakdown Structures – Third Edition.pdf" },
   "estimating": { "title": "Practice Standard for Project Estimating, Second Edition", "file": "Practice Standard for Project Estimating - Second Edition.pdf" },
   "riskguide": { "title": "Risk Management in Portfolios, Programs, and Projects: A Practice Guide", "file": "Risk Management in Portfolios, Programs, and Projects A Practice Guide.pdf" },
-  "agile": { "title": "Agile Practice Guide, Second Edition", "file": "Agile Practice Guide.pdf" }
+  "agile": { "title": "Agile Practice Guide, Second Edition", "file": "Agile Practice Guide 2nd Edition.pdf" },
+  "agile1": { "title": "Agile Practice Guide, First Edition (2017)", "file": "Agile Practice Guide 1st Edition.pdf" },
+  "pmbok6": { "title": "PMBOK Guide, Sixth Edition", "file": "PMBOK Guide 6th Edition.pdf" },
+  "eco": { "title": "CAPM Exam Content Outline (2023 update)", "file": "CAPM Exam Content Outline 2023 update.pdf" }
 }

@@ -99,7 +99,7 @@ Two related approaches help decide **what** to build before building it:
 
 ## Iterative, incremental and agile
 
-@source Agile Practice Guide, 3.9
+@source Agile Practice Guide, 3.9; Agile Practice Guide, First Edition, 3.1.2; Agile Practice Guide, First Edition, 3.1.3
 
 Approaches sit on a **continuum** from predictive to agile, with iterative and incremental approaches in between.
 
@@ -169,4 +169,4 @@ Agile is not always the right choice. For defined, repeatable work with little u
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, sections 2 (agile values and principles), 3.9, 3.10 and 4.1. The four values are quoted from the Manifesto for Agile Software Development (2001); the twelve principles are paraphrased. The separate iterative and incremental rows of the comparison table, the "inverted triangle" and the list of benefits follow standard PMI teaching. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, sections 2 (agile values and principles), 3.9, 3.10 and 4.1. The four values are quoted from the Manifesto for Agile Software Development (2001); the twelve principles are paraphrased. The separate iterative and incremental rows of the comparison table follow the Agile Practice Guide, First Edition, sections 3.1.2 and 3.1.3. The "inverted triangle" and the list of benefits follow standard PMI teaching. Written in original wording for personal study.*

@@ -26,7 +26,7 @@ Procurement is not a separate domain because project purchasing is usually run t
 
 ## Quality basics
 
-@source PMBOK 8, Standard 3.5; PMBOK 8, Guide section 4, Quality management plan
+@source PMBOK 8, Standard 3.5; PMBOK 8, Guide section 4, Quality management plan; PMBOK 6, X4.5
 
 | Idea | Meaning |
 |---|---|
@@ -63,7 +63,7 @@ Example of grade and quality: an economy hotel room (low grade) that is clean an
 
 ## Quality tools
 
-@source PMBOK 8, Guide section 5, Control charts; PMBOK 8, Guide section 5, Cause-and-effect diagram; PMBOK 8, Guide section 5, Flowchart
+@source PMBOK 8, Guide section 5, Control charts; PMBOK 8, Guide section 5, Cause-and-effect diagram; PMBOK 8, Guide section 5, Flowchart; PMBOK 6, 8.2.2.4; PMBOK 6, 8.3.2.1
 
 | Tool | What it shows | Use it to |
 |---|---|---|
@@ -108,7 +108,7 @@ The project manager usually **does not sign contracts**. That authority belongs 
 
 ## Bid documents and choosing a seller
 
-@source PMBOK 8, Appendix X4.5; PMBOK 8, Appendix X4.6; PMBOK 8, Appendix X4.7
+@source PMBOK 8, Appendix X4.5; PMBOK 8, Appendix X4.6; PMBOK 8, Appendix X4.7; PMBOK 6, 12.2.2.5
 
 | Document | Used when |
 |---|---|
@@ -130,7 +130,7 @@ The project manager usually **does not sign contracts**. That authority belongs 
 
 ## Contract types
 
-@source PMBOK 8, Appendix X4.8; PMBOK 8, Appendix X4.8.1
+@source PMBOK 8, Appendix X4.8; PMBOK 8, Appendix X4.8.1; PMBOK 6, 12.1.1.6
 
 | Contract type | How it works | Used when | Who carries the cost risk |
 |---|---|---|---|
@@ -201,4 +201,4 @@ A **procurement audit** is a structured review of the procurement process and co
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, Appendix X4 (Procurement), the Standard section 3.5, and the Guide sections 4 and 5. Several points are not in the 8th edition text and follow standard PMI teaching: grade versus quality; the Pareto chart, histogram, scatter diagram and check sheet; the rule of seven; the fixed-price and cost-plus sub-types (FFP, FPIF, FP-EPA, CPFF, CPIF, CPAF); and who signs contracts. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, Appendix X4 (Procurement), the Standard section 3.5, and the Guide sections 4 and 5. Several points are not in the 8th edition text and come from the PMBOK Guide, Sixth Edition: grade versus quality (X4.5 and the introduction to section 8); the histogram, scatter diagram and check sheet (8.2.2.4 and 8.3.2.1); the fixed-price and cost-plus sub-types FFP, FPIF, FP-EPA, CPFF, CPIF and CPAF (12.1.1.6); and who has the authority to sign contracts (12.2.2.5). The Pareto chart and the rule of seven are in neither edition and follow standard PMI teaching. Written in original wording for personal study.*

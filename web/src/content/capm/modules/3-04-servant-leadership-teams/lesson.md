@@ -137,7 +137,7 @@ If a specialist can only join part-time, set clear expectations with everyone ab
 
 ## Team spaces and remote teams
 
-@source Agile Practice Guide, 4.7; Agile Practice Guide, 4.7.2
+@source Agile Practice Guide, 4.7; Agile Practice Guide, 4.7.2; Agile Practice Guide, First Edition, 4.3.6
 
 | Arrangement | Meaning |
 |---|---|
@@ -215,4 +215,4 @@ The earlier the level, the easier it is to resolve. At levels 1 to 3 the team ca
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, section 4 (creating an agile environment): 4.2 psychological safety, 4.3 supportive leaders, 4.4 team composition, 4.6 generalizing specialists and 4.7 team structures. The manager and servant leader comparison, "shields the team", osmotic communication, caves and commons, the fishbowl window and the five levels of conflict follow standard PMI teaching and are not in this edition of the guide. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, section 4 (creating an agile environment): 4.2 psychological safety, 4.3 supportive leaders, 4.4 team composition, 4.6 generalizing specialists and 4.7 team structures. Caves and commons and the fishbowl window are in the Agile Practice Guide, First Edition, section 4.3.6; that edition also names osmotic communication, without defining it, in section A3.5. The manager and servant leader comparison, "shields the team", the definition of osmotic communication and the five levels of conflict follow standard PMI teaching. Written in original wording for personal study.*

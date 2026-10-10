@@ -68,5 +68,10 @@
     "book": "agile",
     "page": 152,
     "label": "Agile Practice Guide, A3.9"
+  },
+  {
+    "book": "agile1",
+    "page": 76,
+    "label": "Agile Practice Guide, First Edition, 5.4.1"
   }
 ]

@@ -38,5 +38,15 @@
     "book": "agile",
     "page": 56,
     "label": "Agile Practice Guide, 4.1"
+  },
+  {
+    "book": "agile1",
+    "page": 36,
+    "label": "Agile Practice Guide, First Edition, 3.1.2"
+  },
+  {
+    "book": "agile1",
+    "page": 37,
+    "label": "Agile Practice Guide, First Edition, 3.1.3"
   }
 ]

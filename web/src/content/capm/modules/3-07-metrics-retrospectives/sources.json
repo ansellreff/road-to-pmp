@@ -50,6 +50,11 @@
     "label": "Agile Practice Guide, Glossary (lead time)"
   },
   {
+    "book": "agile1",
+    "page": 76,
+    "label": "Agile Practice Guide, First Edition, 5.4.1"
+  },
+  {
     "book": "pmbok8",
     "page": 255,
     "label": "PMBOK 8, Guide section 5, Burndown chart"

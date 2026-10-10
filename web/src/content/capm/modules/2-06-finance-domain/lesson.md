@@ -48,7 +48,7 @@ Defines **how** project revenues and expenses will be estimated, budgeted, manag
 
 ## Estimate Costs
 
-@source PMBOK 8, Guide 2.4.2.2; PMBOK 8, Guide section 4, Cost estimates; Practice Standard for Project Estimating, 2.4
+@source PMBOK 8, Guide 2.4.2.2; PMBOK 8, Guide section 4, Cost estimates; Practice Standard for Project Estimating, 2.4; PMBOK 6, 7.2
 
 Develops an **approximation of the cost of the resources** needed to complete the work. It is repeated through the project as more becomes known.
 
@@ -65,7 +65,7 @@ Develops an **approximation of the cost of the resources** needed to complete th
 
 The narrowing of the range over time is called the **cone of uncertainty**. As the range narrows, less contingency reserve is needed for estimating uncertainty.
 
-> **Note on the figures.** The ROM range of −25% to +75% is given in PMI's estimating standard. For later estimates that standard gives −10% to +15% as an example and says organizations set their own guidelines. The −5% to +10% "definitive" range is the figure from earlier PMBOK Guide editions and is the one most often used in exam preparation material.
+> **Note on the figures.** The ROM range of −25% to +75% is given in PMI's estimating standard. For later estimates that standard gives −10% to +15% as an example and says organizations set their own guidelines. The −5% to +10% "definitive" range is given in the PMBOK Guide, Sixth Edition, section 7.2, and is the one most often used in exam preparation material.
 
 ## Cost estimating techniques
 
@@ -139,7 +139,7 @@ Adds up the estimated costs of activities or work packages to establish an autho
 
 ## The cost baseline and funding
 
-@source PMBOK 8, Guide section 4, Cost baseline; PMBOK 8, Guide section 4, Project funding requirements; PMBOK 8, Guide section 5, Funding limit reconciliation
+@source PMBOK 8, Guide section 4, Cost baseline; PMBOK 8, Guide section 4, Project funding requirements; PMBOK 8, Guide section 5, Funding limit reconciliation; PMBOK 6, 7.3.3.1
 
 | Term | Meaning |
 |---|---|
@@ -154,7 +154,7 @@ Adds up the estimated costs of activities or work packages to establish an autho
 
 ## Contingency reserve and management reserve
 
-@source PMBOK 8, Guide 2.4.1; PMBOK 8, Guide section 5, Reserve analysis
+@source PMBOK 8, Guide 2.4.1; PMBOK 8, Guide section 5, Reserve analysis; PMBOK 6, 7.3.3.1
 
 | | **Contingency reserve** | **Management reserve** |
 |---|---|---|
@@ -185,7 +185,7 @@ Monitors the project's financial status, updates the finances and **manages chan
 
 ## Measures used to judge a project's value
 
-@source PMBOK 8, Guide 2.4.1; PMBOK 8, Guide section 5, Cost-benefit analysis
+@source PMBOK 8, Guide 2.4.1; PMBOK 8, Guide section 5, Cost-benefit analysis; PMBOK 6, 1.2.6.4
 
 These measures are used in the business case and when selecting projects.
 
@@ -221,4 +221,4 @@ You are not asked to calculate NPV or IRR. You are asked to **pick the better pr
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.4 (Finance performance domain) and sections 4 and 5. The rough order of magnitude range and the cone of uncertainty come from the Practice Standard for Project Estimating, Second Edition, section 2.4. The definitive estimate range, the types of cost, the S-curve, who controls each reserve, and the one-line explanations of ROI, NPV, IRR and payback period follow standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.4 (Finance performance domain) and sections 4 and 5. The rough order of magnitude range and the cone of uncertainty come from the Practice Standard for Project Estimating, Second Edition, section 2.4. The definitive estimate range, the S-curve, the make-up of the cost baseline and the list of financial measures are in the PMBOK Guide, Sixth Edition, sections 7.2, 7.3.3.1 and 1.2.6.4. The types of cost, who controls each reserve, and the one-line explanations of ROI, NPV, IRR and payback period follow standard PMI teaching. Written in original wording for personal study.*

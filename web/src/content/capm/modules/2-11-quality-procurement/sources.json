@@ -1,5 +1,30 @@
 [
   {
+    "book": "pmbok6",
+    "page": 298,
+    "label": "PMBOK 6, 8.2.2.4"
+  },
+  {
+    "book": "pmbok6",
+    "page": 305,
+    "label": "PMBOK 6, 8.3.2.1"
+  },
+  {
+    "book": "pmbok6",
+    "page": 457,
+    "label": "PMBOK 6, 12.1.1.6"
+  },
+  {
+    "book": "pmbok6",
+    "page": 473,
+    "label": "PMBOK 6, 12.2.2.5"
+  },
+  {
+    "book": "pmbok6",
+    "page": 663,
+    "label": "PMBOK 6, X4.5"
+  },
+  {
     "book": "pmbok8",
     "page": 66,
     "label": "PMBOK 8, Standard 3.5"

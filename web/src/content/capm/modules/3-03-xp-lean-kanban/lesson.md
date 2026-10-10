@@ -127,7 +127,7 @@ Kanban is a good fit when work arrives **unpredictably**, such as support or mai
 
 ## Scrum and Kanban compared
 
-@source Agile Practice Guide, A3.4; Agile Practice Guide, A3.2
+@source Agile Practice Guide, A3.4; Agile Practice Guide, A3.2; Agile Practice Guide, First Edition, 5.4.1
 
 | | Scrum | Kanban |
 |---|---|---|
@@ -197,4 +197,4 @@ Teams often **blend** methods. What matters is the outcome, not the label. But a
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, Annex A3 (overview of agile and lean frameworks) and section 2.3 (lean thinking). The one-line definitions of the XP practices, the comparison tables, the seven principles of lean software development, the list of wastes and the Kanban measures follow standard PMI teaching. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, Annex A3 (overview of agile and lean frameworks) and section 2.3 (lean thinking). The one-line definitions of the XP practices, the comparison tables, the seven principles of lean software development, and the list of wastes follow standard PMI teaching. Lead time and cycle time as the measures of flow-based teams are in the Agile Practice Guide, First Edition, section 5.4.1. Written in original wording for personal study.*

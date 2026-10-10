@@ -186,7 +186,7 @@ If a question says "PERT", "beta" or "weighted", use the formula with **4M and 6
 
 ## Step 4: Adjust, and the finished schedule
 
-@source PMBOK 8, Guide 2.3.2.2; PMBOK 8, Guide section 4, Project schedule
+@source PMBOK 8, Guide 2.3.2.2; PMBOK 8, Guide section 4, Project schedule; PMBOK 6, 6.5.3.2
 
 The draft schedule is reviewed against resources and constraints. If it is not acceptable, it is reworked using techniques such as the **critical path method**, **schedule compression** and **resource leveling** (covered in the next module). Team members confirm that their dates do not clash with other work. Then the schedule is **approved and becomes the schedule baseline**.
 
@@ -239,4 +239,4 @@ Monitors the status of the project to **update the schedule** and **manage chang
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.3 (Schedule performance domain) and sections 4 and 5; Practice Standard for Scheduling, Third Edition, sections 3.4.3, 3.4.5, 3.4.7 and 3.4.8 (the beta or PERT formula, open ends, leads and lags, and the start-to-finish example); Practice Standard for Project Estimating, Second Edition, sections 2.4, 4.3 and 4.5 (evolving estimates, relative estimating, optimism, padding and anchoring). The effort, duration and elapsed time comparison and the table of schedule formats follow standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.3 (Schedule performance domain) and sections 4 and 5; Practice Standard for Scheduling, Third Edition, sections 3.4.3, 3.4.5, 3.4.7 and 3.4.8 (the beta or PERT formula, open ends, leads and lags, and the start-to-finish example); Practice Standard for Project Estimating, Second Edition, sections 2.4, 4.3 and 4.5 (evolving estimates, relative estimating, optimism, padding and anchoring). The schedule formats (milestone chart, bar chart, network diagram) are described in the PMBOK Guide, Sixth Edition, section 6.5.3.2. The effort, duration and elapsed time comparison follows standard PMI teaching. Written in original wording for personal study.*

@@ -39,6 +39,8 @@ TOC_BOOKS = {
     "estimating": 12,
     "riskguide": 16,
     "agile": 18,
+    "pmbok6": 33,
+    "agile1": 16,  # no PDF outline: its toc.txt comes from tools/build_toc_agile1.py
 }
 
 _pages: dict[str, list[str]] = {}
@@ -76,6 +78,10 @@ def which_book(part: str) -> str | None:
         return "pmbok8"
     if "pmbok 7" in lowered:
         return "pmbok7"
+    if "pmbok 6" in lowered:
+        return "pmbok6"
+    if "exam content outline" in lowered:
+        return "eco"
     if "code of ethics" in lowered:
         return "ethics"
     if "process groups" in lowered:
@@ -92,6 +98,8 @@ def which_book(part: str) -> str | None:
         return "estimating"
     if "risk management: a practice guide" in lowered:
         return "riskguide"
+    if "agile practice guide, first edition" in lowered:
+        return "agile1"
     if "agile practice guide" in lowered:
         return "agile"
     return None
@@ -116,6 +124,14 @@ def resolve(part: str) -> tuple[str, int] | None:
                 return book, page
         return book, 4
 
+    if book == "eco":
+        # "CAPM Exam Content Outline, Domain 3" opens that domain's task list.
+        domain = re.search(r"domain (\d)", lowered)
+        if domain:
+            page = find_line("eco", rf"^Domain {domain.group(1)}\b", 7)
+            return ("eco", page) if page else None
+        return book, 5
+
     if book in TOC_BOOKS:
         # Their tables of contents list every section: "3.3.2. Title  [p83]" or "3.4.2 TITLE  [p87]".
         # "Glossary (story point)" opens the glossary page that defines the term.
@@ -139,6 +155,11 @@ def resolve(part: str) -> tuple[str, int] | None:
             )
             if hit:
                 return book, int(hit.group(1))
+            # Deeper sections (PMBOK 6 "12.1.1.6", appendix "X4.5") are not in the contents:
+            # find the heading itself in the page text.
+            page = find_line(book, rf"^{re.escape(wanted)}\s+[A-Z]", TOC_BOOKS[book], flags=0)
+            if page:
+                return book, page
             # A section was named but is not in the contents: report it instead of
             # silently linking to the first page.
             return None
