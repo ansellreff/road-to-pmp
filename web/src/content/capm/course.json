@@ -67,7 +67,7 @@
         { "id": "4-04-elicitation", "title": "Elicitation", "ready": true },
         { "id": "4-05-analysis", "title": "Analysis: Models, Requirements and Acceptance Criteria", "ready": true },
         { "id": "4-06-traceability-monitoring", "title": "Traceability and Monitoring", "ready": true },
-        { "id": "4-07-solution-evaluation", "title": "Solution Evaluation", "ready": false }
+        { "id": "4-07-solution-evaluation", "title": "Solution Evaluation", "ready": true }
       ]
     }
   ]

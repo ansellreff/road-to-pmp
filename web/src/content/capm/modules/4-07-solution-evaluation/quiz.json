@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the purpose of solution evaluation?",
+    "options": [
+      "To write the requirements",
+      "To assess whether a solution has achieved the desired business results",
+      "To identify the stakeholders",
+      "To estimate the project budget"
+    ],
+    "answer": 1,
+    "explanation": "Solution evaluation activities assess whether or not a solution has achieved the desired business results, by comparing actual results with expected values and, over the long term, checking whether the expected business value was achieved.",
+    "ref": "PMI Guide to Business Analysis, Key Concepts for Solution Evaluation",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 323,
+        "label": "PMI Guide to Business Analysis, Key Concepts for Solution Evaluation"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which of these is one of the four solution evaluation processes?",
+    "options": [
+      "Assemble Business Case",
+      "Conduct Elicitation",
+      "Verify Requirements",
+      "Obtain Solution Acceptance for Release"
+    ],
+    "answer": 3,
+    "explanation": "The four processes are Evaluate Solution Performance, Determine Solution Evaluation Approach, Evaluate Acceptance Results and Address Defects, and Obtain Solution Acceptance for Release.",
+    "ref": "PMI Guide to Business Analysis, Table 1-2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 69,
+        "label": "PMI Guide to Business Analysis, Table 1-2"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Why should the solution evaluation approach be defined as early as possible?",
+    "options": [
+      "Because the sponsor signs it before the charter",
+      "Because it replaces acceptance criteria",
+      "Because some metrics need data the product would not otherwise capture, which is costly or impossible to add later",
+      "Because evaluation happens before requirements are written"
+    ],
+    "answer": 2,
+    "explanation": "Some metrics require capturing information beyond what the product itself needs. Without early definition there is a risk that the necessary information will be expensive or impossible to obtain.",
+    "ref": "PMI Guide to Business Analysis, 9.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 331,
+        "label": "PMI Guide to Business Analysis, 9.2"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What is a metric, in solution evaluation?",
+    "options": [
+      "A set of quantifiable measures used to evaluate a solution or business",
+      "A type of stakeholder",
+      "A stage of the product life cycle",
+      "A kind of prototype"
+    ],
+    "answer": 0,
+    "explanation": "A metric is a set of quantifiable measures used to evaluate a solution or business. In solution evaluation it defines how solution performance can be quantified.",
+    "ref": "PMI Guide to Business Analysis, 9.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 331,
+        "label": "PMI Guide to Business Analysis, 9.2"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A proposed metric would be too expensive to collect. What should the team do?",
+    "options": [
+      "Skip evaluation altogether",
+      "Collect it regardless of cost",
+      "Wait until after release to decide",
+      "Consider a less costly, next-best alternative"
+    ],
+    "answer": 3,
+    "explanation": "The cost of capturing and reporting measurements is an important factor. When proposed metrics appear too costly or time-consuming, less costly, next-best alternatives may be considered.",
+    "ref": "PMI Guide to Business Analysis, 9.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 331,
+        "label": "PMI Guide to Business Analysis, 9.2"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "In acceptance testing, how is the work divided between testers and business analysis?",
+    "options": [
+      "The business analyst runs all the tests",
+      "Testers determine pass or fail; business analysis evaluates the severity, cause and impact of defects and recommends what to do",
+      "Testers decide whether to release the product",
+      "There is no difference between the two roles"
+    ],
+    "answer": 1,
+    "explanation": "The pass/fail comparison of results with criteria is typically a testing task. Business analysis then considers the magnitude and severity of the defects, their root cause and risks, and recommends ways to address them.",
+    "ref": "PMI Guide to Business Analysis, 9.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 335,
+        "label": "PMI Guide to Business Analysis, 9.3"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What do \"evaluated acceptance results\" contain?",
+    "options": [
+      "A comparison of acceptance criteria with actual results, the root cause of variances, the cost to address defects and the business impact",
+      "Only a list of passed tests",
+      "The project's final budget",
+      "The stakeholder register"
+    ],
+    "answer": 0,
+    "explanation": "Evaluated acceptance results give a summarized comparison between the acceptance criteria and the actual acceptance results, with the root cause for variances or defects, the cost to address them, and the business impact of addressing or accepting them.",
+    "ref": "PMI Guide to Business Analysis, 9.3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 338,
+        "label": "PMI Guide to Business Analysis, 9.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Two defects are found. One affects a feature tied to the project's top business objective. Which tool shows this link?",
+    "options": [
+      "Onion diagram",
+      "Persona",
+      "Traceability matrix",
+      "Product box"
+    ],
+    "answer": 2,
+    "explanation": "A traceability matrix can be used to assess the business impact of not addressing defects: there could be a significant impact from defects in features that trace to a high-priority objective.",
+    "ref": "PMI Guide to Business Analysis, 9.3.2.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 338,
+        "label": "PMI Guide to Business Analysis, 9.3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Which is NOT one of the recommendations the guide lists for addressing a defect?",
+    "options": [
+      "A workaround in how the product is used",
+      "A modification to the product, possibly through a change request",
+      "Communication to users about how the product is meant to be used",
+      "Deleting the acceptance criterion so the test passes"
+    ],
+    "answer": 3,
+    "explanation": "Recommendations may include workarounds, modifications to the product, adjustments to how results are measured, investigation of technical causes, and communication to users. Removing a criterion to hide a failure is not among them.",
+    "ref": "PMI Guide to Business Analysis, 9.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 335,
+        "label": "PMI Guide to Business Analysis, 9.3"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "On an adaptive project, a story is demonstrated and does not meet its acceptance criteria. What happens?",
+    "options": [
+      "It is accepted anyway to protect velocity",
+      "The story can be rejected and returned to the backlog to be reprioritized",
+      "The iteration is extended until it passes",
+      "The project is cancelled"
+    ],
+    "answer": 1,
+    "explanation": "If the demonstration does not prove conformance to the acceptance criteria, the entire story can be rejected and returned to the backlog to be reprioritized. Defects are added to the backlog.",
+    "ref": "PMI Guide to Business Analysis, 9.3.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 339,
+        "label": "PMI Guide to Business Analysis, 9.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which set lists the bases for a release decision?",
+    "options": [
+      "Acceptable results, organizational readiness, completed transition activities, and acceptance of remaining risks",
+      "Budget spent, team size, sponsor's mood, and schedule",
+      "Number of requirements, number of tests, number of defects, and number of users",
+      "Scope, time, cost and quality"
+    ],
+    "answer": 0,
+    "explanation": "Release decisions are typically based on the acceptability of the solution, confirmation that the organization is ready, confirmation that transition activities are complete, and acceptance of any remaining product risks and workarounds.",
+    "ref": "PMI Guide to Business Analysis, 9.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 339,
+        "label": "PMI Guide to Business Analysis, 9.4"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Who makes the release decision?",
+    "options": [
+      "The business analyst alone",
+      "The test team",
+      "The stakeholders accountable for the product, with the analyst facilitating",
+      "The newest team member"
+    ],
+    "answer": 2,
+    "explanation": "Obtaining solution acceptance gives the stakeholders accountable for the product the opportunity to decide whether it should be released in whole, in part or not at all. The process is one of facilitating that decision.",
+    "ref": "PMI Guide to Business Analysis, 9.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 339,
+        "label": "PMI Guide to Business Analysis, 9.4"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What are the possible release decisions?",
+    "options": [
+      "Approve only",
+      "Release fully or partly, delay, or disapprove",
+      "Verify or validate",
+      "Avoid, transfer, mitigate, accept"
+    ],
+    "answer": 1,
+    "explanation": "A release decision may permit the release or partial release of the solution, delay it, or disapprove and prevent it. It often includes a sign-off.",
+    "ref": "PMI Guide to Business Analysis, 9.4.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 343,
+        "label": "PMI Guide to Business Analysis, 9.4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "What is a warranty period?",
+    "options": [
+      "The time allowed for writing requirements",
+      "The time before the charter is approved",
+      "The length of an iteration",
+      "A period after release during which the development team is responsible for fixing defects"
+    ],
+    "answer": 3,
+    "explanation": "A warranty period is an interval of time during which the product development team is responsible for addressing any defects found after the solution is released for production.",
+    "ref": "PMI Guide to Business Analysis, 9.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 339,
+        "label": "PMI Guide to Business Analysis, 9.4"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "What technique is recommended for making a release decision, and why?",
+    "options": [
+      "A facilitated workshop, so all stakeholders hear the reasons for the decision",
+      "A survey, so nobody has to meet",
+      "Observation, so users are not disturbed",
+      "A product box, to design the packaging"
+    ],
+    "answer": 0,
+    "explanation": "Whenever possible, release decisions should be made in a facilitated workshop so that all stakeholders hear the rationale. Summaries of results, remaining risks and unfinished transition activities help decision makers.",
+    "ref": "PMI Guide to Business Analysis, 9.4.2.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 342,
+        "label": "PMI Guide to Business Analysis, 9.4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "On an adaptive project, how is acceptance usually obtained at the end of an iteration?",
+    "options": [
+      "A formal sign-off by the PMO",
+      "A written contract amendment",
+      "The product owner's approval at the demonstration that the work meets the definition of done",
+      "It is not obtained"
+    ],
+    "answer": 2,
+    "explanation": "In adaptive approaches, often verbal approval alone is obtained from the product owner, as part of demonstration and feedback, that the solution segment meets the definition of done and can be released.",
+    "ref": "PMI Guide to Business Analysis, 9.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 339,
+        "label": "PMI Guide to Business Analysis, 9.4"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "When does Evaluate Solution Performance usually take place?",
+    "options": [
+      "Before the business case is written",
+      "During elicitation",
+      "Before any testing",
+      "After the solution has been released"
+    ],
+    "answer": 3,
+    "explanation": "Evaluation of solution performance typically occurs after a solution has been released, so it is more likely to occur during portfolio or program activities than project activities.",
+    "ref": "PMI Guide to Business Analysis, 9.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 325,
+        "label": "PMI Guide to Business Analysis, 9.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Sales were 1,000 units a month before the new system and 1,300 after. How is the business value quantified?",
+    "options": [
+      "As the difference between the baseline and the performance after release: 300 units a month",
+      "As 1,300 units a month",
+      "As 1,000 units a month",
+      "It cannot be quantified"
+    ],
+    "answer": 0,
+    "explanation": "Performance data before a release are the baseline. If value is measured as increased sales volume, the quantified business value is the difference in sales volume before and after release.",
+    "ref": "PMI Guide to Business Analysis, 9.1.1.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 327,
+        "label": "PMI Guide to Business Analysis, 9.1.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A business objective cannot be measured directly. What can be used?",
+    "options": [
+      "Nothing; evaluation is skipped",
+      "A proxy, such as task duration, response time or error counts",
+      "The sponsor's opinion only",
+      "The original estimate"
+    ],
+    "answer": 1,
+    "explanation": "When performance data cannot be measured for the stated objectives, proxies may be used, such as the average duration of a task, response time or counts of errors.",
+    "ref": "PMI Guide to Business Analysis, 9.1.1.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 327,
+        "label": "PMI Guide to Business Analysis, 9.1.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A released product is not delivering the expected value. Interviews reveal nothing. Which technique may uncover that users have invented workarounds?",
+    "options": [
+      "Document analysis",
+      "Benchmarking",
+      "Observation",
+      "Weighted ranking"
+    ],
+    "answer": 2,
+    "explanation": "Direct observation of users doing their work may uncover workarounds they use to compensate for product gaps. These can be missed in interviews, because long-standing users may not think to mention them.",
+    "ref": "PMI Guide to Business Analysis, 9.1.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 328,
+        "label": "PMI Guide to Business Analysis, 9.1.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "What is the output of Evaluate Solution Performance, and what is it used for?",
+    "options": [
+      "An assessment of business value, used for decisions to enhance, maintain, replace or discontinue the product",
+      "A stakeholder register, used for planning communication",
+      "A situation statement, used to start elicitation",
+      "A charter, used to authorize the project"
+    ],
+    "answer": 0,
+    "explanation": "The assessment of business value compares expected with actual value and the reasons for the difference. It is used to decide whether to develop a new product or to enhance, retire or discontinue an existing one.",
+    "ref": "PMI Guide to Business Analysis, 9.1.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 330,
+        "label": "PMI Guide to Business Analysis, 9.1.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Evaluation shows that the remaining planned features would add very little value for their cost. What may the organization do?",
+    "options": [
+      "Build them anyway because they were planned",
+      "Double the team",
+      "Rewrite the business case to hide the result",
+      "End early and move the funds to higher-value work"
+    ],
+    "answer": 3,
+    "explanation": "Evaluation may identify a point of diminishing returns. Solution evaluation gives teams the ability to end early, even if more functionality could be built, so funds can go to higher-priority work.",
+    "ref": "PMI Guide to Business Analysis, Key Concepts for Solution Evaluation",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 323,
+        "label": "PMI Guide to Business Analysis, Key Concepts for Solution Evaluation"
+      }
+    ]
+  }
+]

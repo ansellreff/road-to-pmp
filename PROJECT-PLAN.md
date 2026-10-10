@@ -41,6 +41,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Session 21 done: Domain 4 started with modules 4.1 (what business analysis is, business analyst vs project manager, the requirement types, product and project life cycles, business value, the 6 process groups and 6 knowledge areas, the roles an analyst works with) and 4.2 (needs assessment: situation statement, current and future state, root cause techniques, SWOT, gap analysis, feasibility, product roadmap, business case, charter). Issues 58 and 59 added to the log. | You: study 4.1 and 4.2. Next: Session 22, modules 4.3 (stakeholder engagement) and 4.4 (elicitation) |
 | 2026-10-10 | At your request, all source links were audited for figure errors: 613 links, 41 of them to figures or tables, none wrong. The check is now a tool (	ools/audit_links.py) run every session. Session 22 done: modules 4.3 (stakeholder engagement: register, stakeholder analysis, personas, RACI, stakeholder matrix and onion diagram, the engagement approach, business analysis planning, transition, assessing performance) and 4.4 (elicitation: the four processes, question types, the techniques and when to use each, confirming results). Issues 60 and 61 added to the log. | You: study 4.3 and 4.4. Next: Session 23, modules 4.5 (analysis: models, requirements, acceptance criteria) and 4.6 (traceability and monitoring) |
 | 2026-10-10 | Session 23 done: modules 4.5 (analysis: the five categories of model and what each model shows, user stories vs use cases, the requirements package, acceptance criteria, definition of ready and done, verify vs validate, prioritization, product risks, design options) and 4.6 (traceability and monitoring: backward and forward tracing, the traceability matrix, approved requirements and the baseline, impact analysis, change outcomes, the backlog as change control). **One module left: 37 of 38.** Issues 62 and 63 added to the log. | You: study 4.5 and 4.6. Next: Session 24, module 4.7 (solution evaluation), which completes Domain 4 and all CAPM content |
+| 2026-10-10 | Session 24 done: module 4.7 (solution evaluation: the evaluation approach and metrics, evaluating acceptance results and addressing defects, the release decision and its four bases, measuring business value after release). **Domain 4 is complete: 7 of 7. All CAPM content is written: 38 of 38 modules, 791 quiz questions, 1,167 flashcards.** One quiz question in the whole course has no book page. Issue 64 added to the log. | You: study 4.7. Next: Session 25, the full catch-up, planned with you first |
 
 ## How your progress is saved
 
@@ -128,7 +129,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 15 | Feature: dashboard and practice of missed questions |
 | ✅ | 16 to 19 | Domain 3: 8 modules |
 | ✅ | 20 | Feature: study plan and exam countdown |
-| 🟡 | 21 to 24 | Domain 4: 7 modules (Sessions 21 to 23 done: 4.1 to 4.6) |
+| ✅ | 21 to 24 | Domain 4: 7 modules |
 | ⬜ | 25 | Full catch-up, requested 2026-10-10: review every module against every book in `PMI Learning Material/`, improve where a book adds exam value, and give you a list of any extra PDFs worth adding |
 | ⬜ | 26 | Feature: timed exam simulator (150 questions, 180 minutes) |
 | ⬜ | 27 | UI/UX polish (see backlog below) |
@@ -186,14 +187,14 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **37 of 38 modules done** (769 quiz questions, 1,132 flashcards).
+Overall: **38 of 38 modules done** (791 quiz questions, 1,167 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
 | ✅ | 1. PM Fundamentals and Core Concepts | 11 / 11 |
 | ✅ | 2. Predictive, Plan-Based Methodologies | 12 / 12 |
 | ✅ | 3. Agile Frameworks / Methodologies | 8 / 8 |
-| 🟡 | 4. Business Analysis Frameworks | 6 / 7 |
+| ✅ | 4. Business Analysis Frameworks | 7 / 7 |
 
 **Domain 1: PM Fundamentals and Core Concepts**
 
@@ -251,7 +252,7 @@ Overall: **37 of 38 modules done** (769 quiz questions, 1,132 flashcards).
 | ✅ | 4.4 Elicitation | 2026-10-10 |
 | ✅ | 4.5 Analysis: Models, Requirements and Acceptance Criteria | 2026-10-10 |
 | ✅ | 4.6 Traceability and Monitoring | 2026-10-10 |
-| ⬜ | 4.7 Solution Evaluation | |
+| ✅ | 4.7 Solution Evaluation | 2026-10-10 |
 
 ### Feature roadmap
 
@@ -339,6 +340,7 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 61 | The exam outline asks you to "recommend the most appropriate communication channel or tool", but The PMI Guide to Business Analysis describes the engagement and communication approach without listing channels to choose from. | Module 4.3 has a short table matching each need to a channel (workshop, presentation, report, interview, survey), labelled in the footer as my own. Module 4.4 has a similar table for choosing an elicitation technique, built from the strengths and weaknesses the guide gives for each. | Modules 4.3 and 4.4 |
 | 62 | Module 4.5 covers nine processes and about twenty-five analysis models, far more than any other module, and the models are diagrams while the lessons are text only. | Kept as one module, with 24 quiz questions and 45 flashcards. Each model gets one line saying what it shows, grouped by its category. No diagrams are drawn. Drawn examples of the main models (context diagram, process flow, entity relationship diagram, state diagram, fishbone) are added to the UI/UX backlog for Session 27. | Module 4.5; UI/UX backlog |
 | 63 | To save reading time I filtered short lines out of the book pages. That dropped a list item: the guide's threat strategies appeared to lack "avoid", and I first wrote in the footer that it was missing from the guide. | Caught by re-checking the full page before finishing; the footer was corrected. Lists copied from a filtered page are now checked against the unfiltered page. | Module 4.5, product risks |
+| 64 | PMI's guide numbers the solution evaluation processes in an order that is not the order in time (performance evaluation is 9.1 but happens last), and it describes the product portfolio matrix without naming its quadrants. | Module 4.7 keeps the guide's names and process groups, teaches the processes in time order, and says so. The usual quadrant names (stars, question marks, cash cows, dogs) are added in brackets and listed in the footer as not from the guide. | Module 4.7 |
 | 54 | The Project Management Answer Book is written as numbered questions inside chapters, with no section numbers, and Wysocki's book has titled sections only. Both are commercial textbooks, not PMI publications. | New reference forms: `The Project Management Answer Book, Chapter 6, Q8` (opens the page of that question) and `Effective Project Management, <section title>`. Like every other book, they are opened from your folder only, are never committed or uploaded, and lessons use original wording. Wysocki is the Fifth Edition, so its page content may differ from the Eighth Edition the outline names. | `link_sources.py` |
 | 55 | Wysocki's Eighth Edition lists only chapters in its PDF contents, and it differs from the lessons in two wordings: it calls two lean principles "build integrity in" and "see the whole", and it uses "elapsed time" for duration in working days. | Reference form: `Effective Project Management, Chapter 7, Estimating Duration` (chapter, then the heading as printed). Chapter start pages are listed in `link_sources.py`. The lean table now shows both wordings, and the schedule lesson footer explains the two uses of "elapsed time". | `link_sources.py`; modules 2.4 and 3.3 |
 | 59 | A reference to a figure or table in the business analysis guide ("Figure 1-1") would have opened the book's first page without any warning, because that kind of reference was only understood for the PMBOK Guides. | Found while checking each new link against its page, before anything was reported. The linker now finds figures and tables in every book with a table of contents, and reports an error if one is not found. | `link_sources.py` |
