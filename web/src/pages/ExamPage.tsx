@@ -423,7 +423,7 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
     <div>
       {header}
       {/* The question grid sits beside the question, as in the real exam; on a phone it follows the question. */}
-      <WithSidePanel label="Questions" phone="below" panel={grid}>
+      <WithSidePanel label="Questions" phone="below" panel={<div className="lg:mt-7">{grid}</div>}>
         <div className={column}>
           <QuestionView
             key={position}

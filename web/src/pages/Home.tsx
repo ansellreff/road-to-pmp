@@ -14,12 +14,15 @@ import {
   moduleCompletion,
   moduleKey,
   resetProgress,
+  DEFAULT_GOAL,
+  setGoal,
   studyStreak,
   today,
   useProgress,
   type Progress,
 } from '../lib/progress'
 import { courseCompletion, courseMissed, moduleNumber, nextModule, nextStep, percent, remainingModules } from '../lib/stats'
+import { toast } from '../lib/toast'
 import { btnDanger, btnPrimary, btnQuiet, domainBg, link, note, pageTitle, section, sectionTitle, subTitle } from '../lib/ui'
 
 /** The home page: what to do now, how you stand, what is planned for today; reference below. */
@@ -146,7 +149,10 @@ function Tiles({ progress }: { progress: Progress }) {
     },
   ]
   return (
-    <ul className="grid gap-4 sm:grid-cols-3">
+    <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <li>
+        <GoalTile progress={progress} />
+      </li>
       {tiles.map((tile) => (
         <li key={tile.label}>
           <Link to={tile.to} className="card lift block h-full px-5 py-4">
@@ -160,6 +166,47 @@ function Tiles({ progress }: { progress: Progress }) {
         </li>
       ))}
     </ul>
+  )
+}
+
+/** The daily goal: a ring that fills as you answer questions, rate cards and finish lessons today. */
+function GoalTile({ progress }: { progress: Progress }) {
+  const goal = progress.goal ?? DEFAULT_GOAL
+  const done = progress.activity[today()] ?? 0
+  const reached = goal > 0 && done >= goal
+  return (
+    <div className="card flex h-full items-center gap-4 px-5 py-4">
+      <Ring value={goal ? done / goal : 0} size={64} stroke={7} label={goal ? `${done} of ${goal} done today` : 'No daily goal set'}>
+        {reached ? <Icon name="check" className="text-done" /> : <span className="text-sm font-semibold tabular-nums">{done}</span>}
+      </Ring>
+      <div className="min-w-0">
+        <p className="flex items-center gap-2 text-sm text-muted">
+          <Icon name="target" size={18} />
+          Daily goal
+        </p>
+        <p className="mt-0.5 font-semibold leading-snug">
+          {goal === 0 ? 'No goal set' : reached ? 'Reached today' : `${done} of ${goal} today`}
+        </p>
+        <label className="mt-1 flex items-center gap-1.5 text-sm text-muted">
+          <span className="sr-only">Daily goal: </span>
+          <select
+            value={goal}
+            onChange={(e) => {
+              setGoal(Number(e.target.value))
+              toast(Number(e.target.value) ? `Daily goal set to ${e.target.value}` : 'Daily goal switched off')
+            }}
+            className="press rounded border border-edge bg-surface px-1.5 py-1 text-ink hover:border-ink"
+          >
+            {[0, 10, 20, 30, 50].map((n) => (
+              <option key={n} value={n}>
+                {n === 0 ? 'Off' : `${n} a day`}
+              </option>
+            ))}
+          </select>
+          <span title="Every answered question, rated flashcard and completed lesson counts as one.">answers and cards</span>
+        </label>
+      </div>
+    </div>
   )
 }
 
@@ -338,6 +385,7 @@ function Backup() {
     a.click()
     URL.revokeObjectURL(a.href)
     setMessage('Backup downloaded.')
+    toast('Backup downloaded')
   }
 
   async function upload(file: File | undefined) {
@@ -345,6 +393,7 @@ function Backup() {
     try {
       importProgress(await file.text())
       setMessage('Progress restored from backup.')
+      toast('Progress restored from backup')
     } catch (e) {
       setMessage(e instanceof Error ? e.message : 'That file could not be read. Choose a backup downloaded from this page.')
     }

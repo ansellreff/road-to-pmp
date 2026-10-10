@@ -3,6 +3,7 @@ import DisplayControls from './components/DisplayControls'
 import Milestone from './components/Milestone'
 import NotFound from './components/NotFound'
 import SearchBox from './components/SearchBox'
+import { MilestoneWatcher, StreakChip, Toaster } from './components/Toast'
 import TopMenu from './components/TopMenu'
 import Home from './pages/Home'
 import CoursePage from './pages/CoursePage'
@@ -32,7 +33,8 @@ export default function App() {
           <div className="order-3 w-full sm:order-none sm:w-auto sm:flex-1">
             <SearchBox />
           </div>
-          <div className="ml-auto">
+          <div className="ml-auto flex items-center gap-2">
+            <StreakChip />
             <DisplayControls />
           </div>
           <div className="order-4 w-full">
@@ -57,6 +59,8 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <Toaster />
+      <MilestoneWatcher />
     </div>
   )
 }

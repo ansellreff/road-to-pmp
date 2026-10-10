@@ -52,6 +52,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | **Session 28a and 28b done; 28c prepared.** New: automated click tests (13, all passing, also against the production build); a list of sections beside each lesson and a "continue from" link; search over lessons and flashcards; a printable formula and key facts sheet; weak spots, time per question and a score trend for mock exams; a readiness estimate; mock exam dates and flashcards due in the study plan. The click tests found and fixed a real fault in real exam mode. Ready to upload: safety check, site icon, no-listing settings. | You: create a private GitHub repository named `road-to-pmi` (no README) and send me its address. Then Vercel, then Session 28d (sync). |
 | 2026-10-10 | Site renamed from "Road to PMI" to **Road to PMP** at your request (browser tab, top bar, phone home screen name, backup file name). Private GitHub repository created by you: `ansellreff/road-to-pmp`, and the project is connected to it. The upload itself needs your sign-in, so it is done by double-clicking `upload.bat`. | You: double-click `upload.bat`, then import the repository on Vercel with Root Directory `web`, then send me the site address |
 | 2026-10-10 | **The platform is online: https://road-to-pmp-d82g.vercel.app** You uploaded with `upload.bat` and deployed on Vercel. Checked on the live site: all 13 click tests pass, a lesson address opens directly, search engines are told not to list it, and the books address returns no PDF. | You: open it on your phone, and bring your progress over with Download backup (on this PC) and Restore from backup (on the site). Next: Session 28d (sync), which needs a free Supabase project |
+| 2026-10-10 | **Session 29 done: navigation, side panels and a richer, more interactive look**, from your feedback after using the site. Search box with suggestions in the top bar; a Modules menu reaching every lesson from any page; a right-hand panel on lessons, quizzes, flashcards, mock exams, results and the formula sheet; previous and next through every module; cards, icons, domain colours and progress rings; the course page as cards; the home page as a "today" hub; answer feedback, confirmation messages, a streak counter, a daily goal and 13 milestones. 18 click tests pass. Sync between PC and phone is paused at your request. | You: look at http://localhost:5173, then double-click `upload.bat` to put it online, and tell me what you think of the look and the animations |
 
 ## How your progress is saved
 
@@ -161,7 +162,8 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 28a | Click tests; lesson sections and resume; search; formula sheet |
 | ✅ | 28b | Weak spots and timing for mock exams; readiness estimate; mock exams in the study plan |
 | ✅ | 28c | Online at https://road-to-pmp-d82g.vercel.app from the private repository `ansellreff/road-to-pmp`. Checked with the click tests. Phone check by you still open. |
-| ⬜ | 28d | Sync between PC and phone (needs a free Supabase project) |
+| ⏸ | 28d | Sync between PC and phone: paused at your request on 2026-10-10. Needs a free Supabase project when resumed. |
+| ✅ | 29 | Navigation, side panels and a richer look, from your feedback: search suggestions, Modules menu, right-hand panel, previous and next, cards and rings, home hub, feedback, streak, daily goal, milestones. Details under "Session 29: navigation and look, as built". |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 
@@ -456,6 +458,51 @@ You chose eight improvements on 2026-10-10 and said the content needs no major c
 - A site icon and "Add to home screen" details for a phone.
 - Checked on the production build served locally: all 13 click tests pass; sources show as text ("PDF page 274") with no link; the books address returns no PDF; a deep link opens.
 
+## Session 29: navigation and look, as built
+
+Built on 2026-10-10 from four things you reported after using the site: search opened a separate page; the module list was missing from the top menu; the lesson's section list was folded away at the top; and the whole felt plain and not interactive.
+
+**Top bar**
+- Row 1: site name, the search box, the streak counter, text size and theme. Row 2: Modules, Practice, Study plan, Dashboard, Formulas.
+- **Modules** opens a panel with the four certifications (CAPM live; PMP, PMI-ACP and PMI-SP shown as planned) and every module of the open one by domain, with completion marks. Any lesson is one click from any page.
+- **Practice** groups mock exams, missed questions and flashcards, each with what is waiting.
+- The platform remembers the certification opened last; Practice and Formulas follow it. This is what will let PMP slot in without changing the menu.
+
+**Search**
+- Suggestions appear under the box as you type: modules, then lesson sections, then flashcards with their answer shown in the list. Arrow keys and Enter choose, Escape closes, "See all results" opens the full page.
+- Fast because the search text is one file built together with the site (`web/vite.config.ts`, always made from the current content) and fetched in the background after a page opens. Module titles are suggested at once, before that file arrives. The file is about 850 kB, 200 kB as sent.
+- A section found by its text, not its heading, shows the line that matched.
+- Quiz and exam questions are still left out of search.
+
+**Right-hand panel** (`web/src/components/SidePanel.tsx`)
+- Lesson: the sections of the lesson, the one being read marked, the ones above it ticked; under it the modules of the domain with their completion, like a course outline. It stays in view while you scroll.
+- Quiz and flashcards: what is done in this module, and the same module list.
+- Mock exam, real mode: the question grid and the finish button beside the question. Result: score by domain and jumps to each part. Formula sheet: jump list and print.
+- The page is wider (1280 px) so the lesson column and wide tables keep their room.
+- Phone: a **Contents** button stays at the bottom of the screen and slides the panel in; in a mock exam the grid follows the question instead.
+
+**Previous and next**
+- Lesson to quiz to flashcards to the next module, across domain boundaries, with a smaller way back. The last module leads to the mock exams.
+
+**Look**
+- Raised cards for what can be opened, flat text for what is read; cards lift under the pointer.
+- One set of line icons (`web/src/components/Icon.tsx`).
+- A colour per exam domain (blue, violet, teal, rose), used as an accent on module cards, the exam blueprint and the dashboard. All four pass the contrast check in both themes; the check now covers 35 pairs.
+- Progress rings (`web/src/components/Ring.tsx`).
+- **Course page:** foldable domains; each module a card with a ring, marks for lesson, quiz and flashcards, and one button for the next step in it.
+- **Home page:** a large Continue card (the module opened last, or the first unfinished one, with the next step); four tiles (daily goal, streak, readiness, flashcards due); today's plan as cards; then the exam blueprint, certification path and backup.
+
+**Feedback and motivation**
+- A right answer pulses once, a wrong pick shakes once, the explanation slides in, and scores count up. In module quizzes and practice only.
+- Short messages confirm actions (lesson marked complete, exam day saved, backup downloaded, daily goal changed).
+- The streak is in the top bar on every page and turns amber once you have studied today.
+- **Daily goal:** 20 by default, changeable on the home page (off, 10, 20, 30, 50). Every answered question, rated flashcard and completed lesson counts one.
+- **Milestones:** 13, listed on the dashboard: first lesson, first quiz passed, each domain completed, 100 and 500 questions, 7- and 30-day streak, first mock exam, a mock exam at 70%, all mock exams. Each is announced once.
+- **Mock exams stay calm:** no animation, no message and no milestone announcement on a mock exam screen, in either mode. A milestone earned there is announced when you leave.
+- All motion is off when the device asks for reduced motion.
+
+**Newly saved with your progress:** the module opened last, the daily goal, and which milestones have been announced. Old saves and backup files still load.
+
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.
@@ -721,3 +768,19 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 105 | You renamed the site to Road to PMP. The browser stores your progress under names containing the old spelling (`road-to-pmi-progress`, and two for theme and text size). | Only what you see was renamed: tab title, top bar, home screen name, backup file name. The storage names are unchanged, because renaming them would make the browser lose your saved progress. Old backup files still restore. | `web/src/lib/progress.ts`, `web/src/lib/prefs.ts` |
 | 106 | I could not upload to GitHub myself. The session I run in does not allow a sign-in window, and the permission system declined my attempt to switch that on. I did not try to get around it. | New `upload.bat` in the project folder: you double-click it, it runs the safety check, then uploads, and GitHub asks you to sign in the first time. This also means every upload is started by you. | `upload.bat` |
 | 107 | You sent the Vercel project page (`vercel.com/ansellreffs-projects/road-to-pmp-d82g`), which only you can open, not the public site address. | I worked the public address out from the project name (`road-to-pmp-d82g.vercel.app`), confirmed it serves this site by its title, and tested it. If you later add your own domain, tell me. | "The website" section |
+
+### Navigation and look (Session 29)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 108 | Your feedback: search opened a separate page; modules were not in the top menu; the lesson's section list was folded away at the top; the look was plain and not interactive. I had offered the section bar and the search page as finished in Session 28. | Rebuilt as you described: suggestions under the search box, a Modules menu, a right-hand panel as on Udemy, and a richer look. You chose the scope from options before I built it. | "Session 29: navigation and look, as built" |
+| 109 | **Found by a click test:** on a phone, the slide-in panel stayed open after you chose a section, covering the lesson you had just jumped to. | The panel now closes whenever a link inside it is followed. | `web/src/components/SidePanel.tsx` |
+| 110 | The first search used to load about 80 files, which made the first suggestions slow. | One search file is built with the site and fetched in the background; module titles work before it arrives. A test fails if suggestions take more than 0.6 seconds to change. | `web/vite.config.ts`, `web/src/lib/search.ts` |
+| 111 | A side column takes width from the lesson and its wide tables. | Every page is now up to 1280 px wide instead of 1024, and the panel is 304 px, so the lesson column is wider than before, not narrower. | `web/src/App.tsx` |
+| 112 | "Sections already read" cannot be known exactly; only the furthest section reached is stored. | Sections above the one you are reading are ticked. Jumping to the end ticks everything above it. | `web/src/components/LessonContents.tsx` |
+| 113 | The course page first came out as a wall of 39 filled blue buttons. | Seen on the screenshot. Card buttons are now outlined; the one filled button is on the home page's Continue card. | `web/src/pages/CoursePage.tsx` |
+| 114 | Introducing milestones to someone with existing progress would have announced many at once. | The first check notes what is already earned without announcing it. Only milestones earned after that are announced. | `MilestoneWatcher` in `web/src/components/Toast.tsx` |
+| 115 | A streak can end, which would take a streak milestone away again. | A milestone that has been announced stays earned. | `web/src/lib/milestones.ts` |
+| 116 | The plan said feedback animations would be off "in real exam mode". | I kept practice mode of the mock exams calm as well, so every mock exam screen behaves the same. Module quizzes and "Practice missed questions" have the animations. | `web/src/pages/ExamPage.tsx` |
+| 117 | The daily goal needs a unit that fits lessons, questions and flashcards. | It counts study actions: each answered question, rated flashcard and completed lesson is one. The tile says so. | `GoalTile` in `web/src/pages/Home.tsx` |
+| 118 | Not every page was looked at as a picture after the page became wider: the study plan, practice, review cards, mock exam list, result and formula sheet were covered by the click tests but not viewed again. | Viewed: home (light, dark, phone), course page, lesson with panel, top menu, search suggestions (desktop and phone), real exam mode, dashboard. Tell me if any of the others looks off. | Status log |

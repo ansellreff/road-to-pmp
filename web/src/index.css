@@ -266,6 +266,53 @@ body {
   transform: rotateY(180deg);
 }
 
+/* Feedback on an answer: the right option pulses once, a wrong pick shakes once. */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.025);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-5px);
+  }
+  40%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.pop {
+  animation: pop 0.35s ease-out;
+}
+.shake {
+  animation: shake 0.35s ease-in-out;
+}
+.toast,
+.reveal {
+  animation: rise 0.25s ease-out;
+}
+
 /* No motion for people whose device asks for less of it. */
 @media (prefers-reduced-motion: reduce) {
   *,

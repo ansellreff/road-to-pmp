@@ -1,11 +1,13 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { WeakModules } from '../components/ExamInsights'
+import Icon from '../components/Icon'
 import { Figures, Meter, PageHeader } from '../components/Page'
 import Ring from '../components/Ring'
 import { courses, getExams, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
 import { bandFor, domainScores, examKey, formatDuration, moduleLosses, type ModuleLoss } from '../lib/exam'
 import { dueCount, isKnown, setAttemptDomains, studyStreak, today, useProgress, type ExamAttempt, type Progress } from '../lib/progress'
+import { milestones } from '../lib/milestones'
 import { MOCK_SHARE, readiness } from '../lib/readiness'
 import { answerTotals, domainStats, moduleNumber, percent, type DomainStats, type ModuleStats } from '../lib/stats'
 import { btnPrimary, btnQuiet, domainBg, link, listTitle, note, section, sectionTitle, subTitle } from '../lib/ui'
@@ -115,6 +117,19 @@ function CourseDashboard({ course, progress }: { course: Course; progress: Progr
       <DomainChart courseId={course.id} domains={domains} />
 
       <MockResults course={course} progress={progress} />
+
+      <h3 className={`${listTitle} mt-12`}>Milestones</h3>
+      <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {milestones(course, progress).map((m) => (
+          <li key={m.id} className={`flex items-start gap-3 rounded-lg border px-4 py-3 ${m.earned ? 'card border-milestone' : 'border-dashed border-edge'}`}>
+            <Icon name="trophy" className={`mt-0.5 ${m.earned ? 'text-milestone' : 'text-muted'}`} />
+            <span>
+              <span className={`block font-semibold leading-snug ${m.earned ? '' : 'text-muted'}`}>{m.title}</span>
+              <span className="block text-sm text-muted">{m.earned ? 'Reached' : m.how}</span>
+            </span>
+          </li>
+        ))}
+      </ul>
 
       <div className={`${section} mt-12 flex flex-wrap items-center justify-between gap-4`}>
         <div>

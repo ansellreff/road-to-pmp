@@ -6,6 +6,7 @@ import { examKey } from '../lib/exam'
 import { addDays, buildPlan, daysBetween, formatDay, planMockExams, type PlanItem, type StudyPlan } from '../lib/plan'
 import { dueByDay, moduleCompletion, moduleKey, setExamDate, today, useProgress, type Progress } from '../lib/progress'
 import { moduleNumber, percent, remainingModules } from '../lib/stats'
+import { toast } from '../lib/toast'
 import { btnQuiet, input, link, listTitle, note, section, sectionTitle } from '../lib/ui'
 
 // More than this many modules a week is flagged as a pace that is hard to keep.
@@ -47,12 +48,21 @@ function CoursePlan({ course, progress }: { course: Course; progress: Progress }
             type="date"
             value={examDate}
             min={addDays(now, 1)}
-            onChange={(e) => setExamDate(course.id, e.target.value)}
+            onChange={(e) => {
+              setExamDate(course.id, e.target.value)
+              if (e.target.value) toast('Exam day saved')
+            }}
             className={`${input} mt-1`}
           />
         </div>
         {examDate && (
-          <button className={btnQuiet} onClick={() => setExamDate(course.id, '')}>
+          <button
+            className={btnQuiet}
+            onClick={() => {
+              setExamDate(course.id, '')
+              toast('Exam day removed')
+            }}
+          >
             Remove the date
           </button>
         )}

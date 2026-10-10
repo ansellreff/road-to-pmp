@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom'
 import { loadLesson, loadSources } from '../lib/content'
 import { moduleKey, setLessonDone, setReading, useProgress } from '../lib/progress'
 import { btnPrimary, btnQuiet, link } from '../lib/ui'
+import { toast } from '../lib/toast'
 import { useLoaded } from '../lib/useLoaded'
 import { diagrams } from './diagrams'
 import SectionList, { lessonHeadings, scrollToSection, slug, useCurrentSection } from './LessonContents'
@@ -133,7 +134,13 @@ export default function Lesson(props: {
             </button>
           </>
         ) : (
-          <button onClick={() => setLessonDone(key, true)} className={btnPrimary}>
+          <button
+            onClick={() => {
+              setLessonDone(key, true)
+              toast('Lesson marked complete')
+            }}
+            className={btnPrimary}
+          >
             Mark lesson as completed
           </button>
         )}

@@ -358,6 +358,41 @@ export const tests = {
     expect((await page.getByText('Not taken yet').count()) === 1, 'more mock exams are scheduled than fit')
   },
 
+  async 'milestones, messages and daily goal: announced once, never during a mock exam'(page) {
+    await page.goto('/capm/1-01-project-basics')
+    await button(page, 'Mark lesson as completed').click()
+    await see(page, 'Lesson marked complete')
+    await see(page, 'Milestone reached: First lesson completed')
+    // The streak in the top bar counts today.
+    await page.getByRole('link', { name: /1 day study streak/ }).waitFor()
+    // Announced once only: not again after a reload.
+    await page.reload()
+    await see(page, 'Lesson completed')
+    await page.waitForTimeout(800)
+    expect((await page.getByText('Milestone reached').count()) === 0, 'the milestone was announced a second time')
+    // The dashboard lists it as reached, and others as still open.
+    await page.goto('/dashboard')
+    await see(page, 'Milestones')
+    expect((await page.getByText('Reached', { exact: true }).count()) === 1, 'the dashboard does not show exactly one milestone reached')
+    await see(page, 'Score 70% or more in any module quiz.')
+    // The daily goal ring on the home page counts today's study actions and can be changed.
+    await page.goto('/')
+    await see(page, '1 of 20 today')
+    await page.getByRole('combobox', { name: /Daily goal/ }).selectOption('10')
+    await see(page, '1 of 10 today')
+    await see(page, 'Daily goal set to 10')
+    expect((await saved(page)).goal === 10, 'the daily goal was not saved')
+    // Finishing a mock exam earns a milestone, but nothing is announced on the exam screens.
+    await page.goto('/capm/exams')
+    await page.getByRole('button', { name: 'Start in practice mode' }).first().click()
+    await button(page, 'Submit the exam and see the result').click()
+    await see(page, 'Mock exam 1: your result')
+    await page.waitForTimeout(800)
+    expect((await page.getByText('Milestone reached').count()) === 0, 'a milestone was announced on a mock exam screen')
+    await page.goto('/dashboard')
+    await see(page, 'Milestone reached: First mock exam finished')
+  },
+
   async 'lesson and study plan: mark complete, set and remove the exam day'(page) {
     await page.goto('/capm/1-01-project-basics')
     await button(page, 'Mark lesson as completed').click()

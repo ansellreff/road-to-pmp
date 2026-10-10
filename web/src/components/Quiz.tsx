@@ -1,9 +1,10 @@
-import { useState, type ReactNode } from 'react'
+import { useEffect, useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { loadQuiz, type Question } from '../lib/content'
 import { moduleKey, recordAnswer, recordQuiz, useProgress } from '../lib/progress'
 import { btnPrimary, btnQuiet, column, listTitle } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
+import Icon from './Icon'
 import { Waiting } from './Page'
 import { SourceItem } from './Sources'
 
@@ -31,10 +32,29 @@ export function QuizTrack({ total, results, current }: { total: number; results:
 /** The big line at the end of a quiz, practice session or exam. */
 export function ScoreLine({ right, total }: { right: number; total: number }) {
   return (
-    <p className="title mt-6 text-5xl tabular-nums">
-      {right} of {total} correct
+    <p className="title mt-6 text-5xl tabular-nums" aria-label={`${right} of ${total} correct`}>
+      <CountUp value={right} /> of {total} correct
     </p>
   )
+}
+
+/** A number that counts up to its value once, when it first appears. */
+export function CountUp({ value }: { value: number }) {
+  const still = typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches
+  const [shown, setShown] = useState(still ? value : 0)
+  useEffect(() => {
+    if (still) return setShown(value)
+    const started = performance.now()
+    let frame = 0
+    const tick = (now: number) => {
+      const t = Math.min(1, (now - started) / 600)
+      setShown(Math.round(value * (1 - (1 - t) ** 3)))
+      if (t < 1) frame = requestAnimationFrame(tick)
+    }
+    frame = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(frame)
+  }, [value, still])
+  return <>{shown}</>
 }
 
 export default function Quiz({ courseId, moduleId }: { courseId: string; moduleId: string }) {
@@ -119,9 +139,11 @@ export default function Quiz({ courseId, moduleId }: { courseId: string; moduleI
         picked={picked}
         revealed={picked !== null}
         onPick={picked === null ? setPicked : undefined}
+        lively
       />
       <button onClick={next} disabled={picked === null} className={`${btnPrimary} mt-6`}>
         {index + 1 === total ? 'Finish quiz' : 'Next question'}
+        <Icon name="next" className="ml-2" />
       </button>
     </div>
   )
@@ -140,8 +162,10 @@ export function QuestionView(props: {
   onPick?: (i: number) => void
   /** Shown under the question, for example the module it comes from. */
   footer?: ReactNode
+  /** Give the answer a moment of motion when it is revealed. Off in reviews and in real exam mode. */
+  lively?: boolean
 }) {
-  const { number, question, picked, revealed, onPick, footer } = props
+  const { number, question, picked, revealed, onPick, footer, lively = false } = props
   const letter = (i: number) => String.fromCharCode(65 + i)
   return (
     <div className="border-b border-line py-7">
@@ -156,8 +180,8 @@ export function QuestionView(props: {
           // In an exam the pick stays hidden from marking until the end, so it only shows as selected.
           if (!revealed && i === picked) style = 'border-plan bg-plan-soft ring-2 ring-plan'
           else if (!revealed) style += ' hover:border-plan hover:bg-plan-soft'
-          else if (correct) style = 'border-done bg-done-soft ring-1 ring-done'
-          else if (wrongPick) style = 'border-critical bg-critical-soft ring-1 ring-critical'
+          else if (correct) style = `border-done bg-done-soft ring-1 ring-done ${lively && i === picked ? 'pop' : ''}`
+          else if (wrongPick) style = `border-critical bg-critical-soft ring-1 ring-critical ${lively ? 'shake' : ''}`
           else style = 'border-line bg-surface text-muted'
           return (
             <button
@@ -169,14 +193,24 @@ export function QuestionView(props: {
             >
               <span className="font-bold tabular-nums">{letter(i)}</span>
               <span className="min-w-0 flex-1 basis-64">{option}</span>
-              {revealed && correct && <span className="text-sm font-semibold text-done">✓ Correct answer</span>}
-              {wrongPick && <span className="text-sm font-semibold text-critical">✗ Your answer</span>}
+              {revealed && correct && (
+                <span className="flex items-center gap-1 text-sm font-semibold text-done">
+                  <Icon name="check" size={16} />
+                  Correct answer
+                </span>
+              )}
+              {wrongPick && (
+                <span className="flex items-center gap-1 text-sm font-semibold text-critical">
+                  <Icon name="cross" size={16} />
+                  Your answer
+                </span>
+              )}
             </button>
           )
         })}
       </div>
       {revealed && (
-        <div className="mt-5 border-l-4 border-ink pl-4">
+        <div className={`mt-5 border-l-4 border-ink pl-4 ${lively ? 'reveal' : ''}`}>
           {picked !== null && (
             <p className={`font-semibold ${picked === question.answer ? 'text-done' : 'text-critical'}`}>
               {picked === question.answer

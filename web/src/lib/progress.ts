@@ -90,7 +90,14 @@ export interface Progress {
   reading: Record<string, string>
   /** The module opened most recently ("course/module"), for the Continue card. Older saves have none. */
   lastOpened?: string
+  /** Study actions aimed for each day (answers, card ratings, lessons completed). 0 switches the goal off. */
+  goal?: number
+  /** Milestones already announced. Undefined until the first check, so old progress is not announced all at once. */
+  milestonesShown?: string[]
 }
+
+/** The daily goal used until the learner chooses one. */
+export const DEFAULT_GOAL = 20
 
 /** Days until the next review, by box. */
 export const REVIEW_INTERVALS = [0, 1, 3, 7, 14, 30]
@@ -182,6 +189,14 @@ export function setLessonDone(key: string, done: boolean) {
   if (done) lessons[key] = new Date().toISOString()
   else delete lessons[key]
   commit({ ...state, lessons, activity: done ? studiedToday() : state.activity })
+}
+
+export function setGoal(goal: number) {
+  commit({ ...state, goal })
+}
+
+export function markMilestonesShown(ids: string[]) {
+  commit({ ...state, milestonesShown: [...new Set([...(state.milestonesShown ?? []), ...ids])] })
 }
 
 /** Remember the module the learner is in, so the home page can offer to continue it. */
