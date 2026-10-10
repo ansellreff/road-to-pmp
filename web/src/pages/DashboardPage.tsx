@@ -2,12 +2,13 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { WeakModules } from '../components/ExamInsights'
 import { Figures, Meter, PageHeader } from '../components/Page'
+import Ring from '../components/Ring'
 import { courses, getExams, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
 import { bandFor, domainScores, examKey, formatDuration, moduleLosses, type ModuleLoss } from '../lib/exam'
 import { dueCount, isKnown, setAttemptDomains, studyStreak, today, useProgress, type ExamAttempt, type Progress } from '../lib/progress'
 import { MOCK_SHARE, readiness } from '../lib/readiness'
 import { answerTotals, domainStats, moduleNumber, percent, type DomainStats, type ModuleStats } from '../lib/stats'
-import { btnPrimary, btnQuiet, link, listTitle, note, section, sectionTitle, subTitle } from '../lib/ui'
+import { btnPrimary, btnQuiet, domainBg, link, listTitle, note, section, sectionTitle, subTitle } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
 
 const PASS = 0.7
@@ -168,8 +169,11 @@ function DomainChart({ courseId, domains }: { courseId: string; domains: DomainS
         return (
           <div key={domain.id} className={`${columns} items-center border-b border-line py-4 last:border-b-0`}>
             <div>
-              <Link to={`/${courseId}`} className="press font-semibold underline-offset-4 hover:text-plan hover:underline">
-                {i + 1}. {domain.title}
+              <Link to={`/${courseId}#${domain.id}`} className="press flex items-start gap-2.5 font-semibold underline-offset-4 hover:text-plan hover:underline">
+                <span className={`mt-1 h-4 w-1.5 shrink-0 rounded-full ${domainBg[i]}`} aria-hidden="true" />
+                <span>
+                  {i + 1}. {domain.title}
+                </span>
               </Link>
               <p className="text-sm text-muted">{domain.weight}% of the exam</p>
             </div>
@@ -245,9 +249,11 @@ function ReadinessPanel({ course, progress }: { course: Course; progress: Progre
         </p>
       ) : (
         <>
-          <div className="mt-3 flex flex-wrap items-end gap-x-8 gap-y-3">
-            <p className="title text-6xl tabular-nums">{percent(result.value)}</p>
-            <p className="max-w-xl pb-1 leading-relaxed">
+          <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-3">
+            <Ring value={result.value} size={112} stroke={10} tone="var(--color-plan)" label={`Readiness estimate ${percent(result.value)}`}>
+              <span className="title text-3xl tabular-nums">{percent(result.value)}</span>
+            </Ring>
+            <p className="max-w-xl leading-relaxed">
               Study would raise it most in{' '}
               <Link to={`/${course.id}#${focus.id}`} className={link}>
                 Domain {result.focus + 1}: {focus.title}

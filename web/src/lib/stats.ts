@@ -1,5 +1,5 @@
 import { allModules, type Course, type Domain, type ModuleMeta } from './content'
-import { missedIds, moduleCompletion, moduleKey, type Progress } from './progress'
+import { isDue, knownCount, missedIds, moduleCompletion, moduleKey, type Progress } from './progress'
 
 const average = (values: number[]) => (values.length ? values.reduce((a, b) => a + b, 0) / values.length : 0)
 
@@ -109,3 +109,18 @@ export function answerTotals(progress: Progress): { answered: number; right: num
 }
 
 export const percent = (value: number) => `${Math.round(Math.max(0, Math.min(1, value)) * 100)}%`
+
+/** What to do next in a module: the one button on its card and on the Continue card. */
+export function nextStep(course: Course, m: ModuleMeta, progress: Progress): { to: string; label: string; done: boolean } {
+  const key = moduleKey(course.id, m.id)
+  const base = `/${course.id}/${m.id}`
+  const quiz = progress.quizzes[key]
+  const deck = progress.cardTotals[key] ?? 0
+  const due = Object.values(progress.cards[key] ?? {}).filter(isDue).length
+  if (!progress.lessons[key]) return { to: base, label: progress.reading[key] || quiz ? 'Continue the lesson' : 'Start', done: false }
+  if (!quiz) return { to: `${base}/quiz`, label: 'Take the quiz', done: false }
+  if (quiz.best / quiz.total < 0.7) return { to: `${base}/quiz`, label: 'Retake the quiz', done: false }
+  if (!deck || knownCount(progress, key) < deck) return { to: `${base}/flashcards`, label: 'Practice the flashcards', done: false }
+  if (due) return { to: `${base}/flashcards`, label: `Review ${due} ${due === 1 ? 'card' : 'cards'}`, done: true }
+  return { to: base, label: 'Read again', done: true }
+}

@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import Flashcards from '../components/Flashcards'
 import Icon, { type IconName } from '../components/Icon'
@@ -11,6 +12,7 @@ import Quiz from '../components/Quiz'
 import WithSidePanel from '../components/SidePanel'
 import ModuleSources from '../components/Sources'
 import { findModule, getCourse } from '../lib/content'
+import { moduleKey, setLastOpened } from '../lib/progress'
 import { moduleNeighbours, moduleNumber } from '../lib/stats'
 
 const tabs: { id: string; label: string; icon: IconName }[] = [
@@ -23,6 +25,10 @@ export default function ModulePage() {
   const { courseId, moduleId, tab = 'lesson' } = useParams()
   const course = getCourse(courseId)
   const found = course && findModule(course, moduleId)
+  const opened = course && found?.module.ready ? moduleKey(course.id, found.module.id) : undefined
+  useEffect(() => {
+    if (opened) setLastOpened(opened)
+  }, [opened])
   if (!course || !found || !found.module.ready || !tabs.some((t) => t.id === tab)) return <NotFound />
   const { domain, module } = found
   const base = `/${course.id}/${module.id}`

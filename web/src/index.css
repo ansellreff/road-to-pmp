@@ -28,6 +28,11 @@
   --color-critical-soft: #fbe7ea;
   --color-milestone: #8f5f00;
   --color-milestone-soft: #fcf3dc;
+  /* One colour per exam domain, used as an accent so the four become recognisable. */
+  --color-d1: #2457c5;
+  --color-d2: #7a3fc0;
+  --color-d3: #0b7285;
+  --color-d4: #b0307a;
 
   /* Depth. Raised things can be opened or pressed; flat things are read. */
   --shadow-card: 0 1px 2px rgb(20 33 61 / 0.08), 0 2px 8px rgb(20 33 61 / 0.06);
@@ -53,6 +58,10 @@
   --color-critical-soft: #45202a;
   --color-milestone: #e8b54d;
   --color-milestone-soft: #3d3013;
+  --color-d1: #8fb0ff;
+  --color-d2: #c7a4ff;
+  --color-d3: #5cc8d8;
+  --color-d4: #f291c4;
   --shadow-card: 0 1px 2px rgb(0 0 0 / 0.3), 0 2px 8px rgb(0 0 0 / 0.25);
   --shadow-raised: 0 2px 4px rgb(0 0 0 / 0.35), 0 12px 32px rgb(0 0 0 / 0.45);
 }
@@ -92,6 +101,33 @@ body {
   }
   .press:active:not(:disabled) {
     transform: translateY(1px);
+  }
+
+  /* A raised surface: something that can be opened or acted on. */
+  .card {
+    @apply rounded-lg border border-line bg-surface;
+    box-shadow: var(--shadow-card);
+  }
+  /* A card that is itself a link or holds the main action lifts under the pointer. */
+  .lift {
+    transition:
+      transform 0.15s ease-out,
+      box-shadow 0.15s ease-out,
+      border-color 0.15s;
+  }
+  .lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-raised);
+    border-color: var(--color-edge);
+  }
+  .lift:active {
+    transform: translateY(0);
+    box-shadow: var(--shadow-card);
+  }
+
+  /* A ring that fills as work completes. */
+  .ring-fill {
+    transition: stroke-dashoffset 0.6s ease-out;
   }
 
   /* A bar that fills as work completes. */

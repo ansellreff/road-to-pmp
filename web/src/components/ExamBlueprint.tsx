@@ -1,6 +1,7 @@
 import type { Course } from '../lib/content'
 import type { Progress } from '../lib/progress'
 import { domainCompletion, percent } from '../lib/stats'
+import { domainBg, domainText } from '../lib/ui'
 
 /**
  * The exam drawn to scale: one strip split by domain weight, each segment
@@ -25,9 +26,9 @@ export default function ExamBlueprint({ course, progress }: { course: Course; pr
               className="group relative min-w-0 border-l border-ink first:border-l-0 hover:bg-plan-soft"
             >
               <span className="absolute inset-y-0 left-0 bg-plan-soft" style={{ width: percent(done) }} />
-              <span className="absolute inset-x-0 bottom-0 h-1.5 bg-plan" style={{ width: percent(done) }} />
+              <span className={`absolute inset-x-0 bottom-0 h-1.5 ${domainBg[i]}`} style={{ width: percent(done) }} />
               <span className="relative flex h-full flex-col justify-between p-2 sm:p-3">
-                <span className="title text-sm sm:text-base">
+                <span className={`title text-sm sm:text-base ${domainText[i]}`}>
                   <span className="hidden sm:inline">Domain </span>
                   {i + 1}
                 </span>

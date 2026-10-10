@@ -336,7 +336,7 @@ export const tests = {
     await page.getByText('61%', { exact: true }).first().waitFor()
     await see(page, 'Weak spots from your mock exams')
     await page.goto('/')
-    await see(page, 'Readiness estimate: 61%.')
+    await page.getByRole('link', { name: /Readiness estimate 61%/ }).waitFor()
   },
 
   async 'study plan: mock exams get dates in the final review'(page) {

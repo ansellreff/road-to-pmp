@@ -27,4 +27,13 @@ export const note = 'text-sm leading-relaxed text-muted'
 /** The widest a column of questions or prose should be: about 75 characters a line. */
 export const column = 'max-w-3xl'
 
+/** A raised block. Add `lift` when the whole card is the thing to press. */
+export const card = 'card'
+export const cardLink = 'card lift block'
+
+// The accent colour of each exam domain, in course order. Written out so the styles are generated.
+export const domainText = ['text-d1', 'text-d2', 'text-d3', 'text-d4']
+export const domainBg = ['bg-d1', 'bg-d2', 'bg-d3', 'bg-d4']
+export const domainBorder = ['border-d1', 'border-d2', 'border-d3', 'border-d4']
+
 export const input = 'press min-h-11 rounded-md border border-edge bg-surface px-3 py-2 text-ink hover:border-ink'

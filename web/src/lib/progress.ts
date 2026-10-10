@@ -88,6 +88,8 @@ export interface Progress {
   exams: Record<string, ExamRecord>
   /** Per module, the lesson section last reached, for "continue from". Older saves have none. */
   reading: Record<string, string>
+  /** The module opened most recently ("course/module"), for the Continue card. Older saves have none. */
+  lastOpened?: string
 }
 
 /** Days until the next review, by box. */
@@ -180,6 +182,11 @@ export function setLessonDone(key: string, done: boolean) {
   if (done) lessons[key] = new Date().toISOString()
   else delete lessons[key]
   commit({ ...state, lessons, activity: done ? studiedToday() : state.activity })
+}
+
+/** Remember the module the learner is in, so the home page can offer to continue it. */
+export function setLastOpened(key: string) {
+  if (state.lastOpened !== key) commit({ ...state, lastOpened: key })
 }
 
 /** Remember the lesson section the learner has reached. Reading alone is not counted as a study action. */

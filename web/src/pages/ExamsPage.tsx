@@ -4,8 +4,9 @@ import { getCourse, getExams, type Course, type Exam } from '../lib/content'
 import { elapsedMs, examKey, examLimitMs, formatClock, formatDuration, lastAttempt } from '../lib/exam'
 import { abandonExam, moduleKey, startExam, useProgress, type ExamMode, type Progress } from '../lib/progress'
 import { percent } from '../lib/stats'
+import Icon from '../components/Icon'
 import { PageHeader } from '../components/Page'
-import { btnDanger, btnPrimary, btnQuiet, column, link, note, section, sectionTitle } from '../lib/ui'
+import { btnDanger, btnPrimary, btnQuiet, column, link, note, sectionTitle } from '../lib/ui'
 import { useNow } from '../lib/useNow'
 
 const modeName: Record<ExamMode, string> = { practice: 'Practice mode', real: 'Real exam mode' }
@@ -88,8 +89,11 @@ function ExamRow({ course, exam, progress }: { course: Course; exam: Exam; progr
   const left = run ? examLimitMs(course) - elapsedMs(run, now) : 0
 
   return (
-    <section className={`${section} mt-10`}>
-      <h2 className={sectionTitle}>{exam.title}</h2>
+    <section className="card mt-5 px-5 py-5 sm:px-6">
+      <h2 className={`${sectionTitle} flex items-center gap-2.5`}>
+        <Icon name="exam" size={24} className="text-plan" />
+        {exam.title}
+      </h2>
       {exam.unseen && (
         <p className={`${note} mt-1`}>
           Kept for last: these questions are in no module quiz.{' '}

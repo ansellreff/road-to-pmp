@@ -24,6 +24,8 @@ PAIRS = [
     ("muted", "plan-soft", TEXT), ("muted", "done-soft", TEXT), ("muted", "critical-soft", TEXT),
     ("edge", "paper", OUTLINE), ("edge", "surface", OUTLINE),
     ("plan", "line", OUTLINE),
+    ("d1", "paper", TEXT), ("d1", "surface", TEXT), ("d2", "paper", TEXT), ("d2", "surface", TEXT),
+    ("d3", "paper", TEXT), ("d3", "surface", TEXT), ("d4", "paper", TEXT), ("d4", "surface", TEXT),
 ]
 
 
