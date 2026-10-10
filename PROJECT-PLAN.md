@@ -51,6 +51,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | **Session 27 done: UI/UX polish on every page.** Dark theme and a text size control in the top bar; larger question text, bigger buttons and softer colours for long sittings; one shared set of headings, buttons, tables and notices used by all pages; phone layout; redesigned Dashboard (domain chart, 14-day activity, mock exam results), Practice (choose a domain, progress track, list of questions missed again) and Study plan (timeline, schedule by week); wide lesson tables; seven drawn diagrams in modules 3.7, 4.2 and 4.5. | You: try the Dark switch and the three A buttons, open one page on your phone if it can reach this PC, and tell me anything that still looks off. Next: Session 28 (go online) |
 | 2026-10-10 | **Session 28a and 28b done; 28c prepared.** New: automated click tests (13, all passing, also against the production build); a list of sections beside each lesson and a "continue from" link; search over lessons and flashcards; a printable formula and key facts sheet; weak spots, time per question and a score trend for mock exams; a readiness estimate; mock exam dates and flashcards due in the study plan. The click tests found and fixed a real fault in real exam mode. Ready to upload: safety check, site icon, no-listing settings. | You: create a private GitHub repository named `road-to-pmi` (no README) and send me its address. Then Vercel, then Session 28d (sync). |
 | 2026-10-10 | Site renamed from "Road to PMI" to **Road to PMP** at your request (browser tab, top bar, phone home screen name, backup file name). Private GitHub repository created by you: `ansellreff/road-to-pmp`, and the project is connected to it. The upload itself needs your sign-in, so it is done by double-clicking `upload.bat`. | You: double-click `upload.bat`, then import the repository on Vercel with Root Directory `web`, then send me the site address |
+| 2026-10-10 | **The platform is online: https://road-to-pmp-d82g.vercel.app** You uploaded with `upload.bat` and deployed on Vercel. Checked on the live site: all 13 click tests pass, a lesson address opens directly, search engines are told not to list it, and the books address returns no PDF. | You: open it on your phone, and bring your progress over with Download backup (on this PC) and Restore from backup (on the site). Next: Session 28d (sync), which needs a free Supabase project |
 
 ## How your progress is saved
 
@@ -75,6 +76,15 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 - The PMBOK Guides, the two Agile Practice Guides and the six PMI standards and practice guides used as sources are protected by PMI in a way the Edge browser cannot open (it asks for a password). The links therefore use unlocked copies stored in `.cache/pdf/`, made by `tools/unlock_pdfs.py` at your request on 2026-10-10. The copies stay on this PC, are excluded from Git, and still carry your name and member ID on each page. Your original files are untouched.
 - If a PDF is renamed or a new book is added, update `web/src/content/books.json`, then run `tools/extract_pdf.py` and `tools/unlock_pdfs.py`. The running server picks up a new book straight away; no restart is needed.
 - A red **\*** marks a module as additional information that is not part of the exam. No module is marked this way at present (1.11 became exam content in Session 25b).
+
+## The website
+
+- **Address:** https://road-to-pmp-d82g.vercel.app (Vercel project `road-to-pmp-d82g`, built from the `web` folder of the private GitHub repository `ansellreff/road-to-pmp`).
+- **Updating it:** double-click `upload.bat` in the project folder. It runs the safety check and uploads; Vercel rebuilds the site about a minute later. Nothing reaches the website until you do this.
+- **What is not on it:** the PDFs. Sources show as book and page number without a link. On this PC (`start.bat`) the links still open the PDFs.
+- **Progress** on the website is separate from progress on this PC and from your phone, until sync is built (Session 28d). Use Download backup and Restore from backup on the home page to move it.
+- Anyone who has the address can open the site. It is not listed by search engines.
+
 
 ## How to start the app on this PC
 
@@ -150,7 +160,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 27 | UI/UX polish on every page: dark theme, text size control, reading comfort, shared styles, phone layout, redesigned Dashboard, Practice and Study plan, wide tables, seven diagrams. Details under "Session 27: the look and feel as built". |
 | ✅ | 28a | Click tests; lesson sections and resume; search; formula sheet |
 | ✅ | 28b | Weak spots and timing for mock exams; readiness estimate; mock exams in the study plan |
-| 🟡 | 28c | Go online. Done: private GitHub repository `ansellreff/road-to-pmp`, connected. Waiting for: you to run `upload.bat` once, then your Vercel import (Root Directory `web`). Then test on phone. |
+| ✅ | 28c | Online at https://road-to-pmp-d82g.vercel.app from the private repository `ansellreff/road-to-pmp`. Checked with the click tests. Phone check by you still open. |
 | ⬜ | 28d | Sync between PC and phone (needs a free Supabase project) |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
@@ -710,3 +720,4 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 104 | You asked me to start the platform myself after a reboot, without being told. | Saved as a standing instruction: at the start of each session I check the address and start it if it is down. | Memory note `auto-start-dev-server` |
 | 105 | You renamed the site to Road to PMP. The browser stores your progress under names containing the old spelling (`road-to-pmi-progress`, and two for theme and text size). | Only what you see was renamed: tab title, top bar, home screen name, backup file name. The storage names are unchanged, because renaming them would make the browser lose your saved progress. Old backup files still restore. | `web/src/lib/progress.ts`, `web/src/lib/prefs.ts` |
 | 106 | I could not upload to GitHub myself. The session I run in does not allow a sign-in window, and the permission system declined my attempt to switch that on. I did not try to get around it. | New `upload.bat` in the project folder: you double-click it, it runs the safety check, then uploads, and GitHub asks you to sign in the first time. This also means every upload is started by you. | `upload.bat` |
+| 107 | You sent the Vercel project page (`vercel.com/ansellreffs-projects/road-to-pmp-d82g`), which only you can open, not the public site address. | I worked the public address out from the project name (`road-to-pmp-d82g.vercel.app`), confirmed it serves this site by its title, and tested it. If you later add your own domain, tell me. | "The website" section |
