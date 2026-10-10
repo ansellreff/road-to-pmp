@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "Why is \"elicitation\" a better word than \"gathering\" for obtaining requirements?",
+    "options": [
+      "Elicitation is quicker",
+      "Gathering applies only to documents",
+      "Stakeholders often cannot express their needs clearly, so the information has to be drawn out",
+      "Elicitation needs no preparation"
+    ],
+    "answer": 2,
+    "explanation": "Collecting or gathering implies stakeholders already have product information ready to hand over. They often have wants, needs and ideas but cannot express them clearly, so the information is drawn out through back-and-forth interaction.",
+    "ref": "PMI Guide to Business Analysis, Key Concepts for Elicitation",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 199,
+        "label": "PMI Guide to Business Analysis, Key Concepts for Elicitation"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What is the correct order of the four elicitation processes?",
+    "options": [
+      "Determine approach, prepare, conduct, confirm results",
+      "Prepare, determine approach, confirm results, conduct",
+      "Conduct, confirm results, prepare, determine approach",
+      "Confirm results, conduct, determine approach, prepare"
+    ],
+    "answer": 0,
+    "explanation": "The elicitation knowledge area contains Determine Elicitation Approach, Prepare for Elicitation, Conduct Elicitation and Confirm Elicitation Results.",
+    "ref": "PMI Guide to Business Analysis, Table 1-2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 69,
+        "label": "PMI Guide to Business Analysis, Table 1-2"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "How do elicitation and analysis relate?",
+    "options": [
+      "All elicitation is finished before any analysis starts",
+      "Analysis replaces elicitation on agile projects",
+      "They are done by different organizations",
+      "They alternate: analysis raises new questions that need more elicitation"
+    ],
+    "answer": 3,
+    "explanation": "Elicitation is performed iteratively with analysis to progressively elaborate information. When results are vague, more questions are asked and more elicitation is done, until analysis produces no further questions or the remaining risk is acceptable.",
+    "ref": "PMI Guide to Business Analysis, Key Concepts for Elicitation",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 199,
+        "label": "PMI Guide to Business Analysis, Key Concepts for Elicitation"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What does the elicitation approach describe?",
+    "options": [
+      "The approved requirements",
+      "What information to elicit, where to find it, how to obtain it and when",
+      "The test cases for the solution",
+      "The cost of the project"
+    ],
+    "answer": 1,
+    "explanation": "The elicitation approach describes how elicitation will be performed, what information to elicit, where to find it, how to obtain it and when to conduct the activities. It may be documented or be a thought process.",
+    "ref": "PMI Guide to Business Analysis, 6.1.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 203,
+        "label": "PMI Guide to Business Analysis, 6.1.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A project manager wants to halve the elicitation effort to save time. What is the main consequence to point out?",
+    "options": [
+      "The charter becomes invalid",
+      "The stakeholder register must be rewritten",
+      "Greater risk of rework and product defects later",
+      "None; elicitation can always be cut safely"
+    ],
+    "answer": 2,
+    "explanation": "Elicitation is sometimes scaled back because of constraints, but doing so introduces portfolio, program, project and product risks that may result in rework or defects. Early agreement on the appropriate amount reduces these risks.",
+    "ref": "PMI Guide to Business Analysis, 6.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 201,
+        "label": "PMI Guide to Business Analysis, 6.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which is the first step in preparing for an elicitation activity?",
+    "options": [
+      "Determine the objective",
+      "Schedule the room",
+      "Send the minutes",
+      "Confirm the results"
+    ],
+    "answer": 0,
+    "explanation": "Preparation starts with setting an objective for the activity: the reason it is being undertaken. Participants, resources, questions, the agenda and the schedule follow from it.",
+    "ref": "PMI Guide to Business Analysis, 6.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 204,
+        "label": "PMI Guide to Business Analysis, 6.2"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What are the three stages of any elicitation activity?",
+    "options": [
+      "Plan, do, check",
+      "Introduction, body, close",
+      "Forming, storming, norming",
+      "Elicit, analyze, approve"
+    ],
+    "answer": 1,
+    "explanation": "Regardless of the technique, an elicitation activity has an introduction that sets the stage and purpose, a body where questions are asked and answered, and a close that ends the activity gracefully. Follow-up then confirms the results.",
+    "ref": "PMI Guide to Business Analysis, 6.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 209,
+        "label": "PMI Guide to Business Analysis, 6.3"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "\"Describe what happens when an order arrives late.\" What kind of question is this?",
+    "options": [
+      "Closed-ended",
+      "Forced choice",
+      "Confirmation",
+      "Open-ended"
+    ],
+    "answer": 3,
+    "explanation": "An open-ended question allows the respondent to answer in any way they wish. A closed-ended question calls for a response from a limited list of choices.",
+    "ref": "Business Analysis for Practitioners, How to Elicit Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 64,
+        "label": "Business Analysis for Practitioners, How to Elicit Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Three departments disagree about what a new system must do. Which technique is most suitable?",
+    "options": [
+      "Document analysis",
+      "Facilitated workshop",
+      "Questionnaire",
+      "Observation"
+    ],
+    "answer": 1,
+    "explanation": "Facilitated workshops bring cross-functional stakeholders together and are a primary technique for quickly defining product information across domains and reconciling stakeholder differences.",
+    "ref": "PMI Guide to Business Analysis, 6.3.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 212,
+        "label": "PMI Guide to Business Analysis, 6.3.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Warehouse staff find it hard to explain the exact steps they follow when packing. Which technique should the analyst use?",
+    "options": [
+      "Survey",
+      "Brainstorming",
+      "Observation",
+      "Focus group"
+    ],
+    "answer": 2,
+    "explanation": "Observation gives a direct view of how a process is performed. It is especially helpful for detailed processes, because stakeholders may have difficulty recalling specifics or may be unaware of their own actions.",
+    "ref": "PMI Guide to Business Analysis, 6.3.2.7",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 213,
+        "label": "PMI Guide to Business Analysis, 6.3.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "What is the main drawback of observation?",
+    "options": [
+      "People may act differently when they are being observed",
+      "It cannot be used for detailed processes",
+      "It reaches too many people",
+      "It requires a prototype"
+    ],
+    "answer": 0,
+    "explanation": "The main drawback of the observation technique is that people may act differently when they are being observed.",
+    "ref": "PMI Guide to Business Analysis, 6.3.2.7",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 213,
+        "label": "PMI Guide to Business Analysis, 6.3.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "The analyst needs input from 4,000 customers in several countries, at low cost. Which technique fits?",
+    "options": [
+      "Interviews",
+      "Facilitated workshop",
+      "Observation",
+      "Questionnaires and surveys"
+    ],
+    "answer": 3,
+    "explanation": "Questionnaires and surveys accumulate information quickly from a large number of respondents who may be widely dispersed, at relatively small cost. The typical concern is getting a sufficient response rate.",
+    "ref": "PMI Guide to Business Analysis, 6.3.2.9",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 213,
+        "label": "PMI Guide to Business Analysis, 6.3.2.9"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Users say they cannot judge the requirements until they \"see something\". Which technique helps?",
+    "options": [
+      "Document analysis",
+      "Job analysis",
+      "Prototyping",
+      "Benchmarking"
+    ],
+    "answer": 2,
+    "explanation": "Prototyping obtains early feedback by providing a model of the expected solution before building it. Because prototypes are tangible, stakeholders can visualize and experiment instead of discussing abstract requirements.",
+    "ref": "PMI Guide to Business Analysis, 6.3.2.8",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 213,
+        "label": "PMI Guide to Business Analysis, 6.3.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which prototype is a static blueprint of a user interface screen?",
+    "options": [
+      "Storyboard",
+      "Wireframe",
+      "Evolutionary prototype",
+      "Product box"
+    ],
+    "answer": 1,
+    "explanation": "A wireframe is a diagram representing a static blueprint or schematic of a user interface. A storyboard shows sequence or navigation through a series of images. An evolutionary prototype is the actual solution in progress.",
+    "ref": "PMI Guide to Business Analysis, 6.3.2.8",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 213,
+        "label": "PMI Guide to Business Analysis, 6.3.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which statement about document analysis is correct?",
+    "options": [
+      "It is a good way to gain background before meeting stakeholders, but documents may be out of date",
+      "It always reflects current practice",
+      "It replaces the need to talk to stakeholders",
+      "It can only be used after requirements are approved"
+    ],
+    "answer": 0,
+    "explanation": "Document analysis helps the analyst understand the business environment before engaging stakeholders and can save their time. The accuracy and relevance of the information must be checked, because documentation may describe constraints that no longer apply.",
+    "ref": "PMI Guide to Business Analysis, 6.3.2.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 212,
+        "label": "PMI Guide to Business Analysis, 6.3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "What distinguishes a focus group?",
+    "options": [
+      "It is a one-to-one conversation",
+      "It involves watching people work",
+      "It is a written set of questions",
+      "It brings together prequalified stakeholders and experts to learn their expectations and attitudes about a proposed solution"
+    ],
+    "answer": 3,
+    "explanation": "Focus groups bring together prequalified stakeholders and subject matter experts to learn about their expectations and attitudes toward a proposed solution, giving direct feedback from customers or end users.",
+    "ref": "PMI Guide to Business Analysis, 6.3.2.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 212,
+        "label": "PMI Guide to Business Analysis, 6.3.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "In an interview, only the first question is fixed, and each later question follows from the previous answer. What type of interview is this?",
+    "options": [
+      "Structured",
+      "Unstructured",
+      "Closed",
+      "Confirmatory"
+    ],
+    "answer": 1,
+    "explanation": "In an unstructured interview the only question asked for certain is the first; later questions are based on the answers given. A structured interview works through a prepared list with the goal of asking every question.",
+    "ref": "Business Analysis for Practitioners, How to Elicit Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 64,
+        "label": "Business Analysis for Practitioners, How to Elicit Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which collaborative game asks participants to write a product's problems on anchors that hold it back?",
+    "options": [
+      "Speedboat",
+      "Product box",
+      "Spider web",
+      "Buy a feature"
+    ],
+    "answer": 0,
+    "explanation": "In speedboat, participants place the things they dislike about a product on anchors drawn on a boat, then discuss how much faster the boat would go if each were removed. It is a non-confrontational way to raise product issues.",
+    "ref": "PMI Guide to Business Analysis, 6.3.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 211,
+        "label": "PMI Guide to Business Analysis, 6.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Immediately after a requirements workshop, what is the status of the notes taken?",
+    "options": [
+      "Approved requirements",
+      "Baselined scope",
+      "Unconfirmed elicitation results",
+      "Validated requirements"
+    ],
+    "answer": 2,
+    "explanation": "The output of Conduct Elicitation is the unconfirmed elicitation results. They become confirmed only when the product team reaches a common understanding and agrees they are accurate.",
+    "ref": "PMI Guide to Business Analysis, 6.3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 214,
+        "label": "PMI Guide to Business Analysis, 6.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "What is the purpose of Confirm Elicitation Results?",
+    "options": [
+      "To obtain final sign-off on the solution",
+      "To prioritize the requirements",
+      "To estimate the development effort",
+      "To check with stakeholders that what was captured is accurate and complete"
+    ],
+    "answer": 3,
+    "explanation": "Confirm Elicitation Results performs follow-up activities, reviewing the results with stakeholders for accuracy and completeness. Its key benefit is validating that the stakeholders and the results were understood.",
+    "ref": "PMI Guide to Business Analysis, 6.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 215,
+        "label": "PMI Guide to Business Analysis, 6.4"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "What is a walkthrough?",
+    "options": [
+      "A peer review in which the author leads the reviewers through the material",
+      "A tour of the customer's premises",
+      "A survey sent after a workshop",
+      "A test of the finished product by end users"
+    ],
+    "answer": 0,
+    "explanation": "A walkthrough is a peer review in which the author of the materials walks the peer reviewers through the authored information. It can confirm that elicitation results are accurate or clarify discrepancies.",
+    "ref": "PMI Guide to Business Analysis, 6.4.2.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 217,
+        "label": "PMI Guide to Business Analysis, 6.4.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "How does elicitation on an adaptive project differ from a predictive one?",
+    "options": [
+      "It is done once, before development starts",
+      "It is frequent and in short cycles, eliciting just enough for the current and next one or two iterations",
+      "It is not done at all",
+      "It always produces a formal elicitation plan"
+    ],
+    "answer": 1,
+    "explanation": "In adaptive life cycles elicitation is frequent, aiming to elaborate just enough information for the current iteration or one to two iterations ahead. Predictive life cycles perform most elicitation and analysis up front.",
+    "ref": "PMI Guide to Business Analysis, 6.3.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 214,
+        "label": "PMI Guide to Business Analysis, 6.3.4"
+      }
+    ]
+  }
+]

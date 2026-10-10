@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "In business analysis, who belongs in the stakeholder register?",
+    "options": [
+      "Only the people who approve the budget",
+      "Only the members of the project team",
+      "Only the end users of the product",
+      "Anyone who may affect, be affected by, or perceive themselves to be affected by the proposed solution"
+    ],
+    "answer": 3,
+    "explanation": "In business analysis, any individual, group or organization that may affect, be affected by, or be perceived to be affected by the proposed or intended solution is added to the stakeholder register.",
+    "ref": "PMI Guide to Business Analysis, 5.1.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 159,
+        "label": "PMI Guide to Business Analysis, 5.1.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which technique helps identify stakeholders by showing who performs a business process or uses its outputs?",
+    "options": [
+      "Burndown chart",
+      "Process flow",
+      "Weighted ranking",
+      "Kano analysis"
+    ],
+    "answer": 1,
+    "explanation": "Process flows can focus discussion on the roles responsible for performing existing processes or that interact with their outputs. Future-state flows reveal new stakeholders.",
+    "ref": "PMI Guide to Business Analysis, 5.1.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 158,
+        "label": "PMI Guide to Business Analysis, 5.1.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "What is the key benefit of conducting stakeholder analysis?",
+    "options": [
+      "Insight for choosing elicitation techniques, whom to involve and when, and how best to communicate",
+      "A signed project charter",
+      "A complete list of solution requirements",
+      "A final product roadmap"
+    ],
+    "answer": 0,
+    "explanation": "Stakeholder analysis provides insights used when choosing elicitation and analysis techniques, selecting which stakeholders to involve at different times, and determining the best communication and collaboration methods.",
+    "ref": "PMI Guide to Business Analysis, 5.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 160,
+        "label": "PMI Guide to Business Analysis, 5.2"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What is a persona?",
+    "options": [
+      "A real stakeholder chosen to represent a department",
+      "The sponsor's delegate at workshops",
+      "A fictional character created to represent an individual or a class of users",
+      "A row in the stakeholder register"
+    ],
+    "answer": 2,
+    "explanation": "A persona is a fictional character created to represent an individual or group of stakeholders, termed a user class. A stakeholder is an actual person; a persona is a fictional representation with more detail on how the person operates.",
+    "ref": "PMI Guide to Business Analysis, 5.2.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 162,
+        "label": "PMI Guide to Business Analysis, 5.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A product will be used by thousands of customers who cannot all be interviewed. Which technique helps the team understand their needs?",
+    "options": [
+      "RACI model",
+      "Persona analysis",
+      "Variance analysis",
+      "Job analysis"
+    ],
+    "answer": 1,
+    "explanation": "When it is not possible to obtain requirements from every stakeholder, they can be grouped into user classes and a persona built to understand the needs of each class.",
+    "ref": "PMI Guide to Business Analysis, 5.2.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 162,
+        "label": "PMI Guide to Business Analysis, 5.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "In a RACI model, what does \"Accountable\" mean?",
+    "options": [
+      "The person who performs the task",
+      "The person who is kept informed",
+      "The person who gives information for the task",
+      "The person answerable for the completion and quality of the task; the final approver"
+    ],
+    "answer": 3,
+    "explanation": "A is the role or person accountable for the completion and quality of the task, the final approver. R is responsible for performing the task, C is consulted, and I is informed.",
+    "ref": "PMI Guide to Business Analysis, 5.2.2.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 163,
+        "label": "PMI Guide to Business Analysis, 5.2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Why does a business analyst build a RACI model?",
+    "options": [
+      "To make clear the roles and responsibilities of those involved in the business analysis work",
+      "To rank requirements by value",
+      "To estimate the project budget",
+      "To find the root cause of a problem"
+    ],
+    "answer": 0,
+    "explanation": "In business analysis, a RACI communicates the roles and responsibilities of those involved in the effort. It minimizes confusion and conflict, especially where responsibilities appear to overlap.",
+    "ref": "PMI Guide to Business Analysis, 5.2.2.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 163,
+        "label": "PMI Guide to Business Analysis, 5.2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "On a stakeholder matrix of influence and impact, how should high-influence, high-impact stakeholders be treated?",
+    "options": [
+      "Monitored only",
+      "Informed at the end of the project",
+      "Given the most business analysis effort, frequent communication and a strong partnership",
+      "Left out of requirements work"
+    ],
+    "answer": 2,
+    "explanation": "This quadrant is a critical group and a critical source of requirements. A significant share of the business analysis effort should go to them, with frequent communication and a strong, trusting relationship.",
+    "ref": "PMI Guide to Business Analysis, 5.2.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 164,
+        "label": "PMI Guide to Business Analysis, 5.2.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Warehouse staff have little organizational power but will use the new system all day. How should the analyst treat them?",
+    "options": [
+      "As a critical source of requirements whose concerns must be heard",
+      "As unimportant because they have low influence",
+      "As champions who will promote the solution to executives",
+      "As external stakeholders"
+    ],
+    "answer": 0,
+    "explanation": "Low-influence, high-impact stakeholders are also critical sources of requirements. They may represent a large part of the product requirements and are often those expected to adapt to the solution.",
+    "ref": "PMI Guide to Business Analysis, 5.2.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 164,
+        "label": "PMI Guide to Business Analysis, 5.2.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "On an onion diagram, what does a stakeholder's position near the center show?",
+    "options": [
+      "They have the highest salary",
+      "They have the closest or strongest relationship to the solution",
+      "They are external to the organization",
+      "They oppose the solution"
+    ],
+    "answer": 1,
+    "explanation": "Stakeholders modeled closest to the center of the onion have the closest or strongest relationship to the solution, such as end users or the development team. Those on the outer layers have a weaker relationship.",
+    "ref": "PMI Guide to Business Analysis, 5.2.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 164,
+        "label": "PMI Guide to Business Analysis, 5.2.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "What does the stakeholder engagement and communication approach record?",
+    "options": [
+      "The detailed solution design",
+      "The project's cost baseline",
+      "Each stakeholder's level of involvement, how decisions and approvals are made, and how stakeholders are kept informed",
+      "The test results for each release"
+    ],
+    "answer": 2,
+    "explanation": "The approach summarizes agreements on the level of involvement of each stakeholder or group, how decisions are made and approvals obtained, how information is structured and stored, and how stakeholders are kept up to date.",
+    "ref": "PMI Guide to Business Analysis, 5.3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 171,
+        "label": "PMI Guide to Business Analysis, 5.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "On an adaptive project, how is the engagement and communication approach usually settled?",
+    "options": [
+      "In a formal document approved by the PMO",
+      "It is not considered",
+      "By the sponsor alone",
+      "Agreed verbally by the team, with the product owner representing stakeholder needs"
+    ],
+    "answer": 3,
+    "explanation": "In adaptive approaches, the product owner, representing stakeholder needs and preferences, and the rest of the team verbally agree on the format and level of detail to be communicated, as part of collaborative team planning.",
+    "ref": "PMI Guide to Business Analysis, 5.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 168,
+        "label": "PMI Guide to Business Analysis, 5.3"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "How does a business analysis plan differ from a requirements management plan?",
+    "options": [
+      "They are the same document",
+      "The business analysis plan is broader: it covers the whole business analysis approach",
+      "The requirements management plan is broader",
+      "The business analysis plan covers only stakeholder communication"
+    ],
+    "answer": 1,
+    "explanation": "The business analysis plan covers the entire business analysis approach, from stakeholder engagement to decisions on managing requirements. It is broader than a requirements management plan, which focuses on how requirements are elicited, analyzed, documented and managed.",
+    "ref": "PMI Guide to Business Analysis, 5.4.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 179,
+        "label": "PMI Guide to Business Analysis, 5.4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "On an adaptive project, how is the effort for business analysis usually estimated?",
+    "options": [
+      "It is rarely estimated separately; it is part of the overall planning for each backlog item",
+      "As a separate estimate for every analysis task",
+      "As a fixed 20% of the budget",
+      "It is not allowed for"
+    ],
+    "answer": 0,
+    "explanation": "In adaptive life cycles the level of effort for business analysis is rarely estimated separately from the time needed to design and develop the product. A predictive project creates separate estimates for each business analysis task.",
+    "ref": "PMI Guide to Business Analysis, 5.4.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 180,
+        "label": "PMI Guide to Business Analysis, 5.4.4"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which output determines whether the organization is able and willing to move to the future state?",
+    "options": [
+      "Business case",
+      "Stakeholder register",
+      "Situation statement",
+      "Readiness assessment"
+    ],
+    "answer": 3,
+    "explanation": "A transition readiness assessment determines the ability and interest of an organization to transition to the future state. It identifies gaps in readiness, which are treated as risks, along with responses.",
+    "ref": "PMI Guide to Business Analysis, 5.5.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 186,
+        "label": "PMI Guide to Business Analysis, 5.5.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A new billing system is switched on for one region at a time. Which transition strategy is this?",
+    "options": [
+      "Massive one-time cutover",
+      "Permanent coexistence",
+      "Staged release",
+      "Time-boxed coexistence"
+    ],
+    "answer": 2,
+    "explanation": "A staged release rolls out the future state by a target segment, such as by region or type of customer. A one-time cutover moves everyone at once.",
+    "ref": "PMI Guide to Business Analysis, 5.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 180,
+        "label": "PMI Guide to Business Analysis, 5.5"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Which of these belongs in a transition plan?",
+    "options": [
+      "Training, rollout, communication and procedure updates needed to cut over",
+      "The economic justification for the project",
+      "The list of stakeholder personas",
+      "The weighted ranking of solution options"
+    ],
+    "answer": 0,
+    "explanation": "The transition plan addresses all transition requirements, including communication, rollout, training, procedure updates, business recovery updates and other material needed to cut over and adapt to the future state.",
+    "ref": "PMI Guide to Business Analysis, 5.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 180,
+        "label": "PMI Guide to Business Analysis, 5.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A key subject matter expert has stopped attending requirements workshops. What should the business analyst do?",
+    "options": [
+      "Continue without them and guess their requirements",
+      "Find out why, and work with those who can remove the roadblock, such as the project manager or sponsor",
+      "Remove them from the stakeholder register",
+      "Cancel the remaining workshops"
+    ],
+    "answer": 1,
+    "explanation": "Managing engagement means monitoring participation and addressing concerns as they arise. The analyst works closely with those who have the authority or responsibility to remove roadblocks; sponsors can ensure stakeholders keep fulfilling their role.",
+    "ref": "PMI Guide to Business Analysis, 5.6",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 187,
+        "label": "PMI Guide to Business Analysis, 5.6"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "What is the purpose of assessing business analysis performance?",
+    "options": [
+      "To rank the business analysts by salary",
+      "To measure the product's sales",
+      "To approve the requirements",
+      "To consider how effective the business analysis practices are and adjust them"
+    ],
+    "answer": 3,
+    "explanation": "The process considers the effectiveness of the business analysis practices in use. Its key benefit is the opportunity to adjust the practices to meet the needs of the project, the team and the organization.",
+    "ref": "PMI Guide to Business Analysis, 5.7",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 190,
+        "label": "PMI Guide to Business Analysis, 5.7"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "On an adaptive project, when is business analysis performance reviewed?",
+    "options": [
+      "Only at the end of the project",
+      "Only when the sponsor asks",
+      "At least at the end of each iteration, with changes applied in the next one",
+      "Never"
+    ],
+    "answer": 2,
+    "explanation": "Adaptive teams follow \"inspect and adapt\": regular, frequent reviews of practices, at least at the end of each iteration, acting on the findings to adjust practices for the next iteration.",
+    "ref": "PMI Guide to Business Analysis, 5.7.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 196,
+        "label": "PMI Guide to Business Analysis, 5.7.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Both the project manager and the business analyst need to analyze stakeholders. What is the best approach?",
+    "options": [
+      "Each does it separately and compares results at the end",
+      "They do it together, each bringing their own perspective, to avoid duplicate requests to stakeholders",
+      "Only the project manager does it",
+      "Only the business analyst does it"
+    ],
+    "answer": 1,
+    "explanation": "To avoid redundant effort, the roles should complete this work collaboratively. The project manager analyzes stakeholders for impact on the project; the business analyst for impact on the solution and the business analysis process.",
+    "ref": "PMI Guide to Business Analysis, 5.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 160,
+        "label": "PMI Guide to Business Analysis, 5.2"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Midway through elicitation, the analyst learns that the compliance team will also be affected. What should be done first?",
+    "options": [
+      "Add them to the stakeholder register and analyze them",
+      "Ignore them, since planning is finished",
+      "Wait for them to raise a change request",
+      "Ask the sponsor to exclude them"
+    ],
+    "answer": 0,
+    "explanation": "The stakeholder list is revisited whenever scope changes or elicitation and analysis reveal new stakeholders. Maintaining an accurate register is critical, because overlooking a stakeholder can mean losing critical requirements.",
+    "ref": "PMI Guide to Business Analysis, 5.2.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 167,
+        "label": "PMI Guide to Business Analysis, 5.2.3.1"
+      }
+    ]
+  }
+]

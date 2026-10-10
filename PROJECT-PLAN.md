@@ -39,6 +39,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | You replaced Wysocki's book with the Eighth Edition, the one the exam outline names. It is now the linked copy (the Fifth Edition file stays in the folder, unused). It sources effort vs duration and the seven lean principles. A last search of all 19 books also sourced: shielding the team (PMBOK Guide Seventh Edition), ROI, NPV and IRR (The PMI Guide to Business Analysis) and the inverted triangle (PMBOK Guide Eighth Edition, Figure 4-3). **Quiz questions without a book page: 1 of 635** (the three Cs of a user story). See issues 50 and 55. | You: decide what to do with the few points no book covers (issue 50) and the edition question (issue 47). Next: Session 20 |
 | 2026-10-10 | Your decision recorded: the few points no book covers stay in the course, labelled as they are (issue 50). Session 20 done: **Study plan** page (link in the top bar) where you set your exam day; it shows days left, modules left, the weekly pace and a finish-by date for every unfinished module, with the last days kept for review. The home page shows the countdown and what to study today. | You: open Study plan, pick an exam day, and check the home page. Next: Session 21, Domain 4 modules 4.1 and 4.2 |
 | 2026-10-10 | Session 21 done: Domain 4 started with modules 4.1 (what business analysis is, business analyst vs project manager, the requirement types, product and project life cycles, business value, the 6 process groups and 6 knowledge areas, the roles an analyst works with) and 4.2 (needs assessment: situation statement, current and future state, root cause techniques, SWOT, gap analysis, feasibility, product roadmap, business case, charter). Issues 58 and 59 added to the log. | You: study 4.1 and 4.2. Next: Session 22, modules 4.3 (stakeholder engagement) and 4.4 (elicitation) |
+| 2026-10-10 | At your request, all source links were audited for figure errors: 613 links, 41 of them to figures or tables, none wrong. The check is now a tool (	ools/audit_links.py) run every session. Session 22 done: modules 4.3 (stakeholder engagement: register, stakeholder analysis, personas, RACI, stakeholder matrix and onion diagram, the engagement approach, business analysis planning, transition, assessing performance) and 4.4 (elicitation: the four processes, question types, the techniques and when to use each, confirming results). Issues 60 and 61 added to the log. | You: study 4.3 and 4.4. Next: Session 23, modules 4.5 (analysis: models, requirements, acceptance criteria) and 4.6 (traceability and monitoring) |
 
 ## How your progress is saved
 
@@ -126,7 +127,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 15 | Feature: dashboard and practice of missed questions |
 | ✅ | 16 to 19 | Domain 3: 8 modules |
 | ✅ | 20 | Feature: study plan and exam countdown |
-| 🟡 | 21 to 24 | Domain 4: 7 modules (Session 21 done: 4.1 and 4.2) |
+| 🟡 | 21 to 24 | Domain 4: 7 modules (Sessions 21 and 22 done: 4.1 to 4.4) |
 | ⬜ | 25 | Full catch-up, requested 2026-10-10: review every module against every book in `PMI Learning Material/`, improve where a book adds exam value, and give you a list of any extra PDFs worth adding |
 | ⬜ | 26 | Feature: timed exam simulator (150 questions, 180 minutes) |
 | ⬜ | 27 | UI/UX polish (see backlog below) |
@@ -183,14 +184,14 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **33 of 38 modules done** (679 quiz questions, 981 flashcards).
+Overall: **35 of 38 modules done** (723 quiz questions, 1,052 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
 | ✅ | 1. PM Fundamentals and Core Concepts | 11 / 11 |
 | ✅ | 2. Predictive, Plan-Based Methodologies | 12 / 12 |
 | ✅ | 3. Agile Frameworks / Methodologies | 8 / 8 |
-| 🟡 | 4. Business Analysis Frameworks | 2 / 7 |
+| 🟡 | 4. Business Analysis Frameworks | 4 / 7 |
 
 **Domain 1: PM Fundamentals and Core Concepts**
 
@@ -244,8 +245,8 @@ Overall: **33 of 38 modules done** (679 quiz questions, 981 flashcards).
 |---|---|---|
 | ✅ | 4.1 Business Analysis Foundations and Roles | 2026-10-10 |
 | ✅ | 4.2 Needs Assessment | 2026-10-10 |
-| ⬜ | 4.3 Stakeholder Engagement in Business Analysis | |
-| ⬜ | 4.4 Elicitation | |
+| ✅ | 4.3 Stakeholder Engagement in Business Analysis | 2026-10-10 |
+| ✅ | 4.4 Elicitation | 2026-10-10 |
 | ⬜ | 4.5 Analysis: Models, Requirements and Acceptance Criteria | |
 | ⬜ | 4.6 Traceability and Monitoring | |
 | ⬜ | 4.7 Solution Evaluation | |
@@ -333,9 +334,11 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 52 | Checking the Scrum lesson against the Scrum Guide (2020) showed two differences: the guide no longer prescribes the three daily questions, and it speaks of accountabilities and Developers, not roles and a development team. | The lesson keeps the PMI wording, which the exam uses, and its footer now states both differences. All timeboxes, the pillars, the values and the rule for unfinished work matched the guide. | Module 3.2 footer |
 | 53 | Two sources had been in your folder all along and were missed: The PMI Guide to Business Analysis covers INVEST, MoSCoW, Kano, WSJF, buy a feature, the Pareto chart and epics; the PMBOK Guide Seventh Edition glossary defines osmotic communication. Module 3.5 even said INVEST "does not appear in PMI's guides", which was wrong. | The sentence was corrected and the sources added. The lesson also now gives the guide's full WSJF formula and notes that the Kano model has five categories. Cause: I searched only the books already linked for the domain being written. The Session 25 catch-up searches every book for every uncited point. | Modules 2.11, 3.4, 3.5, 3.6 |
 | 58 | The exam outline lists "process owner" and "process manager" among the roles to know, but The PMI Guide to Business Analysis defines neither. | Module 4.1 covers both in one row of its roles table, sourced from Wysocki's textbook (chapters 6 and 7), and its footer says PMI's guide does not define them. Product owner and product manager come from the PMI guide's glossary. | Module 4.1, "The people a business analyst works with" |
+| 61 | The exam outline asks you to "recommend the most appropriate communication channel or tool", but The PMI Guide to Business Analysis describes the engagement and communication approach without listing channels to choose from. | Module 4.3 has a short table matching each need to a channel (workshop, presentation, report, interview, survey), labelled in the footer as my own. Module 4.4 has a similar table for choosing an elicitation technique, built from the strengths and weaknesses the guide gives for each. | Modules 4.3 and 4.4 |
 | 54 | The Project Management Answer Book is written as numbered questions inside chapters, with no section numbers, and Wysocki's book has titled sections only. Both are commercial textbooks, not PMI publications. | New reference forms: `The Project Management Answer Book, Chapter 6, Q8` (opens the page of that question) and `Effective Project Management, <section title>`. Like every other book, they are opened from your folder only, are never committed or uploaded, and lessons use original wording. Wysocki is the Fifth Edition, so its page content may differ from the Eighth Edition the outline names. | `link_sources.py` |
 | 55 | Wysocki's Eighth Edition lists only chapters in its PDF contents, and it differs from the lessons in two wordings: it calls two lean principles "build integrity in" and "see the whole", and it uses "elapsed time" for duration in working days. | Reference form: `Effective Project Management, Chapter 7, Estimating Duration` (chapter, then the heading as printed). Chapter start pages are listed in `link_sources.py`. The lean table now shows both wordings, and the schedule lesson footer explains the two uses of "elapsed time". | `link_sources.py`; modules 2.4 and 3.3 |
 | 59 | A reference to a figure or table in the business analysis guide ("Figure 1-1") would have opened the book's first page without any warning, because that kind of reference was only understood for the PMBOK Guides. | Found while checking each new link against its page, before anything was reported. The linker now finds figures and tables in every book with a table of contents, and reports an error if one is not found. | `link_sources.py` |
+| 60 | You asked whether any figure errors remained after issue 59. | Every link in every module was checked by a script: each figure or table link must open the page that carries that caption, and any link sitting on a book's default page is listed for a check by eye. Result: 0 wrong. The script is kept as `tools/audit_links.py` and run after the linker every session. The linker also learned to find unnumbered headings by title ("Key Concepts for Elicitation") in books with a table of contents. | `tools/audit_links.py`, `link_sources.py` |
 
 ### Individual lessons
 

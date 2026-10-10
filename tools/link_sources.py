@@ -232,6 +232,11 @@ def resolve(part: str) -> tuple[str, int] | None:
             # A section was named but is not in the contents: report it instead of
             # silently linking to the first page.
             return None
+        # A heading without a number, named by its title: "..., Key Concepts for Elicitation".
+        title = part.split(",", 1)[1].strip() if "," in part else ""
+        if title:
+            hit = re.search(rf"^\s*{re.escape(title)}\s+\[p(\d+)\]", toc(book), re.MULTILINE | re.IGNORECASE)
+            return (book, int(hit.group(1))) if hit else None
         return book, TOC_BOOKS[book]
 
     regions = REGIONS[book]

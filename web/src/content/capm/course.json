@@ -63,8 +63,8 @@
       "modules": [
         { "id": "4-01-ba-foundations", "title": "Business Analysis Foundations and Roles", "ready": true },
         { "id": "4-02-needs-assessment", "title": "Needs Assessment", "ready": true },
-        { "id": "4-03-ba-stakeholder-engagement", "title": "Stakeholder Engagement in Business Analysis", "ready": false },
-        { "id": "4-04-elicitation", "title": "Elicitation", "ready": false },
+        { "id": "4-03-ba-stakeholder-engagement", "title": "Stakeholder Engagement in Business Analysis", "ready": true },
+        { "id": "4-04-elicitation", "title": "Elicitation", "ready": true },
         { "id": "4-05-analysis", "title": "Analysis: Models, Requirements and Acceptance Criteria", "ready": false },
         { "id": "4-06-traceability-monitoring", "title": "Traceability and Monitoring", "ready": false },
         { "id": "4-07-solution-evaluation", "title": "Solution Evaluation", "ready": false }
