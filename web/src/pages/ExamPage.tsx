@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import ExamResult from '../components/ExamResult'
 import NotFound from '../components/NotFound'
+import Icon from '../components/Icon'
 import { QuestionView } from '../components/Quiz'
+import WithSidePanel, { PanelBlock } from '../components/SidePanel'
 import { getCourse, getExams, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
 import { breakLeftMs, countRight, domainScores, elapsedMs, examKey, examLimitMs, formatClock, onBreak } from '../lib/exam'
 import { addExamTime, finishExam, moduleKey, updateExam, useProgress, type ExamRun } from '../lib/progress'
@@ -375,41 +377,14 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
       flags: flagged ? r.flags.filter((i) => i !== position) : [...r.flags, position],
     }))
 
-  return (
-    <div className={column}>
-      {header}
-      <QuestionView
-        key={position}
-        number={position + 1}
-        question={questions[position].question}
-        picked={run.picks[position]}
-        revealed={false}
-        onPick={pick}
-      />
-      <div className="mt-6 flex flex-wrap items-center gap-3">
-        <button onClick={() => go(position - 1)} disabled={position === first} className={btnQuiet}>
-          Previous
-        </button>
-        {position + 1 < end ? (
-          <button onClick={() => go(position + 1)} className={btnPrimary}>
-            Next question
-          </button>
-        ) : (
-          <button onClick={() => setConfirming(true)} className={btnPrimary}>
-            {finishLabel}
-          </button>
-        )}
-        <button onClick={toggleFlag} aria-pressed={flagged} className={btnQuiet}>
-          {flagged ? 'Remove the flag' : 'Flag to look at again'}
-        </button>
-      </div>
-
-      <h2 className={`${note} mt-10 font-medium`}>
-        {secondHalf
-          ? `Questions ${halfSize + 1} to ${total}. Questions 1 to ${halfSize} are locked.`
-          : `Questions 1 to ${halfSize}. The second half opens after the break.`}
-      </h2>
-      <ol className="mt-2 grid grid-cols-6 gap-1.5 sm:grid-cols-10 lg:grid-cols-[repeat(15,minmax(0,1fr))]">
+  const grid = (
+    <PanelBlock title={secondHalf ? `Questions ${halfSize + 1} to ${total}` : `Questions 1 to ${halfSize}`}>
+      <p className={`${note} mb-3`}>
+        {answeredCount(run.picks, positions)} answered, {unanswered.length} to go
+        {flaggedHere.length > 0 && `, ${flaggedHere.length} flagged`}.{' '}
+        {secondHalf ? `Questions 1 to ${halfSize} are locked.` : 'The second half opens after the break.'}
+      </p>
+      <ol className="grid grid-cols-6 gap-1.5 sm:grid-cols-10 lg:grid-cols-6">
         {positions.map((i) => {
           const isFlagged = run.flags.includes(i)
           let style = run.picks[i] === null ? 'border-edge bg-surface' : 'border-plan bg-plan-soft font-semibold'
@@ -420,12 +395,16 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
                 onClick={() => go(i)}
                 aria-current={i === position}
                 aria-label={`Question ${i + 1}${run.picks[i] === null ? ', unanswered' : ', answered'}${isFlagged ? ', flagged' : ''}`}
-                className={`press min-h-11 w-full rounded-md border tabular-nums hover:border-ink ${style} ${
+                className={`press relative min-h-11 w-full rounded-md border tabular-nums hover:border-ink ${style} ${
                   i === position ? 'ring-2 ring-ink' : ''
                 }`}
               >
                 {i + 1}
-                {isFlagged && <span aria-hidden="true"> ⚑</span>}
+                {isFlagged && (
+                  <span aria-hidden="true" className="absolute top-0 right-0.5 text-[0.625rem] leading-none text-milestone">
+                    ⚑
+                  </span>
+                )}
               </button>
             </li>
           )
@@ -433,10 +412,49 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
       </ol>
       <p className={`${note} mt-3`}>Filled blue: answered. Amber with a mark: flagged. Plain: unanswered.</p>
       {position + 1 < end && (
-        <button onClick={() => setConfirming(true)} className={`${btnQuiet} mt-6`}>
+        <button onClick={() => setConfirming(true)} className={`${btnQuiet} mt-4 w-full`}>
           {finishLabel}
         </button>
       )}
+    </PanelBlock>
+  )
+
+  return (
+    <div>
+      {header}
+      {/* The question grid sits beside the question, as in the real exam; on a phone it follows the question. */}
+      <WithSidePanel label="Questions" phone="below" panel={grid}>
+        <div className={column}>
+          <QuestionView
+            key={position}
+            number={position + 1}
+            question={questions[position].question}
+            picked={run.picks[position]}
+            revealed={false}
+            onPick={pick}
+          />
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <button onClick={() => go(position - 1)} disabled={position === first} className={btnQuiet}>
+              <Icon name="previous" className="mr-2" />
+              Previous
+            </button>
+            {position + 1 < end ? (
+              <button onClick={() => go(position + 1)} className={btnPrimary}>
+                Next question
+                <Icon name="next" className="ml-2" />
+              </button>
+            ) : (
+              <button onClick={() => setConfirming(true)} className={btnPrimary}>
+                {finishLabel}
+              </button>
+            )}
+            <button onClick={toggleFlag} aria-pressed={flagged} className={btnQuiet}>
+              <Icon name="flag" className={`mr-2 ${flagged ? 'text-milestone' : ''}`} />
+              {flagged ? 'Remove the flag' : 'Flag to look at again'}
+            </button>
+          </div>
+        </div>
+      </WithSidePanel>
     </div>
   )
 }

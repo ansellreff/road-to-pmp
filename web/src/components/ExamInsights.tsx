@@ -92,5 +92,10 @@ export function ExamTiming({ course, questions, attempt }: { course: Course; que
 }
 
 export function InsightTitle({ children }: { children: string }) {
-  return <h2 className={`${listTitle} mt-12`}>{children}</h2>
+  const id = children.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+  return (
+    <h2 id={id} className={`${listTitle} mt-12 scroll-mt-4`}>
+      {children}
+    </h2>
+  )
 }

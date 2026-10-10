@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Icon from './Icon'
 
 export interface Heading {
   id: string
@@ -52,70 +53,45 @@ export function useCurrentSection(headings: Heading[]): string | undefined {
   return current
 }
 
-function SectionList({ headings, current, onGo }: { headings: Heading[]; current?: string; onGo?: () => void }) {
-  return (
-    <ol className="space-y-0.5">
-      {headings.map((heading) => (
-        <li key={heading.id}>
-          <a
-            href={`#${heading.id}`}
-            aria-current={heading.id === current ? 'location' : undefined}
-            onClick={(event) => {
-              event.preventDefault()
-              scrollToSection(heading.id)
-              history.replaceState(null, '', `#${heading.id}`)
-              onGo?.()
-            }}
-            className={`press block border-l-2 py-1.5 pl-3 text-sm leading-snug hover:text-plan ${
-              heading.id === current ? 'border-plan font-semibold text-plan' : 'border-line text-muted'
-            }`}
-          >
-            {heading.title}
-          </a>
-        </li>
-      ))}
-    </ol>
-  )
-}
-
 /**
- * The list of a lesson's sections. On a very wide screen it stands beside the lesson.
- * Otherwise it is a bar that stays at the top of the window and folds out.
+ * The sections of the lesson as a list for the side panel. The one being read is
+ * marked, and the ones above it are ticked as read.
  */
-export default function LessonContents({ headings, current }: { headings: Heading[]; current?: string }) {
-  const [open, setOpen] = useState(false)
-  if (headings.length < 2) return null
-  const now = headings.find((h) => h.id === current)
+export default function SectionList({ headings, current }: { headings: Heading[]; current?: string }) {
+  const at = headings.findIndex((h) => h.id === current)
   return (
-    <>
-      <nav aria-label="Sections of this lesson" className="absolute top-0 left-full ml-10 hidden h-full w-56 2xl:block">
-        <div className="sticky top-6 max-h-[calc(100vh-3rem)] overflow-y-auto">
-          <p className="mb-2 text-sm font-semibold">In this lesson</p>
-          <SectionList headings={headings} current={current} />
-        </div>
-      </nav>
-
-      <nav
-        aria-label="Sections of this lesson"
-        className="sticky top-0 z-10 -mx-4 mb-6 border-b border-line bg-paper px-4 sm:-mx-6 sm:px-6 2xl:hidden"
-      >
-        <button
-          onClick={() => setOpen(!open)}
-          aria-expanded={open}
-          className="press flex min-h-11 w-full items-center justify-between gap-4 text-left text-sm"
-        >
-          <span className="min-w-0 truncate">
-            <span className="font-semibold">In this lesson</span>
-            {now && <span className="text-muted">: {now.title}</span>}
-          </span>
-          <span className="shrink-0 text-muted">{open ? 'Hide sections' : 'Show sections'}</span>
-        </button>
-        {open && (
-          <div className="max-h-[60vh] overflow-y-auto pb-3">
-            <SectionList headings={headings} current={current} onGo={() => setOpen(false)} />
-          </div>
-        )}
-      </nav>
-    </>
+    <ol>
+      {headings.map((heading, i) => {
+        const here = i === at
+        return (
+          <li key={heading.id}>
+            <a
+              href={`#${heading.id}`}
+              aria-current={here ? 'location' : undefined}
+              onClick={(event) => {
+                event.preventDefault()
+                scrollToSection(heading.id)
+                history.replaceState(null, '', `#${heading.id}`)
+              }}
+              className={`press flex min-h-9 items-start gap-2 rounded-md px-2 py-1.5 text-[0.9375rem] leading-snug hover:bg-plan-soft hover:text-plan ${
+                here ? 'bg-plan-soft font-semibold text-plan' : i < at ? 'text-muted' : ''
+              }`}
+            >
+              <span className="mt-0.5 flex w-4 shrink-0 justify-center">
+                {i < at ? (
+                  <Icon name="check" size={16} className="text-done" />
+                ) : (
+                  <span className={`mt-1.5 size-1.5 rounded-full ${here ? 'bg-plan' : 'bg-edge'}`} />
+                )}
+              </span>
+              <span>
+                {heading.title}
+                {i < at && <span className="sr-only"> (read)</span>}
+              </span>
+            </a>
+          </li>
+        )
+      })}
+    </ol>
   )
 }

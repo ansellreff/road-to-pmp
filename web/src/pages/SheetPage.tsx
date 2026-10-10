@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom'
 import { slug } from '../components/LessonContents'
 import NotFound from '../components/NotFound'
 import { PageHeader } from '../components/Page'
+import WithSidePanel, { PanelBlock } from '../components/SidePanel'
 import { SectionSources } from '../components/Sources'
 import { findModule, getCourse, getSheet, loadLesson, loadSources, type Course, type SheetEntry, type SourceLink } from '../lib/content'
 import { moduleNumber } from '../lib/stats'
@@ -38,8 +39,26 @@ export default function SheetPage() {
   )
   if (!course || !groups.length) return <NotFound />
 
+  const panel = (
+    <PanelBlock title="On this sheet">
+      <ul>
+        {groups.map((group) => (
+          <li key={group.title}>
+            <a href={`#${slug(group.title)}`} className="press flex min-h-9 items-baseline justify-between gap-3 rounded-md px-2 py-1.5 text-[0.9375rem] leading-snug hover:bg-plan-soft hover:text-plan">
+              <span>{group.title}</span>
+              <span className="text-sm tabular-nums text-muted">{group.entries.length}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+      <button onClick={() => window.print()} className={`${btnQuiet} mt-4 w-full`}>
+        Print this sheet
+      </button>
+    </PanelBlock>
+  )
+
   return (
-    <div>
+    <WithSidePanel label="Sections" panel={<div className="print:hidden">{panel}</div>}>
       <div className="print:hidden">
         <PageHeader back={{ to: `/${course.id}`, label: `All ${course.title} modules` }} title="Formulas and key facts">
           Everything worth knowing by heart, on one page. Each line repeats what a lesson teaches and links to it;
@@ -52,7 +71,7 @@ export default function SheetPage() {
       <h1 className="title hidden text-2xl print:block">{course.title}: formulas and key facts</h1>
 
       {groups.map((group) => (
-        <section key={group.title} className="mt-12 print:mt-6">
+        <section key={group.title} id={slug(group.title)} className="mt-12 scroll-mt-4 print:mt-6">
           <h2 className={listTitle}>{group.title}</h2>
           {group.intro && <p className={`${note} mt-3 max-w-3xl`}>{group.intro}</p>}
           <div className="divide-y divide-line border-b border-line">
@@ -62,7 +81,7 @@ export default function SheetPage() {
           </div>
         </section>
       ))}
-    </div>
+    </WithSidePanel>
   )
 }
 

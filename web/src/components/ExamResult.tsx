@@ -7,6 +7,7 @@ import type { ExamAttempt } from '../lib/progress'
 import { moduleNumber, percent } from '../lib/stats'
 import { btnPrimary, btnQuiet, column, link, listTitle, note, subTitle } from '../lib/ui'
 import { PageHeader } from './Page'
+import WithSidePanel, { PanelBlock } from './SidePanel'
 import { QuestionView, ScoreLine } from './Quiz'
 
 type Filter = 'missed' | 'flagged' | 'all'
@@ -32,7 +33,48 @@ export default function ExamResult(props: {
   const shown = (i: number) =>
     filter === 'all' || (filter === 'missed' && !isRight(i)) || (filter === 'flagged' && attempt.flags.includes(i))
 
+  const panel = (
+    <>
+      <PanelBlock title="Score by domain">
+        <ul>
+          {scores.map((s) => {
+            const band = bandFor(s.right / s.total)
+            return (
+              <li key={s.domain}>
+                <a href={`#domain-${s.domain + 1}`} className="press flex min-h-9 items-baseline justify-between gap-3 rounded-md px-2 py-1.5 text-[0.9375rem] leading-snug hover:bg-plan-soft hover:text-plan">
+                  <span>
+                    Domain {s.domain + 1}
+                    <span className={`block text-sm font-semibold ${band.style}`}>{band.name}</span>
+                  </span>
+                  <span className="tabular-nums text-muted">
+                    {s.right} of {s.total}
+                  </span>
+                </a>
+              </li>
+            )
+          })}
+        </ul>
+      </PanelBlock>
+      <PanelBlock title="On this page">
+        <ul>
+          {[
+            ['where-the-points-went', 'Where the points went'],
+            ['how-you-used-the-time', 'How you used the time'],
+            ['review-by-domain', 'Review by domain'],
+          ].map(([id, label]) => (
+            <li key={id}>
+              <a href={`#${id}`} className="press flex min-h-9 items-baseline justify-between gap-3 rounded-md px-2 py-1.5 text-[0.9375rem] leading-snug hover:bg-plan-soft hover:text-plan">
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </PanelBlock>
+    </>
+  )
+
   return (
+    <WithSidePanel label="Result" panel={panel}>
     <div className={column}>
       <PageHeader back={{ to: `/${course.id}/exams`, label: 'Mock exams' }} title={`${exam.title}: your result`} />
       <p className={`${note} mt-2`}>
@@ -105,7 +147,9 @@ export default function ExamResult(props: {
       <InsightTitle>How you used the time</InsightTitle>
       <ExamTiming course={course} questions={questions} attempt={attempt} />
 
-      <h2 className={`${listTitle} mt-12`}>Review by domain</h2>
+      <h2 id="review-by-domain" className={`${listTitle} mt-12 scroll-mt-4`}>
+        Review by domain
+      </h2>
       <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="Which questions to show">
         {filters.map(([id, label, count]) => (
           <button
@@ -157,5 +201,6 @@ export default function ExamResult(props: {
         )
       })}
     </div>
+    </WithSidePanel>
   )
 }

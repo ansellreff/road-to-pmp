@@ -202,14 +202,50 @@ export const tests = {
 
   async 'lesson: list of sections, jump to one, continue there next time'(page) {
     await page.goto('/capm/3-07-metrics-retrospectives')
-    await button(page, /In this lesson/).click()
-    await page.getByRole('link', { name: 'Flow metrics', exact: true }).click()
+    // The sections are listed in the panel on the right, open from the start.
+    const panel = page.getByRole('complementary', { name: 'Contents' })
+    await panel.getByText('In this lesson').waitFor()
+    await panel.getByRole('link', { name: 'Flow metrics', exact: true }).click()
+    await panel.locator('a[aria-current="location"]', { hasText: 'Flow metrics' }).waitFor()
+    // The panel also lists the modules of the domain, with this one marked.
+    await panel.locator('a[aria-current="page"]', { hasText: '3.7' }).waitFor()
     await inView(page, 'Flow metrics')
     expect(page.url().endsWith('#flow-metrics'), 'the address does not name the section')
     await page.waitForFunction((key) => JSON.parse(localStorage.getItem(key)).reading?.['capm/3-07-metrics-retrospectives'] === 'flow-metrics', KEY)
     await page.goto('/capm/3-07-metrics-retrospectives')
     await page.getByRole('link', { name: 'Continue from: Flow metrics' }).click()
     await inView(page, 'Flow metrics')
+  },
+
+  async 'previous and next: lesson, quiz, flashcards, then the next module, across domains'(page) {
+    // 1.12 is the last module of Domain 1; the chain must carry on into Domain 2.
+    await page.goto('/capm/1-12-process-groups')
+    const steps = page.getByRole('navigation', { name: 'Previous and next' })
+    await steps.getByRole('link', { name: /Take the quiz/ }).click()
+    await see(page, 'Question 1 of')
+    await steps.getByRole('link', { name: /Practice the flashcards/ }).click()
+    await see(page, /You know 0 of \d+ cards/)
+    await steps.getByRole('link', { name: /Next module/ }).click()
+    await see(page, 'Module 2.1 in Predictive, Plan-Based Methodologies')
+    await steps.getByRole('link', { name: /Previous module/ }).click()
+    await see(page, 'Module 1.12 in Project Management Fundamentals and Core Concepts')
+    // The very first module has nothing before it.
+    await page.goto('/capm/1-01-project-basics')
+    await steps.getByRole('link', { name: /Take the quiz/ }).waitFor()
+    expect((await steps.getByRole('link', { name: /Previous module/ }).count()) === 0, 'the first module offers a previous module')
+  },
+
+  async 'phone: the Contents button slides the panel in, and choosing a section closes it'(page) {
+    await page.setViewportSize({ width: 390, height: 800 })
+    await page.goto('/capm/3-07-metrics-retrospectives')
+    await button(page, 'Contents').click()
+    const drawer = page.getByRole('dialog', { name: 'Contents' })
+    await drawer.getByRole('link', { name: 'Flow metrics', exact: true }).click()
+    await inView(page, 'Flow metrics')
+    await drawer.waitFor({ state: 'hidden' })
+    // No sideways scrolling on a phone.
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth)
+    expect(overflow <= 1, `the page is ${overflow} px wider than the phone screen`)
   },
 
   async 'search: finds a lesson section and opens the lesson there'(page) {

@@ -23,6 +23,13 @@ export function moduleNumber(course: Course, moduleId: string): string {
   return ''
 }
 
+/** The written modules just before and after this one, in course order, across domains. */
+export function moduleNeighbours(course: Course, moduleId: string): { previous?: ModuleMeta; next?: ModuleMeta } {
+  const written = allModules(course).filter((m) => m.ready)
+  const at = written.findIndex((m) => m.id === moduleId)
+  return at < 0 ? {} : { previous: written[at - 1], next: written[at + 1] }
+}
+
 /** First available module that is not finished yet. */
 export function nextModule(course: Course, progress: Progress): ModuleMeta | undefined {
   return examModules(allModules(course)).find(

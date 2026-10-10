@@ -1,13 +1,14 @@
 import { isValidElement, useEffect, useMemo, useState, type ReactNode } from 'react'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
 import { loadLesson, loadSources } from '../lib/content'
 import { moduleKey, setLessonDone, setReading, useProgress } from '../lib/progress'
 import { btnPrimary, btnQuiet, link } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
 import { diagrams } from './diagrams'
-import LessonContents, { lessonHeadings, scrollToSection, slug, useCurrentSection } from './LessonContents'
+import SectionList, { lessonHeadings, scrollToSection, slug, useCurrentSection } from './LessonContents'
+import WithSidePanel, { PanelBlock } from './SidePanel'
 import { Waiting } from './Page'
 import { SectionSources } from './Sources'
 
@@ -19,7 +20,15 @@ function textOf(node: ReactNode): string {
   return ''
 }
 
-export default function Lesson({ courseId, moduleId }: { courseId: string; moduleId: string }) {
+export default function Lesson(props: {
+  courseId: string
+  moduleId: string
+  /** More blocks for the side panel, under the list of sections. */
+  panel?: ReactNode
+  /** Shown under the lesson, inside the main column. */
+  footer?: ReactNode
+}) {
+  const { courseId, moduleId, panel, footer } = props
   const text = useLoaded(() => loadLesson(courseId, moduleId))
   const sources = useLoaded(() => loadSources(courseId, moduleId))
   const key = moduleKey(courseId, moduleId)
@@ -52,8 +61,17 @@ export default function Lesson({ courseId, moduleId }: { courseId: string; modul
   const parts = text.split(/^@(source|diagram) (.+)$/m)
 
   return (
-    <div className="relative">
-      <LessonContents headings={headings} current={current} />
+    <WithSidePanel
+      label="Contents"
+      panel={
+        <>
+          <PanelBlock title="In this lesson">
+            <SectionList headings={headings} current={current} />
+          </PanelBlock>
+          {panel}
+        </>
+      }
+    >
       {resume && resume.id !== current && (
         <p className="mb-6 text-sm">
           <span className="text-muted">You stopped here last time. </span>
@@ -119,10 +137,8 @@ export default function Lesson({ courseId, moduleId }: { courseId: string; modul
             Mark lesson as completed
           </button>
         )}
-        <Link to={`/${courseId}/${moduleId}/quiz`} className={link}>
-          Take the quiz
-        </Link>
       </div>
-    </div>
+      {footer}
+    </WithSidePanel>
   )
 }
