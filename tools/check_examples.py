@@ -147,6 +147,19 @@ def main() -> None:
                     wrong.append(f"{module.name}, {where}: {lhs} = {rhs}")
                 elif "--all" in sys.argv:
                     print(f"  ok  {module.name}, {where}: {lhs} = {rhs}")
+    # The formula sheet repeats worked examples from the lessons.
+    for sheet in sorted(CONTENT.glob("*/sheet.json")):
+        for group in json.loads(sheet.read_text(encoding="utf-8")):
+            for entry in group["entries"]:
+                for lhs, rhs in equations(entry.get("example", "")):
+                    result = agree(lhs, rhs)
+                    if result is None:
+                        continue
+                    checked += 1
+                    if not result:
+                        wrong.append(f"{sheet.parent.name} formula sheet, {entry['name']}: {lhs} = {rhs}")
+                    elif "--all" in sys.argv:
+                        print(f"  ok  formula sheet, {entry['name']}: {lhs} = {rhs}")
     print(f"{checked} calculations checked, {len(wrong)} do not add up")
     for line in wrong:
         print(" -", line)

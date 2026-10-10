@@ -11,13 +11,17 @@ import ModulePage from './pages/ModulePage'
 import PlanPage from './pages/PlanPage'
 import PracticePage from './pages/PracticePage'
 import ReviewPage from './pages/ReviewPage'
+import SearchPage from './pages/SearchPage'
+import SheetPage from './pages/SheetPage'
 
 const pages = [
   { to: '/plan', label: 'Study plan' },
   { to: '/capm/exams', label: 'Mock exams' },
+  { to: '/capm/sheet', label: 'Formulas' },
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/practice', label: 'Practice' },
   { to: '/review', label: 'Review cards' },
+  { to: '/search', label: 'Search' },
 ]
 
 // The current page's link is underlined in the plan colour.
@@ -27,18 +31,16 @@ const navStyle = ({ isActive }: { isActive: boolean }) =>
 export default function App() {
   return (
     <div className="min-h-screen">
-      <header className="border-b border-ink bg-surface">
-        {/* On a phone the page links sit on a second row that scrolls sideways; nothing hides in a menu. */}
-        <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-6 px-4 pt-2 sm:px-6 lg:py-1">
+      <header className="border-b border-ink bg-surface print:hidden">
+        {/* The page links sit on their own row and scroll sideways on a phone; nothing hides in a menu. */}
+        <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-6 px-4 pt-2 sm:px-6">
           <Link to="/" className="title flex items-center gap-2 py-2 text-xl">
             <Milestone value={1} size={20} />
             Road to PMI
           </Link>
-          <div className="ml-auto lg:order-3 lg:ml-0">
-            <DisplayControls />
-          </div>
+          <DisplayControls />
           <nav
-            className="-mx-4 flex w-[calc(100%+2rem)] gap-5 overflow-x-auto px-4 font-medium sm:mx-0 sm:w-full sm:px-0 lg:ml-auto lg:w-auto"
+            className="-mx-4 flex w-[calc(100%+2rem)] gap-6 overflow-x-auto px-4 font-medium sm:mx-0 sm:w-full sm:px-0"
             aria-label="Pages"
           >
             {pages.map((page) => (
@@ -57,6 +59,8 @@ export default function App() {
           <Route path="/practice" element={<PracticePage />} />
           <Route path="/plan" element={<PlanPage />} />
           <Route path="/:courseId" element={<CoursePage />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/:courseId/sheet" element={<SheetPage />} />
           <Route path="/:courseId/exams" element={<ExamsPage />} />
           <Route path="/:courseId/exams/:examId" element={<ExamPage />} />
           <Route path="/:courseId/:moduleId" element={<ModulePage />} />

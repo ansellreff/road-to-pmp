@@ -77,7 +77,8 @@ const lessonFiles = import.meta.glob<string>('../content/*/modules/*/lesson.md',
 const quizFiles = import.meta.glob<Question[]>('../content/*/modules/*/quiz.json', { import: 'default' })
 const cardFiles = import.meta.glob<Card[]>('../content/*/modules/*/flashcards.json', { import: 'default' })
 const examFiles = import.meta.glob<Exam[]>('../content/*/exams.json', { eager: true, import: 'default' })
-const sourceFiles =import.meta.glob<SourceLink[]>('../content/*/modules/*/sources.json', { import: 'default' })
+const sheetFiles = import.meta.glob<SheetGroup[]>('../content/*/sheet.json', { eager: true, import: 'default' })
+const sourceFiles = import.meta.glob<SourceLink[]>('../content/*/modules/*/sources.json', { import: 'default' })
 
 import bookList from '../content/books.json'
 export const books: Record<string, Book> = bookList
@@ -116,6 +117,28 @@ export async function loadAllQuestions(courseId: string, moduleId: string): Prom
 /** The module quiz. */
 export async function loadQuiz(courseId: string, moduleId: string): Promise<Question[]> {
   return (await loadAllQuestions(courseId, moduleId)).filter((q) => !q.examOnly)
+}
+
+/** One line of the formula and key facts sheet. It repeats a lesson section and links to it. */
+export interface SheetEntry {
+  name: string
+  formula?: string
+  reading?: string
+  example?: string
+  items?: string[]
+  module: string
+  /** The lesson's section heading. Its sources are shown with the entry. */
+  section: string
+}
+
+export interface SheetGroup {
+  title: string
+  intro?: string
+  entries: SheetEntry[]
+}
+
+export function getSheet(courseId: string): SheetGroup[] {
+  return sheetFiles[`../content/${courseId}/sheet.json`] ?? []
 }
 
 export function getExams(courseId: string): Exam[] {

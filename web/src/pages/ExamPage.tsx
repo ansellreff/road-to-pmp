@@ -249,13 +249,11 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
   const end = secondHalf ? total : halfSize
   const positions = Array.from({ length: end - first }, (_, i) => first + i)
 
-  const [wanted, setWanted] = useState<number | null>(null)
+  // Opening or resuming the exam starts at the first unanswered question of the open half.
+  // After that the question only changes when the learner moves, so an answer can be changed or flagged.
+  const [wanted, setWanted] = useState(() => positions.find((i) => run.picks[i] === null) ?? first)
   const [confirming, setConfirming] = useState(false)
-  // Stay inside the open half; start at its first unanswered question.
-  const position =
-    wanted !== null && wanted >= first && wanted < end
-      ? wanted
-      : (positions.find((i) => run.picks[i] === null) ?? first)
+  const position = wanted >= first && wanted < end ? wanted : first
 
   if (onBreak(run, now)) {
     return (
@@ -333,7 +331,7 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
               if (secondHalf) submit()
               else {
                 updateExam(key, (r) => ({ ...r, breakStartedAt: Date.now() }))
-                setWanted(null)
+                setWanted(halfSize)
                 window.scrollTo(0, 0)
               }
             }}

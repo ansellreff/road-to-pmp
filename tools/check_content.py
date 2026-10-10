@@ -108,6 +108,26 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
     return len(questions)
 
 
+def check_sheet(course_file: Path, problems: list[str]) -> None:
+    """The formula sheet teaches nothing new: each entry must point at a lesson section that has a source."""
+    path = course_file.parent / "sheet.json"
+    if not path.is_file():
+        return
+    for group in json.loads(path.read_text(encoding="utf-8")):
+        for entry in group["entries"]:
+            where = f"{path} [{entry.get('name')}]"
+            lesson = course_file.parent / "modules" / str(entry.get("module")) / "lesson.md"
+            if not lesson.is_file():
+                problems.append(f"{where}: module {entry.get('module')} does not exist")
+                continue
+            # The section heading, then an empty line, then its @source line.
+            section = re.search(rf"^## {re.escape(entry.get('section', ''))}\n\n@source .+$", lesson.read_text(encoding="utf-8"), re.MULTILINE)
+            if not section:
+                problems.append(f"{where}: no section \"{entry.get('section')}\" with a source in {entry['module']}")
+            if not (entry.get("formula") or entry.get("items") or entry.get("reading")):
+                problems.append(f"{where}: has no formula, list or text")
+
+
 def check_exams(course_file: Path, course: dict, problems: list[str]) -> str:
     """The fixed mock exams: right size, right domain split, no question used twice."""
     path = course_file.parent / "exams.json"
@@ -216,6 +236,7 @@ def main() -> None:
                 questions += check_quiz(folder / "quiz.json", problems, warnings, seen)
             if (folder / "flashcards.json").is_file():
                 cards += check_cards(folder / "flashcards.json", problems)
+        check_sheet(course_file, problems)
         exams = check_exams(course_file, course, problems)
         print(f"{course['id']}: {ready} of {len(modules)} modules ready, {questions} questions, {cards} flashcards{exams}")
 

@@ -1,0 +1,61 @@
+[
+  {
+    "title": "Earned value",
+    "intro": "EV always comes first in the formulas. A negative variance or an index below 1.0 is bad news.",
+    "entries": [
+      { "name": "Earned value", "formula": "EV = percent complete × BAC", "reading": "The budgeted value of the work actually done", "module": "2-07-earned-value", "section": "What earned value management is" },
+      { "name": "Cost variance", "formula": "CV = EV − AC", "reading": "Negative: over budget. Positive: under budget.", "example": "30,000 − 36,000 = −6,000", "module": "2-07-earned-value", "section": "Variances: CV and SV" },
+      { "name": "Schedule variance", "formula": "SV = EV − PV", "reading": "Negative: behind schedule. Positive: ahead.", "example": "30,000 − 40,000 = −10,000", "module": "2-07-earned-value", "section": "Variances: CV and SV" },
+      { "name": "Cost performance index", "formula": "CPI = EV ÷ AC", "reading": "Below 1.0: over budget. Above 1.0: under budget.", "example": "30,000 ÷ 36,000 = 0.83", "module": "2-07-earned-value", "section": "Indices: CPI and SPI" },
+      { "name": "Schedule performance index", "formula": "SPI = EV ÷ PV", "reading": "Below 1.0: behind schedule. Above 1.0: ahead.", "example": "30,000 ÷ 40,000 = 0.75", "module": "2-07-earned-value", "section": "Indices: CPI and SPI" },
+      { "name": "Estimate at completion, performance continues", "formula": "EAC = BAC ÷ CPI", "reading": "The most common forecast. Use it when a question gives no hint.", "module": "2-07-earned-value", "section": "Forecasting: EAC, ETC and VAC" },
+      { "name": "Estimate at completion, one-time variance", "formula": "EAC = AC + (BAC − EV)", "reading": "The remaining work goes as planned", "example": "36,000 + 70,000 = 106,000", "module": "2-07-earned-value", "section": "Forecasting: EAC, ETC and VAC" },
+      { "name": "Estimate at completion, cost and schedule both count", "formula": "EAC = AC + (BAC − EV) ÷ (CPI × SPI)", "reading": "Both cost and schedule performance affect the remaining work", "module": "2-07-earned-value", "section": "Forecasting: EAC, ETC and VAC" },
+      { "name": "Estimate to complete", "formula": "ETC = EAC − AC", "reading": "Still to be spent", "example": "120,000 − 36,000 = 84,000", "module": "2-07-earned-value", "section": "Forecasting: EAC, ETC and VAC" },
+      { "name": "Variance at completion", "formula": "VAC = BAC − EAC", "reading": "Negative: expected to finish over budget", "example": "100,000 − 120,000 = −20,000", "module": "2-07-earned-value", "section": "Forecasting: EAC, ETC and VAC" },
+      { "name": "To-complete performance index", "formula": "TCPI = (BAC − EV) ÷ (BAC − AC)", "reading": "Work remaining ÷ funds remaining. Below 1.0 is good: the rest is easier than planned.", "example": "70,000 ÷ 64,000 = 1.09", "module": "2-07-earned-value", "section": "To-complete performance index (TCPI)" }
+    ]
+  },
+  {
+    "title": "Schedule",
+    "intro": "The critical path formulas here start the project on day 1, as the lesson does. Courses that start on day 0 drop the − 1 and + 1.",
+    "entries": [
+      { "name": "Three-point estimate, triangular", "formula": "(O + M + P) ÷ 3", "reading": "Simple average of optimistic, most likely and pessimistic", "example": "(4 + 6 + 14) ÷ 3 = 8", "module": "2-04-schedule-domain", "section": "Estimating techniques" },
+      { "name": "Three-point estimate, beta (PERT)", "formula": "(O + 4M + P) ÷ 6", "reading": "Weighted average: the most likely value counts four times", "example": "(4 + 24 + 14) ÷ 6 = 7", "module": "2-04-schedule-domain", "section": "Estimating techniques" },
+      { "name": "Parametric estimate", "formula": "Quantity × time per unit, or quantity ÷ rate", "reading": "A rate from historical data applied to the quantity of work", "example": "1,000 ÷ 25 = 40", "module": "2-04-schedule-domain", "section": "Estimating techniques" },
+      { "name": "Early finish (forward pass)", "formula": "EF = ES + duration − 1", "reading": "The earliest an activity can finish", "module": "2-05-critical-path", "section": "The forward pass: early start and early finish" },
+      { "name": "Late start (backward pass)", "formula": "LS = LF − duration + 1", "reading": "The latest an activity can start without delaying the project", "example": "17 − 3 + 1 = 15", "module": "2-05-critical-path", "section": "The backward pass: late start and late finish" },
+      { "name": "Total float", "formula": "Total float = LS − ES = LF − EF", "reading": "Zero on the critical path. If the two results differ, recheck the passes.", "module": "2-05-critical-path", "section": "Total float and free float" }
+    ]
+  },
+  {
+    "title": "Communication and risk",
+    "entries": [
+      { "name": "Communication channels", "formula": "Channels = n(n − 1) ÷ 2", "reading": "n is the number of people. Count the project manager.", "example": "10 × 9 ÷ 2 = 45", "module": "2-08-stakeholders-domain", "section": "Plan Communications Management" },
+      { "name": "Risk score", "formula": "Risk score = probability × impact", "reading": "The highest scores get attention first", "example": "0.5 × 0.4 = 0.20", "module": "2-10-risk-domain", "section": "Perform Risk Analysis: qualitative" },
+      { "name": "Expected monetary value", "formula": "EMV = probability × impact, in money", "reading": "Add it to the base cost to compare options", "example": "100,000 + (0.20 × 50,000) = 110,000", "module": "2-10-risk-domain", "section": "Perform Risk Analysis: quantitative" }
+    ]
+  },
+  {
+    "title": "Agile",
+    "entries": [
+      { "name": "Average velocity", "formula": "Points completed ÷ number of iterations", "reading": "A planning aid for the team that produced it, not a target", "example": "(18 + 22 + 20) ÷ 3 = 20", "module": "3-07-metrics-retrospectives", "section": "Velocity" },
+      { "name": "Iterations remaining", "formula": "Points left in the backlog ÷ velocity", "reading": "How many more iterations the remaining work needs", "example": "100 ÷ 20 = 5", "module": "3-07-metrics-retrospectives", "section": "Velocity" },
+      { "name": "Weighted shortest job first", "formula": "WSJF = cost of delay ÷ job size", "reading": "The highest score goes first", "example": "9 ÷ 3 = 3", "module": "3-06-prioritization-value", "section": "Prioritization techniques" },
+      { "name": "Lead time and cycle time", "formula": "Lead time: request to delivery. Cycle time: start of work to finish.", "reading": "Lead time includes the waiting before work starts", "module": "3-07-metrics-retrospectives", "section": "Flow metrics" }
+    ]
+  },
+  {
+    "title": "Lists worth memorising",
+    "intro": "The exam's own framework. Modules 1.11 and 1.12 explain each one.",
+    "entries": [
+      { "name": "5 process groups, with their number of processes", "items": ["Initiating (2)", "Planning (24)", "Executing (10)", "Monitoring and Controlling (12)", "Closing (1)"], "module": "1-12-process-groups", "section": "The five process groups" },
+      { "name": "10 knowledge areas", "items": ["Integration", "Scope", "Schedule", "Cost", "Quality", "Resource", "Communications", "Risk", "Procurement", "Stakeholder"], "module": "1-12-process-groups", "section": "The ten knowledge areas" },
+      { "name": "49 processes", "reading": "The full table, by knowledge area and process group, is in the lesson. Integration is the only knowledge area with a process in every group.", "module": "1-12-process-groups", "section": "All 49 processes" },
+      { "name": "12 principles (Seventh Edition)", "items": ["Stewardship", "Team", "Stakeholders", "Value", "Systems thinking", "Leadership", "Tailoring", "Quality", "Complexity", "Risk", "Adaptability and resiliency", "Change"], "module": "1-11-edition-bridge", "section": "The 12 principles and where they went" },
+      { "name": "8 performance domains (Seventh Edition)", "items": ["Stakeholders", "Team", "Development Approach and Life Cycle", "Planning", "Project Work", "Delivery", "Measurement", "Uncertainty"], "module": "1-11-edition-bridge", "section": "The 8 performance domains of the 7th edition" },
+      { "name": "Parts of the project management plan", "items": ["10 subsidiary management plans", "2 additional plans: change management, configuration management", "4 baselines: scope, schedule, cost, performance measurement", "2 others: project life cycle description, development approach"], "module": "1-12-process-groups", "section": "Charter, project management plan and project documents" },
+      { "name": "Work performance data, information, reports", "items": ["Data: raw observations and measurements", "Information: data analyzed in context", "Reports: information compiled for a purpose"], "module": "1-12-process-groups", "section": "Data, information and reports" }
+    ]
+  }
+]

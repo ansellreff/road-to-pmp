@@ -74,6 +74,8 @@ export interface Progress {
   examDates: Record<string, string>
   /** Mock exams per "course/exam": the one in progress and the finished attempts. Older saves have none. */
   exams: Record<string, ExamRecord>
+  /** Per module, the lesson section last reached, for "continue from". Older saves have none. */
+  reading: Record<string, string>
 }
 
 /** Days until the next review, by box. */
@@ -90,6 +92,7 @@ const empty = (): Progress => ({
   activity: {},
   examDates: {},
   exams: {},
+  reading: {},
 })
 
 export function today(offsetDays = 0): string {
@@ -163,6 +166,11 @@ export function setLessonDone(key: string, done: boolean) {
   if (done) lessons[key] = new Date().toISOString()
   else delete lessons[key]
   commit({ ...state, lessons, activity: done ? studiedToday() : state.activity })
+}
+
+/** Remember the lesson section the learner has reached. Reading alone is not counted as a study action. */
+export function setReading(key: string, sectionId: string) {
+  if (state.reading[key] !== sectionId) commit({ ...state, reading: { ...state.reading, [key]: sectionId } })
 }
 
 /** Set the planned exam day for a course, or remove it with an empty value. */
