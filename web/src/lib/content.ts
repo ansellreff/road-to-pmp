@@ -85,6 +85,14 @@ export const books: Record<string, Book> = bookList
 
 export const courses: Course[] = Object.values(courseFiles)
 
+// The planned order of certifications. One with content in src/content becomes a live course.
+export const certifications = [
+  { id: 'capm', name: 'CAPM' },
+  { id: 'pmp', name: 'PMP' },
+  { id: 'pmi-acp', name: 'PMI-ACP' },
+  { id: 'pmi-sp', name: 'PMI-SP' },
+]
+
 export function getCourse(courseId: string | undefined): Course | undefined {
   return courses.find((c) => c.id === courseId)
 }

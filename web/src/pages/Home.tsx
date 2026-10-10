@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ExamBlueprint from '../components/ExamBlueprint'
 import Milestone from '../components/Milestone'
-import { allModules, courses, getExams, type Course } from '../lib/content'
+import { allModules, certifications, courses, getExams, type Course } from '../lib/content'
 import { buildPlan, formatDay, planMockExams } from '../lib/plan'
 import { readiness } from '../lib/readiness'
 import {
@@ -17,13 +17,7 @@ import {
 import { courseCompletion, courseMissed, moduleNumber, nextModule, percent, remainingModules } from '../lib/stats'
 import { btnDanger, btnPrimary, btnQuiet, link, note, pageTitle, section, sectionTitle } from '../lib/ui'
 
-// The planned order of certifications. One with content in src/content becomes a live course.
-const path = [
-  { id: 'capm', name: 'CAPM' },
-  { id: 'pmp', name: 'PMP' },
-  { id: 'pmi-acp', name: 'PMI-ACP' },
-  { id: 'pmi-sp', name: 'PMI-SP' },
-]
+const path = certifications
 
 export default function Home() {
   const progress = useProgress()

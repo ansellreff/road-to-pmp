@@ -28,6 +28,10 @@
   --color-critical-soft: #fbe7ea;
   --color-milestone: #8f5f00;
   --color-milestone-soft: #fcf3dc;
+
+  /* Depth. Raised things can be opened or pressed; flat things are read. */
+  --shadow-card: 0 1px 2px rgb(20 33 61 / 0.08), 0 2px 8px rgb(20 33 61 / 0.06);
+  --shadow-raised: 0 2px 4px rgb(20 33 61 / 0.1), 0 10px 28px rgb(20 33 61 / 0.14);
 }
 
 /* The same schedule at night: deep navy paper, never black. */
@@ -49,6 +53,8 @@
   --color-critical-soft: #45202a;
   --color-milestone: #e8b54d;
   --color-milestone-soft: #3d3013;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.3), 0 2px 8px rgb(0 0 0 / 0.25);
+  --shadow-raised: 0 2px 4px rgb(0 0 0 / 0.35), 0 12px 32px rgb(0 0 0 / 0.45);
 }
 
 /* Text size for long sittings. Everything is sized in rem, so the whole page follows. */

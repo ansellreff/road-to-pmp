@@ -54,7 +54,7 @@ export default function SearchPage() {
   }, [query, entries])
 
   const words = query.toLowerCase().split(/\s+/).filter((w) => w.length > 1)
-  const hits = entries ? search(entries, query) : []
+  const hits = entries ? search(entries, query, 60) : []
   const lessons = hits.filter((h) => h.entry.kind === 'lesson')
   const cards = hits.filter((h) => h.entry.kind === 'card')
 
@@ -88,6 +88,7 @@ export default function SearchPage() {
           "estimating".
         </p>
       )}
+      <Results title="Modules" hits={hits.filter((h) => h.entry.kind === 'module')} words={words} />
       <Results title="Lesson sections" hits={lessons} words={words} />
       <Results title="Flashcards" hits={cards} words={words} />
     </div>

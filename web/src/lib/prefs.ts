@@ -9,10 +9,13 @@ export const TEXT_SIZES: TextSize[] = ['normal', 'large', 'larger']
 
 const THEME_KEY = 'road-to-pmi-theme'
 const TEXT_KEY = 'road-to-pmi-text'
+const COURSE_KEY = 'road-to-pmi-course'
 
 interface Prefs {
   theme: Theme
   textSize: TextSize
+  /** The certification opened last. Menus that belong to one certification follow it. */
+  courseId: string | null
 }
 
 function stored(key: string): string | null {
@@ -31,6 +34,7 @@ function read(): Prefs {
   return {
     theme: theme === 'light' || theme === 'dark' ? theme : system,
     textSize: TEXT_SIZES.includes(text as TextSize) ? (text as TextSize) : 'normal',
+    courseId: stored(COURSE_KEY),
   }
 }
 
@@ -57,6 +61,9 @@ function save(next: Prefs, key: string, value: string) {
 
 export const setTheme = (theme: Theme) => save({ ...state, theme }, THEME_KEY, theme)
 export const setTextSize = (textSize: TextSize) => save({ ...state, textSize }, TEXT_KEY, textSize)
+export function setCourseId(courseId: string) {
+  if (state.courseId !== courseId) save({ ...state, courseId }, COURSE_KEY, courseId)
+}
 
 export function usePrefs(): Prefs {
   return useSyncExternalStore(

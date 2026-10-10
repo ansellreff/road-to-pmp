@@ -223,6 +223,59 @@ export const tests = {
     await see(page, 'Nothing found for "zzzzqq".')
   },
 
+  async 'search box: suggestions while typing, chosen with the keyboard or the mouse'(page) {
+    await page.goto('/dashboard')
+    const box = page.getByRole('combobox', { name: 'Search lessons and flashcards' })
+    // A module title is suggested at once, from what is already in memory.
+    await box.fill('earned value')
+    await page.getByRole('option', { name: /2\.7 Earned Value Management/ }).waitFor()
+    // Sections and flashcards follow as soon as the search file has arrived.
+    await page.getByRole('option', { name: /Indices: CPI and SPI|Variances: CV and SV|What earned value management is/ }).first().waitFor()
+    await see(page, 'Flashcards')
+    // Typing more narrows the list quickly: time one change of the query.
+    const started = Date.now()
+    await box.fill('total float')
+    await page.getByRole('option', { name: /Total float and free float/ }).waitFor()
+    const took = Date.now() - started
+    expect(took < 600, `the suggestions took ${took} ms to change`)
+    // Arrow down to the section and press Enter: the lesson opens there.
+    const options = await page.getByRole('option').allTextContents()
+    const target = options.findIndex((text) => text.startsWith('Total float and free float'))
+    for (let i = 0; i < target; i++) await box.press('ArrowDown')
+    await box.press('Enter')
+    await inView(page, 'Total float and free float')
+    expect((await box.inputValue()) === '', 'the search box was not emptied after going to a result')
+    // With the mouse; and "see all results" opens the full page.
+    await box.fill('scrum')
+    await page.getByRole('option', { name: /See all results for "scrum"/ }).click()
+    await see(page, 'Lesson sections')
+    expect(page.url().includes('/search?q=scrum'), 'the full results page did not open')
+    await box.fill('zzzzqq')
+    await see(page, 'No module, section or flashcard matches "zzzzqq" so far.')
+    await box.press('Escape')
+    expect((await page.getByRole('listbox').count()) === 0, 'Escape did not close the suggestions')
+  },
+
+  async 'top menu: every module is one click away, and Practice shows what is waiting'(page) {
+    await seed(page, { answers: { 'capm/1-01-project-basics': { q1: { right: 0, wrong: 1, lastCorrect: false } } } })
+    await page.goto('/plan')
+    await button(page, 'Modules').click()
+    const panel = page.getByRole('region', { name: 'Learning modules' })
+    await panel.getByText('PMI-ACP').waitFor()
+    await panel.getByText('Planned').first().waitFor()
+    await panel.getByRole('link', { name: /2\.7 Earned Value Management/ }).click()
+    await see(page, 'Module 2.7 in Predictive, Plan-Based Methodologies')
+    expect((await page.getByRole('region', { name: 'Learning modules' }).count()) === 0, 'the menu stayed open after choosing a module')
+    await button(page, 'Practice').click()
+    await see(page, '1 to practice')
+    await see(page, '0 of 4 taken')
+    await page.keyboard.press('Escape')
+    expect((await page.getByRole('region', { name: 'Practice' }).count()) === 0, 'Escape did not close the menu')
+    await button(page, 'Practice').click()
+    await page.getByRole('link', { name: /Review flashcards/ }).click()
+    await see(page, 'Review due cards')
+  },
+
   async 'formula sheet: shows formulas with sources and links to the lesson'(page) {
     await page.goto('/capm/sheet')
     await see(page, 'CPI = EV ÷ AC')

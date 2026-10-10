@@ -72,6 +72,71 @@ function localBooks(): Plugin {
   }
 }
 
+/**
+ * Builds one search file from the lessons and flashcards, offered to the app as
+ * "virtual:search-index". The app loads it in the background, so search suggestions
+ * appear as you type. It is made from the content folder each time, so it cannot go stale.
+ * Quiz and mock exam questions are left out on purpose.
+ */
+function searchIndex(): Plugin {
+  const id = 'virtual:search-index'
+  const content = path.resolve(here, 'src/content')
+  // Keep in step with slug() in src/components/LessonContents.tsx.
+  const slug = (title: string) =>
+    title
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '')
+  const plain = (markdown: string) =>
+    markdown
+      .replace(/^@(source|diagram) .*$/gm, '')
+      .replace(/^\|[-: |]+\|\r?$/gm, '')
+      .replace(/[*`>#]/g, '')
+      .replace(/\s*\|\s*/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim()
+  return {
+    name: 'search-index',
+    resolveId: (source) => (source === id ? `\0${id}` : undefined),
+    load(resolved) {
+      if (resolved !== `\0${id}`) return
+      const entries: object[] = []
+      for (const courseId of fs.readdirSync(content)) {
+        const courseFile = path.join(content, courseId, 'course.json')
+        if (!fs.existsSync(courseFile)) continue
+        this.addWatchFile(courseFile)
+        const course = JSON.parse(fs.readFileSync(courseFile, 'utf8'))
+        course.domains.forEach((domain: { modules: { id: string; title: string; ready: boolean }[] }, d: number) =>
+          domain.modules.forEach((m, j) => {
+            if (!m.ready) return
+            const module = `${course.title} ${d + 1}.${j + 1} ${m.title}`
+            const folder = path.join(content, courseId, 'modules', m.id)
+            const lessonFile = path.join(folder, 'lesson.md')
+            const cardFile = path.join(folder, 'flashcards.json')
+            entries.push({ kind: 'module', module: course.title, title: `${d + 1}.${j + 1} ${m.title}`, text: '', to: `/${courseId}/${m.id}` })
+            if (fs.existsSync(lessonFile)) {
+              this.addWatchFile(lessonFile)
+              for (const section of fs.readFileSync(lessonFile, 'utf8').split(/^(?=## )/m)) {
+                const heading = /^## (.+)$/m.exec(section)
+                if (!heading) continue
+                const title = heading[1].replace(/[*`]/g, '').trim()
+                entries.push({ kind: 'lesson', module, title, text: plain(section.slice(heading[0].length)), to: `/${courseId}/${m.id}#${slug(title)}` })
+              }
+            }
+            if (fs.existsSync(cardFile)) {
+              this.addWatchFile(cardFile)
+              for (const card of JSON.parse(fs.readFileSync(cardFile, 'utf8'))) {
+                entries.push({ kind: 'card', module, title: card.front, text: card.back, to: `/${courseId}/${m.id}/flashcards` })
+              }
+            }
+          }),
+        )
+      }
+      return `export default ${JSON.stringify(entries)}`
+    },
+  }
+}
+
 export default defineConfig({
-  plugins: [react(), tailwindcss(), localBooks()],
+  plugins: [react(), tailwindcss(), localBooks(), searchIndex()],
 })

@@ -2,6 +2,7 @@
 //
 // Usage: node tests/shot.mjs <path> <file.png> [light|dark] [width] [height] [scrollY]
 // A JSON file named in SEED is put into the browser as saved progress first.
+// CLICK and TYPE (see below) open a menu or the search suggestions before the picture.
 import fs from 'node:fs'
 import { chromium } from 'playwright-core'
 
@@ -19,6 +20,12 @@ await page.evaluate(
 )
 await page.goto(path)
 await page.waitForLoadState('networkidle')
+// CLICK="Modules" presses the button with that name first; TYPE="float" types into the search box.
+if (process.env.CLICK) await page.getByRole('button', { name: process.env.CLICK, exact: true }).first().click()
+if (process.env.TYPE) {
+  await page.getByRole('combobox').fill(process.env.TYPE)
+  await page.getByRole('option').nth(3).waitFor()
+}
 await page.evaluate((y) => window.scrollTo(0, y), Number(scroll))
 await page.waitForTimeout(400)
 await page.screenshot({ path: file })
