@@ -415,8 +415,13 @@
     ],
     "answer": 3,
     "explanation": "Waste is anything that does not add value for the customer, such as partially done work, extra features, waiting, handoffs and defects.",
-    "ref": "PMI standard teaching; Agile Practice Guide, 2.3",
+    "ref": "Effective Project Management, Chapter 11, What Is Lean Agile Project Management?; Agile Practice Guide, 2.3",
     "links": [
+      {
+        "book": "wysocki",
+        "page": 404,
+        "label": "Effective Project Management, Chapter 11, What Is Lean Agile Project Management?"
+      },
       {
         "book": "agile",
         "page": 28,

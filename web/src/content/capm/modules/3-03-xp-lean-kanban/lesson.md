@@ -53,7 +53,7 @@ The two fit together well. Many teams use **Scrum for the framework and XP for t
 
 ## Lean thinking
 
-@source Agile Practice Guide, 2.3; Agile Practice Guide, 2.3.3
+@source Agile Practice Guide, 2.3; Agile Practice Guide, 2.3.3; Effective Project Management, Chapter 11, What Is Lean Agile Project Management?
 
 **Lean management** is a philosophy aimed at **maximizing customer value while minimizing waste**. It began in manufacturing, at Toyota, and its ideas run through agile and Kanban: deliver value, respect people, be transparent, adapt, and improve continuously.
 
@@ -66,8 +66,8 @@ Seven principles of lean software development:
 | **Decide as late as possible** | Keep options open until the facts are known |
 | **Deliver as fast as possible** | Short cycles get value and feedback sooner |
 | **Empower the team** | The people doing the work make the decisions about it |
-| **Build quality in** | Prevent defects; do not rely on inspection at the end |
-| **Optimize the whole** | Improve the whole value stream, not one step at the expense of others |
+| **Build quality in** (also worded "build integrity in") | Prevent defects; do not rely on inspection at the end |
+| **Optimize the whole** (also worded "see the whole") | Improve the whole value stream, not one step at the expense of others |
 
 **Waste** in knowledge work includes partially done work, extra features nobody asked for, waiting, handoffs, task switching, unnecessary process and defects.
 
@@ -197,4 +197,4 @@ Teams often **blend** methods. What matters is the outcome, not the label. But a
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, Annex A3 (overview of agile and lean frameworks) and section 2.3 (lean thinking). The one-line definitions of the XP practices, the comparison tables, the seven principles of lean software development, and the list of wastes follow standard PMI teaching. Lead time and cycle time as the measures of flow-based teams are in the Agile Practice Guide, First Edition, section 5.4.1. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, Annex A3 (overview of agile and lean frameworks) and section 2.3 (lean thinking). The one-line definitions of the XP practices, the comparison tables, and the detailed list of wastes follow standard PMI teaching. The seven lean principles, and waste as anything that adds no business value, are in Wysocki's Effective Project Management, Eighth Edition, chapter 11, which words two of the principles as "build integrity in" and "see the whole". Lead time and cycle time as the measures of flow-based teams are in the Agile Practice Guide, First Edition, section 5.4.1. Written in original wording for personal study.*

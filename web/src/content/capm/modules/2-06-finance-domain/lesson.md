@@ -185,7 +185,7 @@ Monitors the project's financial status, updates the finances and **manages chan
 
 ## Measures used to judge a project's value
 
-@source PMBOK 8, Guide 2.4.1; PMBOK 8, Guide section 5, Cost-benefit analysis; PMBOK 6, 1.2.6.4; PMI Guide to Business Analysis, Glossary (Payback Period)
+@source PMBOK 8, Guide 2.4.1; PMBOK 8, Guide section 5, Cost-benefit analysis; PMBOK 6, 1.2.6.4; PMI Guide to Business Analysis, Glossary (Payback Period); PMI Guide to Business Analysis, 4.4.2.7
 
 These measures are used in the business case and when selecting projects.
 
@@ -221,4 +221,4 @@ You are not asked to calculate NPV or IRR. You are asked to **pick the better pr
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.4 (Finance performance domain) and sections 4 and 5. The rough order of magnitude range and the cone of uncertainty come from the Practice Standard for Project Estimating, Second Edition, section 2.4. The definitive estimate range, the S-curve, the make-up of the cost baseline and the list of financial measures are in the PMBOK Guide, Sixth Edition, sections 7.2, 7.3.3.1 and 1.2.6.4. The types of cost (direct, indirect, fixed, variable, sunk) and the difference between the two reserves are described in The Project Management Answer Book, chapters 6 and 8. That the project manager usually controls the contingency reserve, and the one-line explanations of ROI, NPV and IRR, follow standard PMI teaching. The payback period is defined in the glossary of The PMI Guide to Business Analysis. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.4 (Finance performance domain) and sections 4 and 5. The rough order of magnitude range and the cone of uncertainty come from the Practice Standard for Project Estimating, Second Edition, section 2.4. The definitive estimate range, the S-curve, the make-up of the cost baseline and the list of financial measures are in the PMBOK Guide, Sixth Edition, sections 7.2, 7.3.3.1 and 1.2.6.4. The types of cost (direct, indirect, fixed, variable, sunk) and the difference between the two reserves are described in The Project Management Answer Book, chapters 6 and 8. ROI, NPV, IRR and the payback period are defined in The PMI Guide to Business Analysis, section 4.4.2.7. That the project manager usually controls the contingency reserve follows standard PMI teaching. Written in original wording for personal study.*

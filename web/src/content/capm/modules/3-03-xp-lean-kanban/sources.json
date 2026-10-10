@@ -88,5 +88,10 @@
     "book": "agile1",
     "page": 76,
     "label": "Agile Practice Guide, First Edition, 5.4.1"
+  },
+  {
+    "book": "wysocki",
+    "page": 404,
+    "label": "Effective Project Management, Chapter 11, What Is Lean Agile Project Management?"
   }
 ]

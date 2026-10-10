@@ -49,7 +49,14 @@ TOC_BOOKS = {
 TITLE_BOOKS = {
     "scrum": 2,
     "bapg": 12,
-    "wysocki": 62,
+}
+
+# Wysocki, Effective Project Management, 8th edition: PDF page where each chapter starts.
+# Its PDF outline lists chapters only, so a section is found by its heading inside the chapter:
+# "Effective Project Management, Chapter 7, Estimating Duration".
+WYSOCKI_CHAPTERS = {
+    1: 54, 2: 74, 3: 113, 4: 141, 5: 164, 6: 200, 7: 238, 8: 309, 9: 358, 10: 388,
+    11: 399, 12: 424, 13: 436, 14: 448, 15: 495, 16: 579,
 }
 
 _pages: dict[str, list[str]] = {}
@@ -165,6 +172,17 @@ def resolve(part: str) -> tuple[str, int] | None:
             return book, first
         last = starts.get(int(chapter.group(1)) + 1, first + 60) - 1
         page = find_line(book, rf"^Q{question.group(1)}\.", first, last, flags=0)
+        return (book, page) if page else None
+
+    if book == "wysocki":
+        found = re.search(r"chapter (\d+)(?:,\s*(.+))?$", part.strip(), re.IGNORECASE)
+        if not found or int(found.group(1)) not in WYSOCKI_CHAPTERS or int(found.group(1)) > 15:
+            return None
+        number = int(found.group(1))
+        first = WYSOCKI_CHAPTERS[number]
+        if not found.group(2):
+            return book, first
+        page = find_line(book, rf"^\s*{re.escape(found.group(2).strip())}\s*$", first, WYSOCKI_CHAPTERS[number + 1] - 1)
         return (book, page) if page else None
 
     if book in TITLE_BOOKS:

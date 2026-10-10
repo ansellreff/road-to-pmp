@@ -139,7 +139,7 @@ Kanban is the exception: it uses a **continuous pull** of work without iteration
 
 ## What changes when a team works in an agile way
 
-@source Agile Practice Guide, 3.9; Agile Practice Guide, 3.10
+@source Agile Practice Guide, 3.9; Agile Practice Guide, 3.10; PMBOK 8, Standard 4.2, Figure 4-3
 
 | | Predictive | Agile |
 |---|---|---|
@@ -169,4 +169,4 @@ Agile is not always the right choice. For defined, repeatable work with little u
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, sections 2 (agile values and principles), 3.9, 3.10 and 4.1. The four values are quoted from the Manifesto for Agile Software Development (2001); the twelve principles are paraphrased. The separate iterative and incremental rows of the comparison table follow the Agile Practice Guide, First Edition, sections 3.1.2 and 3.1.3. The "inverted triangle" and the list of benefits follow standard PMI teaching. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, sections 2 (agile values and principles), 3.9, 3.10 and 4.1. The four values are quoted from the Manifesto for Agile Software Development (2001); the twelve principles are paraphrased. The separate iterative and incremental rows of the comparison table follow the Agile Practice Guide, First Edition, sections 3.1.2 and 3.1.3. The "inverted triangle" is Figure 4-3 of the PMBOK Guide, Eighth Edition. The list of benefits follows standard PMI teaching. Written in original wording for personal study.*

@@ -44,7 +44,7 @@ Servant leadership is not unique to agile, but it fits the agile mindset closely
 
 ## What a servant leader does
 
-@source Agile Practice Guide, 4.3.1
+@source Agile Practice Guide, 4.3.1; PMBOK 7, Guide 2.2.1.2
 
 | Responsibility | What it means | Example |
 |---|---|---|
@@ -215,4 +215,4 @@ The earlier the level, the easier it is to resolve. At levels 1 to 3 the team ca
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, section 4 (creating an agile environment): 4.2 psychological safety, 4.3 supportive leaders, 4.4 team composition, 4.6 generalizing specialists and 4.7 team structures. Caves and commons and the fishbowl window are in the Agile Practice Guide, First Edition, section 4.3.6. Osmotic communication is defined in the glossary of the PMBOK Guide, Seventh Edition. The manager and servant leader comparison, "shields the team" and the five levels of conflict follow standard PMI teaching. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, section 4 (creating an agile environment): 4.2 psychological safety, 4.3 supportive leaders, 4.4 team composition, 4.6 generalizing specialists and 4.7 team structures. Caves and commons and the fishbowl window are in the Agile Practice Guide, First Edition, section 4.3.6. Osmotic communication is defined in the glossary of the PMBOK Guide, Seventh Edition. Shielding the team from diversions is in the PMBOK Guide, Seventh Edition, section 2.2.1.2. The manager and servant leader comparison and the five levels of conflict follow standard PMI teaching. Written in original wording for personal study.*

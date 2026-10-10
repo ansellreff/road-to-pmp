@@ -76,6 +76,11 @@
   },
   {
     "book": "pmbok7",
+    "page": 112,
+    "label": "PMBOK 7, Guide 2.2.1.2"
+  },
+  {
+    "book": "pmbok7",
     "page": 338,
     "label": "PMBOK 7, Glossary (Osmotic Communication)"
   }
