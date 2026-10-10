@@ -49,6 +49,7 @@ TOC_BOOKS = {
 TITLE_BOOKS = {
     "scrum": 2,
     "bapg": 12,
+    "wysocki": 62,
 }
 
 _pages: dict[str, list[str]] = {}
@@ -92,6 +93,10 @@ def which_book(part: str) -> str | None:
         return "eco"
     if "scrum guide" in lowered:
         return "scrum"
+    if "project management answer book" in lowered:
+        return "answerbook"
+    if "effective project management" in lowered:
+        return "wysocki"
     if "business analysis for practitioners" in lowered:
         return "bapg"
     if "guide to business analysis" in lowered:
@@ -145,6 +150,22 @@ def resolve(part: str) -> tuple[str, int] | None:
             page = find_line("eco", rf"^Domain {domain.group(1)}\b", 7)
             return ("eco", page) if page else None
         return book, 5
+
+    if book == "answerbook":
+        # "Chapter 6, Q8": the book is written as numbered questions within each chapter.
+        chapter = re.search(r"chapter (\d+)", lowered)
+        if not chapter:
+            return book, 18
+        starts = {int(n): int(p) for n, p in re.findall(r"^CHAPTER (\d+):.*\[p(\d+)\]", toc(book), re.MULTILINE)}
+        first = starts.get(int(chapter.group(1)))
+        if not first:
+            return None
+        question = re.search(r"\bq(\d+)\b", lowered)
+        if not question:
+            return book, first
+        last = starts.get(int(chapter.group(1)) + 1, first + 60) - 1
+        page = find_line(book, rf"^Q{question.group(1)}\.", first, last, flags=0)
+        return (book, page) if page else None
 
     if book in TITLE_BOOKS:
         title = part.split(",", 1)[1].strip() if "," in part else ""

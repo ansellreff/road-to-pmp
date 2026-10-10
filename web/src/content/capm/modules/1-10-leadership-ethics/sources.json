@@ -55,6 +55,11 @@
     "label": "PMI Code of Ethics, chapter 5"
   },
   {
+    "book": "pmbok6",
+    "page": 89,
+    "label": "PMBOK 6, 3.4.5"
+  },
+  {
     "book": "pmbok8",
     "page": 191,
     "label": "PMBOK 8, Guide 2.6.2.4.2"

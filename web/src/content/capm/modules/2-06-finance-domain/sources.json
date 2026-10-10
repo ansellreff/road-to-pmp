@@ -1,5 +1,30 @@
 [
   {
+    "book": "answerbook",
+    "page": 123,
+    "label": "The Project Management Answer Book, Chapter 6, Q5"
+  },
+  {
+    "book": "answerbook",
+    "page": 125,
+    "label": "The Project Management Answer Book, Chapter 6, Q7"
+  },
+  {
+    "book": "answerbook",
+    "page": 125,
+    "label": "The Project Management Answer Book, Chapter 6, Q8"
+  },
+  {
+    "book": "answerbook",
+    "page": 202,
+    "label": "The Project Management Answer Book, Chapter 8, Q11"
+  },
+  {
+    "book": "baguide",
+    "page": 449,
+    "label": "PMI Guide to Business Analysis, Glossary (Payback Period)"
+  },
+  {
     "book": "estimating",
     "page": 32,
     "label": "Practice Standard for Project Estimating, 2.4"

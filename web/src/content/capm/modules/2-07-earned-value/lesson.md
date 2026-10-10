@@ -178,4 +178,4 @@ Adaptive teams usually show the same information with **burndown** and **burnup 
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 5 (earned value analysis, to-complete performance index and Table 5-1); The Standard for Earned Value Management, sections 1.3.4, 3.2.2.2 and 4.4.1 (terminology, rules for crediting earned value, variances and indices). The road example is my own. The older abbreviations BCWS, BCWP and ACWP follow standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 5 (earned value analysis, to-complete performance index and Table 5-1); The Standard for Earned Value Management, sections 1.3.4, 3.2.2.2 and 4.4.1 (terminology, rules for crediting earned value, variances and indices). The road example is my own. The older abbreviations BCWS, BCWP and ACWP are listed in The Project Management Answer Book, chapter 6, Q&A 41. Written in original wording for personal study.*

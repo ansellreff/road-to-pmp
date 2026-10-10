@@ -175,7 +175,7 @@ More rules for a sound WBS:
 
 ## Monitor and Control Scope
 
-@source PMBOK 8, Guide 2.2.2.5; PMBOK 8, Guide Figure 2-18; PMBOK 6, Glossary (Scope Creep)
+@source PMBOK 8, Guide 2.2.2.5; PMBOK 8, Guide Figure 2-18; PMBOK 6, Glossary (Scope Creep); The Project Management Answer Book, Chapter 4, Q16
 
 The ongoing process of monitoring the status of project and product scope, **managing changes to the scope baseline**, and **measuring the quality of deliverables** against the required standards.
 
@@ -244,4 +244,4 @@ Neither is acceptable. Any change to scope goes through **change control**.
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.2 (Scope performance domain) and sections 4 and 5; Practice Standard for Work Breakdown Structures, Third Edition, sections 1.2, 2.3 and 2.4.3 (purpose of the WBS, the 100 percent rule and the other WBS rules, numbering, top-down and bottom-up preparation). The definition of scope creep is in the glossary of the PMBOK Guide, Sixth Edition. Gold plating follows standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.2 (Scope performance domain) and sections 4 and 5; Practice Standard for Work Breakdown Structures, Third Edition, sections 1.2, 2.3 and 2.4.3 (purpose of the WBS, the 100 percent rule and the other WBS rules, numbering, top-down and bottom-up preparation). The definition of scope creep is in the glossary of the PMBOK Guide, Sixth Edition. Gold plating is described in The Project Management Answer Book, chapter 4. Written in original wording for personal study.*

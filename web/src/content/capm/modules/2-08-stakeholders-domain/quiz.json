@@ -90,12 +90,12 @@
     ],
     "answer": 2,
     "explanation": "High power and high interest stakeholders are the key players and are managed closely. High power with low interest: keep satisfied. Low power with high interest: keep informed.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "ref": "The Project Management Answer Book, Chapter 13, Q14",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 305,
-        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+        "book": "answerbook",
+        "page": 386,
+        "label": "The Project Management Answer Book, Chapter 13, Q14"
       }
     ]
   },
@@ -110,12 +110,12 @@
     ],
     "answer": 0,
     "explanation": "High power with low interest means keep satisfied: meet their needs without overloading them with detail.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "ref": "The Project Management Answer Book, Chapter 13, Q14",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 305,
-        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+        "book": "answerbook",
+        "page": 386,
+        "label": "The Project Management Answer Book, Chapter 13, Q14"
       }
     ]
   },
@@ -270,12 +270,12 @@
     ],
     "answer": 0,
     "explanation": "Count the project manager: n = 8. Channels = n(n − 1) ÷ 2 = 8 × 7 ÷ 2 = 28.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Communication requirements analysis",
+    "ref": "The Project Management Answer Book, Chapter 11, Q18",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 260,
-        "label": "PMBOK 8, Guide section 5, Communication requirements analysis"
+        "book": "answerbook",
+        "page": 311,
+        "label": "The Project Management Answer Book, Chapter 11, Q18"
       }
     ]
   },
@@ -290,12 +290,12 @@
     ],
     "answer": 3,
     "explanation": "With 4 people: 4 × 3 ÷ 2 = 6 channels. With 6 people: 6 × 5 ÷ 2 = 15 channels. Added: 15 − 6 = 9.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Communication requirements analysis",
+    "ref": "The Project Management Answer Book, Chapter 11, Q18",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 260,
-        "label": "PMBOK 8, Guide section 5, Communication requirements analysis"
+        "book": "answerbook",
+        "page": 311,
+        "label": "The Project Management Answer Book, Chapter 11, Q18"
       }
     ]
   },

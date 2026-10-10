@@ -15,5 +15,7 @@
   "eco": { "title": "CAPM Exam Content Outline (2023 update)", "file": "CAPM Exam Content Outline 2023 update.pdf" },
   "scrum": { "title": "The Scrum Guide (2020)", "file": "The Scrum Guide 2020.pdf" },
   "baguide": { "title": "The PMI Guide to Business Analysis", "file": "The PMI Guide to Business Analysis.pdf" },
-  "bapg": { "title": "Business Analysis for Practitioners: A Practice Guide, Second Edition", "file": "Business Analysis for Practitioners A Practice Guide – Second Edition.pdf" }
+  "bapg": { "title": "Business Analysis for Practitioners: A Practice Guide, Second Edition", "file": "Business Analysis for Practitioners A Practice Guide – Second Edition.pdf" },
+  "answerbook": { "title": "The Project Management Answer Book, Second Edition", "file": "The Project Management Answer Book 2nd Edition.pdf" },
+  "wysocki": { "title": "Effective Project Management: Traditional, Agile, Extreme, Fifth Edition (Wysocki)", "file": "Wysocki's Effective Project Management.pdf" }
 }

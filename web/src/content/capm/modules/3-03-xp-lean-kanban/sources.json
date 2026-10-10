@@ -21,6 +21,11 @@
   },
   {
     "book": "agile",
+    "page": 52,
+    "label": "Agile Practice Guide, 3.11"
+  },
+  {
+    "book": "agile",
     "page": 143,
     "label": "Agile Practice Guide, A3.2"
   },
@@ -68,6 +73,16 @@
     "book": "agile",
     "page": 152,
     "label": "Agile Practice Guide, A3.9"
+  },
+  {
+    "book": "agile",
+    "page": 186,
+    "label": "Agile Practice Guide, Glossary (refactoring)"
+  },
+  {
+    "book": "agile",
+    "page": 188,
+    "label": "Agile Practice Guide, Glossary (test-driven development)"
   },
   {
     "book": "agile1",

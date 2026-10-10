@@ -390,8 +390,13 @@
     ],
     "answer": 3,
     "explanation": "High-risk items are often done early so that problems surface while there is still time and budget to respond. Dependencies and effort also influence the order.",
-    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.1",
+    "ref": "PMI Guide to Business Analysis, 7.7.2.5; Agile Practice Guide, 5.2.1",
     "links": [
+      {
+        "book": "baguide",
+        "page": 279,
+        "label": "PMI Guide to Business Analysis, 7.7.2.5"
+      },
       {
         "book": "agile",
         "page": 81,

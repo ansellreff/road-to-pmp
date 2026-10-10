@@ -335,12 +335,12 @@
     ],
     "answer": 1,
     "explanation": "Money already spent that cannot be recovered is a sunk cost. Decisions should be based on future costs and benefits only.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide 2.4.1",
+    "ref": "The Project Management Answer Book, Chapter 6, Q5",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 164,
-        "label": "PMBOK 8, Guide 2.4.1"
+        "book": "answerbook",
+        "page": 123,
+        "label": "The Project Management Answer Book, Chapter 6, Q5"
       }
     ]
   },
@@ -355,12 +355,12 @@
     ],
     "answer": 2,
     "explanation": "Indirect costs (overhead) are shared across several projects and cannot be charged to one project alone. Direct costs belong to a single project.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 4, Cost estimates",
+    "ref": "The Project Management Answer Book, Chapter 6, Q8",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 224,
-        "label": "PMBOK 8, Guide section 4, Cost estimates"
+        "book": "answerbook",
+        "page": 125,
+        "label": "The Project Management Answer Book, Chapter 6, Q8"
       }
     ]
   },
@@ -395,12 +395,12 @@
     ],
     "answer": 3,
     "explanation": "Payback period is the time needed to earn back the investment, so shorter is better. For ROI, NPV and IRR, higher is better.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide 2.4.1",
+    "ref": "PMI Guide to Business Analysis, Glossary (Payback Period)",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 164,
-        "label": "PMBOK 8, Guide 2.4.1"
+        "book": "baguide",
+        "page": 449,
+        "label": "PMI Guide to Business Analysis, Glossary (Payback Period)"
       }
     ]
   },

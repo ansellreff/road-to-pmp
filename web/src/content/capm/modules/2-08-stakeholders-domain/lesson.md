@@ -63,7 +63,7 @@ The output is the **stakeholder register**, a project document with three kinds 
 
 ## Ways to map stakeholders
 
-@source PMBOK 8, Guide section 5, Stakeholder mapping/representation
+@source PMBOK 8, Guide section 5, Stakeholder mapping/representation; The Project Management Answer Book, Chapter 13, Q14
 
 | Model | How it classifies stakeholders | Best for |
 |---|---|---|
@@ -109,7 +109,7 @@ Example:
 
 ## Plan Communications Management
 
-@source PMBOK 8, Guide 2.5.2.3; PMBOK 8, Guide section 4, Communications management plan; PMBOK 8, Guide section 5, Communication requirements analysis
+@source PMBOK 8, Guide 2.5.2.3; PMBOK 8, Guide section 4, Communications management plan; PMBOK 8, Guide section 5, Communication requirements analysis; The Project Management Answer Book, Chapter 11, Q18
 
 Plans how to communicate with stakeholders inside and outside the team. The output is the **communications management plan**, which answers:
 
@@ -200,4 +200,4 @@ The choice of **communication technology** depends on: the **urgency** of the in
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.5 (Stakeholders performance domain) and sections 4 and 5. The channels formula and the strategy named in each corner of the power/interest grid follow standard PMI teaching. The matrix example is my own. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.5 (Stakeholders performance domain) and sections 4 and 5. The channels formula and the strategy named in each corner of the power/interest grid are described in The Project Management Answer Book, chapters 11 and 13. The matrix example is my own. Written in original wording for personal study.*

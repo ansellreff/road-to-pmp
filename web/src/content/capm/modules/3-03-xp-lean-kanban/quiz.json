@@ -70,12 +70,12 @@
     ],
     "answer": 2,
     "explanation": "Refactoring improves the design of existing code while keeping its behavior the same, which keeps the code easy to change.",
-    "ref": "PMI standard teaching; Agile Practice Guide, A3.3",
+    "ref": "Agile Practice Guide, Glossary (refactoring)",
     "links": [
       {
         "book": "agile",
-        "page": 144,
-        "label": "Agile Practice Guide, A3.3"
+        "page": 186,
+        "label": "Agile Practice Guide, Glossary (refactoring)"
       }
     ]
   },
@@ -90,12 +90,12 @@
     ],
     "answer": 3,
     "explanation": "In test-first programming, also called test-driven development, the test is written before the code, and just enough code is then written to pass it.",
-    "ref": "PMI standard teaching; Agile Practice Guide, A3.3",
+    "ref": "Agile Practice Guide, Glossary (test-driven development)",
     "links": [
       {
         "book": "agile",
-        "page": 144,
-        "label": "Agile Practice Guide, A3.3"
+        "page": 188,
+        "label": "Agile Practice Guide, Glossary (test-driven development)"
       }
     ]
   },
@@ -390,8 +390,13 @@
     ],
     "answer": 2,
     "explanation": "Scrum provides roles, events and artifacts. XP provides technical practices. Many teams use Scrum as the framework and XP practices inside it.",
-    "ref": "PMI standard teaching; Agile Practice Guide, A3.3",
+    "ref": "Agile Practice Guide, 3.11; Agile Practice Guide, A3.3",
     "links": [
+      {
+        "book": "agile",
+        "page": 52,
+        "label": "Agile Practice Guide, 3.11"
+      },
       {
         "book": "agile",
         "page": 144,

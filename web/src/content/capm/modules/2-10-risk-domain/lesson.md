@@ -194,7 +194,7 @@ Develops options and agrees actions for individual risks and for overall project
 
 ## Other response terms
 
-@source PMBOK 8, Guide section 5, Contingent response strategies; The Standard for Risk Management, 4.6; PMBOK 6, 11.5
+@source PMBOK 8, Guide section 5, Contingent response strategies; The Standard for Risk Management, 4.6; PMBOK 6, 11.5; The Project Management Answer Book, Chapter 8, Q20
 
 | Term | Meaning |
 |---|---|
@@ -260,4 +260,4 @@ The risk processes are **tailored** to the project: its size and complexity, the
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.7 (Risk performance domain) and sections 4 and 5; The Standard for Risk Management in Portfolios, Programs, and Projects, sections 2.1, 4.6 and 4.8 and its glossary (risk attitude, response strategies, secondary and residual risk, risk audits). Risk Management in Portfolios, Programs, and Projects: A Practice Guide, sections 2.1.4 and 4.1.1 (risk thresholds; risk in predictive, adaptive and hybrid projects). The fallback plan and the opportunity strategies are also described in the PMBOK Guide, Sixth Edition, sections 11.5 and 11.5.2.5. The definition of workaround, the matching of opportunity strategies to threat strategies, and the worked examples follow standard PMI teaching or are my own. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.7 (Risk performance domain) and sections 4 and 5; The Standard for Risk Management in Portfolios, Programs, and Projects, sections 2.1, 4.6 and 4.8 and its glossary (risk attitude, response strategies, secondary and residual risk, risk audits). Risk Management in Portfolios, Programs, and Projects: A Practice Guide, sections 2.1.4 and 4.1.1 (risk thresholds; risk in predictive, adaptive and hybrid projects). The fallback plan and the opportunity strategies are also described in the PMBOK Guide, Sixth Edition, sections 11.5 and 11.5.2.5. The workaround is described in The Project Management Answer Book, chapter 8. The matching of opportunity strategies to threat strategies, and the worked examples, follow standard PMI teaching or are my own. Written in original wording for personal study.*

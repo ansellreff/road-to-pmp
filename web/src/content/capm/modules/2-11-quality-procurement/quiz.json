@@ -155,8 +155,13 @@
     ],
     "answer": 3,
     "explanation": "The rule of seven: seven points in a row on one side of the mean indicate a non-random cause, so the process is considered out of control even inside the limits.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Control charts",
+    "ref": "The Project Management Answer Book, Chapter 7, Q22; PMBOK 8, Guide section 5, Control charts",
     "links": [
+      {
+        "book": "answerbook",
+        "page": 173,
+        "label": "The Project Management Answer Book, Chapter 7, Q22"
+      },
       {
         "book": "pmbok8",
         "page": 263,

@@ -10,8 +10,13 @@
     ],
     "answer": 1,
     "explanation": "Management directs using positional power, focuses on systems and near-term goals. Leadership guides and influences, focuses on relationships and long-range vision. A project manager needs both.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Leadership",
+    "ref": "PMBOK 6, 3.4.5; PMBOK 8, Guide section 5, Leadership",
     "links": [
+      {
+        "book": "pmbok6",
+        "page": 89,
+        "label": "PMBOK 6, 3.4.5"
+      },
       {
         "book": "pmbok8",
         "page": 281,

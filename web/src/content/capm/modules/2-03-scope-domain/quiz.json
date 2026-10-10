@@ -335,12 +335,12 @@
     ],
     "answer": 1,
     "explanation": "Gold plating is the team adding extras that were not requested. It is not acceptable: it uses time and money for work outside the approved scope.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide 2.2.2.5",
+    "ref": "The Project Management Answer Book, Chapter 4, Q16",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 147,
-        "label": "PMBOK 8, Guide 2.2.2.5"
+        "book": "answerbook",
+        "page": 68,
+        "label": "The Project Management Answer Book, Chapter 4, Q16"
       }
     ]
   },

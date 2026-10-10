@@ -1,5 +1,10 @@
 [
   {
+    "book": "answerbook",
+    "page": 344,
+    "label": "The Project Management Answer Book, Chapter 12, Q26"
+  },
+  {
     "book": "pmbok6",
     "page": 336,
     "label": "PMBOK 6, 9.4"

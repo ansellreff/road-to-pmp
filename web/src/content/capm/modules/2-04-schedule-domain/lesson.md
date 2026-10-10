@@ -125,7 +125,7 @@ Two attributes apply at the same time: a dependency is mandatory **or** discreti
 
 ## Step 3: Estimate effort and duration
 
-@source PMBOK 8, Guide 2.3.2.2; PMBOK 8, Guide section 5, Estimation techniques; Practice Standard for Project Estimating, 2.4; Practice Standard for Project Estimating, 4.5
+@source PMBOK 8, Guide 2.3.2.2; PMBOK 8, Guide section 5, Estimation techniques; Practice Standard for Project Estimating, 2.4; Practice Standard for Project Estimating, 4.5; Effective Project Management, Defining the Nine Knowledge Areas
 
 | Term | Meaning | Example |
 |---|---|---|
@@ -239,4 +239,4 @@ Monitors the status of the project to **update the schedule** and **manage chang
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide section 2.3 (Schedule performance domain) and sections 4 and 5; Practice Standard for Scheduling, Third Edition, sections 3.4.3, 3.4.5, 3.4.7 and 3.4.8 (the beta or PERT formula, open ends, leads and lags, and the start-to-finish example); Practice Standard for Project Estimating, Second Edition, sections 2.4, 4.3 and 4.5 (evolving estimates, relative estimating, optimism, padding and anchoring). The schedule formats (milestone chart, bar chart, network diagram) are described in the PMBOK Guide, Sixth Edition, section 6.5.3.2. The effort, duration and elapsed time comparison follows standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide section 2.3 (Schedule performance domain) and sections 4 and 5; Practice Standard for Scheduling, Third Edition, sections 3.4.3, 3.4.5, 3.4.7 and 3.4.8 (the beta or PERT formula, open ends, leads and lags, and the start-to-finish example); Practice Standard for Project Estimating, Second Edition, sections 2.4, 4.3 and 4.5 (evolving estimates, relative estimating, optimism, padding and anchoring). The schedule formats (milestone chart, bar chart, network diagram) are described in the PMBOK Guide, Sixth Edition, section 6.5.3.2. The difference between duration (clock time) and effort (labor time) is in Wysocki's Effective Project Management, chapter 2. Elapsed time as a third term follows standard PMI teaching. Written in original wording for personal study.*

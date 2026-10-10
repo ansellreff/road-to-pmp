@@ -1,5 +1,15 @@
 [
   {
+    "book": "answerbook",
+    "page": 311,
+    "label": "The Project Management Answer Book, Chapter 11, Q18"
+  },
+  {
+    "book": "answerbook",
+    "page": 386,
+    "label": "The Project Management Answer Book, Chapter 13, Q14"
+  },
+  {
     "book": "pmbok8",
     "page": 172,
     "label": "PMBOK 8, Guide 2.5"

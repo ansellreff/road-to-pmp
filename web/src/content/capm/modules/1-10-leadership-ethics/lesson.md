@@ -8,7 +8,7 @@
 
 ## Leadership and management
 
-@source PMBOK 8, Guide section 5, Leadership; Process Groups: A Practice Guide, 3.3.2
+@source PMBOK 8, Guide section 5, Leadership; Process Groups: A Practice Guide, 3.3.2; PMBOK 6, 3.4.5
 
 **Leadership** is the knowledge, skills and behaviors needed to guide, motivate and direct a team toward its goals. It includes negotiation, resilience, communication, problem-solving, critical thinking and interpersonal skills. The 8th edition puts it plainly: the common denominator in all projects is people, and people can be counted, but they are not numbers.
 
