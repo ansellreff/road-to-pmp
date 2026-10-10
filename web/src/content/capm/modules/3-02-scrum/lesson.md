@@ -95,7 +95,7 @@ The order inside a sprint: **planning → daily work with a daily scrum → revi
 
 ## The daily scrum
 
-@source Agile Practice Guide, 5.2.4; The Scrum Guide, Daily Scrum
+@source Agile Practice Guide, 5.2.4; The Scrum Guide, Daily Scrum; Agile Practice Guide, First Edition, 5.2.4
 
 A meeting of **no more than 15 minutes**, held every day, in which the team coordinates and commits to each other. Each person answers three questions:
 
@@ -107,6 +107,8 @@ A meeting of **no more than 15 minutes**, held every day, in which the team coor
 - It is **not a status meeting** for a manager. That is a common mistake by teams coming from predictive work.
 - It is for **finding** problems, **not solving** them. Problems go to a "**parking lot**" and are handled right afterwards by the people involved.
 - The scrum master then works on **removing the impediments** raised.
+
+> **On the exam.** The 2017 Agile Practice Guide calls this the **daily standup**: no longer than **15 minutes**, and **any team member can facilitate it**. Iteration-based teams answer the three questions in turn. **Flow-based** teams read the board from right to left and ask what is needed to advance each piece of work and whether there are bottlenecks. Two anti-patterns: the standup becomes a **status meeting**, or the team starts **solving problems** in it. Problems go to a **parking lot** and are solved afterwards.
 
 ## Sprint review and sprint retrospective
 

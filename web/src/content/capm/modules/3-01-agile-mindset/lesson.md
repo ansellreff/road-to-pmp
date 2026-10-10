@@ -155,6 +155,41 @@ Kanban is the exception: it uses a **continuous pull** of work without iteration
 
 Agile is not always the right choice. For defined, repeatable work with little uncertainty, a predictive "**plan the work, work the plan**" approach is efficient and appropriate.
 
+## Pros and cons of adaptive and predictive approaches
+
+@source Agile Practice Guide, First Edition, 2.4; Agile Practice Guide, First Edition, 3.1
+
+The exam outline asks you to compare the two. Neither is better in general: each fits a kind of work.
+
+| | Predictive (plan-based) | Adaptive (agile) |
+|---|---|---|
+| **Works best when** | Requirements are clear and stable; the work has been done before | Requirements are uncertain or changing; the work is new |
+| **Advantages** | Clear plan, budget and dates up front; easy to coordinate many parties; suits contracts and regulation | Early and frequent delivery; fast feedback; change is cheap; risk is found early |
+| **Disadvantages** | Change is costly and slow; value arrives at the end; a wrong requirement is found late | Final scope, cost and date are less certain at the start; needs an available customer and a dedicated team |
+| **Main risk** | Building the wrong thing well | Never converging, or delivering pieces that do not add up |
+
+As uncertainty rises, so do **change, wasted work and rework**. Short cycles limit how much can be wasted before the team learns.
+
+## What helps or hinders agile in an organization
+
+@source Agile Practice Guide, First Edition, 6.1.2; Agile Practice Guide, First Edition, 6.2; Agile Practice Guide, First Edition, 6.7
+
+The outline asks which **enterprise environmental factors (EEFs)** and **organizational process assets (OPAs)** make adaptive work easier. EEFs are conditions the team does not control, such as culture and structure. OPAs are the organization's own policies, processes and knowledge.
+
+| | Helps adaptive work | Hinders it |
+|---|---|---|
+| **Culture** (EEF) | A **safe** environment where people can be honest and experiment; willingness of executives to change | Blame; a habit of detailed long-range plans that must not change |
+| **Structure** (EEF) | **Cross-functional** teams; people **dedicated** to one project | **Departmental silos**; a highly **functional** structure that resists collaboration across departments |
+| **Geography** (EEF) | Colocated teams, or good tools for distributed ones | Dispersed teams with competing regional goals, language barriers, low visibility |
+| **People policies** (OPA) | Reviews and rewards for **team** results; staff encouraged to broaden their skills | Leaders rewarded for local efficiency; narrow specialists with no incentive to diversify |
+| **Funding and metrics** (OPA) | Short-term budgeting and measures that follow delivered value | Annual fixed budgets tied to a fixed scope |
+| **Portfolio practice** (OPA) | Few projects at a time, finished one after another | People pulled onto **too many projects at once** |
+| **Procurement** (OPA) | Long-term partnerships with suppliers who can work incrementally | Contracts won on short-term price; knowledge leaves with the vendor |
+
+**Which structure suits adaptive work?** A **project-oriented** or strong matrix structure with dedicated, cross-functional, preferably colocated teams. A **functional** or weak matrix structure makes it hard, because team members answer to department managers and work on several things at once.
+
+Where the organization is not ready, introduce agile practices **gradually**, one project at a time, with visible executive sponsorship.
+
 ## Exam tips
 
 - "Agile is…" a **mindset**. Not a methodology, not a tool, not a process.
@@ -169,4 +204,4 @@ Agile is not always the right choice. For defined, repeatable work with little u
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, sections 2 (agile values and principles), 3.9, 3.10 and 4.1. The four values are quoted from the Manifesto for Agile Software Development (2001); the twelve principles are paraphrased. The separate iterative and incremental rows of the comparison table follow the Agile Practice Guide, First Edition, sections 3.1.2 and 3.1.3. The "inverted triangle" is Figure 4-3 of the PMBOK Guide, Eighth Edition. The list of benefits follows standard PMI teaching. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, sections 2 (agile values and principles), 3.9, 3.10 and 4.1. The four values are quoted from the Manifesto for Agile Software Development (2001); the twelve principles are paraphrased. The separate iterative and incremental rows of the comparison table follow the Agile Practice Guide, First Edition, sections 3.1.2 and 3.1.3. The "inverted triangle" is Figure 4-3 of the PMBOK Guide, Eighth Edition. The list of benefits follows standard PMI teaching. The pros and cons table is my own summary of the two approaches; the helps and hinders table arranges the characteristics listed in the Agile Practice Guide, First Edition (2017), sections 6.1.2, 6.2 and 6.7, and its sorting into enterprise environmental factors and organizational process assets is mine. Written in original wording for personal study.*

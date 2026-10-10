@@ -252,6 +252,23 @@ Techniques: **retrospectives and lessons learned**, **root cause analysis**, **v
 |---|---|---|
 | **When** | At milestones or the end of the work, as lessons learned. Findings mostly help **future** projects. | At least at the **end of every iteration** ("inspect and adapt"). Changes apply to the **next iteration**. |
 
+## Why communication between teams depends on the analyst
+
+@source PMI Guide to Business Analysis, 3.3.3; PMI Guide to Business Analysis, 3.3.3.1
+
+The business analyst sits **between** groups that do not share a vocabulary. PMI describes the role as a **trusted advisor to the business** and a **liaison to technical teams**, and as a **communication bridge** between the sponsor and the project team.
+
+| Between | What the analyst carries across |
+|---|---|
+| **Business stakeholders and developers** | The need, in terms each side understands: features and requirements one way, constraints and options the other |
+| **Sponsor and project team** | The business vision, so the solution still serves it |
+| **Design team and the business** | Feedback on design proposals from the business point of view |
+| **Testers and requirement owners** | What "correct" means, as acceptance criteria |
+| **Several feature teams** | Dependencies and shared terms, so teams do not build conflicting things |
+| **Project team and governance** (legal, compliance, change boards) | Rules the product must obey |
+
+When this communication fails, requirements are **missed, duplicated or built twice in different ways**, and the cost appears as rework.
+
 ## Exam tips
 
 - A new stakeholder group is discovered mid-project: **update the stakeholder register and analyze them**, then elicit their requirements.
@@ -268,4 +285,4 @@ Techniques: **retrospectives and lessons learned**, **root cause analysis**, **v
 
 ---
 
-*Source: The PMI Guide to Business Analysis, section 5 (Stakeholder Engagement), sections 5.1 to 5.7, and Table 1-2 for the process groups. The nurse persona, the sample RACI rows, the "outer" ring of the onion diagram and the table for choosing a communication channel are my own or follow standard PMI teaching; the guide describes the engagement approach but does not list channels this way. Written in original wording for personal study.*
+*Source: The PMI Guide to Business Analysis, section 5 (Stakeholder Engagement), sections 5.1 to 5.7, and Table 1-2 for the process groups. The nurse persona, the sample RACI rows, the "outer" ring of the onion diagram and the table for choosing a communication channel are my own or follow standard PMI teaching; the guide describes the engagement approach but does not list channels this way. The table of groups the analyst communicates between is my own arrangement of the relationships in section 3.3.3.1. Written in original wording for personal study.*

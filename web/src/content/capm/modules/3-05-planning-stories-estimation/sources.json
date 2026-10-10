@@ -45,9 +45,24 @@
     "label": "Agile Practice Guide, Glossary (user story)"
   },
   {
+    "book": "agile1",
+    "page": 39,
+    "label": "Agile Practice Guide, First Edition, 3.1.4"
+  },
+  {
+    "book": "agile1",
+    "page": 70,
+    "label": "Agile Practice Guide, First Edition, 5.2.6"
+  },
+  {
     "book": "baguide",
     "page": 146,
     "label": "PMI Guide to Business Analysis, 4.6.2.5"
+  },
+  {
+    "book": "baguide",
+    "page": 259,
+    "label": "PMI Guide to Business Analysis, 7.3.2.7"
   },
   {
     "book": "baguide",

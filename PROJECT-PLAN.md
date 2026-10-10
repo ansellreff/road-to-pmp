@@ -46,6 +46,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Your suggestion for the mock exams recorded (several fixed exams, like the real exam, domains shown separately, easy to learn from), with a proposed design under "Session 26 proposal". | You: choose mixed order or domain chapters, and 3 or 4 mock exams. Next: Session 25b |
 | 2026-10-10 | Your mock exam decisions recorded: two modes (practice mode grouped by domain, real exam mode) and four mock exams. **Session 25b done:** module 1.11 is now exam content (renamed, 7 new questions on the Seventh Edition); new module 1.12 teaches the 5 process groups, 10 knowledge areas and all 49 processes; "On the exam" notes added to 12 modules in Domains 1 and 2; four outline gaps filled (organizational structure suitability, project management plan vs product plans, the six project manager roles, projects as a vehicle for change). **CAPM is now 39 modules, 827 questions, 1,208 flashcards.** Issues 69 and 70 added. | Next: Session 25c, quiz repair |
 | 2026-10-10 | **Session 25c done: quiz repair.** One wrong option was rewritten in 250 questions so the right answer no longer stands out by length: the share where it is the longest option fell from 58% to 27% (chance is 25%), and all 39 quizzes are under the 35% limit. The 5 duplicated questions were reworded as scenarios, and 6 scenario questions were added to Domain 4. **833 questions**: 219 / 278 / 174 / 162 per domain, enough for four mock exams (216 / 104 / 120 / 160). Issue 71 added. | Next: Session 25d |
+| 2026-10-10 | **Session 25d done, which completes Session 25.** Domain 3 now has the 2017 Agile Practice Guide's terms (servant leadership, daily standup, team facilitator) and three new sections: pros and cons of adaptive and predictive, what helps or hinders agile in an organization, and iterations with the WBS-to-backlog mapping. Domain 4 has the practice guide's five domains, a section on communication between teams, and one on which features go into which release. **CAPM: 39 modules, 840 questions, 1,208 flashcards.** Outline coverage: 59 of 60 points. No further PDFs are needed. Issues 72 and 73 added. | You: study modules 1.11 and 1.12 first; they are the exam's own framework. Next: Session 26, the mock exams, starting in plan mode |
 
 ## How your progress is saved
 
@@ -134,11 +135,11 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 16 to 19 | Domain 3: 8 modules |
 | ✅ | 20 | Feature: study plan and exam countdown |
 | ✅ | 21 to 24 | Domain 4: 7 modules |
-| 🟡 | 25 | Full catch-up, requested 2026-10-10 and planned with you. In four parts: |
+| ✅ | 25 | Full catch-up, requested 2026-10-10 and planned with you. In four parts: |
 | ✅ | 25a | Audits: quiz quality check, table and markup check, worked-example check, render check of every lesson, exam outline coverage map |
 | ✅ | 25b | Exam alignment of Domains 1 and 2: module 1.11 becomes exam content and is expanded; "On the exam" notes from PMBOK 7 and the Process Groups guide; fill the outline gaps |
 | ✅ | 25c | Quiz repair: remove the longest-answer give-away in all quizzes, remove duplicates, top up Domain 1, add scenario questions |
-| ⬜ | 25d | Exam alignment of Domains 3 and 4 (2017 Agile Practice Guide, Business Analysis for Practitioners); final list of PDFs; close the edition question |
+| ✅ | 25d | Exam alignment of Domains 3 and 4 (2017 Agile Practice Guide, Business Analysis for Practitioners); final list of PDFs; close the edition question |
 | ⬜ | 26 | Feature: mock exams. **Decided with you on 2026-10-10:** two modes, **practice mode** (questions grouped by domain, easier to learn from) and **real exam mode** (simulates the CAPM exam), and **four fixed mock exams**. Details under "Session 26 proposal" below; to be confirmed in plan mode. |
 | ⬜ | 27 | UI/UX polish (see backlog below) |
 | ⬜ | 28 | Go online: GitHub and Vercel, test on phone |
@@ -195,7 +196,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (833 quiz questions, 1,208 flashcards).
+Overall: **39 of 39 modules done** (840 quiz questions, 1,208 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -288,6 +289,22 @@ Overall: **39 of 39 modules done** (833 quiz questions, 1,208 flashcards).
 | ⬜ | PMI-ACP |
 | ⬜ | PMI-SP |
 
+## Source books: final list after Session 25
+
+**Linked and used (19):** PMBOK Guide 8th, 7th and 6th Editions; Process Groups: A Practice Guide; Agile Practice Guide 1st (2017) and 2nd Editions; The PMI Guide to Business Analysis; Business Analysis for Practitioners, 2nd Edition; the practice standards for Scheduling, Estimating and Work Breakdown Structures; the standards for Earned Value Management and for Risk Management; the Risk Management practice guide; the PMI Code of Ethics; the Scrum Guide (2020); The Project Management Answer Book; Wysocki's Effective Project Management, 8th Edition; the CAPM Exam Content Outline.
+
+**In your folder, not used for CAPM (6):** Choose Your WoW! (Disciplined Agile); The Standard for Program Management; the two AI titles; the P5 sustainability standard; Wysocki, 5th Edition (replaced by the 8th). None is an exam reference. Choose Your WoW! and the Program Management standard will be useful for PMI-ACP and PMP.
+
+**Further PDFs needed for CAPM: none.** Every book the exam outline names is now in the folder and linked. One optional extra, for question style only, is the *CAPM Exam Official Cert Guide*, which the outline mentions as a study aid.
+
+**Which book is the exam's reference for each domain:**
+
+| Domain | Exam references | Where the course gives the exam's terms |
+|---|---|---|
+| 1 | PMBOK Guide 7th Edition; Process Groups guide | Modules 1.11 and 1.12, and "On the exam" notes |
+| 2 | Process Groups guide | Module 1.12, and an "On the exam" note in each of 2.2 to 2.11 |
+| 3 | Agile Practice Guide (2017) | Notes and new sections in 3.1, 3.2, 3.4, 3.5 |
+| 4 | The PMI Guide to Business Analysis; Business Analysis for Practitioners | The whole domain is written from the first; note in 4.1 on the second |
 ## Session 26 proposal: mock exams
 
 Recorded on 2026-10-10 from your suggestion. Not built yet; to be confirmed in plan mode when Session 26 starts.
@@ -339,7 +356,7 @@ Every module is at or below 32%. Duplicated questions: none. Method: in each aff
 
 ### Exam outline coverage
 
-Every task and enabler of the CAPM Exam Content Outline (2023), with where it is taught. **At the audit: 45 of 60 enablers covered, 13 thin, 2 missing. After Session 25b: 53 covered, 6 thin, 1 missing** (the remaining ones are in Domains 3 and 4, for Session 25d, plus "responding to a planned strategy").
+Every task and enabler of the CAPM Exam Content Outline (2023), with where it is taught. **At the audit: 45 of 60 enablers covered, 13 thin, 2 missing. After Sessions 25b and 25d: 59 covered, 1 thin** ("responding to a planned strategy or framework", which the outline words vaguely; it is touched in 2.8 and 2.10).
 
 | Domain and task | Enabler | Where | Status |
 |---|---|---|---|
@@ -378,12 +395,12 @@ Every task and enabler of the CAPM Exam Content Outline (2023), with where it is
 | | Integration management plan | 1.12, 2.2 | Covered (25b) |
 | 2.3 Project controls | Artifacts of predictive projects | 2.1 | Covered |
 | | Cost and schedule variances | 2.7 | Covered |
-| 3.1 When to use adaptive | Pros and cons of adaptive and predictive | 1.6, 3.1, 3.8 compare, without listing pros and cons | **Thin** |
-| | Suitability for the organizational structure | 3.4, 3.8 in passing | **Thin** |
-| | Organizational process assets and enterprise environmental factors that help adaptive work | none | **Missing** |
+| 3.1 When to use adaptive | Pros and cons of adaptive and predictive | 3.1 | Covered (25d) |
+| | Suitability for the organizational structure | 3.1 | Covered (25d) |
+| | Organizational process assets and enterprise environmental factors that help adaptive work | 3.1 | Covered (25d) |
 | 3.2 Planning iterations | Logical units of iterations | 3.5 | Covered |
-| | Pros and cons of the iteration | 3.5 in passing | **Thin** |
-| | Translate a WBS to an adaptive iteration | 2.3, one section | **Thin** |
+| | Pros and cons of the iteration | 3.5 | Covered (25d) |
+| | Translate a WBS to an adaptive iteration | 3.5, 2.3 | Covered (25d) |
 | | Inputs for scope | 3.5 | Covered |
 | | Adaptive vs predictive tracking | 3.7 | Covered |
 | 3.3 Controls | Artifacts of adaptive projects | 3.2, 3.7 | Covered |
@@ -394,12 +411,12 @@ Every task and enabler of the CAPM Exam Content Outline (2023), with where it is
 | | Why roles must be identified | 4.1, 4.3 | Covered |
 | | Internal and external roles | 4.1 | Covered |
 | 4.2 Communication | Most appropriate channel or tool | 4.3 | Covered |
-| | Why communication between teams matters for the analyst | 4.3 in passing | **Thin** |
+| | Why communication between teams matters for the analyst | 4.3 | Covered (25d) |
 | 4.3 Gathering requirements | Match tools to scenarios (user stories, use cases) | 4.4, 4.5 | Covered |
 | | Choose the gathering approach | 4.4 | Covered |
 | | Traceability matrix and product backlog | 4.6, 4.5 | Covered |
 | 4.4 Product roadmaps | Application of a product roadmap | 4.2 | Covered |
-| | Which components go to which releases | 4.2, one paragraph | **Thin** |
+| | Which components go to which releases | 4.2 | Covered (25d) |
 | 4.5 Methodologies | The analyst's role in adaptive and predictive work | 4.1 and each module's comparison | Covered |
 | 4.6 Validating requirements | Define acceptance criteria | 4.5 | Covered |
 | | Ready for delivery, from the matrix or backlog | 4.6, 4.7 | Covered |
@@ -466,7 +483,7 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 23 | Your Agile Practice Guide is the Second Edition, with different section numbers and wording from the first edition most courses use. It says "supportive leadership" where exam material says "servant leadership", and covers Scrum only briefly. | Written from your edition, using the exam's familiar terms and saying where they are the same thing. Scrum details come from the Scrum Guide and standard teaching, listed in the footer. | Modules 3.1 to 3.4 |
 | 24 | *Choose Your WoW!* (Disciplined Agile) is in the folder but was not used for module 3.3. | It matches only one row of the scaling table. Left for the full catch-up in Session 25. | Module 3.3 |
 | 41 | The Agile Practice Guide (Second Edition) says little about user stories and estimating, the core of module 3.5. | Sources were combined: the PMBOK Guide's entries on backlog, user stories, release planning and velocity; the Agile Practice Guide's glossary; and the Estimating standard's section on relative estimating. | Module 3.5 |
-| 47 | The CAPM Exam Content Outline names the PMBOK Guide **Seventh** Edition, the Process Groups practice guide and the **2017** Agile Practice Guide as exam references. This course is written from the Eighth Edition and the Second Edition agile guide, as decided at the start. | Nothing was rewritten. Lessons already carry edition notes and module 1.11 bridges the terms. The older books are now linked, so differences can be checked. **Decided with you on 2026-10-10:** the Eighth Edition lessons stay, and Sessions 25b and 25d add an exam-terms layer from the Seventh Edition, the Process Groups guide, the 2017 agile guide and the business analysis practice guide. | "CAPM exam structure" above; Session 25 |
+| 47 | The CAPM Exam Content Outline names the PMBOK Guide **Seventh** Edition, the Process Groups practice guide and the **2017** Agile Practice Guide as exam references. This course is written from the Eighth Edition and the Second Edition agile guide, as decided at the start. | Nothing was rewritten. Lessons already carry edition notes and module 1.11 bridges the terms. The older books are now linked, so differences can be checked. **Decided with you on 2026-10-10:** the Eighth Edition lessons stay, and Sessions 25b and 25d add an exam-terms layer from the Seventh Edition, the Process Groups guide, the 2017 agile guide and the business analysis practice guide. | "CAPM exam structure" above; Session 25 **Closed on 2026-10-10 by Sessions 25b and 25d.** |
 | 48 | The outline names a book that was not in your folder: *Business Analysis for Practitioners: A Practice Guide*, Second Edition. | Resolved: you added it on 2026-10-10. It is extracted and linked, ready for Domain 4. Its headings have no numbers, so it is cited by section title. | Sessions 21 to 24 |
 | 49 | The Agile Practice Guide First Edition PDF has no built-in table of contents, so its sections could not be looked up. | A table of contents is built from the printed contents pages (`tools/build_toc_agile1.py`). Run it after `extract_pdf.py` for that book. | `tools/build_toc_agile1.py` |
 | 50 | A few points are in none of your 19 books (final list, 2026-10-10): the three Cs of a user story (card, conversation, confirmation); the five levels of conflict; one-line definitions of the XP practices; the detailed list of lean wastes; that the project manager usually controls the contingency reserve; that a new team member is a typical cause of regression; "on one side of the mean" in the rule of seven; elapsed time counted in calendar days; the manager vs servant leader comparison table; the feature and task definitions; the list of agile benefits. One quiz question rests on these (the three Cs). | They stay labelled as standard PMI teaching in each lesson footer and quiz reference. They are exam-preparation conventions or come from authors outside PMI (the three Cs from Ron Jeffries, the levels of conflict from Speed Leas). **Decided by you on 2026-10-10: keep them, labelled as they are.** The same rule applies to future modules. | Lesson footers |
@@ -482,6 +499,8 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 67 | Five questions appear word for word in two modules. | Listed in the audit results. One of each pair is replaced in Session 25c. | "Session 25a audit results" |
 | 69 | Module 1.11 cited *Process Groups: A Practice Guide* for the ten knowledge areas, but that guide never uses the term: it lists the 49 processes by process group only. Knowledge areas come from the PMBOK Guide Sixth Edition, which is not one of the exam's references although the exam outline uses knowledge-area words ("integration management", "quality management plan"). | The source was corrected to the Sixth Edition, section 1.2.4.6. Modules 1.11 and 1.12 say where each grouping comes from. The assignment of each process to a knowledge area follows the Sixth Edition's chapters. | Modules 1.11 and 1.12 |
 | 71 | Repairing 250 questions by hand-editing whole quiz files would have been slow and error-prone. | The repair was done as a list of single-option rewrites applied by a script, which re-measured each module after every batch and flagged any question where the right answer was still the longest (14 needed a second pass). Limits: the plan also called for topping up each early Domain 1 quiz to about 22 questions and for many more scenario questions. Domain 1 gained 36 questions through modules 1.11, 1.12, 1.2 and 1.3, but quizzes 1.1 and 1.4 to 1.9 are still 15 to 18 questions, and only 11 questions were added or reworded as scenarios. | `tools/check_content.py --report` |
+| 72 | The plan for Session 25 said every module would be compared, section by section, with the exam's own books. That was done only in part. | What was done: the exam's framework was written out in full (modules 1.11 and 1.12); notes giving the exam's names were added to 16 modules; the outline gaps were filled from the exam's books. What was not done: a line-by-line reading of the Seventh Edition against each of modules 1.1 to 1.10, or of the practice guide against each Domain 4 module. A definition in an Eighth Edition lesson could therefore still differ in wording from the Seventh Edition without a note. | "Source books: final list"; lesson notes marked "On the exam" |
+| 73 | The second practice guide for business analysis is organized quite differently from the main guide (five domains with three practices each, against six knowledge areas with 35 processes), and it is cited only five times. | Domain 4 stays built on The PMI Guide to Business Analysis, which defines the processes the instructor outline lists. Module 4.1 now maps the practice guide's five domains onto the knowledge areas. | Module 4.1 |
 | 54 | The Project Management Answer Book is written as numbered questions inside chapters, with no section numbers, and Wysocki's book has titled sections only. Both are commercial textbooks, not PMI publications. | New reference forms: `The Project Management Answer Book, Chapter 6, Q8` (opens the page of that question) and `Effective Project Management, <section title>`. Like every other book, they are opened from your folder only, are never committed or uploaded, and lessons use original wording. Wysocki is the Fifth Edition, so its page content may differ from the Eighth Edition the outline names. | `link_sources.py` |
 | 55 | Wysocki's Eighth Edition lists only chapters in its PDF contents, and it differs from the lessons in two wordings: it calls two lean principles "build integrity in" and "see the whole", and it uses "elapsed time" for duration in working days. | Reference form: `Effective Project Management, Chapter 7, Estimating Duration` (chapter, then the heading as printed). Chapter start pages are listed in `link_sources.py`. The lean table now shows both wordings, and the schedule lesson footer explains the two uses of "elapsed time". | `link_sources.py`; modules 2.4 and 3.3 |
 | 59 | A reference to a figure or table in the business analysis guide ("Figure 1-1") would have opened the book's first page without any warning, because that kind of reference was only understood for the PMBOK Guides. | Found while checking each new link against its page, before anything was reported. The linker now finds figures and tables in every book with a table of contents, and reports an error if one is not found. | `link_sources.py` |

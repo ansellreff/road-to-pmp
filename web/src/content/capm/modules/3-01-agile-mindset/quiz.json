@@ -398,5 +398,65 @@
         "label": "Agile Practice Guide, 2.2"
       }
     ]
+  },
+  {
+    "id": "q21",
+    "q": "Which is an advantage of a predictive approach over an adaptive one?",
+    "options": [
+      "Change is cheap at any point in the work",
+      "Plan, budget and dates are clear up front",
+      "Value reaches users every few weeks",
+      "A wrong requirement is found early"
+    ],
+    "answer": 1,
+    "explanation": "A predictive approach gives a clear plan, budget and dates at the start and suits stable requirements. Early delivery, cheap change and early discovery of problems are advantages of adaptive approaches.",
+    "ref": "Agile Practice Guide, First Edition, 3.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 33,
+        "label": "Agile Practice Guide, First Edition, 3.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which organizational characteristic most hinders the adoption of agile approaches?",
+    "options": [
+      "Work split into departmental silos",
+      "A safe environment for experiments",
+      "Staff dedicated to a single project",
+      "Executives who are willing to change"
+    ],
+    "answer": 0,
+    "explanation": "Work decomposed into departmental silos creates dependencies that prevent accelerated delivery. Safety, dedicated staff and executive willingness to change all support agility.",
+    "ref": "Agile Practice Guide, First Edition, 6.1.2",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 88,
+        "label": "Agile Practice Guide, First Edition, 6.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "According to the Agile Practice Guide, what is the most important cultural norm for an organization trying a new way of working?",
+    "options": [
+      "A detailed plan for every team",
+      "A bonus for the fastest team",
+      "A safe work environment",
+      "A new reporting structure"
+    ],
+    "answer": 2,
+    "explanation": "The most important cultural norm in an organization willing to try any new method is enabling a safe work environment, in which people can reflect honestly on successes and failures.",
+    "ref": "Agile Practice Guide, First Edition, 6.2",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 90,
+        "label": "Agile Practice Guide, First Edition, 6.2"
+      }
+    ]
   }
 ]

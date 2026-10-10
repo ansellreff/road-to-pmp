@@ -10,7 +10,7 @@
 
 ## Servant leadership
 
-@source Agile Practice Guide, 4.3
+@source Agile Practice Guide, 4.3; Agile Practice Guide, First Edition, 4.2; Agile Practice Guide, First Edition, 4.3.2
 
 **Servant leadership** (called **supportive leadership** in PMI's current agile guide) is leading **through service to the team**: understanding and meeting the needs and development of team members so the team can perform at its best.
 
@@ -41,6 +41,8 @@ Servant leadership is not unique to agile, but it fits the agile mindset closely
 | Problems | Solves them personally | Removes obstacles so the team can solve them |
 | Stance | "The team works for me" | "I work for the team" |
 | Tracks | Individual status | Team outcomes and flow |
+
+> **On the exam.** The 2017 edition of the Agile Practice Guide, which the exam uses, says **servant leadership**; the second edition says supportive leadership. The 2017 edition names three agile roles: **cross-functional team member**, **product owner** and **team facilitator**. The team facilitator is the servant leader, also called project manager, scrum master, team lead or coach.
 
 ## What a servant leader does
 

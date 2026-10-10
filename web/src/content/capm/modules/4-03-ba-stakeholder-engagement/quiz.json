@@ -438,5 +438,25 @@
         "label": "PMI Guide to Business Analysis, 5.2.3.1"
       }
     ]
+  },
+  {
+    "id": "q23",
+    "q": "Two feature teams are building parts of the same product and use the word \"customer\" differently. What is the business analyst's most useful contribution?",
+    "options": [
+      "Let each team keep its own meaning",
+      "Ask the sponsor to choose one team",
+      "Agree shared terms and carry dependencies between the teams",
+      "Wait until the difference shows up in testing"
+    ],
+    "answer": 2,
+    "explanation": "The analyst acts as a liaison and communication bridge between groups. Shared terms, for example in a glossary, and visible dependencies keep teams from building conflicting things.",
+    "ref": "PMI Guide to Business Analysis, 3.3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 94,
+        "label": "PMI Guide to Business Analysis, 3.3.3.1"
+      }
+    ]
   }
 ]

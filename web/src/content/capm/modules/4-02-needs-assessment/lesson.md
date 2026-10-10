@@ -191,6 +191,26 @@ What a roadmap usually holds: strategy information, the **product vision**, **pr
 
 **Which features go into which release?** Features are prioritized by how each supports the strategy and business objectives, then allocated to releases in that order, allowing for dependencies.
 
+## Which features go into which release
+
+@source PMI Guide to Business Analysis, 7.2.2.16; PMI Guide to Business Analysis, 8.3.2.11; PMI Guide to Business Analysis, 4.5.3.1
+
+A roadmap pairs **features with releases**. A **story map** is the usual tool for deciding the split.
+
+| Part of a story map | What it holds | Goes into |
+|---|---|---|
+| **Backbone** | The **minimum set of capabilities** the solution must have to serve its purpose. Often called the minimum viable product (MVP). | The **first release** |
+| **Walking skeleton** | The **full end-to-end functionality** stakeholders need to accept the solution. Sometimes called the minimum marketable features. | The early releases |
+| **Stories below** | Further stories under each capability, **highest value at the top** | Later releases, from the top down |
+
+Rules for allocating features to releases:
+
+1. **Value first:** the highest-value items go earliest.
+2. **Respect dependencies:** an item cannot ship before what it relies on.
+3. **Each release must be usable** on its own, end to end.
+4. **Capacity limits the size** of a release.
+5. The allocation is **revisited** as priorities change.
+
 ## Assemble Business Case
 
 @source PMI Guide to Business Analysis, 4.6; PMI Guide to Business Analysis, 4.6.3.1; PMI Guide to Business Analysis, 4.6.3.2
@@ -264,4 +284,4 @@ Typical contents: description and purpose, business goals and objectives, high-l
 
 ---
 
-*Source: The PMI Guide to Business Analysis, section 4 (Needs Assessment), sections 4.1 to 4.7; Business Analysis for Practitioners: A Practice Guide, Second Edition, "Understand the Situation" (the situation statement). The support desk example, the weighted ranking numbers, the business case versus charter comparison, and the one-line actions in the purpose alignment table are my own or follow standard PMI teaching. Written in original wording for personal study.*
+*Source: The PMI Guide to Business Analysis, section 4 (Needs Assessment), sections 4.1 to 4.7; Business Analysis for Practitioners: A Practice Guide, Second Edition, "Understand the Situation" (the situation statement). The support desk example, the weighted ranking numbers, the business case versus charter comparison, and the one-line actions in the purpose alignment table are my own or follow standard PMI teaching. The five rules for allocating features to releases follow standard PMI teaching. Written in original wording for personal study.*

@@ -163,7 +163,7 @@ Two differ from project management's five: **Defining and Aligning** is added at
 
 ## The six knowledge areas
 
-@source PMI Guide to Business Analysis, 1.3.3; PMI Guide to Business Analysis, Table 1-2
+@source PMI Guide to Business Analysis, 1.3.3; PMI Guide to Business Analysis, Table 1-2; Business Analysis for Practitioners, How This Practice Guide Is Organized
 
 A **knowledge area** is a set of processes for a particular function. The 35 processes are spread over six.
 
@@ -184,6 +184,8 @@ How they relate:
 - **Solution Evaluation** examines their results and may trigger a **new needs assessment**.
 
 **Tailoring** means choosing which processes, techniques and deliverables fit this particular effort, and how detailed and formal they should be. Not every process is needed every time.
+
+> **On the exam.** The outline also names *Business Analysis for Practitioners: A Practice Guide*, Second Edition. It arranges the same work in **five domains**, each with three practices: **Business Value Assessment** (needs assessment), **Business Analysis Planning** (stakeholder engagement and planning), **Solution Refinement** (elicitation, analysis, and traceability), **Organizational Transition and Solution Evaluation**, and **Business Analysis Stewardship** (effectiveness, capability and integrity of the analyst's own work). Its people are called **business analysis practitioners**.
 
 ## The people a business analyst works with
 

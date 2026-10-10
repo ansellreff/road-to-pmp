@@ -172,6 +172,42 @@ A **spike** is a **timeboxed** story or task created to **research a question or
 
 Example of a spike: "Spend two days finding out whether the payment provider's interface supports refunds."
 
+## Iterations: units, pros and cons, and turning a WBS into a backlog
+
+@source Agile Practice Guide, First Edition, 3.1.4; Agile Practice Guide, First Edition, 5.2.6; PMI Guide to Business Analysis, 7.3.2.7
+
+**The logical units of iteration-based work**, from large to small:
+
+| Unit | Holds |
+|---|---|
+| **Release** | Several iterations; a version that can go to users |
+| **Iteration** (sprint) | A **timebox of the same length each time**, ending in working, tested features |
+| **User story** | A piece of value small enough for one iteration |
+| **Task** | The work the team does to finish a story |
+
+**Pros and cons of working in iterations:**
+
+| Advantages | Disadvantages |
+|---|---|
+| A regular rhythm for planning, demonstrating and improving | A story must be made small enough to fit, which is not always natural |
+| Feedback at least every few weeks | Planning and review meetings take time every iteration |
+| Progress is measured in finished work | Urgent work arriving mid-iteration disturbs the plan |
+| Risk is exposed early | The fixed timebox can tempt a team to cut quality to "finish" |
+
+Teams whose work arrives unpredictably often prefer **flow-based** agile: no timebox, a limit on work in process, and items pulled when there is capacity.
+
+**Translating a WBS into an adaptive plan.** A WBS breaks the scope into deliverables; a backlog orders value for users. The usual mapping:
+
+| Predictive | Adaptive |
+|---|---|
+| Project scope statement | Product vision |
+| Major deliverable (upper WBS level) | **Epic** or feature |
+| Work package | **User stories**, each delivering something usable |
+| Activity | Task within a story |
+| Fixed sequence and schedule baseline | Backlog **ordered by value**, pulled into iterations by capacity |
+
+Two things change in the translation: items are rewritten **from the user's point of view**, and large ones are **sliced** until each fits one iteration.
+
 ## Exam tips
 
 - The story format is **role, goal, benefit**: "As a…, I want…, so that…".
@@ -187,4 +223,4 @@ Example of a spike: "Spend two days finding out whether the payment provider's i
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide sections 4 and 5 (backlog, user stories, agile release planning, backlog refinement, velocity); Agile Practice Guide, Second Edition, sections 5.2.1 to 5.2.3 and its glossary; Practice Standard for Project Estimating, Second Edition, section 4.3 (relative estimating); The PMI Guide to Business Analysis, sections 7.3.2.9 (user story), 7.5.2.1 (INVEST) and 4.6.2.5 (epics). The five planning levels as a table, the feature and task definitions, the three Cs, the kinds of iteration, and the forecast example follow standard PMI teaching or are my own. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide sections 4 and 5 (backlog, user stories, agile release planning, backlog refinement, velocity); Agile Practice Guide, Second Edition, sections 5.2.1 to 5.2.3 and its glossary; Practice Standard for Project Estimating, Second Edition, section 4.3 (relative estimating); The PMI Guide to Business Analysis, sections 7.3.2.9 (user story), 7.5.2.1 (INVEST) and 4.6.2.5 (epics). The five planning levels as a table, the feature and task definitions, the three Cs, the kinds of iteration, and the forecast example follow standard PMI teaching or are my own. The pros and cons of iterations and the WBS-to-backlog mapping follow standard PMI teaching; the Agile Practice Guide, First Edition, section 3.1.4 describes iteration-based and flow-based agile. Written in original wording for personal study.*

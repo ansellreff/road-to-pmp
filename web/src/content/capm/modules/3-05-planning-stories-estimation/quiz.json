@@ -448,5 +448,45 @@
         "label": "Agile Practice Guide, 5.2.2"
       }
     ]
+  },
+  {
+    "id": "q23",
+    "q": "A team moves a predictive project to an adaptive approach. What does a WBS work package usually become?",
+    "options": [
+      "A single fixed milestone",
+      "A phase gate review",
+      "A schedule baseline",
+      "One or more user stories"
+    ],
+    "answer": 3,
+    "explanation": "In the usual mapping, major deliverables become epics or features and work packages become user stories, rewritten from the user's point of view and sliced to fit one iteration.",
+    "ref": "PMI Guide to Business Analysis, 7.3.2.7",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 259,
+        "label": "PMI Guide to Business Analysis, 7.3.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Which is a disadvantage of working in fixed-length iterations?",
+    "options": [
+      "Feedback arrives every few weeks",
+      "Urgent work arriving mid-iteration disturbs the plan",
+      "Progress is measured in finished work",
+      "Risk is exposed early in the work"
+    ],
+    "answer": 1,
+    "explanation": "Iterations give rhythm, frequent feedback and early exposure of risk. Their cost is that stories must fit the timebox and unplanned urgent work disturbs the iteration; flow-based agile suits such work better.",
+    "ref": "Agile Practice Guide, First Edition, 3.1.4",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 39,
+        "label": "Agile Practice Guide, First Edition, 3.1.4"
+      }
+    ]
   }
 ]

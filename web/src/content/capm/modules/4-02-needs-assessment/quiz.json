@@ -458,5 +458,25 @@
         "label": "PMI Guide to Business Analysis, 4.1.3.2"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "On a story map, which stories belong in the first release?",
+    "options": [
+      "The stories that are easiest to build",
+      "The backbone: the minimum capabilities the solution needs",
+      "The stories requested most recently",
+      "The lowest-value stories, to clear them"
+    ],
+    "answer": 1,
+    "explanation": "The backbone is the minimum set of capabilities that must be in the first release for the solution to serve its purpose, sometimes called the minimum viable product.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.16",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 249,
+        "label": "PMI Guide to Business Analysis, 7.2.2.16"
+      }
+    ]
   }
 ]

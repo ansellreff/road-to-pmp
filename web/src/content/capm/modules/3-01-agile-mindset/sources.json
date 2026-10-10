@@ -41,6 +41,16 @@
   },
   {
     "book": "agile1",
+    "page": 28,
+    "label": "Agile Practice Guide, First Edition, 2.4"
+  },
+  {
+    "book": "agile1",
+    "page": 33,
+    "label": "Agile Practice Guide, First Edition, 3.1"
+  },
+  {
+    "book": "agile1",
     "page": 36,
     "label": "Agile Practice Guide, First Edition, 3.1.2"
   },
@@ -48,6 +58,21 @@
     "book": "agile1",
     "page": 37,
     "label": "Agile Practice Guide, First Edition, 3.1.3"
+  },
+  {
+    "book": "agile1",
+    "page": 88,
+    "label": "Agile Practice Guide, First Edition, 6.1.2"
+  },
+  {
+    "book": "agile1",
+    "page": 90,
+    "label": "Agile Practice Guide, First Edition, 6.2"
+  },
+  {
+    "book": "agile1",
+    "page": 98,
+    "label": "Agile Practice Guide, First Edition, 6.7"
   },
   {
     "book": "pmbok8",
