@@ -62,7 +62,18 @@ export async function fakeSupabase(context, remote) {
       if (body.token !== '123456') return json(403, { msg: 'Token has expired or is invalid' })
       return json(200, { access_token: token(body.email), refresh_token: 'refresh', expires_in: 3600 })
     }
-    if (url.pathname === '/auth/v1/logout') return json(204)
+    if (url.pathname === '/auth/v1/logout') {
+      remote.logouts = [...(remote.logouts ?? []), url.searchParams.get('scope')]
+      return json(204)
+    }
+    if (url.pathname === '/auth/v1/user' && request.method() === 'PUT') {
+      remote.password = body.password
+      return json(200, {})
+    }
+    if (url.pathname === '/auth/v1/token' && url.searchParams.get('grant_type') === 'password') {
+      if (!remote.password || body.password !== remote.password) return json(400, { error_code: 'invalid_credentials', msg: 'Invalid login credentials' })
+      return json(200, { access_token: token(body.email), refresh_token: 'refresh', expires_in: 3600 })
+    }
     if (url.pathname === '/rest/v1/progress') {
       // Like the real rule: only a signed-in person reaches the row.
       if (!request.headers().authorization?.startsWith('Bearer x.')) return json(401, { message: 'not signed in' })
@@ -494,13 +505,27 @@ export const tests = {
     await see(page, 'Signed in as learner@example.com')
     await online(remote, (d) => d.lessons[L1], 'lesson 1.1 from device A')
 
-    // Device B signs in with nothing of its own and receives device A's progress.
+    // Device A chooses a password, so the other devices need no email.
+    await page.getByLabel('Password for your other devices').fill('correct horse 42')
+    await button(page, 'Save the password').click()
+    await see(page, 'Password saved.')
+
+    // Device B signs in with the password while device A stays signed in, and receives A's progress.
     const contextB = await browser.newContext({ baseURL: BASE, viewport: { width: 1200, height: 900 } })
     await fakeSupabase(contextB, remote)
     const pageB = await contextB.newPage()
     pageB.setDefaultTimeout(8000)
     try {
-      await signIn(pageB)
+      await pageB.goto('/')
+      await pageB.getByLabel('Email', { exact: true }).fill('learner@example.com')
+      await pageB.getByLabel('Password', { exact: true }).fill('wrong password')
+      await button(pageB, 'Sign in with the password').click()
+      await see(pageB, 'That email and password do not match.')
+      await pageB.getByLabel('Password', { exact: true }).fill('correct horse 42')
+      await button(pageB, 'Sign in with the password').click()
+      await see(pageB, 'Signed in as learner@example.com')
+      await page.reload()
+      await see(page, 'Signed in as learner@example.com')
       await pageB.waitForFunction(([key, lesson]) => JSON.parse(localStorage.getItem(key) ?? '{}').lessons?.[lesson], [KEY, L1])
 
       // Both devices change something before either uploads: the two are merged, nothing is lost.
@@ -533,8 +558,12 @@ export const tests = {
       expect((await saved(pageB)).lessons[L2], 'device B lost a lesson it should have kept')
 
       // Signing out stops the uploads and keeps the progress on the device.
-      await button(pageB, 'Sign out').click()
+      await button(pageB, 'Sign out on this device').click()
       await see(pageB, 'Signed out. Your progress stays on this device.')
+      expect(remote.logouts?.join() === 'local', 'signing out on one device would have signed out the others')
+      await page.goto('/')
+      await button(page, 'Sync now').click()
+      await see(page, 'Signed in as learner@example.com')
       const before = remote.uploads
       await pageB.goto('/capm/1-04-principles-part-1')
       await button(pageB, 'Mark lesson as completed').click()

@@ -160,6 +160,39 @@ export async function confirmCode(code: string) {
   }
 }
 
+/**
+ * Sign in with email and password. This needs no email, so it works on any number of
+ * devices at once, and it is not affected by a mail service opening sign-in links.
+ */
+export async function signInWithPassword(email: string, password: string) {
+  show({ status: 'syncing', message: 'Signing in' })
+  try {
+    const tokens = await call('/auth/v1/token?grant_type=password', { method: 'POST', body: { email, password } })
+    signedIn(tokens, email)
+  } catch (error) {
+    const text = (error as Error).message
+    show({
+      status: 'off',
+      message: /invalid login credentials/i.test(text)
+        ? 'That email and password do not match. If you have not chosen a password yet, sign in by email on one device first and set one there.'
+        : text,
+    })
+  }
+}
+
+/** Choose or change the password, from a device that is signed in. */
+export async function setPassword(password: string): Promise<boolean> {
+  show({ status: 'syncing', message: 'Saving the password' })
+  try {
+    await call('/auth/v1/user', { method: 'PUT', token: await token(), body: { password } })
+    show({ status: 'idle', message: 'Password saved. On your other devices, sign in with this email and password.' })
+    return true
+  } catch (error) {
+    show({ status: saved.session ? 'idle' : 'off', message: (error as Error).message })
+    return false
+  }
+}
+
 export function cancelSignIn() {
   save({ ...saved, pendingEmail: undefined })
   show({ pendingEmail: undefined, message: '' })
@@ -167,7 +200,8 @@ export function cancelSignIn() {
 
 export function signOut() {
   const token = saved.session?.accessToken
-  if (token) void call('/auth/v1/logout', { method: 'POST', token }).catch(() => undefined)
+  // "local" ends the sign-in on this device only; your other devices stay signed in.
+  if (token) void call('/auth/v1/logout?scope=local', { method: 'POST', token }).catch(() => undefined)
   save({})
   show({ email: undefined, status: 'off', message: 'Signed out. Your progress stays on this device.', lastSync: undefined })
 }
