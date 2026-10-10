@@ -343,5 +343,145 @@
         "label": "PMBOK 8, Appendix X5.3"
       }
     ]
+  },
+  {
+    "id": "q18",
+    "q": "Which 7th edition principle asks you to act with integrity, care, trustworthiness and compliance?",
+    "options": [
+      "Demonstrate leadership behaviors",
+      "Be a diligent, respectful and caring steward",
+      "Create a collaborative team environment",
+      "Effectively engage with stakeholders"
+    ],
+    "answer": 1,
+    "explanation": "Stewardship, the first of the 12 principles, covers integrity, care, trustworthiness and compliance.",
+    "ref": "PMBOK 7, Standard 3.1",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 51,
+        "label": "PMBOK 7, Standard 3.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Which 7th edition performance domain covers metrics, earned value, dashboards and forecasts?",
+    "options": [
+      "Planning",
+      "Delivery",
+      "Project Work",
+      "Measurement"
+    ],
+    "answer": 3,
+    "explanation": "The Measurement performance domain addresses assessing project performance and taking action to maintain acceptable performance.",
+    "ref": "PMBOK 7, Guide 2.7",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 188,
+        "label": "PMBOK 7, Guide 2.7"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which 7th edition performance domain deals with risk, ambiguity, complexity and volatility?",
+    "options": [
+      "Uncertainty",
+      "Measurement",
+      "Planning",
+      "Stakeholder"
+    ],
+    "answer": 0,
+    "explanation": "The Uncertainty performance domain addresses activities and functions associated with risk and uncertainty, including ambiguity, complexity and volatility.",
+    "ref": "PMBOK 7, Guide 2.8",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 211,
+        "label": "PMBOK 7, Guide 2.8"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which 7th edition performance domain covers requirements, scope, quality and delivering value?",
+    "options": [
+      "Project Work",
+      "Planning",
+      "Delivery",
+      "Team"
+    ],
+    "answer": 2,
+    "explanation": "The Delivery performance domain addresses delivering the scope and quality the project was undertaken to achieve.",
+    "ref": "PMBOK 7, Guide 2.6",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 175,
+        "label": "PMBOK 7, Guide 2.6"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A question asks about choosing a predictive, adaptive or hybrid approach and a delivery cadence. Which 7th edition performance domain is this?",
+    "options": [
+      "Planning",
+      "Development Approach and Life Cycle",
+      "Project Work",
+      "Uncertainty"
+    ],
+    "answer": 1,
+    "explanation": "The Development Approach and Life Cycle performance domain covers the development approach, cadence and life cycle phases of the project.",
+    "ref": "PMBOK 7, Guide 2.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 127,
+        "label": "PMBOK 7, Guide 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "What does the 7th edition principle \"Tailor based on context\" ask a team to do?",
+    "options": [
+      "Apply every process in full on every project",
+      "Follow the approach used on the last project",
+      "Let each team member choose a method",
+      "Design the approach to fit the project's context"
+    ],
+    "answer": 3,
+    "explanation": "Tailoring means designing the development approach based on the context of the project, its objectives, stakeholders, governance and environment, using just enough process.",
+    "ref": "PMBOK 7, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 71,
+        "label": "PMBOK 7, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Which 7th edition principle is about responding to changing conditions and recovering from setbacks?",
+    "options": [
+      "Embrace adaptability and resiliency",
+      "Enable change to achieve the future state",
+      "Navigate complexity",
+      "Optimize risk responses"
+    ],
+    "answer": 0,
+    "explanation": "Adaptability is the ability to respond to changing conditions; resiliency is the ability to absorb impacts and recover quickly from a setback.",
+    "ref": "PMBOK 7, Standard 3.11",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 82,
+        "label": "PMBOK 7, Standard 3.11"
+      }
+    ]
   }
 ]

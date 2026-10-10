@@ -116,7 +116,7 @@ A quick way to decide: a **law, a market, a culture or an existing system** is a
 
 ## Organizational structures
 
-@source PMBOK 8, Standard 2.2.5; PMBOK 8, Standard 2.2.5, Table 2-1
+@source PMBOK 8, Standard 2.2.5; PMBOK 8, Standard 2.2.5, Table 2-1; Process Groups: A Practice Guide, 2.5.1; Process Groups: A Practice Guide, 2.5.2
 
 There is no one-size-fits-all structure. The right one depends on the organization's size, industry, geographic spread, strategy and project complexity. What matters for the exam is how each structure affects the project manager.
 
@@ -138,6 +138,8 @@ How to remember it:
 - In a **matrix** structure, team members have two bosses: the functional manager and the project manager. Weak, balanced and strong describe how much power the project manager has.
 - In a **project-oriented** structure, the team works for the project manager, who has near-total authority over people and budget.
 
+> **On the exam.** *Process Groups: A Practice Guide* has the same table. The outline asks which structure **suits a predictive, plan-based project**. A **project-oriented** or **strong matrix** structure suits it best: the project manager has the authority, the budget and the dedicated people needed to carry out a detailed plan. In a **functional** or **weak matrix** structure the functional manager controls the people and the budget, so the project manager coordinates and must negotiate for resources. The guide lists **physical location** (colocated, regional, virtual) among the factors in choosing a structure: a **virtual** team needs more deliberate communication planning than a **colocated** one.
+
 ## Exam tips
 
 - "Lessons learned", "templates", "historical information" and "procedures" are OPAs. "Organizational culture", "market conditions", "government regulations" and "existing infrastructure" are EEFs.
@@ -147,4 +149,4 @@ How to remember it:
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, The Standard for Project Management, sections 1.3.2 and 2.2. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, The Standard for Project Management, sections 1.3.2 and 2.2. The reasoning on which structure suits a predictive project is standard PMI teaching drawn from the authority and resource columns of the table. Written in original wording for personal study.*

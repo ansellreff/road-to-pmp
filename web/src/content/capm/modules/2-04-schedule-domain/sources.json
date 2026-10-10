@@ -16,6 +16,11 @@
   },
   {
     "book": "pmbok6",
+    "page": 54,
+    "label": "PMBOK 6, 1.2.4.6"
+  },
+  {
+    "book": "pmbok6",
     "page": 232,
     "label": "PMBOK 6, 6.5.3.2"
   },
@@ -133,6 +138,11 @@
     "book": "pmbok8",
     "page": 301,
     "label": "PMBOK 8, Guide section 5, Rolling wave planning"
+  },
+  {
+    "book": "processgroups",
+    "page": 43,
+    "label": "Process Groups: A Practice Guide, Table 1-4"
   },
   {
     "book": "scheduling",

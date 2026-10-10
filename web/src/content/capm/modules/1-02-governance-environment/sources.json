@@ -53,5 +53,15 @@
     "book": "pmbok8",
     "page": 45,
     "label": "PMBOK 8, Standard 2.2.5, Table 2-1"
+  },
+  {
+    "book": "processgroups",
+    "page": 67,
+    "label": "Process Groups: A Practice Guide, 2.5.1"
+  },
+  {
+    "book": "processgroups",
+    "page": 68,
+    "label": "Process Groups: A Practice Guide, 2.5.2"
   }
 ]

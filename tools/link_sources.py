@@ -25,7 +25,7 @@ CACHE = ROOT / ".cache" / "books"
 # Page ranges (PDF pages) of the parts of each book, used to search in the right place.
 REGIONS = {
     "pmbok8": {"standard": (24, 107), "guide": (108, 321), "appendix": (322, 369), "glossary": (370, 381)},
-    "pmbok7": {"standard": (28, 87), "guide": (96, 291), "glossary": (328, 349)},
+    "pmbok7": {"standard": (28, 87), "guide": (96, 291), "appendix": (292, 327), "glossary": (328, 349)},
 }
 
 # Books whose sections are looked up in their table of contents, with the PDF page
@@ -284,6 +284,13 @@ def resolve(part: str) -> tuple[str, int] | None:
             if page:
                 return book, page
             wanted = wanted.rpartition(".")[0]  # fall back to the parent section
+        # The heading may be printed in capitals: look the exact number up in the contents.
+        # The same number can occur in the Standard and in the Guide, so take the one in this region.
+        for exact in re.finditer(
+            rf"^\s*{re.escape(number.group(1))}:?\s.*\[p(\d+)\]", toc(book), re.MULTILINE | re.IGNORECASE
+        ):
+            if region[0] <= int(exact.group(1)) <= region[1]:
+                return book, int(exact.group(1))
 
     section = re.search(r"section (\d+)", lowered)
     if section:

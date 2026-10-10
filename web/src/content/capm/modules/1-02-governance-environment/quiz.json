@@ -318,5 +318,45 @@
         "label": "PMBOK 8, Standard 2.2.1 and 2.2.2"
       }
     ]
+  },
+  {
+    "id": "q17",
+    "q": "Which organizational structure gives a predictive project's manager the most authority over budget and people?",
+    "options": [
+      "Functional",
+      "Weak matrix",
+      "Balanced matrix",
+      "Project-oriented"
+    ],
+    "answer": 3,
+    "explanation": "In a project-oriented structure the project manager's authority is high to almost total, the role is full-time, and the project manager manages the budget.",
+    "ref": "Process Groups: A Practice Guide, 2.5.1",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 67,
+        "label": "Process Groups: A Practice Guide, 2.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "In a weak matrix organization, who usually controls the project budget?",
+    "options": [
+      "The functional manager",
+      "The project manager",
+      "The project team",
+      "The customer"
+    ],
+    "answer": 0,
+    "explanation": "In functional and weak matrix structures the functional manager manages the project budget and the project manager's authority is low.",
+    "ref": "Process Groups: A Practice Guide, 2.5.1",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 67,
+        "label": "Process Groups: A Practice Guide, 2.5.1"
+      }
+    ]
   }
 ]

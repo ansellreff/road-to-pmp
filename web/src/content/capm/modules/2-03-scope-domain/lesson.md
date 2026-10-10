@@ -35,7 +35,7 @@ Scope has a central place in project management, because the **value** of a proj
 
 ## The six Scope processes
 
-@source PMBOK 8, Guide 2.2.2; PMBOK 8, Guide Figure 2-13
+@source PMBOK 8, Guide 2.2.2; PMBOK 8, Guide Figure 2-13; Process Groups: A Practice Guide, Table 1-4; PMBOK 6, 1.2.4.6
 
 | Focus Area | Process | Main output | Older name you may see |
 |---|---|---|---|
@@ -47,6 +47,8 @@ Scope has a central place in project management, because the **value** of a proj
 | Monitoring and Controlling | **Validate Scope** | Accepted deliverables, change requests | Validate Scope |
 
 The planning order is logical: decide **how** scope will be managed, find out what stakeholders **need**, describe the **scope**, then **break it down**.
+
+> **On the exam.** The **Scope** knowledge area also has six processes, with older names: **Plan Scope Management**, **Collect Requirements**, **Define Scope**, **Create WBS** (Planning); **Validate Scope**, **Control Scope** (Monitoring and Controlling). Module 1.12 has the full table of 49 processes.
 
 ## Plan Scope Management
 

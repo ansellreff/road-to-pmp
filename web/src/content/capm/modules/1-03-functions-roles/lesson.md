@@ -40,7 +40,7 @@ Whichever is used, it is the collective effort of the project team that delivers
 
 ## The project management team
 
-@source PMBOK 8, Standard 2.5.1
+@source PMBOK 8, Standard 2.5.1; CAPM Exam Content Outline, Domain 1
 
 The **project management team** may be only a project manager, or several people who share project management activities. It guides the team to achieve the goals and deliver value, and performs functions such as facilitating, mentoring and managing the processes.
 
@@ -51,6 +51,8 @@ The **project management team** may be only a project manager, or several people
 **Sphere of influence.** The project management team works with many parties: the project team, the sponsor, the PMO, portfolio and program managers, functional and operational managers, customers, users, suppliers and regulators. It negotiates with other managers for scarce resources, funding priorities and deliverables.
 
 **Leadership style.** Leaders should be versatile. **Situational leadership** means adjusting the style to the needs of the team, the urgency of the task and the complexity of the project, for example being more directive in a critical phase and more supportive when the team can work autonomously.
+
+> **On the exam.** The outline lists six roles a project manager plays. They are not defined in PMI's books; in plain words: **initiator** (gets the work started and removes the first obstacles), **negotiator** (obtains resources and agreement between parties), **listener** (understands stakeholders' and team members' concerns), **coach** (develops team members' skills and confidence), **working member** (does part of the project work, common on small teams) and **facilitator** (helps the group reach decisions without imposing them).
 
 ## Five competencies of a project management team
 
@@ -96,7 +98,7 @@ The **project team** is the set of individuals who perform the project's work an
 
 ## Product management and the product life cycle
 
-@source PMBOK 8, Standard 2.3
+@source PMBOK 8, Standard 2.3; Process Groups: A Practice Guide, 1.11; PMI Guide to Business Analysis, 4.5.3.1
 
 **Product management** integrates people, data, processes and business systems to create, develop and maintain a product or service throughout its life cycle. It is a separate discipline from project management.
 
@@ -122,6 +124,18 @@ Two roles bridge product and project work:
 - **Product owner:** keeps the team focused on valuable features by maintaining and prioritizing the **product backlog**.
 - **Business analyst:** gathers and documents requirements so that project scope and product functionality match business needs.
 
+**Project management plan versus product plans.** The exam outline asks you to tell their deliverables apart.
+
+| | Project management plan | Product plans |
+|---|---|---|
+| **Answers** | **How** will this project be executed, monitored, controlled and closed? | **Where** is the product going, and what comes next? |
+| **Typical contents** | Subsidiary plans (scope, schedule, cost, quality, risk and others) and the **baselines** | Product **vision**, product **roadmap**, release plan, product **backlog** |
+| **Time span** | The life of **one project** | The whole **product life cycle**, across many projects |
+| **Owner** | Project manager | Product manager or product owner |
+| **Changes** | Through **change control**, once baselined | Continuously, as the market and feedback change |
+
+PMI's books do not define a document called a "product management plan". Read the outline's phrase as the product-level plans in the right-hand column.
+
 ## Exam tips
 
 - "Who secures funding and removes obstacles above the project manager's authority?" The **sponsor**.
@@ -133,4 +147,4 @@ Two roles bridge product and project work:
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, The Standard for Project Management, sections 2.3, 2.4 and 2.5. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, The Standard for Project Management, sections 2.3, 2.4 and 2.5. The project management plan versus product plans table and the one-line meanings of the six project manager roles are my own reading of the exam outline; PMI's books define neither a "product management plan" nor those six roles. Written in original wording for personal study.*

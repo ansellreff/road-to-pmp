@@ -44,6 +44,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Session 24 done: module 4.7 (solution evaluation: the evaluation approach and metrics, evaluating acceptance results and addressing defects, the release decision and its four bases, measuring business value after release). **Domain 4 is complete: 7 of 7. All CAPM content is written: 38 of 38 modules, 791 quiz questions, 1,167 flashcards.** One quiz question in the whole course has no book page. Issue 64 added to the log. | You: study 4.7. Next: Session 25, the full catch-up, planned with you first |
 | 2026-10-10 | Session 25 planned with you and approved: four sessions (25a audits, 25b exam alignment of Domains 1 and 2, 25c quiz repair, 25d exam alignment of Domains 3 and 4 and the PDF list). Your decisions: keep the Eighth Edition lessons and add an exam-terms layer; module 1.11 becomes exam content; all quizzes are repaired. **Session 25a done:** three new checks (quiz quality, tables and markup, worked examples), every lesson checked as rendered in a browser, and the exam outline mapped to the modules. Results are in "Session 25a audit results" below. Issues 65 to 68 added to the log. | You: read the audit results. Next: Session 25b |
 | 2026-10-10 | Your suggestion for the mock exams recorded (several fixed exams, like the real exam, domains shown separately, easy to learn from), with a proposed design under "Session 26 proposal". | You: choose mixed order or domain chapters, and 3 or 4 mock exams. Next: Session 25b |
+| 2026-10-10 | Your mock exam decisions recorded: two modes (practice mode grouped by domain, real exam mode) and four mock exams. **Session 25b done:** module 1.11 is now exam content (renamed, 7 new questions on the Seventh Edition); new module 1.12 teaches the 5 process groups, 10 knowledge areas and all 49 processes; "On the exam" notes added to 12 modules in Domains 1 and 2; four outline gaps filled (organizational structure suitability, project management plan vs product plans, the six project manager roles, projects as a vehicle for change). **CAPM is now 39 modules, 827 questions, 1,208 flashcards.** Issues 69 and 70 added. | Next: Session 25c, quiz repair |
 
 ## How your progress is saved
 
@@ -134,10 +135,10 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 21 to 24 | Domain 4: 7 modules |
 | 🟡 | 25 | Full catch-up, requested 2026-10-10 and planned with you. In four parts: |
 | ✅ | 25a | Audits: quiz quality check, table and markup check, worked-example check, render check of every lesson, exam outline coverage map |
-| ⬜ | 25b | Exam alignment of Domains 1 and 2: module 1.11 becomes exam content and is expanded; "On the exam" notes from PMBOK 7 and the Process Groups guide; fill the outline gaps |
+| ✅ | 25b | Exam alignment of Domains 1 and 2: module 1.11 becomes exam content and is expanded; "On the exam" notes from PMBOK 7 and the Process Groups guide; fill the outline gaps |
 | ⬜ | 25c | Quiz repair: remove the longest-answer give-away in all quizzes, remove duplicates, top up Domain 1, add scenario questions |
 | ⬜ | 25d | Exam alignment of Domains 3 and 4 (2017 Agile Practice Guide, Business Analysis for Practitioners); final list of PDFs; close the edition question |
-| ⬜ | 26 | Feature: mock exams. Your requirements (2026-10-10): clear and easy to learn from; like the real exam; domains shown separately; **several fixed mock exams**, preferred over one randomized exam. Proposed design is under "Session 26 proposal" below; to be confirmed in plan mode. |
+| ⬜ | 26 | Feature: mock exams. **Decided with you on 2026-10-10:** two modes, **practice mode** (questions grouped by domain, easier to learn from) and **real exam mode** (simulates the CAPM exam), and **four fixed mock exams**. Details under "Session 26 proposal" below; to be confirmed in plan mode. |
 | ⬜ | 27 | UI/UX polish (see backlog below) |
 | ⬜ | 28 | Go online: GitHub and Vercel, test on phone |
 
@@ -193,11 +194,11 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **38 of 38 modules done** (791 quiz questions, 1,167 flashcards).
+Overall: **39 of 39 modules done** (827 quiz questions, 1,208 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
-| ✅ | 1. PM Fundamentals and Core Concepts | 11 / 11 |
+| ✅ | 1. PM Fundamentals and Core Concepts | 12 / 12 |
 | ✅ | 2. Predictive, Plan-Based Methodologies | 12 / 12 |
 | ✅ | 3. Agile Frameworks / Methodologies | 8 / 8 |
 | ✅ | 4. Business Analysis Frameworks | 7 / 7 |
@@ -216,7 +217,8 @@ Overall: **38 of 38 modules done** (791 quiz questions, 1,167 flashcards).
 | ✅ | 1.8 The 7 Performance Domains and Tailoring | 2026-10-10 |
 | ✅ | 1.9 Constraints, Risks, Issues and Assumptions | 2026-10-10 |
 | ✅ | 1.10 Leadership Skills, Emotional Intelligence and Ethics | 2026-10-10 |
-| ✅ | 1.11 Older Terms You May Still See (12 Principles, 49 Processes) **\*** additional information, not exam content | 2026-10-10 |
+| ✅ | 1.11 The Exam's Framework: 12 Principles and 8 Performance Domains (exam content since 2026-10-10) | 2026-10-10 |
+| ✅ | 1.12 Process Groups, Knowledge Areas and the 49 Processes | 2026-10-10 |
 
 **Domain 2: Predictive, Plan-Based Methodologies**
 
@@ -301,7 +303,7 @@ Recorded on 2026-10-10 from your suggestion. Not built yet; to be confirmed in p
 
 **How many mock exams:** a question is assigned to one mock exam only, so exams do not repeat each other. Today's bank supports **3** full exams (limited by Domain 1 with 166 questions and Domain 4 with 156). Adding about 50 questions to Domain 1 and 10 to Domain 4 in Session 25c would allow **4**.
 
-**Open choice for you:** mixed order as on the real exam (recommended, with the review grouped by domain), or the exam itself divided into four domain chapters.
+**Decided with you on 2026-10-10:** both. **Practice mode** groups the questions by domain; **real exam mode** mixes them as the real exam does. There will be **four** mock exams, each usable in either mode. Four exams need 216 / 104 / 120 / 160 questions for Domains 1 to 4; the bank has 218 / 278 / 174 / 156 after Session 25b, so Domain 4 needs a few more (Session 25c).
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.
@@ -324,7 +326,7 @@ Not checked by a tool: calculations that appear only inside tables without an "=
 
 ### Exam outline coverage
 
-Every task and enabler of the CAPM Exam Content Outline (2023), with where it is taught. **45 of 60 enablers are covered, 13 are thin, 2 are missing.**
+Every task and enabler of the CAPM Exam Content Outline (2023), with where it is taught. **At the audit: 45 of 60 enablers covered, 13 thin, 2 missing. After Session 25b: 53 covered, 6 thin, 1 missing** (the remaining ones are in Domains 3 and 4, for Session 25d, plus "responding to a planned strategy").
 
 | Domain and task | Enabler | Where | Status |
 |---|---|---|---|
@@ -334,9 +336,9 @@ Every task and enabler of the CAPM Exam Content Outline (2023), with where it is
 | | Issues, risks, assumptions, constraints | 1.9 | Covered |
 | | Review or critique project scope | 2.3 | Covered |
 | | Apply the code of ethics | 1.10 | Covered |
-| | A project as a vehicle for change | 1.11 only | **Thin** |
+| | A project as a vehicle for change | 1.12 | Covered (25b) |
 | 1.2 Planning | Purpose of cost, quality, risk, schedule | 2.4, 2.6, 2.10, 2.11 | Covered |
-| | Project management plan vs product management plan | none | **Missing** |
+| | Project management plan vs product management plan | 1.3, 1.12 | Covered (25b) |
 | | Milestone vs task duration | 2.4 | Covered |
 | | Number and type of resources | 2.9 | Covered |
 | | Use a risk register | 1.9, 2.10 | Covered |
@@ -344,23 +346,23 @@ Every task and enabler of the CAPM Exam Content Outline (2023), with where it is
 | | Project closure and transitions | 1.7, 2.2 | Covered |
 | 1.3 Roles | Project manager and sponsor | 1.3 | Covered |
 | | Project team and sponsor | 1.3 | Covered |
-| | The project manager as initiator, negotiator, listener, coach, working member, facilitator | none by these names | **Thin** |
+| | The project manager as initiator, negotiator, listener, coach, working member, facilitator | 1.3 | Covered (25b); not defined in any book |
 | | Leadership and management | 1.10 | Covered |
 | | Emotional intelligence | 1.10 | Covered |
 | 1.4 Following strategies | Responding to a planned strategy or framework (communication, risk) | 2.8, 2.10 in passing | **Thin** |
 | | Project initiation and benefit planning | 1.7, 2.2 | Covered |
-| 1.5 Problem-solving tools | Effectiveness of a meeting | 2.12 in passing | **Thin** |
+| 1.5 Problem-solving tools | Effectiveness of a meeting | 2.12, "Running a good meeting" | Covered (found on re-reading) |
 | | Focus groups, standup meetings, brainstorming | 2.12, 4.4 | Covered |
-| 2.1 When to use predictive | Suitability for the organizational structure (virtual, colocated, matrix, hierarchical) | 1.2 describes structures; suitability not stated | **Thin** |
-| | Activities within each process | 2.1 to 2.11 | Covered, in Eighth Edition process names |
-| | Examples of typical activities | 2.1 to 2.11 | Covered, in Eighth Edition process names |
-| | Differences between project components | unclear term | **Thin** |
+| 2.1 When to use predictive | Suitability for the organizational structure (virtual, colocated, matrix, hierarchical) | 1.2 | Covered (25b) |
+| | Activities within each process | 1.12, 2.1 to 2.11 | Covered; exam names in 1.12 and in each module's note (25b) |
+| | Examples of typical activities | 1.12, 2.1 to 2.11 | Covered (25b) |
+| | Differences between project components | 1.6, 1.12 (charter, plan, documents; phases and process groups) | Covered (25b) |
 | 2.2 Plan and schedule | Critical path methods | 2.5 | Covered |
 | | Schedule variance | 2.7 | Covered |
 | | Work breakdown structures | 2.3 | Covered |
 | | Work packages | 2.3 | Covered |
 | | Quality management plan | 2.11 | Covered |
-| | Integration management plan | 2.2, under the name "governance" | **Thin** |
+| | Integration management plan | 1.12, 2.2 | Covered (25b) |
 | 2.3 Project controls | Artifacts of predictive projects | 2.1 | Covered |
 | | Cost and schedule variances | 2.7 | Covered |
 | 3.1 When to use adaptive | Pros and cons of adaptive and predictive | 1.6, 3.1, 3.8 compare, without listing pros and cons | **Thin** |
@@ -463,13 +465,15 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 63 | To save reading time I filtered short lines out of the book pages. That dropped a list item: the guide's threat strategies appeared to lack "avoid", and I first wrote in the footer that it was missing from the guide. | Caught by re-checking the full page before finishing; the footer was corrected. Lists copied from a filtered page are now checked against the unfiltered page. | Module 4.5, product risks |
 | 64 | PMI's guide numbers the solution evaluation processes in an order that is not the order in time (performance evaluation is 9.1 but happens last), and it describes the product portfolio matrix without naming its quadrants. | Module 4.7 keeps the guide's names and process groups, teaches the processes in time order, and says so. The usual quadrant names (stars, question marks, cash cows, dogs) are added in brackets and listed in the footer as not from the guide. | Module 4.7 |
 | 65 | In 58% of quiz questions the correct answer was the longest option, so a quiz could be passed by picking the longest answer. I wrote full, careful correct answers and short wrong ones, and no check looked for it. | Found by measuring in Session 25a. `check_content.py` now warns for any module over 35% and lists duplicates and catch-all options. The repair of all quizzes is Session 25c. New questions are written with options of similar length. | `tools/check_content.py --report`; Session 25c |
-| 66 | Module 1.11 is marked with a red * as "not on the exam", but it covers the Seventh Edition principles and domains and the 49 processes, which are the exam's own references (issue 47). | To be made exam content and expanded in Session 25b. Until then, treat 1.11 as required reading. | Module 1.11; Session 25b |
+| 66 | Module 1.11 is marked with a red * as "not on the exam", but it covers the Seventh Edition principles and domains and the 49 processes, which are the exam's own references (issue 47). | Done in Session 25b: the red * is gone, the module counts toward progress, it is renamed, and it has 7 more questions. Its process material is expanded into the new module 1.12. | Module 1.11; Session 25b |
 | 67 | Five questions appear word for word in two modules. | Listed in the audit results. One of each pair is replaced in Session 25c. | "Session 25a audit results" |
+| 69 | Module 1.11 cited *Process Groups: A Practice Guide* for the ten knowledge areas, but that guide never uses the term: it lists the 49 processes by process group only. Knowledge areas come from the PMBOK Guide Sixth Edition, which is not one of the exam's references although the exam outline uses knowledge-area words ("integration management", "quality management plan"). | The source was corrected to the Sixth Edition, section 1.2.4.6. Modules 1.11 and 1.12 say where each grouping comes from. The assignment of each process to a knowledge area follows the Sixth Edition's chapters. | Modules 1.11 and 1.12 |
 | 54 | The Project Management Answer Book is written as numbered questions inside chapters, with no section numbers, and Wysocki's book has titled sections only. Both are commercial textbooks, not PMI publications. | New reference forms: `The Project Management Answer Book, Chapter 6, Q8` (opens the page of that question) and `Effective Project Management, <section title>`. Like every other book, they are opened from your folder only, are never committed or uploaded, and lessons use original wording. Wysocki is the Fifth Edition, so its page content may differ from the Eighth Edition the outline names. | `link_sources.py` |
 | 55 | Wysocki's Eighth Edition lists only chapters in its PDF contents, and it differs from the lessons in two wordings: it calls two lean principles "build integrity in" and "see the whole", and it uses "elapsed time" for duration in working days. | Reference form: `Effective Project Management, Chapter 7, Estimating Duration` (chapter, then the heading as printed). Chapter start pages are listed in `link_sources.py`. The lean table now shows both wordings, and the schedule lesson footer explains the two uses of "elapsed time". | `link_sources.py`; modules 2.4 and 3.3 |
 | 59 | A reference to a figure or table in the business analysis guide ("Figure 1-1") would have opened the book's first page without any warning, because that kind of reference was only understood for the PMBOK Guides. | Found while checking each new link against its page, before anything was reported. The linker now finds figures and tables in every book with a table of contents, and reports an error if one is not found. | `link_sources.py` |
 | 60 | You asked whether any figure errors remained after issue 59. | Every link in every module was checked by a script: each figure or table link must open the page that carries that caption, and any link sitting on a book's default page is listed for a check by eye. Result: 0 wrong. The script is kept as `tools/audit_links.py` and run after the linker every session. The linker also learned to find unnumbered headings by title ("Key Concepts for Elicitation") in books with a table of contents. | `tools/audit_links.py`, `link_sources.py` |
 | 68 | Lessons had never been checked as rendered, worked examples had only been checked by hand, and nothing tested table structure. | Session 25a added three checks: `check_examples.py` recomputes every written-out calculation and the critical path example; `check_content.py` tests tables and markup; and every lesson was loaded in a headless browser and its rendered tables, rows, notes and links compared with the source. All passed. The first version of the calculation check raised two false alarms on formulas written with letters, which was fixed. | `tools/check_examples.py`, `tools/check_content.py` |
+| 70 | Two new links to the Seventh Edition opened a default page, because that book numbers its Standard and its Guide separately ("2.2" exists in both) and prints headings in capitals. | Caught by `audit_links.py` straight after linking. The linker now looks the number up in the contents and takes the entry in the right part of the book. | `link_sources.py` |
 
 ### Individual lessons
 

@@ -49,7 +49,7 @@ A threshold is the level of risk **below which** the organization accepts a risk
 
 ## The six Risk processes
 
-@source PMBOK 8, Guide 2.7.2; PMBOK 8, Guide Figure 2-47
+@source PMBOK 8, Guide 2.7.2; PMBOK 8, Guide Figure 2-47; Process Groups: A Practice Guide, Table 1-4; PMBOK 6, 1.2.4.6
 
 | Focus Area | Process | Main output | Older name you may see |
 |---|---|---|---|
@@ -63,6 +63,8 @@ A threshold is the level of risk **below which** the organization accepts a risk
 The aim of the domain is to **increase** the probability and impact of opportunities and **decrease** the probability and impact of threats.
 
 > **Edition note.** Older material has seven risk processes, with qualitative and quantitative analysis as two separate processes. The 8th edition combines them in Perform Risk Analysis. Questions still ask about the two kinds of analysis.
+
+> **On the exam.** The **Risk** knowledge area has **seven** processes, because analysis is split in two: **Plan Risk Management**, **Identify Risks**, **Perform Qualitative Risk Analysis**, **Perform Quantitative Risk Analysis**, **Plan Risk Responses** (Planning); **Implement Risk Responses** (Executing); **Monitor Risks** (Monitoring and Controlling). Module 1.12 has the full table of 49 processes.
 
 ## Plan Risk Management
 

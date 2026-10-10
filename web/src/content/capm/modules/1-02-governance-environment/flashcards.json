@@ -1,23 +1,112 @@
 [
-  { "id": "c1", "front": "Organizational governance", "back": "Direction and control for the whole organization through policies, processes, procedures and decisions, to meet strategic and operational goals." },
-  { "id": "c2", "front": "Project governance", "back": "The adaptable framework that guides project management activities to create value aligned with organizational goals: structure, roles, responsibilities and decision-making models." },
-  { "id": "c3", "front": "Who typically oversees organizational governance?", "back": "An executive committee or the organization's leaders." },
-  { "id": "c4", "front": "RACI", "back": "Responsible, Accountable, Consulted, Informed. A matrix that defines who does what and who decides." },
-  { "id": "c5", "front": "Steering committee", "back": "A project governance body that oversees milestones, enforces standards and resolves escalated issues." },
-  { "id": "c6", "front": "Enterprise environmental factors (EEFs)", "back": "Conditions not directly influenced by the project team that impact, constrain or direct the project. Internal or external to the organization." },
-  { "id": "c7", "front": "Organizational process assets (OPAs)", "back": "Plans, processes, documents, templates and knowledge repositories specific to and used by the performing organization. Always internal." },
-  { "id": "c8", "front": "Quick test: EEF or OPA?", "back": "Can the team change it? No, and it still affects the project: EEF. Is it an asset the organization owns and the team uses: OPA." },
-  { "id": "c9", "front": "Three examples of internal EEFs", "back": "Organizational culture and structure; existing infrastructure and IT systems; resource availability and employee capability." },
-  { "id": "c10", "front": "Three examples of external EEFs", "back": "Marketplace conditions; laws and government or industry standards; financial conditions such as exchange and interest rates." },
-  { "id": "c11", "front": "Organizational culture: EEF or OPA?", "back": "EEF (internal). The team cannot change it and it shapes how the project is run." },
-  { "id": "c12", "front": "The two groups of OPAs", "back": "1) Policies, processes and procedures. 2) Organizational knowledge repositories." },
-  { "id": "c13", "front": "Which OPA group is updated throughout the project?", "back": "Organizational knowledge repositories: lessons learned, financial data, issue and defect data, metrics." },
-  { "id": "c14", "front": "Who usually establishes policies, processes and procedures?", "back": "The PMO or another function outside the project. The project team does not normally update them, but may tailor them." },
-  { "id": "c15", "front": "Lessons learned: EEF or OPA?", "back": "OPA. They are stored in an organizational knowledge repository." },
-  { "id": "c16", "front": "Tailoring", "back": "Adapting the organization's standard processes, life cycles, templates and checklists to the needs of a specific project." },
-  { "id": "c17", "front": "Functional structure: project manager's authority and role", "back": "Low authority, part-time role, low resource availability. People report to functional managers." },
-  { "id": "c18", "front": "Project-oriented structure: project manager's authority and role", "back": "High to almost total authority, full-time role, high resource availability. The team works for the project." },
-  { "id": "c19", "front": "Weak, balanced and strong matrix: project manager's authority", "back": "Weak: low. Balanced: low to moderate. Strong: moderate to high (full-time role)." },
-  { "id": "c20", "front": "What defines a matrix structure?", "back": "Team members answer to both a functional manager and a project manager." },
-  { "id": "c21", "front": "How are EEFs and OPAs used in processes?", "back": "As inputs to many project management processes, especially planning." }
+  {
+    "id": "c1",
+    "front": "Organizational governance",
+    "back": "Direction and control for the whole organization through policies, processes, procedures and decisions, to meet strategic and operational goals."
+  },
+  {
+    "id": "c2",
+    "front": "Project governance",
+    "back": "The adaptable framework that guides project management activities to create value aligned with organizational goals: structure, roles, responsibilities and decision-making models."
+  },
+  {
+    "id": "c3",
+    "front": "Who typically oversees organizational governance?",
+    "back": "An executive committee or the organization's leaders."
+  },
+  {
+    "id": "c4",
+    "front": "RACI",
+    "back": "Responsible, Accountable, Consulted, Informed. A matrix that defines who does what and who decides."
+  },
+  {
+    "id": "c5",
+    "front": "Steering committee",
+    "back": "A project governance body that oversees milestones, enforces standards and resolves escalated issues."
+  },
+  {
+    "id": "c6",
+    "front": "Enterprise environmental factors (EEFs)",
+    "back": "Conditions not directly influenced by the project team that impact, constrain or direct the project. Internal or external to the organization."
+  },
+  {
+    "id": "c7",
+    "front": "Organizational process assets (OPAs)",
+    "back": "Plans, processes, documents, templates and knowledge repositories specific to and used by the performing organization. Always internal."
+  },
+  {
+    "id": "c8",
+    "front": "Quick test: EEF or OPA?",
+    "back": "Can the team change it? No, and it still affects the project: EEF. Is it an asset the organization owns and the team uses: OPA."
+  },
+  {
+    "id": "c9",
+    "front": "Three examples of internal EEFs",
+    "back": "Organizational culture and structure; existing infrastructure and IT systems; resource availability and employee capability."
+  },
+  {
+    "id": "c10",
+    "front": "Three examples of external EEFs",
+    "back": "Marketplace conditions; laws and government or industry standards; financial conditions such as exchange and interest rates."
+  },
+  {
+    "id": "c11",
+    "front": "Organizational culture: EEF or OPA?",
+    "back": "EEF (internal). The team cannot change it and it shapes how the project is run."
+  },
+  {
+    "id": "c12",
+    "front": "The two groups of OPAs",
+    "back": "1) Policies, processes and procedures. 2) Organizational knowledge repositories."
+  },
+  {
+    "id": "c13",
+    "front": "Which OPA group is updated throughout the project?",
+    "back": "Organizational knowledge repositories: lessons learned, financial data, issue and defect data, metrics."
+  },
+  {
+    "id": "c14",
+    "front": "Who usually establishes policies, processes and procedures?",
+    "back": "The PMO or another function outside the project. The project team does not normally update them, but may tailor them."
+  },
+  {
+    "id": "c15",
+    "front": "Lessons learned: EEF or OPA?",
+    "back": "OPA. They are stored in an organizational knowledge repository."
+  },
+  {
+    "id": "c16",
+    "front": "Tailoring",
+    "back": "Adapting the organization's standard processes, life cycles, templates and checklists to the needs of a specific project."
+  },
+  {
+    "id": "c17",
+    "front": "Functional structure: project manager's authority and role",
+    "back": "Low authority, part-time role, low resource availability. People report to functional managers."
+  },
+  {
+    "id": "c18",
+    "front": "Project-oriented structure: project manager's authority and role",
+    "back": "High to almost total authority, full-time role, high resource availability. The team works for the project."
+  },
+  {
+    "id": "c19",
+    "front": "Weak, balanced and strong matrix: project manager's authority",
+    "back": "Weak: low. Balanced: low to moderate. Strong: moderate to high (full-time role)."
+  },
+  {
+    "id": "c20",
+    "front": "What defines a matrix structure?",
+    "back": "Team members answer to both a functional manager and a project manager."
+  },
+  {
+    "id": "c21",
+    "front": "How are EEFs and OPAs used in processes?",
+    "back": "As inputs to many project management processes, especially planning."
+  },
+  {
+    "id": "c22",
+    "front": "Which structure best suits a predictive, plan-based project?",
+    "back": "Project-oriented or strong matrix: the project manager has the authority, budget and dedicated people."
+  }
 ]

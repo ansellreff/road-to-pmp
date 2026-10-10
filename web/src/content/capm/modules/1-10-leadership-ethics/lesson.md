@@ -8,7 +8,7 @@
 
 ## Leadership and management
 
-@source PMBOK 8, Guide section 5, Leadership; Process Groups: A Practice Guide, 3.3.2; PMBOK 6, 3.4.5
+@source PMBOK 8, Guide section 5, Leadership; Process Groups: A Practice Guide, 3.3.2; PMBOK 6, 3.4.5; PMBOK 7, Guide 2.2
 
 **Leadership** is the knowledge, skills and behaviors needed to guide, motivate and direct a team toward its goals. It includes negotiation, resilience, communication, problem-solving, critical thinking and interpersonal skills. The 8th edition puts it plainly: the common denominator in all projects is people, and people can be counted, but they are not numbers.
 
@@ -27,6 +27,8 @@ The classic PMI comparison:
 Neither is better. Managing keeps the work organized; leading keeps people committed. Recall from module 1.5 that leadership is not tied to a job title and that authority and leadership are different things.
 
 > This table comes from long-standing PMI teaching (it appeared in the 6th edition) and is still commonly tested. The 8th edition covers the same ground through the principle Be an Accountable Leader.
+
+> **On the exam.** The 7th edition covers leadership, team culture and high-performing teams in its **Team performance domain**, and has a principle named "Demonstrate leadership behaviors".
 
 ## Leadership structures and styles
 

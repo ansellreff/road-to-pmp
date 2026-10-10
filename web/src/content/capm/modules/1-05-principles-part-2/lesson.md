@@ -102,7 +102,7 @@ Empowered teams affect every domain. They can propose speeding up, slowing down 
 
 ## The six principles at a glance
 
-@source PMBOK 8, Standard 3.1
+@source PMBOK 8, Standard 3.1; PMBOK 7, Standard section 3
 
 | Principle | One-line essence | Dimension |
 |---|---|---|
@@ -112,6 +112,8 @@ Empowered teams affect every domain. They can propose speeding up, slowing down 
 | Build an Empowered Culture | Trust, clarity and team agreements | Ownership |
 | Focus on Value | Outcomes and benefits over outputs | Value-driven |
 | Integrate Sustainability Within All Project Areas | People, planet, society and value, for the long term | Value-driven |
+
+> **On the exam.** The 7th edition, which the exam uses, has **12 principles**. Behind this lesson's three: **stewardship** and **leadership** (Be an Accountable Leader) and **team** (Build an Empowered Culture). Sustainability was part of stewardship. Module 1.11 lists all twelve and where each went.
 
 ## Exam tips
 

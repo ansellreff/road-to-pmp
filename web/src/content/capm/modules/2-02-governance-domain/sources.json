@@ -1,5 +1,10 @@
 [
   {
+    "book": "pmbok6",
+    "page": 54,
+    "label": "PMBOK 6, 1.2.4.6"
+  },
+  {
     "book": "pmbok8",
     "page": 120,
     "label": "PMBOK 8, Guide 2.1.6"
@@ -63,5 +68,10 @@
     "book": "pmbok8",
     "page": 138,
     "label": "PMBOK 8, Guide 2.1.7"
+  },
+  {
+    "book": "processgroups",
+    "page": 43,
+    "label": "Process Groups: A Practice Guide, Table 1-4"
   }
 ]

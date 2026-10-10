@@ -51,7 +51,7 @@ The **assumption log** is a project document that records **all assumptions and 
 
 ## Risk
 
-@source PMBOK 8, Guide 2.7.1
+@source PMBOK 8, Guide 2.7.1; PMBOK 7, Guide 2.8
 
 A **risk** is an uncertain event or condition that, if it occurs, has a **positive or negative** effect on one or more objectives.
 
@@ -66,6 +66,8 @@ A risk can be written in a **cause, event, consequence** structure: "Because the
 **Individual vs overall risk.** *Individual* risks are specific events. **Overall risk** is the effect of uncertainty on the project as a whole. If overall risk is too high, the organization may cancel the project.
 
 The **risk register** is the repository where the outputs of the risk processes are recorded: identified risks, their analysis, the planned responses and their status. It is updated regularly throughout the project.
+
+> **On the exam.** The 7th edition covers risk in its **Uncertainty performance domain**, together with ambiguity, complexity and volatility. The exam's process reference has seven risk processes (module 1.12).
 
 ## Risk classification
 

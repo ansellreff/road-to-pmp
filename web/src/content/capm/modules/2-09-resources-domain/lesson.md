@@ -27,7 +27,7 @@ The domain is about how well the project plans for and uses its resources, so th
 
 ## The five Resources processes
 
-@source PMBOK 8, Guide 2.6.2; PMBOK 8, Guide Figure 2-40
+@source PMBOK 8, Guide 2.6.2; PMBOK 8, Guide Figure 2-40; Process Groups: A Practice Guide, Table 1-4; PMBOK 6, 1.2.4.6
 
 | Focus Area | Process | Main output | Older name you may see |
 |---|---|---|---|
@@ -36,6 +36,8 @@ The domain is about how well the project plans for and uses its resources, so th
 | Executing | **Acquire Resources** | Project team assignments, physical resource assignments, resource calendars | Acquire Resources |
 | Executing | **Lead the Team** | Team performance assessments, change requests | Develop Team, Manage Team |
 | Monitoring and Controlling | **Monitor and Control Resourcing** | Work performance information, change requests | Control Resources |
+
+> **On the exam.** The **Resource** knowledge area has **six** processes: **Plan Resource Management**, **Estimate Activity Resources** (Planning); **Acquire Resources**, **Develop Team**, **Manage Team** (Executing); **Control Resources** (Monitoring and Controlling). This lesson's Lead the Team covers both Develop Team and Manage Team. Module 1.12 has the full table of 49 processes.
 
 ## Plan Resource Management
 

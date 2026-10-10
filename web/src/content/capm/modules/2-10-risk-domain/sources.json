@@ -6,6 +6,11 @@
   },
   {
     "book": "pmbok6",
+    "page": 54,
+    "label": "PMBOK 6, 1.2.4.6"
+  },
+  {
+    "book": "pmbok6",
     "page": 426,
     "label": "PMBOK 6, 11.5"
   },
@@ -118,6 +123,11 @@
     "book": "pmbok8",
     "page": 309,
     "label": "PMBOK 8, Guide section 5, SWOT (strengths, weaknesses, opportunities, threats) analysis"
+  },
+  {
+    "book": "processgroups",
+    "page": 43,
+    "label": "Process Groups: A Practice Guide, Table 1-4"
   },
   {
     "book": "riskguide",

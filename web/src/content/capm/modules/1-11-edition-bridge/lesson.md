@@ -1,6 +1,7 @@
 ## Key points
 
-- This course is built on the **8th edition**. Most exam-prep courses, practice questions and possibly the exam itself still use terms from the **7th edition** and from ***Process Groups: A Practice Guide***.
+- **The CAPM exam is written from the 7th edition and from *Process Groups: A Practice Guide*.** PMI's Exam Content Outline names both as references; it does not name the 8th edition, on which this course's lessons are built.
+- This module gives you the **exam's vocabulary** for principles and performance domains. Module 1.12 does the same for the 49 processes.
 - The ideas are largely the same. The **names and counts** changed.
 - **12 principles** (7th) became **6 principles** (8th).
 - **8 performance domains** (7th) became **7 performance domains** (8th), with different names.
@@ -13,7 +14,7 @@
 
 PMI states that the 8th edition was built mainly from two earlier sources: the **PMBOK Guide, 7th edition (2021)** and **Process Groups: A Practice Guide (2022)**. It combined the 7th edition's principles and performance domains with the practice guide's processes.
 
-The instructor course you are following alongside this one still teaches "the 12 principles", "the 8 performance domains" and "the 49 processes". You need to recognize both vocabularies.
+The exam, and the instructor course you are following, use "the 12 principles", "the 8 performance domains" and "the 49 processes". Treat those as the **primary** vocabulary for exam day, and the 8th edition names as the way this course explains them.
 
 | | 7th edition + Process Groups guide | 8th edition |
 |---|---|---|
@@ -81,11 +82,11 @@ The right-hand column is my own mapping by subject matter. PMI does not publish 
 
 ## Process Groups, Knowledge Areas and the 49 processes
 
-@source Process Groups: A Practice Guide, 1.7.5; Process Groups: A Practice Guide, section 4
+@source Process Groups: A Practice Guide, 1.7.5; Process Groups: A Practice Guide, Table 1-4; PMBOK 6, 1.2.4.6
 
 The **five Process Groups** are the five Focus Areas under their old name: Initiating, Planning, Executing, Monitoring and Controlling, Closing.
 
-The **ten Knowledge Areas** group processes by subject:
+The **ten Knowledge Areas** group processes by subject. They are defined in the PMBOK Guide, Sixth Edition; the Process Groups guide lists the same processes by process group only:
 
 1. Integration
 2. Scope
@@ -177,8 +178,8 @@ This table is also my own matching by name and purpose, made by comparing the tw
 - "In which process group is the project charter created?" **Initiating.**
 - "How many knowledge areas?" **10.** "How many process groups?" **5.**
 - If a question lists stewardship, tailoring or complexity as *principles*, it is using the 7th edition.
-- Do not memorize both lists of processes yet. Learn to recognize the old names; Domain 2 will make them familiar.
+- Learn the **49 process names and their process groups** from module 1.12. Domain 2 then explains what each one does, under its 8th edition name.
 
 ---
 
-*Sources: PMBOK Guide, Eighth Edition, Appendix X5 (Evolution of the PMBOK Guide, Table X5-2); PMBOK Guide, Seventh Edition; Process Groups: A Practice Guide (2022). Written in original wording for personal study.*
+*Sources: PMBOK Guide, Eighth Edition, Appendix X5 (Evolution of the PMBOK Guide, Table X5-2); PMBOK Guide, Seventh Edition; Process Groups: A Practice Guide (2022); PMBOK Guide, Sixth Edition, section 1.2.4.6 (knowledge areas); CAPM Exam Content Outline (2023), which names the exam's references. Written in original wording for personal study.*

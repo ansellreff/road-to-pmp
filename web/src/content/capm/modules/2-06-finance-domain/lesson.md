@@ -27,7 +27,7 @@ The Finance domain covers planning, estimating, budgeting, financing, funding, m
 
 ## The four Finance processes
 
-@source PMBOK 8, Guide 2.4.2; PMBOK 8, Guide Figure 2-26
+@source PMBOK 8, Guide 2.4.2; PMBOK 8, Guide Figure 2-26; Process Groups: A Practice Guide, Table 1-4; PMBOK 6, 1.2.4.6
 
 | Focus Area | Process | Main output | Older name you may see |
 |---|---|---|---|
@@ -35,6 +35,8 @@ The Finance domain covers planning, estimating, budgeting, financing, funding, m
 | Planning | **Estimate Costs** | Cost estimates, basis of estimates | Estimate Costs |
 | Planning | **Develop Budget** | **Cost baseline**, project funding requirements | Determine Budget |
 | Monitoring and Controlling | **Monitor and Control Finances** | Work performance information, revenue and cost forecasts, change requests | Control Costs |
+
+> **On the exam.** The exam's references call this the **Cost** knowledge area: **Plan Cost Management**, **Estimate Costs**, **Determine Budget** (Planning); **Control Costs** (Monitoring and Controlling). Module 1.12 has the full table of 49 processes.
 
 ## Plan Financial Management
 

@@ -1,0 +1,77 @@
+[
+  {
+    "book": "eco",
+    "page": 9,
+    "label": "CAPM Exam Content Outline, Domain 2"
+  },
+  {
+    "book": "pmbok6",
+    "page": 54,
+    "label": "PMBOK 6, 1.2.4.6"
+  },
+  {
+    "book": "processgroups",
+    "page": 26,
+    "label": "Process Groups: A Practice Guide, 1.2"
+  },
+  {
+    "book": "processgroups",
+    "page": 26,
+    "label": "Process Groups: A Practice Guide, 1.2.1"
+  },
+  {
+    "book": "processgroups",
+    "page": 40,
+    "label": "Process Groups: A Practice Guide, 1.7.4"
+  },
+  {
+    "book": "processgroups",
+    "page": 42,
+    "label": "Process Groups: A Practice Guide, 1.7.5"
+  },
+  {
+    "book": "processgroups",
+    "page": 43,
+    "label": "Process Groups: A Practice Guide, Table 1-4"
+  },
+  {
+    "book": "processgroups",
+    "page": 44,
+    "label": "Process Groups: A Practice Guide, 1.8"
+  },
+  {
+    "book": "processgroups",
+    "page": 52,
+    "label": "Process Groups: A Practice Guide, 1.11"
+  },
+  {
+    "book": "processgroups",
+    "page": 54,
+    "label": "Process Groups: A Practice Guide, Table 1-6"
+  },
+  {
+    "book": "processgroups",
+    "page": 90,
+    "label": "Process Groups: A Practice Guide, section 4"
+  },
+  {
+    "book": "processgroups",
+    "page": 98,
+    "label": "Process Groups: A Practice Guide, section 5"
+  },
+  {
+    "book": "processgroups",
+    "page": 154,
+    "label": "Process Groups: A Practice Guide, section 6"
+  },
+  {
+    "book": "processgroups",
+    "page": 182,
+    "label": "Process Groups: A Practice Guide, section 7"
+  },
+  {
+    "book": "processgroups",
+    "page": 216,
+    "label": "Process Groups: A Practice Guide, section 8"
+  }
+]

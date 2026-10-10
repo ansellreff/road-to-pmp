@@ -28,7 +28,7 @@ A detailed schedule often cannot be built for the whole project up front. Near-t
 
 ## The three Schedule processes
 
-@source PMBOK 8, Guide 2.3.2; PMBOK 8, Guide Figure 2-20
+@source PMBOK 8, Guide 2.3.2; PMBOK 8, Guide Figure 2-20; Process Groups: A Practice Guide, Table 1-4; PMBOK 6, 1.2.4.6
 
 | Focus Area | Process | Main output | Older name you may see |
 |---|---|---|---|
@@ -37,6 +37,8 @@ A detailed schedule often cannot be built for the whole project up front. Near-t
 | Monitoring and Controlling | **Monitor and Control Schedule** | Work performance information, schedule forecasts, change requests | Control Schedule |
 
 > **Edition note.** Older material lists Define Activities, Sequence Activities and Estimate Activity Durations as separate processes. The 8th edition treats them as **steps inside Develop Schedule**. The order and the content are the same.
+
+> **On the exam.** The **Schedule** knowledge area has **six** processes where the 8th edition has three: **Plan Schedule Management**, **Define Activities**, **Sequence Activities**, **Estimate Activity Durations**, **Develop Schedule** (Planning); **Control Schedule** (Monitoring and Controlling). The four steps of this lesson's Develop Schedule are separate processes on the exam. Module 1.12 has the full table of 49 processes.
 
 ## Plan Schedule Management
 

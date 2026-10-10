@@ -1,0 +1,487 @@
+[
+  {
+    "id": "q1",
+    "q": "How many processes and process groups does Process Groups: A Practice Guide describe?",
+    "options": [
+      "49 processes in 5 process groups",
+      "40 processes in 5 process groups",
+      "49 processes in 10 process groups",
+      "47 processes in 7 process groups"
+    ],
+    "answer": 0,
+    "explanation": "The practice guide lists 49 processes mapped to five process groups: Initiating, Planning, Executing, Monitoring and Controlling, and Closing.",
+    "ref": "Process Groups: A Practice Guide, Table 1-4",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 43,
+        "label": "Process Groups: A Practice Guide, Table 1-4"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which statement about process groups is correct?",
+    "options": [
+      "Each process group is one phase of the project",
+      "Each process group is performed exactly once",
+      "They are independent of the project's phases",
+      "They apply only to projects with one phase"
+    ],
+    "answer": 2,
+    "explanation": "Process groups are logical groupings of processes and are independent of project phases. They are not the same as phases, and all five can occur within one phase.",
+    "ref": "Process Groups: A Practice Guide, 1.7.5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 42,
+        "label": "Process Groups: A Practice Guide, 1.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Which two processes make up the Initiating process group?",
+    "options": [
+      "Develop Project Charter and Develop Project Management Plan",
+      "Develop Project Charter and Identify Stakeholders",
+      "Identify Stakeholders and Plan Stakeholder Engagement",
+      "Identify Stakeholders and Collect Requirements"
+    ],
+    "answer": 1,
+    "explanation": "The Initiating process group has two processes: Develop Project Charter and Identify Stakeholders.",
+    "ref": "Process Groups: A Practice Guide, section 4",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 90,
+        "label": "Process Groups: A Practice Guide, section 4"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What does the Planning process group do?",
+    "options": [
+      "Completes the work defined in the project plan",
+      "Obtains authorization to start the project or phase",
+      "Tracks, reviews and regulates project performance",
+      "Establishes scope and defines the course of action"
+    ],
+    "answer": 3,
+    "explanation": "The Planning process group contains the processes required to establish the scope of the project, refine the objectives and define the course of action to attain them.",
+    "ref": "Process Groups: A Practice Guide, 1.7.5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 42,
+        "label": "Process Groups: A Practice Guide, 1.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "In which process group is the work breakdown structure created?",
+    "options": [
+      "Initiating",
+      "Planning",
+      "Executing",
+      "Closing"
+    ],
+    "answer": 1,
+    "explanation": "Create WBS is one of the 24 Planning processes. It belongs to the Scope knowledge area and produces the scope baseline.",
+    "ref": "Process Groups: A Practice Guide, section 5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 98,
+        "label": "Process Groups: A Practice Guide, section 5"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "A team is selecting sellers and awarding a contract. Which process and process group is this?",
+    "options": [
+      "Conduct Procurements, in Executing",
+      "Plan Procurement Management, in Planning",
+      "Control Procurements, in Monitoring and Controlling",
+      "Close Project or Phase, in Closing"
+    ],
+    "answer": 0,
+    "explanation": "Conduct Procurements is the Executing process in which seller responses are obtained, a seller is selected and a contract is awarded.",
+    "ref": "Process Groups: A Practice Guide, section 6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 154,
+        "label": "Process Groups: A Practice Guide, section 6"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "In which process is a change request approved or rejected?",
+    "options": [
+      "Direct and Manage Project Work",
+      "Monitor and Control Project Work",
+      "Develop Project Management Plan",
+      "Perform Integrated Change Control"
+    ],
+    "answer": 3,
+    "explanation": "Perform Integrated Change Control, in the Monitoring and Controlling process group, is where all change requests are reviewed and approved or rejected.",
+    "ref": "Process Groups: A Practice Guide, section 7",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 182,
+        "label": "Process Groups: A Practice Guide, section 7"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "The customer formally accepts a completed deliverable. Which process is this?",
+    "options": [
+      "Control Quality",
+      "Control Scope",
+      "Validate Scope",
+      "Manage Quality"
+    ],
+    "answer": 2,
+    "explanation": "Validate Scope is the process of formalizing acceptance of the completed deliverables. Control Quality checks that a deliverable is correct before it goes for acceptance.",
+    "ref": "Process Groups: A Practice Guide, section 7",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 182,
+        "label": "Process Groups: A Practice Guide, section 7"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Which is the only process in the Closing process group?",
+    "options": [
+      "Control Procurements",
+      "Validate Scope",
+      "Close Project or Phase",
+      "Manage Project Knowledge"
+    ],
+    "answer": 2,
+    "explanation": "The Closing process group contains one process, Close Project or Phase, which finalizes all activities for the project, phase or contract.",
+    "ref": "Process Groups: A Practice Guide, section 8",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 216,
+        "label": "Process Groups: A Practice Guide, section 8"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Which knowledge area has a process in every one of the five process groups?",
+    "options": [
+      "Integration",
+      "Stakeholder",
+      "Scope",
+      "Risk"
+    ],
+    "answer": 0,
+    "explanation": "Integration has Develop Project Charter (Initiating), Develop Project Management Plan (Planning), two Executing processes, two Monitoring and Controlling processes and Close Project or Phase (Closing).",
+    "ref": "Process Groups: A Practice Guide, Table 1-4",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 43,
+        "label": "Process Groups: A Practice Guide, Table 1-4"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "To which knowledge area do Define Activities and Sequence Activities belong?",
+    "options": [
+      "Scope",
+      "Integration",
+      "Resource",
+      "Schedule"
+    ],
+    "answer": 3,
+    "explanation": "Define Activities, Sequence Activities, Estimate Activity Durations and Develop Schedule are Planning processes of the Schedule knowledge area.",
+    "ref": "PMBOK 6, 1.2.4.6",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 54,
+        "label": "PMBOK 6, 1.2.4.6"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "How many knowledge areas are there, and which book defines them?",
+    "options": [
+      "5, in Process Groups: A Practice Guide",
+      "10, in the PMBOK Guide, Sixth Edition",
+      "12, in the PMBOK Guide, Seventh Edition",
+      "7, in the PMBOK Guide, Eighth Edition"
+    ],
+    "answer": 1,
+    "explanation": "The ten knowledge areas are described in the PMBOK Guide, Sixth Edition. Process Groups: A Practice Guide groups the same 49 processes by process group only.",
+    "ref": "PMBOK 6, 1.2.4.6",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 54,
+        "label": "PMBOK 6, 1.2.4.6"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which of these is a project document, and not a component of the project management plan?",
+    "options": [
+      "Risk management plan",
+      "Scope baseline",
+      "Change management plan",
+      "Risk register"
+    ],
+    "answer": 3,
+    "explanation": "The risk register is a project document. The risk management plan, the scope baseline and the change management plan are all components of the project management plan.",
+    "ref": "Process Groups: A Practice Guide, Table 1-6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 54,
+        "label": "Process Groups: A Practice Guide, Table 1-6"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "In the exam's process reference, which statement describes the project management plan?",
+    "options": [
+      "Why the project is worth the investment",
+      "How the project will be executed, monitored, controlled and closed",
+      "Who formally authorizes the project to start",
+      "Which features the product will have in each release"
+    ],
+    "answer": 1,
+    "explanation": "The project management plan is the document that describes how the project will be executed, monitored and controlled, and closed. The charter authorizes; the business case justifies.",
+    "ref": "Process Groups: A Practice Guide, 1.11",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 52,
+        "label": "Process Groups: A Practice Guide, 1.11"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which four baselines are components of the project management plan?",
+    "options": [
+      "Scope, schedule, cost and performance measurement",
+      "Scope, schedule, cost and quality",
+      "Scope, schedule, risk and performance measurement",
+      "Schedule, cost, quality and resource"
+    ],
+    "answer": 0,
+    "explanation": "The plan includes the scope baseline, schedule baseline, cost baseline and the performance measurement baseline, which integrates the other three.",
+    "ref": "Process Groups: A Practice Guide, Table 1-6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 54,
+        "label": "Process Groups: A Practice Guide, Table 1-6"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "\"12 of 20 activities are complete and $40,000 has been spent.\" What is this an example of?",
+    "options": [
+      "Work performance information",
+      "A work performance report",
+      "Work performance data",
+      "A project baseline"
+    ],
+    "answer": 2,
+    "explanation": "Work performance data are the raw observations and measurements identified while the work is performed. Analyzed in context they become information, and compiled for a purpose they become reports.",
+    "ref": "Process Groups: A Practice Guide, Table 1-4",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 43,
+        "label": "Process Groups: A Practice Guide, Table 1-4"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "\"The project is 10% behind schedule.\" What is this an example of?",
+    "options": [
+      "Work performance data",
+      "Work performance information",
+      "A project document",
+      "A change request"
+    ],
+    "answer": 1,
+    "explanation": "Work performance information is performance data collected from the controlling processes and analyzed in context, such as the status of deliverables or a variance.",
+    "ref": "Process Groups: A Practice Guide, Table 1-4",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 43,
+        "label": "Process Groups: A Practice Guide, Table 1-4"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "How do Manage Quality and Control Quality differ?",
+    "options": [
+      "They are two names for one process",
+      "Manage Quality is done by the customer",
+      "Control Quality is a Planning process",
+      "Manage Quality is Executing; Control Quality is Monitoring and Controlling"
+    ],
+    "answer": 3,
+    "explanation": "Manage Quality is an Executing process concerned with the quality of the process. Control Quality is a Monitoring and Controlling process that checks the deliverables.",
+    "ref": "Process Groups: A Practice Guide, Table 1-4",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 43,
+        "label": "Process Groups: A Practice Guide, Table 1-4"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "What does \"projects drive change\" mean?",
+    "options": [
+      "A project moves an organization from its current state to a future state",
+      "A project manager approves every change request",
+      "A project must change its scope at least once",
+      "A project replaces the organization's operations"
+    ],
+    "answer": 0,
+    "explanation": "From a business perspective, a project is aimed at moving an organization from one state to another to achieve a specific objective: from the current state to the future state.",
+    "ref": "Process Groups: A Practice Guide, 1.2.1",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 26,
+        "label": "Process Groups: A Practice Guide, 1.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A sponsor withdraws funding halfway through a project. What happens to the project?",
+    "options": [
+      "It continues until the objectives are met",
+      "It moves back to the Initiating process group",
+      "It ends, because funding is no longer available",
+      "It becomes part of ongoing operations"
+    ],
+    "answer": 2,
+    "explanation": "A project ends when its objectives are achieved or cannot be met, funding is exhausted or no longer available, the need no longer exists, resources are unavailable, or it is terminated.",
+    "ref": "Process Groups: A Practice Guide, 1.2",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 26,
+        "label": "Process Groups: A Practice Guide, 1.2"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which process group does Identify Risks belong to?",
+    "options": [
+      "Initiating",
+      "Executing",
+      "Monitoring and Controlling",
+      "Planning"
+    ],
+    "answer": 3,
+    "explanation": "Identify Risks is a Planning process. Identify Stakeholders is the one \"identify\" process that belongs to Initiating.",
+    "ref": "Process Groups: A Practice Guide, section 5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 98,
+        "label": "Process Groups: A Practice Guide, section 5"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A team member's skills are being improved through training and team building. Which process is this?",
+    "options": [
+      "Develop Team",
+      "Acquire Resources",
+      "Manage Team",
+      "Plan Resource Management"
+    ],
+    "answer": 0,
+    "explanation": "Develop Team is the Executing process of improving competencies, team member interaction and the overall team environment. Manage Team tracks performance and resolves issues.",
+    "ref": "Process Groups: A Practice Guide, section 6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 154,
+        "label": "Process Groups: A Practice Guide, section 6"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which knowledge areas have no process in the Executing process group?",
+    "options": [
+      "Quality, Risk and Procurement",
+      "Integration, Resource and Stakeholder",
+      "Scope, Schedule and Cost",
+      "Communications, Risk and Quality"
+    ],
+    "answer": 2,
+    "explanation": "Scope, Schedule and Cost have only Planning and Monitoring and Controlling processes. Their work is carried out under Direct and Manage Project Work.",
+    "ref": "Process Groups: A Practice Guide, Table 1-4",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 43,
+        "label": "Process Groups: A Practice Guide, Table 1-4"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "The exam outline mentions an \"integration management plan\". Which knowledge area and which process produce the overall plan?",
+    "options": [
+      "Scope; Plan Scope Management",
+      "Integration; Develop Project Management Plan",
+      "Integration; Develop Project Charter",
+      "Stakeholder; Plan Stakeholder Engagement"
+    ],
+    "answer": 1,
+    "explanation": "Integration is the knowledge area that combines and coordinates the others. Its Planning process, Develop Project Management Plan, produces the project management plan that integrates all subsidiary plans and baselines.",
+    "ref": "Process Groups: A Practice Guide, section 5; PMBOK 6, 1.2.4.6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 98,
+        "label": "Process Groups: A Practice Guide, section 5"
+      },
+      {
+        "book": "pmbok6",
+        "page": 54,
+        "label": "PMBOK 6, 1.2.4.6"
+      }
+    ]
+  }
+]

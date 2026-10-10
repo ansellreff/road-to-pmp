@@ -31,7 +31,7 @@ A **stakeholder** is anyone who is impacted by the project, or who **feels they 
 
 ## The seven Stakeholders processes
 
-@source PMBOK 8, Guide 2.5.2; PMBOK 8, Guide Figure 2-32
+@source PMBOK 8, Guide 2.5.2; PMBOK 8, Guide Figure 2-32; Process Groups: A Practice Guide, Table 1-4; PMBOK 6, 1.2.4.6
 
 | Focus Area | Process | Main output |
 |---|---|---|
@@ -44,6 +44,8 @@ A **stakeholder** is anyone who is impacted by the project, or who **feels they 
 | Monitoring and Controlling | **Monitor Communications** | Work performance information, change requests |
 
 Identify Stakeholders is one of only two processes in the **Initiating** Focus Area. The other is Initiate Project or Phase, which creates the charter.
+
+> **On the exam.** These seven processes are **two knowledge areas** in the exam's references. **Stakeholder:** Identify Stakeholders (Initiating), Plan Stakeholder Engagement (Planning), Manage Stakeholder Engagement (Executing), Monitor Stakeholder Engagement (Monitoring and Controlling). **Communications:** Plan Communications Management (Planning), Manage Communications (Executing), Monitor Communications (Monitoring and Controlling). Module 1.12 has the full table of 49 processes.
 
 ## Identify Stakeholders and the stakeholder register
 

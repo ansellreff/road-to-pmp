@@ -60,6 +60,11 @@
     "label": "PMBOK 6, 3.4.5"
   },
   {
+    "book": "pmbok7",
+    "page": 111,
+    "label": "PMBOK 7, Guide 2.2"
+  },
+  {
     "book": "pmbok8",
     "page": 191,
     "label": "PMBOK 8, Guide 2.6.2.4.2"

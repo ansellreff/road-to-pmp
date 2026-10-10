@@ -10,6 +10,11 @@
     "label": "The Project Management Answer Book, Chapter 13, Q14"
   },
   {
+    "book": "pmbok6",
+    "page": 54,
+    "label": "PMBOK 6, 1.2.4.6"
+  },
+  {
     "book": "pmbok8",
     "page": 172,
     "label": "PMBOK 8, Guide 2.5"
@@ -123,5 +128,10 @@
     "book": "pmbok8",
     "page": 305,
     "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+  },
+  {
+    "book": "processgroups",
+    "page": 43,
+    "label": "Process Groups: A Practice Guide, Table 1-4"
   }
 ]

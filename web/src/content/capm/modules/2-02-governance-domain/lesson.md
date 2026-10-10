@@ -10,7 +10,7 @@
 
 ## The nine Governance processes
 
-@source PMBOK 8, Guide 2.1.6
+@source PMBOK 8, Guide 2.1.6; Process Groups: A Practice Guide, Table 1-4; PMBOK 6, 1.2.4.6
 
 | Focus Area | Process | Main output | Older name you may see |
 |---|---|---|---|
@@ -25,6 +25,8 @@
 | Closing | **Close Project or Phase** | Final product transition, final report | Close Project or Phase |
 
 Governance is not a one-time activity. It runs from initiation to closure, and it includes the **authority to cancel a project** when necessary.
+
+> **On the exam.** The exam's references call most of this the **Integration** knowledge area, with seven processes: **Develop Project Charter** (Initiating); **Develop Project Management Plan** (Planning); **Direct and Manage Project Work** and **Manage Project Knowledge** (Executing); **Monitor and Control Project Work** and **Perform Integrated Change Control** (Monitoring and Controlling); **Close Project or Phase** (Closing). An "integration management plan" in the exam outline means the **project management plan**, which integrates all the subsidiary plans. Module 1.12 has the full table of 49 processes.
 
 ## Initiate Project or Phase
 

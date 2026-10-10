@@ -10,7 +10,7 @@
 
 ## Where quality and procurement sit in the 8th edition
 
-@source PMBOK 8, Guide 2.2; PMBOK 8, Appendix X4.1
+@source PMBOK 8, Guide 2.2; PMBOK 8, Appendix X4.1; Process Groups: A Practice Guide, Table 1-4; PMBOK 6, 1.2.4.6
 
 Neither has its own performance domain. Their content is spread across other domains:
 
@@ -23,6 +23,8 @@ Neither has its own performance domain. Their content is spread across other dom
 | Selecting sellers and managing contracts | **Appendix X4, Procurement** | Conduct Procurements, Control Procurements |
 
 Procurement is not a separate domain because project purchasing is usually run through the **organization's procurement department**, using its established policies and supplier relationships.
+
+> **On the exam.** Quality and procurement are **knowledge areas of their own** in the exam's references, with three processes each. **Quality:** Plan Quality Management (Planning), Manage Quality (Executing), Control Quality (Monitoring and Controlling). **Procurement:** Plan Procurement Management (Planning), Conduct Procurements (Executing), Control Procurements (Monitoring and Controlling). Module 1.12 has the full table of 49 processes.
 
 ## Quality basics
 

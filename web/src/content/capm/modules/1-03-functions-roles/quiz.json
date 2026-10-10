@@ -318,5 +318,65 @@
         "label": "PMBOK 8, Standard 2.5.1.3"
       }
     ]
+  },
+  {
+    "id": "q17",
+    "q": "Which item belongs in a project management plan rather than in a product-level plan?",
+    "options": [
+      "The product vision for the next three years",
+      "The schedule baseline for this project",
+      "The ordered backlog of future features",
+      "The roadmap of releases after this project"
+    ],
+    "answer": 1,
+    "explanation": "The project management plan holds the subsidiary plans and the baselines for one project. The vision, roadmap and backlog describe the product across its life cycle.",
+    "ref": "Process Groups: A Practice Guide, 1.11",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 52,
+        "label": "Process Groups: A Practice Guide, 1.11"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A project manager on a small team writes part of the user manual herself. Which of the outline's project manager roles is this?",
+    "options": [
+      "Negotiator",
+      "Facilitator",
+      "Working member",
+      "Initiator"
+    ],
+    "answer": 2,
+    "explanation": "As a working member the project manager performs part of the project work as well as managing it, which is common on small teams.",
+    "ref": "CAPM Exam Content Outline, Domain 1",
+    "links": [
+      {
+        "book": "eco",
+        "page": 8,
+        "label": "CAPM Exam Content Outline, Domain 1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Two departments cannot agree who will lend an engineer to the project. The project manager brokers an agreement. Which role is this?",
+    "options": [
+      "Negotiator",
+      "Listener",
+      "Coach",
+      "Working member"
+    ],
+    "answer": 0,
+    "explanation": "As a negotiator the project manager obtains resources and agreement between parties with competing interests.",
+    "ref": "CAPM Exam Content Outline, Domain 1",
+    "links": [
+      {
+        "book": "eco",
+        "page": 8,
+        "label": "CAPM Exam Content Outline, Domain 1"
+      }
+    ]
   }
 ]
