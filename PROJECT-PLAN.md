@@ -43,6 +43,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Session 23 done: modules 4.5 (analysis: the five categories of model and what each model shows, user stories vs use cases, the requirements package, acceptance criteria, definition of ready and done, verify vs validate, prioritization, product risks, design options) and 4.6 (traceability and monitoring: backward and forward tracing, the traceability matrix, approved requirements and the baseline, impact analysis, change outcomes, the backlog as change control). **One module left: 37 of 38.** Issues 62 and 63 added to the log. | You: study 4.5 and 4.6. Next: Session 24, module 4.7 (solution evaluation), which completes Domain 4 and all CAPM content |
 | 2026-10-10 | Session 24 done: module 4.7 (solution evaluation: the evaluation approach and metrics, evaluating acceptance results and addressing defects, the release decision and its four bases, measuring business value after release). **Domain 4 is complete: 7 of 7. All CAPM content is written: 38 of 38 modules, 791 quiz questions, 1,167 flashcards.** One quiz question in the whole course has no book page. Issue 64 added to the log. | You: study 4.7. Next: Session 25, the full catch-up, planned with you first |
 | 2026-10-10 | Session 25 planned with you and approved: four sessions (25a audits, 25b exam alignment of Domains 1 and 2, 25c quiz repair, 25d exam alignment of Domains 3 and 4 and the PDF list). Your decisions: keep the Eighth Edition lessons and add an exam-terms layer; module 1.11 becomes exam content; all quizzes are repaired. **Session 25a done:** three new checks (quiz quality, tables and markup, worked examples), every lesson checked as rendered in a browser, and the exam outline mapped to the modules. Results are in "Session 25a audit results" below. Issues 65 to 68 added to the log. | You: read the audit results. Next: Session 25b |
+| 2026-10-10 | Your suggestion for the mock exams recorded (several fixed exams, like the real exam, domains shown separately, easy to learn from), with a proposed design under "Session 26 proposal". | You: choose mixed order or domain chapters, and 3 or 4 mock exams. Next: Session 25b |
 
 ## How your progress is saved
 
@@ -136,7 +137,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ⬜ | 25b | Exam alignment of Domains 1 and 2: module 1.11 becomes exam content and is expanded; "On the exam" notes from PMBOK 7 and the Process Groups guide; fill the outline gaps |
 | ⬜ | 25c | Quiz repair: remove the longest-answer give-away in all quizzes, remove duplicates, top up Domain 1, add scenario questions |
 | ⬜ | 25d | Exam alignment of Domains 3 and 4 (2017 Agile Practice Guide, Business Analysis for Practitioners); final list of PDFs; close the edition question |
-| ⬜ | 26 | Feature: timed exam simulator (150 questions, 180 minutes) |
+| ⬜ | 26 | Feature: mock exams. Your requirements (2026-10-10): clear and easy to learn from; like the real exam; domains shown separately; **several fixed mock exams**, preferred over one randomized exam. Proposed design is under "Session 26 proposal" below; to be confirmed in plan mode. |
 | ⬜ | 27 | UI/UX polish (see backlog below) |
 | ⬜ | 28 | Go online: GitHub and Vercel, test on phone |
 
@@ -284,6 +285,23 @@ Overall: **38 of 38 modules done** (791 quiz questions, 1,167 flashcards).
 | ⬜ | PMI-ACP |
 | ⬜ | PMI-SP |
 
+## Session 26 proposal: mock exams
+
+Recorded on 2026-10-10 from your suggestion. Not built yet; to be confirmed in plan mode when Session 26 starts.
+
+**How the real exam works** (CAPM Exam Content Outline, 2023, in your folder): 150 questions in 3 hours, 135 scored and 15 unscored; domain weights 36 / 17 / 20 / 27; questions from all domains are **mixed in random order**, not grouped by domain; one 10-minute break after question 75, after which questions 1 to 75 cannot be reopened; the result is reported per domain, not as one percentage. Not confirmed from PMI: whether the clock runs during the break, and how flagging works.
+
+**Proposed design, two parts:**
+
+| Part | For | How it works |
+|---|---|---|
+| **Mock exams** | Rehearsing the real thing | Several **fixed** exams (Mock 1, Mock 2, ...), each 150 questions by domain weight (54 / 26 / 30 / 40), mixed order, 180-minute timer, two halves of 75 with a break and no going back, flagging, **no answers shown until the end** |
+| **Result and review** | Learning from it | A result per domain, then a review **arranged by domain as chapters**: each question with your answer, the right answer, the explanation, the book page, and a link to the module. Missed questions go into "Practice missed questions". |
+| **Domain drills** | Studying one domain | Shorter sets from one domain, with the explanation shown **straight after each answer** |
+
+**How many mock exams:** a question is assigned to one mock exam only, so exams do not repeat each other. Today's bank supports **3** full exams (limited by Domain 1 with 166 questions and Domain 4 with 156). Adding about 50 questions to Domain 1 and 10 to Domain 4 in Session 25c would allow **4**.
+
+**Open choice for you:** mixed order as on the real exam (recommended, with the review grouped by domain), or the exam itself divided into four domain chapters.
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.
