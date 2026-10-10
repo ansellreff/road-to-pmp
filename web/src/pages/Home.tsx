@@ -3,8 +3,17 @@ import { Link } from 'react-router-dom'
 import ExamBlueprint from '../components/ExamBlueprint'
 import Milestone from '../components/Milestone'
 import { allModules, courses, type Course } from '../lib/content'
-import { dueCount, exportProgress, importProgress, resetProgress, useProgress, type Progress } from '../lib/progress'
-import { courseCompletion, moduleNumber, nextModule, percent } from '../lib/stats'
+import { buildPlan, formatDay } from '../lib/plan'
+import {
+  dueCount,
+  exportProgress,
+  importProgress,
+  resetProgress,
+  today,
+  useProgress,
+  type Progress,
+} from '../lib/progress'
+import { courseCompletion, courseMissed, moduleNumber, nextModule, percent, remainingModules } from '../lib/stats'
 import { btnDanger, btnPrimary, btnQuiet, link } from '../lib/ui'
 
 // The planned order of certifications. One with content in src/content becomes a live course.
@@ -41,6 +50,10 @@ export default function Home() {
         </ol>
       </section>
 
+      {courses.map((course) => (
+        <Today key={course.id} course={course} progress={progress} />
+      ))}
+
       <DueCards due={dueCount(progress)} />
 
       {courses.map((course) => (
@@ -49,6 +62,85 @@ export default function Home() {
 
       <Backup />
     </div>
+  )
+}
+
+/** Exam countdown and what to study today, from the study plan. */
+function Today({ course, progress }: { course: Course; progress: Progress }) {
+  const examDate = progress.examDates[course.id]
+  if (!examDate) {
+    return (
+      <section className="flex flex-wrap items-center justify-between gap-4 border-t-2 border-ink pt-6">
+        <div>
+          <h2 className="title text-2xl">When is your {course.title} exam?</h2>
+          <p className="mt-1 max-w-xl text-sm text-muted">
+            Set the day and this page shows a countdown and what to study each day to be ready in time.
+          </p>
+        </div>
+        <Link to="/plan" className={btnPrimary}>
+          Set an exam day
+        </Link>
+      </section>
+    )
+  }
+
+  const now = today()
+  const plan = buildPlan(now, examDate, remainingModules(course, progress))
+  const missed = courseMissed(course, progress)
+  // Written modules due today; if none falls due today, the next one keeps the habit going.
+  const written = plan.items.filter((p) => p.item.ready)
+  const dueToday = written.filter((p) => p.finishBy === now)
+  const modules = dueToday.length ? dueToday : written.slice(0, 1)
+  const inReview = plan.reviewStart !== undefined && now >= plan.reviewStart
+
+  let heading = `${plan.daysLeft} ${plan.daysLeft === 1 ? 'day' : 'days'} to your ${course.title} exam`
+  if (plan.daysLeft === 0) heading = `Your ${course.title} exam is today`
+  if (plan.daysLeft < 0) heading = `Your ${course.title} exam day has passed`
+
+  return (
+    <section className="border-t-2 border-ink pt-6">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+        <h2 className="title text-2xl sm:text-3xl">{heading}</h2>
+        <Link to="/plan" className={`${link} text-sm`}>
+          {plan.daysLeft < 0 ? 'Choose a new exam day' : `Exam on ${formatDay(examDate, now)}. See the full plan`}
+        </Link>
+      </div>
+
+      {plan.daysLeft > 0 && (
+        <>
+          <h3 className="mt-5 text-sm font-medium text-muted">
+            {inReview ? 'Final review: today' : 'To stay on pace today'}
+          </h3>
+          <ul className="mt-2 divide-y divide-line border-y border-line">
+            {modules.map(({ item, finishBy }) => (
+              <li key={item.id} className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+                <Link to={`/${course.id}/${item.id}`} className={link}>
+                  {moduleNumber(course, item.id)} {item.title}
+                </Link>
+                <span className="text-sm text-muted">
+                  {finishBy === now ? 'Finish today' : `Finish by ${formatDay(finishBy, now)}`}
+                </span>
+              </li>
+            ))}
+            {missed > 0 && (
+              <li className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+                <Link to="/practice" className={link}>
+                  Practice {missed} missed {missed === 1 ? 'question' : 'questions'}
+                </Link>
+                <span className="text-sm text-muted">Your latest answer to each was wrong</span>
+              </li>
+            )}
+            {modules.length === 0 && missed === 0 && (
+              <li className="py-3 text-sm text-muted">
+                {written.length === plan.items.length
+                  ? 'Every module is finished. Review your flashcards to keep them fresh.'
+                  : 'Every module written so far is finished. The rest of the plan waits for new modules.'}
+              </li>
+            )}
+          </ul>
+        </>
+      )}
+    </section>
   )
 }
 

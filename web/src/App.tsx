@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import CoursePage from './pages/CoursePage'
 import DashboardPage from './pages/DashboardPage'
 import ModulePage from './pages/ModulePage'
+import PlanPage from './pages/PlanPage'
 import PracticePage from './pages/PracticePage'
 import ReviewPage from './pages/ReviewPage'
 
@@ -22,6 +23,9 @@ export default function App() {
             Road to PMI
           </Link>
           <nav className="flex gap-5 text-sm font-medium">
+            <NavLink to="/plan" className={navStyle}>
+              Study plan
+            </NavLink>
             <NavLink to="/dashboard" className={navStyle}>
               Dashboard
             </NavLink>
@@ -37,6 +41,7 @@ export default function App() {
           <Route path="/review" element={<ReviewPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/practice" element={<PracticePage />} />
+          <Route path="/plan" element={<PlanPage />} />
           <Route path="/:courseId" element={<CoursePage />} />
           <Route path="/:courseId/:moduleId" element={<ModulePage />} />
           <Route path="/:courseId/:moduleId/:tab" element={<ModulePage />} />

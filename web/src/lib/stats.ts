@@ -30,6 +30,16 @@ export function nextModule(course: Course, progress: Progress): ModuleMeta | und
   )
 }
 
+/** Exam modules that are not finished yet, written or not, in course order. */
+export function remainingModules(course: Course, progress: Progress): ModuleMeta[] {
+  return examModules(allModules(course)).filter((m) => moduleCompletion(progress, moduleKey(course.id, m.id)) < 1)
+}
+
+/** Questions across the course whose most recent answer was wrong. */
+export function courseMissed(course: Course, progress: Progress): number {
+  return allModules(course).reduce((sum, m) => sum + missedIds(progress, moduleKey(course.id, m.id)).length, 0)
+}
+
 export interface ModuleStats {
   module: ModuleMeta
   key: string

@@ -37,6 +37,8 @@ export interface Progress {
   answers: Record<string, Record<string, AnswerState>>
   /** Study actions per day (YYYY-MM-DD, local time), for the study streak. */
   activity: Record<string, number>
+  /** Planned exam day per course (YYYY-MM-DD), for the study plan. Older saves have none. */
+  examDates: Record<string, string>
 }
 
 /** Days until the next review, by box. */
@@ -51,6 +53,7 @@ const empty = (): Progress => ({
   cardTotals: {},
   answers: {},
   activity: {},
+  examDates: {},
 })
 
 export function today(offsetDays = 0): string {
@@ -124,6 +127,14 @@ export function setLessonDone(key: string, done: boolean) {
   if (done) lessons[key] = new Date().toISOString()
   else delete lessons[key]
   commit({ ...state, lessons, activity: done ? studiedToday() : state.activity })
+}
+
+/** Set the planned exam day for a course, or remove it with an empty value. */
+export function setExamDate(courseId: string, day: string) {
+  const examDates = { ...state.examDates }
+  if (day) examDates[courseId] = day
+  else delete examDates[courseId]
+  commit({ ...state, examDates })
 }
 
 /** Record the answer to one quiz question, from a module quiz or a practice session. */
