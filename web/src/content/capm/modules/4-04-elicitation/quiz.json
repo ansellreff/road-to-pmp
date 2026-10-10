@@ -101,7 +101,7 @@
   },
   {
     "id": "q6",
-    "q": "Which is the first step in preparing for an elicitation activity?",
+    "q": "An analyst has a workshop with eight stakeholders next week and starts to prepare. What should she do first?",
     "options": [
       "Determine the objective",
       "Schedule the meeting room",
@@ -202,7 +202,7 @@
   },
   {
     "id": "q11",
-    "q": "What is the main drawback of observation?",
+    "q": "An analyst sits beside call-centre agents for a day to see how they handle refunds. The agents know she is watching. What is the main drawback she should keep in mind?",
     "options": [
       "People may act differently when they are being observed",
       "It cannot be used at all for detailed or repetitive processes",
@@ -263,7 +263,7 @@
   },
   {
     "id": "q14",
-    "q": "Which prototype is a static blueprint of a user interface screen?",
+    "q": "Stakeholders want to agree where the fields and buttons sit on the sign-up screen before anything is built. The analyst draws a static blueprint of that one screen. Which prototype is it?",
     "options": [
       "Storyboard",
       "Wireframe",
@@ -345,7 +345,7 @@
   },
   {
     "id": "q18",
-    "q": "Which collaborative game asks participants to write a product's problems on anchors that hold it back?",
+    "q": "In a workshop, customers draw a boat and write on its anchors everything that holds the product back. Which collaborative game is this?",
     "options": [
       "Speedboat",
       "Product box",
@@ -365,7 +365,7 @@
   },
   {
     "id": "q19",
-    "q": "Immediately after a requirements workshop, what is the status of the notes taken?",
+    "q": "A requirements workshop ended ten minutes ago. The analyst has four pages of notes that no stakeholder has reviewed yet. What is the status of those notes?",
     "options": [
       "Approved requirements",
       "Baselined scope",

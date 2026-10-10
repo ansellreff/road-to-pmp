@@ -81,7 +81,7 @@
   },
   {
     "id": "q5",
-    "q": "According to the agile principles, what is the primary measure of progress?",
+    "q": "A sponsor asks an agile team how far along it is. One member offers the percentage of budget spent; another offers the number of documents approved. According to the agile principles, what is the primary measure of progress?",
     "options": [
       "Percent of the budget spent",
       "A working product",
@@ -121,7 +121,7 @@
   },
   {
     "id": "q7",
-    "q": "Which type of work is agile best suited to?",
+    "q": "A company is choosing work for its first agile team. One candidate is the routine monthly payroll run; another is a new product whose design nobody has attempted before. Which type of work is agile best suited to?",
     "options": [
       "High-uncertainty work involving new design and problem-solving",
       "Definable work with clear procedures proven on many past projects",
@@ -263,7 +263,7 @@
   },
   {
     "id": "q14",
-    "q": "Which approach is known as the \"start where you are\" approach because a team can apply it to its existing way of working?",
+    "q": "A support team wants to improve without changing its roles, titles or process on the first day. Which approach is known as the \"start where you are\" approach because a team can apply it to its existing way of working?",
     "options": [
       "Scrum",
       "Extreme Programming",
@@ -364,7 +364,7 @@
   },
   {
     "id": "q19",
-    "q": "When does a typical predictive project deliver business value, compared with an agile project?",
+    "q": "Two projects build similar software. One follows a predictive plan and the other an agile approach. When does each typically deliver business value?",
     "options": [
       "Predictive: usually at the end. Agile: early and frequently.",
       "Predictive: every week from the start. Agile: only at the end.",
@@ -425,7 +425,7 @@
   },
   {
     "id": "q22",
-    "q": "Which organizational characteristic most hinders the adoption of agile approaches?",
+    "q": "An organization tries agile for the first time. Its people sit in separate departments that hand work to one another and are measured separately. Which organizational characteristic most hinders the adoption of agile approaches?",
     "options": [
       "Work split into departmental silos",
       "A safe environment for experiments",

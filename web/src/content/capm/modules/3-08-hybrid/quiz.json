@@ -162,7 +162,7 @@
   },
   {
     "id": "q9",
-    "q": "In the Cynefin framework, what is the recommended way to act in the complex domain?",
+    "q": "A team faces a problem where cause and effect can be understood only afterwards, and no expert can predict the result. In the Cynefin framework this is the complex domain. What is the recommended way to act?",
     "options": [
       "Apply good practice",
       "Analyze fully, then plan",
@@ -243,7 +243,7 @@
   },
   {
     "id": "q13",
-    "q": "Who should complete the agile suitability filter?",
+    "q": "A project manager fills in the agile suitability filter alone at her desk and announces the result. Who should complete the agile suitability filter?",
     "options": [
       "A group of stakeholders, such as the sponsor, team, customer and governance representatives",
       "The project manager alone",
@@ -263,7 +263,7 @@
   },
   {
     "id": "q14",
-    "q": "Which factor points most strongly toward a predictive approach?",
+    "q": "A project will build a medical device. Safety requirements are rigorous and a regulator must approve each stage. Which factor points most strongly toward a predictive approach?",
     "options": [
       "A high degree of innovation",
       "Value from frequent feedback given by end users and stakeholders",
@@ -383,7 +383,7 @@
   },
   {
     "id": "q20",
-    "q": "When may agile approaches not be useful?",
+    "q": "A customer will accept the product only once, complete, at the very end, and the organization cannot hand over anything partial before then. When may agile approaches not be useful?",
     "options": [
       "When requirements are uncertain",
       "When stakeholders are available throughout the whole of the project",
@@ -423,7 +423,7 @@
   },
   {
     "id": "q22",
-    "q": "Which statement best reflects how a life cycle should be chosen?",
+    "q": "A team used Scrum on its last project and proposes to use it again without looking at what the new project needs. Which statement best reflects how a life cycle should be chosen?",
     "options": [
       "Agile is always better than predictive",
       "Predictive is always safer than agile",

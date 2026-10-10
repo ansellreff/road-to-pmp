@@ -101,7 +101,7 @@
   },
   {
     "id": "q6",
-    "q": "Which technique is used to create the WBS?",
+    "q": "A team starts with the project's major deliverables and keeps dividing them into smaller, more manageable parts. Which technique is used to create the WBS?",
     "options": [
       "Inspection",
       "Benchmarking",
@@ -121,7 +121,7 @@
   },
   {
     "id": "q7",
-    "q": "What does the 100 percent rule say about the WBS?",
+    "q": "A reviewer finds that a WBS leaves out the project management work and includes a deliverable nobody asked for. What does the 100 percent rule say about the WBS?",
     "options": [
       "The WBS includes all product and project work, with nothing left out and nothing extra",
       "Every work package must be 100% complete and accepted before the next one is allowed to start",
@@ -206,7 +206,7 @@
   },
   {
     "id": "q11",
-    "q": "Which document links each requirement from its origin to the deliverable that satisfies it?",
+    "q": "Late in a project a tester asks which business need a requirement came from and which deliverable satisfies it. Which document links each requirement from its origin to the deliverable that satisfies it?",
     "options": [
       "Requirements traceability matrix",
       "WBS dictionary",
@@ -226,7 +226,7 @@
   },
   {
     "id": "q12",
-    "q": "Where are project exclusions documented?",
+    "q": "A customer assumes that staff training is included in the project. The team replies that it was explicitly left out. Where are project exclusions documented?",
     "options": [
       "Project charter",
       "WBS",
@@ -266,7 +266,7 @@
   },
   {
     "id": "q14",
-    "q": "Which process formalizes acceptance of the completed project deliverables?",
+    "q": "The team has checked a deliverable and found it correct. The customer now inspects it and signs to accept it. Which process formalizes acceptance of the completed project deliverables?",
     "options": [
       "Monitor and Control Scope",
       "Define Scope",
@@ -386,7 +386,7 @@
   },
   {
     "id": "q20",
-    "q": "In a project using an adaptive approach, what corresponds to the WBS?",
+    "q": "A team moving from a predictive to an adaptive approach asks where its scope will now be listed and ordered. In a project using an adaptive approach, what corresponds to the WBS?",
     "options": [
       "The project charter",
       "The definition of done",

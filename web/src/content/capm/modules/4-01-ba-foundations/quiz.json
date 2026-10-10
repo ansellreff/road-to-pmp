@@ -42,7 +42,7 @@
   },
   {
     "id": "q3",
-    "q": "\"Increase online sales by 15% next year\" is an example of which type of requirement?",
+    "q": "A retailer's leadership sets a target for the coming year: \"Increase online sales by 15%.\" The business analyst must classify it before any solution is discussed. Which type of requirement is it?",
     "options": [
       "Solution requirement",
       "Transition requirement",
@@ -82,7 +82,7 @@
   },
   {
     "id": "q5",
-    "q": "Converting existing customer records to the new system and training the support staff are examples of:",
+    "q": "A bank is replacing its customer system. Before go-live, the existing customer records must be converted and the support staff trained. These needs disappear once the change is complete. What are they?",
     "options": [
       "Transition requirements",
       "Functional requirements",
@@ -163,7 +163,7 @@
   },
   {
     "id": "q9",
-    "q": "When does business analysis begin?",
+    "q": "Customer complaints at a company have doubled this year, but nobody has proposed a project yet. An executive asks when business analysis should start. What is the answer?",
     "options": [
       "Before the project, with understanding the problem or opportunity",
       "When the project charter has been signed and the team is being formed",
@@ -323,7 +323,7 @@
   },
   {
     "id": "q17",
-    "q": "Who has decision-making authority for prioritizing what is included in or excluded from a product?",
+    "q": "On a product team, the developers want to drop a feature, the analyst has documented it, and the project manager is worried about the date. Who has the authority to decide whether it stays in the product?",
     "options": [
       "The product owner",
       "The business analyst",
@@ -385,7 +385,7 @@
   },
   {
     "id": "q20",
-    "q": "Who is responsible for allocating, scheduling and tracking the work of the project's business analysts?",
+    "q": "Three business analysts work on a project. Two are overloaded and the third has time to spare. Who is responsible for allocating, scheduling and tracking their work?",
     "options": [
       "The lead business analyst alone",
       "The product owner",
@@ -426,7 +426,7 @@
   },
   {
     "id": "q22",
-    "q": "Why does taking time for business analysis usually save time overall?",
+    "q": "A sponsor complains that two weeks of business analysis are \"delaying the real work\". Why does taking that time usually save time overall?",
     "options": [
       "It removes the need for testing",
       "Well-understood requirements reduce rework, change requests and defects later",

@@ -101,7 +101,7 @@
   },
   {
     "id": "q6",
-    "q": "Which technique is used in Plan Sourcing Strategy to decide whether work is done internally or bought from outside?",
+    "q": "A project needs a payment module. The team could build it or buy one from a vendor. Which technique is used in Plan Sourcing Strategy to decide whether work is done internally or bought from outside?",
     "options": [
       "Earned value analysis",
       "Tuckman ladder",
@@ -222,7 +222,7 @@
   },
   {
     "id": "q12",
-    "q": "What is the best way to share tacit knowledge within a project?",
+    "q": "An experienced engineer can tell by feel when a weld is about to fail, but she cannot write that skill down. What is the best way to share tacit knowledge like this within a project?",
     "options": [
       "Store it in a database",
       "Write it in the project charter",
@@ -242,7 +242,7 @@
   },
   {
     "id": "q13",
-    "q": "When should lessons learned be captured?",
+    "q": "A team plans to hold a single lessons learned meeting on the last day of an 18-month project. When should lessons learned be captured?",
     "options": [
       "Only at the end of the project",
       "Throughout the project and at its closure",
@@ -322,7 +322,7 @@
   },
   {
     "id": "q17",
-    "q": "In a predictive project, when do changes start to be formally controlled?",
+    "q": "A predictive project is in early planning and its draft documents change every day without approval. A stakeholder asks when that will stop. In a predictive project, when do changes start to be formally controlled?",
     "options": [
       "From the first day of the project",
       "Once baselines are established",
@@ -382,7 +382,7 @@
   },
   {
     "id": "q20",
-    "q": "How are changes typically managed in an adaptive project?",
+    "q": "On an adaptive project a stakeholder asks for a new feature in the middle of an iteration. How are changes typically managed in an adaptive project?",
     "options": [
       "Through a formal change control board that reviews and signs off every single item",
       "Changes are not allowed",
@@ -423,7 +423,7 @@
   },
   {
     "id": "q22",
-    "q": "Which is a required input before a project can be closed normally?",
+    "q": "A project manager wants to close the project, but the customer has not yet signed off the last deliverable. Which is a required input before a project can be closed normally?",
     "options": [
       "Work performance data",
       "A new business case",

@@ -102,7 +102,7 @@
   },
   {
     "id": "q6",
-    "q": "\"As-is analysis\" refers to which process?",
+    "q": "Before proposing anything, an analyst documents how the claims department works today: its steps, its systems and where the delays are. Which process is this \"as-is analysis\"?",
     "options": [
       "Determine Future State",
       "Assess Current State",
@@ -162,7 +162,7 @@
   },
   {
     "id": "q9",
-    "q": "In a SWOT analysis, a new competitor entering the market is a:",
+    "q": "A bakery chain is doing a SWOT analysis. A large supermarket has just announced that it will open in-store bakeries in the same towns. For the chain, this is a:",
     "options": [
       "Weakness",
       "Threat",
@@ -183,7 +183,7 @@
   },
   {
     "id": "q10",
-    "q": "What does gap analysis compare during needs assessment?",
+    "q": "An analyst has described how orders are handled today, and how the company wants them handled in two years. She now lists what is missing between the two. What does this gap analysis compare?",
     "options": [
       "The current state and the future state",
       "The budget and the actual cost",
@@ -223,7 +223,7 @@
   },
   {
     "id": "q12",
-    "q": "In the purpose alignment model, a feature that is mission critical but gives no competitive advantage belongs to which category?",
+    "q": "A hotel's payroll must be accurate and on time, or staff will leave. Yet no guest would ever choose the hotel because of its payroll. In the purpose alignment model, where does payroll belong?",
     "options": [
       "Differentiating",
       "Partner",
@@ -346,7 +346,7 @@
   },
   {
     "id": "q18",
-    "q": "Which document establishes whether the expected benefits justify the investment?",
+    "q": "A director asks for one document showing whether the expected benefits of a proposed warehouse system justify what it will cost. Which document establishes that?",
     "options": [
       "The business case",
       "The charter",

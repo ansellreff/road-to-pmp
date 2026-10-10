@@ -54,6 +54,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | **The platform is online: https://road-to-pmp-d82g.vercel.app** You uploaded with `upload.bat` and deployed on Vercel. Checked on the live site: all 13 click tests pass, a lesson address opens directly, search engines are told not to list it, and the books address returns no PDF. | You: open it on your phone, and bring your progress over with Download backup (on this PC) and Restore from backup (on the site). Next: Session 28d (sync), which needs a free Supabase project |
 | 2026-10-10 | **Session 29 done: navigation, side panels and a richer, more interactive look**, from your feedback after using the site. Search box with suggestions in the top bar; a Modules menu reaching every lesson from any page; a right-hand panel on lessons, quizzes, flashcards, mock exams, results and the formula sheet; previous and next through every module; cards, icons, domain colours and progress rings; the course page as cards; the home page as a "today" hub; answer feedback, confirmation messages, a streak counter, a daily goal and 13 milestones. 18 click tests pass. Sync between PC and phone is paused at your request. | You: look at http://localhost:5173, then double-click `upload.bat` to put it online, and tell me what you think of the look and the animations |
 | 2026-10-10 | **Flashcard status made visible**, from your feedback that "I know this" changed nothing you could see. Each card's edge now glows green (known) or amber (still learning), and is neutral grey when not learned yet, with the word in its corner; a strip above the card shows the whole deck in those colours and opens any card; a rated card stays for a moment in its new colour before the next one comes. Also on the Review cards page and in the side panel. | You: try a deck, then `upload.bat` when you are happy |
+| 2026-10-10 | **Session 30: more and better questions.** 54 new scenario questions for modules 1.1 to 1.9, so those quizzes have 17 to 20 questions instead of 11 to 14. 112 recall questions in Domains 2, 3 and 4 reworded as situations, with options and answers unchanged. Scenario questions are now about half of the bank (49%, from about a third). Question bank: 894. Sync between PC and phone is resumed at your request and waits for a Supabase project. | You: create a free Supabase project and send me its Project URL and anon public key; run `upload.bat` to publish the new questions |
 
 ## How your progress is saved
 
@@ -163,8 +164,9 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 28a | Click tests; lesson sections and resume; search; formula sheet |
 | ✅ | 28b | Weak spots and timing for mock exams; readiness estimate; mock exams in the study plan |
 | ✅ | 28c | Online at https://road-to-pmp-d82g.vercel.app from the private repository `ansellreff/road-to-pmp`. Checked with the click tests. Phone check by you still open. |
-| ⏸ | 28d | Sync between PC and phone: paused at your request on 2026-10-10. Needs a free Supabase project when resumed. |
+| 🟡 | 28d | Sync between PC and phone: resumed at your request on 2026-10-10. Waiting for your Supabase project (Project URL and anon public key). |
 | ✅ | 29 | Navigation, side panels and a richer look, from your feedback: search suggestions, Modules menu, right-hand panel, previous and next, cards and rings, home hub, feedback, streak, daily goal, milestones. Details under "Session 29: navigation and look, as built". |
+| ✅ | 30 | Questions: 54 new scenario questions in Domain 1; 112 questions in Domains 2 to 4 reworded as situations. Details under "Session 30: questions". |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 
@@ -225,7 +227,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (840 quiz questions, 1,208 flashcards). Of the 840 questions, 600 are used by the four mock exams and 150 of those (Mock exam 4) are held back from the module quizzes, which show 690.
+Overall: **39 of 39 modules done** (894 quiz questions, 1,208 flashcards). Of the 894 questions, 600 are used by the four mock exams and 150 of those (Mock exam 4) are held back from the module quizzes, which show 744.
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -512,6 +514,36 @@ Built on 2026-10-10 from four things you reported after using the site: search o
 
 **Newly saved with your progress:** the module opened last, the daily goal, and which milestones have been announced. Old saves and backup files still load.
 
+## Session 30: questions
+
+Done on 2026-10-10. You asked for the short Domain 1 quizzes and the low share of scenario questions to be fixed.
+
+**Domain 1: 54 new questions**
+- Six new questions in each of modules 1.1 to 1.9, all short scenarios, written only from what each lesson teaches. Each cites a source the lesson already cites, so its book page link was made by the linker.
+- Module quizzes 1.1 to 1.9 now have 17 to 20 questions (were 11 to 14 after Mock exam 4 was reserved).
+- The new questions are not in any mock exam: the exams are fixed, so they did not change.
+
+**Domains 2, 3 and 4: 112 questions reworded**
+- A recall question ("What is a warranty period?") became a situation ("A supplier's contract says the product has a 60-day warranty period. What is a warranty period?"). Only the wording of the question changed. The four options, the right answer, the explanation and the source are exactly as before, so nothing could become wrong by the change.
+- 36 in Domain 4, 41 in Domain 3, and 35 in the six Domain 2 modules that had the fewest scenarios (2.1, 2.2, 2.3, 2.6, 2.7, 2.8).
+- Some of these questions are in the mock exams, where they now appear in their new wording. Your saved results stay valid.
+
+**Scenario share** (`tools/scenario_report.py`: a question counts when it sets a scene in a statement before asking)
+
+| Domain | Before | After |
+|---|---|---|
+| 1 | about 32% | 45% |
+| 2 | 39% | 52% |
+| 3 | 31% | 54% |
+| 4 | 24% | 46% |
+| All | about 33% | 49% |
+
+The Domain 1 and overall "before" figures are worked back from today's counts; the others were measured before the change.
+
+**Quality checks:** right answers stay spread over A to D; the right answer is the single longest option in at most 29% of any Domain 1 quiz; no duplicated question; every question has a book page link.
+
+**Limits:** modules 1.10, 1.11 and 1.12 were not touched (1.11 and 1.12 are 17% and 12% scenarios, because they teach lists and names). A reworded question still tests the same fact as before; it is easier to recognise than a question written fresh as a scenario with new options.
+
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.
@@ -794,3 +826,11 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 117 | The daily goal needs a unit that fits lessons, questions and flashcards. | It counts study actions: each answered question, rated flashcard and completed lesson is one. The tile says so. | `GoalTile` in `web/src/pages/Home.tsx` |
 | 118 | Not every page was looked at as a picture after the page became wider: the study plan, practice, review cards, mock exam list, result and formula sheet were covered by the click tests but not viewed again. | Viewed: home (light, dark, phone), course page, lesson with panel, top menu, search suggestions (desktop and phone), real exam mode, dashboard. Tell me if any of the others looks off. | Status log |
 | 119 | Your feedback: pressing "I know this" showed nothing, because the next card appeared at once and no card showed its status. You proposed a green, yellow and red glow. | Built as you proposed, plus a label on the card and a strip showing the whole deck, since a glow alone would only show one card at a time. New cards were red at first, as you proposed; you then agreed to neutral grey, since red means a wrong answer everywhere else and a new card is not a mistake. A card changed from known to still learning is amber like any other still-learning card, because the earlier state is not stored. | `web/src/components/FlipCard.tsx`, `Flashcards.tsx` |
+
+### Questions (Session 30)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 120 | The 54 new Domain 1 questions repeated the old give-away: the right answer was the longest option in about half of them, and three quizzes went over the 35% limit. | The checker flagged it at once. I lengthened one wrong option in 24 questions. Every Domain 1 quiz is now at 29% or less. | `tools/check_content.py --report` |
+| 121 | Writing new scenario questions for Domains 2 to 4 would have meant reading 27 lessons again, and would have put two questions on the same fact into one quiz. | I reworded existing recall questions as situations instead, keeping options, answer, explanation and source. This is cheaper and cannot introduce a wrong answer, but the result is less demanding than a freshly written scenario. Said under "Limits". | "Session 30: questions" |
+| 122 | Some reworded questions are part of the fixed mock exams, which were meant not to change. | The exams still contain the same questions with the same answers; only the wording of 112 questions is fuller. Results already saved remain valid. | `web/src/content/capm/exams.json` (unchanged) |

@@ -123,7 +123,7 @@
   },
   {
     "id": "q7",
-    "q": "In planning poker, team members choose their estimate privately and then:",
+    "q": "A team is estimating a story with planning poker. Each member has chosen a card and holds it face down. In planning poker, team members choose their estimate privately and then:",
     "options": [
       "The product owner picks the final number",
       "The lowest number is always used",
@@ -183,7 +183,7 @@
   },
   {
     "id": "q10",
-    "q": "Team A has a velocity of 30 and Team B has a velocity of 50. What can be concluded?",
+    "q": "A director notices that Team A has a velocity of 30 and Team B a velocity of 50, and asks what this says about the two teams. What can be concluded?",
     "options": [
       "Nothing about their relative productivity, because story points are specific to each team",
       "Team B is more productive",
@@ -349,7 +349,7 @@
   },
   {
     "id": "q18",
-    "q": "Who should estimate the size of user stories?",
+    "q": "To save the team's time, a product owner offers to size all the stories herself before planning. Who should estimate the size of user stories?",
     "options": [
       "The team that will do the work",
       "The product owner alone",
@@ -370,7 +370,7 @@
   },
   {
     "id": "q19",
-    "q": "During iteration planning, who decides how many stories the team will commit to?",
+    "q": "In iteration planning the product owner has ranked twenty stories. The team's recent results suggest it can finish about eight. Who decides how many stories the team will commit to?",
     "options": [
       "The product owner, based on priority",
       "The scrum master",
@@ -475,7 +475,7 @@
   },
   {
     "id": "q24",
-    "q": "Which is a disadvantage of working in fixed-length iterations?",
+    "q": "A team works in two-week iterations. On day four an urgent customer request arrives that cannot wait until the next one. Which disadvantage of working in fixed-length iterations does this show?",
     "options": [
       "Feedback arrives every few weeks",
       "Urgent work arriving mid-iteration disturbs the plan",

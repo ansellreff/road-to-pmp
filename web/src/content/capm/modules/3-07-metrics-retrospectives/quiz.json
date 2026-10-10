@@ -181,7 +181,7 @@
   },
   {
     "id": "q10",
-    "q": "Which metric measures the elapsed time from when work on an item starts to when it is finished?",
+    "q": "A team starts work on a feature on 11 March and finishes it on 15 March. Which metric measures this elapsed time, from when work on an item starts to when it is finished?",
     "options": [
       "Lead time",
       "Throughput",
@@ -201,7 +201,7 @@
   },
   {
     "id": "q11",
-    "q": "What is throughput?",
+    "q": "A Kanban team reports a throughput of 14 last week and 15 the week before. What is throughput?",
     "options": [
       "The number of items waiting in a queue",
       "The number of work items finished per time period",
@@ -241,7 +241,7 @@
   },
   {
     "id": "q13",
-    "q": "Which metric is a direct indicator of product quality and of whether the team's pace is sustainable?",
+    "q": "After each release, customers report defects that the team then has to fix, and the amount is growing. Which metric is a direct indicator of product quality and of whether the team's pace is sustainable?",
     "options": [
       "Queue length in each state",
       "Throughput",
@@ -281,7 +281,7 @@
   },
   {
     "id": "q15",
-    "q": "Which statement about an information radiator is correct?",
+    "q": "A team keeps a large board on the wall beside its desks, showing the stories in progress and the burndown chart, and updates it by hand each day. Which statement about this information radiator is correct?",
     "options": [
       "It is a confidential report sent to the sponsor",
       "It is updated once, at the end of the project",
@@ -403,7 +403,7 @@
   },
   {
     "id": "q21",
-    "q": "How does a retrospective differ from a demonstration (review)?",
+    "q": "A stakeholder asks to join the team's retrospective, because she attended last week's demonstration and found it useful. How does a retrospective differ from a demonstration (review)?",
     "options": [
       "The retrospective is attended by customers; the demonstration is not",
       "The retrospective happens before the iteration starts; the demonstration happens after",

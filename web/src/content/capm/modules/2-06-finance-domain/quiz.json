@@ -167,7 +167,7 @@
   },
   {
     "id": "q9",
-    "q": "What happens to the accuracy of cost estimates as the project progresses?",
+    "q": "At charter stage a project's cost estimate was a wide range. A year later, with the design finished, the estimates are much tighter. What happens to the accuracy of cost estimates as the project progresses?",
     "options": [
       "It decreases",
       "It increases",
@@ -247,7 +247,7 @@
   },
   {
     "id": "q13",
-    "q": "Training the team in the correct procedure before work starts is which type of quality cost?",
+    "q": "Before work starts, a contractor trains its welders in the correct procedure so that defects do not occur. Training the team in the correct procedure before work starts is which type of quality cost?",
     "options": [
       "Appraisal cost",
       "Prevention cost",
@@ -267,7 +267,7 @@
   },
   {
     "id": "q14",
-    "q": "Testing and inspecting deliverables are examples of which type of quality cost?",
+    "q": "A team spends two days testing and inspecting each batch before it is shipped. Testing and inspecting deliverables are examples of which type of quality cost?",
     "options": [
       "Prevention cost",
       "Internal failure cost",
@@ -307,7 +307,7 @@
   },
   {
     "id": "q16",
-    "q": "Which of the following belongs to the cost of nonconformance?",
+    "q": "A batch fails its inspection and the team has to do the work again. Which of the following belongs to the cost of nonconformance?",
     "options": [
       "Training",
       "Inspections",
@@ -348,7 +348,7 @@
   },
   {
     "id": "q18",
-    "q": "Office rent shared by all projects in the company is an example of:",
+    "q": "A company spreads the rent of its head office across all of its projects. Office rent shared by all projects in the company is an example of:",
     "options": [
       "A direct cost",
       "A variable direct cost",
@@ -408,7 +408,7 @@
   },
   {
     "id": "q21",
-    "q": "Money invested in buying equipment and buildings is called:",
+    "q": "A project buys a new production building and the machines to go in it. Money invested in buying equipment and buildings is called:",
     "options": [
       "Operational expenditure (OpEx)",
       "Capital expenditure (CapEx)",

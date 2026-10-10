@@ -21,7 +21,7 @@
   },
   {
     "id": "q2",
-    "q": "Which technique helps identify stakeholders by showing who performs a business process or uses its outputs?",
+    "q": "An analyst is unsure who the stakeholders of a refund process are. She uses a model that shows each step of the process, who performs it and who uses what it produces. Which technique is this?",
     "options": [
       "Burndown chart",
       "Process flow",
@@ -142,7 +142,7 @@
   },
   {
     "id": "q8",
-    "q": "On a stakeholder matrix of influence and impact, how should high-influence, high-impact stakeholders be treated?",
+    "q": "The head of operations could stop the project, and her whole department will work differently because of it. On a stakeholder matrix of influence and impact, how should she be treated?",
     "options": [
       "Monitored only",
       "Informed at the end of the project",
@@ -284,7 +284,7 @@
   },
   {
     "id": "q15",
-    "q": "Which output determines whether the organization is able and willing to move to the future state?",
+    "q": "A new system is built and tested. The analyst now needs to know whether the branches are able and willing to switch to it. Which output determines that?",
     "options": [
       "Business case",
       "Stakeholder register",
@@ -325,7 +325,7 @@
   },
   {
     "id": "q17",
-    "q": "Which of these belongs in a transition plan?",
+    "q": "Go-live is six weeks away and the analyst is writing the transition plan. Which of these belongs in it?",
     "options": [
       "Training, rollout, communication and procedure updates needed to cut over",
       "The economic justification for the project",
@@ -386,7 +386,7 @@
   },
   {
     "id": "q20",
-    "q": "On an adaptive project, when is business analysis performance reviewed?",
+    "q": "An adaptive team wants to know whether its business analysis practices are working well. When would it normally review them?",
     "options": [
       "Only at the end of the project",
       "Only when the sponsor asks for a review, usually after a serious problem occurs",

@@ -144,7 +144,7 @@
   },
   {
     "id": "q8",
-    "q": "In a self-organizing team, who decides which team member does which piece of work?",
+    "q": "A new manager on an agile project starts handing each developer a task every morning, and the team objects. In a self-organizing team, who decides which team member does which piece of work?",
     "options": [
       "The project sponsor",
       "The product owner",
@@ -184,7 +184,7 @@
   },
   {
     "id": "q10",
-    "q": "Why can focusing on one person's individual output be harmful to an agile team?",
+    "q": "A manager praises the developer who closes the most tasks each week, while finished work piles up waiting for the one tester. Why can focusing on one person's individual output be harmful to an agile team?",
     "options": [
       "Because individuals should not work hard",
       "Because output cannot be measured",
@@ -224,7 +224,7 @@
   },
   {
     "id": "q12",
-    "q": "What is the main benefit of having team members 100% dedicated to one team?",
+    "q": "A developer is split between three projects and loses hours every day switching from one to another. What is the main benefit of having team members 100% dedicated to one team?",
     "options": [
       "Lower salaries",
       "Fewer meetings",
@@ -264,7 +264,7 @@
   },
   {
     "id": "q14",
-    "q": "In the four stages of psychological safety, which stage lets people question assumptions and suggest changes without fear?",
+    "q": "A junior developer feels able to say, in front of the whole team, that the agreed design is wrong and to propose another. In the four stages of psychological safety, which stage lets people question assumptions and suggest changes without fear?",
     "options": [
       "Inclusion safety",
       "Learner safety",
@@ -284,7 +284,7 @@
   },
   {
     "id": "q15",
-    "q": "How can a leader best strengthen psychological safety?",
+    "q": "A team stays silent in its retrospectives because people are afraid of being blamed. How can its leader best strengthen psychological safety?",
     "options": [
       "By admitting their own mistakes, asking for help and responding to feedback without defensiveness",
       "By criticizing mistakes in front of the team",

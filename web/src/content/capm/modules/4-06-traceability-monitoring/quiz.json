@@ -21,7 +21,7 @@
   },
   {
     "id": "q2",
-    "q": "Tracing a requirement to the business objective that triggered it is called:",
+    "q": "During a review, an analyst takes one requirement and follows it back to the business objective that triggered it, to confirm that it is needed. What is this called?",
     "options": [
       "Forward traceability",
       "Lateral traceability",
@@ -265,7 +265,7 @@
   },
   {
     "id": "q14",
-    "q": "Which technique lists the forces for and against a proposed change, weights them and compares the totals?",
+    "q": "A change is proposed. The analyst lists the forces pushing for it and the forces against it, gives each a weight, and compares the two totals. Which technique is this?",
     "options": [
       "Delphi",
       "Story mapping workshop",
@@ -346,7 +346,7 @@
   },
   {
     "id": "q18",
-    "q": "How does a deferred change differ from a rejected one?",
+    "q": "A change control board looks at two requests. It turns one down for good. It sets the other aside for a later release and notes why. How does a deferred change differ from a rejected one?",
     "options": [
       "A deferred change is never recorded",
       "There is no difference",
@@ -386,7 +386,7 @@
   },
   {
     "id": "q20",
-    "q": "Who decides whether a proposed change to baselined requirements is accepted?",
+    "q": "On a predictive project the requirements have been baselined. A senior stakeholder insists that her change be added today. Who decides whether it is accepted?",
     "options": [
       "The business analyst alone",
       "The developer who will build it, because that person understands the effort best",
@@ -406,7 +406,7 @@
   },
   {
     "id": "q21",
-    "q": "Which tool tracks the history of revisions of a work product?",
+    "q": "Two analysts edited the same requirements document, and one unknowingly overwrote the other's work. Which tool would have kept the history of every revision?",
     "options": [
       "Stakeholder matrix",
       "Force field analysis model",

@@ -151,7 +151,7 @@
   },
   {
     "id": "q8",
-    "q": "A project has a CPI of 0.8. What does this mean?",
+    "q": "A sponsor reads in a status report that the project has a CPI of 0.8 and asks the project manager to explain. What does this mean?",
     "options": [
       "The project is 80% complete",
       "The project is 20% ahead of schedule",
@@ -171,7 +171,7 @@
   },
   {
     "id": "q9",
-    "q": "A project reports a CPI of 1.1 and an SPI of 0.9. What is its status?",
+    "q": "A status report shows a CPI of 1.1 and an SPI of 0.9. The sponsor asks for the project's status in plain words. What is its status?",
     "options": [
       "Over budget and ahead of schedule",
       "Under budget and behind schedule",
@@ -292,7 +292,7 @@
   },
   {
     "id": "q15",
-    "q": "A TCPI greater than 1.0 means:",
+    "q": "Halfway through, a project's to-complete performance index against its original budget is 1.2. The sponsor asks what that implies. A TCPI greater than 1.0 means:",
     "options": [
       "The remaining work must be done more efficiently than planned, so the goal is harder to meet",
       "The project is under budget",
@@ -413,7 +413,7 @@
   },
   {
     "id": "q21",
-    "q": "Does planned value include management reserve?",
+    "q": "A project manager is asked whether the management reserve is part of the planned value she reports each month. Does planned value include management reserve?",
     "options": [
       "Yes, always",
       "No",
@@ -433,7 +433,7 @@
   },
   {
     "id": "q22",
-    "q": "Which earned value method is used for work that cannot be measured, such as project management support?",
+    "q": "The project manager's own coordination work produces nothing that can be counted or measured. Which earned value method is used for work that cannot be measured, such as project management support?",
     "options": [
       "0/100",
       "Weighted milestone",

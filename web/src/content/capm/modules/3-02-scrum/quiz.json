@@ -61,7 +61,7 @@
   },
   {
     "id": "q4",
-    "q": "Who is responsible for maximizing the value of the product and ordering the product backlog?",
+    "q": "A Scrum team has far more requests than it can ever build. Someone must decide what is most valuable and keep the product backlog in order. Who is responsible for that?",
     "options": [
       "The scrum master",
       "The product owner",
@@ -121,7 +121,7 @@
   },
   {
     "id": "q7",
-    "q": "During sprint planning, who decides how much work the team will take into the sprint?",
+    "q": "In sprint planning the product owner presents twelve stories and says she needs all of them this sprint. Who decides how much work the team will take into the sprint?",
     "options": [
       "The product owner",
       "The scrum master",
@@ -181,7 +181,7 @@
   },
   {
     "id": "q10",
-    "q": "What is the maximum length of the daily scrum?",
+    "q": "A daily scrum has been running for 40 minutes, because two developers are solving a design problem in front of everyone. What is the maximum length of the daily scrum?",
     "options": [
       "15 minutes",
       "30 minutes",
@@ -222,7 +222,7 @@
   },
   {
     "id": "q12",
-    "q": "Which of the following is a common mistake with the daily scrum?",
+    "q": "Each morning a team holds its daily scrum around the manager's desk, and the members take turns telling the manager what they did yesterday. Which common mistake with the daily scrum is this?",
     "options": [
       "Keeping it to 15 minutes",
       "Turning it into a status report to a manager",
@@ -304,7 +304,7 @@
   },
   {
     "id": "q16",
-    "q": "Who accepts or declines the completed stories at the demonstration?",
+    "q": "At the demonstration the team shows five completed stories. One of them does not behave as the customer expected. Who accepts or declines the completed stories?",
     "options": [
       "The scrum master",
       "The product owner",

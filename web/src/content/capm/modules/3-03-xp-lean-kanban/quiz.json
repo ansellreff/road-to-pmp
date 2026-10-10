@@ -63,7 +63,7 @@
   },
   {
     "id": "q4",
-    "q": "What is refactoring?",
+    "q": "A developer says she will spend the afternoon refactoring the billing module. What will she be doing?",
     "options": [
       "Rewriting the requirements",
       "Adding new features to the code",
@@ -83,7 +83,7 @@
   },
   {
     "id": "q5",
-    "q": "In test-first programming, when is the test written?",
+    "q": "A team practises test-first programming. A developer is about to write a function that calculates tax. When does she write its test?",
     "options": [
       "After the product is released",
       "After the code is complete",
@@ -123,7 +123,7 @@
   },
   {
     "id": "q7",
-    "q": "In Lean Startup, what is a minimum viable product (MVP)?",
+    "q": "A startup is unsure whether anyone wants its idea. It builds the smallest version it can test and shows it to ten customers. In Lean Startup, what is this minimum viable product (MVP)?",
     "options": [
       "The smallest testable version of an idea, used to collect real customer data",
       "The final product with all features",
@@ -184,7 +184,7 @@
   },
   {
     "id": "q10",
-    "q": "Which is a core property of the Kanban Method?",
+    "q": "A team puts its work on a board with columns and agrees that no more than three items may be in testing at once. Which core property of the Kanban Method is this?",
     "options": [
       "Fixed-length sprints",
       "Limiting work in progress",
@@ -244,7 +244,7 @@
   },
   {
     "id": "q13",
-    "q": "In a pull system, when does a new item enter a stage of work?",
+    "q": "A tester has just finished her item and is free. A manager wants to push three new items into testing at once. In a pull system, when does a new item enter a stage of work?",
     "options": [
       "When a manager assigns it",
       "At the start of each month",
@@ -410,7 +410,7 @@
   },
   {
     "id": "q21",
-    "q": "Which of the following is waste in the lean sense?",
+    "q": "A lean coach reviews a team's work and finds half-built features waiting unfinished, and two features that no customer requested. Which of the following is waste in the lean sense?",
     "options": [
       "A feature that the customer uses every working day",
       "A short feedback loop",

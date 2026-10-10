@@ -41,7 +41,7 @@
   },
   {
     "id": "q3",
-    "q": "Which model shows the solution with all the systems and people that interface directly with it, and so helps define scope?",
+    "q": "An analyst must agree with stakeholders what is inside and outside a new booking solution. She draws the solution in the middle, with every system and person that exchanges something with it. Which model is this?",
     "options": [
       "Context diagram",
       "State diagram",
@@ -103,7 +103,7 @@
   },
   {
     "id": "q6",
-    "q": "Which model shows business data objects and the relationships between them, including cardinality?",
+    "q": "A team is unsure whether one customer can hold several accounts, and whether an account can belong to two customers. Which model shows these data objects and how many of each relate to the other?",
     "options": [
       "Entity relationship diagram",
       "Context diagram",
@@ -204,7 +204,7 @@
   },
   {
     "id": "q11",
-    "q": "Are confirmed elicitation results the same as requirements?",
+    "q": "Stakeholders have confirmed the notes from three workshops. A developer says: \"Good, those are the requirements now, so we can start building.\" Are confirmed elicitation results the same as requirements?",
     "options": [
       "Yes, once confirmed they are final requirements",
       "No. They still need analysis to avoid missing, inconsistent or conflicting requirements",
@@ -326,7 +326,7 @@
   },
   {
     "id": "q17",
-    "q": "Which is the most formal type of peer review, usually using a checklist?",
+    "q": "A safety-critical requirements document is reviewed by a trained team that follows a checklist and records every defect it finds. Which type of peer review is this, the most formal one?",
     "options": [
       "Inspection",
       "Peer desk check",
@@ -467,7 +467,7 @@
   },
   {
     "id": "q24",
-    "q": "On an adaptive project, who decides whether and where a new user story goes in the backlog?",
+    "q": "On an adaptive project, a stakeholder writes a new user story and asks the scrum master to put it at the top of the backlog. Who decides whether and where it goes?",
     "options": [
       "Whoever wrote the story",
       "The scrum master",

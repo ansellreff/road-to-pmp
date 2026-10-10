@@ -41,7 +41,7 @@
   },
   {
     "id": "q3",
-    "q": "When is Identify Stakeholders performed?",
+    "q": "A project identified its stakeholders in the first week. Six months later a new regulator and a new supplier have appeared. When is Identify Stakeholders performed?",
     "options": [
       "Once, at the start of the project",
       "Only during closing",
@@ -81,7 +81,7 @@
   },
   {
     "id": "q5",
-    "q": "On a power/interest grid, how should a stakeholder with high power and high interest be handled?",
+    "q": "The operations director could stop the project, and she follows every detail of it. On a power/interest grid, how should a stakeholder with high power and high interest be handled?",
     "options": [
       "Monitor with minimum effort",
       "Keep informed",
@@ -141,7 +141,7 @@
   },
   {
     "id": "q8",
-    "q": "In the directions of influence model, in which direction are suppliers, regulators and end users?",
+    "q": "A project manager lists the people she must influence: her sponsor, her team, fellow project managers, and the suppliers, regulators and end users. In the directions of influence model, in which direction are suppliers, regulators and end users?",
     "options": [
       "Upward",
       "Outward",
@@ -161,7 +161,7 @@
   },
   {
     "id": "q9",
-    "q": "What does the stakeholder engagement assessment matrix compare?",
+    "q": "A department head is resistant to the project, and the project needs her to be supportive. The project manager records both in the stakeholder engagement assessment matrix. What does this matrix compare?",
     "options": [
       "The power and interest of each stakeholder",
       "Planned and actual costs",
@@ -342,7 +342,7 @@
   },
   {
     "id": "q18",
-    "q": "Which communication method is a real-time, multidirectional exchange such as a meeting or a video call?",
+    "q": "A team must settle a design disagreement quickly, with everyone able to respond to everyone else at once. Which communication method is a real-time, multidirectional exchange such as a meeting or a video call?",
     "options": [
       "Interactive",
       "Push",
@@ -363,7 +363,7 @@
   },
   {
     "id": "q19",
-    "q": "In the communication model, who is responsible for confirming that the message was correctly understood?",
+    "q": "A project manager emails complex instructions to a supplier and assumes they were clear because no question came back. In the communication model, who is responsible for confirming that the message was correctly understood?",
     "options": [
       "The receiver",
       "The sponsor",

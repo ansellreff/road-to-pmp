@@ -223,7 +223,7 @@
   },
   {
     "id": "q12",
-    "q": "Who makes the release decision?",
+    "q": "Acceptance testing is finished and the analyst has summarized the results. A tester says the test team should now decide whether to release. Who makes the release decision?",
     "options": [
       "The business analyst alone, because the analyst wrote the acceptance criteria",
       "The test team",
@@ -263,7 +263,7 @@
   },
   {
     "id": "q14",
-    "q": "What is a warranty period?",
+    "q": "A supplier's contract says the new product comes with a 60-day warranty period. What is a warranty period?",
     "options": [
       "The time allowed for writing and approving requirements before development is permitted to start",
       "The time before the charter is approved",
@@ -305,7 +305,7 @@
   },
   {
     "id": "q16",
-    "q": "On an adaptive project, how is acceptance usually obtained at the end of an iteration?",
+    "q": "At the end of an iteration on an adaptive project, the team shows the stories it has finished. How is acceptance of them usually obtained?",
     "options": [
       "A formal sign-off by the PMO",
       "A written contract amendment",
@@ -325,7 +325,7 @@
   },
   {
     "id": "q17",
-    "q": "When does Evaluate Solution Performance usually take place?",
+    "q": "A new ordering system went live three months ago. The analyst now measures whether it is delivering the business value that was expected. When does this evaluation of solution performance usually take place?",
     "options": [
       "Before the business case has been written",
       "During elicitation",
@@ -365,7 +365,7 @@
   },
   {
     "id": "q19",
-    "q": "A business objective cannot be measured directly. What can be used?",
+    "q": "The objective of a new intranet is \"better informed employees\", which cannot be measured directly. What can the team use to evaluate it?",
     "options": [
       "Nothing; evaluation is skipped",
       "A proxy, such as task duration, response time or error counts",

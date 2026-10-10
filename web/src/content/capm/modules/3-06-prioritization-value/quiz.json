@@ -63,7 +63,7 @@
   },
   {
     "id": "q4",
-    "q": "In Kano analysis, which type of feature is expected by customers, causes dissatisfaction when missing, and goes unnoticed when present?",
+    "q": "Customers of a banking app take it for granted that they can see their balance. They would be upset if it were missing, yet having it does not delight anyone. In Kano analysis, which type of feature is this?",
     "options": [
       "Delighter",
       "Performance",
@@ -143,7 +143,7 @@
   },
   {
     "id": "q8",
-    "q": "In which technique do stakeholders \"spend\" a fixed budget of money or points on the items they want most?",
+    "q": "In a workshop each stakeholder receives 100 points and spreads them over the items they want most. In which technique do stakeholders \"spend\" a fixed budget like this?",
     "options": [
       "Kano analysis",
       "Stack ranking with a single owner",
@@ -183,7 +183,7 @@
   },
   {
     "id": "q10",
-    "q": "Which term describes the smallest version of a product with enough features to be offered to the market and deliver value customers will pay for?",
+    "q": "After early experiments a team knows what customers want. It now plans the smallest version with enough features to be offered to the market and deliver value. Which term describes it?",
     "options": [
       "Minimum viable product (MVP)",
       "Minimum business increment (MBI)",
@@ -304,7 +304,7 @@
   },
   {
     "id": "q16",
-    "q": "An increment meets the definition of done. Who decides whether and when it is released?",
+    "q": "An increment meets the definition of done on Wednesday. Marketing wants it out today; the team would prefer next week. Who decides whether and when it is released?",
     "options": [
       "The scrum master",
       "The development team",
@@ -385,7 +385,7 @@
   },
   {
     "id": "q20",
-    "q": "Besides business value, which factor often moves a backlog item earlier in the order?",
+    "q": "Two backlog items have similar business value. One depends on an untried technology that could derail the release. Besides business value, which factor often moves a backlog item earlier in the order?",
     "options": [
       "It is the easiest to document",
       "The team finds it the most enjoyable",

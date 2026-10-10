@@ -41,7 +41,7 @@
   },
   {
     "id": "q3",
-    "q": "Who issues the project charter?",
+    "q": "To get started quickly, a project manager drafts the project charter and signs it herself. Who should issue the project charter?",
     "options": [
       "The project initiator or sponsor",
       "The project team",
@@ -61,7 +61,7 @@
   },
   {
     "id": "q4",
-    "q": "When should the project manager be identified and assigned?",
+    "q": "A company approves a charter, begins planning, and names a project manager only when executing starts. When should the project manager be identified and assigned?",
     "options": [
       "After the project management plan is approved",
       "When executing begins",
@@ -141,7 +141,7 @@
   },
   {
     "id": "q8",
-    "q": "Which of the following is a project document and NOT a component of the project management plan?",
+    "q": "An auditor asks which of the team's files are components of the project management plan and which are project documents. Which of the following is a project document and NOT a component of the project management plan?",
     "options": [
       "Risk management plan",
       "Schedule baseline",
@@ -161,7 +161,7 @@
   },
   {
     "id": "q9",
-    "q": "How can a baseline be changed?",
+    "q": "One task slipped, so a team member edits the approved schedule baseline directly to match. How can a baseline be changed?",
     "options": [
       "By any team member, whenever the work requires it",
       "Only through formal change control procedures",
@@ -241,7 +241,7 @@
   },
   {
     "id": "q13",
-    "q": "What is a change request?",
+    "q": "In a corridor conversation a stakeholder mentions that a report should have an extra column. The project manager explains that this is not yet a change request. What is a change request?",
     "options": [
       "An informal suggestion mentioned in passing during a team meeting",
       "A formal proposal to modify a document, deliverable or baseline",
@@ -322,7 +322,7 @@
   },
   {
     "id": "q17",
-    "q": "Which of the following is a leading indicator?",
+    "q": "A project is still on budget and on schedule, but something in this month's review worries the project manager about the months ahead. Which of the following is a leading indicator?",
     "options": [
       "The number of deliverables completed last month",
       "Key stakeholders are not available or engaged",
