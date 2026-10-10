@@ -17,7 +17,8 @@
         "page": 67,
         "label": "Agile Practice Guide, 4.4.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q2",
@@ -37,7 +38,8 @@
         "page": 81,
         "label": "Agile Practice Guide, 5.2.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q3",
@@ -237,7 +239,8 @@
         "page": 87,
         "label": "Agile Practice Guide, 5.2.8"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q13",
@@ -357,7 +360,8 @@
         "page": 188,
         "label": "Agile Practice Guide, Glossary (technical debt)"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q19",

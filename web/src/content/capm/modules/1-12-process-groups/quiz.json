@@ -37,7 +37,8 @@
         "page": 42,
         "label": "Process Groups: A Practice Guide, 1.7.5"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q3",
@@ -117,7 +118,8 @@
         "page": 154,
         "label": "Process Groups: A Practice Guide, section 6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q7",
@@ -257,7 +259,8 @@
         "page": 54,
         "label": "Process Groups: A Practice Guide, Table 1-6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q14",
@@ -317,7 +320,8 @@
         "page": 43,
         "label": "Process Groups: A Practice Guide, Table 1-4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q17",
@@ -337,7 +341,8 @@
         "page": 43,
         "label": "Process Groups: A Practice Guide, Table 1-4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q18",
@@ -437,7 +442,8 @@
         "page": 154,
         "label": "Process Groups: A Practice Guide, section 6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q23",

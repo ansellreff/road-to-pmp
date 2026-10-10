@@ -18,6 +18,8 @@ SUMMARY_SECTION = re.compile(r"Key points|Exam tips|How to handle it in the exam
 # A quiz where the correct answer is usually the longest option can be passed by
 # test-taking skill alone. With four options, chance is 25%.
 LONGEST_LIMIT = 0.35
+# Questions a module quiz must keep after some are reserved for the unseen mock exam.
+MIN_MODULE_QUIZ = 10
 CATCH_ALL = re.compile(r"^(all|none|both) of (the|these)|^both [a-d] and [a-d]\b|all of the above|none of the above", re.IGNORECASE)
 
 
@@ -86,10 +88,61 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
         if not q.get("links"):
             problems.append(f"{where}: no book page link (run tools/link_sources.py)")
     # A quiz where the answer is nearly always the same letter can be gamed.
-    spread = Counter(q.get("answer") for q in questions)
-    if questions and max(spread.values()) > len(questions) * 0.45:
+    # Questions reserved for the unseen mock exam are not part of the module quiz.
+    visible = [q for q in questions if not q.get("examOnly")]
+    spread = Counter(q.get("answer") for q in visible)
+    if visible and max(spread.values()) > len(visible) * 0.45:
         problems.append(f"{path}: answers are not spread across A-D ({dict(sorted(spread.items()))})")
+    if questions and len(visible) < MIN_MODULE_QUIZ:
+        problems.append(f"{path}: only {len(visible)} questions left for the module quiz (minimum {MIN_MODULE_QUIZ})")
     return len(questions)
+
+
+def check_exams(course_file: Path, course: dict, problems: list[str]) -> str:
+    """The fixed mock exams: right size, right domain split, no question used twice."""
+    path = course_file.parent / "exams.json"
+    if not path.is_file():
+        return ""
+    exams = json.loads(path.read_text(encoding="utf-8"))
+    domain_of = {m["id"]: d["id"] for d in course["domains"] for m in d["modules"]}
+    bank = {}
+    for module in domain_of:
+        quiz = course_file.parent / "modules" / module / "quiz.json"
+        for q in json.loads(quiz.read_text(encoding="utf-8")) if quiz.is_file() else []:
+            bank[(module, q["id"])] = q
+    size = course["exam"]["questions"]
+    used: dict[tuple, str] = {}
+    for exam in exams:
+        rows = exam["questions"]
+        if len(rows) != size:
+            problems.append(f"{path} [{exam['id']}]: {len(rows)} questions, the exam has {size}")
+        split = Counter()
+        letters = Counter()
+        for module, qid, order in rows:
+            question = bank.get((module, qid))
+            if question is None:
+                problems.append(f"{path} [{exam['id']}]: {module} {qid} does not exist")
+                continue
+            if (module, qid) in used:
+                problems.append(f"{path} [{exam['id']}]: {module} {qid} is also in {used[(module, qid)]}")
+            used[(module, qid)] = exam["id"]
+            if sorted(order) != [0, 1, 2, 3]:
+                problems.append(f"{path} [{exam['id']}]: {module} {qid} has a bad option order {order}")
+                continue
+            if bool(question.get("examOnly")) != bool(exam.get("unseen")):
+                problems.append(f"{path} [{exam['id']}]: {module} {qid} examOnly mark does not match the exam")
+            split[domain_of[module]] += 1
+            letters[order.index(question["answer"])] += 1
+        for domain in course["domains"]:
+            want = round(size * domain["weight"] / 100)
+            if abs(split[domain["id"]] - want) > 1:
+                problems.append(f"{path} [{exam['id']}]: {split[domain['id']]} questions from {domain['id']}, expected {want}")
+        if letters and max(letters.values()) > size * 0.3:
+            problems.append(f"{path} [{exam['id']}]: answers are not spread across A-D ({dict(sorted(letters.items()))})")
+    stray = [f"{m} {q}" for (m, q), question in bank.items() if question.get("examOnly") and (m, q) not in used]
+    if stray:
+        problems.append(f"{path}: marked examOnly but in no exam: {stray}")
+    return f", {len(exams)} mock exams"
 
 
 def check_cards(path: Path, problems: list[str]) -> int:
@@ -153,7 +206,8 @@ def main() -> None:
                 questions += check_quiz(folder / "quiz.json", problems, warnings, seen)
             if (folder / "flashcards.json").is_file():
                 cards += check_cards(folder / "flashcards.json", problems)
-        print(f"{course['id']}: {ready} of {len(modules)} modules ready, {questions} questions, {cards} flashcards")
+        exams = check_exams(course_file, course, problems)
+        print(f"{course['id']}: {ready} of {len(modules)} modules ready, {questions} questions, {cards} flashcards{exams}")
 
     if warnings:
         print(f"{len(warnings)} quiz quality warning(s)" + ("" if "--report" in sys.argv else " (run with --report to list them)"))

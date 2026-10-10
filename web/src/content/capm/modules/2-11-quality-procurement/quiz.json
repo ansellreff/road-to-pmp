@@ -387,7 +387,8 @@
         "page": 357,
         "label": "PMBOK 8, Appendix X4.9"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q20",
@@ -447,6 +448,7 @@
         "page": 229,
         "label": "PMBOK 8, Guide section 4, Procurement management plan"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

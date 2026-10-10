@@ -27,6 +27,39 @@ export interface AnswerState {
   lastCorrect: boolean
 }
 
+export type ExamMode = 'practice' | 'real'
+
+/** A mock exam that has been started and not yet submitted. */
+export interface ExamRun {
+  mode: ExamMode
+  /** When the clock started, in milliseconds. It keeps running while the page is closed. */
+  startedAt: number
+  /** The option picked for each question, in exam order; null while unanswered. */
+  picks: (number | null)[]
+  /** Positions of questions marked to look at again. */
+  flags: number[]
+  /** Real exam mode: set when the first half is submitted. That half is then locked. */
+  breakStartedAt?: number
+  breakEndedAt?: number
+}
+
+export interface ExamAttempt {
+  mode: ExamMode
+  date: string
+  /** Exam time used, in seconds, without the break. */
+  seconds: number
+  timedOut: boolean
+  picks: (number | null)[]
+  flags: number[]
+  right: number
+  total: number
+}
+
+export interface ExamRecord {
+  run?: ExamRun
+  attempts: ExamAttempt[]
+}
+
 export interface Progress {
   version: 2
   lessons: Record<string, string>
@@ -39,6 +72,8 @@ export interface Progress {
   activity: Record<string, number>
   /** Planned exam day per course (YYYY-MM-DD), for the study plan. Older saves have none. */
   examDates: Record<string, string>
+  /** Mock exams per "course/exam": the one in progress and the finished attempts. Older saves have none. */
+  exams: Record<string, ExamRecord>
 }
 
 /** Days until the next review, by box. */
@@ -54,6 +89,7 @@ const empty = (): Progress => ({
   answers: {},
   activity: {},
   examDates: {},
+  exams: {},
 })
 
 export function today(offsetDays = 0): string {
@@ -150,6 +186,57 @@ export function recordAnswer(key: string, questionId: string, correct: boolean) 
     answers: { ...state.answers, [key]: { ...state.answers[key], [questionId]: next } },
     activity: studiedToday(),
   })
+}
+
+const examRecord = (key: string): ExamRecord => state.exams[key] ?? { attempts: [] }
+
+function commitExam(key: string, record: ExamRecord, extra: Partial<Progress> = {}) {
+  commit({ ...state, ...extra, exams: { ...state.exams, [key]: record } })
+}
+
+/** Start a mock exam. The clock starts now. */
+export function startExam(key: string, mode: ExamMode, questions: number) {
+  const run: ExamRun = { mode, startedAt: Date.now(), picks: Array(questions).fill(null), flags: [] }
+  commitExam(key, { ...examRecord(key), run })
+}
+
+/** Change the exam in progress: pick an answer, flag a question, start or end the break. */
+export function updateExam(key: string, change: (run: ExamRun) => ExamRun) {
+  const record = examRecord(key)
+  if (record.run) commitExam(key, { ...record, run: change(record.run) }, { activity: studiedToday() })
+}
+
+/** Stop the exam in progress without a result. */
+export function abandonExam(key: string) {
+  commitExam(key, { attempts: examRecord(key).attempts })
+}
+
+/**
+ * Submit the exam in progress. Answered questions are added to the per-question
+ * history in one write, so missed ones show up in practice.
+ */
+export function finishExam(
+  key: string,
+  result: { seconds: number; timedOut: boolean; right: number },
+  answered: { key: string; questionId: string; correct: boolean }[],
+) {
+  const record = examRecord(key)
+  if (!record.run) return
+  const answers = { ...state.answers }
+  for (const a of answered) {
+    const previous = answers[a.key]?.[a.questionId]
+    answers[a.key] = {
+      ...answers[a.key],
+      [a.questionId]: {
+        right: (previous?.right ?? 0) + (a.correct ? 1 : 0),
+        wrong: (previous?.wrong ?? 0) + (a.correct ? 0 : 1),
+        lastCorrect: a.correct,
+      },
+    }
+  }
+  const { mode, picks, flags } = record.run
+  const attempt: ExamAttempt = { mode, date: new Date().toISOString(), picks, flags, total: picks.length, ...result }
+  commitExam(key, { attempts: [...record.attempts, attempt] }, { answers, activity: studiedToday() })
 }
 
 export function recordQuiz(key: string, score: number, total: number) {

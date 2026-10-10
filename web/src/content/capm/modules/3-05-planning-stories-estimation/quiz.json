@@ -57,7 +57,8 @@
         "page": 248,
         "label": "PMBOK 8, Guide section 4, User stories"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q4",
@@ -117,7 +118,8 @@
         "page": 251,
         "label": "PMBOK 8, Guide section 5, Agile release planning"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q7",
@@ -197,7 +199,8 @@
         "page": 63,
         "label": "Practice Standard for Project Estimating, 4.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q11",
@@ -362,7 +365,8 @@
         "page": 63,
         "label": "Practice Standard for Project Estimating, 4.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q19",

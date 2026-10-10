@@ -312,7 +312,8 @@
         "page": 301,
         "label": "PMBOK 8, Guide section 5, Schedule compression"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q16",
@@ -497,7 +498,8 @@
         "page": 33,
         "label": "Practice Standard for Scheduling, 2.2.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q25",

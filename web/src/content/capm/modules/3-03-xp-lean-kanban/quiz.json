@@ -37,7 +37,8 @@
         "page": 144,
         "label": "Agile Practice Guide, A3.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q3",
@@ -57,7 +58,8 @@
         "page": 144,
         "label": "Agile Practice Guide, A3.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q4",
@@ -157,7 +159,8 @@
         "page": 30,
         "label": "Agile Practice Guide, 2.3.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q9",
@@ -257,7 +260,8 @@
         "page": 145,
         "label": "Agile Practice Guide, A3.4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q14",

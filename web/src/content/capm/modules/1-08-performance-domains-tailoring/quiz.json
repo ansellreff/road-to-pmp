@@ -17,7 +17,8 @@
         "page": 112,
         "label": "PMBOK 8, Guide section 2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q2",
@@ -97,7 +98,8 @@
         "page": 112,
         "label": "PMBOK 8, Guide section 2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q6",
@@ -137,7 +139,8 @@
         "page": 114,
         "label": "PMBOK 8, Guide Table 2-1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q8",
@@ -277,7 +280,8 @@
         "page": 214,
         "label": "PMBOK 8, Guide 3.4.4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q15",

@@ -117,7 +117,8 @@
         "page": 124,
         "label": "PMBOK 8, Guide 2.1.6.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q7",
@@ -397,7 +398,8 @@
         "page": 133,
         "label": "PMBOK 8, Guide 2.1.6.8"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q21",

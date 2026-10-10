@@ -4,6 +4,8 @@ import NotFound from './components/NotFound'
 import Home from './pages/Home'
 import CoursePage from './pages/CoursePage'
 import DashboardPage from './pages/DashboardPage'
+import ExamPage from './pages/ExamPage'
+import ExamsPage from './pages/ExamsPage'
 import ModulePage from './pages/ModulePage'
 import PlanPage from './pages/PlanPage'
 import PracticePage from './pages/PracticePage'
@@ -26,6 +28,9 @@ export default function App() {
             <NavLink to="/plan" className={navStyle}>
               Study plan
             </NavLink>
+            <NavLink to="/capm/exams" className={navStyle}>
+              Mock exams
+            </NavLink>
             <NavLink to="/dashboard" className={navStyle}>
               Dashboard
             </NavLink>
@@ -43,6 +48,8 @@ export default function App() {
           <Route path="/practice" element={<PracticePage />} />
           <Route path="/plan" element={<PlanPage />} />
           <Route path="/:courseId" element={<CoursePage />} />
+          <Route path="/:courseId/exams" element={<ExamsPage />} />
+          <Route path="/:courseId/exams/:examId" element={<ExamPage />} />
           <Route path="/:courseId/:moduleId" element={<ModulePage />} />
           <Route path="/:courseId/:moduleId/:tab" element={<ModulePage />} />
           <Route path="*" element={<NotFound />} />

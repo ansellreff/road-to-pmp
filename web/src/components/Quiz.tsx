@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { loadQuiz, type Question } from '../lib/content'
 import { moduleKey, recordAnswer, recordQuiz, useProgress } from '../lib/progress'
@@ -113,8 +113,10 @@ export function QuestionView(props: {
   picked: number | null
   revealed: boolean
   onPick?: (i: number) => void
+  /** Shown under the question, for example the module it comes from. */
+  footer?: ReactNode
 }) {
-  const { number, question, picked, revealed, onPick } = props
+  const { number, question, picked, revealed, onPick, footer } = props
   return (
     <div className="border-b border-line py-6">
       <p className="text-lg font-semibold leading-snug">
@@ -125,7 +127,9 @@ export function QuestionView(props: {
           const correct = i === question.answer
           const wrongPick = revealed && i === picked && !correct
           let style = 'border-line bg-surface'
-          if (!revealed) style += ' hover:border-plan hover:bg-plan-soft'
+          // In an exam the pick stays hidden from marking until the end, so it only shows as selected.
+          if (!revealed && i === picked) style = 'border-plan bg-plan-soft ring-1 ring-plan'
+          else if (!revealed) style += ' hover:border-plan hover:bg-plan-soft'
           else if (correct) style = 'border-done bg-done-soft'
           else if (wrongPick) style = 'border-critical bg-critical-soft'
           else style += ' text-muted'
@@ -161,6 +165,7 @@ export function QuestionView(props: {
           )}
         </div>
       )}
+      {footer}
     </div>
   )
 }

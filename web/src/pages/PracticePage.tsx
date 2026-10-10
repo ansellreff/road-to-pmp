@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { QuestionView } from '../components/Quiz'
-import { allModules, courses, loadQuiz, type Question } from '../lib/content'
+import { allModules, courses, loadAllQuestions, type Question } from '../lib/content'
 import { moduleKey, recordAnswer, useProgress } from '../lib/progress'
 import { moduleNumber } from '../lib/stats'
 import { btnPrimary, btnQuiet, link } from '../lib/ui'
@@ -23,7 +23,8 @@ async function loadEveryQuestion(): Promise<PracticeItem[]> {
       allModules(course)
         .filter((m) => m.ready)
         .map(async (m) => {
-          const questions = await loadQuiz(course.id, m.id)
+          // Includes the questions kept for the unseen mock exam: once missed there, they belong here.
+          const questions = await loadAllQuestions(course.id, m.id)
           return questions.map((question) => ({
             key: moduleKey(course.id, m.id),
             from: `${course.title} ${moduleNumber(course, m.id)} ${m.title}`,

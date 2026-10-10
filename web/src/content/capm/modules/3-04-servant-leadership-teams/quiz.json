@@ -17,7 +17,8 @@
         "page": 62,
         "label": "Agile Practice Guide, 4.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q2",
@@ -57,7 +58,8 @@
         "page": 62,
         "label": "Agile Practice Guide, 4.3.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q4",
@@ -77,7 +79,8 @@
         "page": 62,
         "label": "Agile Practice Guide, 4.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q5",
@@ -417,7 +420,8 @@
         "page": 338,
         "label": "PMBOK 7, Glossary (Osmotic Communication)"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q22",

@@ -317,7 +317,8 @@
         "page": 261,
         "label": "PMBOK 8, Guide section 5, Conflict management"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q17",
@@ -377,7 +378,8 @@
         "page": 261,
         "label": "PMBOK 8, Guide section 5, Conflict management"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q20",

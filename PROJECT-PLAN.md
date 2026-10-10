@@ -47,6 +47,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Your mock exam decisions recorded: two modes (practice mode grouped by domain, real exam mode) and four mock exams. **Session 25b done:** module 1.11 is now exam content (renamed, 7 new questions on the Seventh Edition); new module 1.12 teaches the 5 process groups, 10 knowledge areas and all 49 processes; "On the exam" notes added to 12 modules in Domains 1 and 2; four outline gaps filled (organizational structure suitability, project management plan vs product plans, the six project manager roles, projects as a vehicle for change). **CAPM is now 39 modules, 827 questions, 1,208 flashcards.** Issues 69 and 70 added. | Next: Session 25c, quiz repair |
 | 2026-10-10 | **Session 25c done: quiz repair.** One wrong option was rewritten in 250 questions so the right answer no longer stands out by length: the share where it is the longest option fell from 58% to 27% (chance is 25%), and all 39 quizzes are under the 35% limit. The 5 duplicated questions were reworded as scenarios, and 6 scenario questions were added to Domain 4. **833 questions**: 219 / 278 / 174 / 162 per domain, enough for four mock exams (216 / 104 / 120 / 160). Issue 71 added. | Next: Session 25d |
 | 2026-10-10 | **Session 25d done, which completes Session 25.** Domain 3 now has the 2017 Agile Practice Guide's terms (servant leadership, daily standup, team facilitator) and three new sections: pros and cons of adaptive and predictive, what helps or hinders agile in an organization, and iterations with the WBS-to-backlog mapping. Domain 4 has the practice guide's five domains, a section on communication between teams, and one on which features go into which release. **CAPM: 39 modules, 840 questions, 1,208 flashcards.** Outline coverage: 59 of 60 points. No further PDFs are needed. Issues 72 and 73 added. | You: study modules 1.11 and 1.12 first; they are the exam's own framework. Next: Session 26, the mock exams, starting in plan mode |
+| 2026-10-10 | **Session 26 done: mock exams.** Four fixed mock exams of 150 questions (54 / 26 / 30 / 40 by domain), each in practice mode (one chapter per domain, explanation after each answer) or real exam mode (mixed order, two halves of 75, 10-minute break, flagging, nothing marked until the end). Strict 3-hour clock in both. Result per domain with a rating, then a review by domain. Mock exam 4 is kept unseen: its 150 questions are out of the module quizzes, which now hold 690. | You: try Mock exam 1 in practice mode, then a few questions in real exam mode, and report anything odd. Next: Session 27 (UI/UX polish) |
 
 ## How your progress is saved
 
@@ -57,6 +58,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 - Every mark can be changed: in each module, the "Your progress in this module" panel lets you remove the lesson-completed mark, clear the quiz score, and reset the flashcards. A single flashcard can be re-rated any time.
 - The **Dashboard** (link in the top bar) shows your study streak, progress and quiz average per exam domain, and the modules to revisit. Every quiz answer is now remembered per question. A question you got wrong goes into **Practice missed questions** and leaves once you answer it correctly. Clearing a module's quiz score also clears its question history. Quizzes taken before 2026-10-10 kept their scores but have no per-question history.
 - The **Study plan** (link in the top bar) stores one thing: your exam day. Everything else on it is worked out fresh each day from what you have not finished, so a missed day spreads over the days left and nothing piles up. A quarter of the time before the exam, at most 7 days, is kept for final review. Modules not written yet are included so the pace is realistic. Removing the date removes the plan; your progress is untouched.
+- **Mock exams** (link in the top bar): starting one starts a 3-hour clock that runs on real time, also while the page or the browser is closed. Each answer is saved as you give it, so you can close the page and continue, but the time keeps passing. When the time is up the exam is submitted as it stands the next time you open it. A finished exam stores your answers, flags, time used and score, and the last result per mode is shown on the list. Answered questions go into the per-question history, so wrong ones appear in **Practice missed questions**; unanswered ones do not. "Stop without a result" discards the answers of that run. The exam's 10-minute break does not use exam time and ends by itself.
 
 ## Sources and PDF links
 
@@ -68,7 +70,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 - Flashcards do not have a page each; they use the module's source list.
 - The PMBOK Guides, the two Agile Practice Guides and the six PMI standards and practice guides used as sources are protected by PMI in a way the Edge browser cannot open (it asks for a password). The links therefore use unlocked copies stored in `.cache/pdf/`, made by `tools/unlock_pdfs.py` at your request on 2026-10-10. The copies stay on this PC, are excluded from Git, and still carry your name and member ID on each page. Your original files are untouched.
 - If a PDF is renamed or a new book is added, update `web/src/content/books.json`, then run `tools/extract_pdf.py` and `tools/unlock_pdfs.py`. The running server picks up a new book straight away; no restart is needed.
-- A red **\*** marks a module as additional information that is not part of the exam (currently only 1.11). It does not count toward progress.
+- A red **\*** marks a module as additional information that is not part of the exam. No module is marked this way at present (1.11 became exam content in Session 25b).
 
 ## How to start the app on this PC
 
@@ -140,7 +142,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 25b | Exam alignment of Domains 1 and 2: module 1.11 becomes exam content and is expanded; "On the exam" notes from PMBOK 7 and the Process Groups guide; fill the outline gaps |
 | ✅ | 25c | Quiz repair: remove the longest-answer give-away in all quizzes, remove duplicates, top up Domain 1, add scenario questions |
 | ✅ | 25d | Exam alignment of Domains 3 and 4 (2017 Agile Practice Guide, Business Analysis for Practitioners); final list of PDFs; close the edition question |
-| ⬜ | 26 | Feature: mock exams. **Decided with you on 2026-10-10:** two modes, **practice mode** (questions grouped by domain, easier to learn from) and **real exam mode** (simulates the CAPM exam), and **four fixed mock exams**. Details under "Session 26 proposal" below; to be confirmed in plan mode. |
+| ✅ | 26 | Feature: mock exams. Four fixed exams, practice mode and real exam mode, strict clock, result and review per domain, Mock exam 4 unseen. Built by `tools/build_exams.py`; details under "Session 26: mock exams as built". |
 | ⬜ | 27 | UI/UX polish (see backlog below) |
 | ⬜ | 28 | Go online: GitHub and Vercel, test on phone |
 
@@ -196,7 +198,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (840 quiz questions, 1,208 flashcards).
+Overall: **39 of 39 modules done** (840 quiz questions, 1,208 flashcards). Of the 840 questions, 600 are used by the four mock exams and 150 of those (Mock exam 4) are held back from the module quizzes, which show 690.
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -322,6 +324,28 @@ Recorded on 2026-10-10 from your suggestion. Not built yet; to be confirmed in p
 **How many mock exams:** a question is assigned to one mock exam only, so exams do not repeat each other. Today's bank supports **3** full exams (limited by Domain 1 with 166 questions and Domain 4 with 156). Adding about 50 questions to Domain 1 and 10 to Domain 4 in Session 25c would allow **4**.
 
 **Decided with you on 2026-10-10:** both. **Practice mode** groups the questions by domain; **real exam mode** mixes them as the real exam does. There will be **four** mock exams, each usable in either mode. Four exams need 216 / 104 / 120 / 160 questions for Domains 1 to 4; the bank has 218 / 278 / 174 / 156 after Session 25b, so Domain 4 needs a few more (Session 25c).
+## Session 26: mock exams as built
+
+Built on 2026-10-10 from the plan you approved.
+
+| | Practice mode | Real exam mode |
+|---|---|---|
+| Order | Four chapters, one per domain, in any order | All domains mixed, fixed order |
+| Feedback | Right answer, explanation and book page after each answer | Nothing until the exam is submitted |
+| Clock | 180 minutes, real time | 180 minutes, real time |
+| Break | None | 10 minutes after question 75; questions 1 to 75 are then locked |
+| Going back | No, each answer is final | Yes, inside the open half, through a numbered grid |
+| Flagging | No | Yes; a check screen lists unanswered and flagged questions before each half is closed |
+
+- **Result:** correct answers and percentage per domain with a rating, overall score, time used, then every question by domain with your answer, the right answer, the explanation, the book page and its module. Filters: wrong or unanswered, flagged, all.
+- **Ratings** are PMI's four names. PMI does not publish the scores behind them, so the limits are this platform's own: Above Target from 80%, Target from 65%, Below Target from 50%, otherwise Needs Improvement. Change them in `web/src/lib/exam.ts`.
+- **All 150 questions count.** The real exam has 15 unscored questions that cannot be told apart.
+- **Answer order** is fixed per exam and differs from the module quiz, and each letter is the right answer equally often.
+- **The exams are fixed.** `web/src/content/capm/exams.json` lists each exam's questions. `tools/build_exams.py` refuses to replace it without `--rebuild`, because rebuilding changes every exam and makes saved results point at different questions. New questions added later stay out of the exams.
+- **Mock exam 4** is unseen only for module quizzes you had not taken before 2026-10-10. The list shows how many of its questions you have already answered.
+- **Assumptions to confirm:** the break does not use exam time (PMI's outline does not say); practice mode runs on the same strict clock, so reading explanations uses time.
+- **Not included:** drag-and-drop, hot spot and comic-strip questions. Every question is multiple choice.
+
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.
@@ -538,3 +562,16 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 40 | Screenshots are taken with a headless browser that cannot click or show PDFs. | Pages are viewed with sample data loaded by a temporary page that is deleted afterwards. Clicking through and PDF display are always left for you to confirm. | Session reports |
 | 56 | While adding the countdown to the home page, the tool I used to insert the code swallowed two pieces of it: the day count vanished from the heading ("days to your CAPM exam") and a link lost its style. The build still passed, because the result was valid code. | Caught on the screenshot, fixed, and screenshotted again. Lesson: a passing build does not prove a page is right; every feature is viewed before it is reported done. | `web/src/pages/Home.tsx` |
 | 57 | A study plan built only from written modules would understate the work while Domain 4 is unwritten. | Unwritten modules are part of the plan and marked "not written yet". The home page lists only written ones under today's tasks. An exam day that has passed, or one needing more than a module a day, shows a clear message. The date arithmetic has 13 automated checks (month ends, year end, exam today, date passed, nothing left). | `web/src/lib/plan.ts`, `web/src/pages/PlanPage.tsx` |
+
+### Mock exams (Session 26)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 74 | Holding Mock exam 4's 150 questions back makes the module quizzes shorter than I estimated in the plan (about 18 each). The early Domain 1 quizzes were already short, so they are now 11 to 14 questions; the longest are 23. | Accepted, and the checker fails if a module quiz drops below 10. The fix is more Domain 1 questions, which was already an open point from Session 25c. | `tools/check_content.py` (`MIN_MODULE_QUIZ`) |
+| 75 | The mock exam list said the split was 54 / 26 / 30 / 41. Rounding each domain's share of 150 gives 151. | Seen on the first screenshot. The page now counts the questions per domain in the exam itself (40 for Domain 4). | `web/src/pages/ExamsPage.tsx` |
+| 76 | You answered "both real exam and practice mode strict" to the question about stopping partway. I took it to mean practice mode also runs on the 3-hour real-time clock, so reading explanations uses time. | Built that way and listed as an assumption in the plan you approved. If you meant something else, the clock for practice mode is one condition to change. | "Session 26: mock exams as built" |
+| 77 | An unanswered exam question counts as wrong in the score, but putting it into "Practice missed questions" would flood that list after an exam that timed out. | Only answered questions go into the per-question history. "Stop without a result" discards the run's answers entirely. | `finishExam` in `web/src/lib/progress.ts` |
+| 78 | Three explanations point at an option by its position ("the first option lists..."). Reordering the options would make them wrong. | The exam builder keeps the original order for any question whose explanation names an option by position. | `tools/build_exams.py` (`POSITIONAL`) |
+| 79 | The headless browser cannot click, so these were not exercised: answering a question in practice mode and seeing its explanation, flagging, moving with the grid, the two confirmation screens, and submitting by hand. | Checked by screenshot or page text from saved states: the list, practice chapters, real mode with flags, the break, the second half, and time running out. Scoring was checked against a run with a known result (52, 13, 0, 0 right per domain, 5 unanswered). The rest needs you to try it. | Status log |
+| 80 | Mock exam 4 cannot be fully unseen if you already took module quizzes containing its questions. | The list shows how many of its 150 questions you have answered before. | `web/src/pages/ExamsPage.tsx` |
+| 81 | Two facts the exam outline does not give: the scores behind PMI's four ratings, and whether the clock runs during the break. | Ratings use this platform's own limits and the result page says so. The break is not taken out of exam time. | `web/src/lib/exam.ts` |

@@ -42,6 +42,27 @@ export interface Question {
   ref?: string
   /** Filled in by tools/link_sources.py from ref. */
   links?: SourceLink[]
+  /** Reserved for the unseen mock exam, so the module quiz leaves it out. Set by tools/build_exams.py. */
+  examOnly?: boolean
+}
+
+/** A fixed mock exam, written by tools/build_exams.py. Each row: module id, question id, option order. */
+export interface Exam {
+  id: string
+  title: string
+  /** Its questions appear nowhere else until the exam has been taken. */
+  unseen: boolean
+  questions: [string, string, number[]][]
+}
+
+/** One question of a mock exam, with its options in the exam's own order. */
+export interface ExamQuestion {
+  moduleId: string
+  domain: number
+  /** Options as shown in this exam; answer is the position of the right one. */
+  question: Question
+  /** order[shown position] = position in the module's quiz file. */
+  order: number[]
 }
 
 export interface Card {
@@ -55,7 +76,8 @@ const courseFiles = import.meta.glob<Course>('../content/*/course.json', { eager
 const lessonFiles = import.meta.glob<string>('../content/*/modules/*/lesson.md', { query: '?raw', import: 'default' })
 const quizFiles = import.meta.glob<Question[]>('../content/*/modules/*/quiz.json', { import: 'default' })
 const cardFiles = import.meta.glob<Card[]>('../content/*/modules/*/flashcards.json', { import: 'default' })
-const sourceFiles = import.meta.glob<SourceLink[]>('../content/*/modules/*/sources.json', { import: 'default' })
+const examFiles = import.meta.glob<Exam[]>('../content/*/exams.json', { eager: true, import: 'default' })
+const sourceFiles =import.meta.glob<SourceLink[]>('../content/*/modules/*/sources.json', { import: 'default' })
 
 import bookList from '../content/books.json'
 export const books: Record<string, Book> = bookList
@@ -85,9 +107,37 @@ export async function loadLesson(courseId: string, moduleId: string): Promise<st
   return load ? load() : ''
 }
 
-export async function loadQuiz(courseId: string, moduleId: string): Promise<Question[]> {
+/** Every question written for a module, including those reserved for the unseen mock exam. */
+export async function loadAllQuestions(courseId: string, moduleId: string): Promise<Question[]> {
   const load = quizFiles[path(courseId, moduleId, 'quiz.json')]
   return load ? load() : []
+}
+
+/** The module quiz. */
+export async function loadQuiz(courseId: string, moduleId: string): Promise<Question[]> {
+  return (await loadAllQuestions(courseId, moduleId)).filter((q) => !q.examOnly)
+}
+
+export function getExams(courseId: string): Exam[] {
+  return examFiles[`../content/${courseId}/exams.json`] ?? []
+}
+
+export async function loadExamQuestions(course: Course, exam: Exam): Promise<ExamQuestion[]> {
+  const moduleIds = [...new Set(exam.questions.map(([moduleId]) => moduleId))]
+  const quizzes = new Map(
+    await Promise.all(moduleIds.map(async (id) => [id, await loadAllQuestions(course.id, id)] as const)),
+  )
+  return exam.questions.flatMap(([moduleId, questionId, order]) => {
+    const source = quizzes.get(moduleId)?.find((q) => q.id === questionId)
+    if (!source) return []
+    const question = {
+      ...source,
+      options: order.map((i) => source.options[i]),
+      answer: order.indexOf(source.answer),
+    }
+    const domain = course.domains.findIndex((d) => d.modules.some((m) => m.id === moduleId))
+    return [{ moduleId, domain, question, order }]
+  })
 }
 
 export async function loadSources(courseId: string, moduleId: string): Promise<SourceLink[]> {

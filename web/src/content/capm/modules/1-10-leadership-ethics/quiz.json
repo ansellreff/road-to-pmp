@@ -102,7 +102,8 @@
         "page": 302,
         "label": "PMBOK 8, Guide section 5, Servant leadership"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q6",
@@ -162,7 +163,8 @@
         "page": 261,
         "label": "PMBOK 8, Guide section 5, Conflict management"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q9",
@@ -262,7 +264,8 @@
         "page": 6,
         "label": "PMI Code of Ethics, 1.4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q14",
@@ -342,7 +345,8 @@
         "page": 14,
         "label": "PMI Code of Ethics, 5.2.3 and 5.3.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q18",
@@ -362,7 +366,8 @@
         "page": 12,
         "label": "PMI Code of Ethics, chapter 4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q19",

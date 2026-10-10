@@ -237,7 +237,8 @@
         "page": 43,
         "label": "Agile Practice Guide, 3.9.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q13",
@@ -257,7 +258,8 @@
         "page": 28,
         "label": "Agile Practice Guide, 2.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q14",
@@ -277,7 +279,8 @@
         "page": 28,
         "label": "Agile Practice Guide, 2.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q15",
@@ -397,7 +400,8 @@
         "page": 25,
         "label": "Agile Practice Guide, 2.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q21",

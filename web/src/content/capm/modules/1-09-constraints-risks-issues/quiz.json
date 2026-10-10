@@ -17,7 +17,8 @@
         "page": 197,
         "label": "PMBOK 8, Guide 2.7.1 and Glossary"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q2",
@@ -157,7 +158,8 @@
         "page": 197,
         "label": "PMBOK 8, Guide 2.7.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q9",
@@ -177,7 +179,8 @@
         "page": 198,
         "label": "PMBOK 8, Guide Figure 2-46"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q10",
@@ -357,6 +360,7 @@
         "page": 197,
         "label": "PMBOK 8, Guide 2.7.1"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

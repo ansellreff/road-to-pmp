@@ -62,7 +62,8 @@
         "page": 362,
         "label": "PMBOK 8, Appendix X5.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q4",
@@ -142,7 +143,8 @@
         "page": 364,
         "label": "PMBOK 8, Appendix X5, Table X5-2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q8",
@@ -182,7 +184,8 @@
         "page": 364,
         "label": "PMBOK 8, Appendix X5, Table X5-2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q10",
@@ -222,7 +225,8 @@
         "page": 114,
         "label": "PMBOK 8, Guide Table 2-1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q12",
@@ -282,7 +286,8 @@
         "page": 114,
         "label": "PMBOK 8, Guide Table 2-1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q15",
@@ -482,6 +487,7 @@
         "page": 82,
         "label": "PMBOK 7, Standard 3.11"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

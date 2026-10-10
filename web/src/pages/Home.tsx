@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ExamBlueprint from '../components/ExamBlueprint'
 import Milestone from '../components/Milestone'
-import { allModules, courses, type Course } from '../lib/content'
+import { allModules, courses, getExams, type Course } from '../lib/content'
 import { buildPlan, formatDay } from '../lib/plan'
 import {
   dueCount,
@@ -168,6 +168,7 @@ function CourseSummary({ course, progress }: { course: Course; progress: Progres
   const modules = allModules(course)
   const written = modules.filter((m) => m.ready).length
   const next = nextModule(course, progress)
+  const exams = getExams(course.id).length
   return (
     <section className="border-t-2 border-ink pt-6">
       <h2 className="title text-3xl">{course.title}</h2>
@@ -188,6 +189,11 @@ function CourseSummary({ course, progress }: { course: Course; progress: Progres
         <Link to={`/${course.id}`} className={link}>
           See all {modules.length} modules
         </Link>
+        {exams > 0 && (
+          <Link to={`/${course.id}/exams`} className={link}>
+            {exams} mock exams
+          </Link>
+        )}
         <span className="text-sm text-muted">
           {written} of {modules.length} written so far
         </span>

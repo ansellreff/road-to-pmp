@@ -77,7 +77,8 @@
         "page": 234,
         "label": "PMI Guide to Business Analysis, 7.2.2.4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q5",
@@ -97,7 +98,8 @@
         "page": 248,
         "label": "PMI Guide to Business Analysis, 7.2.2.15"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q6",
@@ -157,7 +159,8 @@
         "page": 259,
         "label": "PMI Guide to Business Analysis, 7.3.2.8"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q9",
@@ -277,7 +280,8 @@
         "page": 264,
         "label": "PMI Guide to Business Analysis, 7.4.2.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q15",
@@ -317,7 +321,8 @@
         "page": 270,
         "label": "PMI Guide to Business Analysis, 7.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q17",
@@ -357,7 +362,8 @@
         "page": 268,
         "label": "PMI Guide to Business Analysis, 7.5.2.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q19",

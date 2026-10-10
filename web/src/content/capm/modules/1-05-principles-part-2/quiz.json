@@ -37,7 +37,8 @@
         "page": 69,
         "label": "PMBOK 8, Standard 3.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q3",
@@ -77,7 +78,8 @@
         "page": 69,
         "label": "PMBOK 8, Standard 3.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q5",
@@ -117,7 +119,8 @@
         "page": 70,
         "label": "PMBOK 8, Standard 3.6, Figure 3-5"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q7",
@@ -137,7 +140,8 @@
         "page": 71,
         "label": "PMBOK 8, Standard 3.7"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q8",
