@@ -135,7 +135,7 @@ Agile teams often vote in ways that reveal everyone's view at once, such as **fi
 
 ## Meetings
 
-@source PMBOK 8, Guide section 5, Meetings; PMBOK 8, Guide section 5, Meeting management; PMBOK 8, Guide section 5, Daily coordination meeting; PMBOK 8, Guide section 5, Retrospectives; PMBOK 6, 4.2.2.4
+@source PMBOK 8, Guide section 5, Meetings; PMBOK 8, Guide section 5, Meeting management; PMBOK 8, Guide section 5, Daily coordination meeting; PMBOK 8, Guide section 5, Retrospectives; PMBOK 6, 4.2.2.4; PMBOK 7, Guide 4.4.3
 
 | Meeting | Purpose |
 |---|---|
@@ -155,6 +155,27 @@ Running a good meeting:
 3. **Start and finish on time**, and stay on topic.
 4. Manage expectations, issues and conflicts during the meeting.
 5. **Record the actions** and who is responsible for each.
+
+> **On the exam.** The Seventh Edition lists sixteen meetings and events. The outline asks for the purpose of each kind, so learn what sets them apart:
+
+| Meeting | Purpose |
+|---|---|
+| **Kickoff** | At the outset of a project, phase or iteration: set expectations, gain a common understanding and start the work |
+| **Planning meeting** | Create, elaborate or review a plan, and secure commitment to it |
+| **Status meeting** | Regularly scheduled: exchange and analyze information on current progress and performance |
+| **Daily standup** (daily scrum) | Brief: progress since yesterday, intentions for today, obstacles met or expected |
+| **Backlog refinement** | Elaborate and reprioritize the backlog to find the work for an upcoming iteration |
+| **Iteration planning** (sprint planning) | Clarify backlog items, acceptance criteria and effort for the coming iteration |
+| **Iteration review** (sprint review) | At the end of an iteration: demonstrate the work accomplished |
+| **Retrospective** | Regularly: explore work and results to improve process and product. A form of lessons learned meeting. |
+| **Lessons learned meeting** | Identify and share knowledge gained in a project, phase or iteration, good and bad |
+| **Release planning** | A high-level plan for releasing a product, deliverable or increment |
+| **Risk review** | Check the status of existing risks, whether responses work, and identify new risks |
+| **Change control board** | The people accountable for reviewing, approving, delaying or rejecting changes; decisions are recorded and communicated |
+| **Steering committee** | Senior stakeholders give direction and support, and make decisions **outside the team's authority** |
+| **Bidder conference** | With prospective sellers before bids, so that all have the same understanding of the procurement |
+| **Project review** | At the end of a phase or project: assess status and value delivered, and decide whether to move to the next phase or to operations |
+| **Project closeout** | Obtain **final acceptance** of the delivered scope from the sponsor, product owner or client |
 
 ## Choosing the right tool
 

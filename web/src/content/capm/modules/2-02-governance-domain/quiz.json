@@ -460,5 +460,65 @@
         "label": "PMBOK 8, Guide 2.1.6.9"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "During a site visit the customer asks an engineer to add a second access door. It looks like an hour's work. What should the engineer do?",
+    "options": [
+      "Add it, since the customer asked directly",
+      "Refuse, because the scope can never change",
+      "Add it at once, and record the hours afterwards as rework on the access works",
+      "Refer it to the project manager, so a change request can be assessed"
+    ],
+    "answer": 3,
+    "explanation": "Every change to scope goes through change control: the request is documented, its effect on scope, schedule, cost and risk is assessed, and it is approved or rejected before any work is done.",
+    "ref": "PMBOK 8, Guide 2.1.6.8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.8"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A project is cancelled halfway through because the market has changed. The project manager thinks the closing work can be skipped, since nothing was finished. What should happen?",
+    "options": [
+      "Closing is still performed: the reasons are documented and records archived",
+      "Nothing more: closing applies only to completed projects",
+      "The team continues working until at least one deliverable has been finished and handed over",
+      "The charter is rewritten to describe a smaller project"
+    ],
+    "answer": 0,
+    "explanation": "A project or phase that ends early is still closed formally. The reasons for termination are documented, finished and unfinished deliverables are handed over, lessons are recorded and the records are archived.",
+    "ref": "PMBOK 8, Guide 2.1.6.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 136,
+        "label": "PMBOK 8, Guide 2.1.6.9"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A project manager plans to hold one lessons learned meeting, on the last day of an 18-month project. What is the weakness of this plan?",
+    "options": [
+      "Lessons learned belong to the sponsor, not the team",
+      "Lessons should be captured throughout, while they can still help this project",
+      "Lessons learned are recorded only for projects that fail, so the meeting may not be needed",
+      "The meeting should be held before the charter is approved"
+    ],
+    "answer": 1,
+    "explanation": "Managing project knowledge runs through the whole project. Lessons are recorded as they arise, so that later phases of the same project benefit and details are not forgotten.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
   }
 ]

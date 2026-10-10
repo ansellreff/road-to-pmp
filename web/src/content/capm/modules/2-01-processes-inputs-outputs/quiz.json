@@ -380,5 +380,145 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q20",
+    "q": "A status note reads: \"Activity 7 is three days behind the plan, and its cost variance is minus $4,000.\" The figures were produced by comparing what was measured on site with the baselines. What kind of item is this?",
+    "options": [
+      "Work performance data",
+      "A work performance report",
+      "Work performance information",
+      "A change request"
+    ],
+    "answer": 2,
+    "explanation": "Work performance data are the raw observations and measurements. Once they are analyzed in context and compared with the plan, they become work performance information. Reports then package the information for stakeholders.",
+    "ref": "PMBOK 8, Guide section 4, Work performance information",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance information"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A project is two weeks late. A team lead proposes quietly moving the dates in the schedule baseline so that the reports show no delay. What is the correct position?",
+    "options": [
+      "Acceptable, if the sponsor is told afterwards",
+      "A baseline changes only through an approved change request",
+      "Acceptable, because baselines are updated every week to match progress",
+      "A baseline can never be changed once it is set"
+    ],
+    "answer": 1,
+    "explanation": "A baseline is the approved version of a work product, used as the basis for comparison with actual results. It can be changed only through formal change control, by an approved change request.",
+    "ref": "PMBOK 8, Glossary (baseline)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 370,
+        "label": "PMBOK 8, Glossary (baseline)"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "The team finishes a module and the quality check confirms that it meets its requirements. The customer has not yet looked at it. What is the module at this point?",
+    "options": [
+      "A verified deliverable",
+      "An accepted deliverable",
+      "A change request",
+      "A work package"
+    ],
+    "answer": 0,
+    "explanation": "A deliverable that has been checked and confirmed correct through quality control is a verified deliverable. It becomes an accepted deliverable when the customer or sponsor formally accepts it.",
+    "ref": "PMBOK 8, Guide section 4, Verified deliverables",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, Verified deliverables"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Before a project is approved, a one-page diagram is drawn showing its value proposition, the customers, the infrastructure needed and the finances. In the Seventh Edition's list of artifacts, what is this, and of which kind?",
+    "options": [
+      "A project brief, a kind of report",
+      "A business model canvas, a strategy artifact",
+      "A prioritization matrix, a visual artifact",
+      "A roadmap, a kind of baseline"
+    ],
+    "answer": 1,
+    "explanation": "A business model canvas is a one-page visual summary of the value proposition, infrastructure, customers and finances. It is a strategy artifact: created before or at the start of a project and not normally changed.",
+    "ref": "PMBOK 7, Guide 4.6.1",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 279,
+        "label": "PMBOK 7, Guide 4.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A team's backlog holds user stories and, among them, items such as \"run a load test to reduce the risk of slow response\". What does the Seventh Edition call a backlog like this?",
+    "options": [
+      "A change log",
+      "An issue log",
+      "A risk register",
+      "A risk-adjusted backlog"
+    ],
+    "answer": 3,
+    "explanation": "A risk-adjusted backlog is a backlog that includes work and actions to address threats and opportunities. It is listed with the logs and registers, which record aspects of the project that keep evolving.",
+    "ref": "PMBOK 7, Guide 4.6.2",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 280,
+        "label": "PMBOK 7, Guide 4.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A project manager is asked for the artifacts against which actual performance is compared to find variances. Which group of artifacts is being asked for?",
+    "options": [
+      "Baselines",
+      "Strategy artifacts",
+      "Hierarchy charts",
+      "Logs and registers"
+    ],
+    "answer": 0,
+    "explanation": "A baseline is the approved version of a work product or plan. Actual performance is compared with baselines to identify variances. Examples: the scope baseline, the project schedule, the budget and the performance measurement baseline.",
+    "ref": "PMBOK 7, Guide 4.6.5",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 283,
+        "label": "PMBOK 7, Guide 4.6.5"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A sponsor wants one picture of how spending has built up month by month since the project began. Which artifact shows this?",
+    "options": [
+      "A Gantt chart",
+      "A burndown chart",
+      "An S-curve",
+      "A cumulative flow diagram"
+    ],
+    "answer": 2,
+    "explanation": "An S-curve is a graph that displays cumulative costs over a specified period of time. A Gantt chart shows activities against dates; a cumulative flow diagram shows features in each state over time.",
+    "ref": "PMBOK 7, Guide 4.6.6",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 283,
+        "label": "PMBOK 7, Guide 4.6.6"
+      }
+    ]
   }
 ]

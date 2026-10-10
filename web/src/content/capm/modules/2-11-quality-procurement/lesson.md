@@ -28,7 +28,7 @@ Procurement is not a separate domain because project purchasing is usually run t
 
 ## Quality basics
 
-@source PMBOK 8, Standard 3.5; PMBOK 8, Guide section 4, Quality management plan; PMBOK 6, X4.5
+@source PMBOK 8, Standard 3.5; PMBOK 8, Guide section 4, Quality management plan; PMBOK 6, X4.5; Process Groups: A Practice Guide, Glossary (Quality Policy); Process Groups: A Practice Guide, Glossary (Test and Evaluation Documents)
 
 | Idea | Meaning |
 |---|---|
@@ -46,6 +46,8 @@ Example of grade and quality: an economy hotel room (low grade) that is clean an
 | **Quality metrics** | The specific attributes to measure and how compliance will be verified: defects per day, failure rate, percentage of tasks on time |
 | **Quality report** | Quality issues, recommendations for corrective action, and a summary of findings from quality control |
 | **Quality control measurements** | The documented results of quality control activities |
+
+> **On the exam.** The process guide defines the **quality policy** as the policy that sets the basic principles governing the organization's actions as it implements its system for quality management. It comes from the organization, not from the project. **Test and evaluation documents** are project documents that describe the activities used to determine whether the product meets the quality objectives stated in the quality management plan.
 
 ## Quality assurance and quality control
 
@@ -65,7 +67,7 @@ Example of grade and quality: an economy hotel room (low grade) that is clean an
 
 ## Quality tools
 
-@source PMBOK 8, Guide section 5, Control charts; PMBOK 8, Guide section 5, Cause-and-effect diagram; PMBOK 8, Guide section 5, Flowchart; PMBOK 6, 8.2.2.4; PMBOK 6, 8.3.2.1; PMI Guide to Business Analysis, 4.2.2.7; The Project Management Answer Book, Chapter 7, Q22
+@source PMBOK 8, Guide section 5, Control charts; PMBOK 8, Guide section 5, Cause-and-effect diagram; PMBOK 8, Guide section 5, Flowchart; PMBOK 6, 8.2.2.4; PMBOK 6, 8.3.2.1; PMI Guide to Business Analysis, 4.2.2.7; The Project Management Answer Book, Chapter 7, Q22; Process Groups: A Practice Guide, Glossary (Statistical Sampling); Process Groups: A Practice Guide, Glossary (Tolerance); Process Groups: A Practice Guide, Glossary (Control Limits)
 
 | Tool | What it shows | Use it to |
 |---|---|---|
@@ -85,6 +87,8 @@ Example of grade and quality: an economy hotel room (low grade) that is clean an
 - A process is **out of control** when a point falls **outside a control limit**, or when **seven points in a row** fall on one side of the mean (the rule of seven). Then the cause is investigated.
 
 **Root cause analysis** finds the basic underlying reason for a defect. When all root causes are removed, the problem does not come back.
+
+> **On the exam.** Three definitions from the process guide. **Statistical sampling** is choosing part of a population of interest for inspection, instead of inspecting every item. **Tolerance** is the quantified description of acceptable variation for a quality requirement: it comes from the **requirement**. **Control limits** are the area of three standard deviations on either side of the mean on a control chart: they come from the **process**, and show the variation to be expected from it. A result can be inside the tolerance and still show a process that is out of control.
 
 ## Make-or-buy and the procurement steps
 
@@ -110,7 +114,7 @@ The project manager usually **does not sign contracts**. That authority belongs 
 
 ## Bid documents and choosing a seller
 
-@source PMBOK 8, Appendix X4.5; PMBOK 8, Appendix X4.6; PMBOK 8, Appendix X4.7; PMBOK 6, 12.2.2.5
+@source PMBOK 8, Appendix X4.5; PMBOK 8, Appendix X4.6; PMBOK 8, Appendix X4.7; PMBOK 6, 12.2.2.5; Process Groups: A Practice Guide, Glossary (Request for Quotation); Process Groups: A Practice Guide, Glossary (Request for Information)
 
 | Document | Used when |
 |---|---|
@@ -129,6 +133,8 @@ The project manager usually **does not sign contracts**. That authority belongs 
 | **Quality and cost based** | Both matter; quality weighs more when risk is higher |
 | **Single source** | Only **one** supplier can meet the requirement, for example because of a patent |
 | **Fixed budget** | The budget is disclosed and cannot be exceeded; the best technical proposal within it wins |
+
+> **On the exam.** The process guide's procurement documents: a **request for information (RFI)** asks potential sellers for information about a product, a service or their own capability. A **request for quotation (RFQ)** asks for **prices** for common or standard products or services. A **request for proposal (RFP)** asks for a proposed solution. An **invitation for bid** is generally equivalent to a request for proposal.
 
 ## Contract types
 

@@ -153,5 +153,40 @@
     "book": "processgroups",
     "page": 43,
     "label": "Process Groups: A Practice Guide, Table 1-4"
+  },
+  {
+    "book": "processgroups",
+    "page": 347,
+    "label": "Process Groups: A Practice Guide, Glossary (Control Limits)"
+  },
+  {
+    "book": "processgroups",
+    "page": 360,
+    "label": "Process Groups: A Practice Guide, Glossary (Quality Policy)"
+  },
+  {
+    "book": "processgroups",
+    "page": 360,
+    "label": "Process Groups: A Practice Guide, Glossary (Request for Information)"
+  },
+  {
+    "book": "processgroups",
+    "page": 360,
+    "label": "Process Groups: A Practice Guide, Glossary (Request for Quotation)"
+  },
+  {
+    "book": "processgroups",
+    "page": 365,
+    "label": "Process Groups: A Practice Guide, Glossary (Statistical Sampling)"
+  },
+  {
+    "book": "processgroups",
+    "page": 365,
+    "label": "Process Groups: A Practice Guide, Glossary (Test and Evaluation Documents)"
+  },
+  {
+    "book": "processgroups",
+    "page": 365,
+    "label": "Process Groups: A Practice Guide, Glossary (Tolerance)"
   }
 ]

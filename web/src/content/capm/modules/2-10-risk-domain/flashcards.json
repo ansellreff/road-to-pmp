@@ -1,43 +1,217 @@
 [
-  {"id": "c1", "front": "Risk", "back": "An uncertain event or condition that, if it occurs, has a positive or negative effect on one or more objectives."},
-  {"id": "c2", "front": "Threat vs opportunity", "back": "Threat: a risk with a negative effect. Opportunity: a risk with a positive effect."},
-  {"id": "c3", "front": "Risk vs issue", "back": "Risk: may happen in the future (risk register). Issue: has already happened and needs action now (issue log)."},
-  {"id": "c4", "front": "Overall project risk", "back": "The effect of uncertainty on the project as a whole. If it is too high, the organization may cancel the project."},
-  {"id": "c5", "front": "Known-unknown vs unknown-unknown", "back": "Known-unknown: a classic, identifiable risk; covered by contingency reserve. Unknown-unknown: an emergent risk nobody could foresee; covered by management reserve and resilience."},
-  {"id": "c6", "front": "Risk appetite", "back": "The degree of uncertainty an organization or person is willing to accept in anticipation of a reward."},
-  {"id": "c7", "front": "Risk threshold", "back": "The measurable acceptable variation around an objective, such as ±5% on cost. It reflects the risk appetite."},
-  {"id": "c8", "front": "Risk attitude", "back": "A disposition toward uncertainty, ranging from risk averse to risk seeking."},
-  {"id": "c9", "front": "The six Risk processes", "back": "Plan Risk Management; Identify Risks; Perform Risk Analysis; Plan Risk Responses; Implement Risk Responses; Monitor Risks."},
-  {"id": "c10", "front": "Risk management plan", "back": "Describes HOW risk management will be structured and performed: strategy, methodology, roles, funding, timing, risk categories. Does not list the risks."},
-  {"id": "c11", "front": "Risk breakdown structure (RBS)", "back": "A hierarchical representation of potential sources of risk, such as technical, management, commercial and external."},
-  {"id": "c12", "front": "Risk register", "back": "The repository of identified individual risks: description, cause and effect, category, owner, triggers, responses, status."},
-  {"id": "c13", "front": "Risk report", "back": "Presents the sources of overall project risk, with summary information on the individual risks."},
-  {"id": "c14", "front": "Risk trigger", "back": "An event or condition that indicates a risk is about to occur."},
-  {"id": "c15", "front": "Risk owner", "back": "The person responsible for monitoring a risk and for selecting and implementing its response."},
-  {"id": "c16", "front": "SWOT analysis", "back": "Analysis of strengths, weaknesses, opportunities and threats. Widens risk identification to internally generated risks."},
-  {"id": "c17", "front": "Prompt list", "back": "A predetermined list of risk categories used to trigger ideas when identifying risks, such as PESTLE or VUCA."},
-  {"id": "c18", "front": "Qualitative risk analysis", "back": "Assesses each individual risk's probability and impact to prioritize the risks. Quick, subjective, done for all risks."},
-  {"id": "c19", "front": "Quantitative risk analysis", "back": "Numerically analyzes the combined effect of risks on overall project objectives. Not always required."},
-  {"id": "c20", "front": "Probability and impact matrix", "back": "A grid mapping each risk's probability against its impact. Risk score = probability × impact."},
-  {"id": "c21", "front": "Expected monetary value (EMV)", "back": "Probability × impact, in money. Threats are negative, opportunities positive."},
-  {"id": "c22", "front": "Decision tree analysis", "back": "Compares alternative courses of action under uncertainty by calculating the expected monetary value of each branch."},
-  {"id": "c23", "front": "Sensitivity analysis", "back": "Shows which risks or uncertainties have the most potential impact on outcomes. Typically displayed as a tornado diagram."},
-  {"id": "c24", "front": "The five threat strategies", "back": "Escalate, avoid, transfer, mitigate, accept."},
-  {"id": "c25", "front": "The five opportunity strategies", "back": "Escalate, exploit, share, enhance, accept."},
-  {"id": "c26", "front": "Avoid", "back": "Eliminate the threat or protect the project from its impact: probability becomes zero. Example: removing risky scope."},
-  {"id": "c27", "front": "Transfer", "back": "Shift ownership of a threat to a third party who bears the impact, usually for a risk premium. Examples: insurance, warranties, performance bonds."},
-  {"id": "c28", "front": "Mitigate", "back": "Reduce the probability and/or impact of a threat. Examples: more testing, a prototype, a more stable supplier, redundancy."},
-  {"id": "c29", "front": "Active vs passive acceptance", "back": "Active: establish a contingency reserve of time, money or resources. Passive: no action apart from periodic review."},
-  {"id": "c30", "front": "Escalate", "back": "Used when a risk is outside the project's scope or the response exceeds the project manager's authority. Managed at program, portfolio or organization level."},
-  {"id": "c31", "front": "Exploit", "back": "Ensure the opportunity definitely happens: probability becomes 100%. Example: assigning the most talented people."},
-  {"id": "c32", "front": "Enhance", "back": "Increase the probability and/or impact of an opportunity. Example: adding resources to finish early."},
-  {"id": "c33", "front": "Share", "back": "Transfer ownership of an opportunity to a third party so it shares the benefit. Examples: partnerships, joint ventures."},
-  {"id": "c34", "front": "Residual risk", "back": "The risk that remains after risk responses have been implemented."},
-  {"id": "c35", "front": "Secondary risk", "back": "A risk that arises as a direct result of implementing a risk response."},
-  {"id": "c36", "front": "Contingent response strategy", "back": "A response designed in advance and implemented only if a specific trigger occurs. Also called a contingency plan."},
-  {"id": "c37", "front": "Workaround", "back": "An unplanned response to a risk or issue that has already occurred."},
-  {"id": "c38", "front": "Risk audit", "back": "An examination of how effective the risk management process is."},
-  {"id": "c39", "front": "Project resilience", "back": "The ability to absorb impacts and recover quickly from setbacks or failures."},
-  {"id": "c40", "front": "Risk in predictive vs adaptive projects", "back": "Predictive: most identification up front, structured process, feedback at longer intervals. Adaptive: continuous identification in every iteration, frequent delivery and feedback expose risks early."},
-  {"id": "c41", "front": "Spike", "back": "A short piece of work done early in an adaptive project to remove a specific, high uncertainty (early de-risking)."}
+  {
+    "id": "c1",
+    "front": "Risk",
+    "back": "An uncertain event or condition that, if it occurs, has a positive or negative effect on one or more objectives."
+  },
+  {
+    "id": "c2",
+    "front": "Threat vs opportunity",
+    "back": "Threat: a risk with a negative effect. Opportunity: a risk with a positive effect."
+  },
+  {
+    "id": "c3",
+    "front": "Risk vs issue",
+    "back": "Risk: may happen in the future (risk register). Issue: has already happened and needs action now (issue log)."
+  },
+  {
+    "id": "c4",
+    "front": "Overall project risk",
+    "back": "The effect of uncertainty on the project as a whole. If it is too high, the organization may cancel the project."
+  },
+  {
+    "id": "c5",
+    "front": "Known-unknown vs unknown-unknown",
+    "back": "Known-unknown: a classic, identifiable risk; covered by contingency reserve. Unknown-unknown: an emergent risk nobody could foresee; covered by management reserve and resilience."
+  },
+  {
+    "id": "c6",
+    "front": "Risk appetite",
+    "back": "The degree of uncertainty an organization or person is willing to accept in anticipation of a reward."
+  },
+  {
+    "id": "c7",
+    "front": "Risk threshold",
+    "back": "The measurable acceptable variation around an objective, such as ±5% on cost. It reflects the risk appetite."
+  },
+  {
+    "id": "c8",
+    "front": "Risk attitude",
+    "back": "A disposition toward uncertainty, ranging from risk averse to risk seeking."
+  },
+  {
+    "id": "c9",
+    "front": "The six Risk processes",
+    "back": "Plan Risk Management; Identify Risks; Perform Risk Analysis; Plan Risk Responses; Implement Risk Responses; Monitor Risks."
+  },
+  {
+    "id": "c10",
+    "front": "Risk management plan",
+    "back": "Describes HOW risk management will be structured and performed: strategy, methodology, roles, funding, timing, risk categories. Does not list the risks."
+  },
+  {
+    "id": "c11",
+    "front": "Risk breakdown structure (RBS)",
+    "back": "A hierarchical representation of potential sources of risk, such as technical, management, commercial and external."
+  },
+  {
+    "id": "c12",
+    "front": "Risk register",
+    "back": "The repository of identified individual risks: description, cause and effect, category, owner, triggers, responses, status."
+  },
+  {
+    "id": "c13",
+    "front": "Risk report",
+    "back": "Presents the sources of overall project risk, with summary information on the individual risks."
+  },
+  {
+    "id": "c14",
+    "front": "Risk trigger",
+    "back": "An event or condition that indicates a risk is about to occur."
+  },
+  {
+    "id": "c15",
+    "front": "Risk owner",
+    "back": "The person responsible for monitoring a risk and for selecting and implementing its response."
+  },
+  {
+    "id": "c16",
+    "front": "SWOT analysis",
+    "back": "Analysis of strengths, weaknesses, opportunities and threats. Widens risk identification to internally generated risks."
+  },
+  {
+    "id": "c17",
+    "front": "Prompt list",
+    "back": "A predetermined list of risk categories used to trigger ideas when identifying risks, such as PESTLE or VUCA."
+  },
+  {
+    "id": "c18",
+    "front": "Qualitative risk analysis",
+    "back": "Assesses each individual risk's probability and impact to prioritize the risks. Quick, subjective, done for all risks."
+  },
+  {
+    "id": "c19",
+    "front": "Quantitative risk analysis",
+    "back": "Numerically analyzes the combined effect of risks on overall project objectives. Not always required."
+  },
+  {
+    "id": "c20",
+    "front": "Probability and impact matrix",
+    "back": "A grid mapping each risk's probability against its impact. Risk score = probability × impact."
+  },
+  {
+    "id": "c21",
+    "front": "Expected monetary value (EMV)",
+    "back": "Probability × impact, in money. Threats are negative, opportunities positive."
+  },
+  {
+    "id": "c22",
+    "front": "Decision tree analysis",
+    "back": "Compares alternative courses of action under uncertainty by calculating the expected monetary value of each branch."
+  },
+  {
+    "id": "c23",
+    "front": "Sensitivity analysis",
+    "back": "Shows which risks or uncertainties have the most potential impact on outcomes. Typically displayed as a tornado diagram."
+  },
+  {
+    "id": "c24",
+    "front": "The five threat strategies",
+    "back": "Escalate, avoid, transfer, mitigate, accept."
+  },
+  {
+    "id": "c25",
+    "front": "The five opportunity strategies",
+    "back": "Escalate, exploit, share, enhance, accept."
+  },
+  {
+    "id": "c26",
+    "front": "Avoid",
+    "back": "Eliminate the threat or protect the project from its impact: probability becomes zero. Example: removing risky scope."
+  },
+  {
+    "id": "c27",
+    "front": "Transfer",
+    "back": "Shift ownership of a threat to a third party who bears the impact, usually for a risk premium. Examples: insurance, warranties, performance bonds."
+  },
+  {
+    "id": "c28",
+    "front": "Mitigate",
+    "back": "Reduce the probability and/or impact of a threat. Examples: more testing, a prototype, a more stable supplier, redundancy."
+  },
+  {
+    "id": "c29",
+    "front": "Active vs passive acceptance",
+    "back": "Active: establish a contingency reserve of time, money or resources. Passive: no action apart from periodic review."
+  },
+  {
+    "id": "c30",
+    "front": "Escalate",
+    "back": "Used when a risk is outside the project's scope or the response exceeds the project manager's authority. Managed at program, portfolio or organization level."
+  },
+  {
+    "id": "c31",
+    "front": "Exploit",
+    "back": "Ensure the opportunity definitely happens: probability becomes 100%. Example: assigning the most talented people."
+  },
+  {
+    "id": "c32",
+    "front": "Enhance",
+    "back": "Increase the probability and/or impact of an opportunity. Example: adding resources to finish early."
+  },
+  {
+    "id": "c33",
+    "front": "Share",
+    "back": "Transfer ownership of an opportunity to a third party so it shares the benefit. Examples: partnerships, joint ventures."
+  },
+  {
+    "id": "c34",
+    "front": "Residual risk",
+    "back": "The risk that remains after risk responses have been implemented."
+  },
+  {
+    "id": "c35",
+    "front": "Secondary risk",
+    "back": "A risk that arises as a direct result of implementing a risk response."
+  },
+  {
+    "id": "c36",
+    "front": "Contingent response strategy",
+    "back": "A response designed in advance and implemented only if a specific trigger occurs. Also called a contingency plan."
+  },
+  {
+    "id": "c37",
+    "front": "Workaround",
+    "back": "An unplanned response to a risk or issue that has already occurred."
+  },
+  {
+    "id": "c38",
+    "front": "Risk audit",
+    "back": "An examination of how effective the risk management process is."
+  },
+  {
+    "id": "c39",
+    "front": "Project resilience",
+    "back": "The ability to absorb impacts and recover quickly from setbacks or failures."
+  },
+  {
+    "id": "c40",
+    "front": "Risk in predictive vs adaptive projects",
+    "back": "Predictive: most identification up front, structured process, feedback at longer intervals. Adaptive: continuous identification in every iteration, frequent delivery and feedback expose risks early."
+  },
+  {
+    "id": "c41",
+    "front": "Spike",
+    "back": "A short piece of work done early in an adaptive project to remove a specific, high uncertainty (early de-risking)."
+  },
+  {
+    "id": "c42",
+    "front": "Risk data quality assessment",
+    "back": "Evaluates how far the data about risks is useful for risk management."
+  },
+  {
+    "id": "c43",
+    "front": "Risk categorization",
+    "back": "Grouping risks by source (RBS), by area of the project affected (WBS) or by phase, to find the areas most exposed."
+  }
 ]

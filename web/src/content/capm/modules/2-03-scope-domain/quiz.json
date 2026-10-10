@@ -490,5 +490,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q25",
+    "q": "A project will produce a new model of water pump. To define the scope, the team works through questions about the pump: who will use it, at what pressure, in what conditions. What does the process guide call this tool?",
+    "options": [
+      "Benchmarking",
+      "Variance analysis",
+      "Decomposition",
+      "Product analysis"
+    ],
+    "answer": 3,
+    "explanation": "Product analysis is a tool to define scope for projects that have a product as a deliverable. It means asking questions about the product and forming answers that describe its use, characteristics and other relevant aspects.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Product Analysis)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 358,
+        "label": "Process Groups: A Practice Guide, Glossary (Product Analysis)"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A reviewer critiques a WBS and finds no branch for project management work such as planning and reporting. The project manager says the WBS is for the product only. Who is right?",
+    "options": [
+      "The project manager: management work is never shown in a WBS",
+      "Neither: a WBS lists activities, not deliverables",
+      "The reviewer: the WBS holds all the work of the project",
+      "The project manager: that work belongs in the charter"
+    ],
+    "answer": 2,
+    "explanation": "The WBS represents the total scope of the project: all the work, including project management work. Work that is not in the WBS is outside the project. This is the 100 percent rule.",
+    "ref": "PMBOK 8, Guide 2.2.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 147,
+        "label": "PMBOK 8, Guide 2.2.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A team breaks a deliverable down, level by level, and stops at the point where the cost and duration of each piece can be estimated and managed. What are the pieces at that lowest level called?",
+    "options": [
+      "Control accounts",
+      "Work packages",
+      "Milestones",
+      "Activities"
+    ],
+    "answer": 1,
+    "explanation": "Decomposition divides the scope into smaller parts. The lowest level of the WBS is the work package, where cost and duration can be estimated and managed. Activities are defined later, from the work packages.",
+    "ref": "PMBOK 8, Guide section 5, Decomposition",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decomposition"
+      }
+    ]
   }
 ]

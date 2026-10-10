@@ -490,5 +490,65 @@
         "label": "PMBOK 8, Guide Table 5-1"
       }
     ]
+  },
+  {
+    "id": "q25",
+    "q": "At the end of month three: planned value $50,000, earned value $45,000, actual cost $48,000. What are the schedule variance and the cost variance?",
+    "options": [
+      "SV = +$5,000 and CV = +$3,000",
+      "SV = −$3,000 and CV = −$5,000",
+      "SV = −$2,000 and CV = −$3,000",
+      "SV = −$5,000 and CV = −$3,000"
+    ],
+    "answer": 3,
+    "explanation": "SV = EV − PV = 45,000 − 50,000 = −5,000 (behind schedule). CV = EV − AC = 45,000 − 48,000 = −3,000 (over budget).",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "The budget at completion is $300,000. The latest estimate at completion is $330,000. What is the variance at completion, and what does it mean?",
+    "options": [
+      "+$30,000: the project will finish under budget",
+      "−$30,000: the project is thirty thousand dollars behind schedule",
+      "−$30,000: the project is expected to finish over budget",
+      "+$30,000: the project is ahead of schedule"
+    ],
+    "answer": 2,
+    "explanation": "VAC = BAC − EAC = 300,000 − 330,000 = −30,000. A negative VAC means the project is forecast to finish over budget.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A project has earned $90,000 of value against a planned value of $100,000. What is its schedule performance index, and how should it be read?",
+    "options": [
+      "0.90: work is being done at 90% of the planned rate",
+      "1.11: work is ahead of the planned rate",
+      "0.90: 90 cents of value earned for each dollar spent",
+      "10: the project is ten days late"
+    ],
+    "answer": 0,
+    "explanation": "SPI = EV ÷ PV = 90,000 ÷ 100,000 = 0.90. Below 1.0 means behind schedule. Value per dollar spent is the CPI, not the SPI.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
   }
 ]

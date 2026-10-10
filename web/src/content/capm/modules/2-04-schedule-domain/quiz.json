@@ -521,5 +521,65 @@
         "label": "Practice Standard for Project Estimating, 4.5"
       }
     ]
+  },
+  {
+    "id": "q26",
+    "q": "A draft schedule shows an item called \"Design approved\" with a duration of five days. What should the scheduler change?",
+    "options": [
+      "Nothing: every item in a schedule needs a duration",
+      "Extend it, because approvals usually take longer",
+      "Remove it from the schedule altogether, because approvals are never shown on a schedule",
+      "Make it a milestone of zero duration, with the review as a separate activity"
+    ],
+    "answer": 3,
+    "explanation": "A milestone is a significant point or event and has zero duration. The work of reviewing the design takes time and is an activity; the approval that ends it is the milestone.",
+    "ref": "PMBOK 8, Guide section 4, Milestone list",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Milestone list"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A team could paint the walls before or after laying the carpet. From experience it prefers to paint first, and puts that order in the schedule. What kind of dependency is this?",
+    "options": [
+      "Discretionary",
+      "Mandatory",
+      "External",
+      "Internal and mandatory"
+    ],
+    "answer": 0,
+    "explanation": "A discretionary dependency is a preferred order based on good practice or experience, not on the nature of the work. It can be changed if the schedule needs compressing. A mandatory dependency is required by the work itself or by contract.",
+    "ref": "PMBOK 8, Guide section 5, Dependency determination and integration",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 271,
+        "label": "PMBOK 8, Guide section 5, Dependency determination and integration"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Records show that a crew lays 20 meters of pipe a day. The project needs 400 meters. Using this rate, what is the duration, and which technique is it?",
+    "options": [
+      "8,000 days, by bottom-up estimating",
+      "20 days, by analogous estimating",
+      "20 days, by parametric estimating",
+      "400 days, by three-point estimating"
+    ],
+    "answer": 2,
+    "explanation": "Parametric estimating uses a statistical relationship between historical data and other variables: 400 m ÷ 20 m a day = 20 days.",
+    "ref": "PMBOK 8, Guide section 5, Parametric estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 289,
+        "label": "PMBOK 8, Guide section 5, Parametric estimating"
+      }
+    ]
   }
 ]

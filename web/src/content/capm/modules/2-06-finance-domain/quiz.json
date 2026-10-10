@@ -445,5 +445,65 @@
         "label": "PMBOK 8, Guide Figure 2-30"
       }
     ]
+  },
+  {
+    "id": "q23",
+    "q": "Work package estimates total $400,000. The contingency reserve is $40,000 and the management reserve is $30,000. What is the project budget?",
+    "options": [
+      "$400,000",
+      "$440,000",
+      "$470,000",
+      "$430,000"
+    ],
+    "answer": 2,
+    "explanation": "The cost baseline is the estimates plus the contingency reserve: $440,000. The project budget adds the management reserve: $440,000 + $30,000 = $470,000.",
+    "ref": "PMBOK 8, Guide section 4, Cost baseline",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 223,
+        "label": "PMBOK 8, Guide section 4, Cost baseline"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A supplier's factory burns down, an event nobody had identified as a risk. Extra money is needed to find another source. From which reserve should it come?",
+    "options": [
+      "The management reserve",
+      "The contingency reserve",
+      "The cost baseline",
+      "The work package estimates"
+    ],
+    "answer": 0,
+    "explanation": "Contingency reserve covers identified risks. Management reserve is held for unforeseen work within the project's scope, the unknown unknowns, and is not part of the cost baseline.",
+    "ref": "PMBOK 8, Guide section 5, Reserve analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Reserve analysis"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A project spends money on training the team and on documenting its processes, in order to avoid defects later. In cost of quality terms, what kind of cost is this?",
+    "options": [
+      "An internal failure cost",
+      "A prevention cost",
+      "An external failure cost",
+      "An appraisal cost"
+    ],
+    "answer": 1,
+    "explanation": "Prevention costs are spent to keep defects from happening: training, documented processes, proper equipment. With appraisal costs they make up the cost of conformance. Failure costs are the cost of nonconformance.",
+    "ref": "PMBOK 8, Guide section 5, Cost of quality (CoQ)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Cost of quality (CoQ)"
+      }
+    ]
   }
 ]

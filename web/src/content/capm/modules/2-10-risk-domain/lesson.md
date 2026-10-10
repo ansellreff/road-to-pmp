@@ -108,7 +108,7 @@ A **risk trigger** is an event or condition that indicates a risk is about to oc
 
 ## Perform Risk Analysis: qualitative
 
-@source PMBOK 8, Guide 2.7.2.3; PMBOK 8, Guide section 5, Probability and impact matrix
+@source PMBOK 8, Guide 2.7.2.3; PMBOK 8, Guide section 5, Probability and impact matrix; Process Groups: A Practice Guide, Glossary (Risk Data Quality Assessment); Process Groups: A Practice Guide, Glossary (Risk Categorization)
 
 **Qualitative analysis** assesses each individual risk's **probability** and **impact** to **prioritize** the risks. It is quick, subjective, and done for **all** risks, throughout the project.
 
@@ -123,6 +123,8 @@ The main tool is the **probability and impact matrix**: a grid that maps each ri
 **Risk score = probability × impact.** A risk with probability 0.5 and impact 0.4 scores **0.20**. The highest scores get attention first.
 
 Other things considered: how **urgent** the risk is, how manageable it is, when the impact would be felt, and links with other risks. Risks can also be grouped by **category** to find areas of concentration.
+
+> **On the exam.** Two more techniques from the process guide. A **risk data quality assessment** evaluates how far the data about risks is **useful** for risk management: an analysis built on poor data cannot be trusted. **Risk categorization** groups risks by their source (using the risk breakdown structure), by the area of the project affected (using the WBS) or by another useful category such as phase, to find the areas most exposed to uncertainty.
 
 ## Perform Risk Analysis: quantitative
 

@@ -1,37 +1,197 @@
 [
-  { "id": "c1", "front": "Quality", "back": "The degree to which the result meets requirements and stakeholder expectations." },
-  { "id": "c2", "front": "Quality vs grade", "back": "Quality: how well requirements are met. Grade: a category of features. Low grade can be acceptable; low quality is always a problem." },
-  { "id": "c3", "front": "Prevention over inspection", "back": "Quality is planned and built in. Preventing defects costs less than finding and fixing them." },
-  { "id": "c4", "front": "Quality assurance vs quality control", "back": "Assurance: the process (audits), aims to prevent defects. Control: the deliverables (inspection, testing), aims to find defects." },
-  { "id": "c5", "front": "Quality audit", "back": "A structured, independent review of whether project activities comply with policies, processes and procedures. Usually done by a team outside the project." },
-  { "id": "c6", "front": "Inspection", "back": "Examining a work product to determine whether it conforms to documented standards. Also used to verify defect repairs." },
-  { "id": "c7", "front": "Quality management plan", "back": "Describes how the organization's quality policies and procedures will be applied to achieve the project's quality objectives." },
-  { "id": "c8", "front": "Quality metrics", "back": "The specific attributes to measure and how compliance will be verified, such as failure rate or defects per day." },
-  { "id": "c9", "front": "Quality report", "back": "A project document with quality issues, recommendations for corrective action and a summary of quality control findings." },
-  { "id": "c10", "front": "Cause-and-effect diagram", "back": "Also called a fishbone or Ishikawa diagram. Branches possible causes off a problem statement to find the root cause." },
-  { "id": "c11", "front": "Control chart", "back": "Shows measurements over time against a mean and upper and lower control limits, to tell whether a process is stable." },
-  { "id": "c12", "front": "Control limits vs specification limits", "back": "Control limits: calculated from the process data. Specification limits: the maximum and minimum allowed by the requirements." },
-  { "id": "c13", "front": "Rule of seven", "back": "Seven points in a row on one side of the mean indicate the process is out of control, even if all are within the control limits." },
-  { "id": "c14", "front": "Pareto chart", "back": "Bars sorted from most to least frequent cause. Shows the vital few: about 80% of problems come from 20% of causes." },
-  { "id": "c15", "front": "Scatter diagram", "back": "Plots one variable against another to show whether they are related." },
-  { "id": "c16", "front": "Histogram", "back": "A bar chart showing how often each value occurs: the distribution of the data." },
-  { "id": "c17", "front": "Flowchart", "back": "A map of the steps and decision points of a process. Also called a process map." },
-  { "id": "c18", "front": "Continuous improvement", "back": "An ongoing effort to improve processes and products in small steps. Approaches: plan-do-check-act (PDCA), Lean, Total Quality Management, Six Sigma." },
-  { "id": "c19", "front": "Buyer and seller", "back": "Buyer: purchases products or services. Seller (vendor, contractor, supplier): provides them." },
-  { "id": "c20", "front": "Make-or-buy analysis", "back": "Determines whether work is best done by the project team or purchased from outside sources." },
-  { "id": "c21", "front": "The three procurement stages", "back": "Plan the procurements; conduct them (select a seller and award the contract); monitor and control them (manage performance and close the contract)." },
-  { "id": "c22", "front": "Statement of work (SOW)", "back": "The description of what the seller must deliver." },
-  { "id": "c23", "front": "RFI, RFP, RFQ", "back": "RFI: gather information from the market. RFP: ask sellers to propose a solution to a complex need. RFQ: ask for a price when price is the main factor." },
-  { "id": "c24", "front": "Bidder conference", "back": "A meeting where the buyer answers sellers' questions, so that all bidders receive the same information." },
-  { "id": "c25", "front": "Source selection criteria", "back": "The weighted factors used to score proposals: capability, cost, delivery dates, technical approach, experience, financial stability." },
-  { "id": "c26", "front": "Single source", "back": "A selection method used when only one supplier can meet the technical requirements, for example because of a patent." },
-  { "id": "c27", "front": "Fixed-price contract", "back": "A set price for a clearly defined scope. Cost risk is on the seller. Used when the scope is well defined." },
-  { "id": "c28", "front": "Cost-reimbursable contract", "back": "The buyer pays the seller's actual costs plus a fee. Cost risk is on the buyer. Used when scope is uncertain or the work is high risk." },
-  { "id": "c29", "front": "Time and materials (T&M) contract", "back": "The buyer pays for time and materials used at agreed rates. A hybrid of fixed-price and cost-reimbursable. For smaller jobs or unclear scope." },
-  { "id": "c30", "front": "Target-cost contract", "back": "A target cost is set, and savings or overruns are shared between buyer and seller." },
-  { "id": "c31", "front": "FFP, FPIF, FP-EPA", "back": "Firm fixed price; fixed price incentive fee (bonus for targets); fixed price with economic price adjustment (adjusts for inflation on long contracts)." },
-  { "id": "c32", "front": "CPFF, CPIF, CPAF", "back": "Cost plus fixed fee; cost plus incentive fee (fee tied to targets); cost plus award fee (fee decided by the buyer's judgment)." },
-  { "id": "c33", "front": "Order of dispute resolution", "back": "Negotiation first, then mediation, then arbitration. Litigation is the last option." },
-  { "id": "c34", "front": "Mediation vs arbitration", "back": "Mediation: a neutral third party helps the parties reach their own agreement. Arbitration: the third party makes a binding decision." },
-  { "id": "c35", "front": "Procurement audit", "back": "A structured review of the procurement process and contracts for completeness, accuracy and effectiveness." }
+  {
+    "id": "c1",
+    "front": "Quality",
+    "back": "The degree to which the result meets requirements and stakeholder expectations."
+  },
+  {
+    "id": "c2",
+    "front": "Quality vs grade",
+    "back": "Quality: how well requirements are met. Grade: a category of features. Low grade can be acceptable; low quality is always a problem."
+  },
+  {
+    "id": "c3",
+    "front": "Prevention over inspection",
+    "back": "Quality is planned and built in. Preventing defects costs less than finding and fixing them."
+  },
+  {
+    "id": "c4",
+    "front": "Quality assurance vs quality control",
+    "back": "Assurance: the process (audits), aims to prevent defects. Control: the deliverables (inspection, testing), aims to find defects."
+  },
+  {
+    "id": "c5",
+    "front": "Quality audit",
+    "back": "A structured, independent review of whether project activities comply with policies, processes and procedures. Usually done by a team outside the project."
+  },
+  {
+    "id": "c6",
+    "front": "Inspection",
+    "back": "Examining a work product to determine whether it conforms to documented standards. Also used to verify defect repairs."
+  },
+  {
+    "id": "c7",
+    "front": "Quality management plan",
+    "back": "Describes how the organization's quality policies and procedures will be applied to achieve the project's quality objectives."
+  },
+  {
+    "id": "c8",
+    "front": "Quality metrics",
+    "back": "The specific attributes to measure and how compliance will be verified, such as failure rate or defects per day."
+  },
+  {
+    "id": "c9",
+    "front": "Quality report",
+    "back": "A project document with quality issues, recommendations for corrective action and a summary of quality control findings."
+  },
+  {
+    "id": "c10",
+    "front": "Cause-and-effect diagram",
+    "back": "Also called a fishbone or Ishikawa diagram. Branches possible causes off a problem statement to find the root cause."
+  },
+  {
+    "id": "c11",
+    "front": "Control chart",
+    "back": "Shows measurements over time against a mean and upper and lower control limits, to tell whether a process is stable."
+  },
+  {
+    "id": "c12",
+    "front": "Control limits vs specification limits",
+    "back": "Control limits: calculated from the process data. Specification limits: the maximum and minimum allowed by the requirements."
+  },
+  {
+    "id": "c13",
+    "front": "Rule of seven",
+    "back": "Seven points in a row on one side of the mean indicate the process is out of control, even if all are within the control limits."
+  },
+  {
+    "id": "c14",
+    "front": "Pareto chart",
+    "back": "Bars sorted from most to least frequent cause. Shows the vital few: about 80% of problems come from 20% of causes."
+  },
+  {
+    "id": "c15",
+    "front": "Scatter diagram",
+    "back": "Plots one variable against another to show whether they are related."
+  },
+  {
+    "id": "c16",
+    "front": "Histogram",
+    "back": "A bar chart showing how often each value occurs: the distribution of the data."
+  },
+  {
+    "id": "c17",
+    "front": "Flowchart",
+    "back": "A map of the steps and decision points of a process. Also called a process map."
+  },
+  {
+    "id": "c18",
+    "front": "Continuous improvement",
+    "back": "An ongoing effort to improve processes and products in small steps. Approaches: plan-do-check-act (PDCA), Lean, Total Quality Management, Six Sigma."
+  },
+  {
+    "id": "c19",
+    "front": "Buyer and seller",
+    "back": "Buyer: purchases products or services. Seller (vendor, contractor, supplier): provides them."
+  },
+  {
+    "id": "c20",
+    "front": "Make-or-buy analysis",
+    "back": "Determines whether work is best done by the project team or purchased from outside sources."
+  },
+  {
+    "id": "c21",
+    "front": "The three procurement stages",
+    "back": "Plan the procurements; conduct them (select a seller and award the contract); monitor and control them (manage performance and close the contract)."
+  },
+  {
+    "id": "c22",
+    "front": "Statement of work (SOW)",
+    "back": "The description of what the seller must deliver."
+  },
+  {
+    "id": "c23",
+    "front": "RFI, RFP, RFQ",
+    "back": "RFI: gather information from the market. RFP: ask sellers to propose a solution to a complex need. RFQ: ask for a price when price is the main factor."
+  },
+  {
+    "id": "c24",
+    "front": "Bidder conference",
+    "back": "A meeting where the buyer answers sellers' questions, so that all bidders receive the same information."
+  },
+  {
+    "id": "c25",
+    "front": "Source selection criteria",
+    "back": "The weighted factors used to score proposals: capability, cost, delivery dates, technical approach, experience, financial stability."
+  },
+  {
+    "id": "c26",
+    "front": "Single source",
+    "back": "A selection method used when only one supplier can meet the technical requirements, for example because of a patent."
+  },
+  {
+    "id": "c27",
+    "front": "Fixed-price contract",
+    "back": "A set price for a clearly defined scope. Cost risk is on the seller. Used when the scope is well defined."
+  },
+  {
+    "id": "c28",
+    "front": "Cost-reimbursable contract",
+    "back": "The buyer pays the seller's actual costs plus a fee. Cost risk is on the buyer. Used when scope is uncertain or the work is high risk."
+  },
+  {
+    "id": "c29",
+    "front": "Time and materials (T&M) contract",
+    "back": "The buyer pays for time and materials used at agreed rates. A hybrid of fixed-price and cost-reimbursable. For smaller jobs or unclear scope."
+  },
+  {
+    "id": "c30",
+    "front": "Target-cost contract",
+    "back": "A target cost is set, and savings or overruns are shared between buyer and seller."
+  },
+  {
+    "id": "c31",
+    "front": "FFP, FPIF, FP-EPA",
+    "back": "Firm fixed price; fixed price incentive fee (bonus for targets); fixed price with economic price adjustment (adjusts for inflation on long contracts)."
+  },
+  {
+    "id": "c32",
+    "front": "CPFF, CPIF, CPAF",
+    "back": "Cost plus fixed fee; cost plus incentive fee (fee tied to targets); cost plus award fee (fee decided by the buyer's judgment)."
+  },
+  {
+    "id": "c33",
+    "front": "Order of dispute resolution",
+    "back": "Negotiation first, then mediation, then arbitration. Litigation is the last option."
+  },
+  {
+    "id": "c34",
+    "front": "Mediation vs arbitration",
+    "back": "Mediation: a neutral third party helps the parties reach their own agreement. Arbitration: the third party makes a binding decision."
+  },
+  {
+    "id": "c35",
+    "front": "Procurement audit",
+    "back": "A structured review of the procurement process and contracts for completeness, accuracy and effectiveness."
+  },
+  {
+    "id": "c36",
+    "front": "Tolerance versus control limits",
+    "back": "Tolerance: acceptable variation for the requirement. Control limits: three standard deviations either side of the mean, the variation expected from the process."
+  },
+  {
+    "id": "c37",
+    "front": "Statistical sampling",
+    "back": "Choosing part of a population for inspection, instead of inspecting every item."
+  },
+  {
+    "id": "c38",
+    "front": "Quality policy",
+    "back": "The organization's basic principles for quality. It comes from the organization, not the project."
+  },
+  {
+    "id": "c39",
+    "front": "RFI, RFQ, RFP",
+    "back": "RFI: asks for information. RFQ: asks for prices of standard items. RFP: asks for a proposed solution."
+  }
 ]

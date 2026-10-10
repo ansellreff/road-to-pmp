@@ -132,6 +132,37 @@ Each request is analyzed for impact and then **approved, rejected or deferred**.
 
 The person who will accept the deliverables should be involved **early**, giving feedback while changes are still cheap.
 
+## The exam's nine kinds of artifact
+
+@source PMBOK 7, Guide 4.6; PMBOK 7, Guide 4.6.1; PMBOK 7, Guide 4.6.2; PMBOK 7, Guide 4.6.3; PMBOK 7, Guide 4.6.4; PMBOK 7, Guide 4.6.5; PMBOK 7, Guide 4.6.6; PMBOK 7, Guide 4.6.7; PMBOK 7, Guide 4.6.8; PMBOK 7, Guide 4.6.9
+
+The outline asks you to identify the artifacts used in predictive and in adaptive projects. The Seventh Edition, which the exam uses, defines an **artifact** as a template, document, output or project deliverable, and sorts the common ones into nine kinds.
+
+| Kind | What marks it | Examples |
+|---|---|---|
+| **Strategy artifacts** | Created **before or at the start**; do not normally change | Business case, **business model canvas**, **project brief**, project charter, **project vision statement**, roadmap |
+| **Logs and registers** | Record aspects that **keep evolving**; updated throughout | Assumption log, backlog, change log, issue log, lessons learned register, **risk-adjusted backlog**, risk register, stakeholder register |
+| **Plans** | A proposed means of accomplishing something | The project management plan and its components; also the **change control plan**, **iteration plan**, **release plan** and **test plan** |
+| **Hierarchy charts** | High-level information **decomposed** into more detail | Organizational, product, resource and risk breakdown structures; the WBS |
+| **Baselines** | The **approved version** of a work product or plan, against which actual results are compared | Budget, milestone schedule, performance measurement baseline, project schedule, scope baseline |
+| **Visual data and information** | Charts, graphs, matrices and diagrams | Burndown and burnup charts, cumulative flow diagram, Gantt chart, **prioritization matrix**, RACI chart, **S-curve**, story map, velocity chart |
+| **Reports** | Formal records or summaries for stakeholders | Quality report, risk report, status report |
+| **Agreements and contracts** | Define the intentions of the parties | Fixed-price, cost-reimbursable, time and materials, **indefinite delivery indefinite quantity (IDIQ)**; also MOU, MOA and SLA |
+| **Other artifacts** | Fit no single kind | Activity list, bid documents, metrics, project calendar, requirements documentation, project team charter, user story |
+
+Definitions worth knowing from this list:
+
+- **Project brief:** a high-level overview of the goals, deliverables and processes for the project.
+- **Project vision statement:** a concise description of the project that states its purpose and inspires the team.
+- **Business model canvas:** a one-page visual summary of the value proposition, infrastructure, customers and finances, often used in lean start-up situations.
+- **Risk-adjusted backlog:** a backlog that also holds the work and actions for addressing threats and opportunities.
+- **Change control plan:** the part of the project management plan that sets up the change control board and states its authority.
+- **Prioritization matrix:** a scatter diagram with **effort** on the horizontal axis and **value** on the vertical axis, in four quadrants.
+- **S-curve:** a graph of **cumulative costs** over time.
+- **Logs and registers:** the two words are often used for the same thing; "risk log" and "risk register" mean one artifact.
+
+**Predictive or adaptive?** Many artifacts serve both. Those most typical of **adaptive** work are the backlog, risk-adjusted backlog, iteration plan, release plan, roadmap, user story, story map, burn charts, velocity chart and cumulative flow diagram. Those most typical of **predictive** work are the baselines, the WBS, the Gantt chart, the project schedule network diagram, the change log and the subsidiary management plans. This sorting is mine; the guide lists them without sorting.
+
 ## Tools and techniques you will see everywhere
 
 @source PMBOK 8, Guide section 5, Expert judgment; PMBOK 8, Guide section 5, Data gathering; PMBOK 8, Guide section 5, Data analysis; PMBOK 8, Guide section 5, Decision-making; PMBOK 8, Guide section 5, Meetings

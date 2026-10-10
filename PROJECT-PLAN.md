@@ -651,6 +651,40 @@ The Domain 4 lessons were written from *The PMI Guide to Business Analysis*, whi
 
 Nothing in Domain 4 was found to be **wrong**. Not read in this sitting: the practice guide's chapters 2, 3, 5 and 6 in full (the practices and their case study), and its pages on buy-a-feature and the capability table. *The PMI Guide to Business Analysis* was not re-read, because the lessons were written from it section by section in Sessions 21 to 24.
 
+### Domain 2 and the rest of Domain 1 (fourth sitting, 2026-10-11)
+
+The Domain 2 lessons were written from the Eighth Edition, with the exam's process names added in Session 25b. This sitting used three checks instead of a page-by-page read, because the calculations and definitions are the same in both editions:
+
+1. **Every process name.** A script compared the 49 process headings of *Process Groups: A Practice Guide* (sections 4 to 8) with module 1.12: all 49 are named there.
+2. **Every glossary term.** A script listed the terms of the process guide's glossary (437) and the Seventh Edition's glossary (352) that appear nowhere in the course. Most were wording variants of things already taught ("risk avoidance" for "avoid"). The real gaps are in the table below.
+3. **The two lists the outline names directly:** the Seventh Edition's meetings (section 4.4.3, pages 274 to 275) and artifacts (section 4.6, pages 279 to 287), read in full.
+
+| Module | Compared with | What was missing | Outline task | What was done |
+|---|---|---|---|---|
+| 1.11 | PMBOK 7 contents, sections 3.1 to 3.12 and 2.1 to 2.8 | Nothing: the twelve principle names and the eight domain names match word for word | (The outline names neither) | No change |
+| 1.12 | Process Groups guide, sections 4 to 8 | Nothing: all 49 processes are named | 2.1, activities within each process | No change |
+| 2.1 | PMBOK 7, Guide 4.6 | **The Seventh Edition's nine kinds of artifact**, with the project brief, project vision statement, business model canvas, risk-adjusted backlog, change control plan, prioritization matrix and S-curve | 2.3 and 3.3, identify the artifacts used | New section "The exam's nine kinds of artifact"; 7 questions, 5 flashcards |
+| 2.3 | Process Groups guide, glossary | Product analysis | 1.1, review or critique project scope | Note; 3 questions, 1 flashcard |
+| 2.8 | Process Groups guide, glossary | Communication styles assessment | 1.4, following a communication strategy | Note; 3 questions, 1 flashcard |
+| 2.9 | Process Groups guide, glossary | Resource histogram; project team directory | 1.2, number and type of resources | Note; 3 questions, 2 flashcards |
+| 2.10 | Process Groups guide, glossary | Risk data quality assessment; risk categorization | 1.2, use a risk register | Note; 4 questions, 2 flashcards |
+| 2.11 | Process Groups guide, glossary | Quality policy; test and evaluation documents; statistical sampling; **tolerance against control limits**; request for information and request for quotation | 2.2, apply a quality management plan; 2.3, artifacts | Three notes; 4 questions, 4 flashcards |
+| 2.12 | PMBOK 7, Guide 4.4.3 | **The Seventh Edition's sixteen meetings**: project review, project closeout, steering committee, status meeting, risk review and planning meeting were not described | 1.5, effectiveness of a meeting; purpose of standups and other meetings | Note with all sixteen; 6 questions, 3 flashcards |
+| 2.2, 2.4 to 2.7 | Process Groups guide, glossary (float, critical path, control account, schedule variance) | Nothing: definitions agree. Module 2.5 already explains the day 0 and day 1 conventions for the critical path. | 2.2 and 2.3, critical path, variances | 3 questions each, no lesson change |
+
+Nothing in Domain 2 was found to be **wrong**.
+
+**Not compared, and why:** modules 1.4 and 1.5 against the full text of the Seventh Edition's twelve principles (pages 51 to 87). The outline names no principle, and module 1.11 lists all twelve by their exact names. The inputs, tools and outputs of each of the 49 processes (Process Groups guide, sections 4 to 8, about 250 pages) were not read line by line; the outline asks for "typical activities within each process", which module 1.12 and the Domain 2 modules give.
+
+### Summary of Session 31a
+
+| | Domain 1 | Domain 2 | Domain 3 | Domain 4 |
+|---|---|---|---|---|
+| Statements found wrong | 0 | 0 | 0 | 0 |
+| Topics missing and now taught | 2 | 3 | 8 | 7 |
+| "On the exam" notes added | 8 | 8 | 3 | 2 |
+| New sections | 2 | 1 | 5 | 6 |
+
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.

@@ -77,7 +77,7 @@ Example of a RACI chart:
 
 ## Estimate Resources and Acquire Resources
 
-@source PMBOK 8, Guide 2.6.2.2; PMBOK 8, Guide 2.6.2.3; PMBOK 8, Guide section 4, Resource calendar
+@source PMBOK 8, Guide 2.6.2.2; PMBOK 8, Guide 2.6.2.3; PMBOK 8, Guide section 4, Resource calendar; Process Groups: A Practice Guide, Glossary (Resource Histogram); Process Groups: A Practice Guide, Glossary (Project Team Directory)
 
 **Estimate Resources** works out the **type, quantity and characteristics** of the resources needed. It is closely tied to scheduling, because the number of people affects duration.
 
@@ -95,6 +95,8 @@ Example of a RACI chart:
 
 - If the needed resources cannot be obtained, schedule, budget, quality and risk are all affected. The project manager may have to use **alternative resources**, as long as legal and mandatory criteria are not violated.
 - Acquiring from **inside** the organization takes negotiation and influence; from **outside**, procurement.
+
+> **On the exam.** Two artifacts from the process guide. A **resource histogram** is a bar chart showing the amount of time a resource is scheduled to work over a series of time periods; a bar that rises above the resource's availability shows an **over-allocation**. A **project team directory** is a documented list of the team members, their project roles and how to reach them.
 
 ## Lead the Team
 

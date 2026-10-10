@@ -460,5 +460,65 @@
         "label": "PMBOK 8, Guide 2.5.1"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "Six months into a project, a new regulator is given authority over the product. Nobody on the team has dealt with it before. What should the project manager do first with the stakeholder register?",
+    "options": [
+      "Leave it unchanged: the register is fixed once it has been approved",
+      "Add the regulator and analyze its interest and influence",
+      "Archive it and open a new register",
+      "Send it to the regulator for approval"
+    ],
+    "answer": 1,
+    "explanation": "The stakeholder register is updated throughout the project. A newly identified stakeholder is added and analyzed (interest, influence, expectations), and the engagement approach is adjusted.",
+    "ref": "PMBOK 8, Guide section 4, Stakeholder register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 246,
+        "label": "PMBOK 8, Guide section 4, Stakeholder register"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A department head ignores the weekly written reports and stays unsupportive. The project manager wants to find out which method, format and content of communication would actually reach her. Which technique from the process guide fits?",
+    "options": [
+      "A stakeholder cube",
+      "A probability and impact matrix",
+      "A responsibility assignment matrix",
+      "A communication styles assessment"
+    ],
+    "answer": 3,
+    "explanation": "A communication styles assessment identifies the preferred communication method, format and content for stakeholders, for planned communication activities. It is often used with unsupportive stakeholders.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Communication Styles Assessment)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 346,
+        "label": "Process Groups: A Practice Guide, Glossary (Communication Styles Assessment)"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A project manager has to tell a key supplier that its contract may not be renewed, and expects questions and some emotion. Which communication method is the most suitable?",
+    "options": [
+      "Interactive: a meeting or a call",
+      "Push: an email to the supplier",
+      "Pull: a note on the project portal",
+      "Push: a letter sent by post"
+    ],
+    "answer": 0,
+    "explanation": "Interactive communication is a real-time exchange between two or more parties. It is the most suitable for sensitive or complex matters, because understanding can be checked and questions answered at once.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
   }
 ]

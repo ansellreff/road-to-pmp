@@ -460,5 +460,65 @@
         "label": "PMBOK 8, Guide section 5, Virtual teams"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "A bar chart shows, week by week, the hours one welder is scheduled to work. In week 3 the bar reaches 60 hours, above the 40-hour line. What is this chart, and what does week 3 show?",
+    "options": [
+      "A Gantt chart; a critical activity",
+      "A control chart; a process out of control",
+      "A resource histogram; an over-allocation",
+      "A burndown chart; work remaining"
+    ],
+    "answer": 2,
+    "explanation": "A resource histogram is a bar chart showing the amount of time a resource is scheduled to work over a series of time periods. A bar above the resource's availability shows that the resource is over-allocated.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Resource Histogram)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 361,
+        "label": "Process Groups: A Practice Guide, Glossary (Resource Histogram)"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A new team member wants to know who else is on the project, what role each person has, and how to reach them. Which project document holds this?",
+    "options": [
+      "The project stakeholder register",
+      "The project team directory",
+      "The resource calendar",
+      "The team charter"
+    ],
+    "answer": 1,
+    "explanation": "The project team directory is a documented list of project team members, their project roles and their communication information.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Project Team Directory)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 359,
+        "label": "Process Groups: A Practice Guide, Glossary (Project Team Directory)"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "On a RACI chart, the task \"approve test plan\" has an A against three different people. What is wrong?",
+    "options": [
+      "Nothing: important tasks need several accountable people",
+      "The task should have no A at all",
+      "The A should be replaced by three I entries",
+      "Only one person should be accountable for a task"
+    ],
+    "answer": 3,
+    "explanation": "In a RACI chart each task has exactly one accountable person, so that it is always clear who answers for the result. Several people may be responsible, consulted or informed.",
+    "ref": "PMBOK 8, Guide section 5, Responsibility assignment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Responsibility assignment matrix"
+      }
+    ]
   }
 ]

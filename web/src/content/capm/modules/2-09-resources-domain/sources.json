@@ -138,5 +138,15 @@
     "book": "processgroups",
     "page": 43,
     "label": "Process Groups: A Practice Guide, Table 1-4"
+  },
+  {
+    "book": "processgroups",
+    "page": 359,
+    "label": "Process Groups: A Practice Guide, Glossary (Project Team Directory)"
+  },
+  {
+    "book": "processgroups",
+    "page": 361,
+    "label": "Process Groups: A Practice Guide, Glossary (Resource Histogram)"
   }
 ]

@@ -521,5 +521,85 @@
         "label": "Risk Management: A Practice Guide, 4.1.1"
       }
     ]
+  },
+  {
+    "id": "q27",
+    "q": "Before ranking its risks, a team checks how reliable and complete the information about each risk is, because several entries rest on a single person's guess. Which technique from the process guide is this?",
+    "options": [
+      "Risk data quality assessment",
+      "Risk categorization",
+      "Monte Carlo simulation",
+      "Reserve analysis"
+    ],
+    "answer": 0,
+    "explanation": "A risk data quality assessment evaluates the degree to which the data about risks is useful for risk management. Low-quality data makes the analysis built on it unreliable.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Risk Data Quality Assessment)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 362,
+        "label": "Process Groups: A Practice Guide, Glossary (Risk Data Quality Assessment)"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A team sorts the entries in its risk register by source, using the risk breakdown structure, and finds that most come from one supplier. Which technique is this, and what is it for?",
+    "options": [
+      "Risk data quality assessment, to check the data",
+      "Sensitivity analysis, to rank the main drivers of cost",
+      "Risk categorization, to find the areas most exposed",
+      "Risk transfer, to move the risk to the supplier"
+    ],
+    "answer": 2,
+    "explanation": "Risk categorization organizes risks by source (using the RBS), by the area of the project affected (using the WBS) or by another useful category, to determine the areas of the project most exposed to uncertainty.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Risk Categorization)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 362,
+        "label": "Process Groups: A Practice Guide, Glossary (Risk Categorization)"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A project manager identifies a threat that comes from a company-wide policy. It is outside the project's scope and beyond her authority to deal with. Which response is appropriate?",
+    "options": [
+      "Accept",
+      "Escalate",
+      "Mitigate",
+      "Exploit"
+    ],
+    "answer": 1,
+    "explanation": "Escalation is used when a threat is outside the scope of the project or the response would exceed the project manager's authority. The risk is passed to the level that can manage it, such as the program or the organization.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "The risk register says: \"If the supplier misses the 1 June shipping date, switch to the backup supplier.\" On 1 June the shipment has not left. What should happen?",
+    "options": [
+      "The risk is removed from the register",
+      "A new risk is identified and analyzed from the start",
+      "The team waits a month to be certain",
+      "The risk owner puts the planned response into action"
+    ],
+    "answer": 3,
+    "explanation": "The missed date is the trigger condition. When a trigger occurs, the risk owner implements the response that was planned and recorded in the risk register, and the register is updated.",
+    "ref": "PMBOK 8, Guide 2.7.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 203,
+        "label": "PMBOK 8, Guide 2.7.2.5"
+      }
+    ]
   }
 ]

@@ -111,7 +111,7 @@ Example:
 
 ## Plan Communications Management
 
-@source PMBOK 8, Guide 2.5.2.3; PMBOK 8, Guide section 4, Communications management plan; PMBOK 8, Guide section 5, Communication requirements analysis; The Project Management Answer Book, Chapter 11, Q18
+@source PMBOK 8, Guide 2.5.2.3; PMBOK 8, Guide section 4, Communications management plan; PMBOK 8, Guide section 5, Communication requirements analysis; The Project Management Answer Book, Chapter 11, Q18; Process Groups: A Practice Guide, Glossary (Communication Styles Assessment)
 
 Plans how to communicate with stakeholders inside and outside the team. The output is the **communications management plan**, which answers:
 
@@ -132,6 +132,8 @@ Plans how to communicate with stakeholders inside and outside the team. The outp
 | 10 | 10 × 9 ÷ 2 | 45 |
 
 Remember to **count the project manager**. "A project manager with a team of 9" means n = 10. Going from 5 to 10 people adds 45 − 10 = **35** channels.
+
+> **On the exam.** The process guide names a **communication styles assessment**: a technique to identify the preferred communication **method, format and content** for stakeholders, for planned communication activities. It is used when the usual approach is not reaching a stakeholder, most often one who is unsupportive.
 
 ## Communication methods and technology
 

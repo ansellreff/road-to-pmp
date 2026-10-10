@@ -450,5 +450,85 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q23",
+    "q": "A shaft must be 50 mm thick, plus or minus 0.2 mm. Every shaft measured is inside that range, but the last eight readings have all been above the mean on the control chart. What does this show?",
+    "options": [
+      "All is well, because every shaft measured so far is inside the tolerance that was specified",
+      "The tolerance in the requirement was set too wide",
+      "The process may be out of control, although the shafts are within tolerance",
+      "The control limits and the tolerance are the same thing"
+    ],
+    "answer": 2,
+    "explanation": "Tolerance is the acceptable variation for the quality requirement. Control limits describe the variation expected from the process. A run of seven or more points on one side of the mean signals a process out of control even when each result is within tolerance.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Tolerance)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 365,
+        "label": "Process Groups: A Practice Guide, Glossary (Tolerance)"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A factory produces 5,000 circuit boards for a project. Testing destroys a board, so the quality team tests 50 chosen at random and judges the batch from them. Which technique is this?",
+    "options": [
+      "Statistical sampling",
+      "Benchmarking",
+      "A quality audit",
+      "Product analysis"
+    ],
+    "answer": 0,
+    "explanation": "Statistical sampling is choosing part of a population of interest for inspection. It is used when inspecting every item would be too costly or would destroy the product.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Statistical Sampling)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 365,
+        "label": "Process Groups: A Practice Guide, Glossary (Statistical Sampling)"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A project needs 200 standard office chairs. The specification is fixed, and the only open question is the price. Which procurement document should go to the sellers?",
+    "options": [
+      "A request for information",
+      "A request for proposal",
+      "A statement of work only",
+      "A request for quotation"
+    ],
+    "answer": 3,
+    "explanation": "A request for quotation asks prospective sellers for prices for common or standard products or services. A request for proposal asks for a proposed solution; a request for information asks about products or seller capability.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Request for Quotation)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 360,
+        "label": "Process Groups: A Practice Guide, Glossary (Request for Quotation)"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A project manager is writing the quality management plan and wants to state the basic principles the company follows on quality. Where do these come from?",
+    "options": [
+      "From the project team's own preferences",
+      "From the organization's quality policy",
+      "From the seller's bid documents",
+      "From the lessons learned register"
+    ],
+    "answer": 1,
+    "explanation": "The quality policy is set by the organization: it establishes the basic principles that govern the organization's actions as it implements its system for quality management. The project's quality management plan applies it.",
+    "ref": "Process Groups: A Practice Guide, Glossary (Quality Policy)",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 360,
+        "label": "Process Groups: A Practice Guide, Glossary (Quality Policy)"
+      }
+    ]
   }
 ]

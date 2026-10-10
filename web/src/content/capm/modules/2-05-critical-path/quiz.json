@@ -520,5 +520,65 @@
         "label": "Practice Standard for Scheduling, 3.4.1.2"
       }
     ]
+  },
+  {
+    "id": "q26",
+    "q": "A network has two paths. A (3 days), B (4 days), D (5 days); and A (3 days), C (7 days), D (5 days). What is the total float of activity B?",
+    "options": [
+      "0 days",
+      "3 days",
+      "4 days",
+      "7 days"
+    ],
+    "answer": 1,
+    "explanation": "Path A-B-D is 3 + 4 + 5 = 12 days. Path A-C-D is 3 + 7 + 5 = 15 days and is critical. B lies on the shorter path, so it can slip 15 − 12 = 3 days without delaying the project.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "To recover a delay, a project manager starts the foundation work while the detailed design is still being finished. The two had been planned one after the other. Which technique is this, and what is its main risk?",
+    "options": [
+      "Fast tracking; rework",
+      "Crashing; higher cost",
+      "Resource leveling; a later finish",
+      "Resource smoothing; lost float"
+    ],
+    "answer": 0,
+    "explanation": "Fast tracking performs in parallel activities that were planned in sequence. It adds no cost directly, but it raises risk and can cause rework. Crashing adds resources and so adds cost.",
+    "ref": "PMBOK 8, Guide section 5, Schedule compression",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Schedule compression"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "One engineer is planned on two activities in the same week. The scheduler moves one of them within its float, so the engineer is never double-booked and the finish date does not change. Which technique is this?",
+    "options": [
+      "Crashing",
+      "Resource leveling",
+      "Fast tracking",
+      "Resource smoothing"
+    ],
+    "answer": 3,
+    "explanation": "Resource smoothing adjusts activities only within their free and total float, so the critical path and the finish date do not change. Resource leveling may move the finish date.",
+    "ref": "PMBOK 8, Guide section 5, Resource optimization technique",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 298,
+        "label": "PMBOK 8, Guide section 5, Resource optimization technique"
+      }
+    ]
   }
 ]

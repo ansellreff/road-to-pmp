@@ -109,7 +109,7 @@ A requirement that cannot be traced to an objective is a warning sign of unneede
 
 ## Define Scope and the project scope statement
 
-@source PMBOK 8, Guide 2.2.2.3; PMBOK 8, Guide section 4, Project scope statement
+@source PMBOK 8, Guide 2.2.2.3; PMBOK 8, Guide section 4, Project scope statement; Process Groups: A Practice Guide, Glossary (Product Analysis)
 
 Develops a description of the project, the product and the value to be delivered. In a predictive project this is done in detail at the start; in adaptive work, at a high level and then at the start of each iteration.
 
@@ -125,6 +125,8 @@ The **project scope statement** contains:
 | Level of detail | High level | Detailed |
 | Purpose | Authorizes the project | Describes the scope and its boundaries |
 | Part of the scope baseline? | No | **Yes** |
+
+> **On the exam.** The process guide lists **product analysis** as a tool for defining scope. For a project whose deliverable is a product, it means asking questions about the product and forming answers that describe its use, its characteristics and the other relevant aspects of what is going to be made.
 
 ## Develop Scope Structure: the WBS
 

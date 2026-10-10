@@ -440,5 +440,125 @@
         "label": "PMBOK 8, Guide section 5, Active listening"
       }
     ]
+  },
+  {
+    "id": "q23",
+    "q": "A one-hour meeting ends. Several good points were raised, but nobody wrote down what was decided or who will do what. How should its effectiveness be judged?",
+    "options": [
+      "Effective, since everyone present was able to speak and several good points were raised",
+      "Effective, since it finished on time",
+      "Not effective: decisions and action items with owners were not recorded",
+      "Not effective: meetings should never last an hour"
+    ],
+    "answer": 2,
+    "explanation": "Good meeting management includes an agenda with a stated purpose, the right participants, keeping to time, and recording decisions and action items with owners and dates. Without the record, the meeting produces no reliable follow-up.",
+    "ref": "PMBOK 8, Guide section 5, Meeting management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Meeting management"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Four options are put to a vote. They receive 40%, 30%, 20% and 10% of the votes. Under which decision rule does the first option win?",
+    "options": [
+      "Unanimity",
+      "Majority",
+      "Autocratic decision",
+      "Plurality"
+    ],
+    "answer": 3,
+    "explanation": "Plurality: the largest block wins even without more than half the votes. Majority needs more than 50%, and unanimity needs everyone to agree.",
+    "ref": "PMBOK 8, Guide section 5, Voting",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 319,
+        "label": "PMBOK 8, Guide section 5, Voting"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A team meets for a few minutes each morning. Each person says what was done, what comes next and what is in the way. A manager wants to use the time to review the budget in detail. What is the purpose of this meeting?",
+    "options": [
+      "To coordinate the day's work and surface obstacles",
+      "To report detailed status to management",
+      "To solve each technical problem in full as it is raised",
+      "To approve changes to the cost baseline"
+    ],
+    "answer": 0,
+    "explanation": "A daily coordination meeting (standup) is a short meeting in which the team reviews progress, states its intentions for the day and raises obstacles. Detailed discussions are taken up afterwards by the people concerned.",
+    "ref": "PMBOK 8, Guide section 5, Daily coordination meeting",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 267,
+        "label": "PMBOK 8, Guide section 5, Daily coordination meeting"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "At the end of the design phase, a meeting is held to assess the project's status, evaluate the value delivered so far, and decide whether the project is ready to move to the build phase. In the Seventh Edition's list, which meeting is this?",
+    "options": [
+      "A status meeting",
+      "A kickoff meeting",
+      "A project closeout meeting",
+      "A project review"
+    ],
+    "answer": 3,
+    "explanation": "A project review is an event at the end of a phase or a project to assess the status, evaluate the value delivered, and determine whether the project is ready to move to the next phase or to transition to operations.",
+    "ref": "PMBOK 7, Guide 4.4.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 274,
+        "label": "PMBOK 7, Guide 4.4.3"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A supplier dispute needs a decision that is beyond the project team's authority. Senior stakeholders meet, give direction and decide. Which kind of meeting is this?",
+    "options": [
+      "A steering committee meeting",
+      "A change control board meeting",
+      "A daily standup meeting",
+      "A lessons learned meeting"
+    ],
+    "answer": 0,
+    "explanation": "A steering committee is a meeting where senior stakeholders provide direction and support to the project team and make decisions outside the project team's authority. A change control board deals specifically with changes to the project.",
+    "ref": "PMBOK 7, Guide 4.4.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 274,
+        "label": "PMBOK 7, Guide 4.4.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "All the work is delivered. The project manager calls a meeting whose single purpose is to obtain the client's final acceptance of the delivered scope. What is this meeting called in the Seventh Edition?",
+    "options": [
+      "An iteration review",
+      "A project closeout meeting",
+      "A risk review",
+      "A release planning meeting"
+    ],
+    "answer": 1,
+    "explanation": "A project closeout meeting is used to obtain final acceptance of the delivered scope from the sponsor, product owner or client. It indicates that the product delivery is complete.",
+    "ref": "PMBOK 7, Guide 4.4.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 274,
+        "label": "PMBOK 7, Guide 4.4.3"
+      }
+    ]
   }
 ]

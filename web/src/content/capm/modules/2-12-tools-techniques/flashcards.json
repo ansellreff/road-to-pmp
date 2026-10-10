@@ -1,33 +1,172 @@
 [
-  { "id": "c1", "front": "The eight families of common tools", "back": "Expert judgment; data gathering; data analysis; data representation; decision-making; interpersonal and team skills; meetings; project management information system (PMIS)." },
-  { "id": "c2", "front": "Expert judgment", "back": "Judgment based on expertise in an application area, discipline or industry, from any person or group with specialized knowledge, skill or experience." },
-  { "id": "c3", "front": "Project management information system (PMIS)", "back": "The tools used to gather, integrate and distribute the outputs of project management processes: scheduling software, configuration management, reporting." },
-  { "id": "c4", "front": "Data gathering vs data analysis vs data representation", "back": "Gathering: collect information. Analysis: make sense of it. Representation: show it." },
-  { "id": "c5", "front": "Brainstorming", "back": "A group generates many ideas in a short time, led by a facilitator, without judging them at first." },
-  { "id": "c6", "front": "Focus group", "back": "Prequalified stakeholders and experts in a guided, conversational discussion about their expectations and attitudes." },
-  { "id": "c7", "front": "Questionnaires and surveys", "back": "Written questions for collecting information quickly from many respondents. Best for large or geographically dispersed audiences." },
-  { "id": "c8", "front": "Benchmarking", "back": "Comparing products, processes and practices with those of comparable organizations to find best practices and ideas for improvement." },
-  { "id": "c9", "front": "Alternative analysis", "back": "Evaluating the identified options to select the approach to use for the work." },
-  { "id": "c10", "front": "Root cause analysis", "back": "Finding the basic underlying reason for a variance, defect or risk. Remove the root cause and the problem does not recur." },
-  { "id": "c11", "front": "Variance analysis", "back": "Determining the cause and degree of difference between the baseline and actual performance. Looks back." },
-  { "id": "c12", "front": "Trend analysis", "back": "Forecasting future outcomes from historical results. Looks forward and gives early warning." },
-  { "id": "c13", "front": "What-if analysis", "back": "Evaluating scenarios to predict their effect on project objectives." },
-  { "id": "c14", "front": "Affinity diagram", "back": "Shows a large number of ideas classified into groups for review and analysis." },
-  { "id": "c15", "front": "Mind map", "back": "A diagram that organizes ideas visually around a topic, showing what they have in common and where they differ." },
-  { "id": "c16", "front": "Information radiator", "back": "A visible, physical display placed where everyone can see it, updated frequently and often maintained by hand. Example: a task board." },
-  { "id": "c17", "front": "Burndown vs burnup chart", "back": "Burndown: work remaining against time left in a timebox. Burnup: work completed toward a milestone." },
-  { "id": "c18", "front": "Unanimity", "back": "A decision in which everyone agrees on a single course of action." },
-  { "id": "c19", "front": "Majority", "back": "A decision supported by more than 50% of the group." },
-  { "id": "c20", "front": "Plurality", "back": "A decision in which the largest block decides, even if a majority is not achieved. Used when there are more than two options." },
-  { "id": "c21", "front": "Autocratic decision-making", "back": "One individual makes the decision for the group." },
-  { "id": "c22", "front": "Multicriteria decision analysis", "back": "A decision matrix: criteria are weighted, each alternative is scored, and the alternatives are ranked by score." },
-  { "id": "c23", "front": "MoSCoW", "back": "A prioritization method: must have, should have, could have, will not have." },
-  { "id": "c24", "front": "Facilitation", "back": "Guiding a group event to a successful decision or conclusion, with effective participation and full buy-in." },
-  { "id": "c25", "front": "Active listening", "back": "Acknowledging, clarifying and confirming what is said, to reduce misunderstanding." },
-  { "id": "c26", "front": "Influencing", "back": "Getting cooperation from others without direct authority over them." },
-  { "id": "c27", "front": "Nominal group technique", "back": "A structured method that collects each participant's input before discussion, so that vocal members do not dominate." },
-  { "id": "c28", "front": "Daily coordination meeting", "back": "A brief daily meeting: progress since yesterday, intentions for today, obstacles. Also called a daily standup." },
-  { "id": "c29", "front": "Retrospective", "back": "A regular workshop where the team explores how it worked in order to improve the process. Held at least at the end of each iteration." },
-  { "id": "c30", "front": "Sprint review vs retrospective", "back": "Sprint review: show the completed product to stakeholders and get feedback. Retrospective: improve the team's process." },
-  { "id": "c31", "front": "Good meeting management", "back": "Distribute an agenda with objectives; invite the right people; start and finish on time; stay on topic; record actions and owners." }
+  {
+    "id": "c1",
+    "front": "The eight families of common tools",
+    "back": "Expert judgment; data gathering; data analysis; data representation; decision-making; interpersonal and team skills; meetings; project management information system (PMIS)."
+  },
+  {
+    "id": "c2",
+    "front": "Expert judgment",
+    "back": "Judgment based on expertise in an application area, discipline or industry, from any person or group with specialized knowledge, skill or experience."
+  },
+  {
+    "id": "c3",
+    "front": "Project management information system (PMIS)",
+    "back": "The tools used to gather, integrate and distribute the outputs of project management processes: scheduling software, configuration management, reporting."
+  },
+  {
+    "id": "c4",
+    "front": "Data gathering vs data analysis vs data representation",
+    "back": "Gathering: collect information. Analysis: make sense of it. Representation: show it."
+  },
+  {
+    "id": "c5",
+    "front": "Brainstorming",
+    "back": "A group generates many ideas in a short time, led by a facilitator, without judging them at first."
+  },
+  {
+    "id": "c6",
+    "front": "Focus group",
+    "back": "Prequalified stakeholders and experts in a guided, conversational discussion about their expectations and attitudes."
+  },
+  {
+    "id": "c7",
+    "front": "Questionnaires and surveys",
+    "back": "Written questions for collecting information quickly from many respondents. Best for large or geographically dispersed audiences."
+  },
+  {
+    "id": "c8",
+    "front": "Benchmarking",
+    "back": "Comparing products, processes and practices with those of comparable organizations to find best practices and ideas for improvement."
+  },
+  {
+    "id": "c9",
+    "front": "Alternative analysis",
+    "back": "Evaluating the identified options to select the approach to use for the work."
+  },
+  {
+    "id": "c10",
+    "front": "Root cause analysis",
+    "back": "Finding the basic underlying reason for a variance, defect or risk. Remove the root cause and the problem does not recur."
+  },
+  {
+    "id": "c11",
+    "front": "Variance analysis",
+    "back": "Determining the cause and degree of difference between the baseline and actual performance. Looks back."
+  },
+  {
+    "id": "c12",
+    "front": "Trend analysis",
+    "back": "Forecasting future outcomes from historical results. Looks forward and gives early warning."
+  },
+  {
+    "id": "c13",
+    "front": "What-if analysis",
+    "back": "Evaluating scenarios to predict their effect on project objectives."
+  },
+  {
+    "id": "c14",
+    "front": "Affinity diagram",
+    "back": "Shows a large number of ideas classified into groups for review and analysis."
+  },
+  {
+    "id": "c15",
+    "front": "Mind map",
+    "back": "A diagram that organizes ideas visually around a topic, showing what they have in common and where they differ."
+  },
+  {
+    "id": "c16",
+    "front": "Information radiator",
+    "back": "A visible, physical display placed where everyone can see it, updated frequently and often maintained by hand. Example: a task board."
+  },
+  {
+    "id": "c17",
+    "front": "Burndown vs burnup chart",
+    "back": "Burndown: work remaining against time left in a timebox. Burnup: work completed toward a milestone."
+  },
+  {
+    "id": "c18",
+    "front": "Unanimity",
+    "back": "A decision in which everyone agrees on a single course of action."
+  },
+  {
+    "id": "c19",
+    "front": "Majority",
+    "back": "A decision supported by more than 50% of the group."
+  },
+  {
+    "id": "c20",
+    "front": "Plurality",
+    "back": "A decision in which the largest block decides, even if a majority is not achieved. Used when there are more than two options."
+  },
+  {
+    "id": "c21",
+    "front": "Autocratic decision-making",
+    "back": "One individual makes the decision for the group."
+  },
+  {
+    "id": "c22",
+    "front": "Multicriteria decision analysis",
+    "back": "A decision matrix: criteria are weighted, each alternative is scored, and the alternatives are ranked by score."
+  },
+  {
+    "id": "c23",
+    "front": "MoSCoW",
+    "back": "A prioritization method: must have, should have, could have, will not have."
+  },
+  {
+    "id": "c24",
+    "front": "Facilitation",
+    "back": "Guiding a group event to a successful decision or conclusion, with effective participation and full buy-in."
+  },
+  {
+    "id": "c25",
+    "front": "Active listening",
+    "back": "Acknowledging, clarifying and confirming what is said, to reduce misunderstanding."
+  },
+  {
+    "id": "c26",
+    "front": "Influencing",
+    "back": "Getting cooperation from others without direct authority over them."
+  },
+  {
+    "id": "c27",
+    "front": "Nominal group technique",
+    "back": "A structured method that collects each participant's input before discussion, so that vocal members do not dominate."
+  },
+  {
+    "id": "c28",
+    "front": "Daily coordination meeting",
+    "back": "A brief daily meeting: progress since yesterday, intentions for today, obstacles. Also called a daily standup."
+  },
+  {
+    "id": "c29",
+    "front": "Retrospective",
+    "back": "A regular workshop where the team explores how it worked in order to improve the process. Held at least at the end of each iteration."
+  },
+  {
+    "id": "c30",
+    "front": "Sprint review vs retrospective",
+    "back": "Sprint review: show the completed product to stakeholders and get feedback. Retrospective: improve the team's process."
+  },
+  {
+    "id": "c31",
+    "front": "Good meeting management",
+    "back": "Distribute an agenda with objectives; invite the right people; start and finish on time; stay on topic; record actions and owners."
+  },
+  {
+    "id": "c32",
+    "front": "Project review versus project closeout",
+    "back": "Review: at the end of a phase or project, assess status and value and decide whether to move on. Closeout: obtain final acceptance of the delivered scope."
+  },
+  {
+    "id": "c33",
+    "front": "Steering committee",
+    "back": "Senior stakeholders give direction and support, and make decisions outside the project team's authority."
+  },
+  {
+    "id": "c34",
+    "front": "Kickoff meeting",
+    "back": "At the outset of a project, phase or iteration: set expectations, gain a common understanding and start the work."
+  }
 ]
