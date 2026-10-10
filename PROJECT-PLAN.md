@@ -42,6 +42,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | At your request, all source links were audited for figure errors: 613 links, 41 of them to figures or tables, none wrong. The check is now a tool (	ools/audit_links.py) run every session. Session 22 done: modules 4.3 (stakeholder engagement: register, stakeholder analysis, personas, RACI, stakeholder matrix and onion diagram, the engagement approach, business analysis planning, transition, assessing performance) and 4.4 (elicitation: the four processes, question types, the techniques and when to use each, confirming results). Issues 60 and 61 added to the log. | You: study 4.3 and 4.4. Next: Session 23, modules 4.5 (analysis: models, requirements, acceptance criteria) and 4.6 (traceability and monitoring) |
 | 2026-10-10 | Session 23 done: modules 4.5 (analysis: the five categories of model and what each model shows, user stories vs use cases, the requirements package, acceptance criteria, definition of ready and done, verify vs validate, prioritization, product risks, design options) and 4.6 (traceability and monitoring: backward and forward tracing, the traceability matrix, approved requirements and the baseline, impact analysis, change outcomes, the backlog as change control). **One module left: 37 of 38.** Issues 62 and 63 added to the log. | You: study 4.5 and 4.6. Next: Session 24, module 4.7 (solution evaluation), which completes Domain 4 and all CAPM content |
 | 2026-10-10 | Session 24 done: module 4.7 (solution evaluation: the evaluation approach and metrics, evaluating acceptance results and addressing defects, the release decision and its four bases, measuring business value after release). **Domain 4 is complete: 7 of 7. All CAPM content is written: 38 of 38 modules, 791 quiz questions, 1,167 flashcards.** One quiz question in the whole course has no book page. Issue 64 added to the log. | You: study 4.7. Next: Session 25, the full catch-up, planned with you first |
+| 2026-10-10 | Session 25 planned with you and approved: four sessions (25a audits, 25b exam alignment of Domains 1 and 2, 25c quiz repair, 25d exam alignment of Domains 3 and 4 and the PDF list). Your decisions: keep the Eighth Edition lessons and add an exam-terms layer; module 1.11 becomes exam content; all quizzes are repaired. **Session 25a done:** three new checks (quiz quality, tables and markup, worked examples), every lesson checked as rendered in a browser, and the exam outline mapped to the modules. Results are in "Session 25a audit results" below. Issues 65 to 68 added to the log. | You: read the audit results. Next: Session 25b |
 
 ## How your progress is saved
 
@@ -130,7 +131,11 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 16 to 19 | Domain 3: 8 modules |
 | ✅ | 20 | Feature: study plan and exam countdown |
 | ✅ | 21 to 24 | Domain 4: 7 modules |
-| ⬜ | 25 | Full catch-up, requested 2026-10-10: review every module against every book in `PMI Learning Material/`, improve where a book adds exam value, and give you a list of any extra PDFs worth adding |
+| 🟡 | 25 | Full catch-up, requested 2026-10-10 and planned with you. In four parts: |
+| ✅ | 25a | Audits: quiz quality check, table and markup check, worked-example check, render check of every lesson, exam outline coverage map |
+| ⬜ | 25b | Exam alignment of Domains 1 and 2: module 1.11 becomes exam content and is expanded; "On the exam" notes from PMBOK 7 and the Process Groups guide; fill the outline gaps |
+| ⬜ | 25c | Quiz repair: remove the longest-answer give-away in all quizzes, remove duplicates, top up Domain 1, add scenario questions |
+| ⬜ | 25d | Exam alignment of Domains 3 and 4 (2017 Agile Practice Guide, Business Analysis for Practitioners); final list of PDFs; close the edition question |
 | ⬜ | 26 | Feature: timed exam simulator (150 questions, 180 minutes) |
 | ⬜ | 27 | UI/UX polish (see backlog below) |
 | ⬜ | 28 | Go online: GitHub and Vercel, test on phone |
@@ -279,6 +284,104 @@ Overall: **38 of 38 modules done** (791 quiz questions, 1,167 flashcards).
 | ⬜ | PMI-ACP |
 | ⬜ | PMI-SP |
 
+## Session 25a audit results
+
+Measured on 2026-10-10, before any repair. Run the tools again to see the current state.
+
+### What was checked and what was found
+
+| Check | Tool | Result |
+|---|---|---|
+| Correct answer is the longest option | `tools/check_content.py --report` | **58% of 791 questions** (chance is 25%). 36 of 38 modules are over the 35% limit. Worst: 4.6 (95%), 4.7 (91%), 1.7 (88%), 3.2 (86%). Only 1.1 and 2.7 pass. To be fixed in Session 25c. |
+| Same question in two modules | `tools/check_content.py --report` | 5 pairs: 2.10 q1 = 1.9 q1; 3.2 q17 = 2.3 q21; 3.7 q3 = 2.12 q17; 3.7 q18 = 2.12 q19; 4.2 q20 = 2.1 q3 |
+| "All of the above" style options | `tools/check_content.py --report` | None |
+| Tables: every row has the same number of columns | `tools/check_content.py` | No errors in 38 lessons |
+| Markup: sources under headings, bold markers paired | `tools/check_content.py` | No errors |
+| Written-out calculations add up | `tools/check_examples.py` | 62 calculations in lessons, quizzes and flashcards: all correct |
+| Critical path example (forward pass, backward pass, float) | `tools/check_examples.py` | Recomputed from the network: all 18 rows correct |
+| Lessons as rendered in the browser | Headless Edge, page compared with source | All 38 lessons: every table, row, note and source link rendered; no raw markup visible. One lesson also viewed as a screenshot. |
+| Source links | `tools/audit_links.py` | 677 links, 42 to figures or tables, none wrong |
+
+Not checked by a tool: calculations that appear only inside tables without an "=" sign, and whether each numeric quiz option matches its explanation.
+
+### Exam outline coverage
+
+Every task and enabler of the CAPM Exam Content Outline (2023), with where it is taught. **45 of 60 enablers are covered, 13 are thin, 2 are missing.**
+
+| Domain and task | Enabler | Where | Status |
+|---|---|---|---|
+| 1.1 Life cycles and processes | Project, program, portfolio | 1.1 | Covered |
+| | Project and operations | 1.1 | Covered |
+| | Predictive and adaptive approaches | 1.6 | Covered |
+| | Issues, risks, assumptions, constraints | 1.9 | Covered |
+| | Review or critique project scope | 2.3 | Covered |
+| | Apply the code of ethics | 1.10 | Covered |
+| | A project as a vehicle for change | 1.11 only | **Thin** |
+| 1.2 Planning | Purpose of cost, quality, risk, schedule | 2.4, 2.6, 2.10, 2.11 | Covered |
+| | Project management plan vs product management plan | none | **Missing** |
+| | Milestone vs task duration | 2.4 | Covered |
+| | Number and type of resources | 2.9 | Covered |
+| | Use a risk register | 1.9, 2.10 | Covered |
+| | Use a stakeholder register | 2.8 | Covered |
+| | Project closure and transitions | 1.7, 2.2 | Covered |
+| 1.3 Roles | Project manager and sponsor | 1.3 | Covered |
+| | Project team and sponsor | 1.3 | Covered |
+| | The project manager as initiator, negotiator, listener, coach, working member, facilitator | none by these names | **Thin** |
+| | Leadership and management | 1.10 | Covered |
+| | Emotional intelligence | 1.10 | Covered |
+| 1.4 Following strategies | Responding to a planned strategy or framework (communication, risk) | 2.8, 2.10 in passing | **Thin** |
+| | Project initiation and benefit planning | 1.7, 2.2 | Covered |
+| 1.5 Problem-solving tools | Effectiveness of a meeting | 2.12 in passing | **Thin** |
+| | Focus groups, standup meetings, brainstorming | 2.12, 4.4 | Covered |
+| 2.1 When to use predictive | Suitability for the organizational structure (virtual, colocated, matrix, hierarchical) | 1.2 describes structures; suitability not stated | **Thin** |
+| | Activities within each process | 2.1 to 2.11 | Covered, in Eighth Edition process names |
+| | Examples of typical activities | 2.1 to 2.11 | Covered, in Eighth Edition process names |
+| | Differences between project components | unclear term | **Thin** |
+| 2.2 Plan and schedule | Critical path methods | 2.5 | Covered |
+| | Schedule variance | 2.7 | Covered |
+| | Work breakdown structures | 2.3 | Covered |
+| | Work packages | 2.3 | Covered |
+| | Quality management plan | 2.11 | Covered |
+| | Integration management plan | 2.2, under the name "governance" | **Thin** |
+| 2.3 Project controls | Artifacts of predictive projects | 2.1 | Covered |
+| | Cost and schedule variances | 2.7 | Covered |
+| 3.1 When to use adaptive | Pros and cons of adaptive and predictive | 1.6, 3.1, 3.8 compare, without listing pros and cons | **Thin** |
+| | Suitability for the organizational structure | 3.4, 3.8 in passing | **Thin** |
+| | Organizational process assets and enterprise environmental factors that help adaptive work | none | **Missing** |
+| 3.2 Planning iterations | Logical units of iterations | 3.5 | Covered |
+| | Pros and cons of the iteration | 3.5 in passing | **Thin** |
+| | Translate a WBS to an adaptive iteration | 2.3, one section | **Thin** |
+| | Inputs for scope | 3.5 | Covered |
+| | Adaptive vs predictive tracking | 3.7 | Covered |
+| 3.3 Controls | Artifacts of adaptive projects | 3.2, 3.7 | Covered |
+| 3.4 Adaptive plan | Components of Scrum, XP, SAFe, Kanban | 3.2, 3.3 | Covered |
+| 3.5 Task management | Success criteria of a task | 3.2, 4.5 | Covered |
+| | Prioritize tasks | 3.6 | Covered |
+| 4.1 Roles | Stakeholder roles (process owner, process manager, product manager, product owner) | 4.1 | Covered |
+| | Why roles must be identified | 4.1, 4.3 | Covered |
+| | Internal and external roles | 4.1 | Covered |
+| 4.2 Communication | Most appropriate channel or tool | 4.3 | Covered |
+| | Why communication between teams matters for the analyst | 4.3 in passing | **Thin** |
+| 4.3 Gathering requirements | Match tools to scenarios (user stories, use cases) | 4.4, 4.5 | Covered |
+| | Choose the gathering approach | 4.4 | Covered |
+| | Traceability matrix and product backlog | 4.6, 4.5 | Covered |
+| 4.4 Product roadmaps | Application of a product roadmap | 4.2 | Covered |
+| | Which components go to which releases | 4.2, one paragraph | **Thin** |
+| 4.5 Methodologies | The analyst's role in adaptive and predictive work | 4.1 and each module's comparison | Covered |
+| 4.6 Validating requirements | Define acceptance criteria | 4.5 | Covered |
+| | Ready for delivery, from the matrix or backlog | 4.6, 4.7 | Covered |
+
+"Covered" means a lesson section teaches the point. It does not yet mean the lesson uses the exam's own edition and terms: that is the work of Sessions 25b and 25d. The mapping is my reading of each enabler; three are worded vaguely in the outline ("project components", "logical units of iterations", "responding to a planned strategy").
+
+### Other measurements
+
+| Measure | Value |
+|---|---|
+| Questions per domain (1 to 4) | 166, 278, 174, 156 |
+| Exam weight per domain | 36%, 17%, 20%, 27% |
+| Scenario-style questions | 29% overall; Domain 4: 16% |
+| Modules citing only the Eighth Edition | 1.1 to 1.9, 2.1, 2.2 |
+
 ## Issues log
 
 Every problem met in this project and how it was handled, newest group last. Read this before changing something, to see why it is the way it is. New entries are added at the end of each session.
@@ -330,7 +433,7 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 23 | Your Agile Practice Guide is the Second Edition, with different section numbers and wording from the first edition most courses use. It says "supportive leadership" where exam material says "servant leadership", and covers Scrum only briefly. | Written from your edition, using the exam's familiar terms and saying where they are the same thing. Scrum details come from the Scrum Guide and standard teaching, listed in the footer. | Modules 3.1 to 3.4 |
 | 24 | *Choose Your WoW!* (Disciplined Agile) is in the folder but was not used for module 3.3. | It matches only one row of the scaling table. Left for the full catch-up in Session 25. | Module 3.3 |
 | 41 | The Agile Practice Guide (Second Edition) says little about user stories and estimating, the core of module 3.5. | Sources were combined: the PMBOK Guide's entries on backlog, user stories, release planning and velocity; the Agile Practice Guide's glossary; and the Estimating standard's section on relative estimating. | Module 3.5 |
-| 47 | The CAPM Exam Content Outline names the PMBOK Guide **Seventh** Edition, the Process Groups practice guide and the **2017** Agile Practice Guide as exam references. This course is written from the Eighth Edition and the Second Edition agile guide, as decided at the start. | Nothing was rewritten. Lessons already carry edition notes and module 1.11 bridges the terms. The older books are now linked, so differences can be checked. Open decision for you: keep the Eighth Edition as primary, or have the Session 25 catch-up re-check every module against the Seventh Edition and the 2017 agile guide. | "CAPM exam structure" above; Session 25 |
+| 47 | The CAPM Exam Content Outline names the PMBOK Guide **Seventh** Edition, the Process Groups practice guide and the **2017** Agile Practice Guide as exam references. This course is written from the Eighth Edition and the Second Edition agile guide, as decided at the start. | Nothing was rewritten. Lessons already carry edition notes and module 1.11 bridges the terms. The older books are now linked, so differences can be checked. **Decided with you on 2026-10-10:** the Eighth Edition lessons stay, and Sessions 25b and 25d add an exam-terms layer from the Seventh Edition, the Process Groups guide, the 2017 agile guide and the business analysis practice guide. | "CAPM exam structure" above; Session 25 |
 | 48 | The outline names a book that was not in your folder: *Business Analysis for Practitioners: A Practice Guide*, Second Edition. | Resolved: you added it on 2026-10-10. It is extracted and linked, ready for Domain 4. Its headings have no numbers, so it is cited by section title. | Sessions 21 to 24 |
 | 49 | The Agile Practice Guide First Edition PDF has no built-in table of contents, so its sections could not be looked up. | A table of contents is built from the printed contents pages (`tools/build_toc_agile1.py`). Run it after `extract_pdf.py` for that book. | `tools/build_toc_agile1.py` |
 | 50 | A few points are in none of your 19 books (final list, 2026-10-10): the three Cs of a user story (card, conversation, confirmation); the five levels of conflict; one-line definitions of the XP practices; the detailed list of lean wastes; that the project manager usually controls the contingency reserve; that a new team member is a typical cause of regression; "on one side of the mean" in the rule of seven; elapsed time counted in calendar days; the manager vs servant leader comparison table; the feature and task definitions; the list of agile benefits. One quiz question rests on these (the three Cs). | They stay labelled as standard PMI teaching in each lesson footer and quiz reference. They are exam-preparation conventions or come from authors outside PMI (the three Cs from Ron Jeffries, the levels of conflict from Speed Leas). **Decided by you on 2026-10-10: keep them, labelled as they are.** The same rule applies to future modules. | Lesson footers |
@@ -341,10 +444,14 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 62 | Module 4.5 covers nine processes and about twenty-five analysis models, far more than any other module, and the models are diagrams while the lessons are text only. | Kept as one module, with 24 quiz questions and 45 flashcards. Each model gets one line saying what it shows, grouped by its category. No diagrams are drawn. Drawn examples of the main models (context diagram, process flow, entity relationship diagram, state diagram, fishbone) are added to the UI/UX backlog for Session 27. | Module 4.5; UI/UX backlog |
 | 63 | To save reading time I filtered short lines out of the book pages. That dropped a list item: the guide's threat strategies appeared to lack "avoid", and I first wrote in the footer that it was missing from the guide. | Caught by re-checking the full page before finishing; the footer was corrected. Lists copied from a filtered page are now checked against the unfiltered page. | Module 4.5, product risks |
 | 64 | PMI's guide numbers the solution evaluation processes in an order that is not the order in time (performance evaluation is 9.1 but happens last), and it describes the product portfolio matrix without naming its quadrants. | Module 4.7 keeps the guide's names and process groups, teaches the processes in time order, and says so. The usual quadrant names (stars, question marks, cash cows, dogs) are added in brackets and listed in the footer as not from the guide. | Module 4.7 |
+| 65 | In 58% of quiz questions the correct answer was the longest option, so a quiz could be passed by picking the longest answer. I wrote full, careful correct answers and short wrong ones, and no check looked for it. | Found by measuring in Session 25a. `check_content.py` now warns for any module over 35% and lists duplicates and catch-all options. The repair of all quizzes is Session 25c. New questions are written with options of similar length. | `tools/check_content.py --report`; Session 25c |
+| 66 | Module 1.11 is marked with a red * as "not on the exam", but it covers the Seventh Edition principles and domains and the 49 processes, which are the exam's own references (issue 47). | To be made exam content and expanded in Session 25b. Until then, treat 1.11 as required reading. | Module 1.11; Session 25b |
+| 67 | Five questions appear word for word in two modules. | Listed in the audit results. One of each pair is replaced in Session 25c. | "Session 25a audit results" |
 | 54 | The Project Management Answer Book is written as numbered questions inside chapters, with no section numbers, and Wysocki's book has titled sections only. Both are commercial textbooks, not PMI publications. | New reference forms: `The Project Management Answer Book, Chapter 6, Q8` (opens the page of that question) and `Effective Project Management, <section title>`. Like every other book, they are opened from your folder only, are never committed or uploaded, and lessons use original wording. Wysocki is the Fifth Edition, so its page content may differ from the Eighth Edition the outline names. | `link_sources.py` |
 | 55 | Wysocki's Eighth Edition lists only chapters in its PDF contents, and it differs from the lessons in two wordings: it calls two lean principles "build integrity in" and "see the whole", and it uses "elapsed time" for duration in working days. | Reference form: `Effective Project Management, Chapter 7, Estimating Duration` (chapter, then the heading as printed). Chapter start pages are listed in `link_sources.py`. The lean table now shows both wordings, and the schedule lesson footer explains the two uses of "elapsed time". | `link_sources.py`; modules 2.4 and 3.3 |
 | 59 | A reference to a figure or table in the business analysis guide ("Figure 1-1") would have opened the book's first page without any warning, because that kind of reference was only understood for the PMBOK Guides. | Found while checking each new link against its page, before anything was reported. The linker now finds figures and tables in every book with a table of contents, and reports an error if one is not found. | `link_sources.py` |
 | 60 | You asked whether any figure errors remained after issue 59. | Every link in every module was checked by a script: each figure or table link must open the page that carries that caption, and any link sitting on a book's default page is listed for a check by eye. Result: 0 wrong. The script is kept as `tools/audit_links.py` and run after the linker every session. The linker also learned to find unnumbered headings by title ("Key Concepts for Elicitation") in books with a table of contents. | `tools/audit_links.py`, `link_sources.py` |
+| 68 | Lessons had never been checked as rendered, worked examples had only been checked by hand, and nothing tested table structure. | Session 25a added three checks: `check_examples.py` recomputes every written-out calculation and the critical path example; `check_content.py` tests tables and markup; and every lesson was loaded in a headless browser and its rendered tables, rows, notes and links compared with the source. All passed. The first version of the calculation check raised two false alarms on formulas written with letters, which was fixed. | `tools/check_examples.py`, `tools/check_content.py` |
 
 ### Individual lessons
 
