@@ -273,7 +273,13 @@ export function startSync() {
     signedIn({ access_token: hash.get('access_token')!, refresh_token: hash.get('refresh_token')!, expires_in: hash.get('expires_in') ?? 3600 }, email)
   } else if (hash.get('error_description')) {
     history.replaceState(null, '', window.location.pathname + window.location.search)
-    show({ message: `The sign-in link did not work: ${hash.get('error_description')!.replace(/\+/g, ' ')}. Ask for a new email.` })
+    // The usual reasons: the link was already opened once (each link works a single time, on one
+    // device), a newer email replaced it, or it is more than an hour old.
+    save({ ...saved, pendingEmail: undefined })
+    show({
+      pendingEmail: undefined,
+      message: `That sign-in link could not be used (${hash.get('error_description')!.replace(/\+/g, ' ').toLowerCase()}). A link works once, on one device, and only the newest email counts. Ask for a new email from this device and open its link here.`,
+    })
   }
 
   onProgressChange(() => {

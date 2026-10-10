@@ -68,7 +68,8 @@ export default function SyncPanel() {
         <>
           <p className={`${note} mt-1 max-w-2xl`}>
             Sign in with your email to keep your progress the same on your PC and your phone. No password: you get an
-            email with a link. Without signing in, everything stays in this browser as before.
+            email with a link. Each device needs its own email: a link works once, on the device where you open it.
+            Without signing in, everything stays in this browser as before.
           </p>
           <form
             className="mt-4 flex flex-wrap items-end gap-2"
