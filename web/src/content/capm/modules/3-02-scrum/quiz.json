@@ -457,5 +457,85 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q23",
+    "q": "A team that works without iterations holds its standup in front of its kanban board, reading the columns from right to left. According to the 2017 Agile Practice Guide, which question does a flow-based team ask?",
+    "options": [
+      "What did I complete since the last standup?",
+      "How many story points did each person finish yesterday?",
+      "What do we need to do to advance this piece of work?",
+      "Which stories should go into the next sprint?"
+    ],
+    "answer": 2,
+    "explanation": "Flow-based teams focus on throughput and assess the board from right to left, asking what is needed to advance each piece of work, whether anyone is working on something not on the board, what the team needs to finish, and whether there are bottlenecks.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.4",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 68,
+        "label": "Agile Practice Guide, First Edition, 5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A team finds it is spending four hours every week refining stories for the next batch of work. According to the 2017 Agile Practice Guide, what might this show?",
+    "options": [
+      "The product owner may be overpreparing, or the team may lack skills it needs",
+      "The team is working exactly as an agile team should",
+      "The iterations are too short and should be made longer",
+      "The scrum master should refine the stories alone, so the team can keep building"
+    ],
+    "answer": 0,
+    "explanation": "Teams often aim to spend no more than one hour a week refining stories, to maximize time spent doing the work. Needing more can mean the product owner is overpreparing or the team lacks critical skills to evaluate and refine the work.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.3",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 67,
+        "label": "Agile Practice Guide, First Edition, 5.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "The scrum master is away for a week, and the team wonders whether the daily standup can go ahead. What does the 2017 Agile Practice Guide say?",
+    "options": [
+      "It must wait, since only the scrum master may run it",
+      "The product owner has to take it over",
+      "The functional manager should run it meanwhile",
+      "Anyone from the team can facilitate it"
+    ],
+    "answer": 3,
+    "explanation": "The team runs its own standup, and anyone from the team can facilitate it. The guide encourages this, so that the standup does not turn into a status meeting for a leader.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.4",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 68,
+        "label": "Agile Practice Guide, First Edition, 5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A new product owner wants to write every story for the whole project before the team starts its first iteration. What does the 2017 Agile Practice Guide advise?",
+    "options": [
+      "Write them all in detail, so that the scope of the project is fixed before any work begins",
+      "Write enough to understand the first release broadly, and enough items for the next iteration",
+      "Write none in advance, and decide the work each morning",
+      "Write only the stories the developers ask her to write"
+    ],
+    "answer": 1,
+    "explanation": "There is no need to create all the stories for the entire project before work starts: only enough to understand the first release in broad brushstrokes, and then sufficient items for the next iteration.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.2",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 67,
+        "label": "Agile Practice Guide, First Edition, 5.2.2"
+      }
+    ]
   }
 ]

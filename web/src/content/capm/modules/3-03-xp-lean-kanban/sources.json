@@ -86,8 +86,63 @@
   },
   {
     "book": "agile1",
+    "page": 71,
+    "label": "Agile Practice Guide, First Edition, 5.2.7"
+  },
+  {
+    "book": "agile1",
     "page": 76,
     "label": "Agile Practice Guide, First Edition, 5.4.1"
+  },
+  {
+    "book": "agile1",
+    "page": 118,
+    "label": "Agile Practice Guide, First Edition, A3.4"
+  },
+  {
+    "book": "agile1",
+    "page": 123,
+    "label": "Agile Practice Guide, First Edition, A3.6"
+  },
+  {
+    "book": "agile1",
+    "page": 123,
+    "label": "Agile Practice Guide, First Edition, A3.7"
+  },
+  {
+    "book": "agile1",
+    "page": 125,
+    "label": "Agile Practice Guide, First Edition, A3.8"
+  },
+  {
+    "book": "agile1",
+    "page": 126,
+    "label": "Agile Practice Guide, First Edition, A3.10.1"
+  },
+  {
+    "book": "agile1",
+    "page": 126,
+    "label": "Agile Practice Guide, First Edition, A3.9"
+  },
+  {
+    "book": "agile1",
+    "page": 127,
+    "label": "Agile Practice Guide, First Edition, A3.11"
+  },
+  {
+    "book": "agile1",
+    "page": 128,
+    "label": "Agile Practice Guide, First Edition, A3.12"
+  },
+  {
+    "book": "agile1",
+    "page": 129,
+    "label": "Agile Practice Guide, First Edition, A3.13"
+  },
+  {
+    "book": "agile1",
+    "page": 129,
+    "label": "Agile Practice Guide, First Edition, A3.14"
   },
   {
     "book": "wysocki",

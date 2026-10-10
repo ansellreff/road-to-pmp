@@ -32,7 +32,7 @@ A working product, even in the smallest increment, is the **primary measure of p
 
 ## Who decides the order
 
-@source Agile Practice Guide, 4.4.2; Agile Practice Guide, 5.2.1
+@source Agile Practice Guide, 4.4.2; Agile Practice Guide, 5.2.1; Agile Practice Guide, First Edition, 4.3.2
 
 - The **product owner** ranks the work by **business value**, working with stakeholders and customers.
 - The **team** advises on effort, risk and dependencies, and decides **how much** it can take into an iteration.
@@ -94,7 +94,7 @@ Example for a food-delivery app:
 
 ## Demonstrations and feedback
 
-@source Agile Practice Guide, 5.2.6; Agile Practice Guide, Glossary (demonstrations)
+@source Agile Practice Guide, 5.2.6; Agile Practice Guide, Glossary (demonstrations); Agile Practice Guide, First Edition, 5.2.5
 
 A **demonstration** (review) is an event in which the team **presents completed work to stakeholders** to obtain feedback and validate progress.
 

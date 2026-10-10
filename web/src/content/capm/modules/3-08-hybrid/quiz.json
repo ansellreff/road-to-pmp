@@ -441,5 +441,105 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q23",
+    "q": "An agile team's estimates turn out wrong iteration after iteration. Which remedy does the 2017 Agile Practice Guide's troubleshooting table suggest?",
+    "options": [
+      "Have the most senior developer estimate every story alone",
+      "Split the stories and estimate relatively with the whole team",
+      "Add a fixed safety margin to every estimate",
+      "Stop estimating and commit to a fixed scope"
+    ],
+    "answer": 1,
+    "explanation": "For inaccurate estimation the guide suggests reducing story size by splitting stories, using relative estimation with the entire team, and considering agile modeling or a spike to understand the story.",
+    "ref": "Agile Practice Guide, First Edition, Table 5-1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 73,
+        "label": "Agile Practice Guide, First Edition, Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Work on an agile project is often delayed because stories reach the team half understood. Which remedy does the 2017 guide's troubleshooting table suggest?",
+    "options": [
+      "The product owner and team workshop stories together and create a definition of ready",
+      "The team extends each iteration until every story is clear",
+      "The sponsor approves each story before the team may read it",
+      "The team stops using stories and returns to a full written specification approved up front"
+    ],
+    "answer": 0,
+    "explanation": "For delays caused by insufficiently refined backlog items, the guide suggests that the product owner and team workshop stories together, create a definition of ready for the stories, and consider splitting them into smaller ones.",
+    "ref": "Agile Practice Guide, First Edition, Table 5-1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 73,
+        "label": "Agile Practice Guide, First Edition, Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Three weeks into an agile project, team members give different answers when asked what the project is for. Which remedy does the 2017 guide's troubleshooting table suggest?",
+    "options": [
+      "A longer daily standup",
+      "A stricter WIP limit",
+      "Agile chartering for purpose",
+      "A feature burnup chart on the wall"
+    ],
+    "answer": 2,
+    "explanation": "For an unclear purpose or mission, the guide suggests agile chartering for purpose: vision, mission and mission tests.",
+    "ref": "Agile Practice Guide, First Edition, Table 5-1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 73,
+        "label": "Agile Practice Guide, First Edition, Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A team's work comes in bursts: frantic before each demonstration, idle afterwards, with several people split across other projects. Which remedy does the 2017 guide's troubleshooting table suggest?",
+    "options": [
+      "Give each person more projects, to fill the idle time between rushes",
+      "Demonstrate less often, so there are fewer rushes",
+      "Have the manager assign every task at the start",
+      "Plan to the team's capacity, and ask people to stop multitasking"
+    ],
+    "answer": 3,
+    "explanation": "For a rush-and-wait, uneven flow of work, the guide suggests planning to the team's capacity and not more, asking people to stop multitasking and be dedicated to one team, and working as pairs, a swarm or a mob.",
+    "ref": "Agile Practice Guide, First Edition, Table 5-1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 73,
+        "label": "Agile Practice Guide, First Edition, Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "An agile team is blocked by an obstacle that neither the team nor its servant leader has been able to remove. According to the 2017 guide's troubleshooting table, what should happen?",
+    "options": [
+      "The obstacle is accepted as permanent",
+      "The obstacle is escalated",
+      "The iteration is cancelled at once",
+      "The team is disbanded and re-formed"
+    ],
+    "answer": 1,
+    "explanation": "A servant leader can help clear obstacles, and a coach can show the team its options. Sometimes the team needs to escalate obstacles that the team or the servant leader has not been able to remove.",
+    "ref": "Agile Practice Guide, First Edition, Table 5-1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 73,
+        "label": "Agile Practice Guide, First Edition, Table 5-1"
+      }
+    ]
   }
 ]

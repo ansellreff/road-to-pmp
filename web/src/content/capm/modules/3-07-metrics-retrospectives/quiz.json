@@ -186,7 +186,7 @@
       "Lead time",
       "Throughput",
       "Velocity",
-      "Cycle time"
+      "Total cycle time"
     ],
     "answer": 3,
     "explanation": "Cycle time is the total elapsed time from the start of a work item to its completion. Lead time starts earlier, at the request.",
@@ -441,5 +441,105 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q23",
+    "q": "An agile team planned to complete 40 story points in an iteration and completed 30. Using the 2017 Agile Practice Guide's way of expressing earned value in agile terms, what is the schedule performance index (SPI)?",
+    "options": [
+      "1.33",
+      "0.25",
+      "10",
+      "0.75"
+    ],
+    "answer": 3,
+    "explanation": "In agile terms SPI = completed features (or points) ÷ planned features. 30 ÷ 40 = 0.75: the team is working at 75% of the rate planned.",
+    "ref": "Agile Practice Guide, First Edition, 5.4.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 76,
+        "label": "Agile Practice Guide, First Edition, 5.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A team has spent $200,000 so far and has completed features worth $150,000 of the planned value. What is its cost performance index (CPI), and what does it mean?",
+    "options": [
+      "1.33: the project is under budget",
+      "0.75: 75 cents of value for each dollar spent",
+      "0.75: the team is three quarters of the way to done",
+      "1.33: the team is ahead of schedule"
+    ],
+    "answer": 1,
+    "explanation": "CPI = earned value ÷ actual cost = 150,000 ÷ 200,000 = 0.75. The project is getting 75 cents of value for each dollar spent. In agile, earned value is based on finished features.",
+    "ref": "Agile Practice Guide, First Edition, 5.4.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 76,
+        "label": "Agile Practice Guide, First Edition, 5.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A card is added to a team's board on Monday. Nobody starts work on it until Thursday. In the 2017 Agile Practice Guide, what is the time between Monday and Thursday called?",
+    "options": [
+      "Response time",
+      "Cycle time",
+      "Lead time",
+      "Velocity"
+    ],
+    "answer": 0,
+    "explanation": "Response time is the time an item waits until work starts. Cycle time is the time required to process the item, and lead time is the total from when it is added to the board until it is completed.",
+    "ref": "Agile Practice Guide, First Edition, 5.4.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 76,
+        "label": "Agile Practice Guide, First Edition, 5.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "On a feature chart, the \"features complete\" line rises steadily, but the \"total features\" line has stepped up three times since the start. What does the chart show?",
+    "options": [
+      "The team is finishing work more slowly each month",
+      "The team has stopped delivering features",
+      "Requirements grew during the project",
+      "The budget was increased three times"
+    ],
+    "answer": 2,
+    "explanation": "A feature burnup/burndown chart shows features complete, features remaining and total features. A total line that rises shows that requirements grew during the project.",
+    "ref": "Agile Practice Guide, First Edition, 5.4.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 76,
+        "label": "Agile Practice Guide, First Edition, 5.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A team reports that it \"earned\" 45 story points this iteration, but most of those points belong to stories that are started and not finished. According to the 2017 Agile Practice Guide, what is wrong?",
+    "options": [
+      "Story points may be reported only by the product owner",
+      "The team should have reported hours, not points",
+      "Nothing: points for started work are valid progress",
+      "It measures capacity, not finished work"
+    ],
+    "answer": 3,
+    "explanation": "Measuring story points is not the same as measuring completed stories or features. A team that measures only story points measures capacity, not finished work, which violates the principle that a working product is the primary measure of progress.",
+    "ref": "Agile Practice Guide, First Edition, 5.4.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 76,
+        "label": "Agile Practice Guide, First Edition, 5.4.1"
+      }
+    ]
   }
 ]

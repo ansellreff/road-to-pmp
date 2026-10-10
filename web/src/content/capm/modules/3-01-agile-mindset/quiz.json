@@ -462,5 +462,105 @@
         "label": "Agile Practice Guide, First Edition, 6.2"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "A team designing a claims form shows users one rough version after another and reworks it each time. The finished form is delivered once, at the end. In Table 3-1 of the 2017 Agile Practice Guide, what is the goal of this life cycle?",
+    "options": [
+      "Speed, through frequent smaller deliveries",
+      "Managing cost, with requirements fixed at the start",
+      "Correctness of the solution",
+      "Customer value through frequent deliveries"
+    ],
+    "answer": 2,
+    "explanation": "Feedback on unfinished work with a single delivery is an iterative life cycle. Table 3-1 gives its goal as correctness of the solution. Speed is the goal of incremental, manage cost of predictive, and customer value of agile.",
+    "ref": "Agile Practice Guide, First Edition, Table 3-1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 33,
+        "label": "Agile Practice Guide, First Edition, Table 3-1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A customer hires a supplier on time and materials but caps the total budget. When the customer wants a new idea added, an equal amount of the original work has to come out. Which agile contracting technique is this?",
+    "options": [
+      "Graduated time and materials",
+      "Not-to-exceed time and materials",
+      "Fixed-price increments for each story",
+      "A multi-tiered contract structure"
+    ],
+    "answer": 1,
+    "explanation": "Not-to-exceed time and materials limits the overall budget to a fixed amount. New ideas can come in, but the customer manages to a given capacity by replacing original work with new work.",
+    "ref": "Agile Practice Guide, First Edition, 6.3",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 92,
+        "label": "Agile Practice Guide, First Edition, 6.3"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A PMO stops requiring every team to use its templates. It offers coaching and tools to the teams that ask for them, expecting that useful services will be requested more. Which characteristic of an agile PMO is this?",
+    "options": [
+      "Invitation-oriented",
+      "Multidisciplinary",
+      "Value-driven",
+      "Directive"
+    ],
+    "answer": 0,
+    "explanation": "An invitation-oriented PMO does not mandate solutions. It invites only those interested to engage with its services, and the higher engagement makes its practices stick.",
+    "ref": "Agile Practice Guide, First Edition, 6.6",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 96,
+        "label": "Agile Practice Guide, First Edition, 6.6"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A supplier has delivered half the planned scope, and the customer finds it already has all the value it needs. The contract lets the customer pay a fee and stop instead of buying the rest. What is this clause called?",
+    "options": [
+      "A dynamic scope option",
+      "A team augmentation arrangement",
+      "A graduated rate clause",
+      "An early cancellation option"
+    ],
+    "answer": 3,
+    "explanation": "With an early cancellation option, a customer that has received sufficient value can buy out the remainder for a cancellation fee. The customer limits its budget exposure and the supplier still earns revenue.",
+    "ref": "Agile Practice Guide, First Edition, 6.3",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 92,
+        "label": "Agile Practice Guide, First Edition, 6.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "An agile team now releases working features every two weeks. The department that receives them cannot train its staff that fast, so features sit unused and the expected return is late. Which driver for change management does this show?",
+    "options": [
+      "Changes associated with agile approaches",
+      "Changes associated with accelerated delivery",
+      "Changes associated with executive turnover",
+      "Changes associated with fixed annual budgets"
+    ],
+    "answer": 1,
+    "explanation": "The guide names two drivers. Accelerated delivery tests whether the receiving organization can absorb outputs at the faster pace; if it resists them, the return on investment is delayed. The other driver is the change to agile approaches itself.",
+    "ref": "Agile Practice Guide, First Edition, 6.1.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 88,
+        "label": "Agile Practice Guide, First Edition, 6.1.1"
+      }
+    ]
   }
 ]

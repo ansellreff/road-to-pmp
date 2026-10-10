@@ -1,32 +1,192 @@
 [
-  { "id": "c1", "front": "Extreme Programming (XP)", "back": "A software development method based on frequent cycles, best known for its technical practices." },
-  { "id": "c2", "front": "Five XP values", "back": "Communication, simplicity, feedback, courage, respect." },
-  { "id": "c3", "front": "Pair programming", "back": "Two developers work at one computer: one writes, the other reviews, and they swap often." },
-  { "id": "c4", "front": "Test-first programming", "back": "Write the test before the code, then write just enough code to pass it. Also called test-driven development." },
-  { "id": "c5", "front": "Refactoring", "back": "Improving the internal structure of code without changing what it does." },
-  { "id": "c6", "front": "Continuous integration", "back": "Everyone's work is merged and tested frequently, so problems surface early." },
-  { "id": "c7", "front": "Collective code ownership", "back": "Anyone on the team may improve any part of the code." },
-  { "id": "c8", "front": "Scrum vs XP", "back": "Scrum: managing the work (roles, events, artifacts). XP: engineering practices. Often used together." },
-  { "id": "c9", "front": "Lean", "back": "A philosophy aimed at maximizing customer value while minimizing waste." },
-  { "id": "c10", "front": "Seven principles of lean software development", "back": "Eliminate waste; amplify learning; decide as late as possible; deliver as fast as possible; empower the team; build quality in; optimize the whole." },
-  { "id": "c11", "front": "Waste (lean)", "back": "Anything that does not add value for the customer: partially done work, extra features, waiting, handoffs, task switching, defects." },
-  { "id": "c12", "front": "Lean Startup", "back": "Treats each product idea as a hypothesis: build a minimum viable product, measure with real customers, learn, then persevere or pivot." },
-  { "id": "c13", "front": "Build–measure–learn", "back": "The Lean Startup loop for testing an MVP with real customer data." },
-  { "id": "c14", "front": "Pivot", "back": "Changing direction, based on evidence, before investing further time and money." },
-  { "id": "c15", "front": "Design thinking", "back": "A human-centered approach to problem-solving that starts from understanding user needs through observation and empathy." },
-  { "id": "c16", "front": "Meaning of 'kanban'", "back": "Visual sign or card." },
-  { "id": "c17", "front": "Kanban board", "back": "A board of columns, one per state of work, with cards that move across. Simplest form: To Do, Doing, Done." },
-  { "id": "c18", "front": "Six core properties of the Kanban Method", "back": "Visualize the workflow; limit WIP; manage flow; make process policies explicit; implement feedback loops; improve collaboratively." },
-  { "id": "c19", "front": "WIP limit", "back": "The maximum number of items allowed in a column at one time. A full column means stop starting and help finish." },
-  { "id": "c20", "front": "Pull system", "back": "When the team finishes an item, it pulls the next one in. Work is not pushed onto people." },
-  { "id": "c21", "front": "Main difference between Kanban and Scrum", "back": "Kanban has continuous flow with no prescribed iterations or roles. Scrum has fixed-length sprints and three defined roles." },
-  { "id": "c22", "front": "When Kanban fits best", "back": "When work arrives unpredictably, or when the team cannot change its structure yet. 'Start where you are.'" },
-  { "id": "c23", "front": "Crystal", "back": "A family of methods whose rigor is chosen by team size and criticality, identified by colors (Clear, Yellow, Orange, Red)." },
-  { "id": "c24", "front": "Osmotic communication", "back": "People sitting together pick up information by overhearing. A property of Crystal." },
-  { "id": "c25", "front": "Feature-driven development (FDD)", "back": "Organized around features: small capabilities with business value. Plan, design and build by feature." },
-  { "id": "c26", "front": "DSDM", "back": "Dynamic Systems Development Method. Fixes time, cost and quality at the start and prioritizes scope to fit." },
-  { "id": "c27", "front": "Scrum of Scrums", "back": "A representative from each Scrum team meets the others regularly to coordinate work and remove cross-team impediments." },
-  { "id": "c28", "front": "SAFe", "back": "Scaled Agile Framework: patterns for scaling across team, program and portfolio levels, organized around value streams." },
-  { "id": "c29", "front": "LeSS", "back": "Large Scale Scrum: several teams with one product backlog, one product owner, one definition of done and one sprint." },
-  { "id": "c30", "front": "PMI Disciplined Agile", "back": "A tool kit that helps a team choose its way of working from agile, lean and traditional practices. 'Context counts.'" }
+  {
+    "id": "c1",
+    "front": "Extreme Programming (XP)",
+    "back": "A software development method based on frequent cycles, best known for its technical practices."
+  },
+  {
+    "id": "c2",
+    "front": "Five XP values",
+    "back": "Communication, simplicity, feedback, courage, respect."
+  },
+  {
+    "id": "c3",
+    "front": "Pair programming",
+    "back": "Two developers work at one computer: one writes, the other reviews, and they swap often."
+  },
+  {
+    "id": "c4",
+    "front": "Test-first programming",
+    "back": "Write the test before the code, then write just enough code to pass it. Also called test-driven development."
+  },
+  {
+    "id": "c5",
+    "front": "Refactoring",
+    "back": "Improving the internal structure of code without changing what it does."
+  },
+  {
+    "id": "c6",
+    "front": "Continuous integration",
+    "back": "Everyone's work is merged and tested frequently, so problems surface early."
+  },
+  {
+    "id": "c7",
+    "front": "Collective code ownership",
+    "back": "Anyone on the team may improve any part of the code."
+  },
+  {
+    "id": "c8",
+    "front": "Scrum vs XP",
+    "back": "Scrum: managing the work (roles, events, artifacts). XP: engineering practices. Often used together."
+  },
+  {
+    "id": "c9",
+    "front": "Lean",
+    "back": "A philosophy aimed at maximizing customer value while minimizing waste."
+  },
+  {
+    "id": "c10",
+    "front": "Seven principles of lean software development",
+    "back": "Eliminate waste; amplify learning; decide as late as possible; deliver as fast as possible; empower the team; build quality in; optimize the whole."
+  },
+  {
+    "id": "c11",
+    "front": "Waste (lean)",
+    "back": "Anything that does not add value for the customer: partially done work, extra features, waiting, handoffs, task switching, defects."
+  },
+  {
+    "id": "c12",
+    "front": "Lean Startup",
+    "back": "Treats each product idea as a hypothesis: build a minimum viable product, measure with real customers, learn, then persevere or pivot."
+  },
+  {
+    "id": "c13",
+    "front": "Build–measure–learn",
+    "back": "The Lean Startup loop for testing an MVP with real customer data."
+  },
+  {
+    "id": "c14",
+    "front": "Pivot",
+    "back": "Changing direction, based on evidence, before investing further time and money."
+  },
+  {
+    "id": "c15",
+    "front": "Design thinking",
+    "back": "A human-centered approach to problem-solving that starts from understanding user needs through observation and empathy."
+  },
+  {
+    "id": "c16",
+    "front": "Meaning of 'kanban'",
+    "back": "Visual sign or card."
+  },
+  {
+    "id": "c17",
+    "front": "Kanban board",
+    "back": "A board of columns, one per state of work, with cards that move across. Simplest form: To Do, Doing, Done."
+  },
+  {
+    "id": "c18",
+    "front": "Six core properties of the Kanban Method",
+    "back": "Visualize the workflow; limit WIP; manage flow; make process policies explicit; implement feedback loops; improve collaboratively."
+  },
+  {
+    "id": "c19",
+    "front": "WIP limit",
+    "back": "The maximum number of items allowed in a column at one time. A full column means stop starting and help finish."
+  },
+  {
+    "id": "c20",
+    "front": "Pull system",
+    "back": "When the team finishes an item, it pulls the next one in. Work is not pushed onto people."
+  },
+  {
+    "id": "c21",
+    "front": "Main difference between Kanban and Scrum",
+    "back": "Kanban has continuous flow with no prescribed iterations or roles. Scrum has fixed-length sprints and three defined roles."
+  },
+  {
+    "id": "c22",
+    "front": "When Kanban fits best",
+    "back": "When work arrives unpredictably, or when the team cannot change its structure yet. 'Start where you are.'"
+  },
+  {
+    "id": "c23",
+    "front": "Crystal",
+    "back": "A family of methods whose rigor is chosen by team size and criticality, identified by colors (Clear, Yellow, Orange, Red)."
+  },
+  {
+    "id": "c24",
+    "front": "Osmotic communication",
+    "back": "People sitting together pick up information by overhearing. A property of Crystal."
+  },
+  {
+    "id": "c25",
+    "front": "Feature-driven development (FDD)",
+    "back": "Organized around features: small capabilities with business value. Plan, design and build by feature."
+  },
+  {
+    "id": "c26",
+    "front": "DSDM",
+    "back": "Dynamic Systems Development Method. Fixes time, cost and quality at the start and prioritizes scope to fit."
+  },
+  {
+    "id": "c27",
+    "front": "Scrum of Scrums",
+    "back": "A representative from each Scrum team meets the others regularly to coordinate work and remove cross-team impediments."
+  },
+  {
+    "id": "c28",
+    "front": "SAFe",
+    "back": "Scaled Agile Framework: patterns for scaling across team, program and portfolio levels, organized around value streams."
+  },
+  {
+    "id": "c29",
+    "front": "LeSS",
+    "back": "Large Scale Scrum: several teams with one product backlog, one product owner, one definition of done and one sprint."
+  },
+  {
+    "id": "c30",
+    "front": "PMI Disciplined Agile",
+    "back": "A tool kit that helps a team choose its way of working from agile, lean and traditional practices. 'Context counts.'"
+  },
+  {
+    "id": "c31",
+    "front": "Scrumban",
+    "back": "Scrum as the framework, Kanban for process improvement. Small sprints, a kanban board with WIP limits, a planning trigger, no predefined roles."
+  },
+  {
+    "id": "c32",
+    "front": "Planning trigger (Scrumban)",
+    "back": "Tells the team when to plan next, typically when work in progress falls below a set level."
+  },
+  {
+    "id": "c33",
+    "front": "Agile Unified Process (AgileUP)",
+    "back": "A lighter, faster offshoot of the Unified Process for software. Seven disciplines: model, implementation, test, deployment, configuration management, project management, environment."
+  },
+  {
+    "id": "c34",
+    "front": "Enterprise Scrum",
+    "back": "Applies Scrum to the whole organization, not one product: extend, generalize and scale it."
+  },
+  {
+    "id": "c35",
+    "front": "Six roles in feature-driven development",
+    "back": "Project manager, chief architect, development manager, chief programmer, class owner, domain expert."
+  },
+  {
+    "id": "c36",
+    "front": "Disciplined Agile, in the 2017 guide",
+    "back": "A process decision framework. Principles: people-first, learning-oriented, full delivery life cycle, goal-driven, enterprise awareness, scalable."
+  },
+  {
+    "id": "c37",
+    "front": "Acceptance test-driven development (ATDD)",
+    "back": "The whole team agrees the acceptance criteria first, creates the tests, then builds just enough to pass them."
+  },
+  {
+    "id": "c38",
+    "front": "Eight principles of DSDM",
+    "back": "Focus on the business need; deliver on time; collaborate; never compromise quality; build incrementally from firm foundations; develop iteratively; communicate continuously and clearly; demonstrate control."
+  }
 ]

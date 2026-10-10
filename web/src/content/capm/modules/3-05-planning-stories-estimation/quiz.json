@@ -492,5 +492,85 @@
         "label": "Agile Practice Guide, First Edition, 3.1.4"
       }
     ]
+  },
+  {
+    "id": "q25",
+    "q": "A team has six features in its two-week iteration. A member suggests analyzing all six first, then designing all six, then building all six. How does the 2017 Agile Practice Guide say an iteration-based team should work?",
+    "options": [
+      "As suggested, since each skill is then used once and nobody waits for anybody else",
+      "On all six at once, with one person per feature",
+      "On whichever feature each developer prefers",
+      "On the most important feature together until it is finished, then the next"
+    ],
+    "answer": 3,
+    "explanation": "In iteration-based agile the team works on the most important feature, collaborating to finish it, then moves to the next. It does not address all the requirements, then all the analysis, and so on, for the whole iteration at once.",
+    "ref": "Agile Practice Guide, First Edition, 3.1.4",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 39,
+        "label": "Agile Practice Guide, First Edition, 3.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A team has no timeboxes. It pulls the next feature from the backlog whenever it has capacity, limits the work in each column of its board, and agrees with the business when to hold reviews. Which form of agile is this?",
+    "options": [
+      "Flow-based agile",
+      "Iteration-based agile",
+      "A predictive life cycle",
+      "An iterative life cycle"
+    ],
+    "answer": 0,
+    "explanation": "In flow-based agile the team pulls features from the backlog based on its capacity to start work, not on an iteration schedule, and manages work in progress for each column. Without iterations, the team and stakeholders decide when to plan, review and retrospect.",
+    "ref": "Agile Practice Guide, First Edition, 3.1.4",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 39,
+        "label": "Agile Practice Guide, First Edition, 3.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "In a refinement meeting the product owner presents a feature but is not sure what it depends on. The team cannot judge the risk either. What can the product owner ask the team to do?",
+    "options": [
+      "Commit to the feature and find out during the iteration",
+      "Spike the feature to understand the risks",
+      "Drop the feature from the product backlog",
+      "Double the estimate to cover the unknown"
+    ],
+    "answer": 1,
+    "explanation": "Refinement lets the team learn about potential challenges in the stories. If the product owner is unsure of the dependencies, the product owner can ask the team to spike the feature in order to understand the risks.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.3",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 67,
+        "label": "Agile Practice Guide, First Edition, 5.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A product owner wants stories to be better understood before they reach an iteration. The 2017 Agile Practice Guide suggests working as a \"triad\" to discuss and write each story. Who is in it?",
+    "options": [
+      "Sponsor, project manager and customer",
+      "Scrum master, architect and sponsor",
+      "Developer, tester and business analyst or product owner",
+      "Three developers with different specialities and one user"
+    ],
+    "answer": 2,
+    "explanation": "One way to run backlog preparation and refinement is to have the team work as triads of developer, tester and business analyst or product owner, who discuss and write the story together.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.3",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 67,
+        "label": "Agile Practice Guide, First Edition, 5.2.3"
+      }
+    ]
   }
 ]

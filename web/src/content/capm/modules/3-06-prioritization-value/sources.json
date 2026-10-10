@@ -65,6 +65,16 @@
     "label": "Agile Practice Guide, Glossary (weighted shortest job first)"
   },
   {
+    "book": "agile1",
+    "page": 55,
+    "label": "Agile Practice Guide, First Edition, 4.3.2"
+  },
+  {
+    "book": "agile1",
+    "page": 70,
+    "label": "Agile Practice Guide, First Edition, 5.2.5"
+  },
+  {
     "book": "baguide",
     "page": 124,
     "label": "PMI Guide to Business Analysis, 4.3.2.7"

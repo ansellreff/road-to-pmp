@@ -127,6 +127,41 @@ Flow metrics show how **efficiently** the team delivers. Stakeholders care about
 | **Adoption and usage** | Whether released features are actually used |
 | **Time to learn** | How quickly the team checks an assumption with real customer feedback |
 
+## What the exam's guide adds on measurement
+
+@source Agile Practice Guide, First Edition, 5.4; Agile Practice Guide, First Edition, 5.4.1; Agile Practice Guide, First Edition, Table 5-1
+
+The lesson so far follows the second edition, which prefers flow metrics. The **2017 guide**, which the exam uses, relies more on velocity and burn charts, and it adds several points.
+
+**Velocity** is the sum of the story point sizes of the features **actually completed** in the iteration. It can take **four to eight iterations** for a team's velocity to become stable. Once it is stable, the team can forecast:
+
+- By velocity: 500 points remain and the team averages 50 points an iteration, so about 500 ÷ 50 = **10 iterations** remain.
+- By cycle time: 30 stories remain at an average of 3 days a story, so about 30 × 3 = **90 business days** remain.
+
+| Kind of measure | Examples | Tells the team |
+|---|---|---|
+| **Capacity measures** | Burnup and burndown charts | How much more work there is |
+| **Predictability measures** | Lead time and cycle time | Whether the team is likely to finish on time |
+
+**Three times for flow-based teams:**
+
+| Measure | The 2017 guide's definition |
+|---|---|
+| **Lead time** | The total time to deliver an item, from when it is **added to the board** to when it is completed |
+| **Cycle time** | The time required to **process** an item, from starting it to completing it |
+| **Response time** | The time an item **waits** until work starts (also called reaction time) |
+
+**Counting story points is not counting finished work.** A team that reports story points for features it has not completed measures capacity, not progress. That breaks the principle that a working product is the primary measure of progress.
+
+**Feature charts.** A **feature burnup/burndown chart** has three lines: features complete, features remaining and total features. A rising total line shows that **requirements grew** during the project. A **product backlog burnup chart** shows completed work against the total expected at each iteration or milestone.
+
+**Earned value in agile terms.** Earned value is based on **finished features**.
+
+- **SPI** = completed features ÷ planned features. A team that planned 30 story points for an iteration and completed 25 has SPI = 25 ÷ 30 = **0.83**: it is working at 83% of the planned rate.
+- **CPI** = earned value ÷ actual cost. With $2.2 million of features completed for $2.8 million spent, CPI = 2.2 ÷ 2.8 = **0.79**: 79 cents of value for each dollar.
+
+**Retrospectives.** Where a team is improving slowly, the guide's advice is to capture **no more than three items** to improve at each retrospective.
+
 ## Information radiators
 
 @source PMBOK 8, Guide section 5, Information radiators; PMBOK 8, Guide section 5, Visual controls

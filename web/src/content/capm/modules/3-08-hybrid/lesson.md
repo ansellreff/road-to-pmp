@@ -186,6 +186,31 @@ Do not confuse the two kinds of mixing: a **hybrid** combines **predictive and a
 
 Tailoring is an experiment: if things improve, keep the change; if they get worse, stop and try something else.
 
+## Troubleshooting an agile project
+
+@source Agile Practice Guide, First Edition, Table 5-1
+
+The 2017 guide lists common pain points and what to try. Exam questions describe the symptom and ask for the remedy.
+
+| Pain point | What to try |
+|---|---|
+| Unclear purpose or mission | **Agile chartering**: vision, mission and mission tests |
+| Unclear working agreements | Chartering for alignment: values, principles and **working agreements** |
+| Unclear requirements | Help the sponsor craft a **product vision**; build a product roadmap with user story mapping; decompose it into a backlog of smaller, concrete requirements |
+| Inaccurate estimation | **Split stories** to make them smaller; estimate relatively, with the **whole team**; spike what is not understood |
+| Unclear work assignments or progress | Help the team learn that it **self-manages**; use a kanban board and a daily standup to see where the work is |
+| The team struggles with obstacles | A **servant leader** clears them; obstacles nobody on the team can remove are **escalated** |
+| Delays caused by poorly refined backlog items | The product owner and the team workshop stories together; write a **definition of ready** |
+| Defects | Pair work, collective ownership, pervasive (test-driven, automated) testing and a robust **definition of done** |
+| Work is not complete | Define the **definition of done** for stories, including acceptance criteria; add release criteria for the project |
+| Technical debt | **Refactoring**, pervasive testing, automated code quality analysis, the definition of done |
+| Slow improvement in teamwork | Capture **no more than three** improvement items at each retrospective |
+| Too much upfront work leading to rework | Use team **spikes** to learn instead; shorten iterations |
+| Inefficiently ordered backlog | Rank by **value**, including the cost of delay divided by duration (CD3) |
+| Rush then wait, an uneven flow of work | Plan to the team's **capacity** and no more; stop multitasking; pair, swarm or mob |
+| Impossible stakeholder demands | The servant leader works with the stakeholder, and possibly the product owner |
+| Siloed teams | Ask people to self-organize as **cross-functional** teams; help managers see why agile needs them |
+
 ## Exam tips
 
 - "Combination of predictive and adaptive" is the definition of **hybrid**.

@@ -1,33 +1,177 @@
 [
-  { "id": "c1", "front": "Hybrid approach", "back": "A combination of elements from both adaptive and predictive approaches. Useful when there is uncertainty or risk around the requirements." },
-  { "id": "c2", "front": "When is a hybrid approach useful?", "back": "When requirements are uncertain, when deliverables can be split into modules, or when different deliverables are built by different teams." },
-  { "id": "c3", "front": "The PMBOK Guide's view on hybrid", "back": "Most projects today benefit from a hybrid approach: flexibility where conditions change, control where work is predictable." },
-  { "id": "c4", "front": "Best fit for defined, repeatable work", "back": "A predictive approach: plan the work, then work the plan." },
-  { "id": "c5", "front": "Best fit for novel, intangible knowledge work", "back": "An adaptive approach: the solution is discovered through feedback." },
-  { "id": "c6", "front": "Stacey matrix: the two axes", "back": "Requirements uncertainty (agreement on what is needed) and technical uncertainty (certainty about how to deliver it)." },
-  { "id": "c7", "front": "Stacey matrix: both axes certain", "back": "Simple work. Predictive approaches work well." },
-  { "id": "c8", "front": "Stacey matrix: complicated or complex zones", "back": "Adaptive approaches work well: the team discovers the solution iteratively through feedback." },
-  { "id": "c9", "front": "Cynefin: the five domains", "back": "Simple, complicated, complex, chaotic, disorder." },
-  { "id": "c10", "front": "Cynefin: complex domain", "back": "Outcomes emerge through experimentation. Probe, sense, respond. Matches agile." },
-  { "id": "c11", "front": "Cynefin: complicated domain", "back": "Expert analysis is needed but outcomes are predictable. A hybrid life cycle may fit." },
-  { "id": "c12", "front": "Hybrid pattern 1", "back": "Agile development followed by a predictive rollout. For uncertain development and a defined, repeatable rollout." },
-  { "id": "c13", "front": "Hybrid pattern 2", "back": "Agile and predictive approaches used at the same time throughout the life cycle. Common during a move toward agile." },
-  { "id": "c14", "front": "Hybrid pattern 3", "back": "A largely predictive approach with an agile component, for the one uncertain part of an otherwise routine project." },
-  { "id": "c15", "front": "Hybrid pattern 4", "back": "A largely agile approach with a predictive component, for an element that is non-negotiable or cannot be done incrementally." },
-  { "id": "c16", "front": "Hybrid levels 1, 2 and 3", "back": "Level 1: predictive dominates. Level 2: both contribute significantly. Level 3: adaptive dominates." },
-  { "id": "c17", "front": "Fit for purpose", "back": "Choose the life cycle or combination that works for the project, its risks and the culture. Revisit the choice periodically." },
-  { "id": "c18", "front": "When may agile not be useful?", "back": "When the organization cannot deliver intermediate value." },
-  { "id": "c19", "front": "Hybrid as a transition strategy", "back": "Add iterative techniques first, then incremental ones, starting on a less risky project, then move to more complex projects." },
-  { "id": "c20", "front": "Three categories of factors for choosing a development approach", "back": "The deliverable, the project and the organization." },
-  { "id": "c21", "front": "Deliverable factors that favor predictive", "back": "Well-known requirements, costly change, rigorous safety requirements, heavy regulation." },
-  { "id": "c22", "front": "Deliverable factors that favor adaptive", "back": "High innovation, unstable scope, value from frequent feedback, delivery in parts, high risk and uncertainty." },
-  { "id": "c23", "front": "Agile suitability filter", "back": "A questionnaire scored 1 to 10 and plotted on a radar chart, to discuss whether a project suits a predictive, hybrid or agile approach." },
-  { "id": "c24", "front": "Suitability filter: three categories", "back": "Culture, team and project." },
-  { "id": "c25", "front": "Suitability filter: reading the radar chart", "back": "Center: agile. Middle ring: hybrid. Outside: predictive." },
-  { "id": "c26", "front": "Is the suitability filter's result binding?", "back": "No. It is a conversation tool. The people involved decide, and mismatches are treated as risks." },
-  { "id": "c27", "front": "The most common blend of agile approaches", "back": "Scrum (backlog, roles, events), Kanban (board and WIP limits) and XP (engineering practices)." },
-  { "id": "c28", "front": "Hybrid vs blend", "back": "Hybrid: predictive plus adaptive. Blend: several agile approaches together." },
-  { "id": "c29", "front": "Tailoring: work is often interrupted or delayed", "back": "Make work visible on a kanban board and experiment with WIP limits." },
-  { "id": "c30", "front": "Tailoring: poor quality of increments", "back": "Use test-driven development practices." },
-  { "id": "c31", "front": "Tailoring: the team is new to agile", "back": "Train in the agile mindset and principles first, then in the chosen framework." }
+  {
+    "id": "c1",
+    "front": "Hybrid approach",
+    "back": "A combination of elements from both adaptive and predictive approaches. Useful when there is uncertainty or risk around the requirements."
+  },
+  {
+    "id": "c2",
+    "front": "When is a hybrid approach useful?",
+    "back": "When requirements are uncertain, when deliverables can be split into modules, or when different deliverables are built by different teams."
+  },
+  {
+    "id": "c3",
+    "front": "The PMBOK Guide's view on hybrid",
+    "back": "Most projects today benefit from a hybrid approach: flexibility where conditions change, control where work is predictable."
+  },
+  {
+    "id": "c4",
+    "front": "Best fit for defined, repeatable work",
+    "back": "A predictive approach: plan the work, then work the plan."
+  },
+  {
+    "id": "c5",
+    "front": "Best fit for novel, intangible knowledge work",
+    "back": "An adaptive approach: the solution is discovered through feedback."
+  },
+  {
+    "id": "c6",
+    "front": "Stacey matrix: the two axes",
+    "back": "Requirements uncertainty (agreement on what is needed) and technical uncertainty (certainty about how to deliver it)."
+  },
+  {
+    "id": "c7",
+    "front": "Stacey matrix: both axes certain",
+    "back": "Simple work. Predictive approaches work well."
+  },
+  {
+    "id": "c8",
+    "front": "Stacey matrix: complicated or complex zones",
+    "back": "Adaptive approaches work well: the team discovers the solution iteratively through feedback."
+  },
+  {
+    "id": "c9",
+    "front": "Cynefin: the five domains",
+    "back": "Simple, complicated, complex, chaotic, disorder."
+  },
+  {
+    "id": "c10",
+    "front": "Cynefin: complex domain",
+    "back": "Outcomes emerge through experimentation. Probe, sense, respond. Matches agile."
+  },
+  {
+    "id": "c11",
+    "front": "Cynefin: complicated domain",
+    "back": "Expert analysis is needed but outcomes are predictable. A hybrid life cycle may fit."
+  },
+  {
+    "id": "c12",
+    "front": "Hybrid pattern 1",
+    "back": "Agile development followed by a predictive rollout. For uncertain development and a defined, repeatable rollout."
+  },
+  {
+    "id": "c13",
+    "front": "Hybrid pattern 2",
+    "back": "Agile and predictive approaches used at the same time throughout the life cycle. Common during a move toward agile."
+  },
+  {
+    "id": "c14",
+    "front": "Hybrid pattern 3",
+    "back": "A largely predictive approach with an agile component, for the one uncertain part of an otherwise routine project."
+  },
+  {
+    "id": "c15",
+    "front": "Hybrid pattern 4",
+    "back": "A largely agile approach with a predictive component, for an element that is non-negotiable or cannot be done incrementally."
+  },
+  {
+    "id": "c16",
+    "front": "Hybrid levels 1, 2 and 3",
+    "back": "Level 1: predictive dominates. Level 2: both contribute significantly. Level 3: adaptive dominates."
+  },
+  {
+    "id": "c17",
+    "front": "Fit for purpose",
+    "back": "Choose the life cycle or combination that works for the project, its risks and the culture. Revisit the choice periodically."
+  },
+  {
+    "id": "c18",
+    "front": "When may agile not be useful?",
+    "back": "When the organization cannot deliver intermediate value."
+  },
+  {
+    "id": "c19",
+    "front": "Hybrid as a transition strategy",
+    "back": "Add iterative techniques first, then incremental ones, starting on a less risky project, then move to more complex projects."
+  },
+  {
+    "id": "c20",
+    "front": "Three categories of factors for choosing a development approach",
+    "back": "The deliverable, the project and the organization."
+  },
+  {
+    "id": "c21",
+    "front": "Deliverable factors that favor predictive",
+    "back": "Well-known requirements, costly change, rigorous safety requirements, heavy regulation."
+  },
+  {
+    "id": "c22",
+    "front": "Deliverable factors that favor adaptive",
+    "back": "High innovation, unstable scope, value from frequent feedback, delivery in parts, high risk and uncertainty."
+  },
+  {
+    "id": "c23",
+    "front": "Agile suitability filter",
+    "back": "A questionnaire scored 1 to 10 and plotted on a radar chart, to discuss whether a project suits a predictive, hybrid or agile approach."
+  },
+  {
+    "id": "c24",
+    "front": "Suitability filter: three categories",
+    "back": "Culture, team and project."
+  },
+  {
+    "id": "c25",
+    "front": "Suitability filter: reading the radar chart",
+    "back": "Center: agile. Middle ring: hybrid. Outside: predictive."
+  },
+  {
+    "id": "c26",
+    "front": "Is the suitability filter's result binding?",
+    "back": "No. It is a conversation tool. The people involved decide, and mismatches are treated as risks."
+  },
+  {
+    "id": "c27",
+    "front": "The most common blend of agile approaches",
+    "back": "Scrum (backlog, roles, events), Kanban (board and WIP limits) and XP (engineering practices)."
+  },
+  {
+    "id": "c28",
+    "front": "Hybrid vs blend",
+    "back": "Hybrid: predictive plus adaptive. Blend: several agile approaches together."
+  },
+  {
+    "id": "c29",
+    "front": "Tailoring: work is often interrupted or delayed",
+    "back": "Make work visible on a kanban board and experiment with WIP limits."
+  },
+  {
+    "id": "c30",
+    "front": "Tailoring: poor quality of increments",
+    "back": "Use test-driven development practices."
+  },
+  {
+    "id": "c31",
+    "front": "Tailoring: the team is new to agile",
+    "back": "Train in the agile mindset and principles first, then in the chosen framework."
+  },
+  {
+    "id": "c32",
+    "front": "Remedy for inaccurate estimation",
+    "back": "Split stories to make them smaller; estimate relatively with the whole team; spike what is not understood."
+  },
+  {
+    "id": "c33",
+    "front": "Remedy for poorly refined backlog items",
+    "back": "Product owner and team workshop stories together; write a definition of ready; split stories."
+  },
+  {
+    "id": "c34",
+    "front": "Remedy for an uneven, rush-then-wait flow of work",
+    "back": "Plan to the team's capacity and no more; stop multitasking; pair, swarm or mob."
+  },
+  {
+    "id": "c35",
+    "front": "Remedy for slow improvement in teamwork",
+    "back": "Capture no more than three improvement items at each retrospective."
+  }
 ]

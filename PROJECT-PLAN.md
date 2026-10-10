@@ -597,6 +597,44 @@ Nothing in Domain 1 was found to be **wrong**. The differences are of two kinds:
 
 Method and limits: I read the listed pages of the extracted book text and compared them with each lesson's statements. I did not read every page of the Seventh Edition. The Models section (4.2) was checked because a search for its model names in the lessons found several absent; the Methods and Artifacts sections (4.4 to 4.6) have not been checked the same way yet.
 
+### The outline rule (your instruction, 2026-10-11)
+
+You asked that anything added must be part of the exam outline. From this point every addition is tied to a task of the CAPM Exam Content Outline, and the task is named in the tables below. The outline itself says its enablers are examples, "not meant to be an exhaustive list", and that every question is found in at least two of the reference books and mapped to a task. So the test used is: **the topic is in one of the exam's books and falls under a task of the outline**. Topics the outline names in an enabler get full treatment (lesson text, questions, flashcards). Topics that only fall under a task get a short note.
+
+The first sitting's additions, checked against the outline afterwards:
+
+| Addition (Domain 1) | Outline task | Verdict |
+|---|---|---|
+| Project management defined; value defined | 1.1, project, program, portfolio | Named |
+| Internal and external environment | 2.1 and 3.1, organizational process assets and enterprise environmental factors | Named |
+| Types of PMO | 2.1, suitability for the organizational structure | Under the task, not named. Kept: it is in the exam's process guide beside the structures the outline lists. |
+| Eight functions; customer and end user | 1.3, roles and responsibilities | Named |
+| Iterative and incremental; phases; iteration length | 1.1, predictive and adaptive approaches | Named |
+| Active and passive acceptance; secondary and residual risk | 1.1 and 1.2, risks; use a risk register | Named |
+| Change models (ADKAR, Kotter, Satir, Bridges) | 1.1, a project as a vehicle for change | Named |
+| Situational Leadership II; OSCAR; think win-win | 1.3, leadership and management; the project manager as coach and negotiator | Named |
+| Five things to tailor | None names tailoring | Under task 1.1 only. Kept as one note; its question is not used in Mock exam 5. |
+| Six ways of addressing conflict; Drexler / Sibbet; Boehm's planning model | None names them | Under task 1.3 only. Kept as short notes; their questions are not used in Mock exam 5. |
+
+### Domain 3 (second sitting, 2026-10-11)
+
+The Domain 3 lessons were written mostly from the **second** edition of the Agile Practice Guide. The exam uses the **2017 first edition**. This sitting read the first edition's chapters 2 to 6 and Annex A3 (pages 28 to 101 and 114 to 129) against the eight lessons.
+
+| Module | Compared with (2017 guide) | What differed or was missing | Outline task | What was done |
+|---|---|---|---|---|
+| 3.1 | 2.4, 3.1, Table 3-1, 6.1 to 6.8 | The lesson's life cycle table softened Table 3-1 ("can evolve", "single or phased delivery"). **Missing:** the nine agile contracting techniques, the three characteristics of an agile PMO, the two drivers for change management. | 3.1, pros and cons; organizational structure; process assets and environmental factors | Note with Table 3-1's own words; new section "Agile contracts, the agile PMO and change"; 5 questions, 8 flashcards |
+| 3.2 | A3.2, 5.2.1 to 5.2.6 | Nothing wrong. Roles, events, artifacts, the 15-minute standup and its three questions match. The lesson already had the flow-based standup. | 3.4, components of Scrum | First edition page links added; 4 questions |
+| 3.3 | A3.3 to A3.14, 5.2.7 | **Missing:** Scrumban, the Agile Unified Process and Enterprise Scrum; the six roles of FDD; the eight principles of DSDM; the first edition's description of Disciplined Agile ("process decision framework" and six principles); acceptance test-driven development. Scrum@Scale, which the lesson lists, is **not** in the 2017 guide. | 3.4, components of the methods | Note on execution practices; new section "More from the exam's guide"; 5 questions, 8 flashcards |
+| 3.4 | 4.1 to 4.3.7, 5.1 | Servant leadership, the three roles, team size, T-shaped people, the 20% to 40% loss and remote techniques all match. **Missing:** the agile project charter's four questions and the team charter. | 3.3, artifacts of adaptive projects | New section "Chartering the project and the team"; 4 questions, 3 flashcards |
+| 3.5 | 3.1.4, 5.2.2, 5.2.3, 5.2.6 | Nothing wrong. Iteration-based and flow-based agile, capacity and refinement match. | 3.2, planning iterations | First edition page links added; 4 questions |
+| 3.6 | 4.3.2, 5.2.5 | Nothing wrong. | 3.5, prioritize tasks | First edition page links added; 4 questions |
+| 3.7 | 5.4, 5.4.1, Table 5-1 | The lesson follows the second edition, which plays down velocity. **Missing from the exam's edition:** velocity's definition and the four to eight iterations to stabilize; forecasting by velocity and by cycle time; capacity and predictability measures; response time; the feature chart; **SPI and CPI in agile terms**. | 3.2, adaptive tracking against predictive tracking | New section "What the exam's guide adds on measurement"; 5 questions, 6 flashcards |
+| 3.8 | 3.1.6 to 3.1.11, 3.2, 3.3, Table 5-1 | The hybrid patterns, the suitability filter and the tailoring table match. **Missing:** the troubleshooting table of pain points and remedies. | 3.5, task management steps | New section "Troubleshooting an agile project"; 5 questions, 4 flashcards |
+
+Nothing in Domain 3 was found to be **wrong**. The lessons taught the second edition's emphasis in two places (flow metrics over velocity; "supportive" beside "servant" leadership, already noted in Session 25d), and lacked several lists that exist only in the 2017 edition.
+
+Not read in this sitting: Annex A1 (the mapping to the Sixth Edition's knowledge areas, pages 104 to 111), Annex A2, and appendixes X2 and X3 beyond what module 3.8 already cites.
+
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.

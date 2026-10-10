@@ -76,6 +76,11 @@
   },
   {
     "book": "agile1",
+    "page": 49,
+    "label": "Agile Practice Guide, First Edition, 4.2.1"
+  },
+  {
+    "book": "agile1",
     "page": 55,
     "label": "Agile Practice Guide, First Edition, 4.3.2"
   },
@@ -83,6 +88,11 @@
     "book": "agile1",
     "page": 61,
     "label": "Agile Practice Guide, First Edition, 4.3.6"
+  },
+  {
+    "book": "agile1",
+    "page": 64,
+    "label": "Agile Practice Guide, First Edition, 5.1"
   },
   {
     "book": "pmbok7",

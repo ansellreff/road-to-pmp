@@ -46,7 +46,7 @@
     "options": [
       "Pair programming",
       "Refactoring",
-      "Continuous integration",
+      "Continuous integration of each day's work",
       "Collective code ownership"
     ],
     "answer": 0,
@@ -450,6 +450,106 @@
         "book": "agile",
         "page": 145,
         "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A team works in short sprints, shows its stories on a kanban board with WIP limits, and has no named roles. It holds a planning session whenever the number of cards in progress falls below five. Which approach is this, and what is that rule called?",
+    "options": [
+      "Scrumban, and the rule is a planning trigger",
+      "Scrum, and the rule is the sprint goal",
+      "Crystal Clear, and the rule is osmotic planning",
+      "DSDM, and the rule is a timebox"
+    ],
+    "answer": 0,
+    "explanation": "Scrumban uses Scrum as the framework and Kanban for process improvement. A planning trigger tells the team when to plan next, typically when work in progress falls below a set level. There are no predefined roles.",
+    "ref": "Agile Practice Guide, First Edition, A3.6",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 123,
+        "label": "Agile Practice Guide, First Edition, A3.6"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Before building a feature, the developers, the tester and the product owner sit down together and agree its acceptance criteria. They then create the tests, and only afterwards build just enough to pass them. Which practice is this?",
+    "options": [
+      "Continuous integration",
+      "Refactoring",
+      "Acceptance test-driven development",
+      "Smoke testing"
+    ],
+    "answer": 2,
+    "explanation": "In acceptance test-driven development (ATDD) the entire team discusses the acceptance criteria for a work product, then creates the tests, which lets the team write just enough to meet the criteria.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.7",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 71,
+        "label": "Agile Practice Guide, First Edition, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A large software project names a chief architect, a chief programmer, several class owners and a domain expert, and plans, designs and builds one small capability at a time. Which approach is it using?",
+    "options": [
+      "Extreme Programming",
+      "Enterprise Scrum",
+      "The Agile Unified Process (AgileUP)",
+      "Feature-driven development"
+    ],
+    "answer": 3,
+    "explanation": "Feature-driven development has six primary roles: project manager, chief architect, development manager, chief programmer, class owner and domain expert. Its five processes include plan by feature, design by feature and build by feature.",
+    "ref": "Agile Practice Guide, First Edition, A3.7",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 123,
+        "label": "Agile Practice Guide, First Edition, A3.7"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A company wants something between Scrum, which it finds too narrow, and a heavier process it finds too prescriptive. It picks a process decision framework whose principles include people-first, goal-driven and enterprise awareness. Which is it?",
+    "options": [
+      "Large Scale Scrum (LeSS)",
+      "Disciplined Agile (DA)",
+      "Scaled Agile Framework (SAFe)",
+      "Scrum of Scrums (SoS)"
+    ],
+    "answer": 1,
+    "explanation": "The 2017 guide describes Disciplined Agile as a process decision framework that blends agile practices, balanced between methods that are too narrow (Scrum) and too prescriptive (AgileUP). Its principles are people-first, learning-oriented, full delivery life cycle, goal-driven, enterprise awareness and scalable.",
+    "ref": "Agile Practice Guide, First Edition, A3.14",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 129,
+        "label": "Agile Practice Guide, First Edition, A3.14"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Three Scrum teams send one member each to a coordination meeting twice a week. Besides completed work, next work and current impediments, what else does each representative report?",
+    "options": [
+      "Each developer's hours for the week",
+      "The velocity of the other teams",
+      "Upcoming impediments that might block the other teams",
+      "The budget that remains for the release and for each of the teams"
+    ],
+    "answer": 2,
+    "explanation": "In a Scrum of Scrums each representative reports completed work, the next set of work, current impediments, and potential upcoming impediments that might block the other teams.",
+    "ref": "Agile Practice Guide, First Edition, A3.10.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 126,
+        "label": "Agile Practice Guide, First Edition, A3.10.1"
       }
     ]
   }

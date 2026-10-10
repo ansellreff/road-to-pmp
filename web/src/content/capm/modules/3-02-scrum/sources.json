@@ -46,6 +46,16 @@
   },
   {
     "book": "agile1",
+    "page": 67,
+    "label": "Agile Practice Guide, First Edition, 5.2.2"
+  },
+  {
+    "book": "agile1",
+    "page": 67,
+    "label": "Agile Practice Guide, First Edition, 5.2.3"
+  },
+  {
+    "book": "agile1",
     "page": 68,
     "label": "Agile Practice Guide, First Edition, 5.2.4"
   },

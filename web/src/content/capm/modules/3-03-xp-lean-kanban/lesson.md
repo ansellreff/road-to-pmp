@@ -10,7 +10,7 @@
 
 ## Extreme Programming (XP)
 
-@source Agile Practice Guide, A3.3
+@source Agile Practice Guide, A3.3; Agile Practice Guide, First Edition, 5.2.7
 
 **XP** is a software development method based on **frequent cycles**. The name comes from taking a good practice to its purest, simplest form and applying it **continuously**.
 
@@ -35,6 +35,8 @@ The practices tested most often:
 | **Sustainable pace** | Working hours that can be kept up indefinitely; no regular overtime |
 | **Informative workspace** | Information radiators on the walls so status is visible at a glance |
 | **Real customer involvement** | A customer representative works with the team and answers questions quickly |
+
+> **On the exam.** The 2017 guide lists execution practices, many from XP, that keep a team able to release quickly. **Continuous integration:** fold work into the whole often, then retest. **Test at all levels:** system tests for end to end, unit tests for the building blocks, with integration, **smoke** and **regression** tests where needed; automated tests are strongly preferred. **Acceptance test-driven development (ATDD):** the **whole team** discusses the acceptance criteria first, then creates the tests, then writes just enough to pass them. **Test-driven (TDD) and behavior-driven development (BDD):** write the automated tests **before** the product. **Spikes:** timeboxed research or experiments, used for estimating, for defining acceptance criteria, or for learning a critical technical element.
 
 ## Scrum and XP compared
 
@@ -166,6 +168,28 @@ Scrum is designed for **one team**. When several teams build one product, a scal
 | **Large Scale Scrum (LeSS)** | Keeps Scrum as close to the original as possible: **one product backlog, one product owner, one definition of done, one sprint** for all teams |
 | **Scrum@Scale** | Extends a single Scrum team's pattern across a network of teams with a minimum of extra governance |
 | **PMI Disciplined Agile** | A **tool kit** that helps a team **choose** its way of working from agile, lean and traditional practices. "Context counts" and "choice is good". |
+
+## More from the exam's guide
+
+@source Agile Practice Guide, First Edition, A3.6; Agile Practice Guide, First Edition, A3.7; Agile Practice Guide, First Edition, A3.8; Agile Practice Guide, First Edition, A3.9; Agile Practice Guide, First Edition, A3.10.1; Agile Practice Guide, First Edition, A3.11; Agile Practice Guide, First Edition, A3.12; Agile Practice Guide, First Edition, A3.13; Agile Practice Guide, First Edition, A3.14; Agile Practice Guide, First Edition, A3.4
+
+The outline asks you to tell the components of the methods apart. The 2017 Agile Practice Guide, which the exam uses, describes three approaches not covered above and gives more detail on the others.
+
+| Approach | What the 2017 guide says |
+|---|---|
+| **Scrumban** | Began as a way to move from Scrum to Kanban and became a hybrid of its own: **Scrum as the framework, Kanban for process improvement**. Work is organized in small sprints and shown on a kanban board with WIP limits; there are daily meetings. A **planning trigger** tells the team when to plan next, typically when work in progress falls below a set level. **No predefined roles:** the team keeps its current ones. |
+| **Agile Unified Process (AgileUP)** | An offshoot of the Unified Process for software, with faster cycles and lighter processes. It iterates across **seven disciplines**: model, implementation, test, deployment, configuration management, project management, environment. |
+| **Enterprise Scrum** | Applies Scrum to the **whole organization**, not one product: extend Scrum across the organization, generalize its techniques, and scale it with extra techniques as needed. |
+| **FDD** | Six roles: **project manager, chief architect, development manager, chief programmer, class owner, domain expert**. One person may hold more than one. |
+| **DSDM** | Eight principles: focus on the business need; deliver on time; collaborate; never compromise quality; build incrementally from firm foundations; develop iteratively; communicate continuously and clearly; demonstrate control. |
+| **Scrum of Scrums** | Also called **meta Scrum**. Used by two or more Scrum teams of three to nine members. Each representative reports completed work, the next work, current impediments and **upcoming impediments that might block other teams**. Very large efforts add a Scrum of Scrum of Scrums. |
+| **SAFe** | Details practices, roles and activities at the **portfolio, program and team** levels. Its principles include: take an economic view; apply systems thinking; assume variability and preserve options; visualize and limit work in progress; apply cadence; decentralize decision making. |
+| **LeSS** | Shares with Scrum one backlog, one product owner, one definition of done and one sprint. It adds: sprint planning formally split into two parts (**what** and **how**), cross-team coordination, an overall cross-team refinement and an **overall retrospective**. |
+| **Disciplined Agile (DA)** | A **process decision framework** that blends agile practices, meant to sit between methods that are too narrow (Scrum) and too prescriptive (AgileUP). Principles: people-first, learning-oriented, full delivery life cycle, goal-driven, enterprise awareness, scalable. |
+
+**When Kanban is the best fit**, in the guide's list: the team needs **flexibility** (no timeboxes), a focus on **continuous delivery**, higher productivity and quality from limiting work in progress, greater efficiency, team focus, a way to cope with **variability in the workload**, and less waste.
+
+Scrum@Scale, in the table above, is not in the 2017 guide.
 
 ## Choosing between them
 

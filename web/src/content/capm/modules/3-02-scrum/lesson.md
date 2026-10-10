@@ -44,7 +44,7 @@ Scrum is the most widely used agile framework, so it is the one most often teste
 
 ## The three artifacts
 
-@source Agile Practice Guide, A3.2; Agile Practice Guide, 5.2.1
+@source Agile Practice Guide, A3.2; Agile Practice Guide, 5.2.1; Agile Practice Guide, First Edition, 5.2.2
 
 | Artifact | What it is | Owned by |
 |---|---|---|
@@ -76,7 +76,7 @@ The order inside a sprint: **planning → daily work with a daily scrum → revi
 
 ## Sprint planning and backlog refinement
 
-@source Agile Practice Guide, 5.2.3; Agile Practice Guide, 5.2.2; The Scrum Guide, Sprint Planning
+@source Agile Practice Guide, 5.2.3; Agile Practice Guide, 5.2.2; The Scrum Guide, Sprint Planning; Agile Practice Guide, First Edition, 5.2.3
 
 **Sprint planning** opens the sprint.
 

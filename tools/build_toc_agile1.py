@@ -37,7 +37,7 @@ def main() -> None:
     for number, text in enumerate(pages, start=1):
         if number <= 15:
             continue
-        for m in re.finditer(r"^([AX]\d(?:\.\d+)+) +([A-Z][^\n]{2,70})$", text, re.MULTILINE):
+        for m in re.finditer(r"^([AX]\d(?:\.\d+)+) +([A-Za-z][^\n]{2,70})$", text, re.MULTILINE):
             if m.group(1) not in seen:
                 seen.add(m.group(1))
                 lines.append(f"  {m.group(1)}. {m.group(2).strip()}  [p{number}]")

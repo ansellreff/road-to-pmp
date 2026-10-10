@@ -46,7 +46,7 @@ Servant leadership is not unique to agile, but it fits the agile mindset closely
 
 ## What a servant leader does
 
-@source Agile Practice Guide, 4.3.1; PMBOK 7, Guide 2.2.1.2
+@source Agile Practice Guide, 4.3.1; PMBOK 7, Guide 2.2.1.2; Agile Practice Guide, First Edition, 4.2.1
 
 | Responsibility | What it means | Example |
 |---|---|---|
@@ -84,7 +84,7 @@ Many agile frameworks **do not describe a project manager role**. Where one exis
 
 ## What an agile team looks like
 
-@source Agile Practice Guide, 4.4.1; Agile Practice Guide, 4.4.2
+@source Agile Practice Guide, 4.4.1; Agile Practice Guide, 4.4.2; Agile Practice Guide, First Edition, 4.3.2
 
 | Attribute | Why |
 |---|---|
@@ -160,6 +160,28 @@ Ideas about team space that are often tested:
 | **Information radiator** | A large, visible display of the team's status |
 
 Remote teams cost more in communication, so they need deliberate habits: regular check-ins, inclusive facilitation, shared working hours and good collaboration tools.
+
+## Chartering the project and the team
+
+@source Agile Practice Guide, First Edition, 5.1
+
+An agile project still needs a **project charter**, so the team knows why the project matters and where it is heading. The 2017 guide says an agile charter answers four questions:
+
+| Question | What answers it |
+|---|---|
+| **Why** are we doing this project? | The project **vision** |
+| **Who benefits**, and how? | Part of the vision or the project purpose |
+| What does **done** mean for the project? | The project's **release criteria** |
+| **How** are we going to work together? | The intended **flow of work** |
+
+The project charter may not be enough. The team also needs norms for working together, which it writes in a **team charter**. The guide calls this the team's **social contract**. It can hold:
+
+- **Team values**, such as sustainable pace and core hours.
+- **Working agreements**: what "ready" means, what "done" means, respecting the timebox, the use of work-in-process limits.
+- **Ground rules**, such as one person talking at a time in a meeting.
+- **Group norms**, such as how the team treats meeting times.
+
+A **servant leader** may facilitate the chartering. No formal process is required, as long as the team understands how it will work together.
 
 ## Psychological safety
 

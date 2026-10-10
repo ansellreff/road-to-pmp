@@ -139,7 +139,7 @@ A large gap between the numbers jumps (5, 8, 13) is deliberate: the bigger the i
 
 ## Iteration planning
 
-@source Agile Practice Guide, 5.2.3; Agile Practice Guide, Glossary (iteration planning)
+@source Agile Practice Guide, 5.2.3; Agile Practice Guide, Glossary (iteration planning); Agile Practice Guide, First Edition, 5.2.3
 
 **Iteration planning** (sprint planning in Scrum) clarifies the backlog items, their acceptance criteria and the effort needed to meet the iteration's commitment.
 

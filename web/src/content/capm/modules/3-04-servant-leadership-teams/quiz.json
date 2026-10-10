@@ -442,5 +442,85 @@
         "label": "Agile Practice Guide, 4.2.4"
       }
     ]
+  },
+  {
+    "id": "q23",
+    "q": "A team is writing its agile project charter. It has stated why the project exists and who benefits. A member asks how the team will know the project itself is finished. Which part of the charter answers that?",
+    "options": [
+      "The project vision",
+      "The working agreements",
+      "The intended flow of work",
+      "The release criteria"
+    ],
+    "answer": 3,
+    "explanation": "An agile charter answers four questions. \"What does done mean for the project?\" is answered by the project's release criteria. The vision answers why, and the flow of work answers how the team will work together.",
+    "ref": "Agile Practice Guide, First Edition, 5.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 64,
+        "label": "Agile Practice Guide, First Edition, 5.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A new team writes down its core hours, what \"ready\" and \"done\" mean, and a rule that one person speaks at a time in meetings. What is this document, in the words of the 2017 Agile Practice Guide?",
+    "options": [
+      "The team charter, the team's social contract",
+      "The project charter, as issued by the sponsor",
+      "The definition of done for the increment",
+      "The product roadmap for the first release"
+    ],
+    "answer": 0,
+    "explanation": "A team charter is the team's social contract: how its members interact. It can hold team values (core hours, sustainable pace), working agreements (ready, done), ground rules and group norms.",
+    "ref": "Agile Practice Guide, First Edition, 5.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 64,
+        "label": "Agile Practice Guide, First Edition, 5.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Two developers cannot agree on a design and ask the servant leader to make the decision for them. What does the 2017 Agile Practice Guide expect the servant leader to do?",
+    "options": [
+      "Decide quickly, so that the team loses no time",
+      "Act as an impartial bridge-builder and coach, so they reach a solution themselves",
+      "Refer the question to the sponsor for a ruling, and tell both to wait for the answer",
+      "Take the design work away from both of them"
+    ],
+    "answer": 1,
+    "explanation": "Servant leaders facilitate: they become impartial bridge-builders and coaches, rather than making decisions for which others should be responsible. Facilitators help the team create acceptable solutions.",
+    "ref": "Agile Practice Guide, First Edition, 4.2.1",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 49,
+        "label": "Agile Practice Guide, First Edition, 4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "An organization new to agile hires an outside agile coach instead of using one of its own people. According to the 2017 Agile Practice Guide, what is the disadvantage of an external coach?",
+    "options": [
+      "Less breadth of experience than an internal coach",
+      "No knowledge of any agile framework",
+      "Weak relationships in the client organization",
+      "No ability to facilitate or remove impediments"
+    ],
+    "answer": 2,
+    "explanation": "External coaches have the advantage of experience but the disadvantage of weak relationships in the client organization. Internal coaches have strong relationships but may lack the breadth of experience.",
+    "ref": "Agile Practice Guide, First Edition, 4.3.2",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 55,
+        "label": "Agile Practice Guide, First Edition, 4.3.2"
+      }
+    ]
   }
 ]

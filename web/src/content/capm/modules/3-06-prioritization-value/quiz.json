@@ -447,5 +447,85 @@
         "label": "Agile Practice Guide, 5.2.1"
       }
     ]
+  },
+  {
+    "id": "q23",
+    "q": "A team that works in continuous flow, without iterations, asks when it should demonstrate its work. What does the 2017 Agile Practice Guide say about flow-based teams?",
+    "options": [
+      "Never, since flow-based teams release without review",
+      "Only once, when the whole product is complete",
+      "At the end of every calendar month, without any exception",
+      "When enough features have built up into a coherent set"
+    ],
+    "answer": 3,
+    "explanation": "Iteration-based teams demonstrate all completed items at the end of the iteration. Flow-based teams demonstrate when it is time to do so, usually when enough features have accumulated into a coherent set. The guideline is still at least once every two weeks.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.5",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 70,
+        "label": "Agile Practice Guide, First Edition, 5.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A product owner with a finance background must decide the order of several features that depend on a complicated technical architecture she does not know well. What does the 2017 Agile Practice Guide suggest?",
+    "options": [
+      "Ask people with deep expertise, such as architects, for help",
+      "Hand the ordering of the whole backlog to the developers instead",
+      "Leave those features out of the backlog entirely",
+      "Let the scrum master decide the order for her"
+    ],
+    "answer": 0,
+    "explanation": "The product owner ranks the work by business value and typically has a business background. Sometimes the product owner requests help from people with deep domain expertise, such as architects, or deep customer expertise, such as product managers.",
+    "ref": "Agile Practice Guide, First Edition, 4.3.2",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 55,
+        "label": "Agile Practice Guide, First Edition, 4.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A team calls itself agile but has not demonstrated or released anything in three months. According to the 2017 Agile Practice Guide, what does this suggest?",
+    "options": [
+      "The team is saving its feedback for a single final review",
+      "The team cannot learn fast enough and may need coaching",
+      "The team has matured beyond the need for feedback",
+      "The team should move to longer iterations to catch up"
+    ],
+    "answer": 1,
+    "explanation": "Frequent delivery of a working product is a fundamental part of what makes a project agile. A team that does not demonstrate or release cannot learn fast enough and is likely not adopting agile techniques; it may need additional coaching.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.5",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 70,
+        "label": "Agile Practice Guide, First Edition, 5.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A skilled team delivers on time every iteration, yet customers ignore most of the features. The product owner is rarely available and gives no guidance on value. Which critical success factor is missing?",
+    "options": [
+      "A longer iteration",
+      "A larger development team",
+      "Strong product ownership",
+      "A detailed project schedule"
+    ],
+    "answer": 2,
+    "explanation": "A critical success factor for agile teams is strong product ownership. Without attention to the highest value for the customer, the team may create features that are not appreciated, wasting effort.",
+    "ref": "Agile Practice Guide, First Edition, 4.3.2",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 55,
+        "label": "Agile Practice Guide, First Edition, 4.3.2"
+      }
+    ]
   }
 ]

@@ -99,7 +99,7 @@ Two related approaches help decide **what** to build before building it:
 
 ## Iterative, incremental and agile
 
-@source Agile Practice Guide, 3.9; Agile Practice Guide, First Edition, 3.1.2; Agile Practice Guide, First Edition, 3.1.3
+@source Agile Practice Guide, 3.9; Agile Practice Guide, First Edition, 3.1.2; Agile Practice Guide, First Edition, 3.1.3; Agile Practice Guide, First Edition, Table 3-1
 
 Approaches sit on a **continuum** from predictive to agile, with iterative and incremental approaches in between.
 
@@ -116,6 +116,8 @@ Approaches sit on a **continuum** from predictive to agile, with iterative and i
 - Because the highest-value work is delivered first, agile can give an **earlier return on investment**.
 - A predictive project typically delivers business value only **at the end**.
 - "Hybrid" simply means a mix. It says little unless you describe which parts are predictive and which are agile.
+
+> **On the exam.** Table 3-1 of the 2017 guide gives each life cycle a few words per column, and questions quote them. **Predictive:** requirements **fixed**, activities performed once for the entire project, a **single delivery**, goal **manage cost**. **Iterative:** requirements dynamic, activities repeated until correct, a **single delivery**, goal **correctness of the solution**. **Incremental:** requirements dynamic, activities performed once for a given increment, **frequent smaller deliveries**, goal **speed**. **Agile:** requirements dynamic, activities repeated until correct, **frequent small deliveries**, goal **customer value** through frequent deliveries and feedback. An iterative life cycle may take **longer**, because it is optimized for learning, not for speed of delivery.
 
 ## How an agile life cycle runs
 
@@ -189,6 +191,38 @@ The outline asks which **enterprise environmental factors (EEFs)** and **organiz
 **Which structure suits adaptive work?** A **project-oriented** or strong matrix structure with dedicated, cross-functional, preferably colocated teams. A **functional** or weak matrix structure makes it hard, because team members answer to department managers and work on several things at once.
 
 Where the organization is not ready, introduce agile practices **gradually**, one project at a time, with visible executive sponsorship.
+
+## Agile contracts, the agile PMO and change
+
+@source Agile Practice Guide, First Edition, 6.3; Agile Practice Guide, First Edition, 6.6; Agile Practice Guide, First Edition, 6.1.1
+
+Two parts of the organization that the 2017 guide describes in detail are how suppliers are **contracted** and how the **PMO** behaves. Both can make adaptive work easier or harder.
+
+**Contracts.** The Manifesto values customer collaboration over contract negotiation. A contract can share risk and reward so that both sides win:
+
+| Technique | How it works |
+|---|---|
+| **Multi-tiered structure** | Fixed items (warranties, arbitration) sit in a **master agreement**; items that may change (rates, product descriptions) in a **schedule of services**; scope, schedule and budget in a lightweight **statement of work** |
+| **Emphasize value delivered** | Milestones and payments follow **value-driven deliverables**, not phase gates or intermediate documents |
+| **Fixed-price increments** | The scope is split into small fixed-price pieces, such as user stories |
+| **Not-to-exceed time and materials** | The total budget is **capped**; a new idea replaces original work of the same size |
+| **Graduated time and materials** | A **higher** hourly rate for early delivery, a **lower** one for late delivery |
+| **Early cancellation option** | If enough value has been delivered, the customer may stop and pay a **cancellation fee** instead of buying the rest |
+| **Dynamic scope option** | With a fixed budget, the customer may **vary the scope** at set points |
+| **Team augmentation** | The supplier's people join the customer's team; the **team** is funded, not a scope. The most collaborative form. |
+| **Favor full-service suppliers** | Prefer suppliers that deliver complete value over many suppliers that each do one piece |
+
+**The agile PMO** has three characteristics:
+
+| An agile PMO is | Meaning |
+|---|---|
+| **Value-driven** | It works like a consultancy, giving each project what that project needs: templates for one, coaching for another |
+| **Invitation-oriented** | It does not mandate. Those who are interested are invited to use its services, which raises engagement |
+| **Multidisciplinary** | It has skills beyond project management, such as organizational design and change management |
+
+Some PMOs become **agile centers of excellence**: they provide standards and templates, training and mentoring, coordination between agile teams, organizational learning (velocity profiles, retrospective findings), product owner training, help in recruiting team leaders, and specialists such as retrospective facilitators.
+
+**Change management.** Two things make it matter more in agile work: **accelerated delivery** (the receiving organization must be able to absorb outputs at the faster pace, or the return is delayed) and the **change to agile approaches itself** (more handoffs, and rework that may be viewed negatively).
 
 ## Exam tips
 
