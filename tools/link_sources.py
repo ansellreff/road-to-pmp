@@ -25,7 +25,7 @@ CACHE = ROOT / ".cache" / "books"
 # Page ranges (PDF pages) of the parts of each book, used to search in the right place.
 REGIONS = {
     "pmbok8": {"standard": (24, 107), "guide": (108, 321), "appendix": (322, 369), "glossary": (370, 381)},
-    "pmbok7": {"standard": (28, 87), "guide": (96, 291)},
+    "pmbok7": {"standard": (28, 87), "guide": (96, 291), "glossary": (328, 349)},
 }
 
 # Books whose sections are looked up in their table of contents, with the PDF page
@@ -41,6 +41,14 @@ TOC_BOOKS = {
     "agile": 18,
     "pmbok6": 33,
     "agile1": 16,  # no PDF outline: its toc.txt comes from tools/build_toc_agile1.py
+    "baguide": 48,
+}
+
+# Books whose headings have no numbers: a section is named by its title, for example
+# "The Scrum Guide, Sprint Planning". The value is the page to open when no title is given.
+TITLE_BOOKS = {
+    "scrum": 2,
+    "bapg": 12,
 }
 
 _pages: dict[str, list[str]] = {}
@@ -82,6 +90,12 @@ def which_book(part: str) -> str | None:
         return "pmbok6"
     if "exam content outline" in lowered:
         return "eco"
+    if "scrum guide" in lowered:
+        return "scrum"
+    if "business analysis for practitioners" in lowered:
+        return "bapg"
+    if "guide to business analysis" in lowered:
+        return "baguide"
     if "code of ethics" in lowered:
         return "ethics"
     if "process groups" in lowered:
@@ -131,6 +145,15 @@ def resolve(part: str) -> tuple[str, int] | None:
             page = find_line("eco", rf"^Domain {domain.group(1)}\b", 7)
             return ("eco", page) if page else None
         return book, 5
+
+    if book in TITLE_BOOKS:
+        title = part.split(",", 1)[1].strip() if "," in part else ""
+        if not title:
+            return book, TITLE_BOOKS[book]
+        hit = re.search(
+            rf"^\s*(?:\d+: )?{re.escape(title)}\s+\[p(\d+)\]", toc(book), re.MULTILINE | re.IGNORECASE
+        )
+        return (book, int(hit.group(1))) if hit else None
 
     if book in TOC_BOOKS:
         # Their tables of contents list every section: "3.3.2. Title  [p83]" or "3.4.2 TITLE  [p87]".

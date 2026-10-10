@@ -45,6 +45,21 @@
     "label": "Agile Practice Guide, Glossary (user story)"
   },
   {
+    "book": "baguide",
+    "page": 146,
+    "label": "PMI Guide to Business Analysis, 4.6.2.5"
+  },
+  {
+    "book": "baguide",
+    "page": 260,
+    "label": "PMI Guide to Business Analysis, 7.3.2.9"
+  },
+  {
+    "book": "baguide",
+    "page": 268,
+    "label": "PMI Guide to Business Analysis, 7.5.2.1"
+  },
+  {
     "book": "estimating",
     "page": 63,
     "label": "Practice Standard for Project Estimating, 4.3"

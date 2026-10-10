@@ -43,7 +43,7 @@ Things that affect the order besides value: **risk** (do risky items early to le
 
 ## Prioritization techniques
 
-@source Agile Practice Guide, 5.2.1; PMBOK 8, Guide section 5, Prioritization/ranking
+@source Agile Practice Guide, 5.2.1; PMBOK 8, Guide section 5, Prioritization/ranking; PMI Guide to Business Analysis, 7.7.2.5; PMI Guide to Business Analysis, 4.3.2.7
 
 | Technique | How it works | Good for |
 |---|---|---|
@@ -73,6 +73,8 @@ Things that affect the order besides value: **risk** (do risky items early to le
 | **Delighter** | Unexpected. Its presence delights; its absence is not missed. | A free room upgrade |
 
 **WSJF example.** Item A has a cost of delay of 12 and a size of 6: 12 ÷ 6 = **2**. Item B has a cost of delay of 9 and a size of 3: 9 ÷ 3 = **3**. **B goes first**, although A is worth more, because B delivers value faster.
+
+PMI's business analysis guide writes the top of the fraction out in full: WSJF = (business value + time criticality + risk reduction or opportunity enablement) ÷ effort. It also notes that the full Kano model has five categories and that many organizations use only the three above.
 
 ## MVP, MMP and MBI
 
@@ -175,4 +177,4 @@ Delivering value is not only about speed. **Continuous attention to technical ex
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, sections 2.1, 4.4.2, 5.2.1, 5.2.6 and 5.2.8 and its glossary; PMBOK Guide, Eighth Edition, the Guide section 2.5.3 and the section 5 entry on prioritization. The MoSCoW and Kano detail tables, the hotel and food-delivery examples, the WSJF example, risk as a factor in ordering, and the predictive versus agile stakeholder comparison follow standard PMI teaching or are my own. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, sections 2.1, 4.4.2, 5.2.1, 5.2.6 and 5.2.8 and its glossary; PMBOK Guide, Eighth Edition, the Guide section 2.5.3 and the section 5 entry on prioritization. MoSCoW, Kano, buy a feature and WSJF are described in The PMI Guide to Business Analysis, sections 7.7.2.5 and 4.3.2.7. The MoSCoW rules of thumb, the hotel and food-delivery examples, the WSJF example, risk as a factor in ordering, and the predictive versus agile stakeholder comparison follow standard PMI teaching or are my own. Written in original wording for personal study.*

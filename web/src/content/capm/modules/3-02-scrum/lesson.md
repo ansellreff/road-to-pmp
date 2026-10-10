@@ -10,7 +10,7 @@
 
 ## What Scrum is
 
-@source Agile Practice Guide, A3.2
+@source Agile Practice Guide, A3.2; The Scrum Guide, Scrum Theory
 
 Scrum is a **single-team process framework** used to manage product development. It consists of **roles, events, artifacts and rules**, and delivers working product **iteratively**.
 
@@ -30,7 +30,7 @@ Scrum is the most widely used agile framework, so it is the one most often teste
 
 ## The three roles
 
-@source Agile Practice Guide, A3.2; Agile Practice Guide, 4.4.2
+@source Agile Practice Guide, A3.2; Agile Practice Guide, 4.4.2; The Scrum Guide, Scrum Team
 
 | Role | Responsible for | Key points |
 |---|---|---|
@@ -58,7 +58,7 @@ Scrum is the most widely used agile framework, so it is the one most often teste
 
 ## The sprint and its events
 
-@source Agile Practice Guide, A3.2; Agile Practice Guide, 5.2.3
+@source Agile Practice Guide, A3.2; Agile Practice Guide, 5.2.3; The Scrum Guide, The Sprint; The Scrum Guide, Scrum Events
 
 | Event | Purpose | Who | Timebox for a one-month sprint |
 |---|---|---|---|
@@ -76,7 +76,7 @@ The order inside a sprint: **planning → daily work with a daily scrum → revi
 
 ## Sprint planning and backlog refinement
 
-@source Agile Practice Guide, 5.2.3; Agile Practice Guide, 5.2.2
+@source Agile Practice Guide, 5.2.3; Agile Practice Guide, 5.2.2; The Scrum Guide, Sprint Planning
 
 **Sprint planning** opens the sprint.
 
@@ -95,7 +95,7 @@ The order inside a sprint: **planning → daily work with a daily scrum → revi
 
 ## The daily scrum
 
-@source Agile Practice Guide, 5.2.4
+@source Agile Practice Guide, 5.2.4; The Scrum Guide, Daily Scrum
 
 A meeting of **no more than 15 minutes**, held every day, in which the team coordinates and commits to each other. Each person answers three questions:
 
@@ -110,7 +110,7 @@ A meeting of **no more than 15 minutes**, held every day, in which the team coor
 
 ## Sprint review and sprint retrospective
 
-@source Agile Practice Guide, 5.2.6; Agile Practice Guide, 5.2.7
+@source Agile Practice Guide, 5.2.6; Agile Practice Guide, 5.2.7; The Scrum Guide, Sprint Review; The Scrum Guide, Sprint Retrospective
 
 | | **Sprint review** | **Sprint retrospective** |
 |---|---|---|
@@ -134,7 +134,7 @@ About the retrospective:
 
 ## Definition of done and the increment
 
-@source Agile Practice Guide, 5.2.8
+@source Agile Practice Guide, 5.2.8; The Scrum Guide, Commitment: Definition of Done
 
 The **definition of done (DoD)** is the team's shared checklist of what "finished" means. Typically an increment is:
 
@@ -157,7 +157,7 @@ Why it matters:
 
 ## Scrum at a glance
 
-@source Agile Practice Guide, A3.2
+@source Agile Practice Guide, A3.2; The Scrum Guide, Scrum Values
 
 | 3 roles | 5 events | 3 artifacts |
 |---|---|---|
@@ -183,4 +183,4 @@ Five Scrum values guide behavior: **commitment, focus, openness, respect and cou
 
 ---
 
-*Source: Agile Practice Guide, Second Edition, Annex A3.2 (Scrum), section 4.4.2 (agile roles) and sections 5.2.1 to 5.2.8 (common agile practices). The three pillars, the five Scrum values, the event timeboxes other than the daily scrum, the fixed sprint goal and the handling of unfinished work come from the Scrum Guide and standard PMI teaching, not from PMI's guide. Written in original wording for personal study.*
+*Source: Agile Practice Guide, Second Edition, Annex A3.2 (Scrum), section 4.4.2 (agile roles) and sections 5.2.1 to 5.2.8 (common agile practices). The three pillars, the five Scrum values, the event timeboxes, the fixed sprint goal and the handling of unfinished work come from the Scrum Guide (2020). The three daily questions come from the Agile Practice Guide; the 2020 Scrum Guide no longer prescribes them, and it calls the roles accountabilities and the development team Developers. Written in original wording for personal study.*

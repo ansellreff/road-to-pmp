@@ -70,12 +70,12 @@
     ],
     "answer": 1,
     "explanation": "INVEST: independent, negotiable, valuable, estimable, small, testable. A small story fits within one iteration.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 4, User stories",
+    "ref": "PMI Guide to Business Analysis, 7.5.2.1",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 248,
-        "label": "PMBOK 8, Guide section 4, User stories"
+        "book": "baguide",
+        "page": 268,
+        "label": "PMI Guide to Business Analysis, 7.5.2.1"
       }
     ]
   },
@@ -270,8 +270,13 @@
     ],
     "answer": 0,
     "explanation": "An epic is a large body of work that is broken down into features and user stories small enough to fit in an iteration.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 4, Backlog",
+    "ref": "PMI Guide to Business Analysis, 4.6.2.5; PMBOK 8, Guide section 4, Backlog",
     "links": [
+      {
+        "book": "baguide",
+        "page": 146,
+        "label": "PMI Guide to Business Analysis, 4.6.2.5"
+      },
       {
         "book": "pmbok8",
         "page": 219,
@@ -430,8 +435,13 @@
     ],
     "answer": 0,
     "explanation": "A very large estimate signals that the item is too big and too uncertain. Stories should be small enough to complete within an iteration, so it is split.",
-    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.2",
+    "ref": "PMI Guide to Business Analysis, 7.5.2.1; Agile Practice Guide, 5.2.2",
     "links": [
+      {
+        "book": "baguide",
+        "page": 268,
+        "label": "PMI Guide to Business Analysis, 7.5.2.1"
+      },
       {
         "book": "agile",
         "page": 82,

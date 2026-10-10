@@ -175,12 +175,12 @@
     ],
     "answer": 1,
     "explanation": "A Pareto chart ranks causes from most to least frequent, showing the vital few. It reflects the 80/20 principle: about 80% of problems come from 20% of causes.",
-    "ref": "PMI standard teaching; PMBOK 8, Guide section 5, Root cause analysis",
+    "ref": "PMI Guide to Business Analysis, 4.2.2.7",
     "links": [
       {
-        "book": "pmbok8",
-        "page": 301,
-        "label": "PMBOK 8, Guide section 5, Root cause analysis"
+        "book": "baguide",
+        "page": 114,
+        "label": "PMI Guide to Business Analysis, 4.2.2.7"
       }
     ]
   },

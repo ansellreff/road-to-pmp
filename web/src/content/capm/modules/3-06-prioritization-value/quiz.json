@@ -50,12 +50,12 @@
     ],
     "answer": 0,
     "explanation": "Could-have items are nice to have and are the first to go. Must-have items are essential to the release and are never dropped.",
-    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.1",
+    "ref": "PMI Guide to Business Analysis, 7.7.2.5",
     "links": [
       {
-        "book": "agile",
-        "page": 81,
-        "label": "Agile Practice Guide, 5.2.1"
+        "book": "baguide",
+        "page": 279,
+        "label": "PMI Guide to Business Analysis, 7.7.2.5"
       }
     ]
   },
@@ -90,12 +90,12 @@
     ],
     "answer": 1,
     "explanation": "A delighter is unexpected. Its presence pleases the customer and its absence is not missed.",
-    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.1",
+    "ref": "PMI Guide to Business Analysis, 4.3.2.7",
     "links": [
       {
-        "book": "agile",
-        "page": 81,
-        "label": "Agile Practice Guide, 5.2.1"
+        "book": "baguide",
+        "page": 124,
+        "label": "PMI Guide to Business Analysis, 4.3.2.7"
       }
     ]
   },

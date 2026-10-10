@@ -43,5 +43,55 @@
     "book": "agile",
     "page": 143,
     "label": "Agile Practice Guide, A3.2"
+  },
+  {
+    "book": "scrum",
+    "page": 4,
+    "label": "The Scrum Guide, Scrum Theory"
+  },
+  {
+    "book": "scrum",
+    "page": 5,
+    "label": "The Scrum Guide, Scrum Values"
+  },
+  {
+    "book": "scrum",
+    "page": 6,
+    "label": "The Scrum Guide, Scrum Team"
+  },
+  {
+    "book": "scrum",
+    "page": 8,
+    "label": "The Scrum Guide, Scrum Events"
+  },
+  {
+    "book": "scrum",
+    "page": 8,
+    "label": "The Scrum Guide, The Sprint"
+  },
+  {
+    "book": "scrum",
+    "page": 9,
+    "label": "The Scrum Guide, Sprint Planning"
+  },
+  {
+    "book": "scrum",
+    "page": 10,
+    "label": "The Scrum Guide, Daily Scrum"
+  },
+  {
+    "book": "scrum",
+    "page": 10,
+    "label": "The Scrum Guide, Sprint Review"
+  },
+  {
+    "book": "scrum",
+    "page": 11,
+    "label": "The Scrum Guide, Sprint Retrospective"
+  },
+  {
+    "book": "scrum",
+    "page": 13,
+    "label": "The Scrum Guide, Commitment: Definition of Done"
   }
 ]

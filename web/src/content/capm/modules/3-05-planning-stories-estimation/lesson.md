@@ -46,7 +46,7 @@ The **backlog** is an **ordered list of the work to be done**, often written as 
 
 ## User stories
 
-@source PMBOK 8, Guide section 4, User stories; Agile Practice Guide, Glossary (user story)
+@source PMBOK 8, Guide section 4, User stories; Agile Practice Guide, Glossary (user story); PMI Guide to Business Analysis, 7.3.2.9
 
 A **user story** is a brief description of an **outcome for a specific user**. It is a **promise for a conversation** to clarify the details, not a complete specification.
 
@@ -74,9 +74,9 @@ Example: "**As a** frequent traveler, **I want** to store my passport details **
 
 ## What makes a good story: INVEST
 
-@source PMBOK 8, Guide section 4, User stories; Agile Practice Guide, Glossary (definition of ready)
+@source PMBOK 8, Guide section 4, User stories; Agile Practice Guide, Glossary (definition of ready); PMI Guide to Business Analysis, 7.5.2.1
 
-INVEST is a widely taught checklist for stories. It does not appear in PMI's guides, which describe only what a story contains and when it is ready.
+INVEST is a widely taught checklist for stories. PMI describes it in The PMI Guide to Business Analysis as the main way to check that a story is good and ready for development.
 
 | Letter | Meaning | Why |
 |---|---|---|
@@ -187,4 +187,4 @@ Example of a spike: "Spend two days finding out whether the payment provider's i
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, the Guide sections 4 and 5 (backlog, user stories, agile release planning, backlog refinement, velocity); Agile Practice Guide, Second Edition, sections 5.2.1 to 5.2.3 and its glossary; Practice Standard for Project Estimating, Second Edition, section 4.3 (relative estimating). The five planning levels as a table, the epic, feature and task definitions, the three Cs, INVEST, the kinds of iteration, and the forecast example follow standard PMI teaching or are my own. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, the Guide sections 4 and 5 (backlog, user stories, agile release planning, backlog refinement, velocity); Agile Practice Guide, Second Edition, sections 5.2.1 to 5.2.3 and its glossary; Practice Standard for Project Estimating, Second Edition, section 4.3 (relative estimating); The PMI Guide to Business Analysis, sections 7.3.2.9 (user story), 7.5.2.1 (INVEST) and 4.6.2.5 (epics). The five planning levels as a table, the feature and task definitions, the three Cs, the kinds of iteration, and the forecast example follow standard PMI teaching or are my own. Written in original wording for personal study.*

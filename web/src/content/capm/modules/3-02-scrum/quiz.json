@@ -350,8 +350,13 @@
     ],
     "answer": 0,
     "explanation": "Work that does not meet the definition of done is not done. The sprint length is fixed, so the item goes back to the backlog.",
-    "ref": "PMI standard teaching; Agile Practice Guide, 5.2.8",
+    "ref": "The Scrum Guide, Commitment: Definition of Done; Agile Practice Guide, 5.2.8",
     "links": [
+      {
+        "book": "scrum",
+        "page": 13,
+        "label": "The Scrum Guide, Commitment: Definition of Done"
+      },
       {
         "book": "agile",
         "page": 87,
@@ -370,8 +375,13 @@
     ],
     "answer": 3,
     "explanation": "The product owner owns the backlog and its order. New requests go to the product owner, so the team can stay focused on the sprint's work.",
-    "ref": "PMI standard teaching; Agile Practice Guide, 4.4.2",
+    "ref": "The Scrum Guide, The Sprint; Agile Practice Guide, 4.4.2",
     "links": [
+      {
+        "book": "scrum",
+        "page": 8,
+        "label": "The Scrum Guide, The Sprint"
+      },
       {
         "book": "agile",
         "page": 67,

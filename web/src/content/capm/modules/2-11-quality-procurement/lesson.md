@@ -63,7 +63,7 @@ Example of grade and quality: an economy hotel room (low grade) that is clean an
 
 ## Quality tools
 
-@source PMBOK 8, Guide section 5, Control charts; PMBOK 8, Guide section 5, Cause-and-effect diagram; PMBOK 8, Guide section 5, Flowchart; PMBOK 6, 8.2.2.4; PMBOK 6, 8.3.2.1
+@source PMBOK 8, Guide section 5, Control charts; PMBOK 8, Guide section 5, Cause-and-effect diagram; PMBOK 8, Guide section 5, Flowchart; PMBOK 6, 8.2.2.4; PMBOK 6, 8.3.2.1; PMI Guide to Business Analysis, 4.2.2.7
 
 | Tool | What it shows | Use it to |
 |---|---|---|
@@ -201,4 +201,4 @@ A **procurement audit** is a structured review of the procurement process and co
 
 ---
 
-*Source: PMBOK Guide, Eighth Edition, Appendix X4 (Procurement), the Standard section 3.5, and the Guide sections 4 and 5. Several points are not in the 8th edition text and come from the PMBOK Guide, Sixth Edition: grade versus quality (X4.5 and the introduction to section 8); the histogram, scatter diagram and check sheet (8.2.2.4 and 8.3.2.1); the fixed-price and cost-plus sub-types FFP, FPIF, FP-EPA, CPFF, CPIF and CPAF (12.1.1.6); and who has the authority to sign contracts (12.2.2.5). The Pareto chart and the rule of seven are in neither edition and follow standard PMI teaching. Written in original wording for personal study.*
+*Source: PMBOK Guide, Eighth Edition, Appendix X4 (Procurement), the Standard section 3.5, and the Guide sections 4 and 5. Several points are not in the 8th edition text and come from the PMBOK Guide, Sixth Edition: grade versus quality (X4.5 and the introduction to section 8); the histogram, scatter diagram and check sheet (8.2.2.4 and 8.3.2.1); the fixed-price and cost-plus sub-types FFP, FPIF, FP-EPA, CPFF, CPIF and CPAF (12.1.1.6); and who has the authority to sign contracts (12.2.2.5). The Pareto chart is described in The PMI Guide to Business Analysis, section 4.2.2.7. The rule of seven is in none of these books and follows standard PMI teaching. Written in original wording for personal study.*

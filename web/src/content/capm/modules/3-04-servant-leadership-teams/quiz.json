@@ -410,12 +410,12 @@
     ],
     "answer": 1,
     "explanation": "Osmotic communication is picking up useful information by overhearing teammates who work in the same space.",
-    "ref": "PMI standard teaching; Agile Practice Guide, First Edition, A3.5",
+    "ref": "PMBOK 7, Glossary (Osmotic Communication)",
     "links": [
       {
-        "book": "agile1",
-        "page": 121,
-        "label": "Agile Practice Guide, First Edition, A3.5"
+        "book": "pmbok7",
+        "page": 338,
+        "label": "PMBOK 7, Glossary (Osmotic Communication)"
       }
     ]
   },
