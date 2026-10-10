@@ -463,5 +463,125 @@
         "label": "PMI Guide to Business Analysis, 9.4"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "A new billing system has passed its tests. The help desk, however, has no release notes, no documented workarounds and no contingency plan. Which kind of readiness is lacking?",
+    "options": [
+      "Data readiness",
+      "People readiness",
+      "Transition and production support readiness",
+      "Cultural readiness"
+    ],
+    "answer": 2,
+    "explanation": "Transition and production support readiness asks whether operations and support services are ready to answer questions, whether release notes and workarounds are documented, and whether continuity and contingency plans are in place.",
+    "ref": "Business Analysis for Practitioners, Figure 7-16",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 134,
+        "label": "Business Analysis for Practitioners, Figure 7-16"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Staff have been trained on a new system and the servers are ready, but many employees say openly that they will keep using the old spreadsheets, and no one is championing the change. Which kind of readiness is lacking?",
+    "options": [
+      "Cultural readiness",
+      "Production environment readiness",
+      "Data readiness",
+      "People readiness"
+    ],
+    "answer": 0,
+    "explanation": "Cultural readiness asks whether the organizational culture is supportive of the change, so that people are open-minded, and whether champions are engaged and helping stakeholders see the benefits.",
+    "ref": "Business Analysis for Practitioners, Figure 7-16",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 134,
+        "label": "Business Analysis for Practitioners, Figure 7-16"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A readiness assessment finds that the customer records to be migrated have not been validated. How does Business Analysis for Practitioners say such a gap should be treated?",
+    "options": [
+      "As proof that the project has failed",
+      "As a risk to reaching the end state, with a response",
+      "As a defect in the acceptance criteria, to be logged",
+      "As outside the scope of business analysis"
+    ],
+    "answer": 1,
+    "explanation": "A readiness assessment identifies gaps in readiness that are considered risks to achieving the end state, along with risk responses for addressing them.",
+    "ref": "Business Analysis for Practitioners, Figure 7-16",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 134,
+        "label": "Business Analysis for Practitioners, Figure 7-16"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "At a go/no-go meeting, the decision makers approve releasing the new system to two of five regions now. Is this a \"go\"?",
+    "options": [
+      "No: a go must release the entire solution",
+      "No: a partial release is always a no-go",
+      "Only if the sponsor later confirms it in writing",
+      "Yes: a go permits release in whole or in part"
+    ],
+    "answer": 3,
+    "explanation": "A \"go\" permits the release of the solution in whole or in part. A \"no-go\" either delays or disapproves the release.",
+    "ref": "Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 99,
+        "label": "Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "An analyst is preparing a go/no-go meeting. The stakeholders have never agreed how the decision will be reached: by vote, by consensus, or by the sponsor alone. What does Business Analysis for Practitioners say about this?",
+    "options": [
+      "It can be settled at the end of the meeting",
+      "The analyst should make the decision herself",
+      "An agreed decision model should already be in place",
+      "The project manager decides during the meeting how they will vote"
+    ],
+    "answer": 2,
+    "explanation": "An agreed-upon decision model for how to reach a decision should already be in place before the go/no-go decision is made.",
+    "ref": "Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 99,
+        "label": "Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A company tracks forty measurements of its order process. Management picks three of them as the critical signs of progress toward this year's business objectives. What have these three become?",
+    "options": [
+      "Key performance indicators",
+      "Acceptance criteria",
+      "Business objectives",
+      "Business rules"
+    ],
+    "answer": 0,
+    "explanation": "Not all metrics are KPIs. A metric becomes a key performance indicator when it is selected as a key indicator of performance critical to achieving specific business objectives. KPIs are not themselves goals or objectives.",
+    "ref": "Business Analysis for Practitioners, Figure 7-11",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 128,
+        "label": "Business Analysis for Practitioners, Figure 7-11"
+      }
+    ]
   }
 ]

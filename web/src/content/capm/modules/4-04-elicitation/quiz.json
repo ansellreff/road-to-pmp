@@ -464,5 +464,125 @@
         "label": "PMI Guide to Business Analysis, 6.4.2.4"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "An analyst sits beside a dispatcher for a morning. She says nothing, records each step with its timing, and saves her questions for the end of the shift. Which kind of observation is this?",
+    "options": [
+      "Active observation",
+      "Participatory observation",
+      "Passive observation",
+      "Simulation"
+    ],
+    "answer": 2,
+    "explanation": "In passive observation the practitioner observes without interrupting, asking questions or seeking clarification, and records what happens. Questions may be asked later to clarify and validate the notes.",
+    "ref": "Business Analysis for Practitioners, How to Elicit Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 64,
+        "label": "Business Analysis for Practitioners, How to Elicit Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "To understand how orders are picked, an analyst spends a day picking orders herself alongside the warehouse staff. Which kind of observation is this?",
+    "options": [
+      "Passive observation",
+      "Participatory observation",
+      "Active observation",
+      "Document analysis"
+    ],
+    "answer": 1,
+    "explanation": "In participatory observation the observer takes part in performing the activities. It raises questions that would not otherwise have been thought of, and lets the observer experience what the workers go through.",
+    "ref": "Business Analysis for Practitioners, How to Elicit Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 64,
+        "label": "Business Analysis for Practitioners, How to Elicit Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "In idea sessions, two senior managers do most of the talking and the junior staff stay quiet. Which technique from Business Analysis for Practitioners addresses this directly?",
+    "options": [
+      "A longer brainstorming session",
+      "A structured interview with each manager",
+      "A focus group led by one of the managers",
+      "Brainwriting"
+    ],
+    "answer": 3,
+    "explanation": "In brainwriting participants first write their ideas down individually; the ideas are then collected and shared anonymously. People who are uncomfortable speaking in a group are heard, and nobody dominates.",
+    "ref": "Business Analysis for Practitioners, Figure 7-3",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 118,
+        "label": "Business Analysis for Practitioners, Figure 7-3"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A brainstorming session has produced ninety sticky notes with no obvious order. The analyst wants the group to discover the themes among them. Which tool fits?",
+    "options": [
+      "An affinity diagram",
+      "A requirements traceability matrix",
+      "A wireframe",
+      "A force field analysis"
+    ],
+    "answer": 0,
+    "explanation": "Affinity mapping organizes ideas into clusters of similar ideas, which the group then labels. It is typically used after brainstorming, when many ideas have been generated and it is hard to see how they relate.",
+    "ref": "Business Analysis for Practitioners, Figure 7-2",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 116,
+        "label": "Business Analysis for Practitioners, Figure 7-2"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A survey shows that customers who use the mobile app also buy more. A manager concludes that the app makes people buy more. Which mistake in survey data analysis does Business Analysis for Practitioners warn against here?",
+    "options": [
+      "Using closed-ended questions",
+      "Surveying too many customers",
+      "Treating correlation like causation",
+      "Comparing new data with previous data"
+    ],
+    "answer": 2,
+    "explanation": "The guide lists three top mistakes: being too quick to interpret results, treating correlation like causation, and missing the nuances in qualitative natural-language data.",
+    "ref": "Business Analysis for Practitioners, Figure 7-22",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 143,
+        "label": "Business Analysis for Practitioners, Figure 7-22"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "An analyst needs the views of 4,000 customers in twelve countries within two weeks, on a small budget. She also wants answers that are easy to count. Which choice fits best?",
+    "options": [
+      "Unstructured interviews with every customer in turn",
+      "A focus group held in the head office",
+      "Participatory observation in each country",
+      "An online survey with mostly closed-ended questions"
+    ],
+    "answer": 3,
+    "explanation": "A survey collects a large amount of information from a large, dispersed group in a short time at relatively small cost. Closed-ended questions offer a limited choice of answers and are easier to quantify and analyze.",
+    "ref": "Business Analysis for Practitioners, Figure 7-21",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 142,
+        "label": "Business Analysis for Practitioners, Figure 7-21"
+      }
+    ]
   }
 ]

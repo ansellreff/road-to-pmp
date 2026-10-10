@@ -113,5 +113,30 @@
     "book": "bapg",
     "page": 64,
     "label": "Business Analysis for Practitioners, How to Elicit Solution Information"
+  },
+  {
+    "book": "bapg",
+    "page": 116,
+    "label": "Business Analysis for Practitioners, Figure 7-2"
+  },
+  {
+    "book": "bapg",
+    "page": 118,
+    "label": "Business Analysis for Practitioners, Figure 7-3"
+  },
+  {
+    "book": "bapg",
+    "page": 125,
+    "label": "Business Analysis for Practitioners, Figure 7-9"
+  },
+  {
+    "book": "bapg",
+    "page": 142,
+    "label": "Business Analysis for Practitioners, Figure 7-21"
+  },
+  {
+    "book": "bapg",
+    "page": 143,
+    "label": "Business Analysis for Practitioners, Figure 7-22"
   }
 ]

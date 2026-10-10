@@ -464,5 +464,125 @@
         "label": "PMI Guide to Business Analysis, 3.3.3.1"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "An analyst draws an onion diagram for a new payroll system. Where does she place the payroll clerks who will use the system every day?",
+    "options": [
+      "Layer 1, with the team building the system",
+      "Layer 2, those directly impacted by the change",
+      "Layer 3, those who interact with the people impacted",
+      "Layer 4, the external stakeholders"
+    ],
+    "answer": 1,
+    "explanation": "Layer 1 is the team creating the product. Layer 2 holds the teams or individuals directly impacted by the change, such as a team that will use the new solution.",
+    "ref": "Business Analysis for Practitioners, Figure 7-13",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 131,
+        "label": "Business Analysis for Practitioners, Figure 7-13"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "On the same onion diagram, where does the tax authority belong, given that its rules shape the requirements for the payroll system?",
+    "options": [
+      "Layer 4, as an external stakeholder",
+      "Layer 1, as part of the project team",
+      "Layer 2, as a daily user of the system",
+      "It is left off, being outside the company"
+    ],
+    "answer": 0,
+    "explanation": "Layer 4 holds external stakeholders who can directly influence requirements or will be impacted by the change, such as government agencies, regulators, customers or suppliers.",
+    "ref": "Business Analysis for Practitioners, Figure 7-13",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 131,
+        "label": "Business Analysis for Practitioners, Figure 7-13"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "On a stakeholder engagement assessment matrix, the warehouse manager has a \"C\" under Resistant and a \"D\" under Supportive. What does this tell the analyst?",
+    "options": [
+      "He has already moved from being resistant to being supportive",
+      "He is to be removed from the stakeholder list",
+      "His engagement needs no further attention",
+      "There is a gap between his current and desired engagement"
+    ],
+    "answer": 3,
+    "explanation": "C marks the current engagement level and D the desired level. Where they differ there is a gap, and the practitioner decides on steps to close it.",
+    "ref": "Business Analysis for Practitioners, Figure 7-19",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 139,
+        "label": "Business Analysis for Practitioners, Figure 7-19"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which list gives the five engagement levels of the stakeholder engagement assessment matrix in order?",
+    "options": [
+      "Unknown, opposed, passive, active, sponsor",
+      "Low, medium, high, critical, blocking",
+      "Unaware, resistant, neutral, supportive, leading",
+      "Informed, consulted, responsible, accountable, leading"
+    ],
+    "answer": 2,
+    "explanation": "The matrix classifies each stakeholder as unaware, resistant, neutral, supportive or leading.",
+    "ref": "Business Analysis for Practitioners, Figure 7-19",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 139,
+        "label": "Business Analysis for Practitioners, Figure 7-19"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A team keeps talking about \"the users\" in general and cannot agree which features matter. The analyst creates \"Lexie\", a fictional luxury buyer with goals, habits and a background. What is this tool, and what is it for?",
+    "options": [
+      "A persona, to give the team someone to relate to",
+      "A prototype, to test the screens with real users",
+      "A use case, to list the steps of an interaction",
+      "A survey, to count how many users want a feature"
+    ],
+    "answer": 0,
+    "explanation": "A persona is a fictional character representing a user profile or stakeholder segment. It generates empathy by giving the team \"someone\" to relate to instead of generic users.",
+    "ref": "Business Analysis for Practitioners, Figure 7-14",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 132,
+        "label": "Business Analysis for Practitioners, Figure 7-14"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Over two months, the gap between one stakeholder's current and desired engagement on the matrix has grown wider. According to Business Analysis for Practitioners, what should the analyst do?",
+    "options": [
+      "Lower the desired level so the gap disappears",
+      "Reevaluate what is causing the gap and how well she is communicating",
+      "Stop updating the matrix until the project ends",
+      "Move the stakeholder to the outermost layer of the onion diagram and review it later"
+    ],
+    "answer": 1,
+    "explanation": "The matrix is used throughout the work. If gaps change, and especially if a gap becomes larger, practitioners should reevaluate what may be leading to it and whether they are communicating effectively.",
+    "ref": "Business Analysis for Practitioners, Figure 7-19",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 139,
+        "label": "Business Analysis for Practitioners, Figure 7-19"
+      }
+    ]
   }
 ]

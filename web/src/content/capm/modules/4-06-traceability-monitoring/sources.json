@@ -93,5 +93,15 @@
     "book": "baguide",
     "page": 320,
     "label": "PMI Guide to Business Analysis, 8.4.4"
+  },
+  {
+    "book": "bapg",
+    "page": 137,
+    "label": "Business Analysis for Practitioners, Figure 7-18"
+  },
+  {
+    "book": "bapg",
+    "page": 140,
+    "label": "Business Analysis for Practitioners, Figure 7-20"
   }
 ]

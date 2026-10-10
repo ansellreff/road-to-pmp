@@ -136,6 +136,29 @@ Three good closing questions: "Do you have any other questions?", "Is there anyt
 | **Speedboat** | Problems are written on anchors holding back a boat. A non-confrontational way to find what users dislike. |
 | **Spider web** | Draws the relationships between the product and other products |
 
+## More from the practice guide: observation, brainwriting and surveys
+
+@source Business Analysis for Practitioners, How to Elicit Solution Information; Business Analysis for Practitioners, Figure 7-3; Business Analysis for Practitioners, Figure 7-21; Business Analysis for Practitioners, Figure 7-22; Business Analysis for Practitioners, Figure 7-9; Business Analysis for Practitioners, Figure 7-2
+
+**Four kinds of observation:**
+
+| Kind | What the observer does |
+|---|---|
+| **Passive observation** | Watches **without interrupting** or asking questions, and records what happens. Questions come afterwards. |
+| **Active observation** | **Interrupts** to ask what the worker is doing and why. More information at once, but the work is disturbed. |
+| **Participatory observation** | **Takes part** in the work, and so experiences what the workers experience. |
+| **Simulation** | Uses a tool that **recreates** the work, such as a training version of a system. |
+
+**Other tools the practice guide describes:**
+
+| Tool | What it is | Points the guide makes |
+|---|---|---|
+| **Brainwriting** | Brainstorming in which people first **write their ideas down individually**; the ideas are then passed on and shared **anonymously** | Brings in people who are uncomfortable speaking up, and stops a few voices dominating |
+| **Affinity diagram** | Ideas sorted into **clusters** of similar ideas, each cluster then given a label | Typically used **after brainstorming**, when there are many ideas and no visible pattern. The grouping may be done in silence. |
+| **Focus group** | A facilitated discussion in a small group, a **qualitative** method | The feedback is used to understand customer needs, identify trends, validate hypotheses and refine strategies |
+| **Survey** | Sets of questions for a **large number** of respondents, often widely spread, at low cost | Four modes: face to face, telephone, paper, online. **Closed-ended** questions are easy to quantify; **open-ended** ones give more substance but take longer to analyze. Keep the language simple and the scales consistent. |
+| **Survey data analysis** | Turning raw survey answers into insight | Mistakes to avoid: interpreting too quickly, treating **correlation as causation**, and missing nuances in written answers |
+
 ## Choosing a technique
 
 @source PMI Guide to Business Analysis, 6.3; PMI Guide to Business Analysis, 6.3.2.3

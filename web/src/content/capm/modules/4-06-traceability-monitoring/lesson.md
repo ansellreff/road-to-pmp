@@ -84,7 +84,7 @@ If an item cannot be traced to the product scope, either drop it or reconsider t
 
 ## The traceability matrix
 
-@source PMI Guide to Business Analysis, 8.2.2.5; PMI Guide to Business Analysis, 8.2.2.2
+@source PMI Guide to Business Analysis, 8.2.2.5; PMI Guide to Business Analysis, 8.2.2.2; Business Analysis for Practitioners, Figure 7-18
 
 A **traceability matrix** is a grid that **links product requirements from their origin to the deliverables that satisfy them**.
 
@@ -112,6 +112,8 @@ Other tools:
 | **Story mapping** | Links stories to iterations and to higher-level groups |
 | **Story slicing** | The sliced stories are subsets of the epic |
 | **Interaction matrix** | A **lightweight, temporary** traceability matrix: a snapshot used to check whether requirements are detailed enough |
+
+> **On the exam.** *Business Analysis for Practitioners* also calls the requirements traceability matrix a **traceability matrix** or **coverage matrix**. Its links are **bidirectional**: back to the business and stakeholder requirements a solution requirement comes from, and forward to the deliverables and test cases that satisfy it. It is typical of **predictive** work; adaptive teams sometimes keep a lighter version. Trace only what is worth the effort: the benefit is weighed against the time needed to create and maintain the matrix. Typical attributes are a requirement ID that never changes, description, objectives, status, priority, owner, source, stability, complexity and acceptance criteria.
 
 ## Select and Approve Requirements
 
@@ -197,6 +199,22 @@ A **change request** is an appeal to change a requirement **after the requiremen
 In an adaptive project a new story goes to the **bottom of the backlog** until the next time it is prioritized. Detail can be added to a story **inside** an iteration only if the team agrees.
 
 **Is the product ready for delivery?** With a backlog: the stories planned for the release are **done**, meaning each meets its **acceptance criteria** and the **definition of done**.
+
+## Story mapping in the practice guide
+
+@source Business Analysis for Practitioners, Figure 7-20
+
+A **story map** gives the product backlog a second dimension. A flat backlog shows priority only; the map also shows **how the user moves through the product**.
+
+| Part | Meaning |
+|---|---|
+| **User role** | At the top: whose story the map tells |
+| **Backbone** | The top row: the user's activities, or epics, in the order they happen from **left to right** |
+| **Walking skeleton** | The row directly beneath: the stories that make the product **minimally functional** from end to end, often called the **minimum viable product (MVP)** |
+| **User stories** | Below that, ordered **top to bottom** by priority: functionality for later releases |
+| **Release slices** | Horizontal lines that group the stories into releases |
+
+Why it matters: the top items of a flat backlog may be the highest priority and still make no sense to release together. The map shows which stories a user needs **as a set** to reach a goal.
 
 ## Exam tips
 

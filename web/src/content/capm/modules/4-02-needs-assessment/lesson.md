@@ -271,6 +271,20 @@ Typical contents: description and purpose, business goals and objectives, high-l
 | **Return on investment** | At the end of the initiative | **Sooner**, as features are delivered iteratively |
 | **Feasibility proven** | Late, so the risk is higher | **Early**, by delivering higher-risk features first |
 
+## Tools in the practice guide: finding the cause and judging options
+
+@source Business Analysis for Practitioners, Figure 7-8; Business Analysis for Practitioners, Figure 7-7; Business Analysis for Practitioners, Figure 7-10; Business Analysis for Practitioners, Figure 7-17; Business Analysis for Practitioners, Figure 7-11
+
+*Business Analysis for Practitioners* describes these tools for assessing a need. The outline asks you to match a tool to a situation.
+
+| Tool | What it is | Points the guide makes |
+|---|---|---|
+| **Five whys** | Finding possible root causes by asking "why" again and again | It need **not be exactly five** times. Often used **with a fishbone diagram**, because a problem usually has many root causes. **Human error and inattention are not root causes.** Assess the problem, not the people. Different teams may reach different causes. |
+| **Feasibility analysis** | An in-depth look at proposed solution options from several angles, to see that they are viable | An initial risk assessment that helps decide **whether to proceed**. Elements include **operational**, **technology**, **time** and **cost-effectiveness** feasibility, with constraints, assumptions, product risks, dependencies, culture, value and validation. |
+| **Force field analysis** | Listing the **driving forces** that support a change and the **restraining forces** that resist it | Each force is given a weight. The totals are compared to see the net acceptance of the change. The action plan **strengthens the driving forces and weakens the restraining ones**. |
+| **Real options** | A way of thinking about **when** to decide, not how or why | Keep options open as long as possible, gather information meanwhile, and commit only at the **last responsible moment**, when you must or have good reason to. |
+| **Key performance indicators (KPIs)** | Metrics chosen as key indicators of progress toward business objectives | **Not every metric is a KPI.** A KPI is objective, comparable with earlier results and tied to the business value stream. KPIs are **not goals**, and should not change so often that progress cannot be tracked. |
+
 ## Exam tips
 
 - A stakeholder arrives with a solution already chosen: first **understand the problem**. Ask what need it is meant to meet.

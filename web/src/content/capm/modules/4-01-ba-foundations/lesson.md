@@ -187,6 +187,18 @@ How they relate:
 
 > **On the exam.** The outline also names *Business Analysis for Practitioners: A Practice Guide*, Second Edition. It arranges the same work in **five domains**, each with three practices: **Business Value Assessment** (needs assessment), **Business Analysis Planning** (stakeholder engagement and planning), **Solution Refinement** (elicitation, analysis, and traceability), **Organizational Transition and Solution Evaluation**, and **Business Analysis Stewardship** (effectiveness, capability and integrity of the analyst's own work). Its people are called **business analysis practitioners**.
 
+The practice guide's fifteen practices, three in each domain:
+
+| Domain | Practices |
+|---|---|
+| **Business Value Assessment** | Understand the Situation; Find the Gaps; Define the Solution |
+| **Business Analysis Planning** | Understand Business Analysis Governance; Determine Stakeholder Engagement Approach; Plan Business Analysis Work |
+| **Solution Refinement** | Elicit Solution Information; Analyze Solution Information; Package Solution Information |
+| **Organizational Transition and Solution Evaluation** | Enable Organizational Transition; Facilitate Go/No-Go Decision; Evaluate Solution Performance |
+| **Business Analysis Stewardship** | Promote Business Analysis Effectiveness; Enhance Business Analysis Capability; Lead Business Analysis Work with Integrity |
+
+The guide ends with a chapter of **23 tools and techniques**, each explained under three headings: **What?** (what the tool is), **So what?** (why you would use it) and **Now what?** (how to use it). The modules that follow describe each tool where it is used.
+
 ## The people a business analyst works with
 
 @source PMI Guide to Business Analysis, 3.3.3.1; PMI Guide to Business Analysis, Glossary (Product Owner); PMI Guide to Business Analysis, Glossary (Product Manager); Effective Project Management, Chapter 7, Attendees

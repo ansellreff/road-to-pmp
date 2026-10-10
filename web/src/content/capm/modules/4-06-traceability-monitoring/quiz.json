@@ -463,5 +463,125 @@
         "label": "PMI Guide to Business Analysis, 8.4.2.6"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "An auditor asks an analyst for the project's \"coverage matrix\". The analyst has never heard the term. According to Business Analysis for Practitioners, what is being asked for?",
+    "options": [
+      "The stakeholder engagement assessment matrix",
+      "The responsibility assignment matrix",
+      "The risk probability and impact matrix",
+      "The requirements traceability matrix"
+    ],
+    "answer": 3,
+    "explanation": "A requirements traceability matrix is also called a traceability matrix or coverage matrix. It shows, among other things, that each requirement is covered by deliverables and test cases.",
+    "ref": "Business Analysis for Practitioners, Figure 7-18",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 137,
+        "label": "Business Analysis for Practitioners, Figure 7-18"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A team finds that a solution requirement in its traceability matrix links to no business or stakeholder requirement. What does this suggest?",
+    "options": [
+      "The requirement is the most important one",
+      "The requirement may be out of scope and add no value",
+      "The requirement has already been built, tested and delivered",
+      "The matrix should hold only test cases"
+    ],
+    "answer": 1,
+    "explanation": "An RTM helps ensure that each solution requirement adds value and is in scope by tracing it back to the business need, goals and objectives. A requirement that traces to nothing is a candidate for being out of scope.",
+    "ref": "Business Analysis for Practitioners, Figure 7-18",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 137,
+        "label": "Business Analysis for Practitioners, Figure 7-18"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A small adaptive team wonders whether to keep a full traceability matrix with fifteen attributes for every story. What does Business Analysis for Practitioners advise?",
+    "options": [
+      "Weigh the benefit of tracing against the time it takes to create and maintain",
+      "Always trace every attribute for every requirement, whatever the size of the project",
+      "Never trace requirements in adaptive work",
+      "Let the sponsor fill in the matrix each week"
+    ],
+    "answer": 0,
+    "explanation": "The benefits of tracing need to be weighed against the cost of the time it takes to create, maintain and use the RTM. Only the attributes that provide value should be included. Adaptive teams sometimes use a lighter version.",
+    "ref": "Business Analysis for Practitioners, Figure 7-18",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 137,
+        "label": "Business Analysis for Practitioners, Figure 7-18"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "On a story map, the row just under the backbone holds the stories that make the product work from end to end in its simplest form. What is this row called?",
+    "options": [
+      "The release slice",
+      "The narrative flow",
+      "The walking skeleton",
+      "The product backlog"
+    ],
+    "answer": 2,
+    "explanation": "The walking skeleton sits immediately below the backbone. Its stories make the product minimally functional, and together they are often called the minimum viable product.",
+    "ref": "Business Analysis for Practitioners, Figure 7-20",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 140,
+        "label": "Business Analysis for Practitioners, Figure 7-20"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "The five highest-priority stories on a flat backlog are released together, but users cannot complete a single task with them. Which tool would have shown the problem in advance?",
+    "options": [
+      "A burndown chart",
+      "A story map",
+      "A force field analysis",
+      "A persona"
+    ],
+    "answer": 1,
+    "explanation": "A story map arranges user activities left to right in the order performed, with stories beneath by priority. It shows which stories are needed together for a user to reach a goal, a risk a flat backlog hides.",
+    "ref": "Business Analysis for Practitioners, Figure 7-20",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 140,
+        "label": "Business Analysis for Practitioners, Figure 7-20"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "On a story map, what does the horizontal, left-to-right axis represent?",
+    "options": [
+      "The priority of each story",
+      "The size of each story in points",
+      "The team member who owns each story on the map",
+      "The order in which the user performs the activities"
+    ],
+    "answer": 3,
+    "explanation": "User activities are arranged along the horizontal axis in the general order in which the user would perform them (the narrative flow). Priority runs from top to bottom.",
+    "ref": "Business Analysis for Practitioners, Figure 7-20",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 140,
+        "label": "Business Analysis for Practitioners, Figure 7-20"
+      }
+    ]
   }
 ]

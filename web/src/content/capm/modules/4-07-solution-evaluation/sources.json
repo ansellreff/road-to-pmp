@@ -83,5 +83,20 @@
     "book": "bapg",
     "page": 97,
     "label": "Business Analysis for Practitioners, Facilitate Go/No-Go Decision"
+  },
+  {
+    "book": "bapg",
+    "page": 99,
+    "label": "Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision"
+  },
+  {
+    "book": "bapg",
+    "page": 128,
+    "label": "Business Analysis for Practitioners, Figure 7-11"
+  },
+  {
+    "book": "bapg",
+    "page": 134,
+    "label": "Business Analysis for Practitioners, Figure 7-16"
   }
 ]

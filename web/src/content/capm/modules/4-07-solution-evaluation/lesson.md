@@ -160,7 +160,7 @@ A **warranty period** is a time after release during which the **development tea
 
 ## Evaluate Solution Performance
 
-@source PMI Guide to Business Analysis, 9.1; PMI Guide to Business Analysis, 9.1.1.4; PMI Guide to Business Analysis, 9.1.3.1
+@source PMI Guide to Business Analysis, 9.1; PMI Guide to Business Analysis, 9.1.1.4; PMI Guide to Business Analysis, 9.1.3.1; Business Analysis for Practitioners, Figure 7-11
 
 The process of evaluating a solution **in operation** to determine whether it is **delivering the business value intended**. It gives **tangible data** on whether the investment is paying off.
 
@@ -202,6 +202,26 @@ The output, the **assessment of business value**, compares expected with actual 
 |---|---|---|
 | **High market growth** | The most beneficial products (stars) | Good potential (question marks) |
 | **Low market growth** | A dependable income stream (cash cows) | Weak products (dogs) |
+
+## Readiness and the go/no-go decision in the practice guide
+
+@source Business Analysis for Practitioners, Figure 7-16; Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision
+
+A **readiness assessment** checks whether the organization is ready to move the solution into production or into maintenance and operations. It may be a report or a checklist, and may be repeated. Gaps it finds are treated as **risks**, with responses. Five kinds of readiness:
+
+| Readiness | The question |
+|---|---|
+| **People** | Have people been trained, and can they use the solution? |
+| **Data** | Has the data been validated? |
+| **Production environment** | Are the hardware and software installed, tested and secure? |
+| **Transition and production support** | Are operations and support ready to answer questions? Are release notes, workarounds and contingency plans in place? |
+| **Cultural** | Is the culture supportive of the change? Are champions engaged? |
+
+**The go/no-go decision:**
+
+- A **go** permits the release of the solution, **in whole or in part**. A **no-go** either **delays** or **disapproves** the release.
+- The way the decision will be reached (the **decision model**) should be agreed **beforehand**.
+- Make the meeting as interactive as possible, show the evaluation results in tables or pictures, and let stakeholders ask their questions before the decision.
 
 ## How it all connects
 

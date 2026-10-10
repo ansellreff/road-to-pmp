@@ -1,37 +1,187 @@
 [
-  { "id": "c1", "front": "Stakeholder engagement (business analysis)", "back": "Analyzing the needs and characteristics of stakeholders to understand how best to identify, involve, communicate with and work with them." },
-  { "id": "c2", "front": "The seven stakeholder engagement processes", "back": "Identify stakeholders; conduct stakeholder analysis; determine engagement and communication approach; conduct business analysis planning; prepare for transition to future state; manage engagement and communication; assess business analysis performance." },
-  { "id": "c3", "front": "Identify Stakeholders", "back": "Identifying the individuals, groups or organizations that may impact, are impacted, or are perceived to be impacted by the area under assessment." },
-  { "id": "c4", "front": "Stakeholder register", "back": "The list of stakeholders with their identification, assessment and classification. Kept up to date throughout." },
-  { "id": "c5", "front": "Five techniques for identifying stakeholders", "back": "Brainstorming, interviews, organizational charts, process flows, questionnaires and surveys." },
-  { "id": "c6", "front": "Conduct Stakeholder Analysis", "back": "Researching and analyzing quantitative and qualitative information about stakeholders, to choose techniques, timing and communication methods." },
-  { "id": "c7", "front": "Characteristics recorded in a stakeholder register", "back": "Role, attitude, interests, level of impact, level of influence, communication preferences, success criteria, work hours and location." },
-  { "id": "c8", "front": "The five engagement levels", "back": "Unaware, resistant, neutral, supportive, leading." },
-  { "id": "c9", "front": "Persona", "back": "A fictional character created to represent an individual or a class of users, with detail on how they work." },
-  { "id": "c10", "front": "Persona vs stakeholder", "back": "A persona is fictional and detailed about behavior. A stakeholder is a real person." },
-  { "id": "c11", "front": "User class", "back": "A group of stakeholders with similar characteristics, represented by a persona." },
-  { "id": "c12", "front": "Job analysis", "back": "Identifying the requirements and competencies needed to perform a job or role. Useful when a solution changes or creates roles." },
-  { "id": "c13", "front": "RACI", "back": "Responsible (does the task), Accountable (final approver), Consult (gives information), Inform (kept up to date)." },
-  { "id": "c14", "front": "RACI: responsible vs accountable", "back": "Responsible performs the task. Accountable answers for its completion and quality and gives final approval." },
-  { "id": "c15", "front": "Stakeholder matrix", "back": "A two-by-two grid for analyzing stakeholders on two chosen variables, for example influence and impact." },
-  { "id": "c16", "front": "Matrix: high influence, high impact", "back": "The critical group and a key source of requirements. Most effort, frequent communication, strong partnership." },
-  { "id": "c17", "front": "Matrix: high influence, low impact", "back": "Possible champions and advocates. Keep communication open and use their support." },
-  { "id": "c18", "front": "Matrix: low influence, high impact", "back": "Still a critical source of requirements: often those who must adapt to the solution. Make sure their concerns are heard." },
-  { "id": "c19", "front": "Matrix: low influence, low impact", "back": "Do not ignore. Monitor in case their relationship to the solution changes." },
-  { "id": "c20", "front": "Onion diagram", "back": "Rings around the solution showing how close each stakeholder is to it. Nearer the center means a stronger relationship." },
-  { "id": "c21", "front": "Stakeholder engagement and communication approach", "back": "Agreements on each stakeholder's involvement, how decisions and approvals are made, how information is stored, and how stakeholders are kept informed." },
-  { "id": "c22", "front": "Conduct Business Analysis Planning: three things it does", "back": "Brings together the approaches from all knowledge areas; estimates the effort; assembles the business analysis plan." },
-  { "id": "c23", "front": "Business analysis plan vs requirements management plan", "back": "The business analysis plan covers the whole approach and is broader. The requirements management plan covers only how requirements are handled." },
-  { "id": "c24", "front": "Business analysis planning: predictive vs adaptive", "back": "Predictive: separate estimates per task, a plan approved before elicitation. Adaptive: effort not estimated separately, rarely a separate deliverable." },
-  { "id": "c25", "front": "Rolling wave planning", "back": "Near-term work is planned in detail; later work is planned at a higher level." },
-  { "id": "c26", "front": "Prepare for Transition to Future State", "back": "Determining whether the organization is ready for a transition and how it will move from the current to the future state." },
-  { "id": "c27", "front": "Readiness assessment", "back": "Determines the organization's ability and interest to move to the future state, and identifies gaps in readiness as risks." },
-  { "id": "c28", "front": "Transition plan", "back": "Based on the readiness assessment and transition strategy. Covers communication, rollout, training, procedure updates and other transition requirements." },
-  { "id": "c29", "front": "Four transition strategies", "back": "Massive one-time cutover; staged release; time-boxed coexistence; permanent coexistence." },
-  { "id": "c30", "front": "Staged release", "back": "Rolling out the future state one segment at a time: by region, customer type or user type." },
-  { "id": "c31", "front": "Manage Stakeholder Engagement and Communication", "back": "Fostering appropriate involvement, keeping stakeholders informed, and sharing product information as it evolves." },
-  { "id": "c32", "front": "A stakeholder disengages. Who helps?", "back": "Those who can remove roadblocks: the project manager, functional managers and the sponsor, who has the authority." },
-  { "id": "c33", "front": "Assess Business Analysis Performance", "back": "Considering how effective the business analysis practices are, so they can be adjusted." },
-  { "id": "c34", "front": "When is business analysis performance assessed?", "back": "Predictive: at milestones or the end, as lessons learned. Adaptive: at least at the end of every iteration." },
-  { "id": "c35", "front": "Stakeholder analysis: analyst vs project manager", "back": "The project manager looks at impact on the project; the analyst at impact on the solution. They should do it together." }
+  {
+    "id": "c1",
+    "front": "Stakeholder engagement (business analysis)",
+    "back": "Analyzing the needs and characteristics of stakeholders to understand how best to identify, involve, communicate with and work with them."
+  },
+  {
+    "id": "c2",
+    "front": "The seven stakeholder engagement processes",
+    "back": "Identify stakeholders; conduct stakeholder analysis; determine engagement and communication approach; conduct business analysis planning; prepare for transition to future state; manage engagement and communication; assess business analysis performance."
+  },
+  {
+    "id": "c3",
+    "front": "Identify Stakeholders",
+    "back": "Identifying the individuals, groups or organizations that may impact, are impacted, or are perceived to be impacted by the area under assessment."
+  },
+  {
+    "id": "c4",
+    "front": "Stakeholder register",
+    "back": "The list of stakeholders with their identification, assessment and classification. Kept up to date throughout."
+  },
+  {
+    "id": "c5",
+    "front": "Five techniques for identifying stakeholders",
+    "back": "Brainstorming, interviews, organizational charts, process flows, questionnaires and surveys."
+  },
+  {
+    "id": "c6",
+    "front": "Conduct Stakeholder Analysis",
+    "back": "Researching and analyzing quantitative and qualitative information about stakeholders, to choose techniques, timing and communication methods."
+  },
+  {
+    "id": "c7",
+    "front": "Characteristics recorded in a stakeholder register",
+    "back": "Role, attitude, interests, level of impact, level of influence, communication preferences, success criteria, work hours and location."
+  },
+  {
+    "id": "c8",
+    "front": "The five engagement levels",
+    "back": "Unaware, resistant, neutral, supportive, leading."
+  },
+  {
+    "id": "c9",
+    "front": "Persona",
+    "back": "A fictional character created to represent an individual or a class of users, with detail on how they work."
+  },
+  {
+    "id": "c10",
+    "front": "Persona vs stakeholder",
+    "back": "A persona is fictional and detailed about behavior. A stakeholder is a real person."
+  },
+  {
+    "id": "c11",
+    "front": "User class",
+    "back": "A group of stakeholders with similar characteristics, represented by a persona."
+  },
+  {
+    "id": "c12",
+    "front": "Job analysis",
+    "back": "Identifying the requirements and competencies needed to perform a job or role. Useful when a solution changes or creates roles."
+  },
+  {
+    "id": "c13",
+    "front": "RACI",
+    "back": "Responsible (does the task), Accountable (final approver), Consult (gives information), Inform (kept up to date)."
+  },
+  {
+    "id": "c14",
+    "front": "RACI: responsible vs accountable",
+    "back": "Responsible performs the task. Accountable answers for its completion and quality and gives final approval."
+  },
+  {
+    "id": "c15",
+    "front": "Stakeholder matrix",
+    "back": "A two-by-two grid for analyzing stakeholders on two chosen variables, for example influence and impact."
+  },
+  {
+    "id": "c16",
+    "front": "Matrix: high influence, high impact",
+    "back": "The critical group and a key source of requirements. Most effort, frequent communication, strong partnership."
+  },
+  {
+    "id": "c17",
+    "front": "Matrix: high influence, low impact",
+    "back": "Possible champions and advocates. Keep communication open and use their support."
+  },
+  {
+    "id": "c18",
+    "front": "Matrix: low influence, high impact",
+    "back": "Still a critical source of requirements: often those who must adapt to the solution. Make sure their concerns are heard."
+  },
+  {
+    "id": "c19",
+    "front": "Matrix: low influence, low impact",
+    "back": "Do not ignore. Monitor in case their relationship to the solution changes."
+  },
+  {
+    "id": "c20",
+    "front": "Onion diagram",
+    "back": "Rings around the solution showing how close each stakeholder is to it. Nearer the center means a stronger relationship."
+  },
+  {
+    "id": "c21",
+    "front": "Stakeholder engagement and communication approach",
+    "back": "Agreements on each stakeholder's involvement, how decisions and approvals are made, how information is stored, and how stakeholders are kept informed."
+  },
+  {
+    "id": "c22",
+    "front": "Conduct Business Analysis Planning: three things it does",
+    "back": "Brings together the approaches from all knowledge areas; estimates the effort; assembles the business analysis plan."
+  },
+  {
+    "id": "c23",
+    "front": "Business analysis plan vs requirements management plan",
+    "back": "The business analysis plan covers the whole approach and is broader. The requirements management plan covers only how requirements are handled."
+  },
+  {
+    "id": "c24",
+    "front": "Business analysis planning: predictive vs adaptive",
+    "back": "Predictive: separate estimates per task, a plan approved before elicitation. Adaptive: effort not estimated separately, rarely a separate deliverable."
+  },
+  {
+    "id": "c25",
+    "front": "Rolling wave planning",
+    "back": "Near-term work is planned in detail; later work is planned at a higher level."
+  },
+  {
+    "id": "c26",
+    "front": "Prepare for Transition to Future State",
+    "back": "Determining whether the organization is ready for a transition and how it will move from the current to the future state."
+  },
+  {
+    "id": "c27",
+    "front": "Readiness assessment",
+    "back": "Determines the organization's ability and interest to move to the future state, and identifies gaps in readiness as risks."
+  },
+  {
+    "id": "c28",
+    "front": "Transition plan",
+    "back": "Based on the readiness assessment and transition strategy. Covers communication, rollout, training, procedure updates and other transition requirements."
+  },
+  {
+    "id": "c29",
+    "front": "Four transition strategies",
+    "back": "Massive one-time cutover; staged release; time-boxed coexistence; permanent coexistence."
+  },
+  {
+    "id": "c30",
+    "front": "Staged release",
+    "back": "Rolling out the future state one segment at a time: by region, customer type or user type."
+  },
+  {
+    "id": "c31",
+    "front": "Manage Stakeholder Engagement and Communication",
+    "back": "Fostering appropriate involvement, keeping stakeholders informed, and sharing product information as it evolves."
+  },
+  {
+    "id": "c32",
+    "front": "A stakeholder disengages. Who helps?",
+    "back": "Those who can remove roadblocks: the project manager, functional managers and the sponsor, who has the authority."
+  },
+  {
+    "id": "c33",
+    "front": "Assess Business Analysis Performance",
+    "back": "Considering how effective the business analysis practices are, so they can be adjusted."
+  },
+  {
+    "id": "c34",
+    "front": "When is business analysis performance assessed?",
+    "back": "Predictive: at milestones or the end, as lessons learned. Adaptive: at least at the end of every iteration."
+  },
+  {
+    "id": "c35",
+    "front": "Stakeholder analysis: analyst vs project manager",
+    "back": "The project manager looks at impact on the project; the analyst at impact on the solution. They should do it together."
+  },
+  {
+    "id": "c36",
+    "front": "Four layers of an onion diagram",
+    "back": "1: the team doing the work. 2: those directly impacted. 3: those who interact with layer 2. 4: external stakeholders."
+  },
+  {
+    "id": "c37",
+    "front": "C and D on the stakeholder engagement assessment matrix",
+    "back": "C = current engagement, D = desired engagement. A gap between them needs action."
+  }
 ]

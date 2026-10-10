@@ -484,5 +484,125 @@
         "label": "PMI Guide to Business Analysis, 7.2.2.16"
       }
     ]
+  },
+  {
+    "id": "q25",
+    "q": "A team asks why invoices go out late and, at the third \"why\", reaches a cause everyone accepts. A member objects that the technique requires five questions. What does Business Analysis for Practitioners say?",
+    "options": [
+      "Five is required; two more questions must be asked",
+      "The technique may be used only with exactly five people",
+      "The number is not fixed; there may be fewer or more whys",
+      "The result is invalid unless a sixth why confirms it"
+    ],
+    "answer": 2,
+    "explanation": "It is not required to ask \"why\" exactly five times. The five represents the depth of the root cause more than the number of questions asked.",
+    "ref": "Business Analysis for Practitioners, Figure 7-8",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 123,
+        "label": "Business Analysis for Practitioners, Figure 7-8"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "In a five whys session the group concludes that the root cause of a data error is \"the clerk was careless\". According to Business Analysis for Practitioners, what is wrong with this conclusion?",
+    "options": [
+      "Human error and inattention are not root causes",
+      "A root cause must always be a software defect",
+      "The clerk was not present to agree with the finding",
+      "Five whys may not be used for data problems"
+    ],
+    "answer": 0,
+    "explanation": "The guide says to assess the problem, not the people, and to remember that human error, inattention and similar elements are not root causes. The group should keep asking why the error was possible.",
+    "ref": "Business Analysis for Practitioners, Figure 7-8",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 123,
+        "label": "Business Analysis for Practitioners, Figure 7-8"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A plant wants to upgrade its equipment. An analyst lists what pushes for the change (customers want new products, lower support costs) and what pushes against it (training costs, staff afraid of losing jobs), and gives each a weight. Which tool is this?",
+    "options": [
+      "Feasibility analysis",
+      "Force field analysis",
+      "A capability table",
+      "Real options"
+    ],
+    "answer": 1,
+    "explanation": "Force field analysis identifies the driving forces that support a change and the restraining forces that resist it, weighs each, and compares the totals to see the net acceptance of the change.",
+    "ref": "Business Analysis for Practitioners, Figure 7-10",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 126,
+        "label": "Business Analysis for Practitioners, Figure 7-10"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A force field analysis shows the restraining forces slightly outweighing the driving forces. What does the technique lead the analyst to do next?",
+    "options": [
+      "Abandon the change, since the totals decide it",
+      "Remove the weakest driving force from the list",
+      "Repeat the scoring with a different group until the driving forces come out ahead",
+      "Plan actions that strengthen driving forces and reduce restraining ones"
+    ],
+    "answer": 3,
+    "explanation": "After weighing the forces, the practitioner develops an action plan to address the restraining forces and strengthen the driving forces.",
+    "ref": "Business Analysis for Practitioners, Figure 7-10",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 126,
+        "label": "Business Analysis for Practitioners, Figure 7-10"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A sponsor must choose between two platforms, and nothing forces the choice for six weeks. The analyst advises keeping both open, gathering more information, and committing only when the deadline for the decision arrives. Which technique is this?",
+    "options": [
+      "Five whys",
+      "MoSCoW",
+      "Real options",
+      "Force field analysis"
+    ],
+    "answer": 2,
+    "explanation": "Real options is a way of deciding when to decide: keep as many viable options open for as long as possible, gather information, and commit only when you must or have good reason to, at the last responsible moment.",
+    "ref": "Business Analysis for Practitioners, Figure 7-17",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 135,
+        "label": "Business Analysis for Practitioners, Figure 7-17"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "An analyst is asked whether a proposed solution could be supported and maintained by the operations staff once it is running, and whether it would be reliable. Which element of a feasibility analysis is this?",
+    "options": [
+      "Time feasibility",
+      "Technology feasibility",
+      "Cost-effectiveness feasibility",
+      "Operational feasibility"
+    ],
+    "answer": 3,
+    "explanation": "Operational feasibility is the extent to which a proposed solution meets operational needs, including sustainability, maintainability, supportability and reliability.",
+    "ref": "Business Analysis for Practitioners, Figure 7-7",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 122,
+        "label": "Business Analysis for Practitioners, Figure 7-7"
+      }
+    ]
   }
 ]

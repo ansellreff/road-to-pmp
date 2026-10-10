@@ -635,6 +635,22 @@ Nothing in Domain 3 was found to be **wrong**. The lessons taught the second edi
 
 Not read in this sitting: Annex A1 (the mapping to the Sixth Edition's knowledge areas, pages 104 to 111), Annex A2, and appendixes X2 and X3 beyond what module 3.8 already cites.
 
+### Domain 4 (third sitting, 2026-10-11)
+
+The Domain 4 lessons were written from *The PMI Guide to Business Analysis*, which is one of the exam's books, so they already use the exam's terms. The exam's second business analysis book is *Business Analysis for Practitioners: A Practice Guide*, Second Edition. A search of its glossary found only seven terms absent from the course. This sitting read its chapter 7, "Models, Methods, and Artifacts" (pages 114 to 145: 23 tools), and the "how to" parts of eliciting, packaging and the go/no-go decision (pages 64 to 70, 83 to 86, 97 to 100).
+
+| Module | Compared with (practice guide) | What was missing | Outline task | What was done |
+|---|---|---|---|---|
+| 4.1 | How the guide is organized | The names of the fifteen practices (the five domains were already there) | 4.5, the analyst's work under each approach | Table of the practices; 4 questions, 4 flashcards |
+| 4.2 | Five whys, feasibility analysis, force field analysis, real options, KPIs | The cautions on five whys; force field analysis as driving and restraining forces; real options and the last responsible moment; metric against KPI | 4.3, match tools to scenarios | New section; 6 questions, 4 flashcards |
+| 4.3 | Onion diagram, stakeholder engagement assessment matrix, persona | The four named layers of the onion diagram; C and D on the matrix | 4.1, stakeholder roles; 4.2, communication | New section; 6 questions, 2 flashcards |
+| 4.4 | How to elicit; brainwriting, affinity diagram, focus group, survey, survey data analysis | **The four kinds of observation** (passive, active, participatory, simulation); brainwriting; the mistakes in survey analysis | 4.3, the gathering approach for a situation | New section; 6 questions, 4 flashcards |
+| 4.5 | Acceptance criteria, business rules, MoSCoW, product tree, wireframe | The practice guide's rules for acceptance criteria (at least one, more than three, independently testable, against the definition of done); the product tree | 4.6, define acceptance criteria; 4.3, match tools | Note and new section; 7 questions, 4 flashcards |
+| 4.6 | Requirements traceability matrix, story mapping | "Coverage matrix" as another name; weighing the cost of tracing; the parts of a story map | 4.3, traceability matrix and backlog; 4.4, which components go to which release | Note and new section; 6 questions, 2 flashcards |
+| 4.7 | Readiness assessment, go/no-go | The five kinds of readiness; go "in whole or in part"; the decision model agreed beforehand | 4.6, ready for delivery | New section; 6 questions, 2 flashcards |
+
+Nothing in Domain 4 was found to be **wrong**. Not read in this sitting: the practice guide's chapters 2, 3, 5 and 6 in full (the practices and their case study), and its pages on buy-a-feature and the capability table. *The PMI Guide to Business Analysis* was not re-read, because the lessons were written from it section by section in Sessions 21 to 24.
+
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.

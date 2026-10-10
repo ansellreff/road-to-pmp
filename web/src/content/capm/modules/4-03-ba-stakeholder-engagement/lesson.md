@@ -269,6 +269,16 @@ The business analyst sits **between** groups that do not share a vocabulary. PMI
 
 When this communication fails, requirements are **missed, duplicated or built twice in different ways**, and the cost appears as rework.
 
+## Tools in the practice guide: understanding stakeholders
+
+@source Business Analysis for Practitioners, Figure 7-13; Business Analysis for Practitioners, Figure 7-19; Business Analysis for Practitioners, Figure 7-14
+
+| Tool | What it is | Points the guide makes |
+|---|---|---|
+| **Onion diagram** | A picture of the layers of stakeholders around an initiative | Built **from the center outward**, usually in four layers: **1** the team doing the work; **2** those **directly impacted** by the change, such as the users of the new solution; **3** those who **regularly interact** with layer 2, such as the executive sponsor or other departments; **4** **external** stakeholders, such as regulators, customers and suppliers. |
+| **Stakeholder engagement assessment matrix** | A grid comparing each stakeholder's **current** engagement (C) with the **desired** engagement (D) | Five levels: **unaware, resistant, neutral, supportive, leading**. A gap between C and D shows where action is needed. It is kept up to date throughout the work; a gap that grows is a sign to re-examine communication. |
+| **Persona** | A **fictional character** standing for a type of user: goals, behaviors, motivations, environment, skills | Gives the team "someone" to relate to instead of generic "users", which builds **empathy**. Used for prioritizing features, user-centered design, testing and validation. |
+
 ## Exam tips
 
 - A new stakeholder group is discovered mid-project: **update the stakeholder register and analyze them**, then elicit their requirements.

@@ -171,7 +171,7 @@ Everything together is the **requirements package**. It need not be a document: 
 
 ## Define Acceptance Criteria
 
-@source PMI Guide to Business Analysis, 7.4; PMI Guide to Business Analysis, 7.4.2.1; PMI Guide to Business Analysis, 7.4.2.2
+@source PMI Guide to Business Analysis, 7.4; PMI Guide to Business Analysis, 7.4.2.1; PMI Guide to Business Analysis, 7.4.2.2; Business Analysis for Practitioners, Figure 7-1
 
 **Acceptance criteria** are **concrete and demonstrable conditions** that must be met for the business stakeholders or customers to **accept** an item. They are the basis of **acceptance tests**.
 
@@ -194,6 +194,8 @@ Example for the story "As a customer, I want to reset my password, so that I can
 | **Example** | Has acceptance criteria and an estimate | Tested, standards met, nonfunctional requirements met | The reset link arrives within one minute |
 
 The definition of done is part of the acceptance criteria output and is used later when the solution is evaluated for release.
+
+> **On the exam.** *Business Analysis for Practitioners* adds practical rules. Write **at least one** acceptance criterion before work on a deliverable or user story begins. If an item has **more than three**, consider splitting it in two. Each criterion must be **independently testable**, in plain language without jargon, and the development team writes them **together with** the product owner and the business analyst. Do not confuse them with the **definition of done**: the definition of done applies to the **whole product increment** (documentation, regression testing, security, support readiness), while acceptance criteria belong to **one** deliverable, story or feature.
 
 ## Verify and validate
 
@@ -302,6 +304,17 @@ Techniques: affinity diagram, brainstorming, competitive analysis, focus groups,
 | **Design changes** | Costly | Expected and planned for |
 
 On an adaptive project, anyone can write a user story, but the **product owner** decides whether and where it goes in the backlog.
+
+## Tools in the practice guide: rules, priorities and screens
+
+@source Business Analysis for Practitioners, Figure 7-4; Business Analysis for Practitioners, Figure 7-12; Business Analysis for Practitioners, Figure 7-15; Business Analysis for Practitioners, Figure 7-23
+
+| Tool | What it is | Points the guide makes |
+|---|---|---|
+| **Business rules** | Policies, standards or regulations that constrain **how the business operates** | They are **system-agnostic**: true whatever technology is used. They must be observable, written in business language, and have consequences if broken. Requirements must **support** them. Kept in a **business rules catalog**, or on the backlog in adaptive work. |
+| **MoSCoW** | Must have, should have, could have, won't have | **Must:** the solution is not viable without it. **Should:** important, but the solution is still acceptable without it; a workaround is needed. **Could:** nice to have. **Won't:** not included, and the team should say whether that means **not now or not ever**. It prompts more discussion than high / medium / low, where most things end up "high". |
+| **Product tree** | A drawing of the product as a tree, used in workshops | **Roots and trunk:** the infrastructure. **Branches:** the product's primary functions. **Leaves:** new features. The highest priorities sit **nearest the trunk**; items farther out come later or are **pruned**. |
+| **Wireframe** | A **low-fidelity** drawing of the screens, showing layout and how the user moves through them | Kept simple and quick to draw: a box marks where an image will go. Used to check that the team and the business stakeholders share the same understanding of the requirements. |
 
 ## Exam tips
 

@@ -1,38 +1,202 @@
 [
-  { "id": "c1", "front": "Elicitation", "back": "The activity of drawing out information from stakeholders and other sources." },
-  { "id": "c2", "front": "Why \"elicit\" and not \"gather\"?", "back": "Gathering implies the information is ready to hand over. Stakeholders often cannot express their needs until helped." },
-  { "id": "c3", "front": "The four elicitation processes", "back": "Determine elicitation approach; prepare for elicitation; conduct elicitation; confirm elicitation results." },
-  { "id": "c4", "front": "How do elicitation and analysis relate?", "back": "They alternate. Analysis raises new questions, which need more elicitation." },
-  { "id": "c5", "front": "When does the elicit-analyze cycle stop?", "back": "When analysis raises no more questions, or the risk of incomplete information is acceptable." },
-  { "id": "c6", "front": "Elicitation approach", "back": "How elicitation will be done: what information, where it is, how to obtain it, and when. Called an elicitation plan in formal life cycles." },
-  { "id": "c7", "front": "Risk of cutting elicitation short", "back": "Rework and product defects later." },
-  { "id": "c8", "front": "Six steps to prepare for an elicitation activity", "back": "Determine the objective; determine the participants; identify the resources; identify the questions; set the agenda; schedule the activity." },
-  { "id": "c9", "front": "Elicitation preparation materials", "back": "Items made to help the activity meet its objective: agenda, questions, ground rules, presentation material, models." },
-  { "id": "c10", "front": "Three stages of an elicitation activity", "back": "Introduction, body, close. Follow-up then confirms the results." },
-  { "id": "c11", "front": "Open-ended vs closed-ended question", "back": "Open-ended: can be answered in any way. Closed-ended: the answer comes from a limited list of choices." },
-  { "id": "c12", "front": "Contextual vs context-free question", "back": "Contextual: about the subject at hand. Context-free: could be asked in any situation." },
-  { "id": "c13", "front": "Brainstorming", "back": "A facilitated group technique for listing many ideas in a short time." },
-  { "id": "c14", "front": "Document analysis", "back": "Studying existing documents for relevant product information. Objective, but the documents may be out of date." },
-  { "id": "c15", "front": "Facilitated workshop", "back": "A structured meeting led by a skilled, neutral facilitator with selected stakeholders. Fast, and good for reconciling differences." },
-  { "id": "c16", "front": "Requirements workshop", "back": "A facilitated workshop that brings cross-functional stakeholders together to define product information." },
-  { "id": "c17", "front": "Focus group", "back": "Prequalified stakeholders and experts share expectations and attitudes about a proposed solution. Risk: group pressure." },
-  { "id": "c18", "front": "Interview", "back": "A formal or informal approach of asking prepared or spontaneous questions and recording the answers, usually one to one." },
-  { "id": "c19", "front": "Structured vs unstructured interview", "back": "Structured: a prepared list, all asked. Unstructured: only the first question is fixed; the rest follow the answers." },
-  { "id": "c20", "front": "Observation", "back": "Watching people do their work in their own environment. Also called job shadowing." },
-  { "id": "c21", "front": "Main drawback of observation", "back": "People may act differently when they are being observed." },
-  { "id": "c22", "front": "Prototyping", "back": "Getting early feedback by showing a model of the expected solution before building it." },
-  { "id": "c23", "front": "Storyboard, wireframe, evolutionary prototype", "back": "Storyboard: images showing sequence or navigation. Wireframe: a static blueprint of a screen. Evolutionary: the real solution in progress." },
-  { "id": "c24", "front": "Questionnaires and surveys", "back": "Written questions for many respondents. Reach a large, dispersed group at low cost. Concern: response rate." },
-  { "id": "c25", "front": "Collaborative games", "back": "Elicitation techniques that use game play to encourage participation, creativity and collaboration." },
-  { "id": "c26", "front": "Product box", "back": "Teams design the product's packaging, showing which benefits and features customers value most." },
-  { "id": "c27", "front": "Speedboat", "back": "Problems are written on anchors holding back a boat. A non-confrontational way to find what users dislike." },
-  { "id": "c28", "front": "Spider web", "back": "A game that draws the relationships between the product and other products." },
-  { "id": "c29", "front": "Unconfirmed elicitation results", "back": "The information captured in an elicitation activity, before participants have agreed it is accurate." },
-  { "id": "c30", "front": "Confirmed elicitation results", "back": "Results the product team agrees are accurate, after review with stakeholders." },
-  { "id": "c31", "front": "Walkthrough", "back": "A peer review in which the author leads the reviewers through the material." },
-  { "id": "c32", "front": "Why use a glossary when confirming results?", "back": "To agree what terms mean and to find terms that different groups use differently." },
-  { "id": "c33", "front": "How many sources for each topic?", "back": "At least two, so no requirement rests on a single opinion or an outdated document." },
-  { "id": "c34", "front": "Elicitation: predictive vs adaptive", "back": "Predictive: mostly up front, comprehensive, documented. Adaptive: every iteration, just enough, one to two iterations ahead." },
-  { "id": "c35", "front": "Best technique: departments disagree", "back": "A facilitated workshop." },
-  { "id": "c36", "front": "Best technique: users cannot picture the solution", "back": "A prototype." }
+  {
+    "id": "c1",
+    "front": "Elicitation",
+    "back": "The activity of drawing out information from stakeholders and other sources."
+  },
+  {
+    "id": "c2",
+    "front": "Why \"elicit\" and not \"gather\"?",
+    "back": "Gathering implies the information is ready to hand over. Stakeholders often cannot express their needs until helped."
+  },
+  {
+    "id": "c3",
+    "front": "The four elicitation processes",
+    "back": "Determine elicitation approach; prepare for elicitation; conduct elicitation; confirm elicitation results."
+  },
+  {
+    "id": "c4",
+    "front": "How do elicitation and analysis relate?",
+    "back": "They alternate. Analysis raises new questions, which need more elicitation."
+  },
+  {
+    "id": "c5",
+    "front": "When does the elicit-analyze cycle stop?",
+    "back": "When analysis raises no more questions, or the risk of incomplete information is acceptable."
+  },
+  {
+    "id": "c6",
+    "front": "Elicitation approach",
+    "back": "How elicitation will be done: what information, where it is, how to obtain it, and when. Called an elicitation plan in formal life cycles."
+  },
+  {
+    "id": "c7",
+    "front": "Risk of cutting elicitation short",
+    "back": "Rework and product defects later."
+  },
+  {
+    "id": "c8",
+    "front": "Six steps to prepare for an elicitation activity",
+    "back": "Determine the objective; determine the participants; identify the resources; identify the questions; set the agenda; schedule the activity."
+  },
+  {
+    "id": "c9",
+    "front": "Elicitation preparation materials",
+    "back": "Items made to help the activity meet its objective: agenda, questions, ground rules, presentation material, models."
+  },
+  {
+    "id": "c10",
+    "front": "Three stages of an elicitation activity",
+    "back": "Introduction, body, close. Follow-up then confirms the results."
+  },
+  {
+    "id": "c11",
+    "front": "Open-ended vs closed-ended question",
+    "back": "Open-ended: can be answered in any way. Closed-ended: the answer comes from a limited list of choices."
+  },
+  {
+    "id": "c12",
+    "front": "Contextual vs context-free question",
+    "back": "Contextual: about the subject at hand. Context-free: could be asked in any situation."
+  },
+  {
+    "id": "c13",
+    "front": "Brainstorming",
+    "back": "A facilitated group technique for listing many ideas in a short time."
+  },
+  {
+    "id": "c14",
+    "front": "Document analysis",
+    "back": "Studying existing documents for relevant product information. Objective, but the documents may be out of date."
+  },
+  {
+    "id": "c15",
+    "front": "Facilitated workshop",
+    "back": "A structured meeting led by a skilled, neutral facilitator with selected stakeholders. Fast, and good for reconciling differences."
+  },
+  {
+    "id": "c16",
+    "front": "Requirements workshop",
+    "back": "A facilitated workshop that brings cross-functional stakeholders together to define product information."
+  },
+  {
+    "id": "c17",
+    "front": "Focus group",
+    "back": "Prequalified stakeholders and experts share expectations and attitudes about a proposed solution. Risk: group pressure."
+  },
+  {
+    "id": "c18",
+    "front": "Interview",
+    "back": "A formal or informal approach of asking prepared or spontaneous questions and recording the answers, usually one to one."
+  },
+  {
+    "id": "c19",
+    "front": "Structured vs unstructured interview",
+    "back": "Structured: a prepared list, all asked. Unstructured: only the first question is fixed; the rest follow the answers."
+  },
+  {
+    "id": "c20",
+    "front": "Observation",
+    "back": "Watching people do their work in their own environment. Also called job shadowing."
+  },
+  {
+    "id": "c21",
+    "front": "Main drawback of observation",
+    "back": "People may act differently when they are being observed."
+  },
+  {
+    "id": "c22",
+    "front": "Prototyping",
+    "back": "Getting early feedback by showing a model of the expected solution before building it."
+  },
+  {
+    "id": "c23",
+    "front": "Storyboard, wireframe, evolutionary prototype",
+    "back": "Storyboard: images showing sequence or navigation. Wireframe: a static blueprint of a screen. Evolutionary: the real solution in progress."
+  },
+  {
+    "id": "c24",
+    "front": "Questionnaires and surveys",
+    "back": "Written questions for many respondents. Reach a large, dispersed group at low cost. Concern: response rate."
+  },
+  {
+    "id": "c25",
+    "front": "Collaborative games",
+    "back": "Elicitation techniques that use game play to encourage participation, creativity and collaboration."
+  },
+  {
+    "id": "c26",
+    "front": "Product box",
+    "back": "Teams design the product's packaging, showing which benefits and features customers value most."
+  },
+  {
+    "id": "c27",
+    "front": "Speedboat",
+    "back": "Problems are written on anchors holding back a boat. A non-confrontational way to find what users dislike."
+  },
+  {
+    "id": "c28",
+    "front": "Spider web",
+    "back": "A game that draws the relationships between the product and other products."
+  },
+  {
+    "id": "c29",
+    "front": "Unconfirmed elicitation results",
+    "back": "The information captured in an elicitation activity, before participants have agreed it is accurate."
+  },
+  {
+    "id": "c30",
+    "front": "Confirmed elicitation results",
+    "back": "Results the product team agrees are accurate, after review with stakeholders."
+  },
+  {
+    "id": "c31",
+    "front": "Walkthrough",
+    "back": "A peer review in which the author leads the reviewers through the material."
+  },
+  {
+    "id": "c32",
+    "front": "Why use a glossary when confirming results?",
+    "back": "To agree what terms mean and to find terms that different groups use differently."
+  },
+  {
+    "id": "c33",
+    "front": "How many sources for each topic?",
+    "back": "At least two, so no requirement rests on a single opinion or an outdated document."
+  },
+  {
+    "id": "c34",
+    "front": "Elicitation: predictive vs adaptive",
+    "back": "Predictive: mostly up front, comprehensive, documented. Adaptive: every iteration, just enough, one to two iterations ahead."
+  },
+  {
+    "id": "c35",
+    "front": "Best technique: departments disagree",
+    "back": "A facilitated workshop."
+  },
+  {
+    "id": "c36",
+    "front": "Best technique: users cannot picture the solution",
+    "back": "A prototype."
+  },
+  {
+    "id": "c37",
+    "front": "Four kinds of observation",
+    "back": "Passive (no interruption), active (interrupts to ask), participatory (takes part in the work), simulation (a tool recreates the work)."
+  },
+  {
+    "id": "c38",
+    "front": "Brainwriting",
+    "back": "Ideas are written down individually first, then passed on and shared anonymously. Quiet people are heard; no one dominates."
+  },
+  {
+    "id": "c39",
+    "front": "Three mistakes in survey data analysis",
+    "back": "Interpreting too quickly; treating correlation as causation; missing nuances in written answers."
+  },
+  {
+    "id": "c40",
+    "front": "Affinity diagram: when to use it",
+    "back": "After brainstorming, to sort many unrelated-looking ideas into labeled clusters."
+  }
 ]

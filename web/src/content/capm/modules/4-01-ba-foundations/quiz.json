@@ -464,5 +464,85 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q24",
+    "q": "A business analyst is comparing the current state of a claims process with the state the business wants, to see what is missing. In Business Analysis for Practitioners, which practice is this, and in which domain?",
+    "options": [
+      "Package Solution Information, in Solution Refinement",
+      "Find the Gaps, in Business Value Assessment",
+      "Plan Business Analysis Work, in Business Analysis Planning",
+      "Evaluate Solution Performance, in Solution Evaluation"
+    ],
+    "answer": 1,
+    "explanation": "The Business Value Assessment domain has three practices: Understand the Situation, Find the Gaps and Define the Solution. Finding the gaps compares the current and future states.",
+    "ref": "Business Analysis for Practitioners, How This Practice Guide Is Organized",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 12,
+        "label": "Business Analysis for Practitioners, How This Practice Guide Is Organized"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "An analyst assembles the agreed requirements into a form the team can build from: a set of user stories for one team, a requirements document for another. In the practice guide's five domains, where does this practice belong?",
+    "options": [
+      "Business Analysis Stewardship",
+      "Business Analysis Planning",
+      "Business Value Assessment",
+      "Solution Refinement"
+    ],
+    "answer": 3,
+    "explanation": "Solution Refinement holds Elicit Solution Information, Analyze Solution Information and Package Solution Information.",
+    "ref": "Business Analysis for Practitioners, How This Practice Guide Is Organized",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 12,
+        "label": "Business Analysis for Practitioners, How This Practice Guide Is Organized"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A senior analyst mentors new analysts, argues for good analysis practice in her company, and insists on honest reporting of what stakeholders said. Which domain of Business Analysis for Practitioners covers this?",
+    "options": [
+      "Business Analysis Stewardship",
+      "Solution Refinement",
+      "Business Value Assessment",
+      "Organizational Transition and Solution Evaluation"
+    ],
+    "answer": 0,
+    "explanation": "Business Analysis Stewardship has three practices: Promote Business Analysis Effectiveness, Enhance Business Analysis Capability, and Lead Business Analysis Work with Integrity.",
+    "ref": "Business Analysis for Practitioners, How This Practice Guide Is Organized",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 12,
+        "label": "Business Analysis for Practitioners, How This Practice Guide Is Organized"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Before a release, an analyst helps the decision makers weigh the acceptance results and the organization's readiness, so that they can approve or stop the release. Which practice of Business Analysis for Practitioners is this?",
+    "options": [
+      "Understand Business Analysis Governance",
+      "Define the Solution",
+      "Facilitate Go/No-Go Decision",
+      "Analyze Solution Information"
+    ],
+    "answer": 2,
+    "explanation": "Facilitate Go/No-Go Decision is one of the three practices of the Organizational Transition and Solution Evaluation domain, with Enable Organizational Transition and Evaluate Solution Performance.",
+    "ref": "Business Analysis for Practitioners, How This Practice Guide Is Organized",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 12,
+        "label": "Business Analysis for Practitioners, How This Practice Guide Is Organized"
+      }
+    ]
   }
 ]

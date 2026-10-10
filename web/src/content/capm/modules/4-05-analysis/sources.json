@@ -178,5 +178,30 @@
     "book": "baguide",
     "page": 293,
     "label": "PMI Guide to Business Analysis, 7.9.3.1"
+  },
+  {
+    "book": "bapg",
+    "page": 115,
+    "label": "Business Analysis for Practitioners, Figure 7-1"
+  },
+  {
+    "book": "bapg",
+    "page": 119,
+    "label": "Business Analysis for Practitioners, Figure 7-4"
+  },
+  {
+    "book": "bapg",
+    "page": 129,
+    "label": "Business Analysis for Practitioners, Figure 7-12"
+  },
+  {
+    "book": "bapg",
+    "page": 133,
+    "label": "Business Analysis for Practitioners, Figure 7-15"
+  },
+  {
+    "book": "bapg",
+    "page": 144,
+    "label": "Business Analysis for Practitioners, Figure 7-23"
   }
 ]

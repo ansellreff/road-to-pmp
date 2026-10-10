@@ -1,37 +1,187 @@
 [
-  { "id": "c1", "front": "Solution evaluation", "back": "Activities that assess whether a solution has achieved the desired business results, by comparing actual results with expected ones." },
-  { "id": "c2", "front": "The four solution evaluation processes", "back": "Evaluate solution performance; determine solution evaluation approach; evaluate acceptance results and address defects; obtain solution acceptance for release." },
-  { "id": "c3", "front": "Three times when evaluation happens", "back": "When a go/no-go or release decision is needed; shortly after going into operation; well after, to see whether business goals were met." },
-  { "id": "c4", "front": "Point of diminishing returns", "back": "Where more functionality would not justify the extra effort. Evaluation can justify ending early." },
-  { "id": "c5", "front": "Solution evaluation approach", "back": "When and how a solution will be evaluated, which metrics will be used, whether the data can be collected, and who is responsible." },
-  { "id": "c6", "front": "Why define the evaluation approach early?", "back": "Some metrics need data the product would not otherwise capture. Left late, it is costly or impossible to obtain." },
-  { "id": "c7", "front": "Metric", "back": "A set of quantifiable measures used to evaluate a solution or business." },
-  { "id": "c8", "front": "Key performance indicator (KPI)", "back": "A metric, usually set by executives, used to judge progress toward the organization's goals." },
-  { "id": "c9", "front": "Two kinds of metric in the evaluation approach", "back": "Metrics for acceptance during or shortly after development; metrics to judge later whether business value was delivered." },
-  { "id": "c10", "front": "A metric is too costly to collect", "back": "Use a less costly, next-best alternative." },
-  { "id": "c11", "front": "Evaluate Acceptance Results and Address Defects", "back": "Deciding what to do with the results of comparing the acceptance criteria against the solution." },
-  { "id": "c12", "front": "Actual vs evaluated acceptance results", "back": "Actual: the pass or fail results from testing. Evaluated: those results analyzed for cause, cost and business impact, with recommendations." },
-  { "id": "c13", "front": "Testers vs business analysts in acceptance", "back": "Testers determine pass or fail. Analysts assess severity, root cause, risk and impact, and recommend what to do." },
-  { "id": "c14", "front": "Five recommendations for a defect", "back": "A workaround; a modification to the product; an adjustment to the measurement; technical investigation; communication to users." },
-  { "id": "c15", "front": "Variance analysis", "back": "Determining the cause and size of the difference between the expected value and actual performance." },
-  { "id": "c16", "front": "How does a traceability matrix help with defects?", "back": "It shows which business objective a failed feature traces to, and so how much the defect matters." },
-  { "id": "c17", "front": "Day-in-the-life test", "back": "A test of the solution through the activities of a typical working day." },
-  { "id": "c18", "front": "A story fails its acceptance criteria (adaptive)", "back": "The story can be rejected and returned to the backlog to be reprioritized." },
-  { "id": "c19", "front": "Obtain Solution Acceptance for Release", "back": "Facilitating a decision on whether to release all or part of a solution, and handing over knowledge of the product, its risks and workarounds." },
-  { "id": "c20", "front": "Four bases for a release decision", "back": "Acceptable results; organizational readiness; transition activities complete; remaining risks and workarounds accepted." },
-  { "id": "c21", "front": "Possible release decisions", "back": "Release, partial release, delay, or disapprove." },
-  { "id": "c22", "front": "Who makes the release decision?", "back": "The stakeholders accountable for the product. The business analyst facilitates." },
-  { "id": "c23", "front": "Warranty period", "back": "A time after release during which the development team is responsible for fixing defects." },
-  { "id": "c24", "front": "Best setting for a release decision", "back": "A facilitated workshop, so all stakeholders hear the reasoning." },
-  { "id": "c25", "front": "Acceptance on an adaptive project", "back": "Often the product owner's verbal approval at the demonstration that the work meets the definition of done." },
-  { "id": "c26", "front": "Evaluate Solution Performance", "back": "Evaluating a solution in operation to determine whether it is delivering the business value intended." },
-  { "id": "c27", "front": "Performance data", "back": "A quantified output of a product: throughput, cost reduction, users, revenue, sales, customer satisfaction." },
-  { "id": "c28", "front": "How is business value quantified?", "back": "Performance after release minus the baseline before release." },
-  { "id": "c29", "front": "Proxy measure", "back": "An indirect measure used when the objective itself cannot be measured: task duration, response time, error counts." },
-  { "id": "c30", "front": "Four typical reasons business value is missed", "back": "Technical causes; business practices or constraints; resistance to the product; workarounds invented by users." },
-  { "id": "c31", "front": "Assessment of business value", "back": "The comparison of expected with actual value, with reasons. Feeds decisions to enhance, maintain, replace or discontinue the product." },
-  { "id": "c32", "front": "Product portfolio matrix", "back": "A growth-share matrix placing products by market growth and market share." },
-  { "id": "c33", "front": "Portfolio matrix: high growth, high share", "back": "The most beneficial products (stars)." },
-  { "id": "c34", "front": "Portfolio matrix: low growth, high share", "back": "A dependable income stream (cash cows)." },
-  { "id": "c35", "front": "How does solution evaluation close the loop?", "back": "Its findings may trigger a new needs assessment." }
+  {
+    "id": "c1",
+    "front": "Solution evaluation",
+    "back": "Activities that assess whether a solution has achieved the desired business results, by comparing actual results with expected ones."
+  },
+  {
+    "id": "c2",
+    "front": "The four solution evaluation processes",
+    "back": "Evaluate solution performance; determine solution evaluation approach; evaluate acceptance results and address defects; obtain solution acceptance for release."
+  },
+  {
+    "id": "c3",
+    "front": "Three times when evaluation happens",
+    "back": "When a go/no-go or release decision is needed; shortly after going into operation; well after, to see whether business goals were met."
+  },
+  {
+    "id": "c4",
+    "front": "Point of diminishing returns",
+    "back": "Where more functionality would not justify the extra effort. Evaluation can justify ending early."
+  },
+  {
+    "id": "c5",
+    "front": "Solution evaluation approach",
+    "back": "When and how a solution will be evaluated, which metrics will be used, whether the data can be collected, and who is responsible."
+  },
+  {
+    "id": "c6",
+    "front": "Why define the evaluation approach early?",
+    "back": "Some metrics need data the product would not otherwise capture. Left late, it is costly or impossible to obtain."
+  },
+  {
+    "id": "c7",
+    "front": "Metric",
+    "back": "A set of quantifiable measures used to evaluate a solution or business."
+  },
+  {
+    "id": "c8",
+    "front": "Key performance indicator (KPI)",
+    "back": "A metric, usually set by executives, used to judge progress toward the organization's goals."
+  },
+  {
+    "id": "c9",
+    "front": "Two kinds of metric in the evaluation approach",
+    "back": "Metrics for acceptance during or shortly after development; metrics to judge later whether business value was delivered."
+  },
+  {
+    "id": "c10",
+    "front": "A metric is too costly to collect",
+    "back": "Use a less costly, next-best alternative."
+  },
+  {
+    "id": "c11",
+    "front": "Evaluate Acceptance Results and Address Defects",
+    "back": "Deciding what to do with the results of comparing the acceptance criteria against the solution."
+  },
+  {
+    "id": "c12",
+    "front": "Actual vs evaluated acceptance results",
+    "back": "Actual: the pass or fail results from testing. Evaluated: those results analyzed for cause, cost and business impact, with recommendations."
+  },
+  {
+    "id": "c13",
+    "front": "Testers vs business analysts in acceptance",
+    "back": "Testers determine pass or fail. Analysts assess severity, root cause, risk and impact, and recommend what to do."
+  },
+  {
+    "id": "c14",
+    "front": "Five recommendations for a defect",
+    "back": "A workaround; a modification to the product; an adjustment to the measurement; technical investigation; communication to users."
+  },
+  {
+    "id": "c15",
+    "front": "Variance analysis",
+    "back": "Determining the cause and size of the difference between the expected value and actual performance."
+  },
+  {
+    "id": "c16",
+    "front": "How does a traceability matrix help with defects?",
+    "back": "It shows which business objective a failed feature traces to, and so how much the defect matters."
+  },
+  {
+    "id": "c17",
+    "front": "Day-in-the-life test",
+    "back": "A test of the solution through the activities of a typical working day."
+  },
+  {
+    "id": "c18",
+    "front": "A story fails its acceptance criteria (adaptive)",
+    "back": "The story can be rejected and returned to the backlog to be reprioritized."
+  },
+  {
+    "id": "c19",
+    "front": "Obtain Solution Acceptance for Release",
+    "back": "Facilitating a decision on whether to release all or part of a solution, and handing over knowledge of the product, its risks and workarounds."
+  },
+  {
+    "id": "c20",
+    "front": "Four bases for a release decision",
+    "back": "Acceptable results; organizational readiness; transition activities complete; remaining risks and workarounds accepted."
+  },
+  {
+    "id": "c21",
+    "front": "Possible release decisions",
+    "back": "Release, partial release, delay, or disapprove."
+  },
+  {
+    "id": "c22",
+    "front": "Who makes the release decision?",
+    "back": "The stakeholders accountable for the product. The business analyst facilitates."
+  },
+  {
+    "id": "c23",
+    "front": "Warranty period",
+    "back": "A time after release during which the development team is responsible for fixing defects."
+  },
+  {
+    "id": "c24",
+    "front": "Best setting for a release decision",
+    "back": "A facilitated workshop, so all stakeholders hear the reasoning."
+  },
+  {
+    "id": "c25",
+    "front": "Acceptance on an adaptive project",
+    "back": "Often the product owner's verbal approval at the demonstration that the work meets the definition of done."
+  },
+  {
+    "id": "c26",
+    "front": "Evaluate Solution Performance",
+    "back": "Evaluating a solution in operation to determine whether it is delivering the business value intended."
+  },
+  {
+    "id": "c27",
+    "front": "Performance data",
+    "back": "A quantified output of a product: throughput, cost reduction, users, revenue, sales, customer satisfaction."
+  },
+  {
+    "id": "c28",
+    "front": "How is business value quantified?",
+    "back": "Performance after release minus the baseline before release."
+  },
+  {
+    "id": "c29",
+    "front": "Proxy measure",
+    "back": "An indirect measure used when the objective itself cannot be measured: task duration, response time, error counts."
+  },
+  {
+    "id": "c30",
+    "front": "Four typical reasons business value is missed",
+    "back": "Technical causes; business practices or constraints; resistance to the product; workarounds invented by users."
+  },
+  {
+    "id": "c31",
+    "front": "Assessment of business value",
+    "back": "The comparison of expected with actual value, with reasons. Feeds decisions to enhance, maintain, replace or discontinue the product."
+  },
+  {
+    "id": "c32",
+    "front": "Product portfolio matrix",
+    "back": "A growth-share matrix placing products by market growth and market share."
+  },
+  {
+    "id": "c33",
+    "front": "Portfolio matrix: high growth, high share",
+    "back": "The most beneficial products (stars)."
+  },
+  {
+    "id": "c34",
+    "front": "Portfolio matrix: low growth, high share",
+    "back": "A dependable income stream (cash cows)."
+  },
+  {
+    "id": "c35",
+    "front": "How does solution evaluation close the loop?",
+    "back": "Its findings may trigger a new needs assessment."
+  },
+  {
+    "id": "c36",
+    "front": "Five kinds of readiness",
+    "back": "People; data; production environment; transition and production support; cultural."
+  },
+  {
+    "id": "c37",
+    "front": "Go and no-go",
+    "back": "Go: release permitted, in whole or in part. No-go: release delayed or disapproved."
+  }
 ]

@@ -1,47 +1,247 @@
 [
-  { "id": "c1", "front": "Analysis (business analysis)", "back": "Examining, breaking down, synthesizing and clarifying information to understand, complete and improve it." },
-  { "id": "c2", "front": "The nine analysis processes", "back": "Determine analysis approach; create and analyze models; define and elaborate requirements; define acceptance criteria; verify; validate; prioritize; identify and analyze product risks; assess product design options." },
-  { "id": "c3", "front": "Model", "back": "A visual representation of information, as a diagram, table or structured text, that conveys a lot concisely." },
-  { "id": "c4", "front": "The five categories of model", "back": "Scope, process, rule, data, interface." },
-  { "id": "c5", "front": "Scope models", "back": "Context diagram, ecosystem map, event list, feature model, goal and business objectives model, organizational chart, use case diagram." },
-  { "id": "c6", "front": "Process models", "back": "Process flow, use case, user story." },
-  { "id": "c7", "front": "Rule models", "back": "Business rules catalog, decision table, decision tree." },
-  { "id": "c8", "front": "Data models", "back": "Data dictionary, data flow diagram, entity relationship diagram, state table and state diagram." },
-  { "id": "c9", "front": "Interface models", "back": "Prototype, wireframe, display-action-response model, report table, system interface table, user interface flow." },
-  { "id": "c10", "front": "Context diagram", "back": "A scope model showing every system and person that interfaces directly with the solution, and the inputs and outputs between them." },
-  { "id": "c11", "front": "Ecosystem map", "back": "A scope model showing all the relevant systems and the relationships between them. Wider than a context diagram." },
-  { "id": "c12", "front": "Feature model", "back": "A scope model showing all the features of a solution as a tree, with sub-features below each feature." },
-  { "id": "c13", "front": "Process flow", "back": "A picture of the steps people take in their work or with a solution. Also called a swim lane diagram or process map." },
-  { "id": "c14", "front": "Use case", "back": "A text narrative of the interaction between a user and the system to reach a goal, with normal, alternative and exception flows." },
-  { "id": "c15", "front": "User story format", "back": "As an (actor), I want to (function), so that I can (business reason)." },
-  { "id": "c16", "front": "User story vs use case", "back": "User story: brief, a promise of a conversation, typical of adaptive work. Use case: detailed, every step and exception written out." },
-  { "id": "c17", "front": "Business rule", "back": "Not a process. It constrains or supports how the business behaves, and the solution must enforce it." },
-  { "id": "c18", "front": "Decision tree vs decision table", "back": "Tree: decisions as a branching flow, showing order. Table: every combination of conditions and its outcome." },
-  { "id": "c19", "front": "Entity relationship diagram", "back": "A data model showing business data objects and the relationships between them, with cardinality." },
-  { "id": "c20", "front": "Data flow diagram", "back": "A data model showing how data moves between external entities, data stores and processes." },
-  { "id": "c21", "front": "State diagram", "back": "A data model showing the valid states of an object and the allowed transitions between them." },
-  { "id": "c22", "front": "Wireframe vs user interface flow", "back": "Wireframe: a mock-up of one screen. User interface flow: how the user moves between screens." },
-  { "id": "c23", "front": "Modeling elaboration", "back": "Using several models together to find gaps, inconsistencies or redundancies." },
-  { "id": "c24", "front": "Requirements package", "back": "All the product information together. Not necessarily a document: it can be a backlog or records in a tool." },
-  { "id": "c25", "front": "Assumption vs constraint", "back": "Assumption: taken as true without proof. Constraint: a limiting factor on the development or implementation of the solution." },
-  { "id": "c26", "front": "DEEP", "back": "A well-refined backlog is detailed appropriately, estimated, emergent and prioritized." },
-  { "id": "c27", "front": "Story elaboration", "back": "Adding detail to a user story until it is ready for development. Also called backlog refinement. Done just in time." },
-  { "id": "c28", "front": "Story slicing", "back": "Splitting an epic or story into smaller stories, each delivering value and small enough for one iteration." },
-  { "id": "c29", "front": "Acceptance criteria", "back": "Concrete and demonstrable conditions that must be met for the business stakeholders or customers to accept an item." },
-  { "id": "c30", "front": "Given, when, then", "back": "The behavior-driven development format for acceptance criteria: given the preconditions, when the user acts, then the product reacts." },
-  { "id": "c31", "front": "Definition of ready", "back": "Conditions the team agrees a user story must meet before work on it begins." },
-  { "id": "c32", "front": "Definition of done", "back": "Conditions the team agrees an item must meet before it is considered complete and acceptable." },
-  { "id": "c33", "front": "Verify Requirements", "back": "Checking that requirements are of sufficient quality: free of errors and conflicts, and meeting standards." },
-  { "id": "c34", "front": "Validate Requirements", "back": "Checking that requirements meet the business goals and objectives." },
-  { "id": "c35", "front": "Verify vs validate, in a phrase", "back": "Verify: are they written right? Validate: are they the right requirements?" },
-  { "id": "c36", "front": "The three Cs of verification", "back": "Correct, complete, consistent." },
-  { "id": "c37", "front": "Three peer reviews, least to most formal", "back": "Peer desk check, walkthrough, inspection." },
-  { "id": "c38", "front": "Inspection", "back": "A formal, rigorous review for completeness, consistency and conformance to standards, usually with a checklist." },
-  { "id": "c39", "front": "Who prioritizes requirements?", "back": "Accountable stakeholders such as the product owner or sponsor decide. The business analyst facilitates and negotiates." },
-  { "id": "c40", "front": "Two inputs to prioritization", "back": "Business value from the business; effort and risk estimates from the team." },
-  { "id": "c41", "front": "Product risk", "back": "An uncertainty that can affect success in the definition, development or expected results of the product." },
-  { "id": "c42", "front": "What does a product risk response often change?", "back": "The requirements: one is added or modified." },
-  { "id": "c43", "front": "Assess Product Design Options", "back": "Identifying, analyzing and comparing design options against goals, cost, feasibility and risk, and recommending among them." },
-  { "id": "c44", "front": "Requirements vs design", "back": "Requirements: what the product should do. Design: how it is built or looks." },
-  { "id": "c45", "front": "Vendor assessment", "back": "Evaluating vendors and their products against a set of criteria, which can be weighted." }
+  {
+    "id": "c1",
+    "front": "Analysis (business analysis)",
+    "back": "Examining, breaking down, synthesizing and clarifying information to understand, complete and improve it."
+  },
+  {
+    "id": "c2",
+    "front": "The nine analysis processes",
+    "back": "Determine analysis approach; create and analyze models; define and elaborate requirements; define acceptance criteria; verify; validate; prioritize; identify and analyze product risks; assess product design options."
+  },
+  {
+    "id": "c3",
+    "front": "Model",
+    "back": "A visual representation of information, as a diagram, table or structured text, that conveys a lot concisely."
+  },
+  {
+    "id": "c4",
+    "front": "The five categories of model",
+    "back": "Scope, process, rule, data, interface."
+  },
+  {
+    "id": "c5",
+    "front": "Scope models",
+    "back": "Context diagram, ecosystem map, event list, feature model, goal and business objectives model, organizational chart, use case diagram."
+  },
+  {
+    "id": "c6",
+    "front": "Process models",
+    "back": "Process flow, use case, user story."
+  },
+  {
+    "id": "c7",
+    "front": "Rule models",
+    "back": "Business rules catalog, decision table, decision tree."
+  },
+  {
+    "id": "c8",
+    "front": "Data models",
+    "back": "Data dictionary, data flow diagram, entity relationship diagram, state table and state diagram."
+  },
+  {
+    "id": "c9",
+    "front": "Interface models",
+    "back": "Prototype, wireframe, display-action-response model, report table, system interface table, user interface flow."
+  },
+  {
+    "id": "c10",
+    "front": "Context diagram",
+    "back": "A scope model showing every system and person that interfaces directly with the solution, and the inputs and outputs between them."
+  },
+  {
+    "id": "c11",
+    "front": "Ecosystem map",
+    "back": "A scope model showing all the relevant systems and the relationships between them. Wider than a context diagram."
+  },
+  {
+    "id": "c12",
+    "front": "Feature model",
+    "back": "A scope model showing all the features of a solution as a tree, with sub-features below each feature."
+  },
+  {
+    "id": "c13",
+    "front": "Process flow",
+    "back": "A picture of the steps people take in their work or with a solution. Also called a swim lane diagram or process map."
+  },
+  {
+    "id": "c14",
+    "front": "Use case",
+    "back": "A text narrative of the interaction between a user and the system to reach a goal, with normal, alternative and exception flows."
+  },
+  {
+    "id": "c15",
+    "front": "User story format",
+    "back": "As an (actor), I want to (function), so that I can (business reason)."
+  },
+  {
+    "id": "c16",
+    "front": "User story vs use case",
+    "back": "User story: brief, a promise of a conversation, typical of adaptive work. Use case: detailed, every step and exception written out."
+  },
+  {
+    "id": "c17",
+    "front": "Business rule",
+    "back": "Not a process. It constrains or supports how the business behaves, and the solution must enforce it."
+  },
+  {
+    "id": "c18",
+    "front": "Decision tree vs decision table",
+    "back": "Tree: decisions as a branching flow, showing order. Table: every combination of conditions and its outcome."
+  },
+  {
+    "id": "c19",
+    "front": "Entity relationship diagram",
+    "back": "A data model showing business data objects and the relationships between them, with cardinality."
+  },
+  {
+    "id": "c20",
+    "front": "Data flow diagram",
+    "back": "A data model showing how data moves between external entities, data stores and processes."
+  },
+  {
+    "id": "c21",
+    "front": "State diagram",
+    "back": "A data model showing the valid states of an object and the allowed transitions between them."
+  },
+  {
+    "id": "c22",
+    "front": "Wireframe vs user interface flow",
+    "back": "Wireframe: a mock-up of one screen. User interface flow: how the user moves between screens."
+  },
+  {
+    "id": "c23",
+    "front": "Modeling elaboration",
+    "back": "Using several models together to find gaps, inconsistencies or redundancies."
+  },
+  {
+    "id": "c24",
+    "front": "Requirements package",
+    "back": "All the product information together. Not necessarily a document: it can be a backlog or records in a tool."
+  },
+  {
+    "id": "c25",
+    "front": "Assumption vs constraint",
+    "back": "Assumption: taken as true without proof. Constraint: a limiting factor on the development or implementation of the solution."
+  },
+  {
+    "id": "c26",
+    "front": "DEEP",
+    "back": "A well-refined backlog is detailed appropriately, estimated, emergent and prioritized."
+  },
+  {
+    "id": "c27",
+    "front": "Story elaboration",
+    "back": "Adding detail to a user story until it is ready for development. Also called backlog refinement. Done just in time."
+  },
+  {
+    "id": "c28",
+    "front": "Story slicing",
+    "back": "Splitting an epic or story into smaller stories, each delivering value and small enough for one iteration."
+  },
+  {
+    "id": "c29",
+    "front": "Acceptance criteria",
+    "back": "Concrete and demonstrable conditions that must be met for the business stakeholders or customers to accept an item."
+  },
+  {
+    "id": "c30",
+    "front": "Given, when, then",
+    "back": "The behavior-driven development format for acceptance criteria: given the preconditions, when the user acts, then the product reacts."
+  },
+  {
+    "id": "c31",
+    "front": "Definition of ready",
+    "back": "Conditions the team agrees a user story must meet before work on it begins."
+  },
+  {
+    "id": "c32",
+    "front": "Definition of done",
+    "back": "Conditions the team agrees an item must meet before it is considered complete and acceptable."
+  },
+  {
+    "id": "c33",
+    "front": "Verify Requirements",
+    "back": "Checking that requirements are of sufficient quality: free of errors and conflicts, and meeting standards."
+  },
+  {
+    "id": "c34",
+    "front": "Validate Requirements",
+    "back": "Checking that requirements meet the business goals and objectives."
+  },
+  {
+    "id": "c35",
+    "front": "Verify vs validate, in a phrase",
+    "back": "Verify: are they written right? Validate: are they the right requirements?"
+  },
+  {
+    "id": "c36",
+    "front": "The three Cs of verification",
+    "back": "Correct, complete, consistent."
+  },
+  {
+    "id": "c37",
+    "front": "Three peer reviews, least to most formal",
+    "back": "Peer desk check, walkthrough, inspection."
+  },
+  {
+    "id": "c38",
+    "front": "Inspection",
+    "back": "A formal, rigorous review for completeness, consistency and conformance to standards, usually with a checklist."
+  },
+  {
+    "id": "c39",
+    "front": "Who prioritizes requirements?",
+    "back": "Accountable stakeholders such as the product owner or sponsor decide. The business analyst facilitates and negotiates."
+  },
+  {
+    "id": "c40",
+    "front": "Two inputs to prioritization",
+    "back": "Business value from the business; effort and risk estimates from the team."
+  },
+  {
+    "id": "c41",
+    "front": "Product risk",
+    "back": "An uncertainty that can affect success in the definition, development or expected results of the product."
+  },
+  {
+    "id": "c42",
+    "front": "What does a product risk response often change?",
+    "back": "The requirements: one is added or modified."
+  },
+  {
+    "id": "c43",
+    "front": "Assess Product Design Options",
+    "back": "Identifying, analyzing and comparing design options against goals, cost, feasibility and risk, and recommending among them."
+  },
+  {
+    "id": "c44",
+    "front": "Requirements vs design",
+    "back": "Requirements: what the product should do. Design: how it is built or looks."
+  },
+  {
+    "id": "c45",
+    "front": "Vendor assessment",
+    "back": "Evaluating vendors and their products against a set of criteria, which can be weighted."
+  },
+  {
+    "id": "c46",
+    "front": "How many acceptance criteria? (practice guide)",
+    "back": "At least one before work begins. More than three: consider splitting the story."
+  },
+  {
+    "id": "c47",
+    "front": "Acceptance criteria versus definition of done",
+    "back": "Acceptance criteria: one deliverable, story or feature. Definition of done: the whole product increment."
+  },
+  {
+    "id": "c48",
+    "front": "Product tree",
+    "back": "Roots and trunk: infrastructure. Branches: primary functions. Leaves: new features. Top priorities nearest the trunk; the rest may be pruned."
+  },
+  {
+    "id": "c49",
+    "front": "Business rules are system-agnostic",
+    "back": "They state how the business operates whatever the technology. Requirements must support them."
+  }
 ]

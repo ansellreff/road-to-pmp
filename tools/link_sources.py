@@ -189,6 +189,11 @@ def resolve(part: str) -> tuple[str, int] | None:
         title = part.split(",", 1)[1].strip() if "," in part else ""
         if not title:
             return book, TITLE_BOOKS[book]
+        # A named figure, "Figure 7-1": its caption, searched after the front matter's list of figures.
+        figure = re.search(r"^(figure|table) (\d+-\d+)$", title.lower())
+        if figure:
+            page = find_line(book, rf"^{figure.group(1)} {figure.group(2)}\.", TITLE_BOOKS[book])
+            return (book, page) if page else None
         hit = re.search(
             rf"^\s*(?:\d+: )?{re.escape(title)}\s+\[p(\d+)\]", toc(book), re.MULTILINE | re.IGNORECASE
         )

@@ -1,37 +1,187 @@
 [
-  { "id": "c1", "front": "Traceability", "back": "The ability to track information across the product life cycle by establishing links between objects." },
-  { "id": "c2", "front": "Backward traceability", "back": "From a requirement back to the scope features and business goals and objectives that triggered it." },
-  { "id": "c3", "front": "Forward traceability", "back": "From a requirement forward to design, test components and the final product." },
-  { "id": "c4", "front": "Bidirectional traceability", "back": "Tracing requirements in both directions, backward and forward." },
-  { "id": "c5", "front": "Monitoring (business analysis)", "back": "Keeping product information accurate from approval through implementation, including managing changes." },
-  { "id": "c6", "front": "The four traceability and monitoring processes", "back": "Determine the approach; establish relationships and dependencies; select and approve requirements; manage changes to requirements and other product information." },
-  { "id": "c7", "front": "Traceability and monitoring approach", "back": "Defines what is traced, to what detail and where, and how changes are proposed, reviewed, decided and recorded." },
-  { "id": "c8", "front": "What decides how much traceability is needed?", "back": "Regulation, organizational standards, product complexity, the risk of product errors, and whether the traces will be used." },
-  { "id": "c9", "front": "Configuration management", "back": "Processes that make sure the product being built conforms to its approved requirements, and that changes are governed." },
-  { "id": "c10", "front": "Five uses of relationships and dependencies", "back": "Confirm business value; manage scope; avoid missing requirements; perform impact analysis; make release decisions." },
-  { "id": "c11", "front": "Subset relationship", "back": "One requirement is part of a larger, parent requirement." },
-  { "id": "c12", "front": "Implementation dependency", "back": "A requirement cannot be implemented until another one is implemented." },
-  { "id": "c13", "front": "Benefit or value dependency", "back": "A requirement can be implemented, but its benefit is not realized until another one is implemented." },
-  { "id": "c14", "front": "Traceability matrix", "back": "A grid that links product requirements from their origin to the deliverables that satisfy them." },
-  { "id": "c15", "front": "A requirement traces back to no objective", "back": "It may add no value: possible scope creep. Question it." },
-  { "id": "c16", "front": "A requirement has no design or test linked to it", "back": "It risks being missed in the final product." },
-  { "id": "c17", "front": "Interaction matrix", "back": "A lightweight, temporary traceability matrix: a snapshot used on adaptive projects." },
-  { "id": "c18", "front": "Requirements management tool", "back": "A repository for product information with audit trails, version control, workflow and trace links. It does not make requirements good." },
-  { "id": "c19", "front": "Select and Approve Requirements", "back": "Facilitating discussion with stakeholders to negotiate and confirm which requirements go into an iteration, release or project." },
-  { "id": "c20", "front": "Approved requirements", "back": "Requirements that are verified and validated, and that those with authority agree the team should build." },
-  { "id": "c21", "front": "Requirements baseline", "back": "The boundary containing all approved requirements for a solution, release or iteration." },
-  { "id": "c22", "front": "Approval on an adaptive project", "back": "The product owner's prioritization of the backlog, or the stories chosen in iteration planning. The definition of ready can stand in for approval." },
-  { "id": "c23", "front": "The analyst's role in approval", "back": "Facilitates and negotiates. Does not approve." },
-  { "id": "c24", "front": "Force field analysis", "back": "Lists and weights the forces for and against a change, then compares the totals to see whether there is enough support." },
-  { "id": "c25", "front": "Delphi", "back": "A consensus technique using anonymous rounds of expert input until the group converges." },
-  { "id": "c26", "front": "Change request", "back": "An appeal to change a requirement or other product information after the requirements have been baselined." },
-  { "id": "c27", "front": "Impact analysis", "back": "Evaluating a proposed change by how it affects related elements: product information, risks, work, schedule and cost." },
-  { "id": "c28", "front": "Four outcomes of a proposed change", "back": "Approved, deferred, rejected, more information required." },
-  { "id": "c29", "front": "Deferred vs rejected change", "back": "Deferred: recorded with a reason and a future date or release. Rejected: recorded with a reason; it will not be done." },
-  { "id": "c30", "front": "Who decides on a change?", "back": "The authorized body, such as a change control board, or the product owner in adaptive work. The analyst recommends." },
-  { "id": "c31", "front": "Configuration management system vs version control system", "back": "CMS: ensures the solution conforms to approved information and records changes. VCS: tracks the revision history of a work product; part of a CMS." },
-  { "id": "c32", "front": "Change on an adaptive project", "back": "Expected. The request becomes a user story in the backlog, and prioritization decides if and when it is done." },
-  { "id": "c33", "front": "Backlog management", "back": "Keeping the backlog ranked by value. In adaptive life cycles it is the technique for managing change." },
-  { "id": "c34", "front": "Is the product ready? Using a traceability matrix", "back": "Every approved requirement traces forward to a test that has passed." },
-  { "id": "c35", "front": "Is the product ready? Using a backlog", "back": "The stories planned for the release are done: each meets its acceptance criteria and the definition of done." }
+  {
+    "id": "c1",
+    "front": "Traceability",
+    "back": "The ability to track information across the product life cycle by establishing links between objects."
+  },
+  {
+    "id": "c2",
+    "front": "Backward traceability",
+    "back": "From a requirement back to the scope features and business goals and objectives that triggered it."
+  },
+  {
+    "id": "c3",
+    "front": "Forward traceability",
+    "back": "From a requirement forward to design, test components and the final product."
+  },
+  {
+    "id": "c4",
+    "front": "Bidirectional traceability",
+    "back": "Tracing requirements in both directions, backward and forward."
+  },
+  {
+    "id": "c5",
+    "front": "Monitoring (business analysis)",
+    "back": "Keeping product information accurate from approval through implementation, including managing changes."
+  },
+  {
+    "id": "c6",
+    "front": "The four traceability and monitoring processes",
+    "back": "Determine the approach; establish relationships and dependencies; select and approve requirements; manage changes to requirements and other product information."
+  },
+  {
+    "id": "c7",
+    "front": "Traceability and monitoring approach",
+    "back": "Defines what is traced, to what detail and where, and how changes are proposed, reviewed, decided and recorded."
+  },
+  {
+    "id": "c8",
+    "front": "What decides how much traceability is needed?",
+    "back": "Regulation, organizational standards, product complexity, the risk of product errors, and whether the traces will be used."
+  },
+  {
+    "id": "c9",
+    "front": "Configuration management",
+    "back": "Processes that make sure the product being built conforms to its approved requirements, and that changes are governed."
+  },
+  {
+    "id": "c10",
+    "front": "Five uses of relationships and dependencies",
+    "back": "Confirm business value; manage scope; avoid missing requirements; perform impact analysis; make release decisions."
+  },
+  {
+    "id": "c11",
+    "front": "Subset relationship",
+    "back": "One requirement is part of a larger, parent requirement."
+  },
+  {
+    "id": "c12",
+    "front": "Implementation dependency",
+    "back": "A requirement cannot be implemented until another one is implemented."
+  },
+  {
+    "id": "c13",
+    "front": "Benefit or value dependency",
+    "back": "A requirement can be implemented, but its benefit is not realized until another one is implemented."
+  },
+  {
+    "id": "c14",
+    "front": "Traceability matrix",
+    "back": "A grid that links product requirements from their origin to the deliverables that satisfy them."
+  },
+  {
+    "id": "c15",
+    "front": "A requirement traces back to no objective",
+    "back": "It may add no value: possible scope creep. Question it."
+  },
+  {
+    "id": "c16",
+    "front": "A requirement has no design or test linked to it",
+    "back": "It risks being missed in the final product."
+  },
+  {
+    "id": "c17",
+    "front": "Interaction matrix",
+    "back": "A lightweight, temporary traceability matrix: a snapshot used on adaptive projects."
+  },
+  {
+    "id": "c18",
+    "front": "Requirements management tool",
+    "back": "A repository for product information with audit trails, version control, workflow and trace links. It does not make requirements good."
+  },
+  {
+    "id": "c19",
+    "front": "Select and Approve Requirements",
+    "back": "Facilitating discussion with stakeholders to negotiate and confirm which requirements go into an iteration, release or project."
+  },
+  {
+    "id": "c20",
+    "front": "Approved requirements",
+    "back": "Requirements that are verified and validated, and that those with authority agree the team should build."
+  },
+  {
+    "id": "c21",
+    "front": "Requirements baseline",
+    "back": "The boundary containing all approved requirements for a solution, release or iteration."
+  },
+  {
+    "id": "c22",
+    "front": "Approval on an adaptive project",
+    "back": "The product owner's prioritization of the backlog, or the stories chosen in iteration planning. The definition of ready can stand in for approval."
+  },
+  {
+    "id": "c23",
+    "front": "The analyst's role in approval",
+    "back": "Facilitates and negotiates. Does not approve."
+  },
+  {
+    "id": "c24",
+    "front": "Force field analysis",
+    "back": "Lists and weights the forces for and against a change, then compares the totals to see whether there is enough support."
+  },
+  {
+    "id": "c25",
+    "front": "Delphi",
+    "back": "A consensus technique using anonymous rounds of expert input until the group converges."
+  },
+  {
+    "id": "c26",
+    "front": "Change request",
+    "back": "An appeal to change a requirement or other product information after the requirements have been baselined."
+  },
+  {
+    "id": "c27",
+    "front": "Impact analysis",
+    "back": "Evaluating a proposed change by how it affects related elements: product information, risks, work, schedule and cost."
+  },
+  {
+    "id": "c28",
+    "front": "Four outcomes of a proposed change",
+    "back": "Approved, deferred, rejected, more information required."
+  },
+  {
+    "id": "c29",
+    "front": "Deferred vs rejected change",
+    "back": "Deferred: recorded with a reason and a future date or release. Rejected: recorded with a reason; it will not be done."
+  },
+  {
+    "id": "c30",
+    "front": "Who decides on a change?",
+    "back": "The authorized body, such as a change control board, or the product owner in adaptive work. The analyst recommends."
+  },
+  {
+    "id": "c31",
+    "front": "Configuration management system vs version control system",
+    "back": "CMS: ensures the solution conforms to approved information and records changes. VCS: tracks the revision history of a work product; part of a CMS."
+  },
+  {
+    "id": "c32",
+    "front": "Change on an adaptive project",
+    "back": "Expected. The request becomes a user story in the backlog, and prioritization decides if and when it is done."
+  },
+  {
+    "id": "c33",
+    "front": "Backlog management",
+    "back": "Keeping the backlog ranked by value. In adaptive life cycles it is the technique for managing change."
+  },
+  {
+    "id": "c34",
+    "front": "Is the product ready? Using a traceability matrix",
+    "back": "Every approved requirement traces forward to a test that has passed."
+  },
+  {
+    "id": "c35",
+    "front": "Is the product ready? Using a backlog",
+    "back": "The stories planned for the release are done: each meets its acceptance criteria and the definition of done."
+  },
+  {
+    "id": "c36",
+    "front": "Another name for the requirements traceability matrix",
+    "back": "Traceability matrix, or coverage matrix."
+  },
+  {
+    "id": "c37",
+    "front": "Backbone and walking skeleton (story map)",
+    "back": "Backbone: the top row of activities or epics, left to right. Walking skeleton: the row beneath, the minimally functional end-to-end set (the MVP)."
+  }
 ]

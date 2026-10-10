@@ -504,5 +504,145 @@
         "label": "PMI Guide to Business Analysis, 7.4"
       }
     ]
+  },
+  {
+    "id": "q26",
+    "q": "A team is about to start building a user story that has no acceptance criteria yet. The product owner says they can be added after the work is done. What does Business Analysis for Practitioners say?",
+    "options": [
+      "That is fine, as long as the story is small",
+      "At least one criterion should be written before work begins",
+      "Acceptance criteria are needed only for defects found in testing",
+      "The testers alone should write them afterwards"
+    ],
+    "answer": 1,
+    "explanation": "Before work can begin on a deliverable or user story, the practitioner should ensure that at least one acceptance criterion is written, so the team knows exactly what is required.",
+    "ref": "Business Analysis for Practitioners, Figure 7-1",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 115,
+        "label": "Business Analysis for Practitioners, Figure 7-1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A user story has grown to seven acceptance criteria. According to Business Analysis for Practitioners, what should the team consider?",
+    "options": [
+      "Dividing the story into two or more stories",
+      "Deleting criteria until only one remains",
+      "Moving the criteria into the definition of done",
+      "Asking the sponsor to approve each criterion"
+    ],
+    "answer": 0,
+    "explanation": "If a deliverable or user story has more than three acceptance criteria, it may be good to divide it into two or more, to help the team implement the feature quickly and efficiently.",
+    "ref": "Business Analysis for Practitioners, Figure 7-1",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 115,
+        "label": "Business Analysis for Practitioners, Figure 7-1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A team's checklist says every increment must have passed regression testing and security validation, and have its documentation complete. A developer calls these \"the acceptance criteria\". Which term is correct?",
+    "options": [
+      "Acceptance criteria, since they are tested",
+      "Business rules, since they constrain the team",
+      "The definition of ready, since they must be met before any work starts",
+      "The definition of done, since they apply to the whole increment"
+    ],
+    "answer": 3,
+    "explanation": "The definition of done applies to the entire product increment: documentation, regression testing, security validation, production support readiness. Acceptance criteria are specific to one deliverable, user story or feature.",
+    "ref": "Business Analysis for Practitioners, Figure 7-1",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 115,
+        "label": "Business Analysis for Practitioners, Figure 7-1"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "\"Recipe emails are sent only to customers who have opted in.\" This statement holds whichever mailing system the company uses. What kind of statement is it?",
+    "options": [
+      "A user story",
+      "A transition requirement",
+      "A business rule",
+      "An acceptance criterion"
+    ],
+    "answer": 2,
+    "explanation": "Business rules describe policies, standards or regulations that constrain how the business operates. They are system-agnostic: they define how the business operates regardless of systems and technology.",
+    "ref": "Business Analysis for Practitioners, Figure 7-4",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 119,
+        "label": "Business Analysis for Practitioners, Figure 7-4"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "In a workshop, stakeholders place sticky notes on a drawing: infrastructure at the roots, main functions on the branches, new features as leaves. Features far from the trunk may be cut off. Which tool is this, and where do the top priorities go?",
+    "options": [
+      "A fishbone diagram, with priorities at the head",
+      "A product tree, with priorities nearest the trunk",
+      "A story map, with priorities on the right",
+      "An onion diagram, with priorities in the outer layer"
+    ],
+    "answer": 1,
+    "explanation": "On a product tree the roots and trunk are the infrastructure, the branches the primary functions and the leaves new features. The highest-priority items are placed near the bottom, closest to the trunk; items farther out come later or are pruned.",
+    "ref": "Business Analysis for Practitioners, Figure 7-15",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 133,
+        "label": "Business Analysis for Practitioners, Figure 7-15"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "During MoSCoW prioritization, a feature is marked \"won't have\". The developers are unsure whether to keep its design in mind. What does Business Analysis for Practitioners say the team should make clear?",
+    "options": [
+      "Whether \"won't\" means not at this time or not at any point",
+      "Whether the feature was proposed by the sponsor",
+      "Whether the feature should be marked \"must\" instead",
+      "Whether all of the stakeholders voted on it unanimously at the workshop"
+    ],
+    "answer": 0,
+    "explanation": "Defining the \"won't have\" items is important so the team understands whether it means won't have at any point or won't have at this time.",
+    "ref": "Business Analysis for Practitioners, Figure 7-12",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 129,
+        "label": "Business Analysis for Practitioners, Figure 7-12"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "An analyst sketches each screen of a planned booking application with boxes and labels: a rectangle where the logo will be, lines for the input fields. No colors or real images. What is this, and what is it for?",
+    "options": [
+      "A high-fidelity prototype, to demonstrate the finished design to customers",
+      "A data model, to show how bookings are stored",
+      "A wireframe, to align the team and stakeholders on the requirements",
+      "A use case, to describe the steps of making a booking"
+    ],
+    "answer": 2,
+    "explanation": "A wireframe is a low-fidelity drawing of the proposed application showing the key elements of the user interface and their layout. It is kept simple and used to make sure the team and business stakeholders are aligned on the requirements.",
+    "ref": "Business Analysis for Practitioners, Figure 7-23",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 144,
+        "label": "Business Analysis for Practitioners, Figure 7-23"
+      }
+    ]
   }
 ]

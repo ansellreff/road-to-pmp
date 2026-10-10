@@ -158,5 +158,30 @@
     "book": "bapg",
     "page": 23,
     "label": "Business Analysis for Practitioners, Understand the Situation"
+  },
+  {
+    "book": "bapg",
+    "page": 122,
+    "label": "Business Analysis for Practitioners, Figure 7-7"
+  },
+  {
+    "book": "bapg",
+    "page": 123,
+    "label": "Business Analysis for Practitioners, Figure 7-8"
+  },
+  {
+    "book": "bapg",
+    "page": 126,
+    "label": "Business Analysis for Practitioners, Figure 7-10"
+  },
+  {
+    "book": "bapg",
+    "page": 128,
+    "label": "Business Analysis for Practitioners, Figure 7-11"
+  },
+  {
+    "book": "bapg",
+    "page": 135,
+    "label": "Business Analysis for Practitioners, Figure 7-17"
   }
 ]
