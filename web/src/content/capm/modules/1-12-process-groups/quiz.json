@@ -159,7 +159,8 @@
         "page": 182,
         "label": "Process Groups: A Practice Guide, section 7"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q9",
@@ -487,6 +488,86 @@
         "book": "pmbok6",
         "page": 54,
         "label": "PMBOK 6, 1.2.4.6"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A hospital keeps its patient records on paper. A project introduces electronic records, and a year later every ward uses them. In the process guide's description of how projects drive change, what is the hospital's condition after the project called?",
+    "options": [
+      "The current state",
+      "The baseline state",
+      "The transition state",
+      "The future state"
+    ],
+    "answer": 3,
+    "explanation": "A project moves an organization from one state to another to achieve a specific objective. Before the project the organization is in the current state; the desired result of the change is the future state.",
+    "ref": "Process Groups: A Practice Guide, 1.2.1",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 26,
+        "label": "Process Groups: A Practice Guide, 1.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "The only laboratory able to run a project's tests closes for good, and no other can be found. According to the process guide, what follows for the project?",
+    "options": [
+      "It continues, since a project ends only when its objectives are met",
+      "It ends, because the resources it needs are no longer available",
+      "It becomes an operation, because the work is now ongoing",
+      "It moves back to the Initiating process group"
+    ],
+    "answer": 1,
+    "explanation": "A project ends when its objectives are achieved, will not or cannot be met, funding is exhausted, the need no longer exists, the human or physical resources are no longer available, or it is terminated for legal cause or convenience.",
+    "ref": "Process Groups: A Practice Guide, 1.2",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 26,
+        "label": "Process Groups: A Practice Guide, 1.2"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A team compares actual progress with the plan, finds a variance and recommends corrective action. A new team member assumes this happens only near the end of the project. In which process group does this work belong, and when is it done?",
+    "options": [
+      "Monitoring and Controlling, throughout the project",
+      "Closing, once the deliverables are complete",
+      "Executing, during the build phase only",
+      "Planning, before any work has started"
+    ],
+    "answer": 0,
+    "explanation": "The Monitoring and Controlling process group tracks, reviews and regulates progress and performance, and identifies changes needed. Process groups are not phases: this work goes on throughout the project.",
+    "ref": "Process Groups: A Practice Guide, 1.7.5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 42,
+        "label": "Process Groups: A Practice Guide, 1.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A project manager brings the scope, schedule, cost, quality, risk and other subsidiary plans together into one document that says how the project will be executed, monitored, controlled and closed. Which process is this, and in which process group?",
+    "options": [
+      "Develop Project Charter, in Initiating",
+      "Direct and Manage Project Work, in Executing",
+      "Develop Project Management Plan, in Planning",
+      "Monitor and Control Project Work, in Monitoring and Controlling"
+    ],
+    "answer": 2,
+    "explanation": "Develop Project Management Plan is the Planning process of the Integration knowledge area. It defines, prepares and coordinates all plan components into an integrated project management plan.",
+    "ref": "Process Groups: A Practice Guide, section 5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 98,
+        "label": "Process Groups: A Practice Guide, section 5"
       }
     ]
   }

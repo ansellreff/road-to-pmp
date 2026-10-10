@@ -503,7 +503,8 @@
         "page": 123,
         "label": "Business Analysis for Practitioners, Figure 7-8"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -523,7 +524,8 @@
         "page": 123,
         "label": "Business Analysis for Practitioners, Figure 7-8"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q27",
@@ -543,7 +545,8 @@
         "page": 126,
         "label": "Business Analysis for Practitioners, Figure 7-10"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q28",
@@ -563,7 +566,8 @@
         "page": 126,
         "label": "Business Analysis for Practitioners, Figure 7-10"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q29",
@@ -583,7 +587,8 @@
         "page": 135,
         "label": "Business Analysis for Practitioners, Figure 7-17"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q30",
@@ -603,6 +608,7 @@
         "page": 122,
         "label": "Business Analysis for Practitioners, Figure 7-7"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

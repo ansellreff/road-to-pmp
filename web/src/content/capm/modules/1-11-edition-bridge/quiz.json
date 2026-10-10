@@ -164,7 +164,8 @@
         "page": 364,
         "label": "PMBOK 8, Appendix X5, Table X5-2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q9",
@@ -475,7 +476,7 @@
     "options": [
       "Embrace adaptability and resiliency",
       "Enable change to achieve the future state",
-      "Navigate complexity",
+      "Recognize, evaluate, and respond to system interactions",
       "Optimize risk responses"
     ],
     "answer": 0,
@@ -489,5 +490,85 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q25",
+    "q": "A change to one subsystem of a rail signalling project causes faults in three others. The team stops treating each fault alone and studies how the parts of the project affect one another. Which principle of the Seventh Edition is it applying?",
+    "options": [
+      "Optimize risk responses",
+      "Focus on value",
+      "Recognize, evaluate, and respond to system interactions",
+      "Build quality into processes and deliverables"
+    ],
+    "answer": 2,
+    "explanation": "This principle, often shortened to systems thinking, asks the team to see the project as a system of interacting parts and to respond to the way they affect one another.",
+    "ref": "PMBOK 7, Standard section 3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 48,
+        "label": "PMBOK 7, Standard section 3"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A new claims system is technically finished, but the staff who must use it are anxious and attached to the old way. The project plans coaching and communication so that the organization actually reaches the intended result. Which Seventh Edition principle is this?",
+    "options": [
+      "Enable change to achieve the envisioned future state",
+      "Recognize, evaluate, and respond to system interactions",
+      "Tailor based on context",
+      "Demonstrate leadership behaviors"
+    ],
+    "answer": 0,
+    "explanation": "This principle asks the team to prepare those affected for the adoption of new ways of working, so that the project's change takes hold and the future state is reached.",
+    "ref": "PMBOK 7, Standard section 3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 48,
+        "label": "PMBOK 7, Standard section 3"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A team places a review at each step of its work, so that defects are prevented or caught where they arise instead of in a final inspection. Which Seventh Edition principle does this follow?",
+    "options": [
+      "Embrace adaptability and resiliency",
+      "Build quality into processes and deliverables",
+      "Effectively engage with stakeholders",
+      "Create a collaborative project team environment"
+    ],
+    "answer": 1,
+    "explanation": "Build quality into processes and deliverables: keep a focus on quality that produces deliverables meeting the objectives and requirements, through the processes used and not only by inspecting at the end.",
+    "ref": "PMBOK 7, Standard section 3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 48,
+        "label": "PMBOK 7, Standard section 3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A project manager is managing a supplier's contract, the delivery and storage of materials on site, and the team's working processes. Which performance domain of the Seventh Edition covers this work?",
+    "options": [
+      "Delivery",
+      "Planning",
+      "Measurement",
+      "Project Work"
+    ],
+    "answer": 3,
+    "explanation": "The Project Work performance domain covers establishing project processes, managing physical resources, procurement and fostering a learning environment. Delivery covers requirements, scope and quality.",
+    "ref": "PMBOK 7, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 102,
+        "label": "PMBOK 7, Guide section 2"
+      }
+    ]
   }
 ]

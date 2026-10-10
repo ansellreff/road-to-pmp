@@ -483,7 +483,8 @@
         "page": 12,
         "label": "Business Analysis for Practitioners, How This Practice Guide Is Organized"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q25",
@@ -503,7 +504,8 @@
         "page": 12,
         "label": "Business Analysis for Practitioners, How This Practice Guide Is Organized"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -523,7 +525,8 @@
         "page": 12,
         "label": "Business Analysis for Practitioners, How This Practice Guide Is Organized"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q27",
@@ -543,6 +546,7 @@
         "page": 12,
         "label": "Business Analysis for Practitioners, How This Practice Guide Is Organized"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

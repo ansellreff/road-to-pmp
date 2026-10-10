@@ -501,7 +501,8 @@
         "page": 92,
         "label": "Agile Practice Guide, First Edition, 6.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -521,7 +522,8 @@
         "page": 96,
         "label": "Agile Practice Guide, First Edition, 6.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q27",
@@ -541,7 +543,8 @@
         "page": 92,
         "label": "Agile Practice Guide, First Edition, 6.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q28",
@@ -561,6 +564,7 @@
         "page": 88,
         "label": "Agile Practice Guide, First Edition, 6.1.1"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

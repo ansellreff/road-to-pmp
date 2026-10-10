@@ -361,7 +361,8 @@
         "page": 69,
         "label": "PMBOK 8, Standard 3.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q19",
@@ -381,7 +382,8 @@
         "page": 71,
         "label": "PMBOK 8, Standard 3.7"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q20",
@@ -401,7 +403,8 @@
         "page": 71,
         "label": "PMBOK 8, Standard 3.7"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q21",
@@ -421,7 +424,8 @@
         "page": 71,
         "label": "PMBOK 8, Standard 3.7"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q22",
@@ -441,6 +445,7 @@
         "page": 76,
         "label": "PMBOK 8, Standard 3.8"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

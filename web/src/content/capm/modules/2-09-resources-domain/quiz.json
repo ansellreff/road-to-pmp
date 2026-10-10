@@ -499,7 +499,8 @@
         "page": 359,
         "label": "Process Groups: A Practice Guide, Glossary (Project Team Directory)"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -519,6 +520,7 @@
         "page": 299,
         "label": "PMBOK 8, Guide section 5, Responsibility assignment matrix"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

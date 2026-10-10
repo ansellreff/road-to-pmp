@@ -466,7 +466,8 @@
         "page": 70,
         "label": "Agile Practice Guide, First Edition, 5.2.5"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q24",
@@ -486,7 +487,8 @@
         "page": 55,
         "label": "Agile Practice Guide, First Edition, 4.3.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q25",
@@ -506,7 +508,8 @@
         "page": 70,
         "label": "Agile Practice Guide, First Edition, 5.2.5"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -526,6 +529,7 @@
         "page": 55,
         "label": "Agile Practice Guide, First Edition, 4.3.2"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

@@ -580,7 +580,8 @@
         "page": 308,
         "label": "PMBOK 8, Guide section 5, Strategies for threats"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q30",
@@ -600,6 +601,7 @@
         "page": 203,
         "label": "PMBOK 8, Guide 2.7.2.5"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

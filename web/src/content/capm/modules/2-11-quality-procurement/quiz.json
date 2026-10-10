@@ -509,7 +509,8 @@
         "page": 360,
         "label": "Process Groups: A Practice Guide, Glossary (Request for Quotation)"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -529,6 +530,7 @@
         "page": 360,
         "label": "Process Groups: A Practice Guide, Glossary (Quality Policy)"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

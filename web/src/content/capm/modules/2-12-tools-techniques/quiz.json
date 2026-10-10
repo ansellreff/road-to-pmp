@@ -539,7 +539,8 @@
         "page": 274,
         "label": "PMBOK 7, Guide 4.4.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q28",
@@ -559,6 +560,7 @@
         "page": 274,
         "label": "PMBOK 7, Guide 4.4.3"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

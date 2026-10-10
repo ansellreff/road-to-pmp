@@ -482,7 +482,8 @@
         "page": 134,
         "label": "Business Analysis for Practitioners, Figure 7-16"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q25",
@@ -502,7 +503,8 @@
         "page": 134,
         "label": "Business Analysis for Practitioners, Figure 7-16"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -522,7 +524,8 @@
         "page": 134,
         "label": "Business Analysis for Practitioners, Figure 7-16"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q27",
@@ -542,7 +545,8 @@
         "page": 99,
         "label": "Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q28",
@@ -562,7 +566,8 @@
         "page": 99,
         "label": "Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q29",
@@ -582,6 +587,7 @@
         "page": 128,
         "label": "Business Analysis for Practitioners, Figure 7-11"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

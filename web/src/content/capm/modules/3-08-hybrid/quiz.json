@@ -500,7 +500,8 @@
         "page": 73,
         "label": "Agile Practice Guide, First Edition, Table 5-1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -520,7 +521,8 @@
         "page": 73,
         "label": "Agile Practice Guide, First Edition, Table 5-1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q27",
@@ -540,6 +542,7 @@
         "page": 73,
         "label": "Agile Practice Guide, First Edition, Table 5-1"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

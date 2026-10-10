@@ -529,7 +529,8 @@
         "page": 312,
         "label": "PMBOK 8, Guide Table 5-1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q27",
@@ -549,6 +550,7 @@
         "page": 312,
         "label": "PMBOK 8, Guide Table 5-1"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

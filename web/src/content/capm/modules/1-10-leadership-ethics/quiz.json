@@ -407,7 +407,8 @@
         "page": 8,
         "label": "PMI Code of Ethics, 2.2.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q21",
@@ -427,7 +428,8 @@
         "page": 255,
         "label": "PMBOK 7, Guide 4.2.4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q22",
@@ -447,7 +449,8 @@
         "page": 255,
         "label": "PMBOK 7, Guide 4.2.4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q23",
@@ -467,7 +470,8 @@
         "page": 255,
         "label": "PMBOK 7, Guide 4.2.4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q24",
@@ -487,7 +491,8 @@
         "page": 250,
         "label": "PMBOK 7, Guide 4.2.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q25",
