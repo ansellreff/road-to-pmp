@@ -322,5 +322,125 @@
         "label": "PMBOK 8, Standard 3.8"
       }
     ]
+  },
+  {
+    "id": "q17",
+    "q": "A deliverable is late. In the status meeting the project manager says: \"I agreed to that date and I missed a dependency. Here is how I will recover it.\" Which behavior is she showing?",
+    "options": [
+      "Using her authority to control the team",
+      "Accountable leadership: owning her decisions and actions",
+      "Shared leadership: letting someone else on the team take the lead for a while",
+      "Compensating for a negative outcome"
+    ],
+    "answer": 1,
+    "explanation": "Accountable leadership means being responsible for, and taking ownership of, the project's objectives, the actions taken and the decisions made. When you accept a piece of work, you are accountable for carrying it out.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A project manager notices that when she is under pressure she becomes impatient and dismisses ideas. She starts asking a colleague to chair the tense meetings. Which characteristic of an accountable leader is this?",
+    "options": [
+      "Self-awareness",
+      "Shared authority",
+      "Systems thinking",
+      "Stewardship of resources"
+    ],
+    "answer": 0,
+    "explanation": "Self-awareness is understanding your own motives, values, feelings and strengths, and how they drive your actions. Acting on that understanding is part of leading accountably.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A pipeline project has to clear a strip of woodland. After construction it replants the strip with native trees. Which level of the sustainability pyramid is this?",
+    "options": [
+      "Avoid",
+      "Minimize",
+      "Restore",
+      "Compensate"
+    ],
+    "answer": 2,
+    "explanation": "The pyramid ranks responses to a negative impact: avoid, minimize, restore, compensate. Replanting repairs the impact after it happened, which is restoring. Avoiding would have been routing around the woodland.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A company's sustainability strategy requires recycled packaging on everything it ships. A project launching a new product must follow it. How does the strategy reach the project?",
+    "options": [
+      "As a team agreement written and signed by the members of the project team",
+      "As a risk response chosen by the project manager",
+      "As a lesson learned from an earlier project",
+      "As an enterprise environmental factor that imposes requirements"
+    ],
+    "answer": 3,
+    "explanation": "Organizational sustainability strategies may already apply as EEFs that impose requirements on the project. The team does not control them and must work within them.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A construction team can buy the cheapest materials, or slightly dearer ones with far less environmental impact. Applying the sustainability principle, what should it do?",
+    "options": [
+      "Choose the cheapest, because keeping cost down is the project manager's only real duty",
+      "Choose the lower-impact sources while still watching value and return",
+      "Choose the dearest materials, whatever they cost the project",
+      "Leave the choice to the supplier, who knows the materials best"
+    ],
+    "answer": 1,
+    "explanation": "The principle does not ignore value and return. It asks the team to plan materials carefully, pick sources with the least environmental impact, and involve the local community.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A virtual team across four time zones keeps arguing about how fast messages must be answered. The project manager drafts a set of rules alone and emails them to everyone. What would fit an empowered culture better?",
+    "options": [
+      "Letting the team itself set its working norms as team agreements",
+      "Asking the sponsor to issue the rules formally, to give them more weight with the team",
+      "Removing the team members who answer messages slowly",
+      "Waiting for the argument to settle without any intervention"
+    ],
+    "answer": 0,
+    "explanation": "Team agreements are behavioral parameters and working norms set by the team, upheld by individual and team commitment. Remote and virtual teams face extra difficulty, which makes this more important.",
+    "ref": "PMBOK 8, Standard 3.8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 76,
+        "label": "PMBOK 8, Standard 3.8"
+      }
+    ]
   }
 ]

@@ -383,5 +383,125 @@
         "label": "CAPM Exam Content Outline, Domain 1"
       }
     ]
+  },
+  {
+    "id": "q20",
+    "q": "A project brings in a cybersecurity specialist for two weeks. She reviews the design and points out three weaknesses the team had not noticed. Which function is she performing?",
+    "options": [
+      "Provide resources",
+      "Perform work",
+      "Apply expertise",
+      "Provide oversight and coordination"
+    ],
+    "answer": 2,
+    "explanation": "Apply expertise means contributing specialized knowledge in a subject area and spotting blind spots. It is typically performed by internal or external subject matter experts.",
+    "ref": "PMBOK 8, Standard 2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 47,
+        "label": "PMBOK 8, Standard 2.4"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A project manager plans and leads a construction project overall. Inside it, the software team for the building's control system organizes its own work day by day. How is this project coordinated?",
+    "options": [
+      "Hybrid coordination",
+      "Centralized coordination",
+      "Decentralized coordination",
+      "Functional coordination"
+    ],
+    "answer": 0,
+    "explanation": "Hybrid coordination is centralized overall, with self-organizing teams for parts of the work. Fully centralized means a project manager leads everything; fully decentralized means the team self-manages.",
+    "ref": "PMBOK 8, Standard 2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 47,
+        "label": "PMBOK 8, Standard 2.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "The sponsor of a project has missed the last four reviews and does not reply when the project manager asks for decisions. How should the project manager regard this?",
+    "options": [
+      "As normal, because sponsors are only needed at the start",
+      "As a real risk, because the sponsor provides decisions beyond her authority",
+      "As helpful, because the project team can now make every decision itself without waiting",
+      "As irrelevant, because the project management plan is approved"
+    ],
+    "answer": 1,
+    "explanation": "The sponsor provides decision leadership outside the project management team's authority: executive decisions, resources, advocacy and removal of obstacles. An absent sponsor is a real risk to the project.",
+    "ref": "PMBOK 8, Standard 2.5.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 55,
+        "label": "PMBOK 8, Standard 2.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A junior analyst is unsure of herself. The project manager pairs her with a senior colleague, gives her a slightly harder task than usual, and reviews it with her afterwards. Which of the outline's roles is the project manager playing?",
+    "options": [
+      "Negotiator",
+      "Initiator",
+      "Working member",
+      "Coach"
+    ],
+    "answer": 3,
+    "explanation": "A coach develops team members' skills and confidence. Mentoring, stretch tasks and constructive feedback are how a project management team builds a learning culture.",
+    "ref": "CAPM Exam Content Outline, Domain 1",
+    "links": [
+      {
+        "book": "eco",
+        "page": 8,
+        "label": "CAPM Exam Content Outline, Domain 1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A reporting tool passed every test and was delivered on schedule. The people meant to use it were never asked for feedback during the project, and they now keep using their old spreadsheets. What was missing?",
+    "options": [
+      "Continuous engagement of end users, with validation along the way",
+      "A larger team to perform the technical work faster",
+      "A stricter change control procedure for the requirements",
+      "A functional manager to allocate the right developers to the work earlier in the project"
+    ],
+    "answer": 0,
+    "explanation": "End users and other key stakeholders should be engaged in continuous dialogue, with feedback checked through repeated verification and validation. A deliverable that nobody uses delivers no value.",
+    "ref": "PMBOK 8, Standard 2.5.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 56,
+        "label": "PMBOK 8, Standard 2.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Defects keep returning on a project. The project manager traces them to their root cause, obtains the authority to change the supplier, and steers the change through internal politics. Which competency is this?",
+    "options": [
+      "Ways of working",
+      "Business acumen",
+      "Results",
+      "Social responsibilities"
+    ],
+    "answer": 2,
+    "explanation": "Results is about actually getting the work done and delivering value: problem solving such as root cause analysis, gaining authority, and handling organizational politics.",
+    "ref": "PMBOK 8, Standard 2.5.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 52,
+        "label": "PMBOK 8, Standard 2.5.1.1"
+      }
+    ]
   }
 ]

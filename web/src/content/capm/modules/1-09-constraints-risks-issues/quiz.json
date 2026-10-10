@@ -362,5 +362,125 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q19",
+    "q": "The plan assumed the city would grant a permit within 30 days. The city has now written that it will take 90 days. What has the assumption become?",
+    "options": [
+      "A constraint that was always certain",
+      "A risk that may or may not occur",
+      "An issue, because it has already happened",
+      "An opportunity to be exploited"
+    ],
+    "answer": 2,
+    "explanation": "An assumption that turns out false becomes a risk or an issue. Here the delay is no longer uncertain: it has happened, so it is an issue to resolve and record in the issue log.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "On a predictive project with a fixed deadline and a fixed budget, the customer asks for two more features. What does the idea of competing constraints tell the project manager?",
+    "options": [
+      "Changing one constraint usually affects at least one other",
+      "Scope can grow freely as long as quality stays the same",
+      "Constraints apply only to adaptive projects",
+      "The deadline automatically moves when scope is added"
+    ],
+    "answer": 0,
+    "explanation": "Projects must balance competing constraints such as scope, schedule and cost. Changing one usually affects at least one other: add scope, and time or cost must give.",
+    "ref": "PMBOK 8, Glossary (constraint)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 371,
+        "label": "PMBOK 8, Glossary (constraint)"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "After an excavation fails, the team learns that an engineer in another department knew about the unstable soil all along. Nobody on the project had asked him. In the risk classification, what was this?",
+    "options": [
+      "A known-known",
+      "An unknown-known",
+      "A known-unknown",
+      "An unknown-unknown"
+    ],
+    "answer": 1,
+    "explanation": "An unknown-known is a hidden fact: the knowledge exists somewhere, but not with the team. An unknown-unknown is knowledge that does not exist within reach and cannot be foreseen.",
+    "ref": "PMBOK 8, Guide Figure 2-46",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 198,
+        "label": "PMBOK 8, Guide Figure 2-46"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A project could win a much larger follow-on order, but only a partner firm has the production capacity to deliver it. The project gives the partner ownership of pursuing the order. Which response to an opportunity is this?",
+    "options": [
+      "Exploit",
+      "Enhance",
+      "Accept",
+      "Share"
+    ],
+    "answer": 3,
+    "explanation": "Share means giving ownership of an opportunity to a third party best able to capture it. Exploit is acting to ensure it occurs; enhance is increasing its probability or impact.",
+    "ref": "PMBOK 8, Glossary (risk acceptance)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 377,
+        "label": "PMBOK 8, Glossary (risk acceptance)"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Work that is within the project's scope, but that nobody foresaw or listed as a risk, now has to be done. The project manager wants to pay for it. Which reserve is meant for this?",
+    "options": [
+      "Contingency reserve, controlled by the project manager",
+      "Contingency reserve, controlled by management",
+      "Management reserve, controlled by management",
+      "Management reserve, held inside the cost baseline"
+    ],
+    "answer": 2,
+    "explanation": "Management reserve covers unforeseen work that is within project scope. It sits in addition to the baseline and is controlled by management. Contingency reserve covers known risks and is inside the baseline.",
+    "ref": "PMBOK 8, Glossary (management reserve)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 374,
+        "label": "PMBOK 8, Glossary (management reserve)"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A minor risk would cost far more to prevent than the damage it could do. The team records it and decides to do nothing unless it actually happens. Which response is this?",
+    "options": [
+      "Accept",
+      "Avoid",
+      "Transfer",
+      "Escalate"
+    ],
+    "answer": 0,
+    "explanation": "Accept means acknowledging the risk and taking no action unless it occurs. Avoid removes the threat, transfer shifts it to a third party, and escalate passes ownership upward.",
+    "ref": "PMBOK 8, Glossary (risk acceptance)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 377,
+        "label": "PMBOK 8, Glossary (risk acceptance)"
+      }
+    ]
   }
 ]

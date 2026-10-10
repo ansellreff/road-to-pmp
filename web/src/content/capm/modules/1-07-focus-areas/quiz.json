@@ -322,5 +322,125 @@
         "label": "PMBOK 8, Standard 4.5.3"
       }
     ]
+  },
+  {
+    "id": "q17",
+    "q": "A project has three phases: design, build and test. For the design phase alone, the project manager obtains authorization, plans the work, carries it out, tracks it and formally closes it. A colleague says this is wrong. Who is right?",
+    "options": [
+      "The colleague: each Focus Area happens once in the whole project",
+      "The colleague: only Executing may repeat in each phase",
+      "The project manager: the Focus Areas occur within each phase",
+      "The project manager: but only in adaptive projects"
+    ],
+    "answer": 2,
+    "explanation": "Focus Areas are not phases. If a project has phases, the Focus Areas occur within each one: a design phase is initiated, planned, executed, monitored and closed, and so is the build phase.",
+    "ref": "PMBOK 8, Standard 4.5.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 96,
+        "label": "PMBOK 8, Standard 4.5.6"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A team plans the next four weeks of work in detail and keeps the later months at a high level, to be detailed as they come closer. What is this way of planning called?",
+    "options": [
+      "Rolling wave planning",
+      "Front-loaded planning",
+      "Roadmapping",
+      "Baseline planning"
+    ],
+    "answer": 0,
+    "explanation": "Rolling wave planning is detailed for the near term and high-level for later work. It is one form of progressive elaboration, the ongoing refinement of the plan as more is learned.",
+    "ref": "PMBOK 8, Standard 4.5.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A project manager finds a cost variance, decides alone to cut two planned reviews to recover the money, and tells nobody. What step did she leave out?",
+    "options": [
+      "Recording the variance and its cause in the stakeholder register before taking any action",
+      "Negotiating and agreeing the corrective action with the appropriate stakeholders",
+      "Waiting until the Closing Focus Area to act on the variance",
+      "Asking the team to repeat the Initiating actions"
+    ],
+    "answer": 1,
+    "explanation": "When a variance is found, the project management team determines what corrective action is needed. Those actions are then negotiated and agreed with the appropriate stakeholders.",
+    "ref": "PMBOK 8, Standard 4.5.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "The last deliverable has just been accepted. The team wants to disband today. The project manager says two things must happen first. Which pair belongs to Closing?",
+    "options": [
+      "Writing the business case and the benefits management plan",
+      "Identifying the stakeholders and assigning the project management roles for the next project",
+      "Estimating the work and defining the course of action",
+      "Verifying that outcomes and benefits were achieved, and the transition to operations"
+    ],
+    "answer": 3,
+    "explanation": "Closing includes verifying that the work of the other Focus Areas is finished, verifying that outputs, outcomes and benefits were achieved, and the transition to operations.",
+    "ref": "PMBOK 8, Standard 4.5.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.5"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A project finishes its pilot phase. Before the rollout phase begins, the sponsor formally authorizes it, commits its funding and confirms who will manage it. Which Focus Area do these actions belong to?",
+    "options": [
+      "Planning",
+      "Executing",
+      "Initiating",
+      "Closing"
+    ],
+    "answer": 2,
+    "explanation": "Initiating covers the actions that define a new project or a new phase of an existing project, often including formal authorization, committing initial financial resources and assigning project management roles.",
+    "ref": "PMBOK 8, Standard 4.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Each Friday an analyst collects the week's actual costs and progress, compares them with the plan and sends the figures to the project manager without comment. Which activity is this?",
+    "options": [
+      "Monitoring",
+      "Controlling",
+      "Executing",
+      "Progressive elaboration"
+    ],
+    "answer": 0,
+    "explanation": "Monitoring is collecting performance data, comparing actual with planned performance, and reporting it. Controlling goes further: analyzing variances, assessing trends, evaluating alternatives and recommending corrective actions.",
+    "ref": "PMBOK 8, Standard 4.5.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.4"
+      }
+    ]
   }
 ]

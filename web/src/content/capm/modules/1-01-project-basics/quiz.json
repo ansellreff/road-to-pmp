@@ -302,5 +302,125 @@
         "label": "PMBOK 8, Standard 2.1, Figure 2-1"
       }
     ]
+  },
+  {
+    "id": "q16",
+    "q": "A hospital admits and treats patients every day. This year it is also replacing its patient records system, with a go-live date in June. Which statement is correct?",
+    "options": [
+      "Both are operations, because the hospital performs them itself",
+      "Both are projects, because each creates value for patients",
+      "Replacing the records system is the project; treating patients is operations",
+      "Treating patients is the project; replacing the records system is an operation of the hospital"
+    ],
+    "answer": 2,
+    "explanation": "A project is temporary, with a defined beginning and end, in a unique context. Replacing the system fits that. Admitting and treating patients is ongoing and repeats, which makes it operations.",
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A project is building a ferry terminal. Halfway through, the government cancels the ferry route for good. The team suggests finishing anyway, since most of the budget is still available. What should happen?",
+    "options": [
+      "The project should end, because the need for it no longer exists",
+      "The project should continue until its budget has been fully spent",
+      "The project should continue, because its scope has not changed",
+      "The project should pause until the team agrees on a new purpose"
+    ],
+    "answer": 0,
+    "explanation": "A project normally ends when its objectives are met or cannot be met, resources run out, the need no longer exists, or it is terminated. Here the need has gone. Remaining budget is not a reason to continue.",
+    "ref": "PMBOK 8, Standard 1.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 29,
+        "label": "PMBOK 8, Standard 1.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A retailer wants more repeat customers. It runs a loyalty app project, a staff training project and a launch campaign project, and manages the three together because none delivers the result alone. What is this arrangement?",
+    "options": [
+      "A portfolio, because several separate pieces of work are grouped under one name for reporting",
+      "A program, because related projects are coordinated for a shared benefit",
+      "A large project, because all three have the same sponsor",
+      "Operations, because serving customers is ongoing work"
+    ],
+    "answer": 1,
+    "explanation": "A program is a group of related projects managed in a coordinated way to obtain benefits not available from managing them individually. A portfolio's components need not be related, and it serves strategic objectives.",
+    "ref": "PMBOK 8, Standard 1.3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 33,
+        "label": "PMBOK 8, Standard 1.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A company's leadership reviews a factory expansion, a new payroll system and the running of its call centre as one group, deciding where to invest next year in line with its strategy. What is this group?",
+    "options": [
+      "A program",
+      "A project",
+      "A value chain",
+      "A portfolio"
+    ],
+    "answer": 3,
+    "explanation": "A portfolio is a collection of programs, projects and operations managed as a group to maximize value and achieve strategic objectives. Its components do not have to be related to each other.",
+    "ref": "PMBOK 8, Standard 1.3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 33,
+        "label": "PMBOK 8, Standard 1.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A project delivered a booking website on time and within budget, meeting every requirement. A year later almost no customers use it and the expected savings never appeared. How should the project be assessed?",
+    "options": [
+      "A success on both dimensions, because all requirements were met",
+      "A failure on both dimensions, because customers do not use it",
+      "Project management succeeded, but the project outcomes did not",
+      "Project outcomes succeeded, but project management did not"
+    ],
+    "answer": 2,
+    "explanation": "Success has two dimensions. Project management success is about staying within cost, scope, time and quality, which this project did. Outcome success is about realizing the intended value, which it did not.",
+    "ref": "PMBOK 8, Standard 2.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 39,
+        "label": "PMBOK 8, Standard 2.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A new road safety law requires every delivery truck to carry a collision sensor by next year. A logistics company starts a project to fit them. Which factor led to this project?",
+    "options": [
+      "Meeting a regulatory or legal requirement",
+      "Changing the business strategy",
+      "Satisfying a customer request",
+      "Improving an internal process"
+    ],
+    "answer": 0,
+    "explanation": "Leaders authorize projects in response to factors such as regulatory, legal or social requirements; stakeholder requests; strategy changes; and creating, improving or fixing products, processes or services. Here the trigger is a law.",
+    "ref": "PMBOK 8, Standard 1.3.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 32,
+        "label": "PMBOK 8, Standard 1.3.2.1"
+      }
+    ]
   }
 ]

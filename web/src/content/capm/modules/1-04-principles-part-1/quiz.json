@@ -322,5 +322,125 @@
         "label": "PMBOK 8, Standard 3.5"
       }
     ]
+  },
+  {
+    "id": "q17",
+    "q": "A new team member insists that each principle must be applied in exactly the same way on every project, like a rule in a procedure manual. What should the project manager explain?",
+    "options": [
+      "She is right, and the team should document each rule",
+      "Principles apply only to predictive projects and must be replaced by values in adaptive ones",
+      "Principles are optional, so the team may ignore them",
+      "Principles are guidance, and how they are applied depends on the context"
+    ],
+    "answer": 3,
+    "explanation": "In project management, principles are not prescriptive. They are foundational guidelines for decisions and behavior, and how each is applied depends on the organization, project, deliverables, team and stakeholders.",
+    "ref": "PMBOK 8, Standard section 3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 58,
+        "label": "PMBOK 8, Standard section 3"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "To finish design early, a project manager shortens the design reviews. Design ends a week ahead, but testing is then flooded with defects and the project finishes late. Which principle would have prevented this?",
+    "options": [
+      "Adopt a Holistic View",
+      "Be an Accountable Leader",
+      "Build an Empowered Culture",
+      "Integrate Sustainability Within All Project Areas"
+    ],
+    "answer": 0,
+    "explanation": "Adopt a Holistic View means considering all the project's components and their interdependencies as one system, so that you do not fix one part while breaking another.",
+    "ref": "PMBOK 8, Standard 3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 61,
+        "label": "PMBOK 8, Standard 3.3"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A company is choosing software for its staff. One product has far more features. The other is simpler, and the company's culture strongly prefers simple tools. A value-focused team chooses the simpler one. Why?",
+    "options": [
+      "Because simpler software is always cheaper to buy",
+      "Because it is more likely to be adopted, which is what produces the outcome",
+      "Because fewer features mean less testing for the team",
+      "Because the sponsor asked the team for the lowest possible purchase price in the business case"
+    ],
+    "answer": 1,
+    "explanation": "Focus on Value aims at outcomes, not deliverables. A product with more features creates no value if people do not use it; the simpler one fits the culture and gets higher adoption.",
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A reviewer from the PMO examines how the team carries out its testing procedure, not the product being tested, and recommends two improvements. What is this an example of?",
+    "options": [
+      "Inspecting the product for defects before release",
+      "Validating the product with end users",
+      "Pursuing quality of the process through a review or audit",
+      "Measuring the finished product against each of its documented acceptance criteria"
+    ],
+    "answer": 2,
+    "explanation": "Quality applies to both what is produced and how it is produced. For the product, teams use training, inspections and testing; for the process, reviews and audits. Both aim to prevent errors.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "On an adaptive project with no fixed scope, the team has ideas for twelve features but time and money for about seven. How should it decide which to build?",
+    "options": [
+      "Work with the customer to decide which features are worth the time and money",
+      "Build the twelve features in the order the developers prefer",
+      "Ask the sponsor to extend the project and its budget until all twelve features are done",
+      "Build the seven that are technically easiest for the team"
+    ],
+    "answer": 0,
+    "explanation": "Under Focus on Value, in adaptive projects without fixed scope the team works with the customer to decide which features are worth the time and money.",
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A project has budget left over. A developer proposes using it to add polished extras that no stakeholder has asked for. What does the Focus on Value principle say?",
+    "options": [
+      "Add them, because unused budget is wasted budget",
+      "Add them, because exceeding stakeholder expectations is what project management is for",
+      "Add them only if the team finds the work interesting",
+      "Do not add them; deliver what is required with the minimal necessary resources"
+    ],
+    "answer": 3,
+    "explanation": "The principle asks the team to maximize return by delivering the required functionality and quality with minimal necessary resources, and it guards scope against scope creep and gold plating.",
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
   }
 ]

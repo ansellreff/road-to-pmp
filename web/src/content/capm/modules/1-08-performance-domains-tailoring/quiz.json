@@ -322,5 +322,125 @@
         "label": "PMBOK 8, Guide 3.2"
       }
     ]
+  },
+  {
+    "id": "q17",
+    "q": "A new project manager plans to \"complete the Stakeholders domain in month one, the Schedule domain in month two and the Risk domain in month three\". What is wrong with this plan?",
+    "options": [
+      "Nothing; this is the order the Guide recommends",
+      "The domains run concurrently through the whole project, not in sequence",
+      "Risk must come first, because it carries the highest weighting of the seven domains",
+      "Only the Governance domain may be worked on in month one"
+    ],
+    "answer": 1,
+    "explanation": "The performance domains have no weighting or order. They run concurrently through the whole project and work as one integrated system, not as separate silos.",
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A team is proud of its 60-page schedule document, but no stakeholder reads it and nobody can say when value will be delivered. What does the \"check results\" idea say about this?",
+    "options": [
+      "The document is valuable in itself, because the organization's methodology requires it",
+      "The document should be made longer and more detailed",
+      "The document should be approved by the PMO before use",
+      "An output is valuable only if it serves a higher-order outcome"
+    ],
+    "answer": 3,
+    "explanation": "Project management activities add no value by themselves. A schedule is valuable because it aligns stakeholders around when value will be delivered. Every output should serve a higher-order outcome.",
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A team of six works adaptively on an internal tool, with the product owner in the same room. How much governance does this project most likely need?",
+    "options": [
+      "Lightweight",
+      "Comprehensive",
+      "None at all",
+      "The same as a large predictive project"
+    ],
+    "answer": 0,
+    "explanation": "Governance can be lightweight for adaptive work, moderate for hybrid, and comprehensive for large predictive projects. Too many processes is costly and wasteful; too few makes management ineffective.",
+    "ref": "PMBOK 8, Guide 2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A project produces a weekly status report and a weekly risk report for the same readers. The team combines them into one report that serves both purposes. Which tailoring action is this?",
+    "options": [
+      "Added",
+      "Removed",
+      "Blended",
+      "Aligned"
+    ],
+    "answer": 2,
+    "explanation": "Processes can be added, modified, removed, blended or aligned. Blending combines elements for added value. Removing would mean dropping one of the reports altogether.",
+    "ref": "PMBOK 8, Guide 3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 209,
+        "label": "PMBOK 8, Guide 3.3"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Team members wait several days for a manager's signature on every purchase, even for small items, and work stalls. Which tailoring suggestion fits this situation?",
+    "options": [
+      "Add another approval step to make the process more rigorous",
+      "Authorize people to decide up to set value thresholds",
+      "Run a team-building event to improve collaboration",
+      "Use value stream mapping to reduce work in progress"
+    ],
+    "answer": 1,
+    "explanation": "For long delays waiting for approvals, the suggested tailoring is to authorize people to decide up to set value thresholds, so that small decisions do not queue for a signature.",
+    "ref": "PMBOK 8, Guide Table 3-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 217,
+        "label": "PMBOK 8, Guide Table 3-1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A customer's contract requires a monthly earned value report in a set format. The team finds it heavy and wants to tailor it out. What applies?",
+    "options": [
+      "The team may drop it, because tailoring is always the team's choice",
+      "The team may drop it if the project manager approves",
+      "The team may replace it with a verbal update",
+      "The contract mandates it, which limits what the team can tailor"
+    ],
+    "answer": 3,
+    "explanation": "Tailoring has limits: organizational policy or a contract may mandate a particular approach. The team tailors within those limits.",
+    "ref": "PMBOK 8, Guide 3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 209,
+        "label": "PMBOK 8, Guide 3.2"
+      }
+    ]
   }
 ]

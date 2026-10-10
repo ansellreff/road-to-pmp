@@ -342,5 +342,125 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q18",
+    "q": "At a phase gate the exit criteria have been met, but a more urgent initiative needs the same team for the next two months. Which gate decision fits?",
+    "options": [
+      "End the project, because the team is not available",
+      "Repeat the whole phase, to keep the team busy until the other work is finished",
+      "Park the project temporarily for the more urgent initiative",
+      "Continue to the next phase with no team assigned"
+    ],
+    "answer": 2,
+    "explanation": "Possible decisions at a phase gate include continuing, continuing with modifications, ending, remaining in the phase, repeating it, or parking the project temporarily for a more urgent initiative.",
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "On a predictive building project, the customer asks to move a staircase. During design the change would have taken a day. Now the walls are up. Why is the same change so much more expensive?",
+    "options": [
+      "Because risk and uncertainty are highest near the end",
+      "Because stakeholders have more influence over scope near the end of a project",
+      "Because staffing is lowest during the build work",
+      "Because the cost of changes rises as the project progresses"
+    ],
+    "answer": 3,
+    "explanation": "The cost of changes is low at the start and high toward the end, while stakeholders' ability to influence scope cheaply decreases. This is why resolving uncertainty early is cheaper.",
+    "ref": "PMBOK 8, Standard 4.1, Figure 4-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 82,
+        "label": "PMBOK 8, Standard 4.1, Figure 4-1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A new highway is fully designed and planned before work starts. It is then opened to traffic one section at a time, each section adding to the last. Which approach is this?",
+    "options": [
+      "Predictive with incremental delivery",
+      "Adaptive with fixed timeboxes",
+      "Hybrid with an adaptive rollout at the very end",
+      "Flow-based scheduling"
+    ],
+    "answer": 0,
+    "explanation": "In predictive work with incremental delivery, the whole scope is understood and planned up front, but the product is delivered in parts. Stakeholders get value earlier while scope and timeline stay largely fixed.",
+    "ref": "PMBOK 8, Standard 4.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 84,
+        "label": "PMBOK 8, Standard 4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A team's work piles up in front of the single test environment while every other step has spare capacity. The team decides to fix that one limiting step before improving anything else. Which idea is it applying?",
+    "options": [
+      "Disciplined Agile",
+      "Theory of constraints",
+      "Progressive elaboration",
+      "Integrated baseline"
+    ],
+    "answer": 1,
+    "explanation": "The theory of constraints says to find and fix the single most limiting factor standing in the way of the goal. It is one of the sources of flow-based scheduling, alongside Kanban.",
+    "ref": "PMBOK 8, Standard 4.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 86,
+        "label": "PMBOK 8, Standard 4.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A web service is updated many times a week. Each small change is tested automatically and then flows straight into production. Which delivery cadence is this?",
+    "options": [
+      "Single delivery",
+      "Multiple deliveries",
+      "Periodic deliveries",
+      "Continuous delivery"
+    ],
+    "answer": 3,
+    "explanation": "In continuous delivery, tested increments flow to production on an ongoing basis, supported by automation. Periodic deliveries follow a fixed regular schedule, such as every two weeks.",
+    "ref": "PMBOK 8, Standard 4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 92,
+        "label": "PMBOK 8, Standard 4.4"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A status report says: \"The project is now in the stage where the deliverables are built and tested.\" A stakeholder replies: \"So the development approach is build and test?\" What should the project manager clarify?",
+    "options": [
+      "That the stakeholder is correct, since the two terms mean the same thing in the Guide",
+      "That the approach is chosen by the customer during this stage",
+      "That this is the development phase; the approach is how the product is created",
+      "That a development approach exists only in adaptive projects"
+    ],
+    "answer": 2,
+    "explanation": "A development approach is the means used to create and evolve the product: predictive, adaptive or hybrid. The development phase is the stage of a life cycle where deliverables are actually built and tested.",
+    "ref": "PMBOK 8, Standard 4.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 82,
+        "label": "PMBOK 8, Standard 4.2"
+      }
+    ]
   }
 ]

@@ -362,5 +362,125 @@
         "label": "Process Groups: A Practice Guide, 2.5.1"
       }
     ]
+  },
+  {
+    "id": "q19",
+    "q": "A project buys its main equipment from abroad. A sudden change in the exchange rate raises the cost by 8%. How should the project manager classify the exchange rate?",
+    "options": [
+      "An organizational process asset",
+      "An internal enterprise environmental factor",
+      "A project governance decision",
+      "An external enterprise environmental factor"
+    ],
+    "answer": 3,
+    "explanation": "Financial considerations such as exchange rates, interest rates and inflation are external EEFs: conditions outside the organization that the team cannot change but that affect the project.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "To save two weeks, a project manager wants to skip the company's change control procedure for this project only. The sponsor agrees it would be faster. What is correct?",
+    "options": [
+      "The project may skip it, because the sponsor has agreed",
+      "The project must follow it; such procedures change only through organizational policy",
+      "The project may skip it, because procedures are only guidelines",
+      "The project must follow it only if the customer insists on it in writing before the change is made"
+    ],
+    "answer": 1,
+    "explanation": "Policies, processes and procedures are set outside the project and are not updated as part of project work; they change only by following organizational policy. Project governance works inside organizational governance and cannot override it.",
+    "ref": "PMBOK 8, Standard 2.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 43,
+        "label": "PMBOK 8, Standard 2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Before estimating, a project manager looks up the actual labour hours and cost overruns of three earlier projects in the company's project archive. What is she using?",
+    "options": [
+      "An organizational process asset: a knowledge repository",
+      "An enterprise environmental factor: marketplace and competitor conditions",
+      "A project governance model: a RACI matrix",
+      "An enterprise environmental factor: infrastructure"
+    ],
+    "answer": 0,
+    "explanation": "Historical information, financial data and files from previous projects are organizational knowledge repositories, one of the two groups of OPAs. They belong to the organization and are updated throughout projects.",
+    "ref": "PMBOK 8, Standard 2.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 44,
+        "label": "PMBOK 8, Standard 2.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "The company's only scheduling tool cannot share calendars between sites, and there is no budget to replace it. The team has to plan around this. What is the tool, from the project's point of view?",
+    "options": [
+      "An external enterprise environmental factor",
+      "An organizational process asset",
+      "An internal enterprise environmental factor",
+      "A project management plan component"
+    ],
+    "answer": 2,
+    "explanation": "Existing information technology systems, such as scheduling tools, are internal EEFs. The team cannot change them and must work with or around them. Internal does not automatically mean OPA.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "An engineer receives instructions from her head of department and from the project manager, and both have a say over her time. The two sometimes disagree about her priorities. Which structure does this describe?",
+    "options": [
+      "Functional",
+      "Matrix",
+      "Project-oriented",
+      "Organic or simple"
+    ],
+    "answer": 1,
+    "explanation": "In a matrix structure team members have two bosses: the functional manager and the project manager. Weak, balanced and strong describe how much power the project manager has.",
+    "ref": "PMBOK 8, Standard 2.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 44,
+        "label": "PMBOK 8, Standard 2.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A company's executive committee rules that every initiative, large or small, must report its environmental impact each quarter. A project manager thinks the rule does not fit her small project. What does the rule represent?",
+    "options": [
+      "Project governance, which she may tailor as she sees fit for a small project",
+      "An organizational process asset that her team may update",
+      "A stakeholder request that her sponsor may decline",
+      "Organizational governance, which the project must work within"
+    ],
+    "answer": 3,
+    "explanation": "Organizational governance defines ethical, social and environmental responsibilities and is overseen by an executive committee or senior leaders. Project governance works within those rules; a project cannot override organizational policy.",
+    "ref": "PMBOK 8, Standard 1.3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 30,
+        "label": "PMBOK 8, Standard 1.3.2"
+      }
+    ]
   }
 ]
