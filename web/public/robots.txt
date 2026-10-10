@@ -1,0 +1,3 @@
+# A personal study site. Search engines are asked not to list it.
+User-agent: *
+Disallow: /

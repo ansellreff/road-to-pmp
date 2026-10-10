@@ -73,6 +73,31 @@ export function domainScores(course: Course, questions: ExamQuestion[], picks: (
 export const countRight = (questions: ExamQuestion[], picks: (number | null)[]) =>
   questions.filter((q, i) => picks[i] === q.question.answer).length
 
+export interface ModuleLoss {
+  moduleId: string
+  /** Questions answered wrong or left unanswered. */
+  lost: number
+  total: number
+}
+
+/** Where the points went: modules with at least one lost question, most lost first. */
+export function moduleLosses(questions: ExamQuestion[], picks: (number | null)[]): ModuleLoss[] {
+  const byModule = new Map<string, ModuleLoss>()
+  questions.forEach((q, i) => {
+    const entry = byModule.get(q.moduleId) ?? { moduleId: q.moduleId, lost: 0, total: 0 }
+    entry.total++
+    if (picks[i] !== q.question.answer) entry.lost++
+    byModule.set(q.moduleId, entry)
+  })
+  return [...byModule.values()].filter((m) => m.lost > 0).sort((a, b) => b.lost - a.lost || b.lost / b.total - a.lost / a.total)
+}
+
+/** "1 min 12 s" */
+export function formatSeconds(seconds: number): string {
+  const whole = Math.round(seconds)
+  return whole >= 60 ? `${Math.floor(whole / 60)} min ${whole % 60} s` : `${whole} s`
+}
+
 /** Most recent finished attempt in one mode. */
 export function lastAttempt(attempts: ExamAttempt[], mode: ExamAttempt['mode']): ExamAttempt | undefined {
   return [...attempts].reverse().find((a) => a.mode === mode)

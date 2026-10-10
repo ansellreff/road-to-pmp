@@ -2,8 +2,9 @@ import { Link } from 'react-router-dom'
 import Milestone from '../components/Milestone'
 import { Figures, Notice, PageHeader } from '../components/Page'
 import { courses, getExams, type Course, type ModuleMeta } from '../lib/content'
-import { addDays, buildPlan, daysBetween, formatDay, type PlanItem, type StudyPlan } from '../lib/plan'
-import { moduleCompletion, moduleKey, setExamDate, today, useProgress, type Progress } from '../lib/progress'
+import { examKey } from '../lib/exam'
+import { addDays, buildPlan, daysBetween, formatDay, planMockExams, type PlanItem, type StudyPlan } from '../lib/plan'
+import { dueByDay, moduleCompletion, moduleKey, setExamDate, today, useProgress, type Progress } from '../lib/progress'
 import { moduleNumber, percent, remainingModules } from '../lib/stats'
 import { btnQuiet, input, link, listTitle, note, section, sectionTitle } from '../lib/ui'
 
@@ -87,7 +88,9 @@ function PlanDetail({ course, progress, plan, examDate, now }: DetailProps) {
 
   const left = plan.items.length
   const unwritten = plan.items.filter((p) => !p.item.ready).length
-  const exams = getExams(course.id).length
+  const exams = getExams(course.id)
+  const mocks = planMockExams(plan, examDate, exams.length)
+  const cardsDue = dueByDay(progress, 7).filter((d) => d.count > 0)
 
   // Modules grouped by the week they fall in, counted in sevens from today.
   const weeks: PlanItem<ModuleMeta>[][] = []
@@ -151,6 +154,13 @@ function PlanDetail({ course, progress, plan, examDate, now }: DetailProps) {
                 <span className="group-open:hidden">. Select to show</span>
               </span>
             </summary>
+            {week === 0 && (
+              <p className={`${note} border-t border-line py-2.5`}>
+                {cardsDue.length
+                  ? `Flashcards due: ${cardsDue.map((d) => `${d.day === now ? 'today' : formatDay(d.day, now)} ${d.count}`).join(', ')}.`
+                  : 'No flashcards fall due in the next 7 days.'}
+              </p>
+            )}
             <ul className="pb-2">
               {items.map(({ item, finishBy }) => {
                 const done = moduleCompletion(progress, moduleKey(course.id, item.id))
@@ -187,21 +197,37 @@ function PlanDetail({ course, progress, plan, examDate, now }: DetailProps) {
             <span className="font-semibold">
               Final review, {plan.reviewDays} {plan.reviewDays === 1 ? 'day' : 'days'}.
             </span>{' '}
-            Due flashcards, missed questions
-            {exams > 0 && (
-              <>
-                {' '}
-                and the{' '}
-                <Link to={`/${course.id}/exams`} className={link}>
-                  {exams} mock exams
-                </Link>
-                , the last one in real exam mode
-              </>
-            )}
-            .
+            Due flashcards, missed questions{exams.length > 0 && ' and the mock exams below'}.
+            {mocks.length < exams.length &&
+              ` The review is too short for all ${exams.length} mock exams, so ${mocks.length} ${mocks.length === 1 ? 'is' : 'are'} scheduled. Take the others earlier, or choose a later exam day.`}
           </p>
         </div>
       )}
+      {mocks.map(({ index, day }) => {
+        const exam = exams[index]
+        const attempts = progress.exams[examKey(course.id, exam.id)]?.attempts ?? []
+        return (
+          <div
+            key={exam.id}
+            className="grid gap-x-4 gap-y-0.5 border-b border-line py-2.5 sm:grid-cols-[8rem_minmax(0,1fr)_7rem]"
+          >
+            <span className={`text-sm tabular-nums ${day === now ? 'font-semibold text-plan' : 'text-muted'}`}>
+              {day === now ? 'Today' : formatDay(day, now)}
+            </span>
+            <span>
+              <Link to={`/${course.id}/exams`} className={link}>
+                {exam.title}
+              </Link>
+              <span className="text-muted">
+                {exam.unseen ? ', in real exam mode. Its questions are new to you.' : ', 3 hours'}
+              </span>
+            </span>
+            <span className={`text-sm sm:text-right ${attempts.length ? 'font-semibold text-done' : 'text-muted'}`}>
+              {attempts.length ? '✓ Taken' : 'Not taken yet'}
+            </span>
+          </div>
+        )
+      })}
       <div className="grid gap-x-4 gap-y-0.5 py-3 sm:grid-cols-[8rem_minmax(0,1fr)]">
         <span className="text-sm font-semibold tabular-nums">{formatDay(examDate, now)}</span>
         <span className="flex items-center gap-2 font-semibold">

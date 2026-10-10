@@ -114,6 +114,7 @@ export const tests = {
     await page.goto('/capm/exams')
     await page.getByRole('button', { name: 'Start in real exam mode' }).nth(1).click()
     await see(page, 'Question 1 of 150. First half: 0 of 75 answered')
+    await page.waitForTimeout(1200) // think for a moment, so the time on this question is at least a second
     await option(page, 'B').click()
     expect((await page.getByText('Source:').count()) === 0, 'real exam mode showed an explanation')
     await option(page, 'D').click() // an answer can be changed
@@ -144,11 +145,17 @@ export const tests = {
     await page.getByRole('button', { name: 'Submit the exam' }).click()
     await see(page, 'Mock exam 2: your result')
     await see(page, '148 questions were left unanswered and count as wrong.')
+    await see(page, 'Where the points went')
+    await see(page, 'Average on a question')
+    await see(page, 'The questions that took longest')
     await see(page, 'Review by domain')
     await button(page, 'Flagged (1)').click()
     const progress = await saved(page)
     const attempt = progress.exams['capm/mock-2'].attempts[0]
     expect(attempt.mode === 'real' && attempt.flags.length === 1 && !attempt.timedOut, 'the attempt was saved wrongly')
+    expect(attempt.times?.length === 150 && attempt.times[0] >= 1, 'time per question was not saved')
+    expect(attempt.times.filter((t) => t > 0).length <= 6, 'time was counted for questions that were never opened')
+    expect(attempt.domains?.length === 4 && attempt.domains.reduce((n, d) => n + d.total, 0) === 150, 'the result per domain was not saved')
     const recorded = Object.values(progress.answers).reduce((n, module) => n + Object.keys(module).length, 0)
     expect(recorded === 2, `${recorded} answers went into the question history, expected 2`)
   },
@@ -223,6 +230,43 @@ export const tests = {
     await see(page, 'Source:')
     await page.getByRole('link', { name: /Indices: CPI and SPI/ }).first().click()
     await inView(page, 'Indices: CPI and SPI')
+  },
+
+  async 'readiness estimate: worked out from quizzes and mock exams'(page) {
+    // One perfect quiz out of the 12 in Domain 1: quizzes there stand at 1/12, so 0.36 x 1/12 = 3%.
+    const quizzes = { 'capm/1-01-project-basics': { best: 10, last: 10, total: 10, attempts: 1, date: '2026-10-01T10:00:00.000Z' } }
+    await seed(page, { quizzes })
+    await page.goto('/dashboard')
+    await see(page, 'Readiness estimate')
+    await page.getByText('3%', { exact: true }).first().waitFor()
+    // Add a mock exam with every answer right: Domain 1 = 0.6 x 1 + 0.4 x 1/12, the others 0.6. Total 61%.
+    const domains = [54, 26, 30, 40].map((total) => ({ right: total, total }))
+    const attempt = { mode: 'real', date: '2026-10-05T10:00:00.000Z', seconds: 9000, timedOut: false, picks: Array(150).fill(null), flags: [], right: 150, total: 150, domains }
+    await seed(page, { quizzes, exams: { 'capm/mock-1': { attempts: [attempt] } } })
+    await page.goto('/dashboard')
+    await page.getByText('61%', { exact: true }).first().waitFor()
+    await see(page, 'Weak spots from your mock exams')
+    await page.goto('/')
+    await see(page, 'Readiness estimate: 61%.')
+  },
+
+  async 'study plan: mock exams get dates in the final review'(page) {
+    const day = (n) => new Date(Date.now() + n * 86_400_000).toLocaleDateString('en-CA')
+    const shown = (n) => new Date(Date.now() + n * 86_400_000).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })
+    await seed(page, { examDates: { capm: day(40) } })
+    await page.goto('/plan')
+    await see(page, 'Final review, 7 days.')
+    for (const title of ['Mock exam 1', 'Mock exam 2', 'Mock exam 3', 'Mock exam 4']) await see(page, title)
+    await see(page, 'in real exam mode. Its questions are new to you.')
+    // Mock exam 1 opens the review; the unseen Mock exam 4 is two days before the exam.
+    expect((await page.getByText(shown(33), { exact: true }).count()) >= 1, 'Mock exam 1 is not on the first review day')
+    expect((await page.getByText(shown(38), { exact: true }).count()) === 1, 'Mock exam 4 is not two days before the exam')
+    expect((await page.getByText('Not taken yet').count()) === 4, 'not all four mock exams are listed')
+    // A review of two days only has room for one.
+    await seed(page, { examDates: { capm: day(8) } })
+    await page.goto('/plan')
+    await see(page, 'The review is too short for all 4 mock exams, so 1 is scheduled.')
+    expect((await page.getByText('Not taken yet').count()) === 1, 'more mock exams are scheduled than fit')
   },
 
   async 'lesson and study plan: mark complete, set and remove the exam day'(page) {

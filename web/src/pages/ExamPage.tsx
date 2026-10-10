@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link, useParams, useSearchParams } from 'react-router-dom'
 import ExamResult from '../components/ExamResult'
 import NotFound from '../components/NotFound'
 import { QuestionView } from '../components/Quiz'
 import { getCourse, getExams, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
-import { breakLeftMs, countRight, elapsedMs, examKey, examLimitMs, formatClock, onBreak } from '../lib/exam'
-import { finishExam, moduleKey, updateExam, useProgress, type ExamRun } from '../lib/progress'
+import { breakLeftMs, countRight, domainScores, elapsedMs, examKey, examLimitMs, formatClock, onBreak } from '../lib/exam'
+import { addExamTime, finishExam, moduleKey, updateExam, useProgress, type ExamRun } from '../lib/progress'
 import { PageHeader, Waiting } from '../components/Page'
 import { btnPrimary, btnQuiet, column, link, note, sectionTitle, subTitle } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
@@ -59,6 +59,7 @@ function LoadedExam({ course, exam }: { course: Course; exam: Exam }) {
         seconds: Math.round(Math.min(limit, elapsedMs(run, Date.now())) / 1000),
         timedOut,
         right: countRight(questions, run.picks),
+        domains: domainScores(course, questions, run.picks).map(({ right, total }) => ({ right, total })),
       },
       answered,
     )
@@ -136,9 +137,15 @@ function PracticeRun({ course, exam, questions, run, examKey: key, leftMs, submi
   })
   const totalAnswered = run.picks.filter((p) => p !== null).length
 
+  // When the question now on screen appeared, to record how long it took to answer.
+  const shownAt = useRef(Date.now())
   const open = chapter === null ? undefined : chapters[chapter]
   // A chapter with every question answered falls back to the chapter list.
   const position = open && (shown ?? open.positions.find((i) => run.picks[i] === null))
+
+  useEffect(() => {
+    shownAt.current = Date.now()
+  }, [position])
 
   if (!open || chapter === null || position === undefined) {
     const unanswered = run.picks.length - totalAnswered
@@ -203,6 +210,7 @@ function PracticeRun({ course, exam, questions, run, examKey: key, leftMs, submi
 
   function pick(option: number) {
     setShown(position ?? null)
+    if (position !== undefined) addExamTime(key, position, Date.now() - shownAt.current)
     updateExam(key, (r) => ({ ...r, picks: r.picks.map((p, i) => (i === position ? option : p)) }))
   }
 
@@ -254,8 +262,17 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
   const [wanted, setWanted] = useState(() => positions.find((i) => run.picks[i] === null) ?? first)
   const [confirming, setConfirming] = useState(false)
   const position = wanted >= first && wanted < end ? wanted : first
+  const resting = onBreak(run, now)
 
-  if (onBreak(run, now)) {
+  // Time counts for the question on screen, and stops during the break.
+  const shownAt = useRef(Date.now())
+  useEffect(() => {
+    if (resting) return
+    shownAt.current = Date.now()
+    return () => addExamTime(key, position, Date.now() - shownAt.current)
+  }, [key, position, resting])
+
+  if (resting) {
     return (
       <div className={column}>
         <ExamHeader exam={exam} mode="Real exam mode" leftMs={leftMs} detail="Break. The exam clock is stopped." />
@@ -328,6 +345,9 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
           <button
             onClick={() => {
               setConfirming(false)
+              // Bank the time on the last question before the exam is closed.
+              addExamTime(key, position, Date.now() - shownAt.current)
+              shownAt.current = Date.now()
               if (secondHalf) submit()
               else {
                 updateExam(key, (r) => ({ ...r, breakStartedAt: Date.now() }))

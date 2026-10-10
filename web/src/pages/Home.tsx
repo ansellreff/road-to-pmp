@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import ExamBlueprint from '../components/ExamBlueprint'
 import Milestone from '../components/Milestone'
 import { allModules, courses, getExams, type Course } from '../lib/content'
-import { buildPlan, formatDay } from '../lib/plan'
+import { buildPlan, formatDay, planMockExams } from '../lib/plan'
+import { readiness } from '../lib/readiness'
 import {
   dueCount,
   exportProgress,
@@ -87,6 +88,8 @@ function Today({ course, progress }: { course: Course; progress: Progress }) {
   const now = today()
   const plan = buildPlan(now, examDate, remainingModules(course, progress))
   const missed = courseMissed(course, progress)
+  const exams = getExams(course.id)
+  const mockToday = exams[planMockExams(plan, examDate, exams.length).find((m) => m.day === now)?.index ?? -1]
   // Written modules due today; if none falls due today, the next one keeps the habit going.
   const written = plan.items.filter((p) => p.item.ready)
   const dueToday = written.filter((p) => p.finishBy === now)
@@ -122,6 +125,16 @@ function Today({ course, progress }: { course: Course; progress: Progress }) {
                 </span>
               </li>
             ))}
+            {mockToday && (
+              <li className="flex min-h-12 flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+                <Link to={`/${course.id}/exams`} className={link}>
+                  {mockToday.title}
+                </Link>
+                <span className="text-sm text-muted">
+                  Planned for today. Allow {course.exam.minutes / 60} hours{mockToday.unseen ? ', in real exam mode' : ''}.
+                </span>
+              </li>
+            )}
             {missed > 0 && (
               <li className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
                 <Link to="/practice" className={link}>
@@ -169,6 +182,7 @@ function CourseSummary({ course, progress }: { course: Course; progress: Progres
   const written = modules.filter((m) => m.ready).length
   const next = nextModule(course, progress)
   const exams = getExams(course.id).length
+  const ready = readiness(course, progress)
   return (
     <section className={section}>
       <h2 className={sectionTitle}>{course.title}</h2>
@@ -178,6 +192,14 @@ function CourseSummary({ course, progress }: { course: Course; progress: Progres
       <div className="mt-6">
         <ExamBlueprint course={course} progress={progress} />
       </div>
+      {!ready.empty && (
+        <p className="mt-5">
+          <span className="font-semibold">Readiness estimate: {percent(ready.value)}.</span>{' '}
+          <Link to="/dashboard" className={link}>
+            See how it is worked out
+          </Link>
+        </p>
+      )}
       <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3">
         {next ? (
           <Link to={`/${course.id}/${next.id}`} className={btnPrimary}>

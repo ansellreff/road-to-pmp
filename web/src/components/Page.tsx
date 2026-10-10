@@ -33,9 +33,10 @@ export interface Figure {
 }
 
 /** A row of headline numbers, each with a label above and a remark below. */
-export function Figures({ items }: { items: Figure[] }) {
+export function Figures({ items, underHeading = false }: { items: Figure[]; underHeading?: boolean }) {
   return (
-    <dl className="grid gap-x-8 gap-y-6 border-y-2 border-ink py-5 sm:grid-cols-3">
+    // Straight under a ruled heading the top rule is left out, so there is one line, not two.
+    <dl className={`grid gap-x-8 gap-y-6 border-b-2 border-ink py-5 sm:grid-cols-3 ${underHeading ? '' : 'border-t-2'}`}>
       {items.map((f) => (
         <div key={f.label}>
           <dt className="text-sm text-muted">{f.label}</dt>

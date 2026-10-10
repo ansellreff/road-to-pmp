@@ -41,6 +41,14 @@ export interface ExamRun {
   /** Real exam mode: set when the first half is submitted. That half is then locked. */
   breakStartedAt?: number
   breakEndedAt?: number
+  /** Milliseconds each question has been on screen so far. Runs started before this was recorded have none. */
+  times?: number[]
+}
+
+/** Right answers and number of questions in one exam domain. */
+export interface DomainResult {
+  right: number
+  total: number
 }
 
 export interface ExamAttempt {
@@ -53,6 +61,10 @@ export interface ExamAttempt {
   flags: number[]
   right: number
   total: number
+  /** Seconds spent on each question. Missing for exams taken before timing was recorded. */
+  times?: number[]
+  /** The result per exam domain, in course order. Filled in later for older attempts. */
+  domains?: DomainResult[]
 }
 
 export interface ExamRecord {
@@ -214,6 +226,23 @@ export function updateExam(key: string, change: (run: ExamRun) => ExamRun) {
   if (record.run) commitExam(key, { ...record, run: change(record.run) }, { activity: studiedToday() })
 }
 
+/** Add time spent looking at one question of the exam in progress. */
+export function addExamTime(key: string, position: number, ms: number) {
+  const record = examRecord(key)
+  if (!record.run || ms <= 0) return
+  const times = record.run.times ? [...record.run.times] : Array(record.run.picks.length).fill(0)
+  times[position] = (times[position] ?? 0) + ms
+  commitExam(key, { ...record, run: { ...record.run, times } })
+}
+
+/** Store the per-domain result of an attempt made before it was recorded at submission. */
+export function setAttemptDomains(key: string, attempt: number, domains: DomainResult[]) {
+  const record = examRecord(key)
+  if (!record.attempts[attempt] || record.attempts[attempt].domains) return
+  const attempts = record.attempts.map((a, i) => (i === attempt ? { ...a, domains } : a))
+  commitExam(key, { ...record, attempts })
+}
+
 /** Stop the exam in progress without a result. */
 export function abandonExam(key: string) {
   commitExam(key, { attempts: examRecord(key).attempts })
@@ -225,7 +254,7 @@ export function abandonExam(key: string) {
  */
 export function finishExam(
   key: string,
-  result: { seconds: number; timedOut: boolean; right: number },
+  result: { seconds: number; timedOut: boolean; right: number; domains: DomainResult[] },
   answered: { key: string; questionId: string; correct: boolean }[],
 ) {
   const record = examRecord(key)
@@ -243,7 +272,8 @@ export function finishExam(
     }
   }
   const { mode, picks, flags } = record.run
-  const attempt: ExamAttempt = { mode, date: new Date().toISOString(), picks, flags, total: picks.length, ...result }
+  const times = record.run.times?.map((ms) => Math.round(ms / 1000))
+  const attempt: ExamAttempt = { mode, date: new Date().toISOString(), picks, flags, total: picks.length, times, ...result }
   commitExam(key, { attempts: [...record.attempts, attempt] }, { answers, activity: studiedToday() })
 }
 
@@ -311,6 +341,18 @@ export function knownCount(p: Progress, key: string): number {
 /** Number of cards across all modules whose review day has arrived. */
 export function dueCount(p: Progress): number {
   return Object.values(p.cards).reduce((sum, deck) => sum + Object.values(deck).filter(isDue).length, 0)
+}
+
+/** Flashcards falling due on each of the coming days, starting today. Overdue cards count for today. */
+export function dueByDay(p: Progress, days: number): { day: string; count: number }[] {
+  const result = Array.from({ length: days }, (_, i) => ({ day: today(i), count: 0 }))
+  for (const deck of Object.values(p.cards)) {
+    for (const card of Object.values(deck)) {
+      const slot = card.due <= result[0].day ? result[0] : result.find((r) => r.day === card.due)
+      if (slot) slot.count++
+    }
+  }
+  return result
 }
 
 /** Ids of a module's questions whose most recent answer was wrong. */

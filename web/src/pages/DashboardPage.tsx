@@ -1,8 +1,11 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { WeakModules } from '../components/ExamInsights'
 import { Figures, Meter, PageHeader } from '../components/Page'
 import { courses, getExams, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
-import { bandFor, domainScores, examKey, formatDuration } from '../lib/exam'
-import { dueCount, isKnown, studyStreak, today, useProgress, type ExamAttempt, type Progress } from '../lib/progress'
+import { bandFor, domainScores, examKey, formatDuration, moduleLosses, type ModuleLoss } from '../lib/exam'
+import { dueCount, isKnown, setAttemptDomains, studyStreak, today, useProgress, type ExamAttempt, type Progress } from '../lib/progress'
+import { MOCK_SHARE, readiness } from '../lib/readiness'
 import { answerTotals, domainStats, moduleNumber, percent, type DomainStats, type ModuleStats } from '../lib/stats'
 import { btnPrimary, btnQuiet, link, listTitle, note, section, sectionTitle, subTitle } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
@@ -101,7 +104,9 @@ function CourseDashboard({ course, progress }: { course: Course; progress: Progr
     <section className={section}>
       <h2 className={sectionTitle}>{course.title}</h2>
 
-      <h3 className={`${subTitle} mt-8`}>Readiness by exam domain</h3>
+      <ReadinessPanel course={course} progress={progress} />
+
+      <h3 className={`${subTitle} mt-12`}>Progress by exam domain</h3>
       <p className={`${note} mt-1 max-w-2xl`}>
         The thick bar is your quiz average, from your best score in each module. The thin bar is how much of the domain
         you have completed. A domain with a high exam weight and a short bar is where study time pays off most.
@@ -227,18 +232,138 @@ async function loadTakenExams(course: Course, exams: Exam[]): Promise<Record<str
   return Object.fromEntries(loaded)
 }
 
-/** The latest result of every mock exam taken, with the rating in each domain. */
+/** One figure for how prepared you are, with the working shown. */
+function ReadinessPanel({ course, progress }: { course: Course; progress: Progress }) {
+  const result = readiness(course, progress)
+  const focus = course.domains[result.focus]
+  return (
+    <>
+      <h3 className={`${subTitle} mt-8`}>Readiness estimate</h3>
+      {result.empty ? (
+        <p className={`${note} mt-1 max-w-2xl`}>
+          Nothing to estimate from yet. Finish a module quiz or a mock exam and a figure appears here.
+        </p>
+      ) : (
+        <>
+          <div className="mt-3 flex flex-wrap items-end gap-x-8 gap-y-3">
+            <p className="title text-6xl tabular-nums">{percent(result.value)}</p>
+            <p className="max-w-xl pb-1 leading-relaxed">
+              Study would raise it most in{' '}
+              <Link to={`/${course.id}#${focus.id}`} className={link}>
+                Domain {result.focus + 1}: {focus.title}
+              </Link>
+              , which is {focus.weight}% of the exam and stands at {percent(result.domains[result.focus].value)}.
+            </p>
+          </div>
+          <table className="data-table stack mt-5">
+            <thead>
+              <tr>
+                <th>Domain</th>
+                <th>Exam weight</th>
+                <th>Quizzes</th>
+                <th>Mock exams</th>
+                <th>Readiness</th>
+              </tr>
+            </thead>
+            <tbody>
+              {result.domains.map((d, i) => (
+                <tr key={course.domains[i].id}>
+                  <td className="font-semibold">
+                    {i + 1}. {course.domains[i].title}
+                  </td>
+                  <td data-label="Exam weight" className="tabular-nums">
+                    {d.weight}%
+                  </td>
+                  <td data-label="Quizzes" className="tabular-nums">
+                    {percent(d.quizzes)}
+                    <span className="text-sm text-muted">
+                      {' '}
+                      ({d.quizzesTaken} of {d.quizzesTotal} taken)
+                    </span>
+                  </td>
+                  <td data-label="Mock exams" className="tabular-nums">
+                    {d.mocks === undefined ? <span className="text-muted">None yet</span> : percent(d.mocks)}
+                  </td>
+                  <td data-label="Readiness" className="font-semibold tabular-nums">
+                    {percent(d.value)}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+          <p className={`${note} mt-3 max-w-3xl`}>
+            How it is worked out: in each domain, the quiz figure is the average of your best quiz scores, with a quiz
+            not yet taken counted as zero. Once you have taken a mock exam, the domain is {percent(MOCK_SHARE)} your
+            mock exam result and {percent(1 - MOCK_SHARE)} the quiz figure. The domains are then combined by their
+            exam weight. This is an estimate of preparation, not a prediction of passing: PMI does not publish a pass
+            mark.
+          </p>
+        </>
+      )}
+    </>
+  )
+}
+
+/** Overall score of each attempt in the order taken, as a line. */
+function Trend({ shares }: { shares: number[] }) {
+  if (shares.length < 2) return null
+  const x = (i: number) => 20 + (i * 560) / (shares.length - 1)
+  const y = (share: number) => 90 - share * 80
+  return (
+    <figure className="mt-5">
+      <svg viewBox="0 0 600 100" role="img" aria-label={`Overall score over ${shares.length} attempts: ${shares.map((s) => percent(s)).join(', ')}`} className="w-full max-w-xl">
+        <line x1="20" y1={y(PASS)} x2="580" y2={y(PASS)} stroke="var(--color-muted)" strokeDasharray="5 4" />
+        <polyline points={shares.map((s, i) => `${x(i)},${y(s)}`).join(' ')} fill="none" stroke="var(--color-plan)" strokeWidth="2.5" />
+        {shares.map((s, i) => (
+          <circle key={i} cx={x(i)} cy={y(s)} r="4.5" fill="var(--color-plan)" />
+        ))}
+      </svg>
+      <figcaption className={note}>
+        Overall score, oldest attempt on the left. The dashed line is {percent(PASS)}.
+      </figcaption>
+    </figure>
+  )
+}
+
+/** Every mock exam attempt, newest first, with the score in each domain; and where the points went. */
 function MockResults({ course, progress }: { course: Course; progress: Progress }) {
-  const taken = getExams(course.id).flatMap((exam) => {
-    const attempts = progress.exams[examKey(course.id, exam.id)]?.attempts ?? []
-    return attempts.length ? [{ exam, attempt: attempts[attempts.length - 1], number: attempts.length }] : []
-  })
-  const questions = useLoaded(() => loadTakenExams(course, taken.map((t) => t.exam)))
+  const exams = getExams(course.id)
+  const attempts = exams
+    .flatMap((exam) =>
+      (progress.exams[examKey(course.id, exam.id)]?.attempts ?? []).map((attempt, index) => ({ exam, attempt, index })),
+    )
+    .sort((a, b) => a.attempt.date.localeCompare(b.attempt.date))
+  const taken = exams.filter((exam) => attempts.some((a) => a.exam.id === exam.id))
+  const questions = useLoaded(() => loadTakenExams(course, taken))
+
+  // Attempts made before the result per domain was stored get it filled in once.
+  useEffect(() => {
+    if (!questions) return
+    for (const { exam, attempt, index } of attempts) {
+      const loaded = questions[exam.id]
+      if (!attempt.domains && loaded) {
+        const domains = domainScores(course, loaded, attempt.picks).map(({ right, total }) => ({ right, total }))
+        setAttemptDomains(examKey(course.id, exam.id), index, domains)
+      }
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [questions])
+
+  // Lost questions per module, over the latest attempt of each exam.
+  const losses = new Map<string, ModuleLoss>()
+  for (const exam of taken) {
+    const last = attempts.filter((a) => a.exam.id === exam.id).pop()
+    for (const loss of last && questions?.[exam.id] ? moduleLosses(questions[exam.id], last.attempt.picks) : []) {
+      const sum = losses.get(loss.moduleId) ?? { moduleId: loss.moduleId, lost: 0, total: 0 }
+      losses.set(loss.moduleId, { ...sum, lost: sum.lost + loss.lost, total: sum.total + loss.total })
+    }
+  }
+  const weakest = [...losses.values()].sort((a, b) => b.lost - a.lost)
 
   return (
     <>
       <h3 className={`${listTitle} mt-12`}>Mock exam results</h3>
-      {taken.length === 0 ? (
+      {attempts.length === 0 ? (
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-line py-4">
           <p className={`${note} max-w-xl`}>
             No mock exam finished yet. Each one gives a rating per domain, the way the real exam reports its result.
@@ -248,45 +373,39 @@ function MockResults({ course, progress }: { course: Course; progress: Progress 
           </Link>
         </div>
       ) : (
-        <table className="data-table stack">
-          <thead>
-            <tr>
-              <th>Exam</th>
-              <th>Score</th>
-              {course.domains.map((d, i) => (
-                <th key={d.id} title={d.title}>
-                  Domain {i + 1}
-                </th>
+        <>
+          <table className="data-table stack">
+            <thead>
+              <tr>
+                <th>Exam</th>
+                <th>Score</th>
+                {course.domains.map((d, i) => (
+                  <th key={d.id} title={d.title}>
+                    Domain {i + 1}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {[...attempts].reverse().map(({ exam, attempt, index }) => (
+                <ResultRow key={`${exam.id}/${index}`} course={course} exam={exam} attempt={attempt} number={index + 1} />
               ))}
-            </tr>
-          </thead>
-          <tbody>
-            {taken.map(({ exam, attempt, number }) => (
-              <ResultRow
-                key={exam.id}
-                course={course}
-                exam={exam}
-                attempt={attempt}
-                number={number}
-                questions={questions?.[exam.id]}
-              />
-            ))}
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+          <Trend shares={attempts.map((a) => a.attempt.right / a.attempt.total)} />
+
+          <h3 className={`${listTitle} mt-12`}>Weak spots from your mock exams</h3>
+          <p className={`${note} mt-3`}>
+            Modules where you lost the most questions, counting the latest attempt of each mock exam.
+          </p>
+          {questions ? <WeakModules course={course} losses={weakest} limit={6} /> : <p className={`${note} py-3`}>Loading</p>}
+        </>
       )}
     </>
   )
 }
 
-function ResultRow(props: {
-  course: Course
-  exam: Exam
-  attempt: ExamAttempt
-  number: number
-  questions: ExamQuestion[] | undefined
-}) {
-  const { course, exam, attempt, number, questions } = props
-  const scores = questions ? domainScores(course, questions, attempt.picks) : undefined
+function ResultRow({ course, exam, attempt, number }: { course: Course; exam: Exam; attempt: ExamAttempt; number: number }) {
   return (
     <tr>
       <td>
@@ -294,14 +413,15 @@ function ResultRow(props: {
           {exam.title}
         </Link>
         <span className="block text-sm text-muted">
-          {attempt.mode === 'practice' ? 'Practice mode' : 'Real exam mode'}, {formatDuration(attempt.seconds)}
+          {new Date(attempt.date).toLocaleDateString()}, {attempt.mode === 'practice' ? 'practice mode' : 'real exam mode'},{' '}
+          {formatDuration(attempt.seconds)}
         </span>
       </td>
       <td data-label="Score" className="tabular-nums">
         {attempt.right} of {attempt.total} ({percent(attempt.right / attempt.total)})
       </td>
       {course.domains.map((d, i) => {
-        const score = scores?.[i]
+        const score = attempt.domains?.[i]
         const band = score && bandFor(score.right / score.total)
         return (
           <td key={d.id} data-label={`Domain ${i + 1}`} className="text-sm">

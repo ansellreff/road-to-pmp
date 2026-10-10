@@ -49,6 +49,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | **Session 25d done, which completes Session 25.** Domain 3 now has the 2017 Agile Practice Guide's terms (servant leadership, daily standup, team facilitator) and three new sections: pros and cons of adaptive and predictive, what helps or hinders agile in an organization, and iterations with the WBS-to-backlog mapping. Domain 4 has the practice guide's five domains, a section on communication between teams, and one on which features go into which release. **CAPM: 39 modules, 840 questions, 1,208 flashcards.** Outline coverage: 59 of 60 points. No further PDFs are needed. Issues 72 and 73 added. | You: study modules 1.11 and 1.12 first; they are the exam's own framework. Next: Session 26, the mock exams, starting in plan mode |
 | 2026-10-10 | **Session 26 done: mock exams.** Four fixed mock exams of 150 questions (54 / 26 / 30 / 40 by domain), each in practice mode (one chapter per domain, explanation after each answer) or real exam mode (mixed order, two halves of 75, 10-minute break, flagging, nothing marked until the end). Strict 3-hour clock in both. Result per domain with a rating, then a review by domain. Mock exam 4 is kept unseen: its 150 questions are out of the module quizzes, which now hold 690. | You: try Mock exam 1 in practice mode, then a few questions in real exam mode, and report anything odd. Next: Session 27 (UI/UX polish) |
 | 2026-10-10 | **Session 27 done: UI/UX polish on every page.** Dark theme and a text size control in the top bar; larger question text, bigger buttons and softer colours for long sittings; one shared set of headings, buttons, tables and notices used by all pages; phone layout; redesigned Dashboard (domain chart, 14-day activity, mock exam results), Practice (choose a domain, progress track, list of questions missed again) and Study plan (timeline, schedule by week); wide lesson tables; seven drawn diagrams in modules 3.7, 4.2 and 4.5. | You: try the Dark switch and the three A buttons, open one page on your phone if it can reach this PC, and tell me anything that still looks off. Next: Session 28 (go online) |
+| 2026-10-10 | **Session 28a and 28b done; 28c prepared.** New: automated click tests (13, all passing, also against the production build); a list of sections beside each lesson and a "continue from" link; search over lessons and flashcards; a printable formula and key facts sheet; weak spots, time per question and a score trend for mock exams; a readiness estimate; mock exam dates and flashcards due in the study plan. The click tests found and fixed a real fault in real exam mode. Ready to upload: safety check, site icon, no-listing settings. | You: create a private GitHub repository named `road-to-pmi` (no README) and send me its address. Then Vercel, then Session 28d (sync). |
 
 ## How your progress is saved
 
@@ -60,6 +61,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 - The **Dashboard** (link in the top bar) shows your study streak, progress and quiz average per exam domain, and the modules to revisit. Every quiz answer is now remembered per question. A question you got wrong goes into **Practice missed questions** and leaves once you answer it correctly. Clearing a module's quiz score also clears its question history. Quizzes taken before 2026-10-10 kept their scores but have no per-question history.
 - The **Study plan** (link in the top bar) stores one thing: your exam day. Everything else on it is worked out fresh each day from what you have not finished, so a missed day spreads over the days left and nothing piles up. A quarter of the time before the exam, at most 7 days, is kept for final review. Modules not written yet are included so the pace is realistic. Removing the date removes the plan; your progress is untouched.
 - **Mock exams** (link in the top bar): starting one starts a 3-hour clock that runs on real time, also while the page or the browser is closed. Each answer is saved as you give it, so you can close the page and continue, but the time keeps passing. When the time is up the exam is submitted as it stands the next time you open it. A finished exam stores your answers, flags, time used and score, and the last result per mode is shown on the list. Answered questions go into the per-question history, so wrong ones appear in **Practice missed questions**; unanswered ones do not. "Stop without a result" discards the answers of that run. The exam's 10-minute break does not use exam time and ends by itself.
+- **Reading position:** each lesson remembers the last section you reached and offers "Continue from" next time. **Time per question** is recorded in mock exams taken from 2026-10-10 on. Both are part of your saved progress and of the backup file.
 
 ## Sources and PDF links
 
@@ -145,9 +147,24 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 25d | Exam alignment of Domains 3 and 4 (2017 Agile Practice Guide, Business Analysis for Practitioners); final list of PDFs; close the edition question |
 | ✅ | 26 | Feature: mock exams. Four fixed exams, practice mode and real exam mode, strict clock, result and review per domain, Mock exam 4 unseen. Built by `tools/build_exams.py`; details under "Session 26: mock exams as built". |
 | ✅ | 27 | UI/UX polish on every page: dark theme, text size control, reading comfort, shared styles, phone layout, redesigned Dashboard, Practice and Study plan, wide tables, seven diagrams. Details under "Session 27: the look and feel as built". |
-| ⬜ | 28 | Go online: GitHub and Vercel, test on phone |
+| ✅ | 28a | Click tests; lesson sections and resume; search; formula sheet |
+| ✅ | 28b | Weak spots and timing for mock exams; readiness estimate; mock exams in the study plan |
+| 🟡 | 28c | Go online: private GitHub repository and Vercel. Prepared and checked locally; waiting for your GitHub repository address. Then test on phone. |
+| ⬜ | 28d | Sync between PC and phone (needs a free Supabase project) |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
+
+### Ideas offered and not chosen (2026-10-10)
+
+Offered before going online; you chose others. Still available if you want them later.
+
+- More Domain 1 questions (its early quizzes have 11 to 14), and more scenario questions everywhere
+- Line-by-line check of lessons against PMBOK 7 and the business analysis practice guide
+- More diagrams: network diagram with critical path, earned value chart, WBS tree, control chart, burnup, decision tree, use case diagram
+- Keyboard shortcuts in quizzes and exams
+- Matching (drag-and-drop style) questions
+- Faster first load
+
 
 ### UI/UX backlog
 
@@ -383,6 +400,50 @@ Built on 2026-10-10. The identity is unchanged (the project schedule look); it i
 **Checked by screenshot** (sample progress, headless browser): dashboard, study plan, practice start, quiz, course, flashcards, lesson 4.5 and all seven diagrams, mock exam list, real exam mode and result; in light or dark, and home, dashboard, exam list, real exam mode and result at a 390 px phone width.
 
 **Not checked:** clicking, hover and pressed states, a real phone, and these screens as pictures: review cards, page not found, a practice session in progress, practice mode and the break in a mock exam. They use the same shared parts as the pages that were viewed.
+
+## Session 28: improvements before going online, as built
+
+You chose eight improvements on 2026-10-10 and said the content needs no major change.
+
+**Click tests** (`web/tests/`, run with `npm test` while the platform is running)
+- 13 tests drive the Edge browser already on this PC through whole visits: a full quiz, a practice session, a mock exam in each mode (answer, change, flag, grid, break, lock, submit), time running out, theme and text size, flashcards, lesson sections, search, the formula sheet, readiness and the study plan.
+- Each test uses a fresh private profile, so your saved progress is never touched.
+- `web/tests/shot.mjs` takes a picture of any page with sample progress. It replaces the temporary test pages used before.
+- `BASE=http://... npm test` runs the same tests against another address, such as the production build or the live site.
+
+**Lessons**
+- Every section has its own address, for example `/capm/2-07-earned-value#indices-cpi-and-spi`.
+- A bar at the top of the lesson names the section you are in and folds out into the list of sections. On a very wide screen (1536 px and more) the list stands beside the lesson instead.
+- The last section reached is remembered per lesson, and a "Continue from" link is offered. The page does not jump by itself.
+
+**Search** (top bar)
+- Searches lesson sections and flashcards, marks the words found, and opens the lesson at the section.
+- Quiz and mock exam questions are left out on purpose, so search cannot show a question before you meet it.
+- Deviation from the plan: there is a Search page with its box, linked from the top bar, not a box inside the top bar itself. The bar has no room for one beside seven links.
+
+**Formulas and key facts** (top bar: Formulas)
+- 24 formulas in four groups and 7 lists, each repeating an existing lesson section, linking to it and showing that section's own book sources. Printable.
+- Content: `web/src/content/capm/sheet.json`. The checker fails if an entry points at a section that does not exist or has no source; the example checker recomputes its worked numbers.
+
+**Mock exams**
+- Result page: "Where the points went" lists the modules with the most lost questions. "How you used the time" shows the average per question, the pace the exam allows (72 seconds), how many questions took more than twice that, and the ten slowest.
+- Time is counted while a question is on screen and not during the break. Exams taken before this have no timing and say so.
+- Dashboard: every attempt, newest first, with the rating per domain; a line of the overall score across attempts; weak spots over the latest attempt of each exam.
+
+**Readiness estimate** (dashboard, and one line on the home page)
+- Per domain: the average of your best quiz scores, counting a quiz not yet taken as zero. Once a mock exam is taken, the domain is 60% mock exam result and 40% that quiz figure. Domains are combined by exam weight.
+- It names the domain where study would raise the figure most.
+- It is an estimate of preparation, not a prediction of passing. The 60/40 split is my choice; change `MOCK_SHARE` in `web/src/lib/readiness.ts`.
+
+**Study plan**
+- The final review lists each mock exam with a date: the first on the first review day, the unseen Mock exam 4 two days before the exam, the others spread between. A review too short for all four schedules what fits and says so.
+- "This week" shows how many flashcards fall due on each of the next 7 days. The home page shows a mock exam on the day it is planned.
+
+**Going online, prepared**
+- `tools/check_publish.py` must pass before every upload: no PDF or document, nothing from the book folders or caches, no file over 1 MB, and none of your private details in any tracked or built file. The details are read from `.cache/private-terms.txt`, which stays on this PC.
+- Search engines are told not to list the site in three places: the page, `robots.txt`, and a response header set in `web/vercel.json`.
+- A site icon and "Add to home screen" details for a phone.
+- Checked on the production build served locally: all 13 click tests pass; sources show as text ("PDF page 274") with no link; the books address returns no PDF; a deep link opens.
 
 ## Session 25a audit results
 
@@ -629,3 +690,20 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 90 | The plan promised a short "Saved" confirmation for marking a lesson complete and setting the exam day. | Not added: both actions already change the page visibly (a "✓ Lesson completed" line, and the plan appearing). A second message would be noise. | Plan, section 27a |
 | 91 | In Practice, an answer used to be saved when you pressed Next; closing the page after reading the explanation lost it. | It is now saved the moment you pick an option, as in practice mode of the mock exams. | `web/src/pages/PracticePage.tsx` |
 | 92 | A diagram scaled down to a phone's width would have 6 px text. | Diagrams keep a minimum width and scroll sideways inside their frame on a phone. | `web/src/components/diagrams/parts.tsx` |
+
+### Before going online (Session 28)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 93 | **Real fault found by the first click test.** In real exam mode, answering a question made the screen jump to the next unanswered one. You could not change an answer or flag the question you had just answered without going back through the grid. Screenshots in Session 26 could not show this. | The question on screen now changes only when you move. Covered by a test that answers, changes the answer, flags, moves away and comes back. | `RealRun` in `web/src/pages/ExamPage.tsx` |
+| 94 | A link to a lesson section did nothing when the lesson's sources had not finished loading: the page tried to scroll before the lesson was drawn. Found by the search test; the formula sheet test passed only because the sources were already loaded. | The scroll now waits until both the text and the sources are there. | `web/src/components/Lesson.tsx` |
+| 95 | I wrote five entries of the formula sheet with module names that do not exist (for example `2-04-schedule-estimating` for `2-04-schedule-domain`). | The new checker rule caught all five before the page was opened. Corrected. | `tools/check_content.py` (`check_sheet`) |
+| 96 | On the formula sheet the book sources did not appear for most entries, because the lesson files use Windows line endings and my pattern expected the other kind. | Seen on the screenshot. The pattern accepts both. | `web/src/pages/SheetPage.tsx` |
+| 97 | Seven links plus the display controls no longer fit one line of the top bar at 1200 px; the controls dropped to a line of their own. | The page links now always have their own row under the name and the controls, at every width. | `web/src/App.tsx` |
+| 98 | A list of sections beside the lesson would take width away from the wide tables made in Session 27. | It stands beside the lesson only on screens of 1536 px and more, outside the page column. Below that it is a bar that stays at the top and folds out. | `web/src/components/LessonContents.tsx` |
+| 99 | The safety check must search for your name, member ID and email, but writing them into the tool would put them into the repository. | They are kept in `.cache/private-terms.txt`, which Git ignores. The check fails if that file is missing. I proved it by adding a harmless phrase to the list and watching the check fail, then removed it. | `tools/check_publish.py` |
+| 100 | That private list was saved with an invisible mark at the start of the file, which would have made the first entry never match. | The tool now reads the file in a way that ignores the mark. | `tools/check_publish.py` |
+| 101 | Times under half a second round to zero, so a question clicked through instantly counts as not opened in the timing figures. | Accepted: it only affects questions answered without reading. | `web/src/components/ExamInsights.tsx` |
+| 102 | If an exam ends because time ran out, the seconds on the question open at that moment are not added. | Accepted as a small inaccuracy on one question. | `web/src/pages/ExamPage.tsx` |
+| 103 | Older mock exam attempts have no result per domain stored, which the readiness estimate needs. | The dashboard fills it in the first time it is opened after this update. Until then the home page estimate leaves those attempts out. | `MockResults` in `web/src/pages/DashboardPage.tsx` |
+| 104 | You asked me to start the platform myself after a reboot, without being told. | Saved as a standing instruction: at the start of each session I check the address and start it if it is down. | Memory note `auto-start-dev-server` |

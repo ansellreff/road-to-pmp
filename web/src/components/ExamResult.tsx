@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { findModule, type Course, type Exam, type ExamQuestion } from '../lib/content'
-import { BANDS, bandFor, domainScores, formatDuration } from '../lib/exam'
+import { BANDS, bandFor, domainScores, formatDuration, moduleLosses } from '../lib/exam'
+import { ExamTiming, InsightTitle, WeakModules } from './ExamInsights'
 import type { ExamAttempt } from '../lib/progress'
 import { moduleNumber, percent } from '../lib/stats'
 import { btnPrimary, btnQuiet, column, link, listTitle, note, subTitle } from '../lib/ui'
@@ -96,6 +97,13 @@ export default function ExamResult(props: {
           Back to the mock exams
         </Link>
       </div>
+
+      <InsightTitle>Where the points went</InsightTitle>
+      <p className={`${note} mt-3`}>The modules with the most questions wrong or unanswered. Start your review there.</p>
+      <WeakModules course={course} losses={moduleLosses(questions, attempt.picks)} />
+
+      <InsightTitle>How you used the time</InsightTitle>
+      <ExamTiming course={course} questions={questions} attempt={attempt} />
 
       <h2 className={`${listTitle} mt-12`}>Review by domain</h2>
       <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="Which questions to show">

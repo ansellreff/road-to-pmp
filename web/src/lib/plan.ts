@@ -50,6 +50,33 @@ export interface StudyPlan<T> {
   items: PlanItem<T>[]
 }
 
+export interface PlannedExam {
+  /** Position of the mock exam in the course's list, counted from 0. */
+  index: number
+  day: string
+}
+
+/**
+ * Dates for the mock exams inside the final review. The last exam of the list, the unseen one,
+ * sits two days before the real exam, and the others are spread evenly before it. When the
+ * review is too short for all of them, the earliest ones are scheduled and then the unseen one.
+ */
+export function planMockExams(
+  plan: { reviewStart: string | undefined; reviewDays: number },
+  examDate: string,
+  count: number,
+): PlannedExam[] {
+  const start = plan.reviewStart
+  if (!start || count === 0) return []
+  const lastDay = addDays(examDate, plan.reviewDays >= 2 ? -2 : -1)
+  const span = daysBetween(start, lastDay)
+  const slots = Math.min(count, span + 1)
+  return Array.from({ length: slots }, (_, i) => ({
+    index: i === slots - 1 ? count - 1 : i,
+    day: slots === 1 ? lastDay : addDays(start, Math.round((i * span) / (slots - 1))),
+  }))
+}
+
 /**
  * Lay the remaining items out evenly over the study days. The plan is rebuilt from
  * whatever is still unfinished each time, so a missed day spreads over the days left
