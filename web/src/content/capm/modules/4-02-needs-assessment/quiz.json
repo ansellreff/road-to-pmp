@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the main purpose of needs assessment?",
+    "options": [
+      "To write detailed solution requirements",
+      "To understand the problem or opportunity and guide the decision on whether and how to invest",
+      "To test the finished product",
+      "To assign tasks to the project team"
+    ],
+    "answer": 1,
+    "explanation": "Needs assessment analyzes current business problems or opportunities to understand what is needed to reach the desired future state. Its results guide the investment decisions made by the organization.",
+    "ref": "PMI Guide to Business Analysis, 4.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 102,
+        "label": "PMI Guide to Business Analysis, 4.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A department head asks the business analyst to \"just buy a new scheduling system\". What should the analyst do first?",
+    "options": [
+      "Start comparing vendors",
+      "Write the functional requirements for the system",
+      "Prepare the project charter",
+      "Understand the problem or opportunity behind the request before discussing solutions"
+    ],
+    "answer": 3,
+    "explanation": "If the problem or opportunity is not thoroughly understood, the organization may pursue a solution that does not address the business need. The team should agree on the situation before discussing solutions.",
+    "ref": "PMI Guide to Business Analysis, 4.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 102,
+        "label": "PMI Guide to Business Analysis, 4.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "What does a situation statement contain?",
+    "options": [
+      "The problem or opportunity, its effect on the organization, and the resulting impact",
+      "The recommended solution and its cost",
+      "The list of approved requirements",
+      "The project schedule and budget"
+    ],
+    "answer": 0,
+    "explanation": "A situation statement is an objective statement of a problem or opportunity that includes the statement itself, the situation's effect on the organization, and the resulting impact.",
+    "ref": "PMI Guide to Business Analysis, 4.1.3.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 107,
+        "label": "PMI Guide to Business Analysis, 4.1.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What is a business need?",
+    "options": [
+      "A feature requested by a user",
+      "The budget approved for a project",
+      "The impetus for a change in an organization, based on an existing problem or opportunity",
+      "A list of solution options"
+    ],
+    "answer": 2,
+    "explanation": "A business need is the impetus for a change in an organization, based on an existing problem or opportunity. It gives the rationale for why a new project is being considered.",
+    "ref": "PMI Guide to Business Analysis, 4.1.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 107,
+        "label": "PMI Guide to Business Analysis, 4.1.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "An organization has no internal data to judge how serious a problem is. Which technique helps?",
+    "options": [
+      "Story mapping",
+      "Weighted ranking",
+      "Product visioning",
+      "Benchmarking"
+    ],
+    "answer": 3,
+    "explanation": "Benchmarking compares an organization's practices and results against established standards or best-in-class organizations. When data cannot be collected internally, benchmarking results can be used to understand the size of the problem.",
+    "ref": "PMI Guide to Business Analysis, 4.1.2.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 105,
+        "label": "PMI Guide to Business Analysis, 4.1.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "\"As-is analysis\" refers to which process?",
+    "options": [
+      "Determine Future State",
+      "Assess Current State",
+      "Assemble Business Case",
+      "Support Charter Development"
+    ],
+    "answer": 1,
+    "explanation": "Assess Current State examines the current environment, the as-is state of the organization, to understand the factors that may be causing the problem or opportunity.",
+    "ref": "PMI Guide to Business Analysis, 4.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 108,
+        "label": "PMI Guide to Business Analysis, 4.2"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which technique places the problem at the head of a diagram and groups its causes by category along branches?",
+    "options": [
+      "Fishbone diagram",
+      "Pareto diagram",
+      "SWOT diagram",
+      "Feature model"
+    ],
+    "answer": 0,
+    "explanation": "In a fishbone (cause-and-effect or Ishikawa) diagram, the problem is listed at the head and the causes and sub-causes are placed on the bones, grouped into categories.",
+    "ref": "PMI Guide to Business Analysis, 4.2.2.9",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 115,
+        "label": "PMI Guide to Business Analysis, 4.2.2.9"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "A facilitator keeps asking why a problem occurs, going deeper each time, until the underlying cause is clear. Which technique is this?",
+    "options": [
+      "Gap analysis",
+      "Kano analysis",
+      "Five whys",
+      "Benchmarking"
+    ],
+    "answer": 2,
+    "explanation": "The five whys technique explores why a situation is occurring through ongoing, deeper questioning, typically uncovering the root cause after about five rounds.",
+    "ref": "PMI Guide to Business Analysis, 4.2.2.9",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 115,
+        "label": "PMI Guide to Business Analysis, 4.2.2.9"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "In a SWOT analysis, a new competitor entering the market is a:",
+    "options": [
+      "Weakness",
+      "Threat",
+      "Strength",
+      "Opportunity"
+    ],
+    "answer": 1,
+    "explanation": "Strengths and weaknesses are internal to the organization. Opportunities and threats exist in the external environment. A new competitor is external and harmful, so it is a threat.",
+    "ref": "PMI Guide to Business Analysis, 4.2.2.10",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 117,
+        "label": "PMI Guide to Business Analysis, 4.2.2.10"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "What does gap analysis compare during needs assessment?",
+    "options": [
+      "The current state and the future state",
+      "The budget and the actual cost",
+      "The planned schedule and the actual schedule",
+      "Two competing vendors"
+    ],
+    "answer": 0,
+    "explanation": "Gap analysis compares two entities, usually the as-is and to-be states. The required capabilities are compared with the existing ones; the difference is the gap the organization must close.",
+    "ref": "PMI Guide to Business Analysis, 4.3.2.6",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 124,
+        "label": "PMI Guide to Business Analysis, 4.3.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which statement about the \"required capabilities and features\" output of Determine Future State is correct?",
+    "options": [
+      "They specify the technical design",
+      "They are the final approved requirements",
+      "They list the vendors to be used",
+      "They are the net changes the organization needs, and do not prescribe a solution"
+    ],
+    "answer": 3,
+    "explanation": "The required capabilities and features identify the net changes the organization needs to reach the desired future state. They do not prescribe a solution; further analysis decides how they will be delivered.",
+    "ref": "PMI Guide to Business Analysis, 4.3.3.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 128,
+        "label": "PMI Guide to Business Analysis, 4.3.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "In the purpose alignment model, a feature that is mission critical but gives no competitive advantage belongs to which category?",
+    "options": [
+      "Differentiating",
+      "Partner",
+      "Parity",
+      "Who cares"
+    ],
+    "answer": 2,
+    "explanation": "Parity features may be mission critical but do not give a competitive advantage. They keep the business on par with competitors. Differentiating features are mission critical and highly differentiating.",
+    "ref": "PMI Guide to Business Analysis, 4.3.2.9",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 126,
+        "label": "PMI Guide to Business Analysis, 4.3.2.9"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which question does technology feasibility answer?",
+    "options": [
+      "Do the necessary technology and skills exist or can they be obtained affordably, and does the option fit existing systems?",
+      "Will the organization accept and sustain the change?",
+      "Can the option be delivered by the deadline?",
+      "How will the option be validated?"
+    ],
+    "answer": 0,
+    "explanation": "Technology feasibility is whether the necessary technology and technical skills exist or can be affordably obtained, and whether the change is compatible with the rest of the technical infrastructure. Acceptance of the change is operational feasibility.",
+    "ref": "PMI Guide to Business Analysis, 4.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 129,
+        "label": "PMI Guide to Business Analysis, 4.4"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "After feasibility analysis, none of the options is viable. What may the business analyst recommend?",
+    "options": [
+      "The cheapest option anyway",
+      "That nothing be done",
+      "The option the sponsor prefers",
+      "Starting the project and deciding later"
+    ],
+    "answer": 1,
+    "explanation": "When there are no viable options to address the business need, one option is to recommend that nothing be done.",
+    "ref": "PMI Guide to Business Analysis, 4.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 129,
+        "label": "PMI Guide to Business Analysis, 4.4"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Two criteria are weighted: cost 0.4 and speed 0.6. Option A scores 3 on cost and 1 on speed. Option B scores 2 on cost and 3 on speed. Which option does weighted ranking prefer?",
+    "options": [
+      "Option A, with 2.2",
+      "Option A, with 1.8",
+      "They are equal",
+      "Option B, with 2.6"
+    ],
+    "answer": 3,
+    "explanation": "A: (3 × 0.4) + (1 × 0.6) = 1.2 + 0.6 = 1.8. B: (2 × 0.4) + (3 × 0.6) = 0.8 + 1.8 = 2.6. Option B has the higher total.",
+    "ref": "PMI Guide to Business Analysis, 4.4.2.8",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 135,
+        "label": "PMI Guide to Business Analysis, 4.4.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "What does a product roadmap provide?",
+    "options": [
+      "A detailed task schedule for the team",
+      "The acceptance criteria for each user story",
+      "A high-level view of product features and the sequence in which they will be delivered",
+      "The economic justification for the project"
+    ],
+    "answer": 2,
+    "explanation": "A product roadmap provides a high-level view of product features along with the sequence in which they will be built and delivered. It communicates how a product will develop and mature over time.",
+    "ref": "PMI Guide to Business Analysis, 4.5.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 140,
+        "label": "PMI Guide to Business Analysis, 4.5.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "What is the key benefit of facilitating product roadmap development?",
+    "options": [
+      "It replaces the business case",
+      "It creates shared expectations among stakeholders about the deliverables and their likely order",
+      "It fixes the scope so it cannot change",
+      "It assigns work to developers"
+    ],
+    "answer": 1,
+    "explanation": "The key benefit is that it creates shared expectations among stakeholders for the deliverables and the potential order in which they will be delivered.",
+    "ref": "PMI Guide to Business Analysis, 4.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 137,
+        "label": "PMI Guide to Business Analysis, 4.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which document establishes whether the expected benefits justify the investment?",
+    "options": [
+      "The business case",
+      "The charter",
+      "The situation statement",
+      "The product roadmap"
+    ],
+    "answer": 0,
+    "explanation": "A business case provides a documented economic feasibility study, establishing the validity of the benefits to be delivered. It helps decision makers determine whether the initiative is worth pursuing.",
+    "ref": "PMI Guide to Business Analysis, 4.6.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 146,
+        "label": "PMI Guide to Business Analysis, 4.6.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "How do the business case and the charter relate?",
+    "options": [
+      "The charter is written first and the business case is derived from it",
+      "They are the same document",
+      "An approved business case is an input to the charter",
+      "The charter replaces the need for any analysis"
+    ],
+    "answer": 2,
+    "explanation": "An approved business case is used as input when creating a charter to initiate a portfolio component, program or project. The business case justifies; the charter authorizes.",
+    "ref": "PMI Guide to Business Analysis, 4.6.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 146,
+        "label": "PMI Guide to Business Analysis, 4.6.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Who issues the project charter?",
+    "options": [
+      "The business analyst",
+      "The project team",
+      "The quality control analyst",
+      "The project initiator or sponsor"
+    ],
+    "answer": 3,
+    "explanation": "A project charter is issued by the project initiator or sponsor to formally authorize the project. Business analysis supports its development; the analyst does not issue it.",
+    "ref": "PMI Guide to Business Analysis, 4.7",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 148,
+        "label": "PMI Guide to Business Analysis, 4.7"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "How is needs assessment typically handled on an adaptive project?",
+    "options": [
+      "It is skipped",
+      "With lightweight artifacts in iteration 0, revisited as the work proceeds",
+      "With a fully detailed business case signed off before any work",
+      "Only after the final release"
+    ],
+    "answer": 1,
+    "explanation": "In adaptive approaches these are often not formally named processes. They are done as part of initial planning or iteration 0 with just enough detail, and revisited across iterations. The business case is lightweight and revised.",
+    "ref": "PMI Guide to Business Analysis, 4.6.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 147,
+        "label": "PMI Guide to Business Analysis, 4.6.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which sequence of needs assessment outputs is correct?",
+    "options": [
+      "Situation statement, current state assessment, required capabilities, recommended option, business case, charter",
+      "Charter, business case, situation statement, current state assessment",
+      "Business case, situation statement, charter, recommended option",
+      "Recommended option, situation statement, charter, business case"
+    ],
+    "answer": 0,
+    "explanation": "The problem is identified first (situation statement), then the current state is assessed, the future state and required capabilities are determined, options are analyzed and one recommended, the business case is assembled, and the charter follows.",
+    "ref": "PMI Guide to Business Analysis, Table 1-2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 69,
+        "label": "PMI Guide to Business Analysis, Table 1-2"
+      }
+    ]
+  }
+]

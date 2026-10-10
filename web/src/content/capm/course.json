@@ -61,8 +61,8 @@
       "title": "Business Analysis Frameworks",
       "weight": 27,
       "modules": [
-        { "id": "4-01-ba-foundations", "title": "Business Analysis Foundations and Roles", "ready": false },
-        { "id": "4-02-needs-assessment", "title": "Needs Assessment", "ready": false },
+        { "id": "4-01-ba-foundations", "title": "Business Analysis Foundations and Roles", "ready": true },
+        { "id": "4-02-needs-assessment", "title": "Needs Assessment", "ready": true },
         { "id": "4-03-ba-stakeholder-engagement", "title": "Stakeholder Engagement in Business Analysis", "ready": false },
         { "id": "4-04-elicitation", "title": "Elicitation", "ready": false },
         { "id": "4-05-analysis", "title": "Analysis: Models, Requirements and Acceptance Criteria", "ready": false },

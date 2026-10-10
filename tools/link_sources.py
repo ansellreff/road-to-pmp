@@ -206,6 +206,13 @@ def resolve(part: str) -> tuple[str, int] | None:
             page = find_line(book, rf"^{re.escape(term.group(1))}\s*(\([^)]*\)\s*)?\.", first)
             return (book, page) if page else None
 
+        # A named figure or table: "Figure 1-1", "Table 1-2". Searched after the front matter,
+        # so the list of figures is not mistaken for the figure itself.
+        figure = re.search(r"(figure|table) ([AX]?\d+-\d+)", lowered)
+        if figure:
+            page = find_line(book, rf"^{figure.group(1)} {figure.group(2)}\.", TOC_BOOKS[book])
+            return (book, page) if page else None
+
         # Section numbers may carry an annex or appendix letter: "A3.2", "X1.4".
         number = re.search(r"\b([AX]?\d+(?:\.\d+)+)\b", part)
         section = re.search(r"sections? (\d+)", lowered)

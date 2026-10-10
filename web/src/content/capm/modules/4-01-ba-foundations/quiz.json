@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "Which statement best describes business analysis?",
+    "options": [
+      "Managing the project schedule and budget",
+      "Testing the product before release",
+      "Determining problems and opportunities, recommending solutions, and eliciting and managing requirements",
+      "Writing the code for a software solution"
+    ],
+    "answer": 2,
+    "explanation": "Business analysis is the application of knowledge, skills, tools and techniques to determine problems and opportunities, identify business needs and recommend solutions, elicit, analyze and manage requirements, and define how value will be measured.",
+    "ref": "PMI Guide to Business Analysis, 1.1.7.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 53,
+        "label": "PMI Guide to Business Analysis, 1.1.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What is the fundamental difference between the business analyst and the project manager?",
+    "options": [
+      "The business analyst is responsible for the product; the project manager is responsible for the project",
+      "The business analyst manages the budget; the project manager manages the scope",
+      "The business analyst reports to the project manager in every organization",
+      "The business analyst works only on IT projects"
+    ],
+    "answer": 0,
+    "explanation": "Project managers are responsible for the successful delivery of the project, while business analysts are responsible for the successful delivery of the product. The product focus is broader than the project focus.",
+    "ref": "PMI Guide to Business Analysis, 3.3.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 94,
+        "label": "PMI Guide to Business Analysis, 3.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "\"Increase online sales by 15% next year\" is an example of which type of requirement?",
+    "options": [
+      "Solution requirement",
+      "Transition requirement",
+      "Stakeholder requirement",
+      "Business requirement"
+    ],
+    "answer": 3,
+    "explanation": "A business requirement describes the higher-level needs of the organization: the reason the initiative is undertaken and measurable goals the business is seeking to achieve.",
+    "ref": "PMI Guide to Business Analysis, 1.1.7.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 54,
+        "label": "PMI Guide to Business Analysis, 1.1.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "\"The system must confirm a payment within 3 seconds\" is which type of requirement?",
+    "options": [
+      "Functional requirement",
+      "Nonfunctional requirement",
+      "Business requirement",
+      "Project requirement"
+    ],
+    "answer": 1,
+    "explanation": "A nonfunctional requirement describes the conditions or qualities needed for the product to be effective, such as performance, reliability, security and safety. A functional requirement describes what the product does.",
+    "ref": "PMI Guide to Business Analysis, 1.1.7.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 54,
+        "label": "PMI Guide to Business Analysis, 1.1.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Converting existing customer records to the new system and training the support staff are examples of:",
+    "options": [
+      "Transition requirements",
+      "Functional requirements",
+      "Quality requirements",
+      "Business requirements"
+    ],
+    "answer": 0,
+    "explanation": "Transition requirements describe temporary capabilities, such as data conversion and training, needed to move from the current state to the future state. They are no longer needed once the transition is complete.",
+    "ref": "PMI Guide to Business Analysis, 1.1.7.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 54,
+        "label": "PMI Guide to Business Analysis, 1.1.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which of these is a project requirement, and so is NOT part of the business analysis effort?",
+    "options": [
+      "The system accepts card payments",
+      "Customers want to pay without creating an account",
+      "The first release must be delivered by 30 June under the contract",
+      "The system is available 99.9% of the time"
+    ],
+    "answer": 2,
+    "explanation": "Project requirements describe the actions, processes or conditions the project needs to meet, such as milestone dates and contractual obligations. They are part of the project management effort, not product requirements.",
+    "ref": "PMI Guide to Business Analysis, 1.1.7.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 54,
+        "label": "PMI Guide to Business Analysis, 1.1.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "How does a nonfunctional requirement differ from a quality requirement?",
+    "options": [
+      "They are two names for the same thing",
+      "A nonfunctional requirement concerns the quality of the product; a quality requirement concerns validating project deliverables",
+      "A nonfunctional requirement is temporary; a quality requirement is permanent",
+      "A nonfunctional requirement is written by the project manager"
+    ],
+    "answer": 1,
+    "explanation": "Business analysis ensures the product is of sufficient quality through nonfunctional requirements. Project management ensures the processes and deliverables are of sufficient quality through quality requirements, such as tests and certifications.",
+    "ref": "PMI Guide to Business Analysis, 1.1.7.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 54,
+        "label": "PMI Guide to Business Analysis, 1.1.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "How do the product life cycle and the project life cycle relate?",
+    "options": [
+      "They are the same thing",
+      "A project life cycle contains several product life cycles",
+      "A product life cycle ends when the first project closes",
+      "A product life cycle may contain one or more project life cycles"
+    ],
+    "answer": 3,
+    "explanation": "A product life cycle runs from concept to retirement and may consist of multiple project life cycles. Business analysis focuses on the entire product life cycle, including the projects that advance the product.",
+    "ref": "PMI Guide to Business Analysis, 1.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 60,
+        "label": "PMI Guide to Business Analysis, 1.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "When does business analysis begin?",
+    "options": [
+      "Before the project, with understanding the problem or opportunity",
+      "When the project charter is signed",
+      "When the project team is assigned",
+      "When testing starts"
+    ],
+    "answer": 0,
+    "explanation": "Business analysis begins with defining the situation and fully understanding the problem or opportunity the organization wishes to address. This work is considered pre-project.",
+    "ref": "PMI Guide to Business Analysis, 1.2.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 61,
+        "label": "PMI Guide to Business Analysis, 1.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Which business analysis process group investigates whether a new or changed product is viable and aligns it with strategy?",
+    "options": [
+      "Initiating",
+      "Planning",
+      "Defining and Aligning",
+      "Releasing"
+    ],
+    "answer": 2,
+    "explanation": "The Defining and Aligning Process Group investigates and evaluates the viability of initiating a new product or changing or retiring an existing one, and aligns products, portfolios, programs and projects to organizational strategy.",
+    "ref": "PMI Guide to Business Analysis, 1.3.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 66,
+        "label": "PMI Guide to Business Analysis, 1.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which is the last of the six business analysis process groups?",
+    "options": [
+      "Closing",
+      "Executing",
+      "Monitoring and Controlling",
+      "Releasing"
+    ],
+    "answer": 3,
+    "explanation": "The six groups are Defining and Aligning, Initiating, Planning, Executing, Monitoring and Controlling, and Releasing. Releasing decides whether a solution should be released and obtains acceptance.",
+    "ref": "PMI Guide to Business Analysis, 1.3.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 66,
+        "label": "PMI Guide to Business Analysis, 1.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Which statement about business analysis process groups is correct?",
+    "options": [
+      "They are the phases of the project life cycle",
+      "They are not phases; their processes can be repeated and no sequence is prescribed",
+      "Each is performed exactly once",
+      "They apply only to predictive projects"
+    ],
+    "answer": 1,
+    "explanation": "Process groups are not project life cycle phases. Sequence and timing are not prescribed, and processes can be repeated throughout the life cycle, for example elicitation in every iteration.",
+    "ref": "PMI Guide to Business Analysis, 1.3.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 66,
+        "label": "PMI Guide to Business Analysis, 1.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which knowledge area is used throughout all business analysis work and interacts with all the others?",
+    "options": [
+      "Needs Assessment",
+      "Solution Evaluation",
+      "Stakeholder Engagement",
+      "Elicitation"
+    ],
+    "answer": 2,
+    "explanation": "The processes in the Stakeholder Engagement knowledge area are used throughout all business analysis efforts and interact with all the other knowledge areas.",
+    "ref": "PMI Guide to Business Analysis, 1.3.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 67,
+        "label": "PMI Guide to Business Analysis, 1.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which knowledge area validates a solution to determine how well it meets the business need and delivers value?",
+    "options": [
+      "Solution Evaluation",
+      "Analysis",
+      "Traceability and Monitoring",
+      "Needs Assessment"
+    ],
+    "answer": 0,
+    "explanation": "Solution Evaluation validates a full solution or a segment of one, about to be or already implemented, to determine how well it meets the business needs and delivers value.",
+    "ref": "PMI Guide to Business Analysis, 1.3.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 67,
+        "label": "PMI Guide to Business Analysis, 1.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "How is business value defined?",
+    "options": [
+      "The total cost of the project",
+      "The net quantifiable benefit derived from a business endeavor, tangible or intangible",
+      "The number of features delivered",
+      "The revenue in the first month after release"
+    ],
+    "answer": 1,
+    "explanation": "Business value is the net quantifiable benefit derived from a business endeavor. The benefit may be tangible, intangible or both.",
+    "ref": "PMI Guide to Business Analysis, 1.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 63,
+        "label": "PMI Guide to Business Analysis, 1.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A project's benefit, higher revenue, can only be measured a year after release. What should the team do?",
+    "options": [
+      "Skip measuring the benefit",
+      "Declare the project successful when it closes",
+      "Delay closing the project for a year",
+      "Define the objective and its measure before the project starts, take a baseline, and use a leading indicator such as customer satisfaction"
+    ],
+    "answer": 3,
+    "explanation": "Benefits are often realized well after project completion. By setting the business objective and how it will be measured before the project starts, the team can build measurement in, take a baseline, and use leading indicators such as customer satisfaction.",
+    "ref": "PMI Guide to Business Analysis, 1.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 63,
+        "label": "PMI Guide to Business Analysis, 1.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Who has decision-making authority for prioritizing what is included in or excluded from a product?",
+    "options": [
+      "The product owner",
+      "The business analyst",
+      "The project manager",
+      "The quality control analyst"
+    ],
+    "answer": 0,
+    "explanation": "A product owner is an individual with decision-making authority for prioritizing what to include or exclude from one or more specific products. The business analyst advises and often helps refine the backlog.",
+    "ref": "PMI Guide to Business Analysis, Glossary (Product Owner)",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 451,
+        "label": "PMI Guide to Business Analysis, Glossary (Product Owner)"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "An agile team has a scrum master, a product owner and developers, but nobody with the title business analyst. What does this mean for business analysis?",
+    "options": [
+      "No business analysis is needed on agile projects",
+      "The scrum master must do all of it",
+      "The work is still done, shared across the roles on the team",
+      "The project cannot start until an analyst is hired"
+    ],
+    "answer": 2,
+    "explanation": "When a life cycle does not recognize the business analyst role, the work of business analysis is not overlooked. On agile projects the responsibilities may be spread across roles and depend on the needs of the team.",
+    "ref": "PMI Guide to Business Analysis, 3.3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 94,
+        "label": "PMI Guide to Business Analysis, 3.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A business analyst must get agreement from several department heads who do not report to them. What does the analyst rely on?",
+    "options": [
+      "Supervisory authority over the stakeholders",
+      "Trust and influence built through honesty, integrity and transparency",
+      "The authority to schedule their work",
+      "Escalating every disagreement to the sponsor"
+    ],
+    "answer": 1,
+    "explanation": "Business analysts lead and influence stakeholders without having the supervisory authority, title or rank to do so. They strengthen their leadership by building trust and showing honesty, integrity and transparency.",
+    "ref": "PMI Guide to Business Analysis, 3.3.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 94,
+        "label": "PMI Guide to Business Analysis, 3.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Who is responsible for allocating, scheduling and tracking the work of the project's business analysts?",
+    "options": [
+      "The lead business analyst alone",
+      "The product owner",
+      "The sponsor",
+      "The project manager"
+    ],
+    "answer": 3,
+    "explanation": "Business analysts may lead, but they do not oversee project resources. At the project level the project manager is responsible for resource allocation, scheduling and work progress, including that of business analysts.",
+    "ref": "PMI Guide to Business Analysis, 3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 92,
+        "label": "PMI Guide to Business Analysis, 3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "During planning, a stakeholder group that will use the new system is overlooked. What is the most likely consequence?",
+    "options": [
+      "Requirements will be missed",
+      "The project will finish early",
+      "The business case becomes invalid",
+      "The product life cycle ends"
+    ],
+    "answer": 0,
+    "explanation": "Keeping the stakeholder register accurate is critical because when stakeholders are overlooked, there is a high chance that requirements will be missed.",
+    "ref": "PMI Guide to Business Analysis, 1.1.7.7",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 58,
+        "label": "PMI Guide to Business Analysis, 1.1.7.7"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Why does taking time for business analysis usually save time overall?",
+    "options": [
+      "It removes the need for testing",
+      "Well-understood requirements reduce rework, change requests and defects later",
+      "It shortens the product life cycle",
+      "It transfers risk to the customer"
+    ],
+    "answer": 1,
+    "explanation": "Skipping business analysis leads to poorly understood requirements, missed expectations, rework and change requests. Taking the time to do it saves time, reduces cost and lowers risk exposure in the long run.",
+    "ref": "PMI Guide to Business Analysis, 1.1.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 50,
+        "label": "PMI Guide to Business Analysis, 1.1.3"
+      }
+    ]
+  }
+]
