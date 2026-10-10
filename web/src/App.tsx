@@ -36,7 +36,7 @@ export default function App() {
         <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-x-6 px-4 pt-2 sm:px-6">
           <Link to="/" className="title flex items-center gap-2 py-2 text-xl">
             <Milestone value={1} size={20} />
-            Road to PMI
+            Road to PMP
           </Link>
           <DisplayControls />
           <nav

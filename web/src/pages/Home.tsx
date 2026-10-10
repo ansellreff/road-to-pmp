@@ -232,7 +232,7 @@ function Backup() {
     const blob = new Blob([exportProgress()], { type: 'application/json' })
     const a = document.createElement('a')
     a.href = URL.createObjectURL(blob)
-    a.download = `road-to-pmi-progress-${new Date().toISOString().slice(0, 10)}.json`
+    a.download = `road-to-pmp-progress-${new Date().toISOString().slice(0, 10)}.json`
     a.click()
     URL.revokeObjectURL(a.href)
     setMessage('Backup downloaded.')

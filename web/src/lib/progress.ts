@@ -93,6 +93,8 @@ export interface Progress {
 /** Days until the next review, by box. */
 export const REVIEW_INTERVALS = [0, 1, 3, 7, 14, 30]
 
+// The site is now called Road to PMP, but the storage names keep the old "pmi" spelling:
+// renaming them would make the browser lose the progress already saved.
 const KEY = 'road-to-pmi-progress'
 const empty = (): Progress => ({
   version: 2,
@@ -325,7 +327,7 @@ export function exportProgress(): string {
 export function importProgress(json: string) {
   const data = JSON.parse(json)
   if (!data || typeof data !== 'object' || (data.version !== 1 && data.version !== 2)) {
-    throw new Error('This file is not a Road to PMI progress backup.')
+    throw new Error('This file is not a Road to PMP progress backup.')
   }
   commit(migrate(data))
 }
