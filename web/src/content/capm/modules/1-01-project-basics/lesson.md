@@ -42,11 +42,13 @@ Every project should link back to the organization's strategic objectives and bu
 
 ## What is project management?
 
-@source PMBOK 8, Standard 1.2
+@source PMBOK 8, Standard 1.2; PMBOK 7, Standard 1.2
 
 Project management is the application of **knowledge, skills, tools and techniques** to project activities **to meet or exceed the intended value**.
 
 "Exceed" does not mean giving extras. It does *not* endorse **gold plating** (adding features nobody asked for) or **scope creep** (uncontrolled growth of scope). It means making value-driven decisions so the final outcome really satisfies stakeholder needs.
+
+> **On the exam.** The 7th edition, which the exam uses, ends the definition differently: project management is the application of knowledge, skills, tools and techniques to project activities **to meet project requirements**. It adds that this means guiding the project work to deliver the intended outcomes. If an option reads "to meet project requirements", it is the exam book's own wording.
 
 Related terms:
 
@@ -96,7 +98,7 @@ Portfolios, programs, projects and operations often share the same stakeholders 
 
 ## From deliverable to value
 
-@source PMBOK 8, Standard 1.2; PMBOK 8, Standard 2.1
+@source PMBOK 8, Standard 1.2; PMBOK 8, Standard 2.1; PMBOK 7, Standard 1.2
 
 | Term | Meaning | Example |
 |---|---|---|
@@ -109,6 +111,8 @@ Portfolios, programs, projects and operations often share the same stakeholders 
 Two more terms: an **artifact** is a document or other item created to help manage the work and inform people (a plan, a report, a register). A **product** is something produced and quantifiable, tangible or intangible.
 
 **Value depends on who is looking.** An organization may measure business value with metrics such as return on investment. A customer may see value as convenience. Governments and NGOs may prioritize societal impact. Business value can be **tangible** (money, market share, infrastructure, productivity) or **intangible** (reputation, brand, goodwill, knowledge, employee well-being). Because every project is an investment, its expected value should meet or exceed a target threshold.
+
+> **On the exam.** The 7th edition defines **value** more simply, as **the worth, importance or usefulness of something**, and says different stakeholders perceive it in different ways. The 8th edition's "benefits over the investment" is the business-value view the 7th edition gives as one example.
 
 ## The value delivery system
 

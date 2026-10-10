@@ -59,6 +59,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Sync: your Supabase setup is in place (the table exists and refuses anyone not signed in) and **sign-in worked on your phone**. On the PC the link was refused as invalid or expired. A sign-in link works once, on one device; the app now says so, and clears the stale waiting state. | You: on the PC, ask for a new email and open that link on the PC; or add the code line to the email templates and type the code |
 | 2026-10-10 | Sync: **password sign-in added**, so every device can be signed in at the same time without waiting for emails. On a signed-in device you choose a password; on the others you sign in with email and password. Signing out now ends the sign-in on that device only (before, it would have ended it on all of them). | You: run `upload.bat`; on the phone (already signed in) save a password under "Sync between your devices"; on the PC sign in with it |
 | 2026-10-11 | **Sync confirmed by you on the real service:** saving and syncing between the PC and the phone works, with both signed in. Session 28d is complete, and with it everything planned for CAPM. | Next: decide what comes after CAPM (PMP needs the current PMP Exam Content Outline in the materials folder) |
+| 2026-10-11 | **Session 31a, first sitting: Domain 1 checked against the exam's own books.** Two topics were missing from the course and are now taught: the three types of PMO (module 1.2) and the 7th edition's named models for change, coaching, team development and negotiation (module 1.10). Eight "On the exam" notes added where the exam's book words or counts something differently. 15 new questions and 22 new flashcards for these. Bank: 909 questions, 1,230 flashcards. Not yet compared: modules 1.4 and 1.5 against the 7th edition's twelve principles, and 1.7, 1.11, 1.12 against the Process Groups guide. | You: `upload.bat` to publish. Next sitting: finish Domain 1 (the twelve principles, process groups), then Domain 2 |
 
 ## How your progress is saved
 
@@ -196,6 +197,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 28d | Sync between PC and phone through Supabase: sign-in by emailed link or by password, several devices at once. Confirmed working by you on 2026-10-11. |
 | ✅ | 29 | Navigation, side panels and a richer look, from your feedback: search suggestions, Modules menu, right-hand panel, previous and next, cards and rings, home hub, feedback, streak, daily goal, milestones. Details under "Session 29: navigation and look, as built". |
 | ✅ | 30 | Questions: 54 new scenario questions in Domain 1; 112 questions in Domains 2 to 4 reworded as situations. Details under "Session 30: questions". |
+| 🟡 | 31 | Strengthen CAPM before the exam: 31a accuracy check against the exam's books (Domain 1 mostly done; Domains 2 to 4 to do), 31b new scenario questions, 31c Mock exam 5, 31d keyboard shortcuts, 31e more diagrams. Details under "Session 31a: lessons compared with the exam's books". |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 
@@ -256,7 +258,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (894 quiz questions, 1,208 flashcards). Of the 894 questions, 600 are used by the four mock exams and 150 of those (Mock exam 4) are held back from the module quizzes, which show 744.
+Overall: **39 of 39 modules done** (909 quiz questions, 1,230 flashcards). Of the 909 questions, 600 are used by the four mock exams and 150 of those (Mock exam 4) are held back from the module quizzes, which show 759.
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -573,6 +575,29 @@ The Domain 1 and overall "before" figures are worked back from today's counts; t
 
 **Limits:** modules 1.10, 1.11 and 1.12 were not touched (1.11 and 1.12 are 17% and 12% scenarios, because they teach lists and names). A reworded question still tests the same fact as before; it is easier to recognise than a question written fresh as a scenario with new options.
 
+## Session 31a: lessons compared with the exam's books
+
+The exam is written from the PMBOK Guide, Seventh Edition, *Process Groups: A Practice Guide*, the 2017 Agile Practice Guide and the two business analysis books. The lessons were written from the Eighth Edition. This section records, module by module, what was read against what, what differed, and what was done. "Note" means an "On the exam" note was added under the section, with a link to the book page.
+
+### Domain 1 (first sitting, 2026-10-11)
+
+| Module | Compared with | What differed | What was done |
+|---|---|---|---|
+| 1.1 | PMBOK 7, Standard 1.2 and 2.1 (pages 31 to 38) | Project management: the 7th edition ends the definition with "to meet project requirements", not "to meet or exceed the intended value". Value: defined as "the worth, importance, or usefulness of something". Program, portfolio, outcome, the value delivery system and the flow of information are the same. | 2 notes, 1 question, 1 flashcard |
+| 1.2 | PMBOK 7, Standard 2.2 and 2.4 (pages 39, 43 to 45); Process Groups guide 2.1, 2.2, 2.6 (pages 59 to 70) | The 7th edition does not use "EEF" or "OPA": it speaks of the internal and external environment. The Process Groups guide uses EEFs and OPAs as the lesson does. **Missing from the course: the three types of PMO** (supportive, controlling, directive). | 1 note; new section on the PMO; 3 questions, 4 flashcards |
+| 1.3 | PMBOK 7, Standard 2.3 and 2.5 (pages 39 to 46) | The 7th edition has **eight** functions, four under different names, plus "maintain governance". It also defines customer and end user separately. Product life cycle is the same. | 1 note, 2 questions, 2 flashcards |
+| 1.6 | PMBOK 7, Guide 2.3 (pages 128 to 141) | Iterative and incremental are described under **hybrid** as well as adaptive, with their own definitions. Sample predictive phases are feasibility, design, build, **test, deploy**, close (the lesson's Eighth Edition list says check, transfer). Agile iterations "1 to 2 weeks"; team of "7 ± 2". Three more selection factors. | 1 note, 1 question, 2 flashcards |
+| 1.8 | PMBOK 7, Guide 3.3 and 3.4 (pages 229 to 237) | The 7th edition lists **five** things to tailor: it adds tools, and methods and artifacts. It mentions a value delivery office. The four tailoring steps and the approval rule are the same. | 1 note, 1 question, 1 flashcard |
+| 1.9 | PMBOK 7, Guide 2.8.4 and 2.8.5 (pages 217 to 222) | Same definitions and the same five plus five responses. The 7th edition adds active and passive acceptance, and secondary and residual risk. | 1 note, 1 question, 2 flashcards |
+| 1.10 | PMBOK 7, Guide 4.2.1, 4.2.4, 4.2.6, 4.2.7 (pages 250 to 265); headings of Guide 2.2 | The 7th edition lists **six** ways of addressing conflict, not five. **Missing from the course: its named models**: Situational Leadership II, OSCAR, five change models (Managing Change in Organizations, ADKAR, Kotter, Satir, Bridges), Drexler / Sibbet, think win-win, Boehm's planning model. Emotional intelligence, the high-performing team factors and the leadership structures match. | 1 note; new section "Models the exam's guide names"; 6 questions, 10 flashcards |
+| 1.2, 1.5, 1.7 | Not re-read in this sitting beyond the points above | | |
+| 1.4, 1.5 | **Not yet compared** with PMBOK 7, Standard 3.1 to 3.12 (the twelve principles, about 40 pages) | Module 1.11 gives each of the twelve principles one line; whether that is enough has not been checked against the book. | To do next sitting |
+| 1.7, 1.11, 1.12 | **Not yet compared** line by line with the Process Groups guide sections 1.7 and 3 to 8 | These were written from that guide in Session 25b, so the risk is lower. | To do next sitting |
+
+Nothing in Domain 1 was found to be **wrong**. The differences are of two kinds: the exam's book uses another word or count for the same thing, or it teaches something the Eighth Edition lessons did not cover.
+
+Method and limits: I read the listed pages of the extracted book text and compared them with each lesson's statements. I did not read every page of the Seventh Edition. The Models section (4.2) was checked because a search for its model names in the lessons found several absent; the Methods and Artifacts sections (4.4 to 4.6) have not been checked the same way yet.
+
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.
@@ -878,3 +903,12 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 130 | You found you could not be signed in on the PC and the phone together. Signing in on several devices was always allowed; what stopped you was that each device needed its own emailed link, and the PC's link was refused. | Added sign-in by email and password. The first device signs in by email and sets the password; the others need no email at all. Tested with two profiles signed in at once. | `signInWithPassword`, `setPassword` in `web/src/lib/sync.ts` |
 | 131 | **Fault of mine, found while checking this:** "Sign out" asked the service to end every session of the account, so signing out on the phone would have signed the PC out too. | Sign-out now ends the session on that device only, and a test checks it. The button reads "Sign out on this device". | `signOut` in `web/src/lib/sync.ts` |
 | 132 | Still not verified by me: that your Supabase project accepts the password sign-in. It is a standard feature that is on by default, but I cannot sign in to your account to try it. | Tested against the simulated server only. If the PC shows a message after you try, send it to me. | Status log **Resolved 2026-10-11:** you confirmed that sign-in and syncing work on the PC and the phone. |
+
+### Accuracy check against the exam's books (Session 31a)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 133 | **A topic the exam's book teaches was missing:** the three types of PMO (supportive, controlling, directive) appeared in no lesson. In Session 25 I reported the outline as 59 of 60 covered; this was not on that list because the outline does not name it, the book does. | New section in module 1.2 from the Process Groups guide, section 2.6, with three questions and three flashcards. | Module 1.2 |
+| 134 | **A second missing topic:** the 7th edition's section of named models. ADKAR, Kotter's eight steps, the Satir and Bridges models, OSCAR, Situational Leadership II and Drexler / Sibbet were taught nowhere. Found by searching the lessons for each model name in that section. | New section in module 1.10, with six questions and ten flashcards. Motivation models and the Tuckman ladder were already in module 2.9. | Module 1.10 |
+| 135 | In Session 25 I added the exam's terms as notes but said plainly that I had not read the 7th edition against each lesson. Doing it now for Domain 1 found eight differences in wording or count that had no note. | Eight "On the exam" notes, each with the book page. None of the lessons' statements was wrong for the Eighth Edition. | "Session 31a" table |
+| 136 | The comparison is large, and one sitting did not finish Domain 1: the twelve principles (modules 1.4, 1.5) and the process groups (1.7, 1.11, 1.12) are still to be read against their books. | Said in the table as "not yet compared", not left to be assumed done. They are first in the next sitting. | "Session 31a" table |

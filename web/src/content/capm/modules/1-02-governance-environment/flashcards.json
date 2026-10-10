@@ -108,5 +108,25 @@
     "id": "c22",
     "front": "Which structure best suits a predictive, plan-based project?",
     "back": "Project-oriented or strong matrix: the project manager has the authority, budget and dedicated people."
+  },
+  {
+    "id": "c23",
+    "front": "Supportive PMO",
+    "back": "Consults: supplies templates, best practices, training and lessons learned. Low control."
+  },
+  {
+    "id": "c24",
+    "front": "Controlling PMO",
+    "back": "Gives support and requires compliance with methods, templates, tools and governance. Moderate control."
+  },
+  {
+    "id": "c25",
+    "front": "Directive PMO",
+    "back": "Manages the projects itself; project managers are assigned by it and report to it. High control."
+  },
+  {
+    "id": "c26",
+    "front": "How the 7th edition names EEFs and OPAs",
+    "back": "It does not use the two terms. It speaks of the internal environment and the external environment. The Process Groups guide uses EEFs and OPAs."
   }
 ]

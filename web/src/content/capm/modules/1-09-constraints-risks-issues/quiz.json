@@ -482,5 +482,25 @@
         "label": "PMBOK 8, Glossary (risk acceptance)"
       }
     ]
+  },
+  {
+    "id": "q25",
+    "q": "A team decides not to act on a risk now, but writes a plan that will be put into action if the event happens. In the 7th edition's terms, what is this?",
+    "options": [
+      "Passive acceptance",
+      "Active acceptance",
+      "Mitigation",
+      "Escalation"
+    ],
+    "answer": 1,
+    "explanation": "Accepting a risk acknowledges it without proactive action. Active acceptance can include developing a contingency plan to be triggered if the event occurs; passive acceptance means doing nothing.",
+    "ref": "PMBOK 7, Guide 2.8",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 211,
+        "label": "PMBOK 7, Guide 2.8"
+      }
+    ]
   }
 ]

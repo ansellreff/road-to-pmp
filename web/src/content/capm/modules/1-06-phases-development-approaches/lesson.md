@@ -131,7 +131,7 @@ Disciplined Agile describes three levels: **Level 1** predictive dominates with 
 
 ## Choosing an approach
 
-@source PMBOK 8, Standard 4.3
+@source PMBOK 8, Standard 4.3; PMBOK 7, Guide 2.3.3; PMBOK 7, Guide 2.3.4; PMBOK 7, Guide 2.3.5
 
 Factors fall into three groups. Different deliverables within one project may need different approaches.
 
@@ -153,6 +153,14 @@ Factors fall into three groups. Different deliverables within one project may ne
 | Structure | Functional, hierarchical | Network-oriented |
 | Culture | Managing and directing, measuring against baselines | Embraces uncertainty, self-managed teams |
 | Team size | Depends on scope | Smaller teams, often three to nine people |
+
+> **On the exam.** The 7th edition covers the same ground with a few differences worth knowing:
+>
+> - It shows the approaches as a line from **predictive** through **hybrid** to **adaptive**, "increasingly iterative and incremental". **Hybrid approaches often use an iterative or an incremental approach**; adaptive approaches use both.
+> - **Iterative** is for **clarifying requirements and trying out options**. **Incremental** produces the deliverable over a series of iterations, each adding functionality within a timebox; the deliverable counts as complete only **after the final iteration**.
+> - Its sample predictive life cycle has the phases **feasibility, design, build, test, deploy, close**.
+> - It says some agile iterations last **1 to 2 weeks**, and that adaptive teams often work best at **7 ± 2** people, in the same physical space.
+> - It lists more factors: **delivery options** (can it be delivered in pieces?), **risk**, **organizational capability** (moving to adaptive needs a change of mindset from the executives down) and team **location**. **Funding uncertainty** and a need to **deliver something early** point toward iterative or adaptive.
 
 ## Delivery cadence
 

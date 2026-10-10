@@ -108,5 +108,10 @@
     "id": "c22",
     "front": "Is tailoring done once?",
     "back": "No. It continues through review points, phase gates and retrospectives: inspect and adapt."
+  },
+  {
+    "id": "c23",
+    "front": "Five things to tailor (7th edition)",
+    "back": "Life cycle and development approach; processes; engagement; tools; methods and artifacts."
   }
 ]

@@ -103,7 +103,7 @@ The **issue log** is the project document where issues are recorded and monitore
 
 ## Risk responses
 
-@source PMBOK 8, Glossary (risk acceptance)
+@source PMBOK 8, Glossary (risk acceptance); PMBOK 7, Guide 2.8
 
 A **risk response** is an action, planned or implemented, to address a threat or opportunity.
 
@@ -114,6 +114,8 @@ A **risk response** is an action, planned or implemented, to address a threat or
 | **Transfer** | Shift the impact and the ownership of the response to a third party (insurance, a contract) | **Share** | Give ownership to a third party best able to capture it |
 | **Escalate** | Pass ownership upward when the risk is outside project scope or the team's authority | **Escalate** | Same |
 | **Accept** | Acknowledge the risk and take no action unless it occurs | **Accept** | Same |
+
+> **On the exam.** The 7th edition lists the same five responses for threats and five for opportunities. Two details it adds: **acceptance can be active or passive**. Active acceptance prepares a **contingency plan** to be triggered if the event happens; passive acceptance does nothing. And after responses are planned, the team checks for **secondary risks** (new risks created by a response) and for the **residual risk** that remains, repeating the planning until the residual risk fits the organization's risk appetite.
 
 Module 2.10 covers the Risk domain in full.
 

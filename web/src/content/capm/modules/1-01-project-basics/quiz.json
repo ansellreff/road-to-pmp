@@ -422,5 +422,25 @@
         "label": "PMBOK 8, Standard 1.3.2.1"
       }
     ]
+  },
+  {
+    "id": "q22",
+    "q": "A practice question quotes the PMBOK Guide, Seventh Edition: \"Project management is the application of knowledge, skills, tools, and techniques to project activities to ...\" How does that edition finish the sentence?",
+    "options": [
+      "... complete every activity that was planned at the start",
+      "... satisfy the sponsor of the project",
+      "... meet project requirements",
+      "... deliver the project at the lowest cost"
+    ],
+    "answer": 2,
+    "explanation": "The 7th edition, which the exam uses, defines project management as applying knowledge, skills, tools and techniques to project activities to meet project requirements. The 8th edition ends it with \"to meet or exceed the intended value\".",
+    "ref": "PMBOK 7, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 31,
+        "label": "PMBOK 7, Standard 1.2"
+      }
+    ]
   }
 ]

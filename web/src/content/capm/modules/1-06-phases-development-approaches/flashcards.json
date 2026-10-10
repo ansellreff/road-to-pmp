@@ -1,26 +1,132 @@
 [
-  { "id": "c1", "front": "Project life cycle", "back": "The series of activities and/or phases a project passes through from its start to its closure." },
-  { "id": "c2", "front": "Project phase", "back": "A collection of logically related project activities that culminates in one or more deliverables and/or outcomes." },
-  { "id": "c3", "front": "Phase gate", "back": "A review at the end (or start) of a phase to check exit criteria and make a go/no-go decision. Also called stage gate or gate review." },
-  { "id": "c4", "front": "Entrance criteria vs exit criteria", "back": "Entrance: what must be true for a project to move into a phase. Exit: what must be true to complete it." },
-  { "id": "c5", "front": "When is risk highest? When is the cost of change highest?", "back": "Risk and uncertainty: at the start. Cost of change: toward the end." },
-  { "id": "c6", "front": "Development approach", "back": "The means used to create and evolve the product, service or result during the project life cycle: predictive, adaptive or hybrid." },
-  { "id": "c7", "front": "Development approach vs development phase", "back": "Approach: the method used across the project. Phase: the specific stage where deliverables are built and tested." },
-  { "id": "c8", "front": "Predictive approach", "back": "Scope, schedule and cost are defined early and planning is done up front. Also called waterfall, plan-driven or traditional." },
-  { "id": "c9", "front": "When is a predictive approach best?", "back": "Clear, stable requirements; high safety or regulatory needs; changes are difficult or costly; large investments." },
-  { "id": "c10", "front": "Adaptive approach", "back": "Requirements are progressively elaborated and changed based on feedback, in timeboxed cycles. Also called change-driven or agile." },
-  { "id": "c11", "front": "When is an adaptive approach best?", "back": "High uncertainty and volatility, innovation, unstable scope, and when frequent feedback adds value." },
-  { "id": "c12", "front": "Hybrid approach", "back": "A combination of predictive and adaptive elements. Most projects today can benefit from it." },
-  { "id": "c13", "front": "Four hybrid patterns", "back": "Adaptive then predictive rollout; both used together throughout; largely predictive with an adaptive part; largely adaptive with a predictive part." },
-  { "id": "c14", "front": "Iterative vs incremental", "back": "Iterative: refine and improve through repeated cycles. Incremental: deliver small usable segments that build on each other." },
-  { "id": "c15", "front": "Inverted triangle", "back": "Predictive: scope fixed, budget and schedule vary. Adaptive: budget and schedule fixed, scope varies." },
-  { "id": "c16", "front": "Integrated baseline", "back": "The scope, schedule and cost baselines taken together." },
-  { "id": "c17", "front": "Kanban", "back": "A visual workflow method that limits work in process (WIP), based on lean principles, for continuous delivery without overburdening the team." },
-  { "id": "c18", "front": "Theory of constraints", "back": "Identify and address the most significant limiting factor that stands in the way of achieving a goal." },
-  { "id": "c19", "front": "Typical agile iteration length", "back": "1 to 4 weeks, with a demonstration of what was accomplished at the end." },
-  { "id": "c20", "front": "Four delivery cadences", "back": "Single delivery, multiple deliveries, periodic deliveries, continuous delivery." },
-  { "id": "c21", "front": "Periodic deliveries", "back": "Multiple deliveries on a regular, fixed schedule, such as every two weeks. Common in adaptive approaches." },
-  { "id": "c22", "front": "Three groups of factors for choosing an approach", "back": "Deliverables, project, organization." },
-  { "id": "c23", "front": "Method vs tool kit", "back": "Method: a systematic series of steps. Tool kit: a collection of tools and techniques to choose from. Disciplined Agile is a tool kit." },
-  { "id": "c24", "front": "Recommended team size in some adaptive frameworks", "back": "Three to nine team members." }
+  {
+    "id": "c1",
+    "front": "Project life cycle",
+    "back": "The series of activities and/or phases a project passes through from its start to its closure."
+  },
+  {
+    "id": "c2",
+    "front": "Project phase",
+    "back": "A collection of logically related project activities that culminates in one or more deliverables and/or outcomes."
+  },
+  {
+    "id": "c3",
+    "front": "Phase gate",
+    "back": "A review at the end (or start) of a phase to check exit criteria and make a go/no-go decision. Also called stage gate or gate review."
+  },
+  {
+    "id": "c4",
+    "front": "Entrance criteria vs exit criteria",
+    "back": "Entrance: what must be true for a project to move into a phase. Exit: what must be true to complete it."
+  },
+  {
+    "id": "c5",
+    "front": "When is risk highest? When is the cost of change highest?",
+    "back": "Risk and uncertainty: at the start. Cost of change: toward the end."
+  },
+  {
+    "id": "c6",
+    "front": "Development approach",
+    "back": "The means used to create and evolve the product, service or result during the project life cycle: predictive, adaptive or hybrid."
+  },
+  {
+    "id": "c7",
+    "front": "Development approach vs development phase",
+    "back": "Approach: the method used across the project. Phase: the specific stage where deliverables are built and tested."
+  },
+  {
+    "id": "c8",
+    "front": "Predictive approach",
+    "back": "Scope, schedule and cost are defined early and planning is done up front. Also called waterfall, plan-driven or traditional."
+  },
+  {
+    "id": "c9",
+    "front": "When is a predictive approach best?",
+    "back": "Clear, stable requirements; high safety or regulatory needs; changes are difficult or costly; large investments."
+  },
+  {
+    "id": "c10",
+    "front": "Adaptive approach",
+    "back": "Requirements are progressively elaborated and changed based on feedback, in timeboxed cycles. Also called change-driven or agile."
+  },
+  {
+    "id": "c11",
+    "front": "When is an adaptive approach best?",
+    "back": "High uncertainty and volatility, innovation, unstable scope, and when frequent feedback adds value."
+  },
+  {
+    "id": "c12",
+    "front": "Hybrid approach",
+    "back": "A combination of predictive and adaptive elements. Most projects today can benefit from it."
+  },
+  {
+    "id": "c13",
+    "front": "Four hybrid patterns",
+    "back": "Adaptive then predictive rollout; both used together throughout; largely predictive with an adaptive part; largely adaptive with a predictive part."
+  },
+  {
+    "id": "c14",
+    "front": "Iterative vs incremental",
+    "back": "Iterative: refine and improve through repeated cycles. Incremental: deliver small usable segments that build on each other."
+  },
+  {
+    "id": "c15",
+    "front": "Inverted triangle",
+    "back": "Predictive: scope fixed, budget and schedule vary. Adaptive: budget and schedule fixed, scope varies."
+  },
+  {
+    "id": "c16",
+    "front": "Integrated baseline",
+    "back": "The scope, schedule and cost baselines taken together."
+  },
+  {
+    "id": "c17",
+    "front": "Kanban",
+    "back": "A visual workflow method that limits work in process (WIP), based on lean principles, for continuous delivery without overburdening the team."
+  },
+  {
+    "id": "c18",
+    "front": "Theory of constraints",
+    "back": "Identify and address the most significant limiting factor that stands in the way of achieving a goal."
+  },
+  {
+    "id": "c19",
+    "front": "Typical agile iteration length",
+    "back": "1 to 4 weeks, with a demonstration of what was accomplished at the end."
+  },
+  {
+    "id": "c20",
+    "front": "Four delivery cadences",
+    "back": "Single delivery, multiple deliveries, periodic deliveries, continuous delivery."
+  },
+  {
+    "id": "c21",
+    "front": "Periodic deliveries",
+    "back": "Multiple deliveries on a regular, fixed schedule, such as every two weeks. Common in adaptive approaches."
+  },
+  {
+    "id": "c22",
+    "front": "Three groups of factors for choosing an approach",
+    "back": "Deliverables, project, organization."
+  },
+  {
+    "id": "c23",
+    "front": "Method vs tool kit",
+    "back": "Method: a systematic series of steps. Tool kit: a collection of tools and techniques to choose from. Disciplined Agile is a tool kit."
+  },
+  {
+    "id": "c24",
+    "front": "Recommended team size in some adaptive frameworks",
+    "back": "Three to nine team members."
+  },
+  {
+    "id": "c25",
+    "front": "Iterative versus incremental, in the 7th edition's words",
+    "back": "Iterative: clarify requirements and try out options. Incremental: build the deliverable over several iterations, complete only after the last one. Hybrid approaches often use one or the other."
+  },
+  {
+    "id": "c26",
+    "front": "The 7th edition's sample predictive life cycle",
+    "back": "Feasibility, design, build, test, deploy, close."
+  }
 ]

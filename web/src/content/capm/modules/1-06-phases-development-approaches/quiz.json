@@ -462,5 +462,25 @@
         "label": "PMBOK 8, Standard 4.2"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "A training course is built in three modules by different people. Each module adds to the last, but the course can be used only once all three are finished and joined. In the 7th edition's terms, which approach is this?",
+    "options": [
+      "Iterative, because each module is tried out and improved",
+      "Predictive, because all three modules are planned",
+      "Continuous delivery, because modules keep arriving",
+      "Incremental, because it is complete only after the final iteration"
+    ],
+    "answer": 3,
+    "explanation": "In the 7th edition an incremental approach produces a deliverable through a series of iterations, each adding functionality; the deliverable is considered complete only after the final iteration. An iterative approach is for clarifying requirements and investigating options.",
+    "ref": "PMBOK 7, Guide 2.3.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 130,
+        "label": "PMBOK 7, Guide 2.3.3"
+      }
+    ]
   }
 ]

@@ -5,6 +5,7 @@
 - **Organizational process assets (OPAs)** are the organization's own plans, processes, templates and knowledge. They are always internal, and the team can use and often update them.
 - OPAs come in two groups: **policies, processes and procedures** (set outside the project) and **organizational knowledge repositories** (updated throughout the project).
 - The **organizational structure** decides how much authority the project manager has: lowest in functional structures, highest in project-oriented ones.
+- A **PMO** can be **supportive** (low control), **controlling** (moderate) or **directive** (high: it manages the projects itself).
 
 ## Two levels of governance
 
@@ -39,9 +40,11 @@ Project governance also helps prioritize initiatives and allocate resources. A t
 
 ## The project environment
 
-@source PMBOK 8, Standard 2.2
+@source PMBOK 8, Standard 2.2; PMBOK 7, Standard 2.4; Process Groups: A Practice Guide, 2.1; Process Groups: A Practice Guide, 2.2
 
 Every project operates inside an internal and an external environment. These influences can be favorable, unfavorable or neutral. PMI sorts them into two categories: **EEFs** and **OPAs**.
+
+> **On the exam.** The two exam books describe the environment differently. *Process Groups: A Practice Guide* uses **EEFs** and **OPAs**, as this lesson does. The **7th edition** does not use those two terms: it speaks of the **internal environment** and the **external environment**. Its internal list puts process assets, governance documentation, data assets, knowledge assets, and security and safety measures side by side with culture, infrastructure, IT software, resource availability and employee capability. Its external list adds **commercial databases** (standard cost-estimating data, industry risk studies). A question may use either vocabulary.
 
 ## Enterprise environmental factors (EEFs)
 
@@ -140,8 +143,25 @@ How to remember it:
 
 > **On the exam.** *Process Groups: A Practice Guide* has the same table. The outline asks which structure **suits a predictive, plan-based project**. A **project-oriented** or **strong matrix** structure suits it best: the project manager has the authority, the budget and the dedicated people needed to carry out a detailed plan. In a **functional** or **weak matrix** structure the functional manager controls the people and the budget, so the project manager coordinates and must negotiate for resources. The guide lists **physical location** (colocated, regional, virtual) among the factors in choosing a structure: a **virtual** team needs more deliberate communication planning than a **colocated** one.
 
+## The project management office (PMO)
+
+@source Process Groups: A Practice Guide, 2.6
+
+A **PMO** is an organizational structure that **standardizes project-related governance processes** and makes it easier to **share resources, methods, tools and techniques**. What it does ranges from giving support to managing projects directly.
+
+| Type | What it does | Control |
+|---|---|---|
+| **Supportive** | **Consults**: supplies templates, best practices, training, access to information and lessons learned. Acts as a project repository | **Low** |
+| **Controlling** | Gives support and **requires compliance**: adopting a framework or method, using set templates, forms and tools, conforming to governance | **Moderate** |
+| **Directive** | **Manages the projects itself**. Project managers are assigned by the PMO and report to it | **High** |
+
+A PMO supports project managers by managing shared resources across projects, developing the method and standards, coaching and training, auditing compliance, keeping the shared templates and procedures (organizational process assets), and coordinating communication between projects.
+
+A PMO may also have the authority to act as a key decision maker through the life of a project, to keep it aligned with business objectives. It may make recommendations, lead knowledge transfer, and **terminate projects**. The projects under one PMO need not be related to each other.
+
 ## Exam tips
 
+- PMO types by control: **supportive = low** (advises), **controlling = moderate** (requires compliance), **directive = high** (runs the projects).
 - "Lessons learned", "templates", "historical information" and "procedures" are OPAs. "Organizational culture", "market conditions", "government regulations" and "existing infrastructure" are EEFs.
 - Organizational culture is *internal* but still an EEF, because the team cannot change it. Internal does not automatically mean OPA.
 - If a question describes a project manager with little authority who must negotiate with department heads for people, think functional or weak matrix.

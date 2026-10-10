@@ -87,7 +87,7 @@ Limits: organizational policy or a contract may **mandate** a particular approac
 
 ## What can be tailored
 
-@source PMBOK 8, Guide 3.3
+@source PMBOK 8, Guide 3.3; PMBOK 7, Guide 3.3
 
 **1. Life cycle and development approach.** Choosing the phases and choosing predictive, adaptive or hybrid.
 
@@ -102,6 +102,8 @@ Limits: organizational policy or a contract may **mandate** a particular approac
 | **Aligned** | Keep definitions and application consistent |
 
 **3. Engagement.** *People* (skills and capabilities), *empowerment* (which decisions are left to the team) and *integration* (making one team from staff, contractors and partners).
+
+> **On the exam.** The 7th edition lists **five** things that can be tailored. To the three above it adds **tools** (the software or equipment the team will use) and **methods and artifacts** (the means used to reach the outcomes, and the documents and templates). It also mentions a **value delivery office (VDO)**, found where delivery is more adaptive: it coaches teams and mentors sponsors and product owners, an enabling role, not an oversight one.
 
 ## The four-step tailoring process
 

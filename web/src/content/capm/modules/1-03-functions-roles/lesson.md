@@ -9,7 +9,7 @@
 
 ## Functions associated with projects
 
-@source PMBOK 8, Standard 2.4
+@source PMBOK 8, Standard 2.4; PMBOK 7, Standard 2.3
 
 A function is a kind of contribution a project needs. PMI lists seven common ones. The list is not exhaustive, and the needs of the project decide which are used.
 
@@ -27,6 +27,19 @@ Two details worth knowing:
 
 - **Feedback** is needed more in adaptive and hybrid approaches, because the team is discovering the product in increments.
 - **Providing resources** has two sides. Sponsors and portfolio managers *secure* resources and champion the project with senior management. Functional and resource managers *allocate* the right people and equipment to the team.
+
+> **On the exam.** The 7th edition lists **eight** functions, some under other names:
+>
+> 1. Provide oversight and coordination
+> 2. **Present objectives and feedback** (here: solicit and manage feedback)
+> 3. Facilitate and support
+> 4. **Perform work and contribute insights** (here: perform work)
+> 5. Apply expertise
+> 6. **Provide business direction and insight** (here: provide organizational direction and insight)
+> 7. **Provide resources and direction** (here: provide resources)
+> 8. **Maintain governance**: approve and support the team's recommendations and monitor progress toward the desired outcomes. The 8th edition does not list it separately.
+>
+> It also separates two words that are often mixed up: the **customer** is the person or group who **requested or is funding** the project; the **end user** is the one who will **directly use** the deliverable.
 
 ## How the work is coordinated
 

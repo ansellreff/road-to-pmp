@@ -442,5 +442,25 @@
         "label": "PMBOK 8, Guide 3.2"
       }
     ]
+  },
+  {
+    "id": "q23",
+    "q": "A project team chooses which scheduling software it will use, weighing what suits the work against what the licence costs. In the 7th edition's list of things that can be tailored, which one is this?",
+    "options": [
+      "Engagement",
+      "Life cycle and development approach",
+      "Tools",
+      "Processes"
+    ],
+    "answer": 2,
+    "explanation": "The 7th edition lists five things to tailor: life cycle and development approach, processes, engagement, tools, and methods and artifacts. Selecting the software or equipment the team will use is tailoring the tools.",
+    "ref": "PMBOK 7, Guide 3.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 229,
+        "label": "PMBOK 7, Guide 3.3"
+      }
+    ]
   }
 ]

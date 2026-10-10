@@ -78,7 +78,7 @@ Team development models (the Tuckman ladder) and motivation theories (Herzberg, 
 
 ## Conflict management
 
-@source PMBOK 8, Guide section 5, Conflict management
+@source PMBOK 8, Guide section 5, Conflict management; PMBOK 7, Guide 4.2.7
 
 **Conflict is inevitable** on projects. Common sources are **scarce resources, scheduling priorities and personal work styles**. Team ground rules, clear roles and good communication planning reduce it. Managed well, differences of opinion improve creativity and decisions.
 
@@ -100,6 +100,50 @@ The five techniques:
 | **Withdraw / avoid** | Retreat or postpone, to be better prepared or let others resolve it | Issue unresolved for now |
 
 Which to use depends on the importance and intensity of the conflict, time pressure, the relative power of those involved, the importance of the relationship, and whether a long-term or short-term fix is needed.
+
+> **On the exam.** The 7th edition describes **six** ways of addressing conflict, from the model of Thomas and Kilmann. It separates the first row above into two: **confronting / problem solving** (treat the conflict as a problem to be solved; used when the relationship matters and each trusts the other's ability) and **collaborating** (bring in several views and reach consensus; needs trust and time). The other four are the same: compromising, smoothing / accommodating, forcing, withdrawal / avoiding. It notes that **forcing** suits a health and safety conflict that must be settled at once, and **smoothing** suits a disagreement with someone of higher authority, such as the sponsor.
+
+## Models the exam's guide names
+
+@source PMBOK 7, Guide 4.2.1; PMBOK 7, Guide 4.2.4; PMBOK 7, Guide 4.2.6; PMBOK 7, Guide 4.2.7
+
+The 7th edition has a section of commonly used models. Several are about leading people and leading change. Module 2.9 covers the motivation models and the Tuckman ladder; these are the others.
+
+**Situational leadership**
+
+| Model | Idea |
+|---|---|
+| **Situational Leadership II** (Blanchard) | Measures a team member by **competence** and **commitment**. As these grow, the leader's style moves from **directing** to **coaching** to **supporting** to **delegating** |
+| **OSCAR** | A coaching model in five parts: **Outcome**, **Situation**, **Choices / consequences**, **Actions**, **Review** |
+
+**Change models**
+
+| Model | Stages |
+|---|---|
+| **Managing Change in Organizations** (PMI) | **Formulate** change, **plan** change, **implement** change, **manage transition**, **sustain** change. Iterative, with feedback loops |
+| **ADKAR** (Hiatt) | Five steps an **individual** goes through: **Awareness**, **Desire**, **Knowledge**, **Ability**, **Reinforcement** |
+| **8-Step Process for Leading Change** (Kotter) | **Top-down**: create urgency; form a powerful coalition; create a vision; communicate the vision; remove obstacles; create short-term wins; build on the change; anchor the changes in the culture |
+| **Virginia Satir change model** | How people **experience** change: late status quo; the foreign element; **chaos** (performance at its lowest); the transforming idea; practice and integration; new status quo |
+| **Transition model** (Bridges) | Change is situational; **transition is psychological**. Three stages: **ending, losing and letting go**; the **neutral zone**; the **new beginning** |
+
+**Team development**
+
+The **Drexler / Sibbet team performance model** has seven steps. Steps 1 to 4 create the team; steps 5 to 7 sustain it.
+
+| Step | Question it answers |
+|---|---|
+| 1. **Orientation** | Why are we here? |
+| 2. **Trust building** | Who is on the team? |
+| 3. **Goal clarification** | What are we doing? |
+| 4. **Commitment** | How will we do it? |
+| 5. **Implementation** | Plans are detailed and work begins |
+| 6. **High performance** | The team works well with little oversight |
+| 7. **Renewal** | Something changes; does the team need to reset? |
+
+**Negotiation and planning**
+
+- **Think win-win** (Covey): the possible outcomes of a negotiation are **win-win** (the best: each person is satisfied), **win-lose / lose-win**, and **lose-lose**. Win-win needs **character**, **trust** and a willingness to see the other side's view (**approach**).
+- **Planning** (Boehm): more planning up front reduces uncertainty and rework, but past a point it delays the return and lets circumstances change. The model looks for the **sweet spot**, which differs for every project.
 
 ## The PMI Code of Ethics and Professional Conduct
 

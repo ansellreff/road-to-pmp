@@ -482,5 +482,65 @@
         "label": "PMBOK 8, Standard 1.3.2"
       }
     ]
+  },
+  {
+    "id": "q25",
+    "q": "A company's PMO offers templates, training and lessons learned from earlier projects. Project managers may use them or not, as they see fit. Which type of PMO is this?",
+    "options": [
+      "Supportive",
+      "Controlling",
+      "Directive",
+      "Project-oriented"
+    ],
+    "answer": 0,
+    "explanation": "A supportive PMO plays a consultative role: it supplies templates, best practices, training and lessons learned, and serves as a project repository. Its degree of control is low.",
+    "ref": "Process Groups: A Practice Guide, 2.6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 69,
+        "label": "Process Groups: A Practice Guide, 2.6"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A PMO requires every project to follow the company's method, use its forms and tools, and pass a governance review. It does not manage the projects itself. Which type of PMO is this?",
+    "options": [
+      "Supportive, with a low degree of control over projects",
+      "Controlling, with a moderate degree of control",
+      "Directive, with a high degree of control",
+      "Functional, with no control over projects"
+    ],
+    "answer": 1,
+    "explanation": "A controlling PMO gives support and requires compliance: adopting frameworks or methods, using specific templates, forms and tools, and conforming to governance. Its degree of control is moderate.",
+    "ref": "Process Groups: A Practice Guide, 2.6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 69,
+        "label": "Process Groups: A Practice Guide, 2.6"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "In one organization the project managers are assigned by the PMO, report to it, and the PMO manages the projects directly. A new project manager asks how much control this PMO has. What is the answer?",
+    "options": [
+      "Low: this is a supportive PMO that only gives advice",
+      "Moderate: this is a controlling PMO",
+      "None: a PMO never has authority over a project",
+      "High: this is a directive PMO"
+    ],
+    "answer": 3,
+    "explanation": "A directive PMO takes control of projects by managing them directly. Project managers are assigned by and report to the PMO, and its degree of control is high.",
+    "ref": "Process Groups: A Practice Guide, 2.6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 69,
+        "label": "Process Groups: A Practice Guide, 2.6"
+      }
+    ]
   }
 ]

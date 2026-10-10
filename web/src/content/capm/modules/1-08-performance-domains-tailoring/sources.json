@@ -1,5 +1,10 @@
 [
   {
+    "book": "pmbok7",
+    "page": 229,
+    "label": "PMBOK 7, Guide 3.3"
+  },
+  {
     "book": "pmbok8",
     "page": 60,
     "label": "PMBOK 8, Standard 3.2"

@@ -503,5 +503,45 @@
         "label": "PMBOK 8, Standard 2.5.1.1"
       }
     ]
+  },
+  {
+    "id": "q26",
+    "q": "A steering group approves the recommendations the project team brings to it and keeps checking that the project is still heading for the outcomes the business wants. In the 7th edition's list of eight functions, which one is this?",
+    "options": [
+      "Present objectives and feedback",
+      "Maintain governance",
+      "Perform work and contribute insights",
+      "Apply expertise"
+    ],
+    "answer": 1,
+    "explanation": "People in the maintain governance function approve and support recommendations made by the project team and monitor progress toward the desired outcomes. The 7th edition lists it as the eighth function; the 8th edition does not list it separately.",
+    "ref": "PMBOK 7, Standard 2.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 39,
+        "label": "PMBOK 7, Standard 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A city council pays for a new booking system for its sports halls. Members of the public will use it to reserve courts. In the 7th edition's terms, who is who?",
+    "options": [
+      "The council is the customer; the public are the end users",
+      "The public are the customer; the council is the end user",
+      "Both are customers, since both benefit from it",
+      "Both are end users, since neither builds it"
+    ],
+    "answer": 0,
+    "explanation": "The customer is the individual or group who requested or is funding the project. The end user is the individual or group who will experience the direct use of the deliverable. They are not always the same.",
+    "ref": "PMBOK 7, Standard 2.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 39,
+        "label": "PMBOK 7, Standard 2.3"
+      }
+    ]
   }
 ]

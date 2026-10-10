@@ -408,5 +408,125 @@
         "label": "PMI Code of Ethics, 2.2.3"
       }
     ]
+  },
+  {
+    "id": "q21",
+    "q": "Staff know why a new system is being introduced and want it to succeed, but they do not yet know how to use it. In the ADKAR model, which step comes next?",
+    "options": [
+      "Awareness",
+      "Desire",
+      "Reinforcement",
+      "Knowledge"
+    ],
+    "answer": 3,
+    "explanation": "ADKAR is five steps an individual goes through: awareness (why the change is needed), desire (wanting to support it), knowledge (understanding how to change), ability (hands-on practice) and reinforcement. Awareness and desire are in place, so knowledge is next.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A new process has just been switched on. People are in unfamiliar territory, performance has dropped to its lowest point, and behavior is unpredictable. Which stage of the Virginia Satir change model is this?",
+    "options": [
+      "Chaos",
+      "Late status quo",
+      "The transforming idea",
+      "New status quo"
+    ],
+    "answer": 0,
+    "explanation": "In the Satir model the stages are late status quo, the foreign element, chaos, the transforming idea, practice and integration, and new status quo. In chaos people are no longer comfortable and performance drops to its lowest level.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A company's executives decide a change is needed, announce why it is urgent, gather influential people to lead it, and push the vision down through the layers of management. Which model does this describe?",
+    "options": [
+      "The ADKAR model",
+      "The Bridges transition model",
+      "Kotter's 8-step process for leading change",
+      "The OSCAR model"
+    ],
+    "answer": 2,
+    "explanation": "Kotter's 8-step process is a top-down approach: create urgency, form a powerful coalition, create a vision, communicate it, remove obstacles, create short-term wins, build on the change, and anchor it in the culture.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A team member is new to a task: willing, but not yet able. As her competence and commitment grow, her leader moves from telling her what to do toward leaving decisions to her. In Situational Leadership II, in which order do the styles follow?",
+    "options": [
+      "Delegating, supporting, coaching, directing",
+      "Directing, coaching, supporting, delegating",
+      "Coaching, directing, delegating, supporting",
+      "Supporting, delegating, directing, coaching"
+    ],
+    "answer": 1,
+    "explanation": "Situational Leadership II measures development by competence and commitment. As they evolve, the leadership style moves from directing to coaching to supporting to delegating.",
+    "ref": "PMBOK 7, Guide 4.2.1",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 250,
+        "label": "PMBOK 7, Guide 4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "At a kickoff meeting a new team learns the purpose and mission of the project. In the Drexler / Sibbet team performance model, which step is this, and which question does it answer?",
+    "options": [
+      "Trust building, which answers \"who?\"",
+      "Goal clarification, which answers \"what?\"",
+      "Commitment, which answers \"how?\"",
+      "Orientation, which answers \"why?\""
+    ],
+    "answer": 3,
+    "explanation": "The model has seven steps. Orientation answers why (purpose and mission), trust building who, goal clarification what, and commitment how. Implementation, high performance and renewal follow.",
+    "ref": "PMBOK 7, Guide 4.2.6",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 261,
+        "label": "PMBOK 7, Guide 4.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Two engineers disagree about a design. They trust each other's ability, and their working relationship matters, so they sit down and treat the disagreement as a problem to be solved together. Which of the 7th edition's six ways of addressing conflict is this?",
+    "options": [
+      "Confronting / problem solving",
+      "Smoothing / accommodating",
+      "Forcing",
+      "Withdrawal / avoiding"
+    ],
+    "answer": 0,
+    "explanation": "The 7th edition lists six ways: confronting / problem solving, collaborating, compromising, smoothing / accommodating, forcing, and withdrawal / avoiding. Confronting treats the conflict as a problem to be solved, used when the relationship is important and each trusts the other's ability.",
+    "ref": "PMBOK 7, Guide 4.2.7",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 263,
+        "label": "PMBOK 7, Guide 4.2.7"
+      }
+    ]
   }
 ]
