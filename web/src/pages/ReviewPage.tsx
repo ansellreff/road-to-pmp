@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Keys from '../components/Keys'
 import FlipCard, { cardStatus, describeDue, RateButtons } from '../components/FlipCard'
 import { Notice, PageHeader, Waiting } from '../components/Page'
 import { allModules, courses, loadCards, type Card } from '../lib/content'
@@ -112,6 +113,9 @@ export default function ReviewPage() {
             </p>
             <RateButtons onRate={rate} />
           </div>
+          <Keys actions={{ ' ': () => setFlipped(!flipped), 1: () => rate(false), 2: () => rate(true) }}>
+            Space to turn the card. 1 for still learning, 2 for I know this.
+          </Keys>
         </>
       )}
     </div>

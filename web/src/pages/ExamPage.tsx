@@ -237,6 +237,7 @@ function PracticeRun({ course, exam, questions, run, examKey: key, leftMs, submi
         picked={picked}
         revealed={picked !== null}
         onPick={picked === null ? pick : undefined}
+        onNext={picked === null ? undefined : next}
       />
       <div className="mt-6 flex flex-wrap items-center gap-3">
         <button onClick={next} disabled={picked === null} className={btnPrimary}>
@@ -432,6 +433,9 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
             picked={run.picks[position]}
             revealed={false}
             onPick={pick}
+            onNext={position + 1 < end ? () => go(position + 1) : undefined}
+            onPrevious={position > first ? () => go(position - 1) : undefined}
+            onFlag={toggleFlag}
           />
           <div className="mt-6 flex flex-wrap items-center gap-3">
             <button onClick={() => go(position - 1)} disabled={position === first} className={btnQuiet}>

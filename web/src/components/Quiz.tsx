@@ -5,6 +5,7 @@ import { moduleKey, recordAnswer, recordQuiz, useProgress } from '../lib/progres
 import { btnPrimary, btnQuiet, column, listTitle } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
 import Icon from './Icon'
+import Keys from './Keys'
 import { Waiting } from './Page'
 import { SourceItem } from './Sources'
 
@@ -139,6 +140,7 @@ export default function Quiz({ courseId, moduleId }: { courseId: string; moduleI
         picked={picked}
         revealed={picked !== null}
         onPick={picked === null ? setPicked : undefined}
+        onNext={picked === null ? undefined : next}
         lively
       />
       <button onClick={next} disabled={picked === null} className={`${btnPrimary} mt-6`}>
@@ -160,12 +162,24 @@ export function QuestionView(props: {
   picked: number | null
   revealed: boolean
   onPick?: (i: number) => void
+  /** Keyboard only: Enter or the right arrow. The page keeps its own button for the same step. */
+  onNext?: () => void
+  /** Keyboard only: the left arrow. */
+  onPrevious?: () => void
+  /** Keyboard only: F. Passed where questions can be flagged, in real exam mode. */
+  onFlag?: () => void
   /** Shown under the question, for example the module it comes from. */
   footer?: ReactNode
   /** Give the answer a moment of motion when it is revealed. Off in reviews and in real exam mode. */
   lively?: boolean
 }) {
-  const { number, question, picked, revealed, onPick, footer, lively = false } = props
+  const { number, question, picked, revealed, onPick, onNext, onPrevious, onFlag, footer, lively = false } = props
+  const choose = (i: number) => (onPick && i < question.options.length ? () => onPick(i) : undefined)
+  const keys = {
+    a: choose(0), b: choose(1), c: choose(2), d: choose(3),
+    1: choose(0), 2: choose(1), 3: choose(2), 4: choose(3),
+    Enter: onNext, ArrowRight: onNext, ArrowLeft: onPrevious, f: onFlag,
+  }
   const letter = (i: number) => String.fromCharCode(65 + i)
   return (
     <div className="border-b border-line py-7">
@@ -187,7 +201,11 @@ export function QuestionView(props: {
             <button
               key={i}
               disabled={!onPick}
-              onClick={() => onPick?.(i)}
+              onClick={(event) => {
+                onPick?.(i)
+                // After a mouse click the focus leaves the option, so Enter moves on instead of pressing it again.
+                if (event.detail > 0) event.currentTarget.blur()
+              }}
               aria-pressed={!revealed && onPick ? i === picked : undefined}
               className={`press flex min-h-14 w-full flex-wrap items-baseline gap-x-3 gap-y-1 rounded-md border px-4 py-3.5 text-left text-lg leading-relaxed ${style}`}
             >
@@ -234,6 +252,12 @@ export function QuestionView(props: {
         </div>
       )}
       {footer}
+      {(onPick || onNext) && (
+        <Keys actions={keys}>
+          A to D, or 1 to 4, to answer. Enter or the right arrow for the next question
+          {onFlag ? ', the left arrow for the previous one. F to flag.' : '.'}
+        </Keys>
+      )}
     </div>
   )
 }

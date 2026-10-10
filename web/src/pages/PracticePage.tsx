@@ -209,6 +209,7 @@ export default function PracticePage() {
         picked={picked}
         revealed={picked !== null}
         onPick={picked === null ? pick : undefined}
+        onNext={picked === null ? undefined : next}
         lively
       />
       <button onClick={next} disabled={picked === null} className={`${btnPrimary} mt-6`}>

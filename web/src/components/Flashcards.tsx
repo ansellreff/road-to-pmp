@@ -3,6 +3,7 @@ import { loadCards } from '../lib/content'
 import { isKnown, moduleKey, rateCard, useProgress } from '../lib/progress'
 import { btnQuiet, column } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
+import Keys from './Keys'
 import FlipCard, { cardStatus, DeckStrip, describeDue, RateButtons, StatusCounts, type CardStatus } from './FlipCard'
 import { Notice, Waiting } from './Page'
 
@@ -106,6 +107,18 @@ export default function Flashcards({ courseId, moduleId }: { courseId: string; m
             </div>
             <RateButtons onRate={rate} />
           </div>
+          <Keys
+            actions={{
+              ' ': () => setFlipped(!flipped),
+              ArrowLeft: () => go(position - 1),
+              ArrowRight: () => go(position + 1),
+              1: () => rate(false),
+              2: () => rate(true),
+            }}
+          >
+            Space to turn the card. The left and right arrows for the previous and next card. 1 for still
+            learning, 2 for I know this.
+          </Keys>
         </>
       )}
     </div>

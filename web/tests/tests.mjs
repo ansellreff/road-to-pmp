@@ -172,6 +172,16 @@ export const tests = {
     expect(!record.run && record.attempts.length === 1 && record.attempts[0].mode === 'practice', 'the attempt was not saved')
   },
 
+  async 'mock exam 5: listed as unseen, and it opens with 150 questions'(page) {
+    await page.goto('/capm/exams')
+    await see(page, 'Mock exam 5')
+    await page.getByRole('button', { name: 'Start in real exam mode' }).nth(4).click()
+    await see(page, 'Question 1 of 150. First half: 0 of 75 answered')
+    await option(page, 'A').click()
+    const record = (await saved(page)).exams['capm/mock-5']
+    expect(record?.run?.mode === 'real', 'Mock exam 5 did not start in real exam mode')
+  },
+
   async 'mock exam, real mode: answer, change, flag, grid, break, lock, submit'(page) {
     await page.goto('/capm/exams')
     await page.getByRole('button', { name: 'Start in real exam mode' }).nth(1).click()
@@ -286,6 +296,52 @@ export const tests = {
     await page.getByRole('button', { name: /^Show the answer side. This card: still learning/ }).waitFor()
   },
 
+  async 'keyboard: answer and move on in a quiz, flag in an exam, turn and rate a flashcard'(page) {
+    await page.goto('/capm/1-01-project-basics/quiz')
+    await see(page, 'Question 1 of')
+    await see(page, 'A to D, or 1 to 4, to answer.')
+    await page.keyboard.press('b')
+    await see(page, 'Source:')
+    await page.keyboard.press('Enter')
+    await see(page, 'Question 2 of')
+    // A click with the mouse, then Enter: the next question, not the same option pressed again.
+    await option(page, 'A').click()
+    await see(page, 'Source:')
+    await page.keyboard.press('Enter')
+    await see(page, 'Question 3 of')
+    // Typing in the search box does not answer the question.
+    await page.getByRole('combobox', { name: 'Search lessons and flashcards' }).click()
+    await page.keyboard.type('abc')
+    await page.keyboard.press('Escape')
+    expect((await page.getByText('Source:').count()) === 0, 'typing in the search box answered the question')
+
+    await page.goto('/capm/exams')
+    await page.getByRole('button', { name: 'Start in real exam mode' }).first().click()
+    await see(page, 'Question 1 of 150.')
+    await page.keyboard.press('3')
+    await selected(page, 'C')
+    await page.keyboard.press('f')
+    await button(page, 'Remove the flag').waitFor()
+    await page.keyboard.press('ArrowRight')
+    await see(page, 'Question 2 of 150.')
+    await page.keyboard.press('ArrowLeft')
+    await see(page, 'Question 1 of 150.')
+    const run = (await saved(page)).exams['capm/mock-1'].run
+    expect(run.picks[0] === 2 && run.flags.includes(0), 'the answer or the flag given by keyboard was not saved')
+
+    await page.goto('/capm/1-01-project-basics/flashcards')
+    await page.getByRole('button', { name: /^Show the answer side/ }).waitFor()
+    await page.keyboard.press('Space')
+    await page.getByRole('button', { name: /^Show the question side/ }).waitFor()
+    await page.keyboard.press('2')
+    await see(page, /You know 1 of \d+ cards/)
+    await see(page, /Card 2 of \d+/)
+    await page.keyboard.press('ArrowRight')
+    await see(page, /Card 3 of \d+/)
+    await page.keyboard.press('ArrowLeft')
+    await see(page, /Card 2 of \d+/)
+  },
+
   async 'lesson: list of sections, jump to one, continue there next time'(page) {
     await page.goto('/capm/3-07-metrics-retrospectives')
     // The sections are listed in the panel on the right, open from the start.
@@ -390,7 +446,7 @@ export const tests = {
     expect((await page.getByRole('region', { name: 'Learning modules' }).count()) === 0, 'the menu stayed open after choosing a module')
     await button(page, 'Practice').click()
     await see(page, '1 to practice')
-    await see(page, '0 of 4 taken')
+    await see(page, '0 of 5 taken')
     await page.keyboard.press('Escape')
     expect((await page.getByRole('region', { name: 'Practice' }).count()) === 0, 'Escape did not close the menu')
     await button(page, 'Practice').click()
@@ -431,16 +487,16 @@ export const tests = {
     await seed(page, { examDates: { capm: day(40) } })
     await page.goto('/plan')
     await see(page, 'Final review, 7 days.')
-    for (const title of ['Mock exam 1', 'Mock exam 2', 'Mock exam 3', 'Mock exam 4']) await see(page, title)
+    for (const title of ['Mock exam 1', 'Mock exam 2', 'Mock exam 3', 'Mock exam 4', 'Mock exam 5']) await see(page, title)
     await see(page, 'in real exam mode. Its questions are new to you.')
-    // Mock exam 1 opens the review; the unseen Mock exam 4 is two days before the exam.
+    // Mock exam 1 opens the review; the last one, Mock exam 5, is two days before the exam.
     expect((await page.getByText(shown(33), { exact: true }).count()) >= 1, 'Mock exam 1 is not on the first review day')
-    expect((await page.getByText(shown(38), { exact: true }).count()) === 1, 'Mock exam 4 is not two days before the exam')
-    expect((await page.getByText('Not taken yet').count()) === 4, 'not all four mock exams are listed')
+    expect((await page.getByText(shown(38), { exact: true }).count()) === 1, 'Mock exam 5 is not two days before the exam')
+    expect((await page.getByText('Not taken yet').count()) === 5, 'not all five mock exams are listed')
     // A review of two days only has room for one.
     await seed(page, { examDates: { capm: day(8) } })
     await page.goto('/plan')
-    await see(page, 'The review is too short for all 4 mock exams, so 1 is scheduled.')
+    await see(page, 'The review is too short for all 5 mock exams, so 1 is scheduled.')
     expect((await page.getByText('Not taken yet').count()) === 1, 'more mock exams are scheduled than fit')
   },
 
