@@ -26,7 +26,7 @@
       "Forward traceability",
       "Lateral traceability",
       "Backward traceability",
-      "Impact analysis"
+      "Change impact analysis"
     ],
     "answer": 2,
     "explanation": "Backward traceability runs from the requirements to the scope features and business goals and objectives that triggered them. Forward traceability runs to design, test components and the final product.",
@@ -45,7 +45,7 @@
     "options": [
       "That the team works overtime when needed",
       "That product information remains accurate from approval through implementation",
-      "That stakeholders attend every meeting",
+      "That stakeholders attend every elicitation meeting and review every document on time",
       "That the budget is not exceeded"
     ],
     "answer": 1,
@@ -65,7 +65,7 @@
     "options": [
       "More is always better",
       "It is needed only on agile projects",
-      "It should be avoided in regulated industries",
+      "It should be avoided in regulated industries, where auditors prefer very short documentation",
       "It should be sized to the need; too much becomes costly to maintain and may be abandoned"
     ],
     "answer": 3,
@@ -83,7 +83,7 @@
     "id": "q5",
     "q": "In a traceability matrix, one requirement cannot be traced back to any business objective or scope feature. What does this suggest?",
     "options": [
-      "The requirement is the most important one",
+      "The requirement is the most important one in the whole matrix",
       "The requirement has been fully tested",
       "The requirement may add no value and should be questioned",
       "The matrix is complete"
@@ -105,7 +105,7 @@
     "options": [
       "It reduces the chance that a requirement is dropped before it is built and tested",
       "It sets the project budget",
-      "It replaces acceptance testing",
+      "It replaces acceptance testing, because every requirement is already linked to a design",
       "It identifies the sponsor"
     ],
     "answer": 0,
@@ -124,7 +124,7 @@
     "q": "\"Collect loyalty points\" can be built on its own, but customers get nothing from it until \"Redeem points\" exists. Which relationship is this?",
     "options": [
       "Subset",
-      "Implementation dependency",
+      "Implementation (build) dependency",
       "Lateral trace",
       "Benefit or value dependency"
     ],
@@ -223,7 +223,7 @@
     "id": "q12",
     "q": "On an adaptive project, what can count as approval of requirements?",
     "options": [
-      "Only a signed business requirements document",
+      "Only a business requirements document signed by the sponsor and every stakeholder in the register",
       "Approval by the change control board",
       "A formal audit",
       "The product owner's prioritization of the backlog, or the stories chosen in iteration planning"
@@ -245,7 +245,7 @@
     "options": [
       "To choose the requirement the analyst prefers",
       "To facilitate discussion and negotiate an agreed outcome among those with authority",
-      "To approve both and let developers decide",
+      "To approve both requirements and let the developers decide which one to build in practice",
       "To delete both requirements"
     ],
     "answer": 1,
@@ -264,7 +264,7 @@
     "q": "Which technique lists the forces for and against a proposed change, weights them and compares the totals?",
     "options": [
       "Delphi",
-      "Story mapping",
+      "Story mapping workshop",
       "Force field analysis",
       "Kano analysis"
     ],
@@ -284,7 +284,7 @@
     "q": "On a predictive project, a stakeholder asks for a new feature after the requirements have been baselined. What should the business analyst do first?",
     "options": [
       "Perform an impact analysis of the proposed change",
-      "Add it to the requirements straight away",
+      "Add it to the baselined requirements straight away",
       "Refuse, because the baseline is fixed",
       "Ask the developers to build it quietly"
     ],
@@ -324,7 +324,7 @@
     "q": "What are the possible outcomes for a proposed change?",
     "options": [
       "Approved, deferred, rejected, or more information required",
-      "Verified, validated, prioritized, approved",
+      "Verified, validated, prioritized, approved, or returned for rework",
       "Avoid, transfer, mitigate, accept",
       "Unaware, resistant, neutral, supportive"
     ],
@@ -363,7 +363,7 @@
     "id": "q19",
     "q": "On an agile project, a stakeholder asks for a change. How is it handled?",
     "options": [
-      "A formal change request goes to the change control board",
+      "A formal change request goes to the change control board for a vote",
       "It is written as a user story, added to the backlog and prioritized",
       "It is refused until the next project",
       "It is added to the current iteration immediately"
@@ -384,7 +384,7 @@
     "q": "Who decides whether a proposed change to baselined requirements is accepted?",
     "options": [
       "The business analyst alone",
-      "The developer who will build it",
+      "The developer who will build it, because that person understands the effort best",
       "Whoever requested it",
       "The authorized body, such as a change control board; the analyst recommends"
     ],
@@ -404,7 +404,7 @@
     "q": "Which tool tracks the history of revisions of a work product?",
     "options": [
       "Stakeholder matrix",
-      "Force field analysis",
+      "Force field analysis model",
       "Version control system",
       "Burndown chart"
     ],
@@ -423,7 +423,7 @@
     "id": "q22",
     "q": "What is an interaction matrix?",
     "options": [
-      "A formal matrix maintained for the life of the product",
+      "A formal matrix kept in a requirements tool and maintained for the whole life of the product",
       "A lightweight, temporary version of a traceability matrix used on adaptive projects",
       "A chart of who talks to whom",
       "A risk register"
@@ -436,6 +436,26 @@
         "book": "baguide",
         "page": 306,
         "label": "PMI Guide to Business Analysis, 8.2.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A regulator changes a rule halfway through a predictive project. Which tool shows the analyst which requirements, designs and tests the change touches?",
+    "options": [
+      "The stakeholder matrix and onion diagram",
+      "The product portfolio matrix",
+      "The purpose alignment model",
+      "The requirements traceability matrix"
+    ],
+    "answer": 3,
+    "explanation": "The traceability matrix holds the relationships between requirements and other product information, so the components affected by a change can be identified and the size of the change judged.",
+    "ref": "PMI Guide to Business Analysis, 8.4.2.6",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 319,
+        "label": "PMI Guide to Business Analysis, 8.4.2.6"
       }
     ]
   }

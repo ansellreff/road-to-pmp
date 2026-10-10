@@ -45,6 +45,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Session 25 planned with you and approved: four sessions (25a audits, 25b exam alignment of Domains 1 and 2, 25c quiz repair, 25d exam alignment of Domains 3 and 4 and the PDF list). Your decisions: keep the Eighth Edition lessons and add an exam-terms layer; module 1.11 becomes exam content; all quizzes are repaired. **Session 25a done:** three new checks (quiz quality, tables and markup, worked examples), every lesson checked as rendered in a browser, and the exam outline mapped to the modules. Results are in "Session 25a audit results" below. Issues 65 to 68 added to the log. | You: read the audit results. Next: Session 25b |
 | 2026-10-10 | Your suggestion for the mock exams recorded (several fixed exams, like the real exam, domains shown separately, easy to learn from), with a proposed design under "Session 26 proposal". | You: choose mixed order or domain chapters, and 3 or 4 mock exams. Next: Session 25b |
 | 2026-10-10 | Your mock exam decisions recorded: two modes (practice mode grouped by domain, real exam mode) and four mock exams. **Session 25b done:** module 1.11 is now exam content (renamed, 7 new questions on the Seventh Edition); new module 1.12 teaches the 5 process groups, 10 knowledge areas and all 49 processes; "On the exam" notes added to 12 modules in Domains 1 and 2; four outline gaps filled (organizational structure suitability, project management plan vs product plans, the six project manager roles, projects as a vehicle for change). **CAPM is now 39 modules, 827 questions, 1,208 flashcards.** Issues 69 and 70 added. | Next: Session 25c, quiz repair |
+| 2026-10-10 | **Session 25c done: quiz repair.** One wrong option was rewritten in 250 questions so the right answer no longer stands out by length: the share where it is the longest option fell from 58% to 27% (chance is 25%), and all 39 quizzes are under the 35% limit. The 5 duplicated questions were reworded as scenarios, and 6 scenario questions were added to Domain 4. **833 questions**: 219 / 278 / 174 / 162 per domain, enough for four mock exams (216 / 104 / 120 / 160). Issue 71 added. | Next: Session 25d |
 
 ## How your progress is saved
 
@@ -136,7 +137,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | 🟡 | 25 | Full catch-up, requested 2026-10-10 and planned with you. In four parts: |
 | ✅ | 25a | Audits: quiz quality check, table and markup check, worked-example check, render check of every lesson, exam outline coverage map |
 | ✅ | 25b | Exam alignment of Domains 1 and 2: module 1.11 becomes exam content and is expanded; "On the exam" notes from PMBOK 7 and the Process Groups guide; fill the outline gaps |
-| ⬜ | 25c | Quiz repair: remove the longest-answer give-away in all quizzes, remove duplicates, top up Domain 1, add scenario questions |
+| ✅ | 25c | Quiz repair: remove the longest-answer give-away in all quizzes, remove duplicates, top up Domain 1, add scenario questions |
 | ⬜ | 25d | Exam alignment of Domains 3 and 4 (2017 Agile Practice Guide, Business Analysis for Practitioners); final list of PDFs; close the edition question |
 | ⬜ | 26 | Feature: mock exams. **Decided with you on 2026-10-10:** two modes, **practice mode** (questions grouped by domain, easier to learn from) and **real exam mode** (simulates the CAPM exam), and **four fixed mock exams**. Details under "Session 26 proposal" below; to be confirmed in plan mode. |
 | ⬜ | 27 | UI/UX polish (see backlog below) |
@@ -194,7 +195,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (827 quiz questions, 1,208 flashcards).
+Overall: **39 of 39 modules done** (833 quiz questions, 1,208 flashcards).
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -323,6 +324,18 @@ Measured on 2026-10-10, before any repair. Run the tools again to see the curren
 | Source links | `tools/audit_links.py` | 677 links, 42 to figures or tables, none wrong |
 
 Not checked by a tool: calculations that appear only inside tables without an "=" sign, and whether each numeric quiz option matches its explanation.
+
+### After the quiz repair (Session 25c)
+
+| Domain | Questions | Longest-answer rate before | After |
+|---|---|---|---|
+| 1 | 219 | 56% | 27% |
+| 2 | 278 | 44% | 27% |
+| 3 | 174 | 68% | 28% |
+| 4 | 162 | 74% | 27% |
+| All | 833 | 58% | 27% |
+
+Every module is at or below 32%. Duplicated questions: none. Method: in each affected question one wrong option was rewritten to be as long and as specific as the right answer; the right answers and explanations were not changed. Question ids are unchanged, so saved quiz history still applies.
 
 ### Exam outline coverage
 
@@ -468,6 +481,7 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 66 | Module 1.11 is marked with a red * as "not on the exam", but it covers the Seventh Edition principles and domains and the 49 processes, which are the exam's own references (issue 47). | Done in Session 25b: the red * is gone, the module counts toward progress, it is renamed, and it has 7 more questions. Its process material is expanded into the new module 1.12. | Module 1.11; Session 25b |
 | 67 | Five questions appear word for word in two modules. | Listed in the audit results. One of each pair is replaced in Session 25c. | "Session 25a audit results" |
 | 69 | Module 1.11 cited *Process Groups: A Practice Guide* for the ten knowledge areas, but that guide never uses the term: it lists the 49 processes by process group only. Knowledge areas come from the PMBOK Guide Sixth Edition, which is not one of the exam's references although the exam outline uses knowledge-area words ("integration management", "quality management plan"). | The source was corrected to the Sixth Edition, section 1.2.4.6. Modules 1.11 and 1.12 say where each grouping comes from. The assignment of each process to a knowledge area follows the Sixth Edition's chapters. | Modules 1.11 and 1.12 |
+| 71 | Repairing 250 questions by hand-editing whole quiz files would have been slow and error-prone. | The repair was done as a list of single-option rewrites applied by a script, which re-measured each module after every batch and flagged any question where the right answer was still the longest (14 needed a second pass). Limits: the plan also called for topping up each early Domain 1 quiz to about 22 questions and for many more scenario questions. Domain 1 gained 36 questions through modules 1.11, 1.12, 1.2 and 1.3, but quizzes 1.1 and 1.4 to 1.9 are still 15 to 18 questions, and only 11 questions were added or reworded as scenarios. | `tools/check_content.py --report` |
 | 54 | The Project Management Answer Book is written as numbered questions inside chapters, with no section numbers, and Wysocki's book has titled sections only. Both are commercial textbooks, not PMI publications. | New reference forms: `The Project Management Answer Book, Chapter 6, Q8` (opens the page of that question) and `Effective Project Management, <section title>`. Like every other book, they are opened from your folder only, are never committed or uploaded, and lessons use original wording. Wysocki is the Fifth Edition, so its page content may differ from the Eighth Edition the outline names. | `link_sources.py` |
 | 55 | Wysocki's Eighth Edition lists only chapters in its PDF contents, and it differs from the lessons in two wordings: it calls two lean principles "build integrity in" and "see the whole", and it uses "elapsed time" for duration in working days. | Reference form: `Effective Project Management, Chapter 7, Estimating Duration` (chapter, then the heading as printed). Chapter start pages are listed in `link_sources.py`. The lean table now shows both wordings, and the schedule lesson footer explains the two uses of "elapsed time". | `link_sources.py`; modules 2.4 and 3.3 |
 | 59 | A reference to a figure or table in the business analysis guide ("Figure 1-1") would have opened the book's first page without any warning, because that kind of reference was only understood for the PMBOK Guides. | Found while checking each new link against its page, before anything was reported. The linker now finds figures and tables in every book with a table of contents, and reports an error if one is not found. | `link_sources.py` |

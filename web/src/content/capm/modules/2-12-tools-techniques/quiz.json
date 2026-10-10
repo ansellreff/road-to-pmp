@@ -44,7 +44,7 @@
     "q": "A project needs the opinions of 3,000 users located in six countries, and needs them quickly. Which technique is most suitable?",
     "options": [
       "Interviews",
-      "Focus groups",
+      "Facilitated focus group sessions",
       "Observation",
       "Questionnaires and surveys"
     ],
@@ -145,7 +145,7 @@
     "options": [
       "Reserve analysis",
       "Alternative analysis",
-      "Variance analysis",
+      "Schedule variance analysis",
       "Benchmarking"
     ],
     "answer": 1,
@@ -164,7 +164,7 @@
     "q": "After a workshop, the team has 90 ideas on sticky notes and wants to sort them into groups for review. Which tool fits?",
     "options": [
       "Control chart",
-      "Burndown chart",
+      "Iteration burndown chart",
       "Affinity diagram",
       "Decision tree"
     ],
@@ -223,7 +223,7 @@
     "id": "q12",
     "q": "A team scores three suppliers against weighted criteria such as price, experience and delivery time, and ranks them by total score. Which technique is this?",
     "options": [
-      "Plurality voting",
+      "Plurality voting by show of hands",
       "Multicriteria decision analysis",
       "Brainstorming",
       "Trend analysis"
@@ -305,7 +305,7 @@
     "options": [
       "A risk register",
       "An information radiator",
-      "A stakeholder register",
+      "A stakeholder engagement matrix",
       "A decision matrix"
     ],
     "answer": 1,
@@ -346,7 +346,7 @@
       "Daily coordination meeting",
       "Retrospective",
       "Kickoff meeting",
-      "Bidder conference"
+      "Bidder conference with sellers"
     ],
     "answer": 0,
     "explanation": "A daily coordination meeting reviews progress from the previous day, declares intentions for the current day and highlights obstacles.",
@@ -426,7 +426,7 @@
       "Active listening",
       "Benchmarking",
       "Influencing",
-      "Plurality"
+      "Plurality voting"
     ],
     "answer": 0,
     "explanation": "Active listening uses techniques such as acknowledging, clarifying and confirming to reduce misunderstandings, especially in cross-cultural settings.",

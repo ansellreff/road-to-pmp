@@ -145,7 +145,7 @@
     "options": [
       "Definitive estimate",
       "Bottom-up estimate",
-      "Parametric estimate",
+      "Parametric estimate from unit rates",
       "Rough order of magnitude estimate"
     ],
     "answer": 3,
@@ -230,7 +230,7 @@
     "options": [
       "Cost aggregation",
       "Crashing",
-      "Cost of quality",
+      "Cost of quality (CoQ) analysis",
       "Funding limit reconciliation"
     ],
     "answer": 3,
@@ -349,7 +349,7 @@
     "q": "Office rent shared by all projects in the company is an example of:",
     "options": [
       "A direct cost",
-      "A variable cost",
+      "A variable direct cost",
       "An indirect cost",
       "A sunk cost"
     ],
@@ -389,7 +389,7 @@
     "q": "Project A has a payback period of 2 years. Project B has a payback period of 4 years. Based on payback period alone, which should be chosen?",
     "options": [
       "Project B, because longer is better",
-      "Either, because payback period does not matter",
+      "Either one, because the payback period does not matter here",
       "Neither, because both are too long",
       "Project A, because it recovers the investment sooner"
     ],

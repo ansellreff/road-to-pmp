@@ -215,7 +215,7 @@
     "options": [
       "Float that costs nothing to use",
       "The float of the whole project",
-      "The time an activity can be delayed without delaying the project finish date",
+      "The time an activity can be delayed without delaying the project's planned finish date",
       "The time an activity can be delayed without affecting the early start of its successor"
     ],
     "answer": 3,
@@ -320,7 +320,7 @@
     "options": [
       "Crashing; higher cost",
       "Fast tracking; higher risk and possible rework",
-      "Resource leveling; a later finish date",
+      "Resource leveling; a later finish date for the project",
       "Rolling wave planning; less detail"
     ],
     "answer": 1,
@@ -421,7 +421,7 @@
       "Critical path method",
       "Decomposition",
       "Simulation, such as Monte Carlo analysis",
-      "Resource leveling"
+      "Resource leveling across the whole schedule"
     ],
     "answer": 2,
     "explanation": "Simulation models the combined effect of risks and uncertainty. Monte Carlo analysis is the most common technique and calculates many possible schedule outcomes.",

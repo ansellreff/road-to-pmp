@@ -46,7 +46,7 @@
       "The project initiator or sponsor",
       "The project team",
       "The end users",
-      "The change control board"
+      "The project's change control board"
     ],
     "answer": 0,
     "explanation": "The charter is issued by the project initiator or sponsor. The project manager may help develop it, but does not authorize their own project.",
@@ -124,7 +124,7 @@
     "q": "What does the project management plan describe?",
     "options": [
       "How the project will be executed, monitored and controlled, and closed",
-      "Why the organization should invest in the project",
+      "Why the organization should invest its money and people in the project",
       "The daily tasks of each team member",
       "The list of issues found so far"
     ],
@@ -243,7 +243,7 @@
     "id": "q13",
     "q": "What is a change request?",
     "options": [
-      "An informal suggestion mentioned in a meeting",
+      "An informal suggestion mentioned in passing during a team meeting",
       "A formal proposal to modify a document, deliverable or baseline",
       "A complaint from a stakeholder",
       "The final report at project closure"
@@ -344,7 +344,7 @@
     "q": "What does the acronym SMART stand for?",
     "options": [
       "Simple, manageable, accurate, relevant, tested",
-      "Strategic, measurable, agile, reliable, tracked",
+      "Strategic, measurable, adaptable, reliable, time-tracked",
       "Specific, measurable, achievable, realistic, time-bound",
       "Scoped, monitored, approved, reported, tailored"
     ],

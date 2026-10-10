@@ -4,7 +4,7 @@
     "q": "What is a hybrid development approach?",
     "options": [
       "An approach that uses two agile frameworks together",
-      "An approach in which the project is run by two project managers",
+      "An approach in which the project is run jointly by two project managers",
       "A combination of elements from adaptive and predictive approaches",
       "A predictive approach with more phase gates"
     ],
@@ -226,7 +226,7 @@
       "Use hybrid, because the tool's result is binding",
       "Follow the stakeholder consensus and manage the mismatches as risks",
       "Repeat the questionnaire until it says agile",
-      "Escalate to the PMO to overrule the stakeholders"
+      "Escalate to the PMO and ask it to overrule the stakeholders' decision"
     ],
     "answer": 1,
     "explanation": "The tool is a high-level diagnostic whose value is the conversation it encourages. The final decision rests with the people involved, and mismatches are inputs to risk management.",
@@ -264,7 +264,7 @@
     "q": "Which factor points most strongly toward a predictive approach?",
     "options": [
       "A high degree of innovation",
-      "Value from frequent user feedback",
+      "Value from frequent feedback given by end users and stakeholders",
       "Rigorous safety requirements and heavy regulatory oversight",
       "Unstable scope"
     ],
@@ -284,7 +284,7 @@
     "q": "Which organizational characteristic favors an adaptive approach?",
     "options": [
       "A fixed functional hierarchy",
-      "A culture of managing and directing against baselines",
+      "A culture of managing and directing work against approved baselines",
       "Very large project teams",
       "A culture that accepts uncertainty and values self-managed teams"
     ],
@@ -305,7 +305,7 @@
     "options": [
       "Switch every project to agile at once",
       "Try the new techniques on a less risky project, adding them gradually",
-      "Start with the largest, most complex project",
+      "Start with the largest and most complex project, to prove the approach",
       "Wait until every employee is certified"
     ],
     "answer": 1,
@@ -384,7 +384,7 @@
     "q": "When may agile approaches not be useful?",
     "options": [
       "When requirements are uncertain",
-      "When stakeholders are available throughout",
+      "When stakeholders are available throughout the whole of the project",
       "When the technology is new",
       "When the organization cannot deliver intermediate value"
     ],

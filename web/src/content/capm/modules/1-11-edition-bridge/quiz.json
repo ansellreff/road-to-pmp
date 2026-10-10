@@ -71,7 +71,7 @@
       "40 processes in 7 Knowledge Areas",
       "49 processes in 10 Knowledge Areas",
       "12 processes in 8 Knowledge Areas",
-      "47 processes in 9 Knowledge Areas"
+      "47 processes in 12 Knowledge Areas"
     ],
     "answer": 1,
     "explanation": "The practice guide has 49 processes across 5 Process Groups and 10 Knowledge Areas. The 8th edition has 40 processes in 7 performance domains.",
@@ -109,7 +109,7 @@
     "q": "In the 49-process model, which two processes belong to the Initiating Process Group?",
     "options": [
       "Develop Project Charter and Identify Stakeholders",
-      "Develop Project Management Plan and Define Scope",
+      "Develop Project Management Plan and Collect Requirements",
       "Plan Risk Management and Identify Risks",
       "Acquire Resources and Develop Team"
     ],
@@ -271,7 +271,7 @@
       "Develop Scope Structure",
       "Define Scope",
       "Develop Schedule",
-      "Plan Sourcing Strategy"
+      "Elicit and Analyze Requirements"
     ],
     "answer": 0,
     "explanation": "Develop Scope Structure is the Scope planning process that corresponds to Create WBS.",
@@ -448,7 +448,7 @@
     "id": "q23",
     "q": "What does the 7th edition principle \"Tailor based on context\" ask a team to do?",
     "options": [
-      "Apply every process in full on every project",
+      "Apply every process in full on each and every project",
       "Follow the approach used on the last project",
       "Let each team member choose a method",
       "Design the approach to fit the project's context"

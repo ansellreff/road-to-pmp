@@ -26,7 +26,7 @@
       "Lead the Team",
       "Monitor and Control Resourcing",
       "Plan Resource Management",
-      "Manage Stakeholder Engagement"
+      "Monitor Stakeholder Engagement"
     ],
     "answer": 1,
     "explanation": "Monitor and Control Resourcing ensures that the physical and virtual resources assigned to the project are available as planned, and takes corrective action when they are not.",
@@ -85,7 +85,7 @@
     "options": [
       "Review, approve, check, implement",
       "Responsible, accountable, consulted, informed",
-      "Required, assigned, completed, inspected",
+      "Requested, assigned, completed and then inspected",
       "Resource, activity, cost, issue"
     ],
     "answer": 1,
@@ -345,7 +345,7 @@
     "options": [
       "Withdraw / avoid",
       "Force / direct",
-      "Smooth / accommodate",
+      "Smooth over / accommodate",
       "Compromise / reconcile"
     ],
     "answer": 3,
@@ -424,7 +424,7 @@
     "q": "Which three needs does McClelland's theory of needs describe?",
     "options": [
       "Autonomy, mastery and purpose",
-      "Physiological, safety and social",
+      "Physiological, safety and social needs",
       "Salary, policy and environment",
       "Achievement, power and affiliation"
     ],

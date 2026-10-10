@@ -91,7 +91,7 @@
       "Control chart",
       "Cause-and-effect diagram",
       "Histogram",
-      "Scatter diagram"
+      "Scatter diagram of two variables"
     ],
     "answer": 1,
     "explanation": "A cause-and-effect diagram, also called a fishbone or Ishikawa diagram, breaks the causes of a problem into branches to find the main or root cause.",
@@ -111,7 +111,7 @@
       "Flowchart",
       "Pareto chart",
       "Control chart",
-      "Checklist"
+      "Quality checklist"
     ],
     "answer": 2,
     "explanation": "Control charts show whether a process is stable, using statistically calculated upper and lower control limits.",
@@ -150,7 +150,7 @@
     "options": [
       "The process is in control",
       "The specification limits are wrong",
-      "Nothing; only points outside the limits matter",
+      "Nothing at all; only points outside the control limits ever matter",
       "The process is out of control and should be investigated"
     ],
     "answer": 3,
@@ -434,7 +434,7 @@
     "q": "Which document describes how the team will acquire goods and services from outside the performing organization?",
     "options": [
       "Statement of work",
-      "Quality management plan",
+      "Quality management plan and metrics",
       "Procurement management plan",
       "Request for quote"
     ],

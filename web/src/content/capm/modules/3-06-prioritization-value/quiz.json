@@ -24,7 +24,7 @@
     "q": "What does MoSCoW stand for?",
     "options": [
       "Measure, organize, select, control, work",
-      "Major, optional, standard, critical, wanted",
+      "Major, optional, standard, critical, wanted items",
       "Must have, should have, could have, will not have",
       "Minimum, optimal, sufficient, complete, wide"
     ],
@@ -144,7 +144,7 @@
     "q": "In which technique do stakeholders \"spend\" a fixed budget of money or points on the items they want most?",
     "options": [
       "Kano analysis",
-      "Stack ranking",
+      "Stack ranking with a single owner",
       "MoSCoW",
       "Buy a feature / 100-point method"
     ],
@@ -204,7 +204,7 @@
     "q": "What is a minimum business increment (MBI)?",
     "options": [
       "The smallest deliverable piece of functionality that has value to the business",
-      "The smallest team that can do the work",
+      "The smallest team that can do the work without help from any other departments",
       "The lowest acceptable budget",
       "The first sprint of a project"
     ],
@@ -286,7 +286,7 @@
       "Invite them to the next demonstration and show them the team's information radiator",
       "Write a 30-page status report",
       "Tell them to wait until the project ends",
-      "Ask the team to stop work and prepare slides"
+      "Ask the team to stop work for a full week and prepare a slide deck for the stakeholders"
     ],
     "answer": 0,
     "explanation": "Agile teams show progress through working product in demonstrations and keep status visible on information radiators, instead of producing lengthy reports.",
@@ -326,7 +326,7 @@
       "Money owed to a software supplier",
       "The deferred cost of work not done at an earlier point in the product's life",
       "The cost of the team's equipment",
-      "The budget overrun at the end of a project"
+      "The budget overrun reported to the sponsor at the very end of a software project"
     ],
     "answer": 1,
     "explanation": "Technical debt is the deferred cost of work not done earlier, such as shortcuts and missing tests. It makes later changes slower and is reduced by refactoring.",
@@ -343,7 +343,7 @@
     "id": "q18",
     "q": "To meet a deadline, a manager tells the team to skip automated tests for the next three sprints. What is the most likely result?",
     "options": [
-      "Permanently higher velocity",
+      "Permanently higher velocity in every later iteration",
       "Lower risk",
       "Growing technical debt that slows later work",
       "Higher customer satisfaction"
@@ -431,7 +431,7 @@
       "MoSCoW",
       "Kano analysis",
       "Stack ranking (forced ranking)",
-      "Value versus effort matrix"
+      "Value versus effort (2 × 2) matrix"
     ],
     "answer": 2,
     "explanation": "Stack ranking gives one ordered list with no ties. It is clarifying, sparks debate and needs a single decision owner.",

@@ -24,7 +24,7 @@
     "q": "Which role typically allocates specific people and equipment from a department to the project team?",
     "options": [
       "Functional or resource manager",
-      "Product owner",
+      "Product owner or product manager",
       "Customer",
       "Regulator"
     ],
@@ -46,7 +46,7 @@
       "Centralized coordination",
       "Decentralized coordination",
       "Organizational governance",
-      "Situational leadership"
+      "Situational leadership styles"
     ],
     "answer": 1,
     "explanation": "When team members self-organize and self-manage, coordination is decentralized. This is typical of agile projects.",
@@ -346,7 +346,7 @@
       "Negotiator",
       "Facilitator",
       "Working member",
-      "Initiator"
+      "Project initiator"
     ],
     "answer": 2,
     "explanation": "As a working member the project manager performs part of the project work as well as managing it, which is common on small teams.",

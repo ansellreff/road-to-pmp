@@ -28,7 +28,7 @@
     "id": "q2",
     "q": "What are the four key areas of emotional intelligence?",
     "options": [
-      "Forming, storming, norming, performing",
+      "Forming, storming, norming, performing and adjourning with the team",
       "Responsibility, respect, fairness, honesty",
       "Self-awareness, self-management, social awareness, social skills",
       "Avoid, mitigate, transfer, accept"
@@ -70,7 +70,7 @@
     "options": [
       "Self-awareness",
       "Self-management",
-      "Motivation",
+      "Internal motivation",
       "Social awareness"
     ],
     "answer": 3,
@@ -131,7 +131,7 @@
       "Scarce resources, scheduling priorities and personal work styles",
       "Having a project charter",
       "Too much recognition",
-      "Clear role definitions"
+      "Clear role definitions and a signed team charter for every team member"
     ],
     "answer": 0,
     "explanation": "Sources of conflict include scarce resources, scheduling priorities and personal work styles. Clear roles and ground rules reduce conflict.",
@@ -168,7 +168,7 @@
     "id": "q9",
     "q": "When a project manager needs to step into a conflict, how should it usually be addressed?",
     "options": [
-      "Late, in public, by assigning blame",
+      "Late, in public, by assigning blame to each of the people involved",
       "Early, in private, using a direct and collaborative approach",
       "By email to the whole team",
       "Only at project closing"
@@ -189,7 +189,7 @@
     "q": "Which conflict resolution technique incorporates multiple viewpoints through open dialogue and typically leads to consensus and a win-win result?",
     "options": [
       "Force / direct",
-      "Withdraw / avoid",
+      "Withdraw / avoid the conflict",
       "Collaborate / problem-solve",
       "Smooth / accommodate"
     ],
@@ -248,7 +248,7 @@
     "id": "q13",
     "q": "What are the four values of the PMI Code of Ethics and Professional Conduct?",
     "options": [
-      "Integrity, loyalty, courage, discipline",
+      "Integrity, loyalty, courage, self-discipline",
       "Responsibility, respect, fairness, honesty",
       "Scope, schedule, cost, quality",
       "Trust, empathy, vision, results"
@@ -371,7 +371,7 @@
       "Ethics complaints should be filed only when substantiated by facts",
       "You must file a formal ethics complaint immediately",
       "You should tell the rest of the team about your suspicion",
-      "You should retaliate by reporting other things about them"
+      "You should retaliate by reporting other things you know about that colleague"
     ],
     "answer": 0,
     "explanation": "The Code requires that ethics complaints are filed only when substantiated by facts, and it also asks practitioners to avoid gossip and unconfirmed information.",

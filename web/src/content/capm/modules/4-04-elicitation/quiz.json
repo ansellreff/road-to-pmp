@@ -43,7 +43,7 @@
     "id": "q3",
     "q": "How do elicitation and analysis relate?",
     "options": [
-      "All elicitation is finished before any analysis starts",
+      "All elicitation is finished and signed off before any analysis is allowed to start",
       "Analysis replaces elicitation on agile projects",
       "They are done by different organizations",
       "They alternate: analysis raises new questions that need more elicitation"
@@ -84,7 +84,7 @@
     "q": "A project manager wants to halve the elicitation effort to save time. What is the main consequence to point out?",
     "options": [
       "The charter becomes invalid",
-      "The stakeholder register must be rewritten",
+      "The stakeholder register must be completely rewritten",
       "Greater risk of rework and product defects later",
       "None; elicitation can always be cut safely"
     ],
@@ -104,7 +104,7 @@
     "q": "Which is the first step in preparing for an elicitation activity?",
     "options": [
       "Determine the objective",
-      "Schedule the room",
+      "Schedule the meeting room",
       "Send the minutes",
       "Confirm the results"
     ],
@@ -165,7 +165,7 @@
     "options": [
       "Document analysis",
       "Facilitated workshop",
-      "Questionnaire",
+      "Questionnaire or survey",
       "Observation"
     ],
     "answer": 1,
@@ -204,7 +204,7 @@
     "q": "What is the main drawback of observation?",
     "options": [
       "People may act differently when they are being observed",
-      "It cannot be used for detailed processes",
+      "It cannot be used at all for detailed or repetitive processes",
       "It reaches too many people",
       "It requires a prototype"
     ],
@@ -224,7 +224,7 @@
     "q": "The analyst needs input from 4,000 customers in several countries, at low cost. Which technique fits?",
     "options": [
       "Interviews",
-      "Facilitated workshop",
+      "Facilitated workshop on site",
       "Observation",
       "Questionnaires and surveys"
     ],
@@ -366,7 +366,7 @@
       "Approved requirements",
       "Baselined scope",
       "Unconfirmed elicitation results",
-      "Validated requirements"
+      "Verified and validated requirements"
     ],
     "answer": 2,
     "explanation": "The output of Conduct Elicitation is the unconfirmed elicitation results. They become confirmed only when the product team reaches a common understanding and agrees they are accurate.",
@@ -406,7 +406,7 @@
       "A peer review in which the author leads the reviewers through the material",
       "A tour of the customer's premises",
       "A survey sent after a workshop",
-      "A test of the finished product by end users"
+      "A test of the finished product carried out by end users before it is released"
     ],
     "answer": 0,
     "explanation": "A walkthrough is a peer review in which the author of the materials walks the peer reviewers through the authored information. It can confirm that elicitation results are accurate or clarify discrepancies.",
@@ -436,6 +436,26 @@
         "book": "baguide",
         "page": 214,
         "label": "PMI Guide to Business Analysis, 6.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A clinic's staff describe their booking process differently from the written procedure. What should the business analyst do?",
+    "options": [
+      "Trust the written procedure, because it is the official one",
+      "Trust the staff, because they are the ones doing the work",
+      "Check a further source, for example by observing the process",
+      "Leave the difference for the developers to resolve during the build"
+    ],
+    "answer": 2,
+    "explanation": "Documents may be out of date and people may not describe their own work accurately. Observation can be used to cross-check other elicitation results against what actually happens.",
+    "ref": "PMI Guide to Business Analysis, 6.4.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 217,
+        "label": "PMI Guide to Business Analysis, 6.4.2.4"
       }
     ]
   }

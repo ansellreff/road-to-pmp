@@ -63,7 +63,7 @@
     "id": "q4",
     "q": "What is a persona?",
     "options": [
-      "A real stakeholder chosen to represent a department",
+      "A real stakeholder chosen by the sponsor to represent a whole department in workshops",
       "The sponsor's delegate at workshops",
       "A fictional character created to represent an individual or a class of users",
       "A row in the stakeholder register"
@@ -105,7 +105,7 @@
     "options": [
       "The person who performs the task",
       "The person who is kept informed",
-      "The person who gives information for the task",
+      "The person who gives the information and advice needed in order to complete the task",
       "The person answerable for the completion and quality of the task; the final approver"
     ],
     "answer": 3,
@@ -165,7 +165,7 @@
     "options": [
       "As a critical source of requirements whose concerns must be heard",
       "As unimportant because they have low influence",
-      "As champions who will promote the solution to executives",
+      "As champions who will promote the solution to the senior executives",
       "As external stakeholders"
     ],
     "answer": 0,
@@ -185,7 +185,7 @@
     "options": [
       "They have the highest salary",
       "They have the closest or strongest relationship to the solution",
-      "They are external to the organization",
+      "They are external to the organization, such as regulators or suppliers",
       "They oppose the solution"
     ],
     "answer": 1,
@@ -223,7 +223,7 @@
     "id": "q12",
     "q": "On an adaptive project, how is the engagement and communication approach usually settled?",
     "options": [
-      "In a formal document approved by the PMO",
+      "In a formal document that is reviewed and approved by the PMO before elicitation begins",
       "It is not considered",
       "By the sponsor alone",
       "Agreed verbally by the team, with the product owner representing stakeholder needs"
@@ -246,7 +246,7 @@
       "They are the same document",
       "The business analysis plan is broader: it covers the whole business analysis approach",
       "The requirements management plan is broader",
-      "The business analysis plan covers only stakeholder communication"
+      "The business analysis plan covers only how the analyst communicates with stakeholders"
     ],
     "answer": 1,
     "explanation": "The business analysis plan covers the entire business analysis approach, from stakeholder engagement to decisions on managing requirements. It is broader than a requirements management plan, which focuses on how requirements are elicited, analyzed, documented and managed.",
@@ -264,7 +264,7 @@
     "q": "On an adaptive project, how is the effort for business analysis usually estimated?",
     "options": [
       "It is rarely estimated separately; it is part of the overall planning for each backlog item",
-      "As a separate estimate for every analysis task",
+      "As a separate estimate for every analysis task, approved before the first iteration can start",
       "As a fixed 20% of the budget",
       "It is not allowed for"
     ],
@@ -326,7 +326,7 @@
       "Training, rollout, communication and procedure updates needed to cut over",
       "The economic justification for the project",
       "The list of stakeholder personas",
-      "The weighted ranking of solution options"
+      "The weighted ranking of the solution options considered in the feasibility study"
     ],
     "answer": 0,
     "explanation": "The transition plan addresses all transition requirements, including communication, rollout, training, procedure updates, business recovery updates and other material needed to cut over and adapt to the future state.",
@@ -364,7 +364,7 @@
     "q": "What is the purpose of assessing business analysis performance?",
     "options": [
       "To rank the business analysts by salary",
-      "To measure the product's sales",
+      "To measure the product's sales and market share after each release has shipped",
       "To approve the requirements",
       "To consider how effective the business analysis practices are and adjust them"
     ],
@@ -384,7 +384,7 @@
     "q": "On an adaptive project, when is business analysis performance reviewed?",
     "options": [
       "Only at the end of the project",
-      "Only when the sponsor asks",
+      "Only when the sponsor asks for a review, usually after a serious problem occurs",
       "At least at the end of each iteration, with changes applied in the next one",
       "Never"
     ],
@@ -403,7 +403,7 @@
     "id": "q21",
     "q": "Both the project manager and the business analyst need to analyze stakeholders. What is the best approach?",
     "options": [
-      "Each does it separately and compares results at the end",
+      "Each does it separately, asks the stakeholders their own questions, and compares the results at the very end",
       "They do it together, each bringing their own perspective, to avoid duplicate requests to stakeholders",
       "Only the project manager does it",
       "Only the business analyst does it"
@@ -425,7 +425,7 @@
     "options": [
       "Add them to the stakeholder register and analyze them",
       "Ignore them, since planning is finished",
-      "Wait for them to raise a change request",
+      "Wait until they raise a formal change request themselves",
       "Ask the sponsor to exclude them"
     ],
     "answer": 0,

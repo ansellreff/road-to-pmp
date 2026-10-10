@@ -24,7 +24,7 @@
     "q": "A department head asks the business analyst to \"just buy a new scheduling system\". What should the analyst do first?",
     "options": [
       "Start comparing vendors",
-      "Write the functional requirements for the system",
+      "Write the functional and nonfunctional requirements for the new scheduling system first",
       "Prepare the project charter",
       "Understand the problem or opportunity behind the request before discussing solutions"
     ],
@@ -126,7 +126,7 @@
       "Fishbone diagram",
       "Pareto diagram",
       "SWOT diagram",
-      "Feature model"
+      "Feature model tree"
     ],
     "answer": 0,
     "explanation": "In a fishbone (cause-and-effect or Ishikawa) diagram, the problem is listed at the head and the causes and sub-causes are placed on the bones, grouped into categories.",
@@ -204,7 +204,7 @@
     "q": "Which statement about the \"required capabilities and features\" output of Determine Future State is correct?",
     "options": [
       "They specify the technical design",
-      "They are the final approved requirements",
+      "They are the final, approved requirements that the development team will build from",
       "They list the vendors to be used",
       "They are the net changes the organization needs, and do not prescribe a solution"
     ],
@@ -306,7 +306,7 @@
       "A detailed task schedule for the team",
       "The acceptance criteria for each user story",
       "A high-level view of product features and the sequence in which they will be delivered",
-      "The economic justification for the project"
+      "The economic justification for the project, comparing its costs with its expected benefits"
     ],
     "answer": 2,
     "explanation": "A product roadmap provides a high-level view of product features along with the sequence in which they will be built and delivered. It communicates how a product will develop and mature over time.",
@@ -381,11 +381,11 @@
   },
   {
     "id": "q20",
-    "q": "Who issues the project charter?",
+    "q": "During needs assessment the business analyst supports charter development. Who actually issues the charter?",
     "options": [
       "The business analyst",
       "The project team",
-      "The quality control analyst",
+      "The lead quality control analyst",
       "The project initiator or sponsor"
     ],
     "answer": 3,
@@ -405,7 +405,7 @@
     "options": [
       "It is skipped",
       "With lightweight artifacts in iteration 0, revisited as the work proceeds",
-      "With a fully detailed business case signed off before any work",
+      "With a fully detailed business case that is signed off before any work starts",
       "Only after the final release"
     ],
     "answer": 1,
@@ -436,6 +436,26 @@
         "book": "baguide",
         "page": 69,
         "label": "PMI Guide to Business Analysis, Table 1-2"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Sales fell 10% after a competitor launched a cheaper product. A manager wants to cut prices at once. What should the business analyst prepare first?",
+    "options": [
+      "A situation statement giving the problem, its effect and its impact",
+      "A project charter that authorizes the price reduction work to start now",
+      "A transition plan for moving customers to the new price list",
+      "A traceability matrix linking each price to its test cases"
+    ],
+    "answer": 0,
+    "explanation": "The team should agree on the situation before discussing solutions. A situation statement records the problem or opportunity, its effect on the organization and the resulting impact.",
+    "ref": "PMI Guide to Business Analysis, 4.1.3.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 107,
+        "label": "PMI Guide to Business Analysis, 4.1.3.2"
       }
     ]
   }

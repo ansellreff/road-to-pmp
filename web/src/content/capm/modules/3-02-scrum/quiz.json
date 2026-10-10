@@ -25,7 +25,7 @@
     "options": [
       "One month or less, with a consistent length",
       "Exactly one week",
-      "Any length the customer chooses each time",
+      "Any length that the customer chooses each time",
       "Three to six months"
     ],
     "answer": 0,
@@ -45,7 +45,7 @@
     "options": [
       "Project manager, sponsor, team member",
       "Scrum master, project manager, tester",
-      "Product owner, business analyst, developer",
+      "Product owner, business analyst, lead developer",
       "Product owner, development team, scrum master"
     ],
     "answer": 3,
@@ -125,7 +125,7 @@
     "options": [
       "The product owner",
       "The scrum master",
-      "The sponsor",
+      "The project's sponsor",
       "The development team"
     ],
     "answer": 3,
@@ -145,7 +145,7 @@
     "options": [
       "Sprint review",
       "Sprint backlog",
-      "Daily scrum",
+      "Daily scrum meeting",
       "Scrum master"
     ],
     "answer": 1,
@@ -164,7 +164,7 @@
     "q": "What is the product backlog?",
     "options": [
       "The list of defects found in testing",
-      "The work selected for the current sprint",
+      "The work the team selected for the current sprint",
       "The ordered list of all the work for the product",
       "The team's improvement actions"
     ],
@@ -203,7 +203,7 @@
     "id": "q11",
     "q": "During the daily scrum, two developers start a detailed discussion about how to fix a technical problem. What should happen?",
     "options": [
-      "Extend the meeting until the problem is solved",
+      "Extend the meeting for as long as it takes, until the whole team has solved the problem",
       "Cancel the sprint",
       "Ask the product owner to decide",
       "Note the problem in a parking lot and let those involved solve it after the meeting"
@@ -225,7 +225,7 @@
     "options": [
       "Keeping it to 15 minutes",
       "Turning it into a status report to a manager",
-      "Letting any team member facilitate it",
+      "Letting any member of the team facilitate it each day",
       "Reviewing the task board"
     ],
     "answer": 1,
@@ -244,7 +244,7 @@
     "q": "What is the purpose of the sprint review?",
     "options": [
       "To improve the team's way of working",
-      "To plan the next sprint in detail",
+      "To plan the next sprint in detail and estimate each of the selected stories",
       "To demonstrate the working increment to stakeholders and get feedback",
       "To assign tasks for the day"
     ],
@@ -266,7 +266,7 @@
       "For the team to learn from its work and improve its process",
       "To show the product to the customer",
       "To decide who is to blame for defects",
-      "To update the product roadmap"
+      "To update the product roadmap and the release plan for stakeholders"
     ],
     "answer": 0,
     "explanation": "The retrospective allows the team to learn about, improve and adapt its process. It is not about blame.",
@@ -285,7 +285,7 @@
     "options": [
       "Start all 14 in the next sprint",
       "Ignore them, because the sprint is already planned",
-      "Give them to the scrum master to implement alone",
+      "Give all of them to the scrum master to implement alone before the next sprint",
       "Rank them and choose a small number the team has capacity to complete"
     ],
     "answer": 3,
@@ -321,7 +321,7 @@
   },
   {
     "id": "q17",
-    "q": "What is the definition of done?",
+    "q": "A scrum team wants one shared way to decide whether an increment is really finished. Which of these is its definition of done?",
     "options": [
       "The date the sprint ends",
       "The list of items in the sprint backlog",
@@ -346,7 +346,7 @@
       "It is not counted as done and returns to the product backlog to be re-prioritized",
       "It is demonstrated as complete",
       "The sprint is extended by a few days",
-      "The definition of done is relaxed for this sprint"
+      "The definition of done is relaxed for this sprint so that the story can be counted"
     ],
     "answer": 0,
     "explanation": "Work that does not meet the definition of done is not done. The sprint length is fixed, so the item goes back to the backlog.",
@@ -395,7 +395,7 @@
     "options": [
       "At the end of the project, to archive the backlog",
       "During the sprint, to prepare and clarify stories for upcoming sprints",
-      "Only before the first sprint, to write every story",
+      "Only before the first sprint, to write every story in full detail up front",
       "During the retrospective, to assign blame"
     ],
     "answer": 1,
@@ -414,7 +414,7 @@
     "q": "Which three questions are answered in the daily scrum?",
     "options": [
       "Who is late, who is absent, who is on leave",
-      "What is the budget, what is the schedule, what is the scope",
+      "What the budget is, what the schedule is, what the scope is, and who approved them",
       "What I completed, what I plan to complete next, what my impediments are",
       "What went well, what went badly, what to improve"
     ],

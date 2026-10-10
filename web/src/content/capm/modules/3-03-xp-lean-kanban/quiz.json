@@ -5,7 +5,7 @@
     "options": [
       "Scrum",
       "Kanban",
-      "Crystal",
+      "Crystal family of methods",
       "Extreme Programming (XP)"
     ],
     "answer": 3,
@@ -25,7 +25,7 @@
     "options": [
       "Commitment, focus, openness, respect, courage",
       "Communication, simplicity, feedback, courage, respect",
-      "Transparency, inspection, adaptation, trust, speed",
+      "Transparency, inspection, adaptation, trust, sustainable speed",
       "People, interactions, community, skills, talents"
     ],
     "answer": 1,
@@ -105,7 +105,7 @@
     "options": [
       "To complete as many projects as possible",
       "To maximize customer value while minimizing waste",
-      "To write complete documentation",
+      "To write complete documentation before development starts",
       "To fix the scope at the start"
     ],
     "answer": 1,
@@ -206,7 +206,7 @@
       "It does not prescribe timeboxed iterations",
       "It does not visualize work",
       "It forbids delivering to the customer",
-      "It requires a detailed plan up front"
+      "It requires a detailed plan to be approved up front"
     ],
     "answer": 0,
     "explanation": "Unlike most agile approaches, the Kanban Method does not prescribe timeboxed iterations. Items are pulled through the process continuously.",
@@ -245,7 +245,7 @@
     "options": [
       "When a manager assigns it",
       "At the start of each month",
-      "When the customer demands it",
+      "When the customer demands that it be started at once",
       "When the team has finished an item and has capacity"
     ],
     "answer": 3,
@@ -286,7 +286,7 @@
       "Crystal",
       "DSDM",
       "XP",
-      "SAFe"
+      "Scaled Agile Framework"
     ],
     "answer": 0,
     "explanation": "Crystal is a family of methodologies designed to scale by project size and criticality. Different colors (Clear, Yellow, Orange, Red) mark the weight of the methodology.",
@@ -324,7 +324,7 @@
     "q": "In feature-driven development, what is a \"feature\"?",
     "options": [
       "A large phase of the project",
-      "A defect found in testing",
+      "A defect found by the customer in testing",
       "A team of developers",
       "A small capability with business value"
     ],
@@ -408,7 +408,7 @@
     "id": "q21",
     "q": "Which of the following is waste in the lean sense?",
     "options": [
-      "A feature the customer uses every day",
+      "A feature that the customer uses every working day",
       "A short feedback loop",
       "A finished, delivered increment",
       "Partially done work and features nobody asked for"
@@ -436,7 +436,7 @@
       "It requires new roles before starting",
       "It begins with the current process, roles and titles and improves step by step",
       "It can only be used at the start of a project",
-      "It starts with a full reorganization"
+      "It starts with a full reorganization of teams, roles and reporting lines up front"
     ],
     "answer": 1,
     "explanation": "Its defining principles are to start with the current state, pursue incremental change and respect current processes, roles and titles, so it is less disruptive to adopt.",

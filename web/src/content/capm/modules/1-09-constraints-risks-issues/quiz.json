@@ -45,7 +45,7 @@
     "options": [
       "A constraint",
       "An issue",
-      "A baseline",
+      "A project baseline",
       "An assumption"
     ],
     "answer": 3,
@@ -104,7 +104,7 @@
     "q": "Where are high-level constraints normally first identified, before the project is initiated?",
     "options": [
       "In the issue log",
-      "In the lessons learned register",
+      "In the lessons learned register, updated at each phase end",
       "In the business case, flowing into the project charter",
       "In the team agreement"
     ],
@@ -125,7 +125,7 @@
     "options": [
       "A threat",
       "An issue",
-      "A constraint",
+      "A project constraint",
       "An opportunity"
     ],
     "answer": 3,

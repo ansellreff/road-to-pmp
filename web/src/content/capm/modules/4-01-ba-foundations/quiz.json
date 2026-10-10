@@ -66,7 +66,7 @@
       "Functional requirement",
       "Nonfunctional requirement",
       "Business requirement",
-      "Project requirement"
+      "Project (milestone) requirement"
     ],
     "answer": 1,
     "explanation": "A nonfunctional requirement describes the conditions or qualities needed for the product to be effective, such as performance, reliability, security and safety. A functional requirement describes what the product does.",
@@ -104,7 +104,7 @@
     "q": "Which of these is a project requirement, and so is NOT part of the business analysis effort?",
     "options": [
       "The system accepts card payments",
-      "Customers want to pay without creating an account",
+      "Customers want to pay quickly, without first having to create an account",
       "The first release must be delivered by 30 June under the contract",
       "The system is available 99.9% of the time"
     ],
@@ -144,7 +144,7 @@
     "q": "How do the product life cycle and the project life cycle relate?",
     "options": [
       "They are the same thing",
-      "A project life cycle contains several product life cycles",
+      "A single project life cycle contains several whole product life cycles",
       "A product life cycle ends when the first project closes",
       "A product life cycle may contain one or more project life cycles"
     ],
@@ -164,7 +164,7 @@
     "q": "When does business analysis begin?",
     "options": [
       "Before the project, with understanding the problem or opportunity",
-      "When the project charter is signed",
+      "When the project charter has been signed and the team is being formed",
       "When the project team is assigned",
       "When testing starts"
     ],
@@ -186,7 +186,7 @@
       "Initiating",
       "Planning",
       "Defining and Aligning",
-      "Releasing"
+      "Monitoring and Controlling"
     ],
     "answer": 2,
     "explanation": "The Defining and Aligning Process Group investigates and evaluates the viability of initiating a new product or changing or retiring an existing one, and aligns products, portfolios, programs and projects to organizational strategy.",
@@ -223,7 +223,7 @@
     "id": "q12",
     "q": "Which statement about business analysis process groups is correct?",
     "options": [
-      "They are the phases of the project life cycle",
+      "They are the phases of the project life cycle, performed one after the other in order",
       "They are not phases; their processes can be repeated and no sequence is prescribed",
       "Each is performed exactly once",
       "They apply only to predictive projects"
@@ -244,7 +244,7 @@
     "q": "Which knowledge area is used throughout all business analysis work and interacts with all the others?",
     "options": [
       "Needs Assessment",
-      "Solution Evaluation",
+      "Traceability and Monitoring",
       "Stakeholder Engagement",
       "Elicitation"
     ],
@@ -346,7 +346,7 @@
       "No business analysis is needed on agile projects",
       "The scrum master must do all of it",
       "The work is still done, shared across the roles on the team",
-      "The project cannot start until an analyst is hired"
+      "The project cannot start until a dedicated business analyst is hired"
     ],
     "answer": 2,
     "explanation": "When a life cycle does not recognize the business analyst role, the work of business analysis is not overlooked. On agile projects the responsibilities may be spread across roles and depend on the needs of the team.",
@@ -366,7 +366,7 @@
       "Supervisory authority over the stakeholders",
       "Trust and influence built through honesty, integrity and transparency",
       "The authority to schedule their work",
-      "Escalating every disagreement to the sponsor"
+      "Escalating every disagreement to the project sponsor for a binding decision"
     ],
     "answer": 1,
     "explanation": "Business analysts lead and influence stakeholders without having the supervisory authority, title or rank to do so. They strengthen their leadership by building trust and showing honesty, integrity and transparency.",
@@ -436,6 +436,26 @@
         "book": "baguide",
         "page": 50,
         "label": "PMI Guide to Business Analysis, 1.1.3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A sponsor asks the business analyst to move two developers onto requirements work to speed it up. What should the analyst do?",
+    "options": [
+      "Reassign them at once, since requirements work is the analyst's own area",
+      "Raise the request with the project manager, who allocates resources",
+      "Ask the two developers to decide between themselves",
+      "Refuse, because requirements work cannot be sped up"
+    ],
+    "answer": 1,
+    "explanation": "Business analysts may lead, but they do not oversee project resources. At the project level the project manager is responsible for resource allocation, scheduling and work progress.",
+    "ref": "PMI Guide to Business Analysis, 3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 92,
+        "label": "PMI Guide to Business Analysis, 3.3.1"
       }
     ]
   }

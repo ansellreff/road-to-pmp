@@ -6,7 +6,7 @@
       "Concept, design, build, test, release",
       "Scope, schedule, cost, quality, risk",
       "Initiating, Planning, Executing, Monitoring and Controlling, Closing",
-      "Governance, stakeholders, resources, finance, risk"
+      "Governance, scope, schedule, finance, stakeholders, resources and risk"
     ],
     "answer": 2,
     "explanation": "The five Focus Areas are Initiating, Planning, Executing, Monitoring and Controlling, and Closing.",
@@ -66,7 +66,7 @@
       "Planning",
       "Initiating",
       "Executing",
-      "Closing"
+      "Monitoring and Controlling"
     ],
     "answer": 1,
     "explanation": "Initiating defines a new project or phase and often includes the formal authorization to start it.",
@@ -86,7 +86,7 @@
       "Project charter and stakeholder register",
       "Risk register and schedule baseline",
       "Lessons learned and final report",
-      "Product backlog and burndown chart"
+      "Product backlog and iteration burndown chart"
     ],
     "answer": 0,
     "explanation": "Initial scope, committed funding, identified stakeholders and assigned roles are captured in artifacts such as the project charter and stakeholder register.",
@@ -125,7 +125,7 @@
     "options": [
       "Gold plating",
       "Scope creep",
-      "Fast tracking",
+      "Fast tracking the schedule",
       "Progressive elaboration"
     ],
     "answer": 3,
@@ -143,7 +143,7 @@
     "id": "q8",
     "q": "How does planning typically differ between highly predictive and highly adaptive approaches?",
     "options": [
-      "Predictive projects do no planning; adaptive projects plan everything up front",
+      "Predictive projects do no planning at all, while adaptive projects plan everything in full detail up front",
       "Predictive front-loads planning; adaptive does brief high-level planning first, then frequent replanning",
       "Both plan only once, at the start",
       "Adaptive projects never plan"
@@ -203,7 +203,7 @@
     "id": "q11",
     "q": "When is Monitoring and Controlling performed?",
     "options": [
-      "Only after Executing is finished",
+      "Only after the Executing work has been finished and formally accepted",
       "Only at phase gates",
       "Only during Closing",
       "In parallel with the other Focus Areas, throughout the project"
@@ -225,7 +225,7 @@
     "options": [
       "Collecting performance data",
       "Analyzing variances and recommending course corrections",
-      "Distributing a status report",
+      "Distributing a weekly status report to all the stakeholders",
       "Recording actual hours worked"
     ],
     "answer": 1,
@@ -245,7 +245,7 @@
     "options": [
       "Closing actions should still be performed to formally close the project",
       "Nothing; cancelled projects are not closed",
-      "The team should continue working until the budget is spent",
+      "The team should continue working until the remaining budget has been spent",
       "The project should restart from Initiating"
     ],
     "answer": 0,
@@ -284,7 +284,7 @@
     "q": "How do the Focus Areas behave in a project using an adaptive approach?",
     "options": [
       "They are skipped, because agile has no process",
-      "They are performed once, strictly in order",
+      "They are performed once each, strictly in order, as in a predictive project",
       "Only Executing is used",
       "They are revisited regularly within short iterations, overlapping flexibly"
     ],
@@ -303,7 +303,7 @@
     "id": "q16",
     "q": "During executing, the team identifies a change that would clearly improve the value the project delivers. According to the standard, the project management plan:",
     "options": [
-      "Must never be changed once approved",
+      "Must never be changed once it is approved, to protect the agreed baselines",
       "Can and should be changed when the change enhances the project's value",
       "Can only be changed at closing",
       "Should be discarded"

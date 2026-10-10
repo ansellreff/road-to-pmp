@@ -1,7 +1,7 @@
 [
   {
     "id": "q1",
-    "q": "What is a risk?",
+    "q": "A supplier may deliver two weeks late, or may deliver a week early. In risk terms, what do both possibilities have in common?",
     "options": [
       "A problem that has already occurred",
       "An uncertain event or condition that, if it occurs, has a positive or negative effect on objectives",
@@ -186,7 +186,7 @@
       "Decision tree",
       "Tornado diagram",
       "Probability and impact matrix",
-      "Risk breakdown structure"
+      "Risk breakdown structure (RBS)"
     ],
     "answer": 2,
     "explanation": "The probability and impact matrix is a grid for mapping the probability of each risk and its impact on objectives. It is the main tool of qualitative analysis.",
@@ -426,7 +426,7 @@
       "Residual risk",
       "Overall risk",
       "Secondary risk",
-      "Risk trigger"
+      "Risk trigger event"
     ],
     "answer": 2,
     "explanation": "A secondary risk arises as a direct result of implementing a risk response. A residual risk is what remains after the responses have been implemented.",
@@ -463,7 +463,7 @@
     "id": "q24",
     "q": "What is the purpose of a risk audit?",
     "options": [
-      "To calculate the expected monetary value of each risk",
+      "To calculate the expected monetary value of each individual risk",
       "To identify new stakeholders",
       "To approve change requests",
       "To examine how effective the risk management process is"

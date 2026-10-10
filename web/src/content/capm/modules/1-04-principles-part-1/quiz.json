@@ -44,7 +44,7 @@
     "q": "What are the three dimensions of the project management mindset?",
     "options": [
       "Scope, schedule and cost",
-      "Predictive, adaptive and hybrid",
+      "Predictive, adaptive and hybrid approaches",
       "People, process and technology",
       "Proactive, ownership and value-driven"
     ],
@@ -184,7 +184,7 @@
     "q": "A customer orders new software to increase staff productivity. The software is delivered on time, but staff do not know how to use it and productivity does not improve. What does this illustrate?",
     "options": [
       "A deliverable can be completed without achieving the intended outcome",
-      "The project succeeded because the deliverable was accepted",
+      "The project fully succeeded, because the deliverable was formally accepted",
       "Quality always costs more than planned",
       "Training is never part of project scope"
     ],
@@ -204,7 +204,7 @@
     "q": "When can the value of a project be realized?",
     "options": [
       "Only at the moment the project closes",
-      "Only after the product is retired",
+      "Only after the product has been retired from the market",
       "Only during project execution",
       "During the project, at its end, or after completion"
     ],

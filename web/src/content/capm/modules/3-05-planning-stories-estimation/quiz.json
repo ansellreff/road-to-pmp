@@ -24,7 +24,7 @@
     "q": "Which is the usual format of a user story?",
     "options": [
       "As a (role), I want (goal), so that (benefit)",
-      "The system shall (function) within (time)",
+      "The system shall (function) within (time limit)",
       "Given (budget), deliver (scope) by (date)",
       "If (risk), then (response)"
     ],
@@ -84,7 +84,7 @@
     "q": "What does a story point measure?",
     "options": [
       "The number of hours a story will take",
-      "The business value of a story in money",
+      "The business value of a user story, expressed in money",
       "The relative effort needed to implement a user story",
       "The number of people needed"
     ],
@@ -125,7 +125,7 @@
     "options": [
       "The product owner picks the final number",
       "The lowest number is always used",
-      "The scrum master averages the numbers in secret",
+      "The scrum master averages the numbers in secret and announces the result",
       "All cards are revealed at the same time, and differences are discussed"
     ],
     "answer": 3,
@@ -288,7 +288,7 @@
     "id": "q15",
     "q": "The team cannot estimate a story because it does not know whether a third-party interface supports a needed function. What should it do?",
     "options": [
-      "Guess a large number and start building",
+      "Guess a large number to be safe, and start building the feature anyway",
       "Remove the story from the backlog",
       "Ask the product owner to estimate it",
       "Run a spike: a timeboxed piece of research to answer the question"
@@ -310,7 +310,7 @@
     "options": [
       "A tool for recording hours worked",
       "A short, fixed period of time in which work is to be completed",
-      "A deadline that can be extended when needed",
+      "A deadline that can be extended whenever the work is not finished",
       "A list of tasks"
     ],
     "answer": 1,
@@ -328,7 +328,7 @@
     "id": "q17",
     "q": "What is the definition of ready?",
     "options": [
-      "A checklist showing a deliverable is ready for customer use",
+      "A checklist showing that a finished deliverable meets all criteria and is ready for customers",
       "The date the team is available",
       "A checklist showing a user story has all the information the team needs to begin work on it",
       "The product owner's approval of a release"
@@ -368,7 +368,7 @@
     "id": "q19",
     "q": "During iteration planning, who decides how many stories the team will commit to?",
     "options": [
-      "The product owner",
+      "The product owner, based on priority",
       "The scrum master",
       "The customer",
       "The team, based on its capacity"
@@ -388,7 +388,7 @@
     "id": "q20",
     "q": "Two team members will be on holiday during the next iteration. What should the team do in iteration planning?",
     "options": [
-      "Commit to the same amount of work as usual",
+      "Commit to the same amount of work as in any normal iteration",
       "Plan only the amount of work that fits its reduced capacity",
       "Cancel the iteration",
       "Extend the iteration by a week"
@@ -431,7 +431,7 @@
       "The story should be split into smaller stories",
       "The team should work overtime",
       "The story should be done first",
-      "The scale should be changed to hours"
+      "The scale should be changed from points to ideal hours"
     ],
     "answer": 0,
     "explanation": "A very large estimate signals that the item is too big and too uncertain. Stories should be small enough to complete within an iteration, so it is split.",

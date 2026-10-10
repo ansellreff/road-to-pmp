@@ -63,7 +63,7 @@
     "id": "q4",
     "q": "How much planning detail does the PMBOK Guide recommend?",
     "options": [
-      "As much detail as possible before any work starts",
+      "As much detail as possible for every activity, before any of the work starts",
       "No planning in adaptive projects",
       "The same fixed level for every project",
       "Enough to move forward appropriately, but not more detailed than necessary"
@@ -186,7 +186,7 @@
       "Quality control",
       "Validate Scope",
       "A quality audit, part of quality assurance",
-      "Defect repair"
+      "Defect repair, as part of executing the work"
     ],
     "answer": 2,
     "explanation": "Audits examine whether processes are being followed, which is quality assurance. Inspecting or testing a deliverable would be quality control.",
@@ -245,7 +245,7 @@
     "options": [
       "Only at the end of the project",
       "Throughout the project and at its closure",
-      "Only when the project fails",
+      "Only when the project fails or is cancelled",
       "Only if the sponsor asks"
     ],
     "answer": 1,
@@ -383,7 +383,7 @@
     "id": "q20",
     "q": "How are changes typically managed in an adaptive project?",
     "options": [
-      "Through a formal change control board for every item",
+      "Through a formal change control board that reviews and signs off every single item",
       "Changes are not allowed",
       "By rewriting the project charter",
       "Through backlog management: the change becomes a backlog item and is prioritized"
@@ -405,7 +405,7 @@
     "options": [
       "No closing is needed for a cancelled project",
       "Close Project or Phase still applies, including documenting the reasons for termination",
-      "The project manager should keep the team working until told otherwise",
+      "The project manager should keep the whole team working as planned until instructed otherwise",
       "Only the sponsor performs closing"
     ],
     "answer": 1,

@@ -6,7 +6,7 @@
       "To write the requirements",
       "To assess whether a solution has achieved the desired business results",
       "To identify the stakeholders",
-      "To estimate the project budget"
+      "To estimate the project budget and the cost of each remaining product release"
     ],
     "answer": 1,
     "explanation": "Solution evaluation activities assess whether or not a solution has achieved the desired business results, by comparing actual results with expected values and, over the long term, checking whether the expected business value was achieved.",
@@ -23,7 +23,7 @@
     "id": "q2",
     "q": "Which of these is one of the four solution evaluation processes?",
     "options": [
-      "Assemble Business Case",
+      "Determine Viable Options and Provide Recommendation",
       "Conduct Elicitation",
       "Verify Requirements",
       "Obtain Solution Acceptance for Release"
@@ -65,7 +65,7 @@
     "options": [
       "A set of quantifiable measures used to evaluate a solution or business",
       "A type of stakeholder",
-      "A stage of the product life cycle",
+      "A stage of the product life cycle, between growth and maturity of the product",
       "A kind of prototype"
     ],
     "answer": 0,
@@ -85,7 +85,7 @@
     "options": [
       "Skip evaluation altogether",
       "Collect it regardless of cost",
-      "Wait until after release to decide",
+      "Wait until after the release before deciding what to do",
       "Consider a less costly, next-best alternative"
     ],
     "answer": 3,
@@ -143,7 +143,7 @@
     "id": "q8",
     "q": "Two defects are found. One affects a feature tied to the project's top business objective. Which tool shows this link?",
     "options": [
-      "Onion diagram",
+      "Stakeholder onion diagram",
       "Persona",
       "Traceability matrix",
       "Product box"
@@ -185,7 +185,7 @@
     "options": [
       "It is accepted anyway to protect velocity",
       "The story can be rejected and returned to the backlog to be reprioritized",
-      "The iteration is extended until it passes",
+      "The iteration is extended by as many days as it takes for the story to pass",
       "The project is cancelled"
     ],
     "answer": 1,
@@ -205,7 +205,7 @@
     "options": [
       "Acceptable results, organizational readiness, completed transition activities, and acceptance of remaining risks",
       "Budget spent, team size, sponsor's mood, and schedule",
-      "Number of requirements, number of tests, number of defects, and number of users",
+      "The number of requirements written, the number of tests run, the number of defects found, and the number of users",
       "Scope, time, cost and quality"
     ],
     "answer": 0,
@@ -223,7 +223,7 @@
     "id": "q12",
     "q": "Who makes the release decision?",
     "options": [
-      "The business analyst alone",
+      "The business analyst alone, because the analyst wrote the acceptance criteria",
       "The test team",
       "The stakeholders accountable for the product, with the analyst facilitating",
       "The newest team member"
@@ -246,7 +246,7 @@
       "Approve only",
       "Release fully or partly, delay, or disapprove",
       "Verify or validate",
-      "Avoid, transfer, mitigate, accept"
+      "Avoid, transfer, mitigate, accept or escalate"
     ],
     "answer": 1,
     "explanation": "A release decision may permit the release or partial release of the solution, delay it, or disapprove and prevent it. It often includes a sign-off.",
@@ -263,7 +263,7 @@
     "id": "q14",
     "q": "What is a warranty period?",
     "options": [
-      "The time allowed for writing requirements",
+      "The time allowed for writing and approving requirements before development is permitted to start",
       "The time before the charter is approved",
       "The length of an iteration",
       "A period after release during which the development team is responsible for fixing defects"
@@ -286,7 +286,7 @@
       "A facilitated workshop, so all stakeholders hear the reasons for the decision",
       "A survey, so nobody has to meet",
       "Observation, so users are not disturbed",
-      "A product box, to design the packaging"
+      "A product box game, so that the team can design the packaging before the release"
     ],
     "answer": 0,
     "explanation": "Whenever possible, release decisions should be made in a facilitated workshop so that all stakeholders hear the rationale. Summaries of results, remaining risks and unfinished transition activities help decision makers.",
@@ -323,7 +323,7 @@
     "id": "q17",
     "q": "When does Evaluate Solution Performance usually take place?",
     "options": [
-      "Before the business case is written",
+      "Before the business case has been written",
       "During elicitation",
       "Before any testing",
       "After the solution has been released"
@@ -365,7 +365,7 @@
     "options": [
       "Nothing; evaluation is skipped",
       "A proxy, such as task duration, response time or error counts",
-      "The sponsor's opinion only",
+      "The sponsor's personal opinion of how well the product is doing",
       "The original estimate"
     ],
     "answer": 1,
@@ -425,7 +425,7 @@
     "options": [
       "Build them anyway because they were planned",
       "Double the team",
-      "Rewrite the business case to hide the result",
+      "Rewrite the business case so that the result is hidden",
       "End early and move the funds to higher-value work"
     ],
     "answer": 3,
@@ -436,6 +436,26 @@
         "book": "baguide",
         "page": 323,
         "label": "PMI Guide to Business Analysis, Key Concepts for Solution Evaluation"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Acceptance tests have passed, but the support team is untrained and the cutover checklist is half finished. What should the analyst advise at the release meeting?",
+    "options": [
+      "Release now, because all of the acceptance tests have passed",
+      "Delay, because the transition activities are not complete",
+      "Cancel the project, because it is clearly not ready",
+      "Release now, and train the support team in the weeks afterwards"
+    ],
+    "answer": 1,
+    "explanation": "A release decision rests on acceptable results, organizational readiness, completed transition activities and acceptance of remaining risks. Here the transition activities are incomplete, so the release should be delayed.",
+    "ref": "PMI Guide to Business Analysis, 9.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 339,
+        "label": "PMI Guide to Business Analysis, 9.4"
       }
     ]
   }

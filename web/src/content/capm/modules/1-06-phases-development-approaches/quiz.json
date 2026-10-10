@@ -166,7 +166,7 @@
       "Change-driven and agile",
       "Waterfall, plan-driven and traditional",
       "Flow-based and Kanban",
-      "Iterative and incremental"
+      "Iterative, incremental and evolutionary"
     ],
     "answer": 1,
     "explanation": "Predictive is also called waterfall, plan-driven or traditional. Adaptive is also called change-driven or agile.",
@@ -243,7 +243,7 @@
     "id": "q13",
     "q": "What does the PMBOK Guide, Eighth Edition, say about hybrid approaches?",
     "options": [
-      "They should be avoided because they cause confusion",
+      "They should be avoided, because mixing approaches confuses the team and the sponsor",
       "Most projects today can benefit from combining adaptive and predictive elements",
       "They are only for software projects",
       "They are the same as incremental delivery"

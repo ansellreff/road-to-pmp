@@ -3,7 +3,7 @@
     "id": "q1",
     "q": "What best describes accountable leadership?",
     "options": [
-      "Holding the highest position on the project organization chart",
+      "Holding the highest position on the project organization chart and approving all of the team's work",
       "Being responsible for and taking ownership of the project's objectives, actions and decisions",
       "Assigning blame quickly when something goes wrong",
       "Making every decision alone to keep control"
@@ -46,7 +46,7 @@
       "As shared leadership, which is typical of high-performing projects",
       "As a breach of the project manager's authority",
       "As scope creep",
-      "As a governance failure that should be escalated"
+      "As a governance failure that should be escalated to the sponsor at once"
     ],
     "answer": 0,
     "explanation": "Leadership is not exclusive to any role. At different moments a team member or stakeholder may lead, and high-performing projects feature many people exercising leadership.",
@@ -83,7 +83,7 @@
     "id": "q5",
     "q": "Two vendor teams on a large project are in conflict over shift rotations. Which response best reflects the Be an Accountable Leader principle?",
     "options": [
-      "Enforce the contract terms and leave each vendor to handle its own staff",
+      "Enforce the contract terms strictly and leave each vendor to deal with its own staff",
       "Bring the vendors together to find the root cause and agree on workable adjustments",
       "Replace one of the vendors immediately",
       "Ignore the conflict, because it is between vendors"
@@ -105,7 +105,7 @@
     "options": [
       "Gold plating",
       "A balanced matrix",
-      "A governance board",
+      "A project governance board",
       "Psychological safety"
     ],
     "answer": 3,
@@ -143,7 +143,7 @@
     "id": "q8",
     "q": "According to the sustainability pyramid, which response to a negative impact is MOST desirable?",
     "options": [
-      "Compensate for the negative outcome",
+      "Compensate elsewhere for the negative outcome",
       "Restore the impact afterwards",
       "Avoid the negative outcome altogether",
       "Minimize the negative outcome"
@@ -163,7 +163,7 @@
     "id": "q9",
     "q": "A project cannot prevent some noise disturbance to a neighborhood, so it pays residents a fee. Where does this sit on the sustainability pyramid?",
     "options": [
-      "At the top, as the most desirable response",
+      "At the very top, as the most desirable response",
       "At the bottom, as the least desirable response",
       "In the middle, equal to minimizing",
       "It is not part of the pyramid"
@@ -185,7 +185,7 @@
     "options": [
       "Scope, schedule and cost",
       "Inputs, tools and outputs",
-      "Strategy, programs and projects",
+      "Organizational strategy, programs, projects and day-to-day operations",
       "Social equity, environmental stewardship and economic prosperity"
     ],
     "answer": 3,
@@ -226,7 +226,7 @@
       "Ignore sustainability, because it is out of scope",
       "Add sustainability deliverables without telling the sponsor",
       "Still encourage discussion of sustainability impacts with stakeholders",
-      "Stop the project until the business case is rewritten"
+      "Stop the project until the business case is rewritten to include sustainability"
     ],
     "answer": 2,
     "explanation": "Goals should be in formal documents and confirmed by the sponsor. If they are not, the project manager should still encourage discussions about their impact.",
@@ -265,7 +265,7 @@
     "options": [
       "Contracts between the organization and its suppliers",
       "Rules written by the sponsor and imposed on the team",
-      "The legal terms in each team member's employment contract",
+      "The legal terms and conditions written into each team member's employment contract",
       "Behavioral parameters and working norms established by the project team itself"
     ],
     "answer": 3,

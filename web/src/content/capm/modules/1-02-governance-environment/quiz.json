@@ -185,7 +185,7 @@
     "options": [
       "The project team",
       "A steering committee, part of project governance",
-      "The organizational knowledge repository",
+      "The organizational knowledge repository of past projects",
       "An enterprise environmental factor"
     ],
     "answer": 1,
@@ -203,7 +203,7 @@
     "id": "q11",
     "q": "In which organizational structure does the project manager have the MOST authority?",
     "options": [
-      "Functional",
+      "Functional (centralized)",
       "Weak matrix",
       "Balanced matrix",
       "Project-oriented"
@@ -246,7 +246,7 @@
       "Part-time with low authority",
       "Full-time with moderate to high authority",
       "Not a designated role at all",
-      "Full-time with no access to resources"
+      "Full-time, but with no access to any resources"
     ],
     "answer": 1,
     "explanation": "A strong matrix gives the project manager a full-time designated role, moderate to high authority and moderate to high resource availability.",
@@ -306,7 +306,7 @@
       "Inputs to many processes, especially planning",
       "Outputs of the closing work only",
       "Tools for measuring team performance",
-      "Deliverables handed to the customer"
+      "Deliverables handed to the customer at project closing"
     ],
     "answer": 0,
     "explanation": "Both are inputs to many project management processes. EEFs in particular are inputs to most planning processes.",
@@ -325,7 +325,7 @@
     "options": [
       "Functional",
       "Weak matrix",
-      "Balanced matrix",
+      "Balanced matrix structure",
       "Project-oriented"
     ],
     "answer": 3,
@@ -346,7 +346,7 @@
       "The functional manager",
       "The project manager",
       "The project team",
-      "The customer"
+      "The customer's representative"
     ],
     "answer": 0,
     "explanation": "In functional and weak matrix structures the functional manager manages the project budget and the project manager's authority is low.",

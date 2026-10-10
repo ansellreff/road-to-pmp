@@ -45,7 +45,7 @@
     "options": [
       "Documentation still has value, but a working product is valued more",
       "Agile teams produce no documentation",
-      "Documentation must be finished before any work starts",
+      "Documentation must be complete and approved before any of the work can start",
       "Only the customer writes documentation"
     ],
     "answer": 0,
@@ -104,7 +104,7 @@
     "q": "Late in an agile project the customer asks for a significant change to a feature. How should the team respond?",
     "options": [
       "Reject it, because the scope is fixed",
-      "Send it to the change control board and wait",
+      "Send it to the change control board and wait for a formal decision",
       "Welcome it and have the product owner prioritize it in the backlog",
       "Add it secretly without telling the product owner"
     ],
@@ -124,7 +124,7 @@
     "q": "Which type of work is agile best suited to?",
     "options": [
       "High-uncertainty work involving new design and problem-solving",
-      "Definable work with proven procedures",
+      "Definable work with clear procedures proven on many past projects",
       "Routine operational work",
       "Work with no customer"
     ],
@@ -286,7 +286,7 @@
       "The team is doing agile practices without an agile mindset",
       "The team is fully agile",
       "The team is using Kanban",
-      "The team is using an incremental approach"
+      "The team is using an incremental approach with fixed-length iterations"
     ],
     "answer": 0,
     "explanation": "The agile mindset is about being agile, not simply doing agile. It means living the values: delivering value early, adapting quickly and learning from feedback.",
@@ -364,7 +364,7 @@
     "q": "When does a typical predictive project deliver business value, compared with an agile project?",
     "options": [
       "Predictive: usually at the end. Agile: early and frequently.",
-      "Predictive: every week. Agile: at the end.",
+      "Predictive: every week from the start. Agile: only at the end.",
       "Both only at the end",
       "Neither delivers value"
     ],
@@ -383,7 +383,7 @@
     "id": "q20",
     "q": "What does \"simplicity\" mean in the agile principles?",
     "options": [
-      "Using only simple tools",
+      "Using only the simplest tools that are available",
       "Hiring fewer people",
       "Writing short documents",
       "Maximizing the amount of work not done"

@@ -23,7 +23,7 @@
     "id": "q2",
     "q": "Which statement about the seven performance domains is correct?",
     "options": [
-      "They are performed one after another, starting with Governance",
+      "They are performed one after another in a fixed order, always starting with Governance",
       "Risk is weighted more heavily than the others",
       "Each belongs to exactly one Focus Area",
       "They run concurrently throughout the project and operate as an integrated system"
@@ -83,7 +83,7 @@
     "id": "q5",
     "q": "How should the 40 processes and their inputs, tools and techniques, and outputs be understood?",
     "options": [
-      "As a mandatory methodology to follow on every project",
+      "As a mandatory methodology to be followed on every project",
       "As illustrative descriptions, not a prescriptive framework",
       "As applicable only to predictive projects",
       "As a complete list of everything a team may do"
@@ -106,7 +106,7 @@
       "Initiate Project or Phase, and Identify Stakeholders",
       "Define Scope, and Develop Schedule",
       "Plan Risk Management, and Identify Risks",
-      "Acquire Resources, and Lead the Team"
+      "Acquire Resources, and Monitor and Control Resourcing"
     ],
     "answer": 0,
     "explanation": "Initiating contains only Initiate Project or Phase (Governance) and Identify Stakeholders (Stakeholders).",
@@ -143,7 +143,7 @@
     "id": "q8",
     "q": "The 'Check Results' part of each performance domain reminds practitioners that:",
     "options": [
-      "Producing project management documents is the goal",
+      "Producing complete project management documents is the main goal",
       "Only the sponsor may judge results",
       "Activities matter only if they contribute to outcomes and value",
       "Results are checked only at project closing"
@@ -243,7 +243,7 @@
     "id": "q13",
     "q": "A project team wants to change a process in a way that will affect other departments. Whose approval may be required?",
     "options": [
-      "None; teams may tailor anything freely",
+      "Nobody; teams may tailor anything freely without consulting others",
       "The PMO, because the tailoring affects external groups",
       "Only the newest team member",
       "The customer's end users"
@@ -264,7 +264,7 @@
     "q": "Which statement about tailoring is correct?",
     "options": [
       "It is a continuing activity, revisited at review points, phase gates and retrospectives",
-      "It is done once at the start and never revisited",
+      "It is done once at the very start of the project and is never revisited after it has been approved",
       "It is only permitted on adaptive projects",
       "It should be done without involving the team"
     ],
@@ -283,7 +283,7 @@
     "id": "q15",
     "q": "A project's deliverables keep failing quality checks. According to the tailoring diagnostics, what is the best response?",
     "options": [
-      "Add several more inspection steps at the end",
+      "Add several more inspection steps at the very end",
       "Replace the whole team",
       "Ignore it until the customer complains",
       "Analyze the root causes and improve the process"
@@ -304,7 +304,7 @@
     "q": "Which is a benefit of involving team members in tailoring the approach?",
     "options": [
       "It removes the need for governance",
-      "It guarantees the project finishes early",
+      "It guarantees that the project finishes earlier than planned",
       "It increases the team's commitment to the approach",
       "It eliminates all project risk"
     ],

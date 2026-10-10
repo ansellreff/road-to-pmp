@@ -124,7 +124,7 @@
     "q": "What does the 100 percent rule say about the WBS?",
     "options": [
       "The WBS includes all product and project work, with nothing left out and nothing extra",
-      "Every work package must be 100% complete before the next starts",
+      "Every work package must be 100% complete and accepted before the next one is allowed to start",
       "All team members must approve the WBS",
       "The WBS must be finished before the charter is signed"
     ],
@@ -170,7 +170,7 @@
     "options": [
       "Functional requirement",
       "Nonfunctional requirement",
-      "Transition requirement",
+      "Temporary transition requirement",
       "Business requirement"
     ],
     "answer": 1,
@@ -191,7 +191,7 @@
       "Quality requirements",
       "Project requirements",
       "Transition and readiness requirements",
-      "Stakeholder requirements"
+      "Stakeholder and end-user requirements"
     ],
     "answer": 2,
     "explanation": "Transition and readiness requirements describe temporary capabilities needed to move from the current state to the desired future state.",
@@ -211,7 +211,7 @@
       "Requirements traceability matrix",
       "WBS dictionary",
       "Project scope statement",
-      "Requirements management plan"
+      "Requirements management plan document"
     ],
     "answer": 0,
     "explanation": "The requirements traceability matrix is a grid that links requirements from their origin to the deliverables that satisfy them, and helps manage changes to product scope.",
@@ -310,7 +310,7 @@
     "options": [
       "Close the phase and move on",
       "Ask the sponsor to accept it instead",
-      "Remove the deliverable from the scope baseline",
+      "Remove the rejected deliverable from the approved scope baseline entirely",
       "Document the reasons and raise a change request for defect repair"
     ],
     "answer": 3,
@@ -431,7 +431,7 @@
       "Focus group",
       "Benchmarking",
       "Nominal group technique",
-      "Document analysis"
+      "Document analysis and review"
     ],
     "answer": 2,
     "explanation": "The nominal group technique adds a voting step to brainstorming so that the ideas can be ranked and prioritized.",
@@ -448,7 +448,7 @@
     "id": "q23",
     "q": "Which of the following does a work breakdown structure show?",
     "options": [
-      "The order in which the work will be done",
+      "The order in which the work packages will be carried out",
       "The cost of each element",
       "The hierarchical breakdown of the total scope of work",
       "The people assigned to each element"

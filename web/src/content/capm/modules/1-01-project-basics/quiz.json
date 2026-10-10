@@ -226,7 +226,7 @@
       "It was a complete failure because the constraints were missed",
       "It was a complete success because the outcome was good",
       "The outcomes were successful, but the project management was not",
-      "Success cannot be assessed until the product is retired"
+      "Success cannot be assessed until the product has been retired from use"
     ],
     "answer": 2,
     "explanation": "Success has two dimensions: project outcomes (effectiveness in realizing value) and project management (efficiency against cost, scope, time and quality). They are assessed separately. The Sydney Opera House is the book's example.",

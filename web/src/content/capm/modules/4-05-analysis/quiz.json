@@ -66,7 +66,7 @@
       "Feature model",
       "Process flow",
       "Decision table",
-      "Wireframe"
+      "Wireframe mock-up"
     ],
     "answer": 2,
     "explanation": "Decision tables are useful for ensuring that the analyst has considered all possible combinations of decision scenarios and related outcomes. A decision tree shows the flow and order of decisions.",
@@ -105,7 +105,7 @@
     "options": [
       "Entity relationship diagram",
       "Context diagram",
-      "User interface flow",
+      "User interface flow diagram",
       "Event list"
     ],
     "answer": 0,
@@ -185,7 +185,7 @@
     "options": [
       "Extend the iteration",
       "Drop the story",
-      "Assign more developers to it",
+      "Assign more developers to it so it fits in one iteration",
       "Slice it into smaller stories that each deliver value"
     ],
     "answer": 3,
@@ -245,7 +245,7 @@
     "options": [
       "A business requirement",
       "A situation statement",
-      "A transition requirement",
+      "A transition requirement for moving to the future state",
       "An acceptance criterion in the given-when-then format"
     ],
     "answer": 3,
@@ -283,7 +283,7 @@
     "id": "q15",
     "q": "What does Verify Requirements check?",
     "options": [
-      "That the requirements meet business goals",
+      "That the requirements meet the business goals and stakeholder needs",
       "That the requirements are ranked",
       "That the requirements are of sufficient quality and meet standards",
       "That the solution has been released"
@@ -366,7 +366,7 @@
       "A test case",
       "A team member",
       "The business goals and objectives",
-      "The project schedule"
+      "The project schedule and its milestones"
     ],
     "answer": 2,
     "explanation": "Validation ensures that all requirements trace back to the business goals and objectives, so that what is to be built will actually meet them.",
@@ -385,7 +385,7 @@
     "options": [
       "To decide the priorities alone",
       "To facilitate and negotiate, while accountable stakeholders make the decisions",
-      "To leave prioritization to the developers",
+      "To leave prioritization entirely to the developers, who know the effort best of all",
       "To avoid being involved"
     ],
     "answer": 1,
@@ -405,7 +405,7 @@
     "options": [
       "Its author and its date",
       "Its length and its format",
-      "Its section number and its status",
+      "Its section number in the document and its current approval status",
       "Its business value, and the team's estimate of effort and risk"
     ],
     "answer": 3,
@@ -476,6 +476,26 @@
         "book": "baguide",
         "page": 261,
         "label": "PMI Guide to Business Analysis, 7.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Stakeholders have approved the wording of a requirement, but the testers say they cannot tell when it would be satisfied. What is missing?",
+    "options": [
+      "A full business case for the requirement",
+      "Acceptance criteria for the requirement",
+      "A persona for the requirement's users",
+      "A situation statement for the need"
+    ],
+    "answer": 1,
+    "explanation": "Acceptance criteria are the concrete and demonstrable conditions that must be met for an item to be accepted. They form the basis of acceptance tests and help show where a requirement is unclear.",
+    "ref": "PMI Guide to Business Analysis, 7.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 261,
+        "label": "PMI Guide to Business Analysis, 7.4"
       }
     ]
   }

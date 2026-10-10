@@ -25,7 +25,7 @@
     "options": [
       "A spike",
       "Gold plating",
-      "Scope creep",
+      "Uncontrolled scope creep",
       "A watermelon project"
     ],
     "answer": 3,
@@ -41,10 +41,10 @@
   },
   {
     "id": "q3",
-    "q": "What does a burndown chart show?",
+    "q": "A team wants a chart that shows, day by day, whether the work left in the sprint will fit the time left. What does a burndown chart plot?",
     "options": [
       "Work remaining versus the time left in a timebox",
-      "Work completed against the total scope",
+      "Work completed so far, measured against total scope",
       "The number of defects found per release",
       "The cost variance of each iteration"
     ],
@@ -86,7 +86,7 @@
       "The team is ahead of plan",
       "More work remains than planned, so the team is behind",
       "Scope has been removed",
-      "The chart has been drawn incorrectly"
+      "The chart has been drawn incorrectly and should be redone"
     ],
     "answer": 1,
     "explanation": "The burndown chart plots work remaining. An actual line above the ideal line means more work remains than planned at that point, so the team is behind.",
@@ -205,7 +205,7 @@
     "options": [
       "The number of items waiting in a queue",
       "The number of work items finished per time period",
-      "The total story points in the backlog",
+      "The total story points still remaining in the backlog",
       "The time an item spends waiting"
     ],
     "answer": 1,
@@ -226,7 +226,7 @@
       "Testing is ahead of development",
       "Throughput is increasing",
       "A bottleneck: work is entering testing faster than it leaves",
-      "The team's velocity has stabilized"
+      "The team's velocity has stabilized after several iterations of work"
     ],
     "answer": 2,
     "explanation": "A band that keeps widening shows items accumulating in that state. Growing queues signal bottlenecks and hidden delays.",
@@ -243,7 +243,7 @@
     "id": "q13",
     "q": "Which metric is a direct indicator of product quality and of whether the team's pace is sustainable?",
     "options": [
-      "Queue length",
+      "Queue length in each state",
       "Throughput",
       "Lead time",
       "Escaped defects and rework"
@@ -265,7 +265,7 @@
     "options": [
       "Customer satisfaction or Net Promoter Score",
       "Cycle time",
-      "Work in process",
+      "Work in process at the end of each iteration",
       "Queue length"
     ],
     "answer": 0,
@@ -324,7 +324,7 @@
     "q": "A sponsor asks when the remaining 45 stories will be finished. What is the best way to answer?",
     "options": [
       "Give a range with a confidence level, based on the team's throughput",
-      "Give a single fixed date and commit to it",
+      "Give a single fixed date now and commit the whole team to meeting it",
       "Say that agile teams do not forecast",
       "Give the date in the original plan"
     ],
@@ -341,10 +341,10 @@
   },
   {
     "id": "q18",
-    "q": "What is the main purpose of a retrospective?",
+    "q": "At the end of an iteration the team meets, without stakeholders, to look at how it worked. What is this retrospective for?",
     "options": [
       "To show working product to stakeholders",
-      "To decide which stories go into the next iteration",
+      "To decide which stories will go into the next iteration backlog",
       "To identify who caused the iteration's problems",
       "To let the team learn from its work and improve its process"
     ],
@@ -366,7 +366,7 @@
       "Commit to all twelve in the next iteration",
       "Pass the list to the product owner to decide",
       "Rank them and take on only as many as it has capacity to complete",
-      "Record them and review them at the end of the project"
+      "Record all twelve and review them together at the end of the project"
     ],
     "answer": 2,
     "explanation": "The team ranks the improvement items and limits them to its capacity. Trying to improve too many things and finishing none is much worse than completing a few.",
@@ -383,7 +383,7 @@
     "id": "q20",
     "q": "A flow-based team does not use iterations. When should it hold a retrospective?",
     "options": [
-      "Never, because retrospectives need iterations",
+      "Never, because a retrospective only makes sense at the end of an iteration",
       "After a release, when a few weeks have passed, or when work is stuck",
       "Only at the end of the project",
       "Only when the sponsor asks for one"
@@ -404,7 +404,7 @@
     "q": "How does a retrospective differ from a demonstration (review)?",
     "options": [
       "The retrospective is attended by customers; the demonstration is not",
-      "The retrospective happens before the iteration; the demonstration after",
+      "The retrospective happens before the iteration starts; the demonstration happens after",
       "There is no difference",
       "The retrospective examines how the team works; the demonstration examines the product"
     ],
