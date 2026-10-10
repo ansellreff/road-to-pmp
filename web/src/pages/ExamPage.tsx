@@ -6,7 +6,8 @@ import { QuestionView } from '../components/Quiz'
 import { getCourse, getExams, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
 import { breakLeftMs, countRight, elapsedMs, examKey, examLimitMs, formatClock, onBreak } from '../lib/exam'
 import { finishExam, moduleKey, updateExam, useProgress, type ExamRun } from '../lib/progress'
-import { btnPrimary, btnQuiet, link } from '../lib/ui'
+import { PageHeader, Waiting } from '../components/Page'
+import { btnPrimary, btnQuiet, column, link, note, sectionTitle, subTitle } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
 import { useNow } from '../lib/useNow'
 
@@ -70,7 +71,7 @@ function LoadedExam({ course, exam }: { course: Course; exam: Exam }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [expired])
 
-  if (!questions) return <p className="text-muted">Loading the exam</p>
+  if (!questions) return <Waiting>Loading the exam</Waiting>
 
   if (run) {
     if (expired) return null
@@ -83,9 +84,10 @@ function LoadedExam({ course, exam }: { course: Course; exam: Exam }) {
   if (attempt) return <ExamResult course={course} exam={exam} questions={questions} attempt={attempt} />
 
   return (
-    <div className="max-w-3xl">
-      <h1 className="title text-4xl">{exam.title}</h1>
-      <p className="mt-3 text-muted">You have not started this exam.</p>
+    <div className={column}>
+      <PageHeader back={{ to: `/${course.id}/exams`, label: 'Mock exams' }} title={exam.title}>
+        You have not started this exam.
+      </PageHeader>
       <Link to={`/${course.id}/exams`} className={`${btnPrimary} mt-5`}>
         Go to the mock exams
       </Link>
@@ -98,7 +100,7 @@ function ExamHeader({ exam, mode, leftMs, detail }: { exam: Exam; mode: string; 
   return (
     <div className="sticky top-0 z-10 -mx-4 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b-2 border-ink bg-paper px-4 py-3 sm:-mx-6 sm:px-6">
       <div>
-        <h1 className="title text-2xl">
+        <h1 className={subTitle}>
           {exam.title} <span className="text-base font-normal text-muted">{mode}</span>
         </h1>
         <p className="text-sm text-muted">{detail}</p>
@@ -145,14 +147,14 @@ function PracticeRun({ course, exam, questions, run, examKey: key, leftMs, submi
       if (unanswered === 0 || window.confirm(warning)) submit()
     }
     return (
-      <div className="max-w-3xl">
+      <div className={column}>
         <ExamHeader
           exam={exam}
           mode="Practice mode"
           leftMs={leftMs}
           detail={`${totalAnswered} of ${run.picks.length} answered`}
         />
-        <p className="mt-6 text-muted">
+        <p className="mt-6 text-lg leading-relaxed text-muted">
           Take the chapters in any order. Each answer is final, and its explanation appears straight away. The clock
           keeps running while you read.
         </p>
@@ -211,7 +213,7 @@ function PracticeRun({ course, exam, questions, run, examKey: key, leftMs, submi
   }
 
   return (
-    <div className="max-w-3xl">
+    <div className={column}>
       <ExamHeader
         exam={exam}
         mode="Practice mode"
@@ -257,11 +259,11 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
 
   if (onBreak(run, now)) {
     return (
-      <div className="max-w-3xl">
+      <div className={column}>
         <ExamHeader exam={exam} mode="Real exam mode" leftMs={leftMs} detail="Break. The exam clock is stopped." />
         <p className="title mt-8 text-5xl tabular-nums">{formatClock(breakLeftMs(run, now))}</p>
         <p className="mt-2 text-lg font-semibold">of your 10-minute break left</p>
-        <p className="mt-3 max-w-xl text-muted">
+        <p className="mt-3 max-w-xl text-lg leading-relaxed text-muted">
           Questions 1 to {halfSize} are locked and cannot be reopened. When the break ends, the exam clock starts again
           by itself, whether or not this page is open.
         </p>
@@ -300,7 +302,7 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
           <p className="text-sm font-medium text-muted">{label}</p>
           <div className="mt-2 flex flex-wrap gap-1.5">
             {items.map((i) => (
-              <button key={i} onClick={() => go(i)} className={`${btnQuiet} tabular-nums`}>
+              <button key={i} onClick={() => go(i)} className={`${btnQuiet} min-w-11 tabular-nums`}>
                 {i + 1}
               </button>
             ))}
@@ -308,12 +310,12 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
         </div>
       )
     return (
-      <div className="max-w-3xl">
+      <div className={column}>
         {header}
-        <h2 className="title mt-8 text-3xl">
+        <h2 className={`${sectionTitle} mt-8`}>
           {secondHalf ? 'Submit the exam?' : `Finish the first half?`}
         </h2>
-        <p className="mt-2 text-muted">
+        <p className="mt-2 text-lg leading-relaxed text-muted">
           {secondHalf
             ? 'After this you see your result. Unanswered questions count as wrong.'
             : `After this, questions 1 to ${halfSize} are locked for good and your 10-minute break starts.`}
@@ -356,7 +358,7 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
     }))
 
   return (
-    <div className="max-w-3xl">
+    <div className={column}>
       {header}
       <QuestionView
         key={position}
@@ -384,15 +386,15 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
         </button>
       </div>
 
-      <h2 className="mt-10 text-sm font-medium text-muted">
+      <h2 className={`${note} mt-10 font-medium`}>
         {secondHalf
           ? `Questions ${halfSize + 1} to ${total}. Questions 1 to ${halfSize} are locked.`
           : `Questions 1 to ${halfSize}. The second half opens after the break.`}
       </h2>
-      <ol className="mt-2 grid grid-cols-10 gap-1.5 sm:grid-cols-[repeat(15,minmax(0,1fr))]">
+      <ol className="mt-2 grid grid-cols-6 gap-1.5 sm:grid-cols-10 lg:grid-cols-[repeat(15,minmax(0,1fr))]">
         {positions.map((i) => {
           const isFlagged = run.flags.includes(i)
-          let style = run.picks[i] === null ? 'border-line bg-surface' : 'border-plan bg-plan-soft'
+          let style = run.picks[i] === null ? 'border-edge bg-surface' : 'border-plan bg-plan-soft font-semibold'
           if (isFlagged) style = 'border-milestone bg-milestone-soft'
           return (
             <li key={i}>
@@ -400,17 +402,18 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
                 onClick={() => go(i)}
                 aria-current={i === position}
                 aria-label={`Question ${i + 1}${run.picks[i] === null ? ', unanswered' : ', answered'}${isFlagged ? ', flagged' : ''}`}
-                className={`w-full rounded-md border py-1.5 text-sm tabular-nums hover:border-ink ${style} ${
+                className={`press min-h-11 w-full rounded-md border tabular-nums hover:border-ink ${style} ${
                   i === position ? 'ring-2 ring-ink' : ''
                 }`}
               >
                 {i + 1}
+                {isFlagged && <span aria-hidden="true"> ⚑</span>}
               </button>
             </li>
           )
         })}
       </ol>
-      <p className="mt-3 text-sm text-muted">Blue: answered. Amber: flagged. White: unanswered.</p>
+      <p className={`${note} mt-3`}>Filled blue: answered. Amber with a mark: flagged. Plain: unanswered.</p>
       {position + 1 < end && (
         <button onClick={() => setConfirming(true)} className={`${btnQuiet} mt-6`}>
           {finishLabel}

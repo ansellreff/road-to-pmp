@@ -79,6 +79,8 @@ A problem is **analyzed before it is acted on**. A problem is broken down into i
 | **Process flow** | Shows how the work is done today. A **value stream map** separates steps that add value from **waste**. |
 | **Capability table** | Lists each problem, its root causes, and the capability needed to address it |
 
+@diagram fishbone
+
 **SWOT analysis** looks at a situation from four sides:
 
 | | Helpful | Harmful |

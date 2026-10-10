@@ -1,5 +1,5 @@
 import { clearCards, clearQuiz, knownCount, moduleKey, setLessonDone, useProgress } from '../lib/progress'
-import { btnQuiet } from '../lib/ui'
+import { btnQuiet, column, note, section, subTitle } from '../lib/ui'
 
 const formatDate = (iso: string) => new Date(iso).toLocaleDateString(undefined, { dateStyle: 'medium' })
 
@@ -14,9 +14,9 @@ export default function ModuleProgress({ courseId, moduleId }: { courseId: strin
   const deckSize = progress.cardTotals[key]
 
   return (
-    <section className="mt-16 max-w-3xl border-t-2 border-ink pt-5">
-      <h2 className="title text-xl">Your progress in this module</h2>
-      <p className="mt-1 text-sm text-muted">Saved in this browser as you go. You can undo any of it here.</p>
+    <section className={`${section} ${column} mt-16`}>
+      <h2 className={subTitle}>Your progress in this module</h2>
+      <p className={`${note} mt-1`}>Saved in this browser as you go. You can undo any of it here.</p>
       <dl className="mt-3">
         <Row
           label="Lesson"

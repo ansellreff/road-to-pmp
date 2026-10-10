@@ -14,7 +14,7 @@ import {
   type Progress,
 } from '../lib/progress'
 import { courseCompletion, courseMissed, moduleNumber, nextModule, percent, remainingModules } from '../lib/stats'
-import { btnDanger, btnPrimary, btnQuiet, link } from '../lib/ui'
+import { btnDanger, btnPrimary, btnQuiet, link, note, pageTitle, section, sectionTitle } from '../lib/ui'
 
 // The planned order of certifications. One with content in src/content becomes a live course.
 const path = [
@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className="space-y-14">
       <section>
-        <h1 className="title text-4xl sm:text-5xl">Your certification path</h1>
+        <h1 className={pageTitle}>Your certification path</h1>
         <ol className="mt-8 grid grid-cols-4">
           {path.map((step, i) => {
             const course = courses.find((c) => c.id === step.id)
@@ -70,10 +70,10 @@ function Today({ course, progress }: { course: Course; progress: Progress }) {
   const examDate = progress.examDates[course.id]
   if (!examDate) {
     return (
-      <section className="flex flex-wrap items-center justify-between gap-4 border-t-2 border-ink pt-6">
+      <section className={`${section} flex flex-wrap items-center justify-between gap-4`}>
         <div>
-          <h2 className="title text-2xl">When is your {course.title} exam?</h2>
-          <p className="mt-1 max-w-xl text-sm text-muted">
+          <h2 className={sectionTitle}>When is your {course.title} exam?</h2>
+          <p className={`${note} mt-1 max-w-xl`}>
             Set the day and this page shows a countdown and what to study each day to be ready in time.
           </p>
         </div>
@@ -98,9 +98,9 @@ function Today({ course, progress }: { course: Course; progress: Progress }) {
   if (plan.daysLeft < 0) heading = `Your ${course.title} exam day has passed`
 
   return (
-    <section className="border-t-2 border-ink pt-6">
+    <section className={section}>
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
-        <h2 className="title text-2xl sm:text-3xl">{heading}</h2>
+        <h2 className={sectionTitle}>{heading}</h2>
         <Link to="/plan" className={`${link} text-sm`}>
           {plan.daysLeft < 0 ? 'Choose a new exam day' : `Exam on ${formatDay(examDate, now)}. See the full plan`}
         </Link>
@@ -113,7 +113,7 @@ function Today({ course, progress }: { course: Course; progress: Progress }) {
           </h3>
           <ul className="mt-2 divide-y divide-line border-y border-line">
             {modules.map(({ item, finishBy }) => (
-              <li key={item.id} className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
+              <li key={item.id} className="flex min-h-12 flex-wrap items-baseline justify-between gap-x-6 gap-y-1 py-3">
                 <Link to={`/${course.id}/${item.id}`} className={link}>
                   {moduleNumber(course, item.id)} {item.title}
                 </Link>
@@ -146,12 +146,12 @@ function Today({ course, progress }: { course: Course; progress: Progress }) {
 
 function DueCards({ due }: { due: number }) {
   return (
-    <section className="flex flex-wrap items-center justify-between gap-4 border-t-2 border-ink pt-6">
+    <section className={`${section} flex flex-wrap items-center justify-between gap-4`}>
       <div>
-        <h2 className="title text-2xl">
+        <h2 className={sectionTitle}>
           {due ? `${due} ${due === 1 ? 'flashcard is' : 'flashcards are'} due for review` : 'No flashcards due today'}
         </h2>
-        <p className="mt-1 max-w-xl text-sm text-muted">
+        <p className={`${note} mt-1 max-w-xl`}>
           Cards you know come back after 1, 3, 7, 14 and then 30 days. Cards you miss come back the same day.
         </p>
       </div>
@@ -170,8 +170,8 @@ function CourseSummary({ course, progress }: { course: Course; progress: Progres
   const next = nextModule(course, progress)
   const exams = getExams(course.id).length
   return (
-    <section className="border-t-2 border-ink pt-6">
-      <h2 className="title text-3xl">{course.title}</h2>
+    <section className={section}>
+      <h2 className={sectionTitle}>{course.title}</h2>
       <p className="text-muted">
         {course.subtitle}. {course.exam.questions} questions in {course.exam.minutes} minutes.
       </p>
@@ -235,9 +235,9 @@ function Backup() {
   }
 
   return (
-    <section className="border-t border-line pt-6">
-      <h2 className="title text-xl">Your saved progress</h2>
-      <p className="mt-1 max-w-2xl text-sm text-muted">
+    <section className={section}>
+      <h2 className={sectionTitle}>Your saved progress</h2>
+      <p className={`${note} mt-1 max-w-2xl`}>
         Progress saves automatically in this browser and stays after you close it. To use it on another device, download
         a backup here and restore it there.
       </p>

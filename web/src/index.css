@@ -5,24 +5,58 @@
 
 /* Design tokens. The look borrows from project schedules: plotter paper,
    navy ink, schedule blue for planned work, green for done, and critical-path
-   red reserved for mistakes. */
+   red reserved for mistakes. Nothing is pure white or pure black, so a
+   three-hour sitting does not glare. */
 @theme {
   --font-ui: "Archivo Variable", system-ui, sans-serif;
   --font-reading: "Literata Variable", Georgia, serif;
 
-  --color-paper: #f4f6f8;
-  --color-surface: #ffffff;
+  --color-paper: #f1f4f7;
+  --color-surface: #fbfcfd;
   --color-ink: #14213d;
-  --color-muted: #5b6b82;
-  --color-line: #d5dce5;
+  --color-muted: #55647a;
+  /* line divides content; edge outlines things you can press or type in. */
+  --color-line: #d0d8e2;
+  --color-edge: #7f8ea3;
   --color-plan: #2b4fd8;
+  --color-plan-strong: #1e3aa8;
   --color-plan-soft: #e6ebfb;
-  --color-done: #1b7f6b;
-  --color-done-soft: #e2f2ee;
-  --color-critical: #c81e3a;
+  --color-on-plan: #ffffff;
+  --color-done: #17705e;
+  --color-done-soft: #e0f1ec;
+  --color-critical: #b91c36;
   --color-critical-soft: #fbe7ea;
-  --color-milestone: #b97a00;
+  --color-milestone: #8f5f00;
   --color-milestone-soft: #fcf3dc;
+}
+
+/* The same schedule at night: deep navy paper, never black. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-paper: #101828;
+  --color-surface: #18233a;
+  --color-ink: #e6eaf2;
+  --color-muted: #a3afc4;
+  --color-line: #33415c;
+  --color-edge: #7786a3;
+  --color-plan: #8fa8ff;
+  --color-plan-strong: #b7c7ff;
+  --color-plan-soft: #1f2c56;
+  --color-on-plan: #0e1630;
+  --color-done: #5fd0b4;
+  --color-done-soft: #133a33;
+  --color-critical: #ff8a9a;
+  --color-critical-soft: #45202a;
+  --color-milestone: #e8b54d;
+  --color-milestone-soft: #3d3013;
+}
+
+/* Text size for long sittings. Everything is sized in rem, so the whole page follows. */
+:root[data-text="large"] {
+  font-size: 112.5%;
+}
+:root[data-text="larger"] {
+  font-size: 125%;
 }
 
 body {
@@ -42,10 +76,67 @@ body {
     @apply font-bold tracking-tight text-ink;
   }
 
-  /* Lesson text rendered from markdown */
+  /* Anything pressable: a short colour change and a one-pixel press. */
+  .press {
+    transition:
+      background-color 0.15s,
+      border-color 0.15s,
+      color 0.15s,
+      transform 0.05s;
+  }
+  .press:active:not(:disabled) {
+    transform: translateY(1px);
+  }
+
+  /* A bar that fills as work completes. */
+  .meter {
+    @apply block overflow-hidden rounded-[2px] bg-line;
+  }
+  .meter > span {
+    @apply block h-full bg-plan;
+    transition: width 0.4s ease-out;
+  }
+
+  /* Tables outside lessons: schedule, results, comparisons. */
+  .data-table {
+    @apply w-full border-collapse text-left;
+  }
+  .data-table th {
+    @apply border-b-2 border-ink py-2 pr-4 text-sm font-semibold;
+  }
+  .data-table td {
+    @apply border-b border-line py-3 pr-4 align-top;
+  }
+  .data-table th:last-child,
+  .data-table td:last-child {
+    @apply pr-0;
+  }
+  /* On a phone each row becomes a small block, each cell labelled by its column. */
+  @media (max-width: 639px) {
+    .data-table.stack thead {
+      @apply sr-only;
+    }
+    .data-table.stack tr {
+      @apply block border-b border-line py-3;
+    }
+    .data-table.stack td {
+      @apply block border-0 py-0.5 pr-0;
+    }
+    .data-table.stack td[data-label]::before {
+      content: attr(data-label) ": ";
+      @apply text-sm text-muted;
+    }
+  }
+
+  /* Lesson text rendered from markdown. Text keeps a reading width; tables may be wider. */
   .lesson {
     @apply font-reading text-[1.0625rem] leading-[1.75];
+  }
+  .lesson > * {
     max-width: 68ch;
+  }
+  .lesson > .wide {
+    max-width: none;
   }
   .lesson h2 {
     font-stretch: 88%;
@@ -81,7 +172,8 @@ body {
     @apply my-6 border-l-4 border-milestone bg-milestone-soft px-5 py-1;
   }
   .lesson table {
-    @apply my-6 w-full border-collapse font-ui text-sm leading-normal;
+    min-width: min(100%, 68ch);
+    @apply my-6 border-collapse font-ui text-[0.9375rem] leading-normal;
   }
   .lesson th {
     @apply border-b-2 border-ink px-3 py-2 text-left font-semibold;
@@ -89,11 +181,21 @@ body {
   .lesson td {
     @apply border-b border-line px-3 py-2.5 align-top;
   }
+  .lesson th:first-child,
+  .lesson td:first-child {
+    @apply pl-0;
+  }
   .lesson hr {
     @apply my-10 border-line;
   }
   .lesson hr + p {
     @apply font-ui text-sm text-muted;
+  }
+  .lesson figure {
+    @apply my-8;
+  }
+  .lesson figcaption {
+    @apply mt-2 font-ui text-sm leading-normal text-muted;
   }
 }
 
@@ -116,8 +218,13 @@ body {
 .flip-back {
   transform: rotateY(180deg);
 }
+
+/* No motion for people whose device asks for less of it. */
 @media (prefers-reduced-motion: reduce) {
-  .flip-inner {
-    transition: none;
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
   }
 }

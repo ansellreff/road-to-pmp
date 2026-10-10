@@ -1,4 +1,5 @@
-import { Link, NavLink, useParams } from 'react-router-dom'
+import { NavLink, useParams } from 'react-router-dom'
+import { PageHeader } from '../components/Page'
 import Flashcards from '../components/Flashcards'
 import Lesson from '../components/Lesson'
 import ModuleProgress from '../components/ModuleProgress'
@@ -8,7 +9,6 @@ import Quiz from '../components/Quiz'
 import ModuleSources from '../components/Sources'
 import { findModule, getCourse } from '../lib/content'
 import { moduleNumber } from '../lib/stats'
-import { link } from '../lib/ui'
 
 const tabs = [
   { id: 'lesson', label: 'Lesson' },
@@ -26,31 +26,32 @@ export default function ModulePage() {
 
   return (
     <div>
-      <Link to={`/${course.id}`} className={`${link} text-sm`}>
-        All {course.title} modules
-      </Link>
-      <p className="mt-4 text-sm text-muted">
-        Module {moduleNumber(course, module.id)} in {domain.title}
-      </p>
-      <h1 className="title mt-1 max-w-3xl text-3xl sm:text-4xl">
-        {module.title}
-        {module.supplementary && (
+      <PageHeader
+        long
+        back={{ to: `/${course.id}`, label: `All ${course.title} modules` }}
+        eyebrow={`Module ${moduleNumber(course, module.id)} in ${domain.title}`}
+        title={
           <>
-            {' '}
-            <ExamStar />
+            {module.title}
+            {module.supplementary && (
+              <>
+                {' '}
+                <ExamStar />
+              </>
+            )}
           </>
-        )}
-      </h1>
+        }
+      />
       {module.supplementary && <NotOnExamNote className="mt-2" />}
 
-      <nav className="mt-6 flex gap-6 border-b border-ink" aria-label="Module sections">
+      <nav className="mt-6 flex gap-6 overflow-x-auto border-b border-ink" aria-label="Module sections">
         {tabs.map((t) => (
           <NavLink
             key={t.id}
             to={t.id === 'lesson' ? base : `${base}/${t.id}`}
             end
             className={({ isActive }) =>
-              `title -mb-px border-b-4 pb-2 text-lg ${
+              `title press border-b-4 pt-2 pb-2 text-lg ${
                 isActive ? 'border-plan' : 'border-transparent font-medium text-muted hover:text-ink'
               }`
             }

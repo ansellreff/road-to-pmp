@@ -4,8 +4,9 @@ import { findModule, type Course, type Exam, type ExamQuestion } from '../lib/co
 import { BANDS, bandFor, domainScores, formatDuration } from '../lib/exam'
 import type { ExamAttempt } from '../lib/progress'
 import { moduleNumber, percent } from '../lib/stats'
-import { btnPrimary, btnQuiet, link } from '../lib/ui'
-import { QuestionView } from './Quiz'
+import { btnPrimary, btnQuiet, column, link, listTitle, note, subTitle } from '../lib/ui'
+import { PageHeader } from './Page'
+import { QuestionView, ScoreLine } from './Quiz'
 
 type Filter = 'missed' | 'flagged' | 'all'
 
@@ -31,55 +32,54 @@ export default function ExamResult(props: {
     filter === 'all' || (filter === 'missed' && !isRight(i)) || (filter === 'flagged' && attempt.flags.includes(i))
 
   return (
-    <div className="max-w-3xl">
-      <Link to={`/${course.id}/exams`} className={`${link} text-sm`}>
-        Mock exams
-      </Link>
-      <h1 className="title mt-3 text-4xl">{exam.title}: your result</h1>
-      <p className="mt-1 text-sm text-muted">
+    <div className={column}>
+      <PageHeader back={{ to: `/${course.id}/exams`, label: 'Mock exams' }} title={`${exam.title}: your result`} />
+      <p className={`${note} mt-2`}>
         {attempt.mode === 'practice' ? 'Practice mode' : 'Real exam mode'}, {new Date(attempt.date).toLocaleDateString()},{' '}
         {formatDuration(attempt.seconds)} of {formatDuration(course.exam.minutes * 60)} used
       </p>
 
-      <p className="title mt-6 text-5xl tabular-nums">
-        {attempt.right} of {attempt.total} correct
-      </p>
+      <ScoreLine right={attempt.right} total={attempt.total} />
       <p className="mt-2 text-lg font-semibold">
         {percent(attempt.right / attempt.total)} overall.{' '}
         {attempt.timedOut && 'Time ran out, so the exam was submitted as it stood. '}
         {unanswered > 0 && `${unanswered} ${unanswered === 1 ? 'question was' : 'questions were'} left unanswered and count as wrong.`}
       </p>
 
-      <table className="mt-8 w-full border-y-2 border-ink text-sm">
+      <table className="data-table stack mt-8">
         <thead>
-          <tr className="border-b border-line text-left">
-            <th className="py-2 pr-4 font-semibold">Domain</th>
-            <th className="py-2 pr-4 text-right font-semibold">Correct</th>
-            <th className="py-2 pr-4 text-right font-semibold">Score</th>
-            <th className="py-2 font-semibold">Rating</th>
+          <tr>
+            <th>Domain</th>
+            <th>Correct</th>
+            <th>Score</th>
+            <th>Rating</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-line">
+        <tbody>
           {scores.map((s) => {
             const band = bandFor(s.right / s.total)
             return (
               <tr key={s.domain}>
-                <td className="py-2 pr-4">
+                <td>
                   <a href={`#domain-${s.domain + 1}`} className={link}>
                     {s.domain + 1}. {course.domains[s.domain].title}
                   </a>
                 </td>
-                <td className="py-2 pr-4 text-right tabular-nums">
+                <td data-label="Correct" className="tabular-nums">
                   {s.right} of {s.total}
                 </td>
-                <td className="py-2 pr-4 text-right tabular-nums">{percent(s.right / s.total)}</td>
-                <td className={`py-2 font-semibold ${band.style}`}>{band.name}</td>
+                <td data-label="Score" className="tabular-nums">
+                  {percent(s.right / s.total)}
+                </td>
+                <td data-label="Rating" className={`font-semibold ${band.style}`}>
+                  {band.name}
+                </td>
               </tr>
             )
           })}
         </tbody>
       </table>
-      <p className="mt-3 text-sm text-muted">
+      <p className={`${note} mt-3`}>
         The real exam reports these four ratings per domain and no percentage. PMI does not publish the scores behind
         them, so the limits here are this platform's own:{' '}
         {BANDS.slice(0, -1)
@@ -97,15 +97,15 @@ export default function ExamResult(props: {
         </Link>
       </div>
 
-      <h2 className="title mt-12 border-b-2 border-ink pb-2 text-2xl">Review by domain</h2>
+      <h2 className={`${listTitle} mt-12`}>Review by domain</h2>
       <div className="mt-4 flex flex-wrap gap-2" role="group" aria-label="Which questions to show">
         {filters.map(([id, label, count]) => (
           <button
             key={id}
             onClick={() => setFilter(id)}
             aria-pressed={filter === id}
-            className={`rounded-md border px-3 py-1.5 text-sm font-medium ${
-              filter === id ? 'border-plan bg-plan-soft text-plan' : 'border-line bg-surface hover:border-ink'
+            className={`press min-h-11 rounded-md border px-3 py-1.5 font-medium ${
+              filter === id ? 'border-plan bg-plan-soft text-plan ring-1 ring-plan' : 'border-edge bg-surface hover:border-ink'
             }`}
           >
             {label} ({count})
@@ -117,7 +117,7 @@ export default function ExamResult(props: {
         const positions = questions.flatMap((q, i) => (q.domain === s.domain && shown(i) ? [i] : []))
         return (
           <section key={s.domain} id={`domain-${s.domain + 1}`} className="mt-10 scroll-mt-4">
-            <h3 className="title text-xl">
+            <h3 className={subTitle}>
               Domain {s.domain + 1}: {course.domains[s.domain].title}
             </h3>
             <p className="text-sm text-muted">

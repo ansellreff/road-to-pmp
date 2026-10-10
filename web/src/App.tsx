@@ -1,4 +1,5 @@
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
+import DisplayControls from './components/DisplayControls'
 import Milestone from './components/Milestone'
 import NotFound from './components/NotFound'
 import Home from './pages/Home'
@@ -11,32 +12,40 @@ import PlanPage from './pages/PlanPage'
 import PracticePage from './pages/PracticePage'
 import ReviewPage from './pages/ReviewPage'
 
+const pages = [
+  { to: '/plan', label: 'Study plan' },
+  { to: '/capm/exams', label: 'Mock exams' },
+  { to: '/dashboard', label: 'Dashboard' },
+  { to: '/practice', label: 'Practice' },
+  { to: '/review', label: 'Review cards' },
+]
+
 // The current page's link is underlined in the plan colour.
 const navStyle = ({ isActive }: { isActive: boolean }) =>
-  `border-b-2 pb-0.5 hover:border-ink ${isActive ? 'border-plan text-plan' : 'border-transparent'}`
+  `press whitespace-nowrap border-b-2 py-2 hover:border-ink ${isActive ? 'border-plan text-plan' : 'border-transparent'}`
 
 export default function App() {
   return (
     <div className="min-h-screen">
       <header className="border-b border-ink bg-surface">
-        <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-          <Link to="/" className="title flex items-center gap-2 text-xl">
+        {/* On a phone the page links sit on a second row that scrolls sideways; nothing hides in a menu. */}
+        <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-x-6 px-4 pt-2 sm:px-6 lg:py-1">
+          <Link to="/" className="title flex items-center gap-2 py-2 text-xl">
             <Milestone value={1} size={20} />
             Road to PMI
           </Link>
-          <nav className="flex gap-5 text-sm font-medium">
-            <NavLink to="/plan" className={navStyle}>
-              Study plan
-            </NavLink>
-            <NavLink to="/capm/exams" className={navStyle}>
-              Mock exams
-            </NavLink>
-            <NavLink to="/dashboard" className={navStyle}>
-              Dashboard
-            </NavLink>
-            <NavLink to="/review" className={navStyle}>
-              Review cards
-            </NavLink>
+          <div className="ml-auto lg:order-3 lg:ml-0">
+            <DisplayControls />
+          </div>
+          <nav
+            className="-mx-4 flex w-[calc(100%+2rem)] gap-5 overflow-x-auto px-4 font-medium sm:mx-0 sm:w-full sm:px-0 lg:ml-auto lg:w-auto"
+            aria-label="Pages"
+          >
+            {pages.map((page) => (
+              <NavLink key={page.to} to={page.to} className={navStyle}>
+                {page.label}
+              </NavLink>
+            ))}
           </nav>
         </div>
       </header>

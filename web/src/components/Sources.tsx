@@ -1,5 +1,5 @@
 import { books, loadSources, type SourceLink } from '../lib/content'
-import { link } from '../lib/ui'
+import { column, link, note, section, subTitle } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
 
 // The PDFs are served only by the local dev server (see vite.config.ts). They are
@@ -70,9 +70,9 @@ export default function ModuleSources({ courseId, moduleId }: { courseId: string
   const sources = useLoaded(() => loadSources(courseId, moduleId))
   if (!sources?.length) return null
   return (
-    <section className="mt-10 max-w-3xl border-t border-line pt-5">
-      <h2 className="title text-xl">Sources for this module</h2>
-      <p className="mt-1 text-sm text-muted">
+    <section className={`${section} ${column} mt-16`}>
+      <h2 className={subTitle}>Sources for this module</h2>
+      <p className={`${note} mt-1`}>
         {canOpenBooks
           ? 'Each link opens the PDF from your PMI Learning Material folder in a new tab, at the page where that section starts.'
           : 'The PDFs open only when you run the platform on your own PC. They are not uploaded to the website.'}

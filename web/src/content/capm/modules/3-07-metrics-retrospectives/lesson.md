@@ -73,6 +73,8 @@ Three ways velocity is misused:
 - Actual line **below** the ideal line: the team is **ahead**.
 - A **flat** actual line: nothing is being finished. Look for an impediment.
 
+@diagram burndown-chart
+
 **Reading a burnup chart.** There are two lines: total scope across the top, and completed work rising from zero. The gap between them is the work left. If the scope line steps up from 120 to 135 points, scope was **added**. A burndown chart would hide that.
 
 ## Flow metrics
@@ -109,6 +111,8 @@ A **cumulative flow diagram (CFD)** plots the number of items in each state (for
 | **Slope** of the done line | **Throughput** |
 | A band that keeps getting **wider** | A **bottleneck**: work enters that state faster than it leaves |
 | Bands rising in parallel | Smooth, steady flow |
+
+@diagram cumulative-flow-diagram
 
 ## Measuring value and outcomes
 

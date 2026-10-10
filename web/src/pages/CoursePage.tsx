@@ -6,7 +6,8 @@ import NotOnExamNote, { ExamStar } from '../components/NotOnExam'
 import { getCourse } from '../lib/content'
 import { moduleCompletion, moduleKey, useProgress } from '../lib/progress'
 import { percent } from '../lib/stats'
-import { link } from '../lib/ui'
+import { PageHeader } from '../components/Page'
+import { link, sectionTitle } from '../lib/ui'
 
 function status(value: number): string {
   if (value >= 1) return 'Complete'
@@ -22,13 +23,12 @@ export default function CoursePage() {
 
   return (
     <div>
-      <Link to="/" className={`${link} text-sm`}>
-        Your certification path
-      </Link>
-      <h1 className="title mt-3 text-4xl sm:text-5xl">{course.title}</h1>
-      <p className="mt-1 text-muted">
-        {course.subtitle}. {course.exam.questions} questions in {course.exam.minutes} minutes.
-      </p>
+      <PageHeader back={{ to: '/', label: 'Your certification path' }} title={course.title}>
+        {course.subtitle}. {course.exam.questions} questions in {course.exam.minutes} minutes.{' '}
+        <Link to={`/${course.id}/exams`} className={link}>
+          Mock exams
+        </Link>
+      </PageHeader>
       <div className="mt-8">
         <ExamBlueprint course={course} progress={progress} />
       </div>
@@ -37,7 +37,7 @@ export default function CoursePage() {
         {course.domains.map((domain, i) => (
           <section key={domain.id} id={domain.id} className="scroll-mt-6">
             <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b-2 border-ink pb-2">
-              <h2 className="title text-2xl">
+              <h2 className={sectionTitle}>
                 Domain {i + 1}: {domain.title}
               </h2>
               <p className="text-sm text-muted">
@@ -50,7 +50,7 @@ export default function CoursePage() {
                 return (
                   <li
                     key={m.id}
-                    className="relative grid grid-cols-[1.5rem_2.75rem_1fr] items-center gap-x-2 border-b border-line py-3 before:absolute before:top-0 before:bottom-0 before:left-[8.5px] before:w-px before:bg-line first:before:top-1/2 last:before:bottom-1/2 sm:grid-cols-[1.5rem_2.75rem_1fr_auto]"
+                    className="relative grid min-h-12 grid-cols-[1.5rem_2.75rem_1fr] items-center gap-x-2 border-b border-line py-3 before:absolute before:top-0 before:bottom-0 before:left-[8.5px] before:w-px before:bg-line first:before:top-1/2 last:before:bottom-1/2 sm:grid-cols-[1.5rem_2.75rem_1fr_auto]"
                   >
                     <span className="relative">
                       <Milestone value={value} planned={!m.ready} />
@@ -60,7 +60,10 @@ export default function CoursePage() {
                     </span>
                     <span>
                       {m.ready ? (
-                        <Link to={`/${course.id}/${m.id}`} className="font-semibold hover:text-plan hover:underline">
+                        <Link
+                          to={`/${course.id}/${m.id}`}
+                          className="press font-semibold underline-offset-4 hover:text-plan hover:underline"
+                        >
                           {m.title}
                         </Link>
                       ) : (

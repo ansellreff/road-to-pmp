@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import FlipCard, { describeDue, RateButtons } from '../components/FlipCard'
+import { Notice, PageHeader, Waiting } from '../components/Page'
 import { allModules, courses, loadCards, type Card } from '../lib/content'
 import { isDue, moduleKey, rateCard, useProgress } from '../lib/progress'
 import { moduleNumber } from '../lib/stats'
-import { link } from '../lib/ui'
+import { column, link } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
 
 interface ReviewItem {
@@ -48,7 +49,7 @@ export default function ReviewPage() {
     }
   }, [everyCard, queue, progress])
 
-  if (!queue) return <p className="text-muted">Collecting the cards that are due</p>
+  if (!queue) return <Waiting>Collecting the cards that are due</Waiting>
 
   const item = queue[0]
 
@@ -67,29 +68,23 @@ export default function ReviewPage() {
     .sort()[0]
 
   return (
-    <div className="max-w-2xl">
-      <Link to="/" className={`${link} text-sm`}>
-        Your certification path
-      </Link>
-      <h1 className="title mt-3 text-4xl">Review due cards</h1>
+    <div className={column}>
+      <PageHeader back={{ to: '/', label: 'Your certification path' }} title="Review due cards">
+        {item
+          ? `${queue.length} ${queue.length === 1 ? 'card' : 'cards'} left in this session. Cards you know move to a longer interval; cards you miss come round again.`
+          : undefined}
+      </PageHeader>
 
       {!item ? (
-        <div className="mt-6 rounded-xl border border-done bg-done-soft p-8">
-          <p className="title text-2xl">
-            {reviewed ? 'Review finished. No more cards are due.' : 'No cards are due right now.'}
-          </p>
-          <p className="mt-1 text-muted">
+        <div className="mt-6">
+          <Notice title={reviewed ? 'Review finished. No more cards are due.' : 'No cards are due right now.'}>
             {upcoming
               ? `Your next card is due ${describeDue(upcoming)}.`
               : 'Cards appear here after you rate them in a module’s Flashcards tab.'}
-          </p>
+          </Notice>
         </div>
       ) : (
         <>
-          <p className="mt-2 text-muted">
-            {queue.length} {queue.length === 1 ? 'card' : 'cards'} left in this session. Cards you know move to a
-            longer interval; cards you miss come round again.
-          </p>
           <div className="mt-6">
             <FlipCard
               front={item.card.front}

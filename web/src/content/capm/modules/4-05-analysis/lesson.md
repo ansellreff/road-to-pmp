@@ -69,6 +69,8 @@ Why model?
 | **Organizational chart** | The reporting structure, used to find who will **use or be affected by** the solution |
 | **Use case diagram** | The **users (actors)** and the use cases that are in scope |
 
+@diagram context-diagram
+
 ## Process models: flows, use cases and user stories
 
 @source PMI Guide to Business Analysis, 7.2.2.12; PMI Guide to Business Analysis, 7.3.2.8; PMI Guide to Business Analysis, 7.3.2.9
@@ -78,6 +80,8 @@ Why model?
 | **Process flow** | A picture of the **steps people take** in their work or with the solution. Also called a **swim lane diagram**, process map or flow chart. A level 1 flow shows a whole process in about seven to ten steps. |
 | **Use case** | A **text narrative** of the interaction between a user and the system to reach a **goal**. Has a **normal flow** plus **alternative** and **exception** flows. |
 | **User story** | A requirement written from the **user's point of view**, focused on the benefit to the user |
+
+@diagram process-flow
 
 **User story format:** "As an **(actor)**, I want to **(function)**, so that I can **(business reason)**."
 
@@ -113,6 +117,10 @@ Why model?
 | **Data flow diagram** | How data **moves** between external entities, data stores and processes |
 | **Data dictionary** | The **fields** of a data object and their attributes |
 | **State table / state diagram** | The valid **states** of an object and the allowed moves between them, for example order placed, paid, shipped, delivered |
+
+@diagram entity-relationship-diagram
+
+@diagram state-diagram
 
 **Interface models:**
 

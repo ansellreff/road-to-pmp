@@ -48,7 +48,9 @@ export const BANDS = [
   { name: 'Needs Improvement', from: 0, style: 'text-critical' },
 ]
 
-export const bandFor = (share: number) => BANDS.find((b) => share >= b.from) ?? BANDS[BANDS.length - 1]
+// Judged on the whole percentage that is shown, so "65%" is never rated as below a 65% limit.
+export const bandFor = (share: number) =>
+  BANDS.find((b) => Math.round(share * 100) >= b.from * 100) ?? BANDS[BANDS.length - 1]
 
 export interface DomainScore {
   domain: number

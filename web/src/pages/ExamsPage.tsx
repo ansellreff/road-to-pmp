@@ -4,7 +4,8 @@ import { getCourse, getExams, type Course, type Exam } from '../lib/content'
 import { elapsedMs, examKey, examLimitMs, formatClock, formatDuration, lastAttempt } from '../lib/exam'
 import { abandonExam, moduleKey, startExam, useProgress, type ExamMode, type Progress } from '../lib/progress'
 import { percent } from '../lib/stats'
-import { btnDanger, btnPrimary, btnQuiet, link } from '../lib/ui'
+import { PageHeader } from '../components/Page'
+import { btnDanger, btnPrimary, btnQuiet, column, link, note, section, sectionTitle } from '../lib/ui'
 import { useNow } from '../lib/useNow'
 
 const modeName: Record<ExamMode, string> = { practice: 'Practice mode', real: 'Real exam mode' }
@@ -20,25 +21,23 @@ export default function ExamsPage() {
     .join(' / ')
 
   return (
-    <div className="max-w-3xl">
-      <Link to={`/${course.id}`} className={`${link} text-sm`}>
-        {course.title}
-      </Link>
-      <h1 className="title mt-3 text-4xl">Mock exams</h1>
-      <p className="mt-3 text-muted">
+    <div className={column}>
+      <PageHeader back={{ to: `/${course.id}`, label: `All ${course.title} modules` }} title="Mock exams">
         Each mock exam has {course.exam.questions} questions in {course.exam.minutes} minutes, split {split} across the{' '}
         {course.domains.length} domains like the real exam. No question appears in two mock exams.
-      </p>
+      </PageHeader>
 
-      <table className="mt-6 w-full border-y-2 border-ink text-sm">
+      <table className="data-table stack mt-8">
         <thead>
-          <tr className="border-b border-line text-left">
-            <th className="py-2 pr-4 font-semibold"></th>
-            <th className="py-2 pr-4 font-semibold">Practice mode</th>
-            <th className="py-2 font-semibold">Real exam mode</th>
+          <tr>
+            <th>
+              <span className="sr-only">What differs</span>
+            </th>
+            <th>Practice mode</th>
+            <th>Real exam mode</th>
           </tr>
         </thead>
-        <tbody className="divide-y divide-line align-top">
+        <tbody>
           {[
             ['Order', 'One chapter per domain', 'All domains mixed'],
             ['Feedback', 'Explanation and book page after each answer', 'Nothing until you submit'],
@@ -46,14 +45,14 @@ export default function ExamsPage() {
             ['Going back', 'No, each answer is final', 'Yes, within the current half; you can flag questions'],
           ].map(([label, practice, real]) => (
             <tr key={label}>
-              <th className="py-2 pr-4 text-left font-medium text-muted">{label}</th>
-              <td className="py-2 pr-4">{practice}</td>
-              <td className="py-2">{real}</td>
+              <td className="font-semibold">{label}</td>
+              <td data-label="Practice mode">{practice}</td>
+              <td data-label="Real exam mode">{real}</td>
             </tr>
           ))}
         </tbody>
       </table>
-      <p className="mt-3 text-sm text-muted">
+      <p className={`${note} mt-3`}>
         In both modes the {course.exam.minutes / 60}-hour clock starts when you start and keeps running if you close the
         page. When it runs out, the exam is submitted with the answers given so far.
       </p>
@@ -89,10 +88,10 @@ function ExamRow({ course, exam, progress }: { course: Course; exam: Exam; progr
   const left = run ? examLimitMs(course) - elapsedMs(run, now) : 0
 
   return (
-    <section className="mt-8 border-t-2 border-ink pt-5">
-      <h2 className="title text-2xl">{exam.title}</h2>
+    <section className={`${section} mt-10`}>
+      <h2 className={sectionTitle}>{exam.title}</h2>
       {exam.unseen && (
-        <p className="mt-1 text-sm text-muted">
+        <p className={`${note} mt-1`}>
           Kept for last: these questions are in no module quiz.{' '}
           {seen === 0
             ? 'You have not seen any of them yet.'
@@ -128,7 +127,7 @@ function ExamRow({ course, exam, progress }: { course: Course; exam: Exam; progr
       )}
 
       {record?.attempts.length ? (
-        <ul className="mt-4 space-y-1 text-sm">
+        <ul className="mt-4 space-y-1.5 text-sm leading-relaxed">
           {(['practice', 'real'] as ExamMode[]).map((mode) => {
             const attempt = lastAttempt(record.attempts, mode)
             if (!attempt) return null

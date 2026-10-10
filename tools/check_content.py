@@ -18,6 +18,10 @@ SUMMARY_SECTION = re.compile(r"Key points|Exam tips|How to handle it in the exam
 # A quiz where the correct answer is usually the longest option can be passed by
 # test-taking skill alone. With four options, chance is 25%.
 LONGEST_LIMIT = 0.35
+# Drawings a lesson may place with "@diagram name": the names registered in the app.
+_registry = (CONTENT.parent / "components" / "diagrams" / "index.tsx").read_text(encoding="utf-8").split("export const diagrams")[-1]
+DIAGRAMS = set(re.findall(r"^\s+'?([\w-]+)'?:", _registry, re.MULTILINE))
+
 # Questions a module quiz must keep after some are reserved for the unseen mock exam.
 MIN_MODULE_QUIZ = 10
 CATCH_ALL = re.compile(r"^(all|none|both) of (the|these)|^both [a-d] and [a-d]\b|all of the above|none of the above", re.IGNORECASE)
@@ -43,6 +47,12 @@ def check_markup(path: Path, lesson: str, problems: list[str]) -> None:
     for i, line in enumerate(lines):
         if line.startswith("@source ") and not (i >= 2 and lines[i - 1] == "" and lines[i - 2].startswith(("## ", "### "))):
             problems.append(f"{path}: @source on line {i + 1} is not directly under a section heading")
+        if line.startswith("@diagram "):
+            name = line[9:].strip()
+            if name not in DIAGRAMS:
+                problems.append(f"{path}: line {i + 1} asks for a diagram that does not exist: {name}")
+            if not (lines[i - 1] == "" and (i + 1 == len(lines) or lines[i + 1] == "")):
+                problems.append(f"{path}: @diagram on line {i + 1} needs an empty line before and after it")
         if line.count("**") % 2:
             problems.append(f"{path}: unbalanced ** on line {i + 1}")
 

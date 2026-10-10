@@ -1,9 +1,10 @@
 import { useState } from 'react'
 import { loadCards } from '../lib/content'
 import { isKnown, moduleKey, rateCard, useProgress } from '../lib/progress'
-import { btnQuiet } from '../lib/ui'
+import { btnQuiet, column } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
 import FlipCard, { describeDue, RateButtons } from './FlipCard'
+import { Notice, Waiting } from './Page'
 
 export default function Flashcards({ courseId, moduleId }: { courseId: string; moduleId: string }) {
   const cards = useLoaded(() => loadCards(courseId, moduleId))
@@ -13,8 +14,8 @@ export default function Flashcards({ courseId, moduleId }: { courseId: string; m
   const [flipped, setFlipped] = useState(false)
   const [onlyLearning, setOnlyLearning] = useState(false)
 
-  if (!cards) return <p className="text-muted">Loading the flashcards</p>
-  if (!cards.length) return <p className="text-muted">This module has no flashcards yet.</p>
+  if (!cards) return <Waiting>Loading the flashcards</Waiting>
+  if (!cards.length) return <Waiting>This module has no flashcards yet.</Waiting>
 
   const known = cards.filter((c) => isKnown(states[c.id])).length
   const deck = onlyLearning ? cards.filter((c) => !isKnown(states[c.id])) : cards
@@ -36,15 +37,15 @@ export default function Flashcards({ courseId, moduleId }: { courseId: string; m
   }
 
   return (
-    <div className="max-w-2xl">
+    <div className={column}>
       <div className="mb-4 flex flex-wrap items-center justify-between gap-2 text-sm">
         <span className="text-muted">
           You know {known} of {cards.length} cards
         </span>
-        <label className="flex cursor-pointer items-center gap-2">
+        <label className="flex min-h-11 cursor-pointer items-center gap-2">
           <input
             type="checkbox"
-            className="size-4 accent-plan"
+            className="size-5 accent-plan"
             checked={onlyLearning}
             onChange={(e) => {
               setOnlyLearning(e.target.checked)
@@ -57,12 +58,9 @@ export default function Flashcards({ courseId, moduleId }: { courseId: string; m
       </div>
 
       {!card ? (
-        <div className="rounded-xl border border-done bg-done-soft p-8">
-          <p className="title text-2xl">You know every card in this module.</p>
-          <p className="mt-1 text-muted">
-            They will come back for review on their scheduled days. Untick the box above to browse the whole deck.
-          </p>
-        </div>
+        <Notice title="You know every card in this module.">
+          They will come back for review on their scheduled days. Untick the box above to browse the whole deck.
+        </Notice>
       ) : (
         <>
           <FlipCard

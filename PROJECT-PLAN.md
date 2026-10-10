@@ -48,6 +48,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | **Session 25c done: quiz repair.** One wrong option was rewritten in 250 questions so the right answer no longer stands out by length: the share where it is the longest option fell from 58% to 27% (chance is 25%), and all 39 quizzes are under the 35% limit. The 5 duplicated questions were reworded as scenarios, and 6 scenario questions were added to Domain 4. **833 questions**: 219 / 278 / 174 / 162 per domain, enough for four mock exams (216 / 104 / 120 / 160). Issue 71 added. | Next: Session 25d |
 | 2026-10-10 | **Session 25d done, which completes Session 25.** Domain 3 now has the 2017 Agile Practice Guide's terms (servant leadership, daily standup, team facilitator) and three new sections: pros and cons of adaptive and predictive, what helps or hinders agile in an organization, and iterations with the WBS-to-backlog mapping. Domain 4 has the practice guide's five domains, a section on communication between teams, and one on which features go into which release. **CAPM: 39 modules, 840 questions, 1,208 flashcards.** Outline coverage: 59 of 60 points. No further PDFs are needed. Issues 72 and 73 added. | You: study modules 1.11 and 1.12 first; they are the exam's own framework. Next: Session 26, the mock exams, starting in plan mode |
 | 2026-10-10 | **Session 26 done: mock exams.** Four fixed mock exams of 150 questions (54 / 26 / 30 / 40 by domain), each in practice mode (one chapter per domain, explanation after each answer) or real exam mode (mixed order, two halves of 75, 10-minute break, flagging, nothing marked until the end). Strict 3-hour clock in both. Result per domain with a rating, then a review by domain. Mock exam 4 is kept unseen: its 150 questions are out of the module quizzes, which now hold 690. | You: try Mock exam 1 in practice mode, then a few questions in real exam mode, and report anything odd. Next: Session 27 (UI/UX polish) |
+| 2026-10-10 | **Session 27 done: UI/UX polish on every page.** Dark theme and a text size control in the top bar; larger question text, bigger buttons and softer colours for long sittings; one shared set of headings, buttons, tables and notices used by all pages; phone layout; redesigned Dashboard (domain chart, 14-day activity, mock exam results), Practice (choose a domain, progress track, list of questions missed again) and Study plan (timeline, schedule by week); wide lesson tables; seven drawn diagrams in modules 3.7, 4.2 and 4.5. | You: try the Dark switch and the three A buttons, open one page on your phone if it can reach this PC, and tell me anything that still looks off. Next: Session 28 (go online) |
 
 ## How your progress is saved
 
@@ -143,21 +144,16 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 25c | Quiz repair: remove the longest-answer give-away in all quizzes, remove duplicates, top up Domain 1, add scenario questions |
 | ✅ | 25d | Exam alignment of Domains 3 and 4 (2017 Agile Practice Guide, Business Analysis for Practitioners); final list of PDFs; close the edition question |
 | ✅ | 26 | Feature: mock exams. Four fixed exams, practice mode and real exam mode, strict clock, result and review per domain, Mock exam 4 unseen. Built by `tools/build_exams.py`; details under "Session 26: mock exams as built". |
-| ⬜ | 27 | UI/UX polish (see backlog below) |
+| ✅ | 27 | UI/UX polish on every page: dark theme, text size control, reading comfort, shared styles, phone layout, redesigned Dashboard, Practice and Study plan, wide tables, seven diagrams. Details under "Session 27: the look and feel as built". |
 | ⬜ | 28 | Go online: GitHub and Vercel, test on phone |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 
-### UI/UX backlog (for Session 27)
+### UI/UX backlog
 
-- Dark mode
-- More interactive buttons and feedback
-- Phone-width layout check
-- **Dashboard and Practice pages look raw and unpolished** (your feedback, 2026-10-10, after trying them). They work; redesign them properly: stronger visual hierarchy, a real chart for domain progress instead of a plain table, better spacing, and a more finished practice flow
-- Wide lesson tables (for example the 40-process table in module 1.8) are cramped in the reading column: let wide tables use the full page width
+All items collected up to Session 27 are done (see "Session 27: the look and feel as built"). Add new ideas here as they come up.
 
-Add ideas here as they come up.
-- Drawn examples of the main business analysis models in module 4.5 (context diagram, process flow, entity relationship diagram, state diagram, fishbone diagram), and of the burndown chart and cumulative flow diagram in module 3.7. The lessons describe them in words only.
+- Not done: drawn examples of the other models named in module 4.5 (ecosystem map, feature model, use case diagram, decision tree, data flow diagram, wireframe) and a burnup chart in module 3.7. Say if you want them.
 
 ## Milestones
 
@@ -345,6 +341,48 @@ Built on 2026-10-10 from the plan you approved.
 - **Mock exam 4** is unseen only for module quizzes you had not taken before 2026-10-10. The list shows how many of its questions you have already answered.
 - **Assumptions to confirm:** the break does not use exam time (PMI's outline does not say); practice mode runs on the same strict clock, so reading explanations uses time.
 - **Not included:** drag-and-drop, hot spot and comic-strip questions. Every question is multiple choice.
+
+## Session 27: the look and feel as built
+
+Built on 2026-10-10. The identity is unchanged (the project schedule look); it is now finished and the same on every page.
+
+**Reading comfort for a three-hour sitting**
+- No pure white and no pure black in either theme. Light: off-white paper, navy text. Dark: deep navy, off-white text.
+- Question text is 20 px and option text 18 px with open line spacing; a line is about 75 characters at most.
+- Every button, option and grid cell is at least 44 px tall.
+- Right and wrong are shown by a word and a mark (✓ Correct answer, ✗ Your answer, "Not correct. The right answer is B.") as well as by colour. A flagged question carries a ⚑.
+- The exam screen has no animation except the clock, which turns red once, in the last ten minutes.
+- All motion is switched off when the device asks for reduced motion.
+
+**Display controls (top bar)**
+- **Dark / Light** switch. The first visit follows the device's own setting; after that your choice is kept.
+- **Three A buttons** for normal, large and larger text. The whole page scales.
+- Both are remembered in the browser, separately from study progress, so a backup restored on another device does not change how it looks there.
+
+**One shared set of styles**
+- Colours: 16 named tokens in `web/src/index.css`, each with a light and a dark value. `tools/check_contrast.py` checks 27 text and outline pairs in both themes against WCAG AA; all pass.
+- Buttons, links, heading sizes, section rules and notes: `web/src/lib/ui.ts`.
+- Page heading, headline figures, notices, progress bars: `web/src/components/Page.tsx`.
+- Tables outside lessons use one style (`data-table`) and turn into labelled rows on a phone.
+- To change how something looks everywhere, change it in those three files.
+
+**Phone**
+- The page links sit on a second row that scrolls sideways; nothing is hidden behind a menu.
+- Tables stack, the mock exam grid has 6 columns, and diagrams keep a readable size and scroll sideways instead of shrinking.
+
+**Redesigned pages**
+- **Dashboard:** a chart with one row per domain on a shared 0 to 100% scale, the 70% target drawn through, quiz average as the thick bar and completion as the thin one; a 14-day activity strip; the latest result of each mock exam with a rating per domain.
+- **Practice:** choose all missed questions or one domain; the same progress track as a module quiz; a running score; at the end, the questions missed again with links to their modules.
+- **Study plan:** a timeline from today to the exam drawn to scale (study, final review, exam); the schedule grouped by week with this week open; the final review names the mock exams.
+
+**Lessons**
+- Text stays at reading width; a table may use the full page width.
+- Seven diagrams, drawn as original examples (a clinic's booking system and an online order), not copies of the books' figures: context diagram, process flow with swim lanes, entity relationship diagram and state diagram in module 4.5; fishbone diagram in module 4.2; burndown chart and cumulative flow diagram in module 3.7. The burndown chart uses the numbers of the lesson's own table.
+- A lesson places a diagram with a line `@diagram name`. The checker fails on an unknown name.
+
+**Checked by screenshot** (sample progress, headless browser): dashboard, study plan, practice start, quiz, course, flashcards, lesson 4.5 and all seven diagrams, mock exam list, real exam mode and result; in light or dark, and home, dashboard, exam list, real exam mode and result at a 390 px phone width.
+
+**Not checked:** clicking, hover and pressed states, a real phone, and these screens as pictures: review cards, page not found, a practice session in progress, practice mode and the break in a mock exam. They use the same shared parts as the pages that were viewed.
 
 ## Session 25a audit results
 
@@ -575,3 +613,19 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 79 | The headless browser cannot click, so these were not exercised: answering a question in practice mode and seeing its explanation, flagging, moving with the grid, the two confirmation screens, and submitting by hand. | Checked by screenshot or page text from saved states: the list, practice chapters, real mode with flags, the break, the second half, and time running out. Scoring was checked against a run with a known result (52, 13, 0, 0 right per domain, 5 unanswered). The rest needs you to try it. | Status log |
 | 80 | Mock exam 4 cannot be fully unseen if you already took module quizzes containing its questions. | The list shows how many of its 150 questions you have answered before. | `web/src/pages/ExamsPage.tsx` |
 | 81 | Two facts the exam outline does not give: the scores behind PMI's four ratings, and whether the clock runs during the break. | Ratings use this platform's own limits and the result page says so. The break is not taken out of exam time. | `web/src/lib/exam.ts` |
+
+### Look and feel (Session 27)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 82 | You added two requirements when approving the plan: comfortable to read for three hours, and every page changed so nothing is inconsistent. | Styles were moved into one shared layer first, then every page was moved onto it. Reading comfort rules are listed under "Session 27: the look and feel as built". | `web/src/index.css`, `web/src/lib/ui.ts`, `web/src/components/Page.tsx` |
+| 83 | The grey used for dividing lines is too faint to outline a button or an option (about 1.4:1 against the page; 3:1 is the accepted minimum for controls). | A second, darker outline colour ("edge") is used for anything you can press or type in. Dividers keep the faint one. | `web/src/index.css` |
+| 84 | On the dashboard chart the 70% target line ran down through the text under the bars. | Seen on the first screenshot. The line now spans only the two bars. | `web/src/pages/DashboardPage.tsx` |
+| 85 | Secondary buttons came out bold, because the shared button style and the quiet style each set a weight. | The weight is now set once per button kind. | `web/src/lib/ui.ts` |
+| 86 | A mock exam domain at 64.8% was shown as "65%" but rated "Below Target", against a limit stated as 65%. | The rating is now judged on the whole percentage that is displayed. | `bandFor` in `web/src/lib/exam.ts` |
+| 87 | After I removed a temporary test page, two lines of `App.tsx` were joined and the app showed an error screen. | Caught on the next screenshot, which showed the error instead of the page. Fixed, and the build was re-run. | `web/src/App.tsx` |
+| 88 | The screenshot tool cannot render narrower than about 500 px (issue 39), so phone layout could not be checked directly. | The page is loaded inside a 390 px frame on a temporary test page and that is screenshotted. The frame's width drives the phone layout rules, so this is a true check of layout, though not of touch. | Status log |
+| 89 | The flashcard and review pages used a narrower column than the sections below them, so rules on the same page had different lengths. | Both now use the same column as quizzes and exams. | `web/src/components/Flashcards.tsx`, `web/src/pages/ReviewPage.tsx` |
+| 90 | The plan promised a short "Saved" confirmation for marking a lesson complete and setting the exam day. | Not added: both actions already change the page visibly (a "✓ Lesson completed" line, and the plan appearing). A second message would be noise. | Plan, section 27a |
+| 91 | In Practice, an answer used to be saved when you pressed Next; closing the page after reading the explanation lost it. | It is now saved the moment you pick an option, as in practice mode of the mock exams. | `web/src/pages/PracticePage.tsx` |
+| 92 | A diagram scaled down to a phone's width would have 6 px text. | Diagrams keep a minimum width and scroll sideways inside their frame on a phone. | `web/src/components/diagrams/parts.tsx` |
