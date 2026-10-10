@@ -1,0 +1,442 @@
+[
+  {
+    "id": "q1",
+    "q": "What is traceability?",
+    "options": [
+      "The ability to track information across the product life cycle by establishing links between objects",
+      "A method of estimating effort",
+      "A way of ranking stakeholders",
+      "A type of elicitation workshop"
+    ],
+    "answer": 0,
+    "explanation": "Traceability is the ability to track information across the product life cycle by establishing linkages between objects. The linkages are also known as relationships or dependencies.",
+    "ref": "PMI Guide to Business Analysis, Key Concepts for Traceability and Monitoring",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 298,
+        "label": "PMI Guide to Business Analysis, Key Concepts for Traceability and Monitoring"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Tracing a requirement to the business objective that triggered it is called:",
+    "options": [
+      "Forward traceability",
+      "Lateral traceability",
+      "Backward traceability",
+      "Impact analysis"
+    ],
+    "answer": 2,
+    "explanation": "Backward traceability runs from the requirements to the scope features and business goals and objectives that triggered them. Forward traceability runs to design, test components and the final product.",
+    "ref": "PMI Guide to Business Analysis, Key Concepts for Traceability and Monitoring",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 298,
+        "label": "PMI Guide to Business Analysis, Key Concepts for Traceability and Monitoring"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "What does monitoring ensure?",
+    "options": [
+      "That the team works overtime when needed",
+      "That product information remains accurate from approval through implementation",
+      "That stakeholders attend every meeting",
+      "That the budget is not exceeded"
+    ],
+    "answer": 1,
+    "explanation": "Monitoring ensures that product information remains accurate from the point it is approved through its implementation. It includes managing changes to product information.",
+    "ref": "PMI Guide to Business Analysis, Key Concepts for Traceability and Monitoring",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 298,
+        "label": "PMI Guide to Business Analysis, Key Concepts for Traceability and Monitoring"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Which statement about the amount of traceability is correct?",
+    "options": [
+      "More is always better",
+      "It is needed only on agile projects",
+      "It should be avoided in regulated industries",
+      "It should be sized to the need; too much becomes costly to maintain and may be abandoned"
+    ],
+    "answer": 3,
+    "explanation": "The approach should be appropriately sized. Too much traceability becomes time-consuming to maintain, and if the team abandons it the information goes out of date. Regulation, complexity and risk all raise the amount needed.",
+    "ref": "PMI Guide to Business Analysis, 8.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 298,
+        "label": "PMI Guide to Business Analysis, 8.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "In a traceability matrix, one requirement cannot be traced back to any business objective or scope feature. What does this suggest?",
+    "options": [
+      "The requirement is the most important one",
+      "The requirement has been fully tested",
+      "The requirement may add no value and should be questioned",
+      "The matrix is complete"
+    ],
+    "answer": 2,
+    "explanation": "Product information that cannot be traced back to the product scope and business goals is highlighted as non-value-added. Its inclusion should be questioned; tracing in this way manages scope creep.",
+    "ref": "PMI Guide to Business Analysis, 8.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 302,
+        "label": "PMI Guide to Business Analysis, 8.2"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which benefit comes from forward traceability?",
+    "options": [
+      "It reduces the chance that a requirement is dropped before it is built and tested",
+      "It sets the project budget",
+      "It replaces acceptance testing",
+      "It identifies the sponsor"
+    ],
+    "answer": 0,
+    "explanation": "Forward traceability helps ensure that product information is not dropped as it is elaborated, built, tested and implemented, minimizing the probability of missing requirements.",
+    "ref": "PMI Guide to Business Analysis, 8.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 302,
+        "label": "PMI Guide to Business Analysis, 8.2"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "\"Collect loyalty points\" can be built on its own, but customers get nothing from it until \"Redeem points\" exists. Which relationship is this?",
+    "options": [
+      "Subset",
+      "Implementation dependency",
+      "Lateral trace",
+      "Benefit or value dependency"
+    ],
+    "answer": 3,
+    "explanation": "In a benefit or value dependency, a requirement can be implemented, but its benefit cannot be realized until another requirement is also implemented. In an implementation dependency it cannot be built at all until the other is built.",
+    "ref": "PMI Guide to Business Analysis, 8.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 302,
+        "label": "PMI Guide to Business Analysis, 8.2"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "What is a traceability matrix?",
+    "options": [
+      "A chart of the team's velocity",
+      "A grid that links product requirements from their origin to the deliverables that satisfy them",
+      "A list of stakeholders and their influence",
+      "A table of weighted solution options"
+    ],
+    "answer": 1,
+    "explanation": "A traceability matrix is a grid that links product requirements from their origin to the deliverables that satisfy them. It helps ensure each item relates back to business objectives.",
+    "ref": "PMI Guide to Business Analysis, 8.2.2.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 306,
+        "label": "PMI Guide to Business Analysis, 8.2.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What is true of a requirements management tool?",
+    "options": [
+      "It guarantees high-quality requirements",
+      "It is used only on predictive projects",
+      "It stores and manages product information, with audit trails and version control, but does not itself make the information good",
+      "It replaces the product owner"
+    ],
+    "answer": 2,
+    "explanation": "A requirements management tool does not help define high-quality product information, but it assists with storing, managing and maintaining it, with audit trails, version control, workflow and trace links.",
+    "ref": "PMI Guide to Business Analysis, 8.2.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 305,
+        "label": "PMI Guide to Business Analysis, 8.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Which two conditions make requirements \"approved requirements\"?",
+    "options": [
+      "They are estimated and scheduled",
+      "They are verified and validated",
+      "They are coded and tested",
+      "They are elicited and confirmed"
+    ],
+    "answer": 1,
+    "explanation": "Approved requirements are verified, in that they are of sufficient quality, and validated, in that they meet business needs. Those with authority have agreed they are what the team should build.",
+    "ref": "PMI Guide to Business Analysis, 8.3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 313,
+        "label": "PMI Guide to Business Analysis, 8.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "What is the requirements baseline?",
+    "options": [
+      "The boundary containing all approved requirements for a solution, release or iteration",
+      "The first draft of the requirements",
+      "The list of rejected requirements",
+      "The project's cost estimate"
+    ],
+    "answer": 0,
+    "explanation": "Approved requirements establish the requirements baseline: the boundary that contains all approved requirements for the solution, project, phase, iteration, release or other part.",
+    "ref": "PMI Guide to Business Analysis, 8.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 308,
+        "label": "PMI Guide to Business Analysis, 8.3"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "On an adaptive project, what can count as approval of requirements?",
+    "options": [
+      "Only a signed business requirements document",
+      "Approval by the change control board",
+      "A formal audit",
+      "The product owner's prioritization of the backlog, or the stories chosen in iteration planning"
+    ],
+    "answer": 3,
+    "explanation": "In adaptive approaches the product owner's prioritization of the backlog can be interpreted as approval, and the definition of ready may be used in place of approval. Approved requirements are a prioritized backlog or the stories chosen for an iteration.",
+    "ref": "PMI Guide to Business Analysis, 8.3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 313,
+        "label": "PMI Guide to Business Analysis, 8.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Two departments submit requirements that conflict. What is the business analyst's role?",
+    "options": [
+      "To choose the requirement the analyst prefers",
+      "To facilitate discussion and negotiate an agreed outcome among those with authority",
+      "To approve both and let developers decide",
+      "To delete both requirements"
+    ],
+    "answer": 1,
+    "explanation": "Conflicting requirements are not uncommon and consensus is often reached through negotiation. Business analysis includes facilitating discussions to work through differences and negotiate an agreed outcome and approval.",
+    "ref": "PMI Guide to Business Analysis, 8.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 308,
+        "label": "PMI Guide to Business Analysis, 8.3"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which technique lists the forces for and against a proposed change, weights them and compares the totals?",
+    "options": [
+      "Delphi",
+      "Story mapping",
+      "Force field analysis",
+      "Kano analysis"
+    ],
+    "answer": 2,
+    "explanation": "Force field analysis identifies the forces for and against a proposed change, weights each, and tallies the scores to judge whether there is enough organizational support to pursue the change.",
+    "ref": "PMI Guide to Business Analysis, 8.3.2.6",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 311,
+        "label": "PMI Guide to Business Analysis, 8.3.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "On a predictive project, a stakeholder asks for a new feature after the requirements have been baselined. What should the business analyst do first?",
+    "options": [
+      "Perform an impact analysis of the proposed change",
+      "Add it to the requirements straight away",
+      "Refuse, because the baseline is fixed",
+      "Ask the developers to build it quietly"
+    ],
+    "answer": 0,
+    "explanation": "When a change to product information is proposed, an impact analysis evaluates how it will affect related elements. The analyst then recommends a course of action to the body that decides.",
+    "ref": "PMI Guide to Business Analysis, 8.4.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 318,
+        "label": "PMI Guide to Business Analysis, 8.4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "What does an impact analysis cover?",
+    "options": [
+      "Only the cost of the change",
+      "Only the opinion of the sponsor",
+      "Only the test cases",
+      "The related product information affected, the risks, the work needed, and the schedule and cost implications"
+    ],
+    "answer": 3,
+    "explanation": "Impact analysis evaluates how a change will affect components of the product and project, including requirements. It identifies the risks of the change, the work required, and the schedule and cost implications.",
+    "ref": "PMI Guide to Business Analysis, 8.4.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 318,
+        "label": "PMI Guide to Business Analysis, 8.4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "What are the possible outcomes for a proposed change?",
+    "options": [
+      "Approved, deferred, rejected, or more information required",
+      "Verified, validated, prioritized, approved",
+      "Avoid, transfer, mitigate, accept",
+      "Unaware, resistant, neutral, supportive"
+    ],
+    "answer": 0,
+    "explanation": "After a proposed change is evaluated, it may be approved, deferred, rejected, or returned with a request for more information.",
+    "ref": "PMI Guide to Business Analysis, 8.4.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 319,
+        "label": "PMI Guide to Business Analysis, 8.4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "How does a deferred change differ from a rejected one?",
+    "options": [
+      "A deferred change is never recorded",
+      "There is no difference",
+      "A deferred change is recorded with a reason and may be scheduled for a future date or release; a rejected change will not be done",
+      "A rejected change is added to the next release"
+    ],
+    "answer": 2,
+    "explanation": "For a deferred change the decision and rationale are documented, and a proposed future date is noted in the plans. For a rejected change the decision is documented but no future reminders are set, because the work will not occur.",
+    "ref": "PMI Guide to Business Analysis, 8.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 314,
+        "label": "PMI Guide to Business Analysis, 8.4"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "On an agile project, a stakeholder asks for a change. How is it handled?",
+    "options": [
+      "A formal change request goes to the change control board",
+      "It is written as a user story, added to the backlog and prioritized",
+      "It is refused until the next project",
+      "It is added to the current iteration immediately"
+    ],
+    "answer": 1,
+    "explanation": "In adaptive approaches there is no formal change request process. A requested change is written as a user story and added to the backlog, and prioritization decides if and when it is done.",
+    "ref": "PMI Guide to Business Analysis, 8.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 314,
+        "label": "PMI Guide to Business Analysis, 8.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Who decides whether a proposed change to baselined requirements is accepted?",
+    "options": [
+      "The business analyst alone",
+      "The developer who will build it",
+      "Whoever requested it",
+      "The authorized body, such as a change control board; the analyst recommends"
+    ],
+    "answer": 3,
+    "explanation": "The output of the process is a recommended course of action. Changes are reviewed and decided by a governing body such as a change control board or approval team; the traceability and monitoring approach states who can approve.",
+    "ref": "PMI Guide to Business Analysis, 8.4.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 319,
+        "label": "PMI Guide to Business Analysis, 8.4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which tool tracks the history of revisions of a work product?",
+    "options": [
+      "Stakeholder matrix",
+      "Force field analysis",
+      "Version control system",
+      "Burndown chart"
+    ],
+    "answer": 2,
+    "explanation": "A version control system tracks the history of revisions of any type of work product. It falls under configuration management, which ensures the solution conforms to its approved product information.",
+    "ref": "PMI Guide to Business Analysis, 8.4.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 318,
+        "label": "PMI Guide to Business Analysis, 8.4.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "What is an interaction matrix?",
+    "options": [
+      "A formal matrix maintained for the life of the product",
+      "A lightweight, temporary version of a traceability matrix used on adaptive projects",
+      "A chart of who talks to whom",
+      "A risk register"
+    ],
+    "answer": 1,
+    "explanation": "An interaction matrix is a lightweight version of a traceability matrix used to check whether requirements are sufficiently detailed. It is a temporary snapshot, whereas a traceability matrix is maintained throughout.",
+    "ref": "PMI Guide to Business Analysis, 8.2.2.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 306,
+        "label": "PMI Guide to Business Analysis, 8.2.2.5"
+      }
+    ]
+  }
+]

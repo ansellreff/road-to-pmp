@@ -1,0 +1,482 @@
+[
+  {
+    "id": "q1",
+    "q": "What is analysis in business analysis?",
+    "options": [
+      "Drawing information out of stakeholders",
+      "Examining, breaking down and clarifying information to understand, complete and improve it",
+      "Approving the final solution",
+      "Scheduling the project's work"
+    ],
+    "answer": 1,
+    "explanation": "Analysis is the process of examining, breaking down, synthesizing and clarifying information to further understand it, complete it and improve it. Drawing information out is elicitation.",
+    "ref": "PMI Guide to Business Analysis, 7.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 222,
+        "label": "PMI Guide to Business Analysis, 7.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Into which five categories does PMI's guide organize analysis models?",
+    "options": [
+      "Initiating, planning, executing, monitoring, closing",
+      "Business, stakeholder, solution, transition, project",
+      "People, process, technology, data, culture",
+      "Scope, process, rule, data, interface"
+    ],
+    "answer": 3,
+    "explanation": "The models are organized into five categories: scope models (bounding the solution), process models (how it will be used), rule models (rules to enforce), data models (data and its life cycle) and interface models (how it interacts with systems and users).",
+    "ref": "PMI Guide to Business Analysis, 7.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 227,
+        "label": "PMI Guide to Business Analysis, 7.2"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Which model shows the solution with all the systems and people that interface directly with it, and so helps define scope?",
+    "options": [
+      "Context diagram",
+      "State diagram",
+      "Decision table",
+      "Data dictionary"
+    ],
+    "answer": 0,
+    "explanation": "A context diagram is a scope model that shows all the direct system and human interfaces to systems within a solution, with the inputs and outputs between them. It is created early to define scope.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 231,
+        "label": "PMI Guide to Business Analysis, 7.2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "An analyst must make sure no combination of loan-approval conditions has been overlooked. Which model is best?",
+    "options": [
+      "Feature model",
+      "Process flow",
+      "Decision table",
+      "Wireframe"
+    ],
+    "answer": 2,
+    "explanation": "Decision tables are useful for ensuring that the analyst has considered all possible combinations of decision scenarios and related outcomes. A decision tree shows the flow and order of decisions.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 234,
+        "label": "PMI Guide to Business Analysis, 7.2.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Which model shows the valid conditions an order can be in (placed, paid, shipped, delivered) and the allowed moves between them?",
+    "options": [
+      "Ecosystem map",
+      "Use case diagram",
+      "Report table",
+      "State diagram"
+    ],
+    "answer": 3,
+    "explanation": "The state table and state diagram are data models that show the valid states of an object and any allowed transitions between those states.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.15",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 248,
+        "label": "PMI Guide to Business Analysis, 7.2.2.15"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which model shows business data objects and the relationships between them, including cardinality?",
+    "options": [
+      "Entity relationship diagram",
+      "Context diagram",
+      "User interface flow",
+      "Event list"
+    ],
+    "answer": 0,
+    "explanation": "An entity relationship diagram is a data model showing the business data objects of interest and the cardinality relationship between them: how many times one entity occurs in relation to another.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.6",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 236,
+        "label": "PMI Guide to Business Analysis, 7.2.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What is a use case?",
+    "options": [
+      "A one-sentence requirement from the user's point of view",
+      "A text narrative of the interactions between a user and the system to achieve a goal, with normal, alternative and exception flows",
+      "A static picture of one screen",
+      "A list of data fields"
+    ],
+    "answer": 1,
+    "explanation": "A use case is a process model that uses textual narrative to describe the system-user interactions needed to complete a goal. It contains a normal flow plus alternative and exception flows.",
+    "ref": "PMI Guide to Business Analysis, 7.3.2.8",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 259,
+        "label": "PMI Guide to Business Analysis, 7.3.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "A complex interaction with many exception paths must be fully specified for an external contractor. Which form of requirement fits best?",
+    "options": [
+      "A single user story",
+      "A product vision statement",
+      "A use case",
+      "A persona"
+    ],
+    "answer": 2,
+    "explanation": "Use cases describe complex interactions between users and systems in detail, including alternative and exception flows. A user story is deliberately brief and relies on conversation for its detail.",
+    "ref": "PMI Guide to Business Analysis, 7.3.2.8",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 259,
+        "label": "PMI Guide to Business Analysis, 7.3.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What does the acronym DEEP describe?",
+    "options": [
+      "A well-refined product backlog: detailed appropriately, estimated, emergent, prioritized",
+      "A good user story",
+      "The stages of an elicitation activity",
+      "The types of peer review"
+    ],
+    "answer": 0,
+    "explanation": "DEEP describes the characteristics of a well-refined product backlog: detailed appropriately, estimated, emergent and prioritized. INVEST describes a good user story.",
+    "ref": "PMI Guide to Business Analysis, 7.3.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 258,
+        "label": "PMI Guide to Business Analysis, 7.3.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A user story is too large to build in one iteration. What should the team do?",
+    "options": [
+      "Extend the iteration",
+      "Drop the story",
+      "Assign more developers to it",
+      "Slice it into smaller stories that each deliver value"
+    ],
+    "answer": 3,
+    "explanation": "Story slicing splits epics or user stories into smaller increments of value that can be built within one iteration. Large stories are commonly called epics.",
+    "ref": "PMI Guide to Business Analysis, 7.3.2.7",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 259,
+        "label": "PMI Guide to Business Analysis, 7.3.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Are confirmed elicitation results the same as requirements?",
+    "options": [
+      "Yes, once confirmed they are final requirements",
+      "No. They still need analysis to avoid missing, inconsistent or conflicting requirements",
+      "Yes, if the sponsor attended the session",
+      "No, they are discarded after the session"
+    ],
+    "answer": 1,
+    "explanation": "Even though elicitation results come from knowledgeable stakeholders, they are not the final requirements without additional analysis. They are used with the analysis models so the whole solution is analyzed.",
+    "ref": "PMI Guide to Business Analysis, 7.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 253,
+        "label": "PMI Guide to Business Analysis, 7.3"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What are acceptance criteria?",
+    "options": [
+      "The project's budget limits",
+      "The ranking of requirements",
+      "Concrete and demonstrable conditions that must be met for the business to accept an item",
+      "The list of stakeholders who must sign the charter"
+    ],
+    "answer": 2,
+    "explanation": "Acceptance criteria are concrete and demonstrable conditions about an item that must be met for the business stakeholders or customers to accept it. They form the basis of acceptance tests.",
+    "ref": "PMI Guide to Business Analysis, 7.4.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 265,
+        "label": "PMI Guide to Business Analysis, 7.4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "\"Given I am signed in, when I select 'export', then a spreadsheet is downloaded.\" What is this?",
+    "options": [
+      "A business requirement",
+      "A situation statement",
+      "A transition requirement",
+      "An acceptance criterion in the given-when-then format"
+    ],
+    "answer": 3,
+    "explanation": "Behavior-driven development uses the given-when-then format for acceptance criteria: given the preconditions, when the user does something, then the product reacts in a stated way.",
+    "ref": "PMI Guide to Business Analysis, 7.4.2.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 263,
+        "label": "PMI Guide to Business Analysis, 7.4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "How do the definition of ready and the definition of done differ?",
+    "options": [
+      "Ready: conditions before work on a story begins. Done: conditions before an item is considered complete and acceptable.",
+      "They are the same",
+      "Ready applies to the project; done applies to the portfolio",
+      "Ready is set by the sponsor; done by the vendor"
+    ],
+    "answer": 0,
+    "explanation": "The definition of ready is a series of conditions the team agrees a story must meet before work begins. The definition of done is a series of conditions an item must meet before it is considered sufficiently developed to be accepted.",
+    "ref": "PMI Guide to Business Analysis, 7.4.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 264,
+        "label": "PMI Guide to Business Analysis, 7.4.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "What does Verify Requirements check?",
+    "options": [
+      "That the requirements meet business goals",
+      "That the requirements are ranked",
+      "That the requirements are of sufficient quality and meet standards",
+      "That the solution has been released"
+    ],
+    "answer": 2,
+    "explanation": "Verify Requirements checks that requirements are of sufficient quality: free of errors and conflicts and compliant with standards. Checking that they meet business goals and objectives is validation.",
+    "ref": "PMI Guide to Business Analysis, 7.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 266,
+        "label": "PMI Guide to Business Analysis, 7.5"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A requirement is clearly written and meets every standard, but no stakeholder actually needs it. Which check would catch this?",
+    "options": [
+      "Verification",
+      "Validation",
+      "Peer desk check",
+      "Inspection"
+    ],
+    "answer": 1,
+    "explanation": "Validation checks that requirements meet the business goals and objectives and stakeholder needs. Verified requirements are not a guarantee that they address the business need.",
+    "ref": "PMI Guide to Business Analysis, 7.6",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 270,
+        "label": "PMI Guide to Business Analysis, 7.6"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Which is the most formal type of peer review, usually using a checklist?",
+    "options": [
+      "Inspection",
+      "Peer desk check",
+      "Walkthrough",
+      "Brainstorming"
+    ],
+    "answer": 0,
+    "explanation": "From least to most formal, the peer reviews are the peer desk check, the walkthrough and the inspection. An inspection is a formal, rigorous review for completeness, consistency and conformance to standards, often with a checklist.",
+    "ref": "PMI Guide to Business Analysis, 7.5.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 269,
+        "label": "PMI Guide to Business Analysis, 7.5.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which technique is the main verification check for user stories on adaptive projects?",
+    "options": [
+      "MoSCoW",
+      "SWOT",
+      "RACI",
+      "INVEST"
+    ],
+    "answer": 3,
+    "explanation": "INVEST (independent, negotiable, valuable, estimable, small, testable) describes the characteristics a user story needs to be good and ready for development. It is the primary verification technique in adaptive approaches.",
+    "ref": "PMI Guide to Business Analysis, 7.5.2.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 268,
+        "label": "PMI Guide to Business Analysis, 7.5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "During validation, what must every requirement trace back to?",
+    "options": [
+      "A test case",
+      "A team member",
+      "The business goals and objectives",
+      "The project schedule"
+    ],
+    "answer": 2,
+    "explanation": "Validation ensures that all requirements trace back to the business goals and objectives, so that what is to be built will actually meet them.",
+    "ref": "PMI Guide to Business Analysis, 7.6",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 270,
+        "label": "PMI Guide to Business Analysis, 7.6"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "What is the business analyst's role in prioritizing requirements?",
+    "options": [
+      "To decide the priorities alone",
+      "To facilitate and negotiate, while accountable stakeholders make the decisions",
+      "To leave prioritization to the developers",
+      "To avoid being involved"
+    ],
+    "answer": 1,
+    "explanation": "A business analyst may recommend priorities, but accountable stakeholders with the authority to prioritize must be involved. The analyst facilitates and negotiates prioritization decisions.",
+    "ref": "PMI Guide to Business Analysis, 7.7",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 274,
+        "label": "PMI Guide to Business Analysis, 7.7"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which two kinds of information are combined when prioritizing a requirement?",
+    "options": [
+      "Its author and its date",
+      "Its length and its format",
+      "Its section number and its status",
+      "Its business value, and the team's estimate of effort and risk"
+    ],
+    "answer": 3,
+    "explanation": "Prioritization commonly involves two efforts: business stakeholders or product owners prioritize by estimated business value, and the project team provides estimates of effort and risk.",
+    "ref": "PMI Guide to Business Analysis, 7.7",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 274,
+        "label": "PMI Guide to Business Analysis, 7.7"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "What often results from a product risk response?",
+    "options": [
+      "A new or changed requirement",
+      "A shorter stakeholder register",
+      "Removal of the acceptance criteria",
+      "Cancellation of validation"
+    ],
+    "answer": 0,
+    "explanation": "Product risk responses may include modifying or adding product requirements or project activities. Product risk management therefore helps find and resolve gaps in the requirements.",
+    "ref": "PMI Guide to Business Analysis, 7.8",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 282,
+        "label": "PMI Guide to Business Analysis, 7.8"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "How does product design differ from requirements?",
+    "options": [
+      "Design states why the project exists",
+      "Requirements say what the product should do; design is about how it is built or looks",
+      "Design is done before the business case",
+      "They are the same thing"
+    ],
+    "answer": 1,
+    "explanation": "Assessing product design goes beyond what the product should do and focuses on how it should be built or how it should look. Business analysis evaluates the design options and recommends among them.",
+    "ref": "PMI Guide to Business Analysis, 7.9",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 290,
+        "label": "PMI Guide to Business Analysis, 7.9"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "On an adaptive project, who decides whether and where a new user story goes in the backlog?",
+    "options": [
+      "Whoever wrote the story",
+      "The scrum master",
+      "The product owner",
+      "The test team"
+    ],
+    "answer": 2,
+    "explanation": "Although anyone can write a user story, the product owner decides whether and where to place the story in the backlog.",
+    "ref": "PMI Guide to Business Analysis, 7.3.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 261,
+        "label": "PMI Guide to Business Analysis, 7.3.4"
+      }
+    ]
+  }
+]
