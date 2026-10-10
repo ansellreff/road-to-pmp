@@ -60,6 +60,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-10 | Sync: **password sign-in added**, so every device can be signed in at the same time without waiting for emails. On a signed-in device you choose a password; on the others you sign in with email and password. Signing out now ends the sign-in on that device only (before, it would have ended it on all of them). | You: run `upload.bat`; on the phone (already signed in) save a password under "Sync between your devices"; on the PC sign in with it |
 | 2026-10-11 | **Sync confirmed by you on the real service:** saving and syncing between the PC and the phone works, with both signed in. Session 28d is complete, and with it everything planned for CAPM. | Next: decide what comes after CAPM (PMP needs the current PMP Exam Content Outline in the materials folder) |
 | 2026-10-11 | **Session 31a, first sitting: Domain 1 checked against the exam's own books.** Two topics were missing from the course and are now taught: the three types of PMO (module 1.2) and the 7th edition's named models for change, coaching, team development and negotiation (module 1.10). Eight "On the exam" notes added where the exam's book words or counts something differently. 15 new questions and 22 new flashcards for these. Bank: 909 questions, 1,230 flashcards. Not yet compared: modules 1.4 and 1.5 against the 7th edition's twelve principles, and 1.7, 1.11, 1.12 against the Process Groups guide. | You: `upload.bat` to publish. Next sitting: finish Domain 1 (the twelve principles, process groups), then Domain 2 |
+| 2026-10-11 | **Session 31 finished: CAPM strengthened in all five parts.** You asked that every addition be part of the exam outline; from that point each one is tied to an outline task (see "The outline rule"). **31a:** all four domains compared with the exam's own books. Nothing was found wrong; 20 missing topics are now taught, the largest being the 2017 Agile Practice Guide's contracts, agile PMO, extra frameworks and agile earned value (Domain 3), the practice guide's 23 business analysis tools (Domain 4), and the Seventh Edition's nine kinds of artifact and sixteen meetings (Domain 2). **31b:** 130 new scenario questions and 68 flashcards. **31c:** Mock exam 5, 150 questions you have not seen. **31d:** keyboard shortcuts in quizzes, practice, mock exams and flashcards. **31e:** six new drawings. Bank: 1,039 questions, 1,298 flashcards, 5 mock exams. All checks and the 21 click tests pass. | You: `upload.bat` to publish. Then the exam. PMP needs the PMP Exam Content Outline PDF in the materials folder |
 
 ## How your progress is saved
 
@@ -197,7 +198,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 28d | Sync between PC and phone through Supabase: sign-in by emailed link or by password, several devices at once. Confirmed working by you on 2026-10-11. |
 | ✅ | 29 | Navigation, side panels and a richer look, from your feedback: search suggestions, Modules menu, right-hand panel, previous and next, cards and rings, home hub, feedback, streak, daily goal, milestones. Details under "Session 29: navigation and look, as built". |
 | ✅ | 30 | Questions: 54 new scenario questions in Domain 1; 112 questions in Domains 2 to 4 reworded as situations. Details under "Session 30: questions". |
-| 🟡 | 31 | Strengthen CAPM before the exam: 31a accuracy check against the exam's books (Domain 1 mostly done; Domains 2 to 4 to do), 31b new scenario questions, 31c Mock exam 5, 31d keyboard shortcuts, 31e more diagrams. Details under "Session 31a: lessons compared with the exam's books". |
+| ✅ | 31 | Strengthen CAPM before the exam: 31a accuracy check of all four domains against the exam's books; 31b 130 new scenario questions; 31c Mock exam 5 (unseen); 31d keyboard shortcuts; 31e six more drawings. Details under "Session 31a: lessons compared with the exam's books" and "Session 31b to 31e: as built". |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 
@@ -258,7 +259,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (909 quiz questions, 1,230 flashcards). Of the 909 questions, 600 are used by the four mock exams and 150 of those (Mock exam 4) are held back from the module quizzes, which show 759.
+Overall: **39 of 39 modules done** (1,039 quiz questions, 1,298 flashcards). Of the 1,039 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 739. 289 questions are in no exam.
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -685,6 +686,52 @@ Nothing in Domain 2 was found to be **wrong**.
 | "On the exam" notes added | 8 | 8 | 3 | 2 |
 | New sections | 2 | 1 | 5 | 6 |
 
+## Session 31b to 31e: as built
+
+### 31b: new scenario questions
+
+| Domain | New questions | Scenario share of the domain now |
+|---|---|---|
+| 1 | 23 (15 in the first sitting, 8 for modules 1.11 and 1.12) | 50% |
+| 2 | 45 | 59% |
+| 3 | 36 | 61% |
+| 4 | 41 | 56% |
+
+Every new question is a short situation with four options written for it, cites a page of one of the exam's books, and was checked by `tools/check_content.py`: no module has the right answer as the longest option more than 35% of the time (the highest is 32%).
+
+### 31c: Mock exam 5
+
+- 150 questions in the exam's split (54 / 26 / 30 / 40), taken from questions that are in no other exam, newest first and spread over the modules, so most of it is the questions written in Session 31. Three questions (five things to tailor, six ways of addressing conflict, Drexler / Sibbet) are kept out of it on purpose, under the outline rule; they stay in their module quizzes.
+- `python tools/build_exams.py capm --add` adds one exam and leaves the others exactly as they were: the file comparison shows 152 lines added and none changed, so results you have saved for Mock exams 1 to 4 still match their questions.
+- Like Mock exam 4, its questions are held back from the module quizzes, so it stays unseen. The study plan places it last, two days before the exam; Mock exam 4 moves one place earlier.
+- **Cost of this choice:** the module quizzes of Domain 1 are smaller than before (12 to 21 questions; module 1.1 has 12), because Domain 1 gives 54 questions to each unseen exam. The checker's floor is 10.
+
+### 31d: keyboard shortcuts
+
+| Screen | Keys |
+|---|---|
+| Module quiz, practice, mock exam in practice mode | A to D or 1 to 4 to answer; Enter or the right arrow for the next question |
+| Mock exam in real exam mode | The same, plus the left arrow for the previous question and F to flag |
+| Flashcards in a module | Space to turn the card; left and right arrows for the previous and next card; 1 for still learning, 2 for I know this |
+| Flashcard review | Space to turn the card; 1 and 2 to rate it |
+
+- One component, `web/src/components/Keys.tsx`, listens for the keys and shows the line that lists them (on wide screens only). The keys are off while you type in a field, and Enter and Space keep their normal meaning on a button that has the focus.
+- After a mouse click on an answer the focus leaves the option, so Enter moves to the next question instead of pressing the same answer again.
+
+### 31e: drawings
+
+| Module | Drawing | Numbers taken from |
+|---|---|---|
+| 2.3 | Work breakdown structure, with the work packages shaded | An original example (the clinic booking system used elsewhere in the course) |
+| 2.5 | Network diagram with early and late dates and the critical path | The lesson's six activities: path A, C, E, F, 17 days; float of 5 days on B and D |
+| 2.7 | Earned value chart: planned value, earned value, actual cost | The lesson's road project at week 4: PV 40, EV 30, AC 36 |
+| 2.11 | Control chart with control limits, tolerance and a run of seven | An original example of a 50 mm part |
+| 3.7 | Burnup chart with a scope line that steps up | The lesson's 120 and 135 points |
+| 4.5 | Use case diagram | The clinic booking system |
+
+Each was looked at in the light and the dark theme. Not drawn: the decision tree planned for module 4.5.
+
+
 ## Session 25a audit results
 
 Measured on 2026-10-10, before any repair. Run the tools again to see the current state.
@@ -999,3 +1046,23 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 134 | **A second missing topic:** the 7th edition's section of named models. ADKAR, Kotter's eight steps, the Satir and Bridges models, OSCAR, Situational Leadership II and Drexler / Sibbet were taught nowhere. Found by searching the lessons for each model name in that section. | New section in module 1.10, with six questions and ten flashcards. Motivation models and the Tuckman ladder were already in module 2.9. | Module 1.10 |
 | 135 | In Session 25 I added the exam's terms as notes but said plainly that I had not read the 7th edition against each lesson. Doing it now for Domain 1 found eight differences in wording or count that had no note. | Eight "On the exam" notes, each with the book page. None of the lessons' statements was wrong for the Eighth Edition. | "Session 31a" table |
 | 136 | The comparison is large, and one sitting did not finish Domain 1: the twelve principles (modules 1.4, 1.5) and the process groups (1.7, 1.11, 1.12) are still to be read against their books. | Said in the table as "not yet compared", not left to be assumed done. They are first in the next sitting. | "Session 31a" table |
+
+### Session 31, the rest (accuracy check of Domains 2 to 4, questions, Mock exam 5, shortcuts, drawings)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 137 | You asked that additions be part of the exam outline. Some of what I had added in the first sitting (the five things to tailor, the six ways of addressing conflict, two team and planning models) falls under an outline task but is named by no enabler. | A written rule: a topic must be in one of the exam's books and fall under an outline task; only topics an enabler names get full treatment. The first sitting's additions were checked against it in a table. The weaker ones stay as short notes, and their questions are kept out of Mock exam 5. | "The outline rule" |
+| 138 | **The Domain 3 lessons were written from the wrong edition of the Agile Practice Guide for the exam.** They follow the second edition; the exam uses the 2017 first edition. Session 25d had added four notes but had not read the first edition through. | Chapters 2 to 6 and Annex A3 of the 2017 edition read against the eight lessons. Nothing wrong, but eight topics missing: nine contracting techniques, the agile PMO, drivers for change, Scrumban, the Agile Unified Process, Enterprise Scrum, chartering, earned value in agile terms and the troubleshooting table. All added, with first edition page links. | "Domain 3 (second sitting)" |
+| 139 | The Domain 3 lesson on metrics taught the second edition's view, which plays down velocity. The exam's edition forecasts with velocity and expresses SPI and CPI in agile terms. | The lesson keeps its edition note and gains a section "What the exam's guide adds on measurement". | Module 3.7 |
+| 140 | Module 3.3 lists Scrum@Scale among the scaling frameworks. It is not in the exam's edition of the guide. | Left in, since it is in the second edition, with a sentence saying it is not in the 2017 guide. | Module 3.3 |
+| 141 | Four annex sections of the 2017 Agile Practice Guide (A3.2 Scrum, A3.6 Scrumban, A3.10, A3.11 SAFe) could not be linked: their headings start with a small capital that the page text gives as a lowercase letter, and the contents builder looked for a capital. | `tools/build_toc_agile1.py` accepts either. The contents list went from 98 to 107 entries. | `tools/build_toc_agile1.py` |
+| 142 | References to a numbered figure of *Business Analysis for Practitioners* ("Figure 7-8") were not linked: 55 references failed. That book is looked up by section title, and the lookup had no rule for figures. | A figure rule added for books looked up by title. All 23 tool figures now open at the right page; I compared each page number with the page I had read. | `tools/link_sources.py` |
+| 143 | For Domains 2 and 4 I did **not** read the exam's books page by page as I did for Domain 3. | Said in the tracker. Domain 4's lessons were written from one of the exam's two books, so I read the other book's tools chapter and three "how to" sections. For Domain 2 I compared all 49 process names and both glossaries by script, and read the two Seventh Edition lists the outline names. The unread parts are listed under each domain. | "Domain 4", "Domain 2 and the rest of Domain 1" |
+| 144 | In the first drafts of the new questions, the right answer was the single longest option in 21 of 36 (Domain 3), 20 of 41 (Domain 4) and 18 of 38 (Domain 2): the same give-away as in Session 30. | Caught by the check before each commit. 50 wrong options were lengthened. No module is above 32% now. | `tools/check_content.py --report` |
+| 145 | A helper that replaces an option's text by matching it changed the wrong question: "Navigate complexity" was also an option of an older question in module 1.11. | Seen in the file comparison before committing. The older question's change is harmless (one wrong option replaced by another wrong option, the right answer untouched) and was kept; the intended question was then edited directly. | Module 1.11, question 24 |
+| 146 | Making Mock exam 5 unseen takes 150 more questions out of the module quizzes. Domain 1 quizzes fell to between 12 and 21 questions. | Kept as planned, since an unseen exam was the aim, and the cost is stated. The 289 questions in no exam, and all of Mock exams 1 to 3, remain in the module quizzes. | "31c: Mock exam 5" |
+| 147 | Three click tests still expected four mock exams. | Updated to five. A new test opens Mock exam 5 in real exam mode, and another drives a quiz, an exam and the flashcards by keyboard. 21 tests pass. | `web/tests/tests.mjs` |
+| 148 | Keyboard shortcuts could clash with ordinary keyboard use: Enter on a focused answer button presses that answer. | Enter and Space are left alone when a button or link has the focus, and the keys are off in text fields. After a mouse click on an answer the focus is released, so Enter then means "next". A test covers typing in the search box during a quiz. | `web/src/components/Keys.tsx` |
+| 149 | Checking the code, I ran the TypeScript compiler directly, which left a build file (`web/tsconfig.tsbuildinfo`) in the project, and a lint command that the project does not have set up. | The build file was deleted before committing. The lint command changed nothing in the project. `npm run build` and `npm test` are the checks that count. | |
+| 150 | One drawing from the plan was not made: the decision tree for module 4.5. | Said here and in the table of drawings. The six others were made and viewed in both themes; two labels that overlapped a line were moved. | "31e: drawings" |
+| 151 | Not checkable by me: whether the new questions resemble the real exam's wording, and how the shortcuts and drawings feel in use. | For you to judge. Shortcuts are not shown on a phone. | |
