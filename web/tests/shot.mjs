@@ -28,5 +28,10 @@ if (process.env.TYPE) {
 }
 await page.evaluate((y) => window.scrollTo(0, y), Number(scroll))
 await page.waitForTimeout(400)
-await page.screenshot({ path: file })
+// FIGURE="Burnup chart" pictures only the lesson drawing whose description starts with that text.
+if (process.env.FIGURE) {
+  const figure = page.locator('figure', { has: page.locator(`svg[aria-label^="${process.env.FIGURE}"]`) })
+  await figure.scrollIntoViewIfNeeded()
+  await figure.screenshot({ path: file })
+} else await page.screenshot({ path: file })
 await browser.close()

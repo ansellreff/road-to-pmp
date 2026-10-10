@@ -122,6 +122,8 @@ Start at the end of the network and work **backward**.
 - Watch float after each update. **Shrinking total float** is a threat to the project end date. **Shrinking free float** means the next activities may start late.
 - A critical activity delayed by 2 days delays the project by **2 days**. A non-critical activity delays the project only by the amount its delay **exceeds its total float**.
 
+@diagram network-diagram
+
 ## Negative float
 
 @source PMBOK 8, Guide section 5, Critical path method (CPM); PMBOK 8, Guide section 5, Schedule compression; Practice Standard for Scheduling, 3.4.4

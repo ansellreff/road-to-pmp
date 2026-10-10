@@ -57,6 +57,8 @@ The road project has done $30,000 worth of work for $36,000, and is $10,000 wort
 - Schedule variance is measured in **money**, not in days.
 - At the end of a project **SV is always zero**, because all planned work has been earned (EV = PV = BAC), even if the project finished late.
 
+@diagram earned-value-chart
+
 ## Indices: CPI and SPI
 
 @source PMBOK 8, Guide Table 5-1; The Standard for Earned Value Management, 4.4.1.3

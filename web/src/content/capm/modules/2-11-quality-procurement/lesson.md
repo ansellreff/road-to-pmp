@@ -90,6 +90,8 @@ Example of grade and quality: an economy hotel room (low grade) that is clean an
 
 > **On the exam.** Three definitions from the process guide. **Statistical sampling** is choosing part of a population of interest for inspection, instead of inspecting every item. **Tolerance** is the quantified description of acceptable variation for a quality requirement: it comes from the **requirement**. **Control limits** are the area of three standard deviations on either side of the mean on a control chart: they come from the **process**, and show the variation to be expected from it. A result can be inside the tolerance and still show a process that is out of control.
 
+@diagram control-chart
+
 ## Make-or-buy and the procurement steps
 
 @source PMBOK 8, Appendix X4.2; PMBOK 8, Appendix X4.3; PMBOK 8, Guide section 4, Procurement management plan

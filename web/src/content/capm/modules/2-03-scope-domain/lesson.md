@@ -166,6 +166,8 @@ More rules for a sound WBS:
 - Elements are numbered by level: **1** for the project, **1.1, 1.2** for the next level, **1.1.1** below that.
 - It can be built **top-down** (start from the final product and break it down) or **bottom-up** (list the deliverables, then group them). Either way, each level must add up to 100 percent of the level above.
 
+@diagram wbs-tree
+
 ## The scope baseline
 
 @source PMBOK 8, Guide section 4, Scope baseline; PMBOK 8, Guide 2.2.1

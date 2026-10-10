@@ -97,6 +97,8 @@ Why model?
 - A team works in short iterations and talks to its product owner daily: **user stories**.
 - A complicated interaction, with many "what if" branches, must be specified fully for a contractor: **use cases**.
 
+@diagram use-case-diagram
+
 ## Rule, data and interface models
 
 @source PMI Guide to Business Analysis, 7.2.2.4; PMI Guide to Business Analysis, 7.2.2.6; PMI Guide to Business Analysis, 7.2.2.13; PMI Guide to Business Analysis, 7.3.2.1

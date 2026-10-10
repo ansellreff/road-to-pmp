@@ -201,12 +201,12 @@ function Fishbone() {
   )
 }
 
-// One plot area for both charts: days 0 to 10 across, a count up the side.
+// One plot area for the charts: 0 to 10 across (days, weeks or iterations), a count up the side.
 const LEFT = 70
 const BOTTOM = 290
 const dayX = (day: number) => LEFT + day * 61
 
-function Axes({ top, step, scale, yTitle }: { top: number; step: number; scale: number; yTitle: string }) {
+function Axes({ top, step, scale, yTitle, xTitle = 'Day of the iteration' }: { top: number; step: number; scale: number; yTitle: string; xTitle?: string }) {
   const ticks = Array.from({ length: top / step + 1 }, (_, i) => i * step)
   return (
     <>
@@ -221,7 +221,7 @@ function Axes({ top, step, scale, yTitle }: { top: number; step: number; scale: 
       ))}
       <line x1={LEFT} y1={BOTTOM} x2={dayX(10)} y2={BOTTOM} stroke={ink} strokeWidth="1.5" />
       <line x1={LEFT} y1={BOTTOM} x2={LEFT} y2={BOTTOM - top * scale} stroke={ink} strokeWidth="1.5" />
-      <Label x={(LEFT + dayX(10)) / 2} y={BOTTOM + 40} text="Day of the iteration" size={12} />
+      <Label x={(LEFT + dayX(10)) / 2} y={BOTTOM + 40} text={xTitle} size={12} />
       <text x="18" y={BOTTOM - (top * scale) / 2} textAnchor="middle" fontSize="12" transform={`rotate(-90 18 ${BOTTOM - (top * scale) / 2})`}>
         {yTitle}
       </text>
@@ -292,6 +292,244 @@ function CumulativeFlowDiagram() {
   )
 }
 
+function NetworkDiagram() {
+  // The lesson's six activities, with the dates from its forward and backward pass (the project starts on day 1).
+  const nodes = [
+    { id: 'A', days: 3, x: 20, y: 115, es: 1, ef: 3, ls: 1, lf: 3 },
+    { id: 'B', days: 4, x: 190, y: 30, es: 4, ef: 7, ls: 9, lf: 12 },
+    { id: 'D', days: 2, x: 370, y: 30, es: 8, ef: 9, ls: 13, lf: 14 },
+    { id: 'C', days: 6, x: 190, y: 200, es: 4, ef: 9, ls: 4, lf: 9 },
+    { id: 'E', days: 5, x: 370, y: 200, es: 10, ef: 14, ls: 10, lf: 14 },
+    { id: 'F', days: 3, x: 570, y: 115, es: 15, ef: 17, ls: 15, lf: 17 },
+  ]
+  const W = 130
+  const H = 84
+  return (
+    <Frame
+      width={720}
+      height={330}
+      caption="Network diagram for the example in this lesson. Each box shows early start and early finish on top, late start and late finish below. The critical path A, C, E, F (17 days) is drawn in blue: its early and late dates are equal, so its float is zero. B and D can each slip 5 days."
+      description="Network diagram of six activities. A, 3 days, leads to B, 4 days, and to C, 6 days. B leads to D, 2 days. C leads to E, 5 days. D and E both lead to F, 3 days. The critical path is A, C, E, F at 17 days, with zero float. B and D have 5 days of total float."
+    >
+      <Arrow points={[[150, 142], [170, 142], [170, 72], [190, 72]]} />
+      <Arrow points={[[150, 172], [170, 172], [170, 242], [190, 242]]} stroke={plan} />
+      <Arrow points={[[320, 72], [370, 72]]} />
+      <Arrow points={[[320, 242], [370, 242]]} stroke={plan} />
+      <Arrow points={[[500, 72], [535, 72], [535, 142], [570, 142]]} />
+      <Arrow points={[[500, 242], [535, 242], [535, 172], [570, 172]]} stroke={plan} />
+      {nodes.map((n) => {
+        const critical = n.es === n.ls
+        return (
+          <g key={n.id}>
+            <rect x={n.x} y={n.y} width={W} height={H} rx="4" fill={critical ? planSoft : surface} stroke={critical ? plan : ink} strokeWidth={critical ? 2 : 1.5} />
+            <line x1={n.x} y1={n.y + 24} x2={n.x + W} y2={n.y + 24} stroke={critical ? plan : ink} strokeWidth="1" />
+            <line x1={n.x} y1={n.y + H - 24} x2={n.x + W} y2={n.y + H - 24} stroke={critical ? plan : ink} strokeWidth="1" />
+            <Label x={n.x + 8} y={n.y + 12} text={`ES ${n.es}`} anchor="start" size={12} />
+            <Label x={n.x + W - 8} y={n.y + 12} text={`EF ${n.ef}`} anchor="end" size={12} />
+            <Label x={n.x + W / 2} y={n.y + H / 2} text={`${n.id}: ${n.days} days`} bold />
+            <Label x={n.x + 8} y={n.y + H - 12} text={`LS ${n.ls}`} anchor="start" size={12} />
+            <Label x={n.x + W - 8} y={n.y + H - 12} text={`LF ${n.lf}`} anchor="end" size={12} />
+            {!critical && <Label x={n.x + W / 2} y={n.y + H + 14} text={`Float ${n.ls - n.es} days`} size={12} fill={muted} />}
+          </g>
+        )
+      })}
+      <Label x={635} y={222} text={['Project ends', 'on day 17']} size={12} fill={muted} />
+    </Frame>
+  )
+}
+
+function EarnedValueChart() {
+  // The lesson's road: $100,000 over 10 weeks. At week 4, PV 40, EV 30, AC 36 (thousands).
+  const y = (thousands: number) => BOTTOM - thousands * 2.4
+  return (
+    <Frame
+      width={720}
+      height={345}
+      caption="Earned value chart for the road project at the end of week 4. The gap between earned value and planned value is the schedule variance (30 − 40 = −$10,000). The gap between earned value and actual cost is the cost variance (30 − 36 = −$6,000). Both are negative: behind schedule and over budget."
+      description="Earned value chart over 10 weeks with a budget at completion of 100 thousand dollars. Planned value rises in a straight line to 100 thousand at week 10 and is 40 thousand at week 4. At week 4 earned value is 30 thousand and actual cost is 36 thousand. Schedule variance is minus 10 thousand and cost variance is minus 6 thousand."
+    >
+      <Axes top={100} step={20} scale={2.4} yTitle="Value ($ thousand)" xTitle="Week" />
+      <line x1={dayX(0)} y1={y(0)} x2={dayX(10)} y2={y(100)} stroke={muted} strokeWidth="2" strokeDasharray="6 5" />
+      <polyline points={`${dayX(0)},${y(0)} ${dayX(4)},${y(36)}`} fill="none" stroke={critical} strokeWidth="2.5" />
+      <polyline points={`${dayX(0)},${y(0)} ${dayX(4)},${y(30)}`} fill="none" stroke={plan} strokeWidth="2.5" />
+      <circle cx={dayX(4)} cy={y(40)} r="4" fill={muted} />
+      <circle cx={dayX(4)} cy={y(36)} r="4" fill={critical} />
+      <circle cx={dayX(4)} cy={y(30)} r="4" fill={plan} />
+      <line x1={dayX(4)} y1={y(0)} x2={dayX(4)} y2={y(100)} stroke={line} strokeWidth="1" strokeDasharray="3 4" />
+
+      <Label x={dayX(4) - 10} y={y(40) - 12} text="PV 40" anchor="end" size={12} />
+      <Label x={dayX(4) + 12} y={y(36) + 2} text="AC 36" anchor="start" size={12} />
+      <Label x={dayX(4) + 12} y={y(30) + 8} text="EV 30" anchor="start" size={12} />
+      <Label x={dayX(5) + 40} y={y(16)} text={['SV = EV − PV = −10', 'CV = EV − AC = −6']} anchor="start" size={12} />
+      <Label x={dayX(10) - 6} y={y(100) - 12} text="BAC 100" anchor="end" size={12} />
+
+      <line x1="100" y1="38" x2="135" y2="38" stroke={muted} strokeWidth="2" strokeDasharray="6 5" />
+      <Label x={143} y={38} text="Planned value" anchor="start" size={12} />
+      <line x1="250" y1="38" x2="285" y2="38" stroke={plan} strokeWidth="2.5" />
+      <Label x={293} y={38} text="Earned value" anchor="start" size={12} />
+      <line x1="395" y1="38" x2="430" y2="38" stroke={critical} strokeWidth="2.5" />
+      <Label x={438} y={38} text="Actual cost" anchor="start" size={12} />
+    </Frame>
+  )
+}
+
+function WbsTree() {
+  const second = [
+    { code: '1.1', name: ['Project', 'management'], x: 20, pack: true },
+    { code: '1.2', name: ['Booking', 'website'], x: 200, pack: false },
+    { code: '1.3', name: ['Staff', 'day list'], x: 380, pack: false },
+    { code: '1.4', name: ['Training'], x: 560, pack: true },
+  ]
+  const third = [
+    { code: '1.2.1', name: 'Booking pages', x: 215, y: 205 },
+    { code: '1.2.2', name: 'Payment', x: 215, y: 250 },
+    { code: '1.2.3', name: 'Reminders', x: 215, y: 295 },
+    { code: '1.3.1', name: 'Day list screen', x: 395, y: 205 },
+    { code: '1.3.2', name: 'Printing', x: 395, y: 250 },
+  ]
+  return (
+    <Frame
+      width={720}
+      height={340}
+      caption="A work breakdown structure for a clinic's booking system. Each level divides the one above into deliverables, and the numbers are the code of accounts. The shaded boxes are work packages: the lowest level of each branch. Project management is in the WBS too, because of the 100 percent rule."
+      description="Work breakdown structure tree. Level 1: clinic booking system, code 1. Level 2: 1.1 project management, 1.2 booking website, 1.3 staff day list, 1.4 training. Under 1.2: work packages 1.2.1 booking pages, 1.2.2 payment, 1.2.3 reminders. Under 1.3: work packages 1.3.1 day list screen and 1.3.2 printing. 1.1 and 1.4 are work packages themselves."
+    >
+      <Box x={270} y={12} w={180} h={46} text="1 Clinic booking system" bold />
+      <line x1="360" y1="58" x2="360" y2="80" stroke={ink} strokeWidth="1.5" />
+      <line x1="90" y1="80" x2="630" y2="80" stroke={ink} strokeWidth="1.5" />
+      {second.map((b) => (
+        <g key={b.code}>
+          <line x1={b.x + 70} y1="80" x2={b.x + 70} y2="100" stroke={ink} strokeWidth="1.5" />
+          <Box x={b.x} y={100} w={140} h={64} text={[b.code, ...b.name]} fill={b.pack ? planSoft : surface} stroke={b.pack ? plan : ink} />
+        </g>
+      ))}
+      {[200, 380].map((x) => (
+        <line key={x} x1={x + 4} y1="164" x2={x + 4} y2={x === 200 ? 312 : 267} stroke={ink} strokeWidth="1.5" />
+      ))}
+      {third.map((b) => (
+        <g key={b.code}>
+          <line x1={b.x - 11} y1={b.y + 17} x2={b.x} y2={b.y + 17} stroke={ink} strokeWidth="1.5" />
+          <Box x={b.x} y={b.y} w={150} h={34} text={`${b.code} ${b.name}`} fill={planSoft} stroke={plan} />
+        </g>
+      ))}
+      <rect x="560" y="236" width="16" height="16" rx="3" fill={planSoft} stroke={plan} strokeWidth="1.5" />
+      <Label x={584} y={244} text="Work package" anchor="start" size={12} />
+    </Frame>
+  )
+}
+
+function ControlChart() {
+  // Twenty samples of a 50 mm part. Sample 5 is above the upper control limit; samples 12 to 18 are a run of seven above the mean.
+  const samples = [49.6, 50.5, 49.2, 50.3, 53.6, 49.8, 50.9, 49.1, 50.2, 49.5, 49.9, 50.6, 51.2, 50.8, 51.5, 50.4, 51.1, 50.7, 49.4, 50.1]
+  const x = (n: number) => 80 + n * 31
+  const y = (mm: number) => 170 - (mm - 50) * 28
+  const rule = (mm: number, stroke: string, dash?: string) => <line x1="70" y1={y(mm)} x2="690" y2={y(mm)} stroke={stroke} strokeWidth="1.5" strokeDasharray={dash} />
+  return (
+    <Frame
+      width={720}
+      height={345}
+      caption="Control chart for a part that must be 50 mm thick. The control limits sit three standard deviations either side of the mean and come from the process; the tolerance comes from the requirement. Sample 5 is outside a control limit, and samples 12 to 18 are seven in a row above the mean. Both signal a process out of control, although every part is within tolerance."
+      description="Control chart of twenty samples around a mean of 50 millimetres, with control limits at 47 and 53 and tolerance limits at 46 and 54.5. Sample 5 measures 53.6, above the upper control limit but within tolerance. Samples 12 to 18 are all above the mean, a run of seven."
+    >
+      {rule(54.5, critical, '2 5')}
+      {rule(53, milestone, '7 5')}
+      {rule(50, ink)}
+      {rule(47, milestone, '7 5')}
+      {rule(46, critical, '2 5')}
+      <Label x={694} y={y(54.5) - 9} text="Upper tolerance" anchor="end" size={12} fill={muted} />
+      <Label x={694} y={y(53) - 9} text="Upper control limit" anchor="end" size={12} fill={muted} />
+      <Label x={694} y={y(50) + 11} text="Mean" anchor="end" size={12} fill={muted} />
+      <Label x={694} y={y(47) - 9} text="Lower control limit" anchor="end" size={12} fill={muted} />
+      <Label x={694} y={y(46) + 11} text="Lower tolerance" anchor="end" size={12} fill={muted} />
+      <rect x={x(11) - 12} y={y(51.5) - 12} width={31 * 6 + 24} height={y(50.4) - y(51.5) + 24} rx="6" fill="none" stroke={plan} strokeWidth="1.5" strokeDasharray="4 4" />
+      <Label x={x(14)} y={y(51.5) - 24} text="Run of seven above the mean" size={12} />
+      <polyline points={samples.map((mm, n) => `${x(n)},${y(mm)}`).join(' ')} fill="none" stroke={plan} strokeWidth="2" />
+      {samples.map((mm, n) => (
+        <circle key={n} cx={x(n)} cy={y(mm)} r="3.5" fill={mm > 53 ? critical : plan} />
+      ))}
+      <Label x={x(4) + 10} y={y(53.6) - 4} text="Outside the control limit" anchor="start" size={12} />
+      {[1, 5, 10, 15, 20].map((n) => (
+        <Label key={n} x={x(n - 1)} y={318} text={String(n)} size={12} fill={muted} />
+      ))}
+      <Label x={380} y={336} text="Sample" size={12} />
+    </Frame>
+  )
+}
+
+function BurnupChart() {
+  // The lesson's numbers: the scope line steps up from 120 to 135 points.
+  const completed = [0, 14, 27, 41, 55, 68, 80, 93, 106, 120, 135]
+  const y = (points: number) => BOTTOM - points * 1.6
+  return (
+    <Frame
+      width={720}
+      height={345}
+      caption="Burnup chart for a release. The lower line is the work completed; the upper line is the total scope. After iteration 4 the scope line steps up from 120 to 135 points: scope was added. The gap between the two lines is the work left."
+      description="Burnup chart over 10 iterations. Completed work rises steadily from 0 to 135 story points. The total scope line is level at 120 points until iteration 4, then steps up to 135. The two lines meet at iteration 10."
+    >
+      <Axes top={150} step={30} scale={1.6} yTitle="Story points" xTitle="Iteration" />
+      <polyline points={`${dayX(0)},${y(120)} ${dayX(4)},${y(120)} ${dayX(4)},${y(135)} ${dayX(10)},${y(135)}`} fill="none" stroke={milestone} strokeWidth="2.5" />
+      <polyline points={completed.map((p, i) => `${dayX(i)},${y(p)}`).join(' ')} fill="none" stroke={plan} strokeWidth="2.5" />
+      {completed.map((p, i) => (
+        <circle key={i} cx={dayX(i)} cy={y(p)} r="3.5" fill={plan} />
+      ))}
+      <Label x={dayX(4) + 10} y={y(135) - 14} text="Scope added: 120 to 135" anchor="start" size={12} />
+      <line x1={dayX(6)} y1={y(80)} x2={dayX(6)} y2={y(135)} stroke={ink} strokeWidth="1.5" strokeDasharray="3 4" />
+      <Label x={dayX(6) + 10} y={y(107)} text="55 points left" anchor="start" size={12} />
+      <line x1="100" y1="38" x2="135" y2="38" stroke={milestone} strokeWidth="2.5" />
+      <Label x={143} y={38} text="Total scope" anchor="start" size={12} />
+      <line x1="240" y1="38" x2="275" y2="38" stroke={plan} strokeWidth="2.5" />
+      <Label x={283} y={38} text="Completed" anchor="start" size={12} />
+    </Frame>
+  )
+}
+
+function UseCaseDiagram() {
+  const cases = [
+    { text: 'Book an appointment', y: 70 },
+    { text: 'Cancel an appointment', y: 140 },
+    { text: 'Pay a deposit', y: 210 },
+    { text: 'View the day list', y: 280 },
+  ]
+  const actor = (x: number, y: number, name: string) => (
+    <g>
+      <circle cx={x} cy={y - 26} r="9" fill="none" stroke={ink} strokeWidth="1.5" />
+      <line x1={x} y1={y - 17} x2={x} y2={y + 6} stroke={ink} strokeWidth="1.5" />
+      <line x1={x - 14} y1={y - 8} x2={x + 14} y2={y - 8} stroke={ink} strokeWidth="1.5" />
+      <line x1={x} y1={y + 6} x2={x - 11} y2={y + 22} stroke={ink} strokeWidth="1.5" />
+      <line x1={x} y1={y + 6} x2={x + 11} y2={y + 22} stroke={ink} strokeWidth="1.5" />
+      <Label x={x} y={y + 38} text={name} bold />
+    </g>
+  )
+  const link = (x: number, y: number, to: number) => <line x1={x} y1={y} x2={x < 360 ? 262 : 458} y2={to} stroke={ink} strokeWidth="1.5" />
+  return (
+    <Frame
+      width={720}
+      height={340}
+      caption="Use case diagram for the clinic's booking system. The box is the boundary of the solution. Each oval is a goal an actor reaches with the system, and a line joins an actor to the use cases it takes part in. Actors stand outside the box: they may be people or other systems."
+      description="Use case diagram. Inside the system boundary are four use cases: book an appointment, cancel an appointment, pay a deposit, view the day list. The patient is linked to book, cancel and pay. The payment provider is linked to pay a deposit. The receptionist is linked to cancel an appointment and view the day list."
+    >
+      <rect x="215" y="20" width="290" height="305" rx="6" fill="none" stroke={ink} strokeWidth="1.5" />
+      <Label x={360} y={36} text="Clinic booking system" size={12} fill={muted} />
+      {link(84, 150, 70)}
+      {link(84, 158, 140)}
+      {link(84, 166, 210)}
+      {link(636, 96, 140)}
+      {link(636, 104, 280)}
+      {link(636, 250, 210)}
+      {cases.map((c) => (
+        <g key={c.text}>
+          <ellipse cx="360" cy={c.y} rx="98" ry="26" fill={planSoft} stroke={plan} strokeWidth="1.5" />
+          <Label x={360} y={c.y} text={c.text} />
+        </g>
+      ))}
+      {actor(60, 160, 'Patient')}
+      {actor(660, 100, 'Receptionist')}
+      {actor(660, 250, 'Payment provider')}
+    </Frame>
+  )
+}
+
 export const diagrams: Record<string, ComponentType> = {
   'context-diagram': ContextDiagram,
   'process-flow': ProcessFlow,
@@ -300,4 +538,10 @@ export const diagrams: Record<string, ComponentType> = {
   fishbone: Fishbone,
   'burndown-chart': BurndownChart,
   'cumulative-flow-diagram': CumulativeFlowDiagram,
+  'network-diagram': NetworkDiagram,
+  'earned-value-chart': EarnedValueChart,
+  'wbs-tree': WbsTree,
+  'control-chart': ControlChart,
+  'burnup-chart': BurnupChart,
+  'use-case-diagram': UseCaseDiagram,
 }

@@ -77,6 +77,8 @@ Three ways velocity is misused:
 
 **Reading a burnup chart.** There are two lines: total scope across the top, and completed work rising from zero. The gap between them is the work left. If the scope line steps up from 120 to 135 points, scope was **added**. A burndown chart would hide that.
 
+@diagram burnup-chart
+
 ## Flow metrics
 
 @source Agile Practice Guide, 5.5.2; Agile Practice Guide, Glossary (flow metrics)
