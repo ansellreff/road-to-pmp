@@ -838,6 +838,6 @@ These tools fall under outline tasks but are named by no enabler, so each has a 
 |---|---|---|
 | Statements found wrong | 0 | 0 |
 | New sections | 3 | 0 |
-| Notes added | 7 | 7 |
+| Notes added | 6 | 7 |
 | Questions | 29 | 10 |
 | Flashcards | 22 | 7 |
