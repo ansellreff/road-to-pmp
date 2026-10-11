@@ -487,5 +487,105 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q25",
+    "q": "A project's test phase may not begin until the test laboratory has been booked and the test plan approved. What are these two conditions, as attributes of the phase?",
+    "options": [
+      "Exit criteria",
+      "Entrance criteria",
+      "Acceptance criteria",
+      "Success criteria"
+    ],
+    "answer": 1,
+    "explanation": "Entrance criteria are what must be true to start a phase. Exit criteria are what must be true to finish it. Both are attributes of a phase, with its name, number, duration and resource requirements.",
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Before the build phase of a project starts, a review confirms that the work still fits the organization's goals, that resources are available and that planning is complete. Where does this gate sit, and what is it called?",
+    "options": [
+      "At the end of the build phase; a closing review",
+      "In the middle of the phase; a status meeting",
+      "At the start of the phase; a pre-phase gate",
+      "After the project closes; a benefits review"
+    ],
+    "answer": 2,
+    "explanation": "A phase gate usually sits at the end of a phase. Gates can also be placed at the start of a phase, as pre-phase gates, to confirm alignment, resources and planning before work begins.",
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "On a predictive project, the approved scope, the approved schedule and the approved cost are managed as one reference against which performance is measured. What does the Eighth Edition call the three together?",
+    "options": [
+      "The integrated baseline",
+      "The project charter",
+      "The product backlog",
+      "The business case"
+    ],
+    "answer": 0,
+    "explanation": "In a predictive approach the scope, schedule and cost baselines together are the integrated baseline. Executing aims at the value that baseline represents.",
+    "ref": "PMBOK 8, Standard 4.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 84,
+        "label": "PMBOK 8, Standard 4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A drug development project hands over results at several points: after each trial phase, at regulatory approval and at launch. The dates depend on the work and follow no fixed rhythm. Which delivery cadence is this?",
+    "options": [
+      "Single delivery",
+      "Periodic deliveries",
+      "Continuous delivery",
+      "Multiple deliveries"
+    ],
+    "answer": 3,
+    "explanation": "Multiple deliveries: components are delivered at different times, in sequence or in parallel. Periodic deliveries are like multiple ones but on a fixed, regular schedule.",
+    "ref": "PMBOK 8, Standard 4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 92,
+        "label": "PMBOK 8, Standard 4.4"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A project runs almost entirely in two-week iterations with a backlog. One part, a hardware order with a long lead time, is planned and controlled in the traditional way. Which Disciplined Agile level of hybrid is this?",
+    "options": [
+      "Level 1: predictive dominates",
+      "Level 2: both contribute significantly",
+      "Level 3: adaptive dominates, with some predictive elements",
+      "It is not hybrid at all, because one approach clearly leads the other"
+    ],
+    "answer": 2,
+    "explanation": "Disciplined Agile describes three levels of hybrid. Level 1: predictive dominates with some adaptive elements. Level 2: both contribute significantly. Level 3: adaptive dominates with some predictive elements.",
+    "ref": "PMBOK 8, Standard 4.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 88,
+        "label": "PMBOK 8, Standard 4.2.3"
+      }
+    ]
   }
 ]

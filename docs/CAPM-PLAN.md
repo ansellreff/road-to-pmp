@@ -63,6 +63,7 @@ Certified Associate in Project Management. Built and online; **being finished** 
 | 2026-10-11 | **Session 31 finished: CAPM strengthened in all five parts.** You asked that every addition be part of the exam outline; from that point each one is tied to an outline task (see "The outline rule"). **31a:** all four domains compared with the exam's own books. Nothing was found wrong; 20 missing topics are now taught, the largest being the 2017 Agile Practice Guide's contracts, agile PMO, extra frameworks and agile earned value (Domain 3), the practice guide's 23 business analysis tools (Domain 4), and the Seventh Edition's nine kinds of artifact and sixteen meetings (Domain 2). **31b:** 130 new scenario questions and 68 flashcards. **31c:** Mock exam 5, 150 questions you have not seen. **31d:** keyboard shortcuts in quizzes, practice, mock exams and flashcards. **31e:** six new drawings. Bank: 1,039 questions, 1,298 flashcards, 5 mock exams. All checks and the 21 click tests pass. | You: `upload.bat` to publish. Then the exam. PMP needs the PMP Exam Content Outline PDF in the materials folder |
 | 2026-10-11 | **CAPM reopened to be finished.** You asked whether CAPM was 100% finished. It was not, and you chose to close every open item before PMP continues: the thin outline item and the small Domain 1 quizzes (Session 32), a deeper accuracy check of Domains 4 and 2 (Sessions 33 to 35), the real exam's question types (Sessions 36 and 37), the remaining drawings (Session 38), and a closing session (39). | Session 32 |
 | 2026-10-11 | **Session 32, first sitting.** The outline's last thin item is now taught: module 1.12 has a section "Following a planned strategy: communication, risk and stakeholders", written from the process guide's three Executing processes, with 8 questions and 6 flashcards. **The outline coverage is now 60 of 60.** The quizzes of modules 1.1 and 1.4 were brought up to 20 questions (15 new). Bank: 1,062 questions, 1,304 flashcards. | Session 32, second sitting: modules 1.2, 1.3 and 1.5 to 1.10 still have 13 to 17 questions each |
+| 2026-10-11 | **Session 32 done: content gaps closed.** Second sitting: 40 more scenario questions, so every Domain 1 module quiz now has at least 20 (modules 1.2, 1.3, 1.5 to 1.10). Each was written after reading the module's lesson and checking its existing questions for repeats. Session 32 in total: one new lesson section, 63 questions, 6 flashcards. Bank: 1,102 questions, 1,304 flashcards; the module quizzes show 802. | You: `upload.bat`. Next: Session 33, the practice guide's chapters 2 and 3 against modules 4.1 to 4.3 |
 
 ## Roadmap to a complete CAPM course
 
@@ -95,7 +96,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 29 | Navigation, side panels and a richer look, from your feedback: search suggestions, Modules menu, right-hand panel, previous and next, cards and rings, home hub, feedback, streak, daily goal, milestones. Details under "Session 29: navigation and look, as built". |
 | ✅ | 30 | Questions: 54 new scenario questions in Domain 1; 112 questions in Domains 2 to 4 reworded as situations. Details under "Session 30: questions". |
 | ✅ | 31 | Strengthen CAPM before the exam: 31a accuracy check of all four domains against the exam's books; 31b 130 new scenario questions; 31c Mock exam 5 (unseen); 31d keyboard shortcuts; 31e six more drawings. Details under "Session 31a: lessons compared with the exam's books" and "Session 31b to 31e: as built". |
-| 🟡 | 32 | **First sitting done** (thin item taught; modules 1.1 and 1.4 at 20). Second sitting: modules 1.2, 1.3, 1.5 to 1.10. Content gaps: the thin outline item (responding to a planned strategy or framework) taught properly; about 40 new scenario questions so no Domain 1 module quiz has fewer than 20 |
+| ✅ | 32 | Content gaps: the thin outline item (responding to a planned strategy or framework) taught in module 1.12; 55 new scenario questions so no Domain 1 module quiz has fewer than 20 |
 | ⬜ | 33 | Deeper accuracy check: *Business Analysis for Practitioners*, chapters 2 and 3, against modules 4.1 to 4.3 |
 | ⬜ | 34 | Deeper accuracy check: the same book, chapters 4 (rest), 5 and 6, against modules 4.4 to 4.7 |
 | ⬜ | 35 | Deeper accuracy check: *Process Groups: A Practice Guide*, the 49 processes, against modules 1.12 and 2.1 to 2.11 |
@@ -162,7 +163,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (1,062 quiz questions, 1,304 flashcards, after Session 32's first sitting). Of the 1,062 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 762. 312 questions are in no exam.
+Overall: **39 of 39 modules done** (1,102 quiz questions, 1,304 flashcards, after Session 32). Of the 1,102 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 802. 352 questions are in no exam.
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -750,3 +751,28 @@ Every new question is a short situation with four options written for it, cites 
 | 4.5 | Use case diagram | The clinic booking system |
 
 Each was looked at in the light and the dark theme. Not drawn: the decision tree planned for module 4.5.
+
+## Session 32: content gaps, as built
+
+**The thin outline item.** Module 1.12 has a section "Following a planned strategy: communication, risk and stakeholders", from *Process Groups: A Practice Guide*, sections 6.7, 6.8 and 6.10 (pages 173 to 176 and 180 to 181). It names the three Executing processes that carry out the communications management plan, the planned risk responses and the stakeholder engagement plan, gives five rules for an appropriate response, and lists the guide's seven techniques for communicating well. 8 questions, 6 flashcards. Outline coverage: 60 of 60.
+
+**Domain 1 module quizzes.** Questions shown in each module quiz, before and after:
+
+| Module | Before | After | New questions |
+|---|---|---|---|
+| 1.1 | 12 | 20 | 8 |
+| 1.2 | 17 | 20 | 3 |
+| 1.3 | 17 | 20 | 3 |
+| 1.4 | 13 | 20 | 7 |
+| 1.5 | 13 | 20 | 7 |
+| 1.6 | 15 | 20 | 5 |
+| 1.7 | 13 | 20 | 7 |
+| 1.8 | 14 | 20 | 6 |
+| 1.9 | 16 | 21 | 5 |
+| 1.10 | 16 | 20 | 4 |
+| 1.11 | 21 | 21 | 0 |
+| 1.12 | 21 | 29 | 8 |
+
+All 63 are scenarios with a book page link. None is in a mock exam, so they stay in the module quizzes. No Domain 1 module has the right answer as the longest option more than 32% of the time.
+
+**Left as it is:** eight modules in Domains 3 and 4 show 17 or 18 questions (3.2, 3.4, 3.6, 4.1, 4.2, 4.3, 4.4, 4.6). They were not part of this session, which you chose for Domain 1. Sessions 33, 34 and 37 add questions to Domain 4 and to every domain.

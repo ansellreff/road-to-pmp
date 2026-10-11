@@ -548,5 +548,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q28",
+    "q": "A practice question drawn from the Seventh Edition lists process assets, governance documentation, data assets, and knowledge assets together under one heading. Which heading does that edition use?",
+    "options": [
+      "Organizational process assets",
+      "The external environment",
+      "The internal environment",
+      "Enterprise governance"
+    ],
+    "answer": 2,
+    "explanation": "The Seventh Edition does not use the terms EEF and OPA. It speaks of the internal environment, which includes process, governance, data and knowledge assets, and the external environment.",
+    "ref": "PMBOK 7, Standard 2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 43,
+        "label": "PMBOK 7, Standard 2.4"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A government announces a subsidy that cuts the cost of the solar panels a project must buy. The project manager had always thought of environmental factors as obstacles. What does the Guide say about such influences?",
+    "options": [
+      "They can be favorable, unfavorable or neutral",
+      "They are always constraints on a project team",
+      "They matter only on predictive projects",
+      "They are organizational process assets"
+    ],
+    "answer": 0,
+    "explanation": "Every project operates inside an internal and an external environment, and these influences can be favorable, unfavorable or neutral. A subsidy is a favorable external factor.",
+    "ref": "PMBOK 8, Standard 2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 40,
+        "label": "PMBOK 8, Standard 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "The same Seventh Edition question lists marketplace conditions, the regulatory environment and the physical environment under another heading. Which is it?",
+    "options": [
+      "The internal environment",
+      "Organizational process assets",
+      "The value delivery system",
+      "The external environment"
+    ],
+    "answer": 3,
+    "explanation": "In the Seventh Edition, factors outside the organization, such as marketplace conditions, the regulatory environment and the physical environment, belong to the external environment.",
+    "ref": "PMBOK 7, Standard 2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 43,
+        "label": "PMBOK 7, Standard 2.4"
+      }
+    ]
   }
 ]

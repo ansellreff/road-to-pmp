@@ -548,5 +548,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q28",
+    "q": "A sponsor speaks for the project in the executive committee, keeps its vision in front of people, and secures the funding and staff it needs. In the Seventh Edition's list of functions, which one is this?",
+    "options": [
+      "Provide oversight and coordination",
+      "Provide resources and direction",
+      "Present objectives and feedback",
+      "Perform work and contribute insights"
+    ],
+    "answer": 1,
+    "explanation": "People in the provide resources and direction function promote the project, communicate the organization's vision, goals and expectations, and help secure the resources. This is typically the sponsor.",
+    "ref": "PMBOK 7, Standard 2.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 39,
+        "label": "PMBOK 7, Standard 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Customers describe what they need from a new ordering system, and later try a prototype and say what does not work for them. In the Seventh Edition's list of functions, which one are they performing?",
+    "options": [
+      "Present objectives and feedback",
+      "Apply expertise",
+      "Maintain governance",
+      "Facilitate and support"
+    ],
+    "answer": 0,
+    "explanation": "The present objectives and feedback function is performed by customers and end users, who contribute perspectives, insights and clear direction on requirements, outcomes and expectations.",
+    "ref": "PMBOK 7, Standard 2.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 39,
+        "label": "PMBOK 7, Standard 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "A project manager leads the planning, tracks progress against it, and coordinates the team's work toward the project's outcomes. In the Seventh Edition's list of functions, which one is this?",
+    "options": [
+      "Provide business direction and insight",
+      "Apply expertise",
+      "Provide oversight and coordination",
+      "Maintain governance"
+    ],
+    "answer": 2,
+    "explanation": "People in the provide oversight and coordination function help the team achieve the objectives, typically by orchestrating the work: leading planning, monitoring and controlling activities.",
+    "ref": "PMBOK 7, Standard 2.3",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 39,
+        "label": "PMBOK 7, Standard 2.3"
+      }
+    ]
   }
 ]

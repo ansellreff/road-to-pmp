@@ -533,5 +533,85 @@
         "label": "PMBOK 7, Guide 4.2.7"
       }
     ]
+  },
+  {
+    "id": "q27",
+    "q": "A project manager coaching a team member asks, in turn: what do you want to achieve, where are you now, what could you do and what would follow, what will you do, and how will we check progress? Which model is she using?",
+    "options": [
+      "ADKAR",
+      "Situational Leadership II",
+      "The Tuckman ladder",
+      "OSCAR"
+    ],
+    "answer": 3,
+    "explanation": "OSCAR is a coaching model: Outcome, Situation, Choices and consequences, Actions, Review. Situational Leadership II chooses a leadership style by competence and commitment.",
+    "ref": "PMBOK 7, Guide 4.2.1",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 250,
+        "label": "PMBOK 7, Guide 4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A merger has been announced. Staff are no longer in the old organization but do not yet feel part of the new one; some are anxious, some unusually inventive. In the Bridges transition model, which stage is this?",
+    "options": [
+      "Ending, losing and letting go",
+      "The new beginning",
+      "The neutral zone",
+      "The late status quo"
+    ],
+    "answer": 2,
+    "explanation": "Bridges separates change, which is situational, from transition, which is psychological. Its stages are ending, losing and letting go; the neutral zone; and the new beginning.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A project has put a new way of working in place. The sponsor asks what remains, in PMI's Managing Change in Organizations framework, after \"implement change\" and \"manage transition\". What is the last element?",
+    "options": [
+      "Sustain change",
+      "Formulate change",
+      "Plan change",
+      "Close change"
+    ],
+    "answer": 0,
+    "explanation": "The framework's elements are formulate change, plan change, implement change, manage transition and sustain change. Sustaining makes sure the new capabilities continue.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "In a negotiation over delivery dates, a project manager looks for an outcome that leaves both her project and the supplier better off, and avoids one where either side gives way resentfully. Which principle is this?",
+    "options": [
+      "Forcing",
+      "Think win-win",
+      "Smoothing",
+      "Withdrawal"
+    ],
+    "answer": 1,
+    "explanation": "Think win-win seeks an outcome in which each party gains. The alternatives are win-lose or lose-win, and lose-lose. Win-win rests on character, trust and approach.",
+    "ref": "PMBOK 7, Guide 4.2.7",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 263,
+        "label": "PMBOK 7, Guide 4.2.7"
+      }
+    ]
   }
 ]

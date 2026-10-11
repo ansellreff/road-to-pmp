@@ -507,5 +507,105 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q26",
+    "q": "A risk is written: \"Because the design is new, the prototype may fail its tests, which would delay the launch by a month.\" In the cause, event, consequence structure, which part is the event?",
+    "options": [
+      "The design is new",
+      "The prototype may fail its tests",
+      "The launch is delayed by one month",
+      "The whole sentence"
+    ],
+    "answer": 1,
+    "explanation": "A risk can be written as cause, event, consequence. The cause is that the design is new; the uncertain event is that the prototype may fail testing; the consequence is the delayed launch.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A contract pays a large bonus if the bridge opens a month early. The project manager moves her two most experienced crews onto the critical activities to make sure it does. Which response to an opportunity is this?",
+    "options": [
+      "Enhance",
+      "Share",
+      "Exploit",
+      "Accept"
+    ],
+    "answer": 2,
+    "explanation": "Exploit means acting to ensure the opportunity occurs. Enhance only increases its probability or impact, and share gives ownership to a third party best able to capture it.",
+    "ref": "PMBOK 7, Guide 2.8",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 211,
+        "label": "PMBOK 7, Guide 2.8"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A steering committee asks for a single figure showing how much could be lost in total if the project's open risks occurred, as things stand today. What is this measure called?",
+    "options": [
+      "Risk appetite",
+      "Risk threshold",
+      "Residual risk",
+      "Risk exposure"
+    ],
+    "answer": 3,
+    "explanation": "Risk exposure is an aggregate measure of the potential impact of all risks at a given point in time. Risk appetite is the uncertainty an organization will accept; a threshold is the acceptable variation around an objective.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Sales of a new product fall, and the team cannot tell why: there are six plausible causes and a dozen possible responses. Which term from the Guide describes this state?",
+    "options": [
+      "Ambiguity",
+      "Volatility",
+      "A constraint",
+      "An issue log"
+    ],
+    "answer": 0,
+    "explanation": "Ambiguity is a state of being unclear, where the cause of events is hard to identify or there are many options to choose from. Volatility is the possibility of rapid and unpredictable change.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "To reduce the risk of late delivery, a team switches to a second supplier. The second supplier has never made this part, so the team now faces a possible quality problem. What is the new risk called?",
+    "options": [
+      "A residual risk",
+      "A secondary risk",
+      "An emergent risk",
+      "An overall risk"
+    ],
+    "answer": 1,
+    "explanation": "A secondary risk is a new risk created by carrying out a response. Residual risk is what remains of the original risk after the response.",
+    "ref": "PMBOK 7, Guide 2.8",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 211,
+        "label": "PMBOK 7, Guide 2.8"
+      }
+    ]
   }
 ]
