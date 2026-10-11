@@ -1,6 +1,6 @@
 # CAPM: issues and how they were handled
 
-Every problem met while building the CAPM course and the platform, newest group last. Read this before changing something, to see why it is the way it is. Section names under "Where to look" refer to [CAPM-PLAN.md](CAPM-PLAN.md). Entries 1 to 151 are here; later numbers are in the file of the certification they belong to.
+Every problem met while building the CAPM course and the platform, newest group last. Read this before changing something, to see why it is the way it is. Section names under "Where to look" refer to [CAPM-PLAN.md](CAPM-PLAN.md). Entries are numbered from 1 and continue here for all CAPM work; each other certification numbers its own.
 
 ### Setup and tools
 

@@ -1,6 +1,6 @@
 # CAPM: plan and progress
 
-Certified Associate in Project Management. **Complete and stored** since 2026-10-11. This file is the record of how the course and the platform were built. Problems and fixes are in [CAPM-ISSUES.md](CAPM-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
+Certified Associate in Project Management. Built and online; **being finished** in Sessions 32 to 39 (decided 2026-10-11). This file is the record of how the course and the platform were built. Problems and fixes are in [CAPM-ISSUES.md](CAPM-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
 
 ## Status log
 
@@ -61,6 +61,7 @@ Certified Associate in Project Management. **Complete and stored** since 2026-10
 | 2026-10-11 | **Sync confirmed by you on the real service:** saving and syncing between the PC and the phone works, with both signed in. Session 28d is complete, and with it everything planned for CAPM. | Next: decide what comes after CAPM (PMP needs the current PMP Exam Content Outline in the materials folder) |
 | 2026-10-11 | **Session 31a, first sitting: Domain 1 checked against the exam's own books.** Two topics were missing from the course and are now taught: the three types of PMO (module 1.2) and the 7th edition's named models for change, coaching, team development and negotiation (module 1.10). Eight "On the exam" notes added where the exam's book words or counts something differently. 15 new questions and 22 new flashcards for these. Bank: 909 questions, 1,230 flashcards. Not yet compared: modules 1.4 and 1.5 against the 7th edition's twelve principles, and 1.7, 1.11, 1.12 against the Process Groups guide. | You: `upload.bat` to publish. Next sitting: finish Domain 1 (the twelve principles, process groups), then Domain 2 |
 | 2026-10-11 | **Session 31 finished: CAPM strengthened in all five parts.** You asked that every addition be part of the exam outline; from that point each one is tied to an outline task (see "The outline rule"). **31a:** all four domains compared with the exam's own books. Nothing was found wrong; 20 missing topics are now taught, the largest being the 2017 Agile Practice Guide's contracts, agile PMO, extra frameworks and agile earned value (Domain 3), the practice guide's 23 business analysis tools (Domain 4), and the Seventh Edition's nine kinds of artifact and sixteen meetings (Domain 2). **31b:** 130 new scenario questions and 68 flashcards. **31c:** Mock exam 5, 150 questions you have not seen. **31d:** keyboard shortcuts in quizzes, practice, mock exams and flashcards. **31e:** six new drawings. Bank: 1,039 questions, 1,298 flashcards, 5 mock exams. All checks and the 21 click tests pass. | You: `upload.bat` to publish. Then the exam. PMP needs the PMP Exam Content Outline PDF in the materials folder |
+| 2026-10-11 | **CAPM reopened to be finished.** You asked whether CAPM was 100% finished. It was not, and you chose to close every open item before PMP continues: the thin outline item and the small Domain 1 quizzes (Session 32), a deeper accuracy check of Domains 4 and 2 (Sessions 33 to 35), the real exam's question types (Sessions 36 and 37), the remaining drawings (Session 38), and a closing session (39). | Session 32 |
 
 ## Roadmap to a complete CAPM course
 
@@ -93,6 +94,14 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 29 | Navigation, side panels and a richer look, from your feedback: search suggestions, Modules menu, right-hand panel, previous and next, cards and rings, home hub, feedback, streak, daily goal, milestones. Details under "Session 29: navigation and look, as built". |
 | ✅ | 30 | Questions: 54 new scenario questions in Domain 1; 112 questions in Domains 2 to 4 reworded as situations. Details under "Session 30: questions". |
 | ✅ | 31 | Strengthen CAPM before the exam: 31a accuracy check of all four domains against the exam's books; 31b 130 new scenario questions; 31c Mock exam 5 (unseen); 31d keyboard shortcuts; 31e six more drawings. Details under "Session 31a: lessons compared with the exam's books" and "Session 31b to 31e: as built". |
+| ⬜ | 32 | Content gaps: the thin outline item (responding to a planned strategy or framework) taught properly; about 40 new scenario questions so no Domain 1 module quiz has fewer than 20 |
+| ⬜ | 33 | Deeper accuracy check: *Business Analysis for Practitioners*, chapters 2 and 3, against modules 4.1 to 4.3 |
+| ⬜ | 34 | Deeper accuracy check: the same book, chapters 4 (rest), 5 and 6, against modules 4.4 to 4.7 |
+| ⬜ | 35 | Deeper accuracy check: *Process Groups: A Practice Guide*, the 49 processes, against modules 1.12 and 2.1 to 2.11 |
+| ⬜ | 36 | Real exam question types, the rules: matching, hot spot and comic strip stored, marked, saved, synced and checked |
+| ⬜ | 37 | Real exam question types, the screens and the questions: about 60 matching, 25 hot spot, 25 comic strip; Mock exam 6 if the bank allows |
+| ⬜ | 38 | Drawings in module 4.5: decision tree, ecosystem map, feature model, data flow diagram, wireframe |
+| ⬜ | 39 | Close CAPM: all checks, final counts, each open item marked closed or left open with the reason |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 

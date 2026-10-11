@@ -1,27 +1,28 @@
 # PMP: plan and progress
 
-Project Management Professional. **In progress**, started 2026-10-11. Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
+Project Management Professional. Started 2026-10-11; **paused since the same day until CAPM is finished**. Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
 
 ## Status log
 
 | Date | What happened | Next step |
 |---|---|---|
-| 2026-10-11 | **PMP started. Plan approved; Session 32 (sources and map) done except the reference list.** The PMP Exam Content Outline (July 2026 exam) is extracted and read: 180 questions in 240 minutes, two breaks, People 33% / Process 41% / Business Environment 26%, 26 tasks, about 40% predictive and 60% agile or hybrid. The instructor's course contents are read from the screenshot (273 lectures; based on the PMBOK Guide 8th Edition and the Agile Practice Guide). The module list grew from 32 to 34 after that reading. The PMP course exists in the app with all 34 modules marked "not written yet"; CAPM is unchanged and the 21 click tests pass. | **You:** confirm the module list; save the PMP reference list page from PMI.org into the materials folder (PMI.org refused my request). Next: Session 33, the exam engine |
-| 2026-10-11 | **Reference list received and read; Session 32 closed.** You saved a screenshot of PMI.org's "Exam References" page. It lists two PMI standards (the Agile Practice Guide and the PMBOK Guide) and eight textbooks, and says these are the ten sources most often cited by the people who write the questions. Neither standard is given an edition. **The tracker was split at your request:** an overview at the root, and a plan file and an issues file for each certification in `docs/`. | Plan mode: decide what comes next |
+| 2026-10-11 | **PMP started. Plan approved; PMP Session 1 (sources and map) done except the reference list.** The PMP Exam Content Outline (July 2026 exam) is extracted and read: 180 questions in 240 minutes, two breaks, People 33% / Process 41% / Business Environment 26%, 26 tasks, about 40% predictive and 60% agile or hybrid. The instructor's course contents are read from the screenshot (273 lectures; based on the PMBOK Guide 8th Edition and the Agile Practice Guide). The module list grew from 32 to 34 after that reading. The PMP course exists in the app with all 34 modules marked "not written yet"; CAPM is unchanged and the 21 click tests pass. | **You:** confirm the module list; save the PMP reference list page from PMI.org into the materials folder (PMI.org refused my request). Next: PMP Session 2, the exam engine |
+| 2026-10-11 | **Reference list received and read; PMP Session 1 closed.** You saved a screenshot of PMI.org's "Exam References" page. It lists two PMI standards (the Agile Practice Guide and the PMBOK Guide) and eight textbooks, and says these are the ten sources most often cited by the people who write the questions. Neither standard is given an edition. **The tracker was split at your request:** an overview at the root, and a plan file and an issues file for each certification in `docs/`. | Plan mode: decide what comes next |
+| 2026-10-11 | **PMP paused; numbering restarted.** You asked whether CAPM was 100% finished. It was not, and you chose to finish it first. You also said the separate files were meant to restart the session numbers, so PMP's sessions are now 1 to 15 (were 32 to 46) and its issues PMP-1 onward (were 152 onward). The design for PMP Session 2 is kept below as planned work. | CAPM Sessions 32 to 39 (see `CAPM-PLAN.md`). PMP resumes at PMP Session 2 |
 
 ## Roadmap
 
-Session numbers continue from CAPM, which ended with Session 31.
+PMP counts its own sessions from 1. (Until 2026-10-11 these were numbered 32 to 46, continuing from CAPM; see PMP-12 in the issues file for the old and new numbers.)
 
 | Status | Session | What |
 |---|---|---|
-| ✅ | 32 | **PMP.** Sources and map: outline extracted, instructor's contents read, reference list read, coverage map, course skeleton. |
-| ⬜ | 33 | PMP exam engine: sections and breaks from the course file (three sections of 60, two breaks); multiple response, case sets, graphic-based and matching questions; checker and exam builder rules; click tests showing CAPM unchanged |
-| ⬜ | 34 to 36 | PMP Domain 1, People: modules 1.1 to 1.9 |
-| ⬜ | 37 to 41 | PMP Domain 2, Process: modules 2.1 to 2.15 |
-| ⬜ | 42 to 44 | PMP Domain 3, Business Environment: modules 3.1 to 3.10 |
-| ⬜ | 45 | PMP mock exams: four of 180 questions, the fourth unseen; PMP in the study plan, readiness and weak spots |
-| ⬜ | 46 | PMP formula sheet; accuracy check against the reference list; final report |
+| ✅ | 1 | **PMP.** Sources and map: outline extracted, instructor's contents read, reference list read, coverage map, course skeleton. |
+| ⏸️ | 2 | **Waits until CAPM is finished.** PMP exam engine: sections and breaks from the course file (three sections of 60, two breaks); multiple response, case sets, graphic-based and matching questions; checker and exam builder rules; click tests showing CAPM unchanged |
+| ⬜ | 3 to 5 | PMP Domain 1, People: modules 1.1 to 1.9 |
+| ⬜ | 6 to 10 | PMP Domain 2, Process: modules 2.1 to 2.15 |
+| ⬜ | 11 to 13 | PMP Domain 3, Business Environment: modules 3.1 to 3.10 |
+| ⬜ | 14 | PMP mock exams: four of 180 questions, the fourth unseen; PMP in the study plan, readiness and weak spots |
+| ⬜ | 15 | PMP formula sheet; accuracy check against the reference list; final report |
 
 Every content session ends with the source linker, the content checker, the link audit, the example check, the build, the click tests and the publish check, then a tracker update, a commit and a report of issues and fixes.
 
@@ -161,3 +162,19 @@ Plus one page outside the question bank: how to answer situational questions.
 
 - `web/src/content/pmp/course.json` holds the three domains and 34 modules, each with the outline tasks it serves and marked not ready. The course page and the Modules menu list them as "not written yet".
 - A course with no written module is listed on the home page ("Being written: 0 of 34 modules are ready") but is not offered for study: no "continue" card, no exam day, no study plan and no dashboard block until its first module is ready.
+
+## PMP Session 2: planned design (not started)
+
+Agreed in plan mode on 2026-10-11, then put behind the CAPM work. CAPM Sessions 36 and 37 build the shared part of this (one function that marks an answer, answers that can be a list, matching questions, the checker's rules), so what remains for PMP is marked "PMP only".
+
+| Piece | What | |
+|---|---|---|
+| Sections and breaks | `course.json` gains `exam.sections` (PMP: 3). An exam in progress records a list of breaks. PMP runs as three sections of 60 with a break after 60 and after 120, each finished section locked. CAPM keeps two halves and one break. | PMP only |
+| Multiple response | `type: "multi"`, five or six options, two or three right; "Choose 2" above the options; marked all or nothing | PMP only |
+| Case sets | `case`: an id in the course's `cases.json`; the case stays beside its three to five questions; the exam builder keeps them together | PMP only |
+| Graphic-based | Any question with `diagram`: the drawing shown above it | Shared with CAPM's hot spot work |
+| Matching | `type: "match"` with `left` and `right` lists | Built in CAPM Session 37 |
+| Approach tag | `approach`: predictive, agile or hybrid on every PMP question; the exam builder holds each exam within three points of 40 / 60 | PMP only |
+| Sample page | `/pmp/question-types`: what the outline says about each type, with one sample of each to try | PMP only |
+
+Not planned: point and click as PMP describes it (CAPM's hot spot may cover it), and pull-down lists.

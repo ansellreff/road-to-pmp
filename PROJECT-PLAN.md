@@ -14,7 +14,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 How they are kept:
 
 - A **plan file** holds that certification's status log, exam facts, roadmap, sources, coverage of the exam outline and what each session built. It is updated whenever something is achieved.
-- An **issues file** holds every problem met while working on that certification and how it was handled. Entries are numbered once across the whole project, so a number always means the same entry. "Where to look" in an entry names a section of the same certification's plan file, or a file in the project.
+- An **issues file** holds every problem met while working on that certification and how it was handled. Sessions and issue entries are numbered **per certification**: each starts its own count at 1 (PMP's issues are written PMP-1, PMP-2 and so on). "Where to look" in an entry names a section of the same certification's plan file, or a file in the project.
 - The platform itself (the app, the tools, sync, the website) was built during the CAPM sessions, so its record is in the CAPM files: Sessions 26 to 29 in the plan, and the matching groups in the issues file. Platform work done for a later certification is recorded with that certification.
 - This overview changes only when a certification changes state or a project-wide rule changes.
 
@@ -22,8 +22,8 @@ How they are kept:
 
 | | Certification | State | Next |
 |---|---|---|---|
-| ✅ | CAPM | Complete and stored: 39 modules, 1,039 questions, 1,298 flashcards, 5 mock exams. Online. | Your exam |
-| 🟡 | PMP | Started 2026-10-11. Sources read, 34 modules mapped to the outline, course skeleton in the app. | Session 33, the exam engine |
+| 🟡 | CAPM | **Being finished.** Built and online: 39 modules, 1,039 questions, 1,298 flashcards, 5 mock exams. Open items being closed in CAPM Sessions 32 to 39: a thin outline item, small Domain 1 quizzes, a deeper accuracy check, the real exam's question types, drawings. | CAPM Session 32 |
+| ⏸️ | PMP | **Paused until CAPM is finished.** PMP Session 1 done: sources read, 34 modules mapped to the outline, course skeleton in the app. | PMP Session 2, the exam engine |
 | ⬜ | PMI-ACP | Not started | Needs its Exam Content Outline in the materials folder |
 | ⬜ | PMI-SP | Not started | Needs its Exam Content Outline in the materials folder |
 
@@ -31,8 +31,8 @@ How they are kept:
 
 Study for and pass PMI certifications using my own platform, in this order:
 
-1. CAPM (Certified Associate in Project Management): course complete
-2. **PMP** (Project Management Professional): current focus
+1. **CAPM** (Certified Associate in Project Management): current focus, being finished
+2. PMP (Project Management Professional): started, paused
 3. PMI-ACP (Agile Certified Practitioner)
 4. PMI-SP (Scheduling Professional)
 
