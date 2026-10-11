@@ -570,5 +570,165 @@
         "label": "Process Groups: A Practice Guide, section 5"
       }
     ]
+  },
+  {
+    "id": "q29",
+    "q": "A project manager emails the monthly report to forty stakeholders, as the communications management plan says. Three weeks later she learns that the finance director never opens it. In the process guide's view of Manage Communications, what has gone wrong?",
+    "options": [
+      "Nothing: the report was sent as the plan requires",
+      "The finance director is at fault for not reading what was sent to him on time each month",
+      "The process is not met until the information is received by its intended audience",
+      "The report should have been sent to fewer people"
+    ],
+    "answer": 2,
+    "explanation": "Manage Communications goes beyond distributing information. It seeks to ensure that the information has been appropriately generated and formatted and received by the intended audience, and it gives stakeholders the chance to ask for more.",
+    "ref": "Process Groups: A Practice Guide, 6.7",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 173,
+        "label": "Process Groups: A Practice Guide, 6.7"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "The risk register says: \"If the import licence is not granted by 1 March, the owner, the procurement lead, switches to the local supplier.\" On 1 March there is no licence. Which process is now performed, and what does it call for?",
+    "options": [
+      "Implement Risk Responses: the agreed response is carried out as planned",
+      "Plan Risk Responses: a new response is designed from the start by the team",
+      "Identify Risks: the event is recorded as a new risk",
+      "Close Project or Phase: the project cannot continue"
+    ],
+    "answer": 0,
+    "explanation": "Implement Risk Responses is the process of implementing agreed-upon risk response plans. Its benefit is that the agreed responses are executed as planned.",
+    "ref": "Process Groups: A Practice Guide, 6.8",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 175,
+        "label": "Process Groups: A Practice Guide, 6.8"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "A planned risk response has to be carried out by a department head who does not report to the project manager and is slow to act. Which skill does the process guide name as the tool of Implement Risk Responses?",
+    "options": [
+      "Negotiation",
+      "Influencing",
+      "Active listening",
+      "Conflict management"
+    ],
+    "answer": 1,
+    "explanation": "The interpersonal and team skill listed for Implement Risk Responses is influencing. Risk owners may be outside the project team, so the project manager often has to influence them to act.",
+    "ref": "Process Groups: A Practice Guide, 6.8",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 175,
+        "label": "Process Groups: A Practice Guide, 6.8"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Carrying out a planned risk response will add two weeks to the approved schedule. What does the process guide show as the output that handles this?",
+    "options": [
+      "A lessons learned entry only",
+      "An update to the stakeholder register, sent to every stakeholder for information",
+      "A new project charter",
+      "A change request, which goes to Perform Integrated Change Control"
+    ],
+    "answer": 3,
+    "explanation": "Change requests are an output of Implement Risk Responses. A response that affects a baseline is raised as a change request and decided in Perform Integrated Change Control.",
+    "ref": "Process Groups: A Practice Guide, 6.8",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 175,
+        "label": "Process Groups: A Practice Guide, 6.8"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "A key stakeholder who supported the project at the start has grown doubtful and has begun to delay approvals. The project manager meets her, listens, and negotiates a way forward, as the stakeholder engagement plan describes. Which process is this, and what is its benefit?",
+    "options": [
+      "Identify Stakeholders; a complete stakeholder register",
+      "Plan Stakeholder Engagement; a written plan for involving stakeholders",
+      "Manage Stakeholder Engagement; more support and less resistance",
+      "Monitor Communications; an optimal flow of information"
+    ],
+    "answer": 2,
+    "explanation": "Manage Stakeholder Engagement is communicating and working with stakeholders to meet their needs and expectations, address issues and foster involvement. Its key benefit is that it lets the project manager increase support and minimize resistance.",
+    "ref": "Process Groups: A Practice Guide, 6.10",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 180,
+        "label": "Process Groups: A Practice Guide, 6.10"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "The communications management plan calls for a weekly written report. Halfway through the project the sponsor says he has no time to read it and asks for a ten-minute call instead. What is the appropriate response?",
+    "options": [
+      "Keep sending the report, since the plan cannot change",
+      "Adjust the method and update the communications management plan",
+      "Stop communicating with the sponsor until he agrees to read the report as planned",
+      "Send both the report and a longer monthly report"
+    ],
+    "answer": 1,
+    "explanation": "Manage Communications should allow for flexibility, adjusting methods and techniques to the changing needs of stakeholders and the project. Updates to the communications management plan are one of its outputs.",
+    "ref": "Process Groups: A Practice Guide, 6.7",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 173,
+        "label": "Process Groups: A Practice Guide, 6.7"
+      }
+    ]
+  },
+  {
+    "id": "q35",
+    "q": "A project manager must tell the steering committee about a serious overrun. She weighs a short informal note against a formal report, and writing against speaking. Which technique of effective communications management is she applying?",
+    "options": [
+      "Sender-receiver models",
+      "Facilitation",
+      "Writing style",
+      "Choice of media"
+    ],
+    "answer": 3,
+    "explanation": "Choice of media means deciding when to communicate in writing or orally, when to prepare an informal memo or a formal report, and when to use push or pull options and which technology.",
+    "ref": "Process Groups: A Practice Guide, 6.7",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 173,
+        "label": "Process Groups: A Practice Guide, 6.7"
+      }
+    ]
+  },
+  {
+    "id": "q36",
+    "q": "During a meeting with a hostile supplier, the project manager applies rules of behavior that were agreed earlier in the team charter. Among the tools of Manage Stakeholder Engagement, what are these called?",
+    "options": [
+      "Ground rules",
+      "Work performance reports",
+      "Organizational process assets",
+      "Change requests"
+    ],
+    "answer": 0,
+    "explanation": "Ground rules are a tool of Manage Stakeholder Engagement, with communication skills, meetings, and interpersonal skills such as conflict management, negotiation, and cultural and political awareness.",
+    "ref": "Process Groups: A Practice Guide, 6.10",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 180,
+        "label": "Process Groups: A Practice Guide, 6.10"
+      }
+    ]
   }
 ]

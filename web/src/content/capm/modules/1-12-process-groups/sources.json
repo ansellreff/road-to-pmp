@@ -1,6 +1,11 @@
 [
   {
     "book": "eco",
+    "page": 8,
+    "label": "CAPM Exam Content Outline, Domain 1"
+  },
+  {
+    "book": "eco",
     "page": 9,
     "label": "CAPM Exam Content Outline, Domain 2"
   },
@@ -63,6 +68,21 @@
     "book": "processgroups",
     "page": 154,
     "label": "Process Groups: A Practice Guide, section 6"
+  },
+  {
+    "book": "processgroups",
+    "page": 173,
+    "label": "Process Groups: A Practice Guide, 6.7"
+  },
+  {
+    "book": "processgroups",
+    "page": 175,
+    "label": "Process Groups: A Practice Guide, 6.8"
+  },
+  {
+    "book": "processgroups",
+    "page": 180,
+    "label": "Process Groups: A Practice Guide, 6.10"
   },
   {
     "book": "processgroups",

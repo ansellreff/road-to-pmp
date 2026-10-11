@@ -167,6 +167,40 @@ Two pairs the exam likes:
 | **Control Quality** and **Validate Scope** | Control Quality checks that the deliverable is **correct** (done by the team). Validate Scope gets it **accepted** (done by the customer). Control Quality usually comes first. |
 | **Manage Quality** and **Control Quality** | Manage Quality is about the **process** (executing). Control Quality is about the **product** (monitoring and controlling). |
 
+## Following a planned strategy: communication, risk and stakeholders
+
+@source Process Groups: A Practice Guide, 6.7; Process Groups: A Practice Guide, 6.8; Process Groups: A Practice Guide, 6.10; CAPM Exam Content Outline, Domain 1
+
+The exam outline asks for examples of how it is appropriate to respond to a **planned strategy or framework**, and names communication and risk. The strategies are written during Planning. Three Executing processes carry them out, and each is performed **throughout the project**.
+
+| The plan | The process that carries it out | What following the plan means |
+|---|---|---|
+| **Communications management plan** | **Manage Communications** | Collect, create, distribute, store and finally dispose of project information in a timely and appropriate way. It goes **beyond distribution**: the information must be properly prepared and **received by the intended audience**, and stakeholders must be able to ask for more, for clarification or for discussion. |
+| **Risk management plan** and the responses in the **risk register** | **Implement Risk Responses** | Carry out the **agreed-upon** responses **as planned**, so that threats are minimized and opportunities maximized. Its named skill is **influencing**, because a risk owner may be someone the project manager does not direct. |
+| **Stakeholder engagement plan** | **Manage Stakeholder Engagement** | Communicate and work with stakeholders to meet their needs and expectations, address issues and foster their involvement. The benefit is **more support and less resistance**. |
+
+**Manage Stakeholder Engagement** involves four activities: engaging stakeholders at the right stages to obtain, confirm or keep their commitment; managing their expectations through **negotiation and communication**; addressing risks and concerns and anticipating future issues; and clarifying and resolving the issues already identified. Its tools include **ground rules**, conflict management, and cultural and political awareness.
+
+**What makes a response appropriate:**
+
+1. **Look in the plan first.** Who must be told, how and when is in the communications management plan. Who acts on a risk, and with what response, is in the risk register. How to approach a stakeholder is in the stakeholder engagement plan.
+2. **Do what was agreed.** A planned risk response is implemented by its owner when its trigger occurs. It is not re-argued or replaced on the spot.
+3. **Record it.** The issue log, the risk register and the lessons learned register are updated by all three processes.
+4. **If the response changes a plan or a baseline, raise a change request.** Change requests are an output of Implement Risk Responses and of Manage Stakeholder Engagement, and they go to Perform Integrated Change Control.
+5. **If the plan no longer fits, update the plan.** Manage Communications is meant to be flexible: methods and techniques are adjusted to the changing needs of stakeholders, and the communications management plan and stakeholder engagement plan are updated. The plan is corrected, not ignored.
+
+**Techniques for communicating well**, as the process guide lists them:
+
+| Technique | Meaning |
+|---|---|
+| **Sender-receiver models** | Build in **feedback loops**, so there is interaction and barriers are removed |
+| **Choice of media** | Decide when to write and when to speak, when an informal memo is enough and when a formal report is needed, and whether to push or pull |
+| **Writing style** | Active voice, clear sentence structure, careful word choice |
+| **Meeting management** | An agenda, the essential participants, and follow-up of minutes and actions |
+| **Presentations** | Awareness of body language and of the design of visual aids |
+| **Facilitation** | Build consensus and overcome obstacles |
+| **Active listening** | Acknowledge, clarify and confirm, to remove barriers to understanding |
+
 ## Charter, project management plan and project documents
 
 @source Process Groups: A Practice Guide, 1.11; Process Groups: A Practice Guide, Table 1-6
