@@ -1,0 +1,63 @@
+{
+  "id": "pmp",
+  "title": "PMP",
+  "subtitle": "Project Management Professional",
+  "exam": { "questions": 180, "minutes": 240 },
+  "domains": [
+    {
+      "id": "d1",
+      "title": "People",
+      "weight": 33,
+      "modules": [
+        { "id": "1-01-shared-vision", "title": "A Shared Vision", "ready": false, "tasks": [1] },
+        { "id": "1-02-conflict-ground-rules", "title": "Conflict and Ground Rules", "ready": false, "tasks": [2] },
+        { "id": "1-03-leading-the-team", "title": "Leading the Team: Styles, Servant Leadership, Empowerment, Roles", "ready": false, "tasks": [3] },
+        { "id": "1-04-team-performance", "title": "Team Performance: Motivation, Emotional Intelligence, Virtual Teams, Problem Solving", "ready": false, "tasks": [3] },
+        { "id": "1-05-stakeholder-analysis", "title": "Identifying and Analyzing Stakeholders", "ready": false, "tasks": [4, 5] },
+        { "id": "1-06-stakeholder-engagement", "title": "Engaging Stakeholders: Trust and Influence", "ready": false, "tasks": [4] },
+        { "id": "1-07-expectations", "title": "Aligning and Managing Expectations; Mentoring", "ready": false, "tasks": [5, 6] },
+        { "id": "1-08-knowledge-transfer", "title": "Knowledge Transfer", "ready": false, "tasks": [7] },
+        { "id": "1-09-communication-reporting", "title": "Communication and Reporting", "ready": false, "tasks": [8] }
+      ]
+    },
+    {
+      "id": "d2",
+      "title": "Process",
+      "weight": 41,
+      "modules": [
+        { "id": "2-01-framework", "title": "The Framework: Value, Principles, Focus Areas, Domains and the 40 Processes", "ready": false, "tasks": [1] },
+        { "id": "2-02-choosing-approach", "title": "Choosing the Approach: Predictive, Agile, Hybrid", "ready": false, "tasks": [1] },
+        { "id": "2-03-integrated-plan", "title": "The Integrated Project Management Plan", "ready": false, "tasks": [1] },
+        { "id": "2-04-agile-frameworks", "title": "Agile in Practice: Scrum, XP, Kanban, Lean and Scaling", "ready": false, "tasks": [1, 3] },
+        { "id": "2-05-scope", "title": "Scope: Requirements, WBS and Backlog", "ready": false, "tasks": [2] },
+        { "id": "2-06-value-delivery", "title": "Value-Based Delivery: Prioritizing, Increments, Benefits", "ready": false, "tasks": [3] },
+        { "id": "2-07-resources", "title": "Resources", "ready": false, "tasks": [4] },
+        { "id": "2-08-procurement", "title": "Procurement, Contracts and Negotiation", "ready": false, "tasks": [5] },
+        { "id": "2-09-finance", "title": "Finance: Estimates, Budget and Reserves", "ready": false, "tasks": [6] },
+        { "id": "2-10-earned-value", "title": "Earned Value and Financial Reporting", "ready": false, "tasks": [6, 9] },
+        { "id": "2-11-quality", "title": "Quality, Cost of Quality and Continuous Improvement", "ready": false, "tasks": [7] },
+        { "id": "2-12-schedule", "title": "Schedule: Estimating and the Critical Path", "ready": false, "tasks": [8] },
+        { "id": "2-13-agile-scheduling", "title": "Agile Scheduling: Story Points, Velocity, Release Plans", "ready": false, "tasks": [8] },
+        { "id": "2-14-status", "title": "Evaluating Status: Metrics and Artifacts", "ready": false, "tasks": [9] },
+        { "id": "2-15-closure", "title": "Closure and Transition", "ready": false, "tasks": [10] }
+      ]
+    },
+    {
+      "id": "d3",
+      "title": "Business Environment",
+      "weight": 26,
+      "modules": [
+        { "id": "3-01-governance", "title": "Governance, Ethics, Success Metrics and Escalation", "ready": false, "tasks": [1] },
+        { "id": "3-02-compliance", "title": "Compliance: Security, Safety, Regulation, Sustainability", "ready": false, "tasks": [2] },
+        { "id": "3-03-change-control", "title": "Change Control", "ready": false, "tasks": [3] },
+        { "id": "3-04-impediments-issues", "title": "Impediments and Issues", "ready": false, "tasks": [4] },
+        { "id": "3-05-risk-identify-analyze", "title": "Risk: Identifying and Analyzing", "ready": false, "tasks": [5] },
+        { "id": "3-06-risk-responses", "title": "Risk: Responses and Monitoring", "ready": false, "tasks": [5] },
+        { "id": "3-07-continuous-improvement", "title": "Continuous Improvement and Lessons Learned", "ready": false, "tasks": [6] },
+        { "id": "3-08-organizational-change", "title": "Organizational Change and Culture", "ready": false, "tasks": [7] },
+        { "id": "3-09-external-environment", "title": "The External Business Environment", "ready": false, "tasks": [8] },
+        { "id": "3-10-ai", "title": "Artificial Intelligence in Projects", "ready": false, "tasks": [8] }
+      ]
+    }
+  ]
+}

@@ -61,6 +61,7 @@ A personal web learning platform for PMI certifications, built step by step. Thi
 | 2026-10-11 | **Sync confirmed by you on the real service:** saving and syncing between the PC and the phone works, with both signed in. Session 28d is complete, and with it everything planned for CAPM. | Next: decide what comes after CAPM (PMP needs the current PMP Exam Content Outline in the materials folder) |
 | 2026-10-11 | **Session 31a, first sitting: Domain 1 checked against the exam's own books.** Two topics were missing from the course and are now taught: the three types of PMO (module 1.2) and the 7th edition's named models for change, coaching, team development and negotiation (module 1.10). Eight "On the exam" notes added where the exam's book words or counts something differently. 15 new questions and 22 new flashcards for these. Bank: 909 questions, 1,230 flashcards. Not yet compared: modules 1.4 and 1.5 against the 7th edition's twelve principles, and 1.7, 1.11, 1.12 against the Process Groups guide. | You: `upload.bat` to publish. Next sitting: finish Domain 1 (the twelve principles, process groups), then Domain 2 |
 | 2026-10-11 | **Session 31 finished: CAPM strengthened in all five parts.** You asked that every addition be part of the exam outline; from that point each one is tied to an outline task (see "The outline rule"). **31a:** all four domains compared with the exam's own books. Nothing was found wrong; 20 missing topics are now taught, the largest being the 2017 Agile Practice Guide's contracts, agile PMO, extra frameworks and agile earned value (Domain 3), the practice guide's 23 business analysis tools (Domain 4), and the Seventh Edition's nine kinds of artifact and sixteen meetings (Domain 2). **31b:** 130 new scenario questions and 68 flashcards. **31c:** Mock exam 5, 150 questions you have not seen. **31d:** keyboard shortcuts in quizzes, practice, mock exams and flashcards. **31e:** six new drawings. Bank: 1,039 questions, 1,298 flashcards, 5 mock exams. All checks and the 21 click tests pass. | You: `upload.bat` to publish. Then the exam. PMP needs the PMP Exam Content Outline PDF in the materials folder |
+| 2026-10-11 | **PMP started. Plan approved; Session 32 (sources and map) done except the reference list.** The PMP Exam Content Outline (July 2026 exam) is extracted and read: 180 questions in 240 minutes, two breaks, People 33% / Process 41% / Business Environment 26%, 26 tasks, about 40% predictive and 60% agile or hybrid. The instructor's course contents are read from the screenshot (273 lectures; based on the PMBOK Guide 8th Edition and the Agile Practice Guide). The module list grew from 32 to 34 after that reading. The PMP course exists in the app with all 34 modules marked "not written yet"; CAPM is unchanged and the 21 click tests pass. | **You:** confirm the module list; save the PMP reference list page from PMI.org into the materials folder (PMI.org refused my request). Next: Session 33, the exam engine |
 
 ## How your progress is saved
 
@@ -199,6 +200,13 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 29 | Navigation, side panels and a richer look, from your feedback: search suggestions, Modules menu, right-hand panel, previous and next, cards and rings, home hub, feedback, streak, daily goal, milestones. Details under "Session 29: navigation and look, as built". |
 | ✅ | 30 | Questions: 54 new scenario questions in Domain 1; 112 questions in Domains 2 to 4 reworded as situations. Details under "Session 30: questions". |
 | ✅ | 31 | Strengthen CAPM before the exam: 31a accuracy check of all four domains against the exam's books; 31b 130 new scenario questions; 31c Mock exam 5 (unseen); 31d keyboard shortcuts; 31e six more drawings. Details under "Session 31a: lessons compared with the exam's books" and "Session 31b to 31e: as built". |
+| 🟡 | 32 | **PMP.** Sources and map: outline extracted, instructor's contents read, coverage map, course skeleton. Open: the exam's reference list. |
+| ⬜ | 33 | PMP exam engine: sections and breaks from the course file (three sections of 60, two breaks); multiple response, case sets, graphic-based and matching questions; checker and exam builder rules; click tests showing CAPM unchanged |
+| ⬜ | 34 to 36 | PMP Domain 1, People: modules 1.1 to 1.9 |
+| ⬜ | 37 to 41 | PMP Domain 2, Process: modules 2.1 to 2.15 |
+| ⬜ | 42 to 44 | PMP Domain 3, Business Environment: modules 3.1 to 3.10 |
+| ⬜ | 45 | PMP mock exams: four of 180 questions, the fourth unseen; PMP in the study plan, readiness and weak spots |
+| ⬜ | 46 | PMP formula sheet; accuracy check against the reference list; final report |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 
@@ -575,6 +583,123 @@ The Domain 1 and overall "before" figures are worked back from today's counts; t
 **Quality checks:** right answers stay spread over A to D; the right answer is the single longest option in at most 29% of any Domain 1 quiz; no duplicated question; every question has a book page link.
 
 **Limits:** modules 1.10, 1.11 and 1.12 were not touched (1.11 and 1.12 are 17% and 12% scenarios, because they teach lists and names). A reworded question still tests the same fact as before; it is easier to recognise than a question written fresh as a scenario with new options.
+
+## PMP: plan, sources and coverage map
+
+The plan you approved on 2026-10-11 is kept in Claude's plans folder on this PC. This section is the working record.
+
+### The exam (PMP Exam Content Outline, July 2026 exam, in your folder)
+
+- 180 questions (170 scored, 10 unscored) in 240 minutes. Two 10-minute breaks; after each, the section before it cannot be reopened.
+- Domains: People 33%, Process 41%, Business Environment 26%. 26 tasks (8, 10, 8).
+- About 40% of questions are on predictive work and 60% on agile or hybrid work, in every domain.
+- Question types: single answer, multiple response, case or scenario sets (new), graphic-based (new), matching, enhanced matching, point and click, pull-down list. Matching, point and click and pull-down are in test centres only.
+- The outline names artificial intelligence and sustainability as trends now reflected in the exam, and quotes the Eighth Edition's definition of a project.
+- Not in the outline: the list of reference books (it points to PMI.org), and how multiple response and matching are scored.
+
+### Decisions you made (2026-10-11)
+
+| Question | Your answer |
+|---|---|
+| Size of the build | Full, like CAPM |
+| Question types to build | Multiple response, case sets, graphic-based, matching; "try to simulate the real exam" |
+| Reference list | I look it up on PMI.org. **Blocked** (error 403), so it waits for you |
+
+### Sources
+
+| Source | Status |
+|---|---|
+| PMP Exam Content Outline 2026 | Extracted to `.cache/books/pmpeco` (24 pages) |
+| Instructor's course (TIA, Andrew Ramdayal) | Contents list read from the screenshot into `.cache/instructor/pmp-tia-outline.md`. Lecture titles only. It is based on the PMBOK Guide 8th Edition and the Agile Practice Guide; about 45% of its time is the 40 processes, 26% agile and hybrid. Its 50 "mindset principles" are named only by number, so they cannot be used. |
+| PMBOK Guide, Eighth Edition | Already extracted. Base text for PMP. Its Appendix X3 covers artificial intelligence; principle 3.7 covers sustainability. |
+| Agile Practice Guide | Both editions extracted. Which edition the PMP exam uses is not known until the reference list is seen. |
+| The exam's reference list | **Not seen.** |
+| In the folder, not extracted: three AI publications, the sustainability standard, Choose Your WoW, the program management standard | Extracted only if the reference list or a module needs them |
+
+### Modules (34) and the outline's tasks
+
+The first draft had 32. Reading the instructor's contents added two: a framework module (2.1) and artificial intelligence as its own module (3.10); agile frameworks and servant leadership were widened.
+
+| Module | Outline task | Main sources (to be confirmed when written) |
+|---|---|---|
+| **Domain 1, People (33%)** | | |
+| 1.1 A Shared Vision | People 1 | PMBOK 8 Standard 3.6, 3.8; Guide 2.1.6.1, 2.5 |
+| 1.2 Conflict and Ground Rules | People 2 | PMBOK 8 Guide 2.6.2.4; section 5, Conflict management; team charter |
+| 1.3 Leading the Team: Styles, Servant Leadership, Empowerment, Roles | People 3 | PMBOK 8 Standard 2.5, 3.6, 3.8; Agile Practice Guide, servant leadership |
+| 1.4 Team Performance: Motivation, Emotional Intelligence, Virtual Teams, Problem Solving | People 3 | PMBOK 8 Guide 2.6; section 5 |
+| 1.5 Identifying and Analyzing Stakeholders | People 4, 5 | PMBOK 8 Guide 2.5.2.1; section 5, Stakeholder analysis |
+| 1.6 Engaging Stakeholders: Trust and Influence | People 4 | PMBOK 8 Guide 2.5.2.2, 2.5.2.4, 2.5.2.6 |
+| 1.7 Aligning and Managing Expectations; Mentoring | People 5, 6 | PMBOK 8 Guide 2.5; Standard 3.4 |
+| 1.8 Knowledge Transfer | People 7 | PMBOK 8 Guide 2.1.6.6 |
+| 1.9 Communication and Reporting | People 8 | PMBOK 8 Guide 2.5.2.3, 2.5.2.5, 2.5.2.7; section 4, reports |
+| **Domain 2, Process (41%)** | | |
+| 2.1 The Framework: Value, Principles, Focus Areas, Domains and the 40 Processes | Process 1 | PMBOK 8 Standard 1 to 4; Guide 2, Table 2-1 |
+| 2.2 Choosing the Approach: Predictive, Agile, Hybrid | Process 1 | PMBOK 8 Standard 4.2, 4.3; Guide 3; Agile Practice Guide |
+| 2.3 The Integrated Project Management Plan | Process 1 | PMBOK 8 Guide 2.1.6.2; section 4 |
+| 2.4 Agile in Practice: Scrum, XP, Kanban, Lean and Scaling | Process 1, 3 | Agile Practice Guide; Scrum Guide |
+| 2.5 Scope: Requirements, WBS and Backlog | Process 2 | PMBOK 8 Guide 2.2 |
+| 2.6 Value-Based Delivery: Prioritizing, Increments, Benefits | Process 3 | PMBOK 8 Standard 2.1, 3.4; Agile Practice Guide |
+| 2.7 Resources | Process 4 | PMBOK 8 Guide 2.6 |
+| 2.8 Procurement, Contracts and Negotiation | Process 5 | PMBOK 8 Guide 2.1.6.3; Appendix X4 |
+| 2.9 Finance: Estimates, Budget and Reserves | Process 6 | PMBOK 8 Guide 2.4 |
+| 2.10 Earned Value and Financial Reporting | Process 6, 9 | PMBOK 8 Guide Table 5-1; Standard for Earned Value Management |
+| 2.11 Quality, Cost of Quality and Continuous Improvement | Process 7 | PMBOK 8 Standard 3.5; Guide 2.1.6.5 |
+| 2.12 Schedule: Estimating and the Critical Path | Process 8 | PMBOK 8 Guide 2.3; Practice Standard for Scheduling |
+| 2.13 Agile Scheduling: Story Points, Velocity, Release Plans | Process 8 | Agile Practice Guide; PMBOK 8 Guide 2.3.3 |
+| 2.14 Evaluating Status: Metrics and Artifacts | Process 9 | PMBOK 8 Guide 2.1.6.7; section 4 |
+| 2.15 Closure and Transition | Process 10 | PMBOK 8 Guide 2.1.6.9 |
+| **Domain 3, Business Environment (26%)** | | |
+| 3.1 Governance, Ethics, Success Metrics and Escalation | Business 1 | PMBOK 8 Guide 2.1.1 to 2.1.5; PMI Code of Ethics |
+| 3.2 Compliance: Security, Safety, Regulation, Sustainability | Business 2 | PMBOK 8 Standard 3.7; Guide 2.1 |
+| 3.3 Change Control | Business 3 | PMBOK 8 Guide 2.1.6.8 |
+| 3.4 Impediments and Issues | Business 4 | PMBOK 8 Guide 2.7.1; Agile Practice Guide |
+| 3.5 Risk: Identifying and Analyzing | Business 5 | PMBOK 8 Guide 2.7.2.1 to 2.7.2.3; risk standard |
+| 3.6 Risk: Responses and Monitoring | Business 5 | PMBOK 8 Guide 2.7.2.4 to 2.7.2.6 |
+| 3.7 Continuous Improvement and Lessons Learned | Business 6 | PMBOK 8 Guide 2.1.6.6; Standard 3.5 |
+| 3.8 Organizational Change and Culture | Business 7 | PMBOK 8 Standard 2.2; Agile Practice Guide |
+| 3.9 The External Business Environment | Business 8 | PMBOK 8 Standard 2.2 |
+| 3.10 Artificial Intelligence in Projects | Business 8 (technology) | PMBOK 8 Appendix X3 |
+
+Plus one page outside the question bank: how to answer situational questions.
+
+### Coverage: every task and its enablers
+
+"Module" is where the task will be taught. The status column is filled in as each module is written; a task is "covered" only when every enabler listed has a lesson section.
+
+| Task | Enablers (from the outline) | Module | Status |
+|---|---|---|---|
+| People 1, Develop a common vision | Shared vision with key stakeholders; promote it; keep it current; find the root cause of a misunderstanding of it | 1.1 | Not written |
+| People 2, Manage conflicts | Conflict sources; context; agreed resolution strategy; communicate conflict principles; environment for ground rules; rectify violations | 1.2 | Not written |
+| People 3, Lead the project team | Team expectations; empower; solve problems; voice of the team; varied experiences, skills, perspectives; leadership style; roles and responsibilities | 1.3, 1.4 | Not written |
+| People 4, Engage stakeholders | Identify; analyze; tailor communication; execute the engagement plan; align needs, expectations and objectives; build trust and influence | 1.5, 1.6 | Not written |
+| People 5, Align stakeholder expectations | Categorize stakeholders; identify expectations; facilitate discussions; mentoring opportunities | 1.5, 1.7 | Not written |
+| People 6, Manage stakeholder expectations | Internal and external customer expectations; align outcomes; monitor satisfaction and respond | 1.7 | Not written |
+| People 7, Help ensure knowledge transfer | Identify critical knowledge; gather it; foster the environment | 1.8 | Not written |
+| People 8, Plan and manage communication | Communication strategy; transparency and collaboration; feedback loop; reporting requirements; reports for sponsors and stakeholders; reporting and governance | 1.9 | Not written |
+| Process 1, Integrated plan and delivery | Needs, complexity, magnitude; recommend an approach; critical information requirements (sustainability); execution strategy; integrated plan; effort and resource estimates; dependencies, gaps, continued value; maintain the plan; data for decisions | 2.1, 2.2, 2.3, 2.4 | Not written |
+| Process 2, Scope | Define scope; stakeholder agreement; break down scope | 2.5 | Not written |
+| Process 3, Value-based delivery | Value components; prioritize by value and feedback; deliver incrementally; examine value throughout; benefit measurement system; delivery options | 2.4, 2.6 | Not written |
+| Process 4, Resources | Define and plan resources; manage and optimize needs and availability | 2.7 | Not written |
+| Process 5, Procurement | Plan; execute the plan; contract types; vendor performance; agreement objectives met; negotiations; negotiation strategy; manage suppliers and contracts; procurement strategy; delivery solution | 2.8 | Not written |
+| Process 6, Finance | Financial needs; risk and contingency allocations; spend tracking; financial reporting; future challenges; variations and governance; reserves | 2.9, 2.10 | Not written |
+| Process 7, Quality | Quality requirements; processes and tools; execute the plan; regulatory compliance; cost of quality and sustainability; quality reviews; continuous improvement | 2.11 | Not written |
+| Process 8, Schedule | Schedule for the chosen approach; coordinate with other projects and operations; estimate (milestones, dependencies, story points); benchmarks and historical data; create; baseline; execute the plan; analyze variation | 2.12, 2.13 | Not written |
+| Process 9, Evaluate project status | Metrics, analysis, reconciliation; tailor artifacts; artifacts created, reviewed, updated; accessibility; assess progress; update metrics; communicate status; effectiveness of artifact management | 2.10, 2.14 | Not written |
+| Process 10, Closure | Stakeholder approval of completion; closing criteria; readiness for transition; closing activities (lessons, retrospectives, procurement, financials, resources) | 2.15 | Not written |
+| Business 1, Governance | Structure, rules, procedures, reporting, ethics, policies through OPAs; success metrics; escalation paths and thresholds | 3.1 | Not written |
+| Business 2, Compliance | Confirm requirements (security, health and safety, sustainability, regulatory); classify; threats to compliance; methods; consequences of noncompliance; approach and actions; measure compliance | 3.2 | Not written |
+| Business 3, Changes | Execute change control; communicate status of changes; implement approved changes; update documentation | 3.3 | Not written |
+| Business 4, Impediments and issues | Impact of impediments; prioritize and highlight; intervention strategy; reassess continually; recognize when a risk becomes an issue; resolve with stakeholders | 3.4 | Not written |
+| Business 5, Risk | Identify; analyze; monitor and control; risk management plan; risk register; execute the plan (security, sustainability); communicate risk status | 3.5, 3.6 | Not written |
+| Business 6, Continuous improvement | Use lessons learned; keep improvement processes updated; update OPAs | 3.7 | Not written |
+| Business 7, Organizational change | Assess culture; impact of organizational change on the project and required actions | 3.8 | Not written |
+| Business 8, External environment | Survey changes (regulations, technology, geopolitical, market); assess and prioritize impact on scope or backlog; review continually | 3.9, 3.10 | Not written |
+
+### What the app does with PMP now
+
+- `web/src/content/pmp/course.json` holds the three domains and 34 modules, each with the outline tasks it serves and marked not ready. The course page and the Modules menu list them as "not written yet".
+- A course with no written module is listed on the home page ("Being written: 0 of 34 modules are ready") but is not offered for study: no "continue" card, no exam day, no study plan and no dashboard block until its first module is ready.
+
 
 ## Session 31a: lessons compared with the exam's books
 
@@ -1066,3 +1191,15 @@ Every problem met in this project and how it was handled, newest group last. Rea
 | 149 | Checking the code, I ran the TypeScript compiler directly, which left a build file (`web/tsconfig.tsbuildinfo`) in the project, and a lint command that the project does not have set up. | The build file was deleted before committing. The lint command changed nothing in the project. `npm run build` and `npm test` are the checks that count. | |
 | 150 | One drawing from the plan was not made: the decision tree for module 4.5. | Said here and in the table of drawings. The six others were made and viewed in both themes; two labels that overlapped a line were moved. | "31e: drawings" |
 | 151 | Not checkable by me: whether the new questions resemble the real exam's wording, and how the shortcuts and drawings feel in use. | For you to judge. Shortcuts are not shown on a phone. | |
+
+### PMP, Session 32 (sources and map)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| 152 | The PMP outline does not print the exam's reference books; it points to PMI.org. You chose that I look the list up. **PMI.org refused the request** (error 403). | Not worked around, under the standing rule. Open item for you: save that page as a PDF into the materials folder, or paste the list. Until then PMP is planned on the two books the instructor's course names, the PMBOK Guide 8th Edition and the Agile Practice Guide, and the list is marked not seen. | "PMP: plan, sources and coverage map", Sources |
+| 153 | Which edition of the Agile Practice Guide the PMP exam uses is not known. For CAPM the wrong edition cost a whole correction round (issue 138). | Nothing agile is written before the reference list is seen, or before you tell me to proceed without it. Domain 1 (People) leans on the PMBOK Guide and can start first. | Sources |
+| 154 | The instructor's screenshot could not be read as one image (1,609 by 28,169 pixels) and could not be cut during planning, because plan mode allows no file writes. | Said in the plan; cut into 13 slices as the first step of Session 32 and read in full. It changed the module list from 32 to 34. | `.cache/instructor/pmp-tia-outline.md` |
+| 155 | The instructor's "50 mindset principles" appear in the screenshot only as numbers ("Mindset Principles 1-5"). | They are not used. The page on answering situational questions will be written from the outline and the books. If you have the list from the course, it can be added as your own notes. | |
+| 156 | Adding the PMP course made the home page say "Every PMP module is finished. Go to the mock exams", and offered a PMP exam day and formula sheet, because a course with nothing written counted as a course with nothing left to do. Seen on the screenshot. | A course is offered for study only once it has a written module (`startedCourses` in `web/src/lib/content.ts`); the formula sheet button shows only where a sheet exists. | `web/src/pages/Home.tsx`, `CoursePage.tsx`, `PlanPage.tsx`, `DashboardPage.tsx` |
+| 157 | One click test failed after PMP was added: it filled "Exam day" and found two such fields. | The test names the first. After the fix for issue 156 there is only one again, and the test stays valid for when PMP is written. 21 tests pass. | `web/tests/tests.mjs` |
+| 158 | The outline does not say how multiple response and matching questions are scored. | To be marked all or nothing, and the result page will say so (Session 33). | |

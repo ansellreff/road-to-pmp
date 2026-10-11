@@ -5,7 +5,7 @@ import Icon, { type IconName } from '../components/Icon'
 import Milestone from '../components/Milestone'
 import Ring from '../components/Ring'
 import SyncPanel from '../components/SyncPanel'
-import { certifications, courses, findModule, getExams, type Course } from '../lib/content'
+import { allModules, certifications, courses, findModule, getExams, getSheet, startedCourses, type Course } from '../lib/content'
 import { buildPlan, formatDay, planMockExams } from '../lib/plan'
 import { readiness } from '../lib/readiness'
 import {
@@ -33,13 +33,13 @@ export default function Home() {
     <div className="space-y-12">
       <h1 className={pageTitle}>Your study today</h1>
 
-      {courses.map((course) => (
+      {startedCourses.map((course) => (
         <Continue key={course.id} course={course} progress={progress} />
       ))}
 
       <Tiles progress={progress} />
 
-      {courses.map((course) => (
+      {startedCourses.map((course) => (
         <Today key={course.id} course={course} progress={progress} />
       ))}
 
@@ -317,6 +317,8 @@ function Today({ course, progress }: { course: Course; progress: Progress }) {
 
 function CourseSummary({ course, progress }: { course: Course; progress: Progress }) {
   const exams = getExams(course.id).length
+  const modules = allModules(course)
+  const written = modules.filter((m) => m.ready).length
   return (
     <section className={section}>
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
@@ -325,6 +327,11 @@ function CourseSummary({ course, progress }: { course: Course; progress: Progres
           {course.subtitle}. {course.exam.questions} questions in {course.exam.minutes} minutes.
         </p>
       </div>
+      {written < modules.length && (
+        <p className={`${note} mt-2`}>
+          Being written: {written} of {modules.length} modules are ready.
+        </p>
+      )}
       <div className="mt-5 max-w-5xl">
         <ExamBlueprint course={course} progress={progress} />
       </div>
@@ -339,10 +346,12 @@ function CourseSummary({ course, progress }: { course: Course; progress: Progres
             {exams} mock exams
           </Link>
         )}
-        <Link to={`/${course.id}/sheet`} className={btnQuiet}>
-          <Icon name="formula" className="mr-2" />
-          Formulas and key facts
-        </Link>
+        {getSheet(course.id).length > 0 && (
+          <Link to={`/${course.id}/sheet`} className={btnQuiet}>
+            <Icon name="formula" className="mr-2" />
+            Formulas and key facts
+          </Link>
+        )}
       </div>
     </section>
   )

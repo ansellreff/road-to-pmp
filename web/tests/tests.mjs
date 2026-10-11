@@ -638,7 +638,8 @@ export const tests = {
     await page.goto('/plan')
     await see(page, 'No exam day set yet')
     const day = new Date(Date.now() + 40 * 86_400_000).toLocaleDateString('en-CA')
-    await page.getByLabel('Exam day').fill(day)
+    // The plan page has one exam day per course; CAPM's is the first.
+    await page.getByLabel('Exam day').first().fill(day)
     await see(page, 'Days to the exam')
     await see(page, 'From today to the exam, drawn to scale.')
     expect((await saved(page)).examDates.capm === day, 'the exam day was not saved')

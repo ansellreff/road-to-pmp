@@ -5,7 +5,7 @@ import NotFound from '../components/NotFound'
 import NotOnExamNote, { ExamStar } from '../components/NotOnExam'
 import { PageHeader } from '../components/Page'
 import Ring from '../components/Ring'
-import { getCourse, getExams, type Course, type ModuleMeta } from '../lib/content'
+import { getCourse, getExams, getSheet, type Course, type ModuleMeta } from '../lib/content'
 import { knownCount, moduleCompletion, moduleKey, useProgress, type Progress } from '../lib/progress'
 import { domainCompletion, nextStep, percent } from '../lib/stats'
 import { btnQuiet, domainBg, domainText, sectionTitle } from '../lib/ui'
@@ -29,10 +29,12 @@ export default function CoursePage() {
             {exams} mock exams
           </Link>
         )}
-        <Link to={`/${course.id}/sheet`} className={btnQuiet}>
-          <Icon name="formula" className="mr-2" />
-          Formulas and key facts
-        </Link>
+        {getSheet(course.id).length > 0 && (
+          <Link to={`/${course.id}/sheet`} className={btnQuiet}>
+            <Icon name="formula" className="mr-2" />
+            Formulas and key facts
+          </Link>
+        )}
       </div>
       <div className="mt-8 max-w-5xl">
         <ExamBlueprint course={course} progress={progress} />

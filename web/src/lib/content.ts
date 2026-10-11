@@ -93,6 +93,9 @@ export const certifications = [
   { id: 'pmi-sp', name: 'PMI-SP' },
 ]
 
+/** Courses with at least one module written. A course still being written is listed but not offered for study. */
+export const startedCourses: Course[] = courses.filter((c) => c.domains.some((d) => d.modules.some((m) => m.ready)))
+
 export function getCourse(courseId: string | undefined): Course | undefined {
   return courses.find((c) => c.id === courseId)
 }

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import Milestone from '../components/Milestone'
 import { Figures, Notice, PageHeader } from '../components/Page'
-import { courses, getExams, type Course, type ModuleMeta } from '../lib/content'
+import { getExams, startedCourses, type Course, type ModuleMeta } from '../lib/content'
 import { examKey } from '../lib/exam'
 import { addDays, buildPlan, daysBetween, formatDay, planMockExams, type PlanItem, type StudyPlan } from '../lib/plan'
 import { dueByDay, moduleCompletion, moduleKey, setExamDate, today, useProgress, type Progress } from '../lib/progress'
@@ -20,7 +20,7 @@ export default function PlanPage() {
         Set the day of your exam. The modules you have not finished are spread evenly over the days before it, with the
         last days kept free for review. The plan adjusts itself every day to what is still left.
       </PageHeader>
-      {courses.map((course) => (
+      {startedCourses.map((course) => (
         <CoursePlan key={course.id} course={course} progress={progress} />
       ))}
     </div>

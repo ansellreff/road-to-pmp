@@ -4,7 +4,7 @@ import { WeakModules } from '../components/ExamInsights'
 import Icon from '../components/Icon'
 import { Figures, Meter, PageHeader } from '../components/Page'
 import Ring from '../components/Ring'
-import { courses, getExams, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
+import { getExams, startedCourses, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
 import { bandFor, domainScores, examKey, formatDuration, moduleLosses, type ModuleLoss } from '../lib/exam'
 import { dueCount, isKnown, setAttemptDomains, studyStreak, today, useProgress, type ExamAttempt, type Progress } from '../lib/progress'
 import { milestones } from '../lib/milestones'
@@ -27,7 +27,7 @@ export default function DashboardPage() {
         </div>
         <Activity progress={progress} />
       </section>
-      {courses.map((course) => (
+      {startedCourses.map((course) => (
         <CourseDashboard key={course.id} course={course} progress={progress} />
       ))}
     </div>
