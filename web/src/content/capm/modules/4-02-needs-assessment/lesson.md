@@ -273,7 +273,7 @@ Typical contents: description and purpose, business goals and objectives, high-l
 
 ## The practice guide on assessing business value
 
-@source Business Analysis for Practitioners, Value of Understanding the Situation; Business Analysis for Practitioners, How to Understand the Situation; Business Analysis for Practitioners, How to Find the Gaps; Business Analysis for Practitioners, How to Define the Solution; Business Analysis for Practitioners, Glossary
+@source Business Analysis for Practitioners, Value of Understanding the Situation; Business Analysis for Practitioners, How to Understand the Situation; Business Analysis for Practitioners, How to Find the Gaps; Business Analysis for Practitioners, How to Define the Solution; Business Analysis for Practitioners, Glossary; Business Analysis for Practitioners, Figure 7-6
 
 *Business Analysis for Practitioners* calls needs assessment the **Business Value Assessment** domain and divides it into three practices. They match the processes above, with details of their own that the exam can ask for.
 
@@ -309,6 +309,8 @@ Typical contents: description and purpose, business goals and objectives, high-l
 - A roadmap lets the analyst **defer** a stakeholder's need to a later point instead of rejecting it, which lowers resistance.
 
 Two more tools from its glossary: a **customer journey map** shows the phases customers go through when using a product and what they experience at each point; an **empathy map** records what one type of user **says, thinks, does and feels**.
+
+> **On the exam.** A **capability table** is used **after root cause analysis**. Its columns run from the **problem**, to its **root causes**, to the **current capabilities**, to the **new capabilities required**, and last to the **deliverables that fill the gap**. It lets everyone see that each part of the solution answers a root cause.
 
 ## Tools in the practice guide: finding the cause and judging options
 

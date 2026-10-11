@@ -81,13 +81,28 @@
   },
   {
     "book": "bapg",
+    "page": 92,
+    "label": "Business Analysis for Practitioners, How to Enable Organizational Transition"
+  },
+  {
+    "book": "bapg",
     "page": 97,
     "label": "Business Analysis for Practitioners, Facilitate Go/No-Go Decision"
   },
   {
     "book": "bapg",
+    "page": 98,
+    "label": "Business Analysis for Practitioners, Value of Facilitating Go/No-Go Decision"
+  },
+  {
+    "book": "bapg",
     "page": 99,
     "label": "Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision"
+  },
+  {
+    "book": "bapg",
+    "page": 101,
+    "label": "Business Analysis for Practitioners, How to Evaluate Solution Performance"
   },
   {
     "book": "bapg",

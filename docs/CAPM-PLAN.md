@@ -65,6 +65,7 @@ Certified Associate in Project Management. Built and online; **being finished** 
 | 2026-10-11 | **Session 32, first sitting.** The outline's last thin item is now taught: module 1.12 has a section "Following a planned strategy: communication, risk and stakeholders", written from the process guide's three Executing processes, with 8 questions and 6 flashcards. **The outline coverage is now 60 of 60.** The quizzes of modules 1.1 and 1.4 were brought up to 20 questions (15 new). Bank: 1,062 questions, 1,304 flashcards. | Session 32, second sitting: modules 1.2, 1.3 and 1.5 to 1.10 still have 13 to 17 questions each |
 | 2026-10-11 | **Session 32 done: content gaps closed.** Second sitting: 40 more scenario questions, so every Domain 1 module quiz now has at least 20 (modules 1.2, 1.3, 1.5 to 1.10). Each was written after reading the module's lesson and checking its existing questions for repeats. Session 32 in total: one new lesson section, 63 questions, 6 flashcards. Bank: 1,102 questions, 1,304 flashcards; the module quizzes show 802. | You: `upload.bat`. Next: Session 33, the practice guide's chapters 2 and 3 against modules 4.1 to 4.3 |
 | 2026-10-11 | **Session 33 done: the practice guide's chapters 2 and 3 read against Domain 4.** Nothing in modules 4.1 to 4.3 was found wrong. Missing and now taught: in module 4.2, the Golden Circle, the three parts of a situation statement, SMART objectives, SIPOC, PESTLE and CATWOE, the rule for what to recommend (including "do nothing"), the four parts of a business case, the empathy map and the customer journey map; in module 4.3, business analysis governance, the engagement approach as a continuing activity, and what a business analysis plan holds. 12 questions, 11 flashcards. Bank: 1,114 questions, 1,315 flashcards. | You: `upload.bat`. Next: Session 34, chapters 4 (rest), 5 and 6 against modules 4.4 to 4.7 |
+| 2026-10-11 | **Session 34 done: the rest of the practice guide read against Domain 4.** Chapters 4 (the parts not read before), 5 and 6, and the two tool pages left over. Nothing in modules 4.1 and 4.4 to 4.7 was found wrong. Missing and now taught: the analyst as the product owner's support or proxy; why requirements are elicited, not collected; the limit at technical design; buy-a-feature's steps; Package Solution Information as a practice; the capability table's columns; transition requirements and the three-part transition approach; "segmented cutover"; go fever; when a formal sign-off is usual; the four typical reasons for missed value. 17 questions, 11 flashcards. Every Domain 4 module quiz now has 20 or more questions. Bank: 1,131 questions, 1,326 flashcards. | You: `upload.bat`. Next: Session 35, the process guide's 49 processes against modules 1.12 and 2.1 to 2.11 |
 
 ## Roadmap to a complete CAPM course
 
@@ -99,7 +100,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 31 | Strengthen CAPM before the exam: 31a accuracy check of all four domains against the exam's books; 31b 130 new scenario questions; 31c Mock exam 5 (unseen); 31d keyboard shortcuts; 31e six more drawings. Details under "Session 31a: lessons compared with the exam's books" and "Session 31b to 31e: as built". |
 | ✅ | 32 | Content gaps: the thin outline item (responding to a planned strategy or framework) taught in module 1.12; 55 new scenario questions so no Domain 1 module quiz has fewer than 20 |
 | ✅ | 33 | Deeper accuracy check: *Business Analysis for Practitioners*, chapters 2 and 3, against modules 4.1 to 4.3 |
-| ⬜ | 34 | Deeper accuracy check: the same book, chapters 4 (rest), 5 and 6, against modules 4.4 to 4.7 |
+| ✅ | 34 | Deeper accuracy check: the same book, chapters 4 (rest), 5 and 6, against modules 4.4 to 4.7 |
 | ⬜ | 35 | Deeper accuracy check: *Process Groups: A Practice Guide*, the 49 processes, against modules 1.12 and 2.1 to 2.11 |
 | ⬜ | 36 | Real exam question types, the rules: matching, hot spot and comic strip stored, marked, saved, synced and checked |
 | ⬜ | 37 | Real exam question types, the screens and the questions: about 60 matching, 25 hot spot, 25 comic strip; Mock exam 6 if the bank allows |
@@ -164,7 +165,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (1,114 quiz questions, 1,315 flashcards, after Session 33). Of the 1,114 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 814. 364 questions are in no exam.
+Overall: **39 of 39 modules done** (1,131 quiz questions, 1,326 flashcards, after Session 34). Of the 1,131 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 831. 381 questions are in no exam.
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -792,3 +793,18 @@ Same method as Session 31a and the same outline rule. This section records what 
 **Not read in Session 33:** the case study pages of both chapters (pages 30 to 32, 40 to 45, 48 to 49 in part, 51 to 56, 59 to 61). They apply the practices to one fictional company and add no definitions, but I did not check that. Pages 120 and 121 (buy-a-feature and the capability table), listed in the plan for this session, are **still unread** and move to Session 34.
 
 Module 4.1 needed no change: its note on the five domains and fifteen practices (Session 31a) already covers what chapter 3's introduction says about the domain.
+
+### Session 34: *Business Analysis for Practitioners*, chapters 4 (rest), 5 and 6 (2026-10-11)
+
+| Module | Pages read | What differed or was missing | Outline task | What was done |
+|---|---|---|---|---|
+| 4.1 | Chapter 6, Business Analysis Stewardship: pages 104 to 106, 108 to 110; chapter 4, page 63 | Nothing wrong. **Missing:** what the three stewardship practices consist of; the analyst supporting, standing in for or acting as the product owner, with backlog elaboration remaining the product owner's responsibility | 4.1, stakeholder roles (product owner); 4.5, the analyst's role in adaptive work | Note; 3 questions, 1 flashcard |
+| 4.4 | Chapter 4, pages 62 and 63 (the domain and the overview of elicitation) | Nothing wrong. **Missing:** the reason for the word "elicit"; elicitation as iterative in every approach | 4.3, the gathering approach | Note; 3 questions, 1 flashcard |
+| 4.5 | Chapter 4, pages 75 to 77 (Analyze Solution Information); page 120 (buy-a-feature) | The five model categories and their examples match the lesson. **Missing:** analysis doing only what decision makers need; the analyst refraining from technical design; the steps of buy-a-feature | 4.3, match tools to scenarios | Two notes; 3 questions, 2 flashcards |
+| 4.6 | Chapter 4, pages 82 and 83 (Package Solution Information) | **Missing:** packaging as a practice of its own: fitting the package to its purpose, leaving out what is out of scope, the states of a requirement, "requirements specification" as a general term | 4.2, the most appropriate channel or tool; 4.3, traceability matrix and backlog | New section "Packaging solution information"; 3 questions, 2 flashcards |
+| 4.2 | Page 121 (capability table) | The table was taught; its five columns and its place after root cause analysis were not | 4.3, match tools to scenarios | Note; 1 flashcard |
+| 4.7 | Chapter 5, Organizational Transition and Solution Evaluation: pages 88 to 94, 97 and 98, 100 to 102 | Nothing wrong; readiness and go/no-go were added in Session 31a. The lesson's "staged release" is the practice guide's **segmented cutover**. **Missing:** transition requirements defined as temporary; the transition approach's three parts; go fever; when a formal sign-off is usual; the four typical reasons for missed value; a result above expectation treated as an opportunity | 4.6, ready for delivery | Note; 5 questions, 4 flashcards |
+
+**Not read in Session 34:** the case study pages (71 to 74, 77 to 81 in part, 84 to 87, 95 and 96, 99, 102 and 103 in part, 107, 112 and 113), and page 111 (how to lead with integrity) beyond its opening, which my output cut off. Chapter 5 was read as an outline of its headings, lists and key passages (the full text was too long to print at once), then in full for the passages cited.
+
+**The practice guide is now compared with Domain 4 except for its case study and the pages listed.** With *The PMI Guide to Business Analysis*, from which the lessons were first written, that is both of the exam's business analysis books.

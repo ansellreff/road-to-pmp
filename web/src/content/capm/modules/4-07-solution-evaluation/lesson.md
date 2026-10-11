@@ -205,7 +205,7 @@ The output, the **assessment of business value**, compares expected with actual 
 
 ## Readiness and the go/no-go decision in the practice guide
 
-@source Business Analysis for Practitioners, Figure 7-16; Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision
+@source Business Analysis for Practitioners, Figure 7-16; Business Analysis for Practitioners, How to Facilitate Go/No-Go Decision; Business Analysis for Practitioners, How to Enable Organizational Transition; Business Analysis for Practitioners, Value of Facilitating Go/No-Go Decision; Business Analysis for Practitioners, How to Evaluate Solution Performance
 
 A **readiness assessment** checks whether the organization is ready to move the solution into production or into maintenance and operations. It may be a report or a checklist, and may be repeated. Gaps it finds are treated as **risks**, with responses. Five kinds of readiness:
 
@@ -222,6 +222,15 @@ A **readiness assessment** checks whether the organization is ready to move the 
 - A **go** permits the release of the solution, **in whole or in part**. A **no-go** either **delays** or **disapproves** the release.
 - The way the decision will be reached (the **decision model**) should be agreed **beforehand**.
 - Make the meeting as interactive as possible, show the evaluation results in tables or pictures, and let stakeholders ask their questions before the decision.
+
+**More from the practice guide on transition and evaluation:**
+
+- **Transition requirements** describe **temporary** capabilities needed to move from the current state: data conversion, training, operational changes.
+- The **transition approach** has three parts: a **transition plan** (the tasks to finish before the go-live date, with dates and resources), a **transition strategy** and a **readiness assessment plan** (what will be measured, how, and who is responsible).
+- Its strategies are a **massive one-time cutover**, a **segmented cutover** (by region, role or function, with the old and new coexisting for a time) and a **timeboxed coexistence**. Reasons to segment: many or complex transition requirements, several sites, urgency from compliance, or earlier delivery of value. "Segmented cutover" is the practice guide's name for the staged release.
+- **Go fever** is the pull to launch regardless: people become over-committed to a course already chosen because of the time and money spent, even when the benefit is small or the risk large. A proper go/no-go decision guards against it.
+- A **formal sign-off** is usual where the impact is enterprise-wide, where failure could cost life, property or solvency, in strictly predictive organizations, and in heavily regulated industries.
+- When a solution **misses its expected value**, the typical reasons are technical causes, business practices or constraints, **resistance** to the product or to the way it is meant to be used, and **workarounds** that users invent to get round its limits. When the value is **above** what was expected, that is treated as an **opportunity** to build on.
 
 ## How it all connects
 

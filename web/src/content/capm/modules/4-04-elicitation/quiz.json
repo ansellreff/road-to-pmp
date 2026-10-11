@@ -533,7 +533,7 @@
     "q": "A brainstorming session has produced ninety sticky notes with no obvious order. The analyst wants the group to discover the themes among them. Which tool fits?",
     "options": [
       "An affinity diagram",
-      "A requirements traceability matrix",
+      "A complete requirements traceability matrix",
       "A wireframe",
       "A force field analysis"
     ],
@@ -590,5 +590,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q30",
+    "q": "A sponsor tells the analyst: \"Just go and collect the requirements from the users. They know what they want.\" Why does Business Analysis for Practitioners prefer the word elicit?",
+    "options": [
+      "Because elicitation is done only with documents",
+      "Because collecting requirements is the task of the developers, not of the analyst",
+      "Because requirements are not sitting ready in stakeholders' minds to be collected",
+      "Because users are not stakeholders"
+    ],
+    "answer": 2,
+    "explanation": "Requirements are not necessarily formed in stakeholders' minds and so are not always available for collecting or gathering. People have wants and needs but may not be able to express them clearly; the analyst draws them out.",
+    "ref": "Business Analysis for Practitioners, Elicit Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 63,
+        "label": "Business Analysis for Practitioners, Elicit Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "On a hybrid project, a manager says elicitation was \"finished in the first month\". The analyst disagrees. What does the practice guide say about when elicitation happens?",
+    "options": [
+      "It is iterative and runs through the whole analysis effort",
+      "It happens once, in full, before any analysis begins on the project",
+      "It happens only in adaptive projects",
+      "It happens only after the solution is released"
+    ],
+    "answer": 0,
+    "explanation": "Elicitation in every environment, whether predictive, adaptive or hybrid, is an iterative activity affecting the whole of the business analysis effort. What is elicited is analyzed, which leads to more elicitation.",
+    "ref": "Business Analysis for Practitioners, Elicit Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 63,
+        "label": "Business Analysis for Practitioners, Elicit Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "The day after a workshop, an analyst consolidates her notes, sends them to the participants and asks each to confirm that she recorded their points correctly. Which stage of an elicitation session is this, in the practice guide's terms?",
+    "options": [
+      "The introduction",
+      "The body",
+      "The close",
+      "The follow-up"
+    ],
+    "answer": 3,
+    "explanation": "An elicitation session has an introduction that sets the stage, a body where the techniques are used, and a close that wraps up. The follow-up comes afterwards: the information is analyzed and consolidated and taken back to the participants.",
+    "ref": "Business Analysis for Practitioners, How to Elicit Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 64,
+        "label": "Business Analysis for Practitioners, How to Elicit Solution Information"
+      }
+    ]
   }
 ]

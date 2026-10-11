@@ -548,5 +548,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q28",
+    "q": "An adaptive team has a product owner who is often travelling. The business analyst is asked to answer the team's questions about backlog items on her behalf, within limits she has set. Which arrangement from Business Analysis for Practitioners is this?",
+    "options": [
+      "The analyst replaces the scrum master of the team",
+      "The analyst acts as the product owner's proxy",
+      "The analyst becomes the project sponsor",
+      "The analyst has no role in adaptive work"
+    ],
+    "answer": 1,
+    "explanation": "In adaptive environments the business analysis practitioner can support the product owner, serve as a proxy, or even fill the role, particularly for elicitation activities.",
+    "ref": "Business Analysis for Practitioners, Elicit Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 63,
+        "label": "Business Analysis for Practitioners, Elicit Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "On an adaptive project, whose responsibility is it to elaborate the product backlog items until they are detailed enough for the team to build?",
+    "options": [
+      "The development team's alone, without the business",
+      "The project sponsor's",
+      "The business analyst's alone",
+      "The product owner's"
+    ],
+    "answer": 3,
+    "explanation": "Progressively elaborating the backlog items is the responsibility of the product owner. It is done well by applying business analysis techniques, which the analyst can share or perform when working with or as the product owner.",
+    "ref": "Business Analysis for Practitioners, Elicit Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 63,
+        "label": "Business Analysis for Practitioners, Elicit Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "A lone analyst supports five projects and cannot keep up. She starts short sessions that show colleagues how to draw a process model and write a clear requirement, so that they can do simple analysis themselves. Which stewardship practice is this?",
+    "options": [
+      "Enhance Business Analysis Capability",
+      "Lead Business Analysis Work with Integrity",
+      "Facilitate Go/No-Go Decision",
+      "Package Solution Information"
+    ],
+    "answer": 0,
+    "explanation": "Enhancing capability means helping others recognize and do business analysis work. People become able to do their own analysis and know when to call in an experienced practitioner, which eases constrained analysis resources.",
+    "ref": "Business Analysis for Practitioners, Business Analysis Stewardship Domain",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 104,
+        "label": "Business Analysis for Practitioners, Business Analysis Stewardship Domain"
+      }
+    ]
   }
 ]

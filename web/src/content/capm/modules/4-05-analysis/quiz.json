@@ -650,5 +650,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q33",
+    "q": "An analyst writes: \"The counter must adjust to any height between 60 and 122 cm.\" A colleague wants her to add that it should use a gas spring and two steel hinges. What does the practice guide say an analyst should do?",
+    "options": [
+      "Add the detail, since a more precise requirement is always the better requirement",
+      "Remove the height range as well",
+      "Ask the sponsor to choose the hinges",
+      "State what is required and refrain from specifying the technical design"
+    ],
+    "answer": 3,
+    "explanation": "In the guide's case the analysts are careful not to identify how the requirements will be delivered technically, because it is their job to refrain from identifying technical design.",
+    "ref": "Business Analysis for Practitioners, Analyze Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 75,
+        "label": "Business Analysis for Practitioners, Analyze Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "In a buy-a-feature session, the participants argue for ten minutes about pooling their play money to afford one expensive feature. The facilitator is tempted to hurry them along. What does the practice guide say about this stage?",
+    "options": [
+      "It should be cut short, since only the money totals matter",
+      "It is where the insight into priorities comes from",
+      "It shows that the prices were set wrongly",
+      "It means the game should be replaced by a vote"
+    ],
+    "answer": 1,
+    "explanation": "The facilitator observes and learns as participants discuss, negotiate and buy. Their discussion gives important clues about which aspects of the product matter most and why.",
+    "ref": "Business Analysis for Practitioners, Figure 7-5",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 120,
+        "label": "Business Analysis for Practitioners, Figure 7-5"
+      }
+    ]
+  },
+  {
+    "id": "q35",
+    "q": "Before a project is even chartered, an analyst is asked to help decision makers choose between two possible solutions. How much analysis does the practice guide say she should do at this point?",
+    "options": [
+      "None: analysis starts only after the charter",
+      "A complete specification of both solutions",
+      "Only what the decision makers need to decide well",
+      "As much as the available time and budget allow her"
+    ],
+    "answer": 2,
+    "explanation": "Analysis begins as soon as there is information about a solution to analyze, including before chartering. Business analysis practitioners do only what is required for the decision makers to make well-informed decisions.",
+    "ref": "Business Analysis for Practitioners, Analyze Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 75,
+        "label": "Business Analysis for Practitioners, Analyze Solution Information"
+      }
+    ]
   }
 ]

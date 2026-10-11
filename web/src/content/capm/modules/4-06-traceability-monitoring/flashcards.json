@@ -183,5 +183,15 @@
     "id": "c37",
     "front": "Backbone and walking skeleton (story map)",
     "back": "Backbone: the top row of activities or epics, left to right. Walking skeleton: the row beneath, the minimally functional end-to-end set (the MVP)."
+  },
+  {
+    "id": "c38",
+    "front": "Package Solution Information",
+    "back": "Assembling the information of value to stakeholders and making it consumable for its purpose: to approve, to confirm coverage, to prioritize or to build."
+  },
+  {
+    "id": "c39",
+    "front": "Requirements specification",
+    "back": "A general term for any document that contains requirements: business requirements document, functional requirements specification, software requirements specification."
   }
 ]

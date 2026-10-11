@@ -198,5 +198,10 @@
     "id": "c40",
     "front": "Affinity diagram: when to use it",
     "back": "After brainstorming, to sort many unrelated-looking ideas into labeled clusters."
+  },
+  {
+    "id": "c41",
+    "front": "Why \"elicit\" and not \"collect\"?",
+    "back": "Requirements are not sitting ready in stakeholders' minds. They have to be drawn out, iteratively, with the stakeholders."
   }
 ]

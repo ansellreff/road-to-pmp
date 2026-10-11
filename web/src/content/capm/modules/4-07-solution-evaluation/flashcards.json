@@ -183,5 +183,25 @@
     "id": "c37",
     "front": "Go and no-go",
     "back": "Go: release permitted, in whole or in part. No-go: release delayed or disapproved."
+  },
+  {
+    "id": "c38",
+    "front": "Transition requirements",
+    "back": "Temporary capabilities needed to move from the current state: data conversion, training, operational changes."
+  },
+  {
+    "id": "c39",
+    "front": "Three parts of the transition approach",
+    "back": "Transition plan, transition strategy, readiness assessment plan."
+  },
+  {
+    "id": "c40",
+    "front": "Go fever",
+    "back": "Pressing ahead with a launch because of the time and money already spent, despite small benefits or large risks."
+  },
+  {
+    "id": "c41",
+    "front": "Four typical reasons a solution misses its value",
+    "back": "Technical causes; business practices or constraints; resistance to the product; workarounds invented by users."
   }
 ]

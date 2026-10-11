@@ -589,5 +589,105 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q30",
+    "q": "A project to replace a payroll system lists \"convert ten years of employee records\" and \"train the payroll clerks\" among its requirements. Neither will be needed once the new system is running. What kind of requirements are these?",
+    "options": [
+      "Business requirements",
+      "Nonfunctional requirements",
+      "Transition requirements",
+      "Stakeholder requirements"
+    ],
+    "answer": 2,
+    "explanation": "Transition requirements describe temporary capabilities, such as data conversion, training requirements and operational changes, needed to transition from the current state.",
+    "ref": "Business Analysis for Practitioners, How to Enable Organizational Transition",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 92,
+        "label": "Business Analysis for Practitioners, How to Enable Organizational Transition"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "A bank moves its branches to a new system one region at a time. For some months the old and the new system run side by side. What does Business Analysis for Practitioners call this transition strategy?",
+    "options": [
+      "A massive one-time cutover",
+      "A segmented cutover",
+      "A readiness assessment",
+      "A permanent coexistence"
+    ],
+    "answer": 1,
+    "explanation": "A segmented cutover moves by segment, for example by region, role or function, and implies temporary coexistence of the replacement with the system being phased out.",
+    "ref": "Business Analysis for Practitioners, How to Enable Organizational Transition",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 92,
+        "label": "Business Analysis for Practitioners, How to Enable Organizational Transition"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Two years and a large budget have gone into a new system. Tests show serious gaps, yet the steering group says: \"We have come too far to stop now. Launch on Monday.\" What does the practice guide call this?",
+    "options": [
+      "Go fever",
+      "Scope creep",
+      "Gold plating",
+      "Risk appetite"
+    ],
+    "answer": 0,
+    "explanation": "Go fever comes from the tendency to become overly committed to a chosen course of action because of the time and resources already spent, even when the benefits could be small or the risks significant. A go/no-go decision guards against it.",
+    "ref": "Business Analysis for Practitioners, Value of Facilitating Go/No-Go Decision",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 98,
+        "label": "Business Analysis for Practitioners, Value of Facilitating Go/No-Go Decision"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "Six months after release, a new ordering system is saving far less time than expected. The analyst finds that staff keep a spreadsheet beside it and enter each order twice, because they find one screen awkward. Which typical reason for missed value is this?",
+    "options": [
+      "A technical cause",
+      "A regulatory constraint",
+      "A missing business case",
+      "Workarounds invented by the users"
+    ],
+    "answer": 3,
+    "explanation": "Typical reasons for missed business value are technical causes, business practices or constraints, resistance to the product or the way it is meant to be used, and opportunistic workarounds devised by users to get around its real or perceived limits.",
+    "ref": "Business Analysis for Practitioners, How to Evaluate Solution Performance",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 101,
+        "label": "Business Analysis for Practitioners, How to Evaluate Solution Performance"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "A new booking service was expected to raise bookings by 10%. After a quarter, they are up by 25%. How does the practice guide say an analyst should treat this variance?",
+    "options": [
+      "As an error in the measurements, to be ignored",
+      "As a defect in the service, to be corrected",
+      "As an opportunity to analyze and build on",
+      "As proof that no further evaluation is needed"
+    ],
+    "answer": 2,
+    "explanation": "If there is a significant variance between expected and actual value, the analyst analyzes the situation. If the business value exceeds what was expected, it is treated as an opportunity, because the organization can use it to improve the results further.",
+    "ref": "Business Analysis for Practitioners, How to Evaluate Solution Performance",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 101,
+        "label": "Business Analysis for Practitioners, How to Evaluate Solution Performance"
+      }
+    ]
   }
 ]

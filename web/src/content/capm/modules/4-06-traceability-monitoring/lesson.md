@@ -200,6 +200,18 @@ In an adaptive project a new story goes to the **bottom of the backlog** until t
 
 **Is the product ready for delivery?** With a backlog: the stories planned for the release are **done**, meaning each meets its **acceptance criteria** and the **definition of done**.
 
+## Packaging solution information
+
+@source Business Analysis for Practitioners, How to Package Solution Information
+
+The practice guide adds a practice the main guide does not name: **Package Solution Information**. It means assembling the information that is of value to stakeholders and making it **consumable**, so that they can refine it, decide on it, verify or validate it, or build from it.
+
+- The output of a workshop may be photographs of a whiteboard and sticky notes. That makes sense to those who were there, and to nobody else. Packaging turns it into something its audience can use.
+- **The package depends on the purpose:** a **business requirements document** so that someone can review and approve; a **requirements traceability matrix** so that the team can confirm coverage; **updated user stories on the backlog** so that the product owner can prioritize.
+- **Not everything elicited is packaged.** Information confirmed to be out of scope may be kept by the analyst and left out.
+- Requirements pass through **states**: verified, validated, prioritized, approved.
+- Documented requirements, called **solution documentation**, may be a **requirements specification** (a general term covering a business requirements document, a functional requirements specification or a software requirements specification), a collection of user stories, a set of use cases with their nonfunctional requirements, or a list of backlog items.
+
 ## Story mapping in the practice guide
 
 @source Business Analysis for Practitioners, Figure 7-20

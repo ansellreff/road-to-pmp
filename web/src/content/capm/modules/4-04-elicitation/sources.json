@@ -111,6 +111,11 @@
   },
   {
     "book": "bapg",
+    "page": 63,
+    "label": "Business Analysis for Practitioners, Elicit Solution Information"
+  },
+  {
+    "book": "bapg",
     "page": 64,
     "label": "Business Analysis for Practitioners, How to Elicit Solution Information"
   },

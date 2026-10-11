@@ -203,5 +203,10 @@
     "id": "c41",
     "front": "Practices of Organizational Transition and Solution Evaluation",
     "back": "Enable Organizational Transition; Facilitate Go/No-Go Decision; Evaluate Solution Performance."
+  },
+  {
+    "id": "c42",
+    "front": "The analyst beside the product owner (adaptive)",
+    "back": "The analyst can support the product owner, act as proxy, or fill the role. Elaborating backlog items remains the product owner's responsibility."
   }
 ]

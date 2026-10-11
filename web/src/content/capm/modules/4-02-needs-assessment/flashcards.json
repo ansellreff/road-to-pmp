@@ -258,5 +258,10 @@
     "id": "c52",
     "front": "Empathy map versus customer journey map",
     "back": "Empathy map: what one type of user says, thinks, does and feels. Journey map: the phases a customer goes through with a product and the experience at each point."
+  },
+  {
+    "id": "c53",
+    "front": "Columns of a capability table",
+    "back": "Problem; root causes; current capabilities; required capabilities; deliverables that fill the gap. Used after root cause analysis."
   }
 ]

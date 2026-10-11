@@ -10,7 +10,7 @@
 
 ## What elicitation is
 
-@source PMI Guide to Business Analysis, Key Concepts for Elicitation; PMI Guide to Business Analysis, Table 1-2
+@source PMI Guide to Business Analysis, Key Concepts for Elicitation; PMI Guide to Business Analysis, Table 1-2; Business Analysis for Practitioners, Elicit Solution Information
 
 **Elicitation** is the activity of **drawing out information** from stakeholders and other sources.
 
@@ -29,6 +29,8 @@ Why not "collecting" or "gathering"? Those words suggest the information is **re
 - It is repeated for each **source**, to get several viewpoints and fill gaps.
 - It alternates with **analysis**. Analysis removes what is irrelevant and raises new questions, which need more elicitation.
 - The cycle stops when analysis raises **no more questions**, or when the **risk of incomplete information is acceptable**.
+
+> **On the exam.** The practice guide explains why the word is *elicit*, not collect or gather. Requirements are **not sitting ready** in stakeholders' minds. People have wants and needs they may be unable to express; they may know there is a problem without knowing its cause. Elicitation is the iterative work of **drawing the information out**, with the stakeholders, in predictive, adaptive and hybrid work alike.
 
 ## Determine Elicitation Approach
 

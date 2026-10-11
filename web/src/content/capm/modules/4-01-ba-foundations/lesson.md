@@ -163,7 +163,7 @@ Two differ from project management's five: **Defining and Aligning** is added at
 
 ## The six knowledge areas
 
-@source PMI Guide to Business Analysis, 1.3.3; PMI Guide to Business Analysis, Table 1-2; Business Analysis for Practitioners, How This Practice Guide Is Organized
+@source PMI Guide to Business Analysis, 1.3.3; PMI Guide to Business Analysis, Table 1-2; Business Analysis for Practitioners, How This Practice Guide Is Organized; Business Analysis for Practitioners, Business Analysis Stewardship Domain; Business Analysis for Practitioners, Elicit Solution Information
 
 A **knowledge area** is a set of processes for a particular function. The 35 processes are spread over six.
 
@@ -198,6 +198,8 @@ The practice guide's fifteen practices, three in each domain:
 | **Business Analysis Stewardship** | Promote Business Analysis Effectiveness; Enhance Business Analysis Capability; Lead Business Analysis Work with Integrity |
 
 The guide ends with a chapter of **23 tools and techniques**, each explained under three headings: **What?** (what the tool is), **So what?** (why you would use it) and **Now what?** (how to use it). The modules that follow describe each tool where it is used.
+
+> **On the exam.** Two more points from the practice guide. **Stewardship** is the care taken over the analysis work itself: **promoting its effectiveness** (measure the key areas of the work, find the gaps, act on them), **enhancing capability** (helping other people recognize and do analysis work, so that it does not all wait for one analyst) and **leading with integrity** (weighing environmental, sustainability, social, cultural and financial effects of the work and of the solution). And in **adaptive** work the analyst can **support the product owner, act as the product owner's proxy, or fill the role**. Elaborating backlog items so that the team can build them is the **product owner's** responsibility; the analyst brings the techniques for doing it well.
 
 ## The people a business analyst works with
 

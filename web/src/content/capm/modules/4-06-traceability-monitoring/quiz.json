@@ -589,5 +589,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q30",
+    "q": "After a requirements workshop, the analyst has forty sticky notes, three whiteboard photographs and a spreadsheet of open points. The director who must approve the requirements cannot make sense of them. Which practice turns these into something she can use?",
+    "options": [
+      "Find the Gaps",
+      "Package Solution Information",
+      "Enable Organizational Transition",
+      "Understand the Situation"
+    ],
+    "answer": 1,
+    "explanation": "Packaging solution information is assembling the information of value to stakeholders and making it consumable, for example as a business requirements document that someone can review and approve.",
+    "ref": "Business Analysis for Practitioners, How to Package Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 83,
+        "label": "Business Analysis for Practitioners, How to Package Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "An interview produces a long account of a billing problem that, once checked with other sources, turns out to be outside the scope of the solution. What does the practice guide say about packaging it?",
+    "options": [
+      "It must be included in full, since everything that is elicited has to be packaged",
+      "It must be deleted from the analyst's notes",
+      "It becomes the first item on the backlog",
+      "It may be kept by the analyst and left out of the package"
+    ],
+    "answer": 3,
+    "explanation": "Not every solution detail that is elicited needs to be packaged. Information identified as out of scope may be retained by the analyst but not packaged for stakeholders, since they will not use it.",
+    "ref": "Business Analysis for Practitioners, How to Package Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 83,
+        "label": "Business Analysis for Practitioners, How to Package Solution Information"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "A product owner needs the outcome of a workshop in a form that lets her put the work in order. Which package fits that purpose, according to the practice guide?",
+    "options": [
+      "Updated user stories on the product backlog",
+      "A requirements traceability matrix",
+      "A signed business requirements document",
+      "The photographs of the whiteboard"
+    ],
+    "answer": 0,
+    "explanation": "The package depends on the purpose: a business requirements document for review and approval, a traceability matrix to confirm coverage, or updated user stories on a product backlog so the product owner can prioritize them.",
+    "ref": "Business Analysis for Practitioners, How to Package Solution Information",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 83,
+        "label": "Business Analysis for Practitioners, How to Package Solution Information"
+      }
+    ]
   }
 ]

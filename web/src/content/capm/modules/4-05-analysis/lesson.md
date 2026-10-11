@@ -11,7 +11,7 @@
 
 ## What analysis is
 
-@source PMI Guide to Business Analysis, 7.1; PMI Guide to Business Analysis, Table 1-2
+@source PMI Guide to Business Analysis, 7.1; PMI Guide to Business Analysis, Table 1-2; Business Analysis for Practitioners, Analyze Solution Information
 
 **Analysis** is the process of examining, breaking down, synthesizing and clarifying information to further understand it, complete it and improve it. It makes sure the product information is **correct**, **meets standards**, **traces to goals**, has its **risks identified**, and can be **turned into a solution**.
 
@@ -30,6 +30,8 @@
 These are **not steps done once in order**. They repeat, overlap, and loop back to elicitation.
 
 **Determine Analysis Approach** thinks ahead: what will be analyzed, which **models** will help most, and how requirements will be **verified, validated and prioritized**.
+
+> **On the exam.** In the practice guide, analysis is everything the analyst does to **close the gaps in understanding the solution**, and it **makes requirements actionable**. It begins as soon as there is information to analyze, even before a project is chartered, and at each point the analyst does **only what the decision makers need** to decide well. Elicitation and analysis feed each other: what is elicited is analyzed, which leads to more elicitation. One limit: the analyst states what is required and **refrains from specifying the technical design**.
 
 ## Models and their five categories
 
@@ -234,7 +236,7 @@ The definition of done is part of the acceptance criteria output and is used lat
 
 ## Prioritize requirements
 
-@source PMI Guide to Business Analysis, 7.7; PMI Guide to Business Analysis, 7.7.2.5
+@source PMI Guide to Business Analysis, 7.7; PMI Guide to Business Analysis, 7.7.2.5; Business Analysis for Practitioners, Figure 7-5
 
 The process of understanding how each piece of product information achieves stakeholder objectives, and using that to **rank the work**. It also decides how requirements are **allocated to iterations or releases**.
 
@@ -255,6 +257,8 @@ The process of understanding how each piece of product information achieves stak
 - Low-priority items are the first to be **cut** when time or budget runs short.
 
 Schemes used: **MoSCoW**, **buy a feature**, **multivoting** (dot voting), **Delphi**, **weighted ranking**, **weighted shortest job first**, **minimum viable product**, timeboxing. Module 3.6 explains them.
+
+> **On the exam.** The practice guide describes **buy-a-feature** as a collaborative game for a long wish list and limited resources. List the features; give each a price (its real cost, or let participants split their money freely); give each participant a fixed amount of play money; **watch and listen as they discuss, negotiate and buy**, which is where the insight comes from; then review the purchases and have them explain their choices.
 
 ## Identify and Analyze Product Risks
 

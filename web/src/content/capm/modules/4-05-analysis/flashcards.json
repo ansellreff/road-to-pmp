@@ -243,5 +243,15 @@
     "id": "c49",
     "front": "Business rules are system-agnostic",
     "back": "They state how the business operates whatever the technology. Requirements must support them."
+  },
+  {
+    "id": "c50",
+    "front": "Buy-a-feature: the five steps",
+    "back": "List the features; price them; give each participant play money; watch them discuss, negotiate and buy; review the purchases and the reasons."
+  },
+  {
+    "id": "c51",
+    "front": "How far does an analyst go toward design?",
+    "back": "States what is required and refrains from specifying the technical design."
   }
 ]
