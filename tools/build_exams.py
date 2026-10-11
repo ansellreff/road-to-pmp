@@ -115,7 +115,7 @@ def write_exams(folder: Path, exams: list[dict]) -> None:
 
 
 # Questions on topics that fall under an outline task but that no enabler names (see "The outline
-# rule" in PROJECT-PLAN.md). They stay in their module quizzes and are kept out of an added exam.
+# rule" in docs/CAPM-PLAN.md). They stay in their module quizzes and are kept out of an added exam.
 NOT_FOR_EXAMS = ("list of things that can be tailored", "Drexler / Sibbet", "six ways of addressing conflict")
 
 
