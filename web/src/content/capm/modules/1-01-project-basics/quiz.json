@@ -448,5 +448,165 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q23",
+    "q": "On a twelve-person project, three people keep the schedule, prepare the reports and run the risk reviews. The other nine design and build the product. What does the PMBOK Guide call the group of three?",
+    "options": [
+      "The project management office (PMO)",
+      "The project management team",
+      "The portfolio team",
+      "The operations team"
+    ],
+    "answer": 1,
+    "explanation": "The project management team is the members of the project team who are directly involved in project management activities. The project team is everyone performing the work of the project.",
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A bank is replacing its branch network with online services. For eighteen months both will run side by side, by plan, before the branches close. In the Guide's description of value through change, what is this eighteen-month period?",
+    "options": [
+      "The current state",
+      "The future state",
+      "The baseline state",
+      "The transition state"
+    ],
+    "answer": 3,
+    "explanation": "A project moves an organization from its current state to a desired future state, sometimes through a planned transition state. Reaching the future state is what delivers the value.",
+    "ref": "PMBOK 8, Standard 1.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 29,
+        "label": "PMBOK 8, Standard 1.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A competitor moves all of its services to the cloud. A company's leaders respond by authorizing a project to replace their own data centers. Which of the Guide's reasons for starting a project is this?",
+    "options": [
+      "Implementing or changing business or technology strategy",
+      "Meeting a new regulatory, legal or social requirement of the market",
+      "Satisfying a request from a stakeholder",
+      "Fixing a defective product or service"
+    ],
+    "answer": 0,
+    "explanation": "Leaders authorize projects to meet regulatory, legal or social requirements; to satisfy stakeholder requests or needs; to implement or change business or technology strategy; or to create, improve or fix products, processes or services.",
+    "ref": "PMBOK 8, Standard 1.3.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 32,
+        "label": "PMBOK 8, Standard 1.3.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A project builds a bypass road around a town. A year later, traffic through the town center has fallen by half, and the town spends less on road repairs. In the Guide's terms, what is the fall in traffic?",
+    "options": [
+      "A deliverable",
+      "A benefit",
+      "An outcome",
+      "An artifact"
+    ],
+    "answer": 2,
+    "explanation": "The road is the output or deliverable. The fall in traffic is the outcome: the end result or consequence. The lower repair cost is a benefit, a gain realized from the outcome.",
+    "ref": "PMBOK 8, Standard 2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 36,
+        "label": "PMBOK 8, Standard 2.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "In a value delivery system, a portfolio manager is preparing what she passes down to the programs and projects in her portfolio. What is it?",
+    "options": [
+      "Deliverables with support and maintenance information",
+      "Information for fixes and adjustments",
+      "Portfolio performance reports",
+      "The desired outcomes, benefits and value"
+    ],
+    "answer": 3,
+    "explanation": "Senior leadership gives strategy to portfolios; portfolios give desired outcomes, benefits and value to programs and projects; these hand deliverables with support and maintenance information to operations. Performance information flows back up.",
+    "ref": "PMBOK 8, Standard 2.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 38,
+        "label": "PMBOK 8, Standard 2.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A PMO analyst says a warehouse project cannot belong to the company's portfolio, because it has nothing to do with the other items in it: a payroll system and a marketing program. Is the analyst right?",
+    "options": [
+      "Yes: every item in a portfolio must depend on at least one of the others",
+      "No: the components of a portfolio do not have to be related",
+      "Yes: a portfolio may hold programs only, not projects",
+      "No: but only if the warehouse project is the largest"
+    ],
+    "answer": 1,
+    "explanation": "A portfolio is a collection of programs, projects and operations managed as a group to maximize value and achieve strategic objectives. Its components do not have to be related to each other; a program's projects do.",
+    "ref": "PMBOK 8, Standard 1.3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 33,
+        "label": "PMBOK 8, Standard 1.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A factory's maintenance crew and a project team both need the plant's only crane operator in the same week. What does the PMBOK Guide say about situations like this?",
+    "options": [
+      "The project always has priority over operations",
+      "Operations always have priority over the project",
+      "They compete for the same resources, so their managers need to work together",
+      "The project should be cancelled until the operator is free, and then started again from planning"
+    ],
+    "answer": 2,
+    "explanation": "Portfolios, programs, projects and operations often share the same stakeholders and compete for the same resources, so their managers need to work together.",
+    "ref": "PMBOK 8, Standard 1.3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 32,
+        "label": "PMBOK 8, Standard 1.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "A charity completes a project that brings clean water to four villages. It earns no money from it. A board member asks how the project's value can be judged at all. What does the Guide say?",
+    "options": [
+      "Value depends on who is looking; here it may be societal impact",
+      "Value exists only where there is a measurable return on the investment",
+      "Value cannot be judged for a non-profit project",
+      "Value is the same as staying within the budget"
+    ],
+    "answer": 0,
+    "explanation": "Value depends on the perspective. An organization may measure return on investment, a customer may see convenience, and governments and NGOs may prioritize societal impact. Business value can be tangible or intangible.",
+    "ref": "PMBOK 8, Standard 2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 36,
+        "label": "PMBOK 8, Standard 2.1"
+      }
+    ]
   }
 ]

@@ -447,5 +447,145 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q23",
+    "q": "A team choosing a packaging supplier weighs the effect on its own staff, on the cost of the product and on the environment. Which idea, linked to the value-driven dimension of the mindset, is it using?",
+    "options": [
+      "The iron triangle",
+      "The triple bottom line",
+      "Shift-left",
+      "The definition of done"
+    ],
+    "answer": 1,
+    "explanation": "The value-driven dimension of the project management mindset links to the triple bottom line: people, profit and planet.",
+    "ref": "PMBOK 8, Standard 3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 59,
+        "label": "PMBOK 8, Standard 3.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Before fixing a date for an office move, a project manager asks the IT, facilities and finance managers how the date would affect their own plans, and decides with all of them. Which sign of a holistically managed project is this?",
+    "options": [
+      "Waste elimination",
+      "Shift-left",
+      "Integrated decision-making",
+      "Gold plating"
+    ],
+    "answer": 2,
+    "explanation": "A project managed holistically shows alignment with organizational strategy, integrated decision-making that considers perspectives across the whole project, enhanced communication, better handling of uncertainty and complexity, and proactive risk management.",
+    "ref": "PMBOK 8, Standard 3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 61,
+        "label": "PMBOK 8, Standard 3.3"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A city library project brings in no revenue, so no return on investment can be calculated. A councillor concludes its value cannot be shown. According to the Focus on Value principle, is that correct?",
+    "options": [
+      "Yes: value must always be a financial figure",
+      "Yes: only deliverables can be measured, never value",
+      "No: value is shown by finishing on time and on budget",
+      "No: value can also be described qualitatively, as in testimonials or societal benefit"
+    ],
+    "answer": 3,
+    "explanation": "Value is the overall worth of the outcomes and the net benefit to stakeholders. It can be measured, as with return on investment, or described qualitatively, as with testimonials or societal benefit.",
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A water pump delivered by a project has run month after month with the same output and no faults. Which dimension of quality does this show most directly?",
+    "options": [
+      "Reliability",
+      "Uniformity",
+      "Compliance",
+      "Satisfaction"
+    ],
+    "answer": 0,
+    "explanation": "Reliability asks whether the deliverable is consistent. Uniformity asks whether it is on par with similar outputs, compliance whether it meets regulations and standards, and satisfaction how customers and users respond.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A company entering a new market could simply meet the government's shipping rules. Its team also studies the large retailers there and finds that they demand stricter standards than the regulator. Which principle is the team applying?",
+    "options": [
+      "Be an Accountable Leader",
+      "Build an Empowered Culture",
+      "Embed Quality Into Processes and Deliverables",
+      "Integrate Sustainability Within All Project Areas"
+    ],
+    "answer": 2,
+    "explanation": "Quality is measured by conformance to acceptance criteria and by fitness for use. A quality-driven approach looks past minimum compliance to what customers actually need, which here leads to a stronger market entry.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A project manager spends the first week of a project listing what could go wrong and planning ahead for it, and builds regular improvement reviews into the schedule. Which dimension of the project management mindset is this?",
+    "options": [
+      "Value-driven",
+      "Ownership",
+      "Predictive",
+      "Proactive"
+    ],
+    "answer": 3,
+    "explanation": "The proactive dimension emphasizes systems thinking, the right level of planning, anticipating problems and continuous improvement. Its principles are Adopt a Holistic View and Embed Quality Into Processes and Deliverables.",
+    "ref": "PMBOK 8, Standard 3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 59,
+        "label": "PMBOK 8, Standard 3.1"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A student asks which performance domains the principle Be an Accountable Leader is most strongly connected with. What does the Standard's table say?",
+    "options": [
+      "Scope and Schedule only",
+      "Governance, Stakeholders and Risk",
+      "Finance and Resources only",
+      "None: principles and domains are unrelated"
+    ],
+    "answer": 1,
+    "explanation": "Every principle relates to all domains, some more strongly. Be an Accountable Leader connects most strongly with Governance, Stakeholders and Risk. Adopt a Holistic View, Integrate Sustainability and Build an Empowered Culture connect with all seven.",
+    "ref": "PMBOK 8, Standard 3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 60,
+        "label": "PMBOK 8, Standard 3.2"
+      }
+    ]
   }
 ]
