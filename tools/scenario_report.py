@@ -37,10 +37,15 @@ def main() -> None:
                 rows.append(f"    {module['id']}: {scenarios} of {len(questions)} ({scenarios / len(questions):.0%})")
             total[0] += counts[0]
             total[1] += counts[1]
+            if not counts[1]:
+                # A course that is still being written has domains with no questions yet.
+                print(f"Domain {number}: no questions yet")
+                continue
             print(f"Domain {number}: {counts[0]} of {counts[1]} questions are scenarios ({counts[0] / counts[1]:.0%})")
             if "--modules" in sys.argv:
                 print("\n".join(rows))
-        print(f"{course['id']}: {total[0]} of {total[1]} ({total[0] / total[1]:.0%})")
+        if total[1]:
+            print(f"{course['id']}: {total[0]} of {total[1]} ({total[0] / total[1]:.0%})")
 
 
 if __name__ == "__main__":
