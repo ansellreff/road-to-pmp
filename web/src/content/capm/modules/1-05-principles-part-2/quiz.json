@@ -347,7 +347,7 @@
     "id": "q18",
     "q": "A project manager notices that when she is under pressure she becomes impatient and dismisses ideas. She starts asking a colleague to chair the tense meetings. Which characteristic of an accountable leader is this?",
     "options": [
-      "Self-awareness",
+      "Self-awareness of her own motives",
       "Shared authority",
       "Systems thinking",
       "Stewardship of resources"
@@ -447,5 +447,145 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q23",
+    "q": "A test fails two days before a milestone payment. The sponsor hints that the report could wait until after the payment. The project manager reports the failure on the day it happens. Which characteristic of an accountable leader is this?",
+    "options": [
+      "Shared leadership within the project team",
+      "Flexibility and adaptability",
+      "Integrity, honesty and fairness",
+      "Availability"
+    ],
+    "answer": 2,
+    "explanation": "An accountable leader's decisions follow moral principles, especially in hard situations, and aim at the common good. That is integrity, honesty and fairness, and it builds trust.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A project manager gives close, step-by-step direction to a new team during an outage. With her experienced team, on routine work, she mostly asks questions and lets them decide. Her values are the same with both. Which characteristic is this?",
+    "options": [
+      "Flexibility and adaptability",
+      "Self-awareness",
+      "Authority",
+      "Humility"
+    ],
+    "answer": 0,
+    "explanation": "Flexibility and adaptability means adapting the leadership style to the situation and the audience without losing core values.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A director asks why a project needs more leadership than the department's routine work, which runs smoothly with little of it. What reason does the PMBOK Guide give?",
+    "options": [
+      "Projects have larger budgets than operations do",
+      "Project managers have more authority than line managers",
+      "Routine work needs no leadership of any kind, because its procedures are fixed in advance",
+      "Projects join groups that do not normally work together, with higher stakes"
+    ],
+    "answer": 3,
+    "explanation": "Projects bring together organizations, departments and vendors that do not normally work together, the stakes are higher, and many people try to influence the outcome. That creates confusion and conflict, so more leadership is needed.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A demolition project cannot avoid raising dust near a school. It installs water sprays and screens, and works only outside school hours, so that far less dust reaches the school. Which level of the sustainability pyramid is this?",
+    "options": [
+      "Avoid",
+      "Minimize",
+      "Restore",
+      "Compensate"
+    ],
+    "answer": 1,
+    "explanation": "The pyramid ranks responses to a negative impact: avoid it altogether, minimize it, restore the impact, or compensate for it. Reducing the dust that cannot be avoided is minimizing.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "A project manager wants a supplier to be bound to a sustainability target, not merely encouraged to meet it. According to the Guide, where can a sustainability KPI be written so that it applies to the supplier?",
+    "options": [
+      "Only in the lessons learned register",
+      "In the team's working agreements",
+      "In the contract",
+      "Nowhere: such targets cannot be formal"
+    ],
+    "answer": 2,
+    "explanation": "Sustainability KPIs can be written into the charter, the business case, the scope statement or contracts. A contract is the document that binds a supplier.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "After a project switches to recycled materials and cuts its energy use, its material and energy bills fall, and a sustainable-finance fund shows interest in the company. Which kind of sustainability benefit is this?",
+    "options": [
+      "Financial",
+      "Operational",
+      "Organizational",
+      "Customer and stakeholder"
+    ],
+    "answer": 0,
+    "explanation": "Financial benefits include lower material and energy costs, less waste and interest from sustainable-finance investors. Operational benefits are process innovation and less operational waste.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A team sees that a weekly reporting activity no longer serves anyone and proposes to stop it. The manager wonders whether a team may propose such a thing. What does the Build an Empowered Culture principle say?",
+    "options": [
+      "No: only the sponsor may question an activity",
+      "No: the team's task is to carry out the plan exactly as it was written at the start",
+      "Yes, but only after the project has closed",
+      "Yes: empowered teams can propose speeding up, slowing or stopping activities"
+    ],
+    "answer": 3,
+    "explanation": "Empowered teams affect every domain. They can propose speeding up, slowing down or stopping activities, help cut unplanned spending, help define risk thresholds and shape how stakeholders are engaged.",
+    "ref": "PMBOK 8, Standard 3.8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 76,
+        "label": "PMBOK 8, Standard 3.8"
+      }
+    ]
   }
 ]

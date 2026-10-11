@@ -447,5 +447,145 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q23",
+    "q": "A proposed project is well designed but serves none of the organization's strategic objectives, and it is not authorized. Which key benefit of the Initiating Focus Area does this show?",
+    "options": [
+      "The course of action is defined",
+      "Projects are authorized only when they align with strategic objectives",
+      "The project is kept on track, so that it can meet stakeholder expectations",
+      "Phases and contracts are closed out properly"
+    ],
+    "answer": 1,
+    "explanation": "The key benefit of Initiating is that projects are authorized only when they align with the organization's strategic objectives, with the business case, benefits and stakeholders considered from the very start.",
+    "ref": "PMBOK 8, Standard 4.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A newly assigned project manager has almost no information about why the project exists. According to the Guide, who should give her the minimum information needed to start, and in which documents?",
+    "options": [
+      "The sponsor, in the business documents",
+      "The team, in the lessons learned register",
+      "The customer, in the change log",
+      "Operations, in the work performance reports"
+    ],
+    "answer": 0,
+    "explanation": "Business documents, mainly the business case and the benefits management plan, generally originate outside the project. In them the sponsor should give the project manager the minimum information needed to start.",
+    "ref": "PMBOK 8, Standard 4.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "An adaptive team begins a project with a short session that sets out, at a high level, what it expects to deliver over the coming quarters. Detailed planning will follow iteration by iteration. What is this first, brief planning called?",
+    "options": [
+      "Baselining",
+      "Rolling back",
+      "Roadmapping",
+      "Front-loading"
+    ],
+    "answer": 2,
+    "explanation": "In an adaptive approach there is brief high-level planning first, called roadmapping, followed by frequent planning and replanning throughout. Predictive approaches front-load most of the planning.",
+    "ref": "PMBOK 8, Standard 4.5.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 93,
+        "label": "PMBOK 8, Standard 4.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A visitor watches two projects for a day. One works to a detailed plan in long stages; the other delivers small pieces every two weeks. In which Focus Area is this difference in development approach most visible?",
+    "options": [
+      "Initiating",
+      "Closing",
+      "Monitoring and Controlling",
+      "Executing"
+    ],
+    "answer": 3,
+    "explanation": "Executing is where the chosen development approach is most visible, because it is where the work is carried out.",
+    "ref": "PMBOK 8, Standard 4.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "On a predictive project with a stable plan, the weekly effort spent on monitoring and controlling barely changes. On an adaptive project nearby, with frequent change, it rises and falls. Is this what the Guide expects?",
+    "options": [
+      "Yes: the effort is fairly constant with a stable plan and less even with frequent change",
+      "No: the effort should be identical on every project, whatever its approach or rate of change",
+      "No: adaptive projects do no monitoring and controlling",
+      "No: monitoring happens only once, near the end"
+    ],
+    "answer": 0,
+    "explanation": "Monitoring and Controlling runs in parallel with the other Focus Areas. With a stable plan the effort is fairly constant; with frequent change, as in adaptive work, it is less even.",
+    "ref": "PMBOK 8, Standard 4.5.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Halfway through a project, a supplier completes its part and its contract ends. The project itself continues for another year. Do the actions of the Closing Focus Area apply now?",
+    "options": [
+      "No: closing happens once, at the end of the project",
+      "No: contracts are closed by the legal department alone, outside the project",
+      "Yes: closing applies to a contract as well as to a phase or project",
+      "Yes: but only if the supplier performed badly"
+    ],
+    "answer": 2,
+    "explanation": "Closing is the actions performed to formally complete or close a project, phase or contract, or to terminate a project before completion.",
+    "ref": "PMBOK 8, Standard 4.5.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.5"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A chart shows the level of effort in each Focus Area over the life of a predictive project. Which Focus Area dominates the middle of the project, and which runs across the whole of it?",
+    "options": [
+      "Planning dominates the middle; Closing runs across all of the project from the first day",
+      "Executing dominates the middle; Monitoring and Controlling runs across all",
+      "Initiating dominates the middle; Planning runs across all",
+      "Closing dominates the middle; Executing runs across all"
+    ],
+    "answer": 1,
+    "explanation": "In a predictive project Initiating is heavy at the start, Planning rises early, Executing dominates the middle, Closing rises at the end, and Monitoring and Controlling runs across all of it.",
+    "ref": "PMBOK 8, Standard 4.5.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 96,
+        "label": "PMBOK 8, Standard 4.5.6"
+      }
+    ]
   }
 ]

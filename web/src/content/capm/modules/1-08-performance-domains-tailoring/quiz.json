@@ -467,5 +467,125 @@
         "label": "PMBOK 7, Guide 3.3"
       }
     ]
+  },
+  {
+    "id": "q24",
+    "q": "A utility is replacing the control system of a power station on a strictly predictive plan, with several contractors and a regulator watching each stage. How much governance does the Guide suggest for a project like this?",
+    "options": [
+      "Lightweight",
+      "Moderate",
+      "Comprehensive",
+      "None, since the plan governs"
+    ],
+    "answer": 2,
+    "explanation": "Governance can be lightweight for adaptive work, moderate for hybrid, and comprehensive for large predictive projects.",
+    "ref": "PMBOK 8, Guide 2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A project manager spends the morning coaching two team members and settling who will lead the next work package. Which performance domain of the Eighth Edition covers leading the team?",
+    "options": [
+      "Resources",
+      "Stakeholders",
+      "Governance",
+      "Scope"
+    ],
+    "answer": 0,
+    "explanation": "The Resources domain covers planning, acquiring and managing people and physical resources, and leading the team. Stakeholders covers engaging the people affected and managing communications.",
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "A team of ten is told to follow the full method written for 200-person programs. It now spends more time filling in documents than building. What does the Guide's case for tailoring say about this?",
+    "options": [
+      "More processes always give better control",
+      "A method must never be changed by a project team",
+      "The team is too small to run a project",
+      "Too many processes are costly and wasteful, as too few are ineffective"
+    ],
+    "answer": 3,
+    "explanation": "No single approach fits all projects. Too few processes makes management ineffective; too many is costly and wasteful. That is why the approach is tailored to the project.",
+    "ref": "PMBOK 8, Guide 3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 209,
+        "label": "PMBOK 8, Guide 3.2"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "While tailoring, a sponsor and a project manager agree which decisions the team may take by itself and which must come to them. Which of the things that can be tailored is this?",
+    "options": [
+      "Processes: an element is blended",
+      "Engagement: empowerment",
+      "Life cycle and development approach",
+      "Engagement: integration"
+    ],
+    "answer": 1,
+    "explanation": "Engagement covers people (skills and capabilities), empowerment (which decisions are left to the team) and integration (making one team from staff, contractors and partners).",
+    "ref": "PMBOK 8, Guide 3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 209,
+        "label": "PMBOK 8, Guide 3.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "In the third step of tailoring, a project manager notes that her team is spread over three countries, is new to the method, and can rarely reach the customer. Which of the three attributes is she looking at?",
+    "options": [
+      "The product or deliverable",
+      "The culture",
+      "The project team",
+      "The development approach"
+    ],
+    "answer": 2,
+    "explanation": "Tailoring for the project looks at three attributes. The project team attribute covers size, geography, experience, access to the customer and diversity.",
+    "ref": "PMBOK 8, Guide 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 210,
+        "label": "PMBOK 8, Guide 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A retrospective shows that the designers, the developers and the testers each work alone and pass work over the wall. Which tailoring suggestion does the Guide's diagnostics table give for a team working in silos?",
+    "options": [
+      "Team building, and individual meetings to find the cause",
+      "A value stream map and a kanban board",
+      "Decision thresholds for faster approvals",
+      "More verification steps at the end"
+    ],
+    "answer": 0,
+    "explanation": "For team members working in silos the table suggests team building and individual meetings to find the cause. Value stream mapping and kanban boards are for too much work in progress; decision thresholds are for long approval delays.",
+    "ref": "PMBOK 8, Guide Table 3-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 217,
+        "label": "PMBOK 8, Guide Table 3-1"
+      }
+    ]
   }
 ]
