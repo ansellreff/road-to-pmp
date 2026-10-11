@@ -64,6 +64,7 @@ Certified Associate in Project Management. Built and online; **being finished** 
 | 2026-10-11 | **CAPM reopened to be finished.** You asked whether CAPM was 100% finished. It was not, and you chose to close every open item before PMP continues: the thin outline item and the small Domain 1 quizzes (Session 32), a deeper accuracy check of Domains 4 and 2 (Sessions 33 to 35), the real exam's question types (Sessions 36 and 37), the remaining drawings (Session 38), and a closing session (39). | Session 32 |
 | 2026-10-11 | **Session 32, first sitting.** The outline's last thin item is now taught: module 1.12 has a section "Following a planned strategy: communication, risk and stakeholders", written from the process guide's three Executing processes, with 8 questions and 6 flashcards. **The outline coverage is now 60 of 60.** The quizzes of modules 1.1 and 1.4 were brought up to 20 questions (15 new). Bank: 1,062 questions, 1,304 flashcards. | Session 32, second sitting: modules 1.2, 1.3 and 1.5 to 1.10 still have 13 to 17 questions each |
 | 2026-10-11 | **Session 32 done: content gaps closed.** Second sitting: 40 more scenario questions, so every Domain 1 module quiz now has at least 20 (modules 1.2, 1.3, 1.5 to 1.10). Each was written after reading the module's lesson and checking its existing questions for repeats. Session 32 in total: one new lesson section, 63 questions, 6 flashcards. Bank: 1,102 questions, 1,304 flashcards; the module quizzes show 802. | You: `upload.bat`. Next: Session 33, the practice guide's chapters 2 and 3 against modules 4.1 to 4.3 |
+| 2026-10-11 | **Session 33 done: the practice guide's chapters 2 and 3 read against Domain 4.** Nothing in modules 4.1 to 4.3 was found wrong. Missing and now taught: in module 4.2, the Golden Circle, the three parts of a situation statement, SMART objectives, SIPOC, PESTLE and CATWOE, the rule for what to recommend (including "do nothing"), the four parts of a business case, the empathy map and the customer journey map; in module 4.3, business analysis governance, the engagement approach as a continuing activity, and what a business analysis plan holds. 12 questions, 11 flashcards. Bank: 1,114 questions, 1,315 flashcards. | You: `upload.bat`. Next: Session 34, chapters 4 (rest), 5 and 6 against modules 4.4 to 4.7 |
 
 ## Roadmap to a complete CAPM course
 
@@ -97,7 +98,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 30 | Questions: 54 new scenario questions in Domain 1; 112 questions in Domains 2 to 4 reworded as situations. Details under "Session 30: questions". |
 | ✅ | 31 | Strengthen CAPM before the exam: 31a accuracy check of all four domains against the exam's books; 31b 130 new scenario questions; 31c Mock exam 5 (unseen); 31d keyboard shortcuts; 31e six more drawings. Details under "Session 31a: lessons compared with the exam's books" and "Session 31b to 31e: as built". |
 | ✅ | 32 | Content gaps: the thin outline item (responding to a planned strategy or framework) taught in module 1.12; 55 new scenario questions so no Domain 1 module quiz has fewer than 20 |
-| ⬜ | 33 | Deeper accuracy check: *Business Analysis for Practitioners*, chapters 2 and 3, against modules 4.1 to 4.3 |
+| ✅ | 33 | Deeper accuracy check: *Business Analysis for Practitioners*, chapters 2 and 3, against modules 4.1 to 4.3 |
 | ⬜ | 34 | Deeper accuracy check: the same book, chapters 4 (rest), 5 and 6, against modules 4.4 to 4.7 |
 | ⬜ | 35 | Deeper accuracy check: *Process Groups: A Practice Guide*, the 49 processes, against modules 1.12 and 2.1 to 2.11 |
 | ⬜ | 36 | Real exam question types, the rules: matching, hot spot and comic strip stored, marked, saved, synced and checked |
@@ -163,7 +164,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (1,102 quiz questions, 1,304 flashcards, after Session 32). Of the 1,102 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 802. 352 questions are in no exam.
+Overall: **39 of 39 modules done** (1,114 quiz questions, 1,315 flashcards, after Session 33). Of the 1,114 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 814. 364 questions are in no exam.
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -776,3 +777,18 @@ Each was looked at in the light and the dark theme. Not drawn: the decision tree
 All 63 are scenarios with a book page link. None is in a mock exam, so they stay in the module quizzes. No Domain 1 module has the right answer as the longest option more than 32% of the time.
 
 **Left as it is:** eight modules in Domains 3 and 4 show 17 or 18 questions (3.2, 3.4, 3.6, 4.1, 4.2, 4.3, 4.4, 4.6). They were not part of this session, which you chose for Domain 1. Sessions 33, 34 and 37 add questions to Domain 4 and to every domain.
+
+## Sessions 33 to 35: the deeper accuracy check
+
+Same method as Session 31a and the same outline rule. This section records what was read, what differed and what was done.
+
+### Session 33: *Business Analysis for Practitioners*, chapters 2 and 3 (2026-10-11)
+
+| Module | Pages read | What differed or was missing | Outline task | What was done |
+|---|---|---|---|---|
+| 4.2 | Chapter 2, Business Value Assessment: pages 22 to 29 (introduction, Understand the Situation), 33 to 40 (Find the Gaps, Define the Solution); glossary entries for the customer journey map and empathy map | Nothing wrong: situation statement, root cause tools, capability table, weighted ranking, feasibility and the roadmap were already taught from the main guide. **Missing:** the Golden Circle; the six things to elicit; the three named parts of a situation statement and the rules for drafting one; SMART; SIPOC; PESTLE and CATWOE; OKRs; "recommend that nothing be done"; the business case's four parts and its being a living document; disbenefits measured like benefits; the two maps | 4.3, match tools to scenarios and choose the gathering approach; 4.4, product roadmaps | New section "The practice guide on assessing business value"; 7 questions, 8 flashcards |
+| 4.3 (and 4.1) | Chapter 3, Business Analysis Planning: pages 46 to 51 (introduction, governance, engagement approach) and 57 to 59 (Plan Business Analysis Work) | Nothing wrong. **Missing:** business analysis governance as a practice (who decides and approves, agreed beforehand; the governance roles; adaptive decisions by the product owner); the engagement approach as a continuing activity; the contents of a business analysis plan and the advice to explain its choices | 4.1, why roles must be identified; 4.5, the analyst's role in adaptive and predictive work | New section "The practice guide on planning the analysis"; 5 questions, 3 flashcards |
+
+**Not read in Session 33:** the case study pages of both chapters (pages 30 to 32, 40 to 45, 48 to 49 in part, 51 to 56, 59 to 61). They apply the practices to one fictional company and add no definitions, but I did not check that. Pages 120 and 121 (buy-a-feature and the capability table), listed in the plan for this session, are **still unread** and move to Session 34.
+
+Module 4.1 needed no change: its note on the five domains and fifteen practices (Session 31a) already covers what chapter 3's introduction says about the domain.

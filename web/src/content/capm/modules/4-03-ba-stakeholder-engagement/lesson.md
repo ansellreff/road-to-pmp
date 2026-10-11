@@ -269,6 +269,32 @@ The business analyst sits **between** groups that do not share a vocabulary. PMI
 
 When this communication fails, requirements are **missed, duplicated or built twice in different ways**, and the cost appears as rework.
 
+## The practice guide on planning the analysis
+
+@source Business Analysis for Practitioners, Understand Business Analysis Governance; Business Analysis for Practitioners, How to Determine Stakeholder Engagement Approach; Business Analysis for Practitioners, Plan Business Analysis Work
+
+*Business Analysis for Practitioners* puts planning in its **Business Analysis Planning** domain, with three practices.
+
+**Understand Business Analysis Governance.** Governance is the regulations, rules, policies and decision-making guidelines that affect the analysis work.
+
+- It decides **who makes decisions and who approves deliverables, and when**. The analyst clarifies how decisions on requirements, on solution changes and on the go/no-go will be handled **before those decisions are needed**. Agreeing the who, what and when in advance avoids conflict later.
+- Governance roles the analyst may work with: legal, risk, release management, the change control board, DevOps, the PMO, the value delivery office, a business analysis center of excellence, and compliance auditors.
+- A **responsibility assignment matrix** can confirm who decides what.
+- How much is needed varies: a small departmental project needs little; a large, cross-functional project in a regulated industry needs a great deal. Regulatory and audit obligations apply **whether the approach is predictive or adaptive**. In adaptive work, decisions go with the roles: typically the **product owner decides, in consultation with the team**.
+
+**Determine Stakeholder Engagement Approach.**
+
+- Having a stake does not mean being engaged. Assuming that stakeholders are engaged is a risk.
+- The approach is **not a fixed course of action**. People move, organizations change, so identifying and prioritizing stakeholders is done **throughout** the initiative. The analyst keeps asking: "Is there anyone I am missing?"
+- The results may be kept in a **stakeholder register** or a **stakeholder engagement matrix**.
+
+**Plan Business Analysis Work.**
+
+- The question to ask is "What do I really need to do for this initiative?" **Not every possible analysis activity needs to be done**, and not all need the same formality.
+- The **business analysis plan** covers the scope of the analysis effort: the activities, the deliverables, the roles, and key process decisions, such as how requirements will be prioritized, documented, validated, communicated, approved and changed.
+- A good plan **explains why** each choice was made. An adaptive team may record these decisions in a working agreement, or not write them down at all.
+- A first plan may cover only the early phases or iterations, and is expected to change. Having a plan is what **makes flexibility possible**: people who share a plan know what deviating from it means.
+
 ## Tools in the practice guide: understanding stakeholders
 
 @source Business Analysis for Practitioners, Figure 7-13; Business Analysis for Practitioners, Figure 7-19; Business Analysis for Practitioners, Figure 7-14

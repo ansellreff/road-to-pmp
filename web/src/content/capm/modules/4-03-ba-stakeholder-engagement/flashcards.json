@@ -183,5 +183,20 @@
     "id": "c37",
     "front": "C and D on the stakeholder engagement assessment matrix",
     "back": "C = current engagement, D = desired engagement. A gap between them needs action."
+  },
+  {
+    "id": "c38",
+    "front": "Understand Business Analysis Governance: the main point",
+    "back": "Agree who decides and who approves, and when, before the decision is needed."
+  },
+  {
+    "id": "c39",
+    "front": "What a business analysis plan covers",
+    "back": "The scope of the analysis effort: activities, deliverables, roles, and how requirements will be prioritized, documented, validated, communicated, approved and changed."
+  },
+  {
+    "id": "c40",
+    "front": "Is the stakeholder engagement approach fixed?",
+    "back": "No. Stakeholders are identified and prioritized throughout the initiative: \"Is there anyone I am missing?\""
   }
 ]

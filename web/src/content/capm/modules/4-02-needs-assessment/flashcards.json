@@ -218,5 +218,45 @@
     "id": "c44",
     "front": "Metric versus KPI",
     "back": "A metric becomes a KPI when it is chosen as a key indicator of progress toward a business objective. A KPI is not a goal."
+  },
+  {
+    "id": "c45",
+    "front": "Golden Circle (practice guide)",
+    "back": "Why, then how, then what. Find the business need (why) before the outcome (what) and the way to reach it (how)."
+  },
+  {
+    "id": "c46",
+    "front": "Three parts of a situation statement",
+    "back": "The problem or opportunity; its direct effect; the business impact."
+  },
+  {
+    "id": "c47",
+    "front": "SMART objectives",
+    "back": "Specific, measurable, achievable, relevant, time-bound."
+  },
+  {
+    "id": "c48",
+    "front": "SIPOC",
+    "back": "Suppliers, inputs, process, outputs, customers: a form of process analysis used to find root causes."
+  },
+  {
+    "id": "c49",
+    "front": "PESTLE and CATWOE",
+    "back": "PESTLE: political, economic, social, technological, legal, environmental. CATWOE: customer, actor, transformation, worldview, owner, environment. Both examine the factors around a situation."
+  },
+  {
+    "id": "c50",
+    "front": "What to recommend after the feasibility analysis",
+    "back": "One feasible option: recommend it. Several: rank them. None: recommend that nothing be done."
+  },
+  {
+    "id": "c51",
+    "front": "Four parts of a business case (practice guide)",
+    "back": "Problem or opportunity; analysis of the situation; recommendation; evaluation. It is a living document."
+  },
+  {
+    "id": "c52",
+    "front": "Empathy map versus customer journey map",
+    "back": "Empathy map: what one type of user says, thinks, does and feels. Journey map: the phases a customer goes through with a product and the experience at each point."
   }
 ]

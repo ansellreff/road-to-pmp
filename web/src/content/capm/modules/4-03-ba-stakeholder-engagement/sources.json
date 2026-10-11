@@ -126,6 +126,21 @@
   },
   {
     "book": "bapg",
+    "page": 47,
+    "label": "Business Analysis for Practitioners, Understand Business Analysis Governance"
+  },
+  {
+    "book": "bapg",
+    "page": 51,
+    "label": "Business Analysis for Practitioners, How to Determine Stakeholder Engagement Approach"
+  },
+  {
+    "book": "bapg",
+    "page": 57,
+    "label": "Business Analysis for Practitioners, Plan Business Analysis Work"
+  },
+  {
+    "book": "bapg",
     "page": 131,
     "label": "Business Analysis for Practitioners, Figure 7-13"
   },

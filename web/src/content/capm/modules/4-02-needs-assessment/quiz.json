@@ -610,5 +610,145 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q31",
+    "q": "At the first meeting about falling sales, a director says: \"We need a new website. Let's talk about how to build it.\" The analyst steers the group back to a different question first. Following the Golden Circle used in Business Analysis for Practitioners, which question comes first?",
+    "options": [
+      "What will the website contain?",
+      "How will the new website be built?",
+      "Who will build the website?",
+      "Why does the business need to act?"
+    ],
+    "answer": 3,
+    "explanation": "The Golden Circle runs why, how, what. The analyst determines the business need (the why) before the outcome (the what) and how to achieve it, which prevents rushing to a solution.",
+    "ref": "Business Analysis for Practitioners, Value of Understanding the Situation",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 23,
+        "label": "Business Analysis for Practitioners, Value of Understanding the Situation"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "A situation statement reads: \"Claims submitted by phone are processed slowly, which has forced us to add staff, and processing costs have risen 7% a year for three years.\" Which part is \"which has forced us to add staff\"?",
+    "options": [
+      "The problem or opportunity",
+      "The direct effect",
+      "The business impact",
+      "The root cause"
+    ],
+    "answer": 1,
+    "explanation": "A situation statement has three parts: the problem or opportunity, its direct effect (usually the most noticeable aspect), and the business impact, what it costs or might return.",
+    "ref": "Business Analysis for Practitioners, How to Understand the Situation",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 25,
+        "label": "Business Analysis for Practitioners, How to Understand the Situation"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "While a group drafts a situation statement, two managers start arguing about which software to buy. According to the practice guide's guidelines, what should the analyst do?",
+    "options": [
+      "Ask the group to focus on the business problem and not to offer solutions",
+      "Let the argument run its course, since finding solutions is the purpose of the meeting",
+      "Record both products in the situation statement as options",
+      "End the meeting and write the statement alone afterwards"
+    ],
+    "answer": 0,
+    "explanation": "The guidelines are to get the group together, keep everyone on the same page, ask the group to focus on the business problem and not offer solutions, and end when consensus is reached.",
+    "ref": "Business Analysis for Practitioners, How to Understand the Situation",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 25,
+        "label": "Business Analysis for Practitioners, How to Understand the Situation"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "An objective reads: \"Improve customer service.\" A reviewer says it cannot be tested and has no date. Which two parts of SMART are missing most clearly?",
+    "options": [
+      "Specific and also relevant",
+      "Achievable and relevant",
+      "Measurable and time-bound",
+      "Specific and achievable"
+    ],
+    "answer": 2,
+    "explanation": "SMART objectives are specific, measurable, achievable, relevant and time-bound. An outcome that cannot be tested is not measurable, and one with no period attached is not time-bound.",
+    "ref": "Business Analysis for Practitioners, How to Understand the Situation",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 25,
+        "label": "Business Analysis for Practitioners, How to Understand the Situation"
+      }
+    ]
+  },
+  {
+    "id": "q35",
+    "q": "An analyst has examined three options for a business need. After the feasibility and viability analysis, none of them is feasible. What does the practice guide say can be recommended?",
+    "options": [
+      "The cheapest of the three, as the least bad",
+      "All three, to spread the risk",
+      "A fourth option invented without analysis",
+      "That nothing be done"
+    ],
+    "answer": 3,
+    "explanation": "If one option is feasible it is recommended; if several are, they are ranked; when there are no viable options to address the business need, one option is to recommend that nothing be done.",
+    "ref": "Business Analysis for Practitioners, How to Define the Solution",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 37,
+        "label": "Business Analysis for Practitioners, How to Define the Solution"
+      }
+    ]
+  },
+  {
+    "id": "q36",
+    "q": "A gap analysis ends with a list: \"high-speed internet, more than two bedrooms, mortgage support from local banks.\" A manager says the solution is therefore decided. How does the practice guide regard this list?",
+    "options": [
+      "As the approved project scope",
+      "As net changes needed, which do not yet provide a solution",
+      "As the business case for the project",
+      "As the agreed product roadmap for the first release of the solution"
+    ],
+    "answer": 1,
+    "explanation": "Find the Gaps results in the list of net changes the organization needs to make to reach the future state. The capabilities listed do not provide a solution; further analysis decides how they will be delivered.",
+    "ref": "Business Analysis for Practitioners, How to Find the Gaps",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 34,
+        "label": "Business Analysis for Practitioners, How to Find the Gaps"
+      }
+    ]
+  },
+  {
+    "id": "q37",
+    "q": "A team wants to understand one type of user better. On a single sheet it writes down what that user says, thinks, does and feels. What is this tool called in the practice guide's glossary?",
+    "options": [
+      "An empathy map",
+      "A customer journey map",
+      "A capability table",
+      "A context diagram"
+    ],
+    "answer": 0,
+    "explanation": "An empathy map captures information about a particular type of user: what they say, think, do and feel. A customer journey map shows the phases customers go through when using a product and their experience at each point.",
+    "ref": "Business Analysis for Practitioners, Glossary",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 150,
+        "label": "Business Analysis for Practitioners, Glossary"
+      }
+    ]
   }
 ]

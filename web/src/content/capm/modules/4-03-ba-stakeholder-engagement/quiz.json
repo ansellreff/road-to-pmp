@@ -590,5 +590,105 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q30",
+    "q": "Requirements are ready for approval, and three managers each believe the decision is theirs. The work stops for two weeks. Which practice from Business Analysis for Practitioners would have prevented this, and how?",
+    "options": [
+      "Plan Business Analysis Work, by listing every elicitation technique the team might use on the project",
+      "Find the Gaps, by comparing current and future capabilities",
+      "Understand Business Analysis Governance, by agreeing who decides before the decision is needed",
+      "Package Solution Information, by choosing a document format"
+    ],
+    "answer": 2,
+    "explanation": "Governance affects who makes decisions and who approves deliverables, and when. The analyst clarifies how decisions on requirements, solution changes and go/no-go will be handled before they are needed, which avoids conflict.",
+    "ref": "Business Analysis for Practitioners, Understand Business Analysis Governance",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 47,
+        "label": "Business Analysis for Practitioners, Understand Business Analysis Governance"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "A team using an adaptive approach asks how decisions about requirements will be made, since there is no approval board. According to the practice guide's case, how is this typically handled?",
+    "options": [
+      "The product owner decides, in consultation with the development team",
+      "Every decision, however small, goes to the change control board for approval",
+      "The project sponsor signs each user story",
+      "The team votes and the majority decides"
+    ],
+    "answer": 0,
+    "explanation": "In adaptive work decision-making is handled as part of the process and determined by roles: the product owner makes the decisions in consultation with the development team.",
+    "ref": "Business Analysis for Practitioners, Understand Business Analysis Governance",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 47,
+        "label": "Business Analysis for Practitioners, Understand Business Analysis Governance"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "An analyst identifies the stakeholders in the first week, files the list and does not look at it again. Six months later two key stakeholders have changed jobs and a new regulator has appeared. What did the analyst misunderstand?",
+    "options": [
+      "The list should have been written by the sponsor",
+      "Stakeholders may be identified only at the end",
+      "A stakeholder register is not allowed to change once it is filed",
+      "Identifying stakeholders is done throughout, not once"
+    ],
+    "answer": 3,
+    "explanation": "Planning the engagement approach does not mean fixing a course of action. Identifying, clarifying and prioritizing the evolving stakeholder landscape is done throughout the initiative; the analyst keeps asking whether anyone is missing.",
+    "ref": "Business Analysis for Practitioners, How to Determine Stakeholder Engagement Approach",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 51,
+        "label": "Business Analysis for Practitioners, How to Determine Stakeholder Engagement Approach"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "A new analyst plans to carry out every business analysis activity she knows, each to full formality, on a small internal project. What does the practice guide say about planning business analysis work?",
+    "options": [
+      "Every activity must be done on every project",
+      "Not all activities need to be done, nor to the same degree of formality",
+      "Planning is unnecessary on small projects",
+      "Only the project manager may choose which analysis activities are carried out"
+    ],
+    "answer": 1,
+    "explanation": "The question to ask is what really needs to be done for this initiative. Not all potential business analysis activities need to be done, and not all that are done require the same formality or detail.",
+    "ref": "Business Analysis for Practitioners, Plan Business Analysis Work",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 57,
+        "label": "Business Analysis for Practitioners, Plan Business Analysis Work"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "A business analysis plan lists the chosen elicitation techniques and deliverables, but gives no reasons. A reviewer who must approve it finds the choices hard to judge. What does the practice guide recommend?",
+    "options": [
+      "Remove the choices and list only dates",
+      "Leave it: a plan should be as short as possible",
+      "Explain why each planning choice was made",
+      "Replace the plan with a responsibility matrix"
+    ],
+    "answer": 2,
+    "explanation": "When documenting the business analysis plan it is good practice to explain the planning choices. The reasons give context to those who review the plan, since choices differ between adaptive and predictive work.",
+    "ref": "Business Analysis for Practitioners, Plan Business Analysis Work",
+    "links": [
+      {
+        "book": "bapg",
+        "page": 57,
+        "label": "Business Analysis for Practitioners, Plan Business Analysis Work"
+      }
+    ]
   }
 ]

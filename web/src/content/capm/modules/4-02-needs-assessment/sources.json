@@ -161,6 +161,26 @@
   },
   {
     "book": "bapg",
+    "page": 23,
+    "label": "Business Analysis for Practitioners, Value of Understanding the Situation"
+  },
+  {
+    "book": "bapg",
+    "page": 25,
+    "label": "Business Analysis for Practitioners, How to Understand the Situation"
+  },
+  {
+    "book": "bapg",
+    "page": 34,
+    "label": "Business Analysis for Practitioners, How to Find the Gaps"
+  },
+  {
+    "book": "bapg",
+    "page": 37,
+    "label": "Business Analysis for Practitioners, How to Define the Solution"
+  },
+  {
+    "book": "bapg",
     "page": 122,
     "label": "Business Analysis for Practitioners, Figure 7-7"
   },
@@ -183,5 +203,10 @@
     "book": "bapg",
     "page": 135,
     "label": "Business Analysis for Practitioners, Figure 7-17"
+  },
+  {
+    "book": "bapg",
+    "page": 150,
+    "label": "Business Analysis for Practitioners, Glossary"
   }
 ]

@@ -271,6 +271,45 @@ Typical contents: description and purpose, business goals and objectives, high-l
 | **Return on investment** | At the end of the initiative | **Sooner**, as features are delivered iteratively |
 | **Feasibility proven** | Late, so the risk is higher | **Early**, by delivering higher-risk features first |
 
+## The practice guide on assessing business value
+
+@source Business Analysis for Practitioners, Value of Understanding the Situation; Business Analysis for Practitioners, How to Understand the Situation; Business Analysis for Practitioners, How to Find the Gaps; Business Analysis for Practitioners, How to Define the Solution; Business Analysis for Practitioners, Glossary
+
+*Business Analysis for Practitioners* calls needs assessment the **Business Value Assessment** domain and divides it into three practices. They match the processes above, with details of their own that the exam can ask for.
+
+**Understand the Situation**
+
+- **Start with why.** The guide uses the **Golden Circle**: why, then how, then what. The analyst finds the business need (the why) **before** the outcome (the what) and the way to reach it (the how). This is what stops a team from rushing to a solution.
+- Six things are elicited: **signs** of a problem or opportunity, the **related stakeholders**, the **severity or magnitude**, a **situation statement**, the **root causes**, and the **goals and objectives** it relates to.
+- **Not every problem deserves action.** Without measuring the magnitude, a proposed solution may be too small or too large for the situation. A 5% staff turnover may be serious among knowledge workers and unremarkable elsewhere.
+- A **situation statement** has three parts: the **problem or opportunity**; its **direct effect**, usually the most noticeable part; and the **business impact**, what it costs or could return. The format matters less than the agreement: stakeholders agree on the statement **before** solutions are explored. In the session, the group is asked to stay on the problem and not offer solutions, and the work ends when consensus is reached.
+- Objectives should be **SMART**: specific, measurable, achievable, relevant and time-bound. (The guide notes variants: attainable or assignable for A, realistic or reasonable for R.)
+- Root cause techniques it lists: fishbone diagrams, five whys, interrelationship diagrams, Pareto charts, and process analysis, including **SIPOC** (suppliers, inputs, process, outputs, customers) and value stream maps.
+
+**Find the Gaps**
+
+- The gaps are in **capabilities** (people, processes, technology, products) and in **performance indicators**, such as KPIs or **objectives and key results (OKRs)**.
+- Internal and external factors can be examined with **PESTLE** (political, economic, social, technological, legal, environmental) or **CATWOE** (customer, actor, transformation, worldview, owner, environment).
+- The result is a list of **net changes** the organization must make. That list is **not yet a solution**: how the capabilities will be delivered is decided next.
+
+**Define the Solution**
+
+| Step | What is done |
+|---|---|
+| 1 | Determine the options and recommend |
+| 2 | For each option, identify assumptions, constraints, risks, dependencies, benefits and **disbenefits** |
+| 3 | Evaluate feasibility and viability; discard the infeasible |
+| 4 | Assemble the business case, a full one **only for the most viable options** |
+| 5 | Determine the solution approach, with a roadmap |
+
+- **What to recommend:** one feasible option, recommend it; several, rank them (multicriteria decision analysis, also called weighted ranking); **none, recommend that nothing be done**.
+- The **decision package** may hold a business case, a product roadmap, the high-level product scope and a **benefits realization plan**.
+- A business case has at least four parts: **problem or opportunity**, **analysis of the situation**, **recommendation** and **evaluation** (how benefits will be measured). It is a **living document**, reviewed and updated as the project goes on.
+- **Disbenefits** are identified, quantified and measured in the same way as benefits.
+- A roadmap lets the analyst **defer** a stakeholder's need to a later point instead of rejecting it, which lowers resistance.
+
+Two more tools from its glossary: a **customer journey map** shows the phases customers go through when using a product and what they experience at each point; an **empathy map** records what one type of user **says, thinks, does and feels**.
+
 ## Tools in the practice guide: finding the cause and judging options
 
 @source Business Analysis for Practitioners, Figure 7-8; Business Analysis for Practitioners, Figure 7-7; Business Analysis for Practitioners, Figure 7-10; Business Analysis for Practitioners, Figure 7-17; Business Analysis for Practitioners, Figure 7-11
