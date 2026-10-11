@@ -71,7 +71,7 @@ The narrowing of the range over time is called the **cone of uncertainty**. As t
 
 ## Cost estimating techniques
 
-@source PMBOK 8, Guide Figure 2-28; PMBOK 8, Guide section 5, Estimation techniques
+@source PMBOK 8, Guide Figure 2-28; PMBOK 8, Guide section 5, Estimation techniques; Process Groups: A Practice Guide, section 10, Historical information review
 
 The same techniques used for durations are used for costs.
 
@@ -83,6 +83,8 @@ The same techniques used for durations are used for costs.
 | **Three-point** (multipoint) | Uses optimistic, most likely and pessimistic costs | (O + M + P) ÷ 3, or (O + 4M + P) ÷ 6 |
 | **Reserve analysis** | Works out how much contingency is needed for the remaining risk | Adding 10% for known risks |
 | **Cost of quality** | Considers what will be spent on preventing and fixing defects | See below |
+
+> **On the exam.** The process guide lists **historical information review** as a tool for building analogous and parametric estimates. Such models are most reliable when three things hold: the **historical information is accurate**, the **parameters can readily be quantified**, and the **model is scalable**, working for large projects, small projects and phases alike.
 
 ## Types of cost
 

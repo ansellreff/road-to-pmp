@@ -131,6 +131,16 @@
   },
   {
     "book": "processgroups",
+    "page": 268,
+    "label": "Process Groups: A Practice Guide, section 10, Assessment of other risk parameters"
+  },
+  {
+    "book": "processgroups",
+    "page": 328,
+    "label": "Process Groups: A Practice Guide, section 10, Technical performance analysis"
+  },
+  {
+    "book": "processgroups",
     "page": 362,
     "label": "Process Groups: A Practice Guide, Glossary (Risk Categorization)"
   },

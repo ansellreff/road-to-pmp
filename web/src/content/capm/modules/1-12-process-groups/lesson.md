@@ -124,7 +124,7 @@ The order is a logical one for learning. In practice planning is **iterative**: 
 
 ## Executing, Monitoring and Controlling, and Closing
 
-@source Process Groups: A Practice Guide, section 6; Process Groups: A Practice Guide, section 7; Process Groups: A Practice Guide, section 8
+@source Process Groups: A Practice Guide, section 6; Process Groups: A Practice Guide, section 7; Process Groups: A Practice Guide, section 8; Process Groups: A Practice Guide, 7.11; Process Groups: A Practice Guide, 8.1
 
 **Executing (10):**
 
@@ -166,6 +166,8 @@ Two pairs the exam likes:
 |---|---|
 | **Control Quality** and **Validate Scope** | Control Quality checks that the deliverable is **correct** (done by the team). Validate Scope gets it **accepted** (done by the customer). Control Quality usually comes first. |
 | **Manage Quality** and **Control Quality** | Manage Quality is about the **process** (executing). Control Quality is about the **product** (monitoring and controlling). |
+
+> **On the exam.** Two points from the guide's own definitions. **Contracts are closed out in Control Procurements**, a Monitoring and Controlling process: it is "managing procurement relationships, monitoring contract performance and making changes and corrections as appropriate, and closing out contracts". **Close Project or Phase** finalizes all activities for the project, phase or contract, and its key benefits are that the information is **archived**, the planned work is **completed**, and team resources are **released**. Each definition also says how often the process is performed: Develop Project Management Plan and Close Project or Phase **once or at predefined points**; Identify Risks, Manage Communications and the controlling processes **throughout the project**.
 
 ## Following a planned strategy: communication, risk and stakeholders
 

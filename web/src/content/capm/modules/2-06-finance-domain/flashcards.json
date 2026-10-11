@@ -1,33 +1,162 @@
 [
-  {"id": "c1", "front": "The four Finance processes", "back": "Plan Financial Management; Estimate Costs; Develop Budget; Monitor and Control Finances."},
-  {"id": "c2", "front": "Plan Financial Management", "back": "Defines how revenues and expenses will be estimated, budgeted, managed, monitored and controlled. Output: financial management plan. Older name: Plan Cost Management."},
-  {"id": "c3", "front": "Estimate Costs", "back": "Developing an approximation of the cost of resources needed to complete the work. Outputs: cost estimates and basis of estimates."},
-  {"id": "c4", "front": "Develop Budget", "back": "Aggregating the estimated costs of activities or work packages to establish an authorized cost baseline. Older name: Determine Budget."},
-  {"id": "c5", "front": "Monitor and Control Finances", "back": "Monitoring financial status, updating finances and managing changes to the cost baseline. Older name: Control Costs."},
-  {"id": "c6", "front": "Cost baseline", "back": "The approved, time-phased project budget, excluding management reserve. Changed only through formal change control."},
-  {"id": "c7", "front": "Cost baseline formula", "back": "Cost estimates (work packages, control accounts) + contingency reserve."},
-  {"id": "c8", "front": "Project budget formula", "back": "Cost baseline + management reserve."},
-  {"id": "c9", "front": "Contingency reserve", "back": "Money or time for identified risks with planned responses (known-unknowns). Part of the cost baseline. Usually controlled by the project manager."},
-  {"id": "c10", "front": "Management reserve", "back": "Money or time set aside by management for unforeseen work within scope (unknown-unknowns). Not part of the cost baseline."},
-  {"id": "c11", "front": "Rough order of magnitude (ROM) estimate", "back": "An early estimate with a wide range, typically −25% to +75%."},
-  {"id": "c12", "front": "Definitive estimate", "back": "A detailed estimate made when the work is well defined, typically −5% to +10%."},
-  {"id": "c13", "front": "Basis of estimates", "back": "Supporting documentation showing how an estimate was developed: assumptions, constraints, range and confidence level."},
-  {"id": "c14", "front": "Cost aggregation", "back": "Summing cost estimates by work package, then control account, then for the entire project, following the WBS."},
-  {"id": "c15", "front": "Project funding requirements", "back": "The total and periodic funding needed, derived from the cost baseline. Total funds = cost baseline + management reserve."},
-  {"id": "c16", "front": "Funding limit reconciliation", "back": "Comparing planned spending with funding limits. If spending exceeds a limit, work is rescheduled to level out the rate of spending."},
-  {"id": "c17", "front": "Budget at completion (BAC)", "back": "The sum of all budgets established for the work to be performed."},
-  {"id": "c18", "front": "Reserve analysis", "back": "Evaluating the risk remaining on the project against the schedule and budget reserve, to judge whether the reserve is sufficient."},
-  {"id": "c19", "front": "Cost of quality (CoQ)", "back": "All costs over the life of the product for preventing nonconformance, appraising conformance and failing to meet requirements."},
-  {"id": "c20", "front": "Cost of conformance", "back": "Money spent to avoid failures: prevention costs (training, documenting processes) and appraisal costs (testing, inspections)."},
-  {"id": "c21", "front": "Cost of nonconformance", "back": "Money spent because of failures: internal failure (rework, scrap) and external failure (warranty work, liabilities, lost business)."},
-  {"id": "c22", "front": "Internal vs external failure costs", "back": "Internal: failures found by the project before delivery. External: failures found by the customer."},
-  {"id": "c23", "front": "Direct vs indirect cost", "back": "Direct: charged to this project only (team wages, materials). Indirect: overhead shared by several projects (rent, utilities)."},
-  {"id": "c24", "front": "Fixed vs variable cost", "back": "Fixed: does not change with the amount of work (rental, license). Variable: changes with the amount of work (materials, hourly labor)."},
-  {"id": "c25", "front": "Sunk cost", "back": "Money already spent that cannot be recovered. It should not influence the decision to continue a project."},
-  {"id": "c26", "front": "CapEx vs OpEx", "back": "CapEx: money invested in physical assets such as buildings and equipment. OpEx: ongoing costs of running the business, such as wages and rent."},
-  {"id": "c27", "front": "Life cycle cost", "back": "The cost of the result over its whole life, including using, maintaining and supporting it after the project."},
-  {"id": "c28", "front": "Payback period: is shorter or longer better?", "back": "Shorter. It is the time needed to earn back the investment."},
-  {"id": "c29", "front": "ROI, NPV, IRR: is higher or lower better?", "back": "Higher. A positive NPV means the project is worthwhile."},
-  {"id": "c30", "front": "Cost-benefit analysis", "back": "A financial analysis that compares the benefits of a project or alternative against its costs."},
-  {"id": "c31", "front": "Cone of uncertainty", "back": "The range of an estimate is wide early in the project and narrows as scope and information improve, so less contingency is needed for estimating uncertainty."}
+  {
+    "id": "c1",
+    "front": "The four Finance processes",
+    "back": "Plan Financial Management; Estimate Costs; Develop Budget; Monitor and Control Finances."
+  },
+  {
+    "id": "c2",
+    "front": "Plan Financial Management",
+    "back": "Defines how revenues and expenses will be estimated, budgeted, managed, monitored and controlled. Output: financial management plan. Older name: Plan Cost Management."
+  },
+  {
+    "id": "c3",
+    "front": "Estimate Costs",
+    "back": "Developing an approximation of the cost of resources needed to complete the work. Outputs: cost estimates and basis of estimates."
+  },
+  {
+    "id": "c4",
+    "front": "Develop Budget",
+    "back": "Aggregating the estimated costs of activities or work packages to establish an authorized cost baseline. Older name: Determine Budget."
+  },
+  {
+    "id": "c5",
+    "front": "Monitor and Control Finances",
+    "back": "Monitoring financial status, updating finances and managing changes to the cost baseline. Older name: Control Costs."
+  },
+  {
+    "id": "c6",
+    "front": "Cost baseline",
+    "back": "The approved, time-phased project budget, excluding management reserve. Changed only through formal change control."
+  },
+  {
+    "id": "c7",
+    "front": "Cost baseline formula",
+    "back": "Cost estimates (work packages, control accounts) + contingency reserve."
+  },
+  {
+    "id": "c8",
+    "front": "Project budget formula",
+    "back": "Cost baseline + management reserve."
+  },
+  {
+    "id": "c9",
+    "front": "Contingency reserve",
+    "back": "Money or time for identified risks with planned responses (known-unknowns). Part of the cost baseline. Usually controlled by the project manager."
+  },
+  {
+    "id": "c10",
+    "front": "Management reserve",
+    "back": "Money or time set aside by management for unforeseen work within scope (unknown-unknowns). Not part of the cost baseline."
+  },
+  {
+    "id": "c11",
+    "front": "Rough order of magnitude (ROM) estimate",
+    "back": "An early estimate with a wide range, typically −25% to +75%."
+  },
+  {
+    "id": "c12",
+    "front": "Definitive estimate",
+    "back": "A detailed estimate made when the work is well defined, typically −5% to +10%."
+  },
+  {
+    "id": "c13",
+    "front": "Basis of estimates",
+    "back": "Supporting documentation showing how an estimate was developed: assumptions, constraints, range and confidence level."
+  },
+  {
+    "id": "c14",
+    "front": "Cost aggregation",
+    "back": "Summing cost estimates by work package, then control account, then for the entire project, following the WBS."
+  },
+  {
+    "id": "c15",
+    "front": "Project funding requirements",
+    "back": "The total and periodic funding needed, derived from the cost baseline. Total funds = cost baseline + management reserve."
+  },
+  {
+    "id": "c16",
+    "front": "Funding limit reconciliation",
+    "back": "Comparing planned spending with funding limits. If spending exceeds a limit, work is rescheduled to level out the rate of spending."
+  },
+  {
+    "id": "c17",
+    "front": "Budget at completion (BAC)",
+    "back": "The sum of all budgets established for the work to be performed."
+  },
+  {
+    "id": "c18",
+    "front": "Reserve analysis",
+    "back": "Evaluating the risk remaining on the project against the schedule and budget reserve, to judge whether the reserve is sufficient."
+  },
+  {
+    "id": "c19",
+    "front": "Cost of quality (CoQ)",
+    "back": "All costs over the life of the product for preventing nonconformance, appraising conformance and failing to meet requirements."
+  },
+  {
+    "id": "c20",
+    "front": "Cost of conformance",
+    "back": "Money spent to avoid failures: prevention costs (training, documenting processes) and appraisal costs (testing, inspections)."
+  },
+  {
+    "id": "c21",
+    "front": "Cost of nonconformance",
+    "back": "Money spent because of failures: internal failure (rework, scrap) and external failure (warranty work, liabilities, lost business)."
+  },
+  {
+    "id": "c22",
+    "front": "Internal vs external failure costs",
+    "back": "Internal: failures found by the project before delivery. External: failures found by the customer."
+  },
+  {
+    "id": "c23",
+    "front": "Direct vs indirect cost",
+    "back": "Direct: charged to this project only (team wages, materials). Indirect: overhead shared by several projects (rent, utilities)."
+  },
+  {
+    "id": "c24",
+    "front": "Fixed vs variable cost",
+    "back": "Fixed: does not change with the amount of work (rental, license). Variable: changes with the amount of work (materials, hourly labor)."
+  },
+  {
+    "id": "c25",
+    "front": "Sunk cost",
+    "back": "Money already spent that cannot be recovered. It should not influence the decision to continue a project."
+  },
+  {
+    "id": "c26",
+    "front": "CapEx vs OpEx",
+    "back": "CapEx: money invested in physical assets such as buildings and equipment. OpEx: ongoing costs of running the business, such as wages and rent."
+  },
+  {
+    "id": "c27",
+    "front": "Life cycle cost",
+    "back": "The cost of the result over its whole life, including using, maintaining and supporting it after the project."
+  },
+  {
+    "id": "c28",
+    "front": "Payback period: is shorter or longer better?",
+    "back": "Shorter. It is the time needed to earn back the investment."
+  },
+  {
+    "id": "c29",
+    "front": "ROI, NPV, IRR: is higher or lower better?",
+    "back": "Higher. A positive NPV means the project is worthwhile."
+  },
+  {
+    "id": "c30",
+    "front": "Cost-benefit analysis",
+    "back": "A financial analysis that compares the benefits of a project or alternative against its costs."
+  },
+  {
+    "id": "c31",
+    "front": "Cone of uncertainty",
+    "back": "The range of an estimate is wide early in the project and narrows as scope and information improve, so less contingency is needed for estimating uncertainty."
+  },
+  {
+    "id": "c32",
+    "front": "When are analogous and parametric models reliable?",
+    "back": "When the historical information is accurate, the parameters are readily quantifiable, and the model is scalable."
+  }
 ]

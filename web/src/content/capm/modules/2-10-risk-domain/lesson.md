@@ -108,7 +108,7 @@ A **risk trigger** is an event or condition that indicates a risk is about to oc
 
 ## Perform Risk Analysis: qualitative
 
-@source PMBOK 8, Guide 2.7.2.3; PMBOK 8, Guide section 5, Probability and impact matrix; Process Groups: A Practice Guide, Glossary (Risk Data Quality Assessment); Process Groups: A Practice Guide, Glossary (Risk Categorization)
+@source PMBOK 8, Guide 2.7.2.3; PMBOK 8, Guide section 5, Probability and impact matrix; Process Groups: A Practice Guide, Glossary (Risk Data Quality Assessment); Process Groups: A Practice Guide, Glossary (Risk Categorization); Process Groups: A Practice Guide, section 10, Assessment of other risk parameters
 
 **Qualitative analysis** assesses each individual risk's **probability** and **impact** to **prioritize** the risks. It is quick, subjective, and done for **all** risks, throughout the project.
 
@@ -125,6 +125,8 @@ The main tool is the **probability and impact matrix**: a grid that maps each ri
 Other things considered: how **urgent** the risk is, how manageable it is, when the impact would be felt, and links with other risks. Risks can also be grouped by **category** to find areas of concentration.
 
 > **On the exam.** Two more techniques from the process guide. A **risk data quality assessment** evaluates how far the data about risks is **useful** for risk management: an analysis built on poor data cannot be trusted. **Risk categorization** groups risks by their source (using the risk breakdown structure), by the area of the project affected (using the WBS) or by another useful category such as phase, to find the areas most exposed to uncertainty.
+
+> **On the exam.** Probability and impact are not the only measures. The process guide lists **other risk parameters** a team may use to prioritize: **urgency** (how soon a response must be in place to be effective), **proximity** (how soon the risk could have its impact), **dormancy** (how long after it occurs before its impact is discovered), **manageability** (how easily the owner can manage it) and **controllability** (how far the owner can control its outcome), among others.
 
 ## Perform Risk Analysis: quantitative
 
@@ -215,7 +217,7 @@ The same strategies apply to **overall project risk**. The most extreme form of 
 
 ## Implement Risk Responses and Monitor Risks
 
-@source PMBOK 8, Guide 2.7.2.5; PMBOK 8, Guide 2.7.2.6; The Standard for Risk Management, 4.8
+@source PMBOK 8, Guide 2.7.2.5; PMBOK 8, Guide 2.7.2.6; The Standard for Risk Management, 4.8; Process Groups: A Practice Guide, section 10, Technical performance analysis
 
 **Implement Risk Responses** makes sure the agreed responses are **actually carried out**. A common failure is to plan responses and then do nothing. The risk owner leads the action.
 
@@ -232,6 +234,8 @@ The same strategies apply to **overall project risk**. The most extreme form of 
 | **Risk review / reassessment** | Regularly re-examining the risks, usually in status meetings |
 | **Risk audit** | Examining how effective the **risk management process** itself is |
 | **Reserve analysis** | Comparing the remaining reserve with the remaining risk |
+
+> **On the exam.** **Technical performance analysis** is a tool for monitoring risks. It compares what has been achieved technically with the planned schedule of technical achievement, using objective measures such as weight, transaction time, number of delivered defects or storage capacity. A deviation from target can point to a threat or an opportunity.
 
 ## Risk in adaptive projects
 

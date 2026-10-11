@@ -603,5 +603,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q31",
+    "q": "Two risks have the same probability and impact. One could strike next week; the other not for a year. Which of the process guide's other risk parameters separates them?",
+    "options": [
+      "Dormancy",
+      "Manageability",
+      "Controllability",
+      "Proximity"
+    ],
+    "answer": 3,
+    "explanation": "Proximity is the period of time before the risk might have an impact on objectives; a short period means high proximity. Urgency is how soon a response must be implemented to be effective, and dormancy is how long after the risk occurs before its impact is discovered.",
+    "ref": "Process Groups: A Practice Guide, section 10, Assessment of other risk parameters",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 268,
+        "label": "Process Groups: A Practice Guide, section 10, Assessment of other risk parameters"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "A faulty batch of concrete was poured in March, but the weakness will show only when the building settles, perhaps a year later. Which risk parameter describes this delay between the event and the discovery of its impact?",
+    "options": [
+      "Dormancy",
+      "Urgency",
+      "Proximity",
+      "Probability"
+    ],
+    "answer": 0,
+    "explanation": "Dormancy is the period of time that may elapse after a risk has occurred before its impact is discovered. A short period means low dormancy.",
+    "ref": "Process Groups: A Practice Guide, section 10, Assessment of other risk parameters",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 268,
+        "label": "Process Groups: A Practice Guide, section 10, Assessment of other risk parameters"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "A satellite project planned for its instrument to weigh no more than 40 kg at this stage of design. It weighs 46 kg. The team treats the gap as a sign of a possible threat. Which monitoring tool is it using?",
+    "options": [
+      "Reserve analysis",
+      "A risk audit",
+      "Technical performance analysis",
+      "A prompt list"
+    ],
+    "answer": 2,
+    "explanation": "Technical performance analysis compares technical accomplishments with the planned schedule of technical achievement, using objective measures such as weight, transaction times or delivered defects. Deviation can indicate a threat or an opportunity.",
+    "ref": "Process Groups: A Practice Guide, section 10, Technical performance analysis",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 328,
+        "label": "Process Groups: A Practice Guide, section 10, Technical performance analysis"
+      }
+    ]
   }
 ]

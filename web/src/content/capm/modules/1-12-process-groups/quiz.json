@@ -105,7 +105,7 @@
     "q": "A team is selecting sellers and awarding a contract. Which process and process group is this?",
     "options": [
       "Conduct Procurements, in Executing",
-      "Plan Procurement Management, in Planning",
+      "Plan Procurement Management, in the Planning process group",
       "Control Procurements, in Monitoring and Controlling",
       "Close Project or Phase, in Closing"
     ],
@@ -728,6 +728,46 @@
         "book": "processgroups",
         "page": 180,
         "label": "Process Groups: A Practice Guide, 6.10"
+      }
+    ]
+  },
+  {
+    "id": "q37",
+    "q": "A supplier has delivered everything in its contract eight months before the project ends. The buyer's team confirms the work, settles the final payment and closes the contract. In the process guide, in which process is the contract closed out?",
+    "options": [
+      "Close Project or Phase, in Closing",
+      "Conduct Procurements, in Executing",
+      "Control Procurements, in Monitoring and Controlling",
+      "Plan Procurement Management, in Planning"
+    ],
+    "answer": 2,
+    "explanation": "Control Procurements is the process of managing procurement relationships, monitoring contract performance, making changes and corrections as appropriate, and closing out contracts.",
+    "ref": "Process Groups: A Practice Guide, 7.11",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 209,
+        "label": "Process Groups: A Practice Guide, 7.11"
+      }
+    ]
+  },
+  {
+    "id": "q38",
+    "q": "A project manager is asked what the organization gains from performing Close Project or Phase properly. Which answer gives the key benefits the process guide names?",
+    "options": [
+      "Information is archived, planned work is completed, and team resources are released",
+      "Change requests are reviewed, the baselines are updated, and the decisions are communicated",
+      "Sellers are selected and the contracts are awarded",
+      "Risks are identified and their owners are assigned"
+    ],
+    "answer": 0,
+    "explanation": "Close Project or Phase finalizes all activities for the project, phase or contract. Its key benefits are that project or phase information is archived, the planned work is completed, and organizational team resources are released for new work.",
+    "ref": "Process Groups: A Practice Guide, 8.1",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 217,
+        "label": "Process Groups: A Practice Guide, 8.1"
       }
     ]
   }

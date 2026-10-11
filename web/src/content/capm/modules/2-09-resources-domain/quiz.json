@@ -522,5 +522,25 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q27",
+    "q": "A RACI chart shows who is responsible for testing, but not what authority the test lead has or what qualifications the post needs. Which tool does the process guide offer for that level of detail?",
+    "options": [
+      "A resource histogram",
+      "A text-oriented format, such as a position description",
+      "A project team directory with contact details",
+      "A resource breakdown structure"
+    ],
+    "answer": 1,
+    "explanation": "Responsibilities that need detailed description can be specified in text-oriented formats, usually in outline form, giving responsibilities, authority, competencies and qualifications. They are also called position descriptions or role-responsibility-authority forms.",
+    "ref": "Process Groups: A Practice Guide, section 10, Text-oriented formats",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 329,
+        "label": "Process Groups: A Practice Guide, section 10, Text-oriented formats"
+      }
+    ]
   }
 ]

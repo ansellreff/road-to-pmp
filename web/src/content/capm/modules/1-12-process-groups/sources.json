@@ -91,7 +91,17 @@
   },
   {
     "book": "processgroups",
+    "page": 209,
+    "label": "Process Groups: A Practice Guide, 7.11"
+  },
+  {
+    "book": "processgroups",
     "page": 216,
     "label": "Process Groups: A Practice Guide, section 8"
+  },
+  {
+    "book": "processgroups",
+    "page": 217,
+    "label": "Process Groups: A Practice Guide, 8.1"
   }
 ]

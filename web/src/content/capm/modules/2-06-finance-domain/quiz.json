@@ -507,5 +507,25 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q26",
+    "q": "An estimator builds a cost model from past projects: so many dollars per square meter of floor. According to the process guide, when is a model like this most likely to be reliable?",
+    "options": [
+      "When it was built by the project sponsor from the figures in the business case",
+      "When it is used only on very large projects that last for several years or more",
+      "When the history is accurate, the parameters are quantifiable and the model is scalable",
+      "When no historical information is available"
+    ],
+    "answer": 2,
+    "explanation": "Analogous and parametric models are most reliable when the historical information used is accurate, the parameters are readily quantifiable, and the models are scalable to large projects, small projects and phases.",
+    "ref": "Process Groups: A Practice Guide, section 10, Historical information review",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 296,
+        "label": "Process Groups: A Practice Guide, section 10, Historical information review"
+      }
+    ]
   }
 ]

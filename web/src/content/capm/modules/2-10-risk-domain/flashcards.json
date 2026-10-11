@@ -213,5 +213,15 @@
     "id": "c43",
     "front": "Risk categorization",
     "back": "Grouping risks by source (RBS), by area of the project affected (WBS) or by phase, to find the areas most exposed."
+  },
+  {
+    "id": "c44",
+    "front": "Urgency, proximity, dormancy",
+    "back": "Urgency: how soon a response must be in place. Proximity: how soon the risk could have its impact. Dormancy: how long after it occurs before the impact is discovered."
+  },
+  {
+    "id": "c45",
+    "front": "Technical performance analysis",
+    "back": "Compares technical achievement with the plan, using objective measures (weight, transaction time, defects). A deviation can signal a threat or an opportunity."
   }
 ]

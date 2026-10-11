@@ -67,7 +67,7 @@ Example of grade and quality: an economy hotel room (low grade) that is clean an
 
 ## Quality tools
 
-@source PMBOK 8, Guide section 5, Control charts; PMBOK 8, Guide section 5, Cause-and-effect diagram; PMBOK 8, Guide section 5, Flowchart; PMBOK 6, 8.2.2.4; PMBOK 6, 8.3.2.1; PMI Guide to Business Analysis, 4.2.2.7; The Project Management Answer Book, Chapter 7, Q22; Process Groups: A Practice Guide, Glossary (Statistical Sampling); Process Groups: A Practice Guide, Glossary (Tolerance); Process Groups: A Practice Guide, Glossary (Control Limits)
+@source PMBOK 8, Guide section 5, Control charts; PMBOK 8, Guide section 5, Cause-and-effect diagram; PMBOK 8, Guide section 5, Flowchart; PMBOK 6, 8.2.2.4; PMBOK 6, 8.3.2.1; PMI Guide to Business Analysis, 4.2.2.7; The Project Management Answer Book, Chapter 7, Q22; Process Groups: A Practice Guide, Glossary (Statistical Sampling); Process Groups: A Practice Guide, Glossary (Tolerance); Process Groups: A Practice Guide, Glossary (Control Limits); Process Groups: A Practice Guide, section 10, Design for X; Process Groups: A Practice Guide, section 10, Matrix diagrams; Process Groups: A Practice Guide, section 10, Test and inspection planning; Process Groups: A Practice Guide, section 10, Logical data model
 
 | Tool | What it shows | Use it to |
 |---|---|---|
@@ -91,6 +91,8 @@ Example of grade and quality: an economy hotel room (low grade) that is clean an
 > **On the exam.** Three definitions from the process guide. **Statistical sampling** is choosing part of a population of interest for inspection, instead of inspecting every item. **Tolerance** is the quantified description of acceptable variation for a quality requirement: it comes from the **requirement**. **Control limits** are the area of three standard deviations on either side of the mean on a control chart: they come from the **process**, and show the variation to be expected from it. A result can be inside the tolerance and still show a process that is out of control.
 
 @diagram control-chart
+
+> **On the exam.** Four more quality tools from the process guide. **Design for X (DfX)** is a set of technical guidelines applied during design to optimize one aspect of the product: the X may be reliability, assembly, manufacturing, cost, service, usability or safety. **Matrix diagrams** show the strength of the relationships between factors, causes and objectives set out in rows and columns; they come in shapes named L, T, Y, X, C and roof. **Test and inspection planning** is deciding, during planning, how the product will be tested or inspected: alpha and beta tests for software, strength tests in construction, field tests in engineering. A **logical data model** pictures an organization's data in business language, independent of any technology, and shows where data quality problems can arise.
 
 ## Make-or-buy and the procurement steps
 
@@ -116,7 +118,7 @@ The project manager usually **does not sign contracts**. That authority belongs 
 
 ## Bid documents and choosing a seller
 
-@source PMBOK 8, Appendix X4.5; PMBOK 8, Appendix X4.6; PMBOK 8, Appendix X4.7; PMBOK 6, 12.2.2.5; Process Groups: A Practice Guide, Glossary (Request for Quotation); Process Groups: A Practice Guide, Glossary (Request for Information)
+@source PMBOK 8, Appendix X4.5; PMBOK 8, Appendix X4.6; PMBOK 8, Appendix X4.7; PMBOK 6, 12.2.2.5; Process Groups: A Practice Guide, Glossary (Request for Quotation); Process Groups: A Practice Guide, Glossary (Request for Information); Process Groups: A Practice Guide, section 10, Proposal evaluation
 
 | Document | Used when |
 |---|---|
@@ -137,6 +139,8 @@ The project manager usually **does not sign contracts**. That authority belongs 
 | **Fixed budget** | The budget is disclosed and cannot be exceeded; the best technical proposal within it wins |
 
 > **On the exam.** The process guide's procurement documents: a **request for information (RFI)** asks potential sellers for information about a product, a service or their own capability. A **request for quotation (RFQ)** asks for **prices** for common or standard products or services. A **request for proposal (RFP)** asks for a proposed solution. An **invitation for bid** is generally equivalent to a request for proposal.
+
+> **On the exam.** **Proposal evaluation**, in the process guide, checks that each proposal is **complete** and responds **in full** to the bid documents, the procurement statement of work and the source selection criteria. The sellers chosen as a result are the **selected sellers**.
 
 ## Contract types
 

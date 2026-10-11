@@ -222,6 +222,17 @@ def resolve(part: str) -> tuple[str, int] | None:
         number = re.search(r"\b([AX]?\d+(?:\.\d+)+)\b", part)
         section = re.search(r"sections? (\d+)", lowered)
         wanted = number.group(1) if number else section.group(1) if section else None
+        # "section 10, Design for X": an entry of a section that is an alphabetical list (the
+        # inputs and outputs, and the tools and techniques, of the Process Groups guide).
+        # The entry starts a line with its name and a full stop, inside that section.
+        entry = re.search(r"sections? (\d+), (.+)$", part.strip(), re.IGNORECASE)
+        if entry and not number:
+            starts = {n: int(p) for n, p in re.findall(r"^(\d+)\. .*\[p(\d+)\]", toc(book), re.MULTILINE)}
+            first = starts.get(entry.group(1))
+            if first:
+                last = starts.get(str(int(entry.group(1)) + 1), first + 200) - 1
+                page = find_line(book, rf"^{re.escape(entry.group(2).strip())}\.", first, last)
+                return (book, page) if page else None
         if wanted:
             hit = re.search(
                 # \s, not a plain space: some books put an en space after the section number.

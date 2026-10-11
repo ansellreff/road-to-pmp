@@ -193,5 +193,20 @@
     "id": "c39",
     "front": "RFI, RFQ, RFP",
     "back": "RFI: asks for information. RFQ: asks for prices of standard items. RFP: asks for a proposed solution."
+  },
+  {
+    "id": "c40",
+    "front": "Design for X (DfX)",
+    "back": "Technical guidelines applied in design to optimize one aspect of the product: reliability, assembly, manufacturing, cost, service, usability, safety."
+  },
+  {
+    "id": "c41",
+    "front": "Proposal evaluation",
+    "back": "Checking that each seller's proposal is complete and responds in full to the bid documents, the statement of work and the selection criteria."
+  },
+  {
+    "id": "c42",
+    "front": "Test and inspection planning",
+    "back": "Deciding during planning how the product will be tested or inspected: alpha and beta tests, strength tests, field tests."
   }
 ]

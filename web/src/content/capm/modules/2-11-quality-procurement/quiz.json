@@ -532,5 +532,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q27",
+    "q": "During design, engineers follow a set of guidelines whose single aim is to make the product quick to assemble on the line. Which quality tool from the process guide is this?",
+    "options": [
+      "Design for X",
+      "A matrix diagram",
+      "Statistical sampling",
+      "A control chart"
+    ],
+    "answer": 0,
+    "explanation": "Design for X (DfX) is a set of technical guidelines applied during the design of a product to optimize a specific aspect. The X can be reliability, deployment, assembly, manufacturing, cost, service, usability, safety or quality.",
+    "ref": "Process Groups: A Practice Guide, section 10, Design for X",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 291,
+        "label": "Process Groups: A Practice Guide, section 10, Design for X"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "While planning, a software team decides that the product will go through an alpha test with staff and a beta test with fifty customers before release. What does the process guide call this planning activity?",
+    "options": [
+      "Proposal evaluation",
+      "Technical performance analysis",
+      "A quality audit",
+      "Test and inspection planning"
+    ],
+    "answer": 3,
+    "explanation": "In test and inspection planning the project manager and team determine, during planning, how to test or inspect the product. The tests depend on the industry: alpha and beta tests in software, strength tests in construction, field tests in engineering.",
+    "ref": "Process Groups: A Practice Guide, section 10, Test and inspection planning",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 328,
+        "label": "Process Groups: A Practice Guide, section 10, Test and inspection planning"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Five sellers reply to a request for proposal. Before comparing prices, the buyer's team checks that each reply is complete and answers every part of the bid documents and the statement of work. Which tool is this?",
+    "options": [
+      "Make-or-buy analysis",
+      "Proposal evaluation",
+      "A bidder conference",
+      "Claims administration"
+    ],
+    "answer": 1,
+    "explanation": "Proposals are evaluated to ensure they are complete and respond in full to the bid documents, the procurement statement of work, the source selection criteria and any other documents in the bid package.",
+    "ref": "Process Groups: A Practice Guide, section 10, Proposal evaluation",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 310,
+        "label": "Process Groups: A Practice Guide, section 10, Proposal evaluation"
+      }
+    ]
   }
 ]

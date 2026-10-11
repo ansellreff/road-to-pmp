@@ -41,7 +41,7 @@ The domain is about how well the project plans for and uses its resources, so th
 
 ## Plan Resource Management
 
-@source PMBOK 8, Guide 2.6.2.1; PMBOK 8, Guide section 4, Resource management plan; PMBOK 8, Guide section 4, Team charter
+@source PMBOK 8, Guide 2.6.2.1; PMBOK 8, Guide section 4, Resource management plan; PMBOK 8, Guide section 4, Team charter; Process Groups: A Practice Guide, section 10, Organizational theory; Process Groups: A Practice Guide, section 10, Text-oriented formats
 
 Defines **how** to estimate, acquire, lead and use team and physical resources. Good planning considers the availability of, and competition for, **scarce** resources.
 
@@ -51,6 +51,8 @@ Defines **how** to estimate, acquire, lead and use team and physical resources. 
 | **Team charter** | A document that sets the team's **values, agreements and operating guidelines**: communication guidelines, decision-making and conflict resolution processes, meeting guidelines. It works best when **the team writes it**. |
 
 **Ground rules** are the expectations for acceptable behavior, set in the team charter. All team members share responsibility for following them.
+
+> **On the exam.** Two more tools the process guide lists for planning resources. **Organizational theory** is knowledge of how people, teams and organizational units behave; using it shortens the time and effort of planning, and it may recommend a **leadership style that changes as the team matures**. **Text-oriented formats** are written descriptions of a team member's responsibilities, authority, competencies and qualifications, used where a chart cannot hold the detail. They are also called **position descriptions** or **role-responsibility-authority forms**.
 
 ## Showing who does what: the RACI chart
 

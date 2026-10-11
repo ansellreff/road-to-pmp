@@ -193,5 +193,10 @@
     "id": "c39",
     "front": "Project team directory",
     "back": "A documented list of the team members, their project roles and how to reach them."
+  },
+  {
+    "id": "c40",
+    "front": "Text-oriented formats",
+    "back": "Written descriptions of a role's responsibilities, authority, competencies and qualifications. Also called position descriptions or role-responsibility-authority forms."
   }
 ]

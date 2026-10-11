@@ -66,6 +66,7 @@ Certified Associate in Project Management. Built and online; **being finished** 
 | 2026-10-11 | **Session 32 done: content gaps closed.** Second sitting: 40 more scenario questions, so every Domain 1 module quiz now has at least 20 (modules 1.2, 1.3, 1.5 to 1.10). Each was written after reading the module's lesson and checking its existing questions for repeats. Session 32 in total: one new lesson section, 63 questions, 6 flashcards. Bank: 1,102 questions, 1,304 flashcards; the module quizzes show 802. | You: `upload.bat`. Next: Session 33, the practice guide's chapters 2 and 3 against modules 4.1 to 4.3 |
 | 2026-10-11 | **Session 33 done: the practice guide's chapters 2 and 3 read against Domain 4.** Nothing in modules 4.1 to 4.3 was found wrong. Missing and now taught: in module 4.2, the Golden Circle, the three parts of a situation statement, SMART objectives, SIPOC, PESTLE and CATWOE, the rule for what to recommend (including "do nothing"), the four parts of a business case, the empathy map and the customer journey map; in module 4.3, business analysis governance, the engagement approach as a continuing activity, and what a business analysis plan holds. 12 questions, 11 flashcards. Bank: 1,114 questions, 1,315 flashcards. | You: `upload.bat`. Next: Session 34, chapters 4 (rest), 5 and 6 against modules 4.4 to 4.7 |
 | 2026-10-11 | **Session 34 done: the rest of the practice guide read against Domain 4.** Chapters 4 (the parts not read before), 5 and 6, and the two tool pages left over. Nothing in modules 4.1 and 4.4 to 4.7 was found wrong. Missing and now taught: the analyst as the product owner's support or proxy; why requirements are elicited, not collected; the limit at technical design; buy-a-feature's steps; Package Solution Information as a practice; the capability table's columns; transition requirements and the three-part transition approach; "segmented cutover"; go fever; when a formal sign-off is usual; the four typical reasons for missed value. 17 questions, 11 flashcards. Every Domain 4 module quiz now has 20 or more questions. Bank: 1,131 questions, 1,326 flashcards. | You: `upload.bat`. Next: Session 35, the process guide's 49 processes against modules 1.12 and 2.1 to 2.11 |
+| 2026-10-11 | **Session 35 done: the 49 processes checked against Domain 2 and module 1.12, by script and by reading, not page by page.** The definition of every process was pulled from the guide and compared with module 1.12: all agree. Every artifact that module 1.12 names as a process's main output was found on that process's pages. The guide's lists of inputs and outputs (section 9) and of tools (section 10) were scanned for names the course never uses: ten tools were missing and are now taught, in modules 2.6, 2.9, 2.10 and 2.11. One exam point was added to module 1.12: contracts are closed out in Control Procurements. 10 questions, 7 flashcards. Bank: 1,141 questions, 1,333 flashcards. **The deeper accuracy check (Sessions 33 to 35) is finished.** | You: `upload.bat`. Next: Session 36, the real exam's question types |
 
 ## Roadmap to a complete CAPM course
 
@@ -101,7 +102,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 32 | Content gaps: the thin outline item (responding to a planned strategy or framework) taught in module 1.12; 55 new scenario questions so no Domain 1 module quiz has fewer than 20 |
 | ✅ | 33 | Deeper accuracy check: *Business Analysis for Practitioners*, chapters 2 and 3, against modules 4.1 to 4.3 |
 | ✅ | 34 | Deeper accuracy check: the same book, chapters 4 (rest), 5 and 6, against modules 4.4 to 4.7 |
-| ⬜ | 35 | Deeper accuracy check: *Process Groups: A Practice Guide*, the 49 processes, against modules 1.12 and 2.1 to 2.11 |
+| ✅ | 35 | Deeper accuracy check: *Process Groups: A Practice Guide*, the 49 processes, against modules 1.12 and 2.1 to 2.11 |
 | ⬜ | 36 | Real exam question types, the rules: matching, hot spot and comic strip stored, marked, saved, synced and checked |
 | ⬜ | 37 | Real exam question types, the screens and the questions: about 60 matching, 25 hot spot, 25 comic strip; Mock exam 6 if the bank allows |
 | ⬜ | 38 | Drawings in module 4.5: decision tree, ecosystem map, feature model, data flow diagram, wireframe |
@@ -165,7 +166,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (1,131 quiz questions, 1,326 flashcards, after Session 34). Of the 1,131 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 831. 381 questions are in no exam.
+Overall: **39 of 39 modules done** (1,141 quiz questions, 1,333 flashcards, after Session 35). Of the 1,141 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 841. 391 questions are in no exam.
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -808,3 +809,35 @@ Module 4.1 needed no change: its note on the five domains and fifteen practices 
 **Not read in Session 34:** the case study pages (71 to 74, 77 to 81 in part, 84 to 87, 95 and 96, 99, 102 and 103 in part, 107, 112 and 113), and page 111 (how to lead with integrity) beyond its opening, which my output cut off. Chapter 5 was read as an outline of its headings, lists and key passages (the full text was too long to print at once), then in full for the passages cited.
 
 **The practice guide is now compared with Domain 4 except for its case study and the pages listed.** With *The PMI Guide to Business Analysis*, from which the lessons were first written, that is both of the exam's business analysis books.
+
+### Session 35: *Process Groups: A Practice Guide*, the 49 processes (2026-10-11)
+
+The plan said "for each process, its purpose and its key inputs, tools and outputs, against what the lessons say". Sections 4 to 8 are about 130 pages, and sections 9 and 10, which describe every input, output and tool, another 120. I did not read them page by page. Three checks were made instead, each of which covers all 49 processes:
+
+| Check | How | Result |
+|---|---|---|
+| **Definitions** | A script pulled the sentence "X is the process of ..." and the key benefit for each of the 49 processes (40 at the first attempt, the other 9 with a looser search; Develop Project Charter's was not matched and was not compared). I read all of them against the one-line descriptions in module 1.12. | All agree. One point the lesson did not make: Control Procurements includes **closing out contracts**. |
+| **Main outputs** | A script took each artifact module 1.12 names as a process's main output and looked for it on that process's pages in the guide. | All 30 named artifacts found. Two entries are my paraphrases, not artifact names ("prioritized risks", "numerical analysis of overall risk"); the guide lists project documents updates there. |
+| **Names never used** | A script listed every entry of section 9 (103 inputs and outputs) and section 10 (163 tools and techniques) that appears nowhere in the course. I read the guide's full description of each real gap. | Inputs and outputs: none missing in substance. Tools: ten missing. |
+
+| Module | Tools added (from section 10) | Outline task | What was done |
+|---|---|---|---|
+| 2.6 | Historical information review, and when analogous and parametric models are reliable | 1.2, purpose of cost | Note; 1 question, 1 flashcard |
+| 2.9 | Organizational theory; text-oriented formats (position descriptions) | 1.2, number and type of resources | Note; 1 question, 1 flashcard |
+| 2.10 | Other risk parameters (urgency, proximity, dormancy, manageability, controllability); technical performance analysis | 1.2, use a risk register | Two notes; 3 questions, 2 flashcards |
+| 2.11 | Design for X; matrix diagrams; test and inspection planning; logical data model; proposal evaluation | 2.2, apply a quality management plan; 2.3, artifacts | Two notes; 3 questions, 3 flashcards |
+| 1.12 | Contracts closed out in Control Procurements; the key benefits of Close Project or Phase; how often processes are performed | 1.2, project closure and transitions | Note; 2 questions |
+
+These tools fall under outline tasks but are named by no enabler, so each has a note and at most one question, under the outline rule.
+
+**Not done:** the inputs and tools of each process were not compared one by one with the lessons (which tool belongs to which process). The lessons seldom state that, so there was little to compare, but an exam question of the form "which is a tool of process X" is covered only where a lesson happens to say it. The figures and data flow diagrams of sections 4 to 8 were not read.
+
+### What the deeper check came to (Sessions 33 to 35)
+
+| | Domain 4 (Sessions 33, 34) | Domain 2 and module 1.12 (Session 35) |
+|---|---|---|
+| Statements found wrong | 0 | 0 |
+| New sections | 3 | 0 |
+| Notes added | 7 | 7 |
+| Questions | 29 | 10 |
+| Flashcards | 22 | 7 |

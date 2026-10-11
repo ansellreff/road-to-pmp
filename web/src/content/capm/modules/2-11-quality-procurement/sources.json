@@ -156,6 +156,31 @@
   },
   {
     "book": "processgroups",
+    "page": 291,
+    "label": "Process Groups: A Practice Guide, section 10, Design for X"
+  },
+  {
+    "book": "processgroups",
+    "page": 301,
+    "label": "Process Groups: A Practice Guide, section 10, Logical data model"
+  },
+  {
+    "book": "processgroups",
+    "page": 302,
+    "label": "Process Groups: A Practice Guide, section 10, Matrix diagrams"
+  },
+  {
+    "book": "processgroups",
+    "page": 310,
+    "label": "Process Groups: A Practice Guide, section 10, Proposal evaluation"
+  },
+  {
+    "book": "processgroups",
+    "page": 328,
+    "label": "Process Groups: A Practice Guide, section 10, Test and inspection planning"
+  },
+  {
+    "book": "processgroups",
     "page": 347,
     "label": "Process Groups: A Practice Guide, Glossary (Control Limits)"
   },
