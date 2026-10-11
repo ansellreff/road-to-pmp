@@ -556,5 +556,25 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q28",
+    "q": "A department head fears that adopting the Kanban Method will abolish job titles and reorganize his teams. Which of the method's defining principles, as the 2017 Agile Practice Guide lists them, answers this fear?",
+    "options": [
+      "Limit work in progress",
+      "Implement feedback loops",
+      "Make every process policy explicit and visible to the whole of the organization",
+      "Respect the current process, roles, responsibilities and titles"
+    ],
+    "answer": 3,
+    "explanation": "The Kanban Method's defining principles are: start with the current state; agree to pursue incremental, evolutionary change; respect the current process, roles, responsibilities and titles; and encourage acts of leadership at all levels. The others listed are core properties.",
+    "ref": "Agile Practice Guide, First Edition, A3.4",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 118,
+        "label": "Agile Practice Guide, First Edition, A3.4"
+      }
+    ]
   }
 ]

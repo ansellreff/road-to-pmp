@@ -67,6 +67,7 @@ Certified Associate in Project Management. Built and online; **being finished** 
 | 2026-10-11 | **Session 33 done: the practice guide's chapters 2 and 3 read against Domain 4.** Nothing in modules 4.1 to 4.3 was found wrong. Missing and now taught: in module 4.2, the Golden Circle, the three parts of a situation statement, SMART objectives, SIPOC, PESTLE and CATWOE, the rule for what to recommend (including "do nothing"), the four parts of a business case, the empathy map and the customer journey map; in module 4.3, business analysis governance, the engagement approach as a continuing activity, and what a business analysis plan holds. 12 questions, 11 flashcards. Bank: 1,114 questions, 1,315 flashcards. | You: `upload.bat`. Next: Session 34, chapters 4 (rest), 5 and 6 against modules 4.4 to 4.7 |
 | 2026-10-11 | **Session 34 done: the rest of the practice guide read against Domain 4.** Chapters 4 (the parts not read before), 5 and 6, and the two tool pages left over. Nothing in modules 4.1 and 4.4 to 4.7 was found wrong. Missing and now taught: the analyst as the product owner's support or proxy; why requirements are elicited, not collected; the limit at technical design; buy-a-feature's steps; Package Solution Information as a practice; the capability table's columns; transition requirements and the three-part transition approach; "segmented cutover"; go fever; when a formal sign-off is usual; the four typical reasons for missed value. 17 questions, 11 flashcards. Every Domain 4 module quiz now has 20 or more questions. Bank: 1,131 questions, 1,326 flashcards. | You: `upload.bat`. Next: Session 35, the process guide's 49 processes against modules 1.12 and 2.1 to 2.11 |
 | 2026-10-11 | **Session 35 done: the 49 processes checked against Domain 2 and module 1.12, by script and by reading, not page by page.** The definition of every process was pulled from the guide and compared with module 1.12: all agree. Every artifact that module 1.12 names as a process's main output was found on that process's pages. The guide's lists of inputs and outputs (section 9) and of tools (section 10) were scanned for names the course never uses: ten tools were missing and are now taught, in modules 2.6, 2.9, 2.10 and 2.11. One exam point was added to module 1.12: contracts are closed out in Control Procurements. 10 questions, 7 flashcards. Bank: 1,141 questions, 1,333 flashcards. **The deeper accuracy check (Sessions 33 to 35) is finished.** | You: `upload.bat`. Next: Session 36, the real exam's question types |
+| 2026-10-11 | **Open items of Sessions 32 to 35 closed**, at your request. (1) Which tool belongs to which process: read from all 49 figures by script, and module 1.12 now has a table "The tools that mark each process". (2) Develop Project Charter's definition read: it agrees. (3) Chapter 5 of the practice guide read in full: one note in module 4.7 was incomplete (three transition strategies named, the guide has four) and is corrected. (4) The practice guide's page 111 read. (5) Its 41 case study pages scanned for any tool or artifact name the course lacks: none. (6) The lesson sections behind the questions written without a full re-read (modules 1.2, 1.3, 1.10) read: the questions agree with them. (7) The four Domain 3 quizzes under 20 brought to 20. **Every module quiz in the course now has at least 20 questions.** Bank: 1,151 questions, 1,339 flashcards. | You: `upload.bat`. Next: Session 36 |
 
 ## Roadmap to a complete CAPM course
 
@@ -166,7 +167,7 @@ Status: ⬜ not started, 🟡 in progress, ✅ done
 
 ### CAPM content, module by module
 
-Overall: **39 of 39 modules done** (1,141 quiz questions, 1,333 flashcards, after Session 35). Of the 1,141 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 841. 391 questions are in no exam.
+Overall: **39 of 39 modules done** (1,151 quiz questions, 1,339 flashcards, after Session 35 and its open items). Of the 1,151 questions, 750 are used by the five mock exams. The 300 in Mock exams 4 and 5 are held back from the module quizzes, which show 851; no module quiz has fewer than 20. 401 questions are in no exam.
 
 | Status | Domain | Modules done |
 |---|---|---|
@@ -841,3 +842,17 @@ These tools fall under outline tasks but are named by no enabler, so each has a 
 | Notes added | 6 | 7 |
 | Questions | 29 | 10 |
 | Flashcards | 22 | 7 |
+
+### Open items of Sessions 32 to 35, closed (2026-10-11)
+
+| What was open | What was done | Result |
+|---|---|---|
+| Which tool belongs to which process (Session 35) | A script read the inputs, tools and outputs figure of each of the 49 processes. I reviewed its list of tools for every process and removed entries that were sub-items caught by mistake (for example "conflict management" under Develop Team). | New section in module 1.12, "The tools that mark each process": the tools particular to 33 processes, the count of the four general tools, three patterns. 3 questions, 6 flashcards. |
+| Develop Project Charter's definition not compared | Read on pages 90 and 91 | Agrees with the lesson |
+| Chapter 5 of the practice guide read only as an outline (Session 34) | Pages 88 to 98 read in full | **One note was incomplete:** module 4.7 named three transition strategies; the guide has four (permanent coexistence was left out of the note, though the lesson's own table had it). Corrected, and three points added: a massive cutover carries the most risk; the three practices fall before, at and after the release; readiness includes the ability to use and sustain the solution. |
+| Page 111 of the practice guide cut off | Read | Agrees with the note in module 4.1 |
+| Case study pages skipped (Sessions 33, 34) | A script took every phrase on the 41 case study pages that ends in a word such as diagram, matrix, map, model, analysis, table, plan or criteria, and listed those not found in the course | 134 phrases, all sentence fragments ("conduct a gap analysis", "develops a transition plan"). **No tool or artifact name that the course lacks.** The pages were scanned, not read. |
+| Questions written without re-reading the lesson (modules 1.2, 1.3, 1.10) | The sections they rest on were read | The ten questions agree with the lesson text |
+| Four Domain 3 quizzes at 18 or 19 | Pages 61, 67 to 70, 119 and 120 of the 2017 Agile Practice Guide read; 7 questions written | Modules 3.2, 3.3, 3.4 and 3.6 at 20 |
+
+Still not done, and not planned: the data flow diagrams of the process guide's sections 4 to 8, and a line-by-line reading of its sections 9 and 10 beyond the entries the scans pointed to.

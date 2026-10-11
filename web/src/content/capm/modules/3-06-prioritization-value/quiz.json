@@ -531,5 +531,45 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q27",
+    "q": "A product owner meets her team only at the end of each iteration, to see the demonstration. Between those meetings the team guesses at what she wants. How often does the 2017 Agile Practice Guide say product owners work with their teams?",
+    "options": [
+      "Once per release",
+      "Only at iteration planning",
+      "Daily",
+      "Whenever the sponsor asks"
+    ],
+    "answer": 2,
+    "explanation": "Product owners work with their teams daily, providing product feedback and setting direction on the next piece of functionality to be developed or delivered.",
+    "ref": "Agile Practice Guide, First Edition, 4.3.2",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 55,
+        "label": "Agile Practice Guide, First Edition, 4.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "At the end of a two-week iteration a team has four finished stories and two that are half built. In iteration-based agile, what does the 2017 Agile Practice Guide say the team demonstrates?",
+    "options": [
+      "All completed work items",
+      "Every story, finished or not",
+      "Only the story the sponsor chooses",
+      "Nothing until the release is complete"
+    ],
+    "answer": 0,
+    "explanation": "In iteration-based agile, the team demonstrates all completed work items at the end of the iteration. The product owner sees the demonstration and accepts or declines stories.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.5",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 70,
+        "label": "Agile Practice Guide, First Edition, 5.2.5"
+      }
+    ]
   }
 ]

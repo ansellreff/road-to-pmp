@@ -526,5 +526,45 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q27",
+    "q": "A team is split between two cities. Each morning both offices open a video link on a large screen and leave it on until the evening, so that people can see each other and speak up at any moment. What is this technique called?",
+    "options": [
+      "A fishbowl window",
+      "Remote pairing",
+      "A daily standup",
+      "Caves and common"
+    ],
+    "answer": 0,
+    "explanation": "A fishbowl window is a long-lived video link between the locations of a dispersed team, started at the beginning of the workday and closed at the end. It lets people engage spontaneously and reduces the lag of separation.",
+    "ref": "Agile Practice Guide, First Edition, 4.3.6",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 61,
+        "label": "Agile Practice Guide, First Edition, 4.3.6"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A company moves its teams into an open, shared room. Two developers say they can no longer concentrate on difficult work. Which office design does the 2017 Agile Practice Guide describe for this?",
+    "options": [
+      "Returning everyone to private offices",
+      "Remote work for the whole team",
+      "Common areas balanced with quiet spaces, called caves and common",
+      "One long desk shared by all teams"
+    ],
+    "answer": 2,
+    "explanation": "Teams need a space to work together, but organizations also need quiet spaces for uninterrupted thinking. Offices are designed to balance common and social areas with quiet or private ones, sometimes called caves and common.",
+    "ref": "Agile Practice Guide, First Edition, 4.3.6",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 61,
+        "label": "Agile Practice Guide, First Edition, 4.3.6"
+      }
+    ]
   }
 ]

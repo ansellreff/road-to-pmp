@@ -541,5 +541,45 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q27",
+    "q": "A team that works in continuous flow has no fixed refinement meeting. When a slot opens, it takes the next card from the to-do column and discusses it there and then. What does the 2017 Agile Practice Guide call this?",
+    "options": [
+      "Sprint planning",
+      "Just-in-time refinement",
+      "A timeboxed refinement hour for the team",
+      "A retrospective"
+    ],
+    "answer": 1,
+    "explanation": "The guide describes a continuum: just-in-time refinement for flow-based agile, where the team takes the next card off the to-do column and discusses it; a timeboxed one-hour discussion midway through a two-week iteration; or several refinement discussions for teams new to the product.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.3",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 67,
+        "label": "Agile Practice Guide, First Edition, 5.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "A product owner drew a product roadmap at the start of the year. After four iterations the team has delivered less of one feature set and more of another than the roadmap showed. What does the 2017 Agile Practice Guide say she does with the roadmap?",
+    "options": [
+      "Keeps it unchanged, since it is a commitment",
+      "Hands it over to the scrum master to maintain from then on",
+      "Discards it, since agile teams do not use roadmaps",
+      "Replans it, based on what the team produces"
+    ],
+    "answer": 3,
+    "explanation": "Product owners may produce a product roadmap to show the anticipated sequence of deliverables over time. The product owner replans the roadmap based on what the team produces.",
+    "ref": "Agile Practice Guide, First Edition, 5.2.2",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 67,
+        "label": "Agile Practice Guide, First Edition, 5.2.2"
+      }
+    ]
   }
 ]

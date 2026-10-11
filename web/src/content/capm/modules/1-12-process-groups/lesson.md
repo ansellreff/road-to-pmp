@@ -169,6 +169,61 @@ Two pairs the exam likes:
 
 > **On the exam.** Two points from the guide's own definitions. **Contracts are closed out in Control Procurements**, a Monitoring and Controlling process: it is "managing procurement relationships, monitoring contract performance and making changes and corrections as appropriate, and closing out contracts". **Close Project or Phase** finalizes all activities for the project, phase or contract, and its key benefits are that the information is **archived**, the planned work is **completed**, and team resources are **released**. Each definition also says how often the process is performed: Develop Project Management Plan and Close Project or Phase **once or at predefined points**; Identify Risks, Manage Communications and the controlling processes **throughout the project**.
 
+## The tools that mark each process
+
+@source Process Groups: A Practice Guide, section 4; Process Groups: A Practice Guide, section 5; Process Groups: A Practice Guide, section 6; Process Groups: A Practice Guide, section 7; Process Groups: A Practice Guide, section 8
+
+The outline asks for the typical activities within each process. In the process guide every process has a figure listing its inputs, tools and techniques, and outputs. Most processes share the same general tools, so those tell you little: of the 49 processes, **expert judgment** is a tool of 35, **data analysis** of 32, **meetings** of 28 and **interpersonal and team skills** of 19.
+
+What identifies a process is the tool that belongs to it and to few others. This table lists those, and leaves the general ones out.
+
+| Process | Tools that mark it |
+|---|---|
+| **Planning** | |
+| Collect Requirements | Context diagram; prototypes |
+| Define Scope | Product analysis |
+| Create WBS | Decomposition |
+| Define Activities | Decomposition; rolling wave planning |
+| Sequence Activities | Precedence diagramming method; dependency determination and integration; leads and lags |
+| Estimate Activity Durations | Analogous, parametric, three-point and bottom-up estimating |
+| Develop Schedule | Schedule network analysis; critical path method; resource optimization; leads and lags; schedule compression; agile release planning |
+| Estimate Costs | Analogous, parametric, bottom-up and three-point estimating |
+| Determine Budget | Cost aggregation; historical information review; funding limit reconciliation; financing |
+| Plan Quality Management | Test and inspection planning |
+| Plan Resource Management | Organizational theory |
+| Estimate Activity Resources | Bottom-up, analogous and parametric estimating |
+| Plan Communications Management | Communication requirements analysis; communication technology, models and methods |
+| Identify Risks | Prompt lists |
+| Perform Qualitative Risk Analysis | Risk categorization |
+| Perform Quantitative Risk Analysis | Representations of uncertainty |
+| Plan Risk Responses | Strategies for threats; strategies for opportunities; contingent response strategies; strategies for overall project risk |
+| Plan Procurement Management | Source selection analysis |
+| **Executing** | |
+| Manage Project Knowledge | Knowledge management; information management |
+| Manage Quality | Audits; design for X; problem solving; quality improvement methods |
+| Acquire Resources | Pre-assignment; virtual teams |
+| Develop Team | Colocation; virtual teams; communication technology; recognition and rewards; training; individual and team assessments |
+| Manage Communications | Communication technology, methods and skills; project reporting |
+| Conduct Procurements | Advertising; bidder conferences |
+| Manage Stakeholder Engagement | Communication skills; ground rules |
+| **Monitoring and Controlling** | |
+| Perform Integrated Change Control | Change control tools |
+| Validate Scope | Inspection |
+| Control Schedule | Critical path method; resource optimization; leads and lags; schedule compression |
+| Control Costs | To-complete performance index |
+| Control Quality | Inspection; testing and product evaluations |
+| Control Resources | Problem solving |
+| Monitor Risks | Audits |
+| Control Procurements | Claims administration; inspection; audits |
+
+The processes not in the table (the two Initiating processes, the "Plan ... Management" processes, Direct and Manage Project Work, Manage Team, Implement Risk Responses, Control Scope, Monitor Communications, Monitor Stakeholder Engagement and Close Project or Phase, among others) use only the general tools.
+
+Three patterns worth remembering:
+
+- **Decomposition** is used twice: on deliverables in Create WBS, and on work packages in Define Activities.
+- The **same estimating techniques** serve durations, costs and resources.
+- **Inspection** is a tool of three processes with different purposes: Control Quality (is it correct?), Validate Scope (is it accepted?) and Control Procurements (did the seller deliver what the contract says?). **Audits** are a tool of Manage Quality, Monitor Risks and Control Procurements.
+
 ## Following a planned strategy: communication, risk and stakeholders
 
 @source Process Groups: A Practice Guide, 6.7; Process Groups: A Practice Guide, 6.8; Process Groups: A Practice Guide, 6.10; CAPM Exam Content Outline, Domain 1

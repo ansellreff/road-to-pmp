@@ -770,5 +770,65 @@
         "label": "Process Groups: A Practice Guide, 8.1"
       }
     ]
+  },
+  {
+    "id": "q39",
+    "q": "A practice question lists four tools: precedence diagramming method, dependency determination and integration, leads and lags, and the project management information system. Which process of the process guide has exactly these?",
+    "options": [
+      "Define Activities",
+      "Develop Schedule",
+      "Sequence Activities",
+      "Control Schedule"
+    ],
+    "answer": 2,
+    "explanation": "Sequence Activities uses the precedence diagramming method, dependency determination and integration, leads and lags, and the project management information system. Define Activities uses decomposition and rolling wave planning.",
+    "ref": "Process Groups: A Practice Guide, section 5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 98,
+        "label": "Process Groups: A Practice Guide, section 5"
+      }
+    ]
+  },
+  {
+    "id": "q40",
+    "q": "A team applies decomposition twice during planning: first to the deliverables, then to the work packages. In which two processes of the process guide is decomposition a tool?",
+    "options": [
+      "Create WBS and Define Activities",
+      "Define Scope and Create WBS",
+      "Collect Requirements and Define Scope",
+      "Define Activities and Sequence Activities"
+    ],
+    "answer": 0,
+    "explanation": "Decomposition is a tool of Create WBS, where deliverables are divided into work packages, and of Define Activities, where work packages are divided into schedule activities.",
+    "ref": "Process Groups: A Practice Guide, section 5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 98,
+        "label": "Process Groups: A Practice Guide, section 5"
+      }
+    ]
+  },
+  {
+    "id": "q41",
+    "q": "A buyer's engineer visits the seller's factory to examine the delivered units against the contract. Inspection is a tool here. In which process of the process guide is this inspection performed?",
+    "options": [
+      "Validate Scope",
+      "Control Quality",
+      "Conduct Procurements",
+      "Control Procurements"
+    ],
+    "answer": 3,
+    "explanation": "Inspection is a tool of three processes: Control Quality (is the deliverable correct), Validate Scope (is it accepted by the customer) and Control Procurements (did the seller deliver what the contract requires). Checking a seller's work against the contract is Control Procurements.",
+    "ref": "Process Groups: A Practice Guide, section 7",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 182,
+        "label": "Process Groups: A Practice Guide, section 7"
+      }
+    ]
   }
 ]

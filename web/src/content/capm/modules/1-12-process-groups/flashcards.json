@@ -218,5 +218,35 @@
     "id": "c44",
     "front": "Seven techniques for communicating well (process guide)",
     "back": "Sender-receiver models; choice of media; writing style; meeting management; presentations; facilitation; active listening."
+  },
+  {
+    "id": "c45",
+    "front": "The four most common tools across the 49 processes",
+    "back": "Expert judgment (35 processes), data analysis (32), meetings (28), interpersonal and team skills (19)."
+  },
+  {
+    "id": "c46",
+    "front": "Where is decomposition a tool?",
+    "back": "Create WBS (deliverables into work packages) and Define Activities (work packages into activities)."
+  },
+  {
+    "id": "c47",
+    "front": "Which three processes use inspection?",
+    "back": "Control Quality, Validate Scope and Control Procurements."
+  },
+  {
+    "id": "c48",
+    "front": "Which three processes use audits?",
+    "back": "Manage Quality, Monitor Risks and Control Procurements."
+  },
+  {
+    "id": "c49",
+    "front": "Tools of Sequence Activities",
+    "back": "Precedence diagramming method; dependency determination and integration; leads and lags; project management information system."
+  },
+  {
+    "id": "c50",
+    "front": "Tools that mark Determine Budget",
+    "back": "Cost aggregation; historical information review; funding limit reconciliation; financing."
   }
 ]
