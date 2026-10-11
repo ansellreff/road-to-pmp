@@ -33,6 +33,27 @@ def split(total: int, sizes: list[int]) -> list[int]:
     return shares
 
 
+def option_order(question: dict, letter: int, rng: random.Random) -> list[int]:
+    """The order in which an exam shows a question's options: order[shown position] = position in the file.
+
+    Single answer: the right option goes to the given letter, the others are mixed around it.
+    Matching: the right-hand items are mixed, never left beside their partners.
+    Hot spot: the areas are fixed on the drawing, so the order is left alone.
+    """
+    if question.get("type") == "match":
+        order = list(range(len(question["right"])))
+        while order == sorted(order):
+            rng.shuffle(order)
+        return order
+    order = list(range(len(question["options"])))
+    if question.get("type") == "hotspot" or POSITIONAL.search(question["explanation"]):
+        return order
+    others = [i for i in order if i != question["answer"]]
+    rng.shuffle(others)
+    letter = min(letter, len(others))
+    return others[:letter] + [question["answer"]] + others[letter:]
+
+
 def build(course_id: str) -> None:
     folder = CONTENT / course_id
     course = json.loads((folder / "course.json").read_text(encoding="utf-8"))
@@ -72,12 +93,7 @@ def build(course_id: str) -> None:
         rows = []
         for (module, qid), letter in zip(exam, letters):
             question = by_id[(module, qid)]
-            order = [0, 1, 2, 3]
-            if not POSITIONAL.search(question["explanation"]):
-                others = [i for i in order if i != question["answer"]]
-                rng.shuffle(others)
-                order = others[:letter] + [question["answer"]] + others[letter:]
-            rows.append([module, qid, order])
+            rows.append([module, qid, option_order(question, letter, rng)])
         result.append({"id": f"mock-{number}", "title": f"Mock exam {number}", "unseen": number == EXAMS, "questions": rows})
 
     reserved = {(m, q) for m, q, _ in result[-1]["questions"]}
@@ -157,12 +173,7 @@ def add_exam(course_id: str) -> None:
     rows = []
     for (module, qid), letter in zip(picked, letters):
         question = by_id[(module, qid)]
-        order = [0, 1, 2, 3]
-        if not POSITIONAL.search(question["explanation"]):
-            others = [i for i in order if i != question["answer"]]
-            rng.shuffle(others)
-            order = others[:letter] + [question["answer"]] + others[letter:]
-        rows.append([module, qid, order])
+        rows.append([module, qid, option_order(question, letter, rng)])
         question["examOnly"] = True
     exams.append({"id": f"mock-{number}", "title": f"Mock exam {number}", "unseen": True, "questions": rows})
 

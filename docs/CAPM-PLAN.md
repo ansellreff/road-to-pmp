@@ -68,6 +68,7 @@ Certified Associate in Project Management. Built and online; **being finished** 
 | 2026-10-11 | **Session 34 done: the rest of the practice guide read against Domain 4.** Chapters 4 (the parts not read before), 5 and 6, and the two tool pages left over. Nothing in modules 4.1 and 4.4 to 4.7 was found wrong. Missing and now taught: the analyst as the product owner's support or proxy; why requirements are elicited, not collected; the limit at technical design; buy-a-feature's steps; Package Solution Information as a practice; the capability table's columns; transition requirements and the three-part transition approach; "segmented cutover"; go fever; when a formal sign-off is usual; the four typical reasons for missed value. 17 questions, 11 flashcards. Every Domain 4 module quiz now has 20 or more questions. Bank: 1,131 questions, 1,326 flashcards. | You: `upload.bat`. Next: Session 35, the process guide's 49 processes against modules 1.12 and 2.1 to 2.11 |
 | 2026-10-11 | **Session 35 done: the 49 processes checked against Domain 2 and module 1.12, by script and by reading, not page by page.** The definition of every process was pulled from the guide and compared with module 1.12: all agree. Every artifact that module 1.12 names as a process's main output was found on that process's pages. The guide's lists of inputs and outputs (section 9) and of tools (section 10) were scanned for names the course never uses: ten tools were missing and are now taught, in modules 2.6, 2.9, 2.10 and 2.11. One exam point was added to module 1.12: contracts are closed out in Control Procurements. 10 questions, 7 flashcards. Bank: 1,141 questions, 1,333 flashcards. **The deeper accuracy check (Sessions 33 to 35) is finished.** | You: `upload.bat`. Next: Session 36, the real exam's question types |
 | 2026-10-11 | **Open items of Sessions 32 to 35 closed**, at your request. (1) Which tool belongs to which process: read from all 49 figures by script, and module 1.12 now has a table "The tools that mark each process". (2) Develop Project Charter's definition read: it agrees. (3) Chapter 5 of the practice guide read in full: one note in module 4.7 was incomplete (three transition strategies named, the guide has four) and is corrected. (4) The practice guide's page 111 read. (5) Its 41 case study pages scanned for any tool or artifact name the course lacks: none. (6) The lesson sections behind the questions written without a full re-read (modules 1.2, 1.3, 1.10) read: the questions agree with them. (7) The four Domain 3 quizzes under 20 brought to 20. **Every module quiz in the course now has at least 20 questions.** Bank: 1,151 questions, 1,339 flashcards. | You: `upload.bat`. Next: Session 36 |
+| 2026-10-11 | **Session 36 done: the rules for the real exam's question types.** Matching, hot spot and comic strip questions can now be stored, loaded, put into exams, marked, saved and synced, and the checker and exam builder understand them. Nothing you see has changed yet: there are no such questions and no screens for them until Session 37. The 21 click tests pass unchanged, and no content file changed. | Next: Session 37, the screens and about 110 questions |
 
 ## Roadmap to a complete CAPM course
 
@@ -104,7 +105,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 33 | Deeper accuracy check: *Business Analysis for Practitioners*, chapters 2 and 3, against modules 4.1 to 4.3 |
 | ✅ | 34 | Deeper accuracy check: the same book, chapters 4 (rest), 5 and 6, against modules 4.4 to 4.7 |
 | ✅ | 35 | Deeper accuracy check: *Process Groups: A Practice Guide*, the 49 processes, against modules 1.12 and 2.1 to 2.11 |
-| ⬜ | 36 | Real exam question types, the rules: matching, hot spot and comic strip stored, marked, saved, synced and checked |
+| ✅ | 36 | Real exam question types, the rules: matching, hot spot and comic strip stored, marked, saved, synced and checked |
 | ⬜ | 37 | Real exam question types, the screens and the questions: about 60 matching, 25 hot spot, 25 comic strip; Mock exam 6 if the bank allows |
 | ⬜ | 38 | Drawings in module 4.5: decision tree, ecosystem map, feature model, data flow diagram, wireframe |
 | ⬜ | 39 | Close CAPM: all checks, final counts, each open item marked closed or left open with the reason |
@@ -856,3 +857,31 @@ These tools fall under outline tasks but are named by no enabler, so each has a 
 | Four Domain 3 quizzes at 18 or 19 | Pages 61, 67 to 70, 119 and 120 of the 2017 Agile Practice Guide read; 7 questions written | Modules 3.2, 3.3, 3.4 and 3.6 at 20 |
 
 Still not done, and not planned: the data flow diagrams of the process guide's sections 4 to 8, and a line-by-line reading of its sections 9 and 10 beyond the entries the scans pointed to.
+
+## Session 36: the rules for the real exam's question types, as built
+
+The CAPM outline names three kinds of question beside multiple choice: drag-and-drop matching, hot spot, and comic strip (or animation). This session built everything under the screen.
+
+**How each is written in a module's `quiz.json`**
+
+| Type | Fields | Stored answer |
+|---|---|---|
+| Single answer (unchanged) | `options` (4), `answer` | The position of the chosen option |
+| Matching | `type: "match"`, `left` and `right`: 3 to 5 pairs, `left[i]` belonging to `right[i]` | One whole number, a digit for each left-hand item (see below) |
+| Hot spot | `type: "hotspot"`, `diagram`: a drawing, `options`: 3 to 8 of that drawing's areas, `answer` | The position of the chosen area, as for a single answer |
+| Comic strip | Any single-answer question plus `strip`: 2 to 6 panels, each with `who` and `says` | As a single answer |
+
+**One decision that kept the change small.** A matching answer is saved as one number: each digit is the right-hand item chosen for one left-hand item, counted from 1, and 0 means "not chosen yet". So with three pairs, 312 means "third, first, second". Because every answer of every type is then a single number, nothing had to change in the eleven places that compare an answer with the right one, nor in saved progress, sync, the exam clock or the result page. A matching answer is right only when the whole number equals the right one: all pairs right, or wrong.
+
+**What changed**
+
+- `web/src/lib/answers.ts` (new): turning choices into that number and back, the right number for a given order, marking pair by pair for the review, and a fixed shuffle so a module quiz always shows the right-hand items in the same mixed order and never beside their partners.
+- `web/src/lib/content.ts`: the question types; a stored matching question is made ready for the screen when it is loaded, in the module's fixed shuffle or in the exam's own order.
+- `tools/check_content.py`: rules for each type. The "right answer is the longest" and "answers spread over A to D" rules now count single-answer questions only.
+- `tools/build_exams.py`: one function orders the options of every type. Matching is never left in its original order; a hot spot keeps the order of its areas.
+- `web/tests/logic.mjs` (new): 62 checks of the rules, run by `npm test` before the click tests.
+- `tools/test_question_types.py` (new): feeds the checker ten deliberately broken questions (two pairs only, unequal sides, a repeated item, an unknown type, an unknown drawing, a hot spot on a drawing with no areas, a one-panel strip, and so on) and confirms each is reported; and tries the exam builder's ordering 200 times.
+
+**Not built, as planned:** animation questions. A comic strip covers the same kind of question, and is what online test-takers get.
+
+**Assumption:** PMI does not publish how matching is scored. Here it is all or nothing, the stricter reading; the result page will say so in Session 37.

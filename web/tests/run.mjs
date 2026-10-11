@@ -7,6 +7,8 @@
 // Every test gets a fresh private browser profile, so saved progress is never touched.
 import { chromium } from 'playwright-core'
 import { tests } from './tests.mjs'
+// The rules that need no browser are tested first; a failure there stops the run.
+import './logic.mjs'
 
 const BASE = process.env.BASE ?? 'http://localhost:5173'
 const only = process.argv[2]

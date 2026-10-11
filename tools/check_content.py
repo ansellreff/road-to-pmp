@@ -64,7 +64,7 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
         options = q.get("options", [])
         lengths = [len(o) for o in options]
         answer = q.get("answer")
-        if isinstance(answer, int) and 0 <= answer < len(lengths):
+        if not q.get("type") and isinstance(answer, int) and 0 <= answer < len(lengths):
             if lengths[answer] == max(lengths) and lengths.count(max(lengths)) == 1:
                 longest += 1
         for option in options:
@@ -74,10 +74,11 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
         if key in seen:
             warnings.append(f"{path.parent.name} [{q.get('id')}]: same question as {seen[key]}")
         seen.setdefault(key, f"{path.parent.name} [{q.get('id')}]")
-    if questions and longest / len(questions) > LONGEST_LIMIT:
+    plain = [q for q in questions if not q.get("type")]
+    if plain and longest / len(plain) > LONGEST_LIMIT:
         warnings.append(
-            f"{path.parent.name}: correct answer is the longest option in {longest} of {len(questions)} "
-            f"questions ({longest / len(questions):.0%}, limit {LONGEST_LIMIT:.0%})"
+            f"{path.parent.name}: correct answer is the longest option in {longest} of {len(plain)} "
+            f"questions ({longest / len(plain):.0%}, limit {LONGEST_LIMIT:.0%})"
         )
     ids = [q.get("id") for q in questions]
     for dup, n in Counter(ids).items():
@@ -86,12 +87,38 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
     for q in questions:
         where = f"{path} [{q.get('id')}]"
         options = q.get("options", [])
-        if len(options) != 4:
-            problems.append(f"{where}: needs exactly 4 options, has {len(options)}")
-        if len(set(options)) != len(options):
-            problems.append(f"{where}: two options are identical")
-        if not isinstance(q.get("answer"), int) or not 0 <= q["answer"] < len(options):
-            problems.append(f"{where}: answer index is not valid")
+        kind = q.get("type")
+        if kind not in (None, "match", "hotspot"):
+            problems.append(f"{where}: unknown question type {kind}")
+        if kind == "match":
+            # Pairs: left[i] belongs to right[i]. The screen mixes the right-hand side.
+            left, right = q.get("left", []), q.get("right", [])
+            if not 3 <= len(left) <= MAX_PAIRS or len(left) != len(right):
+                problems.append(f"{where}: matching needs 3 to {MAX_PAIRS} pairs, with as many right-hand as left-hand items")
+            if len(set(left)) != len(left) or len(set(right)) != len(right):
+                problems.append(f"{where}: two items of a matching question are identical")
+            if "options" in q or "answer" in q:
+                problems.append(f"{where}: a matching question has left and right, not options and answer")
+        else:
+            if kind == "hotspot":
+                spots = hotspots().get(q.get("diagram"))
+                if spots is None:
+                    problems.append(f"{where}: drawing \"{q.get('diagram')}\" has no areas to select")
+                elif not 3 <= len(options) <= 8 or any(o not in spots for o in options):
+                    problems.append(f"{where}: hot spot options must be 3 to 8 areas of the drawing: {spots}")
+            elif len(options) != 4:
+                problems.append(f"{where}: needs exactly 4 options, has {len(options)}")
+            if len(set(options)) != len(options):
+                problems.append(f"{where}: two options are identical")
+            if not isinstance(q.get("answer"), int) or not 0 <= q["answer"] < len(options):
+                problems.append(f"{where}: answer index is not valid")
+        if q.get("diagram") and q["diagram"] not in DIAGRAMS:
+            problems.append(f"{where}: no drawing is called \"{q['diagram']}\"")
+        for panel in q.get("strip", []):
+            if not str(panel.get("who", "")).strip() or not str(panel.get("says", "")).strip():
+                problems.append(f"{where}: a comic strip panel needs who and says")
+        if "strip" in q and not 2 <= len(q["strip"]) <= 6:
+            problems.append(f"{where}: a comic strip has 2 to 6 panels")
         for field in ("q", "explanation", "ref"):
             if not str(q.get(field, "")).strip():
                 problems.append(f"{where}: missing {field}")
@@ -100,12 +127,27 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
     # A quiz where the answer is nearly always the same letter can be gamed.
     # Questions reserved for the unseen mock exam are not part of the module quiz.
     visible = [q for q in questions if not q.get("examOnly")]
-    spread = Counter(q.get("answer") for q in visible)
-    if visible and max(spread.values()) > len(visible) * 0.45:
+    spread = Counter(q.get("answer") for q in visible if not q.get("type"))
+    if spread and max(spread.values()) > sum(spread.values()) * 0.45:
         problems.append(f"{path}: answers are not spread across A-D ({dict(sorted(spread.items()))})")
     if questions and len(visible) < MIN_MODULE_QUIZ:
         problems.append(f"{path}: only {len(visible)} questions left for the module quiz (minimum {MIN_MODULE_QUIZ})")
     return len(questions)
+
+
+# A matching question has at most this many pairs (each choice is stored as one digit; see answers.ts).
+MAX_PAIRS = 5
+
+
+def hotspots() -> dict[str, list[str]]:
+    """The areas of each drawing that can be selected: the list in diagrams/hotspots.ts."""
+    path = CONTENT.parent / "components" / "diagrams" / "hotspots.ts"
+    if not path.is_file():
+        return {}
+    found = {}
+    for name, items in re.findall(r"'([a-z-]+)':\s*\[([^\]]*)\]", path.read_text(encoding="utf-8")):
+        found[name] = re.findall(r"'((?:[^'\\]|\\.)*)'", items)
+    return found
 
 
 def check_sheet(course_file: Path, problems: list[str]) -> None:
@@ -156,13 +198,17 @@ def check_exams(course_file: Path, course: dict, problems: list[str]) -> str:
             if (module, qid) in used:
                 problems.append(f"{path} [{exam['id']}]: {module} {qid} is also in {used[(module, qid)]}")
             used[(module, qid)] = exam["id"]
-            if sorted(order) != [0, 1, 2, 3]:
+            count = len(question["right"]) if question.get("type") == "match" else len(question.get("options", []))
+            if sorted(order) != list(range(count)):
                 problems.append(f"{path} [{exam['id']}]: {module} {qid} has a bad option order {order}")
                 continue
+            if question.get("type") == "match" and order == sorted(order):
+                problems.append(f"{path} [{exam['id']}]: {module} {qid} shows each item beside its partner")
             if bool(question.get("examOnly")) != bool(exam.get("unseen")):
                 problems.append(f"{path} [{exam['id']}]: {module} {qid} examOnly mark does not match the exam")
             split[domain_of[module]] += 1
-            letters[order.index(question["answer"])] += 1
+            if not question.get("type"):
+                letters[order.index(question["answer"])] += 1
         for domain in course["domains"]:
             want = round(size * domain["weight"] / 100)
             if abs(split[domain["id"]] - want) > 1:

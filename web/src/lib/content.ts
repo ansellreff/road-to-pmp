@@ -33,11 +33,31 @@ export interface Course {
   domains: Domain[]
 }
 
+/** One panel of a comic strip: who speaks, and the words. */
+export interface StripPanel {
+  who: string
+  says: string
+}
+
+/**
+ * A question as the screens use it. Every type has options and one stored answer:
+ * - single answer: four options, answer is the position of the right one;
+ * - hot spot ("hotspot"): the same, but the options are areas of the drawing named in diagram;
+ * - matching ("match"): left holds the left-hand items, options the right-hand items in the
+ *   order shown, and answer the fully right pairing as one number (see answers.ts).
+ */
 export interface Question {
   id: string
   q: string
+  type?: 'match' | 'hotspot'
   options: string[]
   answer: number
+  /** Matching only: the left-hand items. */
+  left?: string[]
+  /** A drawing shown with the question. A hot spot is answered by selecting one of its areas. */
+  diagram?: string
+  /** The situation told as a short conversation, shown above the question. */
+  strip?: StripPanel[]
   explanation: string
   ref?: string
   /** Filled in by tools/link_sources.py from ref. */
@@ -74,13 +94,14 @@ export interface Card {
 // Adding a certification = adding a folder under src/content/. No code changes.
 const courseFiles = import.meta.glob<Course>('../content/*/course.json', { eager: true, import: 'default' })
 const lessonFiles = import.meta.glob<string>('../content/*/modules/*/lesson.md', { query: '?raw', import: 'default' })
-const quizFiles = import.meta.glob<Question[]>('../content/*/modules/*/quiz.json', { import: 'default' })
+const quizFiles = import.meta.glob<StoredQuestion[]>('../content/*/modules/*/quiz.json', { import: 'default' })
 const cardFiles = import.meta.glob<Card[]>('../content/*/modules/*/flashcards.json', { import: 'default' })
 const examFiles = import.meta.glob<Exam[]>('../content/*/exams.json', { eager: true, import: 'default' })
 const sheetFiles = import.meta.glob<SheetGroup[]>('../content/*/sheet.json', { eager: true, import: 'default' })
 const sourceFiles = import.meta.glob<SourceLink[]>('../content/*/modules/*/sources.json', { import: 'default' })
 
 import bookList from '../content/books.json'
+import { matchAnswer, seededOrder } from './answers'
 export const books: Record<string, Book> = bookList
 
 export const courses: Course[] = Object.values(courseFiles)
@@ -119,10 +140,36 @@ export async function loadLesson(courseId: string, moduleId: string): Promise<st
   return load ? load() : ''
 }
 
-/** Every question written for a module, including those reserved for the unseen mock exam. */
-export async function loadAllQuestions(courseId: string, moduleId: string): Promise<Question[]> {
+/**
+ * A question as it is written in quiz.json. A matching question is stored as pairs: left[i]
+ * belongs to right[i]. It has no options or answer until it is prepared for the screen.
+ */
+type StoredQuestion = Omit<Question, 'options' | 'answer'> & { options?: string[]; answer?: number; right?: string[] }
+
+/**
+ * Make a stored question ready for the screen, with its options in the given order.
+ * order[shown position] = position in the file.
+ */
+function prepare(stored: StoredQuestion, order?: number[]): Question {
+  const { right, ...rest } = stored
+  if (stored.type === 'match' && right) {
+    const shown = order ?? seededOrder(stored.id + stored.q, right.length)
+    return { ...rest, options: shown.map((i) => right[i]), answer: matchAnswer(shown) }
+  }
+  const options = stored.options ?? []
+  const answer = stored.answer ?? 0
+  if (!order) return { ...rest, options, answer }
+  return { ...rest, options: order.map((i) => options[i]), answer: order.indexOf(answer) }
+}
+
+async function loadStored(courseId: string, moduleId: string): Promise<StoredQuestion[]> {
   const load = quizFiles[path(courseId, moduleId, 'quiz.json')]
   return load ? load() : []
+}
+
+/** Every question written for a module, including those reserved for the unseen mock exam. */
+export async function loadAllQuestions(courseId: string, moduleId: string): Promise<Question[]> {
+  return (await loadStored(courseId, moduleId)).map((q) => prepare(q))
 }
 
 /** The module quiz. */
@@ -159,16 +206,12 @@ export function getExams(courseId: string): Exam[] {
 export async function loadExamQuestions(course: Course, exam: Exam): Promise<ExamQuestion[]> {
   const moduleIds = [...new Set(exam.questions.map(([moduleId]) => moduleId))]
   const quizzes = new Map(
-    await Promise.all(moduleIds.map(async (id) => [id, await loadAllQuestions(course.id, id)] as const)),
+    await Promise.all(moduleIds.map(async (id) => [id, await loadStored(course.id, id)] as const)),
   )
   return exam.questions.flatMap(([moduleId, questionId, order]) => {
     const source = quizzes.get(moduleId)?.find((q) => q.id === questionId)
     if (!source) return []
-    const question = {
-      ...source,
-      options: order.map((i) => source.options[i]),
-      answer: order.indexOf(source.answer),
-    }
+    const question = prepare(source, order)
     const domain = course.domains.findIndex((d) => d.modules.some((m) => m.id === moduleId))
     return [{ moduleId, domain, question, order }]
   })

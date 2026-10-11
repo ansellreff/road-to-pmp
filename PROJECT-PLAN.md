@@ -22,7 +22,7 @@ How they are kept:
 
 | | Certification | State | Next |
 |---|---|---|---|
-| 🟡 | CAPM | **Being finished.** Built and online: 39 modules, 1,151 questions, 1,339 flashcards, 5 mock exams. Sessions 32 to 35 closed the thin outline item, the small Domain 1 quizzes and the deeper accuracy check. Still open, Sessions 36 to 39: the real exam's question types, drawings, and closing. | CAPM Session 36 |
+| 🟡 | CAPM | **Being finished.** Built and online: 39 modules, 1,151 questions, 1,339 flashcards, 5 mock exams. Sessions 32 to 35 closed the thin outline item, the small Domain 1 quizzes and the deeper accuracy check. Session 36 built the rules for the real exam's question types. Still open, Sessions 37 to 39: their screens and questions, drawings, and closing. | CAPM Session 37 |
 | ⏸️ | PMP | **Paused until CAPM is finished.** PMP Session 1 done: sources read, 34 modules mapped to the outline, course skeleton in the app. | PMP Session 2, the exam engine |
 | ⬜ | PMI-ACP | Not started | Needs its Exam Content Outline in the materials folder |
 | ⬜ | PMI-SP | Not started | Needs its Exam Content Outline in the materials folder |
