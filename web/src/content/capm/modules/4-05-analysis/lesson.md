@@ -73,6 +73,10 @@ Why model?
 
 @diagram context-diagram
 
+@diagram ecosystem-map
+
+@diagram feature-model
+
 ## Process models: flows, use cases and user stories
 
 @source PMI Guide to Business Analysis, 7.2.2.12; PMI Guide to Business Analysis, 7.3.2.8; PMI Guide to Business Analysis, 7.3.2.9
@@ -113,6 +117,8 @@ Why model?
 | **Decision tree** | Decisions and choices as a **branching flow** leading to outcomes; can show the order of decisions |
 | **Decision table** | **Every combination** of conditions and the outcome of each, so that none is missed |
 
+@diagram decision-tree
+
 **Data models:**
 
 | Model | What it shows |
@@ -123,6 +129,8 @@ Why model?
 | **State table / state diagram** | The valid **states** of an object and the allowed moves between them, for example order placed, paid, shipped, delivered |
 
 @diagram entity-relationship-diagram
+
+@diagram data-flow-diagram
 
 @diagram state-diagram
 
@@ -136,6 +144,8 @@ Why model?
 | **User interface flow** | How the user **navigates between screens** |
 | **Report table** | The detailed requirements of **one report** |
 | **System interface table** | The detailed requirements of **one interface** between systems: fields, frequency, volume, validation |
+
+@diagram wireframe
 
 ## Define and Elaborate Requirements
 

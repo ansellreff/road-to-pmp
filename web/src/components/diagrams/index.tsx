@@ -530,6 +530,211 @@ function UseCaseDiagram() {
   )
 }
 
+function Outcome({ x, y, w, text, stroke = ink }: { x: number; y: number; w: number; text: string; stroke?: string }) {
+  return <Box x={x} y={y} w={w} h={44} round={20} text={text} stroke={stroke} bold />
+}
+
+function DecisionTree() {
+  return (
+    <Frame
+      width={720}
+      height={310}
+      caption="Decision tree for one business rule of the clinic: when must a patient pay a deposit? Each box is a question, each branch an answer, and each rounded box an outcome. Reading from the left shows the order in which the questions are asked. A decision table would list the same rule as every combination of answers."
+      description="Decision tree. First question: is the patient new? If yes, a deposit is required. If no, second question: has the patient missed a visit in the last year? If yes, a deposit is required. If no, no deposit is needed."
+    >
+      <Box x={20} y={125} w={150} h={50} text="New patient?" fill={planSoft} stroke={plan} />
+      <polyline points="170,150 210,150 210,62" fill="none" stroke={ink} strokeWidth="1.5" />
+      <Arrow points={[[210, 62], [250, 62]]} />
+      <Tag x={210} y={104} text="Yes" />
+      <polyline points="210,150 210,215" fill="none" stroke={ink} strokeWidth="1.5" />
+      <Arrow points={[[210, 215], [250, 215]]} />
+      <Tag x={210} y={184} text="No" />
+      <Outcome x={250} y={40} w={170} text="Deposit required" stroke={milestone} />
+      <Box x={250} y={190} w={170} h={50} text={['Missed a visit in', 'the last year?']} fill={planSoft} stroke={plan} />
+      <polyline points="420,215 460,215 460,142" fill="none" stroke={ink} strokeWidth="1.5" />
+      <Arrow points={[[460, 142], [500, 142]]} />
+      <Tag x={460} y={176} text="Yes" />
+      <polyline points="460,215 460,262" fill="none" stroke={ink} strokeWidth="1.5" />
+      <Arrow points={[[460, 262], [500, 262]]} />
+      <Tag x={460} y={240} text="No" />
+      <Outcome x={500} y={120} w={190} text="Deposit required" stroke={milestone} />
+      <Outcome x={500} y={240} w={190} text="No deposit" stroke={done} />
+    </Frame>
+  )
+}
+
+function EcosystemMap() {
+  const link = (x1: number, y1: number, x2: number, y2: number) => <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={ink} strokeWidth="1.5" />
+  return (
+    <Frame
+      width={720}
+      height={335}
+      caption="Ecosystem map around the clinic's booking system. It shows all the relevant systems and how they relate, including links that do not touch the solution, such as the payment provider feeding the accounting system. A context diagram would show only what exchanges something directly with the booking system."
+      description="Ecosystem map of six systems. The clinic booking system is linked to the patient records system by patient details, to the payment provider by deposits, and to the reminder service by visit times. Two links do not touch the booking system: the patient records system sends claims to the insurance portal, and the payment provider sends settled payments to the accounting system."
+    >
+      {link(180, 65, 285, 150)}
+      {link(435, 150, 540, 65)}
+      {link(360, 195, 360, 265)}
+      {link(105, 90, 105, 230)}
+      {link(615, 90, 615, 230)}
+      <Tag x={232} y={108} text="patient details" />
+      <Tag x={488} y={108} text="deposits" />
+      <Tag x={360} y={230} text="visit times" />
+      <Tag x={105} y={160} text="claims" />
+      <Tag x={615} y={160} text="settled payments" />
+      <Box x={285} y={135} w={150} h={60} text={['Clinic booking', 'system']} fill={planSoft} stroke={plan} bold />
+      <Box x={30} y={40} w={150} h={50} text={['Patient records', 'system']} />
+      <Box x={30} y={230} w={150} h={50} text="Insurance portal" />
+      <Box x={540} y={40} w={150} h={50} text="Payment provider" />
+      <Box x={540} y={230} w={150} h={50} text="Accounting system" />
+      <Box x={285} y={265} w={150} h={50} text="Reminder service" />
+    </Frame>
+  )
+}
+
+function FeatureModel() {
+  const branches = [
+    { name: 'Booking', x: 50, parts: ['Choose a time', 'Reschedule', 'Cancel'] },
+    { name: 'Payments', x: 285, parts: ['Pay a deposit', 'Refund a deposit'] },
+    { name: 'Reminders', x: 520, parts: ['By text message', 'By email'] },
+  ]
+  return (
+    <Frame
+      width={720}
+      height={320}
+      caption="Feature model for the clinic's booking system. The features are arranged as a tree: the level 1 features under the solution, and their sub-features under each. It shows the whole scope on one page, and makes a missing feature easy to notice."
+      description="Feature model drawn as a tree. The clinic booking system has three level 1 features. Booking has the sub-features choose a time, reschedule and cancel. Payments has pay a deposit and refund a deposit. Reminders has by text message and by email."
+    >
+      <Box x={270} y={12} w={180} h={46} text="Clinic booking system" bold />
+      <line x1="360" y1="58" x2="360" y2="80" stroke={ink} strokeWidth="1.5" />
+      <line x1="125" y1="80" x2="595" y2="80" stroke={ink} strokeWidth="1.5" />
+      {branches.map((b) => (
+        <g key={b.name}>
+          <line x1={b.x + 75} y1="80" x2={b.x + 75} y2="100" stroke={ink} strokeWidth="1.5" />
+          <Box x={b.x} y={100} w={150} h={44} text={b.name} fill={planSoft} stroke={plan} bold />
+          <line x1={b.x + 12} y1="144" x2={b.x + 12} y2={144 + b.parts.length * 48 - 21} stroke={ink} strokeWidth="1.5" />
+          {b.parts.map((part, i) => (
+            <g key={part}>
+              <line x1={b.x + 12} y1={171 + i * 48} x2={b.x + 28} y2={171 + i * 48} stroke={ink} strokeWidth="1.5" />
+              <Box x={b.x + 28} y={154 + i * 48} w={140} h={34} text={part} />
+            </g>
+          ))}
+        </g>
+      ))}
+    </Frame>
+  )
+}
+
+function DataFlowDiagram() {
+  const process = (cx: number, cy: number, text: string[]) => (
+    <>
+      <circle cx={cx} cy={cy} r="48" fill={planSoft} stroke={plan} strokeWidth="1.5" />
+      <Label x={cx} y={cy} text={text} />
+    </>
+  )
+  return (
+    <Frame
+      width={720}
+      height={330}
+      caption="Data flow diagram for the clinic's bookings. Boxes are external entities, circles are processes, and the open-ended box is a data store. Every arrow is data moving, labelled with what moves. Data reaches or leaves a store only through a process."
+      description="Data flow diagram. The patient sends a booking request to process 1, book an appointment, and receives a confirmation from it. Process 1 writes the appointment to the data store Appointments. Process 2, produce the day list, reads the day's appointments from the store and sends the day list to the clinic staff."
+    >
+      <Arrow points={[[140, 55], [254, 55]]} />
+      <Tag x={197} y={41} text="booking request" />
+      <Arrow points={[[254, 80], [140, 80]]} />
+      <Tag x={197} y={94} text="confirmation" />
+      <Arrow points={[[348, 65], [470, 65]]} />
+      <Tag x={409} y={51} text="appointment" />
+      <Arrow points={[[580, 86], [580, 245], [348, 245]]} />
+      <Tag x={466} y={231} text="day's appointments" />
+      <Arrow points={[[252, 245], [140, 245]]} />
+      <Tag x={196} y={231} text="day list" />
+
+      <Box x={20} y={42} w={120} h={50} text="Patient" />
+      <Box x={20} y={220} w={120} h={50} text="Clinic staff" />
+      {process(300, 65, ['1', 'Book an', 'appointment'])}
+      {process(300, 245, ['2', 'Produce the', 'day list'])}
+      <path d="M690,44 H470 V86 H690" fill={surface} stroke={ink} strokeWidth="1.5" />
+      <line x1="500" y1="44" x2="500" y2="86" stroke={ink} strokeWidth="1.5" />
+      <Label x={485} y={65} text="D1" size={12} />
+      <Label x={590} y={65} text="Appointments" />
+      <Label x={360} y={314} text="Box: external entity. Circle: process. Open-ended box: data store." size={12} fill={muted} />
+    </Frame>
+  )
+}
+
+function Wireframe() {
+  const slot = (i: number) => ({ x: 190 + (i % 3) * 84, y: 172 + Math.floor(i / 3) * 34 })
+  return (
+    <Frame
+      width={720}
+      height={350}
+      caption="Wireframe of one screen: booking an appointment. It is deliberately plain. Boxes stand for fields and buttons, and a crossed box marks where a picture will go. It is quick to draw and to change, and is used to check that the team and the business stakeholders picture the same screen."
+      description="Wireframe of the screen Book an appointment. At the top a title bar. On the left a field for the clinician, a field for the date, six boxes for the free times, and a button Book. Above the button, the deposit amount. On the right a crossed box where a photo of the clinician will go."
+    >
+      <rect x="170" y="10" width="380" height="330" rx="6" fill={surface} stroke={ink} strokeWidth="1.5" />
+      <line x1="170" y1="46" x2="550" y2="46" stroke={ink} strokeWidth="1.5" />
+      <Label x={190} y={28} text="Book an appointment" anchor="start" bold />
+      <Label x={190} y={66} text="Clinician" anchor="start" size={12} fill={muted} />
+      <rect x="190" y="76" width="200" height="28" fill="none" stroke={ink} strokeWidth="1" />
+      <path d="M372,87 l6,7 l6,-7" fill="none" stroke={ink} strokeWidth="1.5" />
+      <Label x={190} y={122} text="Date" anchor="start" size={12} fill={muted} />
+      <rect x="190" y="132" width="200" height="28" fill="none" stroke={ink} strokeWidth="1" />
+      {['9:00', '9:30', '10:00', '10:30', '11:00', '11:30'].map((time, i) => (
+        <g key={time}>
+          <rect x={slot(i).x} y={slot(i).y} width="76" height="26" fill={i === 2 ? planSoft : 'none'} stroke={i === 2 ? plan : ink} strokeWidth="1" />
+          <Label x={slot(i).x + 38} y={slot(i).y + 13} text={time} size={12} />
+        </g>
+      ))}
+      <rect x="436" y="76" width="96" height="96" fill="none" stroke={ink} strokeWidth="1" />
+      <path d="M436,76 L532,172 M532,76 L436,172" stroke={line} strokeWidth="1" />
+      <Label x={484} y={186} text="Photo" size={12} fill={muted} />
+      <Label x={190} y={258} text="Deposit: $20" anchor="start" size={12} />
+      <rect x="190" y="282" width="120" height="36" rx="4" fill={planSoft} stroke={plan} strokeWidth="1.5" />
+      <Label x={250} y={300} text="Book" bold />
+      <Label x={600} y={126} text={['Where the', 'picture goes']} size={12} fill={muted} />
+      <line x1="566" y1="126" x2="532" y2="126" stroke={muted} strokeWidth="1" />
+      <Label x={90} y={199} text={['Free times;', 'one is chosen']} size={12} fill={muted} />
+      <line x1="134" y1="199" x2="188" y2="199" stroke={muted} strokeWidth="1" />
+    </Frame>
+  )
+}
+
+function RiskDecisionTree() {
+  // The lesson's two suppliers. Every figure on the drawing is worked out from these.
+  const options = [
+    { name: 'Supplier A', price: 100000, chance: 0.2, delay: 50000, y: 80 },
+    { name: 'Supplier B', price: 108000, chance: 0.05, delay: 20000, y: 240 },
+  ]
+  const money = (n: number) => `$${Math.round(n).toLocaleString('en-US')}`
+  const expected = options.map((o) => o.price + o.chance * o.delay)
+  const best = expected.indexOf(Math.min(...expected))
+  return (
+    <Frame
+      width={720}
+      height={320}
+      caption="Decision tree for the supplier example above. The box is the decision, each circle is an uncertain event, and each branch carries its probability. The expected cost of a choice is its price plus probability × impact of the delay. Supplier B has the lower expected cost although its price is higher."
+      description="Decision tree with two choices. Supplier A costs 100,000 dollars with a 20 percent chance of a delay costing 50,000, so its outcomes are 150,000 or 100,000 and its expected cost is 110,000. Supplier B costs 108,000 dollars with a 5 percent chance of a delay costing 20,000, so its outcomes are 128,000 or 108,000 and its expected cost is 109,000. Supplier B has the lower expected cost."
+    >
+      <Box x={20} y={135} w={110} h={50} text={['Which', 'supplier?']} fill={planSoft} stroke={plan} />
+      {options.map((o, i) => (
+        <g key={o.name}>
+          <polyline points={`130,160 170,160 170,${o.y} 284,${o.y}`} fill="none" stroke={ink} strokeWidth="1.5" />
+          <Label x={178} y={o.y - 14} text={`${o.name}, ${money(o.price)}`} anchor="start" size={12} />
+          <circle cx="300" cy={o.y} r="16" fill={surface} stroke={ink} strokeWidth="1.5" />
+          <polyline points={`316,${o.y} 345,${o.y} 345,${o.y - 35} 515,${o.y - 35}`} fill="none" stroke={ink} strokeWidth="1.5" />
+          <polyline points={`345,${o.y} 345,${o.y + 35} 515,${o.y + 35}`} fill="none" stroke={ink} strokeWidth="1.5" />
+          <Label x={430} y={o.y - 48} text={`${Math.round(o.chance * 100)}%: delay costs ${money(o.delay)}`} size={12} />
+          <Label x={430} y={o.y + 22} text={`${Math.round((1 - o.chance) * 100)}%: no delay`} size={12} />
+          <Label x={522} y={o.y - 35} text={money(o.price + o.delay)} anchor="start" size={12} />
+          <Label x={522} y={o.y + 35} text={money(o.price)} anchor="start" size={12} />
+          <Box x={592} y={o.y - 24} w={118} h={48} text={['Expected cost', money(expected[i])]} fill={i === best ? doneSoft : surface} stroke={i === best ? done : ink} bold={i === best} />
+        </g>
+      ))}
+    </Frame>
+  )
+}
+
 export const diagrams: Record<string, ComponentType> = {
   'context-diagram': ContextDiagram,
   'process-flow': ProcessFlow,
@@ -544,4 +749,10 @@ export const diagrams: Record<string, ComponentType> = {
   'control-chart': ControlChart,
   'burnup-chart': BurnupChart,
   'use-case-diagram': UseCaseDiagram,
+  'decision-tree': DecisionTree,
+  'ecosystem-map': EcosystemMap,
+  'feature-model': FeatureModel,
+  'data-flow-diagram': DataFlowDiagram,
+  wireframe: Wireframe,
+  'risk-decision-tree': RiskDecisionTree,
 }

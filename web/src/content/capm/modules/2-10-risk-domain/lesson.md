@@ -168,6 +168,8 @@ The total suggests a contingency of about $4,000 for these two risks.
 
 Supplier B has the lower expected cost, although its price is higher.
 
+@diagram risk-decision-tree
+
 ## Plan Risk Responses: threats
 
 @source PMBOK 8, Guide 2.7.2.4; PMBOK 8, Guide section 5, Strategies for threats; The Standard for Risk Management, 4.6

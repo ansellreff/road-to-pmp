@@ -413,11 +413,38 @@ export const tests = {
     await see(page, /^Correct\.$/)
   },
 
+  async 'matching on a tablet: an answer is dragged onto an item with a finger'(page) {
+    await page.setViewportSize({ width: 820, height: 1100 })
+    await page.goto('/capm/question-types')
+    await see(page, 'Give each numbered item its answer.')
+    // A finger goes down on the answer "Value", moves to item 3 and lifts.
+    const from = await page.locator('[data-answer]', { hasText: /Value$/ }).boundingBox()
+    const to = await page.locator('[data-item="3"]').boundingBox()
+    await page.evaluate(
+      ([from, to]) => {
+        const at = (box) => ({ clientX: box.x + box.width / 2, clientY: box.y + box.height / 2 })
+        const event = (type, box) => new PointerEvent(type, { bubbles: true, pointerType: 'touch', pointerId: 7, ...at(box) })
+        const answer = document.elementFromPoint(at(from).clientX, at(from).clientY).closest('[data-answer]')
+        answer.dispatchEvent(event('pointerdown', from))
+        const half = { x: (from.x + to.x) / 2, y: (from.y + to.y) / 2, width: 10, height: 10 }
+        window.dispatchEvent(event('pointermove', half))
+        window.dispatchEvent(event('pointermove', to))
+        window.dispatchEvent(event('pointerup', to))
+      },
+      [from, to],
+    )
+    await page.locator('[data-item="3"]').getByText('Value', { exact: true }).waitFor()
+    expect((await page.getByText('No answer yet').count()) === 3, 'the dragged answer went to more than one item')
+  },
+
   async 'question types on a phone: tap an item, tap an answer; nothing wider than the screen except the drawing'(page) {
     await page.setViewportSize({ width: 390, height: 800 })
     await page.goto('/capm/question-types')
-    await see(page, 'Give each numbered item its answer.')
+    await see(page, 'Select an item, then choose its answer from the list that opens under it.')
+    // The answers open inside the item being answered, so they are always next to it.
+    expect((await page.locator('[data-item="1"] [data-answer]').count()) === 5, 'the answers are not under the first item')
     await pair(page, ['Output', 'Outcome', 'Benefit', 'Disbenefit', 'Value'])
+    expect((await page.locator('[data-answer]').count()) === 0, 'the answers stay open when every item has one')
     await button(page, 'Check answer').click()
     await see(page, /^Correct\.$/)
     const fits = () => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)

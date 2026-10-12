@@ -70,6 +70,9 @@ Certified Associate in Project Management. Built and online; **being finished** 
 | 2026-10-11 | **Open items of Sessions 32 to 35 closed**, at your request. (1) Which tool belongs to which process: read from all 49 figures by script, and module 1.12 now has a table "The tools that mark each process". (2) Develop Project Charter's definition read: it agrees. (3) Chapter 5 of the practice guide read in full: one note in module 4.7 was incomplete (three transition strategies named, the guide has four) and is corrected. (4) The practice guide's page 111 read. (5) Its 41 case study pages scanned for any tool or artifact name the course lacks: none. (6) The lesson sections behind the questions written without a full re-read (modules 1.2, 1.3, 1.10) read: the questions agree with them. (7) The four Domain 3 quizzes under 20 brought to 20. **Every module quiz in the course now has at least 20 questions.** Bank: 1,151 questions, 1,339 flashcards. | You: `upload.bat`. Next: Session 36 |
 | 2026-10-11 | **Session 36 done: the rules for the real exam's question types.** Matching, hot spot and comic strip questions can now be stored, loaded, put into exams, marked, saved and synced, and the checker and exam builder understand them. Nothing you see has changed yet: there are no such questions and no screens for them until Session 37. The 21 click tests pass unchanged, and no content file changed. | Next: Session 37, the screens and about 110 questions |
 | 2026-10-13 | **Session 37 done: the screens and questions for the real exam's question types.** Matching, hot spot and comic strip questions can be answered in module quizzes, practice and both exam modes, by mouse, by touch and by keyboard. 123 questions were written for them (64 matching, 30 hot spot, 29 comic strip), on 12 drawings, 9 of them new. A page "Question types" lets you try each kind. Mock exam 6 has the mix of the real exam. The bank is 1,274 questions and 6 mock exams. | Next: Session 38, the drawings of module 4.5 |
+| 2026-10-13 | **Left open by Session 37, now done.** A matching answer can be dragged with a finger; on a phone the answers open under the item being answered, so nothing is scrolled to. | |
+| 2026-10-13 | **Session 38 done: drawings.** Module 4.5 has five new drawings (decision tree, ecosystem map, feature model, data flow diagram, wireframe) and module 2.10 has the decision tree of its supplier example. The course has 19 lesson drawings. | |
+| 2026-10-13 | **Session 39 done: CAPM closed.** Every check, the build and the 28 tests pass. Final counts and the list of what stays open are in the last section of this file. | PMP resumes at PMP Session 2 |
 
 ## Roadmap to a complete CAPM course
 
@@ -108,8 +111,8 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 35 | Deeper accuracy check: *Process Groups: A Practice Guide*, the 49 processes, against modules 1.12 and 2.1 to 2.11 |
 | ✅ | 36 | Real exam question types, the rules: matching, hot spot and comic strip stored, marked, saved, synced and checked |
 | ✅ | 37 | Real exam question types, the screens and the questions: 64 matching, 30 hot spot, 29 comic strip; a page to try them; Mock exam 6 with the real mix |
-| ⬜ | 38 | Drawings in module 4.5: decision tree, ecosystem map, feature model, data flow diagram, wireframe |
-| ⬜ | 39 | Close CAPM: all checks, final counts, each open item marked closed or left open with the reason |
+| ✅ | 38 | Drawings: five in module 4.5 (decision tree, ecosystem map, feature model, data flow diagram, wireframe) and the supplier decision tree in module 2.10 |
+| ✅ | 39 | CAPM closed: all checks, final counts, each open item marked closed or left open with the reason |
 
 Every content session ends with the source linker (`tools/link_sources.py`), the content checker (`tools/check_content.py`) and a build passing.
 
@@ -936,3 +939,59 @@ The CAPM outline names three kinds of question beside multiple choice: drag-and-
 - Three new click tests: matching by drag, by click and by keyboard, a wrong matching answer, hot spot by mouse and keyboard, a comic strip; the same at phone width with a check that nothing is wider than the screen; and Mock exam 6 in real exam mode, where a matching question stays "unanswered" until complete and its saved answer survives leaving and returning.
 - The quiz test now answers every type it meets.
 - The 24 older tests pass, and I looked at the screens in light and dark, at PC and phone widths.
+
+## Session 38: drawings, as built
+
+| Drawing | Where | What it shows |
+|---|---|---|
+| Decision tree | Module 4.5, rule models | One business rule of the clinic (when a deposit is required) as questions, branches and outcomes |
+| Ecosystem map | Module 4.5, scope models | Six systems and their links, including two links that do not touch the booking system, which is what makes it wider than the context diagram above it |
+| Feature model | Module 4.5, scope models | The solution's features and sub-features as a tree |
+| Data flow diagram | Module 4.5, data models | External entities, two processes and a data store, with every flow named |
+| Wireframe | Module 4.5, interface models | One plain screen, with a crossed box where a picture will go |
+| Decision tree with numbers | Module 2.10, quantitative analysis | The lesson's two suppliers: probabilities, outcomes and expected costs |
+
+- All are original examples on the clinic booking system used through the course; none copies a figure from a book.
+- **A difference from the plan.** The plan put a decision tree "with the lesson's own numbers" in module 4.5. Module 4.5 teaches the decision tree as a rule model, which has no numbers; the numbers belong to the supplier example in module 2.10. Both were drawn. In the second, every figure on the drawing is worked out in the code from the lesson's four inputs, so the drawing cannot disagree with its own arithmetic: 100,000 + 0.20 × 50,000 = 110,000 and 108,000 + 0.05 × 20,000 = 109,000, as in the lesson.
+- Each was looked at in light or dark; two overlaps were found and corrected (issue 194).
+
+## Session 39: CAPM closed
+
+**Final counts**
+
+| | |
+|---|---|
+| Modules | 39, in the four domains of the exam outline |
+| Questions | 1,274: 1,151 multiple choice (711 of all questions are scenarios), 64 matching, 30 hot spot, 29 comic strip |
+| Flashcards | 1,339 |
+| Mock exams | 6 of 150 questions; no question is in two. Mock exams 4 and 5 are unseen; Mock exam 6 has the real exam's question types |
+| Module quizzes | Every one shows at least 21 questions |
+| Lesson drawings | 19, and 9 more made for hot spot questions |
+| Exam outline | 60 of 60 items covered |
+| Source links | 829 distinct links, every one resolving to a page of a book in your folder |
+| Checks | Content, links, worked examples (105 calculations), contrast, publish check, 62 rule checks, 28 click tests: all pass |
+
+**What "finished" means here.** Everything that was planned for CAPM is built, checked by the tools above and committed. It does not mean the course has been proven against the real exam, which nobody outside PMI can do.
+
+**Open items, each closed or left open**
+
+| Item | State |
+|---|---|
+| Thin outline item (Domain 1, task 4) | Closed, Session 32 |
+| Domain 1 quizzes under 20 | Closed, Session 32; Domain 3 in the follow-up |
+| Deeper accuracy check of Domains 2 and 4 | Closed, Sessions 33 to 35 and their follow-up |
+| The real exam's question types | Closed, Sessions 36 and 37 |
+| Dragging by touch; phone layout of matching | Closed in this turn |
+| Remaining drawings | Closed, Session 38 |
+| Compiled Python files were in the repository | Closed: removed from it and ignored |
+| Four links reported "on a book's fallback page" | Checked and left: two are glossary terms that really are on the glossary's first page, two are references to a whole book |
+| Whether my questions resemble the real exam's wording and difficulty | **Left open.** The real questions are not public. |
+| PMI's marking of matching, and the share of each question type | **Left open.** Not published. Here: all or nothing, and about 15% in Mock exam 6. |
+| Animation questions | **Left open, by decision.** A comic strip covers the same kind of question. |
+| The two commercial textbooks among the exam's references | **Left open.** Used where a lesson needed them, not read page by page. |
+| *Process Groups: A Practice Guide*: its data flow diagrams, and a line-by-line reading of its lists of inputs, tools and outputs | **Left open.** The 49 processes were checked by definition, output and marking tools in Session 35. |
+| Case study pages of *Business Analysis for Practitioners* | **Left open.** Scanned by script for missing terms, not read. |
+| The 123 questions of Session 37 | **Left open in part.** Written from the lessons, which were checked against the books; the questions themselves were not re-read against the books. |
+| A seventh mock exam | **Not possible now.** Domain 4 has no multiple choice question left that is in no exam. |
+
+**After this:** PMP resumes at PMP Session 2 (the exam engine). The matching, hot spot and comic strip screens built here are the ones PMP will use.

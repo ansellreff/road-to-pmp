@@ -22,8 +22,8 @@ How they are kept:
 
 | | Certification | State | Next |
 |---|---|---|---|
-| 🟡 | CAPM | **Being finished.** Built and online: 39 modules, 1,274 questions, 1,339 flashcards, 6 mock exams. Sessions 32 to 35 closed the thin outline item, the small Domain 1 quizzes and the deeper accuracy check. Sessions 36 and 37 added the real exam's question types: matching, hot spot and comic strip, with 123 questions and Mock exam 6. Still open, Sessions 38 and 39: drawings and closing. | CAPM Session 38 |
-| ⏸️ | PMP | **Paused until CAPM is finished.** PMP Session 1 done: sources read, 34 modules mapped to the outline, course skeleton in the app. | PMP Session 2, the exam engine |
+| ✅ | CAPM | **Finished as planned** (2026-10-13). 39 modules, 1,274 questions including matching, hot spot and comic strip, 1,339 flashcards, 6 mock exams, 19 lesson drawings. What stays open, and why, is listed at the end of `docs/CAPM-PLAN.md`. | None planned |
+| 🟡 | PMP | **Next.** It was paused until CAPM was finished, which it now is. PMP Session 1 done: sources read, 34 modules mapped to the outline, course skeleton in the app. Matching and hot spot screens already exist, built for CAPM. | PMP Session 2, the exam engine |
 | ⬜ | PMI-ACP | Not started | Needs its Exam Content Outline in the materials folder |
 | ⬜ | PMI-SP | Not started | Needs its Exam Content Outline in the materials folder |
 
@@ -31,8 +31,8 @@ How they are kept:
 
 Study for and pass PMI certifications using my own platform, in this order:
 
-1. **CAPM** (Certified Associate in Project Management): current focus, being finished
-2. PMP (Project Management Professional): started, paused
+1. CAPM (Certified Associate in Project Management): finished as planned on 2026-10-13
+2. **PMP** (Project Management Professional): next, resuming at PMP Session 2
 3. PMI-ACP (Agile Certified Practitioner)
 4. PMI-SP (Scheduling Professional)
 

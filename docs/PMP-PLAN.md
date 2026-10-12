@@ -1,6 +1,6 @@
 # PMP: plan and progress
 
-Project Management Professional. Started 2026-10-11; **paused since the same day until CAPM is finished**. Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
+Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; **CAPM was closed on 2026-10-13, so PMP resumes at PMP Session 2**. Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
 
 ## Status log
 
@@ -9,6 +9,7 @@ Project Management Professional. Started 2026-10-11; **paused since the same day
 | 2026-10-11 | **PMP started. Plan approved; PMP Session 1 (sources and map) done except the reference list.** The PMP Exam Content Outline (July 2026 exam) is extracted and read: 180 questions in 240 minutes, two breaks, People 33% / Process 41% / Business Environment 26%, 26 tasks, about 40% predictive and 60% agile or hybrid. The instructor's course contents are read from the screenshot (273 lectures; based on the PMBOK Guide 8th Edition and the Agile Practice Guide). The module list grew from 32 to 34 after that reading. The PMP course exists in the app with all 34 modules marked "not written yet"; CAPM is unchanged and the 21 click tests pass. | **You:** confirm the module list; save the PMP reference list page from PMI.org into the materials folder (PMI.org refused my request). Next: PMP Session 2, the exam engine |
 | 2026-10-11 | **Reference list received and read; PMP Session 1 closed.** You saved a screenshot of PMI.org's "Exam References" page. It lists two PMI standards (the Agile Practice Guide and the PMBOK Guide) and eight textbooks, and says these are the ten sources most often cited by the people who write the questions. Neither standard is given an edition. **The tracker was split at your request:** an overview at the root, and a plan file and an issues file for each certification in `docs/`. | Plan mode: decide what comes next |
 | 2026-10-11 | **PMP paused; numbering restarted.** You asked whether CAPM was 100% finished. It was not, and you chose to finish it first. You also said the separate files were meant to restart the session numbers, so PMP's sessions are now 1 to 15 (were 32 to 46) and its issues PMP-1 onward (were 152 onward). The design for PMP Session 2 is kept below as planned work. | CAPM Sessions 32 to 39 (see `CAPM-PLAN.md`). PMP resumes at PMP Session 2 |
+| 2026-10-13 | **CAPM closed; PMP can resume.** While finishing CAPM, the screens and rules for matching, hot spot and comic strip questions were built (CAPM Sessions 36 and 37). PMP Session 2 therefore has less to build than its planned design says: multiple response, case sets, the approach tag and the exam in three sections with two breaks. No PMP work was done. | Next: PMP Session 2, starting in plan mode |
 
 ## Roadmap
 

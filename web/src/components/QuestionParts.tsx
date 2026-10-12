@@ -1,4 +1,4 @@
-import { useState, type DragEvent, type MouseEvent, type ReactNode } from 'react'
+import { useEffect, useRef, useState, type DragEvent, type MouseEvent, type PointerEvent, type ReactNode } from 'react'
 import { decodeMatch, encodeMatch, matchResults, type MatchChoices } from '../lib/answers'
 import type { Question, StripPanel } from '../lib/content'
 import { btnPrimary, note } from '../lib/ui'
@@ -107,10 +107,26 @@ const release = (event: MouseEvent<HTMLElement>) => {
   if (event.detail > 0) event.currentTarget.blur()
 }
 
+/** True on a screen wide enough for the items and the answers to stand side by side. */
+function useWide(): boolean {
+  const query = '(min-width: 768px)'
+  const [wide, setWide] = useState(() => typeof window === 'undefined' || window.matchMedia(query).matches)
+  useEffect(() => {
+    const media = window.matchMedia(query)
+    const update = () => setWide(media.matches)
+    media.addEventListener('change', update)
+    return () => media.removeEventListener('change', update)
+  }, [])
+  return wide
+}
+
 /**
  * A matching question: every item on the left gets one answer from the right.
- * Three ways to pair them: drag an answer onto an item; select an item, then an answer;
- * or the keyboard (a number for the item, a letter for the answer).
+ * Three ways to pair them: drag an answer onto an item (with the mouse or a finger);
+ * select an item, then an answer; or the keyboard (a number for the item, a letter for the answer).
+ *
+ * On a wide screen the answers stand beside the items. On a phone they open under the
+ * item being answered, so nothing has to be scrolled to.
  *
  * Where each answer is final (quizzes, practice), the pairs are kept here until "Check answer".
  * Where answers can be changed (real exam mode), every change is saved at once.
@@ -131,6 +147,10 @@ export function useMatchBoard(props: {
   const [draft, setDraft] = useState<MatchChoices>(saved)
   // The item that the next answer goes to. Unless one is selected, it is the first without an answer.
   const [selected, setSelected] = useState<number | null>(null)
+  const wide = useWide()
+  // An answer being dragged with a finger or pen: where it is now. The mouse uses the browser's own dragging.
+  const [carried, setCarried] = useState<{ option: number; x: number; y: number } | null>(null)
+  const dragged = useRef(false)
   if (question.type !== 'match') return null
 
   const open = Boolean(onPick) && !revealed
@@ -168,6 +188,29 @@ export function useMatchBoard(props: {
     event.preventDefault()
     give(item, Number(found[1]))
   }
+  /** Dragging with a finger or pen: the answer follows the finger and is given to the item it is let go over. */
+  const carry = (option: number) => (event: PointerEvent) => {
+    if (event.pointerType === 'mouse') return
+    const from = { x: event.clientX, y: event.clientY }
+    dragged.current = false
+    const move = (e: globalThis.PointerEvent) => {
+      if (!dragged.current && Math.hypot(e.clientX - from.x, e.clientY - from.y) < 10) return
+      dragged.current = true
+      setCarried({ option, x: e.clientX, y: e.clientY })
+    }
+    const end = (e: globalThis.PointerEvent) => {
+      window.removeEventListener('pointermove', move)
+      window.removeEventListener('pointerup', end)
+      window.removeEventListener('pointercancel', end)
+      setCarried(null)
+      if (!dragged.current || e.type === 'pointercancel') return
+      const item = document.elementFromPoint(e.clientX, e.clientY)?.closest<HTMLElement>('[data-item]')
+      if (item) give(Number(item.dataset.item) - 1, option)
+    }
+    window.addEventListener('pointermove', move)
+    window.addEventListener('pointerup', end)
+    window.addEventListener('pointercancel', end)
+  }
   const check = open && !changeable && complete ? () => onPick?.(encodeMatch(draft)) : undefined
 
   const keys: KeyActions = {}
@@ -179,14 +222,52 @@ export function useMatchBoard(props: {
     keys.Backspace = active === null ? undefined : () => clear(active)
   }
 
+  const answers = (
+    <ul className="space-y-2.5" aria-label="Answers">
+      {question.options.map((option, i) => {
+        const usedBy = choices.indexOf(i)
+        return (
+          <li key={i}>
+            <button
+              draggable
+              onDragStart={drag(i)}
+              onPointerDown={wide ? carry(i) : undefined}
+              onClick={(event) => {
+                // The click that ends a drag by finger is not a choice.
+                if (dragged.current) dragged.current = false
+                else give(active, i)
+                release(event)
+              }}
+              data-answer={letter(i)}
+              className={`press flex min-h-14 w-full cursor-grab items-baseline gap-3 rounded-md border px-4 py-3 text-left text-lg leading-relaxed ${wide ? 'touch-none' : ''} ${
+                usedBy === -1 ? 'border-edge bg-surface hover:border-plan hover:bg-plan-soft' : 'border-line bg-surface text-muted'
+              }`}
+            >
+              <span className="font-bold">{letter(i)}</span>
+              <span className="min-w-0 flex-1">{option}</span>
+              {usedBy !== -1 && <span className="text-sm whitespace-nowrap">with {usedBy + 1}</span>}
+            </button>
+          </li>
+        )
+      })}
+    </ul>
+  )
+  const checkButton = !changeable && (
+    <button onClick={check} disabled={!check} className={`${btnPrimary} mt-4`}>
+      Check answer
+    </button>
+  )
+
   const board = (
     <div className="mt-5">
       {open && (
         <p className={`${note} mb-3`}>
-          Give each numbered item its answer. Drag an answer onto an item, or select the item and then the answer.
+          {wide
+            ? 'Give each numbered item its answer. Drag an answer onto an item, or select the item and then the answer.'
+            : 'Give each numbered item its answer. Select an item, then choose its answer from the list that opens under it.'}
         </p>
       )}
-      <div className={open ? 'grid gap-x-6 gap-y-5 md:grid-cols-2' : ''}>
+      <div className={open && wide ? 'grid grid-cols-2 gap-x-6' : ''}>
         <ol className="space-y-2.5">
           {left.map((item, i) => {
             const choice = choices[i]
@@ -247,45 +328,28 @@ export function useMatchBoard(props: {
                     </span>
                   )}
                 </div>
+                {open && !wide && active === i && <div className="border-t border-plan px-3 py-3">{answers}</div>}
               </li>
             )
           })}
         </ol>
-        {open && (
+        {open && wide && (
           <div>
-            <ul className="space-y-2.5" aria-label="Answers">
-              {question.options.map((option, i) => {
-                const usedBy = choices.indexOf(i)
-                return (
-                  <li key={i}>
-                    <button
-                      draggable
-                      onDragStart={drag(i)}
-                      onClick={(event) => {
-                        give(active, i)
-                        release(event)
-                      }}
-                      data-answer={letter(i)}
-                      className={`press flex min-h-14 w-full cursor-grab items-baseline gap-3 rounded-md border px-4 py-3 text-left text-lg leading-relaxed ${
-                        usedBy === -1 ? 'border-edge bg-surface hover:border-plan hover:bg-plan-soft' : 'border-line bg-surface text-muted'
-                      }`}
-                    >
-                      <span className="font-bold">{letter(i)}</span>
-                      <span className="min-w-0 flex-1">{option}</span>
-                      {usedBy !== -1 && <span className="text-sm whitespace-nowrap">with {usedBy + 1}</span>}
-                    </button>
-                  </li>
-                )
-              })}
-            </ul>
-            {!changeable && (
-              <button onClick={check} disabled={!check} className={`${btnPrimary} mt-4`}>
-                Check answer
-              </button>
-            )}
+            {answers}
+            {checkButton}
           </div>
         )}
+        {open && !wide && checkButton}
       </div>
+      {carried && (
+        <div
+          aria-hidden="true"
+          className="pointer-events-none fixed z-40 max-w-xs -translate-x-1/2 -translate-y-full rounded-md border-2 border-plan bg-surface px-3 py-2 text-lg shadow-lg"
+          style={{ left: carried.x, top: carried.y - 12 }}
+        >
+          <span className="font-bold">{letter(carried.option)}</span> {question.options[carried.option]}
+        </div>
+      )}
     </div>
   )
   return { board, keys, check, pairs }

@@ -11,3 +11,6 @@ Resources from Instructor/
 node_modules/
 dist/
 *.local
+
+# Python's compiled files
+__pycache__/
