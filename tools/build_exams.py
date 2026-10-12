@@ -1,6 +1,8 @@
 """Build the fixed mock exams for a course from its quiz questions.
 
 Usage: python tools/build_exams.py [course] [--rebuild]
+       python tools/build_exams.py [course] --add            one more unseen exam
+       python tools/build_exams.py [course] --add --mixed    one more exam with the real exam's question types
 
 Each question goes into at most one exam. Every exam follows the domain weights
 of the real exam and is spread evenly over the modules of each domain. The last
@@ -135,11 +137,36 @@ def write_exams(folder: Path, exams: list[dict]) -> None:
 NOT_FOR_EXAMS = ("list of things that can be tailored", "Drexler / Sibbet", "six ways of addressing conflict")
 
 
-def add_exam(course_id: str) -> None:
-    """Add one more unseen exam from questions that are in no exam yet. The existing exams do not change.
+# In a mixed exam, the share of questions that are not plain multiple choice. PMI does not
+# publish the real share; it says only that most questions are multiple choice.
+TYPED_SHARE = 0.15
+
+
+def kind_of(question: dict) -> str:
+    if question.get("type"):
+        return question["type"]
+    return "strip" if "strip" in question else "plain"
+
+
+def take(pools: dict[str, list[str]], count: int) -> list[tuple[str, str]]:
+    """Take count questions, one module after another, the newest of each module first."""
+    taken = []
+    while len(taken) < count and any(pools.values()):
+        for name in pools:
+            if pools[name] and len(taken) < count:
+                taken.append((name, pools[name].pop()))
+    return taken
+
+
+def add_exam(course_id: str, mixed: bool = False) -> None:
+    """Add one more exam from questions that are in no exam yet. The existing exams do not change.
 
     The newest questions of each module are taken first, one module after another, so the exam
     is spread over the modules and holds the questions least likely to have been seen.
+
+    Without mixed: multiple choice only, and unseen (its questions leave the module quizzes).
+    With mixed: about 15% matching, hot spot and comic strip questions, half of them matching.
+    Its questions stay in the module quizzes, which would otherwise be left too small.
     """
     folder = CONTENT / course_id
     course = json.loads((folder / "course.json").read_text(encoding="utf-8"))
@@ -156,15 +183,20 @@ def add_exam(course_id: str) -> None:
             path = folder / "modules" / module["id"] / "quiz.json"
             questions = quizzes[module["id"]] = json.loads(path.read_text(encoding="utf-8"))
             free = [q for q in questions if (module["id"], q["id"]) not in used and not any(t in q["q"] for t in NOT_FOR_EXAMS)]
-            pools[module["id"]] = [q["id"] for q in sorted(free, key=lambda q: int(q["id"][1:]))]
-        if sum(map(len, pools.values())) < quota:
-            sys.exit(f"{domain['id']}: {sum(map(len, pools.values()))} unused questions, {quota} needed")
-        taken = 0
-        while taken < quota:
-            for name in pools:
-                if pools[name] and taken < quota:
-                    picked.append((name, pools[name].pop()))
-                    taken += 1
+            pools[module["id"]] = sorted(free, key=lambda q: int(q["id"][1:]))
+        of_kind = lambda kind: {name: [q["id"] for q in free if kind_of(q) == kind] for name, free in pools.items()}
+        typed = round(quota * TYPED_SHARE) if mixed else 0
+        wanted = {"match": typed - typed // 2, "hotspot": typed // 4, "strip": typed // 2 - typed // 4}
+        chosen = []
+        for kind, count in wanted.items():
+            got = take(of_kind(kind), count)
+            if len(got) < count:
+                sys.exit(f"{domain['id']}: {len(got)} unused {kind} questions, {count} needed")
+            chosen += got
+        plain = take(of_kind("plain"), quota - len(chosen))
+        if len(chosen) + len(plain) < quota:
+            sys.exit(f"{domain['id']}: {len(chosen) + len(plain)} unused questions, {quota} needed")
+        picked += chosen + plain
 
     by_id = {(m, q["id"]): q for m, qs in quizzes.items() for q in qs}
     rng.shuffle(picked)
@@ -174,21 +206,27 @@ def add_exam(course_id: str) -> None:
     for (module, qid), letter in zip(picked, letters):
         question = by_id[(module, qid)]
         rows.append([module, qid, option_order(question, letter, rng)])
-        question["examOnly"] = True
-    exams.append({"id": f"mock-{number}", "title": f"Mock exam {number}", "unseen": True, "questions": rows})
+        if not mixed:
+            question["examOnly"] = True
+    exams.append({"id": f"mock-{number}", "title": f"Mock exam {number}", "unseen": not mixed, **({"mixed": True} if mixed else {}), "questions": rows})
 
-    for module in {m for m, _ in picked}:
-        path = folder / "modules" / module / "quiz.json"
-        path.write_text(json.dumps(quizzes[module], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if not mixed:
+        for module in {m for m, _ in picked}:
+            path = folder / "modules" / module / "quiz.json"
+            path.write_text(json.dumps(quizzes[module], indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     write_exams(folder, exams)
-    print(f"{course_id}: Mock exam {number} added, {len(rows)} questions ({' / '.join(map(str, quotas))} by domain), all kept out of the module quizzes")
+    kinds = {}
+    for module, qid in picked:
+        kinds[kind_of(by_id[(module, qid)])] = kinds.get(kind_of(by_id[(module, qid)]), 0) + 1
+    print(f"{course_id}: Mock exam {number} added, {len(rows)} questions ({' / '.join(map(str, quotas))} by domain), {kinds}, "
+          + ("left in the module quizzes" if mixed else "all kept out of the module quizzes"))
 
 
 def main() -> None:
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     course_id = args[0] if args else "capm"
     if "--add" in sys.argv:
-        add_exam(course_id)
+        add_exam(course_id, mixed="--mixed" in sys.argv)
         return
     if (CONTENT / course_id / "exams.json").exists() and "--rebuild" not in sys.argv:
         sys.exit(f"{course_id}/exams.json already exists. Use --rebuild to replace it (this changes every exam).")

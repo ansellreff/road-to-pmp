@@ -5,8 +5,9 @@ import { moduleKey, recordAnswer, recordQuiz, useProgress } from '../lib/progres
 import { btnPrimary, btnQuiet, column, listTitle } from '../lib/ui'
 import { useLoaded } from '../lib/useLoaded'
 import Icon from './Icon'
-import Keys from './Keys'
+import Keys, { type KeyActions } from './Keys'
 import { Waiting } from './Page'
+import { HotSpot, Strip, useMatchBoard, verdict } from './QuestionParts'
 import { SourceItem } from './Sources'
 
 /**
@@ -135,6 +136,7 @@ export default function Quiz({ courseId, moduleId }: { courseId: string; moduleI
         )}
       </div>
       <QuestionView
+        key={questions[index].id}
         number={index + 1}
         question={questions[index]}
         picked={picked}
@@ -152,9 +154,10 @@ export default function Quiz({ courseId, moduleId }: { courseId: string; moduleI
 }
 
 /**
- * One question with its four options. Text is set large with open line spacing,
- * because quizzes and exams are read for hours. Right and wrong are shown by a
- * word and a mark as well as by colour.
+ * One question of any type: four options, a drawing with areas to select (hot spot),
+ * or two lists to pair (matching); a comic strip may tell the situation first.
+ * Text is set large with open line spacing, because quizzes and exams are read for
+ * hours. Right and wrong are shown by a word and a mark as well as by colour.
  */
 export function QuestionView(props: {
   number: number
@@ -172,20 +175,34 @@ export function QuestionView(props: {
   footer?: ReactNode
   /** Give the answer a moment of motion when it is revealed. Off in reviews and in real exam mode. */
   lively?: boolean
+  /** The answer can be changed until the exam is handed in, so a matching answer is saved pair by pair. Real exam mode. */
+  changeable?: boolean
 }) {
-  const { number, question, picked, revealed, onPick, onNext, onPrevious, onFlag, footer, lively = false } = props
+  const { number, question, picked, revealed, onPick, onNext, onPrevious, onFlag, footer, lively = false, changeable = false } = props
+  const match = useMatchBoard({ question, picked, revealed, onPick, changeable })
+  const hotspot = question.type === 'hotspot'
   const choose = (i: number) => (onPick && i < question.options.length ? () => onPick(i) : undefined)
-  const keys = {
-    a: choose(0), b: choose(1), c: choose(2), d: choose(3),
-    1: choose(0), 2: choose(1), 3: choose(2), 4: choose(3),
-    Enter: onNext, ArrowRight: onNext, ArrowLeft: onPrevious, f: onFlag,
-  }
   const letter = (i: number) => String.fromCharCode(65 + i)
+  const move: KeyActions = { Enter: match?.check ?? onNext, ArrowRight: onNext, ArrowLeft: onPrevious, f: onFlag }
+  let keys: KeyActions = { a: choose(0), b: choose(1), c: choose(2), d: choose(3), 1: choose(0), 2: choose(1), 3: choose(2), 4: choose(3), ...move }
+  let keyNote = 'A to D, or 1 to 4, to answer.'
+  if (match) {
+    keys = { ...match.keys, ...move }
+    keyNote = `1 to ${match.pairs} to select an item, A to ${letter(match.pairs - 1)} to give it an answer, Backspace to take the answer away.${changeable ? '' : ' Enter to check the answer.'}`
+  } else if (hotspot) {
+    keys = { ...Object.fromEntries(question.options.map((_, i) => [String(i + 1), choose(i)])), ...move }
+    keyNote = `1 to ${question.options.length} to select an area.`
+  }
+  const single = !match && !hotspot
   return (
     <div className="border-b border-line py-7">
+      {question.strip && <Strip panels={question.strip} />}
       <p className="text-xl font-semibold leading-relaxed">
         {number}. {question.q}
       </p>
+      {match?.board}
+      {hotspot && <HotSpot question={question} picked={picked} revealed={revealed} onPick={onPick} />}
+      {single && (
       <div className="mt-5 space-y-2.5">
         {question.options.map((option, i) => {
           const correct = i === question.answer
@@ -227,13 +244,14 @@ export function QuestionView(props: {
           )
         })}
       </div>
+      )}
       {revealed && (
         <div className={`mt-5 border-l-4 border-ink pl-4 ${lively ? 'reveal' : ''}`}>
           {picked !== null && (
             <p className={`font-semibold ${picked === question.answer ? 'text-done' : 'text-critical'}`}>
-              {picked === question.answer
-                ? 'Correct.'
-                : `Not correct. The right answer is ${letter(question.answer)}.`}
+              {single && picked !== question.answer
+                ? `Not correct. The right answer is ${letter(question.answer)}.`
+                : verdict(question, picked)}
             </p>
           )}
           <p className="mt-1 font-reading text-lg leading-relaxed">{question.explanation}</p>
@@ -254,7 +272,7 @@ export function QuestionView(props: {
       {footer}
       {(onPick || onNext) && (
         <Keys actions={keys}>
-          A to D, or 1 to 4, to answer. Enter or the right arrow for the next question
+          {keyNote} Enter or the right arrow for the next question
           {onFlag ? ', the left arrow for the previous one. F to flag.' : '.'}
         </Keys>
       )}

@@ -663,5 +663,93 @@
         "label": "Process Groups: A Practice Guide, section 10, Technical performance analysis"
       }
     ]
+  },
+  {
+    "id": "q34",
+    "q": "Match each action with the strategy for a threat.",
+    "type": "match",
+    "left": [
+      "A risky feature is removed from the scope",
+      "The shipment is insured",
+      "A prototype is built and more tests are run",
+      "A contingency reserve is set aside and nothing else is done",
+      "A company-policy risk is passed up to the program"
+    ],
+    "right": [
+      "Avoid",
+      "Transfer",
+      "Mitigate",
+      "Accept",
+      "Escalate"
+    ],
+    "explanation": "Avoiding brings the probability to zero. Transferring shifts ownership and impact to a third party, usually for a premium. Mitigating lowers probability or impact. Accepting takes no proactive action; setting aside a reserve is active acceptance. Escalating passes on a threat outside the project's scope or authority.",
+    "ref": "PMBOK 8, Guide 2.7.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q35",
+    "q": "Match each action with the strategy for an opportunity.",
+    "type": "match",
+    "left": [
+      "The most talented people are assigned, so the early finish is certain",
+      "A joint venture is formed with a partner able to capture it",
+      "Resources are added to raise the chance of an early finish",
+      "A possible discount is taken if it comes, with no action"
+    ],
+    "right": [
+      "Exploit",
+      "Share",
+      "Enhance",
+      "Accept"
+    ],
+    "explanation": "Exploiting makes sure the opportunity happens. Sharing gives ownership to a third party best able to capture it. Enhancing raises the probability or the impact. Accepting takes the benefit if it arrives.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for opportunities",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 307,
+        "label": "PMBOK 8, Guide section 5, Strategies for opportunities"
+      }
+    ]
+  },
+  {
+    "id": "q36",
+    "q": "Which risk response strategy is this?",
+    "strip": [
+      {
+        "who": "Project manager",
+        "says": "The laboratory equipment could be damaged on its way here."
+      },
+      {
+        "who": "Sponsor",
+        "says": "What do you propose?"
+      },
+      {
+        "who": "Project manager",
+        "says": "We insure the shipment. If it is damaged, the insurer pays."
+      }
+    ],
+    "options": [
+      "Transfer",
+      "Avoid",
+      "Mitigate",
+      "Accept"
+    ],
+    "answer": 0,
+    "explanation": "Transferring shifts the ownership of a threat to a third party, who bears the impact; it usually costs a premium. Insurance is the classic example. The threat itself is neither removed nor made less likely.",
+    "ref": "PMBOK 8, Guide 2.7.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.4"
+      }
+    ]
   }
 ]

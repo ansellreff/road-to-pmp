@@ -750,5 +750,73 @@
         "label": "Business Analysis for Practitioners, Glossary"
       }
     ]
+  },
+  {
+    "id": "q38",
+    "q": "Match each description with the technique for finding root causes.",
+    "type": "match",
+    "left": [
+      "Asking why again and again until the cause is clear",
+      "The problem at the head, with causes grouped by category",
+      "Bars in descending order: the few causes behind most of the problem",
+      "Each problem with its root causes and the capability needed"
+    ],
+    "right": [
+      "Five whys",
+      "Fishbone diagram",
+      "Pareto diagram",
+      "Capability table"
+    ],
+    "explanation": "Five whys digs into one chain of causes. A fishbone diagram collects possible causes by category. A Pareto diagram shows which few causes matter most. A capability table links problems and root causes to the capabilities that would address them.",
+    "ref": "PMI Guide to Business Analysis, 4.2.2.9",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 115,
+        "label": "PMI Guide to Business Analysis, 4.2.2.9"
+      }
+    ]
+  },
+  {
+    "id": "q39",
+    "q": "Which technique is the analyst using?",
+    "strip": [
+      {
+        "who": "Analyst",
+        "says": "Why are the invoices late?"
+      },
+      {
+        "who": "Clerk",
+        "says": "Because approval takes a long time."
+      },
+      {
+        "who": "Analyst",
+        "says": "Why does approval take a long time?"
+      },
+      {
+        "who": "Clerk",
+        "says": "Because the approver receives them only once a week."
+      },
+      {
+        "who": "Analyst",
+        "says": "And why only once a week?"
+      }
+    ],
+    "options": [
+      "Five whys",
+      "A fishbone diagram",
+      "A Pareto diagram",
+      "A capability table"
+    ],
+    "answer": 0,
+    "explanation": "Five whys keeps asking why a problem occurs until the root cause is clear, typically within five rounds. A fishbone diagram would lay out many possible causes by category.",
+    "ref": "PMI Guide to Business Analysis, 4.2.2.9",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 115,
+        "label": "PMI Guide to Business Analysis, 4.2.2.9"
+      }
+    ]
   }
 ]

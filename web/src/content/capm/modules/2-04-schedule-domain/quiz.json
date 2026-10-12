@@ -583,5 +583,89 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q29",
+    "q": "Match each example with the logical relationship between the two activities.",
+    "type": "match",
+    "left": [
+      "The operating system is installed after the hardware is assembled",
+      "Editing cannot finish until writing has finished",
+      "Leveling concrete cannot start until pouring has started",
+      "Delivery of equipment cannot finish until its installation has started"
+    ],
+    "right": [
+      "Finish-to-start",
+      "Finish-to-finish",
+      "Start-to-start",
+      "Start-to-finish"
+    ],
+    "explanation": "The first word is about the predecessor and the second about the successor. Finish-to-start: the successor starts after the predecessor finishes. Start-to-finish, the rarest, means the successor cannot finish until the predecessor has started.",
+    "ref": "PMBOK 8, Guide section 5, Precedence diagramming method",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 290,
+        "label": "PMBOK 8, Guide section 5, Precedence diagramming method"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Match each example with the type of dependency.",
+    "type": "match",
+    "left": [
+      "The foundation must be built before the walls",
+      "Plumbing is finished before electrical work, by preference",
+      "Work waits for a government permit"
+    ],
+    "right": [
+      "Mandatory",
+      "Discretionary",
+      "External"
+    ],
+    "explanation": "A mandatory dependency comes from law, contract or the nature of the work. A discretionary one is a preferred order, although another would work. An external one depends on something outside the project.",
+    "ref": "PMBOK 8, Guide section 5, Dependency determination and integration",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 271,
+        "label": "PMBOK 8, Guide section 5, Dependency determination and integration"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Which kind of dependency has the site lead described?",
+    "strip": [
+      {
+        "who": "Scheduler",
+        "says": "Could we lay the cables before the walls are painted?"
+      },
+      {
+        "who": "Site lead",
+        "says": "We could. No rule and no physical reason stops us."
+      },
+      {
+        "who": "Site lead",
+        "says": "We paint first because experience tells us it gives a cleaner result."
+      }
+    ],
+    "options": [
+      "A mandatory dependency",
+      "A discretionary dependency",
+      "An external dependency",
+      "A start-to-finish relationship"
+    ],
+    "answer": 1,
+    "explanation": "A discretionary dependency, also called soft or preferred logic, is an order chosen because it is good practice, although another order would work. A mandatory dependency comes from law, a contract or the nature of the work.",
+    "ref": "PMBOK 8, Guide section 5, Dependency determination and integration",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 271,
+        "label": "PMBOK 8, Guide section 5, Dependency determination and integration"
+      }
+    ]
   }
 ]

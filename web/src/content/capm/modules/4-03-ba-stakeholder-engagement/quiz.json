@@ -690,5 +690,95 @@
         "label": "Business Analysis for Practitioners, Plan Business Analysis Work"
       }
     ]
+  },
+  {
+    "id": "q35",
+    "q": "Match each description with the role in a RACI model.",
+    "type": "match",
+    "left": [
+      "Performs the task",
+      "Answers for the task and is its final approver",
+      "Gives information needed to complete the task",
+      "Is affected by the task, so is kept up to date"
+    ],
+    "right": [
+      "Responsible",
+      "Accountable",
+      "Consult",
+      "Inform"
+    ],
+    "explanation": "Only one role is accountable for a task. Those consulted give input before or during the work; those informed are told about it.",
+    "ref": "PMI Guide to Business Analysis, 5.2.2.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 163,
+        "label": "PMI Guide to Business Analysis, 5.2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q36",
+    "q": "Match each description with the transition strategy.",
+    "type": "match",
+    "left": [
+      "Everyone moves to the new solution at the same moment",
+      "The solution is rolled out region by region",
+      "Old and new run together until a final cutover date",
+      "Old and new continue side by side, with no end date"
+    ],
+    "right": [
+      "Massive one-time cutover",
+      "Staged release",
+      "Time-boxed coexistence",
+      "Permanent coexistence"
+    ],
+    "explanation": "A one-time cutover moves everyone at once. A staged release goes segment by segment. In time-boxed coexistence both solutions run until a set date; in permanent coexistence both remain.",
+    "ref": "PMI Guide to Business Analysis, 5.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 180,
+        "label": "PMI Guide to Business Analysis, 5.5"
+      }
+    ]
+  },
+  {
+    "id": "q37",
+    "q": "How are the sponsor and the experts shown in the RACI model for this task?",
+    "strip": [
+      {
+        "who": "Analyst",
+        "says": "Who signs off the requirements document?"
+      },
+      {
+        "who": "Project manager",
+        "says": "The sponsor. She answers for it and gives the final approval."
+      },
+      {
+        "who": "Analyst",
+        "says": "And the subject matter experts?"
+      },
+      {
+        "who": "Project manager",
+        "says": "They give you the information you need to write it."
+      }
+    ],
+    "options": [
+      "Sponsor R, experts I",
+      "Sponsor A, experts C",
+      "Sponsor C, experts A",
+      "Sponsor I, experts R"
+    ],
+    "answer": 1,
+    "explanation": "Accountable (A) is the one who answers for the completion and quality of the task and is its final approver; only one role is accountable. Consult (C) marks those who give information needed to complete the task.",
+    "ref": "PMI Guide to Business Analysis, 5.2.2.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 163,
+        "label": "PMI Guide to Business Analysis, 5.2.2.3"
+      }
+    ]
   }
 ]

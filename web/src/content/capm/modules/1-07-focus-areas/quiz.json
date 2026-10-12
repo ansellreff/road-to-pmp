@@ -587,5 +587,33 @@
         "label": "PMBOK 8, Standard 4.5.6"
       }
     ]
+  },
+  {
+    "id": "q30",
+    "q": "Match each set of typical artifacts with the Focus Area that produces it.",
+    "type": "match",
+    "left": [
+      "Project charter and stakeholder register",
+      "Project management plan, or a product backlog",
+      "Deliverables",
+      "Performance reports and change requests",
+      "Final acceptance and handover to operations"
+    ],
+    "right": [
+      "Initiating",
+      "Planning",
+      "Executing",
+      "Monitoring and Controlling",
+      "Closing"
+    ],
+    "explanation": "Initiating defines and authorizes; Planning sets the course of action; Executing completes the work; Monitoring and Controlling tracks progress and initiates changes; Closing formally completes the project, phase or contract.",
+    "ref": "PMBOK 8, Standard 4.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 92,
+        "label": "PMBOK 8, Standard 4.5"
+      }
+    ]
   }
 ]

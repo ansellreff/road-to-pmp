@@ -830,5 +830,245 @@
         "label": "Process Groups: A Practice Guide, section 7"
       }
     ]
+  },
+  {
+    "id": "q42",
+    "q": "Match each process group with what its processes do.",
+    "type": "match",
+    "left": [
+      "Initiating",
+      "Planning",
+      "Executing",
+      "Monitoring and Controlling",
+      "Closing"
+    ],
+    "right": [
+      "Obtain authorization to start a project or phase",
+      "Establish the scope and define the course of action",
+      "Complete the work defined in the project management plan",
+      "Track, review and regulate progress",
+      "Formally complete the project, phase or contract"
+    ],
+    "explanation": "The five process groups are defined by what their processes do, not by when they occur: authorize, plan, do the work, track and regulate it, and formally close.",
+    "ref": "Process Groups: A Practice Guide, 1.7.5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 42,
+        "label": "Process Groups: A Practice Guide, 1.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q43",
+    "q": "Match each statement with what it is.",
+    "type": "match",
+    "left": [
+      "12 of 20 activities are finished and $40,000 has been spent",
+      "The project is 10% behind schedule",
+      "The monthly status dashboard sent to the sponsor"
+    ],
+    "right": [
+      "Work performance data",
+      "Work performance information",
+      "Work performance report"
+    ],
+    "explanation": "Data are raw observations and measurements. Information is data analyzed in context, for example compared with the plan. A report compiles information for a purpose, such as prompting a decision.",
+    "ref": "Process Groups: A Practice Guide, 1.8",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 44,
+        "label": "Process Groups: A Practice Guide, 1.8"
+      }
+    ]
+  },
+  {
+    "id": "q44",
+    "q": "Some tools mark one planning process. Match each tool with its process.",
+    "type": "match",
+    "left": [
+      "Decomposition into work packages",
+      "Precedence diagramming method",
+      "Prompt lists",
+      "Product analysis",
+      "Source selection analysis"
+    ],
+    "right": [
+      "Create WBS",
+      "Sequence Activities",
+      "Identify Risks",
+      "Define Scope",
+      "Plan Procurement Management"
+    ],
+    "explanation": "Decomposition down to work packages belongs to Create WBS, the precedence diagramming method to Sequence Activities, prompt lists to Identify Risks, product analysis to Define Scope, and source selection analysis to Plan Procurement Management.",
+    "ref": "Process Groups: A Practice Guide, section 5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 98,
+        "label": "Process Groups: A Practice Guide, section 5"
+      }
+    ]
+  },
+  {
+    "id": "q45",
+    "q": "The sponsor signs the project charter and the first stakeholders are identified. Select the process group this work belongs to.",
+    "type": "hotspot",
+    "diagram": "process-groups-figure",
+    "options": [
+      "Initiating",
+      "Planning",
+      "Executing",
+      "Closing",
+      "Monitoring and Controlling"
+    ],
+    "answer": 0,
+    "explanation": "The Initiating process group has two processes: Develop Project Charter and Identify Stakeholders. They define a new project or phase and obtain the authorization to start.",
+    "ref": "Process Groups: A Practice Guide, 1.7.5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 42,
+        "label": "Process Groups: A Practice Guide, 1.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q46",
+    "q": "The team compares progress with the baselines, and a change request is reviewed and decided. Select the process group this work belongs to.",
+    "type": "hotspot",
+    "diagram": "process-groups-figure",
+    "options": [
+      "Initiating",
+      "Planning",
+      "Executing",
+      "Closing",
+      "Monitoring and Controlling"
+    ],
+    "answer": 4,
+    "explanation": "Tracking, reviewing and regulating progress, and identifying and starting needed changes, is the work of the Monitoring and Controlling process group. It runs alongside planning and executing.",
+    "ref": "Process Groups: A Practice Guide, 1.7.5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 42,
+        "label": "Process Groups: A Practice Guide, 1.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q47",
+    "q": "The product has been handed over, and the project is now formally completed. Select the process group this work belongs to.",
+    "type": "hotspot",
+    "diagram": "process-groups-figure",
+    "options": [
+      "Initiating",
+      "Planning",
+      "Executing",
+      "Closing",
+      "Monitoring and Controlling"
+    ],
+    "answer": 3,
+    "explanation": "The Closing process group formally completes or closes the project, phase or contract. It has one process, Close Project or Phase.",
+    "ref": "Process Groups: A Practice Guide, 1.7.5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 42,
+        "label": "Process Groups: A Practice Guide, 1.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q48",
+    "q": "The team produces the deliverables set out in the project management plan. Select the process group this work belongs to.",
+    "type": "hotspot",
+    "diagram": "process-groups-figure",
+    "options": [
+      "Initiating",
+      "Planning",
+      "Executing",
+      "Closing",
+      "Monitoring and Controlling"
+    ],
+    "answer": 2,
+    "explanation": "The Executing process group completes the work defined in the project management plan.",
+    "ref": "Process Groups: A Practice Guide, 1.7.5",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 42,
+        "label": "Process Groups: A Practice Guide, 1.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q49",
+    "q": "What is the project manager's statement?",
+    "strip": [
+      {
+        "who": "Analyst",
+        "says": "Twelve of the twenty activities are finished, and we have spent $40,000."
+      },
+      {
+        "who": "Project manager",
+        "says": "Against the plan, that puts us 10% behind schedule."
+      },
+      {
+        "who": "Analyst",
+        "says": "Shall I put both in the monthly dashboard for the sponsor?"
+      }
+    ],
+    "options": [
+      "Work performance data",
+      "A work performance report",
+      "Work performance information",
+      "A change request"
+    ],
+    "answer": 2,
+    "explanation": "The analyst's figures are work performance data: raw measurements. Compared with the plan they become work performance information. The dashboard that compiles it for the sponsor is a work performance report.",
+    "ref": "Process Groups: A Practice Guide, 1.8",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 44,
+        "label": "Process Groups: A Practice Guide, 1.8"
+      }
+    ]
+  },
+  {
+    "id": "q50",
+    "q": "What should the project manager do?",
+    "strip": [
+      {
+        "who": "Team member",
+        "says": "The regional director wants our status report every day by phone, not weekly by email."
+      },
+      {
+        "who": "Project manager",
+        "says": "What does the communications management plan say?"
+      },
+      {
+        "who": "Team member",
+        "says": "Weekly, by email, to the steering group. It does not mention her."
+      }
+    ],
+    "options": [
+      "Start the daily calls at once, because a director has asked",
+      "Refuse, because an approved plan cannot be changed",
+      "Assess the need, then update the plan so that it fits again",
+      "Let the team member decide how and when to report to her"
+    ],
+    "answer": 2,
+    "explanation": "Look in the plan first: who is told, how and when is in the communications management plan. When the plan no longer fits the needs of stakeholders, it is updated. The plan is corrected, not ignored, and not improvised around.",
+    "ref": "Process Groups: A Practice Guide, 6.7",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 173,
+        "label": "Process Groups: A Practice Guide, 6.7"
+      }
+    ]
   }
 ]

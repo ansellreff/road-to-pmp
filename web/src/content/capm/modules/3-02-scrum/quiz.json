@@ -581,5 +581,93 @@
         "label": "Agile Practice Guide, First Edition, 5.2.2"
       }
     ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each purpose with the Scrum event.",
+    "type": "match",
+    "left": [
+      "Decide what will be delivered this sprint, and how",
+      "Coordinate the next 24 hours",
+      "Show the increment to stakeholders and get feedback",
+      "Improve how the team works"
+    ],
+    "right": [
+      "Sprint planning",
+      "Daily scrum",
+      "Sprint review",
+      "Sprint retrospective"
+    ],
+    "explanation": "Sprint planning opens the sprint. The daily scrum coordinates the day. The sprint review looks at the product with stakeholders; the sprint retrospective looks at how the team works.",
+    "ref": "Agile Practice Guide, A3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 143,
+        "label": "Agile Practice Guide, A3.2"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Match each Scrum artifact with who owns it.",
+    "type": "match",
+    "left": [
+      "Product backlog",
+      "Sprint backlog",
+      "Increment"
+    ],
+    "right": [
+      "Product owner",
+      "Development team",
+      "The whole Scrum team"
+    ],
+    "explanation": "The product owner owns the ordered list of all the work for the product. The development team owns the items it selected for the sprint and its plan for delivering them. The increment belongs to the whole Scrum team.",
+    "ref": "Agile Practice Guide, A3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 143,
+        "label": "Agile Practice Guide, A3.2"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Which event will the stakeholder attend?",
+    "strip": [
+      {
+        "who": "Stakeholder",
+        "says": "When can I see what the team built this sprint, and say what I think of it?"
+      },
+      {
+        "who": "Scrum master",
+        "says": "At the end of the sprint. The team shows the increment and collects your feedback."
+      },
+      {
+        "who": "Stakeholder",
+        "says": "And the meeting about how the team works together?"
+      },
+      {
+        "who": "Scrum master",
+        "says": "That is a different event, for the Scrum team."
+      }
+    ],
+    "options": [
+      "Sprint planning",
+      "The daily scrum",
+      "The sprint review",
+      "The sprint retrospective"
+    ],
+    "answer": 2,
+    "explanation": "The sprint review shows the increment to stakeholders and gathers feedback. The sprint retrospective is where the Scrum team improves how it works.",
+    "ref": "Agile Practice Guide, A3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 143,
+        "label": "Agile Practice Guide, A3.2"
+      }
+    ]
   }
 ]

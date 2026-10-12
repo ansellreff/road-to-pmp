@@ -582,5 +582,99 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q29",
+    "q": "Match each description with the term of the critical path method.",
+    "type": "match",
+    "left": [
+      "Any sequence of activities from the start of the network to its end",
+      "The longest sequence, which sets the shortest possible duration",
+      "A sequence with very little spare time",
+      "The time an activity can be delayed without causing a problem"
+    ],
+    "right": [
+      "Path",
+      "Critical path",
+      "Near-critical path",
+      "Float"
+    ],
+    "explanation": "The critical path is the longest path and determines the shortest time in which the project can finish. A near-critical path has very little float, so a small delay makes it critical.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Select the first activity on the critical path.",
+    "type": "hotspot",
+    "diagram": "network-figure",
+    "options": [
+      "Activity A",
+      "Activity B",
+      "Activity C",
+      "Activity D"
+    ],
+    "answer": 1,
+    "explanation": "There are three paths. A, C, E, G takes 3 + 4 + 5 + 3 = 15 days. A, D, F, G takes 3 + 6 + 2 + 3 = 14 days. B, D, F, G takes 5 + 6 + 2 + 3 = 16 days and is the longest, so it is the critical path. It starts with B.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Select the activity that can finish one day late without delaying the end of the project.",
+    "type": "hotspot",
+    "diagram": "network-figure",
+    "options": [
+      "Activity B",
+      "Activity D",
+      "Activity E",
+      "Activity F",
+      "Activity G"
+    ],
+    "answer": 2,
+    "explanation": "The critical path is B, D, F, G at 16 days, so those four activities have no float. E lies on the path A, C, E, G, which takes 15 days: it has one day of float.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Management will pay to shorten one activity by a day, to finish the project sooner. Select the activity on which the money would be wasted.",
+    "type": "hotspot",
+    "diagram": "network-figure",
+    "options": [
+      "Activity B",
+      "Activity C",
+      "Activity D",
+      "Activity F",
+      "Activity G"
+    ],
+    "answer": 1,
+    "explanation": "Only shortening an activity on the critical path (B, D, F, G, 16 days) shortens the project. C is on a path of 15 days, so making it shorter leaves the finish date where it is.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
   }
 ]

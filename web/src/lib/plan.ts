@@ -57,9 +57,9 @@ export interface PlannedExam {
 }
 
 /**
- * Dates for the mock exams inside the final review. The last exam of the list, the unseen one,
+ * Dates for the mock exams inside the final review. The last exam of the list
  * sits two days before the real exam, and the others are spread evenly before it. When the
- * review is too short for all of them, the earliest ones are scheduled and then the unseen one.
+ * review is too short for all of them, the earliest ones are scheduled and then the last one.
  */
 export function planMockExams(
   plan: { reviewStart: string | undefined; reviewDays: number },

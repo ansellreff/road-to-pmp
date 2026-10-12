@@ -592,5 +592,135 @@
         "label": "Process Groups: A Practice Guide, section 10, Proposal evaluation"
       }
     ]
+  },
+  {
+    "id": "q30",
+    "q": "Match each description with the way of settling a claim or dispute.",
+    "type": "match",
+    "left": [
+      "The parties talk directly, with no third party",
+      "A neutral third party helps them reach their own agreement",
+      "A neutral third party hears both sides and gives a binding decision",
+      "The dispute goes to court"
+    ],
+    "right": [
+      "Negotiation",
+      "Mediation",
+      "Arbitration",
+      "Litigation"
+    ],
+    "explanation": "Negotiation is always tried first and litigation is the last option. A mediator helps the parties agree; an arbitrator decides for them, and the decision binds.",
+    "ref": "PMBOK 8, Appendix X4.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 357,
+        "label": "PMBOK 8, Appendix X4.9"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Match each description with the contract type.",
+    "type": "match",
+    "left": [
+      "A set price for a clearly defined scope",
+      "The seller's actual costs plus a fee",
+      "Agreed rates for the hours and materials used",
+      "Savings and overruns against an agreed figure are shared"
+    ],
+    "right": [
+      "Fixed-price",
+      "Cost-reimbursable",
+      "Time and materials",
+      "Target-cost"
+    ],
+    "explanation": "Fixed-price suits a well-defined scope. Cost-reimbursable suits uncertain or high-risk work. Time and materials is a hybrid, used for smaller jobs or staff augmentation. Target-cost rewards efficiency on large projects.",
+    "ref": "PMBOK 8, Appendix X4.8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 355,
+        "label": "PMBOK 8, Appendix X4.8"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Every part is within the customer's tolerance. Select the one sample that nevertheless shows the process is out of control.",
+    "type": "hotspot",
+    "diagram": "control-figure",
+    "options": [
+      "Sample 2",
+      "Sample 4",
+      "Sample 6",
+      "Sample 11",
+      "Sample 15"
+    ],
+    "answer": 1,
+    "explanation": "Sample 4 lies above the upper control limit, although it is inside the tolerance. A point outside a control limit means the process is out of control and the cause should be investigated. Control limits come from the process; the tolerance comes from the requirement.",
+    "ref": "PMBOK 8, Guide section 5, Control charts",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Control charts"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "No sample in these three groups is outside a control limit. Select the group that still signals a process out of control.",
+    "type": "hotspot",
+    "diagram": "control-figure",
+    "options": [
+      "Samples 1 to 3",
+      "Samples 5 to 7",
+      "Samples 8 to 14"
+    ],
+    "answer": 2,
+    "explanation": "Samples 8 to 14 are seven points in a row on the same side of the mean. This is the rule of seven: the process is out of control even though every point is within the control limits.",
+    "ref": "PMBOK 8, Guide section 5, Control charts",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Control charts"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "Which method have they chosen?",
+    "strip": [
+      {
+        "who": "Buyer",
+        "says": "We have talked for a month and still cannot agree on your claim."
+      },
+      {
+        "who": "Seller",
+        "says": "Then let us bring in a neutral person to help us find a settlement of our own."
+      },
+      {
+        "who": "Buyer",
+        "says": "Agreed, as long as nothing that person says binds us."
+      }
+    ],
+    "options": [
+      "Negotiation",
+      "Arbitration",
+      "Litigation",
+      "Mediation"
+    ],
+    "answer": 3,
+    "explanation": "In mediation a neutral third party helps the parties reach their own agreement. In arbitration the third party makes a binding decision. Negotiation, which they have already tried, has no third party.",
+    "ref": "PMBOK 8, Appendix X4.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 357,
+        "label": "PMBOK 8, Appendix X4.9"
+      }
+    ]
   }
 ]

@@ -523,5 +523,65 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q27",
+    "q": "Match each example with its type of change request.",
+    "type": "match",
+    "left": [
+      "Staff are added to recover a schedule delay",
+      "Extra training is given before a risky task",
+      "A faulty component is reworked",
+      "A newly agreed requirement is written into the plan"
+    ],
+    "right": [
+      "Corrective action",
+      "Preventive action",
+      "Defect repair",
+      "Update"
+    ],
+    "explanation": "Corrective action brings performance back in line with the plan. Preventive action keeps future performance in line. Defect repair fixes a deliverable that does not meet requirements. An update changes a plan or document.",
+    "ref": "PMBOK 8, Guide section 4, Change requests",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Change requests"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which type of change request is this?",
+    "strip": [
+      {
+        "who": "Tester",
+        "says": "The casing cracks under load. It does not meet the specification."
+      },
+      {
+        "who": "Project manager",
+        "says": "Then it has to be reworked before we can hand it over."
+      },
+      {
+        "who": "Tester",
+        "says": "I will raise the change request now."
+      }
+    ],
+    "options": [
+      "Defect repair",
+      "Corrective action",
+      "Preventive action",
+      "An update"
+    ],
+    "answer": 0,
+    "explanation": "Defect repair fixes a deliverable that does not meet its requirements. Corrective action brings the project's performance back in line with the plan, and preventive action keeps future performance in line.",
+    "ref": "PMBOK 8, Guide section 4, Change requests",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Change requests"
+      }
+    ]
   }
 ]

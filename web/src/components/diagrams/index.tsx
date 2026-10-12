@@ -203,10 +203,10 @@ function Fishbone() {
 
 // One plot area for the charts: 0 to 10 across (days, weeks or iterations), a count up the side.
 const LEFT = 70
-const BOTTOM = 290
-const dayX = (day: number) => LEFT + day * 61
+export const BOTTOM = 290
+export const dayX = (day: number) => LEFT + day * 61
 
-function Axes({ top, step, scale, yTitle, xTitle = 'Day of the iteration' }: { top: number; step: number; scale: number; yTitle: string; xTitle?: string }) {
+export function Axes({ top, step, scale, yTitle, xTitle = 'Day of the iteration' }: { top: number; step: number; scale: number; yTitle: string; xTitle?: string }) {
   const ticks = Array.from({ length: top / step + 1 }, (_, i) => i * step)
   return (
     <>

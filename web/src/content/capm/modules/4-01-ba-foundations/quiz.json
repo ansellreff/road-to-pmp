@@ -608,5 +608,67 @@
         "label": "Business Analysis for Practitioners, Business Analysis Stewardship Domain"
       }
     ]
+  },
+  {
+    "id": "q31",
+    "q": "An online store is being improved. Match each statement with the type of requirement.",
+    "type": "match",
+    "left": [
+      "Increase online sales by 15% next year",
+      "Customers want to pay without creating an account",
+      "The system accepts card payments",
+      "A payment is confirmed within 3 seconds",
+      "Existing customer data is converted and support staff are trained"
+    ],
+    "right": [
+      "Business requirement",
+      "Stakeholder requirement",
+      "Functional requirement",
+      "Nonfunctional requirement",
+      "Transition requirement"
+    ],
+    "explanation": "A business requirement says why the work is done. A stakeholder requirement says what a group needs. Solution requirements are functional (what the product does) or nonfunctional (how well). Transition requirements are temporary and serve the move to the future state.",
+    "ref": "PMI Guide to Business Analysis, 1.1.7.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 54,
+        "label": "PMI Guide to Business Analysis, 1.1.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Which type of requirement are they describing?",
+    "strip": [
+      {
+        "who": "Manager",
+        "says": "Before we go live, the old customer records must be converted."
+      },
+      {
+        "who": "Analyst",
+        "says": "And the support staff must be trained on the new screens."
+      },
+      {
+        "who": "Manager",
+        "says": "Once we have switched over, neither will be needed again."
+      }
+    ],
+    "options": [
+      "Business requirements",
+      "Stakeholder requirements",
+      "Nonfunctional requirements",
+      "Transition requirements"
+    ],
+    "answer": 3,
+    "explanation": "Transition requirements are temporary capabilities needed to move from the current state to the future state, such as data conversion and training. They are no longer needed once the move is made.",
+    "ref": "PMI Guide to Business Analysis, 1.1.7.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 54,
+        "label": "PMI Guide to Business Analysis, 1.1.7.4"
+      }
+    ]
   }
 ]

@@ -587,5 +587,33 @@
         "label": "PMBOK 8, Guide Table 3-1"
       }
     ]
+  },
+  {
+    "id": "q30",
+    "q": "Match each activity with the performance domain of the Eighth Edition that it belongs to.",
+    "type": "match",
+    "left": [
+      "Building the budget and controlling money",
+      "Engaging the people affected and managing communications",
+      "Acquiring people and physical resources, and leading the team",
+      "Defining what the project will and will not deliver",
+      "Preparing for threats and for opportunities"
+    ],
+    "right": [
+      "Finance",
+      "Stakeholders",
+      "Resources",
+      "Scope",
+      "Risk"
+    ],
+    "explanation": "Communications sit in the Stakeholders domain and leading the team sits in Resources. Scope covers what will and will not be delivered, Finance covers estimates, budget and control of money, and Risk covers both threats and opportunities.",
+    "ref": "PMBOK 8, Guide section 2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 112,
+        "label": "PMBOK 8, Guide section 2"
+      }
+    ]
   }
 ]

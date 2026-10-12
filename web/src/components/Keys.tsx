@@ -21,7 +21,7 @@ export default function Keys({ actions, children }: { actions: KeyActions; child
       const target = event.target instanceof Element ? event.target : null
       if (target?.closest('input, textarea, select, [contenteditable="true"]')) return
       const name = event.key.length === 1 ? event.key.toLowerCase() : event.key
-      if ((name === 'Enter' || name === ' ') && target?.closest('button, a, summary')) return
+      if ((name === 'Enter' || name === ' ') && target?.closest('button, a, summary, [role="button"]')) return
       const action = latest.current[name]
       if (!action) return
       event.preventDefault()

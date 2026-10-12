@@ -26,6 +26,8 @@ if (process.env.TYPE) {
   await page.getByRole('combobox').fill(process.env.TYPE)
   await page.getByRole('option').nth(3).waitFor()
 }
+// KEYS="1 c Enter" presses those keys one after another, to answer a question from the keyboard.
+for (const key of (process.env.KEYS ?? '').split(' ').filter(Boolean)) await page.keyboard.press(key)
 await page.evaluate((y) => window.scrollTo(0, y), Number(scroll))
 await page.waitForTimeout(400)
 // FIGURE="Burnup chart" pictures only the lesson drawing whose description starts with that text.

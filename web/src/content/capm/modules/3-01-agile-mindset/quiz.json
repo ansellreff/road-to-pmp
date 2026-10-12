@@ -566,5 +566,31 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q29",
+    "q": "The Agile Manifesto values each item on the left more than one item on the right. Match them.",
+    "type": "match",
+    "left": [
+      "Individuals and interactions",
+      "Working software",
+      "Customer collaboration",
+      "Responding to change"
+    ],
+    "right": [
+      "Processes and tools",
+      "Comprehensive documentation",
+      "Contract negotiation",
+      "Following a plan"
+    ],
+    "explanation": "The four values each set one thing over another. The items on the right still have value; the items on the left are valued more.",
+    "ref": "Agile Practice Guide, 2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 25,
+        "label": "Agile Practice Guide, 2.2"
+      }
+    ]
   }
 ]

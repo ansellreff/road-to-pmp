@@ -1,6 +1,8 @@
 // The click tests. Each one is a short visit by a learner, checked by what the page then shows
 // and by what was saved in the browser.
 
+import fs from 'node:fs'
+
 const KEY = 'road-to-pmi-progress'
 
 export function expect(condition, message) {
@@ -32,6 +34,24 @@ export const option = (page, letter) => page.getByRole('button', { name: new Reg
 /** Waits until that option is the selected one (real exam mode). */
 const selected = (page, letter) => option(page, letter).and(page.locator('[aria-pressed="true"]')).waitFor()
 const button = (page, name) => page.getByRole('button', { name, exact: true })
+
+/** Answer the question on screen, whatever its type: every pair of a matching question, the first area of a hot spot, or option A. */
+async function answerAny(page) {
+  const check = button(page, 'Check answer')
+  if (await check.count()) {
+    for (const answer of await page.locator('[data-answer]').all()) await answer.click()
+    await check.click()
+  } else if (await page.locator('.spot').count()) await page.locator('.spot').first().click()
+  else await option(page, 'A').click()
+}
+
+/** Give every item of the matching question on screen the answer that ends with the given word, by selecting the item and then the answer. */
+async function pair(page, words) {
+  for (const [i, word] of words.entries()) {
+    await page.locator(`[data-item="${i + 1}"] > button`).click()
+    await page.locator('[data-answer]', { hasText: new RegExp(`${word}$`) }).click()
+  }
+}
 
 /** Waits until the section heading with this text is inside the window. */
 async function inView(page, heading) {
@@ -111,8 +131,9 @@ export const tests = {
     await see(page, 'Question 1 of')
     const total = Number((await page.getByText(/Question 1 of \d+/).textContent()).match(/of (\d+)/)[1])
     for (let i = 1; i <= total; i++) {
-      await option(page, 'A').click()
-      await see(page, /^(Correct\.|Not correct\. The right answer is [B-D]\.)$/)
+      await see(page, `Question ${i} of ${total}`)
+      await answerAny(page)
+      await see(page, /^(Correct\.|Not correct\. .+)$/)
       await see(page, 'Source:')
       await page.getByRole('button', { name: i === total ? 'Finish quiz' : 'Next question' }).click()
     }
@@ -342,6 +363,109 @@ export const tests = {
     await see(page, /Card 2 of \d+/)
   },
 
+  async 'question types: matching by mouse, by drag and by keyboard; hot spot; comic strip'(page) {
+    await page.goto('/capm/question-types')
+    await see(page, 'Give each numbered item its answer.')
+    const check = button(page, 'Check answer')
+    expect(await check.isDisabled(), 'a matching answer can be checked before every item has an answer')
+    // Drag an answer onto an item: the item then holds it.
+    const item = (n) => page.locator(`[data-item="${n}"]`)
+    await page.locator('[data-answer]', { hasText: /Value$/ }).dragTo(item(1))
+    await item(1).getByText('Value', { exact: true }).waitFor()
+    // Select an item, then an answer. The answer leaves the item that had it.
+    await pair(page, ['Output', 'Outcome', 'Benefit', 'Disbenefit'])
+    await item(1).getByText('Output', { exact: true }).waitFor()
+    expect(await check.isDisabled(), 'the answer can be checked while item 5 has none')
+    // Keyboard: 5 selects the item, the letter of "Value" gives the answer, Backspace takes it away again.
+    const letter = (await page.locator('[data-answer]', { hasText: /Value$/ }).getAttribute('data-answer')).toLowerCase()
+    await page.keyboard.press('5')
+    await page.keyboard.press(letter)
+    await item(5).getByText('Value', { exact: true }).waitFor()
+    await page.keyboard.press('5')
+    await page.keyboard.press('Backspace')
+    await item(5).getByText('Now choose its answer').waitFor()
+    await page.keyboard.press(letter)
+    await page.keyboard.press('Enter')
+    await see(page, /^Correct\.$/)
+    expect((await page.getByText('Right pair').count()) === 5, 'not every pair is marked as right')
+    await see(page, 'Source:')
+
+    // A wrong matching answer says how many pairs were right.
+    await button(page, 'Show another matching question (1 of 64)').click()
+    await see(page, '(2 of 64)')
+    for (const answer of await page.locator('[data-answer]').all()) await answer.click()
+    await check.click()
+    await see(page, /^(Correct\.|Not correct\. \d of 3 pairs are right, and a matching question counts only when every pair is right\.)$/)
+
+    await button(page, 'Hot spot').click()
+    await see(page, 'Select one of the numbered areas of the drawing.')
+    await page.getByRole('button', { name: 'Area 2: Planning' }).click()
+    await see(page, 'Not correct. The right area is 1, Initiating.')
+    await button(page, 'Show another hot spot question (1 of 30)').click()
+    await see(page, '(2 of 30)')
+    // By keyboard: Tab reaches the areas, and a number selects one.
+    await page.keyboard.press('5')
+    await see(page, /^Correct\.$/)
+
+    await button(page, 'Comic strip').click()
+    await see(page, 'The banking app went live last month. Is anyone using it?')
+    await page.keyboard.press('c')
+    await see(page, /^Correct\.$/)
+  },
+
+  async 'question types on a phone: tap an item, tap an answer; nothing wider than the screen except the drawing'(page) {
+    await page.setViewportSize({ width: 390, height: 800 })
+    await page.goto('/capm/question-types')
+    await see(page, 'Give each numbered item its answer.')
+    await pair(page, ['Output', 'Outcome', 'Benefit', 'Disbenefit', 'Value'])
+    await button(page, 'Check answer').click()
+    await see(page, /^Correct\.$/)
+    const fits = () => page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)
+    expect(await fits(), 'the matching question is wider than the phone screen')
+    await button(page, 'Hot spot').click()
+    await page.getByRole('button', { name: 'Area 1: Initiating' }).click()
+    await see(page, /^Correct\.$/)
+    expect(await fits(), 'the hot spot question is wider than the phone screen')
+    await button(page, 'Comic strip').click()
+    await see(page, 'The banking app went live last month. Is anyone using it?')
+    expect(await fits(), 'the comic strip is wider than the phone screen')
+  },
+
+  async 'mock exam 6, real mode: a matching question is unanswered until every item has an answer, and is marked in the result'(page) {
+    // Where the first half of the exam has a matching question, from the exam file itself.
+    const exams = JSON.parse(fs.readFileSync(new URL('../src/content/capm/exams.json', import.meta.url), 'utf8'))
+    const rows = exams.find((e) => e.id === 'mock-6').questions
+    const quiz = (moduleId) => JSON.parse(fs.readFileSync(new URL(`../src/content/capm/modules/${moduleId}/quiz.json`, import.meta.url), 'utf8'))
+    const at = rows.findIndex(([moduleId, id], i) => i < 75 && quiz(moduleId).find((q) => q.id === id).type === 'match')
+    expect(at >= 0, 'the first half of mock exam 6 has no matching question')
+    const pairs = quiz(rows[at][0]).find((q) => q.id === rows[at][1]).left.length
+
+    await page.goto('/capm/exams')
+    await see(page, "The real exam's mix")
+    await page.locator('section', { hasText: 'Mock exam 6' }).getByRole('button', { name: 'Start in real exam mode' }).click()
+    await see(page, 'Question 1 of 150.')
+    await page.getByRole('button', { name: `Question ${at + 1}, unanswered` }).click()
+    await see(page, `Question ${at + 1} of 150.`)
+    expect((await button(page, 'Check answer').count()) === 0, 'real exam mode offers to check a matching answer')
+    await page.locator('[data-answer="A"]').click()
+    // One pair of several: saved, but the question is not yet answered.
+    await page.getByRole('button', { name: `Question ${at + 1}, unanswered` }).waitFor()
+    let pick = (await saved(page)).exams['capm/mock-6'].run.picks[at]
+    expect(pick === 10 ** (pairs - 1), `one pair was saved as ${pick}`)
+    for (const answer of (await page.locator('[data-answer]').all()).slice(1)) await answer.click()
+    await page.getByRole('button', { name: `Question ${at + 1}, answered` }).waitFor()
+    // The answer survives leaving the question and coming back, and can still be changed.
+    await page.keyboard.press(at === 0 ? 'ArrowRight' : 'ArrowLeft')
+    await page.keyboard.press(at === 0 ? 'ArrowLeft' : 'ArrowRight')
+    await see(page, `Question ${at + 1} of 150.`)
+    await page.getByRole('button', { name: 'Remove the answer from item 1' }).click()
+    await page.getByRole('button', { name: `Question ${at + 1}, unanswered` }).waitFor()
+    await page.locator('[data-answer="A"]').click()
+    await page.getByRole('button', { name: `Question ${at + 1}, answered` }).waitFor()
+    pick = (await saved(page)).exams['capm/mock-6'].run.picks[at]
+    expect(String(pick).length === pairs && !String(pick).includes('0'), `the full answer was saved as ${pick}`)
+  },
+
   async 'lesson: list of sections, jump to one, continue there next time'(page) {
     await page.goto('/capm/3-07-metrics-retrospectives')
     // The sections are listed in the panel on the right, open from the start.
@@ -446,7 +570,7 @@ export const tests = {
     expect((await page.getByRole('region', { name: 'Learning modules' }).count()) === 0, 'the menu stayed open after choosing a module')
     await button(page, 'Practice').click()
     await see(page, '1 to practice')
-    await see(page, '0 of 5 taken')
+    await see(page, '0 of 6 taken')
     await page.keyboard.press('Escape')
     expect((await page.getByRole('region', { name: 'Practice' }).count()) === 0, 'Escape did not close the menu')
     await button(page, 'Practice').click()
@@ -487,16 +611,17 @@ export const tests = {
     await seed(page, { examDates: { capm: day(40) } })
     await page.goto('/plan')
     await see(page, 'Final review, 7 days.')
-    for (const title of ['Mock exam 1', 'Mock exam 2', 'Mock exam 3', 'Mock exam 4', 'Mock exam 5']) await see(page, title)
+    for (const title of ['Mock exam 1', 'Mock exam 2', 'Mock exam 3', 'Mock exam 4', 'Mock exam 5', 'Mock exam 6']) await see(page, title)
     await see(page, 'in real exam mode. Its questions are new to you.')
-    // Mock exam 1 opens the review; the last one, Mock exam 5, is two days before the exam.
+    await see(page, 'It has the question types of the real exam.')
+    // Mock exam 1 opens the review; the last one, Mock exam 6, is two days before the exam.
     expect((await page.getByText(shown(33), { exact: true }).count()) >= 1, 'Mock exam 1 is not on the first review day')
-    expect((await page.getByText(shown(38), { exact: true }).count()) === 1, 'Mock exam 5 is not two days before the exam')
-    expect((await page.getByText('Not taken yet').count()) === 5, 'not all five mock exams are listed')
+    expect((await page.getByText(shown(38), { exact: true }).count()) === 1, 'Mock exam 6 is not two days before the exam')
+    expect((await page.getByText('Not taken yet').count()) === 6, 'not all six mock exams are listed')
     // A review of two days only has room for one.
     await seed(page, { examDates: { capm: day(8) } })
     await page.goto('/plan')
-    await see(page, 'The review is too short for all 5 mock exams, so 1 is scheduled.')
+    await see(page, 'The review is too short for all 6 mock exams, so 1 is scheduled.')
     expect((await page.getByText('Not taken yet').count()) === 1, 'more mock exams are scheduled than fit')
   },
 

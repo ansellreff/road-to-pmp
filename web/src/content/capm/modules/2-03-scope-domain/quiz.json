@@ -552,5 +552,95 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q28",
+    "q": "Match each description with the type of requirement.",
+    "type": "match",
+    "left": [
+      "The strategic objectives of the organization",
+      "What the product does: its behaviors, actions and data",
+      "How well the product does it: security, performance, reliability",
+      "Data conversion and training needed for the move",
+      "Milestone dates and contractual obligations"
+    ],
+    "right": [
+      "Business",
+      "Functional",
+      "Nonfunctional",
+      "Transition and readiness",
+      "Project"
+    ],
+    "explanation": "Business requirements state the organization's high-level needs. Solution requirements are functional (what it does) or nonfunctional (how well). Transition and readiness requirements are temporary capabilities for the move. Project requirements are conditions the project must meet.",
+    "ref": "PMBOK 8, Guide 2.2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 145,
+        "label": "PMBOK 8, Guide 2.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each description with the technique for gathering requirements.",
+    "type": "match",
+    "left": [
+      "Prequalified stakeholders and experts, guided by a moderator",
+      "Watching people do their work",
+      "Brainstorming followed by a vote that ranks the ideas",
+      "Sorting a large number of ideas into groups",
+      "Comparing with the practices of comparable organizations"
+    ],
+    "right": [
+      "Focus group",
+      "Observation",
+      "Nominal group technique",
+      "Affinity diagram",
+      "Benchmarking"
+    ],
+    "explanation": "A focus group is moderated. Observation is also called job shadowing. The nominal group technique adds a ranking vote to brainstorming. An affinity diagram groups many ideas. Benchmarking looks for best practices elsewhere.",
+    "ref": "PMBOK 8, Guide Figure 2-15",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 146,
+        "label": "PMBOK 8, Guide Figure 2-15"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Which technique is the analyst describing?",
+    "strip": [
+      {
+        "who": "Analyst",
+        "says": "The brainstorm produced forty ideas for the booking system."
+      },
+      {
+        "who": "Project manager",
+        "says": "Forty is too many. How do we choose?"
+      },
+      {
+        "who": "Analyst",
+        "says": "Each person votes, and we rank the ideas by the votes."
+      }
+    ],
+    "options": [
+      "An affinity diagram of the ideas",
+      "Benchmarking",
+      "A moderated focus group",
+      "The nominal group technique"
+    ],
+    "answer": 3,
+    "explanation": "The nominal group technique is brainstorming followed by a vote that ranks the ideas. An affinity diagram would sort the ideas into groups without ranking them.",
+    "ref": "PMBOK 8, Guide Figure 2-15",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 146,
+        "label": "PMBOK 8, Guide Figure 2-15"
+      }
+    ]
   }
 ]

@@ -587,5 +587,65 @@
         "label": "PMBOK 8, Standard 4.2.3"
       }
     ]
+  },
+  {
+    "id": "q30",
+    "q": "Match each example with its delivery cadence.",
+    "type": "match",
+    "left": [
+      "A redesigned process is rolled out once, at the end",
+      "A drug passes trial phases, then approval, then launch",
+      "New software reaches users every two weeks",
+      "Tested changes flow to a web service many times a week, by automation"
+    ],
+    "right": [
+      "Single delivery",
+      "Multiple deliveries",
+      "Periodic deliveries",
+      "Continuous delivery"
+    ],
+    "explanation": "Single delivery hands everything over at the end. Multiple deliveries hand over components at different times. Periodic deliveries do so on a fixed, regular schedule. Continuous delivery sends tested increments to production on an ongoing basis.",
+    "ref": "PMBOK 8, Standard 4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 92,
+        "label": "PMBOK 8, Standard 4.4"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Which delivery cadence is the customer asking for?",
+    "strip": [
+      {
+        "who": "Customer",
+        "says": "I do not want to wait a year and then receive everything at once."
+      },
+      {
+        "who": "Project manager",
+        "says": "We could hand over each part whenever it happens to be ready."
+      },
+      {
+        "who": "Customer",
+        "says": "My shops need a rhythm they can plan around. Give us something new on the first of every month."
+      }
+    ],
+    "options": [
+      "Periodic deliveries",
+      "Single delivery",
+      "Multiple deliveries",
+      "Continuous delivery"
+    ],
+    "answer": 0,
+    "explanation": "Periodic deliveries are multiple deliveries on a fixed, regular schedule, here monthly. Multiple deliveries alone have no fixed rhythm, and continuous delivery sends increments to production on an ongoing basis.",
+    "ref": "PMBOK 8, Standard 4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 92,
+        "label": "PMBOK 8, Standard 4.4"
+      }
+    ]
   }
 ]

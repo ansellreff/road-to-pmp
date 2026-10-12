@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react'
+import { createContext, useContext, type ReactNode } from 'react'
 
 // Building blocks for the lesson drawings. Colours come from the theme tokens,
 // so every drawing follows the light and dark themes.
@@ -15,26 +15,38 @@ export const milestone = 'var(--color-milestone)'
 export const milestoneSoft = 'var(--color-milestone-soft)'
 
 /**
+ * What a hot spot question draws on top of a drawing: its selectable areas. When this is
+ * set, the drawing is shown without its caption, which would give the answer away.
+ */
+export const Overlay = createContext<ReactNode>(null)
+
+/**
  * A drawing with its caption. description is read out in place of the picture.
  * On a narrow screen the drawing keeps a readable size and scrolls sideways.
  */
-export function Frame(props: { width: number; height: number; caption: string; description: string; children: ReactNode }) {
+export function Frame(props: { width: number; height: number; caption?: string; description: string; children: ReactNode }) {
   const { width, height, caption, description, children } = props
+  const overlay = useContext(Overlay)
+  const drawing = (
+    <div className="overflow-x-auto rounded-md border border-line bg-surface p-3">
+      <svg
+        viewBox={`0 0 ${width} ${height}`}
+        role={overlay ? 'group' : 'img'}
+        aria-label={description}
+        className="mx-auto block font-ui"
+        style={{ width: '100%', minWidth: Math.min(width, 620), maxWidth: width, height: 'auto' }}
+        fontSize="13"
+        fill={ink}
+      >
+        {children}
+        {overlay}
+      </svg>
+    </div>
+  )
+  if (overlay) return drawing
   return (
     <figure className="wide">
-      <div className="overflow-x-auto rounded-md border border-line bg-surface p-3">
-        <svg
-          viewBox={`0 0 ${width} ${height}`}
-          role="img"
-          aria-label={description}
-          className="mx-auto block font-ui"
-          style={{ width: '100%', minWidth: Math.min(width, 620), maxWidth: width, height: 'auto' }}
-          fontSize="13"
-          fill={ink}
-        >
-          {children}
-        </svg>
-      </div>
+      {drawing}
       <figcaption>{caption}</figcaption>
     </figure>
   )

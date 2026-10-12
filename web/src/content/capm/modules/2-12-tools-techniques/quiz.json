@@ -562,5 +562,61 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q29",
+    "q": "Match each situation with the tool that fits it.",
+    "type": "match",
+    "left": [
+      "\"We have 80 ideas on sticky notes and must make sense of them\"",
+      "\"Will we still be on budget in three months?\"",
+      "\"How far are we from the plan?\"",
+      "\"How do leading companies handle this?\"",
+      "\"We must choose between three suppliers on several criteria\""
+    ],
+    "right": [
+      "Affinity diagram",
+      "Trend analysis",
+      "Variance analysis",
+      "Benchmarking",
+      "Multicriteria decision analysis"
+    ],
+    "explanation": "An affinity diagram groups many ideas. Trend analysis looks forward from past results; variance analysis compares actual with planned. Benchmarking compares with other organizations. Multicriteria decision analysis weighs options against several criteria.",
+    "ref": "PMBOK 8, Guide section 5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 250,
+        "label": "PMBOK 8, Guide section 5"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Match what is shown with the tool that shows it.",
+    "type": "match",
+    "left": [
+      "The steps and decision points of a process",
+      "Causes branching off a problem",
+      "The priority of each risk",
+      "Current and desired levels of engagement",
+      "Work remaining against the time left in a timebox"
+    ],
+    "right": [
+      "Flowchart",
+      "Cause-and-effect diagram",
+      "Probability and impact matrix",
+      "Stakeholder engagement assessment matrix",
+      "Burndown chart"
+    ],
+    "explanation": "Each data representation tool answers one kind of question: how a process runs, what may cause a problem, which risks matter most, how far each stakeholder is from the desired engagement, and how much work is left.",
+    "ref": "PMBOK 8, Guide section 5, Data representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 267,
+        "label": "PMBOK 8, Guide section 5, Data representation"
+      }
+    ]
   }
 ]

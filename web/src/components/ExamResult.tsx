@@ -129,6 +129,8 @@ export default function ExamResult(props: {
           .map((b) => `${b.name} from ${percent(b.from)}`)
           .join(', ')}
         .
+        {questions.some((q) => q.question.type === 'match') &&
+          ' A matching question counts as correct only when every pair is right; PMI does not publish its own rule.'}
       </p>
 
       <div className="mt-6 flex flex-wrap gap-3">

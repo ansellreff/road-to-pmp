@@ -103,7 +103,7 @@ Why model?
 
 ## Rule, data and interface models
 
-@source PMI Guide to Business Analysis, 7.2.2.4; PMI Guide to Business Analysis, 7.2.2.6; PMI Guide to Business Analysis, 7.2.2.13; PMI Guide to Business Analysis, 7.3.2.1
+@source PMI Guide to Business Analysis, 7.2.2.4; PMI Guide to Business Analysis, 7.2.2.6; PMI Guide to Business Analysis, 7.2.2.15; PMI Guide to Business Analysis, 7.2.2.13; PMI Guide to Business Analysis, 7.3.2.1
 
 **Rule models:**
 

@@ -69,6 +69,7 @@ Certified Associate in Project Management. Built and online; **being finished** 
 | 2026-10-11 | **Session 35 done: the 49 processes checked against Domain 2 and module 1.12, by script and by reading, not page by page.** The definition of every process was pulled from the guide and compared with module 1.12: all agree. Every artifact that module 1.12 names as a process's main output was found on that process's pages. The guide's lists of inputs and outputs (section 9) and of tools (section 10) were scanned for names the course never uses: ten tools were missing and are now taught, in modules 2.6, 2.9, 2.10 and 2.11. One exam point was added to module 1.12: contracts are closed out in Control Procurements. 10 questions, 7 flashcards. Bank: 1,141 questions, 1,333 flashcards. **The deeper accuracy check (Sessions 33 to 35) is finished.** | You: `upload.bat`. Next: Session 36, the real exam's question types |
 | 2026-10-11 | **Open items of Sessions 32 to 35 closed**, at your request. (1) Which tool belongs to which process: read from all 49 figures by script, and module 1.12 now has a table "The tools that mark each process". (2) Develop Project Charter's definition read: it agrees. (3) Chapter 5 of the practice guide read in full: one note in module 4.7 was incomplete (three transition strategies named, the guide has four) and is corrected. (4) The practice guide's page 111 read. (5) Its 41 case study pages scanned for any tool or artifact name the course lacks: none. (6) The lesson sections behind the questions written without a full re-read (modules 1.2, 1.3, 1.10) read: the questions agree with them. (7) The four Domain 3 quizzes under 20 brought to 20. **Every module quiz in the course now has at least 20 questions.** Bank: 1,151 questions, 1,339 flashcards. | You: `upload.bat`. Next: Session 36 |
 | 2026-10-11 | **Session 36 done: the rules for the real exam's question types.** Matching, hot spot and comic strip questions can now be stored, loaded, put into exams, marked, saved and synced, and the checker and exam builder understand them. Nothing you see has changed yet: there are no such questions and no screens for them until Session 37. The 21 click tests pass unchanged, and no content file changed. | Next: Session 37, the screens and about 110 questions |
+| 2026-10-13 | **Session 37 done: the screens and questions for the real exam's question types.** Matching, hot spot and comic strip questions can be answered in module quizzes, practice and both exam modes, by mouse, by touch and by keyboard. 123 questions were written for them (64 matching, 30 hot spot, 29 comic strip), on 12 drawings, 9 of them new. A page "Question types" lets you try each kind. Mock exam 6 has the mix of the real exam. The bank is 1,274 questions and 6 mock exams. | Next: Session 38, the drawings of module 4.5 |
 
 ## Roadmap to a complete CAPM course
 
@@ -106,7 +107,7 @@ Agreed on 2026-10-10: **2 modules per session**, **one feature after each domain
 | ✅ | 34 | Deeper accuracy check: the same book, chapters 4 (rest), 5 and 6, against modules 4.4 to 4.7 |
 | ✅ | 35 | Deeper accuracy check: *Process Groups: A Practice Guide*, the 49 processes, against modules 1.12 and 2.1 to 2.11 |
 | ✅ | 36 | Real exam question types, the rules: matching, hot spot and comic strip stored, marked, saved, synced and checked |
-| ⬜ | 37 | Real exam question types, the screens and the questions: about 60 matching, 25 hot spot, 25 comic strip; Mock exam 6 if the bank allows |
+| ✅ | 37 | Real exam question types, the screens and the questions: 64 matching, 30 hot spot, 29 comic strip; a page to try them; Mock exam 6 with the real mix |
 | ⬜ | 38 | Drawings in module 4.5: decision tree, ecosystem map, feature model, data flow diagram, wireframe |
 | ⬜ | 39 | Close CAPM: all checks, final counts, each open item marked closed or left open with the reason |
 
@@ -885,3 +886,53 @@ The CAPM outline names three kinds of question beside multiple choice: drag-and-
 **Not built, as planned:** animation questions. A comic strip covers the same kind of question, and is what online test-takers get.
 
 **Assumption:** PMI does not publish how matching is scored. Here it is all or nothing, the stricter reading; the result page will say so in Session 37.
+
+## Session 37: the screens and questions for the real exam's question types, as built
+
+**What you can now do**
+
+| Type | How it is answered | Marking shown |
+|---|---|---|
+| Matching | Drag an answer onto an item; or select an item and then an answer (this is also how it works by touch); or by keyboard: a number for the item, a letter for the answer, Backspace to take it away | Each pair is marked right or wrong, and a wrong pair shows where the item belongs. The question counts only when every pair is right. |
+| Hot spot | Select one numbered area of a drawing, by mouse, touch, Tab and Enter, or its number | The right area turns green and a wrong choice red, with a line of text naming both |
+| Comic strip | The conversation is read panel by panel, then one multiple choice question is answered as usual | As multiple choice |
+
+- In module quizzes, practice and practice-mode exams a matching answer is final once **Check answer** is pressed. In real exam mode every pair is saved as it is made and can be changed; the question counts as answered only when every item has an answer.
+- A new page, **Question types** (linked from the mock exams page), shows one kind at a time and steps through every question of that kind. Answers there are not saved.
+- The result page of an exam that has matching questions says they are marked all or nothing.
+
+**The questions: 123, all in the module quizzes**
+
+| Domain | Matching | Hot spot | Comic strip |
+|---|---|---|---|
+| 1 Fundamentals | 17 | 4 | 8 |
+| 2 Predictive | 20 | 13 | 8 |
+| 3 Agile | 16 | 5 | 7 |
+| 4 Business analysis | 11 | 8 | 6 |
+| Total | 64 | 30 | 29 |
+
+- Every matching question was written from a table of its module's lesson, so the pairs are ones the lesson teaches, and each carries that section's source.
+- Hot spot questions use 12 drawings. Nine are new and carry no note that gives an answer away: process groups, power/interest grid, RACI chart, network diagram, earned value table, control chart, kanban board, burndown chart and traceability matrix. Three are lesson drawings shown without their caption: process flow, state diagram and use case diagram.
+- The arithmetic in the hot spot explanations (paths, float, variances, indices) is checked by `tools/check_examples.py`, which now reads every part of every question type.
+
+**Mock exam 6**
+
+150 questions, 54 / 26 / 30 / 40 by domain: 128 multiple choice, 11 matching, 5 hot spot and 6 comic strip. Unlike Mock exams 4 and 5 it is **not** kept unseen: its questions stay in the module quizzes (see issue 181). The study plan puts it last, two days before the exam, as the rehearsal with the real question types.
+
+**Assumptions, stated plainly**
+
+- **The share of other question types (about 15%) is mine.** PMI says only that the exam is mostly multiple choice with some other types.
+- **All-or-nothing marking of matching is the stricter reading**; PMI does not publish its rule.
+
+**Not done**
+
+- Dragging by touch. On a phone or tablet a matching question is answered by tapping an item and then an answer. On a phone the answers sit below the items, so a five-pair question needs scrolling.
+- A drawing on an ordinary multiple choice question. Only hot spot questions have drawings; the checker rejects one anywhere else.
+- Animation questions, as planned.
+- For the comic strips I checked the two whose answer did not come straight from a lesson table against their lesson sections; one answer was reworded to match the lesson (issue 189). The others restate rows of tables I had in front of me. None was re-read against the source books.
+
+**Verified by**
+
+- Three new click tests: matching by drag, by click and by keyboard, a wrong matching answer, hot spot by mouse and keyboard, a comic strip; the same at phone width with a check that nothing is wider than the screen; and Mock exam 6 in real exam mode, where a matching question stays "unanswered" until complete and its saved answer survives leaving and returning.
+- The quiz test now answers every type it meets.
+- The 24 older tests pass, and I looked at the screens in light and dark, at PC and phone widths.

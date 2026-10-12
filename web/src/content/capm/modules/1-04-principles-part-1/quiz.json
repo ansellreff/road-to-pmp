@@ -587,5 +587,33 @@
         "label": "PMBOK 8, Standard 3.2"
       }
     ]
+  },
+  {
+    "id": "q30",
+    "q": "Quality has several dimensions. Match each question with the dimension that asks it.",
+    "type": "match",
+    "left": [
+      "Does it function as intended?",
+      "Is it consistent?",
+      "Can it cope with failures and recover quickly?",
+      "Is it on par with similar outputs?",
+      "Does it meet regulations and standards?"
+    ],
+    "right": [
+      "Performance",
+      "Reliability",
+      "Resilience",
+      "Uniformity",
+      "Compliance"
+    ],
+    "explanation": "Performance is about working as intended, reliability about consistency, resilience about coping with failure and recovering, uniformity about being on par with similar outputs, and compliance about meeting regulations and standards.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
   }
 ]

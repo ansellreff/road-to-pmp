@@ -10,6 +10,7 @@ import { breakLeftMs, countRight, domainScores, elapsedMs, examKey, examLimitMs,
 import { addExamTime, finishExam, moduleKey, updateExam, useProgress, type ExamRun } from '../lib/progress'
 import { PageHeader, Waiting } from '../components/Page'
 import { btnPrimary, btnQuiet, column, link, note, sectionTitle, subTitle } from '../lib/ui'
+import { isComplete } from '../lib/answers'
 import { useLoaded } from '../lib/useLoaded'
 import { useNow } from '../lib/useNow'
 
@@ -121,6 +122,10 @@ function ExamHeader({ exam, mode, leftMs, detail }: { exam: Exam; mode: string; 
 
 const answeredCount = (picks: (number | null)[], positions: number[]) =>
   positions.filter((i) => picks[i] !== null).length
+
+/** Answered in full: a matching question with an item still without an answer is not. */
+const isAnswered = (question: ExamQuestion, pick: number | null) =>
+  isComplete(pick, question.question.type === 'match' ? question.question.left?.length : undefined)
 
 /** One chapter per domain. Each answer is final and is explained straight away. */
 function PracticeRun({ course, exam, questions, run, examKey: key, leftMs, submit }: RunProps) {
@@ -262,7 +267,7 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
 
   // Opening or resuming the exam starts at the first unanswered question of the open half.
   // After that the question only changes when the learner moves, so an answer can be changed or flagged.
-  const [wanted, setWanted] = useState(() => positions.find((i) => run.picks[i] === null) ?? first)
+  const [wanted, setWanted] = useState(() => positions.find((i) => !isAnswered(questions[i], run.picks[i])) ?? first)
   const [confirming, setConfirming] = useState(false)
   const position = wanted >= first && wanted < end ? wanted : first
   const resting = onBreak(run, now)
@@ -301,14 +306,15 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
     window.scrollTo(0, 0)
   }
   const flagged = run.flags.includes(position)
-  const unanswered = positions.filter((i) => run.picks[i] === null)
+  const unanswered = positions.filter((i) => !isAnswered(questions[i], run.picks[i]))
+  const answered = positions.length - unanswered.length
   const flaggedHere = positions.filter((i) => run.flags.includes(i))
   const header = (
     <ExamHeader
       exam={exam}
       mode="Real exam mode"
       leftMs={leftMs}
-      detail={`Question ${position + 1} of ${total}. ${secondHalf ? 'Second' : 'First'} half: ${answeredCount(run.picks, positions)} of ${positions.length} answered`}
+      detail={`Question ${position + 1} of ${total}. ${secondHalf ? 'Second' : 'First'} half: ${answered} of ${positions.length} answered`}
     />
   )
   const finishLabel = secondHalf ? 'Submit the exam' : `Finish questions 1 to ${halfSize} and take the break`
@@ -381,21 +387,22 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
   const grid = (
     <PanelBlock title={secondHalf ? `Questions ${halfSize + 1} to ${total}` : `Questions 1 to ${halfSize}`}>
       <p className={`${note} mb-3`}>
-        {answeredCount(run.picks, positions)} answered, {unanswered.length} to go
+        {answered} answered, {unanswered.length} to go
         {flaggedHere.length > 0 && `, ${flaggedHere.length} flagged`}.{' '}
         {secondHalf ? `Questions 1 to ${halfSize} are locked.` : 'The second half opens after the break.'}
       </p>
       <ol className="grid grid-cols-6 gap-1.5 sm:grid-cols-10 lg:grid-cols-6">
         {positions.map((i) => {
           const isFlagged = run.flags.includes(i)
-          let style = run.picks[i] === null ? 'border-edge bg-surface' : 'border-plan bg-plan-soft font-semibold'
+          const open = unanswered.includes(i)
+          let style = open ? 'border-edge bg-surface' : 'border-plan bg-plan-soft font-semibold'
           if (isFlagged) style = 'border-milestone bg-milestone-soft'
           return (
             <li key={i}>
               <button
                 onClick={() => go(i)}
                 aria-current={i === position}
-                aria-label={`Question ${i + 1}${run.picks[i] === null ? ', unanswered' : ', answered'}${isFlagged ? ', flagged' : ''}`}
+                aria-label={`Question ${i + 1}${open ? ', unanswered' : ', answered'}${isFlagged ? ', flagged' : ''}`}
                 className={`press relative min-h-11 w-full rounded-md border tabular-nums hover:border-ink ${style} ${
                   i === position ? 'ring-2 ring-ink' : ''
                 }`}
@@ -433,6 +440,7 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
             picked={run.picks[position]}
             revealed={false}
             onPick={pick}
+            changeable
             onNext={position + 1 < end ? () => go(position + 1) : undefined}
             onPrevious={position > first ? () => go(position - 1) : undefined}
             onFlag={toggleFlag}

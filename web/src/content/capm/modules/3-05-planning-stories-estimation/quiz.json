@@ -576,5 +576,93 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q29",
+    "q": "Match each description of a good user story with the INVEST criterion.",
+    "type": "match",
+    "left": [
+      "It can be delivered without waiting for another story",
+      "It is a starting point for discussion, not a fixed contract",
+      "The team understands it well enough to size it",
+      "It fits within one iteration",
+      "There is a clear way to check that it is done"
+    ],
+    "right": [
+      "Independent",
+      "Negotiable",
+      "Estimable",
+      "Small",
+      "Testable"
+    ],
+    "explanation": "INVEST stands for independent, negotiable, valuable, estimable, small and testable. The sixth, valuable, means the story delivers value to a user or the customer.",
+    "ref": "PMBOK 8, Guide section 4, User stories",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, User stories"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Agile teams plan at several levels. Match each question with the level that answers it.",
+    "type": "match",
+    "left": [
+      "Why are we building this, and for whom?",
+      "In what order will the major capabilities arrive?",
+      "Which features are in the next release?",
+      "Which stories will we finish in the next two weeks?"
+    ],
+    "right": [
+      "Product vision",
+      "Product roadmap",
+      "Release plan",
+      "Iteration plan"
+    ],
+    "explanation": "Planning goes from the vision, through the roadmap and the release plan, down to the iteration plan and the daily plan. Each level is more detailed and looks less far ahead.",
+    "ref": "PMBOK 8, Guide section 5, Agile release planning",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Agile release planning"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Which INVEST criterion does the story fail?",
+    "strip": [
+      {
+        "who": "Product owner",
+        "says": "Next story: rebuild the whole reporting module."
+      },
+      {
+        "who": "Developer",
+        "says": "We understand it, and we can size it: about three months of work."
+      },
+      {
+        "who": "Product owner",
+        "says": "Our iterations are two weeks long."
+      }
+    ],
+    "options": [
+      "Small",
+      "Estimable",
+      "Negotiable",
+      "Independent"
+    ],
+    "answer": 0,
+    "explanation": "A small story fits within one iteration. This one can be estimated, at three months, so it is estimable; it is simply far too large and should be split.",
+    "ref": "PMBOK 8, Guide section 4, User stories",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, User stories"
+      }
+    ]
   }
 ]

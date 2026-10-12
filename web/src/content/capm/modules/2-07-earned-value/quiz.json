@@ -552,5 +552,159 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q28",
+    "q": "Match each question with the earned value term that answers it.",
+    "type": "match",
+    "left": [
+      "What is the total budget for the work?",
+      "How much work should be done by now?",
+      "How much work is done, valued at its budget?",
+      "How much has the completed work actually cost?"
+    ],
+    "right": [
+      "Budget at completion",
+      "Planned value",
+      "Earned value",
+      "Actual cost"
+    ],
+    "explanation": "Planned value is the budget for the work scheduled so far. Earned value is the budget for the work actually done. Actual cost is what that work cost. Budget at completion is the whole budget.",
+    "ref": "PMBOK 8, Guide section 5, Earned value (EV) analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 274,
+        "label": "PMBOK 8, Guide section 5, Earned value (EV) analysis"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each rule for crediting earned value with the name of the method.",
+    "type": "match",
+    "left": [
+      "Nothing until the work is finished, then all of it",
+      "A set share at each milestone reached",
+      "With the passage of time, as for project management work",
+      "In proportion to the work it supports, such as inspection",
+      "An estimate of the share that is done"
+    ],
+    "right": [
+      "0/100",
+      "Weighted milestone",
+      "Level of effort",
+      "Apportioned effort",
+      "Percent complete"
+    ],
+    "explanation": "0/100 suits short work within one reporting period. Weighted milestones suit longer work with verifiable milestones. Level of effort is for work that cannot be measured and should be kept to a minimum. Apportioned effort follows the work it supports. Percent complete needs measurable criteria, or it becomes subjective.",
+    "ref": "The Standard for Earned Value Management, 3.2.2.2",
+    "links": [
+      {
+        "book": "evm",
+        "page": 46,
+        "label": "The Standard for Earned Value Management, 3.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Select the work package that is ahead of schedule but over budget.",
+    "type": "hotspot",
+    "diagram": "earned-value-figure",
+    "options": [
+      "Foundations",
+      "Walls",
+      "Roof",
+      "Wiring"
+    ],
+    "answer": 2,
+    "explanation": "For the roof, schedule variance is EV − PV = 12,000 − 10,000 = +2,000, so it is ahead. Cost variance is EV − AC = 12,000 − 15,000 = −3,000, so it is over budget. No other work package has a positive schedule variance.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Select the work package with the lowest schedule performance index.",
+    "type": "hotspot",
+    "diagram": "earned-value-figure",
+    "options": [
+      "Foundations",
+      "Walls",
+      "Roof",
+      "Wiring"
+    ],
+    "answer": 3,
+    "explanation": "SPI = EV ÷ PV. Foundations 20 ÷ 20 = 1.00; walls 24 ÷ 30 = 0.80; roof 12 ÷ 10 = 1.20; wiring 12 ÷ 16 = 0.75. Wiring is the furthest behind for its size.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Select the only work package with a positive cost variance.",
+    "type": "hotspot",
+    "diagram": "earned-value-figure",
+    "options": [
+      "Foundations",
+      "Walls",
+      "Roof",
+      "Wiring"
+    ],
+    "answer": 0,
+    "explanation": "CV = EV − AC. Foundations 20,000 − 18,000 = +2,000, under budget. Walls 0; roof −3,000; wiring −2,000.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "What should the project manager answer?",
+    "strip": [
+      {
+        "who": "Sponsor",
+        "says": "Where does the project stand today?"
+      },
+      {
+        "who": "Project manager",
+        "says": "Planned value is $50,000, earned value is $40,000 and actual cost is $44,000."
+      },
+      {
+        "who": "Sponsor",
+        "says": "And in plain words?"
+      }
+    ],
+    "options": [
+      "Ahead of schedule and under budget",
+      "Ahead of schedule and over budget",
+      "Behind schedule and under budget",
+      "Behind schedule and over budget"
+    ],
+    "answer": 3,
+    "explanation": "Schedule variance is EV − PV = 40,000 − 50,000 = −10,000: behind schedule. Cost variance is EV − AC = 40,000 − 44,000 = −4,000: over budget. A negative variance is unfavorable.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
   }
 ]

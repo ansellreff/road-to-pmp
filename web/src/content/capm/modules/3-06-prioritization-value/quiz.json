@@ -571,5 +571,91 @@
         "label": "Agile Practice Guide, First Edition, 5.2.5"
       }
     ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each purpose with the term.",
+    "type": "match",
+    "left": [
+      "Learning: test assumptions with real users",
+      "Release: enough features to be offered to the market",
+      "The smallest piece of functionality with value to the business"
+    ],
+    "right": [
+      "Minimum viable product",
+      "Minimum marketable product",
+      "Minimum business increment"
+    ],
+    "explanation": "A minimum viable product exists to learn. A minimum marketable product has enough to be released and deliver value to customers. A minimum business increment is the smallest deliverable with business value.",
+    "ref": "Agile Practice Guide, Glossary (minimum viable product)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 184,
+        "label": "Agile Practice Guide, Glossary (minimum viable product)"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Match each description with the prioritization technique.",
+    "type": "match",
+    "left": [
+      "Must have, should have, could have, will not have",
+      "One ordered list with no ties",
+      "Cost of delay divided by job size; the highest goes first",
+      "Features sorted into basic, performance and delighter",
+      "Stakeholders spend a fixed budget of points on what they want"
+    ],
+    "right": [
+      "MoSCoW",
+      "Stack rank",
+      "Weighted shortest job first",
+      "Kano analysis",
+      "100-point method"
+    ],
+    "explanation": "MoSCoW is quick and coarse. A stack rank forces a single order. Weighted shortest job first suits large backlogs. Kano analysis helps choose a mix of features. The 100-point method, like buy a feature, reveals true preferences.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "What are they planning to build?",
+    "strip": [
+      {
+        "who": "Founder",
+        "says": "We do not even know whether clinics want online booking."
+      },
+      {
+        "who": "Product owner",
+        "says": "Then let us build the smallest version that five clinics can try."
+      },
+      {
+        "who": "Founder",
+        "says": "And learn from how they use it before we build more."
+      }
+    ],
+    "options": [
+      "A minimum marketable product",
+      "A minimum viable product",
+      "A minimum business increment",
+      "A product roadmap"
+    ],
+    "answer": 1,
+    "explanation": "A minimum viable product serves learning: it is the smallest version that lets the team test assumptions and get feedback from real users. A minimum marketable product has enough features to be offered to the market.",
+    "ref": "Agile Practice Guide, Glossary (minimum viable product)",
+    "links": [
+      {
+        "book": "agile",
+        "page": 184,
+        "label": "Agile Practice Guide, Glossary (minimum viable product)"
+      }
+    ]
   }
 ]

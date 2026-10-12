@@ -710,5 +710,194 @@
         "label": "Business Analysis for Practitioners, Analyze Solution Information"
       }
     ]
+  },
+  {
+    "id": "q36",
+    "q": "Analysis models fall into five categories. Match each question with the category that answers it.",
+    "type": "match",
+    "left": [
+      "What is in the solution, and what is outside it?",
+      "How will the solution be used?",
+      "What must the solution enforce?",
+      "What information is used, and how does it change?",
+      "How does the solution connect to users and other systems?"
+    ],
+    "right": [
+      "Scope models",
+      "Process models",
+      "Rule models",
+      "Data models",
+      "Interface models"
+    ],
+    "explanation": "The five categories are scope, process, rule, data and interface. Using models from several categories shows the solution from different sides and exposes gaps.",
+    "ref": "PMI Guide to Business Analysis, 7.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 227,
+        "label": "PMI Guide to Business Analysis, 7.2"
+      }
+    ]
+  },
+  {
+    "id": "q37",
+    "q": "Match each model with its category.",
+    "type": "match",
+    "left": [
+      "Context diagram",
+      "Use case",
+      "Decision table",
+      "Entity relationship diagram",
+      "Wireframe"
+    ],
+    "right": [
+      "Scope",
+      "Process",
+      "Rule",
+      "Data",
+      "Interface"
+    ],
+    "explanation": "A context diagram shows what is in and out of scope. A use case shows how the solution is used. A decision table holds business rules. An entity relationship diagram shows data objects and their relationships. A wireframe shows a screen.",
+    "ref": "PMI Guide to Business Analysis, 7.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 227,
+        "label": "PMI Guide to Business Analysis, 7.2"
+      }
+    ]
+  },
+  {
+    "id": "q38",
+    "q": "Select the decision point of this process.",
+    "type": "hotspot",
+    "diagram": "process-flow",
+    "options": [
+      "Choose a time",
+      "Time free?",
+      "Hold the time",
+      "Send confirmation"
+    ],
+    "answer": 1,
+    "explanation": "In a process flow a diamond is a decision: the flow leaves it by one of several labelled paths, here Yes or No.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.12",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 243,
+        "label": "PMI Guide to Business Analysis, 7.2.2.12"
+      }
+    ]
+  },
+  {
+    "id": "q39",
+    "q": "Select the step that the patient carries out after the system has held the time.",
+    "type": "hotspot",
+    "diagram": "process-flow",
+    "options": [
+      "Choose a time",
+      "Hold the time",
+      "Pay the deposit",
+      "Send confirmation",
+      "Booking shows on the day list"
+    ],
+    "answer": 2,
+    "explanation": "Swim lanes show who does each step. The arrow from Hold the time crosses from the booking system's lane into the patient's lane, to Pay the deposit.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.12",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 243,
+        "label": "PMI Guide to Business Analysis, 7.2.2.12"
+      }
+    ]
+  },
+  {
+    "id": "q40",
+    "q": "An order was cancelled and the customer's money was returned. Select the state the order was in just before.",
+    "type": "hotspot",
+    "diagram": "state-diagram",
+    "options": [
+      "Placed",
+      "Paid",
+      "Shipped",
+      "Delivered"
+    ],
+    "answer": 1,
+    "explanation": "The arrow labelled \"cancelled and refunded\" leaves the state Paid. An order cancelled while still Placed has nothing to refund.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.15",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 248,
+        "label": "PMI Guide to Business Analysis, 7.2.2.15"
+      }
+    ]
+  },
+  {
+    "id": "q41",
+    "q": "Select the state in which an order can no longer be cancelled, although it has not reached an end state.",
+    "type": "hotspot",
+    "diagram": "state-diagram",
+    "options": [
+      "Placed",
+      "Paid",
+      "Shipped",
+      "Cancelled"
+    ],
+    "answer": 2,
+    "explanation": "A move with no arrow is not allowed. Arrows to Cancelled leave only Placed and Paid; the only arrow out of Shipped leads to Delivered.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.15",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 248,
+        "label": "PMI Guide to Business Analysis, 7.2.2.15"
+      }
+    ]
+  },
+  {
+    "id": "q42",
+    "q": "Select the use case in which two actors take part, one of them another system.",
+    "type": "hotspot",
+    "diagram": "use-case-diagram",
+    "options": [
+      "Book an appointment",
+      "Cancel an appointment",
+      "Pay a deposit",
+      "View the day list"
+    ],
+    "answer": 2,
+    "explanation": "A line joins an actor to each use case it takes part in. Pay a deposit is joined to the patient and to the payment provider, which is a system. An actor may be a person or a system.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.18",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 251,
+        "label": "PMI Guide to Business Analysis, 7.2.2.18"
+      }
+    ]
+  },
+  {
+    "id": "q43",
+    "q": "Select the use case in which the receptionist is the only actor.",
+    "type": "hotspot",
+    "diagram": "use-case-diagram",
+    "options": [
+      "Book an appointment",
+      "Cancel an appointment",
+      "Pay a deposit",
+      "View the day list"
+    ],
+    "answer": 3,
+    "explanation": "Only the receptionist's line reaches View the day list. Cancel an appointment is shared by the receptionist and the patient.",
+    "ref": "PMI Guide to Business Analysis, 7.2.2.18",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 251,
+        "label": "PMI Guide to Business Analysis, 7.2.2.18"
+      }
+    ]
   }
 ]

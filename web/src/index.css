@@ -348,3 +348,61 @@ body {
     animation: none !important;
   }
 }
+
+/* The selectable areas of a hot spot question, drawn over a drawing. */
+.spot {
+  cursor: pointer;
+  outline: none;
+  --spot: var(--color-plan);
+}
+.spot[aria-disabled='true'] {
+  cursor: default;
+}
+.spot rect {
+  fill: var(--spot);
+  fill-opacity: 0;
+  stroke: var(--spot);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+  transition: fill-opacity 0.15s;
+}
+.spot circle {
+  fill: var(--color-surface);
+  stroke: var(--spot);
+  stroke-width: 1.5;
+}
+.spot text {
+  fill: var(--spot);
+}
+.spot:not([aria-disabled='true']):hover rect,
+.spot:focus-visible rect {
+  fill-opacity: 0.12;
+  stroke-width: 2.5;
+  stroke-dasharray: none;
+}
+.spot[data-state='picked'] rect,
+.spot[data-state='right'] rect,
+.spot[data-state='wrong'] rect {
+  fill-opacity: 0.16;
+  stroke-width: 3;
+  stroke-dasharray: none;
+}
+.spot[data-state='picked'] circle,
+.spot[data-state='right'] circle,
+.spot[data-state='wrong'] circle {
+  fill: var(--spot);
+}
+.spot[data-state='picked'] text,
+.spot[data-state='right'] text,
+.spot[data-state='wrong'] text {
+  fill: var(--color-surface);
+}
+.spot[data-state='right'] {
+  --spot: var(--color-done);
+}
+.spot[data-state='wrong'] {
+  --spot: var(--color-critical);
+}
+.spot[data-state='off'] {
+  --spot: var(--color-muted);
+}

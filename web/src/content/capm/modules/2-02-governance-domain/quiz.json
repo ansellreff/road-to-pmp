@@ -523,5 +523,33 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q27",
+    "q": "Match each description with the measurement pitfall it shows.",
+    "type": "match",
+    "left": [
+      "Being measured changes how the team behaves",
+      "Page views are counted, but they help no decision",
+      "Targets nobody can reach keep lowering morale",
+      "A manager sees in the data only what supports her view",
+      "Two figures move together, so one is taken to drive the other"
+    ],
+    "right": [
+      "Hawthorne effect",
+      "Vanity metric",
+      "Demoralization",
+      "Confirmation bias",
+      "Correlation versus causation"
+    ],
+    "explanation": "The Hawthorne effect is behavior changing because it is measured. A vanity metric shows data without useful information. Unachievable targets demoralize. Confirmation bias is seeing what you already believe. Correlation is not proof of causation.",
+    "ref": "PMBOK 8, Guide 2.1.6.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.7.1"
+      }
+    ]
   }
 ]

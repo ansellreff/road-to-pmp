@@ -607,5 +607,63 @@
         "label": "PMBOK 7, Guide 2.8"
       }
     ]
+  },
+  {
+    "id": "q31",
+    "q": "Each response to a threat has a mirror image for an opportunity. Match them.",
+    "type": "match",
+    "left": [
+      "Avoid",
+      "Mitigate",
+      "Transfer"
+    ],
+    "right": [
+      "Exploit",
+      "Enhance",
+      "Share"
+    ],
+    "explanation": "Avoid removes a threat and exploit makes sure an opportunity happens. Mitigate lowers probability or impact and enhance raises them. Transfer passes a threat to a third party and share gives part of an opportunity to one. Escalate and accept are the same for both.",
+    "ref": "PMBOK 8, Glossary (risk acceptance)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 377,
+        "label": "PMBOK 8, Glossary (risk acceptance)"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "What is the late delivery now, and where is it recorded?",
+    "strip": [
+      {
+        "who": "Team member",
+        "says": "The supplier has just confirmed it: the parts will arrive three weeks late."
+      },
+      {
+        "who": "Project manager",
+        "says": "So it is no longer something that might happen."
+      },
+      {
+        "who": "Team member",
+        "says": "No. It has happened. Where do I record it?"
+      }
+    ],
+    "options": [
+      "A risk, in the risk register",
+      "An issue, in the issue log",
+      "An assumption, in the assumption log",
+      "A constraint, in the project charter"
+    ],
+    "answer": 1,
+    "explanation": "A risk is uncertain: it may or may not happen. Once it has happened and affects the project it is an issue, and it is recorded in the issue log and given an owner.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
   }
 ]

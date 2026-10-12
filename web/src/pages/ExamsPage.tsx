@@ -57,6 +57,13 @@ export default function ExamsPage() {
         In both modes the {course.exam.minutes / 60}-hour clock starts when you start and keeps running if you close the
         page. When it runs out, the exam is submitted with the answers given so far.
       </p>
+      <p className={`${note} mt-2`}>
+        Beside multiple choice, the real exam has matching, hot spot and comic strip questions.{' '}
+        <Link to={`/${course.id}/question-types`} className={link}>
+          Try one of each
+        </Link>{' '}
+        before an exam that has them.
+      </p>
 
       {exams.length === 0 && <p className="mt-8 text-muted">This course has no mock exams yet.</p>}
       {exams.map((exam) => (
@@ -100,6 +107,13 @@ function ExamRow({ course, exam, progress }: { course: Course; exam: Exam; progr
           {seen === 0
             ? 'You have not seen any of them yet.'
             : `You have already answered ${seen} of the ${exam.questions.length}.`}
+        </p>
+      )}
+
+      {exam.mixed && (
+        <p className={`${note} mt-1`}>
+          The real exam's mix: about one question in seven is a matching, hot spot or comic strip question. These
+          questions are also in the module quizzes.
         </p>
       )}
 

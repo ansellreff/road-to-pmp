@@ -544,5 +544,162 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q28",
+    "q": "Match each description with the flow metric.",
+    "type": "match",
+    "left": [
+      "Items finished per time period",
+      "Time from starting work on an item to finishing it",
+      "Time from the request for an item to its delivery",
+      "Items being worked on now",
+      "Items waiting in each state"
+    ],
+    "right": [
+      "Throughput",
+      "Cycle time",
+      "Lead time",
+      "Work in process",
+      "Queue length"
+    ],
+    "explanation": "Lead time includes the waiting before work starts, so it is never shorter than cycle time. Limiting work in process exposes bottlenecks, and growing queues signal them.",
+    "ref": "Agile Practice Guide, 5.5.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match what you see on a cumulative flow diagram with what it means.",
+    "type": "match",
+    "left": [
+      "The vertical distance between the arrival line and the done line",
+      "The horizontal distance between the same two lines",
+      "The slope of the done line",
+      "A band that keeps getting wider"
+    ],
+    "right": [
+      "Work in process at that moment",
+      "Approximate cycle time",
+      "Throughput",
+      "A bottleneck"
+    ],
+    "explanation": "Read up and down for the amount of work in process, and across for time. A widening band means work enters that state faster than it leaves; bands rising in parallel mean steady flow.",
+    "ref": "Agile Practice Guide, 5.5.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Select the day on which work was added to the iteration.",
+    "type": "hotspot",
+    "diagram": "burndown-figure",
+    "options": [
+      "Day 2",
+      "Day 4",
+      "Day 5",
+      "Day 7",
+      "Day 9",
+      "Day 10"
+    ],
+    "answer": 3,
+    "explanation": "On day 7 the line rises from 27 to 31 points. Remaining work can only go up if work was added. A burndown chart shows a scope change only in this indirect way.",
+    "ref": "PMBOK 8, Guide section 5, Burndown chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burndown chart"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Select the day on which the line shows that nothing was finished, a sign to look for an impediment.",
+    "type": "hotspot",
+    "diagram": "burndown-figure",
+    "options": [
+      "Day 2",
+      "Day 4",
+      "Day 5",
+      "Day 9",
+      "Day 10"
+    ],
+    "answer": 1,
+    "explanation": "The line is flat from day 3 to day 4: 41 points remain on both. A flat line means nothing is being finished.",
+    "ref": "PMBOK 8, Guide section 5, Burndown chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burndown chart"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Select the point that shows the iteration ended with work unfinished.",
+    "type": "hotspot",
+    "diagram": "burndown-figure",
+    "options": [
+      "Day 5",
+      "Day 7",
+      "Day 9",
+      "Day 10"
+    ],
+    "answer": 3,
+    "explanation": "At the end of day 10 the line is at 4 points, not at zero. Throughout the iteration the actual line stayed above the ideal line: the team was behind.",
+    "ref": "PMBOK 8, Guide section 5, Burndown chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burndown chart"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "What does the burndown chart tell the team?",
+    "strip": [
+      {
+        "who": "Scrum master",
+        "says": "It is day 6 of 10. The ideal line says 16 points should be left."
+      },
+      {
+        "who": "Developer",
+        "says": "We have 24 left."
+      },
+      {
+        "who": "Scrum master",
+        "says": "And our line has not moved for two days."
+      }
+    ],
+    "options": [
+      "It is ahead, and can take on more work",
+      "It is on track to reach the sprint goal",
+      "Work has been added to the iteration",
+      "It is behind, and something may be blocking it"
+    ],
+    "answer": 3,
+    "explanation": "An actual line above the ideal line means the team is behind. A flat line means nothing is being finished, which is a reason to look for an impediment. Added work would make the line rise.",
+    "ref": "PMBOK 8, Guide section 5, Burndown chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burndown chart"
+      }
+    ]
   }
 ]

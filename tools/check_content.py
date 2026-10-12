@@ -112,8 +112,8 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
                 problems.append(f"{where}: two options are identical")
             if not isinstance(q.get("answer"), int) or not 0 <= q["answer"] < len(options):
                 problems.append(f"{where}: answer index is not valid")
-        if q.get("diagram") and q["diagram"] not in DIAGRAMS:
-            problems.append(f"{where}: no drawing is called \"{q['diagram']}\"")
+        if q.get("diagram") and kind != "hotspot":
+            problems.append(f"{where}: only a hot spot question has a drawing")
         for panel in q.get("strip", []):
             if not str(panel.get("who", "")).strip() or not str(panel.get("says", "")).strip():
                 problems.append(f"{where}: a comic strip panel needs who and says")
@@ -145,8 +145,9 @@ def hotspots() -> dict[str, list[str]]:
     if not path.is_file():
         return {}
     found = {}
-    for name, items in re.findall(r"'([a-z-]+)':\s*\[([^\]]*)\]", path.read_text(encoding="utf-8")):
-        found[name] = re.findall(r"'((?:[^'\\]|\\.)*)'", items)
+    # Each drawing is a block: 'name': [ { name: 'Area', at: [...] }, ... ], closed by a line "  ],".
+    for name, items in re.findall(r"^  '?([a-z-]+)'?: \[\n(.*?)^  \],", path.read_text(encoding="utf-8"), re.MULTILINE | re.DOTALL):
+        found[name] = re.findall(r"name: '((?:[^'\\]|\\.)*)'", items)
     return found
 
 

@@ -649,5 +649,133 @@
         "label": "Business Analysis for Practitioners, How to Package Solution Information"
       }
     ]
+  },
+  {
+    "id": "q33",
+    "q": "Match each pair of requirements with the relationship between them.",
+    "type": "match",
+    "left": [
+      "\"Pay by card\" is one part of \"Take payment\"",
+      "\"Show order history\" cannot be built until \"Store orders\" is built",
+      "\"Collect loyalty points\" can be built, but is of no use until \"Redeem points\" exists"
+    ],
+    "right": [
+      "Subset",
+      "Implementation dependency",
+      "Benefit or value dependency"
+    ],
+    "explanation": "A subset is a child of a larger requirement. An implementation dependency is about the order of building. A benefit or value dependency is about when the requirement becomes worth having.",
+    "ref": "PMI Guide to Business Analysis, 8.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 302,
+        "label": "PMI Guide to Business Analysis, 8.2"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "Match what happens to a change request with the decision that was made.",
+    "type": "match",
+    "left": [
+      "Affected deliverables and planned work are updated",
+      "The decision and reason are recorded, and a later release is noted",
+      "The decision and reason are recorded, and nothing is scheduled",
+      "Another round of elicitation and analysis follows, then resubmission"
+    ],
+    "right": [
+      "Approved",
+      "Deferred",
+      "Rejected",
+      "More information required"
+    ],
+    "explanation": "Every decision is recorded with its reason. In adaptive work the equivalents are: added to the backlog, ranked low in the backlog, not added, and elaborated further when chosen.",
+    "ref": "PMI Guide to Business Analysis, 8.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 314,
+        "label": "PMI Guide to Business Analysis, 8.4"
+      }
+    ]
+  },
+  {
+    "id": "q35",
+    "q": "Select the requirement that looks like scope creep.",
+    "type": "hotspot",
+    "diagram": "trace-figure",
+    "options": [
+      "R1 Book online",
+      "R2 Send reminders",
+      "R3 Export to a spreadsheet",
+      "R4 Pay a deposit"
+    ],
+    "answer": 2,
+    "explanation": "R3 traces back to no business objective. A requirement that traces back to nothing adds no value and should be questioned: it is scope creep or gold plating.",
+    "ref": "PMI Guide to Business Analysis, 8.2.2.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 306,
+        "label": "PMI Guide to Business Analysis, 8.2.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q36",
+    "q": "The sponsor asks whether the product is ready for delivery. Select the requirement that says it is not.",
+    "type": "hotspot",
+    "diagram": "trace-figure",
+    "options": [
+      "R1 Book online",
+      "R2 Send reminders",
+      "R3 Export to a spreadsheet",
+      "R4 Pay a deposit"
+    ],
+    "answer": 1,
+    "explanation": "Every approved requirement should trace forward to a test that has passed. R2 has a design element and no test, so the product is not ready.",
+    "ref": "PMI Guide to Business Analysis, 8.2.2.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 306,
+        "label": "PMI Guide to Business Analysis, 8.2.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q37",
+    "q": "What was decided about the change request?",
+    "strip": [
+      {
+        "who": "Sponsor",
+        "says": "The export feature is a good idea, but not for this release."
+      },
+      {
+        "who": "Analyst",
+        "says": "I will record the decision and the reason."
+      },
+      {
+        "who": "Analyst",
+        "says": "And I will note it for release 3."
+      }
+    ],
+    "options": [
+      "It was approved",
+      "It was rejected",
+      "It was deferred",
+      "It needs more information"
+    ],
+    "answer": 2,
+    "explanation": "A deferred change is recorded with its reason, and a future date or release is noted. A rejected change is recorded too, but nothing is scheduled.",
+    "ref": "PMI Guide to Business Analysis, 8.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 314,
+        "label": "PMI Guide to Business Analysis, 8.4"
+      }
+    ]
   }
 ]

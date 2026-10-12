@@ -566,5 +566,93 @@
         "label": "Agile Practice Guide, First Edition, 4.3.6"
       }
     ]
+  },
+  {
+    "id": "q29",
+    "q": "A conflict grows through five levels. Match each sign with its level.",
+    "type": "match",
+    "left": [
+      "Open, fact-based language; people share information",
+      "People protect themselves; language becomes guarded",
+      "The aim becomes winning; personal attacks begin",
+      "People protect their own group; language becomes ideological",
+      "The aim is to destroy the other side; hardly any communication"
+    ],
+    "right": [
+      "Level 1, problem to solve",
+      "Level 2, disagreement",
+      "Level 3, contest",
+      "Level 4, crusade",
+      "Level 5, world war"
+    ],
+    "explanation": "The language people use shows the level. A servant leader acts early, while the conflict is still a problem to solve or a disagreement.",
+    "ref": "Agile Practice Guide, 4.3.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Psychological safety builds in four stages. Match what people feel safe to do with the stage.",
+    "type": "match",
+    "left": [
+      "Belong: be accepted as a member of the team",
+      "Learn: ask questions, experiment, make mistakes",
+      "Contribute: offer ideas and take part in decisions",
+      "Challenge: question assumptions and suggest changes"
+    ],
+    "right": [
+      "Inclusion safety",
+      "Learner safety",
+      "Contributor safety",
+      "Challenger safety"
+    ],
+    "explanation": "The stages come in this order: inclusion, learner, contributor, challenger. A team that cannot yet question how things are done has not reached challenger safety.",
+    "ref": "Agile Practice Guide, 4.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 57,
+        "label": "Agile Practice Guide, 4.2"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Which stage of psychological safety has this team not reached?",
+    "strip": [
+      {
+        "who": "New member",
+        "says": "I think the estimate is wrong, but I will not say so."
+      },
+      {
+        "who": "Coach",
+        "says": "Why not? You ask questions and offer ideas in every meeting."
+      },
+      {
+        "who": "New member",
+        "says": "The last person who questioned how we plan was laughed at."
+      }
+    ],
+    "options": [
+      "Inclusion safety",
+      "Learner safety",
+      "Contributor safety",
+      "Challenger safety"
+    ],
+    "answer": 3,
+    "explanation": "Challenger safety is feeling safe to question assumptions and suggest changes. The member already asks questions (learner safety) and offers ideas (contributor safety), but does not feel safe to challenge.",
+    "ref": "Agile Practice Guide, 4.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 57,
+        "label": "Agile Practice Guide, 4.2"
+      }
+    ]
   }
 ]

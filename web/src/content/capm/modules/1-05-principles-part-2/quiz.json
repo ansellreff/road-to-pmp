@@ -587,5 +587,33 @@
         "label": "PMBOK 8, Standard 3.8"
       }
     ]
+  },
+  {
+    "id": "q30",
+    "q": "Match each one-line summary with the principle of the Eighth Edition it describes.",
+    "type": "match",
+    "left": [
+      "See the project as a connected system",
+      "Build it in: prevent, improve, cut waste",
+      "Own decisions and outcomes; lead by example",
+      "Trust, clarity and team agreements",
+      "Outcomes and benefits matter more than outputs"
+    ],
+    "right": [
+      "Adopt a Holistic View",
+      "Embed Quality Into Processes and Deliverables",
+      "Be an Accountable Leader",
+      "Build an Empowered Culture",
+      "Focus on Value"
+    ],
+    "explanation": "Each principle has a short essence: a connected system (holistic view), building it in (quality), owning decisions (accountable leader), trust and team agreements (empowered culture), and outcomes over outputs (value).",
+    "ref": "PMBOK 8, Standard 3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 59,
+        "label": "PMBOK 8, Standard 3.1"
+      }
+    ]
   }
 ]

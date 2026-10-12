@@ -608,5 +608,93 @@
         "label": "PMBOK 7, Standard 2.4"
       }
     ]
+  },
+  {
+    "id": "q31",
+    "q": "Match each description of a project management office (PMO) with its type.",
+    "type": "match",
+    "left": [
+      "Supplies templates, training and lessons learned to those who ask",
+      "Requires every project to follow its framework and use its templates",
+      "Assigns the project managers, who report to it"
+    ],
+    "right": [
+      "Supportive",
+      "Controlling",
+      "Directive"
+    ],
+    "explanation": "A supportive PMO consults and has low control. A controlling PMO supports and also requires compliance, with moderate control. A directive PMO manages the projects itself, with high control.",
+    "ref": "Process Groups: A Practice Guide, 2.6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 69,
+        "label": "Process Groups: A Practice Guide, 2.6"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Match each organizational structure with how it groups work and how much authority it gives the project manager.",
+    "type": "match",
+    "left": [
+      "Functional",
+      "Multidivisional",
+      "Strong matrix",
+      "Project-oriented"
+    ],
+    "right": [
+      "Grouped by the job being done; authority is low",
+      "Grouped by product, region or customer type; authority is low",
+      "Grouped by job function, project management being one; authority is moderate to high",
+      "Grouped by project; authority is high to almost total"
+    ],
+    "explanation": "The more the organization is arranged around projects, the more authority the project manager has: low in functional and multidivisional structures, moderate to high in a strong matrix, and high to almost total in a project-oriented structure.",
+    "ref": "PMBOK 8, Standard 2.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 44,
+        "label": "PMBOK 8, Standard 2.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "Which type of PMO is this?",
+    "strip": [
+      {
+        "who": "Project manager",
+        "says": "The PMO has sent me its risk template again. Do I really have to use it?"
+      },
+      {
+        "who": "PMO analyst",
+        "says": "Yes. Every project follows our framework, and we audit for it twice a year."
+      },
+      {
+        "who": "Project manager",
+        "says": "So you are taking over my project?"
+      },
+      {
+        "who": "PMO analyst",
+        "says": "No. You manage it, and you still report to your sponsor."
+      }
+    ],
+    "options": [
+      "A supportive PMO",
+      "A controlling PMO",
+      "A directive PMO",
+      "An agile PMO"
+    ],
+    "answer": 1,
+    "explanation": "A controlling PMO gives support and requires compliance, for example with a framework or set templates; its control is moderate. A supportive PMO only offers them. A directive PMO would manage the project itself, and the project manager would report to it.",
+    "ref": "Process Groups: A Practice Guide, 2.6",
+    "links": [
+      {
+        "book": "processgroups",
+        "page": 69,
+        "label": "Process Groups: A Practice Guide, 2.6"
+      }
+    ]
   }
 ]

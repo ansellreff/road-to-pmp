@@ -72,6 +72,8 @@ export interface Exam {
   title: string
   /** Its questions appear nowhere else until the exam has been taken. */
   unseen: boolean
+  /** Has matching, hot spot and comic strip questions among the multiple choice ones, as the real exam does. */
+  mixed?: boolean
   questions: [string, string, number[]][]
 }
 

@@ -13,6 +13,7 @@ import ExamsPage from './pages/ExamsPage'
 import ModulePage from './pages/ModulePage'
 import PlanPage from './pages/PlanPage'
 import PracticePage from './pages/PracticePage'
+import QuestionTypesPage from './pages/QuestionTypesPage'
 import ReviewPage from './pages/ReviewPage'
 import SearchPage from './pages/SearchPage'
 import SheetPage from './pages/SheetPage'
@@ -53,6 +54,7 @@ export default function App() {
           <Route path="/:courseId" element={<CoursePage />} />
           <Route path="/:courseId/sheet" element={<SheetPage />} />
           <Route path="/:courseId/exams" element={<ExamsPage />} />
+          <Route path="/:courseId/question-types" element={<QuestionTypesPage />} />
           <Route path="/:courseId/exams/:examId" element={<ExamPage />} />
           <Route path="/:courseId/:moduleId" element={<ModulePage />} />
           <Route path="/:courseId/:moduleId/:tab" element={<ModulePage />} />

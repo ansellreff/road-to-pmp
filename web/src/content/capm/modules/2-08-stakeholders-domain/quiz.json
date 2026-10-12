@@ -522,5 +522,157 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q27",
+    "q": "Match each stakeholder with the engagement level.",
+    "type": "match",
+    "left": [
+      "Has never heard of the project",
+      "Knows about the project and opposes the change",
+      "Knows about the project and takes no side",
+      "Knows about the project and backs its work and outcomes",
+      "Is actively engaged in making the project succeed"
+    ],
+    "right": [
+      "Unaware",
+      "Resistant",
+      "Neutral",
+      "Supportive",
+      "Leading"
+    ],
+    "explanation": "The five levels run from unaware through resistant, neutral and supportive to leading. The stakeholder engagement assessment matrix compares each stakeholder's current level with the desired one.",
+    "ref": "PMBOK 8, Guide 2.5.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide 2.5.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Match each example with the communication method.",
+    "type": "match",
+    "left": [
+      "A videoconference with the whole team",
+      "A status report emailed to named people",
+      "A lessons learned database on the intranet"
+    ],
+    "right": [
+      "Interactive",
+      "Push",
+      "Pull"
+    ],
+    "explanation": "Interactive communication is a real-time exchange. Push communication is sent to specific recipients; it is distributed, with no certainty that it is received or understood. Pull communication is fetched by the recipients when they choose.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "The finance director can stop the project's funding, but pays it little attention. Select where she belongs on the grid.",
+    "type": "hotspot",
+    "diagram": "power-interest-figure",
+    "options": [
+      "High power, low interest",
+      "High power, high interest",
+      "Low power, low interest",
+      "Low power, high interest"
+    ],
+    "answer": 0,
+    "explanation": "She has high power and low interest. The usual strategy for this corner is to keep the stakeholder satisfied.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Select the box whose stakeholders the project manager should manage closely.",
+    "type": "hotspot",
+    "diagram": "power-interest-figure",
+    "options": [
+      "High power, low interest",
+      "High power, high interest",
+      "Low power, low interest",
+      "Low power, high interest"
+    ],
+    "answer": 1,
+    "explanation": "Stakeholders with high power and high interest need the most attention: manage them closely.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Reception staff will use the new system every day and follow the project eagerly, but have no say over it. Select their box.",
+    "type": "hotspot",
+    "diagram": "power-interest-figure",
+    "options": [
+      "High power, low interest",
+      "High power, high interest",
+      "Low power, low interest",
+      "Low power, high interest"
+    ],
+    "answer": 3,
+    "explanation": "They have low power and high interest. The usual strategy is to keep them informed.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "What is the head of nursing's current engagement level?",
+    "strip": [
+      {
+        "who": "Project manager",
+        "says": "How does the head of nursing see the new system?"
+      },
+      {
+        "who": "Analyst",
+        "says": "She knows all about it. She has told her staff it will slow them down, and she wants it stopped."
+      },
+      {
+        "who": "Project manager",
+        "says": "We need her on our side before the pilot."
+      }
+    ],
+    "options": [
+      "Unaware",
+      "Neutral",
+      "Resistant",
+      "Supportive"
+    ],
+    "answer": 2,
+    "explanation": "A resistant stakeholder knows about the project and resists the change. The stakeholder engagement assessment matrix would show her current level as resistant and the desired level as supportive.",
+    "ref": "PMBOK 8, Guide 2.5.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide 2.5.2.2"
+      }
+    ]
   }
 ]

@@ -608,5 +608,67 @@
         "label": "PMBOK 8, Standard 2.1"
       }
     ]
+  },
+  {
+    "id": "q31",
+    "q": "A bank's project delivers a mobile banking app. Match each statement with the term that describes it.",
+    "type": "match",
+    "left": [
+      "The app itself, handed over by the team",
+      "Customers now do their banking on their phones",
+      "Branch visits fall, and so do branch costs",
+      "Some older customers feel shut out",
+      "What was gained is worth more than the app cost"
+    ],
+    "right": [
+      "Output",
+      "Outcome",
+      "Benefit",
+      "Disbenefit",
+      "Value"
+    ],
+    "explanation": "An output is what the project produces. An outcome is the result of using it, good or bad. A benefit is a gain from an outcome and a disbenefit a loss from it. Value is the excess of the benefits over the investment.",
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "What is the 8% fall in branch costs?",
+    "strip": [
+      {
+        "who": "Sponsor",
+        "says": "The banking app went live last month. Is anyone using it?"
+      },
+      {
+        "who": "Project manager",
+        "says": "Yes. Most customers now do their banking on their phones."
+      },
+      {
+        "who": "Sponsor",
+        "says": "Good. And I see branch costs are down 8% since then."
+      }
+    ],
+    "options": [
+      "An output of the project",
+      "An outcome of the project",
+      "A benefit of the project",
+      "A disbenefit of the project"
+    ],
+    "answer": 2,
+    "explanation": "The app is the output. Customers banking on their phones is the outcome, the result of using the output. The lower branch cost is a benefit: a gain realized from that outcome.",
+    "ref": "PMBOK 8, Standard 1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 27,
+        "label": "PMBOK 8, Standard 1.2"
+      }
+    ]
   }
 ]

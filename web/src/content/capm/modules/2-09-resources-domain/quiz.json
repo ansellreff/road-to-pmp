@@ -542,5 +542,141 @@
         "label": "Process Groups: A Practice Guide, section 10, Text-oriented formats"
       }
     ]
+  },
+  {
+    "id": "q28",
+    "q": "Match each description of a team with the stage of the Tuckman ladder.",
+    "type": "match",
+    "left": [
+      "Members meet, learn their roles and work independently",
+      "Ideas and working styles clash",
+      "Members adjust their habits and begin to trust one another",
+      "The team is a well-organized, interdependent unit",
+      "The work is complete and the team is released"
+    ],
+    "right": [
+      "Forming",
+      "Storming",
+      "Norming",
+      "Performing",
+      "Adjourning"
+    ],
+    "explanation": "The ladder runs forming, storming, norming, performing, adjourning. Conflict marks storming; growing trust marks norming; smooth, interdependent work marks performing.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each author with the idea about motivation.",
+    "type": "match",
+    "left": [
+      "Herzberg",
+      "McClelland",
+      "McGregor",
+      "Maslow",
+      "Pink"
+    ],
+    "right": [
+      "Hygiene factors and motivational factors",
+      "Needs for achievement, power and affiliation",
+      "Theory X and Theory Y",
+      "A hierarchy from physiological needs up to self-actualization",
+      "Once pay is fair, lasting motivation is intrinsic"
+    ],
+    "explanation": "Herzberg separates hygiene factors, which cause dissatisfaction when missing, from motivators. McClelland names three needs. McGregor contrasts two views of workers. Maslow orders needs in a hierarchy. Pink holds that money stops motivating once pay is fair.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "For one activity, two people each believed the final say was theirs, and they argued for a week. Select the activity whose row explains the argument.",
+    "type": "hotspot",
+    "diagram": "raci-figure",
+    "options": [
+      "Write the requirements",
+      "Build the booking page",
+      "Test the booking page",
+      "Train the clinic staff",
+      "Approve the release"
+    ],
+    "answer": 3,
+    "explanation": "A RACI chart must show exactly one accountable person for each activity. The row for training the clinic staff has two: the analyst and the project manager.",
+    "ref": "PMBOK 8, Guide section 5, Responsibility assignment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Responsibility assignment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "When one activity slipped, nobody answered for it. Select the activity whose row explains this.",
+    "type": "hotspot",
+    "diagram": "raci-figure",
+    "options": [
+      "Write the requirements",
+      "Build the booking page",
+      "Test the booking page",
+      "Train the clinic staff",
+      "Approve the release"
+    ],
+    "answer": 2,
+    "explanation": "Each activity needs exactly one accountable person. The row for testing the booking page has none: the tester is responsible for doing the work, but no one is accountable for it.",
+    "ref": "PMBOK 8, Guide section 5, Responsibility assignment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Responsibility assignment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Which stage of the Tuckman ladder is the team in?",
+    "strip": [
+      {
+        "who": "Developer A",
+        "says": "Your way of testing wastes my time."
+      },
+      {
+        "who": "Developer B",
+        "says": "And your shortcuts keep breaking the build."
+      },
+      {
+        "who": "Project manager",
+        "says": "Two weeks into the work, and every decision turns into an argument."
+      }
+    ],
+    "options": [
+      "Forming",
+      "Storming",
+      "Norming",
+      "Performing"
+    ],
+    "answer": 1,
+    "explanation": "In storming the team has started on the work and its decisions, and conflict appears as ideas and working styles clash. In norming the members adjust their habits and begin to trust one another.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
   }
 ]

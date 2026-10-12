@@ -544,5 +544,91 @@
       }
     ],
     "examOnly": true
+  },
+  {
+    "id": "q28",
+    "q": "Match each Cynefin domain with what to do in it.",
+    "type": "match",
+    "left": [
+      "Simple",
+      "Complicated",
+      "Complex",
+      "Chaotic"
+    ],
+    "right": [
+      "Apply good practice",
+      "Analyze with experts, then act",
+      "Probe, sense, respond",
+      "Act at once to stabilize"
+    ],
+    "explanation": "In the simple domain cause and effect are obvious. In the complicated domain they are found by expert analysis. In the complex domain they only emerge through experiments, which matches agile. In chaos there is no clear relationship, so the first step is to stabilize.",
+    "ref": "Agile Practice Guide, 3.10.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 45,
+        "label": "Agile Practice Guide, 3.10.1"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each project with its hybrid pattern.",
+    "type": "match",
+    "left": [
+      "A new product is developed in iterations, then rolled out to thousands of users by a set plan",
+      "A team runs short iterations and retrospectives, but estimates up front and tracks progress against a plan",
+      "A building project tries a new roofing material in trial installations first",
+      "An iterative team must fit in a vendor's component that is delivered once"
+    ],
+    "right": [
+      "Agile development, then predictive rollout",
+      "Agile and predictive at the same time",
+      "Mostly predictive with an agile component",
+      "Mostly agile with a predictive component"
+    ],
+    "explanation": "The four patterns differ in which approach dominates and when: one after the other, both together, a largely predictive project with one uncertain part, or a largely agile project with one part that cannot be done incrementally.",
+    "ref": "Agile Practice Guide, 3.10.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 49,
+        "label": "Agile Practice Guide, 3.10.3"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Which hybrid pattern is this?",
+    "strip": [
+      {
+        "who": "Project manager",
+        "says": "The requirements are unclear, so the software will be built in iterations."
+      },
+      {
+        "who": "Operations lead",
+        "says": "And the rollout to our 300 branches?"
+      },
+      {
+        "who": "Project manager",
+        "says": "That is well understood and repeatable. We plan it up front and run it step by step."
+      }
+    ],
+    "options": [
+      "Agile and predictive at the same time",
+      "Mostly predictive with an agile component",
+      "Agile development, then predictive rollout",
+      "Mostly agile with a predictive component"
+    ],
+    "answer": 2,
+    "explanation": "When development is uncertain and the rollout is defined and repeatable, the project uses an agile approach first and a predictive one afterwards.",
+    "ref": "Agile Practice Guide, 3.10.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 49,
+        "label": "Agile Practice Guide, 3.10.3"
+      }
+    ]
   }
 ]

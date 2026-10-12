@@ -613,5 +613,119 @@
         "label": "PMBOK 7, Guide 4.2.7"
       }
     ]
+  },
+  {
+    "id": "q31",
+    "q": "Match each way a conflict was handled with the technique used.",
+    "type": "match",
+    "left": [
+      "Each side gave something up to reach a settlement",
+      "In an emergency, the manager imposed one view from her position of power",
+      "The matter was postponed until both sides were better prepared",
+      "The points of agreement were stressed to keep harmony",
+      "Viewpoints were combined in open dialogue until everyone committed"
+    ],
+    "right": [
+      "Compromise or reconcile",
+      "Force or direct",
+      "Withdraw or avoid",
+      "Smooth or accommodate",
+      "Collaborate or problem-solve"
+    ],
+    "explanation": "Collaborating aims at consensus and commitment (win-win). Compromise gives a partial resolution. Smoothing keeps the relationship but may leave the issue. Forcing is win-lose and suits emergencies. Withdrawing leaves the issue unresolved for now.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Match each change model with what it is known for.",
+    "type": "match",
+    "left": [
+      "ADKAR",
+      "Kotter",
+      "Bridges",
+      "Virginia Satir"
+    ],
+    "right": [
+      "Awareness, desire, knowledge, ability, reinforcement",
+      "Eight steps led from the top, the first being to create urgency",
+      "Transition is psychological and begins with an ending and letting go",
+      "A late status quo, a foreign element, then chaos"
+    ],
+    "explanation": "ADKAR names five steps an individual goes through. Kotter's eight steps are top-down and start with urgency. Bridges separates the situational change from the psychological transition, which starts with ending and letting go. Satir describes how people experience change, performance dipping in chaos.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "Match each term with its meaning.",
+    "type": "match",
+    "left": [
+      "Centralized management and leadership",
+      "Distributed management and leadership",
+      "Servant leadership",
+      "Situational leadership"
+    ],
+    "right": [
+      "Authority and decisions sit with top management",
+      "Authority and decisions are spread among people and teams",
+      "Leading by meeting the needs and development of team members",
+      "Changing the style to suit the team, the urgency and the complexity"
+    ],
+    "explanation": "Centralized is top-down; distributed spreads decision-making, and a team may organize itself. A servant leader puts the team's needs and growth first. A situational leader adapts the style to the circumstances.",
+    "ref": "PMBOK 8, Guide section 5, Centralized management and leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Centralized management and leadership"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "Which conflict management technique did the project manager use?",
+    "strip": [
+      {
+        "who": "Developer A",
+        "says": "Design A is safer. I will not sign off on B."
+      },
+      {
+        "who": "Developer B",
+        "says": "Design B is faster. A will never be ready."
+      },
+      {
+        "who": "Project manager",
+        "says": "The system goes live tonight and there is no time left to talk. We use design A. That is my decision."
+      }
+    ],
+    "options": [
+      "Collaborate or problem-solve",
+      "Compromise or reconcile",
+      "Force or direct",
+      "Withdraw or avoid"
+    ],
+    "answer": 2,
+    "explanation": "Forcing or directing pushes one view at the expense of the others, usually from a position of power. It is win-lose, and it suits emergencies such as this one.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
   }
 ]

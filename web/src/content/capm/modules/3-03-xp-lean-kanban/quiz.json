@@ -576,5 +576,163 @@
         "label": "Agile Practice Guide, First Edition, A3.4"
       }
     ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each description with the practice of Extreme Programming (XP).",
+    "type": "match",
+    "left": [
+      "Two developers at one computer, swapping roles often",
+      "The test is written before the code",
+      "Everyone's work is merged and tested frequently",
+      "The structure of the code is improved without changing what it does",
+      "Working hours that can be kept up indefinitely"
+    ],
+    "right": [
+      "Pair programming",
+      "Test-first programming",
+      "Continuous integration",
+      "Refactoring",
+      "Sustainable pace"
+    ],
+    "explanation": "XP is known for its engineering practices. Test-first programming is also called test-driven development. Continuous integration brings problems to the surface early. Refactoring changes structure, never behavior.",
+    "ref": "Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Match each method with its key idea.",
+    "type": "match",
+    "left": [
+      "Crystal",
+      "Feature-driven development",
+      "Dynamic Systems Development Method"
+    ],
+    "right": [
+      "The rigor is chosen by team size and criticality",
+      "Work is organized around small capabilities of the product",
+      "Time, cost and quality are fixed; scope is prioritized"
+    ],
+    "explanation": "Crystal is a family of methods: larger and more critical work needs more rigor. Feature-driven development was built for large software projects and organizes work around features. DSDM is constraint-driven delivery, with scope as the variable.",
+    "ref": "Agile Practice Guide, A3.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 147,
+        "label": "Agile Practice Guide, A3.5"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "Match each scaling framework with its key idea.",
+    "type": "match",
+    "left": [
+      "Scrum of Scrums",
+      "Large Scale Scrum",
+      "Scaled Agile Framework",
+      "Disciplined Agile"
+    ],
+    "right": [
+      "A representative of each team meets the others a few times a week",
+      "One product backlog and one product owner, staying close to Scrum",
+      "A knowledge base of patterns for the whole enterprise",
+      "A tool kit that helps a team choose its way of working"
+    ],
+    "explanation": "Scrum of Scrums coordinates teams through representatives. Large Scale Scrum keeps Scrum as close to the original as possible. The Scaled Agile Framework covers team, program and portfolio levels. Disciplined Agile draws on agile, lean and traditional practices.",
+    "ref": "Agile Practice Guide, A3.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 149,
+        "label": "Agile Practice Guide, A3.8"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Select the column that holds more work than its limit allows.",
+    "type": "hotspot",
+    "diagram": "board-figure",
+    "options": [
+      "To do",
+      "Analysis",
+      "Development",
+      "Test",
+      "Done"
+    ],
+    "answer": 3,
+    "explanation": "Test has a limit of 2 and holds 4 cards. A column at or over its limit means: stop starting and help finish. The board has made a bottleneck visible.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "An analyst has finished an item and wants to pull the next one. Select the only limited column that has room for it.",
+    "type": "hotspot",
+    "diagram": "board-figure",
+    "options": [
+      "To do",
+      "Analysis",
+      "Development",
+      "Test",
+      "Done"
+    ],
+    "answer": 1,
+    "explanation": "Analysis holds 2 cards against a limit of 3, so one more may be pulled in. Development is full at 4 of 4, and Test is over its limit.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "What should the developer do?",
+    "strip": [
+      {
+        "who": "Developer",
+        "says": "I have finished my item. Testing is full, so I will start a new one."
+      },
+      {
+        "who": "Team lead",
+        "says": "Look at the board first. What does the limit on the Test column tell you?"
+      },
+      {
+        "who": "Developer",
+        "says": "That it cannot take another item."
+      }
+    ],
+    "options": [
+      "Start the new item and note the reason",
+      "Help finish the work that is in Test",
+      "Raise the limit of the Test column",
+      "Wait until the Test column has room"
+    ],
+    "answer": 1,
+    "explanation": "A full column means: stop starting and help finish. Finishing beats starting, because unfinished work delivers no value. Raising the limit would hide the bottleneck the board has just made visible.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
   }
 ]

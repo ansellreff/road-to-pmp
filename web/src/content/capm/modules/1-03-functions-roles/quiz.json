@@ -608,5 +608,95 @@
         "label": "PMBOK 7, Standard 2.3"
       }
     ]
+  },
+  {
+    "id": "q31",
+    "q": "Match each thing that happens on a project with the function it is an example of.",
+    "type": "match",
+    "left": [
+      "A sponsor secures the funding and the people",
+      "A product owner ranks the scope by value and sets the course",
+      "An outside specialist points out a blind spot in the design",
+      "A scrum master helps the team reach consensus",
+      "The views and expectations of end users are brought to the team"
+    ],
+    "right": [
+      "Provide resources",
+      "Provide organizational direction and insight",
+      "Apply expertise",
+      "Facilitate and support",
+      "Solicit and manage feedback"
+    ],
+    "explanation": "The guide describes functions, not job titles. Securing funding and people provides resources; ranking scope by value gives organizational direction and insight; specialized knowledge applies expertise; helping the team agree is facilitating and supporting; bringing in customers' and users' views is soliciting and managing feedback.",
+    "ref": "PMBOK 8, Standard 2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 47,
+        "label": "PMBOK 8, Standard 2.4"
+      }
+    ]
+  },
+  {
+    "id": "q32",
+    "q": "Match each example with the competency of a project management team that it shows.",
+    "type": "match",
+    "left": [
+      "Choosing between a predictive and an adaptive approach",
+      "Negotiating and resolving a conflict",
+      "Understanding the business case and the industry",
+      "Solving a problem by finding its root cause, so the work gets done",
+      "Respecting ethical, cultural and social norms"
+    ],
+    "right": [
+      "Ways of working",
+      "Power skills",
+      "Business acumen",
+      "Results",
+      "Social responsibilities"
+    ],
+    "explanation": "Ways of working is knowing and applying methods and frameworks. Power skills are people skills. Business acumen is strategic thinking in the organization's context. Results is getting the work done and delivering value. Social responsibilities is deciding for the common good.",
+    "ref": "PMBOK 8, Standard 2.5.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 52,
+        "label": "PMBOK 8, Standard 2.5.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q33",
+    "q": "Which function is the scrum master performing?",
+    "strip": [
+      {
+        "who": "Developer",
+        "says": "We are stuck. The two leads cannot agree on the approach."
+      },
+      {
+        "who": "Scrum master",
+        "says": "Let us get everyone in one room this afternoon."
+      },
+      {
+        "who": "Scrum master",
+        "says": "I will not choose for you. I will help you reach a decision that all of you can support."
+      }
+    ],
+    "options": [
+      "Provide resources",
+      "Apply expertise",
+      "Solicit and manage feedback",
+      "Facilitate and support"
+    ],
+    "answer": 3,
+    "explanation": "Facilitating and supporting means encouraging participation and collaboration and helping the team reach consensus and resolve conflict. The scrum master is not supplying specialized knowledge (apply expertise) or bringing in the views of customers and users (solicit and manage feedback).",
+    "ref": "PMBOK 8, Standard 2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 47,
+        "label": "PMBOK 8, Standard 2.4"
+      }
+    ]
   }
 ]

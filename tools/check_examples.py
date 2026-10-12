@@ -84,8 +84,10 @@ def texts(module: Path):
     for q in json.loads((module / "quiz.json").read_text(encoding="utf-8")):
         for field in ("q", "explanation"):
             yield f"quiz {q['id']} {field}", q.get(field, "")
-        for i, option in enumerate(q.get("options", [])):
-            yield f"quiz {q['id']} option {'ABCD'[i]}", option
+        # Options of a single-answer or hot spot question; both sides of a matching question; the words of a comic strip.
+        parts = q.get("options", []) + q.get("left", []) + q.get("right", []) + [p.get("says", "") for p in q.get("strip", [])]
+        for i, part in enumerate(parts):
+            yield f"quiz {q['id']} part {i + 1}", part
     for c in json.loads((module / "flashcards.json").read_text(encoding="utf-8")):
         yield f"flashcard {c['id']}", c.get("front", "") + " | " + c.get("back", "")
 

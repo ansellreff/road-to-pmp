@@ -689,5 +689,91 @@
         "label": "Business Analysis for Practitioners, How to Evaluate Solution Performance"
       }
     ]
+  },
+  {
+    "id": "q35",
+    "q": "Acceptance testing found defects. Match each situation with the recommendation.",
+    "type": "match",
+    "left": [
+      "A change in how the business works avoids the defect, with no side effects",
+      "The result was measured wrongly",
+      "The cause is not yet known",
+      "People are using the product in a way it was not meant for"
+    ],
+    "right": [
+      "A workaround",
+      "An adjustment to the measurement",
+      "Technical investigation",
+      "Communication to users"
+    ],
+    "explanation": "Not every defect needs a change to the product. The analyst may recommend a workaround, a correction of the measurement, an investigation, or an explanation to users; a modification to the product may need a change request.",
+    "ref": "PMI Guide to Business Analysis, 9.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 335,
+        "label": "PMI Guide to Business Analysis, 9.3"
+      }
+    ]
+  },
+  {
+    "id": "q36",
+    "q": "Match each description with the release decision.",
+    "type": "match",
+    "left": [
+      "The whole solution is released",
+      "Part is released and the rest waits",
+      "Not yet: something must be finished or fixed first",
+      "The release is prevented"
+    ],
+    "right": [
+      "Go",
+      "Partial release",
+      "Delay",
+      "No-go"
+    ],
+    "explanation": "The decision is not only yes or no. A partial release puts the ready part into use; a delay waits for something to be finished or fixed.",
+    "ref": "PMI Guide to Business Analysis, 9.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 339,
+        "label": "PMI Guide to Business Analysis, 9.4"
+      }
+    ]
+  },
+  {
+    "id": "q37",
+    "q": "Which release decision is this?",
+    "strip": [
+      {
+        "who": "Sponsor",
+        "says": "Booking and reminders passed acceptance. Payments did not."
+      },
+      {
+        "who": "Analyst",
+        "says": "Clinics can start using booking and reminders next week."
+      },
+      {
+        "who": "Analyst",
+        "says": "Payments will follow once the defects are fixed."
+      }
+    ],
+    "options": [
+      "A partial release",
+      "A full release (go)",
+      "A delay",
+      "A disapproval (no-go)"
+    ],
+    "answer": 0,
+    "explanation": "In a partial release part of the solution is released and the rest waits. A delay would hold everything back until the payments defects were fixed.",
+    "ref": "PMI Guide to Business Analysis, 9.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 339,
+        "label": "PMI Guide to Business Analysis, 9.4"
+      }
+    ]
   }
 ]

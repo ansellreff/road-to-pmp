@@ -527,5 +527,31 @@
         "label": "Process Groups: A Practice Guide, section 10, Historical information review"
       }
     ]
+  },
+  {
+    "id": "q27",
+    "q": "Match each example with its category in the cost of quality.",
+    "type": "match",
+    "left": [
+      "Training the team to do the work right",
+      "Testing and inspections",
+      "Rework and scrap, found by the project",
+      "Warranty work and lost business"
+    ],
+    "right": [
+      "Prevention cost",
+      "Appraisal cost",
+      "Internal failure cost",
+      "External failure cost"
+    ],
+    "explanation": "Prevention and appraisal costs are the cost of conformance: money spent to avoid failures. Internal failures are found by the project and external failures by the customer; both are the cost of nonconformance.",
+    "ref": "PMBOK 8, Guide section 5, Cost of quality (CoQ)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Cost of quality (CoQ)"
+      }
+    ]
   }
 ]

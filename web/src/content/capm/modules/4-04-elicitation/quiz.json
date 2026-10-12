@@ -650,5 +650,67 @@
         "label": "Business Analysis for Practitioners, How to Elicit Solution Information"
       }
     ]
+  },
+  {
+    "id": "q33",
+    "q": "Match each situation with the elicitation technique that fits it best.",
+    "type": "match",
+    "left": [
+      "Several departments disagree about what is needed",
+      "One expert holds the detailed knowledge",
+      "Staff cannot explain how they carry out a detailed task",
+      "Users cannot picture the solution",
+      "You need background before meeting anyone"
+    ],
+    "right": [
+      "Facilitated workshop",
+      "Interview",
+      "Observation",
+      "Prototype",
+      "Document analysis"
+    ],
+    "explanation": "A workshop brings differing parties to agreement. An interview draws out one person's knowledge. Observation shows what people cannot put into words. A prototype makes the solution visible. Document analysis gives background.",
+    "ref": "PMI Guide to Business Analysis, 6.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 209,
+        "label": "PMI Guide to Business Analysis, 6.3"
+      }
+    ]
+  },
+  {
+    "id": "q34",
+    "q": "Which elicitation technique fits best now?",
+    "strip": [
+      {
+        "who": "Analyst",
+        "says": "I asked the clerks how they reconcile the orders."
+      },
+      {
+        "who": "Team lead",
+        "says": "And what did they say?"
+      },
+      {
+        "who": "Analyst",
+        "says": "\"We just do it.\" They work from habit and cannot put the steps into words."
+      }
+    ],
+    "options": [
+      "A questionnaire or survey",
+      "Document analysis",
+      "Observation",
+      "A focus group"
+    ],
+    "answer": 2,
+    "explanation": "Observation fits when people cannot explain how they do a detailed task: the analyst watches the work being done. Asking again in a survey or a focus group would meet the same difficulty.",
+    "ref": "PMI Guide to Business Analysis, 6.3",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 209,
+        "label": "PMI Guide to Business Analysis, 6.3"
+      }
+    ]
   }
 ]
