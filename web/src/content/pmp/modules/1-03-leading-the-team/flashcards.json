@@ -1,0 +1,127 @@
+[
+  {
+    "id": "c1",
+    "front": "Lead the Team (Eighth Edition)",
+    "back": "Guiding, developing and managing the team through feedback, collaboration, conflict resolution or escalation."
+  },
+  {
+    "id": "c2",
+    "front": "Management activities",
+    "back": "The means of meeting objectives: processes, planning, coordinating, measuring, monitoring."
+  },
+  {
+    "id": "c3",
+    "front": "Leadership activities",
+    "back": "People: influencing, motivating, listening, enabling."
+  },
+  {
+    "id": "c4",
+    "front": "Situational leadership",
+    "back": "Adapt the style to the team's needs, the time sensitivity of tasks and the complexity: more directive in critical phases, supportive when autonomy helps."
+  },
+  {
+    "id": "c5",
+    "front": "Leadership versus authority",
+    "back": "Authority is a position of control given by the organization; leadership inspires and motivates by example."
+  },
+  {
+    "id": "c6",
+    "front": "Shared leadership",
+    "back": "Leadership is not tied to one role; at different moments a team member or stakeholder may lead."
+  },
+  {
+    "id": "c7",
+    "front": "Centralized management and leadership",
+    "back": "Top-down: decision-making and authority sit with top management."
+  },
+  {
+    "id": "c8",
+    "front": "Distributed management and leadership",
+    "back": "Decision-making and authority spread among people and teams; a facilitator role may shift between members."
+  },
+  {
+    "id": "c9",
+    "front": "Servant (supportive) leadership",
+    "back": "Leading by understanding and addressing the needs and development of team members, to enable the highest team performance."
+  },
+  {
+    "id": "c10",
+    "front": "Supportive leader's order of work",
+    "back": "Purpose, people, process."
+  },
+  {
+    "id": "c11",
+    "front": "Supportive leadership characteristics",
+    "back": "Self-awareness, listening, serving, helping people grow, coaching versus controlling, safety, respect and trust, promoting others' energy."
+  },
+  {
+    "id": "c12",
+    "front": "Supportive leader responsibilities",
+    "back": "Facilitate; remove organizational impediments; pave the way for others' contributions; educate stakeholders; build team capability."
+  },
+  {
+    "id": "c13",
+    "front": "First edition term for supportive leadership",
+    "back": "Servant leadership (\"Servant Leadership Empowers the Team\")."
+  },
+  {
+    "id": "c14",
+    "front": "Empowerment in high-performing teams",
+    "back": "Members who decide how they work perform better and are more satisfied than those who are micromanaged."
+  },
+  {
+    "id": "c15",
+    "front": "Common aspects of team development",
+    "back": "Vision and objectives; roles and responsibilities; team operations (charter, norms); guidance; growth."
+  },
+  {
+    "id": "c16",
+    "front": "Skill gap in a role",
+    "back": "Identify it and close it with training, mentoring or coaching."
+  },
+  {
+    "id": "c17",
+    "front": "Diverge/converge decision-making",
+    "back": "Generate options first, often individually; then converge. Roman voting, wideband Delphi and fist of five reduce groupthink."
+  },
+  {
+    "id": "c18",
+    "front": "Decision beyond the team's authority",
+    "back": "Investigate alternatives and impacts, then escalate to someone with the authority."
+  },
+  {
+    "id": "c19",
+    "front": "Emotional intelligence: four areas",
+    "back": "Self-awareness, self-management, social awareness, social skills."
+  },
+  {
+    "id": "c20",
+    "front": "T-shaped versus I-shaped skills",
+    "back": "T: a specialty plus breadth (generalizing specialist). I: deep in one area only."
+  },
+  {
+    "id": "c21",
+    "front": "Responsibility assignment matrix rule",
+    "back": "Only one person accountable for any one task."
+  },
+  {
+    "id": "c22",
+    "front": "Three common agile roles",
+    "back": "Cross-functional team members, product owner, team facilitator."
+  },
+  {
+    "id": "c23",
+    "front": "RAF model",
+    "back": "Responsible (does the work), Accountable (owns the outcome), Facilitator (supports the process, removes blockers). Use only where confusion exists."
+  },
+  {
+    "id": "c24",
+    "front": "Two extremes of agile role clarity",
+    "back": "Full autonomy (diffused responsibility, unclear decision rights) and rigid frameworks (handoffs, overlaps, accountability gaps)."
+  },
+  {
+    "id": "c25",
+    "front": "Factors of high-performing teams",
+    "back": "Open communication, shared understanding, shared ownership, trust, collaboration, adaptability, resilience, empowerment, recognition."
+  }
+]

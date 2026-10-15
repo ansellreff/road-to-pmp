@@ -1,6 +1,6 @@
 # PMP: plan and progress
 
-Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP Session 2 (the exam engine) is done; next is PMP Session 3, the first People modules.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
+Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP Sessions 2 (the exam engine) and 3 (modules 1.1 to 1.3) are done; next is PMP Session 4, modules 1.4 to 1.6.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
 
 ## Status log
 
@@ -11,6 +11,7 @@ Project Management Professional. Started 2026-10-11 and paused the same day unti
 | 2026-10-11 | **PMP paused; numbering restarted.** You asked whether CAPM was 100% finished. It was not, and you chose to finish it first. You also said the separate files were meant to restart the session numbers, so PMP's sessions are now 1 to 15 (were 32 to 46) and its issues PMP-1 onward (were 152 onward). The design for PMP Session 2 is kept below as planned work. | CAPM Sessions 32 to 39 (see `CAPM-PLAN.md`). PMP resumes at PMP Session 2 |
 | 2026-10-13 | **CAPM closed; PMP can resume.** While finishing CAPM, the screens and rules for matching, hot spot and comic strip questions were built (CAPM Sessions 36 and 37). PMP Session 2 therefore has less to build than its planned design says: multiple response, case sets, the approach tag and the exam in three sections with two breaks. No PMP work was done. | Next: PMP Session 2, starting in plan mode |
 | 2026-10-15 | **PMP Session 2 done: the exam engine.** Multiple response, pull-down list, case set and graphic-based questions work in quizzes, practice and both exam modes; real exam mode runs in sections (PMP: three of 60, two breaks); every PMP question will carry an approach tag, and the result page scores predictive against agile and hybrid. A small test course, served only on this PC, proves it all with click tests. CAPM was guarded throughout and is unchanged: its 159 files match their fingerprints and 11 of its screens are pixel-identical to the morning's pictures. | Next: PMP Session 3, modules 1.1 to 1.3, starting in plan mode |
+| 2026-10-15 | **PMP Session 3 done: the first three People modules.** 1.1 A Shared Vision, 1.2 Conflict and Ground Rules, 1.3 Leading the Team: one lesson section per outline enabler, 91 questions (every one tagged predictive, agile or hybrid; 40% predictive), 75 flashcards. Search now stays within the course you are in. CAPM checked unchanged. One CAPM finding is recorded for your decision (CAPM issue 197). | Next: PMP Session 4, modules 1.4 to 1.6, starting in plan mode |
 
 ## Roadmap
 
@@ -20,7 +21,8 @@ PMP counts its own sessions from 1. (Until 2026-10-11 these were numbered 32 to 
 |---|---|---|
 | ✅ | 1 | **PMP.** Sources and map: outline extracted, instructor's contents read, reference list read, coverage map, course skeleton. |
 | ✅ | 2 | **The exam engine.** Multiple response, pull-down lists, case sets, graphic-based questions, the approach tag, exams in three sections with two breaks; a test course for the click tests; CAPM guarded and unchanged |
-| ⬜ | 3 to 5 | PMP Domain 1, People: modules 1.1 to 1.9 |
+| ✅ | 3 | PMP Domain 1, People: modules 1.1 to 1.3 (People tasks 1 to 3) |
+| ⬜ | 4 and 5 | PMP Domain 1, People: modules 1.4 to 1.9 |
 | ⬜ | 6 to 10 | PMP Domain 2, Process: modules 2.1 to 2.15 |
 | ⬜ | 11 to 13 | PMP Domain 3, Business Environment: modules 3.1 to 3.10 |
 | ⬜ | 14 | PMP mock exams: four of 180 questions, the fourth unseen; PMP in the study plan, readiness and weak spots |
@@ -137,9 +139,9 @@ Plus one page outside the question bank: how to answer situational questions.
 
 | Task | Enablers (from the outline) | Module | Status |
 |---|---|---|---|
-| People 1, Develop a common vision | Shared vision with key stakeholders; promote it; keep it current; find the root cause of a misunderstanding of it | 1.1 | Not written |
-| People 2, Manage conflicts | Conflict sources; context; agreed resolution strategy; communicate conflict principles; environment for ground rules; rectify violations | 1.2 | Not written |
-| People 3, Lead the project team | Team expectations; empower; solve problems; voice of the team; varied experiences, skills, perspectives; leadership style; roles and responsibilities | 1.3, 1.4 | Not written |
+| People 1, Develop a common vision | Shared vision with key stakeholders; promote it; keep it current; find the root cause of a misunderstanding of it | 1.1 | Covered: one section per enabler (building, promoting, keeping current, root cause of a misunderstanding) |
+| People 2, Manage conflicts | Conflict sources; context; agreed resolution strategy; communicate conflict principles; environment for ground rules; rectify violations | 1.2 | Covered: one section per enabler, plus psychological safety |
+| People 3, Lead the project team | Team expectations; empower; solve problems; voice of the team; varied experiences, skills, perspectives; leadership style; roles and responsibilities | 1.3, 1.4 | Covered: one section per enabler (expectations, empowerment, problems, voice of the team, diversity, style, roles) |
 | People 4, Engage stakeholders | Identify; analyze; tailor communication; execute the engagement plan; align needs, expectations and objectives; build trust and influence | 1.5, 1.6 | Not written |
 | People 5, Align stakeholder expectations | Categorize stakeholders; identify expectations; facilitate discussions; mentoring opportunities | 1.5, 1.7 | Not written |
 | People 6, Manage stakeholder expectations | Internal and external customer expectations; align outcomes; monitor satisfaction and respond | 1.7 | Not written |
@@ -219,3 +221,19 @@ Matching, hot spot (PMP's "point and click") and comic strip came from CAPM.
 - PMP questions themselves: from PMP Session 3.
 - `/pmp/question-types` shows nothing until PMP has questions; each kind appears with the first question of that kind.
 - A real-mode exam screen is not in the picture comparison, because its clock changes every second; the CAPM click test for real exam mode covers it.
+
+## PMP Session 3: People modules 1.1 to 1.3, as built
+
+| Module | Lesson sections (outline enabler) | Questions | Flashcards |
+|---|---|---|---|
+| 1.1 A Shared Vision | What a vision is; building it with key stakeholders; promoting it; keeping it current; finding the root cause of a misunderstanding; predictive and agile side by side | 31 (25 single answer, 4 multiple response, 1 matching, 1 pull-down list) | 25 |
+| 1.2 Conflict and Ground Rules | Sources; context; choosing and applying a strategy; communicating the principles; ground rules and the team charter; psychological safety; when a ground rule is broken | 30 (24 single answer, 2 multiple response, 1 matching, a case set of 3) | 25 |
+| 1.3 Leading the Team | What leading involves; expectations; leadership style; supportive leadership and empowerment; voice of the team; problems; varied skills; roles (RACI and RAF); high-performing teams | 30 (24 single answer, 4 multiple response, 1 matching, 1 graphic-based) | 25 |
+
+- **Sources read for this session:** PMBOK Guide, Eighth Edition: Standard 2.5.1.1, 2.5.3, 3.6, 3.8; Guide 2.6.2.4 (Lead the Team, its common aspects and high-performing teams); section 4 (team charter, project charter); section 5 (leadership, conflict management, ground rules, facilitation, problem-solving, root cause analysis, servant leadership, centralized and distributed management, emotional intelligence, responsibility assignment matrix, agile release planning); glossary (vision statement). Agile Practice Guide, second edition: 3.5.1.2, 4.2 (psychological safety), 4.3 (supportive leaders), 4.4 to 4.6 (roles, the RAF model, generalizing specialists), 5.1 (chartering), Tables 4-1, 5-2 and 5-3. First edition 4.2 for the change of name from servant to supportive leadership.
+- **The approach tag:** 36 predictive, 35 agile, 20 hybrid (40% predictive), so the first PMP domain is on course for the exam's 40 / 60 split.
+- **Quality rules:** on first writing, the right answer was the longest option in 17, 15 and 13 questions; distractors were lengthened until it was 5 or 6 per module. Right answers are spread evenly over A to D.
+- **What PMP took from CAPM:** facts and page references already checked for CAPM were reused where the same book says the same thing; the PMP lessons go further (the outline's enablers, situational questions, predictive and agile versions). No CAPM file was changed.
+- **Not used:** the five "levels of conflict" taught in CAPM module 3.4. No book in your folder contains that model (see CAPM issue 197).
+- **Search** now stays within the course whose pages you are on, as you decided: on a CAPM page it finds only CAPM, on a PMP page only PMP; from the home page, the dashboard or the search page with "Search every course", both.
+- **CAPM guards:** `check_capm_frozen.py` passes; the 11 CAPM pictures are pixel-identical to PMP Session 2's; the CAPM click tests pass unchanged.

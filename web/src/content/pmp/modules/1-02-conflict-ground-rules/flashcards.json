@@ -1,0 +1,127 @@
+[
+  {
+    "id": "c1",
+    "front": "Common sources of conflict",
+    "back": "Scarce resources, scheduling priorities, personal work styles; on projects, also many organizations and stakeholders trying to influence the work."
+  },
+  {
+    "id": "c2",
+    "front": "What reduces conflict before it starts",
+    "back": "Ground rules, group norms, communication planning and role definition."
+  },
+  {
+    "id": "c3",
+    "front": "Benefit of well-managed conflict",
+    "back": "More creativity, better decisions, greater productivity and positive working relationships."
+  },
+  {
+    "id": "c4",
+    "front": "Who resolves a conflict first?",
+    "back": "The team members involved. The project manager helps if it escalates."
+  },
+  {
+    "id": "c5",
+    "front": "How the project manager addresses conflict",
+    "back": "Early, usually in private, with a direct, collaborative approach."
+  },
+  {
+    "id": "c6",
+    "front": "When are formal procedures used?",
+    "back": "If disruptive conflict continues; they may include disciplinary action."
+  },
+  {
+    "id": "c7",
+    "front": "Five factors in choosing a method",
+    "back": "Importance and intensity; time pressure; relative power; importance of the relationship; long- or short-term resolution."
+  },
+  {
+    "id": "c8",
+    "front": "Withdraw/avoid",
+    "back": "Retreat or postpone, to be better prepared or for others to resolve it. The issue stays open."
+  },
+  {
+    "id": "c9",
+    "front": "Smooth/accommodate",
+    "back": "Stress agreement, concede to keep harmony. The issue may remain."
+  },
+  {
+    "id": "c10",
+    "front": "Compromise/reconcile",
+    "back": "Some satisfaction for all; partial or temporary. Occasionally lose-lose."
+  },
+  {
+    "id": "c11",
+    "front": "Force/direct",
+    "back": "One view at the expense of others, from a position of power, for emergencies. Win-lose."
+  },
+  {
+    "id": "c12",
+    "front": "Collaborate/problem-solve",
+    "back": "Several viewpoints, open dialogue, consensus and commitment. Can be win-win."
+  },
+  {
+    "id": "c13",
+    "front": "Four ways to keep a conflict from escalating",
+    "back": "Open, respectful communication; issues, not people; present and future, not the past; search for alternatives together."
+  },
+  {
+    "id": "c14",
+    "front": "Accountable leader and vendor conflict",
+    "back": "Cross-vendor discussions to find the root cause and acceptable adjustments, instead of enforcing contracts first."
+  },
+  {
+    "id": "c15",
+    "front": "Ground rules",
+    "back": "Expectations about acceptable behavior by team members; defined in the team charter."
+  },
+  {
+    "id": "c16",
+    "front": "Team charter",
+    "back": "Establishes the team's values, agreements and operating guidelines."
+  },
+  {
+    "id": "c17",
+    "front": "Team charter contents (Eighth Edition)",
+    "back": "Team values, communication guidelines, decision-making, conflict resolution processes, meeting guidelines, team agreements."
+  },
+  {
+    "id": "c18",
+    "front": "Agile team charter: four kinds of item",
+    "back": "Team values, working agreements, ground rules, group norms. The team's social contract."
+  },
+  {
+    "id": "c19",
+    "front": "Who writes the team charter?",
+    "back": "The team, or at least with the chance to contribute."
+  },
+  {
+    "id": "c20",
+    "front": "Who enforces the team charter?",
+    "back": "All team members share responsibility."
+  },
+  {
+    "id": "c21",
+    "front": "When is the team charter reviewed?",
+    "back": "Periodically: to keep the shared understanding and to bring in new members."
+  },
+  {
+    "id": "c22",
+    "front": "Psychological safety",
+    "back": "A shared belief that the team is safe for interpersonal risk-taking: speaking up, asking, admitting mistakes, suggesting changes."
+  },
+  {
+    "id": "c23",
+    "front": "Threats to psychological safety",
+    "back": "Shaming or blame; hierarchy; high pressure; dropping reflection; remote work that hides tone."
+  },
+  {
+    "id": "c24",
+    "front": "Broken ground rule: first step",
+    "back": "A private, early conversation that refers to what the team agreed."
+  },
+  {
+    "id": "c25",
+    "front": "Rule broken by many members",
+    "back": "Revisit it with the team, for example in a retrospective; it may be unclear or no longer fit."
+  }
+]

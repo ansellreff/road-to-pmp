@@ -9,9 +9,9 @@
       "title": "People",
       "weight": 33,
       "modules": [
-        { "id": "1-01-shared-vision", "title": "A Shared Vision", "ready": false, "tasks": [1] },
-        { "id": "1-02-conflict-ground-rules", "title": "Conflict and Ground Rules", "ready": false, "tasks": [2] },
-        { "id": "1-03-leading-the-team", "title": "Leading the Team: Styles, Servant Leadership, Empowerment, Roles", "ready": false, "tasks": [3] },
+        { "id": "1-01-shared-vision", "title": "A Shared Vision", "ready": true, "tasks": [1] },
+        { "id": "1-02-conflict-ground-rules", "title": "Conflict and Ground Rules", "ready": true, "tasks": [2] },
+        { "id": "1-03-leading-the-team", "title": "Leading the Team: Styles, Servant Leadership, Empowerment, Roles", "ready": true, "tasks": [3] },
         { "id": "1-04-team-performance", "title": "Team Performance: Motivation, Emotional Intelligence, Virtual Teams, Problem Solving", "ready": false, "tasks": [3] },
         { "id": "1-05-stakeholder-analysis", "title": "Identifying and Analyzing Stakeholders", "ready": false, "tasks": [4, 5] },
         { "id": "1-06-stakeholder-engagement", "title": "Engaging Stakeholders: Trust and Influence", "ready": false, "tasks": [4] },

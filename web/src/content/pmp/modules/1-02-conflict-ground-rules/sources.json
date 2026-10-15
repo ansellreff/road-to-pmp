@@ -1,0 +1,62 @@
+[
+  {
+    "book": "agile",
+    "page": 57,
+    "label": "Agile Practice Guide, 4.2"
+  },
+  {
+    "book": "agile",
+    "page": 58,
+    "label": "Agile Practice Guide, 4.2.4"
+  },
+  {
+    "book": "agile",
+    "page": 59,
+    "label": "Agile Practice Guide, 4.2.5"
+  },
+  {
+    "book": "agile",
+    "page": 59,
+    "label": "Agile Practice Guide, Table 4-1"
+  },
+  {
+    "book": "agile",
+    "page": 60,
+    "label": "Agile Practice Guide, 4.2.7"
+  },
+  {
+    "book": "agile",
+    "page": 81,
+    "label": "Agile Practice Guide, 5.1.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 69,
+    "label": "PMBOK 8, Standard 3.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 76,
+    "label": "PMBOK 8, Standard 3.8"
+  },
+  {
+    "book": "pmbok8",
+    "page": 247,
+    "label": "PMBOK 8, Guide section 4, Team charter"
+  },
+  {
+    "book": "pmbok8",
+    "page": 261,
+    "label": "PMBOK 8, Guide section 5, Conflict management"
+  },
+  {
+    "book": "pmbok8",
+    "page": 276,
+    "label": "PMBOK 8, Guide section 5, Ground rules"
+  },
+  {
+    "book": "pmbok8",
+    "page": 281,
+    "label": "PMBOK 8, Guide section 5, Leadership"
+  }
+]

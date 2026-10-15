@@ -1,0 +1,704 @@
+[
+  {
+    "id": "q1",
+    "q": "At the kickoff meeting of a new construction project, the sponsor hands over a one-page charter. During the discussion it becomes clear that team members and two key stakeholders describe the project's purpose in quite different ways. What should the project manager do first?",
+    "options": [
+      "Ask the sponsor to rewrite the charter with far more detail",
+      "Start detailed planning now and let the different views converge naturally over time",
+      "Facilitate a session with the team and key stakeholders to agree the vision",
+      "Send everyone the charter again and ask them to read it closely"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "A vision works only when it is shared, and the Eighth Edition says it should be developed collaboratively by team members and key stakeholders. Bringing the people together to agree the purpose is the first step. More detail in the charter, or rereading it, does not create a shared understanding.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A new agile team is about to hold its first sprint planning. The product owner has a clear idea of the product in mind, but nothing has been agreed with the team. According to the Agile Practice Guide, what should the team establish at a minimum before starting?",
+    "options": [
+      "The project's vision or purpose and a set of working agreements",
+      "A detailed release plan covering every sprint of the year",
+      "A complete requirements specification signed by the sponsor",
+      "A responsibility assignment matrix for every planned user story"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide says that, at a minimum, agile project teams should establish the project vision or purpose and a clear set of working agreements. Detailed plans and specifications are not the minimum.",
+    "ref": "Agile Practice Guide, 5.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 80,
+        "label": "Agile Practice Guide, 5.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A project manager is drafting a vision with the team. Which question in the vision will most help the team notice, months later, that the work is going off course?",
+    "options": [
+      "Which work packages will each individual team member be responsible for delivering?",
+      "What is the approved budget at completion for the project?",
+      "Which communication technology will the stakeholders prefer?",
+      "How will the project team know that it is drifting from the vision?"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "The Eighth Edition lists four questions a vision should answer; the last is how the team will know it is drifting from the vision. Work packages, budgets and communication tools belong to plans, not to the vision.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Midway through an office relocation project, the team is split between two layouts for the new floor. Both are within budget and on schedule. How can the project manager best use the project vision here?",
+    "options": [
+      "Choose the layout the sponsor seems to prefer and move on",
+      "Test both layouts against the intended outcomes in the vision",
+      "Ask the team to vote at once and accept whichever wins",
+      "Escalate the choice to the steering committee and wait for its formal decision"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition says the vision and objectives are communicated throughout the project, including by referring to the intended outcomes when the team makes decisions. Using the vision to judge the options promotes it and gives a reasoned choice.",
+    "ref": "PMBOK 8, Guide 2.6.2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 189,
+        "label": "PMBOK 8, Guide 2.6.2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Three agile teams work on one banking app. Each team keeps its own vision slide, and their backlogs now pull in different directions. What should the project manager recommend?",
+    "options": [
+      "Let each team keep its own vision, since agile teams are self-managing and self-organizing",
+      "Run a joint vision workshop and agree one vision statement for all teams",
+      "Ask the most senior product owner to decide which vision is right",
+      "Merge the three backlogs into one and remove all duplicate items"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "For a fragmented product vision, the Agile Practice Guide recommends a joint vision workshop with leaders, product owners and team representatives, one vision statement and lightweight roadmap used by all teams, and a check that every backlog item links back to the vision.",
+    "ref": "Agile Practice Guide, Table 5-3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 92,
+        "label": "Agile Practice Guide, Table 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Six months into development of a ride-sharing feature, a competitor launches a similar service and the product's original vision no longer fits the market. What should the project manager do?",
+    "options": [
+      "Keep the original vision, since changing it would unsettle the team",
+      "Rewrite the vision alone and announce it at the next sprint review",
+      "Pause all development work until the sponsor has issued and signed a completely new charter",
+      "Rework the vision with the product owner and key stakeholders, then revisit the roadmap"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Keeping a vision current means reworking it when the situation changes, together with the product owner and key stakeholders. Because the product vision drives the roadmap and release plans, those are revisited next. Defending the old vision or changing it alone both miss the point.",
+    "ref": "PMBOK 8, Guide section 5, Agile release planning",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Agile release planning"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "At a steering meeting, a department head calls the project \"pointless\" although its vision was published months ago. What should the project manager do first?",
+    "options": [
+      "Meet the department head to understand how they see its purpose and benefit",
+      "Present the vision statement again to the whole steering group",
+      "Ask the sponsor to overrule the department head's objection at the next steering meeting",
+      "Record the remark as a new risk and continue with the plan"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A misunderstanding of the vision is a problem to solve: define it and find its root cause before choosing a fix. A private conversation reveals whether the stakeholder was left out of building the vision or never saw the benefit to their area. Repeating the vision or going over their head does not address the cause.",
+    "ref": "PMBOK 8, Guide section 5, Problem-solving",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 292,
+        "label": "PMBOK 8, Guide section 5, Problem-solving"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "In a hybrid project, the team keeps delivering features that no stakeholder asked for, although everyone says they support the vision. Which root cause is most likely?",
+    "options": [
+      "The team lacks the technical skills and experience needed to build the right features",
+      "The sponsor has not approved enough budget for the features",
+      "The backlog items are not checked against the vision before work starts",
+      "The iterations are too short for the team to finish their work"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "When work drifts away from the vision, a common root cause is that nothing links the planned work back to it. The Agile Practice Guide's remedy for a fragmented vision includes confirming that every backlog item links back to the vision.",
+    "ref": "Agile Practice Guide, Table 5-3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 92,
+        "label": "Agile Practice Guide, Table 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Which statement describes a good project vision, as the PMBOK Guide puts it?",
+    "options": [
+      "It lists every deliverable that the project will hand over",
+      "It sets the milestone dates that the team must commit to",
+      "It sums up the project in a powerful phrase or short description",
+      "It assigns a clear owner to each objective of the project"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "A good vision is clear, concise and actionable: it sums up the project in a powerful phrase or short description, describes the best achievable outcome, creates a common picture and inspires passion. Deliverables, dates and owners belong in plans.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "In a predictive project, which document first tells the team why the project matters and where it is headed?",
+    "options": [
+      "The project charter issued by the sponsor or initiator",
+      "The work breakdown structure prepared by the team",
+      "The stakeholder engagement plan for the project",
+      "The quality management plan for the deliverables"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A project charter is issued by the project initiator or sponsor, and the Agile Practice Guide adds that every project should have one so the team knows why the project matters, where it is headed and what its objective is.",
+    "ref": "PMBOK 8, Guide section 4, Project charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 230,
+        "label": "PMBOK 8, Guide section 4, Project charter"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "On an agile product team, who is usually responsible for defining the product vision and its success metrics?",
+    "options": [
+      "The scrum master or team facilitator",
+      "The most experienced developer on the team",
+      "The project management office (PMO)",
+      "The product manager or product owner"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide lists defining the product vision and success metrics among the responsibilities of the product management role, commonly held by a product manager or product owner.",
+    "ref": "Agile Practice Guide, 3.5.1.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 38,
+        "label": "Agile Practice Guide, 3.5.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A supportive leader works in a particular order when starting with a new agile team. What comes first?",
+    "options": [
+      "Choosing the most suitable agile process",
+      "Defining the purpose: why the work matters",
+      "Creating an environment where everyone can succeed",
+      "Setting up metrics to track the team's velocity"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide's order is purpose, then people, then process. The leader first works with the team to define the \"why\", so it can coalesce around the goal.",
+    "ref": "Agile Practice Guide, 4.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "A project manager is facilitating a workshop to agree a project's vision with stakeholders from four departments. What should the facilitator make sure of?",
+    "options": [
+      "That the most senior stakeholder's wording is adopted",
+      "That all contributions are considered and the result has buy-in",
+      "That the vision is finished within the first hour",
+      "That only the sponsor speaks for the four departments"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A facilitator helps ensure effective participation, mutual understanding, that all contributions are considered, that conclusions have full buy-in under the agreed decision process, and that agreements are followed up.",
+    "ref": "PMBOK 8, Guide section 5, Facilitation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 275,
+        "label": "PMBOK 8, Guide section 5, Facilitation"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Six months into a two-year infrastructure project, a new engineer joins the team and starts optimizing work that does not matter to the project's goals. What is the best way to prevent this with future joiners?",
+    "options": [
+      "Have the engineer's functional manager supervise their daily tasks very closely",
+      "Give new members only small, low-risk tasks for their first months",
+      "Ask each new member to read the full project management plan first",
+      "Make a review of the vision and charter part of bringing new members in"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition says the vision and objectives are communicated throughout the project, and the vision guides local decisions toward the desired outcome. Covering it when someone joins keeps newcomers pulling in the same direction; close supervision or reading the whole plan does not give them the purpose.",
+    "ref": "PMBOK 8, Guide 2.6.2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 189,
+        "label": "PMBOK 8, Guide 2.6.2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "An agile project charter answers the question \"What does done mean for the project?\". What does the answer give the team?",
+    "options": [
+      "The project's release criteria",
+      "The definition of ready for user stories",
+      "The team's working agreements",
+      "The acceptance tests for each story"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "According to the Agile Practice Guide, the agile project charter's question \"What does done mean for the project?\" gives the project's release criteria. The other questions cover the vision, who benefits, and how the team will work together.",
+    "ref": "Agile Practice Guide, 5.1.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Besides describing the desired future, what does the PMBOK Guide say a project vision does for the team?",
+    "options": [
+      "It replaces the need for detailed planning",
+      "It sets the limits of the project manager's authority",
+      "It acts as a powerful motivational tool",
+      "It records the agreements made with each vendor"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition calls the vision a powerful motivational tool that creates passion and meaning, and says a common vision keeps people pulling in the same direction.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Two departments disagree about whether a project is succeeding: finance measures savings, operations measures speed. Following a structured problem-solving method, what should the project manager do first?",
+    "options": [
+      "Ask the sponsor which department's measure should count",
+      "Report both measures and let the departments argue it out",
+      "Define the problem: what each department means by success",
+      "Choose the measure that makes the project look best"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Structured problem-solving starts by defining the problem, then identifying its root cause, before generating and choosing solutions. Here the problem is two definitions of success; the vision's question \"What defines successful project work?\" was never answered in a shared way.",
+    "ref": "PMBOK 8, Guide section 5, Problem-solving",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 292,
+        "label": "PMBOK 8, Guide section 5, Problem-solving"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "According to the PMBOK Guide's picture of agile planning, what does the product vision drive directly?",
+    "options": [
+      "The product roadmap",
+      "The iteration plans",
+      "The definition of done",
+      "The daily stand-up"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "The Eighth Edition shows a chain: the product vision drives the product roadmap, the roadmap drives release plans, release plans establish the iterations, and iteration plans schedule the work.",
+    "ref": "PMBOK 8, Guide section 5, Agile release planning",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Agile release planning"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "An agile team's retrospective shows that members cannot say what the project is for. Which remedy does the Agile Practice Guide suggest for an unclear purpose?",
+    "options": [
+      "Ask the sponsor to attend every sprint review",
+      "Shorten the sprints so that the team gets feedback sooner",
+      "Assign a business analyst to write down the purpose and then circulate it to the team",
+      "Put the vision, mission and success tests in a team charter and review it regularly"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "For the pain point \"unclear purpose or mission\", the Agile Practice Guide suggests a project brief or team charter that states the vision, mission and simple success tests, and reviewing the vision regularly.",
+    "ref": "Agile Practice Guide, Table 5-2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 89,
+        "label": "Agile Practice Guide, Table 5-2"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "In a predictive project, the sponsor announces a change in the company's strategy that alters what the project must achieve. What should the project manager do?",
+    "options": [
+      "Continue with the plan, since the charter has already been approved by the sponsor",
+      "Update the vision with the sponsor and realign the plan with the team",
+      "Ask the team to vote on whether to accept the new direction",
+      "Close the project and start a new one with a new team"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Keeping the vision current means reworking it when the situation changes. In a predictive project the charter came from the sponsor, so the vision is agreed again with the sponsor, and the plan is then realigned with the team.",
+    "ref": "PMBOK 8, Guide 2.6.2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 189,
+        "label": "PMBOK 8, Guide 2.6.2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A team member says the project vision is \"marketing fluff\" and ignores it. What should the project manager do?",
+    "options": [
+      "Remind the team member that following the vision is mandatory for everyone",
+      "Involve the team member in reviewing and refining the vision",
+      "Ask the functional manager to address the behavior",
+      "Remove the vision from the team charter to avoid friction"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "A vision is developed collaboratively; people who help shape it are far more likely to commit to it. Inviting the critic into the next review turns skepticism into contribution.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Under pressure from a sales director, the product owner adds a large item to the backlog. The project manager cannot see how it serves the product vision. What should the project manager do?",
+    "options": [
+      "Remove the item from the backlog, since it does not fit",
+      "Accept the item, since the product owner owns the backlog",
+      "Escalate the matter to the sales director's manager",
+      "Ask the product owner how the item supports the vision"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Every backlog item should link back to the vision. Rather than removing the item or escalating, asking how it serves the vision prompts the link to be made, or the item to be reconsidered.",
+    "ref": "Agile Practice Guide, Table 5-3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 92,
+        "label": "Agile Practice Guide, Table 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "How does a project vision differ from the requirements documentation?",
+    "options": [
+      "The vision summarizes the purpose; requirements state what is needed",
+      "The vision is more detailed than the requirements",
+      "The vision is written by the team, while the requirements are written by the sponsor",
+      "The vision is used only in predictive projects"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The vision summarizes the project's purpose clearly and briefly. Requirements describe in detail what the product and project must provide. A vision that lists requirements is not doing its job.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Which activity does the PMBOK Guide, Eighth Edition, list first among the traits and activities of leadership?",
+    "options": [
+      "Critical thinking",
+      "Motivating project team members",
+      "Establishing and maintaining vision",
+      "Using interpersonal skills"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The Eighth Edition's description of leadership lists establishing and maintaining vision first, followed by critical thinking, motivation and interpersonal skills.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which TWO of these are questions that a project vision should answer?",
+    "type": "multi",
+    "options": [
+      "What is the project's purpose?",
+      "How will the future be better when the outcomes are delivered?",
+      "Who approves each change request?",
+      "What is the cost baseline of the project?",
+      "Which vendor will supply the hardware?"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "The four vision questions are: the project's purpose, what defines successful work, how the future will be better, and how the team will know it is drifting. Approvals, baselines and vendors belong in plans.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Several teams build one product and their visions have drifted apart. Which THREE practices does the Agile Practice Guide recommend?",
+    "type": "multi",
+    "options": [
+      "Write one vision statement used by all teams",
+      "Confirm that every backlog item links back to the vision",
+      "Keep a shared product goal visible in release planning",
+      "Let each team keep a vision that suits its own work",
+      "Review the vision only at the end of the project",
+      "Ask each team to elect its own product owner"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "agile",
+    "explanation": "For a fragmented product vision, the Agile Practice Guide recommends a joint vision workshop, a single vision statement and lightweight roadmap referenced by all teams, a shared product goal visible in quarterly or release planning, and confirming that every backlog item links back to the vision.",
+    "ref": "Agile Practice Guide, Table 5-3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 92,
+        "label": "Agile Practice Guide, Table 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are signs of a good project vision, according to the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "It describes the best achievable outcome",
+      "It inspires passion for the outcome",
+      "It lists all the work packages",
+      "It states the budget at completion",
+      "It names the owner of each risk"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "A good vision sums up the project in a short, powerful phrase, describes the best achievable outcome, creates a common, cohesive picture, and inspires passion for the outcome.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Stakeholders interpret the vision differently. Using a structured problem-solving method, which TWO steps come before choosing a fix?",
+    "type": "multi",
+    "options": [
+      "Define the problem",
+      "Identify the root cause",
+      "Implement the solution",
+      "Verify that the solution worked",
+      "Replace the stakeholders who disagree"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "The Eighth Edition's problem-solving steps are: define the problem, identify the root cause, generate possible solutions, choose the best, implement it, and verify its effectiveness.",
+    "ref": "PMBOK 8, Guide section 5, Problem-solving",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 292,
+        "label": "PMBOK 8, Guide section 5, Problem-solving"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "An agile project charter answers four questions. Match each question with what its answer gives the team.",
+    "type": "match",
+    "left": [
+      "Why are we doing this project?",
+      "Who benefits, and how?",
+      "What does done mean for the project?",
+      "How are we going to work together?"
+    ],
+    "right": [
+      "The project's vision and objectives",
+      "Part of the vision or purpose",
+      "The release criteria",
+      "The intended flow of work"
+    ],
+    "approach": "agile",
+    "explanation": "These are the agile project charter's four questions in the Agile Practice Guide. A supportive leader may facilitate the chartering; the charter should be lightweight.",
+    "ref": "Agile Practice Guide, 5.1.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about how agile planning flows from the vision.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "The product vision drives the",
+        "choices": [
+          "sprint backlog",
+          "product roadmap",
+          "definition of done"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "The product roadmap drives the",
+        "choices": [
+          "team charter",
+          "risk register",
+          "release plans"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Each release plan establishes the",
+        "choices": [
+          "iterations",
+          "product vision",
+          "stakeholder register"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "agile",
+    "explanation": "The Eighth Edition's Figure 5-1 shows the chain: product vision, product roadmap, release plans, iterations, then tasks.",
+    "ref": "PMBOK 8, Guide section 5, Agile release planning",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Agile release planning"
+      }
+    ]
+  },
+  {
+    "id": "q31",
+    "q": "A product vision statement is a short description of what is expected of a product. Which of these does the PMBOK Guide's glossary say it covers?",
+    "options": [
+      "The product's detailed features, test cases and acceptance criteria",
+      "The team's roles, decision rules and meeting guidelines",
+      "The product's target market, users, major benefits and what sets it apart",
+      "The project's milestones, budget and approval points"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The glossary defines a vision statement as a summarized, high-level description of the expectations for a product, such as target market, users, major benefits and what differentiates the product from others in the market.",
+    "ref": "PMBOK 8, Glossary (vision statement)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 380,
+        "label": "PMBOK 8, Glossary (vision statement)"
+      }
+    ]
+  }
+]

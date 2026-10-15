@@ -688,6 +688,23 @@ export const tests = {
     expect((await page.getByRole('listbox').count()) === 0, 'Escape did not close the suggestions')
   },
 
+  async 'search stays in the course you are in: no PMP sections on CAPM pages'(page) {
+    const box = page.getByRole('combobox', { name: 'Search lessons and flashcards' })
+    const pmpSection = page.getByRole('option', { name: /Building a shared vision with key stakeholders/ })
+    await page.goto('/pmp/1-01-shared-vision')
+    await box.fill('shared vision stakeholders')
+    await pmpSection.waitFor()
+    await page.goto('/capm')
+    await box.fill('shared vision stakeholders')
+    await page.getByRole('option', { name: /See all results/ }).waitFor()
+    await page.waitForTimeout(1500)
+    expect((await pmpSection.count()) === 0, 'a PMP section was offered on a CAPM page')
+    await page.getByRole('option', { name: /See all results/ }).click()
+    await see(page, 'Searching CAPM only.')
+    await page.getByRole('link', { name: 'Search every course' }).click()
+    await page.getByRole('link', { name: /Building a shared vision with key stakeholders/ }).waitFor()
+  },
+
   async 'top menu: every module is one click away, and Practice shows what is waiting'(page) {
     await seed(page, { answers: { 'capm/1-01-project-basics': { q1: { right: 0, wrong: 1, lastCorrect: false } } } })
     await page.goto('/plan')

@@ -1,7 +1,8 @@
 import { useEffect, useState, type ReactNode } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import { PageHeader, Waiting } from '../components/Page'
-import { loadSearchIndex, search, type SearchEntry, type SearchHit } from '../lib/search'
+import { getCourse } from '../lib/content'
+import { inCourse, loadSearchIndex, search, type SearchEntry, type SearchHit } from '../lib/search'
 import { column, input, link, listTitle, note } from '../lib/ui'
 
 /** The text with every searched word marked. */
@@ -46,6 +47,8 @@ function Results({ title, hits, words }: { title: string; hits: SearchHit[]; wor
 export default function SearchPage() {
   const [params, setParams] = useSearchParams()
   const query = params.get('q') ?? ''
+  // Searching from a course's pages keeps to that course, until "search every course" is chosen.
+  const course = getCourse(params.get('course') ?? undefined)
   const [entries, setEntries] = useState<SearchEntry[]>()
 
   // The lessons and flashcards are only loaded once something is searched for.
@@ -54,7 +57,7 @@ export default function SearchPage() {
   }, [query, entries])
 
   const words = query.toLowerCase().split(/\s+/).filter((w) => w.length > 1)
-  const hits = entries ? search(entries, query, 60) : []
+  const hits = entries ? search(inCourse(entries, course?.id), query, 60) : []
   const lessons = hits.filter((h) => h.entry.kind === 'lesson')
   const cards = hits.filter((h) => h.entry.kind === 'card')
 
@@ -72,10 +75,18 @@ export default function SearchPage() {
         type="search"
         autoFocus
         value={query}
-        onChange={(e) => setParams(e.target.value ? { q: e.target.value } : {}, { replace: true })}
+        onChange={(e) => setParams(e.target.value ? { q: e.target.value, ...(course ? { course: course.id } : {}) } : {}, { replace: true })}
         placeholder="For example: float, MoSCoW, earned value"
         className={`${input} mt-1 w-full text-lg`}
       />
+      {course && (
+        <p className={`${note} mt-2`}>
+          Searching {course.title} only.{' '}
+          <Link to={`/search?q=${encodeURIComponent(query)}`} className={link}>
+            Search every course
+          </Link>
+        </p>
+      )}
 
       {words.length > 0 && !entries && (
         <div className="mt-6">

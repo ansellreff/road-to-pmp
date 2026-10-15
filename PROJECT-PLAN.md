@@ -23,7 +23,7 @@ How they are kept:
 | | Certification | State | Next |
 |---|---|---|---|
 | ✅ | CAPM | **Finished as planned** (2026-10-13). 39 modules, 1,274 questions including matching, hot spot and comic strip, 1,339 flashcards, 6 mock exams, 19 lesson drawings. What stays open, and why, is listed at the end of `docs/CAPM-PLAN.md`. | None planned |
-| 🟡 | PMP | **Being built.** PMP Session 1 (sources, map, skeleton) and PMP Session 2 (the exam engine: multiple response, pull-down lists, case sets, graphic-based questions, three sections with two breaks) are done. No module is written yet. | PMP Session 3, modules 1.1 to 1.3 |
+| 🟡 | PMP | **Being built.** Sessions 1 (sources, map), 2 (exam engine) and 3 (People modules 1.1 to 1.3: 91 questions, 75 flashcards) are done. 3 of 34 modules are ready. | PMP Session 4, modules 1.4 to 1.6 |
 | ⬜ | PMI-ACP | Not started | Needs its Exam Content Outline in the materials folder |
 | ⬜ | PMI-SP | Not started | Needs its Exam Content Outline in the materials folder |
 

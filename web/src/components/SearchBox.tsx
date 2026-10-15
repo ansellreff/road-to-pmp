@@ -1,7 +1,7 @@
 import { useEffect, useId, useMemo, useRef, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { allModules, courses } from '../lib/content'
-import { loadSearchIndex, search, searchWords, type SearchEntry, type SearchHit } from '../lib/search'
+import { allModules, courses, getCourse } from '../lib/content'
+import { inCourse, loadSearchIndex, search, searchWords, type SearchEntry, type SearchHit } from '../lib/search'
 import { moduleNumber } from '../lib/stats'
 import Icon, { type IconName } from './Icon'
 
@@ -77,18 +77,20 @@ export default function SearchBox() {
     return () => document.removeEventListener('mousedown', outside)
   }, [])
 
+  // On a course's pages, search stays in that course.
+  const courseId = getCourse(location.pathname.split('/')[1])?.id
   const words = searchWords(query)
   const hits = useMemo(() => {
-    const all = search(entries, query, 200)
+    const all = search(inCourse(entries, courseId), query, 200)
     return groups.flatMap((g) => all.filter((h) => h.entry.kind === g.kind).slice(0, SHOWN[g.kind]))
-  }, [entries, query])
+  }, [entries, query, courseId])
   // One more row at the end: all results on the search page.
   const rows = words.length ? hits.length + 1 : 0
   const showing = open && words.length > 0
 
   function go(hit?: SearchHit) {
     setOpen(false)
-    navigate(hit ? hit.entry.to : `/search?q=${encodeURIComponent(query.trim())}`)
+    navigate(hit ? hit.entry.to : `/search?q=${encodeURIComponent(query.trim())}${courseId ? `&course=${courseId}` : ''}`)
   }
 
   function onKey(event: React.KeyboardEvent) {

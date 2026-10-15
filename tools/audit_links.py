@@ -10,7 +10,8 @@ import json
 import re
 from pathlib import Path
 
-MODS = Path("web/src/content/capm/modules")
+# Every course: CAPM and PMP.
+MODULES = sorted(m for m in Path("web/src/content").glob("*/modules/*") if (m / "sources.json").is_file())
 CACHE = Path(".cache/books")
 FALLBACK = {"processgroups": 22, "scheduling": 16, "evm": 14, "riskstd": 18, "wbs": 18, "estimating": 12,
             "riskguide": 16, "agile": 18, "pmbok6": 33, "agile1": 16, "baguide": 48, "scrum": 2, "bapg": 12,
@@ -22,7 +23,7 @@ def text(book, page):
 figures = bad = 0
 fallbacks = []
 seen = set()
-for module in sorted(MODS.iterdir()):
+for module in MODULES:
     for link in json.loads((module / "sources.json").read_text(encoding="utf-8")):
         key = (link["book"], link["page"], link["label"])
         if key in seen:

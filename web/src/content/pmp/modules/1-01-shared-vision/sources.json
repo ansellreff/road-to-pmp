@@ -1,0 +1,92 @@
+[
+  {
+    "book": "agile",
+    "page": 38,
+    "label": "Agile Practice Guide, 3.5.1.2"
+  },
+  {
+    "book": "agile",
+    "page": 62,
+    "label": "Agile Practice Guide, 4.3"
+  },
+  {
+    "book": "agile",
+    "page": 62,
+    "label": "Agile Practice Guide, 4.3.1"
+  },
+  {
+    "book": "agile",
+    "page": 80,
+    "label": "Agile Practice Guide, 5.1"
+  },
+  {
+    "book": "agile",
+    "page": 81,
+    "label": "Agile Practice Guide, 5.1.1"
+  },
+  {
+    "book": "agile",
+    "page": 81,
+    "label": "Agile Practice Guide, 5.1.2"
+  },
+  {
+    "book": "agile",
+    "page": 89,
+    "label": "Agile Practice Guide, Table 5-2"
+  },
+  {
+    "book": "agile",
+    "page": 92,
+    "label": "Agile Practice Guide, Table 5-3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 189,
+    "label": "PMBOK 8, Guide 2.6.2.4.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 191,
+    "label": "PMBOK 8, Guide 2.6.2.4.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 230,
+    "label": "PMBOK 8, Guide section 4, Project charter"
+  },
+  {
+    "book": "pmbok8",
+    "page": 251,
+    "label": "PMBOK 8, Guide section 5, Agile release planning"
+  },
+  {
+    "book": "pmbok8",
+    "page": 254,
+    "label": "PMBOK 8, Guide section 5, Brainstorming techniques"
+  },
+  {
+    "book": "pmbok8",
+    "page": 275,
+    "label": "PMBOK 8, Guide section 5, Facilitation"
+  },
+  {
+    "book": "pmbok8",
+    "page": 281,
+    "label": "PMBOK 8, Guide section 5, Leadership"
+  },
+  {
+    "book": "pmbok8",
+    "page": 292,
+    "label": "PMBOK 8, Guide section 5, Problem-solving"
+  },
+  {
+    "book": "pmbok8",
+    "page": 301,
+    "label": "PMBOK 8, Guide section 5, Root cause analysis"
+  },
+  {
+    "book": "pmbok8",
+    "page": 380,
+    "label": "PMBOK 8, Glossary (vision statement)"
+  }
+]

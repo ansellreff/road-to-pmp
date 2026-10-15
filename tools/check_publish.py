@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 BLOCKED_FOLDERS = ("PMI Learning Material/", "Resources from Instructor/", ".cache/", ".tools/", ".venv/")
 BLOCKED_ENDINGS = (".pdf", ".epub", ".docx", ".pptx", ".zip")
 MAX_BYTES = 1_000_000
+SEARCH_INDEX_MAX_BYTES = 5_000_000
 TERMS = ROOT / ".cache" / "private-terms.txt"
 
 
@@ -37,7 +38,10 @@ def main() -> None:
             problems.append(f"{name}: comes from a folder that must stay on this PC")
         if name.lower().endswith(BLOCKED_ENDINGS):
             problems.append(f"{name}: books and documents are never uploaded")
-        if path.stat().st_size > MAX_BYTES:
+        # The search file is built from the lessons and flashcards of every course, so it grows with the
+        # content; it gets a larger allowance. Every file is still searched for private details below.
+        limit = SEARCH_INDEX_MAX_BYTES if "_virtual_search-index" in name else MAX_BYTES
+        if path.stat().st_size > limit:
             problems.append(f"{name}: {path.stat().st_size / 1_000_000:.1f} MB, larger than expected for this project")
         text = path.read_bytes().decode("utf-8", errors="ignore").lower()
         for term in terms:

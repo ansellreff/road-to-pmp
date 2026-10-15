@@ -1,0 +1,655 @@
+[
+  {
+    "id": "q1",
+    "q": "In a design review, two senior engineers start arguing about the foundation design, and the meeting goes off track. Nothing is urgent today. What should the project manager do first?",
+    "options": [
+      "Decide on the design personally so the meeting can move on",
+      "Ask the sponsor to settle the disagreement between them",
+      "Talk with both engineers in private to understand the disagreement",
+      "Tell both engineers that open conflict is not acceptable on this project team"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition says conflict should be addressed early and usually in private, using a direct, collaborative approach. Understanding what the disagreement is really about comes before choosing how to resolve it.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which of these does the PMBOK Guide name as a common source of conflict on projects?",
+    "options": [
+      "Scheduling priorities",
+      "The choice of contract type",
+      "The length of the project charter",
+      "The number of process groups used"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition names scarce resources, scheduling priorities and personal work styles as sources of conflict.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Two developers on a self-managing team disagree about how to test a new feature. The disagreement is getting tense, but they have not yet tried to settle it between themselves. What should the project manager do?",
+    "options": [
+      "Choose the testing approach and tell the team to follow it",
+      "Escalate the matter to the developers' functional managers for a decision",
+      "Ask the product owner to decide which approach is correct",
+      "Encourage them to resolve it, and facilitate if it escalates"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Team members are initially responsible for resolving a conflict. If it escalates, the project manager helps facilitate a satisfactory resolution.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A gas leak is detected on a construction site. Two foremen are arguing about which evacuation route to use. Which conflict resolution technique should the site manager use?",
+    "options": [
+      "Collaborate/problem-solve, to reach a shared decision",
+      "Force/direct, deciding the route at once",
+      "Compromise/reconcile, splitting the crews",
+      "Withdraw/avoid, leaving the foremen to agree"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Force/direct pushes one viewpoint, usually from a position of power, to resolve an emergency. A gas leak leaves no time for collaboration.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Which conflict resolution technique can result in a win-win situation?",
+    "options": [
+      "Compromise/reconcile",
+      "Collaborate/problem-solve",
+      "Smooth/accommodate",
+      "Force/direct"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Collaborate/problem-solve brings in multiple viewpoints through a cooperative attitude and open dialogue, typically leading to consensus and commitment, and can result in a win-win situation.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Two functional managers both want the same specialist for the quarter. They agree to share her equally, and both leave unhappy because neither project gets what it needs. Which technique did they use, and what is its typical drawback?",
+    "options": [
+      "Collaboration; it takes too much time to agree",
+      "Smoothing; it ignores the real issue entirely",
+      "Forcing; it damages the working relationship",
+      "Compromise; it can end in a lose-lose situation"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Compromise/reconcile looks for some satisfaction for all parties to resolve the conflict partly or temporarily, and occasionally results in a lose-lose situation.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "During a sprint, a developer gives in to the tester's view on a defect, although he believes he is right, because he wants to keep the peace. Which technique is this?",
+    "options": [
+      "Smooth/accommodate",
+      "Withdraw/avoid",
+      "Force/direct",
+      "Compromise/reconcile"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Smooth/accommodate emphasizes areas of agreement and concedes one's position to the needs of others to maintain harmony and relationships.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "In a heated debate about a supplier's figures, the project manager proposes to pause the discussion until the audited figures arrive next week. Which technique is this, and is it appropriate?",
+    "options": [
+      "Forcing; it is wrong because one view wins",
+      "Smoothing; it is wrong because the issue is hidden",
+      "Withdrawing; it is fine as a step to be better prepared",
+      "Compromising; it is fine because both sides give way"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Withdraw/avoid means retreating from a conflict or postponing it to be better prepared or for others to resolve it. Waiting for the audited figures is a legitimate, temporary use.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Which of these does the PMBOK Guide list as a factor that influences the choice of a conflict resolution method?",
+    "options": [
+      "The development approach of the project",
+      "The size of the project's budget reserve",
+      "The relative power of the people involved",
+      "The number of deliverables still open"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The factors listed are the importance and intensity of the conflict, time pressure, the relative power of those involved, the importance of keeping a good relationship, and whether the resolution should be long- or short-term.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "In a team discussion, a disagreement turns personal: \"You always do this, just like on the last release.\" How should the project manager steer the conversation?",
+    "options": [
+      "Toward the issue at hand and what to do from now on",
+      "Toward a vote, so the majority view can settle the matter",
+      "Toward the past release, to find who was really at fault",
+      "Toward the end of the meeting, to stop the argument quickly"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "The Eighth Edition's guidance: focus on the issues, not the people, and on the present and future, not the past. Bringing up past situations can intensify the current one.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "On a government megaproject, crews from two vendors clash over previously agreed shift rotations. How would an accountable leader handle this?",
+    "options": [
+      "Enforce the contracted labor terms and let each vendor calm its own staff",
+      "Replace the crew that complains the most to restore discipline on site",
+      "Report both vendors to the procurement department for a breach of their contracts",
+      "Hold discussions across the vendors to find the cause and acceptable adjustments"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition's example for the accountable leader principle contrasts the conventional approach (enforcing contracts) with cross-vendor discussions to explore the root cause and identify acceptable adjustments, which removes friction that could hurt quality and productivity.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A new agile team is forming. The project manager wants future conflicts to be handled in a way everyone has agreed in advance. What should be done?",
+    "options": [
+      "Write a conflict policy and send it to the team for signature",
+      "Agree a conflict resolution process with the team in its charter",
+      "Ask the functional managers to resolve any team conflicts later",
+      "Wait until the first real conflict arises and only then decide what to do"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "A team charter may include conflict resolution processes, and it works best when the team develops it. An agreed process means the strategy is not invented in the heat of a conflict.",
+    "ref": "PMBOK 8, Guide section 4, Team charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 247,
+        "label": "PMBOK 8, Guide section 4, Team charter"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Who should develop the team charter, according to the PMBOK Guide?",
+    "options": [
+      "The project manager, before the team is assembled",
+      "The team itself, or with a chance to contribute",
+      "The sponsor, as part of the project charter",
+      "The PMO, using the organization's template"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "The team charter works best when the team develops it, or at least has an opportunity to contribute to it.",
+    "ref": "PMBOK 8, Guide section 4, Team charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 247,
+        "label": "PMBOK 8, Guide section 4, Team charter"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Who is responsible for making sure that the rules in the team charter are followed?",
+    "options": [
+      "Only the project manager",
+      "The functional managers",
+      "The project sponsor",
+      "All project team members"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "All project team members share responsibility for ensuring the rules documented in the team charter are followed.",
+    "ref": "PMBOK 8, Guide section 4, Team charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 247,
+        "label": "PMBOK 8, Guide section 4, Team charter"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A team member keeps interrupting colleagues in the daily meeting, although the team agreed that one person speaks at a time. What should the project manager do first?",
+    "options": [
+      "Speak with the member privately, referring to the agreement",
+      "Raise the behavior in front of the team at the next meeting",
+      "Report the behavior to the member's functional manager",
+      "Remove the ground rule, since it is clearly not working"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Conflict, including a broken ground rule, is addressed early and usually in private, with a direct and collaborative approach. Referring to what the team agreed keeps the conversation about the team's rule, not the project manager's preference.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Several members of an agile team keep ignoring the same working agreement about finishing work before starting new items. What is the most suitable step?",
+    "options": [
+      "Remove the members who ignore it from the next sprint",
+      "Ask the product owner to enforce the agreement in every sprint",
+      "Revisit the agreement with the team at the retrospective",
+      "Add the agreement to the definition of done"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "In a sprint retrospective the team reflects on behaviors and updates its working agreements. A rule that many people break may be unclear or no longer fit, and the charter is meant to be reviewed and updated.",
+    "ref": "Agile Practice Guide, Table 4-1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 59,
+        "label": "Agile Practice Guide, Table 4-1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Where are a team's ground rules defined, according to the PMBOK Guide?",
+    "options": [
+      "In the project charter",
+      "In the communications management plan",
+      "In the team charter",
+      "In the resource calendar"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Ground rules are expectations regarding acceptable behavior by project team members. They are defined in the team charter.",
+    "ref": "PMBOK 8, Guide section 5, Ground rules",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 276,
+        "label": "PMBOK 8, Guide section 5, Ground rules"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A team member's disruptive behavior has continued despite two private conversations and a facilitated discussion with a colleague. What may the project manager now use?",
+    "options": [
+      "Formal procedures, which may include disciplinary action",
+      "A team vote on whether the member should stay",
+      "A public warning to the member at the next all-hands meeting",
+      "A change request to remove the member from the plan"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "If disruptive conflict continues, formal procedures may be used, including disciplinary actions. They come after the direct, collaborative steps.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "After a manager publicly criticized a developer's mistake in a sprint review, the team has gone silent in retrospectives. What should the project manager do?",
+    "options": [
+      "Ask the manager to attend every retrospective from now on",
+      "Cancel retrospectives until the team is ready to talk again",
+      "Ask team members to submit their comments in writing only",
+      "Run retrospectives that look for learning instead of blame"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Public criticism and blame threaten psychological safety. Retrospectives that promote reflection rather than blame, and leaders who respond without defensiveness, help rebuild it. Dropping retrospectives would make things worse.",
+    "ref": "Agile Practice Guide, 4.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 60,
+        "label": "Agile Practice Guide, 4.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Remote team members on a hybrid project rarely speak up in meetings. Which practice does the Agile Practice Guide suggest?",
+    "options": [
+      "Moving every meeting to written updates only",
+      "Regular check-ins and inclusive facilitation",
+      "Asking the remote members to travel to the office",
+      "Letting only the on-site members make decisions"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Remote work can undermine psychological safety. The Agile Practice Guide suggests regular check-ins and inclusive facilitation so all team members are included.",
+    "ref": "Agile Practice Guide, 4.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 60,
+        "label": "Agile Practice Guide, 4.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which practices does the PMBOK Guide say can reduce the amount of conflict on a project?",
+    "options": [
+      "Larger contingency and management reserves",
+      "Communication planning and role definition",
+      "Shorter phases and more frequent phase gates",
+      "Detailed contracts with every team member"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Team ground rules, group norms and solid project management practices, such as communication planning and role definition, can reduce the amount of conflict.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "What benefit can well-managed conflict bring to a project, according to the PMBOK Guide?",
+    "options": [
+      "It removes the need for a team charter",
+      "It shortens the schedule by reducing meetings",
+      "It shows the sponsor which member is the strongest leader on the team",
+      "It increases creativity and leads to better decisions"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "When managed properly, differences of opinion can lead to increased creativity and better decision-making, and successful conflict management brings greater productivity and positive working relationships.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "In an agile team charter, what kind of item is an agreement on what \"ready\" and \"done\" mean?",
+    "options": [
+      "A working agreement",
+      "A team value",
+      "A ground rule",
+      "A group norm"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide lists team values (such as sustainable pace), working agreements (such as what ready and done mean, respecting the timebox, WIP limits), ground rules (such as one person talking in a meeting) and group norms (such as how meeting times are treated).",
+    "ref": "Agile Practice Guide, 5.1.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "While mediating a dispute between two team leads, the project manager reminds them that they had \"exactly the same argument\" on a previous project. Why is this unhelpful?",
+    "options": [
+      "It takes too long and delays the decision",
+      "It shows the project manager is taking one side",
+      "It drags in the past and can intensify the conflict",
+      "It breaks the confidentiality of the old project and its people"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition advises focusing on the present and future, not the past: bringing up a similar past situation will not resolve the current one and can intensify it.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which THREE does the PMBOK Guide list as factors that influence the choice of a conflict resolution method?",
+    "type": "multi",
+    "options": [
+      "The importance and intensity of the conflict",
+      "The time pressure for resolving it",
+      "The relative power of the people involved",
+      "The seniority of the project manager",
+      "The size of the project budget",
+      "The number of stakeholders on the register"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "The factors listed are importance and intensity, time pressure, relative power, the importance of maintaining a good relationship, and the motivation to resolve the conflict on a long-term or short-term basis.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO practices build psychological safety in a team?",
+    "type": "multi",
+    "options": [
+      "Defining working agreements together as a team",
+      "Leaders openly admitting their own mistakes",
+      "Criticizing errors publicly so others learn from them",
+      "Skipping retrospectives when deadlines are tight",
+      "Rewarding the members who agree with the leader"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Defining team working agreements together and leaders modeling vulnerability (admitting uncertainty, sharing mistakes, asking for help) build psychological safety. Public criticism, dropping reflection and rewarding agreement threaten it.",
+    "ref": "Agile Practice Guide, 4.2.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 59,
+        "label": "Agile Practice Guide, 4.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Match each conflict resolution technique with its typical result.",
+    "type": "match",
+    "left": [
+      "Withdraw/avoid",
+      "Smooth/accommodate",
+      "Compromise/reconcile",
+      "Force/direct",
+      "Collaborate/problem-solve"
+    ],
+    "right": [
+      "The issue stays open for now",
+      "Harmony is kept; the issue may remain",
+      "A partial fix; sometimes lose-lose",
+      "Win-lose",
+      "Consensus; can be win-win"
+    ],
+    "approach": "hybrid",
+    "explanation": "The five general techniques in the Eighth Edition, with the results it describes for each.",
+    "ref": "PMBOK 8, Guide section 5, Conflict management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 261,
+        "label": "PMBOK 8, Guide section 5, Conflict management"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "What should the project manager do first?",
+    "case": "packaging-line",
+    "options": [
+      "Tell the software crew to stop all of its night-shift work until the new machines are fully installed",
+      "Ask the plant manager which vendor's work matters more and act on that",
+      "Bring both vendor leads together to find out why the settings keep changing",
+      "Enforce the logging rule by refusing to accept any unlogged changes"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The Eighth Edition's accountable leader example favors cross-vendor discussions to explore the root cause and find acceptable adjustments, rather than acting on one side's complaint or enforcing rules first.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Both crews ignore the agreed rule that every change is logged on the shared board. Which approach best restores it?",
+    "case": "packaging-line",
+    "options": [
+      "Revisit the rule with both crews, explain why it matters, and agree how to keep it",
+      "Write a stricter version of the rule and send it to both vendors",
+      "Assign one person from the client's staff to log all changes for the crews",
+      "Drop the rule, since neither crew sees any value in following it"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Ground rules work when the people who follow them helped shape them, and all team members share responsibility for keeping them. A rule that is ignored is revisited with those who must follow it.",
+    "ref": "PMBOK 8, Guide section 4, Team charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 247,
+        "label": "PMBOK 8, Guide section 4, Team charter"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "The machine vendor's manager demands that the project manager apply the contract's penalty clause to the software vendor at once. How should the project manager respond?",
+    "case": "packaging-line",
+    "options": [
+      "Apply the penalty clause immediately to show the rules are enforced",
+      "Refuse to discuss the contract until the project has been completed",
+      "Ask the software vendor to pay the machine vendor directly for every day of delay caused",
+      "Work on the cause with both vendors first; contract steps can follow if needed"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Enforcing contract terms is the conventional response the Eighth Edition contrasts with accountable leadership: resolving the root cause collaboratively removes the friction that harms quality and productivity. Formal steps remain available if the problem continues.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  }
+]

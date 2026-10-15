@@ -1,0 +1,127 @@
+[
+  {
+    "id": "c1",
+    "front": "Project vision",
+    "back": "A clear, brief summary of the project's purpose: a realistic, attractive view of the future outcomes. It motivates and keeps people pulling in the same direction."
+  },
+  {
+    "id": "c2",
+    "front": "The four questions a vision should answer",
+    "back": "What is the purpose? What defines successful work? How will the future be better? How will the team know it is drifting from the vision?"
+  },
+  {
+    "id": "c3",
+    "front": "A good vision (four signs)",
+    "back": "Sums up the project in a powerful phrase; describes the best achievable outcome; creates a common picture; inspires passion."
+  },
+  {
+    "id": "c4",
+    "front": "Who builds the vision?",
+    "back": "Team members and key stakeholders, collaboratively. A vision handed down is rarely shared."
+  },
+  {
+    "id": "c5",
+    "front": "Vision statement (glossary)",
+    "back": "A short, high-level description of what is expected of a product: target market, users, major benefits, what differentiates it."
+  },
+  {
+    "id": "c6",
+    "front": "First activity of leadership in the Eighth Edition",
+    "back": "Establishing and maintaining vision."
+  },
+  {
+    "id": "c7",
+    "front": "Agile chartering: the minimum",
+    "back": "The project vision or purpose, and a clear set of working agreements."
+  },
+  {
+    "id": "c8",
+    "front": "Agile project charter: four questions",
+    "back": "Why are we doing this? Who benefits and how? What does done mean (release criteria)? How will we work together?"
+  },
+  {
+    "id": "c9",
+    "front": "Who defines the product vision?",
+    "back": "The product manager or product owner, with its success metrics."
+  },
+  {
+    "id": "c10",
+    "front": "Supportive leader's order of work",
+    "back": "Purpose, then people, then process."
+  },
+  {
+    "id": "c11",
+    "front": "Promoting the vision",
+    "back": "Communicate it throughout; refer to the intended outcomes when making decisions and solving problems; keep it visible."
+  },
+  {
+    "id": "c12",
+    "front": "Shared understanding (high-performing teams)",
+    "back": "The purpose of the project and its benefits held in common by the team; close to alignment with the organization's mission and strategy."
+  },
+  {
+    "id": "c13",
+    "front": "Keeping the vision current",
+    "back": "Review it regularly; rework it with stakeholders when the situation changes; then revisit the roadmap and backlog."
+  },
+  {
+    "id": "c14",
+    "front": "Fragmented product vision: remedy",
+    "back": "Joint vision workshop; one vision statement and roadmap for all teams; shared goal visible in release planning; every backlog item links to the vision."
+  },
+  {
+    "id": "c15",
+    "front": "Unclear purpose: remedy",
+    "back": "A project brief or team charter stating the vision, mission and simple success tests; review the vision regularly."
+  },
+  {
+    "id": "c16",
+    "front": "Planning chain from the vision",
+    "back": "Product vision, product roadmap, release plans, iterations, tasks."
+  },
+  {
+    "id": "c17",
+    "front": "Problem-solving steps",
+    "back": "Define the problem, identify the root cause, generate solutions, choose the best, implement, verify."
+  },
+  {
+    "id": "c18",
+    "front": "Root cause analysis",
+    "back": "Finds the basic reason behind a problem; when all root causes are removed, the problem does not recur."
+  },
+  {
+    "id": "c19",
+    "front": "Five whys",
+    "back": "Keep asking why to get past the symptoms to the root cause."
+  },
+  {
+    "id": "c20",
+    "front": "Misunderstood vision: first step",
+    "back": "Find out why: talk with those involved and define the problem before choosing a fix."
+  },
+  {
+    "id": "c21",
+    "front": "Facilitator's job in a vision workshop",
+    "back": "Effective participation, mutual understanding, all contributions considered, buy-in under the agreed decision process, follow-up on agreements."
+  },
+  {
+    "id": "c22",
+    "front": "Vision versus requirements",
+    "back": "The vision summarizes the purpose; requirements state in detail what is needed."
+  },
+  {
+    "id": "c23",
+    "front": "Project charter and the vision (predictive)",
+    "back": "Issued by the sponsor or initiator; tells the team why the project matters and where it is headed."
+  },
+  {
+    "id": "c24",
+    "front": "New team members and the vision",
+    "back": "Cover the vision when bringing them in; the team charter is reviewed partly to orient new members."
+  },
+  {
+    "id": "c25",
+    "front": "Backlog item that does not serve the vision",
+    "back": "Ask how it serves the vision; every backlog item should link back to it. The product owner decides on the backlog."
+  }
+]

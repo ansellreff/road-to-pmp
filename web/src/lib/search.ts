@@ -30,6 +30,14 @@ export function loadSearchIndex(): Promise<SearchEntry[]> {
   return index
 }
 
+/**
+ * The entries of one course, when a course is given: on a course's pages, search stays in that
+ * course, so a CAPM learner does not meet PMP sections. Without a course, every entry.
+ */
+export function inCourse(entries: SearchEntry[], courseId?: string): SearchEntry[] {
+  return courseId ? entries.filter((e) => e.to === `/${courseId}` || e.to.startsWith(`/${courseId}/`)) : entries
+}
+
 export const searchWords = (query: string) => query.toLowerCase().split(/\s+/).filter((w) => w.length > 1)
 
 const count = (haystack: string, needle: string) => haystack.split(needle).length - 1

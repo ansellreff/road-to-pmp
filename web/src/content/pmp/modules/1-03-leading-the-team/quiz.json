@@ -1,0 +1,661 @@
+[
+  {
+    "id": "q1",
+    "q": "A newly formed team with little experience must complete a critical cutover in two days. Which leadership style suits the project manager best for now?",
+    "options": [
+      "A supportive style that leaves every decision to the team",
+      "A hands-off style so the team learns from its mistakes",
+      "A more directive style until the critical work is done",
+      "The same style the project manager used on the last project"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition names situational leadership as particularly relevant: a project management team adjusts its style to the team's needs, the time sensitivity of tasks and the complexity, for example shifting to a more directive approach during critical phases.",
+    "ref": "PMBOK 8, Standard 2.5.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 52,
+        "label": "PMBOK 8, Standard 2.5.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A project manager joins an experienced, self-managing agile team that delivers well. Which approach should the project manager take?",
+    "options": [
+      "Support the team and let it decide how it does the work",
+      "Assign the tasks for each sprint to make the plan clearer",
+      "Review every technical decision before the team carries it out",
+      "Replace the team's working agreements with company standards"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "When team autonomy is beneficial, a supportive style fits. The Agile Practice Guide adds that in agile settings project managers shift from the center of coordination to supporting the team and distributing responsibility to those with the knowledge.",
+    "ref": "Agile Practice Guide, 4.3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 65,
+        "label": "Agile Practice Guide, 4.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Which approach to leadership does the PMBOK Guide, Eighth Edition, call particularly relevant for project management teams?",
+    "options": [
+      "Transactional leadership",
+      "Charismatic leadership",
+      "Autocratic leadership",
+      "Situational leadership"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "In the context of leadership styles, the Eighth Edition says situational leadership is particularly relevant: flexibility and adaptability based on the evolving demands of the project.",
+    "ref": "PMBOK 8, Standard 2.5.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 52,
+        "label": "PMBOK 8, Standard 2.5.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A project manager says: \"I have the authority, so the team follows my lead.\" How does the PMBOK Guide distinguish leadership from authority?",
+    "options": [
+      "They are the same thing in a project setting",
+      "Authority is a position of control; leadership inspires others by example",
+      "Leadership is given by the organization; authority is earned from the team",
+      "Authority applies to agile teams; leadership applies to predictive teams"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition says leadership is different from authority: authority is the position of control given within the organization, whereas leadership is about inspiring and motivating others by leading by example.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "An agile team delivers a working increment every two weeks, but each release then waits six weeks in a separate approval queue. What should the project manager do?",
+    "options": [
+      "Ask the team to slow down to match the approval process",
+      "Work with the release department to streamline its process",
+      "Tell the team to release without waiting for the approval",
+      "Combine three sprints' work into one larger release instead"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide gives supportive leaders the job of removing organizational impediments: looking at lengthy processes that block agility and working with those departments to streamline them. Bypassing the process breaks governance; slowing the team wastes value.",
+    "ref": "Agile Practice Guide, 4.3.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which of these is a characteristic of supportive leadership, according to the Agile Practice Guide?",
+    "options": [
+      "Controlling the team's work closely to keep standards",
+      "Keeping decisions with the project manager",
+      "Measuring each person's individual throughput",
+      "Coaching rather than controlling"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "The characteristics listed are promoting self-awareness, listening, serving the team, helping people grow, coaching versus controlling, promoting safety, respect and trust, and promoting the energy and intelligence of others.",
+    "ref": "Agile Practice Guide, 4.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A team member assigned to scheduling clearly lacks the skills for the role. What does the PMBOK Guide suggest the project manager do?",
+    "options": [
+      "Identify the gap and close it with training, mentoring or coaching",
+      "Quietly move the work to another member without telling the first one why",
+      "Ask the functional manager to replace the team member at once",
+      "Leave the member to learn the role alone over the coming months"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Among the common aspects of team development, the Eighth Edition says project managers should identify gaps in knowledge and skills and develop strategies to address them through training, mentoring or coaching.",
+    "ref": "PMBOK 8, Guide 2.6.2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 189,
+        "label": "PMBOK 8, Guide 2.6.2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "A project manager checks each developer's task list every morning and reassigns work several times a day. Motivation on the team is falling. What does the PMBOK Guide say about this?",
+    "options": [
+      "Close tracking is needed to keep agile work on schedule",
+      "Reassigning work often keeps every developer fully utilized and motivated",
+      "Team members who are micromanaged perform worse and are less satisfied",
+      "Falling motivation is unrelated to how the work is assigned"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Among the factors of high-performing teams, the Eighth Edition lists empowerment, delegation and autonomy: members who may decide how they work perform better and have higher satisfaction than those who are micromanaged.",
+    "ref": "PMBOK 8, Guide 2.6.2.4.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 191,
+        "label": "PMBOK 8, Guide 2.6.2.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "The team finds that the only way to meet a regulatory deadline is to hire a specialist, which needs more budget than the project manager can approve. What should the project manager do?",
+    "options": [
+      "Hire the specialist now and explain the extra cost to the sponsor afterwards",
+      "Tell the team the deadline cannot be met and accept the delay",
+      "Set out the options and their impacts, and escalate to whoever can decide",
+      "Ask the team to work extra hours so no extra budget is needed"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "For decisions beyond the team's authority, the Eighth Edition says the team investigates alternatives, considers the impact of each, and escalates the decision to someone with the proper authority: \"do not bring me problems, bring me solutions\".",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "In design discussions, a senior architect always speaks first and the rest of the team simply agrees. How can the project manager get the team's real views on the next decision?",
+    "options": [
+      "Have people generate options individually first, then decide together",
+      "Let the architect decide, since experience should lead",
+      "Ask the product owner to choose instead of the team",
+      "Hold the next design discussion without the architect being present at all"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "The Eighth Edition describes the diverge/converge pattern: options are first generated, often individually, to avoid senior or charismatic people unduly influencing others; then the team converges. Techniques such as Roman voting and fist of five reduce groupthink.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The same welding defect keeps coming back in a fabrication project, although it has been repaired several times. How should the project manager lead the team on this?",
+    "options": [
+      "Repair each defect faster as soon as it appears",
+      "Replace the welding crew with a more experienced crew from another site",
+      "Add more inspection points after each welding step",
+      "Define the problem and find its root cause before choosing a fix"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition's problem-solving steps are: define the problem, identify the root cause, generate solutions, choose the best, implement it and verify. The Agile Practice Guide also asks leaders to help identify the root causes of recurrent problems.",
+    "ref": "PMBOK 8, Guide section 5, Problem-solving",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 292,
+        "label": "PMBOK 8, Guide section 5, Problem-solving"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A junior team member rarely speaks in planning, and when she does, others talk over her. What should the project manager do?",
+    "options": [
+      "Ask her to send her ideas by email after the meeting",
+      "Make space for her input and acknowledge her ideas",
+      "Leave it to the team, since it is self-managing",
+      "Assign her only tasks that need no discussion"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide says leaders support psychological safety by amplifying quieter voices and making space for underrepresented views, so all members feel heard; this also improves decisions by widening the input.",
+    "ref": "Agile Practice Guide, 4.2.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 59,
+        "label": "Agile Practice Guide, 4.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which of these describes social awareness, one of the four areas of emotional intelligence?",
+    "options": [
+      "Understanding your own goals, strengths and weaknesses",
+      "Empathy, including reading nonverbal cues and body language",
+      "Controlling disruptive feelings and impulses, and thinking before acting",
+      "Managing groups and building rapport with stakeholders"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The Eighth Edition's four areas are self-awareness, self-management, social awareness (empathy, considering others' feelings, reading nonverbal cues) and social skills (managing groups, building networks and rapport).",
+    "ref": "PMBOK 8, Guide section 5, Emotional intelligence",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 274,
+        "label": "PMBOK 8, Guide section 5, Emotional intelligence"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "What does it mean to say that a team member has T-shaped skills?",
+    "options": [
+      "Deep skill in one area and no contribution outside it",
+      "General skills in many areas without any specialty",
+      "Technical skills only, without collaboration skills",
+      "A deep specialty plus a breadth of skills across other areas"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "T-shaped skills are a focused specialty plus a breadth of experience across multiple skills; such generalizing specialists help one another and reduce bottlenecks. I-shaped people have deep skill in one domain only.",
+    "ref": "Agile Practice Guide, 4.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 73,
+        "label": "Agile Practice Guide, 4.6"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "While reviewing a responsibility assignment matrix, the project manager notices that two people are marked accountable for the same task. Why must this be fixed?",
+    "options": [
+      "The matrix must show only one person accountable for each task",
+      "Two accountable people make the task twice as expensive",
+      "The sponsor must always be the accountable person",
+      "Accountable people may not also be consulted"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition says the matrix ensures there is only one person accountable for any one task, to avoid confusion about who is ultimately in charge or has authority for the work.",
+    "ref": "PMBOK 8, Guide section 5, Responsibility assignment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Responsibility assignment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "An organization moving to agile has removed every role definition. Now work falls through the cracks and meetings are bloated because everyone attends everything. What does the Agile Practice Guide suggest?",
+    "options": [
+      "Bring back the detailed job descriptions used before the change",
+      "Make the project manager responsible for every activity",
+      "Apply a lightweight RAF model where the confusion exists",
+      "Add a RACI chart covering every activity in the organization"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide describes full autonomy without role definitions as an extreme that causes diffusion of responsibility and bloated meetings. Its answer is a lightweight responsible, accountable, facilitator (RAF) model, applied selectively where confusion exists.",
+    "ref": "Agile Practice Guide, 4.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 70,
+        "label": "Agile Practice Guide, 4.5"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "In the RAF model from the Agile Practice Guide, what does the facilitator do?",
+    "options": [
+      "Performs the work",
+      "Owns the outcome or decision",
+      "Supports the process and resolves blockers",
+      "Approves the budget for the activity"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "R is responsible (performs the work), A is accountable (owns the outcome or decision), and F is facilitator (supports the process, resolves blockers and maintains momentum).",
+    "ref": "Agile Practice Guide, 4.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 70,
+        "label": "Agile Practice Guide, 4.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "The second edition of the Agile Practice Guide uses a different name for what the first edition called servant leadership. What is it?",
+    "options": [
+      "Supportive leadership",
+      "Situational leadership",
+      "Distributed leadership",
+      "Shared leadership"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The first edition's section was \"Servant Leadership Empowers the Team\". The second edition's is \"Supportive Leaders Empower the Team\", with the same definition: leading through service to the team.",
+    "ref": "Agile Practice Guide, First Edition, 4.2",
+    "links": [
+      {
+        "book": "agile1",
+        "page": 48,
+        "label": "Agile Practice Guide, First Edition, 4.2"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "The Lead the Team process combines management and leadership activities. Which of these is a leadership activity?",
+    "options": [
+      "Planning the sequence of the work",
+      "Measuring and monitoring the work",
+      "Coordinating the team's activities",
+      "Motivating and listening to people"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Management activities focus on the means of meeting objectives: processes, planning, coordinating, measuring, monitoring. Leadership activities focus on people: influencing, motivating, listening, enabling.",
+    "ref": "PMBOK 8, Guide 2.6.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 189,
+        "label": "PMBOK 8, Guide 2.6.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which three roles does the Agile Practice Guide describe as common on agile teams?",
+    "options": [
+      "Sponsor, project manager and team members",
+      "Team members, product owner and team facilitator",
+      "Business analyst, tester and developer",
+      "Product owner, scrum master and project sponsor"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide lists cross-functional team members, the product owner and the team facilitator (a supportive leader, who may be called project manager, scrum master, team lead or coach).",
+    "ref": "Agile Practice Guide, 4.4.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 67,
+        "label": "Agile Practice Guide, 4.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "At the start of a predictive project, the project manager wants the team to share clear expectations about how they will work together. What should the project manager do?",
+    "options": [
+      "Write the team's rules alone and send them out for signature",
+      "Develop a team charter and team norms together with the team",
+      "Rely on each member's functional manager to set expectations",
+      "Wait for problems to appear before agreeing on any rules"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The Eighth Edition says facilitating team operations may include working with the team to develop a team charter and operating guidelines or norms; the charter works best when the team develops it.",
+    "ref": "PMBOK 8, Guide 2.6.2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 189,
+        "label": "PMBOK 8, Guide 2.6.2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "On a large agile program with several teams and vendors, what does the Agile Practice Guide say the project manager often does?",
+    "options": [
+      "Writes the user stories for every team",
+      "Assigns tasks to each developer at the daily scrum",
+      "Replaces the product owners in backlog decisions when teams disagree",
+      "Coordinates across teams and escalates organization-level impediments"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "In larger agile settings, project managers often move into external-facing coordination roles: aligning teams and dependencies, escalating and removing organization-level impediments, and guiding teams through enterprise processes and governance.",
+    "ref": "Agile Practice Guide, 4.3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 65,
+        "label": "Agile Practice Guide, 4.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A project uses distributed management and leadership. What can be expected?",
+    "options": [
+      "Decision-making and authority are spread among people and teams",
+      "All decisions are made by top management",
+      "The project manager personally approves each task before it starts",
+      "Leadership is limited to the person with the most authority"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "In distributed management and leadership, decision-making and authority are decentralized among individuals and teams; a team may self-organize, and a facilitator role may shift among members.",
+    "ref": "PMBOK 8, Guide section 5, Distributed management and leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 273,
+        "label": "PMBOK 8, Guide section 5, Distributed management and leadership"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "After a hard push, the team delivers a difficult milestone on time. What should the project manager do to help keep performance high?",
+    "options": [
+      "Raise the next milestone's targets straight away",
+      "Say nothing, since meeting milestones is expected",
+      "Recognize the team's effort and show appreciation",
+      "Thank only the team member who worked the most hours"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Recognition is one of the factors of high-performing teams in the Eighth Edition: members recognized for their work are more likely to continue to perform well, and even simple appreciation reinforces positive behavior.",
+    "ref": "PMBOK 8, Guide 2.6.2.4.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 191,
+        "label": "PMBOK 8, Guide 2.6.2.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which THREE does the Agile Practice Guide list as responsibilities of supportive leaders?",
+    "type": "multi",
+    "options": [
+      "Facilitating the team's collaboration",
+      "Removing organizational impediments",
+      "Paving the way for others' contributions",
+      "Assigning each member's tasks every day",
+      "Approving every design decision personally",
+      "Tracking each person's individual throughput"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "agile",
+    "explanation": "Supportive leaders facilitate, remove organizational impediments and pave the way for others' contributions. The guide also warns that focusing on a single person's throughput can harm the team.",
+    "ref": "Agile Practice Guide, 4.3.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 62,
+        "label": "Agile Practice Guide, 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO are key characteristics of an accountable leader in the PMBOK Guide, Eighth Edition?",
+    "type": "multi",
+    "options": [
+      "Integrity, honesty and fairness",
+      "Flexibility and adaptability of style",
+      "Using one style in every situation",
+      "Keeping decisions away from the team",
+      "Avoiding feedback to protect authority"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "The characteristics listed are integrity, honesty and fairness; self-awareness; respectfulness, humility and availability; flexibility and adaptability; and shared leadership.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "An organization removed all role definitions in pursuit of agility. Which TWO problems does the Agile Practice Guide link to this extreme?",
+    "type": "multi",
+    "options": [
+      "Diffusion of responsibility",
+      "Unclear decision rights",
+      "Bureaucratic handoffs",
+      "Renamed roles with no new purpose",
+      "Overlapping responsibilities across departments"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Full autonomy brings diffusion of responsibility, bloated meetings, unclear decision rights and uncertainty about contributions. Handoffs, renamed roles and overlaps belong to the opposite extreme of rigid frameworks.",
+    "ref": "Agile Practice Guide, 4.4.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 69,
+        "label": "Agile Practice Guide, 4.4.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are drawbacks of unilateral decision-making, according to the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "It is more prone to errors than drawing on a diverse group",
+      "It can demotivate the people affected by the decision",
+      "It takes more time than group decision-making",
+      "It interrupts the team's work more than group decisions",
+      "It reduces the speed of reaching a decision"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Unilateral decisions are fast but more prone to errors and can demotivate those affected. Time and interruptions are the downsides of group decision-making.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each area of emotional intelligence with a behavior that shows it.",
+    "type": "match",
+    "left": [
+      "Self-awareness",
+      "Self-management",
+      "Social awareness",
+      "Social skills"
+    ],
+    "right": [
+      "Knowing how you affect the team",
+      "Thinking before you act",
+      "Being empathetic and listening actively",
+      "Building rapport and effective teams"
+    ],
+    "approach": "hybrid",
+    "explanation": "The four areas in the Eighth Edition's Figure 5-11: self-awareness, self-management, social awareness and social skills, with awareness on the left and management and skill on the right.",
+    "ref": "PMBOK 8, Guide section 5, Emotional intelligence",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 274,
+        "label": "PMBOK 8, Guide section 5, Emotional intelligence"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "The project's responsibility assignment matrix is shown. Which statement about it is correct?",
+    "diagram": "raci-figure",
+    "options": [
+      "Every activity in the matrix has exactly one person who is accountable for it, as required",
+      "The tester is accountable for testing the booking page",
+      "Training the clinic staff has two accountable people, which the matrix must not allow",
+      "The developer is consulted on approving the release"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The matrix must show only one person accountable for any task. Training the clinic staff has the analyst and the project manager both marked A. Testing the booking page has no one accountable at all; the developer is informed, not consulted, on approving the release.",
+    "ref": "PMBOK 8, Guide section 5, Responsibility assignment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Responsibility assignment matrix"
+      }
+    ]
+  }
+]

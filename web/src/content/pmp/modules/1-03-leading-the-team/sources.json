@@ -1,0 +1,127 @@
+[
+  {
+    "book": "agile",
+    "page": 59,
+    "label": "Agile Practice Guide, 4.2.5"
+  },
+  {
+    "book": "agile",
+    "page": 62,
+    "label": "Agile Practice Guide, 4.3"
+  },
+  {
+    "book": "agile",
+    "page": 62,
+    "label": "Agile Practice Guide, 4.3.1"
+  },
+  {
+    "book": "agile",
+    "page": 65,
+    "label": "Agile Practice Guide, 4.3.2"
+  },
+  {
+    "book": "agile",
+    "page": 65,
+    "label": "Agile Practice Guide, 4.3.3"
+  },
+  {
+    "book": "agile",
+    "page": 66,
+    "label": "Agile Practice Guide, 4.4.1"
+  },
+  {
+    "book": "agile",
+    "page": 67,
+    "label": "Agile Practice Guide, 4.4.2"
+  },
+  {
+    "book": "agile",
+    "page": 69,
+    "label": "Agile Practice Guide, 4.4.3"
+  },
+  {
+    "book": "agile",
+    "page": 70,
+    "label": "Agile Practice Guide, 4.5"
+  },
+  {
+    "book": "agile",
+    "page": 73,
+    "label": "Agile Practice Guide, 4.6"
+  },
+  {
+    "book": "agile1",
+    "page": 48,
+    "label": "Agile Practice Guide, First Edition, 4.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 52,
+    "label": "PMBOK 8, Standard 2.5.1.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 69,
+    "label": "PMBOK 8, Standard 3.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 76,
+    "label": "PMBOK 8, Standard 3.8"
+  },
+  {
+    "book": "pmbok8",
+    "page": 189,
+    "label": "PMBOK 8, Guide 2.6.2.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 189,
+    "label": "PMBOK 8, Guide 2.6.2.4.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 191,
+    "label": "PMBOK 8, Guide 2.6.2.4.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 247,
+    "label": "PMBOK 8, Guide section 4, Team charter"
+  },
+  {
+    "book": "pmbok8",
+    "page": 255,
+    "label": "PMBOK 8, Guide section 5, Centralized management and leadership"
+  },
+  {
+    "book": "pmbok8",
+    "page": 273,
+    "label": "PMBOK 8, Guide section 5, Distributed management and leadership"
+  },
+  {
+    "book": "pmbok8",
+    "page": 274,
+    "label": "PMBOK 8, Guide section 5, Emotional intelligence"
+  },
+  {
+    "book": "pmbok8",
+    "page": 281,
+    "label": "PMBOK 8, Guide section 5, Leadership"
+  },
+  {
+    "book": "pmbok8",
+    "page": 292,
+    "label": "PMBOK 8, Guide section 5, Problem-solving"
+  },
+  {
+    "book": "pmbok8",
+    "page": 299,
+    "label": "PMBOK 8, Guide section 5, Responsibility assignment matrix"
+  },
+  {
+    "book": "pmbok8",
+    "page": 302,
+    "label": "PMBOK 8, Guide section 5, Servant leadership"
+  }
+]
