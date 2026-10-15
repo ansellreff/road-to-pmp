@@ -5,12 +5,12 @@ import NotFound from '../components/NotFound'
 import Icon from '../components/Icon'
 import { QuestionView } from '../components/Quiz'
 import WithSidePanel, { PanelBlock } from '../components/SidePanel'
-import { getCourse, getExams, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
-import { breakLeftMs, countRight, domainScores, elapsedMs, examKey, examLimitMs, formatClock, onBreak } from '../lib/exam'
+import { breakMs, examSections, getCourse, getExams, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
+import { breakLeftMs, countRight, currentSection, domainScores, elapsedMs, examKey, examLimitMs, formatClock, onBreak, sectionBounds, withBreakEnded, withBreakStarted } from '../lib/exam'
 import { addExamTime, finishExam, moduleKey, updateExam, useProgress, type ExamRun } from '../lib/progress'
 import { PageHeader, Waiting } from '../components/Page'
 import { btnPrimary, btnQuiet, column, link, note, sectionTitle, subTitle } from '../lib/ui'
-import { isComplete } from '../lib/answers'
+import { isAnswerComplete } from '../lib/answers'
 import { useLoaded } from '../lib/useLoaded'
 import { useNow } from '../lib/useNow'
 
@@ -40,7 +40,7 @@ function LoadedExam({ course, exam }: { course: Course; exam: Exam }) {
   const record = useProgress().exams[key]
   const run = record?.run
   const limit = examLimitMs(course)
-  const leftMs = run ? limit - elapsedMs(run, now) : 0
+  const leftMs = run ? limit - elapsedMs(run, now, breakMs(course)) : 0
   const expired = Boolean(run && questions && leftMs <= 0)
 
   function submit(timedOut: boolean) {
@@ -59,7 +59,7 @@ function LoadedExam({ course, exam }: { course: Course; exam: Exam }) {
     finishExam(
       key,
       {
-        seconds: Math.round(Math.min(limit, elapsedMs(run, Date.now())) / 1000),
+        seconds: Math.round(Math.min(limit, elapsedMs(run, Date.now(), breakMs(course))) / 1000),
         timedOut,
         right: countRight(questions, run.picks),
         domains: domainScores(course, questions, run.picks).map(({ right, total }) => ({ right, total })),
@@ -123,9 +123,8 @@ function ExamHeader({ exam, mode, leftMs, detail }: { exam: Exam; mode: string; 
 const answeredCount = (picks: (number | null)[], positions: number[]) =>
   positions.filter((i) => picks[i] !== null).length
 
-/** Answered in full: a matching question with an item still without an answer is not. */
-const isAnswered = (question: ExamQuestion, pick: number | null) =>
-  isComplete(pick, question.question.type === 'match' ? question.question.left?.length : undefined)
+/** Answered in full: a matching question with an item still without an answer is not, nor a multiple response question with too few options chosen. */
+const isAnswered = (question: ExamQuestion, pick: number | null) => isAnswerComplete(pick, question.question)
 
 /** One chapter per domain. Each answer is final and is explained straight away. */
 function PracticeRun({ course, exam, questions, run, examKey: key, leftMs, submit }: RunProps) {
@@ -256,21 +255,28 @@ function PracticeRun({ course, exam, questions, run, examKey: key, leftMs, submi
   )
 }
 
-/** Mixed order, two halves with a break between, nothing marked until the end. */
-function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: RunProps & { now: number }) {
+/**
+ * Mixed order, in sections with a break after each but the last, nothing marked until the end.
+ * CAPM has two sections, called halves; PMP has three.
+ */
+function RealRun({ course, exam, questions, run, examKey: key, leftMs, submit, now }: RunProps & { now: number }) {
   const total = questions.length
-  const halfSize = Math.ceil(total / 2)
-  const secondHalf = run.breakStartedAt !== undefined
-  const first = secondHalf ? halfSize : 0
-  const end = secondHalf ? total : halfSize
+  const sections = examSections(course)
+  const breakLimit = breakMs(course)
+  const breakMinutes = Math.round(breakLimit / 60000)
+  const section = currentSection(run, sections)
+  const [first, end] = sectionBounds(total, sections, section)
+  const last = section === sections - 1
+  const halves = sections === 2
+  const sectionName = halves ? (last ? 'Second half' : 'First half') : `Section ${section + 1} of ${sections}`
   const positions = Array.from({ length: end - first }, (_, i) => first + i)
 
-  // Opening or resuming the exam starts at the first unanswered question of the open half.
+  // Opening or resuming the exam starts at the first unanswered question of the open section.
   // After that the question only changes when the learner moves, so an answer can be changed or flagged.
   const [wanted, setWanted] = useState(() => positions.find((i) => !isAnswered(questions[i], run.picks[i])) ?? first)
   const [confirming, setConfirming] = useState(false)
   const position = wanted >= first && wanted < end ? wanted : first
-  const resting = onBreak(run, now)
+  const resting = onBreak(run, now, breakLimit)
 
   // Time counts for the question on screen, and stops during the break.
   const shownAt = useRef(Date.now())
@@ -284,17 +290,14 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
     return (
       <div className={column}>
         <ExamHeader exam={exam} mode="Real exam mode" leftMs={leftMs} detail="Break. The exam clock is stopped." />
-        <p className="title mt-8 text-5xl tabular-nums">{formatClock(breakLeftMs(run, now))}</p>
-        <p className="mt-2 text-lg font-semibold">of your 10-minute break left</p>
+        <p className="title mt-8 text-5xl tabular-nums">{formatClock(breakLeftMs(run, now, breakLimit))}</p>
+        <p className="mt-2 text-lg font-semibold">of your {breakMinutes}-minute break left</p>
         <p className="mt-3 max-w-xl text-lg leading-relaxed text-muted">
-          Questions 1 to {halfSize} are locked and cannot be reopened. When the break ends, the exam clock starts again
+          Questions 1 to {first} are locked and cannot be reopened. When the break ends, the exam clock starts again
           by itself, whether or not this page is open.
         </p>
-        <button
-          onClick={() => updateExam(key, (r) => ({ ...r, breakEndedAt: Date.now() }))}
-          className={`${btnPrimary} mt-6`}
-        >
-          End the break and start question {halfSize + 1}
+        <button onClick={() => updateExam(key, (r) => withBreakEnded(r, Date.now()))} className={`${btnPrimary} mt-6`}>
+          End the break and start question {first + 1}
         </button>
       </div>
     )
@@ -314,10 +317,10 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
       exam={exam}
       mode="Real exam mode"
       leftMs={leftMs}
-      detail={`Question ${position + 1} of ${total}. ${secondHalf ? 'Second' : 'First'} half: ${answered} of ${positions.length} answered`}
+      detail={`Question ${position + 1} of ${total}. ${sectionName}: ${answered} of ${positions.length} answered`}
     />
   )
-  const finishLabel = secondHalf ? 'Submit the exam' : `Finish questions 1 to ${halfSize} and take the break`
+  const finishLabel = last ? 'Submit the exam' : `Finish questions ${first + 1} to ${end} and take the break`
 
   if (confirming) {
     const list = (label: string, items: number[]) =>
@@ -337,15 +340,15 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
       <div className={column}>
         {header}
         <h2 className={`${sectionTitle} mt-8`}>
-          {secondHalf ? 'Submit the exam?' : `Finish the first half?`}
+          {last ? 'Submit the exam?' : halves ? 'Finish the first half?' : `Finish section ${section + 1}?`}
         </h2>
         <p className="mt-2 text-lg leading-relaxed text-muted">
-          {secondHalf
+          {last
             ? 'After this you see your result. Unanswered questions count as wrong.'
-            : `After this, questions 1 to ${halfSize} are locked for good and your 10-minute break starts.`}
+            : `After this, questions 1 to ${end} are locked for good and your ${breakMinutes}-minute break starts.`}
         </p>
         <p className="mt-4 font-semibold">
-          {unanswered.length === 0 ? 'Every question in this half is answered.' : `${unanswered.length} unanswered.`}{' '}
+          {unanswered.length === 0 ? `Every question in this ${halves ? 'half' : 'section'} is answered.` : `${unanswered.length} unanswered.`}{' '}
           {flaggedHere.length > 0 && `${flaggedHere.length} flagged.`}
         </p>
         {list('Unanswered. Select a number to go to it:', unanswered)}
@@ -357,16 +360,16 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
               // Bank the time on the last question before the exam is closed.
               addExamTime(key, position, Date.now() - shownAt.current)
               shownAt.current = Date.now()
-              if (secondHalf) submit()
+              if (last) submit()
               else {
-                updateExam(key, (r) => ({ ...r, breakStartedAt: Date.now() }))
-                setWanted(halfSize)
+                updateExam(key, (r) => withBreakStarted(r, Date.now()))
+                setWanted(end)
                 window.scrollTo(0, 0)
               }
             }}
             className={btnPrimary}
           >
-            {secondHalf ? 'Submit the exam' : 'Lock the first half and start the break'}
+            {last ? 'Submit the exam' : halves ? 'Lock the first half and start the break' : `Lock section ${section + 1} and start the break`}
           </button>
           <button onClick={() => setConfirming(false)} className={btnQuiet}>
             Go back to the questions
@@ -385,11 +388,16 @@ function RealRun({ exam, questions, run, examKey: key, leftMs, submit, now }: Ru
     }))
 
   const grid = (
-    <PanelBlock title={secondHalf ? `Questions ${halfSize + 1} to ${total}` : `Questions 1 to ${halfSize}`}>
+    <PanelBlock title={`Questions ${first + 1} to ${end}`}>
       <p className={`${note} mb-3`}>
         {answered} answered, {unanswered.length} to go
         {flaggedHere.length > 0 && `, ${flaggedHere.length} flagged`}.{' '}
-        {secondHalf ? `Questions 1 to ${halfSize} are locked.` : 'The second half opens after the break.'}
+        {[
+          first > 0 && `Questions 1 to ${first} are locked.`,
+          !last && (halves ? 'The second half opens after the break.' : `Section ${section + 2} opens after the break.`),
+        ]
+          .filter(Boolean)
+          .join(' ')}
       </p>
       <ol className="grid grid-cols-6 gap-1.5 sm:grid-cols-10 lg:grid-cols-6">
         {positions.map((i) => {

@@ -3,6 +3,8 @@
 Usage: python tools/build_exams.py [course] [--rebuild]
        python tools/build_exams.py [course] --add            one more unseen exam
        python tools/build_exams.py [course] --add --mixed    one more exam with the real exam's question types
+       python tools/build_exams.py [course] --rebuild --exams 4 [--content <folder>]
+                                                       a course with sections, case sets and the approach tag (PMP)
 
 Each question goes into at most one exam. Every exam follows the domain weights
 of the real exam and is spread evenly over the modules of each domain. The last
@@ -41,7 +43,14 @@ def option_order(question: dict, letter: int, rng: random.Random) -> list[int]:
     Single answer: the right option goes to the given letter, the others are mixed around it.
     Matching: the right-hand items are mixed, never left beside their partners.
     Hot spot: the areas are fixed on the drawing, so the order is left alone.
+    Multiple response: all options are mixed. Pull-down list: each blank keeps its written choices.
     """
+    if question.get("type") == "dropdown":
+        return list(range(len(question["blanks"])))
+    if question.get("type") == "multi":
+        order = list(range(len(question["options"])))
+        rng.shuffle(order)
+        return order
     if question.get("type") == "match":
         order = list(range(len(question["right"])))
         while order == sorted(order):
@@ -222,9 +231,134 @@ def add_exam(course_id: str, mixed: bool = False) -> None:
           + ("left in the module quizzes" if mixed else "all kept out of the module quizzes"))
 
 
+def build_sectioned(folder: Path, count: int) -> None:
+    """Build the mock exams of a course that uses PMP's rules: sections, case sets and the approach tag.
+
+    Each exam follows the domain weights. A case set is taken whole and placed inside one section,
+    so no break splits it. The predictive share of each exam is held near the course's target
+    (within 3 points, or one question on a very small exam). With more than one exam, the last is
+    kept unseen, as for CAPM. CAPM's exams are built by build() and add_exam() and do not come here.
+    """
+    course = json.loads((folder / "course.json").read_text(encoding="utf-8"))
+    rng = random.Random(SEED)
+    size = course["exam"]["questions"]
+    sections = course["exam"].get("sections", 2)
+    target = course["exam"].get("approach", {}).get("predictive")
+    quotas = split(size, [d["weight"] for d in course["domains"]])
+    tolerance = max(1, size * 0.03)
+
+    quizzes = {}
+    for domain in course["domains"]:
+        for module in domain["modules"]:
+            path = folder / "modules" / module["id"] / "quiz.json"
+            quizzes[module["id"]] = json.loads(path.read_text(encoding="utf-8")) if path.is_file() else []
+    by_id = {(m, q["id"]): q for m, qs in quizzes.items() for q in qs}
+    predictive = lambda unit: sum(1 for key in unit if by_id[key].get("approach") == "predictive")
+
+    # Units: a single question, or every question of one case.
+    exams: list[list[list[tuple[str, str]]]] = [[] for _ in range(count)]
+    for domain, quota in zip(course["domains"], quotas):
+        units = []
+        for module in domain["modules"]:
+            cases: dict[str, list] = {}
+            for q in quizzes[module["id"]]:
+                if q.get("case"):
+                    cases.setdefault(q["case"], []).append((module["id"], q["id"]))
+                else:
+                    units.append([(module["id"], q["id"])])
+            units += cases.values()
+        rng.shuffle(units)
+        for exam in reversed(exams):
+            room = quota
+            for unit in list(units):
+                if len(unit) <= room:
+                    exam.append(unit)
+                    units.remove(unit)
+                    room -= len(unit)
+                if not room:
+                    break
+            if room:
+                sys.exit(f"{domain['id']}: not enough questions for {count} exam(s) of {size}")
+        # The questions left over in this domain can be swapped in to balance the approach.
+        for exam in exams:
+            exam_domain = [u for u in exam if u[0][0] in {m["id"] for m in domain["modules"]}]
+            spare = [u for u in units if len(u) == 1]
+            if target is None:
+                continue
+            for _ in range(len(exam_domain) * 2):
+                total = sum(predictive(u) for e in [exam] for u in e)
+                gap = total - size * target / 100
+                if abs(gap) <= tolerance or len(sum(exam, [])) < size:
+                    break
+                want = 0 if gap > 0 else 1
+                out = next((u for u in exam_domain if len(u) == 1 and predictive(u) != want), None)
+                into = next((u for u in spare if predictive(u) == want), None)
+                if not out or not into:
+                    break
+                exam[exam.index(out)] = into
+                exam_domain[exam_domain.index(out)] = into
+                spare.remove(into)
+                spare.append(out)
+
+    result = []
+    for number, units in enumerate(exams, start=1):
+        if target is not None:
+            share = sum(predictive(u) for u in units)
+            if abs(share - size * target / 100) > tolerance:
+                sys.exit(f"Mock exam {number}: {share} of {size} predictive, target {target}%; write more questions of the missing approach")
+        # Sections: case sets first, each into the section with the most room; then single questions.
+        starts = [-(-size * i // sections) for i in range(sections + 1)]
+        room = [starts[i + 1] - starts[i] for i in range(sections)]
+        placed: list[list] = [[] for _ in range(sections)]
+        for unit in sorted((u for u in units if len(u) > 1), key=len, reverse=True):
+            best = max(range(sections), key=lambda s: (room[s], rng.random()))
+            if room[best] < len(unit):
+                sys.exit(f"Mock exam {number}: a case set of {len(unit)} does not fit in a section")
+            placed[best].append(unit)
+            room[best] -= len(unit)
+        singles = [u for u in units if len(u) == 1]
+        rng.shuffle(singles)
+        for s in range(sections):
+            while room[s]:
+                placed[s].append(singles.pop())
+                room[s] -= 1
+        order = []
+        for s in range(sections):
+            rng.shuffle(placed[s])
+            order += [key for unit in placed[s] for key in unit]
+        plain = [i for i, key in enumerate(order) if not by_id[key].get("type")]
+        letters = [i % 4 for i in range(len(plain))]
+        rng.shuffle(letters)
+        letter_of = dict(zip(plain, letters))
+        rows = [[m, q, option_order(by_id[(m, q)], letter_of.get(i, 0), rng)] for i, (m, q) in enumerate(order)]
+        unseen = count > 1 and number == count
+        result.append({"id": f"mock-{number}", "title": f"Mock exam {number}", "unseen": unseen, "questions": rows})
+
+    reserved = {(m, q) for m, q, _ in result[-1]["questions"]} if result and result[-1]["unseen"] else set()
+    for module, questions in quizzes.items():
+        if not questions:
+            continue
+        for q in questions:
+            q.pop("examOnly", None)
+            if (module, q["id"]) in reserved:
+                q["examOnly"] = True
+        path = folder / "modules" / module / "quiz.json"
+        path.write_text(json.dumps(questions, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    write_exams(folder, result)
+    print(f"{course['id']}: {count} exam(s) of {size} questions in {sections} sections ({' / '.join(map(str, quotas))} by domain)")
+
+
 def main() -> None:
-    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    args = [a for i, a in enumerate(sys.argv[1:], start=1) if not a.startswith("--") and sys.argv[i - 1] not in ("--content", "--exams")]
     course_id = args[0] if args else "capm"
+    root = Path(sys.argv[sys.argv.index("--content") + 1]) if "--content" in sys.argv else CONTENT
+    course = json.loads((root / course_id / "course.json").read_text(encoding="utf-8"))
+    if course["exam"].get("sections", 2) > 2 or "approach" in course["exam"]:
+        if (root / course_id / "exams.json").exists() and "--rebuild" not in sys.argv:
+            sys.exit(f"{course_id}/exams.json already exists. Use --rebuild to replace it (this changes every exam).")
+        count = int(sys.argv[sys.argv.index("--exams") + 1]) if "--exams" in sys.argv else EXAMS
+        build_sectioned(root / course_id, count)
+        return
     if "--add" in sys.argv:
         add_exam(course_id, mixed="--mixed" in sys.argv)
         return

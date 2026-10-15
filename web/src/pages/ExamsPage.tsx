@@ -1,6 +1,6 @@
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import NotFound from '../components/NotFound'
-import { getCourse, getExams, type Course, type Exam } from '../lib/content'
+import { breakMs, examSections, getCourse, getExams, type Course, type Exam } from '../lib/content'
 import { elapsedMs, examKey, examLimitMs, formatClock, formatDuration, lastAttempt } from '../lib/exam'
 import { abandonExam, moduleKey, startExam, useProgress, type ExamMode, type Progress } from '../lib/progress'
 import { percent } from '../lib/stats'
@@ -42,8 +42,8 @@ export default function ExamsPage() {
           {[
             ['Order', 'One chapter per domain', 'All domains mixed'],
             ['Feedback', 'Explanation and book page after each answer', 'Nothing until you submit'],
-            ['Break', 'None', `10 minutes after question ${course.exam.questions / 2}; the first half is then locked`],
-            ['Going back', 'No, each answer is final', 'Yes, within the current half; you can flag questions'],
+            ['Break', 'None', breakText(course)],
+            ['Going back', 'No, each answer is final', `Yes, within the current ${examSections(course) === 2 ? 'half' : 'section'}; you can flag questions`],
           ].map(([label, practice, real]) => (
             <tr key={label}>
               <td className="font-semibold">{label}</td>
@@ -73,6 +73,15 @@ export default function ExamsPage() {
   )
 }
 
+/** "10 minutes after question 75; the first half is then locked", or the same for more sections. */
+function breakText(course: Course): string {
+  const sections = examSections(course)
+  const minutes = Math.round(breakMs(course) / 60000)
+  if (sections === 2) return `${minutes} minutes after question ${course.exam.questions / 2}; the first half is then locked`
+  const after = Array.from({ length: sections - 1 }, (_, i) => Math.ceil((course.exam.questions * (i + 1)) / sections))
+  return `${minutes} minutes after questions ${after.slice(0, -1).join(', ')} and ${after.at(-1)}; each section is then locked`
+}
+
 function ExamRow({ course, exam, progress }: { course: Course; exam: Exam; progress: Progress }) {
   const navigate = useNavigate()
   const now = useNow()
@@ -93,7 +102,7 @@ function ExamRow({ course, exam, progress }: { course: Course; exam: Exam; progr
     if (window.confirm(`Stop ${exam.title} without a result? The answers given so far are not kept.`)) abandonExam(key)
   }
 
-  const left = run ? examLimitMs(course) - elapsedMs(run, now) : 0
+  const left = run ? examLimitMs(course) - elapsedMs(run, now, breakMs(course)) : 0
 
   return (
     <section className="card mt-5 px-5 py-5 sm:px-6">

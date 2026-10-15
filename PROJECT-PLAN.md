@@ -23,7 +23,7 @@ How they are kept:
 | | Certification | State | Next |
 |---|---|---|---|
 | ✅ | CAPM | **Finished as planned** (2026-10-13). 39 modules, 1,274 questions including matching, hot spot and comic strip, 1,339 flashcards, 6 mock exams, 19 lesson drawings. What stays open, and why, is listed at the end of `docs/CAPM-PLAN.md`. | None planned |
-| 🟡 | PMP | **Next.** It was paused until CAPM was finished, which it now is. PMP Session 1 done: sources read, 34 modules mapped to the outline, course skeleton in the app. Matching and hot spot screens already exist, built for CAPM. | PMP Session 2, the exam engine |
+| 🟡 | PMP | **Being built.** PMP Session 1 (sources, map, skeleton) and PMP Session 2 (the exam engine: multiple response, pull-down lists, case sets, graphic-based questions, three sections with two breaks) are done. No module is written yet. | PMP Session 3, modules 1.1 to 1.3 |
 | ⬜ | PMI-ACP | Not started | Needs its Exam Content Outline in the materials folder |
 | ⬜ | PMI-SP | Not started | Needs its Exam Content Outline in the materials folder |
 
@@ -32,7 +32,7 @@ How they are kept:
 Study for and pass PMI certifications using my own platform, in this order:
 
 1. CAPM (Certified Associate in Project Management): finished as planned on 2026-10-13
-2. **PMP** (Project Management Professional): next, resuming at PMP Session 2
+2. **PMP** (Project Management Professional): current focus
 3. PMI-ACP (Agile Certified Practitioner)
 4. PMI-SP (Scheduling Professional)
 
@@ -55,6 +55,7 @@ Study for and pass PMI certifications using my own platform, in this order:
 - **Token saving:** one module per session. Book text is extracted once to a local cache so each session reads only the pages it needs.
 - **Web research:** only for specific facts. If a source is blocked or paywalled, Claude asks instead of forcing access.
 - **Pace:** slow and verified. Each session ends with a review before moving on.
+- **A closed certification stays closed.** CAPM was closed on 2026-10-13. Work on another certification must not change or break it: `tools/check_capm_frozen.py` must pass, and CAPM's click tests must pass unchanged, before every commit.
 
 ## How to start the app on this PC
 

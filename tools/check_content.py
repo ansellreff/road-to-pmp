@@ -21,6 +21,10 @@ LONGEST_LIMIT = 0.35
 # Drawings a lesson may place with "@diagram name": the names registered in the app.
 _registry = (CONTENT.parent / "components" / "diagrams" / "index.tsx").read_text(encoding="utf-8").split("export const diagrams")[-1]
 DIAGRAMS = set(re.findall(r"^\s+'?([\w-]+)'?:", _registry, re.MULTILINE))
+# Drawings made for questions (hot spot and graphic-based), registered in diagrams/figures.tsx.
+_figures = (CONTENT.parent / "components" / "diagrams" / "figures.tsx").read_text(encoding="utf-8").split("export const figures")[-1]
+FIGURES = set(re.findall(r"^\s+'?([\w-]+)'?:", _figures, re.MULTILINE))
+APPROACHES = ("predictive", "agile", "hybrid")
 
 # Questions a module quiz must keep after some are reserved for the unseen mock exam.
 MIN_MODULE_QUIZ = 10
@@ -57,7 +61,11 @@ def check_markup(path: Path, lesson: str, problems: list[str]) -> None:
             problems.append(f"{path}: unbalanced ** on line {i + 1}")
 
 
-def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[str, str]) -> int:
+def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[str, str], course: dict | None = None, cases: set | None = None) -> int:
+    """course and cases are given for the courses that use PMP's rules: case sets, the approach tag, a test course."""
+    course = course or {}
+    test_only = bool(course.get("testOnly"))
+    needs_approach = bool(course.get("exam", {}).get("approach"))
     questions = json.loads(path.read_text(encoding="utf-8"))
     longest = 0
     for q in questions:
@@ -88,9 +96,35 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
         where = f"{path} [{q.get('id')}]"
         options = q.get("options", [])
         kind = q.get("type")
-        if kind not in (None, "match", "hotspot"):
+        if kind not in (None, "match", "hotspot", "multi", "dropdown"):
             problems.append(f"{where}: unknown question type {kind}")
-        if kind == "match":
+        if kind == "multi":
+            # Multiple response: five or six options, two or three of them right, listed in answers.
+            right = q.get("answers", [])
+            if not 5 <= len(options) <= 6:
+                problems.append(f"{where}: multiple response needs 5 or 6 options, has {len(options)}")
+            if len(set(options)) != len(options):
+                problems.append(f"{where}: two options are identical")
+            if not 2 <= len(set(right)) == len(right) <= 3 or any(not isinstance(i, int) or not 0 <= i < len(options) for i in right):
+                problems.append(f"{where}: multiple response needs 2 or 3 different right options in answers")
+            if "answer" in q:
+                problems.append(f"{where}: a multiple response question lists its right options in answers, not answer")
+        elif kind == "dropdown":
+            # Pull-down list: two to five blanks, each with two to five choices and one right one.
+            blanks = q.get("blanks", [])
+            if not 2 <= len(blanks) <= 5:
+                problems.append(f"{where}: a pull-down list needs 2 to 5 blanks, has {len(blanks)}")
+            for b in blanks:
+                choices = b.get("choices", [])
+                if not str(b.get("text", "")).strip() or not 2 <= len(choices) <= 5 or len(set(choices)) != len(choices):
+                    problems.append(f"{where}: each blank needs a text and 2 to 5 different choices")
+                if not isinstance(b.get("answer"), int) or not 0 <= b["answer"] < len(choices):
+                    problems.append(f"{where}: a blank's answer is not one of its choices")
+            if len(blanks) >= 2 and all(b.get("answer") == 0 for b in blanks):
+                problems.append(f"{where}: the right choice is first in every blank")
+            if "options" in q or "answer" in q:
+                problems.append(f"{where}: a pull-down list question has blanks, not options and answer")
+        elif kind == "match":
             # Pairs: left[i] belongs to right[i]. The screen mixes the right-hand side.
             left, right = q.get("left", []), q.get("right", [])
             if not 3 <= len(left) <= MAX_PAIRS or len(left) != len(right):
@@ -112,8 +146,16 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
                 problems.append(f"{where}: two options are identical")
             if not isinstance(q.get("answer"), int) or not 0 <= q["answer"] < len(options):
                 problems.append(f"{where}: answer index is not valid")
-        if q.get("diagram") and kind != "hotspot":
-            problems.append(f"{where}: only a hot spot question has a drawing")
+        if q.get("diagram") and kind != "hotspot" and q["diagram"] not in DIAGRAMS | FIGURES:
+            problems.append(f"{where}: no drawing is called \"{q['diagram']}\"")
+        if q.get("diagram") and kind in ("match", "dropdown"):
+            problems.append(f"{where}: a {kind} question has no drawing")
+        if "case" in q and (cases is None or q["case"] not in cases):
+            problems.append(f"{where}: no case is called \"{q.get('case')}\" in cases.json")
+        if needs_approach and q.get("approach") not in APPROACHES:
+            problems.append(f"{where}: approach must be one of {APPROACHES}")
+        if "approach" in q and q["approach"] not in APPROACHES:
+            problems.append(f"{where}: approach must be one of {APPROACHES}")
         for panel in q.get("strip", []):
             if not str(panel.get("who", "")).strip() or not str(panel.get("says", "")).strip():
                 problems.append(f"{where}: a comic strip panel needs who and says")
@@ -122,15 +164,19 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
         for field in ("q", "explanation", "ref"):
             if not str(q.get(field, "")).strip():
                 problems.append(f"{where}: missing {field}")
-        if not q.get("links"):
+        if not q.get("links") and not test_only:
             problems.append(f"{where}: no book page link (run tools/link_sources.py)")
     # A quiz where the answer is nearly always the same letter can be gamed.
     # Questions reserved for the unseen mock exam are not part of the module quiz.
     visible = [q for q in questions if not q.get("examOnly")]
     spread = Counter(q.get("answer") for q in visible if not q.get("type"))
-    if spread and max(spread.values()) > sum(spread.values()) * 0.45:
+    if spread and max(spread.values()) > sum(spread.values()) * 0.45 and not test_only:
         problems.append(f"{path}: answers are not spread across A-D ({dict(sorted(spread.items()))})")
-    if questions and len(visible) < MIN_MODULE_QUIZ:
+    # A case set: three to five questions of the same module.
+    for case_id, n in Counter(q["case"] for q in questions if "case" in q).items():
+        if not 3 <= n <= 5 and not test_only:
+            problems.append(f"{path}: case {case_id} has {n} questions; a case set has 3 to 5")
+    if questions and len(visible) < MIN_MODULE_QUIZ and not test_only:
         problems.append(f"{path}: only {len(visible)} questions left for the module quiz (minimum {MIN_MODULE_QUIZ})")
     return len(questions)
 
@@ -199,7 +245,8 @@ def check_exams(course_file: Path, course: dict, problems: list[str]) -> str:
             if (module, qid) in used:
                 problems.append(f"{path} [{exam['id']}]: {module} {qid} is also in {used[(module, qid)]}")
             used[(module, qid)] = exam["id"]
-            count = len(question["right"]) if question.get("type") == "match" else len(question.get("options", []))
+            kind = question.get("type")
+            count = len(question["right"]) if kind == "match" else len(question["blanks"]) if kind == "dropdown" else len(question.get("options", []))
             if sorted(order) != list(range(count)):
                 problems.append(f"{path} [{exam['id']}]: {module} {qid} has a bad option order {order}")
                 continue
@@ -210,6 +257,7 @@ def check_exams(course_file: Path, course: dict, problems: list[str]) -> str:
             split[domain_of[module]] += 1
             if not question.get("type"):
                 letters[order.index(question["answer"])] += 1
+        problems += sectioned_rules(path, exam, course, bank)
         for domain in course["domains"]:
             want = round(size * domain["weight"] / 100)
             if abs(split[domain["id"]] - want) > 1:
@@ -220,6 +268,32 @@ def check_exams(course_file: Path, course: dict, problems: list[str]) -> str:
     if stray:
         problems.append(f"{path}: marked examOnly but in no exam: {stray}")
     return f", {len(exams)} mock exams"
+
+
+def sectioned_rules(path: Path, exam: dict, course: dict, bank: dict) -> list[str]:
+    """PMP's rules for an exam: a case set stays together inside one section; the predictive share is near its target."""
+    found = []
+    rows = exam["questions"]
+    sections = course["exam"].get("sections", 2)
+    size = len(rows)
+    starts = [-(-size * i // sections) for i in range(sections + 1)]
+    section_of = lambda pos: max(i for i in range(sections) if starts[i] <= pos)
+    places: dict[str, list[int]] = {}
+    for pos, (module, qid, _) in enumerate(rows):
+        case = bank.get((module, qid), {}).get("case")
+        if case:
+            places.setdefault(case, []).append(pos)
+    for case, where in places.items():
+        if where != list(range(where[0], where[0] + len(where))):
+            found.append(f"{path} [{exam['id']}]: the questions of case {case} are not together")
+        elif section_of(where[0]) != section_of(where[-1]):
+            found.append(f"{path} [{exam['id']}]: case {case} is split by a break")
+    target = course["exam"].get("approach", {}).get("predictive")
+    if target is not None:
+        predictive = sum(1 for m, q, _ in rows if bank.get((m, q), {}).get("approach") == "predictive")
+        if abs(predictive - size * target / 100) > max(1, size * 0.03):
+            found.append(f"{path} [{exam['id']}]: {predictive} of {size} questions are predictive; the target is {target}%")
+    return found
 
 
 def check_cards(path: Path, problems: list[str]) -> int:
@@ -237,8 +311,13 @@ def main() -> None:
     problems: list[str] = []
     warnings: list[str] = []
     seen: dict[str, str] = {}
-    for course_file in sorted(CONTENT.glob("*/course.json")):
+    # --content <folder> checks the courses in another folder, such as the click tests' web/tests/lab-course.
+    root = Path(sys.argv[sys.argv.index("--content") + 1]) if "--content" in sys.argv else CONTENT
+    for course_file in sorted(root.glob("*/course.json")):
         course = json.loads(course_file.read_text(encoding="utf-8"))
+        test_only = bool(course.get("testOnly"))
+        cases_file = course_file.parent / "cases.json"
+        cases = {c["id"] for c in json.loads(cases_file.read_text(encoding="utf-8"))} if cases_file.is_file() else set()
         modules = [m for d in course["domains"] for m in d["modules"]]
         for dup, n in Counter(m["id"] for m in modules).items():
             if n > 1:
@@ -258,7 +337,7 @@ def main() -> None:
             for name in ("lesson.md", "quiz.json", "flashcards.json"):
                 if not (folder / name).is_file():
                     problems.append(f"{folder}: missing {name}")
-            if (folder / "lesson.md").is_file():
+            if (folder / "lesson.md").is_file() and not test_only:
                 lesson = (folder / "lesson.md").read_text(encoding="utf-8")
                 if len(lesson) < 1500:
                     problems.append(f"{folder}/lesson.md: suspiciously short")
@@ -280,7 +359,7 @@ def main() -> None:
                             if ref and ref not in linked:
                                 problems.append(f"{folder}/lesson.md: source not linked (run tools/link_sources.py): {ref}")
             if (folder / "quiz.json").is_file():
-                questions += check_quiz(folder / "quiz.json", problems, warnings, seen)
+                questions += check_quiz(folder / "quiz.json", problems, warnings, seen, course, cases)
             if (folder / "flashcards.json").is_file():
                 cards += check_cards(folder / "flashcards.json", problems)
         check_sheet(course_file, problems)

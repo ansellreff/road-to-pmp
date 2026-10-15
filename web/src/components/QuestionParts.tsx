@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type DragEvent, type MouseEvent, type PointerEvent, type ReactNode } from 'react'
-import { decodeMatch, encodeMatch, matchResults, type MatchChoices } from '../lib/answers'
-import type { Question, StripPanel } from '../lib/content'
-import { btnPrimary, note } from '../lib/ui'
+import { decodeMatch, decodeMulti, encodeMatch, encodeMulti, matchResults, type MatchChoices } from '../lib/answers'
+import type { CaseStudy, Question, StripPanel } from '../lib/content'
+import { btnPrimary, input, note } from '../lib/ui'
 import Icon from './Icon'
 import type { KeyActions } from './Keys'
 import { diagrams } from './diagrams'
@@ -94,6 +94,16 @@ export function verdict(question: Question, picked: number | null): string {
   if (picked === question.answer) return 'Correct.'
   if (question.type === 'hotspot') {
     return `Not correct. The right area is ${question.answer + 1}, ${question.options[question.answer]}.`
+  }
+  if (question.type === 'multi') {
+    const right = decodeMulti(question.answer)
+    const found = decodeMulti(picked).filter((option) => right.includes(option)).length
+    return `Not correct. ${found} of the ${right.length} right options were chosen, and a multiple response question counts only when exactly the right options are chosen.`
+  }
+  if (question.type === 'dropdown') {
+    const blanks = question.blanks?.length ?? 0
+    const right = matchResults(picked, question.answer, blanks).filter(Boolean).length
+    return `Not correct. ${right} of ${blanks} blanks are right, and a pull-down list question counts only when every blank is right.`
   }
   const pairs = question.left?.length ?? 0
   const right = matchResults(picked, question.answer, pairs).filter(Boolean).length
@@ -353,4 +363,230 @@ export function useMatchBoard(props: {
     </div>
   )
   return { board, keys, check, pairs }
+}
+
+/** The case shared by several questions, shown above each of them (PMP case sets). */
+export function CasePanel({ study, position }: { study: CaseStudy; position?: [number, number] }) {
+  return (
+    <section aria-label={`Case: ${study.title}`} className="mb-5 rounded-md border border-l-4 border-edge border-l-plan bg-surface px-5 py-4">
+      <p className="flex flex-wrap items-baseline justify-between gap-x-4 text-sm font-semibold text-plan">
+        <span>Case: {study.title}</span>
+        {position && (
+          <span className="font-medium text-muted">
+            Question {position[0]} of {position[1]} on this case
+          </span>
+        )}
+      </p>
+      {study.text.split(/\n\s*\n/).map((paragraph, i) => (
+        <p key={i} className="mt-2 font-reading text-lg leading-relaxed">
+          {paragraph}
+        </p>
+      ))}
+      {study.diagram && <Graphic name={study.diagram} />}
+    </section>
+  )
+}
+
+/** A drawing that a question asks about (graphic-based). Its caption is left out, as it may give the answer. */
+export function Graphic({ name }: { name: string }) {
+  const Drawing = figures[name] ?? diagrams[name]
+  if (!Drawing) return null
+  return (
+    <div className="mt-5">
+      <Overlay.Provider value={<></>}>
+        <Drawing />
+      </Overlay.Provider>
+    </div>
+  )
+}
+
+/**
+ * Keeps an answer that is built in steps (several options, several blanks): where each answer
+ * is final it stays here until "Check answer"; where it can be changed it is saved at once.
+ */
+function useDraft(picked: number | null, open: boolean, changeable: boolean, onPick?: (code: number) => void) {
+  const [draft, setDraft] = useState<number | null>(picked)
+  const value = open && !changeable ? draft : picked
+  const set = (code: number) => (changeable ? onPick?.(code) : setDraft(code))
+  return { value, set }
+}
+
+/**
+ * A multiple response question: choose the stated number of options, then check.
+ * Returns nothing for other question types, so it can be called for every question.
+ */
+export function useMultiBoard(props: {
+  question: Question
+  picked: number | null
+  revealed: boolean
+  onPick?: (code: number) => void
+  changeable: boolean
+  /** F flags the question in real exam mode, so it is not used for option F. */
+  flagging: boolean
+}): { board: ReactNode; keys: KeyActions; check?: () => void; note: string } | null {
+  const { question, picked, revealed, onPick, changeable, flagging } = props
+  const open = Boolean(onPick) && !revealed
+  const { value, set } = useDraft(picked, open, changeable, onPick)
+  const [full, setFull] = useState(false)
+  if (question.type !== 'multi') return null
+
+  const choose = question.choose ?? 2
+  const chosen = decodeMulti(value)
+  const right = decodeMulti(question.answer)
+  function toggle(option: number) {
+    if (!open) return
+    if (chosen.includes(option)) {
+      setFull(false)
+      return set(encodeMulti(chosen.filter((c) => c !== option)))
+    }
+    if (chosen.length >= choose) return setFull(true)
+    set(encodeMulti([...chosen, option]))
+  }
+  const check = open && !changeable && chosen.length === choose ? () => onPick?.(encodeMulti(chosen)) : undefined
+
+  const keys: KeyActions = {}
+  if (open) {
+    question.options.forEach((_, i) => {
+      keys[String(i + 1)] = () => toggle(i)
+      const key = letter(i).toLowerCase()
+      if (!(flagging && key === 'f')) keys[key] = () => toggle(i)
+    })
+  }
+  const lastLetter = letter(question.options.length - 1)
+  const note = `A to ${lastLetter}${flagging && question.options.length > 5 ? ' (F by its number, 6)' : ''}, or 1 to ${question.options.length}, to choose or unchoose an option.${changeable ? '' : ' Enter to check the answer.'}`
+
+  const board = (
+    <div className="mt-5">
+      <p className="font-semibold">Choose {choose}.</p>
+      {open && (
+        <p className={`${note} mt-1`} aria-live="polite">
+          {full ? `You have chosen ${choose}. Take one away to choose another.` : `${chosen.length} of ${choose} chosen.`}
+        </p>
+      )}
+      <div className="mt-3 space-y-2.5">
+        {question.options.map((option, i) => {
+          const isChosen = chosen.includes(i)
+          const isRight = right.includes(i)
+          let style = 'border-edge bg-surface'
+          let mark: ReactNode = null
+          if (!revealed) style = isChosen ? 'border-plan bg-plan-soft ring-2 ring-plan' : `${style} hover:border-plan hover:bg-plan-soft`
+          else if (isRight) {
+            style = 'border-done bg-done-soft ring-1 ring-done'
+            mark = (
+              <span className="flex items-center gap-1 text-sm font-semibold text-done">
+                <Icon name="check" size={16} />
+                {isChosen ? 'Correct, and chosen' : 'Correct, not chosen'}
+              </span>
+            )
+          } else if (isChosen) {
+            style = 'border-critical bg-critical-soft ring-1 ring-critical'
+            mark = (
+              <span className="flex items-center gap-1 text-sm font-semibold text-critical">
+                <Icon name="cross" size={16} />
+                Your answer
+              </span>
+            )
+          } else style = 'border-line bg-surface text-muted'
+          return (
+            <button
+              key={i}
+              disabled={!open}
+              onClick={(event) => {
+                toggle(i)
+                release(event)
+              }}
+              aria-pressed={open ? isChosen : undefined}
+              className={`press flex min-h-14 w-full flex-wrap items-baseline gap-x-3 gap-y-1 rounded-md border px-4 py-3.5 text-left text-lg leading-relaxed ${style}`}
+            >
+              <span
+                aria-hidden="true"
+                className={`relative top-0.5 inline-flex size-5 shrink-0 items-center justify-center self-center rounded border-2 ${
+                  isChosen ? 'border-plan bg-plan text-on-plan' : 'border-edge'
+                }`}
+              >
+                {isChosen && <Icon name="check" size={14} />}
+              </span>
+              <span className="font-bold">{letter(i)}</span>
+              <span className="min-w-0 flex-1 basis-64">{option}</span>
+              {mark}
+            </button>
+          )
+        })}
+      </div>
+      {open && !changeable && (
+        <button onClick={check} disabled={!check} className={`${btnPrimary} mt-4`}>
+          Check answer
+        </button>
+      )}
+    </div>
+  )
+  return { board, keys, check, note }
+}
+
+/**
+ * A pull-down list question: each blank has its own short list of choices.
+ * The lists are ordinary list boxes, so Tab and the arrow keys work as everywhere else.
+ */
+export function useDropdownBoard(props: {
+  question: Question
+  picked: number | null
+  revealed: boolean
+  onPick?: (code: number) => void
+  changeable: boolean
+}): { board: ReactNode; check?: () => void } | null {
+  const { question, picked, revealed, onPick, changeable } = props
+  const open = Boolean(onPick) && !revealed
+  const { value, set } = useDraft(picked, open, changeable, onPick)
+  if (question.type !== 'dropdown') return null
+
+  const blanks = question.blanks ?? []
+  const values = decodeMatch(value, blanks.length)
+  const right = decodeMatch(question.answer, blanks.length)
+  const results = matchResults(picked, question.answer, blanks.length)
+  const choose = (blank: number, choice: number | null) => set(encodeMatch(values.map((v, i) => (i === blank ? choice : v))))
+  const check = open && !changeable && values.every((v) => v !== null) ? () => onPick?.(encodeMatch(values)) : undefined
+
+  const board = (
+    <div className="mt-5">
+      <ol className="space-y-2.5">
+        {blanks.map((blank, i) => {
+          let style = 'border-edge bg-surface'
+          if (revealed) style = results[i] ? 'border-done bg-done-soft' : 'border-critical bg-critical-soft'
+          return (
+            <li key={i} className={`rounded-md border px-4 py-3 ${style}`}>
+              <label className="flex flex-wrap items-center gap-x-3 gap-y-2 text-lg leading-relaxed">
+                <span className="font-bold tabular-nums">{i + 1}</span>
+                <span className="min-w-0 flex-1 basis-48">{blank.text}</span>
+                <select
+                  value={values[i] ?? ''}
+                  disabled={!open}
+                  onChange={(event) => choose(i, event.target.value === '' ? null : Number(event.target.value))}
+                  className={`${input} min-w-48 text-lg disabled:opacity-100`}
+                >
+                  <option value="">Choose…</option>
+                  {blank.choices.map((choice, c) => (
+                    <option key={c} value={c}>
+                      {choice}
+                    </option>
+                  ))}
+                </select>
+              </label>
+              {revealed && (
+                <p className={`mt-1 flex items-center gap-1 pl-7 text-sm font-semibold ${results[i] ? 'text-done' : 'text-critical'}`}>
+                  <Icon name={results[i] ? 'check' : 'cross'} size={16} />
+                  {results[i] ? 'Right' : `Wrong. The right choice is: ${blank.choices[right[i] ?? 0]}`}
+                </p>
+              )}
+            </li>
+          )
+        })}
+      </ol>
+      {open && !changeable && (
+        <button onClick={check} disabled={!check} className={`${btnPrimary} mt-4`}>
+          Check answer
+        </button>
+      )}
+    </div>
+  )
+  return { board, check }
 }

@@ -493,6 +493,109 @@ export const tests = {
     expect(String(pick).length === pairs && !String(pick).includes('0'), `the full answer was saved as ${pick}`)
   },
 
+  async 'PMP question types (test course): multiple response, pull-down list, case set, graphic-based'(page) {
+    await page.goto('/lab/question-types')
+    await see(page, 'A few come in the seven other forms below.')
+
+    await button(page, 'Multiple response').click()
+    await see(page, 'Choose 2.')
+    const check = button(page, 'Check answer')
+    expect(await check.isDisabled(), 'a multiple response answer can be checked before 2 options are chosen')
+    await option(page, 'A').click()
+    await page.keyboard.press('c')
+    await see(page, '2 of 2 chosen.')
+    await option(page, 'B').click()
+    await see(page, 'You have chosen 2. Take one away to choose another.')
+    await page.keyboard.press('Enter')
+    await see(page, /^Correct\.$/)
+    expect((await page.getByText('Correct, and chosen').count()) === 2, 'the two right options are not both marked')
+    await button(page, 'Show another multiple response question (1 of 2)').click()
+    await see(page, 'Choose 3.')
+    for (const letter of ['A', 'B', 'C']) await option(page, letter).click()
+    await check.click()
+    await see(page, 'Not correct. 2 of the 3 right options were chosen, and a multiple response question counts only when exactly the right options are chosen.')
+    await see(page, 'Correct, not chosen')
+
+    await button(page, 'Pull-down list').click()
+    const lists = page.locator('select')
+    await lists.first().waitFor()
+    expect(await check.isDisabled(), 'a pull-down list can be checked with blanks left')
+    await lists.nth(0).selectOption('0')
+    // The keyboard: the second list is reached and set with the arrow keys.
+    await lists.nth(1).focus()
+    await page.keyboard.press('ArrowDown')
+    await page.keyboard.press('ArrowDown')
+    expect((await lists.nth(1).inputValue()) === '1', 'the arrow keys did not choose in the list')
+    await check.click()
+    await see(page, /^Correct\.$/)
+
+    await button(page, 'Case set').click()
+    await see(page, "Case: The clinic's new booking system")
+    await see(page, 'Question 1 of 3 on this case')
+    await button(page, 'Show another case set question (1 of 3)').click()
+    await see(page, 'Question 2 of 3 on this case')
+    await see(page, 'The reception staff have not yet seen the system.')
+
+    await button(page, 'Graphic-based').click()
+    await page.locator('svg[aria-label^="Network diagram of seven activities"]').waitFor()
+    await option(page, 'B').click()
+    await see(page, /^Correct\.$/)
+  },
+
+  async 'PMP exam (test course), real mode: three sections, two breaks, each section locked'(page) {
+    await page.goto('/lab/exams')
+    await see(page, '10 minutes after questions 3 and 6; each section is then locked')
+    await button(page, 'Start in real exam mode').click()
+    await see(page, 'Question 1 of 9. Section 1 of 3: 0 of 3 answered')
+    await see(page, 'Question 1 of 3 on this case')
+    for (let i = 1; i <= 3; i++) {
+      await option(page, 'A').click()
+      if (i < 3) await button(page, 'Next question').click()
+    }
+    await button(page, 'Finish questions 1 to 3 and take the break').click()
+    await see(page, 'Finish section 1?')
+    await see(page, 'After this, questions 1 to 3 are locked for good and your 10-minute break starts.')
+    await button(page, 'Lock section 1 and start the break').click()
+    await see(page, 'of your 10-minute break left')
+    await see(page, 'Questions 1 to 3 are locked and cannot be reopened.')
+    await button(page, 'End the break and start question 4').click()
+
+    await see(page, 'Question 4 of 9. Section 2 of 3: 0 of 3 answered')
+    await see(page, 'Questions 1 to 3 are locked. Section 3 opens after the break.')
+    expect((await page.getByRole('button', { name: /^Question 1,/ }).count()) === 0, 'a locked question can still be opened')
+    for (const answer of await page.locator('[data-answer]').all()) await answer.click()
+    await button(page, 'Next question').click()
+    await option(page, 'A').click()
+    await button(page, 'Next question').click()
+    await option(page, 'A').click()
+    await button(page, 'Finish questions 4 to 6 and take the break').click()
+    await button(page, 'Lock section 2 and start the break').click()
+    await button(page, 'End the break and start question 7').click()
+
+    await see(page, 'Question 7 of 9. Section 3 of 3: 0 of 3 answered')
+    const lists = page.locator('select')
+    for (let i = 0; i < 3; i++) await lists.nth(i).selectOption('1')
+    await page.getByRole('button', { name: 'Question 7, answered' }).waitFor()
+    await button(page, 'Next question').click()
+    // Multiple response, choose 3: two chosen is saved but not yet answered.
+    await see(page, 'Choose 3.')
+    await option(page, 'A').click()
+    await option(page, 'B').click()
+    await page.getByRole('button', { name: 'Question 8, unanswered' }).waitFor()
+    await option(page, 'C').click()
+    await page.getByRole('button', { name: 'Question 8, answered' }).waitFor()
+    await button(page, 'Next question').click()
+    await page.getByRole('button', { name: 'Area 1: Initiating' }).click()
+    await button(page, 'Submit the exam').click()
+    await see(page, 'Submit the exam?')
+    await see(page, 'Every question in this section is answered.')
+    await page.getByRole('button', { name: 'Submit the exam', exact: true }).last().click()
+    await see(page, 'Mock exam 1: your result')
+    await see(page, /By approach: Predictive \d of 3 \(\d+%\); Agile and hybrid \d of 6/)
+    const record = (await saved(page)).exams['lab/mock-1']
+    expect(!record.run && record.attempts.length === 1 && record.attempts[0].picks.every((p) => p !== null), 'the attempt was not saved whole')
+  },
+
   async 'lesson: list of sections, jump to one, continue there next time'(page) {
     await page.goto('/capm/3-07-metrics-retrospectives')
     // The sections are listed in the panel on the right, open from the start.

@@ -24,6 +24,17 @@ export default function ExamResult(props: {
   const scores = domainScores(course, questions, attempt.picks)
   const unanswered = attempt.picks.filter((p) => p === null).length
   const isRight = (i: number) => attempt.picks[i] === questions[i].question.answer
+  // PMP questions say whether they are about predictive or about agile and hybrid work.
+  const byApproach = [
+    ['Predictive', (a?: string) => a === 'predictive'],
+    ['Agile and hybrid', (a?: string) => a === 'agile' || a === 'hybrid'],
+  ] as const
+  const approaches = questions.some((q) => q.question.approach)
+    ? byApproach.map(([name, has]) => {
+        const positions = questions.flatMap((q, i) => (has(q.question.approach) ? [i] : []))
+        return { name, right: positions.filter(isRight).length, total: positions.length }
+      })
+    : []
 
   const filters: [Filter, string, number][] = [
     ['missed', 'Wrong or unanswered', attempt.total - attempt.right],
@@ -132,6 +143,12 @@ export default function ExamResult(props: {
         {questions.some((q) => q.question.type === 'match') &&
           ' A matching question counts as correct only when every pair is right; PMI does not publish its own rule.'}
       </p>
+      {approaches.length > 0 && (
+        <p className="mt-3 tabular-nums">
+          <span className="font-semibold">By approach: </span>
+          {approaches.map((a) => `${a.name} ${a.right} of ${a.total} (${a.total ? percent(a.right / a.total) : '-'})`).join('; ')}.
+        </p>
+      )}
 
       <div className="mt-6 flex flex-wrap gap-3">
         <Link to="/practice" className={btnPrimary}>

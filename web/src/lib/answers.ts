@@ -44,6 +44,45 @@ export function matchResults(pick: number | null, answer: number, pairs: number)
   return chosen.map((choice, i) => choice !== null && choice === right[i])
 }
 
+// Multiple response ("Choose 2"): one bit per option as shown, so options A and C are 1 + 4 = 5.
+// A pull-down list question stores a digit per blank, exactly as a matching question does
+// (encodeMatch and decodeMatch), with the blank's choice counted from 1 and 0 for "not chosen".
+
+export function encodeMulti(chosen: number[]): number {
+  return chosen.reduce((code, option) => code | (1 << option), 0)
+}
+
+export function decodeMulti(code: number | null): number[] {
+  const chosen: number[] = []
+  for (let option = 0; option < 8; option++) if ((code ?? 0) & (1 << option)) chosen.push(option)
+  return chosen
+}
+
+/** The stored answer of a multiple response question whose options are shown in this order. */
+export function multiAnswer(right: number[], order: number[]): number {
+  return encodeMulti(right.map((option) => order.indexOf(option)))
+}
+
+/** What decides whether an answer is complete: how many pairs, blanks or options must be chosen. */
+export interface AnswerShape {
+  type?: string
+  left?: unknown[]
+  blanks?: unknown[]
+  choose?: number
+}
+
+/**
+ * True once an answer is complete: every pair of a matching question, every blank of a pull-down
+ * list, exactly the asked number of options of a multiple response question; any answer otherwise.
+ */
+export function isAnswerComplete(pick: number | null, shape: AnswerShape): boolean {
+  if (pick === null) return false
+  if (shape.type === 'match') return isComplete(pick, shape.left?.length ?? 0)
+  if (shape.type === 'dropdown') return isComplete(pick, shape.blanks?.length ?? 0)
+  if (shape.type === 'multi') return decodeMulti(pick).length === shape.choose
+  return true
+}
+
 /**
  * A fixed shuffle of 0..n-1 worked out from a text, so that a module quiz shows the right-hand
  * items of a matching question in the same mixed order every time. It never returns them in

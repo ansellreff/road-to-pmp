@@ -38,9 +38,11 @@ export interface ExamRun {
   picks: (number | null)[]
   /** Positions of questions marked to look at again. */
   flags: number[]
-  /** Real exam mode: set when the first half is submitted. That half is then locked. */
+  /** Real exam mode: set when the first section (CAPM: the first half) is submitted. It is then locked. */
   breakStartedAt?: number
   breakEndedAt?: number
+  /** Real exam mode with more than two sections (PMP): the breaks after the second and later sections. */
+  moreBreaks?: { startedAt: number; endedAt?: number }[]
   /** Milliseconds each question has been on screen so far. Runs started before this was recorded have none. */
   times?: number[]
 }

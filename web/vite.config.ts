@@ -137,6 +137,12 @@ function searchIndex(): Plugin {
   }
 }
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [react(), tailwindcss(), localBooks(), searchIndex()],
-})
+  resolve: {
+    alias: {
+      // The click tests' own course: served by the local test server, never built into the site.
+      '@lab-course': path.resolve(here, command === 'serve' ? 'tests/lab-course' : 'src/lab-off'),
+    },
+  },
+}))

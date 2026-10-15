@@ -1,0 +1,125 @@
+[
+  {
+    "id": "q1",
+    "q": "Lab B1: who has not yet seen the system?",
+    "options": [
+      "The sponsor",
+      "The reception staff",
+      "The team",
+      "The vendor"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question",
+    "case": "clinic-rollout"
+  },
+  {
+    "id": "q2",
+    "q": "Lab B2: how long are the iterations?",
+    "options": [
+      "One week",
+      "Two weeks",
+      "Three weeks",
+      "One month"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question",
+    "case": "clinic-rollout"
+  },
+  {
+    "id": "q3",
+    "q": "Lab B3: what does the clinic use today?",
+    "options": [
+      "A paper diary",
+      "A spreadsheet",
+      "An online system",
+      "Nothing"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question",
+    "case": "clinic-rollout"
+  },
+  {
+    "id": "q4",
+    "q": "Lab B4: complete each statement.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Water freezes at",
+        "choices": [
+          "0 °C",
+          "50 °C",
+          "100 °C"
+        ],
+        "answer": 0
+      },
+      {
+        "text": "A week has",
+        "choices": [
+          "five days",
+          "seven days",
+          "ten days"
+        ],
+        "answer": 1
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  },
+  {
+    "id": "q5",
+    "q": "Lab B5: on the drawing, which activity starts the critical path?",
+    "options": [
+      "Activity A",
+      "Activity B",
+      "Activity C",
+      "Activity D"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question",
+    "diagram": "network-figure"
+  },
+  {
+    "id": "q6",
+    "q": "Lab B6: which three are fruits?",
+    "type": "multi",
+    "options": [
+      "Apple",
+      "Brick",
+      "Pear",
+      "Plum",
+      "Chair",
+      "Lamp"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "approach": "hybrid",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  },
+  {
+    "id": "q7",
+    "q": "Lab B7: which is a vowel?",
+    "options": [
+      "B",
+      "E",
+      "K",
+      "T"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  }
+]

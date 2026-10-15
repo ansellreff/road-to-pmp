@@ -1,0 +1,53 @@
+{
+  "id": "lab",
+  "title": "Test course",
+  "subtitle": "Used by the click tests on the local test server; never part of the website",
+  "testOnly": true,
+  "exam": {
+    "questions": 9,
+    "minutes": 30,
+    "sections": 3,
+    "breakMinutes": 10,
+    "approach": {
+      "predictive": 40
+    }
+  },
+  "domains": [
+    {
+      "id": "d1",
+      "title": "First domain",
+      "weight": 33,
+      "modules": [
+        {
+          "id": "1-01-lab-a",
+          "title": "Module A",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "d2",
+      "title": "Second domain",
+      "weight": 41,
+      "modules": [
+        {
+          "id": "2-01-lab-b",
+          "title": "Module B",
+          "ready": true
+        }
+      ]
+    },
+    {
+      "id": "d3",
+      "title": "Third domain",
+      "weight": 26,
+      "modules": [
+        {
+          "id": "3-01-lab-c",
+          "title": "Module C",
+          "ready": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,28 +1,67 @@
 import type { Course, ExamQuestion } from './content'
 import type { ExamAttempt, ExamRun } from './progress'
 
-/** The real exam allows one 10-minute break, after the first half. */
+/** The CAPM exam allows one 10-minute break, after the first half. A course may set other lengths. */
 export const BREAK_MS = 10 * 60 * 1000
 
 export const examKey = (courseId: string, examId: string) => `${courseId}/${examId}`
 export const examLimitMs = (course: Course) => course.exam.minutes * 60 * 1000
 
-/** Break time taken so far. A break left running ends by itself after 10 minutes. */
-function breakTaken(run: ExamRun, now: number): number {
-  if (run.breakStartedAt === undefined) return 0
-  return Math.min((run.breakEndedAt ?? now) - run.breakStartedAt, BREAK_MS)
+export interface Break {
+  startedAt: number
+  endedAt?: number
 }
 
-export function onBreak(run: ExamRun, now: number): boolean {
-  return run.breakStartedAt !== undefined && run.breakEndedAt === undefined && now - run.breakStartedAt < BREAK_MS
+/** Every break taken or under way, in order. The first is kept where CAPM has always kept it. */
+export function breaksOf(run: ExamRun): Break[] {
+  if (run.breakStartedAt === undefined) return []
+  return [{ startedAt: run.breakStartedAt, endedAt: run.breakEndedAt }, ...(run.moreBreaks ?? [])]
 }
 
-export const breakLeftMs = (run: ExamRun, now: number) => BREAK_MS - breakTaken(run, now)
-
-/** Exam time used. The clock runs on real time from the start; only the break is taken out. */
-export function elapsedMs(run: ExamRun, now: number): number {
-  return now - run.startedAt - breakTaken(run, now)
+/** Start the break after the current section. */
+export function withBreakStarted(run: ExamRun, now: number): ExamRun {
+  if (run.breakStartedAt === undefined) return { ...run, breakStartedAt: now }
+  return { ...run, moreBreaks: [...(run.moreBreaks ?? []), { startedAt: now }] }
 }
+
+/** End the break under way. */
+export function withBreakEnded(run: ExamRun, now: number): ExamRun {
+  const more = run.moreBreaks ?? []
+  if (!more.length) return { ...run, breakEndedAt: now }
+  return { ...run, moreBreaks: more.map((b, i) => (i === more.length - 1 ? { ...b, endedAt: now } : b)) }
+}
+
+/** Time spent on one break. A break left running ends by itself when its time is up. */
+const taken = (b: Break, now: number, limit: number) => Math.min((b.endedAt ?? now) - b.startedAt, limit)
+
+/** Break time taken so far, over all breaks. */
+function breakTaken(run: ExamRun, now: number, limit: number): number {
+  return breaksOf(run).reduce((sum, b) => sum + taken(b, now, limit), 0)
+}
+
+export function onBreak(run: ExamRun, now: number, limit = BREAK_MS): boolean {
+  const last = breaksOf(run).at(-1)
+  return last !== undefined && last.endedAt === undefined && now - last.startedAt < limit
+}
+
+/** Time left on the break under way. */
+export function breakLeftMs(run: ExamRun, now: number, limit = BREAK_MS): number {
+  const last = breaksOf(run).at(-1)
+  return last ? limit - taken(last, now, limit) : limit
+}
+
+/** Exam time used. The clock runs on real time from the start; only the breaks are taken out. */
+export function elapsedMs(run: ExamRun, now: number, limit = BREAK_MS): number {
+  return now - run.startedAt - breakTaken(run, now, limit)
+}
+
+/** The positions of one section: [first, end), end not included. Two sections are the two halves. */
+export function sectionBounds(total: number, sections: number, index: number): [number, number] {
+  return [Math.ceil((total * index) / sections), Math.ceil((total * (index + 1)) / sections)]
+}
+
+/** The section open now: one more than the breaks taken. */
+export const currentSection = (run: ExamRun, sections: number) => Math.min(breaksOf(run).length, sections - 1)
 
 /** "2:59:05" */
 export function formatClock(ms: number): string {

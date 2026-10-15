@@ -7,7 +7,7 @@ import { useLoaded } from '../lib/useLoaded'
 import Icon from './Icon'
 import Keys, { type KeyActions } from './Keys'
 import { Waiting } from './Page'
-import { HotSpot, Strip, useMatchBoard, verdict } from './QuestionParts'
+import { CasePanel, Graphic, HotSpot, Strip, useDropdownBoard, useMatchBoard, useMultiBoard, verdict } from './QuestionParts'
 import { SourceItem } from './Sources'
 
 /**
@@ -180,10 +180,13 @@ export function QuestionView(props: {
 }) {
   const { number, question, picked, revealed, onPick, onNext, onPrevious, onFlag, footer, lively = false, changeable = false } = props
   const match = useMatchBoard({ question, picked, revealed, onPick, changeable })
+  const multi = useMultiBoard({ question, picked, revealed, onPick, changeable, flagging: Boolean(onFlag) })
+  const dropdown = useDropdownBoard({ question, picked, revealed, onPick, changeable })
   const hotspot = question.type === 'hotspot'
   const choose = (i: number) => (onPick && i < question.options.length ? () => onPick(i) : undefined)
   const letter = (i: number) => String.fromCharCode(65 + i)
-  const move: KeyActions = { Enter: match?.check ?? onNext, ArrowRight: onNext, ArrowLeft: onPrevious, f: onFlag }
+  const check = match?.check ?? multi?.check ?? dropdown?.check
+  const move: KeyActions = { Enter: check ?? onNext, ArrowRight: onNext, ArrowLeft: onPrevious, f: onFlag }
   let keys: KeyActions = { a: choose(0), b: choose(1), c: choose(2), d: choose(3), 1: choose(0), 2: choose(1), 3: choose(2), 4: choose(3), ...move }
   let keyNote = 'A to D, or 1 to 4, to answer.'
   if (match) {
@@ -192,15 +195,25 @@ export function QuestionView(props: {
   } else if (hotspot) {
     keys = { ...Object.fromEntries(question.options.map((_, i) => [String(i + 1), choose(i)])), ...move }
     keyNote = `1 to ${question.options.length} to select an area.`
+  } else if (multi) {
+    keys = { ...multi.keys, ...move }
+    keyNote = multi.note
+  } else if (dropdown) {
+    keys = move
+    keyNote = `Tab to a list, then the arrow keys to choose.${changeable ? '' : ' Enter to check the answer.'}`
   }
-  const single = !match && !hotspot
+  const single = !match && !hotspot && !multi && !dropdown
   return (
     <div className="border-b border-line py-7">
+      {question.caseStudy && <CasePanel study={question.caseStudy} position={question.casePosition} />}
       {question.strip && <Strip panels={question.strip} />}
       <p className="text-xl font-semibold leading-relaxed">
         {number}. {question.q}
       </p>
+      {question.diagram && !hotspot && <Graphic name={question.diagram} />}
       {match?.board}
+      {multi?.board}
+      {dropdown?.board}
       {hotspot && <HotSpot question={question} picked={picked} revealed={revealed} onPick={onPick} />}
       {single && (
       <div className="mt-5 space-y-2.5">

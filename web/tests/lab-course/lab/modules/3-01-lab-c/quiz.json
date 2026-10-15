@@ -1,0 +1,89 @@
+[
+  {
+    "id": "q1",
+    "q": "Lab C1: which is a month?",
+    "options": [
+      "Monday",
+      "March",
+      "Morning",
+      "Minute"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  },
+  {
+    "id": "q2",
+    "q": "Lab C2: complete each statement.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "The sun rises in the",
+        "choices": [
+          "north",
+          "east",
+          "west"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "A triangle has",
+        "choices": [
+          "three sides",
+          "four sides"
+        ],
+        "answer": 0
+      },
+      {
+        "text": "Ice is",
+        "choices": [
+          "hot",
+          "cold"
+        ],
+        "answer": 1
+      }
+    ],
+    "approach": "agile",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  },
+  {
+    "id": "q3",
+    "q": "What should the team lead do next?",
+    "options": [
+      "Ignore it",
+      "Help finish the test work",
+      "Raise the limit",
+      "Start new work"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question",
+    "strip": [
+      {
+        "who": "Developer",
+        "says": "The Test column is full."
+      },
+      {
+        "who": "Team lead",
+        "says": "Then we stop starting."
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Lab C4: which is a planet?",
+    "options": [
+      "Mars",
+      "Moon",
+      "Sun",
+      "Comet"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  }
+]

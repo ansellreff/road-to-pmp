@@ -39,6 +39,15 @@ broken = {
     "strip of one panel": {"id": "b8", "q": "s", "options": ["a", "b", "c", "d"], "answer": 0, "strip": [{"who": "A", "says": "x"}], **base},
     "strip panel without words": {"id": "b9", "q": "s2", "options": ["a", "b", "c", "d"], "answer": 0, "strip": [{"who": "A", "says": ""}, {"who": "B", "says": "y"}], **base},
     "three options": {"id": "b10", "q": "t", "options": ["a", "b", "c"], "answer": 0, **base},
+    # PMP types.
+    "multiple response with four options": {"id": "b11", "q": "mr", "type": "multi", "options": ["a", "b", "c", "d"], "answers": [0, 1], **base},
+    "multiple response with one right option": {"id": "b12", "q": "mr2", "type": "multi", "options": ["a", "b", "c", "d", "e"], "answers": [0], **base},
+    "multiple response with a single answer field": {"id": "b13", "q": "mr3", "type": "multi", "options": ["a", "b", "c", "d", "e"], "answers": [0, 2], "answer": 0, **base},
+    "pull-down list with one blank": {"id": "b14", "q": "pd", "type": "dropdown", "blanks": [{"text": "x", "choices": ["a", "b"], "answer": 1}], **base},
+    "pull-down blank answer out of range": {"id": "b15", "q": "pd2", "type": "dropdown", "blanks": [{"text": "x", "choices": ["a", "b"], "answer": 2}, {"text": "y", "choices": ["a", "b"], "answer": 1}], **base},
+    "pull-down right choice always first": {"id": "b16", "q": "pd3", "type": "dropdown", "blanks": [{"text": "x", "choices": ["a", "b"], "answer": 0}, {"text": "y", "choices": ["c", "d"], "answer": 0}], **base},
+    "unknown case": {"id": "b17", "q": "cs", "options": ["a", "b", "c", "d"], "answer": 0, "case": "no-such-case", **base},
+    "unknown approach": {"id": "b18", "q": "ap", "options": ["a", "b", "c", "d"], "answer": 0, "approach": "waterfall", **base},
 }
 check_quiz = next(getattr(check, n) for n in dir(check) if n.startswith("check_quiz"))
 failures = 0

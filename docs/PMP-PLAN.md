@@ -1,6 +1,6 @@
 # PMP: plan and progress
 
-Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; **CAPM was closed on 2026-10-13, so PMP resumes at PMP Session 2**. Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
+Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP Session 2 (the exam engine) is done; next is PMP Session 3, the first People modules.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
 
 ## Status log
 
@@ -10,6 +10,7 @@ Project Management Professional. Started 2026-10-11 and paused the same day unti
 | 2026-10-11 | **Reference list received and read; PMP Session 1 closed.** You saved a screenshot of PMI.org's "Exam References" page. It lists two PMI standards (the Agile Practice Guide and the PMBOK Guide) and eight textbooks, and says these are the ten sources most often cited by the people who write the questions. Neither standard is given an edition. **The tracker was split at your request:** an overview at the root, and a plan file and an issues file for each certification in `docs/`. | Plan mode: decide what comes next |
 | 2026-10-11 | **PMP paused; numbering restarted.** You asked whether CAPM was 100% finished. It was not, and you chose to finish it first. You also said the separate files were meant to restart the session numbers, so PMP's sessions are now 1 to 15 (were 32 to 46) and its issues PMP-1 onward (were 152 onward). The design for PMP Session 2 is kept below as planned work. | CAPM Sessions 32 to 39 (see `CAPM-PLAN.md`). PMP resumes at PMP Session 2 |
 | 2026-10-13 | **CAPM closed; PMP can resume.** While finishing CAPM, the screens and rules for matching, hot spot and comic strip questions were built (CAPM Sessions 36 and 37). PMP Session 2 therefore has less to build than its planned design says: multiple response, case sets, the approach tag and the exam in three sections with two breaks. No PMP work was done. | Next: PMP Session 2, starting in plan mode |
+| 2026-10-15 | **PMP Session 2 done: the exam engine.** Multiple response, pull-down list, case set and graphic-based questions work in quizzes, practice and both exam modes; real exam mode runs in sections (PMP: three of 60, two breaks); every PMP question will carry an approach tag, and the result page scores predictive against agile and hybrid. A small test course, served only on this PC, proves it all with click tests. CAPM was guarded throughout and is unchanged: its 159 files match their fingerprints and 11 of its screens are pixel-identical to the morning's pictures. | Next: PMP Session 3, modules 1.1 to 1.3, starting in plan mode |
 
 ## Roadmap
 
@@ -18,14 +19,14 @@ PMP counts its own sessions from 1. (Until 2026-10-11 these were numbered 32 to 
 | Status | Session | What |
 |---|---|---|
 | ✅ | 1 | **PMP.** Sources and map: outline extracted, instructor's contents read, reference list read, coverage map, course skeleton. |
-| ⏸️ | 2 | **Waits until CAPM is finished.** PMP exam engine: sections and breaks from the course file (three sections of 60, two breaks); multiple response, case sets, graphic-based and matching questions; checker and exam builder rules; click tests showing CAPM unchanged |
+| ✅ | 2 | **The exam engine.** Multiple response, pull-down lists, case sets, graphic-based questions, the approach tag, exams in three sections with two breaks; a test course for the click tests; CAPM guarded and unchanged |
 | ⬜ | 3 to 5 | PMP Domain 1, People: modules 1.1 to 1.9 |
 | ⬜ | 6 to 10 | PMP Domain 2, Process: modules 2.1 to 2.15 |
 | ⬜ | 11 to 13 | PMP Domain 3, Business Environment: modules 3.1 to 3.10 |
 | ⬜ | 14 | PMP mock exams: four of 180 questions, the fourth unseen; PMP in the study plan, readiness and weak spots |
 | ⬜ | 15 | PMP formula sheet; accuracy check against the reference list; final report |
 
-Every content session ends with the source linker, the content checker, the link audit, the example check, the build, the click tests and the publish check, then a tracker update, a commit and a report of issues and fixes.
+Every content session ends with the source linker, the content checker, the link audit, the example check, the build, the click tests and the publish check, then a tracker update, a commit and a report of issues and fixes. Since PMP Session 2 it also runs `tools/check_capm_frozen.py`: CAPM is closed, and a PMP session must not change it.
 
 ## Plan, sources and coverage map
 
@@ -47,6 +48,10 @@ The plan you approved on 2026-10-11 is kept in Claude's plans folder on this PC.
 | Size of the build | Full, like CAPM |
 | Question types to build | Multiple response, case sets, graphic-based, matching; "try to simulate the real exam" |
 | Reference list | I look it up on PMI.org. **Blocked** (error 403). You then saved a screenshot of the page into the materials folder |
+| Pull-down list questions (2026-10-15) | Build them |
+| Marking of multiple response (2026-10-15) | All or nothing, like matching |
+| Proving the engine before PMP questions exist (2026-10-15) | A small test course, served only on this PC |
+| CAPM during PMP work (2026-10-15) | Closed; nothing in PMP may change or break it |
 
 ### Sources
 
@@ -179,3 +184,38 @@ Agreed in plan mode on 2026-10-11, then put behind the CAPM work. CAPM Sessions 
 | Sample page | `/pmp/question-types`: what the outline says about each type, with one sample of each to try | PMP only |
 
 Not planned: point and click as PMP describes it (CAPM's hot spot may cover it), and pull-down lists.
+
+## PMP Session 2: the exam engine, as built
+
+**Question types**
+
+| Type | Written in a quiz file as | How it is answered | Marked |
+|---|---|---|---|
+| Multiple response | `type: "multi"`, 5 or 6 `options`, `answers`: the 2 or 3 right ones | "Choose 2" above the options; click, or letters and numbers on the keyboard; **Check answer** | All or nothing. The review marks every option: right and chosen, right and missed, wrong and chosen |
+| Pull-down list | `type: "dropdown"`, `blanks`: 2 to 5, each with `text`, 2 to 5 `choices` and its `answer` | A list box per blank, by mouse or by Tab and the arrow keys; **Check answer** | All or nothing; the review shows the right choice of each wrong blank |
+| Case set | `case`: an id in the course's `cases.json` (title, text, optional drawing) | The case stands above each of its questions, with "Question 2 of 3 on this case" | As its own type |
+| Graphic-based | `diagram` on any question that is not a hot spot | The drawing above the question, without its caption | As its own type |
+| Approach | `approach`: `predictive`, `agile` or `hybrid`; required on every PMP question | Not shown with the question | The result page adds "By approach: Predictive x of y; Agile and hybrid x of y" |
+
+Matching, hot spot (PMP's "point and click") and comic strip came from CAPM.
+
+**Exams in sections.** `course.json` sets `exam.sections` (PMP 3) and `exam.breakMinutes` (10). In real exam mode each section ends with a confirmation, locks, and opens a break; both breaks are taken out of the exam clock. A course that names no sections has two, which is CAPM, whose screens and saved runs are exactly as before: its single break is still stored where it always was, and later breaks are added in a new field.
+
+**The exam builder** (`tools/build_exams.py --rebuild --exams 4` for PMP) keeps a case set whole and inside one section, and holds each exam's predictive share within 3 points of 40% (within one question on a very small exam). If the bank cannot meet that, it stops and says which approach is short. CAPM's builders are untouched.
+
+**The checker** knows every new type, requires the approach tag on PMP questions, checks that a case exists and has 3 to 5 questions, and on exams checks that no break splits a case and that the approach share is near its target. `tools/test_question_types.py` now feeds it 18 broken questions; all are reported.
+
+**The test course.** `web/tests/lab-course/lab` holds 16 test questions of every type in three modules and one 9-question exam in three sections. `vite.config.ts` serves it only on this PC; the built website points at the empty `web/src/lab-off` instead, and a search of the built files finds none of its content. Two click tests use it: every new type by mouse and keyboard, and a real-mode exam through three sections and two breaks with a partial multiple response answer counted unanswered.
+
+**How CAPM was kept unchanged**
+
+1. `tools/check_capm_frozen.py` fingerprints all 159 CAPM content files (`tools/capm-frozen.json`, taken at commit `e7cd4dd`). No CAPM file changed; the planned `"sections": 2` in CAPM's `course.json` was made a default instead.
+2. Eleven CAPM screens were pictured before the first change and again at the end: course page, two lessons (light and dark), a quiz, the question types page (three kinds, PC and phone), the mock exams page, the formula sheet and two exam results. All eleven are pixel-identical. One difference was found on the way and removed (PMP-14).
+3. Rule tests read an exam saved by the CAPM app as it was on 2026-10-13, on and after its break, and check the clock and the open half are as before.
+4. The 28 click tests from CAPM pass unchanged.
+
+**Not done**
+
+- PMP questions themselves: from PMP Session 3.
+- `/pmp/question-types` shows nothing until PMP has questions; each kind appears with the first question of that kind.
+- A real-mode exam screen is not in the picture comparison, because its clock changes every second; the CAPM click test for real exam mode covers it.

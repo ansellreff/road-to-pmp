@@ -21,12 +21,38 @@ const kinds: { id: string; title: string; how: string; has: (q: Question) => boo
     has: (q) => q.type === 'hotspot',
   },
   {
+    id: 'multi',
+    title: 'Multiple response',
+    how: 'Choose the stated number of options, then check. It counts as correct only when exactly the right options are chosen. PMI does not publish how it marks these, so this is the stricter reading.',
+    has: (q) => q.type === 'multi',
+  },
+  {
+    id: 'dropdown',
+    title: 'Pull-down list',
+    how: 'Each blank has its own short list. Choose one in every list, then check. It counts as correct only when every blank is right. The real exam uses these at test centres only.',
+    has: (q) => q.type === 'dropdown',
+  },
+  {
+    id: 'case',
+    title: 'Case set',
+    how: 'One case or scenario, followed by several questions about it. The case stays on screen with each of its questions.',
+    has: (q) => Boolean(q.case),
+  },
+  {
+    id: 'graphic',
+    title: 'Graphic-based',
+    how: 'A chart or drawing to read, followed by an ordinary question about it.',
+    has: (q) => Boolean(q.diagram) && q.type !== 'hotspot',
+  },
+  {
     id: 'strip',
     title: 'Comic strip',
     how: 'The situation is told as a short conversation, followed by one multiple choice question. The real exam may show it as an animation at a test centre.',
     has: (q) => Boolean(q.strip),
   },
 ]
+
+const count = ['no', 'one', 'two', 'three', 'four', 'five', 'six', 'seven']
 
 async function loadTyped(course: Course): Promise<Question[]> {
   const quizzes = await Promise.all(
@@ -58,8 +84,7 @@ function Loaded({ course }: { course: Course }) {
   return (
     <div className={column}>
       <PageHeader back={{ to: `/${course.id}/exams`, label: 'Mock exams' }} title="Question types">
-        Most questions of the real exam are multiple choice. A few come in the three other forms below. Try each one
-        here; answers on this page are not saved.
+        {`Most questions of the real exam are multiple choice. A few come in the ${count[present.length] ?? present.length} other forms below. Try each one here; answers on this page are not saved.`}
       </PageHeader>
       <div className="mt-8 flex flex-wrap gap-2" role="group" aria-label="Question type">
         {present.map((kind) => (

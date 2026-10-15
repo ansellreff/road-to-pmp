@@ -1,0 +1,84 @@
+[
+  {
+    "id": "q1",
+    "q": "Lab A1: which letter is right?",
+    "options": [
+      "Alpha",
+      "Bravo",
+      "Charlie",
+      "Delta"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  },
+  {
+    "id": "q2",
+    "q": "Lab A2: which two are colours?",
+    "type": "multi",
+    "options": [
+      "Red",
+      "Seven",
+      "Blue",
+      "Table",
+      "Spoon"
+    ],
+    "answers": [
+      0,
+      2
+    ],
+    "approach": "agile",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  },
+  {
+    "id": "q3",
+    "q": "Lab A3: match each animal with its sound.",
+    "type": "match",
+    "left": [
+      "Dog",
+      "Cat",
+      "Cow"
+    ],
+    "right": [
+      "Bark",
+      "Meow",
+      "Moo"
+    ],
+    "approach": "hybrid",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  },
+  {
+    "id": "q4",
+    "q": "Lab A4: select the process group in which the charter is signed.",
+    "type": "hotspot",
+    "diagram": "process-groups-figure",
+    "options": [
+      "Initiating",
+      "Planning",
+      "Executing",
+      "Closing",
+      "Monitoring and Controlling"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  },
+  {
+    "id": "q5",
+    "q": "Lab A5: which number is even?",
+    "options": [
+      "Three",
+      "Five",
+      "Eight",
+      "Nine"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "A question written for the click tests, not for study.",
+    "ref": "Test question"
+  }
+]
