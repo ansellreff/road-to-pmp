@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { certifications, courses, getExams, type Course } from '../lib/content'
+import { certifications, courses, getExams, getSheet, type Course } from '../lib/content'
 import { examKey } from '../lib/exam'
 import { setCourseId, usePrefs } from '../lib/prefs'
 import { dueCount, moduleCompletion, moduleKey, useProgress, type Progress } from '../lib/progress'
@@ -57,7 +57,8 @@ export default function TopMenu() {
         <MenuButton label="Practice" icon="practice" open={open === 'practice'} current={inPractice} onClick={() => toggle('practice')} />
         <PageLink to="/plan" icon="plan" label="Study plan" />
         <PageLink to="/dashboard" icon="dashboard" label="Dashboard" />
-        <PageLink to={`/${course.id}/sheet`} icon="formula" label="Formulas" />
+        {getSheet(course.id).length > 0 && <PageLink to={`/${course.id}/sheet`} icon="formula" label="Formulas" />}
+        <PageLink to="/help" icon="help" label="Help" />
       </div>
       {open === 'modules' && <ModulesPanel course={course} progress={progress} />}
       {open === 'practice' && <PracticePanel course={course} progress={progress} />}

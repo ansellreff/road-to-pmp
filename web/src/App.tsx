@@ -17,13 +17,16 @@ import QuestionTypesPage from './pages/QuestionTypesPage'
 import ReviewPage from './pages/ReviewPage'
 import SearchPage from './pages/SearchPage'
 import SheetPage from './pages/SheetPage'
+import HelpPage from './pages/HelpPage'
+import release from 'virtual:release'
+import { link } from './lib/ui'
 
 /** The width every page shares, so the top bar and the content line up. */
 export const shell = 'mx-auto w-full max-w-7xl px-4 sm:px-6'
 
 export default function App() {
   return (
-    <div className="min-h-screen">
+    <div className="flex min-h-screen flex-col">
       <header className="relative z-30 border-b border-ink bg-surface print:hidden">
         {/* Name, search and display controls on the first row; the page links on their own row below. */}
         <div className={`${shell} flex flex-wrap items-center gap-x-6 gap-y-2 pt-2.5`}>
@@ -43,9 +46,11 @@ export default function App() {
           </div>
         </div>
       </header>
-      <main className={`${shell} py-8 sm:py-10`}>
+      <main className={`${shell} flex-1 py-8 sm:py-10`}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/help" element={<HelpPage />} />
+          <Route path="/help/:tab" element={<HelpPage />} />
           <Route path="/review" element={<ReviewPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/practice" element={<PracticePage />} />
@@ -61,6 +66,21 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      {/* The version on every page, so it is clear which one runs here and on the website.
+          On a phone the extra space below keeps it clear of the floating Contents button. */}
+      <footer className="border-t border-line print:hidden">
+        <div className={`${shell} flex flex-wrap items-center gap-x-6 gap-y-1 pt-3 pb-20 text-sm text-muted lg:pb-3`}>
+          <span>
+            Road to PMP · Version {release.version} · build {release.commit}
+          </span>
+          <Link to="/help/whats-new" className={`${link} inline-flex min-h-11 items-center`}>
+            What's new
+          </Link>
+          <Link to="/help" className={`${link} inline-flex min-h-11 items-center`}>
+            Guide
+          </Link>
+        </div>
+      </footer>
       <Toaster />
       <MilestoneWatcher />
     </div>

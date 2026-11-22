@@ -36,3 +36,21 @@ Every problem met while building the PMP course, newest group last. Section name
 | PMP-23 | While reading for module 1.2, I found that the five "levels of conflict" taught in CAPM module 3.4 (problem to solve, disagreement, contest, crusade, world war) are in no book in your folder, although the lesson cites the Agile Practice Guide. | Not used in PMP. CAPM is closed, so nothing in it was changed; the finding is recorded as CAPM issue 197 for your decision. | |
 | PMP-24 | On first writing, the right answer was the longest option far too often (17, 15 and 13 times in the three modules). | Distractors lengthened until it was 5 or 6 per module; right answers spread over A to D by the question writer. | |
 | PMP-25 | Two explanations in module 1.1 leaned on a page the lesson section does not cite (the team charter's review for new members; the product owner's ranking of the backlog). | Reworded to rest on the sources the lesson cites. | Module 1.1 |
+
+### Guideline review (23 Nov 2026)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| PMP-26 | You found two Vercel projects, `road-to-pmp` and `road-to-pmp-d82g`. Only `road-to-pmp-d82g` serves the site; `road-to-pmp.vercel.app` answers "not found". Most likely the first import on 10 Oct 2026 made `road-to-pmp` without the site, and the second import got the `-d82g` ending because the name was taken. | Keep `road-to-pmp-d82g`: it is the working one, and the sync sign-in and your saved progress depend on its address. Claude has no access to your Vercel account, so you delete `road-to-pmp` yourself (steps given in the chat). | `PROJECT-PLAN.md`, "The website" |
+| PMP-27 | The website runs the commit from 13 Oct 2026 (CAPM's last). PMP Sessions 2 and 3 are only on this PC. | They go online with the first upload after Guideline milestone G1. | `docs/GUIDELINE-study.md`, section 5 |
+
+### Guideline milestone G1 (23 Nov 2026)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| PMP-28 | **Formulas** in the top bar was shown for PMP, which has no sheet yet, and led to "not found". | The link shows only for a certification that has a sheet. | `web/src/components/TopMenu.tsx` |
+| PMP-29 | You renamed the Vercel project to `road-to-pmp` (with a warning about "OpenID Connect", which this project does not use). The short address now works, but **the old `-d82g` address stopped opening**, so the phone or PC browser cannot reach progress saved there that was never synced. | Every current document and `tools/check_live.py` use the new address. Steps given: move progress by signing in to sync on the new address; if some was never synced, add the old address back in Vercel for a moment and download a backup. The Supabase sign-in addresses must be changed too (only you can). CAPM's old records keep the old address, as CAPM is closed. | `docs/ACCOUNTS.md`, `docs/TROUBLESHOOTING.md` |
+| PMP-30 | I could not change Vercel or Supabase myself: their connections need a sign-in that this session cannot open. | You made the change in Vercel; the Supabase step stays with you (steps in the chat). | |
+| PMP-31 | The watermarks-remover skill needs its own service running, started with Docker, which would be installed in Windows. | Not started. The same read-only search for invisible characters is `tools/check_invisible.py`: 176 files, none found. It is part of `test.bat` and the release step. | `tools/check_invisible.py` |
+| PMP-32 | The dev server restarted after the first of two changes to `vite.config.ts` and missed the second, so the new pages showed an error. | Restarted the server fully; the pages then worked. Worth knowing for later config changes. | |
+| PMP-33 | The new click test first read the What's new page before it had finished changing, and failed by timing. | The test now waits for the newest version heading. It passed three runs in a row, and all 30 click tests pass. | `web/tests/tests.mjs` |

@@ -12,6 +12,7 @@ Project Management Professional. Started 2026-10-11 and paused the same day unti
 | 2026-10-13 | **CAPM closed; PMP can resume.** While finishing CAPM, the screens and rules for matching, hot spot and comic strip questions were built (CAPM Sessions 36 and 37). PMP Session 2 therefore has less to build than its planned design says: multiple response, case sets, the approach tag and the exam in three sections with two breaks. No PMP work was done. | Next: PMP Session 2, starting in plan mode |
 | 2026-10-15 | **PMP Session 2 done: the exam engine.** Multiple response, pull-down list, case set and graphic-based questions work in quizzes, practice and both exam modes; real exam mode runs in sections (PMP: three of 60, two breaks); every PMP question will carry an approach tag, and the result page scores predictive against agile and hybrid. A small test course, served only on this PC, proves it all with click tests. CAPM was guarded throughout and is unchanged: its 159 files match their fingerprints and 11 of its screens are pixel-identical to the morning's pictures. | Next: PMP Session 3, modules 1.1 to 1.3, starting in plan mode |
 | 2026-10-15 | **PMP Session 3 done: the first three People modules.** 1.1 A Shared Vision, 1.2 Conflict and Ground Rules, 1.3 Leading the Team: one lesson section per outline enabler, 91 questions (every one tagged predictive, agile or hybrid; 40% predictive), 75 flashcards. Search now stays within the course you are in. CAPM checked unchanged. One CAPM finding is recorded for your decision (CAPM issue 197). | Next: PMP Session 4, modules 1.4 to 1.6, starting in plan mode |
+| 23 Nov 2026 | **Guideline milestone G1 done: version 1.0.** The project now follows your general guideline (`CLAUDE-Ansell.md`, answers in `GUIDELINE-study.md`). In the app: **Help** in the top bar with the Guide (one part per feature) and What's new, and the version and build at the bottom of every page. Behind it: `CHANGELOG.md` as the only place a version is written, a release step (`release.bat`) that checks everything and tags the version, `test.bat`, `tools/check_live.py`, a secret scan in the upload check, a search for invisible characters, pinned Python libraries, and the brief, decisions, settings, accounts and troubleshooting files. The website moved to https://road-to-pmp.vercel.app. CAPM unchanged; all 30 click tests pass. | **You:** Supabase sign-in addresses, then `upload.bat` (see the closing report). Next: PMP Session 4, modules 1.4 to 1.6 |
 
 ## Roadmap
 
@@ -22,13 +23,14 @@ PMP counts its own sessions from 1. (Until 2026-10-11 these were numbered 32 to 
 | ✅ | 1 | **PMP.** Sources and map: outline extracted, instructor's contents read, reference list read, coverage map, course skeleton. |
 | ✅ | 2 | **The exam engine.** Multiple response, pull-down lists, case sets, graphic-based questions, the approach tag, exams in three sections with two breaks; a test course for the click tests; CAPM guarded and unchanged |
 | ✅ | 3 | PMP Domain 1, People: modules 1.1 to 1.3 (People tasks 1 to 3) |
+| ✅ | G1 | **Guideline milestone.** Version 1.0: Help page (guide and What's new), version on every page, release step, the guideline's tracking files |
 | ⬜ | 4 and 5 | PMP Domain 1, People: modules 1.4 to 1.9 |
 | ⬜ | 6 to 10 | PMP Domain 2, Process: modules 2.1 to 2.15 |
 | ⬜ | 11 to 13 | PMP Domain 3, Business Environment: modules 3.1 to 3.10 |
 | ⬜ | 14 | PMP mock exams: four of 180 questions, the fourth unseen; PMP in the study plan, readiness and weak spots |
 | ⬜ | 15 | PMP formula sheet; accuracy check against the reference list; final report |
 
-Every content session ends with the source linker, the content checker, the link audit, the example check, the build, the click tests and the publish check, then a tracker update, a commit and a report of issues and fixes. Since PMP Session 2 it also runs `tools/check_capm_frozen.py`: CAPM is closed, and a PMP session must not change it.
+Every content session ends with the source linker, the content checker, the link audit, the example check, the build, the click tests and the publish check, then a tracker update, a commit and a report of issues and fixes. Since PMP Session 2 it also runs `tools/check_capm_frozen.py`: CAPM is closed, and a PMP session must not change it. Since G1 every session that changes the app also writes its entry in `CHANGELOG.md`, updates the guide where a feature changed, and runs `tools/release.py`.
 
 ## Plan, sources and coverage map
 

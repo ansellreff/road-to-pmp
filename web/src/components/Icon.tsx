@@ -23,6 +23,7 @@ const paths = {
   trophy: 'M6.500 3.500h7v4a3.500 3.500 0 0 1-7 0zM6.500 5h-3c0 2.500 1.200 3.800 3.200 4M13.500 5h3c0 2.500-1.200 3.800-3.200 4M10 11v3M7 16.500h6',
   contents: 'M4 5.500h1M8 5.500h8M4 10h1M8 10h8M4 14.500h1M8 14.500h8',
   close: 'M5.500 5.500l9 9M14.500 5.500l-9 9',
+  help: 'M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16ZM10 9v5M10 6.200v.100',
 }
 
 export type IconName = keyof typeof paths

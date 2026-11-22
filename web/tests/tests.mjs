@@ -921,4 +921,20 @@ export const tests = {
     await button(page, 'Remove the date').click()
     await see(page, 'No exam day set yet')
   },
+
+  async 'help: the guide and what is new open from the top bar, and every page shows the version'(page) {
+    const changelog = fs.readFileSync(new URL('../../CHANGELOG.md', import.meta.url), 'utf8')
+    const version = changelog.match(/^## (\d+\.\d+) · /m)[1]
+    await page.goto('/')
+    await see(page, `Version ${version} · build `)
+    await page.getByRole('navigation', { name: 'Pages' }).getByRole('link', { name: 'Help' }).click()
+    await see(page, `Guide for version ${version}`)
+    // The side list jumps to a part of the guide.
+    await page.getByRole('complementary', { name: 'Contents' }).getByRole('link', { name: 'Mock exams' }).click()
+    await inView(page, 'Mock exams')
+    await page.getByRole('navigation', { name: 'Help sections' }).getByRole('link', { name: "What's new" }).click()
+    await see(page, `You are using version ${version}`)
+    // The newest version is the first entry.
+    await page.waitForFunction((v) => document.querySelector('article h2')?.textContent?.startsWith(`${v} · `), version)
+  },
 }

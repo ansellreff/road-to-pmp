@@ -1,5 +1,5 @@
 import { isValidElement, useEffect, useMemo, useState, type ReactNode } from 'react'
-import Markdown from 'react-markdown'
+import Markdown, { type Components } from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useLocation } from 'react-router-dom'
 import { loadLesson, loadSources } from '../lib/content'
@@ -19,6 +19,27 @@ function textOf(node: ReactNode): string {
   if (Array.isArray(node)) return node.map(textOf).join('')
   if (isValidElement<{ children?: ReactNode }>(node)) return textOf(node.props.children)
   return ''
+}
+
+/** How lesson text is drawn. The guide on the Help page uses the same, so both read alike. */
+export const proseComponents: Components = {
+  // Each heading gets an address, for the list of sections and for search results.
+  h2: ({ node: _node, children, ...props }) => (
+    <h2 id={slug(textOf(children))} {...props}>
+      {children}
+    </h2>
+  ),
+  h3: ({ node: _node, children, ...props }) => (
+    <h3 id={slug(textOf(children))} {...props}>
+      {children}
+    </h3>
+  ),
+  // A table may be wider than the text column, and scrolls sideways on a small screen.
+  table: ({ node: _node, ...props }) => (
+    <div className="wide overflow-x-auto">
+      <table {...props} />
+    </div>
+  ),
 }
 
 export default function Lesson(props: {
@@ -97,29 +118,7 @@ export default function Lesson(props: {
             return Diagram ? <Diagram key={i} /> : null
           }
           return (
-            <Markdown
-              key={i}
-              remarkPlugins={[remarkGfm]}
-              components={{
-                // Each heading gets an address, for the list of sections and for search results.
-                h2: ({ node: _node, children, ...props }) => (
-                  <h2 id={slug(textOf(children))} {...props}>
-                    {children}
-                  </h2>
-                ),
-                h3: ({ node: _node, children, ...props }) => (
-                  <h3 id={slug(textOf(children))} {...props}>
-                    {children}
-                  </h3>
-                ),
-                // A table may be wider than the text column, and scrolls sideways on a small screen.
-                table: ({ node: _node, ...props }) => (
-                  <div className="wide overflow-x-auto">
-                    <table {...props} />
-                  </div>
-                ),
-              }}
-            >
+            <Markdown key={i} remarkPlugins={[remarkGfm]} components={proseComponents}>
               {part}
             </Markdown>
           )

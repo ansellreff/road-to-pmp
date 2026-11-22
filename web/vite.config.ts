@@ -1,3 +1,4 @@
+import { execSync } from 'node:child_process'
 import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
@@ -137,8 +138,49 @@ function searchIndex(): Plugin {
   }
 }
 
+/**
+ * The version log, offered to the app as "virtual:release": the version number, its date, the
+ * commit the build was made from, and the whole log for the What's new page.
+ * CHANGELOG.md (project folder) is the only place a version number is written; its newest
+ * heading, "## 1.0 · 23 Nov 2026 · Title", is the app's version. The build also writes
+ * version.json, so the live website can be checked without opening a browser.
+ */
+function release(): Plugin {
+  const id = 'virtual:release'
+  const file = path.resolve(here, '../CHANGELOG.md')
+  const commit = (): string => {
+    // Vercel builds from a copy of the repository and says which commit it is.
+    const fromHost = process.env.VERCEL_GIT_COMMIT_SHA
+    if (fromHost) return fromHost.slice(0, 7)
+    try {
+      return execSync('git rev-parse --short=7 HEAD', { cwd: here, stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim()
+    } catch {
+      return 'unknown'
+    }
+  }
+  const read = () => {
+    const changelog = fs.readFileSync(file, 'utf8')
+    const newest = /^## (\d+\.\d+) · (\d{1,2} [A-Z][a-z]{2} \d{4}) · (.+)$/m.exec(changelog)
+    if (!newest) throw new Error('CHANGELOG.md has no version heading such as "## 1.0 · 23 Nov 2026 · Title"')
+    return { version: newest[1], date: newest[2], title: newest[3].trim(), commit: commit(), changelog }
+  }
+  return {
+    name: 'release',
+    resolveId: (source) => (source === id ? `\0${id}` : undefined),
+    load(resolved) {
+      if (resolved !== `\0${id}`) return
+      this.addWatchFile(file)
+      return `export default ${JSON.stringify(read())}`
+    },
+    generateBundle() {
+      const { version, date, commit } = read()
+      this.emitFile({ type: 'asset', fileName: 'version.json', source: JSON.stringify({ version, date, commit }) + '\n' })
+    },
+  }
+}
+
 export default defineConfig(({ command }) => ({
-  plugins: [react(), tailwindcss(), localBooks(), searchIndex()],
+  plugins: [react(), tailwindcss(), localBooks(), searchIndex(), release()],
   resolve: {
     alias: {
       // The click tests' own course: served by the local test server, never built into the site.
