@@ -8,5 +8,10 @@
     "id": "parking-permits",
     "title": "Replacing a city's parking permits",
     "text": "A city council is replacing paper parking permits with a mobile app and number-plate cameras. The transport director sponsors the project and wants it live before the summer. The team builds the app in two-week iterations; a contractor installs the cameras to a fixed plan.\n\nThe residents' association says the cameras invade privacy and has started a petition against the project. Local shop owners have not taken a position, and the team judges that neutral is all it needs from them. The council's data protection officer has not yet heard of the project, although the cameras will store number-plate data."
+  },
+  {
+    "id": "loyalty-app",
+    "title": "A loyalty app for a retail chain",
+    "text": "A retail chain is building a customer loyalty app in two-week sprints; the first release is due in three months.\n\nThe marketing department expects the app to collect detailed shopping data for its campaigns. The store operations department expects checkout to stay as fast as today, with no extra steps for cashiers. In early user tests, many shoppers gave up on signing up when the app asked for a lot of personal information."
   }
 ]

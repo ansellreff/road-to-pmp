@@ -1,0 +1,658 @@
+[
+  {
+    "id": "q1",
+    "q": "What is facilitation, according to the PMBOK Guide?",
+    "options": [
+      "Making the final decision for a group that cannot agree",
+      "Recording the minutes of each meeting for the project's archive",
+      "Guiding a group event to a successful decision or conclusion",
+      "Presenting the project's status to the steering committee"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Facilitation is the ability to effectively guide a group event to a successful decision, solution or conclusion.",
+    "ref": "PMBOK 8, Guide section 5, Facilitation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 275,
+        "label": "PMBOK 8, Guide section 5, Facilitation"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which of these does a facilitator help ensure?",
+    "options": [
+      "That all contributions are considered before conclusions are drawn",
+      "That the most senior person's view is always adopted to save time",
+      "That only the sponsor's expectations are discussed in the session",
+      "That every disagreement is kept out of the meeting altogether"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "A facilitator helps ensure effective participation, mutual understanding, that all contributions are considered, full buy-in according to the established decision process, and that actions and agreements are dealt with afterward.",
+    "ref": "PMBOK 8, Guide section 5, Facilitation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 275,
+        "label": "PMBOK 8, Guide section 5, Facilitation"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A large group of stakeholders must discuss a controversial change, and a few loud voices usually dominate such meetings. Which technique helps most?",
+    "options": [
+      "Plurality voting",
+      "Brainstorming",
+      "Multicriteria decision analysis",
+      "Nominal group technique"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The nominal group technique was developed for chaotic, unproductive discussions in large groups on controversial topics. It equalizes participation and minimizes the dominance of vocal members, so all ideas are considered before discussion.",
+    "ref": "PMBOK 8, Guide section 5, Nominal group",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 289,
+        "label": "PMBOK 8, Guide section 5, Nominal group"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Five options have been nominated. The largest block of the group decides, even though no option has a majority. Which voting method is this?",
+    "options": [
+      "Unanimity",
+      "Plurality",
+      "Majority",
+      "Consensus"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Plurality is a decision reached by the largest block in a group even if a majority is not achieved; it is generally used when more than two options are nominated. Majority needs more than 50%; unanimity needs everyone.",
+    "ref": "PMBOK 8, Guide section 5, Voting",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 319,
+        "label": "PMBOK 8, Guide section 5, Voting"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Stakeholders disagree on which of six options best meets their expectations. Which technique ranks the options using weighted criteria?",
+    "options": [
+      "Nominal group technique",
+      "Brainstorming",
+      "Multicriteria decision analysis",
+      "Majority voting"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Multicriteria decision analysis uses a decision matrix: criteria are prioritized and weighted, applied to every alternative to obtain a score, and the alternatives are ranked by score.",
+    "ref": "PMBOK 8, Guide section 5, Multicriteria decision analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 288,
+        "label": "PMBOK 8, Guide section 5, Multicriteria decision analysis"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Finance expects a new system to produce detailed audit reports; sales expects it to be quick and simple to use. Both are key stakeholders. What should the project manager do?",
+    "options": [
+      "Choose the finance version, because audit needs must always come first",
+      "Facilitate a session where both weigh options against the objectives",
+      "Tell each department separately that its needs will be fully met",
+      "Ask the sponsor to decide quickly without involving either department"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Facilitating discussions to align expectations is an enabler of People task 5. A facilitated session gives effective participation and mutual understanding, and reaches a conclusion with buy-in, using the project's objectives and value as the yardstick.",
+    "ref": "PMBOK 8, Guide section 5, Facilitation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 275,
+        "label": "PMBOK 8, Guide section 5, Facilitation"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "According to the PMBOK Guide, what creates mentoring and coaching opportunities within a project team?",
+    "options": [
+      "Mixing team members of different seniority levels and expertise",
+      "Assigning only experienced specialists to the project team",
+      "Keeping junior members away from complex work until ready",
+      "Relying on the functional managers to train every new team member"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "By strategically mixing team members of different seniority levels and expertise, the project management team facilitates an exchange of knowledge and skills; this mix provides mentorship and coaching opportunities for less-experienced members.",
+    "ref": "PMBOK 8, Standard 2.5.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 54,
+        "label": "PMBOK 8, Standard 2.5.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "What can team performance assessments help the project management team identify?",
+    "options": [
+      "The cost baseline for the remaining work",
+      "Stakeholders who should leave the register",
+      "Vendors that should be replaced on the project",
+      "The training, coaching or mentoring needed"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "As a result of evaluating the team's overall performance, the project management team can identify the specific training, coaching, mentoring, assistance or changes required to improve it.",
+    "ref": "PMBOK 8, Guide section 4, Team performance assessments",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 247,
+        "label": "PMBOK 8, Guide section 4, Team performance assessments"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Members of a new agile team are unsure how to proceed with their work. What does the PMBOK Guide's tailoring advice suggest?",
+    "options": [
+      "Replace the members with people who have done this kind of work before",
+      "Give the team a detailed procedure and personally check every step",
+      "Assess their needs, then offer guidance, mentorship and training",
+      "Wait for the team to learn on its own during the first iterations"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Table 3-1 suggests assessing the team's specific needs to identify the most appropriate support mechanisms, including guidance, mentorship, training and knowledge-sharing practices.",
+    "ref": "PMBOK 8, Guide Table 3-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 217,
+        "label": "PMBOK 8, Guide Table 3-1"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Who may take responsibility for team members' professional growth, according to the PMBOK Guide?",
+    "options": [
+      "Only the sponsor, because the sponsor funds the whole project",
+      "The project management team, managers, PMOs or the members",
+      "Only the human resources department of the organization",
+      "No one, because growth lies outside the scope of any project"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The project management team's responsibility may include the team's professional growth; it may also be taken by functional managers, PMOs, line managers, or each team member.",
+    "ref": "PMBOK 8, Standard 2.5.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 54,
+        "label": "PMBOK 8, Standard 2.5.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "How do effective project management teams develop people's competencies, according to the PMBOK Guide?",
+    "options": [
+      "By keeping each person on tasks they have already mastered",
+      "By sending everyone on the same course at the very start",
+      "By leaving all development to the yearly appraisal cycle",
+      "By offering challenges that stretch skills, with feedback"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Effective project management teams create opportunities for individuals to take on challenges that stretch their skills and provide them with constructive feedback, integrating competency development into the project's workflow.",
+    "ref": "PMBOK 8, Standard 2.5.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 54,
+        "label": "PMBOK 8, Standard 2.5.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A key stakeholder struggles to give useful feedback on increments. The project manager asks questions that help the stakeholder work out what to look for. What is the project manager doing?",
+    "options": [
+      "Coaching",
+      "Mentoring",
+      "Training",
+      "Team building"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Coaching helps a person, such as a team member or a stakeholder, find a solution to a specific problem on their own by asking the right questions. Mentoring is a longer-term relationship of sharing knowledge and experience.",
+    "ref": "PMBOK 8, Guide section 5, Coaching and mentoring",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 256,
+        "label": "PMBOK 8, Guide section 5, Coaching and mentoring"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "The operations department will run the system that the project delivers. How is the department best described?",
+    "options": [
+      "An external customer of the project",
+      "A regulator of the project",
+      "An internal customer of the project",
+      "A supplier to the project"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The department is inside the performing organization and will use what the project delivers, so it is an internal customer. Stakeholders can be internal or external to the organization.",
+    "ref": "PMBOK 8, Guide 2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 172,
+        "label": "PMBOK 8, Guide 2.5"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "What does the PMBOK Guide call the ultimate success indicator and driver of projects?",
+    "options": [
+      "Scope",
+      "Value",
+      "Schedule",
+      "Quality"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Value, also referred to as project value, is the ultimate success indicator and driver of projects. It represents the overall worth of the outcomes and the net benefits to stakeholders.",
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A customer asked for new software to raise staff productivity. The software works, but productivity has not changed because staff do not know how to use it. What does the PMBOK Guide's example suggest?",
+    "options": [
+      "The project succeeded, because the deliverable was accepted",
+      "The customer should start a separate project for productivity",
+      "The software should be replaced with one that has more features",
+      "Adding training can enable the outcome that the customer needs"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "The software is the output but does not enable productivity by itself. Adding a deliverable such as training can enable the higher-value outcome; teams should understand both the deliverable and the intended outcome.",
+    "ref": "PMBOK 8, Standard 3.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 64,
+        "label": "PMBOK 8, Standard 3.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "In the Eighth Edition's example, a fast-paced organization that values simplicity gets an internal system with fewer features and customizations. Why?",
+    "options": [
+      "A simpler solution fits the culture and raises usage and satisfaction",
+      "Fewer features will always cost less, whatever the users actually need",
+      "The vendor could not deliver the full feature list in time",
+      "Customization is never allowed on internal technology projects"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "A value-focused approach aligns the project with business outcomes such as usage and adoption. Reducing features to match a culture that values simplicity can increase overall usage and satisfaction.",
+    "ref": "PMBOK 8, Standard 3.4.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 65,
+        "label": "PMBOK 8, Standard 3.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "How does the PMBOK Guide describe project quality?",
+    "options": [
+      "Delivering every requested feature, whatever it costs",
+      "Passing inspections with no further customer review",
+      "Satisfying stakeholders' expectations and meeting requirements",
+      "Meeting the schedule baseline without using any of the reserves set aside"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Project quality entails satisfying relevant stakeholders' expectations and fulfilling project and product requirements; quality focuses on meeting the acceptance criteria for deliverables.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "According to the PMBOK Guide, where are the product acceptance criteria that quality is linked to described?",
+    "options": [
+      "In the lessons learned register and the issue log",
+      "In the team charter and the responsibility matrix",
+      "In the risk register and the latest risk report",
+      "In the charter, statement of work or other key documents"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Quality is linked to the product acceptance criteria, as described in the project charter, statement of work or other key documents. In evolving projects they are refined and then validated during acceptance.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "According to the agile principles cited in the Agile Practice Guide, what increases customer satisfaction?",
+    "options": [
+      "A complete specification signed off before work starts",
+      "Early and continuous delivery of valuable products",
+      "A single release of the whole product at the end",
+      "Detailed status reports sent to customers each week"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Agile life cycles fulfill the Agile Manifesto's values and principles; in particular, customer satisfaction increases with early and continuous delivery of valuable products.",
+    "ref": "Agile Practice Guide, 3.9.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 44,
+        "label": "Agile Practice Guide, 3.9.2"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "An agile team wants to know frequently whether internal customers are satisfied with each increment. What does the Agile Practice Guide suggest?",
+    "options": [
+      "A survey at project closure",
+      "An annual customer audit",
+      "A count of story points done",
+      "Frequent pulse surveys"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Among metrics that capture value and outcomes, the Agile Practice Guide lists customer satisfaction or Net Promoter Score through frequent pulse surveys of end users or internal customers.",
+    "ref": "Agile Practice Guide, 5.5.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 94,
+        "label": "Agile Practice Guide, 5.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which quality dimension asks whether deliverables earn valuable feedback from customers and end users, including usability and user experience?",
+    "options": [
+      "Satisfaction",
+      "Conformity",
+      "Uniformity",
+      "Resilience"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Satisfaction asks whether deliverables and processes elicit valuable feedback from customers and end users, including usability and user experience. Conformity is fitness for use against specifications.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Pulse surveys show internal customers' satisfaction falling over three iterations. What should the team do first?",
+    "options": [
+      "Pause the surveys until the release has been finished",
+      "Report the decline only at the project's final review",
+      "Find the cause with the customers, then decide how to respond",
+      "Add some extra features to the next increment to win the customers back"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The task is to monitor customer satisfaction and respond as needed. Feedback loops are there so the team can adapt; the response should follow from the cause, found together with the customers.",
+    "ref": "Agile Practice Guide, 6.5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 116,
+        "label": "Agile Practice Guide, 6.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Regular reviews show the project is unlikely to deliver the value in its business case, and the misalignment persists. What does the PMBOK Guide say may be best?",
+    "options": [
+      "Continue as planned, to protect the money already spent",
+      "Terminate the effort",
+      "Cut testing to deliver the remaining scope sooner",
+      "Keep the findings quiet until the next phase gate"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Desired outcomes are assessed throughout with quality gates, feedback loops and reviews. If misalignment persists or the project is unlikely to deliver the intended value, it may be best to terminate the effort.",
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Which TWO are voting techniques described in the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Unanimity",
+      "Plurality",
+      "Benchmarking",
+      "Mind mapping",
+      "Root cause analysis"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "The PMBOK Guide's voting techniques are unanimity, majority and plurality.",
+    "ref": "PMBOK 8, Guide section 5, Voting",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 319,
+        "label": "PMBOK 8, Guide section 5, Voting"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which THREE does a facilitator help ensure, according to the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Effective participation",
+      "Mutual understanding among participants",
+      "Follow-up on the actions and agreements reached",
+      "A decision made by the most senior person present",
+      "The exclusion of stakeholders who disagree",
+      "No disagreement at any point in the session"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "hybrid",
+    "explanation": "A facilitator helps ensure effective participation, mutual understanding, that all contributions are considered, full buy-in according to the decision process, and that actions and agreements are dealt with afterward.",
+    "ref": "PMBOK 8, Guide section 5, Facilitation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 275,
+        "label": "PMBOK 8, Guide section 5, Facilitation"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO measures does the Agile Practice Guide suggest for tracking customer satisfaction?",
+    "type": "multi",
+    "options": [
+      "Net Promoter Score",
+      "Usage patterns",
+      "Lines of code written",
+      "Number of meetings held",
+      "Hours logged by the team"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Customer satisfaction can be tracked with feedback through surveys, Net Promoter Score or usage patterns, reviewed regularly so the organization can adapt.",
+    "ref": "Agile Practice Guide, 6.5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 116,
+        "label": "Agile Practice Guide, 6.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Match each quality dimension with the question it asks about deliverables and processes.",
+    "type": "match",
+    "left": [
+      "Conformity",
+      "Reliability",
+      "Satisfaction",
+      "Compliance"
+    ],
+    "right": [
+      "Are they aligned with specifications and fit for use?",
+      "Are they consistent enough to meet the desired outcomes?",
+      "Do they earn valuable feedback from customers and users?",
+      "Do they meet regulatory and industry standards?"
+    ],
+    "approach": "predictive",
+    "explanation": "The Eighth Edition's quality dimensions include performance, conformity, reliability, resilience, satisfaction, uniformity, efficiency, sustainability and compliance.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "How should the project manager handle the two departments' different expectations?",
+    "case": "loyalty-app",
+    "options": [
+      "Build both departments' wishes in full and solve conflicts later",
+      "Let marketing decide, since marketing requested the app in the first place",
+      "Facilitate a joint session to weigh the options against the app's value",
+      "Ask each department to send its requirements to the vendor directly"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "When internal customers' expectations conflict, facilitate a discussion to align them, with every contribution considered and the app's objectives and value as the yardstick.",
+    "ref": "PMBOK 8, Guide section 5, Facilitation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 275,
+        "label": "PMBOK 8, Guide section 5, Facilitation"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "What do the user test results suggest the team should do?",
+    "case": "loyalty-app",
+    "options": [
+      "Use the shoppers' feedback to reprioritize toward a simpler sign-up",
+      "Ignore the tests, because shoppers are not the paying customer",
+      "Keep the full sign-up, since marketing's data needs come first",
+      "Stop testing with shoppers until the whole app has been built"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Shoppers are external customers whose satisfaction drives the app's value. Feedback loops exist so the team can adapt; the satisfaction dimension of quality asks whether deliverables earn valuable feedback, including on usability.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "After the first release, how should the team monitor whether customers are satisfied?",
+    "case": "loyalty-app",
+    "options": [
+      "Wait for complaints to reach the customer service department",
+      "Count the number of features delivered in each sprint",
+      "Survey everyone once, when the project is formally closed",
+      "Track pulse surveys, NPS and usage patterns, and review them often"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide suggests frequent pulse surveys, Net Promoter Score and usage patterns, reviewed regularly so the team can adapt and respond as needed.",
+    "ref": "Agile Practice Guide, 5.5.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 94,
+        "label": "Agile Practice Guide, 5.5.3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "book": "agile",
+    "page": 78,
+    "label": "Agile Practice Guide, 4.7.5"
+  },
+  {
+    "book": "agile",
+    "page": 95,
+    "label": "Agile Practice Guide, 5.5.4"
+  },
+  {
+    "book": "agile",
+    "page": 95,
+    "label": "Agile Practice Guide, 5.5.5"
+  },
+  {
+    "book": "answerbook",
+    "page": 311,
+    "label": "The Project Management Answer Book, Chapter 11, Q18"
+  },
+  {
+    "book": "pmbok8",
+    "page": 115,
+    "label": "PMBOK 8, Guide 2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 118,
+    "label": "PMBOK 8, Guide 2.1.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 119,
+    "label": "PMBOK 8, Guide 2.1.5.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 119,
+    "label": "PMBOK 8, Guide 2.1.5.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 131,
+    "label": "PMBOK 8, Guide 2.1.6.7"
+  },
+  {
+    "book": "pmbok8",
+    "page": 177,
+    "label": "PMBOK 8, Guide 2.5.2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 178,
+    "label": "PMBOK 8, Guide 2.5.2.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 178,
+    "label": "PMBOK 8, Guide Figure 2-35"
+  },
+  {
+    "book": "pmbok8",
+    "page": 179,
+    "label": "PMBOK 8, Guide 2.5.2.7"
+  },
+  {
+    "book": "pmbok8",
+    "page": 181,
+    "label": "PMBOK 8, Guide 2.5.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 182,
+    "label": "PMBOK 8, Guide Figure 2-39"
+  },
+  {
+    "book": "pmbok8",
+    "page": 222,
+    "label": "PMBOK 8, Guide section 4, Communications management plan"
+  },
+  {
+    "book": "pmbok8",
+    "page": 247,
+    "label": "PMBOK 8, Guide section 4, Status report"
+  },
+  {
+    "book": "pmbok8",
+    "page": 249,
+    "label": "PMBOK 8, Guide section 4, Work performance reports"
+  },
+  {
+    "book": "pmbok8",
+    "page": 250,
+    "label": "PMBOK 8, Guide section 5, Active listening"
+  },
+  {
+    "book": "pmbok8",
+    "page": 257,
+    "label": "PMBOK 8, Guide section 5, Communication competence"
+  },
+  {
+    "book": "pmbok8",
+    "page": 257,
+    "label": "PMBOK 8, Guide section 5, Communication methods"
+  },
+  {
+    "book": "pmbok8",
+    "page": 258,
+    "label": "PMBOK 8, Guide section 5, Communication models"
+  },
+  {
+    "book": "pmbok8",
+    "page": 260,
+    "label": "PMBOK 8, Guide section 5, Communication requirements analysis"
+  },
+  {
+    "book": "pmbok8",
+    "page": 260,
+    "label": "PMBOK 8, Guide section 5, Communication technology"
+  },
+  {
+    "book": "pmbok8",
+    "page": 275,
+    "label": "PMBOK 8, Guide section 5, Feedback"
+  },
+  {
+    "book": "pmbok8",
+    "page": 291,
+    "label": "PMBOK 8, Guide section 5, Presentations"
+  },
+  {
+    "book": "pmbok8",
+    "page": 295,
+    "label": "PMBOK 8, Guide section 5, Project dashboards"
+  },
+  {
+    "book": "pmbok8",
+    "page": 296,
+    "label": "PMBOK 8, Guide section 5, Project reporting"
+  },
+  {
+    "book": "pmbok8",
+    "page": 317,
+    "label": "PMBOK 8, Guide section 5, Visual controls"
+  }
+]

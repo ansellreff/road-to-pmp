@@ -65,3 +65,12 @@ Every problem met while building the PMP course, newest group last. Section name
 | PMP-37 | Maslow's hierarchy of needs is a familiar motivation model, but the Eighth Edition does not describe it; it names Maslow only for Theory Z. | Not taught, so the lesson stays with the book. If a practice question elsewhere uses the hierarchy, tell me and I will add a short note. | Module 1.4, Motivation |
 | PMP-38 | On first writing, the right answer was the longest option in 10 of 25 questions in 1.4 (the checker's limit is 35%). | One wrong option was lengthened in five questions of 1.4 and one of 1.6. Now 5, 5 and 6 per module; the checker reports no problems. | `tools/check_content.py --report` |
 | PMP-39 | The "point and click" grid drawing already existed from CAPM, and CAPM has three grid questions on it. | Reused unchanged (drawings are shared, so CAPM's content is untouched), with a new situation and a strategy question in a different form, so nothing repeats CAPM. | `web/src/components/diagrams/figures.tsx` |
+
+### PMP Session 5 (modules 1.7 to 1.9)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| PMP-40 | People task 6 speaks of "internal and external customers", but no book in your folder defines the terms; PMBOK 8 speaks of internal and external stakeholders, and the Agile Practice Guide mentions internal customers once. | Explained in plain words from those two passages (inside or outside the performing organization), with the sources named. | Module 1.7, Internal and external customers |
+| PMP-41 | The communication channels formula, N × (N − 1) / 2, is not printed in PMBOK 8, which lists only "the number of potential communication channels" as something to analyze. | Taken from The Project Management Answer Book, chapter 11, Q18, as CAPM did. The calculations in the lesson and questions pass the calculation check. | Module 1.9, Communication channels |
+| PMP-42 | The Eighth Edition says trust matters for sharing tacit knowledge, but the plain statement that trust is "the most important part of knowledge management" is in the Sixth Edition only. | Both are cited, the Sixth Edition named as such, since the exam may use its wording. | Module 1.8, Fostering an environment |
+| PMP-43 | On first writing, the right answer was the longest option in 12 of 26 questions in 1.7 (over the 35% limit) and in 8 of 26 in 1.8. | One wrong option lengthened in seven questions of 1.7 and three of 1.8; now 5 and 5. In 1.9 the options were balanced while writing (0). | `tools/check_content.py --report` |

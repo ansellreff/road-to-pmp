@@ -1,0 +1,67 @@
+[
+  {
+    "book": "agile",
+    "page": 73,
+    "label": "Agile Practice Guide, 4.6"
+  },
+  {
+    "book": "agile",
+    "page": 85,
+    "label": "Agile Practice Guide, 5.2.5"
+  },
+  {
+    "book": "agile",
+    "page": 86,
+    "label": "Agile Practice Guide, 5.2.7"
+  },
+  {
+    "book": "pmbok6",
+    "page": 120,
+    "label": "PMBOK 6, 4.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 129,
+    "label": "PMBOK 8, Guide 2.1.6.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 130,
+    "label": "PMBOK 8, Guide Figure 2-8"
+  },
+  {
+    "book": "pmbok8",
+    "page": 228,
+    "label": "PMBOK 8, Guide section 4, Lessons learned register"
+  },
+  {
+    "book": "pmbok8",
+    "page": 250,
+    "label": "PMBOK 8, Guide section 5, After-action reviews"
+  },
+  {
+    "book": "pmbok8",
+    "page": 278,
+    "label": "PMBOK 8, Guide section 5, Information management"
+  },
+  {
+    "book": "pmbok8",
+    "page": 279,
+    "label": "PMBOK 8, Guide section 5, In-progress postmortems"
+  },
+  {
+    "book": "pmbok8",
+    "page": 280,
+    "label": "PMBOK 8, Guide section 5, Knowledge management"
+  },
+  {
+    "book": "pmbok8",
+    "page": 299,
+    "label": "PMBOK 8, Guide section 5, Retrospectives"
+  },
+  {
+    "book": "pmbok8",
+    "page": 306,
+    "label": "PMBOK 8, Guide section 5, Storytelling"
+  }
+]

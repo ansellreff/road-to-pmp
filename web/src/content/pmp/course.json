@@ -15,9 +15,9 @@
         { "id": "1-04-team-performance", "title": "Team Performance: Motivation, Emotional Intelligence, Virtual Teams, Problem Solving", "ready": true, "tasks": [3] },
         { "id": "1-05-stakeholder-analysis", "title": "Identifying and Analyzing Stakeholders", "ready": true, "tasks": [4, 5] },
         { "id": "1-06-stakeholder-engagement", "title": "Engaging Stakeholders: Trust and Influence", "ready": true, "tasks": [4] },
-        { "id": "1-07-expectations", "title": "Aligning and Managing Expectations; Mentoring", "ready": false, "tasks": [5, 6] },
-        { "id": "1-08-knowledge-transfer", "title": "Knowledge Transfer", "ready": false, "tasks": [7] },
-        { "id": "1-09-communication-reporting", "title": "Communication and Reporting", "ready": false, "tasks": [8] }
+        { "id": "1-07-expectations", "title": "Aligning and Managing Expectations; Mentoring", "ready": true, "tasks": [5, 6] },
+        { "id": "1-08-knowledge-transfer", "title": "Knowledge Transfer", "ready": true, "tasks": [7] },
+        { "id": "1-09-communication-reporting", "title": "Communication and Reporting", "ready": true, "tasks": [8] }
       ]
     },
     {

@@ -1,0 +1,679 @@
+[
+  {
+    "id": "q1",
+    "q": "What does the communications management plan describe?",
+    "options": [
+      "The order in which work packages will be completed and handed over",
+      "The criteria that the sponsor will use to accept the final deliverables",
+      "How, when and by whom information is administered and disseminated",
+      "The budget that is reserved for buying communication technology"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The communications management plan describes how, when and by whom information will be administered and disseminated, and how communications will be planned, structured, implemented and monitored.",
+    "ref": "PMBOK 8, Guide section 4, Communications management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 222,
+        "label": "PMBOK 8, Guide section 4, Communications management plan"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which of these items does the communications management plan include?",
+    "options": [
+      "The person responsible for authorizing release of confidential information",
+      "The salary bands of the people who prepare and send the project reports",
+      "The detailed technical design of every deliverable the project team produces",
+      "The full list of risks with their probability and impact ratings"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The plan includes stakeholder requirements, information to be communicated, escalation processes, reasons, timeframe and frequency, the person responsible for communicating, the person responsible for authorizing release of confidential information, recipients, and methods.",
+    "ref": "PMBOK 8, Guide section 4, Communications management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 222,
+        "label": "PMBOK 8, Guide section 4, Communications management plan"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A project team has 10 members, including the project manager. How many potential communication channels are there?",
+    "options": [
+      "20",
+      "90",
+      "100",
+      "45"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Channels = N × (N − 1) / 2. Here 10 × 9 / 2 = 45.",
+    "ref": "The Project Management Answer Book, Chapter 11, Q18",
+    "links": [
+      {
+        "book": "answerbook",
+        "page": 311,
+        "label": "The Project Management Answer Book, Chapter 11, Q18"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A team of 8 people grows to 10. How many communication channels are added?",
+    "options": [
+      "2",
+      "17",
+      "45",
+      "28"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Before: 8 × 7 / 2 = 28 channels. After: 10 × 9 / 2 = 45 channels. Added: 45 − 28 = 17.",
+    "ref": "The Project Management Answer Book, Chapter 11, Q18",
+    "links": [
+      {
+        "book": "answerbook",
+        "page": 311,
+        "label": "The Project Management Answer Book, Chapter 11, Q18"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "The project manager emails a monthly report to 40 stakeholders. Which communication method is this?",
+    "options": [
+      "Interactive communication",
+      "Pull communication",
+      "Push communication",
+      "Verbal communication"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Push communications are sent or distributed directly to specific recipients who need the information, for example letters, memos, reports and emails.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "What is the main limitation of push communication, according to the PMBOK Guide?",
+    "options": [
+      "It ensures distribution but not that the message is understood",
+      "It can only be used for small, simple information sets",
+      "It requires every recipient to be present at exactly the same time",
+      "It cannot be used for reports or press releases"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Push communication ensures that the information is distributed but does not ensure that it reaches or is understood by the intended audience.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A program has thousands of users who need extensive training content, to be used whenever they choose. Which communication method fits best?",
+    "options": [
+      "Interactive communication",
+      "Push communication",
+      "Small group communication",
+      "Pull communication"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Pull communication is used for large, complex information sets or for large audiences; recipients access content at their own discretion, for example eLearning courses and web portals.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "In the basic communication model, what is the step in which the message is coded into symbols such as text or sound?",
+    "options": [
+      "Decode",
+      "Encode",
+      "Acknowledge",
+      "Feedback"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The basic model is encode (code the message into symbols), transmit (send it through a channel, where noise may interfere) and decode (the receiver translates it back into a useful form).",
+    "ref": "PMBOK 8, Guide section 5, Communication models",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 258,
+        "label": "PMBOK 8, Guide section 5, Communication models"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A stakeholder acknowledges receipt of a message. What does this mean in the interactive communication model?",
+    "options": [
+      "The stakeholder agrees with the message",
+      "The stakeholder has fully understood everything in the message",
+      "The message was received, not necessarily understood",
+      "The sender no longer needs any feedback"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Acknowledging receipt does not necessarily mean agreement with or comprehension of the message, merely that it has been received. Understanding is confirmed through feedback.",
+    "ref": "PMBOK 8, Guide section 5, Communication models",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 258,
+        "label": "PMBOK 8, Guide section 5, Communication models"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "In the communication model, what is the sender responsible for?",
+    "options": [
+      "Making the message clear and complete, and confirming it is understood",
+      "Only transmitting the message through whatever channel the plan has chosen",
+      "Decoding the message into a form that is useful to the receiver",
+      "Acknowledging receipt of the message on behalf of the receiver"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The sender is responsible for transmitting the message, ensuring the information is clear and complete, and confirming the message is correctly interpreted. The receiver decodes, interprets and acknowledges or responds.",
+    "ref": "PMBOK 8, Guide section 5, Communication models",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 258,
+        "label": "PMBOK 8, Guide section 5, Communication models"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which of these is an example of noise in the communication model?",
+    "options": [
+      "The receiver's acknowledgment that the message arrived",
+      "The sender's encoding of the message",
+      "Feedback that matches the original message",
+      "The receiver's distraction or lack of interest"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Noise includes any interference or barriers that might compromise understanding of the message, such as the distraction of the receiver, variations in perception, or lack of knowledge or interest.",
+    "ref": "PMBOK 8, Guide section 5, Communication models",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 258,
+        "label": "PMBOK 8, Guide section 5, Communication models"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A stakeholder says she never understood a key decision, although it was emailed to her twice. What should the project manager do?",
+    "options": [
+      "Email it a third time, this time marked with a high-priority flag",
+      "Check her needs and use a method with feedback, such as a short call",
+      "Record that she was informed, and close the matter in the issue log today",
+      "Ask the sponsor to remind her that she needs to read her emails"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Push communication such as email ensures distribution, not understanding. The interactive model adds feedback to confirm understanding, and communication should be tailored to the stakeholder's needs.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What does the Monitor Communications process ensure?",
+    "options": [
+      "That every stakeholder receives exactly the same report each month",
+      "That the communication budget is never once exceeded during the project",
+      "That the information needs of the project and stakeholders are met",
+      "That all communication between stakeholders is put in writing"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Monitor Communications is the process of ensuring the information needs of the project and its stakeholders are met; its key benefit is the optimal information flow defined in the communications and stakeholder engagement plans.",
+    "ref": "PMBOK 8, Guide 2.5.2.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 179,
+        "label": "PMBOK 8, Guide 2.5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "What is the purpose of a visual control, or information radiator, such as a task board?",
+    "options": [
+      "To let anyone compare actual with expected performance at a glance",
+      "To store confidential documents for the steering committee's review",
+      "To replace the product backlog as the team's list of future work",
+      "To record each member's working hours for the finance department"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Visual controls illustrate processes so that actual and expected performance can easily be compared. They should be highly visible for anyone to see; a task board shows work to do, in progress and completed.",
+    "ref": "PMBOK 8, Guide section 5, Visual controls",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 317,
+        "label": "PMBOK 8, Guide section 5, Visual controls"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "An agile team is choosing metrics for its dashboard. What does the Agile Practice Guide advise?",
+    "options": [
+      "Track every single metric that the team's tools are able to produce",
+      "Hide the metrics until they start to show good results",
+      "Change the whole set of metrics in every single iteration",
+      "Start small and drop metrics that no longer inform decisions"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "The measurement guidelines: start small with a minimal set of metrics, visualize openly, review and act on them, and decommission metrics that no longer influence decisions.",
+    "ref": "Agile Practice Guide, 5.5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 95,
+        "label": "Agile Practice Guide, 5.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A sponsor asks an agile team when the remaining scope will be finished. How should the team report this?",
+    "options": [
+      "As a single fixed date that the whole team will commit to meeting",
+      "As a probabilistic forecast, such as a range with a confidence level",
+      "As the total number of hours each team member has worked so far",
+      "As a refusal, since agile teams never forecast any of their delivery dates"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Stable throughput and an up-to-date item count allow probabilistic forecasts. Teams should present forecasts as ranges or confidence curves, never as single-point commitments.",
+    "ref": "Agile Practice Guide, 5.5.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 95,
+        "label": "Agile Practice Guide, 5.5.5"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "How should project information be reported to different groups of stakeholders?",
+    "options": [
+      "With the same detailed report sent to every group",
+      "Only by exception, when something goes wrong",
+      "Adapted in level, format and detail to each group",
+      "Only through formal presentations to the sponsor"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Project information is distributed to many groups and should be adapted to provide an appropriate level, format and detail for each type of stakeholder. It may be prepared regularly or on an exception basis.",
+    "ref": "PMBOK 8, Guide section 5, Project reporting",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 296,
+        "label": "PMBOK 8, Guide section 5, Project reporting"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "What does a status report typically include, according to the PMBOK Guide?",
+    "options": [
+      "Progress since the last report and forecasts for cost and schedule",
+      "The full list of requirements and the acceptance criteria for each",
+      "The team's values, agreements and operating guidelines for working",
+      "The contracts signed with each supplier and the payments made to them"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A status report provides information on the current status of the project and may include progress since the last report and forecasts for cost and schedule performance.",
+    "ref": "PMBOK 8, Guide section 4, Status report",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 247,
+        "label": "PMBOK 8, Guide section 4, Status report"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A project dashboard shows a red stoplight for one measure. What does the PMBOK Guide suggest adding?",
+    "options": [
+      "A second dashboard version that hides the red measure",
+      "A new baseline so that the measure turns green again",
+      "Nothing, because the colors speak clearly for themselves",
+      "A text explanation for measures outside the thresholds"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Dashboards often use stoplight (red-amber-green) charts, bar charts, pie charts and control charts; a text explanation can be used for any measures outside the established thresholds.",
+    "ref": "PMBOK 8, Guide section 5, Project dashboards",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 295,
+        "label": "PMBOK 8, Guide section 5, Project dashboards"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "What are work performance reports intended to generate?",
+    "options": [
+      "Contracts, invoices and payments",
+      "Decisions, actions or awareness",
+      "Requirements and acceptance criteria",
+      "Team charters and ground rules"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Work performance reports are representations of work performance information intended to generate decisions, actions or awareness, circulated as the communications management plan defines.",
+    "ref": "PMBOK 8, Guide section 4, Work performance reports",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance reports"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which of these is a leading indicator that project performance may be at risk?",
+    "options": [
+      "The cost variance that was reported last month",
+      "The number of deliverables that are already completed",
+      "Key stakeholders who are not available or engaged",
+      "The resources consumed during the last phase"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Leading indicators give early warning: the lack of a risk management process, stakeholders who are not available or engaged, or poorly defined success criteria. Cost variance, deliverables completed and resources consumed are lagging indicators.",
+    "ref": "PMBOK 8, Guide 2.1.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 119,
+        "label": "PMBOK 8, Guide 2.1.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Why does the PMBOK Guide prefer leading indicators whenever possible?",
+    "options": [
+      "They can help prevent problems before variances cross thresholds",
+      "They are always much easier to measure than lagging indicators",
+      "They remove the need to track any lagging indicators at all",
+      "They are needed only on predictive projects, never on agile ones"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Leading indicators reveal trends before performance variances cross the tolerance threshold, so they can be used to prevent problems that may require rework. Lagging indicators are easier to measure.",
+    "ref": "PMBOK 8, Guide 2.1.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 119,
+        "label": "PMBOK 8, Guide 2.1.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which is one of the three core components of effective project governance in the PMBOK Guide?",
+    "options": [
+      "A fixed meeting schedule that every project in the portfolio follows",
+      "A single report format that is used for all of the stakeholders",
+      "Approval of every single task by the steering committee, in advance",
+      "Signaling mechanisms, such as leading indicators, for target metrics"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Effective governance requires target metrics aligned with strategic goals, clear signaling mechanisms or alarm systems for those metrics (typically leading indicators), and effective feedback mechanisms for decision-makers.",
+    "ref": "PMBOK 8, Guide 2.1.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 118,
+        "label": "PMBOK 8, Guide 2.1.3"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "This iteration burndown chart will go into the iteration report. Which statement about it is accurate?",
+    "diagram": "burndown-figure",
+    "options": [
+      "The team completed all 50 story points by the last day",
+      "Remaining work rose on day 7, and 4 points were left at the end",
+      "The team stayed ahead of the ideal line for most of the iteration",
+      "Remaining work fell by the same amount every single day"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Remaining work went from 27 points on day 6 to 31 on day 7, so work was added or re-estimated, and 4 points were still open on day 10. The actual line was above the ideal line, that is behind it, after day 0.",
+    "ref": "PMBOK 8, Guide section 4, Work performance reports",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance reports"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "How should governance, including its reporting, be tailored according to the PMBOK Guide?",
+    "options": [
+      "Comprehensive for every project, whatever its approach",
+      "Left out entirely for adaptive and hybrid projects",
+      "Lighter for adaptive work, fuller for large predictive work",
+      "Decided by each team member individually for their own tasks"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Governance can be tailored: lightweight for adaptive methods, moderate or combined for hybrid projects, and comprehensive for large predictive portfolios, programs and projects.",
+    "ref": "PMBOK 8, Guide 2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE does communication requirements analysis consider, according to the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "The number of potential communication channels",
+      "Legal requirements",
+      "Internal and external information needs",
+      "The team members' hourly rates",
+      "The make-or-buy decision",
+      "The critical path of the schedule"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Sources include the stakeholder register and engagement plan, the number of communication channels, organizational charts, relationships, the development approach, disciplines involved, logistics, internal and external information needs, and legal requirements.",
+    "ref": "PMBOK 8, Guide section 5, Communication requirements analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 260,
+        "label": "PMBOK 8, Guide section 5, Communication requirements analysis"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are examples of pull communication?",
+    "type": "multi",
+    "options": [
+      "Web portals",
+      "Knowledge repositories",
+      "Emails",
+      "Press releases",
+      "Phone calls"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Pull methods include web portals, intranet sites, eLearning courses, lessons learned databases and knowledge repositories. Emails and press releases are push; phone calls are interactive.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are measurement guidelines in the Agile Practice Guide?",
+    "type": "multi",
+    "options": [
+      "Visualize openly on information radiators or dashboards",
+      "Decommission metrics that no longer influence decisions",
+      "Collect every metric the tools can produce",
+      "Show the metrics only to the project manager",
+      "Change the metric set in every iteration"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "The four guidelines are: start small and evolve; visualize openly; review and act; decommission low-value metrics.",
+    "ref": "Agile Practice Guide, 5.5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 95,
+        "label": "Agile Practice Guide, 5.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each form of communication with its description.",
+    "type": "match",
+    "left": [
+      "Interpersonal",
+      "Small group",
+      "Public",
+      "Mass"
+    ],
+    "right": [
+      "Between individuals, typically face to face",
+      "Within groups of three to six people",
+      "A speaker addressing a larger audience",
+      "Minimal connection to a large, sometimes anonymous audience"
+    ],
+    "approach": "predictive",
+    "explanation": "The communications management plan applies different approaches to interpersonal, small group, public and mass communication.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement with the communication method it describes.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "A videoconference with the design team is",
+        "choices": [
+          "push communication",
+          "interactive communication",
+          "pull communication"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "A weekly report emailed to the sponsor is",
+        "choices": [
+          "push communication",
+          "pull communication",
+          "interactive communication"
+        ],
+        "answer": 0
+      },
+      {
+        "text": "A lessons learned database searched when needed is",
+        "choices": [
+          "interactive communication",
+          "push communication",
+          "pull communication"
+        ],
+        "answer": 2
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Interactive: real-time, multidirectional, such as meetings and videoconferencing. Push: sent to specific recipients, such as reports and emails. Pull: accessed at the recipient's discretion, such as lessons learned databases.",
+    "ref": "PMBOK 8, Guide section 5, Communication methods",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 257,
+        "label": "PMBOK 8, Guide section 5, Communication methods"
+      }
+    ]
+  }
+]

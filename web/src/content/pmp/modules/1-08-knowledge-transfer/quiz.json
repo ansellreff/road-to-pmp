@@ -1,0 +1,678 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the Manage Project Knowledge process?",
+    "options": [
+      "Recording the project's status for the steering committee",
+      "Using existing knowledge and creating new knowledge for the objectives",
+      "Writing the procedures the team must follow on every single task",
+      "Storing every single project document in the document management system"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Manage Project Knowledge is the process of using existing knowledge and creating new knowledge to achieve the project's objectives and contribute to organizational learning.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which of these is a key benefit of the Manage Project Knowledge process?",
+    "options": [
+      "It produces the cost baseline for the project",
+      "It identifies every stakeholder of the project",
+      "It ensures the product meets its quality metrics",
+      "It collects new knowledge for future projects"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Its key benefits are using prior organizational knowledge to produce or improve the outcome, and collecting new knowledge created by the project to support operations and future projects or phases.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A team keeps its build procedures and configuration settings in a shared wiki. What kind of knowledge is this?",
+    "options": [
+      "Explicit knowledge",
+      "Tacit knowledge",
+      "Emotional intelligence",
+      "Political awareness"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Explicit knowledge is formal and systematic and can be codified in words, pictures or numbers, such as manuals, procedures and documented processes. It is easily shared through information management tools.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A senior engineer can tell from a machine's sound that a bearing will soon fail, but cannot explain how. What kind of knowledge is this?",
+    "options": [
+      "Explicit knowledge",
+      "Codified knowledge",
+      "Tacit knowledge",
+      "Historical information"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Tacit knowledge is personal and embedded in a person's mind: technical skills, experience, insights and practical knowledge. It is difficult to articulate and challenging to transfer.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Why is documenting explicit knowledge not enough on its own, according to the PMBOK Guide?",
+    "options": [
+      "Because documents can never be shared outside the team",
+      "Because codified knowledge lacks context and can be misread",
+      "Because explicit knowledge costs more than tacit knowledge",
+      "Because the lessons learned register is read only at closure"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Codified explicit knowledge lacks context and is open to different interpretations, so although it is easier to share, it is not always understood or applied the right way.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "What does the PMBOK Guide name as an important objective of knowledge management?",
+    "options": [
+      "Replacing all meetings with written documentation",
+      "Keeping knowledge within the team that created it",
+      "Recording lessons only once the project has closed",
+      "Turning tacit knowledge into explicit where possible"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "An important objective of knowledge management is converting tacit knowledge into explicit knowledge when possible.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A key engineer leaves in a month and is the only person who understands a critical interface. What should the project manager do?",
+    "options": [
+      "Start transferring the knowledge now through pairing and shadowing",
+      "Ask the engineer to write everything down on the very last working day",
+      "Ask the functional manager to postpone the engineer's departure",
+      "Let the replacement learn the interface on their own once hired"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Identifying knowledge critical to the project and transferring it early is the point of the task. Tacit knowledge moves through interaction, such as work shadowing, so it cannot be captured in a last-day document alone.",
+    "ref": "PMBOK 8, Guide section 5, Knowledge management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 280,
+        "label": "PMBOK 8, Guide section 5, Knowledge management"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "How do generalizing specialists help keep knowledge from becoming a bottleneck on an agile team?",
+    "options": [
+      "They own all of the documentation, so others never need to read it",
+      "They are the only people allowed to change critical code",
+      "Their breadth lets them help one another and avoid bottlenecks",
+      "They work alone on specialist tasks to avoid interruptions"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Generalizing specialists have T-shaped skills, one specialty plus breadth, which lets them help one another and avoid bottlenecks. People with only one deep skill are I-shaped.",
+    "ref": "Agile Practice Guide, 4.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 73,
+        "label": "Agile Practice Guide, 4.6"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "According to the PMBOK Guide, what determines which knowledge management tools suit a project?",
+    "options": [
+      "The contract type and the number of vendors involved",
+      "Innovation, complexity and the diversity of the team",
+      "The size of the budget and the length of the schedule",
+      "The sponsor's personal preference for certain tools"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The appropriate tools and techniques depend on the nature of the project, especially the degree of innovation, project complexity, and the level of diversity, including diversity of disciplines, among team members.",
+    "ref": "PMBOK 8, Guide section 5, Knowledge management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 280,
+        "label": "PMBOK 8, Guide section 5, Knowledge management"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "When is the lessons learned register created?",
+    "options": [
+      "At project closure, when the final report is written",
+      "After the first major problem occurs on the project",
+      "Only when the sponsor asks for lessons to be kept",
+      "Early on, as an output of Manage Project Knowledge"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The lessons learned register is created as an output of Manage Project Knowledge early in the project, then used as an input and updated as an output in many processes throughout.",
+    "ref": "PMBOK 8, Guide section 4, Lessons learned register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Lessons learned register"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which content does the PMBOK Guide say a lessons learned register may include?",
+    "options": [
+      "Impacts, recommendations and proposed actions",
+      "Salaries and ratings of each team member",
+      "The signed contract and payments to suppliers",
+      "Each stakeholder's contact details and power"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The register may include the category and description of the situation, its impacts, recommendations and proposed actions: challenges, problems, realized risks and opportunities.",
+    "ref": "PMBOK 8, Guide section 4, Lessons learned register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Lessons learned register"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Who captures lessons learned, according to the PMBOK Guide?",
+    "options": [
+      "Only the project management office, after closure",
+      "Only the project manager, in the final project report",
+      "The persons or teams who were involved in the work",
+      "An external auditor appointed by the sponsor"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The persons or teams involved in the work are also involved in capturing the lessons learned, by any suitable means, including video, pictures or audio.",
+    "ref": "PMBOK 8, Guide section 4, Lessons learned register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Lessons learned register"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "After a major milestone, the team holds a structured review of what happened, why it happened, and how to do better. What is this technique?",
+    "options": [
+      "Benchmarking",
+      "After-action review",
+      "Stakeholder analysis",
+      "Earned value analysis"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "After-action reviews are a simple, structured process to analyze what happened, why, and how it can be done better. They are typically held at the end of a project or after significant milestones.",
+    "ref": "PMBOK 8, Guide section 5, After-action reviews",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 250,
+        "label": "PMBOK 8, Guide section 5, After-action reviews"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "How does an in-progress postmortem differ from a traditional postmortem?",
+    "options": [
+      "It is held only by people from outside the team",
+      "It replaces the lessons learned register entirely",
+      "It looks only at financial performance and costs",
+      "It is held at various stages, not only at the end"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "An in-progress postmortem is conducted at various stages of the life cycle to analyze performance, identify issues and implement improvements, unlike traditional postmortems held at the end of a project.",
+    "ref": "PMBOK 8, Guide section 5, In-progress postmortems",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 279,
+        "label": "PMBOK 8, Guide section 5, In-progress postmortems"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "How does the PMBOK Guide describe retrospectives in relation to lessons learned?",
+    "options": [
+      "As a form of lessons learned meeting, held frequently",
+      "As a replacement for every other form of lessons learned",
+      "As a meeting held only once, at the end of the project",
+      "As a status meeting for reporting to the sponsor"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Retrospectives are a form of lessons learned meeting conducted frequently, at minimum at the end of each iteration. The term is used mostly in adaptive approaches but can refer to any lessons learned session.",
+    "ref": "PMBOK 8, Guide section 5, Retrospectives",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Retrospectives"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Information management tools are most effective for sharing which kind of knowledge?",
+    "options": [
+      "Deep tacit expertise that is hard to explain",
+      "Personal insights shared through conversation",
+      "Simple, unambiguous, codified explicit knowledge",
+      "The emotional reactions of the team to change"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Information management tools create and connect people to information; they are effective for sharing simple, unambiguous, codified explicit knowledge.",
+    "ref": "PMBOK 8, Guide section 5, Information management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 278,
+        "label": "PMBOK 8, Guide section 5, Information management"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "How can information management tools be made more effective, according to the PMBOK Guide?",
+    "options": [
+      "By restricting access to the project manager only",
+      "By adding interaction, such as contacting a lesson's author",
+      "By printing every lesson and keeping it in a library",
+      "By deleting any lesson that is more than a year old"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Tools that connect people to information can be enhanced by adding interaction, for example a \"contact me\" function so users can ask the originators of lessons for advice specific to their project.",
+    "ref": "PMBOK 8, Guide section 5, Information management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 278,
+        "label": "PMBOK 8, Guide section 5, Information management"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A team uses an AI tool to summarize interviews and capture project knowledge. Which risks does the PMBOK Guide highlight?",
+    "options": [
+      "Higher licensing costs and slower meetings",
+      "Fewer retrospectives and longer iterations",
+      "Lower team morale and more frequent conflicts",
+      "Exposing sensitive information and hallucinations"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "AI can be a significant source of knowledge, but significant risks include unintentionally exposing sensitive information and AI hallucinations. Projects should have responsible AI policies.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "According to the Sixth Edition of the PMBOK Guide, what is the most important part of knowledge management?",
+    "options": [
+      "An atmosphere of trust so people want to share",
+      "Choosing the best knowledge management software",
+      "Writing detailed procedures for every activity",
+      "Holding one lessons learned meeting at closure"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Because knowledge resides in people's minds and people cannot be forced to share it, the most important part of knowledge management is creating an atmosphere of trust so that people are motivated to share.",
+    "ref": "PMBOK 6, 4.4",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 120,
+        "label": "PMBOK 6, 4.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Team members on a hybrid project rarely share what they know, although a new document system was introduced. What should the project manager focus on?",
+    "options": [
+      "Making entries in the document system mandatory for all",
+      "Replacing the system with a more advanced platform",
+      "Building trust and giving people chances to share",
+      "Asking the sponsor to link bonuses to documents written"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Even the best knowledge management tools will not work if people are not motivated to share. Tacit knowledge is shared by fostering a collaborative, trust-filled environment with opportunities for interaction.",
+    "ref": "PMBOK 6, 4.4",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 120,
+        "label": "PMBOK 6, 4.4"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Specialists from several projects meet regularly to share experience in their field. Which knowledge management tool is this?",
+    "options": [
+      "A lessons learned register",
+      "A community of practice",
+      "A responsibility matrix",
+      "A work breakdown structure"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Communities of practice, sometimes called communities of interest, and special interest groups are knowledge management tools that connect people to share and create knowledge.",
+    "ref": "PMBOK 8, Guide section 5, Knowledge management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 280,
+        "label": "PMBOK 8, Guide section 5, Knowledge management"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A new tester spends two weeks alongside an experienced tester to learn how she handles difficult test cases. Which technique is this?",
+    "options": [
+      "Benchmarking",
+      "Information gathering",
+      "Document analysis",
+      "Work shadowing"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Work shadowing and reverse shadowing are knowledge management tools that let people learn tacit knowledge by working alongside someone.",
+    "ref": "PMBOK 8, Guide section 5, Knowledge management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 280,
+        "label": "PMBOK 8, Guide section 5, Knowledge management"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which technique does the PMBOK Guide describe as particularly effective for transferring tacit knowledge?",
+    "options": [
+      "Storytelling",
+      "Document analysis",
+      "Library services",
+      "Web searches"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Stories are particularly effective for transferring tacit knowledge, which is often difficult to articulate through formal documentation, by making lessons relatable and memorable.",
+    "ref": "PMBOK 8, Guide section 5, Storytelling",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 306,
+        "label": "PMBOK 8, Guide section 5, Storytelling"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "On an agile team, how does pairing or mobbing with rotating roles help knowledge transfer?",
+    "options": [
+      "It lets one expert do all critical work without interruption",
+      "It replaces the need for retrospectives and product reviews",
+      "Everyone drives and reviews work, exposing gaps early",
+      "It reduces the number of people who know the code base"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Pairing or mobbing with rotating roles involves every person in both driving and reviewing work. This uncovers knowledge gaps early and builds collective ownership of quality.",
+    "ref": "Agile Practice Guide, 5.2.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 85,
+        "label": "Agile Practice Guide, 5.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "What does the PMBOK Guide say AI tools such as interview bots add to managing project knowledge?",
+    "options": [
+      "A full replacement for mentoring and conversation",
+      "Strong capabilities for capturing tacit and explicit knowledge",
+      "A guarantee that the captured knowledge is always correct",
+      "A way to manage knowledge without responsible AI policies"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "The latest AI technologies, such as interview bots, add strong capabilities in capturing and sharing both tacit and explicit knowledge, alongside risks that call for responsible AI policies.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are tools and techniques of the Manage Project Knowledge process?",
+    "type": "multi",
+    "options": [
+      "Storytelling",
+      "After-action reviews",
+      "Information management",
+      "Earned value analysis",
+      "Critical path method",
+      "Make-or-buy analysis"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-8 lists expert judgment, knowledge management, information management, after-action reviews, in-progress postmortems, storytelling, retrospective meetings, and interpersonal and team skills.",
+    "ref": "PMBOK 8, Guide Figure 2-8",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 130,
+        "label": "PMBOK 8, Guide Figure 2-8"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are knowledge management tools that connect people, rather than information management tools?",
+    "type": "multi",
+    "options": [
+      "Communities of practice",
+      "Knowledge fairs and cafés",
+      "Library services",
+      "Web searches",
+      "Document management systems"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Knowledge management tools connect people: networking, communities of practice, shadowing, forums, events, workshops, knowledge fairs and cafés, interactive training. Libraries, web searches and the PMIS are information management tools.",
+    "ref": "PMBOK 8, Guide section 5, Knowledge management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 280,
+        "label": "PMBOK 8, Guide section 5, Knowledge management"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are characteristics of tacit knowledge in the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Difficult to articulate",
+      "Experience-based",
+      "Easily codified in words",
+      "Formal and systematic",
+      "Shared mainly through manuals"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Tacit knowledge is personal and embedded, difficult to articulate, experience-based and challenging to transfer. Being codifiable, formal and systematic, and shared through manuals are marks of explicit knowledge.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each way of capturing lessons with when it is used.",
+    "type": "match",
+    "left": [
+      "Retrospective",
+      "After-action review",
+      "In-progress postmortem",
+      "Lessons learned register"
+    ],
+    "right": [
+      "At least at the end of each iteration",
+      "At the end of a project or after major milestones",
+      "At various stages, to improve as the project goes",
+      "Created early and updated throughout the project"
+    ],
+    "approach": "predictive",
+    "explanation": "Retrospectives happen at least every iteration; after-action reviews typically at the end or after significant milestones; in-progress postmortems at various stages; the lessons learned register is created early and updated throughout.",
+    "ref": "PMBOK 8, Guide section 5, After-action reviews",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 250,
+        "label": "PMBOK 8, Guide section 5, After-action reviews"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about project knowledge.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Manuals and documented procedures are",
+        "choices": [
+          "tacit knowledge",
+          "explicit knowledge",
+          "organizational culture"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Insights embedded in an expert's experience are",
+        "choices": [
+          "tacit knowledge",
+          "explicit knowledge",
+          "work performance data"
+        ],
+        "answer": 0
+      },
+      {
+        "text": "Tacit knowledge is shared mainly through",
+        "choices": [
+          "document libraries",
+          "web searches",
+          "conversation and interaction"
+        ],
+        "answer": 2
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Explicit knowledge, such as manuals and procedures, is codified and easily shared through documents. Tacit knowledge resides in people's minds and is often shared through conversations and interactions between people.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  }
+]
