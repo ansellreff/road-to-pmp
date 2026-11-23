@@ -16,7 +16,7 @@
   { "id": "c15", "front": "Doubling resources", "back": "Does not always halve the time; coordination, learning and knowledge transfer can even lengthen it." },
   { "id": "c16", "front": "Critical path", "back": "The longest path through the network: the shortest possible project duration; usually zero total float." },
   { "id": "c17", "front": "Forward and backward pass (day-1 convention)", "back": "EF = ES + duration − 1. LS = LF − duration + 1." },
-  { "id": "c18", "front": "Total float and free float", "back": "Total: slip without delaying the project. Free: slip without delaying the successor's early start." },
+  { "id": "c18", "front": "Total float versus free float", "back": "Total: slip without delaying the project. Free: slip without delaying the successor's early start." },
   { "id": "c19", "front": "Negative float", "back": "Constraints force dates earlier than logic allows; negative float analysis explores acceleration." },
   { "id": "c20", "front": "Crashing", "back": "Adding resources to critical path activities (overtime, people, expediting); more cost; only works where resources help." },
   { "id": "c21", "front": "Fast tracking", "back": "Doing sequential activities partly in parallel; more risk, rework and coordination." },
