@@ -1,0 +1,681 @@
+[
+  {
+    "id": "q1",
+    "q": "According to the Eighth Edition, how is the quality of a deliverable and of its process measured?",
+    "options": [
+      "By how many team members have reviewed and signed it",
+      "By acceptance criteria, done criteria and fitness for use",
+      "By how closely the work matched the planned schedule",
+      "By the sponsor's personal opinion at the handover"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Quality of the deliverable and its processes is measured by conformance to acceptance criteria, the definition of done (DoD), fitness for use and overall efficiency.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which effort focuses on deliverables meeting the defined specifications, through product design, testing and the handling of defects?",
+    "options": [
+      "Quality assurance",
+      "Quality planning",
+      "Quality audit",
+      "Quality control"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Quality control is about creating deliverables that meet defined specifications and thresholds; related concepts are product design, testing and defects. Quality assurance is about using the processes effectively.",
+    "ref": "PMBOK 8, Guide 2.1.6.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 128,
+        "label": "PMBOK 8, Guide 2.1.6.5"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Every deliverable passes its tests, but the PMO finds that the team skipped two required review steps. Which effort found the problem?",
+    "options": [
+      "Quality assurance, which looks at the processes",
+      "Quality control, which tests the deliverables",
+      "Validate Scope, which formally accepts them",
+      "Benchmarking against other organizations' results"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Quality assurance is about using project processes effectively and following standards; its related concepts include compliance and audits. Here the deliverables were fine, but the process was not followed.",
+    "ref": "PMBOK 8, Guide 2.1.6.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 128,
+        "label": "PMBOK 8, Guide 2.1.6.5"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "In the Eighth Edition, which process updates the quality management plan and uses test and inspection planning?",
+    "options": [
+      "Manage Quality Assurance",
+      "Validate Scope",
+      "Plan Scope Management",
+      "Monitor and Control Scope"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Figure 2-14 shows Plan Scope Management with test and inspection planning among its tools, and updates to the scope, quality and requirements management plans among its outputs.",
+    "ref": "PMBOK 8, Guide 2.2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 145,
+        "label": "PMBOK 8, Guide 2.2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A shipping company entering a new market learns that its major retailers have stricter packaging standards than the regulator. What does the quality principle suggest?",
+    "options": [
+      "Meet only the regulator's rules, as they are the law",
+      "Meet the stricter standards to exceed expectations",
+      "Ask the regulator to raise its standards first",
+      "Leave packaging out of the quality requirements"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "In the principle in action, a quality-driven approach looks at the wider stakeholder system. Meeting the customers' higher standards satisfies the law and exceeds expectations, strengthening market entry.",
+    "ref": "PMBOK 8, Standard 3.5.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 68,
+        "label": "PMBOK 8, Standard 3.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "After a power cut, the new ticket kiosks restart and are back in service within a minute, with no data lost. Which quality dimension does this show?",
+    "approach": "predictive",
+    "explanation": "Resilience asks whether deliverables and processes cope with unforeseen failures and recover quickly. Reliability is about consistency; conformity about specifications; uniformity about parity across outputs.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "options": [
+      "Reliability",
+      "Uniformity",
+      "Conformity",
+      "Resilience"
+    ],
+    "answer": 3,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which of these is a quality metric, as the PMBOK Guide describes it?",
+    "options": [
+      "Errors found per thousand lines of code",
+      "The names of all the project's quality auditors",
+      "The date of the next steering meeting",
+      "The project's communication channels"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Quality metrics describe attributes and how compliance is verified, for example tasks on time, CPI, failure rates, defects per day, downtime, errors per line of code, satisfaction scores and test coverage.",
+    "ref": "PMBOK 8, Guide section 4, Quality metrics",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 234,
+        "label": "PMBOK 8, Guide section 4, Quality metrics"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which of these belongs in a quality management plan?",
+    "options": [
+      "The detailed activity durations",
+      "The vendors' payment schedule",
+      "Procedures for handling nonconformance",
+      "The stakeholders' power and interest levels"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The plan may include quality standards and objectives, roles and responsibilities, deliverables and processes subject to review, planned quality activities, and tools with procedures for nonconformance and continuous improvement.",
+    "ref": "PMBOK 8, Guide section 4, Quality management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 233,
+        "label": "PMBOK 8, Guide section 4, Quality management plan"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Defects appear somewhere between order entry and shipping. The team wants to see every step and decision point of the process to find where. Which tool fits?",
+    "approach": "predictive",
+    "explanation": "A flowchart (process map) shows the sequence of steps, decision points, loops and parallel paths of a process, which helps find areas for improvement.",
+    "ref": "PMBOK 8, Guide section 5, Flowchart",
+    "options": [
+      "Control chart with limits",
+      "Flowchart",
+      "Histogram",
+      "Benchmarking"
+    ],
+    "answer": 1,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 275,
+        "label": "PMBOK 8, Guide section 5, Flowchart"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "The team's defect rate seems high, but it has nothing to compare it with. A partner company in another industry agrees to share its figures and practices. Which technique is the team using?",
+    "approach": "predictive",
+    "explanation": "Benchmarking compares products, processes and practices with comparable organizations, inside or outside the organization and even in other industries, for ideas and a basis for measuring performance.",
+    "ref": "PMBOK 8, Guide section 5, Benchmarking",
+    "options": [
+      "Checklist analysis",
+      "Root cause analysis",
+      "Statistical sampling",
+      "Benchmarking"
+    ],
+    "answer": 3,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 254,
+        "label": "PMBOK 8, Guide section 5, Benchmarking"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "What is one objective of a quality audit?",
+    "options": [
+      "Identifying nonconformities, gaps and shortcomings",
+      "Assigning the blame for each defect to a team member",
+      "Replacing the project's quality control tests",
+      "Approving the final deliverables for the customer"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Quality audit objectives include identifying good practices and nonconformities, gaps and shortcomings, sharing good practices, offering help to improve processes, and adding to the lessons learned repository.",
+    "ref": "PMBOK 8, Guide section 5, Audits",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 253,
+        "label": "PMBOK 8, Guide section 5, Audits"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "The sponsor asks what the weekly quality report will give them. Which set is right?",
+    "approach": "predictive",
+    "explanation": "A quality report includes quality management issues, recommendations for corrective actions, and a summary of findings from quality control activities.",
+    "ref": "PMBOK 8, Guide section 4, Quality reports",
+    "options": [
+      "The cost baseline, the funding plan and the reserves",
+      "The team charter, ground rules and roles",
+      "Quality issues, corrective actions and findings",
+      "Accepted deliverables, invoices and contracts"
+    ],
+    "answer": 2,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 234,
+        "label": "PMBOK 8, Guide section 4, Quality reports"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Deliverables have passed the team's quality control checks. What are they called now, and what comes next?",
+    "options": [
+      "Accepted deliverables; they move to closing",
+      "Verified deliverables; then Validate Scope",
+      "Approved changes; then the change log",
+      "Work performance data; then reporting"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Monitor and Control Scope produces verified deliverables. Validate Scope then formalizes their acceptance, producing accepted deliverables.",
+    "ref": "PMBOK 8, Guide 2.2.2.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 149,
+        "label": "PMBOK 8, Guide 2.2.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "The PMO plots the number of scope changes per month on a control chart. What can this show?",
+    "options": [
+      "Whether the change process is stable",
+      "Which stakeholder requested each change",
+      "The cost of each change to the budget",
+      "The approval date of every change"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Control charts determine whether a process is stable or predictable. Besides repetitive production, they can track cost and schedule variances or the frequency of scope changes, to see if project processes are in control.",
+    "ref": "PMBOK 8, Guide section 5, Control charts",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Control charts"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which of these is a prevention cost?",
+    "options": [
+      "Rework of a faulty part",
+      "Warranty repairs",
+      "Training the team in a new standard",
+      "Inspecting all of the finished goods"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Prevention costs build a quality product: training, documented processes, equipment and time to do it right. Inspection is appraisal; rework is internal failure; warranty repairs are external failure.",
+    "ref": "PMBOK 8, Guide Figure 5-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 264,
+        "label": "PMBOK 8, Guide Figure 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Customers return a product because of a defect found after launch. Which cost of quality category is this?",
+    "options": [
+      "External failure cost",
+      "Internal failure cost",
+      "Appraisal cost",
+      "Prevention cost"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "External failure costs come from failures found by the customer: liabilities, warranty work, complaints, returns, lost business and damaged reputation.",
+    "ref": "PMBOK 7, Guide 2.6.3.1",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 183,
+        "label": "PMBOK 7, Guide 2.6.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "To save money, the sponsor wants to cut all design reviews and most testing. What does the cost of quality suggest?",
+    "options": [
+      "Do it; appraisal costs never add value",
+      "Do it, but only for the deliverables kept internal",
+      "Move all testing to after the handover",
+      "Failure costs found later will likely be higher"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "The optimal cost of quality balances prevention and appraisal against failure. Early inspection and review are good investments; trying to test quality in late usually fails because scrap and rework are costly.",
+    "ref": "PMBOK 7, Guide 2.6.3.1",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 183,
+        "label": "PMBOK 7, Guide 2.6.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "How does reducing rework support sustainability, according to the PMBOK Guide?",
+    "options": [
+      "It removes any need for a separate quality management plan",
+      "It avoids wasted resources and emissions from rework",
+      "It moves environmental duties to the supplier",
+      "It lets the team skip compliance checks"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Attention to quality reduces the negative impact on the environment, avoiding the unnecessary use of natural resources and emissions due to rework.",
+    "ref": "PMBOK 8, Standard 3.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 67,
+        "label": "PMBOK 8, Standard 3.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A defect keeps coming back after each fix. What should the project manager do?",
+    "options": [
+      "Fix it again, but faster next time",
+      "Add more inspectors at the very end of the line",
+      "Find and remove its root cause in the process",
+      "Accept it as a known risk"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Root cause analysis finds the basic reason for a defect. When all root causes are removed, the problem does not recur. More inspection only finds the defect; it does not prevent it.",
+    "ref": "PMBOK 8, Guide section 5, Root cause analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Root cause analysis"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Before building each story, the whole team agrees the acceptance criteria and writes the tests for them. Which practice is this?",
+    "options": [
+      "Acceptance-test-driven development",
+      "Continuous integration and delivery",
+      "Smoke testing",
+      "A spike"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "In ATDD the entire team discusses the acceptance criteria, then creates the tests, and writes just enough code and automated tests to meet them.",
+    "ref": "Agile Practice Guide, Software-Centric Approaches and Metrics for Agile Teams",
+    "links": [
+      {
+        "book": "agile",
+        "page": 130,
+        "label": "Agile Practice Guide, Software-Centric Approaches and Metrics for Agile Teams"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Work from several developers is merged into the whole product many times a day and then retested. Which practice is this?",
+    "options": [
+      "Test-driven development",
+      "A spike",
+      "Regression planning",
+      "Continuous integration"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Continuous integration is the frequent incorporation of work into the whole, then retesting to check that the entire product still works. It is paired with continuous delivery.",
+    "ref": "Agile Practice Guide, 5.2.9",
+    "links": [
+      {
+        "book": "agile",
+        "page": 88,
+        "label": "Agile Practice Guide, 5.2.9"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "How is quality assurance usually performed in predictive and in agile projects?",
+    "options": [
+      "Formally in agile, informally in predictive",
+      "Formal in predictive; formal or informal in agile",
+      "Never in agile projects, since the team tests its own work",
+      "Only by an external auditor in both"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "In predictive projects QA is usually formal, as strong process quality minimizes variance. In agile or adaptive projects it can be formal or informal, depending on the context.",
+    "ref": "PMBOK 8, Guide 2.1.6.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 128,
+        "label": "PMBOK 8, Guide 2.1.6.5"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which cost of quality category are the technicians' repair visits to the branches?",
+    "case": "bank-kiosks",
+    "options": [
+      "Prevention",
+      "Appraisal",
+      "Internal failure",
+      "External failure"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The faults reached the customer, so the repairs are external failure costs, like warranty work and complaints. Finding them in the vendor's tests before shipping would have been internal failure.",
+    "ref": "PMBOK 8, Guide Figure 5-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 264,
+        "label": "PMBOK 8, Guide Figure 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "What should the project manager do about the PMO audit's finding on the skipped security test?",
+    "case": "bank-kiosks",
+    "options": [
+      "Ignore it, since every kiosk has already passed acceptance",
+      "Correct the process and raise a change request if needed",
+      "Replace the PMO auditor with a team member",
+      "Remove the security test from the plan"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "A quality audit identifies nonconformities so the process can be improved. Manage Quality Assurance produces change requests and plan updates; the agreed test is part of the quality management plan and must be followed or formally changed.",
+    "ref": "PMBOK 8, Guide 2.1.6.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 128,
+        "label": "PMBOK 8, Guide 2.1.6.5"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "The team wants to find out why most of the card-reader faults happen. Which tool should it use first?",
+    "case": "bank-kiosks",
+    "options": [
+      "Cause-and-effect diagram",
+      "Affinity diagram of ideas",
+      "Bidder conference",
+      "Burnup chart"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A cause-and-effect (fishbone) diagram breaks down the possible causes of a problem into branches, to trace the effect back to its root cause.",
+    "ref": "PMBOK 8, Guide section 5, Cause-and-effect diagram",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Cause-and-effect diagram"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO are part of the cost of conformance?",
+    "type": "multi",
+    "options": [
+      "Prevention costs",
+      "Appraisal costs",
+      "Internal failure costs",
+      "External failure costs",
+      "Management reserve"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Prevention and appraisal are money spent during the project to avoid failures (cost of conformance). Internal and external failure are the cost of nonconformance.",
+    "ref": "PMBOK 8, Guide Figure 5-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 264,
+        "label": "PMBOK 8, Guide Figure 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are tools and techniques of the Manage Quality Assurance process?",
+    "type": "multi",
+    "options": [
+      "Audits",
+      "Checklists",
+      "Cause-and-effect diagrams",
+      "Earned value analysis",
+      "Make-or-buy analysis",
+      "Resource smoothing"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-7 lists audits, checklists, data representation (affinity diagrams, cause-and-effect diagrams, flowcharts), decision-making, problem-solving and process improvement.",
+    "ref": "PMBOK 8, Guide 2.1.6.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 128,
+        "label": "PMBOK 8, Guide 2.1.6.5"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO practices help an agile team build quality into its work?",
+    "type": "multi",
+    "options": [
+      "Testing at all levels, mostly automated",
+      "A definition of done for each increment",
+      "Testing only at the end of the release",
+      "Skipping retrospectives to save time",
+      "Removing acceptance criteria from stories"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Agile teams test at all levels with a strong preference for automated tests, and keep a definition of done for every increment. Without attention to quality, it soon becomes impossible to release rapidly.",
+    "ref": "Agile Practice Guide, 5.2.9",
+    "links": [
+      {
+        "book": "agile",
+        "page": 88,
+        "label": "Agile Practice Guide, 5.2.9"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each cost of quality category with its examples.",
+    "type": "match",
+    "left": [
+      "Prevention",
+      "Appraisal",
+      "Internal failure",
+      "External failure"
+    ],
+    "right": [
+      "Training and documented processes",
+      "Testing and inspections",
+      "Rework and scrap",
+      "Warranty work and lost business"
+    ],
+    "approach": "predictive",
+    "explanation": "Prevention builds a quality product; appraisal assesses it; internal failures are found by the project; external failures are found by the customer.",
+    "ref": "PMBOK 8, Guide Figure 5-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 264,
+        "label": "PMBOK 8, Guide Figure 5-3"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about quality.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Using the processes effectively and following standards is",
+        "choices": [
+          "quality control",
+          "quality assurance",
+          "scope validation"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Making deliverables meet their specifications through testing is",
+        "choices": [
+          "quality assurance",
+          "benchmarking",
+          "quality control"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Verified deliverables are formally accepted in",
+        "choices": [
+          "Validate Scope",
+          "Manage Quality Assurance",
+          "Plan Scope Management"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Quality assurance looks at the processes, quality control at the deliverables, and Validate Scope formalizes acceptance.",
+    "ref": "PMBOK 8, Guide 2.1.6.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 128,
+        "label": "PMBOK 8, Guide 2.1.6.5"
+      }
+    ]
+  }
+]

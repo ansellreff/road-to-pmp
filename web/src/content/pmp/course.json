@@ -34,9 +34,9 @@
         { "id": "2-07-resources", "title": "Resources", "ready": true, "tasks": [4] },
         { "id": "2-08-procurement", "title": "Procurement, Contracts and Negotiation", "ready": true, "tasks": [5] },
         { "id": "2-09-finance", "title": "Finance: Estimates, Budget and Reserves", "ready": true, "tasks": [6] },
-        { "id": "2-10-earned-value", "title": "Earned Value and Financial Reporting", "ready": false, "tasks": [6, 9] },
-        { "id": "2-11-quality", "title": "Quality, Cost of Quality and Continuous Improvement", "ready": false, "tasks": [7] },
-        { "id": "2-12-schedule", "title": "Schedule: Estimating and the Critical Path", "ready": false, "tasks": [8] },
+        { "id": "2-10-earned-value", "title": "Earned Value and Financial Reporting", "ready": true, "tasks": [6, 9] },
+        { "id": "2-11-quality", "title": "Quality, Cost of Quality and Continuous Improvement", "ready": true, "tasks": [7] },
+        { "id": "2-12-schedule", "title": "Schedule: Estimating and the Critical Path", "ready": true, "tasks": [8] },
         { "id": "2-13-agile-scheduling", "title": "Agile Scheduling: Story Points, Velocity, Release Plans", "ready": false, "tasks": [8] },
         { "id": "2-14-status", "title": "Evaluating Status: Metrics and Artifacts", "ready": false, "tasks": [9] },
         { "id": "2-15-closure", "title": "Closure and Transition", "ready": false, "tasks": [10] }

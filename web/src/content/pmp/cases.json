@@ -28,5 +28,10 @@
     "id": "hospital-portal",
     "title": "Buying a hospital patient portal",
     "text": "A regional hospital is buying a patient portal from an outside vendor, chosen through a request for proposal. The contract is fixed price for the first release and time and materials, with a cap, for later changes. A service-level agreement sets response-time targets for the portal.\n\nIn month four the vendor submits a claim for extra payment: it says the link to the hospital's lab system was not in the statement of work. The hospital's IT lead says the link was clearly implied. The portal's last two releases have also missed the agreed response times."
+  },
+  {
+    "id": "bank-kiosks",
+    "title": "Self-service kiosks for a bank",
+    "text": "A bank is rolling out self-service kiosks to 120 branches. A vendor builds them to the bank's specifications, and each kiosk passes the vendor's tests before it is shipped.\n\nSince launch, customers in 30 branches have reported card-reader faults, and technicians are visiting the branches to repair them. A PMO audit has also found that the team skipped the agreed security test for the last two shipments to save time."
   }
 ]

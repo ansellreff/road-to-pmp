@@ -1,0 +1,142 @@
+[
+  {
+    "book": "estimating",
+    "page": 53,
+    "label": "Practice Standard for Project Estimating, 4.2.1"
+  },
+  {
+    "book": "pmbok6",
+    "page": 208,
+    "label": "PMBOK 6, 6.3.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 152,
+    "label": "PMBOK 8, Guide 2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 152,
+    "label": "PMBOK 8, Guide 2.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 153,
+    "label": "PMBOK 8, Guide 2.3.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 154,
+    "label": "PMBOK 8, Guide 2.3.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 154,
+    "label": "PMBOK 8, Guide 2.3.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 158,
+    "label": "PMBOK 8, Guide 2.3.2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 160,
+    "label": "PMBOK 8, Guide 2.3.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 162,
+    "label": "PMBOK 8, Guide 2.3.3.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 162,
+    "label": "PMBOK 8, Guide 2.3.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 254,
+    "label": "PMBOK 8, Guide section 5, Benchmarking"
+  },
+  {
+    "book": "pmbok8",
+    "page": 264,
+    "label": "PMBOK 8, Guide section 5, Critical chain project management (CCPM)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 265,
+    "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 266,
+    "label": "PMBOK 8, Guide Figure 5-4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 271,
+    "label": "PMBOK 8, Guide section 5, Dependency determination and integration"
+  },
+  {
+    "book": "pmbok8",
+    "page": 277,
+    "label": "PMBOK 8, Guide section 5, Historical information review"
+  },
+  {
+    "book": "pmbok8",
+    "page": 284,
+    "label": "PMBOK 8, Guide section 5, Leads and lags"
+  },
+  {
+    "book": "pmbok8",
+    "page": 288,
+    "label": "PMBOK 8, Guide section 5, Multipoint estimating"
+  },
+  {
+    "book": "pmbok8",
+    "page": 290,
+    "label": "PMBOK 8, Guide section 5, Precedence diagramming method"
+  },
+  {
+    "book": "pmbok8",
+    "page": 301,
+    "label": "PMBOK 8, Guide section 5, Rolling wave planning"
+  },
+  {
+    "book": "pmbok8",
+    "page": 301,
+    "label": "PMBOK 8, Guide section 5, Schedule compression"
+  },
+  {
+    "book": "pmbok8",
+    "page": 302,
+    "label": "PMBOK 8, Guide section 5, Schedule network analysis"
+  },
+  {
+    "book": "scheduling",
+    "page": 68,
+    "label": "Practice Standard for Scheduling, 3.1.2.11"
+  },
+  {
+    "book": "scheduling",
+    "page": 70,
+    "label": "Practice Standard for Scheduling, 3.2.1.1"
+  },
+  {
+    "book": "scheduling",
+    "page": 80,
+    "label": "Practice Standard for Scheduling, 3.2.1.8"
+  },
+  {
+    "book": "scheduling",
+    "page": 80,
+    "label": "Practice Standard for Scheduling, 3.2.1.9"
+  },
+  {
+    "book": "scheduling",
+    "page": 84,
+    "label": "Practice Standard for Scheduling, 3.3.5"
+  }
+]

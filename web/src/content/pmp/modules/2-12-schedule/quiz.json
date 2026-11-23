@@ -1,0 +1,679 @@
+[
+  {
+    "id": "q1",
+    "q": "A hybrid project must meet a fixed regulatory date, while its software streams work in sprints. How does the PMBOK Guide suggest structuring its schedule?",
+    "options": [
+      "One detailed critical path schedule for all the work",
+      "Predictive milestones, with sprints inside them",
+      "Only sprints, with no milestones at all",
+      "A Kanban board for the whole project"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "In a hybrid approach, the high-level schedule uses predictive techniques to outline key milestones and deliverables; within it, streams use adaptive iterations, Kanban or the critical path method.",
+    "ref": "PMBOK 8, Guide 2.3.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 160,
+        "label": "PMBOK 8, Guide 2.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Where would the team record the release and iteration length, the units of measure and the schedule control thresholds?",
+    "options": [
+      "The project charter document",
+      "The resource calendar",
+      "The milestone list",
+      "The schedule management plan"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The schedule management plan covers schedule development, release and iteration length, level of accuracy, units of measure, organizational links, maintenance, control thresholds, performance measurement rules and reporting formats.",
+    "ref": "PMBOK 8, Guide 2.3.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 154,
+        "label": "PMBOK 8, Guide 2.3.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Testing can begin three days after coding begins, as soon as the first module is ready. How should the scheduler model this?",
+    "options": [
+      "Start-to-start with a 3-day lag",
+      "Finish-to-start with a 3-day lead",
+      "Finish-to-finish with a 3-day lag",
+      "Start-to-finish with no lag"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The successor (testing) can start only after the predecessor (coding) has started, delayed by three days: a start-to-start relationship with a 3-day lag.",
+    "ref": "PMBOK 8, Guide section 5, Leads and lags",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 284,
+        "label": "PMBOK 8, Guide section 5, Leads and lags"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "The city must grant a road-works permit before excavation can begin, and the team cannot speed the permit up. How is this dependency classified?",
+    "options": [
+      "Discretionary and internal",
+      "Discretionary and external",
+      "Mandatory and external",
+      "Mandatory and internal"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "It is required (mandatory) and depends on a non-project activity outside the team's control (external). The Eighth Edition notes that two attributes apply at once, for example a mandatory external dependency.",
+    "ref": "PMBOK 8, Guide section 5, Dependency determination and integration",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 271,
+        "label": "PMBOK 8, Guide section 5, Dependency determination and integration"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "To fast track a late schedule, which dependencies should the project manager review first for possible change?",
+    "options": [
+      "Mandatory dependencies set by the nature of the work",
+      "Discretionary dependencies chosen as preferred logic",
+      "External dependencies on government approvals",
+      "Leads and lags written into the contracts"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Discretionary dependencies are preferred logic. They should be fully documented and, when fast tracking, reviewed and considered for modification or removal.",
+    "ref": "PMBOK 6, 6.3.2.2",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 208,
+        "label": "PMBOK 6, 6.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "A scheduler adds a 10-day lag in place of a missing logical link, so that the dates look right. What is wrong with this?",
+    "options": [
+      "Lags must always be shown as negative values",
+      "Lags may be used only on finish-to-finish links",
+      "A lag over five days needs the sponsor's approval",
+      "Leads and lags should not replace schedule logic"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The team decides which dependencies need a lead or lag to define the logic accurately, but leads and lags should not replace schedule logic, and duration estimates do not include them.",
+    "ref": "PMBOK 8, Guide section 5, Leads and lags",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 284,
+        "label": "PMBOK 8, Guide section 5, Leads and lags"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "The customer's approval of the design must appear in the schedule. How should the scheduler model it?",
+    "options": [
+      "As a milestone with zero duration",
+      "As a five-day activity with resources",
+      "As a lag on the design activity",
+      "As a note in the risk register"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A milestone has zero duration and no resources. It marks the start or completion of a deliverable and may reflect external constraints, such as a required approval.",
+    "ref": "Practice Standard for Scheduling, 3.2.1.1",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 70,
+        "label": "Practice Standard for Scheduling, 3.2.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Who should provide the inputs for an activity's duration estimate, according to the PMBOK Guide?",
+    "options": [
+      "The sponsor, since they fund the work",
+      "The average of all estimates given",
+      "The people most familiar with the work",
+      "The most optimistic estimate offered"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The inputs for duration estimates come from the person or group on the team most familiar with the nature of the work for that activity.",
+    "ref": "PMBOK 8, Guide 2.3.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 154,
+        "label": "PMBOK 8, Guide 2.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A 24-hour stress test is on the critical path. The sponsor wants more testers added to shorten it. What should the project manager say?",
+    "options": [
+      "Doubling testers will halve the duration",
+      "The test's duration is fixed by its nature",
+      "Crashing always works on critical activities",
+      "Fast tracking it will remove the risk"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Some work takes a set time whatever the resources, such as a 24-hour stress test. Crashing works only where added resources actually shorten the activity.",
+    "ref": "PMBOK 8, Guide 2.3.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 154,
+        "label": "PMBOK 8, Guide 2.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A team's estimates are always too optimistic, although its members know that similar past work ran late. Which bias does the PMBOK Guide name for this?",
+    "options": [
+      "Law of diminishing returns",
+      "Resource leveling",
+      "Free float",
+      "Planning fallacy"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Cognitive biases such as the planning fallacy and end-of-story illusion, and phenomena like Hofstadter's law, can reduce the accuracy of scheduling.",
+    "ref": "PMBOK 8, Guide 2.3.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 154,
+        "label": "PMBOK 8, Guide 2.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Estimates for an activity are 6 days optimistic, 9 most likely and 18 pessimistic. The PMO uses the beta (PERT) formula. By how many days does the expected duration exceed the most likely estimate?",
+    "options": [
+      "1 day",
+      "2 days",
+      "0 days",
+      "3 days"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Beta: (6 + 4 × 9 + 18) / 6 = 60 / 6 = 10 days, which is 1 day more than the most likely 9. (Triangular would give (6 + 9 + 18) / 3 = 11 days.)",
+    "ref": "Practice Standard for Project Estimating, 4.2.1",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 53,
+        "label": "Practice Standard for Project Estimating, 4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A network has three paths: A–B–E takes 18 days, A–C–E 22 days and A–D–E 19 days. Of activities B, C and D, which would delay the project if it slipped by 2 days?",
+    "approach": "predictive",
+    "explanation": "The longest path, A–C–E (22 days), is critical, so C has zero float (as do A and E). B has 4 days of float and D has 3, so a 2-day slip on either does not move the end date.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "options": [
+      "Activity B, on the 18-day path",
+      "Activity D, on the 19-day path",
+      "Activity C, on the 22-day path",
+      "Activity B or D, but not C"
+    ],
+    "answer": 2,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Using the day-1 convention, an activity finishes early on day 16, and its only successor's early start is day 20. What is the activity's free float?",
+    "options": [
+      "4 days",
+      "3 days",
+      "8 days",
+      "0 days"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Free float is the time an activity can slip without delaying its successor's early start: 20 − 16 − 1 = 3 days (the successor could start on day 17). In Figure 5-4, B finishes on day 10, D starts on day 16, and B's free float is 5.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "The customer moved the go-live date earlier, and the critical path now shows −3 days of total float. What should the project manager do?",
+    "options": [
+      "Ignore it, since negative float corrects itself later",
+      "Remove the go-live constraint from the model",
+      "Report that the critical path has disappeared",
+      "Use negative float analysis to plan acceleration"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Negative float occurs when constraints force dates earlier than logic and durations allow. Negative float analysis can be used to explore acceleration strategies, such as schedule compression.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A manager proposes paying overtime to crash an activity that is not on the critical path. What will most likely happen?",
+    "options": [
+      "Cost rises, but the end date does not move",
+      "The end date moves earlier by the amount crashed",
+      "The critical path shifts to that activity",
+      "Risk falls because the work is done sooner"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Crashing works only for activities on the critical path where extra resources shorten the duration. Crashing an activity with float adds cost without shortening the project.",
+    "ref": "PMBOK 8, Guide section 5, Schedule compression",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Schedule compression"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "The project is two weeks late. The budget is tight, but some risk of rework is acceptable. Which compression technique fits better?",
+    "options": [
+      "Crashing with paid overtime for all",
+      "Adding a second contractor crew",
+      "Fast tracking two critical activities",
+      "Resource smoothing within float"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Fast tracking overlaps activities normally done in sequence; it adds risk and possible rework but not necessarily direct cost. Crashing adds resources and cost. Smoothing does not shorten the schedule.",
+    "ref": "PMBOK 8, Guide section 5, Schedule compression",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Schedule compression"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Before the schedule is approved, team members review the dates of their assignments. What are they mainly checking?",
+    "options": [
+      "That their tasks are all on the critical path",
+      "That dates fit their other project work",
+      "That every activity has a lead or a lag",
+      "That the sponsor has signed each task"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Team members confirm that the start and end dates do not conflict with resource calendars or with assignments in other projects or tasks, so the dates are still valid.",
+    "ref": "PMBOK 8, Guide 2.3.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 154,
+        "label": "PMBOK 8, Guide 2.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A program has five projects, and the program board wants to compare their schedules on one page. Which schedule level fits?",
+    "options": [
+      "Level 3, detailed activities",
+      "Level 2, managerial view",
+      "Level 1, executive summary",
+      "Level 0, project summary"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Level 0 is a single line representing the entire project, often used to compare projects in a program or portfolio. Level 1 shows key milestones and summary activities for executives.",
+    "ref": "Practice Standard for Scheduling, 3.2.1.9",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 80,
+        "label": "Practice Standard for Scheduling, 3.2.1.9"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Operations plans a three-week plant shutdown in July, and the project's installation must happen during it. How should the project manager treat this?",
+    "options": [
+      "As an external dependency to track with operations",
+      "As a discretionary dependency that the team can move",
+      "As a lag inside the installation activity",
+      "As a resource leveling problem"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "External dependencies link project activities with non-project activities and are usually outside the team's control. Coordinating with operations is an enabler of the schedule task.",
+    "ref": "PMBOK 6, 6.3.2.2",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 208,
+        "label": "PMBOK 6, 6.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "When should a project's baseline schedule model be in place?",
+    "options": [
+      "After the first status report",
+      "At the end of the first phase",
+      "Before the project work begins",
+      "Only once a change is requested"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "It is generally accepted practice that every project has a baseline schedule model before the work begins. It becomes the benchmark for measuring performance.",
+    "ref": "Practice Standard for Scheduling, 3.2.1.8",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 80,
+        "label": "Practice Standard for Scheduling, 3.2.1.8"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A major redesign makes the schedule baseline unrealistic. What does the scheduling standard say about rebaselining?",
+    "options": [
+      "Delete the old baseline to avoid any confusion",
+      "Agree the causes and archive the original baseline",
+      "Keep past variances in the new baseline",
+      "Rebaseline monthly to keep the SPI at 1.0"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A rebaseline requires the causes to be identified and agreed by key stakeholders. The original baseline is archived and never deleted; past performance statistics restart from that point.",
+    "ref": "Practice Standard for Scheduling, 3.3.5",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 84,
+        "label": "Practice Standard for Scheduling, 3.3.5"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "In an agile project, how does Monitor and Control Schedule determine the status of the schedule?",
+    "options": [
+      "By comparing actual dates with the critical path",
+      "By counting the hours each member has worked",
+      "By the percent complete of every task",
+      "By comparing accepted work with the estimate"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "With an adaptive approach, status is found by comparing the total work delivered and accepted against the estimates of work completed for the elapsed time cycle.",
+    "ref": "PMBOK 8, Guide 2.3.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 158,
+        "label": "PMBOK 8, Guide 2.3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A supplier builds a key component under contract. How does the PMBOK Guide suggest keeping the supplier's work on schedule?",
+    "options": [
+      "Regular and milestone status updates, with reviews",
+      "Waiting until delivery, then inspecting the result",
+      "Adding the supplier's staff to the project team",
+      "Asking the sponsor to call the supplier"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "When work is contracted, regular and milestone status updates from contractors and suppliers keep the schedule under control, and scheduled status reviews and walkthroughs check that their reports are accurate.",
+    "ref": "PMBOK 8, Guide 2.3.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 158,
+        "label": "PMBOK 8, Guide 2.3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Activity E is now expected to finish 2 days late. What happens to the project's end date?",
+    "diagram": "network-figure",
+    "options": [
+      "No change, since E has float",
+      "It moves 1 day later",
+      "It moves 2 days later",
+      "It moves 3 days later"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The critical path is B–D–F–G: 5 + 6 + 2 + 3 = 16 days. E is on A–C–E–G: 3 + 4 + 5 + 3 = 15 days, so it has 1 day of float. A 2-day slip uses the float and delays the end by 1 day; A–C–E–G becomes the new critical path at 17 days.",
+    "ref": "PMBOK 8, Guide section 5, Critical path method (CPM)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 265,
+        "label": "PMBOK 8, Guide section 5, Critical path method (CPM)"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "On a lean construction project, the trades meet to plan the next six weeks together and take on work only when they have capacity. Which method is this?",
+    "options": [
+      "Critical chain",
+      "Rolling wave planning",
+      "Lean scheduling with pull planning",
+      "Location-based scheduling"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Lean scheduling limits queues by pulling work when there is capacity. Team members collaborate in pull-planning sessions; the main steps are master scheduling, phase scheduling and look-ahead planning.",
+    "ref": "PMBOK 8, Guide 2.3.3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 162,
+        "label": "PMBOK 8, Guide 2.3.3.6"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO statements about fast tracking are correct?",
+    "type": "multi",
+    "options": [
+      "Activities normally done in sequence overlap",
+      "It may cause rework and increase risk",
+      "It always lowers the project's cost",
+      "It works on activities off the critical path",
+      "It adds resources to shorten activities"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Fast tracking performs sequential activities in parallel for part of their duration. It may cause rework, increase risk and need more coordination, and works only when it shortens the critical path. Adding resources is crashing.",
+    "ref": "PMBOK 8, Guide section 5, Schedule compression",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Schedule compression"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are outputs of the Develop Schedule process?",
+    "type": "multi",
+    "options": [
+      "Schedule baseline",
+      "Project schedule",
+      "Project calendars",
+      "Schedule forecasts",
+      "Velocity",
+      "Stakeholder register"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-22 lists the schedule baseline, project schedule, schedule data, project calendars, change requests and updates. Schedule forecasts come from Monitor and Control Schedule.",
+    "ref": "PMBOK 8, Guide 2.3.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 154,
+        "label": "PMBOK 8, Guide 2.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO does Monitor and Control Schedule do when an agile approach is used?",
+    "type": "multi",
+    "options": [
+      "Reprioritize the remaining backlog",
+      "Measure velocity in each iteration",
+      "Recalculate the critical path every day",
+      "Freeze the scope until the release",
+      "Rebaseline after every sprint"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "In agile, it compares accepted work with the estimate, holds retrospectives, reprioritizes the backlog, measures velocity, and determines and manages schedule changes.",
+    "ref": "PMBOK 8, Guide 2.3.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 158,
+        "label": "PMBOK 8, Guide 2.3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each scheduling method with how it works.",
+    "type": "match",
+    "left": [
+      "Critical chain",
+      "Location-based scheduling",
+      "Lean scheduling",
+      "Rolling wave planning"
+    ],
+    "right": [
+      "One project buffer protects the due date",
+      "Quantities planned by location, crew and rate",
+      "Trades pull work in joint planning sessions",
+      "Near-term work in detail, later work at high level"
+    ],
+    "approach": "predictive",
+    "explanation": "Other approaches named in the Eighth Edition are the critical path method, the Last Planner System, Gantt charts and Kanban.",
+    "ref": "PMBOK 8, Guide 2.3.3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 162,
+        "label": "PMBOK 8, Guide 2.3.3.6"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about adjusting the schedule.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Shortening critical activities by adding resources is",
+        "choices": [
+          "fast tracking",
+          "crashing",
+          "resource leveling"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Doing sequential activities partly in parallel is",
+        "choices": [
+          "crashing",
+          "resource smoothing",
+          "fast tracking"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Adjusting dates for limited resources, which may extend the critical path, is",
+        "choices": [
+          "resource leveling",
+          "rolling wave planning",
+          "critical chain"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Crashing adds cost; fast tracking adds risk; resource leveling may delay the end date.",
+    "ref": "PMBOK 8, Guide section 5, Schedule compression",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Schedule compression"
+      }
+    ]
+  }
+]

@@ -1,0 +1,682 @@
+[
+  {
+    "id": "q1",
+    "q": "What does earned value analysis compare, according to the PMBOK Guide?",
+    "options": [
+      "The benefits realized with those in the business case",
+      "The baseline with actual schedule and cost",
+      "The team's velocity with the release plan",
+      "The risk register with the issue log"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Earned value analysis compares the performance measurement baseline with the actual schedule and cost performance. EVM integrates the scope, schedule and cost baselines into that baseline.",
+    "ref": "PMBOK 8, Guide section 5, Earned value (EV) analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 274,
+        "label": "PMBOK 8, Guide section 5, Earned value (EV) analysis"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "By the status date, the team has finished work budgeted at 30,000. That work cost 34,000, and work worth 36,000 was scheduled. Which figure is the earned value?",
+    "options": [
+      "34,000",
+      "36,000",
+      "4,000",
+      "30,000"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "EV is the budget for the work actually performed: 30,000. The 34,000 is the actual cost and the 36,000 is the planned value.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A control account shows EV of 45,000 and AC of 50,000. What is its cost variance?",
+    "options": [
+      "−5,000",
+      "5,000",
+      "−15,000",
+      "0.9"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "CV = EV − AC = 45,000 − 50,000 = −5,000. A negative cost variance means the work cost more than planned.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A work package has PV of 60,000 and EV of 48,000. What is its SPI, and what does it mean?",
+    "options": [
+      "1.25: ahead of schedule",
+      "0.80: under budget",
+      "0.80: behind schedule",
+      "−12,000: behind schedule"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "SPI = EV / PV = 48,000 / 60,000 = 0.8. Below 1.0 means behind schedule. −12,000 is the schedule variance, not the index.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "The monthly report shows a CPI of 0.9 and an SPI of 1.2. How should the project manager describe the status?",
+    "options": [
+      "Over budget and ahead of schedule",
+      "Under budget and behind schedule",
+      "Over budget and behind schedule",
+      "Under budget and ahead of schedule"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A CPI below 1.0 means over planned cost; an SPI above 1.0 means ahead of schedule. The EVM standard suggests checking for over-resourcing or work done out of sequence.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "At month six, a project shows PV 350,000, EV 300,000 and AC 375,000 against a BAC of 800,000. The team expects cost performance to stay as it is. What should the project manager forecast as the EAC?",
+    "approach": "predictive",
+    "explanation": "CPI = EV / AC = 300,000 / 375,000 = 0.8. EAC = BAC / CPI = 800,000 / 0.8 = 1,000,000. 875,000 would be AC + (BAC − EV), used when the rest goes as planned.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "options": [
+      "875,000",
+      "800,000",
+      "640,000",
+      "1,000,000"
+    ],
+    "answer": 3,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A supplier strike caused this month's overrun. The strike is over and will not recur. BAC is 400,000, EV is 150,000 and AC is 170,000. Which EAC should the project manager report?",
+    "approach": "predictive",
+    "explanation": "A one-off cause means future work should go at the planned rate: EAC = AC + (BAC − EV) = 170,000 + (400,000 − 150,000) = 420,000. BAC / CPI (453,333) would assume the overrun continues.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "options": [
+      "420,000",
+      "453,333",
+      "400,000",
+      "380,000"
+    ],
+    "answer": 0,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "When should the formula EAC = AC + bottom-up ETC be used?",
+    "options": [
+      "When current cost performance will continue",
+      "When the variance was a one-off problem",
+      "When the original plan is no longer valid",
+      "When both CPI and SPI affect the rest of the work"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "If the initial plan is no longer valid, the remaining work is reestimated from the bottom up and added to the actual cost.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "The sponsor insists on finishing within the original budget of 250,000. So far EV is 100,000 and AC is 130,000. How efficient must the rest of the work be?",
+    "approach": "predictive",
+    "explanation": "TCPI = (BAC − EV) / (BAC − AC) = (250,000 − 100,000) / (250,000 − 130,000) = 150,000 / 120,000 = 1.25: each remaining dollar must earn 1.25 dollars of work.",
+    "ref": "PMBOK 8, Guide section 5, To-complete performance index (TCPI)",
+    "options": [
+      "0.77",
+      "1.25",
+      "1.15",
+      "0.80"
+    ],
+    "answer": 1,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 311,
+        "label": "PMBOK 8, Guide section 5, To-complete performance index (TCPI)"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "The TCPI based on the BAC is 1.3. What does this tell the project manager?",
+    "options": [
+      "The project will finish 30% under budget",
+      "The remaining work is easier than planned",
+      "The team is now 30% ahead of the planned schedule",
+      "The rest must be done far more efficiently"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "A TCPI above 1.0 means the remaining work is harder to complete: it must be done at 130% cost efficiency to stay within the BAC. Whether that is achievable is a judgment call.",
+    "ref": "PMBOK 8, Guide section 5, To-complete performance index (TCPI)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 311,
+        "label": "PMBOK 8, Guide section 5, To-complete performance index (TCPI)"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The latest forecast says the project will cost 550,000 against a budget of 500,000. The sponsor asks for the variance at completion and its meaning. What should the project manager say?",
+    "approach": "predictive",
+    "explanation": "VAC = BAC − EAC = 500,000 − 550,000 = −50,000. A negative VAC forecasts a finish over the planned cost.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "options": [
+      "−50,000: the project will end over budget",
+      "50,000: the project will end under budget",
+      "1.10: the project is behind schedule",
+      "−50,000: the project is behind schedule"
+    ],
+    "answer": 0,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A short task starts and finishes within one reporting period. Which earned value measurement method fits it?",
+    "options": [
+      "Level of effort (LOE)",
+      "Weighted milestone",
+      "Fixed formula 0/100",
+      "Apportioned effort"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The 0/100 method gives no credit for partial work and should be used only for work scheduled to start and finish within one reporting period.",
+    "ref": "The Standard for Earned Value Management, 3.2.2.2",
+    "links": [
+      {
+        "book": "evm",
+        "page": 46,
+        "label": "The Standard for Earned Value Management, 3.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Why can the level of effort method distort a project's status?",
+    "options": [
+      "It gives no credit until the work is finished",
+      "EV always equals PV, so no schedule variance shows",
+      "It requires weighted milestones that are hard to verify",
+      "It credits only work accepted by the customer"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "With LOE, the PV determines the EV each period, so there is never a schedule variance, however much work is really done. It is meant for non-measurable support work.",
+    "ref": "The Standard for Earned Value Management, 3.2.2.2",
+    "links": [
+      {
+        "book": "evm",
+        "page": 46,
+        "label": "The Standard for Earned Value Management, 3.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Quality inspection is valued at 10% of the related construction work it supports. Which measurement method is this?",
+    "options": [
+      "Percent complete",
+      "Physical measurement",
+      "Level of effort",
+      "Apportioned effort"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Apportioned effort values support work, such as quality assurance, inspection and testing, as a percentage of the related discrete work.",
+    "ref": "The Standard for Earned Value Management, 3.2.2.2",
+    "links": [
+      {
+        "book": "evm",
+        "page": 46,
+        "label": "The Standard for Earned Value Management, 3.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "The cost variance is −4% and the agreed threshold is ±10%, but the variance has grown every week. What should the project manager do?",
+    "options": [
+      "Look into the trend and its cause now",
+      "Nothing until the variance passes the threshold",
+      "Rebaseline the cost to remove the variance",
+      "Report the project as red to the sponsor at once"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Thresholds define formal reporting; they do not mean a growing variance must wait until it crosses one. Trend analysis warns early, in time for preventive action.",
+    "ref": "The Standard for Earned Value Management, 4.4.4.1",
+    "links": [
+      {
+        "book": "evm",
+        "page": 108,
+        "label": "The Standard for Earned Value Management, 4.4.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Both the CPI and the SPI are below 1.0. Which cause does the EVM standard suggest checking?",
+    "options": [
+      "Over-resourcing of the work",
+      "Scope simpler than expected",
+      "Underestimation of the work",
+      "Effective risk management"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Table 4-2 lists underestimation and unexpected scope complexity when the project is both over budget and behind schedule.",
+    "ref": "The Standard for Earned Value Management, 4.4.1.4",
+    "links": [
+      {
+        "book": "evm",
+        "page": 95,
+        "label": "The Standard for Earned Value Management, 4.4.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "The CPI is below 1.0 but the SPI is above 1.0. Which cause does the EVM standard suggest?",
+    "options": [
+      "Underestimation of the whole work",
+      "Over-resourcing of the work",
+      "Scope simpler than expected",
+      "Value engineering"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Over budget but ahead of schedule may point to over-resourcing or work executed out of sequence (Table 4-2).",
+    "ref": "The Standard for Earned Value Management, 4.4.1.4",
+    "links": [
+      {
+        "book": "evm",
+        "page": 95,
+        "label": "The Standard for Earned Value Management, 4.4.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "The CPI has been 0.75 for three months. The project manager wants to reset the cost baseline so the reports look green again. What is wrong with this?",
+    "options": [
+      "Nothing, as long as the sponsor is told later",
+      "Baselines may only change in the closing phase",
+      "The CPI must fall below 0.5 before a rebaseline",
+      "It needs approval and must not hide problems"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "A rebaseline follows approved changes, changes only future work, must not hide past issues, and is formally approved and communicated. Unless the causes are fixed, a new baseline will not help.",
+    "ref": "The Standard for Earned Value Management, 4.6.3",
+    "links": [
+      {
+        "book": "evm",
+        "page": 115,
+        "label": "The Standard for Earned Value Management, 4.6.3"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Which of these is work performance information rather than work performance data?",
+    "options": [
+      "The CPI is 0.89, below the 0.95 threshold",
+      "Actual costs incurred during this month were 42,000",
+      "Eleven story points were completed",
+      "The actual start date of an activity"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Work performance data are raw observations. Work performance information compares them with the plan, showing whether there is a variance and whether it passes a threshold.",
+    "ref": "PMBOK 8, Guide section 4, Work performance information",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance information"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "When are the work performance metrics for scope, schedule, budget and quality defined?",
+    "options": [
+      "At project closure, in the final report",
+      "When the first variance is reported",
+      "At the start, in the project management plan",
+      "During every meeting of the change control board"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Specific work performance metrics are defined at the start of the project as part of the project management plan; data is then collected and compared with them.",
+    "ref": "PMBOK 8, Guide section 4, Work performance information",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance information"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "In agile EVM, how is the earned value of a release calculated at the status date?",
+    "options": [
+      "From the hours the team recorded",
+      "From the points of completed, accepted stories",
+      "From the percent complete of each open story",
+      "From the business value the product owner assigns"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "In agile EVM, EV is the value of the completed user stories up to the status date. Hours give the actual cost, and EV does not mean business value.",
+    "ref": "The Standard for Earned Value Management, 4.4.3.2",
+    "links": [
+      {
+        "book": "evm",
+        "page": 104,
+        "label": "The Standard for Earned Value Management, 4.4.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A team's rate is 2,000 per story point. By the status date, 300 points were planned and 270 were accepted; the actual cost is 600,000. What is the CPI?",
+    "options": [
+      "1.11",
+      "0.95",
+      "1.00",
+      "0.90"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "EV = 270 × 2,000 = 540,000. CPI = EV / AC = 540,000 / 600,000 = 0.9. (SPI = 540,000 / 600,000 = 0.9 too, as PV is 300 × 2,000 = 600,000.)",
+    "ref": "The Standard for Earned Value Management, 4.4.3.2",
+    "links": [
+      {
+        "book": "evm",
+        "page": 104,
+        "label": "The Standard for Earned Value Management, 4.4.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A user story is 80% done when the iteration ends. How much earned value does agile EVM credit for it?",
+    "options": [
+      "None, until the customer accepts it",
+      "80% of the story's points",
+      "50%, as in the 50/50 rule",
+      "All of it, since the iteration has ended"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Agile EVM gives no credit for partial completion. A backlog item is done (100%) when the customer accepts it, or not done (0%).",
+    "ref": "The Standard for Earned Value Management, 4.4.3.2",
+    "links": [
+      {
+        "book": "evm",
+        "page": 104,
+        "label": "The Standard for Earned Value Management, 4.4.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Why does the EVM standard suggest adding earned value to agile release burnup charts?",
+    "options": [
+      "Burnup charts cannot show any progress",
+      "EVM replaces the need for a product backlog",
+      "Burnup charts do not show cost at completion",
+      "Agile teams are not allowed to track scope"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Burndown and burnup charts give no at-a-glance cost information or estimate of cost at completion. EVM for agile adds those for business decisions.",
+    "ref": "The Standard for Earned Value Management, 4.4.3.1",
+    "links": [
+      {
+        "book": "evm",
+        "page": 104,
+        "label": "The Standard for Earned Value Management, 4.4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "The sponsor wants to review the one work package where both time and money are slipping. Select it.",
+    "diagram": "earned-value-figure",
+    "approach": "predictive",
+    "explanation": "Wiring: SV = EV − PV = 12,000 − 16,000 = −4,000 (behind) and CV = EV − AC = 12,000 − 14,000 = −2,000 (over budget). Walls is behind schedule but exactly on budget; the roof is ahead.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "type": "hotspot",
+    "options": [
+      "Foundations",
+      "Walls",
+      "Roof",
+      "Wiring"
+    ],
+    "answer": 3,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO show that a project is behind schedule?",
+    "type": "multi",
+    "options": [
+      "The SV is negative",
+      "The SPI is below 1.0",
+      "The CPI is below 1.0",
+      "The CV is negative",
+      "The TCPI is below 1.0"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "SV = EV − PV and SPI = EV / PV measure schedule. CV and CPI measure cost; a TCPI below 1.0 means the remaining work is easier to complete.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are measurement methods for discrete effort?",
+    "type": "multi",
+    "options": [
+      "Fixed formula",
+      "Weighted milestone",
+      "Physical measurement",
+      "Level of effort",
+      "Apportioned effort",
+      "Management reserve"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "The four discrete effort methods are fixed formula, weighted milestone, percent complete and physical measurement. Apportioned effort and level of effort are separate classes of work.",
+    "ref": "The Standard for Earned Value Management, 3.2.2.2",
+    "links": [
+      {
+        "book": "evm",
+        "page": 46,
+        "label": "The Standard for Earned Value Management, 3.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO statements about rebaselining are correct?",
+    "type": "multi",
+    "options": [
+      "It follows approved changes to scope, schedule or cost",
+      "It changes only future work, not past results",
+      "It is done whenever the CPI drops below 1.0",
+      "It removes past variances from the reports",
+      "It needs no approval if the sponsor agrees verbally"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Rebaselining updates the PMB after approved changes, modifies only future status and actions, must not hide past issues, and needs formal approval and communication.",
+    "ref": "The Standard for Earned Value Management, 4.6.3",
+    "links": [
+      {
+        "book": "evm",
+        "page": 115,
+        "label": "The Standard for Earned Value Management, 4.6.3"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each earned value measure with its formula.",
+    "type": "match",
+    "left": [
+      "Cost variance",
+      "Schedule variance",
+      "Cost performance index",
+      "Schedule performance index",
+      "Estimate at completion (typical)"
+    ],
+    "right": [
+      "EV − AC",
+      "EV − PV",
+      "EV / AC",
+      "EV / PV",
+      "BAC / CPI"
+    ],
+    "approach": "predictive",
+    "explanation": "Every variance and index starts with EV: a variance subtracts, an index divides. The typical EAC assumes the current CPI continues.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about earned value indices.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "A CPI of 0.85 means the project is",
+        "choices": [
+          "under budget",
+          "over budget",
+          "on budget"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "An SPI of 1.10 means the project is",
+        "choices": [
+          "behind schedule",
+          "on schedule",
+          "ahead of schedule"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "A TCPI above 1.0 means the remaining work is",
+        "choices": [
+          "harder to complete",
+          "easier to complete",
+          "already funded"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Indices below 1.0 are unfavorable for CPI and SPI. For TCPI, above 1.0 means the remaining work must be done more efficiently than so far.",
+    "ref": "PMBOK 8, Guide Table 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 312,
+        "label": "PMBOK 8, Guide Table 5-1"
+      }
+    ]
+  }
+]

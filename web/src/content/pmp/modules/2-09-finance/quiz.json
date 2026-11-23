@@ -127,17 +127,17 @@
   },
   {
     "id": "q7",
-    "q": "Little detail is known yet, and the sponsor wants a quick cost estimate based on a similar project finished last year. Which technique fits?",
+    "q": "The sponsor needs a cost figure by tomorrow to decide whether to fund the next phase. The WBS is not built yet, but a similar project closed last year. Which technique fits, and what is its trade-off?",
+    "approach": "predictive",
+    "explanation": "Analogous estimating uses values from a similar past project. It is less costly and time-consuming than other techniques but can be less accurate, and fits when detailed information is limited. Bottom-up needs the WBS.",
+    "ref": "PMBOK 8, Guide section 5, Analogous estimating",
     "options": [
-      "Bottom-up estimating",
-      "Parametric estimating with a regression model",
-      "Three-point estimating per activity",
-      "Analogous estimating"
+      "Bottom-up: the most accurate, but it takes days",
+      "Parametric: needs no historical data at all",
+      "Three-point: removes all estimating uncertainty",
+      "Analogous: quick and cheap, but less accurate"
     ],
     "answer": 3,
-    "approach": "predictive",
-    "explanation": "Analogous estimating uses values from a previous, similar project. It is quicker and cheaper than other techniques but less accurate, and is used when detailed information is limited.",
-    "ref": "PMBOK 8, Guide section 5, Analogous estimating",
     "links": [
       {
         "book": "pmbok8",
@@ -274,43 +274,43 @@
   },
   {
     "id": "q14",
-    "q": "Work package estimates total 600,000. The contingency reserve is 60,000 and the management reserve is 40,000. What is the cost baseline?",
+    "q": "An identified risk occurs, and the team uses 15,000 of the 60,000 contingency reserve, as its planned response says. What happens to the cost baseline?",
+    "approach": "predictive",
+    "explanation": "Contingency reserves are part of the cost baseline, allocated for identified risks. Using them as planned does not change the baseline. Only management reserve, which sits outside the baseline, needs an approved change when used.",
+    "ref": "PMBOK 8, Guide section 5, Reserve analysis",
     "options": [
-      "660,000",
-      "700,000",
-      "600,000",
-      "640,000"
+      "It stays the same: the contingency is already in it",
+      "It rises by 15,000 through an approved change",
+      "It falls by 15,000, as the reserve is spent",
+      "It is rebuilt from new bottom-up estimates"
     ],
     "answer": 0,
-    "approach": "predictive",
-    "explanation": "Cost baseline = work cost estimates + contingency reserve = 600,000 + 60,000 = 660,000. The management reserve stays outside the cost baseline.",
-    "ref": "PMBOK 8, Guide Figure 2-25",
     "links": [
       {
         "book": "pmbok8",
-        "page": 166,
-        "label": "PMBOK 8, Guide Figure 2-25"
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Reserve analysis"
       }
     ]
   },
   {
     "id": "q15",
-    "q": "A project's cost baseline is 850,000 and its management reserve is 50,000. What is the project budget?",
+    "q": "The project budget is 1,000,000. It includes a management reserve of 80,000 and a contingency reserve of 70,000. What is the cost baseline?",
+    "approach": "predictive",
+    "explanation": "Cost baseline = project budget − management reserve = 1,000,000 − 80,000 = 920,000. It still contains the 70,000 contingency; the work estimates alone are 850,000.",
+    "ref": "PMBOK 8, Guide Figure 2-25",
     "options": [
       "850,000",
-      "800,000",
-      "950,000",
-      "900,000"
+      "930,000",
+      "1,000,000",
+      "920,000"
     ],
     "answer": 3,
-    "approach": "predictive",
-    "explanation": "Project budget = cost baseline + management reserve = 850,000 + 50,000 = 900,000.",
-    "ref": "PMBOK 8, Guide section 4, Project funding requirements",
     "links": [
       {
         "book": "pmbok8",
-        "page": 231,
-        "label": "PMBOK 8, Guide section 4, Project funding requirements"
+        "page": 166,
+        "label": "PMBOK 8, Guide Figure 2-25"
       }
     ]
   },
@@ -554,53 +554,53 @@
   },
   {
     "id": "q27",
-    "q": "Which TWO statements about management reserve are correct?",
+    "q": "Which TWO are tools and techniques of the Develop Budget process?",
+    "approach": "predictive",
+    "explanation": "Figure 2-29 lists expert judgment, cost aggregation, reserve analysis, historical information review, funding limit reconciliation and financing. Analogous and multipoint estimating belong to Estimate Costs.",
+    "ref": "PMBOK 8, Guide 2.4.2.3",
     "type": "multi",
     "options": [
-      "It covers unknown-unknowns",
-      "It sits outside the cost baseline",
-      "It is part of the cost baseline",
-      "It covers identified risks with planned responses",
-      "It is always controlled by the project team"
+      "Cost aggregation",
+      "Funding limit reconciliation",
+      "Analogous estimating",
+      "Multipoint estimating",
+      "Make-or-buy analysis"
     ],
     "answers": [
       0,
       1
     ],
-    "approach": "predictive",
-    "explanation": "Management reserve is set aside in addition to the cost baseline for unforeseen work within scope (unknown-unknowns). It is usually released by senior management; contingency reserve covers identified risks.",
-    "ref": "PMBOK 8, Guide 2.4.1",
     "links": [
       {
         "book": "pmbok8",
-        "page": 164,
-        "label": "PMBOK 8, Guide 2.4.1"
+        "page": 169,
+        "label": "PMBOK 8, Guide 2.4.2.3"
       }
     ]
   },
   {
     "id": "q28",
-    "q": "Which TWO are outputs of the Monitor and Control Finances process?",
+    "q": "Which TWO are financial constraints other than the total budget?",
+    "approach": "hybrid",
+    "explanation": "Budget is the main financial constraint but not the only one. The project may be restricted to a type of money (CapEx or OpEx, internal or external personnel) or to funds for a specific purpose or period, such as a fiscal year.",
+    "ref": "PMBOK 8, Guide 2.4.1",
     "type": "multi",
     "options": [
-      "Revenue and cost forecasts",
-      "Funding proposals",
-      "Funding strategy",
-      "Basis of estimates",
-      "Resource breakdown structure"
+      "Money that may be spent only as CapEx or OpEx",
+      "Funds that must be used within the fiscal year",
+      "The number of people on the team",
+      "The sponsor's leadership style",
+      "The length of the iterations"
     ],
     "answers": [
       0,
       1
     ],
-    "approach": "hybrid",
-    "explanation": "Figure 2-30 lists work performance information, revenue and cost forecasts, change requests, funding proposals and plan and document updates. The funding strategy comes from Plan Financial Management.",
-    "ref": "PMBOK 8, Guide 2.4.2.4",
     "links": [
       {
         "book": "pmbok8",
-        "page": 169,
-        "label": "PMBOK 8, Guide 2.4.2.4"
+        "page": 164,
+        "label": "PMBOK 8, Guide 2.4.1"
       }
     ]
   },

@@ -1,0 +1,162 @@
+[
+  {
+    "book": "agile",
+    "page": 86,
+    "label": "Agile Practice Guide, 5.2.7"
+  },
+  {
+    "book": "agile",
+    "page": 87,
+    "label": "Agile Practice Guide, 5.2.8"
+  },
+  {
+    "book": "agile",
+    "page": 88,
+    "label": "Agile Practice Guide, 5.2.9"
+  },
+  {
+    "book": "agile",
+    "page": 130,
+    "label": "Agile Practice Guide, Software-Centric Approaches and Metrics for Agile Teams"
+  },
+  {
+    "book": "pmbok7",
+    "page": 182,
+    "label": "PMBOK 7, Guide 2.6.3"
+  },
+  {
+    "book": "pmbok7",
+    "page": 183,
+    "label": "PMBOK 7, Guide 2.6.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 66,
+    "label": "PMBOK 8, Standard 3.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 67,
+    "label": "PMBOK 8, Standard 3.5.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 68,
+    "label": "PMBOK 8, Standard 3.5.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 128,
+    "label": "PMBOK 8, Guide 2.1.6.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 144,
+    "label": "PMBOK 8, Guide 2.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 145,
+    "label": "PMBOK 8, Guide 2.2.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 147,
+    "label": "PMBOK 8, Guide 2.2.2.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 149,
+    "label": "PMBOK 8, Guide 2.2.2.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 233,
+    "label": "PMBOK 8, Guide section 4, Quality control measurements"
+  },
+  {
+    "book": "pmbok8",
+    "page": 233,
+    "label": "PMBOK 8, Guide section 4, Quality management plan"
+  },
+  {
+    "book": "pmbok8",
+    "page": 234,
+    "label": "PMBOK 8, Guide section 4, Quality metrics"
+  },
+  {
+    "book": "pmbok8",
+    "page": 234,
+    "label": "PMBOK 8, Guide section 4, Quality reports"
+  },
+  {
+    "book": "pmbok8",
+    "page": 250,
+    "label": "PMBOK 8, Guide section 5, Affinity diagram"
+  },
+  {
+    "book": "pmbok8",
+    "page": 253,
+    "label": "PMBOK 8, Guide section 5, Audits"
+  },
+  {
+    "book": "pmbok8",
+    "page": 254,
+    "label": "PMBOK 8, Guide section 5, Benchmarking"
+  },
+  {
+    "book": "pmbok8",
+    "page": 255,
+    "label": "PMBOK 8, Guide section 5, Cause-and-effect diagram"
+  },
+  {
+    "book": "pmbok8",
+    "page": 256,
+    "label": "PMBOK 8, Guide section 5, Checklists"
+  },
+  {
+    "book": "pmbok8",
+    "page": 263,
+    "label": "PMBOK 8, Guide section 5, Continuous improvement"
+  },
+  {
+    "book": "pmbok8",
+    "page": 263,
+    "label": "PMBOK 8, Guide section 5, Control charts"
+  },
+  {
+    "book": "pmbok8",
+    "page": 263,
+    "label": "PMBOK 8, Guide section 5, Cost of quality (CoQ)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 264,
+    "label": "PMBOK 8, Guide Figure 5-3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 275,
+    "label": "PMBOK 8, Guide section 5, Flowchart"
+  },
+  {
+    "book": "pmbok8",
+    "page": 293,
+    "label": "PMBOK 8, Guide section 5, Process improvement"
+  },
+  {
+    "book": "pmbok8",
+    "page": 301,
+    "label": "PMBOK 8, Guide section 5, Root cause analysis"
+  },
+  {
+    "book": "pmbok8",
+    "page": 310,
+    "label": "PMBOK 8, Guide section 5, Testing/product evaluations"
+  },
+  {
+    "book": "pmbok8",
+    "page": 373,
+    "label": "PMBOK 8, Glossary (histogram)"
+  }
+]

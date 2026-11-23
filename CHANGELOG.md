@@ -6,6 +6,8 @@ Each version of Road to PMP, newest first, with what you will notice.
 
 - **PMP modules 2.4 to 2.6:** Agile in Practice (Scrum, XP, Kanban, Lean and scaling), Scope (requirements, WBS and backlog), and Value-Based Delivery, with 90 questions and 75 flashcards.
 - **PMP modules 2.7 to 2.9:** Resources, Procurement (contracts, negotiation, claims), and Finance (estimates, budget and reserves), with 90 questions, a new case set and 75 flashcards.
+- **PMP modules 2.10 to 2.12:** Earned Value and Financial Reporting, Quality (cost of quality, audits, continuous improvement), and Schedule (dependencies, critical path, compression, baselines), with 90 questions, a new case set and 75 flashcards.
+- Some PMP questions in 2.8 to 2.11 that were too close to CAPM questions were rewritten as new situations.
 
 ## 1.0 · 23 Nov 2026 · Help page, version number and the first PMP modules
 
