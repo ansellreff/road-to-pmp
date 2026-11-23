@@ -754,7 +754,12 @@ export const tests = {
 
   async 'study plan: mock exams get dates in the final review'(page) {
     const day = (n) => new Date(Date.now() + n * 86_400_000).toLocaleDateString('en-CA')
-    const shown = (n) => new Date(Date.now() + n * 86_400_000).toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short' })
+    // As the plan page shows a day: the year is added when it is not the current one (formatDay in src/lib/plan.ts).
+    const shown = (n) => {
+      const date = new Date(Date.now() + n * 86_400_000)
+      const sameYear = date.getFullYear() === new Date().getFullYear()
+      return date.toLocaleDateString('en-GB', { weekday: 'short', day: 'numeric', month: 'short', year: sameYear ? undefined : 'numeric' })
+    }
     await seed(page, { examDates: { capm: day(40) } })
     await page.goto('/plan')
     await see(page, 'Final review, 7 days.')
