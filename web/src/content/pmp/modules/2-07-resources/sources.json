@@ -1,0 +1,97 @@
+[
+  {
+    "book": "agile",
+    "page": 74,
+    "label": "Agile Practice Guide, 4.7.1"
+  },
+  {
+    "book": "agile",
+    "page": 85,
+    "label": "Agile Practice Guide, 5.2.5"
+  },
+  {
+    "book": "agile",
+    "page": 145,
+    "label": "Agile Practice Guide, A3.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 184,
+    "label": "PMBOK 8, Guide 2.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 184,
+    "label": "PMBOK 8, Guide 2.6.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 185,
+    "label": "PMBOK 8, Guide 2.6.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 186,
+    "label": "PMBOK 8, Guide 2.6.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 187,
+    "label": "PMBOK 8, Guide 2.6.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 187,
+    "label": "PMBOK 8, Guide 2.6.2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 192,
+    "label": "PMBOK 8, Guide 2.6.2.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 193,
+    "label": "PMBOK 8, Guide 2.6.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 218,
+    "label": "PMBOK 8, Guide section 4, Resource calendars"
+  },
+  {
+    "book": "pmbok8",
+    "page": 237,
+    "label": "PMBOK 8, Guide section 4, Resource management plan"
+  },
+  {
+    "book": "pmbok8",
+    "page": 239,
+    "label": "PMBOK 8, Guide section 4, Resource requirements"
+  },
+  {
+    "book": "pmbok8",
+    "page": 250,
+    "label": "PMBOK 8, Guide section 5, Theory of constraints"
+  },
+  {
+    "book": "pmbok8",
+    "page": 276,
+    "label": "PMBOK 8, Guide section 5, Green human resource management"
+  },
+  {
+    "book": "pmbok8",
+    "page": 290,
+    "label": "PMBOK 8, Guide section 5, Preassignment"
+  },
+  {
+    "book": "pmbok8",
+    "page": 298,
+    "label": "PMBOK 8, Guide section 5, Resource optimization technique"
+  },
+  {
+    "book": "pmbok8",
+    "page": 299,
+    "label": "PMBOK 8, Guide section 5, Resource-based view"
+  }
+]

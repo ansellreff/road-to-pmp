@@ -249,9 +249,14 @@ def resolve(part: str) -> tuple[str, int] | None:
             # silently linking to the first page.
             return None
         # A heading without a number, named by its title: "..., Key Concepts for Elicitation".
+        # An appendix is named by its title too: "Appendix X1: Agile Procurement and Contracts".
         title = part.split(",", 1)[1].strip() if "," in part else ""
         if title:
-            hit = re.search(rf"^\s*{re.escape(title)}\s+\[p(\d+)\]", toc(book), re.MULTILINE | re.IGNORECASE)
+            hit = re.search(
+                rf"^\s*(?:(?:Appendix|Annex) [AX]\d+: )?{re.escape(title)}\s+\[p(\d+)\]",
+                toc(book),
+                re.MULTILINE | re.IGNORECASE,
+            )
             return (book, int(hit.group(1))) if hit else None
         return book, TOC_BOOKS[book]
 

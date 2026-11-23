@@ -1,0 +1,678 @@
+[
+  {
+    "id": "q1",
+    "q": "Which process aggregates the cost estimates of activities or work packages into an authorized cost baseline?",
+    "options": [
+      "Estimate Costs",
+      "Plan Financial Management",
+      "Develop Budget",
+      "Monitor and Control Finances"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Develop Budget aggregates the estimated costs to establish an authorized cost baseline, against which performance is monitored and controlled.",
+    "ref": "PMBOK 8, Guide 2.4.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 169,
+        "label": "PMBOK 8, Guide 2.4.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What are the main outputs of the Plan Financial Management process?",
+    "options": [
+      "Financial management plan and funding strategy",
+      "Cost baseline and the project funding requirements",
+      "Cost estimates and the basis of estimates",
+      "Revenue forecasts and funding proposals"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Plan Financial Management produces the financial management plan and the funding strategy. The cost baseline comes from Develop Budget, cost estimates from Estimate Costs, and forecasts from Monitor and Control Finances.",
+    "ref": "PMBOK 8, Guide 2.4.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 167,
+        "label": "PMBOK 8, Guide 2.4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "According to the PMBOK Guide, where does the value of financial measurement lie?",
+    "options": [
+      "In collecting as much cost data as possible",
+      "In sending reports to every stakeholder weekly",
+      "In proving that the estimate was correct",
+      "In the decisions and actions the data leads to"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The value is not in collecting and spreading the data, but in the interactions about how to use it to make value-adding, well-informed decisions and take action.",
+    "ref": "PMBOK 8, Guide 2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 163,
+        "label": "PMBOK 8, Guide 2.4"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A project buys new servers that will be owned by the organization for years. Which type of expenditure is this usually?",
+    "options": [
+      "Operational expenditure (OpEx)",
+      "Capital expenditure (CapEx)",
+      "Management reserve",
+      "Contingency reserve"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "CapEx are funds invested to acquire, upgrade and maintain physical assets such as buildings, technology or equipment. OpEx covers the ongoing costs of running the business, such as wages, rent and utilities.",
+    "ref": "PMBOK 8, Guide 2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 164,
+        "label": "PMBOK 8, Guide 2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "The department's project money must be spent within the fiscal year and cannot move to the next year. What is this an example of?",
+    "options": [
+      "A management reserve",
+      "A funding limit reconciliation",
+      "A financial constraint",
+      "A control threshold"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Budget is the main financial constraint, but not the only one: money may be tied to a type (CapEx or OpEx), a purpose, or a period such as a fiscal year.",
+    "ref": "PMBOK 8, Guide 2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 164,
+        "label": "PMBOK 8, Guide 2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Funds are released to the project one phase at a time, after each phase gate. Which funding strategy is this?",
+    "options": [
+      "Incremental disbursement",
+      "Lump sum",
+      "External investment",
+      "Reallocated internal budget"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "In incremental disbursement, funds are secured and allocated in several increments, tied to phases or key milestones. A lump sum allocates the whole budget and reserves at once.",
+    "ref": "PMBOK 8, Guide section 4, Funding strategy",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 227,
+        "label": "PMBOK 8, Guide section 4, Funding strategy"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Little detail is known yet, and the sponsor wants a quick cost estimate based on a similar project finished last year. Which technique fits?",
+    "options": [
+      "Bottom-up estimating",
+      "Parametric estimating with a regression model",
+      "Three-point estimating per activity",
+      "Analogous estimating"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Analogous estimating uses values from a previous, similar project. It is quicker and cheaper than other techniques but less accurate, and is used when detailed information is limited.",
+    "ref": "PMBOK 8, Guide section 5, Analogous estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Analogous estimating"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "A builder estimates a 500 square meter building at 1,200 per square meter, based on data from many past buildings. Which technique is this?",
+    "options": [
+      "Analogous estimating",
+      "Parametric estimating",
+      "Bottom-up estimating",
+      "Expert judgment and voting"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Parametric estimating uses a statistical relationship between historical data and a parameter, such as square footage in construction, to calculate the estimate.",
+    "ref": "PMBOK 8, Guide section 5, Parametric estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 289,
+        "label": "PMBOK 8, Guide section 5, Parametric estimating"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A work package's cost estimates are 40,000 optimistic, 55,000 most likely and 85,000 pessimistic. What is the triangular three-point estimate?",
+    "options": [
+      "55,000",
+      "57,500",
+      "60,000",
+      "65,000"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Triangular distribution: (40,000 + 55,000 + 85,000) / 3 = 180,000 / 3 = 60,000. The beta (PERT) formula, (O + 4M + P) / 6, would give 57,500.",
+    "ref": "PMBOK 8, Guide section 5, Multipoint estimating",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 288,
+        "label": "PMBOK 8, Guide section 5, Multipoint estimating"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "At project start, the team gives a rough order of magnitude estimate. Which accuracy range is typical for it?",
+    "options": [
+      "−25% to +75%",
+      "−5% to +10%",
+      "−10% to +25%",
+      "−50% to +50%"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A ROM estimate in the start-up phase may be in the range of −25% to +75%. Later, with more information, a definitive estimate may narrow to −5% to +10%.",
+    "ref": "Practice Standard for Project Estimating, 2.4",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 32,
+        "label": "Practice Standard for Project Estimating, 2.4"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Why does the accuracy of project cost estimates usually improve as the project goes on?",
+    "options": [
+      "Because the sponsor approves larger reserves later",
+      "Because the team works faster near the end",
+      "Because the cost baseline is reset every month",
+      "Because more is known and assumptions get tested"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Cost estimates are reviewed and refined as more detail becomes available and assumptions are tested, so accuracy increases through the life cycle.",
+    "ref": "PMBOK 8, Guide section 4, Cost estimates",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 224,
+        "label": "PMBOK 8, Guide section 4, Cost estimates"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Rework on some deliverables is expected, but its amount is not known. How should the team budget for it?",
+    "options": [
+      "As management reserve outside the baseline",
+      "As contingency reserve within the cost baseline",
+      "As hidden padding added to every activity estimate",
+      "By leaving it out until the rework happens"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Anticipated rework of unknown size is a known-unknown. Contingency reserves cover identified risks, are clearly identified in the cost documents, and are part of the cost baseline.",
+    "ref": "PMBOK 8, Guide section 5, Reserve analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Reserve analysis"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Halfway through, the project manager checks whether the remaining contingency is enough for the remaining risks. Which technique is this?",
+    "options": [
+      "Cost aggregation",
+      "Funding limit reconciliation",
+      "Reserve analysis",
+      "Make-or-buy analysis"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Reserve analysis evaluates the amount of risk and the schedule and budget reserve, to decide whether the reserve is sufficient for the remaining risk.",
+    "ref": "PMBOK 8, Guide section 5, Reserve analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Reserve analysis"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Work package estimates total 600,000. The contingency reserve is 60,000 and the management reserve is 40,000. What is the cost baseline?",
+    "options": [
+      "660,000",
+      "700,000",
+      "600,000",
+      "640,000"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Cost baseline = work cost estimates + contingency reserve = 600,000 + 60,000 = 660,000. The management reserve stays outside the cost baseline.",
+    "ref": "PMBOK 8, Guide Figure 2-25",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 166,
+        "label": "PMBOK 8, Guide Figure 2-25"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A project's cost baseline is 850,000 and its management reserve is 50,000. What is the project budget?",
+    "options": [
+      "850,000",
+      "800,000",
+      "950,000",
+      "900,000"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Project budget = cost baseline + management reserve = 850,000 + 50,000 = 900,000.",
+    "ref": "PMBOK 8, Guide section 4, Project funding requirements",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 231,
+        "label": "PMBOK 8, Guide section 4, Project funding requirements"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Unforeseen work within scope appears, and senior management releases part of the management reserve. What must happen to the cost baseline?",
+    "options": [
+      "Nothing at all, since the reserve sits outside the baseline",
+      "The amount is added through an approved change",
+      "The baseline is rebuilt from new estimates",
+      "The contingency reserve is reduced to match"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Management reserve is not in the cost baseline. When some of it funds unforeseen work, that amount is added to the cost baseline, which requires an approved change.",
+    "ref": "PMBOK 6, 7.3.2.3",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 262,
+        "label": "PMBOK 6, 7.3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Planned spending in the third quarter exceeds the funding limit for that quarter. What should the project manager do?",
+    "options": [
+      "Ask the team to stop all work until the next quarter",
+      "Move the excess into the management reserve",
+      "Reschedule work to level the rate of spending",
+      "Raise the funding limit in the financial plan"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Funding limit reconciliation compares planned spending with funding limits. A variance may require rescheduling work to level the rate of expenditure, using imposed date constraints.",
+    "ref": "PMBOK 8, Guide section 5, Funding limit reconciliation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 276,
+        "label": "PMBOK 8, Guide section 5, Funding limit reconciliation"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "From which document are the total and periodic project funding requirements derived?",
+    "options": [
+      "The cost baseline",
+      "The resource calendars",
+      "The procurement statement of work",
+      "The stakeholder register"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Project funding requirements, total and periodic, are derived from the cost baseline. Total funds are the cost baseline plus management reserve.",
+    "ref": "PMBOK 8, Guide section 4, Project funding requirements",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 231,
+        "label": "PMBOK 8, Guide section 4, Project funding requirements"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Which part of the financial management plan says how much cost variance is allowed before action must be taken?",
+    "options": [
+      "Level of precision",
+      "Units of measure",
+      "Organizational procedures links",
+      "Control thresholds"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Control thresholds set the agreed variation allowed before action, usually as a percentage deviation from the baseline plan.",
+    "ref": "PMBOK 8, Guide section 4, Financial management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 226,
+        "label": "PMBOK 8, Guide section 4, Financial management plan"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which WBS component is used for project cost accounting and carries a code that links to the organization's accounting system?",
+    "options": [
+      "The work package",
+      "The control account",
+      "The planning package",
+      "The activity list"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The WBS component used for project cost accounting is the control account. Each one has a unique code or account number linked to the accounting system.",
+    "ref": "PMBOK 8, Guide section 4, Financial management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 226,
+        "label": "PMBOK 8, Guide section 4, Financial management plan"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Cost performance has moved past the agreed control threshold. What should the project manager do?",
+    "options": [
+      "Use the management reserve quietly to cover it",
+      "Wait to see whether the trend corrects itself",
+      "Analyze the cause and raise a change request",
+      "Lower the threshold so that no action is needed"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Monitor and Control Finances uses variance analysis to find deviations and their causes, then takes corrective action; changes to the cost baseline go through change control as change requests.",
+    "ref": "PMBOK 8, Guide 2.4.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 169,
+        "label": "PMBOK 8, Guide 2.4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "How does the PMBOK Guide say an iterative approach affects project spending?",
+    "options": [
+      "It flattens the spent curve over the project",
+      "It moves most spending to the final release",
+      "It removes the need for any financial control",
+      "It requires one lump sum paid at the start"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Iterative approaches flatten the spent curve. Financial planning and controls are tailored, using time-phased budgeting and continuous funding assessment.",
+    "ref": "PMBOK 8, Guide 2.4.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 170,
+        "label": "PMBOK 8, Guide 2.4.3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "In a project using an agile approach, how may the budget be allocated, according to the PMBOK Guide?",
+    "options": [
+      "Once, as a lump sum fixed for the entire project",
+      "Only after the final increment is accepted",
+      "By the sponsor approving each user story's cost",
+      "For a quarter, then revised by the work achieved"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "In agile projects, the budget can be allocated for a quarter and then revised quarterly, which gives more flexibility based on the amount of work achieved.",
+    "ref": "PMBOK 8, Guide 2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 164,
+        "label": "PMBOK 8, Guide 2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A small project has very limited financial flexibility. Which approach to reserves does the PMBOK Guide suggest?",
+    "options": [
+      "No reserves, to keep the budget as low as possible",
+      "Conservative budgeting with both kinds of reserve",
+      "Only management reserve, held by the sponsor",
+      "Reserves set only after the first cost overrun"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "For a small project with limited financial flexibility, a conservative approach to budgeting with contingency and management reserves helps mitigate risks and keep the project stable.",
+    "ref": "PMBOK 8, Guide 2.4.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 171,
+        "label": "PMBOK 8, Guide 2.4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A key machine is scarce this year and rental surcharges are expected. The project manager raises the cost forecast now. Which finance enabler is this?",
+    "options": [
+      "Planning the financial reporting",
+      "Managing claims under the procurement contract",
+      "Anticipating future finance challenges",
+      "Quantifying the cost of quality"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Resource constraints can raise actual and forecast costs through surcharges, rush shipping or penalties. Spotting this early is anticipating future finance challenges.",
+    "ref": "PMBOK 8, Guide 2.4.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 170,
+        "label": "PMBOK 8, Guide 2.4.3"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are tools and techniques of the Estimate Costs process?",
+    "type": "multi",
+    "options": [
+      "Analogous estimating",
+      "Multipoint estimating",
+      "Cost of quality",
+      "Funding limit reconciliation",
+      "Cost aggregation",
+      "Financing"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-28 lists expert judgment, analogous, parametric, bottom-up and multipoint estimating, alternatives and reserve analysis, cost of quality, the PMIS and voting. Cost aggregation, funding limit reconciliation and financing belong to Develop Budget.",
+    "ref": "PMBOK 8, Guide 2.4.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 167,
+        "label": "PMBOK 8, Guide 2.4.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO statements about management reserve are correct?",
+    "type": "multi",
+    "options": [
+      "It covers unknown-unknowns",
+      "It sits outside the cost baseline",
+      "It is part of the cost baseline",
+      "It covers identified risks with planned responses",
+      "It is always controlled by the project team"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Management reserve is set aside in addition to the cost baseline for unforeseen work within scope (unknown-unknowns). It is usually released by senior management; contingency reserve covers identified risks.",
+    "ref": "PMBOK 8, Guide 2.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 164,
+        "label": "PMBOK 8, Guide 2.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are outputs of the Monitor and Control Finances process?",
+    "type": "multi",
+    "options": [
+      "Revenue and cost forecasts",
+      "Funding proposals",
+      "Funding strategy",
+      "Basis of estimates",
+      "Resource breakdown structure"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Figure 2-30 lists work performance information, revenue and cost forecasts, change requests, funding proposals and plan and document updates. The funding strategy comes from Plan Financial Management.",
+    "ref": "PMBOK 8, Guide 2.4.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 169,
+        "label": "PMBOK 8, Guide 2.4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each estimating technique with how it works.",
+    "type": "match",
+    "left": [
+      "Analogous",
+      "Parametric",
+      "Bottom-up",
+      "Multipoint"
+    ],
+    "right": [
+      "Uses actual values from a similar past project",
+      "Applies an algorithm to historical data and parameters",
+      "Aggregates estimates of the lowest-level work",
+      "Averages optimistic, most likely and pessimistic values"
+    ],
+    "approach": "predictive",
+    "explanation": "Analogous is quick but less accurate; bottom-up is the most detailed; parametric is as good as its data; multipoint shows the range of uncertainty.",
+    "ref": "PMBOK 8, Guide 2.4.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 167,
+        "label": "PMBOK 8, Guide 2.4.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about reserves and the budget.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Identified risks with planned responses are covered by the",
+        "choices": [
+          "management reserve",
+          "contingency reserve",
+          "control threshold"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "The cost baseline plus the management reserve equals the",
+        "choices": [
+          "funding limit",
+          "basis of estimates",
+          "project budget"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Unforeseen work within scope is covered by the",
+        "choices": [
+          "management reserve",
+          "contingency reserve",
+          "cost of quality"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Contingency reserve is inside the cost baseline for known risks; management reserve is outside it for unknown-unknowns; together with the baseline it makes the project budget.",
+    "ref": "PMBOK 8, Guide Figure 2-25",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 166,
+        "label": "PMBOK 8, Guide Figure 2-25"
+      }
+    ]
+  }
+]

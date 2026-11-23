@@ -1,0 +1,678 @@
+[
+  {
+    "id": "q1",
+    "q": "Which of these is a physical or virtual resource in the PMBOK Guide?",
+    "options": [
+      "A team member with a specialist skill",
+      "A software license used by the team",
+      "The project sponsor's approval",
+      "A stakeholder's expectation"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Physical, material or virtual resources are anything that is not a person: equipment, materials, supplies, facilities, infrastructure, software, testing environments, licenses and services.",
+    "ref": "PMBOK 8, Guide 2.6.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 184,
+        "label": "PMBOK 8, Guide 2.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Who has management authority over one or more resources that the project team may not control directly?",
+    "options": [
+      "The project coordinator",
+      "The product owner",
+      "The scrum master",
+      "The resource manager"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The resource manager has management authority over one or more resources. The project team may not directly control selection because of agreements, subcontractors, a matrix environment or other reasons.",
+    "ref": "PMBOK 8, Guide 2.6.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 184,
+        "label": "PMBOK 8, Guide 2.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "What is the key benefit of the Plan Resource Management process?",
+    "options": [
+      "It sets the approach and effort for managing resources",
+      "It assigns named people to every activity in the schedule",
+      "It releases resources when they are no longer needed",
+      "It decides the leadership style for each team member"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Plan Resource Management establishes the approach and level of management effort needed to manage project resources, based on the type and complexity of the project.",
+    "ref": "PMBOK 8, Guide 2.6.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 186,
+        "label": "PMBOK 8, Guide 2.6.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Which inputs to Plan Resource Management tie resource planning to the project's requirements?",
+    "options": [
+      "The lessons learned register only",
+      "The final project report",
+      "The scope baseline and requirements documentation",
+      "The statement of work issued to each potential supplier"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Figure 2-41 lists the project charter, quality management plan, scope baseline, project schedule, requirements documentation, risk register and stakeholder register among the inputs.",
+    "ref": "PMBOK 8, Guide 2.6.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 186,
+        "label": "PMBOK 8, Guide 2.6.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "What does VRIO stand for in the resource-based view?",
+    "options": [
+      "Volume, reach, impact, output",
+      "Value, rarity, imitability, organization",
+      "Variance, risk, issues and opportunities for the team",
+      "Velocity, release, iteration, outcome"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The resource-based view identifies strategic resources that give a competitive advantage; their strengths can be evaluated with VRIO: value, rarity, imitability and organization.",
+    "ref": "PMBOK 8, Guide section 5, Resource-based view",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 299,
+        "label": "PMBOK 8, Guide section 5, Resource-based view"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which tool of Plan Resource Management focuses on the sustainable use of resources and environmental performance in people practices?",
+    "options": [
+      "Green human resource management",
+      "Organizational theory",
+      "SWOT analysis",
+      "Responsibility assignment matrix"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Green human resource management is a set of people management policies and practices focused on the sustainable use of resources, preserving the environment and improving environmental performance.",
+    "ref": "PMBOK 8, Guide section 5, Green human resource management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 276,
+        "label": "PMBOK 8, Guide section 5, Green human resource management"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which of these is an output of the Estimate Resources process?",
+    "options": [
+      "Project team assignments",
+      "The team charter",
+      "Work performance information for the reports",
+      "The resource breakdown structure"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Estimate Resources produces resource requirements, the basis of estimates and the resource breakdown structure. Project team assignments come from Acquire Resources.",
+    "ref": "PMBOK 8, Guide 2.6.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 187,
+        "label": "PMBOK 8, Guide 2.6.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which document shows when, and for how long, each resource will be available during the project?",
+    "options": [
+      "The resource breakdown structure",
+      "The resource calendar",
+      "The responsibility assignment matrix",
+      "The team charter"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Resource calendars specify when, and for how long, team and physical or virtual resources will be available, possibly with skill level and location.",
+    "ref": "PMBOK 8, Guide section 4, Resource calendars",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 218,
+        "label": "PMBOK 8, Guide section 4, Resource calendars"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What do resource requirements identify, according to the PMBOK Guide?",
+    "options": [
+      "The cost of each supplier contract",
+      "The names and roles of all the project's stakeholders",
+      "Types and quantities per work package or activity",
+      "The leadership style for each phase"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Resource requirements identify the types and quantities of resources for each work package or activity; they can be aggregated for each WBS branch and the whole project.",
+    "ref": "PMBOK 8, Guide section 4, Resource requirements",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 239,
+        "label": "PMBOK 8, Guide section 4, Resource requirements"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A functional manager refuses to release the specialist the resource plan requires. What should the project manager do first?",
+    "options": [
+      "Negotiate: show the impact and offer options such as timing",
+      "Escalate to the sponsor straight away and ask for a formal directive",
+      "Hire an outside contractor without telling anyone",
+      "Remove the specialist's work from the project scope"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "In Acquire Resources the project manager should collaborate, negotiate and influence those who can provide the resources. Escalation comes after negotiation, and outside hiring goes through procurement.",
+    "ref": "PMBOK 8, Guide 2.6.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 187,
+        "label": "PMBOK 8, Guide 2.6.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The planned resource is unavailable, and an alternative with different skills is offered. When is using it acceptable?",
+    "options": [
+      "Never; the resource plan must always be followed exactly",
+      "Only if the sponsor pays for it personally",
+      "Only after the project's end date is moved",
+      "If risks are acknowledged and no rule is broken"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Alternative resources, perhaps with different competencies or costs, are allowed if risks are acknowledged and legal, regulatory, mandatory or other specific criteria are not violated.",
+    "ref": "PMBOK 8, Guide 2.6.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 187,
+        "label": "PMBOK 8, Guide 2.6.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What does the PMBOK Guide say can result from failing to acquire the necessary resources?",
+    "options": [
+      "A shorter schedule and a lower budget",
+      "No effect, as long as the team works overtime",
+      "Lower quality, more risk, even project cancellation",
+      "A guaranteed increase in the customer's overall satisfaction"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Failure to acquire necessary resources may affect schedule, budget, customer satisfaction and quality while increasing risk; in the worst case it could result in project cancellation.",
+    "ref": "PMBOK 8, Guide 2.6.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 187,
+        "label": "PMBOK 8, Guide 2.6.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "A winning bid named three engineers who would do the work. When the project starts, how are these engineers described?",
+    "options": [
+      "Acquired by negotiation",
+      "Preassigned",
+      "Virtual team members",
+      "Leveled resources"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Resources determined in advance are preassigned, for example when specific resources were identified in a competitive proposal.",
+    "ref": "PMBOK 8, Guide section 5, Preassignment",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 290,
+        "label": "PMBOK 8, Guide section 5, Preassignment"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Two activities need the same engineer on the same days, and she cannot do both. Which technique may delay the project's end date?",
+    "options": [
+      "Resource leveling",
+      "Resource smoothing",
+      "Fast tracking",
+      "Decomposition"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Resource leveling adjusts start and finish dates for resource constraints such as overallocation and may affect the critical path. Smoothing stays within float and does not delay completion.",
+    "ref": "PMBOK 8, Guide section 5, Resource optimization technique",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 298,
+        "label": "PMBOK 8, Guide section 5, Resource optimization technique"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "The sponsor says the end date must not move, but two testers are booked above their limit in week six. The project manager smooths the resources. What will this do?",
+    "options": [
+      "Change the critical path to fit the testers' hours",
+      "Push the completion date out by the overload",
+      "Move activities regardless of their float",
+      "Move activities only within their float"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "In resource smoothing, activities may be delayed only within their free and total float, so the critical path is not changed and completion is not delayed; not all resources may be optimized.",
+    "ref": "PMBOK 8, Guide section 5, Resource optimization technique",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 298,
+        "label": "PMBOK 8, Guide section 5, Resource optimization technique"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "When does the PMBOK Guide say resource leveling can be used?",
+    "options": [
+      "Only once the project has been formally closed and handed over",
+      "Only when no activity has any float",
+      "When a resource is assigned to two activities at once",
+      "Only in projects that use an adaptive approach"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Leveling can be used when shared or critical resources are available only at certain times or in limited quantities, when a resource is overallocated to two activities at the same time, or to keep usage constant.",
+    "ref": "PMBOK 8, Guide section 5, Resource optimization technique",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 298,
+        "label": "PMBOK 8, Guide section 5, Resource optimization technique"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "What is the key benefit of the Monitor and Control Resourcing process?",
+    "options": [
+      "It builds the team's skills through coaching",
+      "Resources are there when needed and released when done",
+      "It produces the team charter for the project",
+      "It chooses the project's development approach and life cycle"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Its key benefit is that the assigned physical or virtual resources are available at the right time and place and are released when no longer needed.",
+    "ref": "PMBOK 8, Guide 2.6.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 192,
+        "label": "PMBOK 8, Guide 2.6.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which process deals with the team members' performance, rather than Monitor and Control Resourcing?",
+    "options": [
+      "Acquire Resources",
+      "Estimate Resources",
+      "Plan Resource Management",
+      "Lead the Team"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Monitor and Control Resourcing is concerned with physical and virtual resources; team members are addressed in the Lead the Team process.",
+    "ref": "PMBOK 8, Guide 2.6.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 192,
+        "label": "PMBOK 8, Guide 2.6.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A project keeps a large stock of materials \"just in case\". What risk does the PMBOK Guide point out?",
+    "options": [
+      "High operational costs that reduce profit",
+      "Faster delivery to customers",
+      "A steady fall in the quality of all the stored materials",
+      "Too few materials to meet demand"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Keeping too much inventory may result in high operational costs and reduce profit; too little inventory could hinder the ability to satisfy demand.",
+    "ref": "PMBOK 8, Guide 2.6.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 192,
+        "label": "PMBOK 8, Guide 2.6.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A machine rented for the project has been idle for two weeks and will not be needed again. What should the project manager do?",
+    "options": [
+      "Keep it in case it is needed later",
+      "Lend it to another department informally",
+      "Release it according to the plan",
+      "Wait for the vendor to collect it at closure"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Monitor and Control Resourcing deals with shortages and surpluses in time and ensures resources are used and released according to the plan and project needs.",
+    "ref": "PMBOK 8, Guide 2.6.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 192,
+        "label": "PMBOK 8, Guide 2.6.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Why do agile teams prefer dedicated team members?",
+    "options": [
+      "Dedicated members cost less per hour than others",
+      "Multitasking cuts throughput and predictability",
+      "Dedicated members do not need any coaching",
+      "The Scrum Guide forbids part-time members"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Part-time members multitask and task-switch, which reduces the team's throughput and its ability to predict delivery; task-switching losses are 20% to 40%.",
+    "ref": "Agile Practice Guide, 4.7.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 74,
+        "label": "Agile Practice Guide, 4.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "How does an agile team usually respond when one stage of its work becomes a bottleneck?",
+    "options": [
+      "Hires another full-time specialist for each stage of work",
+      "Raises the WIP limit for that stage",
+      "Adds the overflow to a separate project",
+      "Swarms on the bottleneck within WIP limits"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Teams limit WIP and swarm the highest-priority work until it is complete; in the Kanban Method finishing work matters more than starting new work.",
+    "ref": "Agile Practice Guide, 5.2.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 85,
+        "label": "Agile Practice Guide, 5.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which tool used in Monitor and Control Resourcing improves the performance of the whole system by focusing on its constraint?",
+    "options": [
+      "Theory of constraints",
+      "SWOT analysis",
+      "Preassignment",
+      "Resource availability calendar"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The theory of constraints focuses on improving system-level performance; its project application is critical chain project management. It is a tool of Monitor and Control Resourcing.",
+    "ref": "PMBOK 8, Guide section 5, Theory of constraints",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 250,
+        "label": "PMBOK 8, Guide section 5, Theory of constraints"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "What does the resource management plan describe?",
+    "options": [
+      "Which external vendors will receive each of the project's contracts",
+      "How each risk will be monitored",
+      "How resources are acquired, allocated, monitored and controlled",
+      "How the project's budget is approved"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The resource management plan is a component of the project management plan that describes how project resources are acquired, allocated, monitored and controlled.",
+    "ref": "PMBOK 8, Guide section 4, Resource management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 237,
+        "label": "PMBOK 8, Guide section 4, Resource management plan"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "According to the PMBOK Guide's tailoring considerations, how may teams experienced in a type of project be led?",
+    "options": [
+      "More directly, with closer supervision",
+      "As more self-managing, needing less leadership",
+      "Only by the functional manager",
+      "With a completely new leader assigned for every single phase"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Organizations and teams with experience on a specific type of project may be more self-managing and require less leadership; leadership styles are tailored to the project and environment.",
+    "ref": "PMBOK 8, Guide 2.6.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 193,
+        "label": "PMBOK 8, Guide 2.6.3"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are tools and techniques of the Estimate Resources process?",
+    "type": "multi",
+    "options": [
+      "Bottom-up estimating",
+      "Analogous estimating",
+      "Parametric estimating",
+      "Preassignment",
+      "Negotiation",
+      "Team charter"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-42 lists expert judgment, bottom-up, analogous and parametric estimating, alternatives analysis, the PMIS, meetings, interviews and newer tools such as AI and predictive analytics. Preassignment and negotiation belong to Acquire Resources.",
+    "ref": "PMBOK 8, Guide 2.6.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 187,
+        "label": "PMBOK 8, Guide 2.6.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are outputs of the Acquire Resources process?",
+    "type": "multi",
+    "options": [
+      "Project team assignments",
+      "Resource calendars",
+      "Resource breakdown structure",
+      "Basis of estimates",
+      "Team charter"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Acquire Resources produces physical or virtual resource assignments, project team assignments, resource calendars, change requests and plan updates. The resource breakdown structure and basis of estimates come from Estimate Resources.",
+    "ref": "PMBOK 8, Guide 2.6.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 187,
+        "label": "PMBOK 8, Guide 2.6.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO does Monitor and Control Resourcing address?",
+    "type": "multi",
+    "options": [
+      "Identifying resource shortages and surpluses in time",
+      "Releasing resources according to the plan",
+      "Coaching individual team members",
+      "Writing the team charter",
+      "Choosing the leadership style"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "It monitors expenditures, deals with shortages and surpluses in time, ensures resources are used and released according to plan, informs stakeholders of issues, and manages changes. Coaching belongs to Lead the Team.",
+    "ref": "PMBOK 8, Guide 2.6.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 192,
+        "label": "PMBOK 8, Guide 2.6.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each resource process with what it does.",
+    "type": "match",
+    "left": [
+      "Plan Resource Management",
+      "Estimate Resources",
+      "Acquire Resources",
+      "Monitor and Control Resourcing"
+    ],
+    "right": [
+      "Sets the approach and effort for managing resources",
+      "Identifies the type, quantity and characteristics needed",
+      "Selects resources and assigns them to activities",
+      "Keeps physical resources available as planned"
+    ],
+    "approach": "predictive",
+    "explanation": "The fifth Resources process, Lead the Team, guides and develops the team (modules 1.3 and 1.4).",
+    "ref": "PMBOK 8, Guide 2.6.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 185,
+        "label": "PMBOK 8, Guide 2.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about resource terms.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Moving activities only within their float is",
+        "choices": [
+          "resource leveling",
+          "resource smoothing",
+          "crashing"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Adjusting dates for an overallocated resource, possibly delaying the end, is",
+        "choices": [
+          "resource leveling",
+          "resource smoothing",
+          "fast tracking"
+        ],
+        "answer": 0
+      },
+      {
+        "text": "A hierarchy of resources by category and type is the",
+        "choices": [
+          "team charter",
+          "resource calendar",
+          "resource breakdown structure"
+        ],
+        "answer": 2
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Smoothing works within float; leveling may change the critical path; the resource breakdown structure presents resources by category and type.",
+    "ref": "PMBOK 8, Guide section 5, Resource optimization technique",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 298,
+        "label": "PMBOK 8, Guide section 5, Resource optimization technique"
+      }
+    ]
+  }
+]

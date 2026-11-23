@@ -1,0 +1,676 @@
+[
+  {
+    "id": "q1",
+    "q": "Why is procurement not a separate performance domain in the PMBOK Guide, Eighth Edition?",
+    "options": [
+      "Procurement work is now covered entirely inside the Finance performance domain",
+      "They usually run through the organization's procurement department",
+      "Most projects today no longer buy any goods or services from outside sellers",
+      "PMI moved all of its procurement guidance into the Agile Practice Guide"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Project procurements are usually integrated into, or extend from, the organization's procurement department, using its processes, policies and vendor relationships. Large projects may still have their own procurement team.",
+    "ref": "PMBOK 8, Appendix X4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 350,
+        "label": "PMBOK 8, Appendix X4.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "The PMBOK Guide says the buyer-seller relationship has a feature that is a source of several risks. Which one?",
+    "options": [
+      "Shared ownership of all of the project's deliverables",
+      "A single accounting system for both parties",
+      "Equal access to every detail of the deal",
+      "Information asymmetry between the two parties"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Each party may have different information about the transaction. This information asymmetry is a source of multiple relevant risks.",
+    "ref": "PMBOK 8, Appendix X4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 350,
+        "label": "PMBOK 8, Appendix X4.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "During Plan Sourcing Strategy, the team concludes that a common payroll module is cheaper to buy than to build. Which technique produced this conclusion?",
+    "options": [
+      "Make-or-buy analysis",
+      "Source selection analysis",
+      "Bidder conference",
+      "Claims administration"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A make-or-buy analysis compares buying with making internally and results in a decision on whether the team does the work or it is purchased. Source selection analysis chooses among sellers once the decision to buy is made.",
+    "ref": "PMBOK 8, Guide section 5, Make-or-buy analysis and decisions",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 285,
+        "label": "PMBOK 8, Guide section 5, Make-or-buy analysis and decisions"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "According to Table 2-3, which is an advantage of insourcing (make) over outsourcing (buy)?",
+    "options": [
+      "It transfers delivery risk to the supplier",
+      "It frees capacity for the core strengths",
+      "It increases control over the deliverables",
+      "It is usually cheaper when the goods are common"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Insourcing increases control and oversight of deliverables. Transferring delivery risk, freeing capacity and lower cost for common goods are advantages of outsourcing.",
+    "ref": "PMBOK 8, Guide Table 2-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 126,
+        "label": "PMBOK 8, Guide Table 2-3"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A new feature needs substantial innovation and is closely tied to the organization's competitive advantage. What does Table 2-3 suggest?",
+    "options": [
+      "Make it: insourcing suits substantial new innovation",
+      "Outsource it, because external sellers always innovate faster",
+      "Outsource it, because that moves all strategic risk away",
+      "Use a sole-source contract with the most innovative vendor"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Insourcing is often less expensive when substantial new innovation is required, and it gives tighter integration with the strategic advantage. Outsourcing is often cheaper for common goods or services.",
+    "ref": "PMBOK 8, Guide Table 2-3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 126,
+        "label": "PMBOK 8, Guide Table 2-3"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Before sending bid documents to selected vendors, a buyer wants to learn what solutions the market offers. Which document should it use?",
+    "options": [
+      "Request for quote",
+      "Invitation to tender (ITT)",
+      "Request for information",
+      "Request for proposal"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "An RFI gathers more information from the market before bid documents go out to a set of selected vendors.",
+    "ref": "PMBOK 8, Appendix X4.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 353,
+        "label": "PMBOK 8, Appendix X4.5"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "The scope is complex, and the buyer wants each vendor to propose how it would solve the problem. Which bid document fits?",
+    "options": [
+      "Request for quote",
+      "Request for proposal",
+      "Request for information",
+      "Purchase order"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "An RFP is used for a complex or complicated scope where the buyer is looking for the vendor to provide a solution.",
+    "ref": "PMBOK 8, Appendix X4.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 353,
+        "label": "PMBOK 8, Appendix X4.5"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "The buyer needs 500 laptops of a known standard model, and price will decide the award. Which bid document fits?",
+    "options": [
+      "Request for proposal",
+      "Request for information",
+      "Memorandum of agreement",
+      "Request for quote"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "An RFQ is used when price is the main deciding factor and the proposed solution is readily available.",
+    "ref": "PMBOK 8, Appendix X4.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 353,
+        "label": "PMBOK 8, Appendix X4.5"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "After the bid documents go out, several bidders send questions about the scope. What should the buyer do?",
+    "options": [
+      "Answer privately only the bidder most likely to win the work",
+      "Ignore the questions so that no bidder gains an advantage",
+      "Hold a bidder conference to answer every bidder's questions",
+      "Let each bidder change the statement of work as needed"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The buyer generally holds a bidder conference to respond to questions and give clarifying information. The process must be transparent and fair, with equal opportunity for all sellers.",
+    "ref": "PMBOK 8, Appendix X4.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 353,
+        "label": "PMBOK 8, Appendix X4.5"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Why is it good practice to include the evaluation method in the bid documents?",
+    "options": [
+      "So bidders know how they will be evaluated",
+      "So the buyer can change the method after bids arrive",
+      "So the cheapest bid is always selected automatically",
+      "So the legal review of the contract can be skipped"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Competitive selection can make sellers invest much time up front. Telling them how they will be evaluated is transparent and builds stakeholder trust in the selection method.",
+    "ref": "PMBOK 8, Appendix X4.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 354,
+        "label": "PMBOK 8, Appendix X4.6"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "A buyer is procuring routine office cleaning, with well-established standards and a well-defined outcome. Which selection method fits best?",
+    "options": [
+      "Quality-based selection",
+      "Fixed budget",
+      "Single source",
+      "Least cost"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Least cost suits standard or routine procurements with established practices and a well-defined outcome. For complex procurements it should be avoided, as it may hurt quality.",
+    "ref": "PMBOK 8, Appendix X4.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 354,
+        "label": "PMBOK 8, Appendix X4.6"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Only one supplier holds the patent for a component the project needs. Which selection method applies?",
+    "options": [
+      "Single source",
+      "Least cost",
+      "Fixed budget",
+      "Qualifications only"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Single source is a formal process used when only one supplier can meet the technical requirements, for example because of patents or exclusive rights. It is not a way to favor a provider.",
+    "ref": "PMBOK 8, Appendix X4.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 354,
+        "label": "PMBOK 8, Appendix X4.6"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "When is the fixed-budget selection method appropriate?",
+    "options": [
+      "When the scope is expected to change often during the work",
+      "When the buyer wants vendors to propose the budget",
+      "When the SOW is precise and no changes are expected",
+      "When only one supplier can meet the requirements"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The budget is disclosed and the best proposal within it wins. Sellers adapt scope and quality to the budget, so the method fits only a precise SOW, no expected changes and a budget that cannot be exceeded.",
+    "ref": "PMBOK 8, Appendix X4.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 354,
+        "label": "PMBOK 8, Appendix X4.6"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A building's scope is fully defined and few changes are expected. Which contract type puts the cost risk mainly on the seller?",
+    "options": [
+      "Cost plus fixed fee",
+      "Firm fixed price",
+      "Time and materials",
+      "Cost plus award fee"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A fixed-price contract sets a fee for a clearly defined scope and transfers cost risk to the seller. The buyer gets budget certainty, but may pay a risk premium.",
+    "ref": "PMBOK 8, Appendix X4.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 356,
+        "label": "PMBOK 8, Appendix X4.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A research project's scope is uncertain and the work is high risk. Which contract type does the PMBOK Guide associate with this situation?",
+    "options": [
+      "Firm fixed price",
+      "Fixed price with economic price adjustment",
+      "Fixed price incentive fee",
+      "Cost-reimbursable"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Cost-reimbursable contracts pay actual costs plus a fee and are used when the scope is uncertain or the project is high risk, such as research and development.",
+    "ref": "PMBOK 8, Appendix X4.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 356,
+        "label": "PMBOK 8, Appendix X4.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "The team needs two outside experts at once, and the work cannot be described in detail yet. Which contract type fits?",
+    "options": [
+      "Time and materials",
+      "Firm fixed price with a detailed SOW",
+      "Fixed price incentive fee",
+      "Build-own-operate-transfer"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "T&M contracts are a hybrid, used for staff augmentation, outside experts, and when a precise statement of work cannot be written quickly. The buyer must monitor them closely to control costs.",
+    "ref": "PMBOK 6, 12.1.1.6",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 457,
+        "label": "PMBOK 6, 12.1.1.6"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A five-year supply contract is paid in a foreign currency, and the seller fears rising prices. Which contract type addresses this?",
+    "options": [
+      "Cost plus award fee, judged by the buyer",
+      "Firm fixed price",
+      "Fixed price with economic price adjustment",
+      "Time and materials with a monthly rate review"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "FPEPA is used when the performance period spans years or payments are in another currency. It allows predefined adjustments for changed conditions, such as inflation or commodity prices.",
+    "ref": "PMBOK 6, 12.1.1.6",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 457,
+        "label": "PMBOK 6, 12.1.1.6"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Under a cost plus incentive fee contract, the final cost comes in below the target cost. What happens?",
+    "options": [
+      "The seller keeps every dollar of savings as extra profit",
+      "Buyer and seller share the savings by a set formula",
+      "The buyer keeps all savings and cuts the fee",
+      "The contract converts to firm fixed price"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "In a CPIF contract, departures from the target cost are shared by a prenegotiated formula, for example an 80/20 split, based on the seller's actual performance.",
+    "ref": "PMBOK 6, 12.1.1.6",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 457,
+        "label": "PMBOK 6, 12.1.1.6"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "An agile customer must cap total spending, but wants to add new ideas by replacing planned work. Which contract technique fits?",
+    "options": [
+      "Not-to-exceed time and materials",
+      "Firm fixed price for the whole scope",
+      "Cost plus percentage of costs",
+      "A single all-in-one contract document"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Not-to-exceed T&M limits the overall budget. New ideas can be added, but the customer manages to a given capacity, replacing original work with new work.",
+    "ref": "Agile Practice Guide, Agile Procurement and Contracts",
+    "links": [
+      {
+        "book": "agile",
+        "page": 158,
+        "label": "Agile Practice Guide, Agile Procurement and Contracts"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Half the scope is done and the customer already has enough value. Which agile contract option lets the customer stop and pay a fee?",
+    "options": [
+      "Dynamic scope option",
+      "Graduated time and materials",
+      "Early cancellation option",
+      "Multitiered structure"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "An early cancellation option lets the customer buy the remainder of the project for a cancellation fee. The customer limits budget exposure, and the supplier still earns revenue.",
+    "ref": "Agile Practice Guide, Agile Procurement and Contracts",
+    "links": [
+      {
+        "book": "agile",
+        "page": 158,
+        "label": "Agile Practice Guide, Agile Procurement and Contracts"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Who should lead procurement negotiation, according to the PMBOK Guide?",
+    "options": [
+      "The project manager, since they know the scope best",
+      "The sponsor, because the sponsor funds the project",
+      "The vendor's account manager, who drafts the contract",
+      "A procurement team member with authority to sign"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Negotiation should be led by a procurement team member with the authority to sign contracts. The project manager and the project management team may attend to assist.",
+    "ref": "PMBOK 8, Guide section 5, Negotiation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 288,
+        "label": "PMBOK 8, Guide section 5, Negotiation"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "The legal team wants to push a vendor into a win-lose contract. What should the project manager do?",
+    "options": [
+      "Support the legal team, since winning saves money",
+      "Push for a win-win so both sides stay productive",
+      "Leave the contract terms entirely to the lawyers",
+      "Ask the vendor to sign its own boilerplate contract"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The best long-term results come when both sides feel the contract is fair. A vendor that loses may do the bare minimum or send its least experienced people.",
+    "ref": "The Project Management Answer Book, Chapter 9, Q4",
+    "links": [
+      {
+        "book": "answerbook",
+        "page": 234,
+        "label": "The Project Management Answer Book, Chapter 9, Q4"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Two weeks into a fixed-price contract, the vendor's lead asks the project manager to add a new report for free. The project manager has no contracting authority. What should they do?",
+    "options": [
+      "Agree, to keep the vendor relationship friendly",
+      "Refer it to the procurement lead who holds authority",
+      "Promise extra money later if the report is added",
+      "Add the report to the scope baseline at once"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Changes to rights and obligations are agreed through procurement, led by the person with authority to sign. The project manager assists but cannot commit the organization.",
+    "ref": "PMBOK 8, Guide section 5, Negotiation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 288,
+        "label": "PMBOK 8, Guide section 5, Negotiation"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "What should the project manager do first about the vendor's claim for the lab-system link?",
+    "case": "hospital-portal",
+    "options": [
+      "Refer the claim to litigation to protect the hospital",
+      "Negotiate with the vendor, using the SOW and records",
+      "Stop all payments until the vendor drops the claim",
+      "Ask an arbitrator for a binding decision straight away"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "A contested change is a claim. Settling it through negotiation is the preferred method, supported by the contract terms and detailed project records. Arbitration and litigation come later, if negotiation fails.",
+    "ref": "PMBOK 6, 12.3.2.2",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 482,
+        "label": "PMBOK 6, 12.3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "The last two portal releases missed the response-time targets in the service-level agreement. Which tool checks the vendor's work against the agreement?",
+    "case": "hospital-portal",
+    "options": [
+      "A bidder conference",
+      "A make-or-buy analysis",
+      "A performance review",
+      "A request for information"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Performance reviews for contracts measure, compare and analyze quality, resource, schedule and cost performance against the agreement.",
+    "ref": "PMBOK 6, 12.3.2.3",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 482,
+        "label": "PMBOK 6, 12.3.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "The hospital board asks whether this vendor may bid for the next project. Which record helps answer this?",
+    "case": "hospital-portal",
+    "options": [
+      "Seller performance evaluation documentation",
+      "The minutes of the original bidder conference",
+      "The make-or-buy decision",
+      "The request for quote"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The buyer prepares seller performance evaluation documentation: it rates how well the seller performed and whether it can work on future projects. Poor performers may be removed from the prequalified seller list.",
+    "ref": "PMBOK 6, 12.3.3.7",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 485,
+        "label": "PMBOK 6, 12.3.3.7"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are characteristics of an integrated project delivery (IPD) contract?",
+    "type": "multi",
+    "options": [
+      "A multiparty agreement with owner, designer and contractor",
+      "Shared risks and rewards based on project outcomes",
+      "Open-book accounting for financial transparency",
+      "Separate contracts with no shared incentives",
+      "Contractor involved only after the design is final",
+      "Award based only on the lowest bid"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "IPD contracts are used on complex construction projects. They involve all key parties early, share risks and rewards, use collaborative decisions and keep open-book accounting.",
+    "ref": "PMBOK 8, Appendix X4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 352,
+        "label": "PMBOK 8, Appendix X4.4"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO must be true before a procurement is formally closed?",
+    "type": "multi",
+    "options": [
+      "No claims or invoices are outstanding",
+      "All deliverables meet the technical and quality requirements",
+      "The seller has been added to the prequalified seller list",
+      "A new RFP has been issued for the next phase",
+      "An arbitration panel has reviewed the contract"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Typically all deliverables are on time and meet the technical and quality requirements, no claims or invoices are outstanding, and final payments are made. The buyer then gives formal written notice that the contract is complete.",
+    "ref": "PMBOK 6, 12.3.3.1",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 483,
+        "label": "PMBOK 6, 12.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each dispute resolution method with how it works.",
+    "type": "match",
+    "left": [
+      "Negotiation",
+      "Mediation",
+      "Arbitration",
+      "Litigation"
+    ],
+    "right": [
+      "Direct talks between the parties, no third party",
+      "A neutral third party helps the parties agree",
+      "A panel hears both sides and makes a binding decision",
+      "A court decides, as the last option"
+    ],
+    "approach": "predictive",
+    "explanation": "Other methods are dispute review boards, appointed at the start of the project, and expert determination on one technical or financial issue.",
+    "ref": "PMBOK 8, Appendix X4.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 357,
+        "label": "PMBOK 8, Appendix X4.9"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about contract types.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Cost risk sits mainly with the seller in a",
+        "choices": [
+          "cost-reimbursable contract",
+          "fixed-price contract",
+          "time and materials contract"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Cost risk sits mainly with the buyer in a",
+        "choices": [
+          "fixed-price contract",
+          "target-cost contract",
+          "cost-reimbursable contract"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Savings and overruns are shared by an agreed rule in a",
+        "choices": [
+          "target-cost contract",
+          "firm fixed price contract",
+          "purchase order"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Fixed price transfers cost risk to the seller; cost-reimbursable leaves it with the buyer; target-cost contracts share savings and overruns between them.",
+    "ref": "PMBOK 8, Appendix X4.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 356,
+        "label": "PMBOK 8, Appendix X4.8.1"
+      }
+    ]
+  }
+]
