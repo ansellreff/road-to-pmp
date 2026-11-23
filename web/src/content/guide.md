@@ -1,4 +1,4 @@
-Guide for version 1.0 · 23 Nov 2026
+Guide for version 1.1 · 24 Nov 2026
 
 This guide explains every part of Road to PMP. Each part says what it does, how to use it, its rules and limits,
 and gives an example. The list of parts is on the right (on a phone: the **Contents** button at the bottom).

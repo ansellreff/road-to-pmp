@@ -1,0 +1,656 @@
+[
+  {
+    "id": "q1",
+    "q": "How does the Scrum Guide define Scrum?",
+    "options": [
+      "A detailed method that prescribes each step of the team's software work",
+      "A lightweight framework for adaptive solutions to complex problems",
+      "A scaling framework for coordinating many agile teams",
+      "A set of engineering practices for writing better code"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Scrum is a lightweight framework that helps people, teams and organizations generate value through adaptive solutions for complex problems. It is purposefully incomplete.",
+    "ref": "Scrum Guide, Scrum Definition",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 4,
+        "label": "Scrum Guide, Scrum Definition"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Scrum is founded on empiricism. What does empiricism mean?",
+    "options": [
+      "Following a detailed plan written before the work starts",
+      "Letting the most senior expert in the team decide every technical issue",
+      "Measuring only the costs of the work against a baseline",
+      "Knowledge comes from experience and decisions from observation"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Empiricism asserts that knowledge comes from experience and making decisions based on what is observed. Scrum is founded on empiricism and lean thinking.",
+    "ref": "Scrum Guide, Scrum Theory",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 4,
+        "label": "Scrum Guide, Scrum Theory"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Which are the three pillars of Scrum?",
+    "options": [
+      "Transparency, inspection, adaptation",
+      "Commitment, focus, openness",
+      "Planning, execution, closure",
+      "Respect, courage, collaboration and trust"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "The empirical Scrum pillars are transparency, inspection and adaptation. Commitment, focus, openness, respect and courage are the five Scrum values.",
+    "ref": "Scrum Guide, Scrum Theory",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 4,
+        "label": "Scrum Guide, Scrum Theory"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Who is accountable for maximizing the value of the product in Scrum?",
+    "options": [
+      "The Scrum Master",
+      "The Developers",
+      "The Product Owner",
+      "The project sponsor"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The Product Owner is accountable for maximizing the value of the product resulting from the work of the Scrum Team, and for effective Product Backlog management.",
+    "ref": "Scrum Guide, Scrum Team",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 6,
+        "label": "Scrum Guide, Scrum Team"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A senior manager wants to change the order of the Product Backlog. According to the Scrum Guide, what should she do?",
+    "options": [
+      "Ask the Scrum Master to reorder the backlog for her",
+      "Convince the Product Owner, who decides the ordering",
+      "Tell the Developers to work on her item first",
+      "Raise a formal change request with the change board"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "The Product Owner is one person, not a committee, and may represent many stakeholders. Those wanting to change the Product Backlog can do so by trying to convince the Product Owner.",
+    "ref": "Scrum Guide, Scrum Team",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 6,
+        "label": "Scrum Guide, Scrum Team"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which of these is a way the Scrum Master serves the Scrum Team?",
+    "options": [
+      "Causing the removal of impediments to the team's progress",
+      "Assigning tasks to each Developer at the Daily Scrum",
+      "Deciding which items go into the next Sprint",
+      "Approving every change to the Definition of Done personally"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "The Scrum Master serves the team by coaching self-management and cross-functionality, helping it focus on high-value Increments, causing the removal of impediments, and keeping events productive and within the timebox.",
+    "ref": "Scrum Guide, Scrum Team",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 6,
+        "label": "Scrum Guide, Scrum Team"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "The Sprint Goal has become obsolete after a change in the market. Who has the authority to cancel the Sprint?",
+    "options": [
+      "The Scrum Master",
+      "The Developers",
+      "The project sponsor",
+      "The Product Owner"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "A Sprint could be cancelled if the Sprint Goal becomes obsolete. Only the Product Owner has the authority to cancel the Sprint.",
+    "ref": "Scrum Guide, Scrum Events",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 8,
+        "label": "Scrum Guide, Scrum Events"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "What is the purpose of the Daily Scrum?",
+    "options": [
+      "To report the team's status to the Product Owner and to the sponsor",
+      "To solve every technical problem the team has found",
+      "To inspect progress toward the Sprint Goal and adapt the plan",
+      "To assign the next day's tasks to each Developer in turn"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The Daily Scrum is a 15-minute event for the Developers to inspect progress toward the Sprint Goal and adapt the Sprint Backlog, producing an actionable plan for the next day.",
+    "ref": "Scrum Guide, Daily Scrum",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 10,
+        "label": "Scrum Guide, Daily Scrum"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What is the maximum timebox of the Sprint Review for a one-month Sprint?",
+    "options": [
+      "15 minutes",
+      "4 hours",
+      "8 hours",
+      "3 hours"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "For a one-month Sprint: Sprint Planning up to 8 hours, Daily Scrum 15 minutes, Sprint Review up to 4 hours, Sprint Retrospective up to 3 hours. Shorter Sprints usually have shorter events.",
+    "ref": "Scrum Guide, Sprint Review",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 10,
+        "label": "Scrum Guide, Sprint Review"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A Product Backlog item is almost finished but does not meet the Definition of Done at the end of the Sprint. What happens to it?",
+    "options": [
+      "It returns to the Product Backlog for future consideration",
+      "It is presented at the Sprint Review as partially complete",
+      "It is released, and the remaining work is logged as a defect",
+      "The Sprint is extended until the item meets the definition"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "If a Product Backlog item does not meet the Definition of Done, it cannot be released or even presented at the Sprint Review. It returns to the Product Backlog for future consideration.",
+    "ref": "Scrum Guide, Commitment: Definition of Done",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 13,
+        "label": "Scrum Guide, Commitment: Definition of Done"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The team has a valuable, Done Increment ready in the middle of the Sprint. What does the Scrum Guide say?",
+    "options": [
+      "It must wait for the Sprint Review before anyone can use it",
+      "It must be held until the end of the whole release",
+      "It can only be released by the Scrum Master",
+      "It may be delivered before the Sprint ends"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "An Increment may be delivered to stakeholders prior to the end of the Sprint. The Sprint Review should never be considered a gate to releasing value.",
+    "ref": "Scrum Guide, Increment",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 12,
+        "label": "Scrum Guide, Increment"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What does the Sprint Backlog consist of?",
+    "options": [
+      "Every single item that the stakeholders have requested for the product",
+      "The Product Goal and the release plan for the year",
+      "The Sprint Goal, the selected items and the plan to deliver them",
+      "The tasks the Scrum Master assigned to each Developer"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The Sprint Backlog is the Sprint Goal (why), the Product Backlog items selected for the Sprint (what), and an actionable plan for delivering the Increment (how). It is by and for the Developers.",
+    "ref": "Scrum Guide, Sprint Backlog",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 12,
+        "label": "Scrum Guide, Sprint Backlog"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "In Scrum, which commitment belongs to the Increment?",
+    "options": [
+      "The Product Goal",
+      "The Definition of Done",
+      "The Sprint Goal",
+      "The product roadmap and release plan"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Each artifact has a commitment: the Product Goal for the Product Backlog, the Sprint Goal for the Sprint Backlog, and the Definition of Done for the Increment.",
+    "ref": "Scrum Guide, Scrum Artifacts",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 11,
+        "label": "Scrum Guide, Scrum Artifacts"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A team writes automated tests before the code and integrates its changes many times a day. Which agile approach are these practices from?",
+    "options": [
+      "Extreme Programming (XP)",
+      "Crystal",
+      "DSDM",
+      "The Scrum of Scrums technique"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Test-first programming and continuous integration are XP practices, along with pair programming, the 10-minute build, incremental design and refactoring.",
+    "ref": "Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "An XP team has worked long overtime for weeks to meet a release. Which XP practice is the team breaking?",
+    "options": [
+      "Pair programming",
+      "Refactoring",
+      "Ten-minute build",
+      "Sustainable pace"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Sustainable pace is one of XP's organizational practices; working excessive overtime for weeks goes against it.",
+    "ref": "Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "How does the Kanban Method differ from most agile approaches?",
+    "options": [
+      "It requires a Scrum Master and a Product Owner on every team",
+      "It works only for manufacturing, not for knowledge work",
+      "It does not prescribe timeboxed iterations; work is pulled",
+      "It plans all of the work in detail before any starts"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Unlike most agile approaches, the Kanban Method does not prescribe timeboxed iterations. Items are pulled through the process continuously, with WIP limited to optimize flow.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "An organization wants to begin agile with minimal disruption to its current roles and process. Which approach does the Agile Practice Guide call the original \"start where you are\" method?",
+    "options": [
+      "Scrum",
+      "The Kanban Method",
+      "SAFe",
+      "The DSDM framework"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "The Kanban Method is less prescriptive and less disruptive to begin, as the original \"start where you are\" method; its principles include respecting the current process, roles and titles.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "The team's kanban board is shown. A developer has just finished an item. What should the team do next?",
+    "diagram": "board-figure",
+    "options": [
+      "Help clear the Test column before pulling new development work",
+      "Pull the next item from To do into Development straight away",
+      "Raise the WIP limit on the Test column so more items can wait there",
+      "Move the finished items from Test to Done without testing"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Test holds 4 items against a limit of 2: it is the bottleneck. In the Kanban Method completing work matters more than starting it, so the team helps move work through Test rather than pulling more into Development.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "In the Kanban Method, which is more important?",
+    "options": [
+      "Starting as many items as possible",
+      "Keeping every single team member fully busy",
+      "Planning the whole backlog in detail",
+      "Completing work rather than starting it"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "In the Kanban Method it is more important to complete work than to start new work, because there is no value in work that is not completed.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which framework fixes cost, quality and time at the outset and uses formal prioritization of scope to meet them?",
+    "options": [
+      "Crystal",
+      "XP",
+      "DSDM",
+      "Kanban"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "DSDM is known for constraint-driven delivery: cost, quality and time are set at the outset, and scope is prioritized to meet those constraints.",
+    "ref": "Agile Practice Guide, A3.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 149,
+        "label": "Agile Practice Guide, A3.7"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which family of methods varies its rigor with the number of people involved and the criticality of the project?",
+    "options": [
+      "Scrum",
+      "Crystal",
+      "Kanban",
+      "FDD"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Crystal is a family of methodologies that scale their rigor by project size and criticality, with colors such as Clear, Yellow, Orange and Red.",
+    "ref": "Agile Practice Guide, A3.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 147,
+        "label": "Agile Practice Guide, A3.5"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A team wants to test whether customers will use a new idea before investing heavily. Which Lean Startup concept applies?",
+    "options": [
+      "A minimum viable product in a build, measure, learn loop",
+      "A detailed business case that is approved before any testing at all",
+      "A fixed-scope contract with a single final release",
+      "A value stream map of the current production line"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Lean Startup treats each idea as a testable hypothesis: build the smallest testable version, a minimum viable product, and cycle through build, measure, learn to confirm or pivot.",
+    "ref": "Agile Practice Guide, 2.3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 30,
+        "label": "Agile Practice Guide, 2.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which technique displays the critical steps of a process and the time taken in each, to identify waste?",
+    "options": [
+      "Burndown chart",
+      "Responsibility matrix",
+      "Risk register",
+      "Value stream mapping"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Value stream mapping is a Lean technique that displays the critical steps in a process and the time taken in each step, to identify waste and improve flow.",
+    "ref": "PMBOK 8, Guide section 5, Value stream mapping",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Value stream mapping"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A company's first agile team keeps missing its Sprint Goals because of approval delays in other departments. Management wants to roll agile out to 20 more teams. What does the Agile Practice Guide advise?",
+    "options": [
+      "Roll out a full scaling framework at once to fix the problem for everyone",
+      "Move all 20 teams to agile now and learn as they go",
+      "Address the organizational impediments before scaling up",
+      "Return the first team to a predictive approach"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "A healthy agile team is a critical success factor. If agile for a single team is not successful, avoid scaling up; address the organizational impediments that prevent teams from working in an agile way.",
+    "ref": "Agile Practice Guide, 5.3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 89,
+        "label": "Agile Practice Guide, 5.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which framework keeps one product backlog, one Product Owner and one Definition of Done for several teams, staying as close as possible to single-team Scrum?",
+    "options": [
+      "SAFe",
+      "LeSS",
+      "Crystal",
+      "Kanban"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Large Scale Scrum retains as many elements of single-team Scrum as possible: one product backlog, one DoD, one product owner, one sprint, with added cross-team coordination.",
+    "ref": "Agile Practice Guide, A3.8.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 151,
+        "label": "Agile Practice Guide, A3.8.3"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are events of Scrum?",
+    "type": "multi",
+    "options": [
+      "Sprint Review",
+      "Daily Scrum",
+      "Sprint Retrospective",
+      "Release audit",
+      "Phase gate review",
+      "Change control board meeting"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "agile",
+    "explanation": "Scrum has five events: the Sprint, which contains Sprint Planning, the Daily Scrum, the Sprint Review and the Sprint Retrospective.",
+    "ref": "Scrum Guide, Scrum Events",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 8,
+        "label": "Scrum Guide, Scrum Events"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are core properties of the Kanban Method?",
+    "type": "multi",
+    "options": [
+      "Limit WIP",
+      "Make process policies explicit",
+      "Fixed two-week sprints",
+      "A mandatory Scrum Master",
+      "Detailed up-front scope"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "The core properties are: visualize the workflow, limit WIP, manage flow, make process policies explicit, implement feedback loops, and improve collaboratively.",
+    "ref": "Agile Practice Guide, A3.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 145,
+        "label": "Agile Practice Guide, A3.4"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are values of Extreme Programming?",
+    "type": "multi",
+    "options": [
+      "Simplicity",
+      "Courage",
+      "Hierarchy",
+      "Secrecy",
+      "Speed above quality"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "XP's core values are communication, simplicity, feedback, courage and respect.",
+    "ref": "Agile Practice Guide, A3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 144,
+        "label": "Agile Practice Guide, A3.3"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each scaling approach with its key idea.",
+    "type": "match",
+    "left": [
+      "Scrum of Scrums",
+      "SAFe",
+      "LeSS",
+      "Disciplined Agile"
+    ],
+    "right": [
+      "Team representatives meet two to three times a week",
+      "Patterns at portfolio, program and team levels",
+      "One product backlog and one Product Owner for many teams",
+      "A process-decision tool kit"
+    ],
+    "approach": "agile",
+    "explanation": "Scrum of Scrums coordinates through team representatives; SAFe details practices at portfolio, program and team levels around value streams; LeSS keeps single-team Scrum elements; Disciplined Agile is a process-decision tool kit.",
+    "ref": "Agile Practice Guide, A3.8.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 149,
+        "label": "Agile Practice Guide, A3.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "How large is a Scrum Team, according to the Scrum Guide?",
+    "options": [
+      "Typically 10 or fewer people",
+      "At least 20 people, for full coverage",
+      "Exactly one person per skill area",
+      "As large as the product backlog requires"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "The Scrum Team is small enough to remain nimble and large enough to complete significant work within a Sprint, typically 10 or fewer people. Larger teams should reorganize into several Scrum Teams sharing one Product Goal, Product Backlog and Product Owner.",
+    "ref": "Scrum Guide, Scrum Team",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 6,
+        "label": "Scrum Guide, Scrum Team"
+      }
+    ]
+  }
+]

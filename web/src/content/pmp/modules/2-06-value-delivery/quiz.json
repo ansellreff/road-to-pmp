@@ -1,0 +1,660 @@
+[
+  {
+    "id": "q1",
+    "q": "How does the Standard describe business value?",
+    "options": [
+      "The total budget that the sponsor approved in the project charter",
+      "The number of features delivered by the end",
+      "A net quantifiable benefit, tangible or intangible",
+      "The profit made in the first month after launch"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Business value is a net quantifiable benefit in any form of tangible or intangible elements that may contribute to the health of the organization during the project, at its end, or in the long term.",
+    "ref": "PMBOK 8, Standard 2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 36,
+        "label": "PMBOK 8, Standard 2.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A project improves employee well-being and the company's reputation. How does the Standard classify these?",
+    "options": [
+      "As intangible business value",
+      "As tangible business value",
+      "As project outputs, not value",
+      "As disbenefits of the project"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Figure 2-1 lists employee well-being and reputation among the intangible elements of business value, beside goodwill, brand recognition, public benefit, acquired knowledge and compliance.",
+    "ref": "PMBOK 8, Standard 2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 36,
+        "label": "PMBOK 8, Standard 2.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "In MoSCoW prioritization, what does the W stand for?",
+    "options": [
+      "Wanted",
+      "Will not have",
+      "Worth having",
+      "Wait for the next release"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "MoSCoW buckets items as must have, should have, could have and will not have. It is fast for workshops but coarse-grained and subjective.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What is the WSJF calculation in the Agile Practice Guide?",
+    "options": [
+      "Cost of delay multiplied by the size of the job",
+      "The size of the job divided by its business value and time criticality",
+      "Business value minus the cost of the job",
+      "(Business value + time criticality + risk reduction) / size"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Weighted shortest job first is (user business value + time criticality + risk reduction) divided by size. It scales well in backlogs but relies on relative scoring.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A backlog item scores 6 for business value, 4 for time criticality and 2 for risk reduction, and its size is 3. What is its WSJF score?",
+    "options": [
+      "4",
+      "12",
+      "3",
+      "36"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "WSJF = (business value + time criticality + risk reduction) / size: (6 + 4 + 2) / 3 = 4.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "In the Kano model, how is a feature that customers did not expect but love classified?",
+    "options": [
+      "A basic feature",
+      "A performance feature",
+      "A delighter",
+      "A must-have"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Kano classifies features as basic, performance or delighter. It guides the mix of outcomes but is not a queueing method.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which technique prioritizes work by its time sensitivity and economic impact?",
+    "options": [
+      "MoSCoW",
+      "Cost of delay",
+      "Kano",
+      "Buy-a-feature"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Cost of delay, including CD3 (cost of delay divided by duration), prioritizes by time sensitivity and economic impact.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which prioritization technique produces one ordered list with no ties and needs a single decision owner?",
+    "options": [
+      "MoSCoW",
+      "Kano",
+      "Buy-a-feature",
+      "Stack ranking"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Stack rank, or forced ranking, gives one ordered list with no ties. It is clarifying and sparks debate, and needs a single decision owner.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What is a weakness of the buy-a-feature technique, according to the Agile Practice Guide?",
+    "options": [
+      "It can be gamed if scope is unclear",
+      "It cannot involve any stakeholders",
+      "It always ranks the cheapest items first",
+      "It works only for predictive projects"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "In buy-a-feature (the $100 test), stakeholders spend a budget on items. It surfaces true preferences but can be gamed if scope is unclear.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Who orders the Product Backlog in Scrum?",
+    "options": [
+      "The Scrum Master",
+      "The sponsor",
+      "The Product Owner",
+      "The team members by vote"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The Product Owner is accountable for Product Backlog management, including ordering Product Backlog items, and for maximizing the value of the product.",
+    "ref": "Scrum Guide, Scrum Team",
+    "links": [
+      {
+        "book": "scrum",
+        "page": 6,
+        "label": "Scrum Guide, Scrum Team"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "How much of the backlog does the Agile Practice Guide say should be written before work starts?",
+    "options": [
+      "Every story for the entire project",
+      "Enough for the first release broadly and the next iteration",
+      "Only the stories for the final release",
+      "None at all; stories are written only after the work is delivered"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "There is no need to create all the stories before work starts, only enough to understand the first release in broad brushstrokes and sufficient items for the next iteration.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Why does the Agile Practice Guide stress shipping increments often?",
+    "options": [
+      "It removes the need for any testing",
+      "It lets the team skip the reviews",
+      "It keeps the sponsor away from the work",
+      "It confirms value and reduces risk"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Shipping confirms value, because only a released increment lets customers decide whether it is worth the investment; it surfaces hidden work; and it reduces risk by revealing problems early.",
+    "ref": "Agile Practice Guide, 5.2.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 87,
+        "label": "Agile Practice Guide, 5.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "What does the Agile Practice Guide mean when it says frequent shipping \"surfaces hidden work\"?",
+    "options": [
+      "Packaging, deployment and compliance become visible",
+      "Team members' private tasks are reported",
+      "Unused budget becomes available to spend",
+      "Old requirements are deleted from the backlog automatically each time"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Packaging, deployment, documentation, compliance checks and operational handoffs all become visible when the team ships often.",
+    "ref": "Agile Practice Guide, 5.2.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 87,
+        "label": "Agile Practice Guide, 5.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "What is the purpose of a minimum viable product?",
+    "options": [
+      "To deliver every single feature before any customer is allowed to see it",
+      "To replace the product roadmap with a single release",
+      "To learn whether the idea delivers value, with the fewest features",
+      "To reduce the project's budget by cutting all testing"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Lean Startup builds the smallest testable version of an idea, the MVP, and runs a build, measure, learn loop with real customer data to confirm the idea or pivot.",
+    "ref": "Agile Practice Guide, 2.3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 30,
+        "label": "Agile Practice Guide, 2.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which of these is an outcome measure that links delivery to value, in the Agile Practice Guide?",
+    "options": [
+      "Number of story points completed",
+      "Hours logged by each team member",
+      "Adoption and usage analytics",
+      "Number of meetings held per week"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Outcome-oriented measures include customer satisfaction or NPS, business value delivered, adoption and usage analytics showing whether released capabilities are used, and time to learn.",
+    "ref": "Agile Practice Guide, 5.5.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 94,
+        "label": "Agile Practice Guide, 5.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Who is accountable for monitoring, recording and reporting realized benefits, according to the benefits management plan?",
+    "options": [
+      "The project scheduler",
+      "The change control board",
+      "The quality auditor",
+      "The benefits owner"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The benefits owner is the person accountable for monitoring, recording and reporting realized benefits throughout the timeframe established in the plan.",
+    "ref": "PMBOK 8, Guide section 4, Benefits management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Benefits management plan"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Which element of the benefits management plan states whether benefits are short term, long term, ongoing or by phase?",
+    "options": [
+      "Timeframe for realizing benefits",
+      "Strategic alignment with the business strategy",
+      "Target benefits",
+      "Assumptions"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The plan may include target benefits, strategic alignment, the timeframe for realizing benefits (short term, long term, ongoing or by phase), the benefits owner, metrics, assumptions and risks.",
+    "ref": "PMBOK 8, Guide section 4, Benefits management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Benefits management plan"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "In the benefits management plan, how may the financial value of target benefits be expressed?",
+    "options": [
+      "As the number of features delivered",
+      "As story points",
+      "As net present value (NPV)",
+      "As team velocity"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Target benefits are the expected tangible and intangible value; financial value may be expressed as net present value (NPV).",
+    "ref": "PMBOK 8, Guide section 4, Benefits management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Benefits management plan"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Why does the benefits management plan describe how business value becomes part of ongoing operations?",
+    "options": [
+      "Because operations staff write the project charter",
+      "Because many benefits are realized after the project closes",
+      "Because the plan replaces the operations budget",
+      "Because operations staff must approve every single change request raised"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The plans describe how the business value becomes part of the organization's ongoing operations, including the metrics, which verify the value and validate success; many benefits are realized after closure.",
+    "ref": "PMBOK 8, Guide section 4, Benefits management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Benefits management plan"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A sponsor wants evidence that a new platform is delivering value, not just features. What should the team show?",
+    "options": [
+      "The number of tasks closed in the tool",
+      "The total number of hours the team has worked during this month",
+      "The size of the remaining backlog",
+      "Outcome metrics such as usage and customer satisfaction"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Stakeholders care about what is delivered and its impact; outcome measures such as adoption and usage, customer satisfaction or business value delivered show value, while counts of tasks or hours show only activity.",
+    "ref": "Agile Practice Guide, 5.5.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 94,
+        "label": "Agile Practice Guide, 5.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "How can value be assessed, according to the Standard?",
+    "options": [
+      "With measurable metrics or qualitative observations",
+      "Only with financial return on investment",
+      "Only by counting the number of deliverables completed so far",
+      "Only after the product has been retired"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Value can be described and assessed using measurable metrics, such as return on investment, or qualitative observations such as testimonials and societal benefits.",
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "When are backlog refinement sessions typically held, according to the Agile Practice Guide?",
+    "options": [
+      "Only once, at the very start of the project, before any iteration",
+      "After the final release",
+      "In the middle of the iteration, for upcoming ones",
+      "During the Sprint Retrospective"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The product owner works with the team to prepare stories for the upcoming iteration in refinement sessions, typically held in the middle of the iteration.",
+    "ref": "Agile Practice Guide, 5.2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 82,
+        "label": "Agile Practice Guide, 5.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "What does the product owner do with the product roadmap as the team delivers?",
+    "options": [
+      "Freezes it, so stakeholders can rely on it",
+      "Replans it based on what is produced and new information",
+      "Hands it over to the change control board to manage from then on",
+      "Deletes it once the first release is done"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The product owner replans the roadmap based on what the team produces and emerging information, creating transparency and alignment on delivering value.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Which THREE are backlog prioritization techniques in the Agile Practice Guide?",
+    "type": "multi",
+    "options": [
+      "MoSCoW",
+      "Weighted shortest job first",
+      "Kano",
+      "Critical path method",
+      "Earned value analysis",
+      "Monte Carlo simulation"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "agile",
+    "explanation": "Table 5-1 lists MoSCoW, stack rank, value versus effort, cost of delay, WSJF, Kano and buy-a-feature.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which THREE are elements of a benefits management plan?",
+    "type": "multi",
+    "options": [
+      "Benefits owner",
+      "Metrics",
+      "Strategic alignment",
+      "Work breakdown structure",
+      "Risk register",
+      "Team charter"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "The plan may include target benefits, strategic alignment, timeframe, benefits owner, metrics, assumptions and risks to benefits realization.",
+    "ref": "PMBOK 8, Guide section 4, Benefits management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Benefits management plan"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO are reasons the Agile Practice Guide gives for shipping increments?",
+    "type": "multi",
+    "options": [
+      "It confirms value",
+      "It reduces risk",
+      "It removes the need for planning",
+      "It ends stakeholder involvement",
+      "It fixes the scope"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Shipping confirms value, surfaces hidden work and reduces risk.",
+    "ref": "Agile Practice Guide, 5.2.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 87,
+        "label": "Agile Practice Guide, 5.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Match each prioritization technique with how it works.",
+    "type": "match",
+    "left": [
+      "MoSCoW",
+      "Value versus effort",
+      "Cost of delay",
+      "Buy-a-feature"
+    ],
+    "right": [
+      "Bucket items by necessity",
+      "Plot impact against effort",
+      "Rank by time sensitivity and economic impact",
+      "Stakeholders spend a budget on items"
+    ],
+    "approach": "agile",
+    "explanation": "Table 5-1 of the Agile Practice Guide describes each technique with its strengths and limits.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Using the product owner's WSJF scores, which item should go first?",
+    "case": "ticket-platform",
+    "options": [
+      "Loyalty points",
+      "Mobile wallet tickets",
+      "Donor dashboard",
+      "Seat selection"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Seat selection: (9 + 8 + 5) / 4 = 5.5. Mobile tickets: (7 + 6 + 3) / 4 = 4. Donor dashboard: (4 + 2 + 1) / 2 = 3.5. Loyalty points: (6 + 3 + 2) / 5 = 2.2. The highest score goes first.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "How should the team deliver, to show value before the season starts?",
+    "case": "ticket-platform",
+    "options": [
+      "Build every requested feature and release them all at once",
+      "Release a usable first increment early and gather feedback",
+      "Wait for the board to approve a full specification first",
+      "Deliver the donor dashboard first, since it is the smallest"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Only a released increment lets customers decide whether the outcome is worth the investment; frequent delivery also reveals problems early. Order follows value, not just size.",
+    "ref": "Agile Practice Guide, 5.2.8",
+    "links": [
+      {
+        "book": "agile",
+        "page": 87,
+        "label": "Agile Practice Guide, 5.2.8"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Who should track the expected 30% cut in box-office costs after launch?",
+    "case": "ticket-platform",
+    "options": [
+      "The team, until the last iteration ends",
+      "A benefits owner named in the benefits plan",
+      "Nobody; benefits are checked at closure only",
+      "The ticketing software vendor's sales team"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The benefits management plan names a benefits owner accountable for monitoring, recording and reporting realized benefits over the timeframe, with metrics; this benefit arrives after the project ends.",
+    "ref": "PMBOK 8, Guide section 4, Benefits management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Benefits management plan"
+      }
+    ]
+  }
+]

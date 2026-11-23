@@ -16,6 +16,7 @@ Project Management Professional. Started 2026-10-11 and paused the same day unti
 | 23 Nov 2026 | **PMP Session 4 done: modules 1.4 to 1.6.** 1.4 Team Performance, 1.5 Identifying and Analyzing Stakeholders, 1.6 Engaging Stakeholders: 90 questions (including the first PMP point-and-click question and a second case set), 75 flashcards. People task 4 is now fully taught, task 5 half. Your decision: 1.4 is a full module. Part of version 1.0 (same day, not yet uploaded). CAPM unchanged. | Next: PMP Session 5, modules 1.7 to 1.9, starting in plan mode |
 | 23 Nov 2026 | **PMP Session 5 done: modules 1.7 to 1.9. Domain 1 (People) is complete.** 1.7 Aligning and Managing Expectations; Mentoring, 1.8 Knowledge Transfer, 1.9 Communication and Reporting: 90 questions (a third case set, a question on the burndown drawing, channel calculations), 75 flashcards. All eight People tasks are taught. Part of version 1.0 (same day, not yet uploaded). CAPM unchanged. | Next: PMP Session 6, Domain 2 (Process), starting in plan mode |
 | 23 Nov 2026 | **PMP Session 6 done: modules 2.1 to 2.3, the start of Domain 2 (Process).** 2.1 The Framework, 2.2 Choosing the Approach, 2.3 The Integrated Project Management Plan: 90 questions (a point-and-click question on the focus areas drawing, a fourth case set), 75 flashcards. Process task 1 is fully taught. Your decision: 2.1 is a full module. Part of version 1.0 (same day, not yet uploaded). CAPM unchanged. | Next: PMP Session 7, modules 2.4 to 2.6, starting in plan mode |
+| 24 Nov 2026 | **Sessions 7 to 10 in one go, at your request** (exception recorded in DECISIONS.md). **PMP Session 7 done: modules 2.4 to 2.6.** 2.4 Agile in Practice, 2.5 Scope, 2.6 Value-Based Delivery: 90 questions (a question on the kanban board drawing, one on the traceability matrix, a fifth case set), 75 flashcards. Process tasks 2 and 3 are taught. Version 1.1. CAPM unchanged. | Session 8, modules 2.7 to 2.9, follows at once |
 
 ## Roadmap
 
@@ -30,7 +31,8 @@ PMP counts its own sessions from 1. (Until 2026-10-11 these were numbered 32 to 
 | ✅ | 4 | PMP Domain 1, People: modules 1.4 to 1.6 (People tasks 3, 4 and 5) |
 | ✅ | 5 | PMP Domain 1, People: modules 1.7 to 1.9 (People tasks 5 to 8). Domain 1 complete |
 | ✅ | 6 | PMP Domain 2, Process: modules 2.1 to 2.3 (Process task 1) |
-| ⬜ | 7 to 10 | PMP Domain 2, Process: modules 2.4 to 2.15 |
+| ✅ | 7 | PMP Domain 2, Process: modules 2.4 to 2.6 (Process tasks 1, 2 and 3) |
+| ⬜ | 8 to 10 | PMP Domain 2, Process: modules 2.7 to 2.15 |
 | ⬜ | 11 to 13 | PMP Domain 3, Business Environment: modules 3.1 to 3.10 |
 | ⬜ | 14 | PMP mock exams: four of 180 questions, the fourth unseen; PMP in the study plan, readiness and weak spots |
 | ⬜ | 15 | PMP formula sheet; accuracy check against the reference list; final report |
@@ -157,8 +159,8 @@ Plus one page outside the question bank: how to answer situational questions.
 | People 7, Help ensure knowledge transfer | Identify critical knowledge; gather it; foster the environment | 1.8 | Covered: one section per enabler, plus explicit and tacit knowledge |
 | People 8, Plan and manage communication | Communication strategy; transparency and collaboration; feedback loop; reporting requirements; reports for sponsors and stakeholders; reporting and governance | 1.9 | Covered: strategy (with channels, methods, models), feedback loop, transparency, reporting requirements and reports, reporting and governance |
 | Process 1, Integrated plan and delivery | Needs, complexity, magnitude; recommend an approach; critical information requirements (sustainability); execution strategy; integrated plan; effort and resource estimates; dependencies, gaps, continued value; maintain the plan; data for decisions | 2.1, 2.2, 2.3, 2.4 | Covered: assess needs, complexity, magnitude; recommend an approach; execution strategy (2.2); critical information, integrated plan, estimates (introduced; detail in 2.7, 2.9, 2.12), dependencies, gaps and value, maintaining the plan, data for decisions (2.3). 2.1 gives the framework; 2.4 adds agile frameworks |
-| Process 2, Scope | Define scope; stakeholder agreement; break down scope | 2.5 | Not written |
-| Process 3, Value-based delivery | Value components; prioritize by value and feedback; deliver incrementally; examine value throughout; benefit measurement system; delivery options | 2.4, 2.6 | Not written |
+| Process 2, Scope | Define scope; stakeholder agreement; break down scope | 2.5 | Covered: define scope, stakeholder agreement, break down scope (2.5) |
+| Process 3, Value-based delivery | Value components; prioritize by value and feedback; deliver incrementally; examine value throughout; benefit measurement system; delivery options | 2.4, 2.6 | Covered: value components, prioritizing, incremental delivery, examining value, benefit measurement, delivery options (2.6); agile delivery options also in 2.4 |
 | Process 4, Resources | Define and plan resources; manage and optimize needs and availability | 2.7 | Not written |
 | Process 5, Procurement | Plan; execute the plan; contract types; vendor performance; agreement objectives met; negotiations; negotiation strategy; manage suppliers and contracts; procurement strategy; delivery solution | 2.8 | Not written |
 | Process 6, Finance | Financial needs; risk and contingency allocations; spend tracking; financial reporting; future challenges; variations and governance; reserves | 2.9, 2.10 | Not written |
@@ -283,4 +285,16 @@ Matching, hot spot (PMP's "point and click") and comic strip came from CAPM.
 - **Sources read for this session:** PMBOK Guide, Eighth Edition: Standard 1.2, 2.1, 2.1.1, 3.1 to 3.8 with the "principle in action" sections, 4.1 to 4.5.6; Guide 2 introduction and Table 2-1, 2.1.6.1, 2.1.6.2, 2.1.6.4, 2.6.2.2, 3.1 to 3.6; section 4 (assumption log, basis of estimates, benefits management plan, business case, change management plan, cost, schedule and scope baselines, project charter, project management plan, work performance data and information); Appendix X5.2, X5.4 and Table X5-2. Agile Practice Guide, second edition: 3.10, 3.10.1, 3.10.3. PMBOK Guide, Seventh Edition, section 2 (its eight domains, for the edition note).
 - **The approach tag:** 37 predictive, 19 agile, 34 hybrid (41% predictive). 2.1 leans predictive (15 of 30) because its subject is approach-neutral; 2.2 leans agile (11 of 30).
 - **Quality rules:** options were balanced while writing; the right answer is the longest option in 2, 0 and 0 questions. One question in 2.2 repeated a CAPM question and was rewritten as a situation. Right answers are spread evenly over A to D.
+- **CAPM guards:** `check_capm_frozen.py` passes; CAPM's click tests pass unchanged.
+## PMP Session 7: Process modules 2.4 to 2.6, as built
+
+| Module | Lesson sections | Questions | Flashcards |
+|---|---|---|---|
+| 2.4 Agile in Practice | Choosing among agile approaches; Scrum (2020 Scrum Guide: pillars, values, accountabilities, events and timeboxes, artifacts and commitments); XP; the Kanban Method; Crystal, FDD, DSDM; Lean thinking; scaling frameworks | 30 (26 single answer including one on the kanban board drawing, 3 multiple response, 1 matching) | 25 |
+| 2.5 Scope | Scope and value; requirements and the scope statement; stakeholder agreement; the WBS and the backlog; monitoring, controlling and validating scope | 30 (25 single answer including one on the traceability matrix drawing, 3 multiple response, 1 matching, 1 pull-down list) | 25 |
+| 2.6 Value-Based Delivery | Value components; prioritizing (MoSCoW, stack rank, value versus effort, cost of delay, WSJF, Kano, buy-a-feature); incremental delivery; examining value; the benefits measurement system; demonstrating value | 30 (23 single answer, 3 multiple response, 1 matching, a case set of 3 on a theater's ticketing) | 25 |
+
+- **Sources read:** Agile Practice Guide, second edition: 2.3.3, 5.2.1, 5.2.2, 5.2.8, 5.3.1, 5.3.2, 5.5.3, Annex A3 (A3.2 to A3.9). The Scrum Guide (2020): definition, theory, values, team, events, artifacts and commitments. PMBOK Guide, Eighth Edition: Standard 2.1, 3.4, 4.2.1, 4.2.2, 4.4; Guide 2.2 to 2.2.3 (Scope domain); section 4 (accepted and verified deliverables, benefits management plan, business case, project scope statement, requirements documentation, requirements traceability matrix, scope baseline); section 5 (decomposition, prioritization/ranking, value stream mapping).
+- **The approach tag:** 23 predictive, 42 agile, 25 hybrid (26% predictive), because 2.4 and 2.6 are agile subjects. Sessions 8 to 10 (resources, procurement, finance, earned value, quality, schedule, status, closure) lean predictive and bring Domain 2 back toward 40%.
+- **Quality rules:** options balanced while writing; the right answer is the longest option in 2, 1 and 0 questions. The drawing questions use CAPM's existing drawings with new, applied questions.
 - **CAPM guards:** `check_capm_frozen.py` passes; CAPM's click tests pass unchanged.

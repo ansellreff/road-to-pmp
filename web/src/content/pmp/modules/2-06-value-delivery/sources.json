@@ -1,0 +1,77 @@
+[
+  {
+    "book": "agile",
+    "page": 30,
+    "label": "Agile Practice Guide, 2.3.3"
+  },
+  {
+    "book": "agile",
+    "page": 81,
+    "label": "Agile Practice Guide, 5.2.1"
+  },
+  {
+    "book": "agile",
+    "page": 82,
+    "label": "Agile Practice Guide, 5.2.2"
+  },
+  {
+    "book": "agile",
+    "page": 85,
+    "label": "Agile Practice Guide, 5.2.6"
+  },
+  {
+    "book": "agile",
+    "page": 87,
+    "label": "Agile Practice Guide, 5.2.8"
+  },
+  {
+    "book": "agile",
+    "page": 94,
+    "label": "Agile Practice Guide, 5.5.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 36,
+    "label": "PMBOK 8, Standard 2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 63,
+    "label": "PMBOK 8, Standard 3.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 84,
+    "label": "PMBOK 8, Standard 4.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 92,
+    "label": "PMBOK 8, Standard 4.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 140,
+    "label": "PMBOK 8, Guide 2.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 220,
+    "label": "PMBOK 8, Guide section 4, Benefits management plan"
+  },
+  {
+    "book": "pmbok8",
+    "page": 221,
+    "label": "PMBOK 8, Guide section 4, Business case"
+  },
+  {
+    "book": "pmbok8",
+    "page": 292,
+    "label": "PMBOK 8, Guide section 5, Prioritization/ranking"
+  },
+  {
+    "book": "scrum",
+    "page": 6,
+    "label": "Scrum Guide, Scrum Team"
+  }
+]

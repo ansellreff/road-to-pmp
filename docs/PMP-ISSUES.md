@@ -83,3 +83,12 @@ Every problem met while building the PMP course, newest group last. Section name
 | PMP-45 | One question in 2.2 ("What is a suitability filter?") repeated a CAPM question word for word (the checker's warning). | Rewritten as a situation with new options. CAPM was not changed. | Module 2.2, q18 |
 | PMP-46 | Process task 1's enabler "estimate work effort and resource requirements" needs techniques that belong to later modules. | 2.3 teaches what estimates must contain (basis of estimates) and Estimate Resources; the techniques are taught in 2.7, 2.9, 2.12 and 2.13, and the coverage table says so. | "Coverage", Process 1 |
 | PMP-47 | 2.1's subject is approach-neutral, so its questions lean predictive (15 of 30). | Balanced across the session by 2.2, which leans agile; the session is at 41% predictive. | "PMP Session 6 as built" |
+
+### PMP Session 7 (modules 2.4 to 2.6)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| PMP-48 | The outline does not name Scrum, XP, Kanban or the scaling frameworks of module 2.4. You asked for Sessions 7 to 10 in one go, so I did not stop to ask. | Treated as full content, like your decisions for 1.4 and 2.1: PMBOK 8 names these methods as the adaptive approaches (Standard 4.2.2), and they serve the enablers "recommend a development approach", "recommend a project execution strategy" and "evaluate delivery options". **Please say if you want 2.4 treated differently.** | "Coverage", Process 1 and 3 |
+| PMP-49 | Session 7 is only 26% predictive (2.4 and 2.6 are agile subjects). | Accepted for this session; the predictive-heavy modules of Sessions 8 to 10 balance Domain 2. The exam builder keeps each mock exam near 40% in any case. | "PMP Session 7 as built" |
+| PMP-50 | The Agile Practice Guide's annex still describes Scrum with a "development team" and "roles"; the 2020 Scrum Guide says "Developers" and "accountabilities". | The lesson follows the Scrum Guide and adds an edition note that PMP questions may use either term. | Module 2.4, Scrum |
+| PMP-51 | The day changed (24 Nov 2026), so the new modules can no longer join version 1.0. | Version 1.1 started, as you chose (one version per day); the guide's first line says 1.1. Neither version has been uploaded yet. | `CHANGELOG.md` |

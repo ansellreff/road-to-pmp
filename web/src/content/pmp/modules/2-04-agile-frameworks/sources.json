@@ -1,0 +1,137 @@
+[
+  {
+    "book": "agile",
+    "page": 30,
+    "label": "Agile Practice Guide, 2.3.3"
+  },
+  {
+    "book": "agile",
+    "page": 88,
+    "label": "Agile Practice Guide, 5.3.1"
+  },
+  {
+    "book": "agile",
+    "page": 89,
+    "label": "Agile Practice Guide, 5.3.2"
+  },
+  {
+    "book": "agile",
+    "page": 143,
+    "label": "Agile Practice Guide, A3.2"
+  },
+  {
+    "book": "agile",
+    "page": 144,
+    "label": "Agile Practice Guide, A3.3"
+  },
+  {
+    "book": "agile",
+    "page": 145,
+    "label": "Agile Practice Guide, A3.4"
+  },
+  {
+    "book": "agile",
+    "page": 147,
+    "label": "Agile Practice Guide, A3.5"
+  },
+  {
+    "book": "agile",
+    "page": 147,
+    "label": "Agile Practice Guide, A3.6"
+  },
+  {
+    "book": "agile",
+    "page": 149,
+    "label": "Agile Practice Guide, A3.7"
+  },
+  {
+    "book": "agile",
+    "page": 149,
+    "label": "Agile Practice Guide, A3.8.1"
+  },
+  {
+    "book": "agile",
+    "page": 151,
+    "label": "Agile Practice Guide, A3.8.2"
+  },
+  {
+    "book": "agile",
+    "page": 151,
+    "label": "Agile Practice Guide, A3.8.3"
+  },
+  {
+    "book": "agile",
+    "page": 152,
+    "label": "Agile Practice Guide, A3.8.4"
+  },
+  {
+    "book": "agile",
+    "page": 152,
+    "label": "Agile Practice Guide, A3.9"
+  },
+  {
+    "book": "pmbok8",
+    "page": 86,
+    "label": "PMBOK 8, Standard 4.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 316,
+    "label": "PMBOK 8, Guide section 5, Value stream mapping"
+  },
+  {
+    "book": "scrum",
+    "page": 4,
+    "label": "Scrum Guide, Scrum Definition"
+  },
+  {
+    "book": "scrum",
+    "page": 4,
+    "label": "Scrum Guide, Scrum Theory"
+  },
+  {
+    "book": "scrum",
+    "page": 5,
+    "label": "Scrum Guide, Scrum Values"
+  },
+  {
+    "book": "scrum",
+    "page": 6,
+    "label": "Scrum Guide, Scrum Team"
+  },
+  {
+    "book": "scrum",
+    "page": 8,
+    "label": "Scrum Guide, Scrum Events"
+  },
+  {
+    "book": "scrum",
+    "page": 10,
+    "label": "Scrum Guide, Daily Scrum"
+  },
+  {
+    "book": "scrum",
+    "page": 10,
+    "label": "Scrum Guide, Sprint Review"
+  },
+  {
+    "book": "scrum",
+    "page": 11,
+    "label": "Scrum Guide, Scrum Artifacts"
+  },
+  {
+    "book": "scrum",
+    "page": 12,
+    "label": "Scrum Guide, Increment"
+  },
+  {
+    "book": "scrum",
+    "page": 12,
+    "label": "Scrum Guide, Sprint Backlog"
+  },
+  {
+    "book": "scrum",
+    "page": 13,
+    "label": "Scrum Guide, Commitment: Definition of Done"
+  }
+]

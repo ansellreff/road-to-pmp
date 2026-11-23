@@ -1,0 +1,679 @@
+[
+  {
+    "id": "q1",
+    "q": "What does the Scope performance domain ensure?",
+    "options": [
+      "That the project finishes within the approved budget",
+      "That every single stakeholder request is added to the project scope",
+      "All the work required is included, and no unnecessary work",
+      "That the schedule baseline is never changed during work"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The Scope performance domain includes the processes required to ensure the project encompasses all of the work required, and that no unnecessary work is performed, to maximize the project's value.",
+    "ref": "PMBOK 8, Guide 2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What is a requirement, according to the PMBOK Guide?",
+    "options": [
+      "A condition or capability needed to satisfy a business need",
+      "Any feature a stakeholder would like to have in the product",
+      "A task assigned to a team member in the project schedule",
+      "A constraint imposed on the project by the sponsor's budget"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A requirement is a condition or capability that is necessary to be present in a product, service or result to satisfy a business need.",
+    "ref": "PMBOK 8, Guide 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Before requirements are baselined, which quality must they have?",
+    "options": [
+      "Written only by the sponsor",
+      "Approved by every end user",
+      "Ordered by cost, lowest first",
+      "Measurable and testable"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Before being baselined, requirements should be unambiguous (measurable and testable), traceable, complete, consistent and acceptable to key stakeholders.",
+    "ref": "PMBOK 8, Guide section 4, Requirements documentation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 235,
+        "label": "PMBOK 8, Guide section 4, Requirements documentation"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Why use a requirements traceability matrix?",
+    "options": [
+      "To assign each of the requirements to an external vendor for pricing",
+      "To link each requirement from its origin to its deliverable",
+      "To record the hours spent on each requirement",
+      "To replace the need for acceptance criteria"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The matrix links product requirements from their origin to the deliverables that satisfy them and to the business and project objectives, so each requirement adds value and approved requirements are delivered.",
+    "ref": "PMBOK 8, Guide section 4, Requirements traceability matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 236,
+        "label": "PMBOK 8, Guide section 4, Requirements traceability matrix"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "The requirements traceability matrix is shown. What should the project manager do about R2 before the deliverable is accepted?",
+    "diagram": "trace-figure",
+    "options": [
+      "Remove R2, since it already has a design",
+      "Accept R2 because it links to a business objective",
+      "Make sure R2 is tested before acceptance is sought",
+      "Move R2 to the next phase without telling anyone"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "R2 traces to an objective and a design but has no test. Requirements must be testable, and the matrix helps ensure that approved requirements are delivered; R2 needs a test before its deliverable can be verified and accepted.",
+    "ref": "PMBOK 8, Guide section 4, Requirements traceability matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 236,
+        "label": "PMBOK 8, Guide section 4, Requirements traceability matrix"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which content does the project scope statement include?",
+    "options": [
+      "Major deliverables, assumptions, constraints and exclusions",
+      "The cost baseline and the funding requirements",
+      "The names and salaries of the project team members",
+      "The risk register together with the planned response for each single risk"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The project scope statement describes the project scope, major deliverables, assumptions and constraints, and acceptance criteria; it may contain explicit exclusions.",
+    "ref": "PMBOK 8, Guide section 4, Project scope statement",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 233,
+        "label": "PMBOK 8, Guide section 4, Project scope statement"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Why might a scope statement list explicit exclusions?",
+    "options": [
+      "To make the contract longer and more formal",
+      "To allow the team to skip quality checks",
+      "To reduce the number of stakeholders involved",
+      "To help manage stakeholder expectations"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "The project scope statement may contain explicit scope exclusions that can assist in managing stakeholder expectations.",
+    "ref": "PMBOK 8, Guide section 4, Project scope statement",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 233,
+        "label": "PMBOK 8, Guide section 4, Project scope statement"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "In an adaptive environment, in what form are requirements usually collected?",
+    "options": [
+      "As a fixed list signed off before any work",
+      "As user stories prioritized in a backlog",
+      "As work packages in a detailed WBS",
+      "As clauses in the final contract"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "In an adaptive environment, the requirements are collected in the form of user stories that are then prioritized in a backlog.",
+    "ref": "PMBOK 8, Guide 2.2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 145,
+        "label": "PMBOK 8, Guide 2.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "How is the product backlog broken down in agile projects, according to the PMBOK Guide?",
+    "options": [
+      "Into work packages, then activities",
+      "Into phases, then control accounts",
+      "Into epics, features and user stories",
+      "Into tasks assigned by the project manager"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "In agile projects, Develop Scope Structure corresponds to product backlog breakdown, where work items are broken down into epics, features and user stories.",
+    "ref": "PMBOK 8, Guide 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 144,
+        "label": "PMBOK 8, Guide 2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "What is a work package?",
+    "options": [
+      "The lowest WBS level, where cost and duration are estimated",
+      "The highest level of the WBS, which shows the whole of the project",
+      "A contract package sent to suppliers for bidding",
+      "A set of documents handed over at project closure"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The work package is the work defined at the lowest level of the WBS for which cost and duration can be estimated and managed.",
+    "ref": "PMBOK 8, Guide section 5, Decomposition",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decomposition"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "A team's WBS leaves out all the project management work. Which principle does this break?",
+    "options": [
+      "Rolling wave planning",
+      "Progressive elaboration",
+      "The definition of done",
+      "The 100 percent rule"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The WBS represents all product and project work, including the project management work; the work at the lowest levels rolls up so that nothing is left out and no extra work is performed: the 100 percent rule.",
+    "ref": "PMBOK 8, Guide section 5, Decomposition",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decomposition"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A deliverable will only be built in two years and its details are not yet agreed. How should it appear in the WBS now?",
+    "options": [
+      "Decomposed fully now, using assumptions",
+      "At a high level, decomposed later when agreed",
+      "Left out of the WBS entirely until work on it begins",
+      "Assigned to the sponsor to define alone"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Decomposition may not be possible for a deliverable far in the future; the team waits until it is agreed before developing the WBS details. This is rolling wave planning.",
+    "ref": "PMBOK 8, Guide section 5, Decomposition",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decomposition"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which information does the WBS dictionary provide?",
+    "options": [
+      "The overall budget for the project and the full funding plan for it",
+      "The sponsor's signature on the business case",
+      "Details such as responsible parties and acceptance criteria",
+      "The stakeholder register's classification data"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The WBS dictionary provides additional detail about each WBS component, such as scope descriptions, milestones, responsible parties, resource needs and acceptance criteria.",
+    "ref": "PMBOK 8, Guide 2.2.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 147,
+        "label": "PMBOK 8, Guide 2.2.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which process produces verified deliverables?",
+    "options": [
+      "Monitor and Control Scope",
+      "Validate Scope",
+      "Define Scope",
+      "Develop Scope Structure"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Verified deliverables are checked and confirmed for correctness through Monitor and Control Scope; they then become an input to Validate Scope for formal acceptance.",
+    "ref": "PMBOK 8, Guide section 4, Verified deliverables",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, Verified deliverables"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "What is the main purpose of the Validate Scope process?",
+    "options": [
+      "To check that deliverables are correct before quality control",
+      "To formalize acceptance of the completed deliverables",
+      "To create the WBS and the WBS dictionary",
+      "To estimate the cost of each work package"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Validate Scope checks the processes used to achieve quality standards and formalizes acceptance of the deliverables, increasing the probability of acceptance.",
+    "ref": "PMBOK 8, Guide 2.2.2.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 149,
+        "label": "PMBOK 8, Guide 2.2.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "In which order do deliverables usually move through these steps?",
+    "options": [
+      "Accepted, then verified, then built",
+      "Validated by the customer first, and then quality-checked",
+      "Accepted by the sponsor before any inspection",
+      "Verified for correctness, then formally accepted"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Monitor and Control Scope produces verified deliverables, checked for correctness; these are inputs to Validate Scope, which produces accepted deliverables.",
+    "ref": "PMBOK 8, Guide section 4, Verified deliverables",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, Verified deliverables"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "In an adaptive approach, when is the scope baseline defined, according to the PMBOK Guide?",
+    "options": [
+      "At the beginning of each iteration",
+      "Once, before the first iteration",
+      "Only at the final release",
+      "When the supplier contract is signed at the start"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "For adaptive approaches, the baseline is defined at the beginning of each iteration, aligned with the prioritized requirements based on the value expected.",
+    "ref": "PMBOK 8, Guide 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "In an adaptive environment, who usually approves changes to scope, according to the PMBOK Guide?",
+    "options": [
+      "The change control board",
+      "The sponsor alone",
+      "The product owner",
+      "The functional manager"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "In adaptive environments it is usually a product owner who dynamically approves changes, in a more flexible environment without a formal change control procedure.",
+    "ref": "PMBOK 8, Guide 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A developer adds an extra report the customer never asked for, hoping to impress them. What is this called?",
+    "options": [
+      "Scope creep",
+      "Rolling wave planning",
+      "Decomposition",
+      "Gold plating"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Adding features nobody asked for is gold plating. A value-focused approach uses continuous scope management to prevent scope creep and gold plating.",
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A stakeholder informally asks a team member to add a small feature to a predictive project. What should happen?",
+    "options": [
+      "The team member adds it, since it is small",
+      "It goes through change control against the scope baseline",
+      "The project manager refuses every change request during execution",
+      "The feature is added and reported at closure"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Monitor and Control Scope manages changes to the scope baseline; the baseline can be changed only through formal change control. Adding unapproved work is scope creep.",
+    "ref": "PMBOK 8, Guide 2.2.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 147,
+        "label": "PMBOK 8, Guide 2.2.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "According to the PMBOK Guide, how does quality relate to scope?",
+    "options": [
+      "Quality is an integral attribute of scope",
+      "Quality is separate and handled after scope",
+      "Quality only matters for adaptive projects",
+      "Quality is the sponsor's concern, not the team's"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Quality is an integral attribute of scope, including functional and nonfunctional requirements; a bridge's scope includes thresholds for how sturdy, long-lasting and maintainable it is.",
+    "ref": "PMBOK 8, Guide 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "What does a value breakdown structure add to the scope?",
+    "options": [
+      "A planned schedule date for every work package",
+      "A responsible person for each deliverable",
+      "A value estimate for each major deliverable",
+      "The procurement method for each component"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "A VBS connects scope to its intended value: each major deliverable carries a value-based number or a percentage of the total value (100% if mandatory), used to prioritize deliverables and work.",
+    "ref": "PMBOK 8, Guide 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "What is the definition of done in an adaptive approach?",
+    "options": [
+      "The date on which the project must be finished",
+      "Shared criteria a story or increment must meet to be complete",
+      "The sponsor's signature on each final deliverable at the very end",
+      "A list of all the user stories in the backlog"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "In adaptive approaches, the DoD is a shared understanding of the criteria that should be met before a piece of work, such as a user story, feature or increment, is complete and ready for release.",
+    "ref": "PMBOK 8, Guide 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 140,
+        "label": "PMBOK 8, Guide 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "When should the stakeholder who will accept the deliverables get involved, according to the PMBOK Guide?",
+    "options": [
+      "Only at the final acceptance meeting",
+      "Only after all of the deliverables have been verified by the team",
+      "Only if a change request is raised",
+      "Early, giving feedback on quality as work proceeds"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "The authorized stakeholder who approves the deliverables should get involved early and provide feedback on quality, so the team can assess quality and performance and recommend changes.",
+    "ref": "PMBOK 8, Guide section 4, Accepted deliverables",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 218,
+        "label": "PMBOK 8, Guide section 4, Accepted deliverables"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "A project relies on several subcontractors. What does the PMBOK Guide advise about scope?",
+    "options": [
+      "Keep scope out of the contracts to stay flexible",
+      "Let each subcontractor define its own part of the scope entirely alone",
+      "Integrate scope into the contracts early, synchronizing commitments",
+      "Define scope only after all contracts have been signed"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "With external partners, deciding how to integrate scope into contractual agreements is critical; early alignment sets expectations, and all parties' scope-related commitments must be synchronized.",
+    "ref": "PMBOK 8, Guide 2.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 149,
+        "label": "PMBOK 8, Guide 2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE qualities should requirements have before they are baselined?",
+    "type": "multi",
+    "options": [
+      "Measurable and testable",
+      "Traceable",
+      "Consistent",
+      "Written by the sponsor alone",
+      "Ordered by cost",
+      "Free of any assumptions"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Before being baselined, requirements should be unambiguous (measurable and testable), traceable, complete, consistent and acceptable to key stakeholders.",
+    "ref": "PMBOK 8, Guide section 4, Requirements documentation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 235,
+        "label": "PMBOK 8, Guide section 4, Requirements documentation"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are tools and techniques of the Elicit and Analyze Requirements process?",
+    "type": "multi",
+    "options": [
+      "Focus groups",
+      "Interviews",
+      "Earned value analysis",
+      "Critical path method",
+      "Make-or-buy analysis"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Figure 2-15 lists expert judgment, decision-making, benchmarking, brainstorming, focus groups, interviews, questionnaires and surveys, document analysis, nominal group, design thinking, prioritization and meetings.",
+    "ref": "PMBOK 8, Guide 2.2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 145,
+        "label": "PMBOK 8, Guide 2.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO describe scope in agile projects, according to the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Often represented at a high level by a product roadmap",
+      "Defined progressively through a backlog",
+      "Fully fixed in a WBS before the first iteration",
+      "Changed only through a change control board",
+      "Owned by the functional manager"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "In agile projects scope is typically considered at a high level, often represented by the product roadmap and its releases, and deliverables are progressively defined through a backlog.",
+    "ref": "PMBOK 8, Guide 2.2.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 146,
+        "label": "PMBOK 8, Guide 2.2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each scope process with what it does.",
+    "type": "match",
+    "left": [
+      "Plan Scope Management",
+      "Define Scope",
+      "Develop Scope Structure",
+      "Validate Scope"
+    ],
+    "right": [
+      "Creates the plan for defining, controlling and validating scope",
+      "Describes the project and product, with quality requirements",
+      "Subdivides deliverables into smaller components",
+      "Formalizes acceptance of the completed deliverables"
+    ],
+    "approach": "predictive",
+    "explanation": "The six Scope processes are Plan Scope Management, Elicit and Analyze Requirements, Define Scope, Develop Scope Structure, Monitor and Control Scope, and Validate Scope.",
+    "ref": "PMBOK 8, Guide 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 144,
+        "label": "PMBOK 8, Guide 2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement with the scope process where it happens.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Stakeholders' needs are first determined and documented in",
+        "choices": [
+          "Validate Scope",
+          "Elicit and Analyze Requirements",
+          "Monitor and Control Scope"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Deliverables are checked for correctness in",
+        "choices": [
+          "Monitor and Control Scope",
+          "Define Scope",
+          "Plan Scope Management"
+        ],
+        "answer": 0
+      },
+      {
+        "text": "Deliverables are formally accepted in",
+        "choices": [
+          "Develop Scope Structure",
+          "Define Scope",
+          "Validate Scope"
+        ],
+        "answer": 2
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Requirements are elicited and analyzed, deliverables are verified in Monitor and Control Scope, and Validate Scope formalizes their acceptance.",
+    "ref": "PMBOK 8, Guide 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 144,
+        "label": "PMBOK 8, Guide 2.2.2"
+      }
+    ]
+  }
+]

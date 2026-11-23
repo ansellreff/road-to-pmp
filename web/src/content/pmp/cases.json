@@ -18,5 +18,10 @@
     "id": "warehouse-automation",
     "title": "Automating a warehouse",
     "text": "A logistics company is automating one of its warehouses. A construction contractor will install robots, racking and conveyors, and the building must pass a fire-safety inspection before it can open.\n\nThe software that routes orders to the robots is new to the company. The operations team is still discovering what it will need from the software, and expects to learn a lot from early trials. The board wants the warehouse operating in 12 months."
+  },
+  {
+    "id": "ticket-platform",
+    "title": "A theater's online ticketing",
+    "text": "A theater group is building an online ticketing platform in two-week iterations. The business case expects online sales to replace most phone sales and cut box-office costs by 30% within a year. The new season starts in five months.\n\nThe product owner has scored four backlog items with WSJF, (business value + time criticality + risk reduction) / size: seat selection (9 + 8 + 5) / 4; mobile wallet tickets (7 + 6 + 3) / 4; a donor dashboard (4 + 2 + 1) / 2; loyalty points (6 + 3 + 2) / 5."
   }
 ]
