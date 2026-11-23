@@ -25,9 +25,9 @@
       "title": "Process",
       "weight": 41,
       "modules": [
-        { "id": "2-01-framework", "title": "The Framework: Value, Principles, Focus Areas, Domains and the 40 Processes", "ready": false, "tasks": [1] },
-        { "id": "2-02-choosing-approach", "title": "Choosing the Approach: Predictive, Agile, Hybrid", "ready": false, "tasks": [1] },
-        { "id": "2-03-integrated-plan", "title": "The Integrated Project Management Plan", "ready": false, "tasks": [1] },
+        { "id": "2-01-framework", "title": "The Framework: Value, Principles, Focus Areas, Domains and the 40 Processes", "ready": true, "tasks": [1] },
+        { "id": "2-02-choosing-approach", "title": "Choosing the Approach: Predictive, Agile, Hybrid", "ready": true, "tasks": [1] },
+        { "id": "2-03-integrated-plan", "title": "The Integrated Project Management Plan", "ready": true, "tasks": [1] },
         { "id": "2-04-agile-frameworks", "title": "Agile in Practice: Scrum, XP, Kanban, Lean and Scaling", "ready": false, "tasks": [1, 3] },
         { "id": "2-05-scope", "title": "Scope: Requirements, WBS and Backlog", "ready": false, "tasks": [2] },
         { "id": "2-06-value-delivery", "title": "Value-Based Delivery: Prioritizing, Increments, Benefits", "ready": false, "tasks": [3] },

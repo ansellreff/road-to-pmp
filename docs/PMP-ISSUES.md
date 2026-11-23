@@ -74,3 +74,12 @@ Every problem met while building the PMP course, newest group last. Section name
 | PMP-41 | The communication channels formula, N × (N − 1) / 2, is not printed in PMBOK 8, which lists only "the number of potential communication channels" as something to analyze. | Taken from The Project Management Answer Book, chapter 11, Q18, as CAPM did. The calculations in the lesson and questions pass the calculation check. | Module 1.9, Communication channels |
 | PMP-42 | The Eighth Edition says trust matters for sharing tacit knowledge, but the plain statement that trust is "the most important part of knowledge management" is in the Sixth Edition only. | Both are cited, the Sixth Edition named as such, since the exam may use its wording. | Module 1.8, Fostering an environment |
 | PMP-43 | On first writing, the right answer was the longest option in 12 of 26 questions in 1.7 (over the 35% limit) and in 8 of 26 in 1.8. | One wrong option lengthened in seven questions of 1.7 and three of 1.8; now 5 and 5. In 1.9 the options were balanced while writing (0). | `tools/check_content.py --report` |
+
+### PMP Session 6 (modules 2.1 to 2.3)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| PMP-44 | The outline names none of the topics of module 2.1 (principles, domains, focus areas, processes). | Asked you. Your decision: a full module, mapped to Process task 1. Recorded as a decision. | "Decisions you made" |
+| PMP-45 | One question in 2.2 ("What is a suitability filter?") repeated a CAPM question word for word (the checker's warning). | Rewritten as a situation with new options. CAPM was not changed. | Module 2.2, q18 |
+| PMP-46 | Process task 1's enabler "estimate work effort and resource requirements" needs techniques that belong to later modules. | 2.3 teaches what estimates must contain (basis of estimates) and Estimate Resources; the techniques are taught in 2.7, 2.9, 2.12 and 2.13, and the coverage table says so. | "Coverage", Process 1 |
+| PMP-47 | 2.1's subject is approach-neutral, so its questions lean predictive (15 of 30). | Balanced across the session by 2.2, which leans agile; the session is at 41% predictive. | "PMP Session 6 as built" |

@@ -13,5 +13,10 @@
     "id": "loyalty-app",
     "title": "A loyalty app for a retail chain",
     "text": "A retail chain is building a customer loyalty app in two-week sprints; the first release is due in three months.\n\nThe marketing department expects the app to collect detailed shopping data for its campaigns. The store operations department expects checkout to stay as fast as today, with no extra steps for cashiers. In early user tests, many shoppers gave up on signing up when the app asked for a lot of personal information."
+  },
+  {
+    "id": "warehouse-automation",
+    "title": "Automating a warehouse",
+    "text": "A logistics company is automating one of its warehouses. A construction contractor will install robots, racking and conveyors, and the building must pass a fire-safety inspection before it can open.\n\nThe software that routes orders to the robots is new to the company. The operations team is still discovering what it will need from the software, and expects to learn a lot from early trials. The board wants the warehouse operating in 12 months."
   }
 ]

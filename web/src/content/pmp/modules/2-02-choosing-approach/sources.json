@@ -1,0 +1,112 @@
+[
+  {
+    "book": "agile",
+    "page": 45,
+    "label": "Agile Practice Guide, 3.10"
+  },
+  {
+    "book": "agile",
+    "page": 45,
+    "label": "Agile Practice Guide, 3.10.1"
+  },
+  {
+    "book": "agile",
+    "page": 49,
+    "label": "Agile Practice Guide, 3.10.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 80,
+    "label": "PMBOK 8, Standard 4.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 82,
+    "label": "PMBOK 8, Standard 4.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 84,
+    "label": "PMBOK 8, Standard 4.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 86,
+    "label": "PMBOK 8, Standard 4.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 88,
+    "label": "PMBOK 8, Standard 4.2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 90,
+    "label": "PMBOK 8, Standard 4.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 90,
+    "label": "PMBOK 8, Standard 4.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 91,
+    "label": "PMBOK 8, Standard 4.3.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 91,
+    "label": "PMBOK 8, Standard 4.3.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 92,
+    "label": "PMBOK 8, Standard 4.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 208,
+    "label": "PMBOK 8, Guide 3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 209,
+    "label": "PMBOK 8, Guide 3.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 210,
+    "label": "PMBOK 8, Guide 3.3.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 210,
+    "label": "PMBOK 8, Guide 3.3.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 210,
+    "label": "PMBOK 8, Guide 3.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 210,
+    "label": "PMBOK 8, Guide 3.4.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 213,
+    "label": "PMBOK 8, Guide 3.4.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 214,
+    "label": "PMBOK 8, Guide 3.4.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 215,
+    "label": "PMBOK 8, Guide 3.6"
+  }
+]

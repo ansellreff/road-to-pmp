@@ -1,0 +1,658 @@
+[
+  {
+    "id": "q1",
+    "q": "What is a development approach, according to the Standard?",
+    "options": [
+      "A stage of the life cycle in which deliverables are built and tested",
+      "The means used to create and evolve the product, service or result",
+      "The order in which the project's phases are approved by the sponsor",
+      "A list of the processes every project must follow"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A development approach is the means used to create and evolve a product, service or result during the life cycle, such as predictive, adaptive or hybrid. The development phase is a stage of the life cycle, a different thing.",
+    "ref": "PMBOK 8, Standard 4.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 82,
+        "label": "PMBOK 8, Standard 4.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "At a phase gate, which of these is a possible decision according to the Standard?",
+    "options": [
+      "Skip the review, because the project is on schedule",
+      "Approve the next phase without comparing performance",
+      "Park the project temporarily for an urgent initiative",
+      "Restart the whole project from initiation automatically"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "After comparing performance with the documents that specify expectations, the decision may be to continue, continue with modification, end the project or phase, remain in the phase, repeat it or parts of it, or park the project temporarily for another urgent initiative.",
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "How do risk, uncertainty and the cost of changes typically develop over a project's life?",
+    "options": [
+      "Risk and uncertainty fall while the cost of changes rises",
+      "Risk and uncertainty rise while the cost of changes falls",
+      "All three stay roughly the same throughout the project",
+      "All three are highest at closure, when acceptance happens"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Figure 4-1 shows risk and uncertainty decreasing and the cost of changes increasing over project time. Stakeholders' ability to influence scope cheaply is often highest at the start.",
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "For which of these is a predictive approach most likely to be optimal?",
+    "options": [
+      "A new mobile app whose features depend on market reaction",
+      "A research project exploring a new business model",
+      "A digital service whose scope keeps evolving with users",
+      "The build phase of a building whose design is approved"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "A predictive approach may be optimal when scope can be stabilized early, and for projects or phases in which the cost of iterating far exceeds its value, such as the build phase of many construction projects.",
+    "ref": "PMBOK 8, Standard 4.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 84,
+        "label": "PMBOK 8, Standard 4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "In an incremental predictive approach, what stays largely fixed?",
+    "options": [
+      "The overall scope and timeline",
+      "The order of each sprint's backlog",
+      "The size of each iteration's team",
+      "The product vision, but not the scope"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "In an incremental predictive approach the scope is understood and planned up front but delivered in phases or increments; stakeholder value comes earlier, while the overall scope and timeline remain largely fixed.",
+    "ref": "PMBOK 8, Standard 4.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 84,
+        "label": "PMBOK 8, Standard 4.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "In the Standard's description of agile methods, how long are iterations generally?",
+    "options": [
+      "1 to 4 days",
+      "1 to 4 weeks",
+      "1 to 4 months",
+      "6 to 12 months"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Some agile methods entail iterations of generally 1 to 4 weeks, with a demonstration of the accomplishments at the end of each iteration.",
+    "ref": "PMBOK 8, Standard 4.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 86,
+        "label": "PMBOK 8, Standard 4.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "What does an iterative approach focus on, as opposed to an incremental one?",
+    "options": [
+      "Delivering the product in small usable segments that build on one another",
+      "Planning the whole scope in detail before any work begins",
+      "Refining and improving the product through repeated cycles",
+      "Releasing a single complete product at the very end"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The iterative approach refines and improves through repeated cycles; the incremental approach delivers the product in small usable segments that each provide value. Adaptive approaches can be both.",
+    "ref": "PMBOK 8, Standard 4.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 86,
+        "label": "PMBOK 8, Standard 4.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which of these does the Standard describe as a tool kit rather than a method?",
+    "options": [
+      "Disciplined Agile",
+      "Scrum",
+      "Extreme Programming",
+      "Kanban"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "A method is a systematic way of doing something; a tool kit is a collection of tools and techniques to choose from. PMI Disciplined Agile is designed to be a tool kit.",
+    "ref": "PMBOK 8, Standard 4.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 86,
+        "label": "PMBOK 8, Standard 4.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What does the Eighth Edition say about hybrid approaches in practice?",
+    "options": [
+      "They should be avoided, because they confuse the team and the sponsor",
+      "They are only allowed when the sponsor requests them",
+      "They are suitable only for construction projects",
+      "Most projects can strongly benefit from a hybrid approach"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "In practice, most projects can strongly benefit from a hybrid approach: it gives flexibility to adapt to changing conditions while keeping control over predictable aspects.",
+    "ref": "PMBOK 8, Standard 4.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 88,
+        "label": "PMBOK 8, Standard 4.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A company develops a new high-tech product in agile iterations; then a separate team rolls it out and trains thousands of users to a fixed plan. Which hybrid pattern is this?",
+    "options": [
+      "Predictive development followed by an adaptive rollout",
+      "Adaptive development followed by a predictive rollout",
+      "A largely adaptive approach with no predictive part",
+      "Predictive and adaptive used side by side by one team"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Adaptive development followed by a predictive rollout suits work with uncertainty in development and a defined, repeatable rollout, perhaps by a different team, such as a high-tech product followed by training for thousands of users.",
+    "ref": "Agile Practice Guide, 3.10.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 49,
+        "label": "Agile Practice Guide, 3.10.3"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "On the Stacey matrix, both the requirements and the technology are certain. What does the Agile Practice Guide suggest?",
+    "options": [
+      "Predictive approaches work well here",
+      "Only crisis methods will work here",
+      "An exploratory approach is essential",
+      "The project should not start yet"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "In the lower-left corner of the Stacey matrix, where requirements and technology are both certain, traditional predictive approaches work well. As either becomes uncertain, adaptive or exploratory life cycles help.",
+    "ref": "Agile Practice Guide, 3.10.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 45,
+        "label": "Agile Practice Guide, 3.10.1"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "In the Cynefin Framework's complex domain, what approach does the Agile Practice Guide recommend?",
+    "options": [
+      "Sense, categorize, respond",
+      "Act, sense, respond",
+      "Probe, sense, respond",
+      "Analyze, plan, execute"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "In the complex domain, outcomes emerge through experimentation, so the recommended approach is probe, sense and respond, which aligns with agile short feedback cycles and iterative delivery.",
+    "ref": "Agile Practice Guide, 3.10.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 45,
+        "label": "Agile Practice Guide, 3.10.1"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Why does a critical nuclear reactor project need more rigor than a new office building, according to the PMBOK Guide?",
+    "options": [
+      "Because predictive projects always need more documents",
+      "Because offices are built only with adaptive approaches",
+      "Because the sponsor of a reactor project always prefers much longer reports",
+      "Because criticality and scale change how much rigor is needed"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Tailoring considers criticality, scale, duration, complexity, industry standards and other variables. The rigor, checks and reporting for a critical nuclear reactor project are much greater than for an office building.",
+    "ref": "PMBOK 8, Guide 3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 209,
+        "label": "PMBOK 8, Guide 3.2"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A team must build something using a new technology and a new business model. Which approach does the Standard suggest may be optimal?",
+    "options": [
+      "Predictive",
+      "Adaptive",
+      "Single delivery",
+      "Waterfall"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Degree of innovation: when new or complex technological or business model innovation is needed, an adaptive approach may be optimal.",
+    "ref": "PMBOK 8, Standard 4.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 90,
+        "label": "PMBOK 8, Standard 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Why do products with rigorous safety requirements often use a predictive approach?",
+    "options": [
+      "Significant up-front planning is needed to ensure safety compliance",
+      "Safety-critical products never change in any way after the first iteration",
+      "Agile teams are not allowed to work on safety products",
+      "Predictive projects do not need any testing at all"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Products that have rigorous safety requirements often use a predictive approach, as there is a need for significant up-front planning to ensure safety compliance.",
+    "ref": "PMBOK 8, Standard 4.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 90,
+        "label": "PMBOK 8, Standard 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "What team size do some adaptive frameworks recommend, according to the Standard?",
+    "options": [
+      "One to two members",
+      "Ten to twenty members",
+      "Three to nine members",
+      "Twenty or more"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Adaptive approaches often work better with smaller teams; some adaptive frameworks recommend between three and nine team members.",
+    "ref": "PMBOK 8, Standard 4.3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 91,
+        "label": "PMBOK 8, Standard 4.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "An organization has a strong culture of managing and directing, with progress measured against baselines. What does the Standard say?",
+    "options": [
+      "Adaptive approaches will fit best without any change",
+      "The organization's culture is not relevant to the choice",
+      "No project in this organization can be tailored",
+      "A predictive approach may be the better fit here"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "A predictive approach may fit better in a culture of managing and directing, where work is planned and progress measured against baselines. Adaptive approaches fit cultures that embrace uncertainty and self-managed teams.",
+    "ref": "PMBOK 8, Standard 4.3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 91,
+        "label": "PMBOK 8, Standard 4.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A new project team wants a structured way to weigh its culture, team and project factors before choosing a predictive, adaptive or hybrid approach. Which tool does the PMBOK Guide describe for this?",
+    "options": [
+      "A suitability filter",
+      "A responsibility assignment matrix",
+      "An iteration burndown chart",
+      "A stakeholder register"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "A suitability filter is a decision-making tool, not a rigid procedure, that evaluates culture, team and project factors to help decide on the initial approach, combined with other data.",
+    "ref": "PMBOK 8, Guide 3.4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 210,
+        "label": "PMBOK 8, Guide 3.4.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A software team delivers internally every two weeks, on a fixed schedule, and releases to the market periodically. Which delivery cadence is this?",
+    "options": [
+      "Single delivery",
+      "Periodic deliveries",
+      "Continuous delivery",
+      "Multiple deliveries"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Periodic deliveries are like multiple deliveries but on a regular, fixed schedule, such as internal deliveries every 2 weeks with periodic market releases.",
+    "ref": "PMBOK 8, Standard 4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 92,
+        "label": "PMBOK 8, Standard 4.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A process reengineering project rolls out its new process only near the end. Which delivery cadence is this?",
+    "options": [
+      "Continuous delivery",
+      "Periodic deliveries",
+      "Single delivery",
+      "Multiple deliveries"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Projects with a single delivery produce all outcomes at the end, for example a process-reengineering project with no deliveries until the new process is rolled out.",
+    "ref": "PMBOK 8, Standard 4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 92,
+        "label": "PMBOK 8, Standard 4.4"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "What does the PMBOK Guide say about using more processes than a project requires?",
+    "options": [
+      "It always improves the chance of project success",
+      "It is required for every project above a certain size",
+      "It is the safest choice for an adaptive team",
+      "It is costly and wasteful, as too few are ineffective"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Too few processes can lead to ineffective project management, while employing more processes than required is costly and wasteful. Tailoring leads to optimum and effective project management.",
+    "ref": "PMBOK 8, Guide 3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 209,
+        "label": "PMBOK 8, Guide 3.2"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "In process tailoring, which action reduces unnecessary cost or effort?",
+    "options": [
+      "Removing elements",
+      "Adding elements",
+      "Aligning elements",
+      "Blending elements"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Process tailoring adds elements for unique conditions or rigor, modifies them to fit, removes them to reduce unnecessary cost or effort, blends them for added value, and aligns them for consistency.",
+    "ref": "PMBOK 8, Guide 3.3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 210,
+        "label": "PMBOK 8, Guide 3.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "When is tailoring done, according to the PMBOK Guide?",
+    "options": [
+      "Once, when the project charter is approved, and never again after that",
+      "Only at the end, as part of the lessons learned",
+      "Continually: review points, gates and retrospectives refine it",
+      "Only when the sponsor requests a new methodology"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Tailoring is not a single, one-time exercise. Review points, phase gates and retrospectives all provide opportunities to inspect and adapt the process, development approach and delivery frequency.",
+    "ref": "PMBOK 8, Guide 3.4.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 214,
+        "label": "PMBOK 8, Guide 3.4.4"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Which THREE factors point toward a predictive approach, according to the Standard?",
+    "type": "multi",
+    "options": [
+      "Rigorous safety requirements",
+      "Significant regulatory oversight",
+      "Changes that are difficult or costly to make",
+      "A high degree of innovation",
+      "Much value from frequent feedback",
+      "Financing uncertainty"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Safety requirements, regulation and costly change point toward predictive. Innovation, value from frequent feedback and financing uncertainty point toward adaptive or iterative approaches.",
+    "ref": "PMBOK 8, Standard 4.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 90,
+        "label": "PMBOK 8, Standard 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which TWO factors point toward an adaptive approach, according to the Standard?",
+    "type": "multi",
+    "options": [
+      "Unstable scope",
+      "Value from delivering something early",
+      "Well-known, straightforward requirements",
+      "A fixed functional hierarchy",
+      "Rigorous safety requirements"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "The less stable the scope, the more optimal an adaptive approach; if there is value in delivering something early, an iterative or adaptive approach may be optimal. Known requirements, functional hierarchies and safety point toward predictive.",
+    "ref": "PMBOK 8, Standard 4.3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 91,
+        "label": "PMBOK 8, Standard 4.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO are steps of the tailoring process in the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Tailor for the organization",
+      "Implement ongoing improvement",
+      "Freeze the approach at initiation",
+      "Remove principles that do not apply",
+      "Copy the previous project's approach"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "The four steps are: select the initial development approach, tailor for the organization, tailor for the project, and implement ongoing improvement.",
+    "ref": "PMBOK 8, Guide 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 210,
+        "label": "PMBOK 8, Guide 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Match each Cynefin domain with its description.",
+    "type": "match",
+    "left": [
+      "Simple",
+      "Complicated",
+      "Complex",
+      "Chaotic"
+    ],
+    "right": [
+      "Cause and effect are obvious; good practices apply",
+      "Expert analysis is needed; outcomes are predictable",
+      "Outcomes emerge through experimentation and learning",
+      "Immediate action is needed to stabilize the situation"
+    ],
+    "approach": "agile",
+    "explanation": "The Cynefin Framework's domains are simple, complicated, complex, chaotic and disorder. In the complex domain, probe, sense and respond; in the complicated domain, analysis may work, possibly with a hybrid life cycle.",
+    "ref": "Agile Practice Guide, 3.10.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 45,
+        "label": "Agile Practice Guide, 3.10.1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which development approach should the project manager recommend for the warehouse?",
+    "case": "warehouse-automation",
+    "options": [
+      "Predictive for everything, since there is a fixed 12-month target",
+      "Hybrid: predictive installation and inspection, adaptive software",
+      "Adaptive for everything, since part of the solution is uncertain",
+      "No approach until all software requirements are fully known"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The installation and inspection are well defined, costly to change and regulated (predictive), while the routing software is uncertain and benefits from feedback (adaptive). Several approaches may be used in one project for different deliverables.",
+    "ref": "PMBOK 8, Standard 4.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 90,
+        "label": "PMBOK 8, Standard 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "How should the routing software be developed?",
+    "case": "warehouse-automation",
+    "options": [
+      "Fully specified first, then built in one release before opening",
+      "By the contractor, as part of the fixed installation contract",
+      "Postponed until after the warehouse has opened for business",
+      "In short iterations, with feedback from operations trials"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Requirements that are still being discovered and much value from frequent feedback point to an adaptive approach: short iterations with early trials, refining the software as the operations team learns.",
+    "ref": "PMBOK 8, Standard 4.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 90,
+        "label": "PMBOK 8, Standard 4.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Where does the fire-safety inspection fit best in the life cycle?",
+    "case": "warehouse-automation",
+    "options": [
+      "In every iteration of the software, as a sprint review item",
+      "After opening, once the warehouse is already running",
+      "As a planned gate before opening, with up-front planning",
+      "Nowhere, because the contractor is responsible for safety"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Safety and regulatory requirements favor up-front planning, and phase gates review exit criteria before proceeding; the inspection belongs as a planned checkpoint before the warehouse opens.",
+    "ref": "PMBOK 8, Standard 4.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 80,
+        "label": "PMBOK 8, Standard 4.1"
+      }
+    ]
+  }
+]

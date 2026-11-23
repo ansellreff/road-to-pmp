@@ -1,0 +1,678 @@
+[
+  {
+    "id": "q1",
+    "q": "What does the project charter do, according to the PMBOK Guide?",
+    "options": [
+      "Defines the detailed schedule and the budget for each work package",
+      "Records every assumption and constraint throughout the project",
+      "Authorizes the project and gives the project manager authority",
+      "Describes how the project will be executed, monitored and closed"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "A project charter, issued by the initiator or sponsor, formally authorizes the existence of a project and gives the project manager the authority to apply organizational resources to project activities.",
+    "ref": "PMBOK 8, Guide section 4, Project charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 230,
+        "label": "PMBOK 8, Guide section 4, Project charter"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "When should the project manager be identified and assigned?",
+    "options": [
+      "As early as possible, and always before planning begins",
+      "After the project management plan has been fully approved",
+      "Once the first deliverable has been accepted by the customer",
+      "At the first phase gate, when the sponsor reviews progress"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The approved charter formally initiates the project, identifying and assigning a project manager as early as possible, ideally while the charter is developed and always before planning begins.",
+    "ref": "PMBOK 8, Guide 2.1.6.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 122,
+        "label": "PMBOK 8, Guide 2.1.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "How long is the business case used, according to the PMBOK Guide?",
+    "options": [
+      "Only until the charter is signed, then it is archived",
+      "Only during initiation, for the go/no-go decision",
+      "Only at closure, when success is measured",
+      "Throughout the life cycle, and after completion"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "The business case is used throughout the project life cycle, helps measure success at the end, and is referenced after the project has been completed, together with the benefits management plan.",
+    "ref": "PMBOK 8, Guide section 4, Business case",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Business case"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Which document describes how and when the project's benefits will be delivered and how they will be measured?",
+    "options": [
+      "The project charter",
+      "The benefits management plan",
+      "The requirements traceability matrix",
+      "The issue log"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The benefits management plan describes how and when the benefits will be delivered and the mechanisms to measure them, including target benefits, whose financial value may be expressed as NPV.",
+    "ref": "PMBOK 8, Guide section 4, Benefits management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Benefits management plan"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Which question does an adaptive project charter typically answer?",
+    "options": [
+      "What is the cost of each work package?",
+      "Which vendor will win each contract?",
+      "Why is the project being undertaken?",
+      "What is the critical path of the schedule?"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "An adaptive charter is lighter and focuses on some or all of: why the project is undertaken, who will be engaged, what it is about, where, when, how it will be carried out, and who the customer is.",
+    "ref": "PMBOK 8, Guide 2.1.6.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 122,
+        "label": "PMBOK 8, Guide 2.1.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Two organizations deliver a project together. How does the PMBOK Guide say their agreements are set up?",
+    "options": [
+      "Contracts between the organizations; charters inside each",
+      "One charter signed by both CEOs replaces any contract",
+      "Only verbal agreements, to keep the project flexible",
+      "Each organization's team writes its own separate project management plan"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "For cross-corporate projects, contracts establish the agreement among the organizations; project charters are then used inside each organization to ensure the contractual obligations are fulfilled.",
+    "ref": "PMBOK 8, Guide 2.1.6.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 122,
+        "label": "PMBOK 8, Guide 2.1.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "An organization wants its projects to meet carbon-reduction targets. Where does the Standard say sustainability KPIs may be included?",
+    "options": [
+      "Only in the final lessons learned report, after the project has closed",
+      "Only in the ground rules of the team charter",
+      "In the issue log, once a problem appears",
+      "In the charter, business case, scope statement or contracts"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Sustainability-related KPIs may be included in the project scope statement, project charter, business case, contracts or other formal documents, and compliance monitored through planning, execution and closure.",
+    "ref": "PMBOK 8, Standard 3.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 73,
+        "label": "PMBOK 8, Standard 3.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "When does the PMBOK Guide say specific metrics for scope, schedule, budget and quality are defined?",
+    "options": [
+      "At closure, when the final report is prepared",
+      "At the start, as part of the project management plan",
+      "Whenever the sponsor asks for a status report",
+      "Only after the first significant variance has already been detected"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Specific work performance metrics for scope, schedule, budget and quality are defined at the start of the project as part of the project management plan; data is then collected and compared with them.",
+    "ref": "PMBOK 8, Guide section 4, Work performance information",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance information"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "What does the Integrate and Align Project Plans process produce?",
+    "options": [
+      "A unified project management plan from all plan components",
+      "The project charter that authorizes the project",
+      "The stakeholder register and the engagement plan",
+      "The final project report together with the lessons learned repository"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The process integrates, aligns and coordinates all plan components and consolidates them into a unified project management plan.",
+    "ref": "PMBOK 8, Guide 2.1.6.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 123,
+        "label": "PMBOK 8, Guide 2.1.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "At the beginning of a project, what should the Integrate and Align Project Plans process establish?",
+    "options": [
+      "The final acceptance criteria, signed by every single end user",
+      "The detailed design of each deliverable",
+      "The tailoring, development approach and life cycle",
+      "The names of all suppliers that will bid for work"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "At the beginning, the process should establish the overall tailoring considerations and determine the development approach and life cycle, which then guide the planning in every performance domain.",
+    "ref": "PMBOK 8, Guide 2.1.6.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 123,
+        "label": "PMBOK 8, Guide 2.1.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "How does the PMBOK Guide describe the project management plan?",
+    "options": [
+      "A fixed document that must never change after approval",
+      "A summary of the business case written by the sponsor",
+      "A record of every risk and its current status",
+      "The basis for all decisions, and a living document"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The project management plan describes how the project will be executed, monitored and controlled, and closed; it defines the basis for all project decisions and is a living document expected to change over time.",
+    "ref": "PMBOK 8, Guide section 4, Project management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 231,
+        "label": "PMBOK 8, Guide section 4, Project management plan"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What does the cost baseline exclude?",
+    "options": [
+      "Contingency reserves",
+      "Management reserves",
+      "Work package costs",
+      "Control account budgets"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The cost baseline is the approved time-phased budget, excluding any management reserves; it includes contingency reserves. Total funds required are the cost baseline plus management reserves.",
+    "ref": "PMBOK 8, Guide section 4, Cost baseline",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 223,
+        "label": "PMBOK 8, Guide section 4, Cost baseline"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which items make up the scope baseline?",
+    "options": [
+      "The charter, the business case and the benefits plan",
+      "The risk register, the issue log and the change log",
+      "The scope statement, the WBS and the WBS dictionary",
+      "The schedule model, the budget and the resource plan"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The scope baseline is the approved version of the scope statement, the work breakdown structure and its WBS dictionary, changed only through formal change control.",
+    "ref": "PMBOK 8, Guide section 4, Scope baseline",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 245,
+        "label": "PMBOK 8, Guide section 4, Scope baseline"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A stakeholder wants to move a milestone date that is part of the schedule baseline. How must this be handled?",
+    "options": [
+      "Through formal change control procedures",
+      "By the scheduler, directly in the schedule tool",
+      "By the team, at the next daily coordination meeting",
+      "By ignoring it, since baselines can never change"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The schedule baseline is the approved version of the schedule model and can be changed only through formal change control procedures; it is used as the basis for comparison with actual results.",
+    "ref": "PMBOK 8, Guide section 4, Schedule baseline",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 243,
+        "label": "PMBOK 8, Guide section 4, Schedule baseline"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "How much planning does the PMBOK Guide recommend?",
+    "options": [
+      "As much detail as possible, to remove all uncertainty",
+      "None until the first iteration has been delivered",
+      "A fixed amount, set by the organization for all projects",
+      "Enough to move forward, but no more detailed than needed"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "The time spent planning should be determined by the circumstances: sufficient to move forward appropriately but not more detailed than necessary.",
+    "ref": "PMBOK 8, Guide 2.1.6.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 123,
+        "label": "PMBOK 8, Guide 2.1.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Which component of the project management plan establishes the change control board and the extent of its authority?",
+    "options": [
+      "The scope management plan",
+      "The change management plan",
+      "The communications management plan",
+      "The risk management plan"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The change management plan establishes the change control board (also known as a steering committee), documents its authority, and describes how the change control system will be implemented.",
+    "ref": "PMBOK 8, Guide section 4, Change management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Change management plan"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "What is the key benefit of the Estimate Resources process?",
+    "options": [
+      "It selects the external vendors that will supply all of the resources",
+      "It assigns each task to a named team member",
+      "It identifies the type, quantity and characteristics needed",
+      "It replaces the need for a resource management plan"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Estimate Resources identifies the type, quantity and characteristics of resources required, helping the project manager anticipate shortages or surpluses and manage allocation risks.",
+    "ref": "PMBOK 8, Guide 2.6.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 187,
+        "label": "PMBOK 8, Guide 2.6.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A team member gives a single cost figure with no further detail. What should accompany an estimate, according to the PMBOK Guide?",
+    "options": [
+      "Its assumptions, range and confidence level",
+      "The name of the manager who approved it",
+      "A promise that the figure will not change",
+      "The actual costs from the end of the project"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The basis of estimates documents how an estimate was derived: assumptions, constraints, level of detail, the range of possible estimates (for example ±10%), the confidence level and the risks influencing it.",
+    "ref": "PMBOK 8, Guide section 4, Basis of estimates",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Basis of estimates"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Iteration reviews show the product is unlikely to deliver the value in its business case, and the gap persists. What should the project manager do?",
+    "options": [
+      "Keep building the planned features until the budget is spent",
+      "Stop reporting the reviews until the next release",
+      "Add more features to make up for the lost value",
+      "Raise it with the sponsor; ending the effort may be best"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Teams continuously evaluate alignment with the business case and intended outcomes. If misalignment persists or the project is unlikely to deliver the intended value, it may be best to terminate the effort.",
+    "ref": "PMBOK 8, Standard 3.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 63,
+        "label": "PMBOK 8, Standard 3.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "While consolidating plans, the project manager finds that the schedule needs a specialist in March, but the resource plan has none until May. What is this?",
+    "options": [
+      "A risk that has already turned into an issue on the project",
+      "A dependency or gap between plans to resolve",
+      "A change request from the sponsor",
+      "A lesson learned for the final report"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "When the domain plans and baselines are integrated, their alignment must be verified. A schedule that relies on a resource the resource plan does not provide is a gap between plans, resolved during integration.",
+    "ref": "PMBOK 8, Guide 2.1.6.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 123,
+        "label": "PMBOK 8, Guide 2.1.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which process leads and performs the work defined in the plan and implements approved changes?",
+    "options": [
+      "Integrate and Align Project Plans",
+      "Monitor and Control Project Performance",
+      "Manage Project Execution",
+      "Initiate Project or Phase"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Manage Project Execution leads and performs the work in the project management plan and implements approved changes, including corrective and preventive actions and defect remediation.",
+    "ref": "PMBOK 8, Guide 2.1.6.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 126,
+        "label": "PMBOK 8, Guide 2.1.6.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "During execution, the team finds a change that would clearly improve the project's value but would alter the schedule baseline. What should happen?",
+    "options": [
+      "Make the change at once, since value has priority",
+      "Reject it, because the approved plan can never change during execution",
+      "Wait until closing and record it as a lesson learned",
+      "Submit it through change control, since it alters a baseline"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "The plan can and should change when that enhances value, but baselines can be changed only through formal change control procedures.",
+    "ref": "PMBOK 8, Standard 4.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 95,
+        "label": "PMBOK 8, Standard 4.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Story points completed and actual start dates of activities are examples of what?",
+    "options": [
+      "Work performance data",
+      "Work performance information",
+      "Work performance reports",
+      "Lessons learned"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Work performance data is the raw observations and measurements from the work, such as work completed, KPIs, actual dates, story points completed and numbers of defects.",
+    "ref": "PMBOK 8, Guide section 4, Work performance data",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, Work performance data"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Performance data that has been compared with the plan to show how the project is performing is called what?",
+    "options": [
+      "Work performance data",
+      "Work performance information",
+      "The basis of estimates document",
+      "The assumption log"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Work performance information is work performance data analyzed in comparison with plan components and project documents, indicating how the project is performing.",
+    "ref": "PMBOK 8, Guide section 4, Work performance information",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance information"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "What does the PMBOK Guide say about AI in data-driven decision-making with stakeholders?",
+    "options": [
+      "AI should make the project's key decisions on its own",
+      "AI should not be used on projects that have sponsors",
+      "AI analytics can support data-driven recommendations",
+      "AI replaces the need for any supporting material"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "AI technologies such as predictive analytics and data visualization can enhance data-driven recommendations; combined with leadership skills, they help guide stakeholders toward fact-based decisions.",
+    "ref": "PMBOK 8, Guide 2.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 173,
+        "label": "PMBOK 8, Guide 2.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are typical components of the project management plan?",
+    "type": "multi",
+    "options": [
+      "Change management plan",
+      "Risk management plan",
+      "Release plan",
+      "Business case",
+      "Project charter",
+      "Lessons learned register"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Typical components include the change, communications, financial, procurement, quality, requirements, resource, risk, schedule, scope, sourcing strategy and stakeholder engagement plans, and the iteration, release and test plans. The business case and charter are separate documents.",
+    "ref": "PMBOK 8, Guide section 4, Project management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 231,
+        "label": "PMBOK 8, Guide section 4, Project management plan"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO questions does an adaptive project charter typically answer?",
+    "type": "multi",
+    "options": [
+      "Who is the customer?",
+      "How will it be carried out?",
+      "What does each work package cost?",
+      "Which supplier wins each contract?",
+      "What is the cost baseline?"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Adaptive charters answer some or all of: why, who will be engaged, what, where, when, how it will be carried out, and who the customer is.",
+    "ref": "PMBOK 8, Guide 2.1.6.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 122,
+        "label": "PMBOK 8, Guide 2.1.6.1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO belong in a basis of estimates?",
+    "type": "multi",
+    "options": [
+      "The range of possible estimates",
+      "The confidence level of the estimate",
+      "The approver's job title",
+      "The project's logo and branding",
+      "The names of all stakeholders"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "The basis of estimates includes how the estimate was developed, assumptions, constraints, the range of possible estimates, the confidence level, and the risks influencing the estimate.",
+    "ref": "PMBOK 8, Guide section 4, Basis of estimates",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Basis of estimates"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each artifact with its description.",
+    "type": "match",
+    "left": [
+      "Project charter",
+      "Business case",
+      "Benefits management plan",
+      "Assumption log"
+    ],
+    "right": [
+      "Formally authorizes the project and the project manager",
+      "An economic feasibility study that justifies the project",
+      "How and when benefits are delivered and measured",
+      "Assumptions and constraints recorded throughout"
+    ],
+    "approach": "predictive",
+    "explanation": "The business case and benefits management plan are business documents developed before initiation; the charter authorizes the project; the assumption log records assumptions and constraints throughout.",
+    "ref": "PMBOK 8, Guide section 4, Project charter",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 230,
+        "label": "PMBOK 8, Guide section 4, Project charter"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about project performance data.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Raw observations such as story points completed are",
+        "choices": [
+          "work performance information",
+          "work performance data",
+          "work performance reports"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Data compared with the plan to show performance is",
+        "choices": [
+          "work performance information",
+          "lessons learned",
+          "work performance data"
+        ],
+        "answer": 0
+      },
+      {
+        "text": "Information compiled to prompt decisions or actions forms",
+        "choices": [
+          "the assumption log",
+          "the basis of estimates",
+          "work performance reports"
+        ],
+        "answer": 2
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Work performance data is raw; work performance information compares it with the plan; work performance reports compile information to generate decisions, actions or awareness.",
+    "ref": "PMBOK 8, Guide section 4, Work performance data",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 248,
+        "label": "PMBOK 8, Guide section 4, Work performance data"
+      }
+    ]
+  }
+]
