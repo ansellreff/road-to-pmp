@@ -1,0 +1,657 @@
+[
+  {
+    "id": "q1",
+    "q": "Which people does the PMBOK Guide count as project stakeholders?",
+    "options": [
+      "Only the people who hold a formal role on the project's organization chart",
+      "Only the sponsor, the customer and the members of the project team",
+      "Everyone impacted by the project, or who feels they may be impacted",
+      "Only people inside the organization that is performing the project"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The sponsor, team members and all the people impacted by, or who feel they may be impacted by, the project are stakeholders. They can be internal or external, individuals, groups or organizations.",
+    "ref": "PMBOK 8, Guide 2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 172,
+        "label": "PMBOK 8, Guide 2.5"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Halfway through an office move, the project manager learns that the works council must approve changes to workspaces. The council is not in the stakeholder register. What should the project manager do first?",
+    "options": [
+      "Add the council to the register, analyze it and update the engagement plan",
+      "Continue as planned, since stakeholders are identified during initiation",
+      "Ask the sponsor to exclude the council from the project's decisions",
+      "Wait until the council objects before taking any action at all"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Identify Stakeholders is performed periodically throughout the project. A newly found stakeholder is analyzed and recorded in the register, and the plans that depend on it, such as the stakeholder engagement plan, are updated.",
+    "ref": "PMBOK 8, Guide 2.5.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide 2.5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "How often is the Identify Stakeholders process performed?",
+    "options": [
+      "Once, at the start of the project, when the charter is approved",
+      "Only when the sponsor asks for an updated list of stakeholders",
+      "Once per phase, and never in between the phase gates",
+      "Periodically throughout the project, as it is needed"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The process includes identifying stakeholders regularly and is performed periodically throughout the project as needed.",
+    "ref": "PMBOK 8, Guide 2.5.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide 2.5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "What is the key benefit of the Identify Stakeholders process?",
+    "options": [
+      "It gives an actionable plan for interacting with stakeholders",
+      "It shows the team the right focus for engaging each stakeholder",
+      "It makes sure the information needs of stakeholders are met",
+      "It increases support and minimizes resistance from stakeholders"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The key benefit of Identify Stakeholders is that it enables the team to identify the appropriate focus for the engagement of each stakeholder or group. The other options are the key benefits of Plan Stakeholder Engagement, Monitor Communications and Manage Stakeholder Engagement.",
+    "ref": "PMBOK 8, Guide 2.5.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide 2.5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Why does the PMBOK Guide say continuous stakeholder identification can work as a risk management strategy?",
+    "options": [
+      "Because stakeholders found late in the project lose the right to object",
+      "Because it removes the need to keep a separate risk register",
+      "Because the project environment evolves and new stakeholders appear",
+      "Because the sponsor then becomes accountable for stakeholder risks"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Continuous identification can work as a risk management strategy as the project environment evolves. Stakeholders may influence project risks, especially when the right ones are not identified at the beginning and checked throughout.",
+    "ref": "PMBOK 8, Guide 2.5.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide 2.5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which document is the main output of the Identify Stakeholders process?",
+    "options": [
+      "Stakeholder register",
+      "Stakeholder engagement plan",
+      "Communications management plan",
+      "Project schedule"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Identify Stakeholders produces the stakeholder register, along with change requests and updates to plans and documents. The stakeholder engagement plan comes from Plan Stakeholder Engagement.",
+    "ref": "PMBOK 8, Guide Figure 2-33",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide Figure 2-33"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A project manager records each stakeholder's major requirements, expectations, potential to influence outcomes and the phase in which they have the most impact. Which part of the stakeholder register is this?",
+    "options": [
+      "Identification information",
+      "Stakeholder classification",
+      "Communication requirements",
+      "Assessment information"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Assessment information covers major requirements, expectations, potential for influencing outcomes, and the phase of the life cycle where the stakeholder has the most influence or impact.",
+    "ref": "PMBOK 8, Guide section 4, Stakeholder register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 246,
+        "label": "PMBOK 8, Guide section 4, Stakeholder register"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which of these belongs in the classification part of the stakeholder register?",
+    "options": [
+      "The stakeholder's phone number and office location",
+      "Whether the stakeholder is internal or external",
+      "The date on which the stakeholder signed the charter",
+      "The list of reports the stakeholder will receive"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Classification can be internal or external; impact, influence, power or interest; upward, downward, outward or sideward; or any other model. Contact details are identification information.",
+    "ref": "PMBOK 8, Guide section 4, Stakeholder register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 246,
+        "label": "PMBOK 8, Guide section 4, Stakeholder register"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "People living near a planned factory worry about their legal right to clean air. In stakeholder analysis, what kind of stake is this?",
+    "options": [
+      "Ownership",
+      "Knowledge",
+      "Rights",
+      "Contribution"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Rights can be legal, such as occupational health and safety defined by legislation, or moral, such as protecting historical sites or environmental sustainability.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 304,
+        "label": "PMBOK 8, Guide section 5, Stakeholder analysis"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A senior executive promotes the project's objectives in leadership meetings and shields the team from organizational politics. What kind of stake does she have?",
+    "options": [
+      "Contribution",
+      "Ownership",
+      "Interest",
+      "Rights"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Contribution includes providing funds or resources, and also intangible support such as advocacy for the project's objectives or acting as a buffer between the project and the organization's politics.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 304,
+        "label": "PMBOK 8, Guide section 5, Stakeholder analysis"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "In stakeholder analysis, what does a stakeholder's \"attitude\" describe?",
+    "options": [
+      "Their position in the organization chart",
+      "Their legal title to the project's assets",
+      "The phase in which they have most influence",
+      "Their level of support for the project"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Stakeholder analysis records positions, roles, stakes, expectations, attitudes (their levels of support for the project) and their interest in information about the project.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 304,
+        "label": "PMBOK 8, Guide section 5, Stakeholder analysis"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "The product scope of an agile project is refined. One user group is no longer affected, and a new one is. What does this mean for stakeholder analysis?",
+    "options": [
+      "Nothing changes, since the analysis was completed in initial planning",
+      "It is revisited, adding and removing stakeholders as the scope changes",
+      "The product owner should freeze the scope to protect the analysis",
+      "The new group is treated as an operational matter outside the project"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Stakeholder analysis is performed iteratively and revisited as new stakeholders are discovered or relationships change. Refinements to the product scope may result in the addition or removal of stakeholders.",
+    "ref": "The PMI Guide to Business Analysis, 5.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 160,
+        "label": "The PMI Guide to Business Analysis, 5.2"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which categorization method does the PMBOK Guide describe as useful for small projects with simple relationships between stakeholders and the project?",
+    "options": [
+      "A power/interest grid",
+      "The salience model",
+      "A stakeholder cube",
+      "Directions of influence"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Grid models such as power/interest are useful for small projects or projects with simple relationships. The salience model suits large, complex communities; the cube refines the grids into three dimensions.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which three attributes does the salience model use to classify stakeholders?",
+    "options": [
+      "Power, interest and influence",
+      "Rights, ownership and knowledge",
+      "Power, urgency and legitimacy",
+      "Upward, downward and sideward"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The salience model uses power, urgency and legitimacy. An adaptation substitutes proximity, meaning direct involvement in the project's work, for legitimacy.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A regional rail project has thousands of stakeholders linked by complex networks of relationships. Which method helps most to determine their relative importance?",
+    "options": [
+      "A simple power/interest grid",
+      "A responsibility assignment matrix",
+      "The stakeholder engagement plan",
+      "The salience model"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The salience model is useful for large, complex communities of stakeholders or where there are complex networks of relationships, and for determining the relative importance of the identified stakeholders.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Other project managers compete with you for the same scarce engineers. In the directions of influence, how are they classified?",
+    "options": [
+      "Upward",
+      "Sideward",
+      "Outward",
+      "Downward"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Sideward stakeholders are the project manager's peers, such as other project managers or middle managers who compete for scarce resources or share resources and information.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "In the directions of influence, how are regulators, suppliers and end users classified?",
+    "options": [
+      "Upward",
+      "Downward",
+      "Outward",
+      "Sideward"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Outward stakeholders are groups outside the project team, such as suppliers, government departments, the public, end users and regulators.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "The head of legal can block the product launch but rarely asks about the project. On a power/interest grid, what is the usual strategy for her?",
+    "options": [
+      "Keep satisfied",
+      "Manage closely",
+      "Keep informed",
+      "Monitor"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "High power with low interest calls for keeping the stakeholder satisfied. Manage closely is for high power and high interest, keep informed for low power and high interest, and monitor for low power and low interest.",
+    "ref": "The Project Management Answer Book, Chapter 13, Q14",
+    "links": [
+      {
+        "book": "answerbook",
+        "page": 386,
+        "label": "The Project Management Answer Book, Chapter 13, Q14"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Customer service agents will use the new system all day and follow its progress closely, but have no say in decisions. On a power/interest grid, what is the usual strategy for them?",
+    "options": [
+      "Monitor",
+      "Keep satisfied",
+      "Manage closely",
+      "Keep informed"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Low power with high interest calls for keeping the stakeholders informed. Their interest is high even though their power is low.",
+    "ref": "The Project Management Answer Book, Chapter 13, Q14",
+    "links": [
+      {
+        "book": "answerbook",
+        "page": 386,
+        "label": "The Project Management Answer Book, Chapter 13, Q14"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Warehouse pickers have little influence over the requirements but will be heavily affected by a new picking app. How should the team treat them?",
+    "options": [
+      "As a low priority, since they cannot influence the requirements",
+      "As a critical source of requirements, even without much influence",
+      "As people to inform only after the app has been released",
+      "As a group the vendor should consult instead of the team"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "In a stakeholder matrix of influence against impact, low influence and high impact stakeholders are critical sources for requirements. They may represent a large part of the product requirements and are often those who must adapt to the solution.",
+    "ref": "The PMI Guide to Business Analysis, 5.2.2.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 164,
+        "label": "The PMI Guide to Business Analysis, 5.2.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "An agile team is designing a self-service app for thousands of users it cannot interview one by one. Which technique helps it understand how groups of users will use the product?",
+    "options": [
+      "Persona analysis",
+      "The salience model",
+      "A RACI model",
+      "Directions of influence"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "A persona is a fictional character representing a class of users, with features such as goals, behaviors and motivations. Persona analysis helps the team understand how a user class interacts with a solution.",
+    "ref": "The PMI Guide to Business Analysis, 5.2.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 162,
+        "label": "The PMI Guide to Business Analysis, 5.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "In an agile project, who works with stakeholders, customers and managers to guide the product's direction and ranks the work by business value?",
+    "options": [
+      "The team facilitator",
+      "The sponsor",
+      "The product owner",
+      "The functional manager"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The product owner guides the direction of the product, ranks the work by its business value and works with stakeholders, customers and managers, as well as with the team every day.",
+    "ref": "Agile Practice Guide, 4.4.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 67,
+        "label": "Agile Practice Guide, 4.4.2"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which statement about the project sponsor does the PMBOK Guide support?",
+    "options": [
+      "The sponsor should step back from the project once the charter is signed",
+      "The sponsor's main duty is to write and maintain the stakeholder register",
+      "The sponsor approves the final deliverables but not changes to the plan",
+      "An active sponsor is a critical success factor for project outcomes"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Research shows that an active project sponsor is a critical success factor. Sponsors approve the charter and the project management plan and any changes to them, among other activities.",
+    "ref": "PMBOK 8, Guide 2.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 173,
+        "label": "PMBOK 8, Guide 2.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "How does the PMBOK Guide describe the project team in the Stakeholders performance domain?",
+    "options": [
+      "As resources to be managed, kept apart from the stakeholders",
+      "As critical stakeholders who should be treated as such",
+      "As stakeholders only when they work for an outside vendor",
+      "As people outside the scope of stakeholder engagement"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Team members are critical stakeholders and should be treated as such: the work comes from the team, as do recommendations on challenging decisions.",
+    "ref": "PMBOK 8, Guide 2.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 173,
+        "label": "PMBOK 8, Guide 2.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "How does an agile team mainly find out whether the product meets stakeholders' expectations?",
+    "options": [
+      "Through continuous feedback on features, for example in regular reviews",
+      "Through a detailed requirements sign-off before any work begins",
+      "Through a satisfaction survey sent after the project has closed",
+      "Through the change control board's monthly approval meetings"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Agile projects require continuous feedback on features and user stories to keep the product aligned with stakeholder needs, using frequent interaction and real-time collaboration.",
+    "ref": "PMBOK 8, Guide 2.5.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 181,
+        "label": "PMBOK 8, Guide 2.5.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are tools and techniques of the Identify Stakeholders process?",
+    "type": "multi",
+    "options": [
+      "Stakeholder analysis",
+      "Brainstorming",
+      "Stakeholder mapping/representation",
+      "Earned value analysis",
+      "Make-or-buy analysis",
+      "Critical path method"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-33 lists expert judgment, questionnaires and surveys, brainstorming, stakeholder analysis, document analysis, stakeholder mapping/representation and meetings.",
+    "ref": "PMBOK 8, Guide Figure 2-33",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide Figure 2-33"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO pieces of information does stakeholder analysis record, according to the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Their attitudes, or level of support for the project",
+      "Their expectations of the project",
+      "Their hourly cost rate",
+      "Their planned vacation days",
+      "Their personal social media accounts"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Stakeholder analysis results in a list with positions, roles, stakes, expectations, attitudes and interest in information about the project.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 304,
+        "label": "PMBOK 8, Guide section 5, Stakeholder analysis"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO statements about personas are correct?",
+    "type": "multi",
+    "options": [
+      "A persona is a fictional character representing a class of users",
+      "A persona may have no interest in or influence over the outcome",
+      "A persona must be a real, named person from the register",
+      "Personas replace the need for a stakeholder register",
+      "Personas are used only on predictive projects"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "A persona is a fictional character created to represent a user class. Unlike a stakeholder, a persona may or may not have an interest in the outcome and can be a user with no influence over the solution.",
+    "ref": "The PMI Guide to Business Analysis, 5.2.2.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 162,
+        "label": "The PMI Guide to Business Analysis, 5.2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each direction of influence with an example of the stakeholders it covers.",
+    "type": "match",
+    "left": [
+      "Upward",
+      "Downward",
+      "Outward",
+      "Sideward"
+    ],
+    "right": [
+      "The sponsor and the steering committee",
+      "Specialists lending their skills to the team for a while",
+      "Regulators, suppliers and the public",
+      "Peers competing for the same scarce resources"
+    ],
+    "approach": "predictive",
+    "explanation": "Upward: senior management, sponsor, steering committee. Downward: the team or specialists contributing temporarily. Outward: suppliers, government departments, the public, end users, regulators. Sideward: the project manager's peers.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "A union representative has no formal authority over the project but follows every decision closely and asks for regular updates. Select the area of the grid where the representative belongs.",
+    "type": "hotspot",
+    "diagram": "power-interest-figure",
+    "options": [
+      "High power, low interest",
+      "High power, high interest",
+      "Low power, low interest",
+      "Low power, high interest"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "No formal authority means low power; following every decision means high interest. The usual strategy for this area is to keep the stakeholder informed.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder mapping/representation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+      }
+    ]
+  }
+]

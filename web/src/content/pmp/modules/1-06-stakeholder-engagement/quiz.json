@@ -1,0 +1,658 @@
+[
+  {
+    "id": "q1",
+    "q": "What is the key benefit of the Plan Stakeholder Engagement process?",
+    "options": [
+      "It identifies the right focus for engaging each stakeholder",
+      "It provides an actionable plan for interacting with stakeholders",
+      "It ensures timely and appropriate distribution of project information",
+      "It maintains engagement as the project environment changes"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Plan Stakeholder Engagement develops strategies based on stakeholders' needs, expectations, interests, requirements and potential impact; its key benefit is an actionable plan to interact effectively with them.",
+    "ref": "PMBOK 8, Guide 2.5.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 176,
+        "label": "PMBOK 8, Guide 2.5.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which statement about the stakeholder engagement plan matches the PMBOK Guide?",
+    "options": [
+      "It must always be a detailed, formal document approved by a board",
+      "It is written once during initiation and never changed afterward",
+      "It lists only the stakeholders who already support the project",
+      "It can be formal or informal, highly detailed or broadly framed"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The stakeholder engagement plan identifies strategies and actions to promote productive involvement. It can be formal or informal and highly detailed or broadly framed, based on the project's needs and stakeholders' expectations.",
+    "ref": "PMBOK 8, Guide section 4, Stakeholder engagement plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 246,
+        "label": "PMBOK 8, Guide section 4, Stakeholder engagement plan"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A stakeholder knows about the project and its impacts, and is actively working to make it a success. What is this stakeholder's engagement level?",
+    "options": [
+      "Leading",
+      "Supportive",
+      "Neutral",
+      "Resistant"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Leading stakeholders are aware of the project and its potential impacts and actively engaged in ensuring its success. Supportive stakeholders are aware and supportive, but not necessarily driving success.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A department head is aware of the project but opposes the changes it will bring to her team's work. What is her engagement level?",
+    "options": [
+      "Unaware",
+      "Neutral",
+      "Resistant",
+      "Supportive"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Resistant stakeholders are aware of the project and its potential impacts but resistant to changes that may occur as a result of the work or outcomes. They will be unsupportive.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "In a stakeholder engagement assessment matrix, what does the letter D mark?",
+    "options": [
+      "The date on which the stakeholder was last contacted",
+      "The level the team judges essential for project success",
+      "The direction of the stakeholder's influence on the project",
+      "The decision rights the stakeholder holds over the scope"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "C marks the current engagement level and D the level the project team has assessed as essential to ensure project success, the desired level.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "What does the gap between a stakeholder's current and desired engagement levels direct?",
+    "options": [
+      "The amount of budget reserve set aside for that stakeholder",
+      "The stakeholder's position on the power/interest grid",
+      "The order in which stakeholders review the project charter",
+      "The level of communication needed to engage the stakeholder"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The gap between current and desired for each stakeholder directs the level of communications necessary to engage that stakeholder effectively. Closing the gap is an essential element of monitoring engagement.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "On an agile project, the engagement assessment shows that a key user group is unsupportive. Which technique helps the team find the method, format and content of communication that will reach them?",
+    "options": [
+      "Communication styles assessment",
+      "Earned value analysis",
+      "The salience model",
+      "A responsibility assignment matrix"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "A communication styles assessment identifies the preferred method, format and content for planned communication. It is often used with unsupportive stakeholders, after a stakeholder engagement assessment has found gaps that need tailored communication.",
+    "ref": "PMBOK 8, Guide section 5, Communication styles assessment",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 260,
+        "label": "PMBOK 8, Guide section 5, Communication styles assessment"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which events does the PMBOK Guide give as typical for engaging stakeholders when a product is built incrementally?",
+    "options": [
+      "Gate reviews, audits and formal sign-offs",
+      "Steering committee meetings and annual reports",
+      "Product reviews, planning sessions and retrospectives",
+      "Bid conferences, contract talks and closeouts"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Products that allow or require interactive or incremental approaches usually bring a specific framework for stakeholder interactions, such as product reviews, planning sessions and retrospectives.",
+    "ref": "PMBOK 8, Guide 2.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 179,
+        "label": "PMBOK 8, Guide 2.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A project runs in a strongly hierarchical organization. How should stakeholder communication be tailored?",
+    "options": [
+      "Rely mostly on informal channels and hallway conversations",
+      "Use more formal approaches that suit the hierarchy",
+      "Send the same informal chat updates to every level",
+      "Skip tailoring, since culture does not affect communication"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Organizational culture is a key driver for tailoring: flat organizations tend to rely on open communication and informal channels, whereas hierarchical organizations use more formal approaches.",
+    "ref": "PMBOK 8, Guide 2.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 179,
+        "label": "PMBOK 8, Guide 2.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "The sponsor, a senior executive, rarely reads the project's long weekly report. What should the project manager do?",
+    "options": [
+      "Send the report twice a week so the sponsor cannot miss it",
+      "Stop reporting to the sponsor until a decision is needed",
+      "Ask the sponsor's assistant to summarize the report weekly",
+      "Find out how the sponsor prefers to get information and tailor it"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Communication should be tailored to the needs and best fit for each stakeholder. An executive sponsor needs specific effort to understand their needs and the ways of communication that suit them.",
+    "ref": "PMBOK 8, Guide 2.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 173,
+        "label": "PMBOK 8, Guide 2.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "A medium-sized global project has stakeholders in many countries who speak different languages. Which approach does the PMBOK Guide's example use?",
+    "options": [
+      "Multilingual updates and monthly virtual forums for feedback",
+      "A single English-only newsletter sent out to every stakeholder",
+      "Quarterly face-to-face meetings held only at head office",
+      "Updates only for stakeholders who share the team's language"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "In the Eighth Edition's example, a medium-sized global project uses multilingual updates and monthly virtual forums to ensure engagement and feedback across cultural backgrounds.",
+    "ref": "PMBOK 8, Guide 2.5.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 181,
+        "label": "PMBOK 8, Guide 2.5.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What is the key benefit of the Manage Stakeholder Engagement process?",
+    "options": [
+      "It produces the stakeholder register for the project",
+      "It defines the strategy for engaging each stakeholder",
+      "It increases support and minimizes resistance from stakeholders",
+      "It measures how efficient the communications plan has been"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Manage Stakeholder Engagement is communicating and working with stakeholders, including sponsors, to meet their needs, address issues and foster involvement. Its key benefit is increasing support and minimizing resistance.",
+    "ref": "PMBOK 8, Guide 2.5.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 177,
+        "label": "PMBOK 8, Guide 2.5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which of these is a tool or technique of the Manage Stakeholder Engagement process?",
+    "options": [
+      "Stakeholder cube",
+      "Political awareness",
+      "Earned value analysis",
+      "Benchmarking"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Figure 2-36 lists expert judgment, feedback, conflict management, cultural awareness, negotiation, observation/conversation, political awareness, ground rules and meetings. Benchmarking belongs to Plan Stakeholder Engagement.",
+    "ref": "PMBOK 8, Guide Figure 2-36",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 179,
+        "label": "PMBOK 8, Guide Figure 2-36"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A regional manager openly resists a new process the project will introduce. What should the project manager do first?",
+    "options": [
+      "Escalate the resistance to the sponsor and ask for a directive",
+      "Leave the manager out of meetings until the process goes live",
+      "Change the process so the manager has nothing left to object to",
+      "Meet the manager to understand the cause of the resistance"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Manage Stakeholder Engagement aims to increase support and minimize resistance by working with stakeholders to address their concerns. Understanding the cause comes first; root cause analysis is a tool of planning and monitoring engagement.",
+    "ref": "PMBOK 8, Guide 2.5.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 177,
+        "label": "PMBOK 8, Guide 2.5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which of these is an output of the Monitor Stakeholder Engagement process?",
+    "options": [
+      "Work performance information",
+      "The business case",
+      "The project charter",
+      "The benefits management plan"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Monitor Stakeholder Engagement produces work performance information, change requests, and updates to the project management plan and to project documents such as the issue log and stakeholder register.",
+    "ref": "PMBOK 8, Guide Figure 2-38",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 181,
+        "label": "PMBOK 8, Guide Figure 2-38"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Which indicator does the PMBOK Guide suggest for checking that stakeholder engagement is being maintained?",
+    "options": [
+      "Schedule performance index",
+      "Defect density",
+      "Net Promoter Score",
+      "Cost variance"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "To check that engagement is maintained, collect feedback through interviews or surveys, align periodically with stakeholders on objectives, and check indicators such as the Net Promoter Score.",
+    "ref": "PMBOK 8, Guide 2.5.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 183,
+        "label": "PMBOK 8, Guide 2.5.5"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "On an agile project, stakeholders keep raising changes to requirements, and feedback on increments is mixed. What does the PMBOK Guide suggest this shows?",
+    "options": [
+      "The team's velocity is too low and has to be increased",
+      "Agreement on the project objectives has not yet been reached",
+      "The product owner should stop accepting feedback on increments",
+      "The project should switch to a predictive approach at once"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "To check that stakeholders agree with the project objectives, the Eighth Edition suggests reviewing the number of change requests to requirements and collecting feedback on increments.",
+    "ref": "PMBOK 8, Guide 2.5.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 183,
+        "label": "PMBOK 8, Guide 2.5.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "According to the Agile Practice Guide, how often should a team demonstrate its working product?",
+    "options": [
+      "Once, at the end of the release",
+      "Only when the sponsor asks for it",
+      "Whenever the backlog is fully refined",
+      "At least once every two weeks"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "As a general guideline, demonstrate whatever the team has as a working product at least once every two weeks, which is frequent enough to get feedback that prevents heading in the wrong direction.",
+    "ref": "Agile Practice Guide, 5.2.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 85,
+        "label": "Agile Practice Guide, 5.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "In an agile demonstration, who sees the working product and accepts or declines the stories?",
+    "options": [
+      "The product owner",
+      "The project sponsor",
+      "The team facilitator",
+      "The change control board"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "As the team completes features, it demonstrates the working product; the product owner sees the demonstration and accepts or declines stories.",
+    "ref": "Agile Practice Guide, 5.2.6",
+    "links": [
+      {
+        "book": "agile",
+        "page": 85,
+        "label": "Agile Practice Guide, 5.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Why are influencing skills critical for project managers in a matrix environment, according to the PMBOK Guide?",
+    "options": [
+      "Because influencing replaces the need for a project charter",
+      "Because matrix organizations do not allow formal escalation",
+      "Because they often have little or no direct authority over the team",
+      "Because the sponsor hands every decision to the project manager"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Because project managers often have little or no direct authority over team members in a matrix environment, their ability to influence stakeholders on a timely basis is critical to project success.",
+    "ref": "PMBOK 8, Guide section 5, Influencing",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 278,
+        "label": "PMBOK 8, Guide section 5, Influencing"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which skill means recognizing formal and informal power relationships and being willing to work within them?",
+    "options": [
+      "Networking",
+      "Political awareness",
+      "Active listening",
+      "Benchmarking"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Political awareness concerns the recognition of formal and informal power relationships and the willingness to operate within them: understanding the organization's strategies, knowing who wields power, and communicating with those stakeholders.",
+    "ref": "PMBOK 8, Guide section 5, Political awareness",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 290,
+        "label": "PMBOK 8, Guide section 5, Political awareness"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A project manager needs support from another department where she has no authority. Which skill gives her access to the informal organization to solve problems and gain support?",
+    "options": [
+      "Benchmarking",
+      "Critical path analysis",
+      "Document analysis",
+      "Networking"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Networking establishes connections with people in the same or other organizations. Networks give access to informal organizations to solve problems, influence stakeholders' actions and increase support for the project.",
+    "ref": "PMBOK 8, Guide section 5, Networking",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 288,
+        "label": "PMBOK 8, Guide section 5, Networking"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which THREE are tools and techniques of the Plan Stakeholder Engagement process?",
+    "type": "multi",
+    "options": [
+      "Stakeholder engagement assessment matrix",
+      "Root cause analysis",
+      "Benchmarking",
+      "Stakeholder register",
+      "Work performance reports",
+      "Change requests"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-34 lists expert judgment, benchmarking, assumption and constraint analysis, root cause analysis, prioritization/ranking, mind mapping, the stakeholder engagement assessment matrix and meetings. The stakeholder register is an input.",
+    "ref": "PMBOK 8, Guide Figure 2-34",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 177,
+        "label": "PMBOK 8, Guide Figure 2-34"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Which TWO are key influencing skills listed in the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Clearly articulating points and positions",
+      "High levels of active and effective listening",
+      "Holding back information until there is agreement",
+      "Relying on formal authority to settle disputes",
+      "Avoiding stakeholders who disagree"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Key influencing skills: being persuasive, clearly articulating points and positions, active and effective listening, awareness of various perspectives, and gathering relevant information to reach agreements while maintaining mutual trust.",
+    "ref": "PMBOK 8, Guide section 5, Influencing",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 278,
+        "label": "PMBOK 8, Guide section 5, Influencing"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which TWO checks does the PMBOK Guide suggest for confirming that stakeholders agree with the project objectives?",
+    "type": "multi",
+    "options": [
+      "Review the number of change requests to requirements",
+      "Collect feedback on increments",
+      "Count the hours the team has logged",
+      "Check the cost performance index",
+      "Measure the number of meetings held"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Table 2-9 pairs the outcome \"stakeholder agreement with project objectives is achieved\" with reviewing the number of change requests to requirements and collecting feedback on increments.",
+    "ref": "PMBOK 8, Guide 2.5.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 183,
+        "label": "PMBOK 8, Guide 2.5.5"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Match each engagement level with its description.",
+    "type": "match",
+    "left": [
+      "Unaware",
+      "Resistant",
+      "Neutral",
+      "Leading"
+    ],
+    "right": [
+      "Does not know about the project or its impacts",
+      "Aware, but opposes the changes the project brings",
+      "Aware, but neither supportive nor unsupportive",
+      "Actively engaged in making the project a success"
+    ],
+    "approach": "hybrid",
+    "explanation": "The five levels are unaware, resistant, neutral, supportive and leading. Supportive stakeholders are aware and support the work and its outcomes.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "What should the project manager do about the data protection officer?",
+    "case": "parking-permits",
+    "options": [
+      "Engage the officer now, since the camera data will need their support",
+      "Wait until the cameras are installed, then ask for a formal approval",
+      "Leave the officer out, since the contractor is installing the cameras",
+      "Ask the residents' association to brief the officer on the project"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The officer is currently unaware, while the project clearly needs their support for storing number-plate data. The gap between current and desired engagement directs the communication needed, and a stakeholder found late is a risk.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "How should the project manager respond to the residents' association first?",
+    "case": "parking-permits",
+    "options": [
+      "Ask the sponsor to stop the petition through council channels",
+      "Meet the association to understand its concerns about privacy",
+      "Remove the cameras from the scope to end the opposition",
+      "Send residents the full technical specification of the cameras"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Manage Stakeholder Engagement works with stakeholders to meet their needs and address issues, to increase support and minimize resistance. Understanding the association's concerns comes before deciding how to respond.",
+    "ref": "PMBOK 8, Guide 2.5.2.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 177,
+        "label": "PMBOK 8, Guide 2.5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "What does the team's judgment about the shop owners mean for engagement?",
+    "case": "parking-permits",
+    "options": [
+      "They need extra communication until they reach the leading level",
+      "They should be removed from the stakeholder register for now",
+      "Current and desired levels match, so no extra effort is needed now",
+      "They must be treated as resistant until they take a position"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The shop owners are neutral now and neutral is the desired level, so there is no gap. The gap between current and desired directs the communication needed; they stay in the register and are monitored.",
+    "ref": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 305,
+        "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Which quality of an accountable leader does the PMBOK Guide say helps to build trust with stakeholders?",
+    "options": [
+      "Integrity, honesty and fairness in the decisions made",
+      "Keeping project information confidential from stakeholders",
+      "Making every decision alone, to save the team's time",
+      "Avoiding any commitments that stakeholders could check"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Integrity, honesty and fairness are key characteristics of an accountable leader. Decisions made with integrity and fairness focus on the common good, helping to build trust with stakeholders.",
+    "ref": "PMBOK 8, Standard 3.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 69,
+        "label": "PMBOK 8, Standard 3.6"
+      }
+    ]
+  }
+]

@@ -3,5 +3,10 @@
     "id": "packaging-line",
     "title": "Upgrading a packaging line",
     "text": "A food manufacturer is upgrading one of its packaging lines. Two vendors work side by side. The first installs the new machines to a fixed plan. The second configures the control software in two-week iterations.\n\nThe machine crew complains that the software crew keeps changing the line's settings during the night shift. Both crews have stopped using the project's agreed rule that every change to the line is logged on the shared board. The plant manager wants the line running again in six weeks."
+  },
+  {
+    "id": "parking-permits",
+    "title": "Replacing a city's parking permits",
+    "text": "A city council is replacing paper parking permits with a mobile app and number-plate cameras. The transport director sponsors the project and wants it live before the summer. The team builds the app in two-week iterations; a contractor installs the cameras to a fixed plan.\n\nThe residents' association says the cameras invade privacy and has started a petition against the project. Local shop owners have not taken a position, and the team judges that neutral is all it needs from them. The council's data protection officer has not yet heard of the project, although the cameras will store number-plate data."
   }
 ]

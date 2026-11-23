@@ -1,0 +1,142 @@
+[
+  {
+    "book": "agile",
+    "page": 73,
+    "label": "Agile Practice Guide, 4.7"
+  },
+  {
+    "book": "agile",
+    "page": 74,
+    "label": "Agile Practice Guide, 4.7.1"
+  },
+  {
+    "book": "agile",
+    "page": 76,
+    "label": "Agile Practice Guide, 4.7.3"
+  },
+  {
+    "book": "agile",
+    "page": 76,
+    "label": "Agile Practice Guide, 4.7.4"
+  },
+  {
+    "book": "agile",
+    "page": 78,
+    "label": "Agile Practice Guide, 4.7.5"
+  },
+  {
+    "book": "agile",
+    "page": 86,
+    "label": "Agile Practice Guide, 5.2.7"
+  },
+  {
+    "book": "agile",
+    "page": 111,
+    "label": "Agile Practice Guide, 6.3.3"
+  },
+  {
+    "book": "pmbok6",
+    "page": 342,
+    "label": "PMBOK 6, 9.4.2.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 189,
+    "label": "PMBOK 8, Guide 2.6.2.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 189,
+    "label": "PMBOK 8, Guide 2.6.2.4.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 190,
+    "label": "PMBOK 8, Guide Figure 2-44"
+  },
+  {
+    "book": "pmbok8",
+    "page": 191,
+    "label": "PMBOK 8, Guide 2.6.2.4.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 256,
+    "label": "PMBOK 8, Guide section 5, Coaching and mentoring"
+  },
+  {
+    "book": "pmbok8",
+    "page": 256,
+    "label": "PMBOK 8, Guide section 5, Colocation"
+  },
+  {
+    "book": "pmbok8",
+    "page": 266,
+    "label": "PMBOK 8, Guide section 5, Critical thinking"
+  },
+  {
+    "book": "pmbok8",
+    "page": 274,
+    "label": "PMBOK 8, Guide section 5, Emotional intelligence"
+  },
+  {
+    "book": "pmbok8",
+    "page": 277,
+    "label": "PMBOK 8, Guide section 5, Individual and team assessments"
+  },
+  {
+    "book": "pmbok8",
+    "page": 281,
+    "label": "PMBOK 8, Guide section 5, Leadership"
+  },
+  {
+    "book": "pmbok8",
+    "page": 286,
+    "label": "PMBOK 8, Guide section 5, Motivation"
+  },
+  {
+    "book": "pmbok8",
+    "page": 289,
+    "label": "PMBOK 8, Guide section 5, Organizational cultural intelligence"
+  },
+  {
+    "book": "pmbok8",
+    "page": 297,
+    "label": "PMBOK 8, Guide section 5, Recognition and rewards"
+  },
+  {
+    "book": "pmbok8",
+    "page": 299,
+    "label": "PMBOK 8, Guide section 5, Retrospectives"
+  },
+  {
+    "book": "pmbok8",
+    "page": 303,
+    "label": "PMBOK 8, Guide section 5, Six Thinking Hats"
+  },
+  {
+    "book": "pmbok8",
+    "page": 310,
+    "label": "PMBOK 8, Guide section 5, Team building"
+  },
+  {
+    "book": "pmbok8",
+    "page": 315,
+    "label": "PMBOK 8, Guide section 5, Training"
+  },
+  {
+    "book": "pmbok8",
+    "page": 316,
+    "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+  },
+  {
+    "book": "pmbok8",
+    "page": 317,
+    "label": "PMBOK 8, Guide section 5, Virtual collaboration tools"
+  },
+  {
+    "book": "pmbok8",
+    "page": 317,
+    "label": "PMBOK 8, Guide section 5, Virtual teams"
+  }
+]

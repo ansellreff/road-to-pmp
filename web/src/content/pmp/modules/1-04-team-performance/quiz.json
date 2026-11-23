@@ -1,0 +1,687 @@
+[
+  {
+    "id": "q1",
+    "q": "Team members have just met. They are learning about the project and their formal roles, and they mostly work on their own. Which stage of the Tuckman ladder is the team in?",
+    "options": [
+      "Storming",
+      "Forming",
+      "Norming",
+      "Adjourning"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "In forming, team members meet and learn about the project and their formal roles and responsibilities. They tend to be independent and not as open in this phase.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A new developer joins a team that has been performing well for months. Soon arguments break out about how the work should be done. What should the project manager do?",
+    "options": [
+      "Move the new developer to another team so the old way of working can return",
+      "Remind the team that arguments break the ground rules and must stop",
+      "Wait for the arguments to settle on their own before the next release",
+      "Help the team revisit its working agreements and roles with the new member"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "A change in membership can send a team back to an earlier Tuckman stage. The Agile Practice Guide advises leaders to support the team after reteaming as members re-establish working agreements, clarify roles and reconnect to shared goals.",
+    "ref": "Agile Practice Guide, 6.3.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 111,
+        "label": "Agile Practice Guide, 6.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Most members of a new project team worked together on the previous project, and within days they work smoothly as a unit. What does the Tuckman ladder say about this?",
+    "options": [
+      "A team whose members have worked together before may skip a stage",
+      "Every team must pass through all five stages in strict order",
+      "The team will drop back to forming as soon as the work becomes hard",
+      "The project manager should restart the stages with a new kickoff"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The stages usually occur in order, but a team can get stuck or regress, and projects with team members who worked together in the past may skip a stage.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "According to the PMBOK Guide, what determines how long a team stays in a particular stage of the Tuckman ladder?",
+    "options": [
+      "The length of the schedule and the number of milestones in it",
+      "The type of contract used with the project's main suppliers",
+      "Team dynamics, team size and the leadership the team receives",
+      "The number of change requests the change board has approved"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The duration of a particular stage depends on team dynamics, team size and team leadership. The project management team should understand team dynamics to move members through all stages effectively.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Team members complain about a cramped office and an outdated pay scale. According to Herzberg, what will fixing these two conditions achieve?",
+    "options": [
+      "It will keep the whole team highly motivated until the project is closed",
+      "It will replace the need for recognition and chances to grow",
+      "It will remove a cause of dissatisfaction, but not motivate by itself",
+      "It will change nothing, as working conditions never affect people"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Salary and the physical environment are hygiene factors. When insufficient they cause dissatisfaction, but even when sufficient they do not lead to satisfaction. Motivational factors such as achievement and growth do.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "A team of experienced engineers is paid fairly. According to Daniel Pink, which change is most likely to raise their motivation on complex work?",
+    "options": [
+      "More say over how, where and when they do their work",
+      "A one-time bonus for finishing the current release early",
+      "A stricter time-tracking system that shows their effort",
+      "Detailed task lists from the project manager every morning"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Pink states that once people are paid fairly, extrinsic rewards stop motivating; for complicated work, intrinsic motivators last longer. Autonomy, the desire to determine how, where and when work is done, is one of them.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Which three intrinsic motivators does Daniel Pink identify?",
+    "options": [
+      "Salary, security and status",
+      "Achievement, power and affiliation",
+      "Hygiene, motivators and rewards",
+      "Autonomy, mastery and purpose"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Pink identifies autonomy, mastery and purpose. Achievement, power and affiliation are the needs in McClelland's theory of needs.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "A team member keeps asking for more responsibility and enjoys organizing and leading others. In McClelland's theory of needs, which need drives this person most?",
+    "options": [
+      "Achievement",
+      "Power",
+      "Affiliation",
+      "Self-realization"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "People motivated by power like to organize, motivate and lead others, and are motivated by increased responsibility. Achievement seekers want challenging but reasonable goals; affiliation seekers want acceptance and belonging.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A project manager leads a team of designers doing creative knowledge work. Which management style does Theory Y suggest?",
+    "options": [
+      "A personal, coaching style that encourages creativity and discussion",
+      "A hands-on, top-down style with close checks on every task the team does",
+      "A style built on a job for life and care for employees' families",
+      "A style that links every task the team does to a cash incentive"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Theory Y assumes people are intrinsically motivated to do good work; the matching style has a personal, coaching feel and encourages creativity and discussion. It is often seen in creative and knowledge worker environments. A job for life is Ouchi's Theory Z.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "When does the PMBOK Guide recommend that a project manager recognize the team?",
+    "options": [
+      "At the final project review, so it reflects all of the results",
+      "After the sponsor has accepted all of the final deliverables",
+      "Throughout the project life cycle, not only when it ends",
+      "Once a year, in step with the organization's appraisals"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "A good strategy for project managers is to give the team recognition throughout the project life cycle rather than waiting until the project is complete.",
+    "ref": "PMBOK 8, Guide section 5, Recognition and rewards",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Recognition and rewards"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "In which process is the original plan for rewarding team members developed?",
+    "options": [
+      "In the Lead the Team process",
+      "In the Plan Resource Management process",
+      "In the Identify Stakeholders process",
+      "In the Manage Communications process"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Recognizing and rewarding desirable behavior is part of team development; the original plan for rewarding people is developed during Plan Resource Management.",
+    "ref": "PMBOK 8, Guide section 5, Recognition and rewards",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Recognition and rewards"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A project manager plans to praise individual members by name at a global all-hands meeting. Some members come from cultures where public praise of one person is uncomfortable. What should the project manager do?",
+    "options": [
+      "Keep the plan, since public praise motivates everyone equally",
+      "Stop all recognition so that no one on the team is offended",
+      "Replace the praise with one cash bonus for the whole team",
+      "Tailor the way recognition is given to each member's culture"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Cultural differences influence how recognition and rewards are best delivered. Tailoring recognition to cultural preferences makes the reward system more effective and meaningful for everyone.",
+    "ref": "PMBOK 8, Guide section 5, Recognition and rewards",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Recognition and rewards"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which statement about rewards matches the PMBOK Guide?",
+    "options": [
+      "Money is the only reward that reliably motivates project teams",
+      "Rewards should be identical for every member, to be fair",
+      "Rewards matter little once the team charter has been agreed",
+      "Intangible rewards can be as effective as money, or more so"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Money is the tangible part of a reward system, but intangible rewards could be equally or even more effective. Most team members are motivated by the chance to grow, accomplish, be appreciated and use their skills.",
+    "ref": "PMBOK 8, Guide section 5, Recognition and rewards",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Recognition and rewards"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Tension rises in the team after a missed milestone. How should the project manager use emotional intelligence, according to the PMBOK Guide?",
+    "options": [
+      "Acknowledge members' concerns, anticipate reactions, follow up on issues",
+      "Avoid talking about feelings and focus only on the recovery plan",
+      "Ask the functional managers to handle the team's emotional reactions",
+      "Hold back the news about the delay until the whole team has calmed down"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A team uses emotional intelligence to reduce tension and increase cooperation by identifying, assessing and controlling team members' sentiments, anticipating their actions, acknowledging their concerns and following up on their issues.",
+    "ref": "PMBOK 8, Guide section 5, Emotional intelligence",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 274,
+        "label": "PMBOK 8, Guide section 5, Emotional intelligence"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "The PMBOK Guide says a project manager should develop inbound and outbound emotional intelligence competencies. Which one is outbound?",
+    "options": [
+      "Self-awareness",
+      "Self-management",
+      "Relationship management",
+      "Self-assessment"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Inbound competencies include self-management and self-awareness; outbound competencies include relationship management. Teams that develop team emotional intelligence are more effective and usually see lower staff turnover.",
+    "ref": "PMBOK 8, Guide section 5, Emotional intelligence",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 274,
+        "label": "PMBOK 8, Guide section 5, Emotional intelligence"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "In the PMBOK Guide's components of emotional intelligence, \"think before you act\" and \"build trust\" belong to which area?",
+    "options": [
+      "Self-awareness",
+      "Self-management",
+      "Social awareness",
+      "Social skills"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Figure 5-11 lists \"think before you act\" and \"build trust\" under self-management. Self-awareness asks how you affect the team and how it affects you; social awareness is empathy and active listening; social skills are rapport, building teams and managing attitude.",
+    "ref": "PMBOK 8, Guide section 5, Leadership",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 281,
+        "label": "PMBOK 8, Guide section 5, Leadership"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A distributed team includes members from several countries. Which behavior shows organizational cultural intelligence?",
+    "options": [
+      "Recognizing that people may express themselves differently, without stereotyping",
+      "Assigning tasks according to what each nationality is commonly said to be good at",
+      "Asking every member to adopt the communication habits of head office",
+      "Avoiding any talk of cultural differences, to keep the team neutral"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Leaders with high organizational cultural intelligence recognize that members from different cultural regions can think and express themselves differently, while avoiding careless cultural stereotyping.",
+    "ref": "PMBOK 8, Guide section 5, Organizational cultural intelligence",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 289,
+        "label": "PMBOK 8, Guide section 5, Organizational cultural intelligence"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which of these is a benefit of virtual teams named in the PMBOK Guide?",
+    "options": [
+      "Communication planning matters less than for a colocated team",
+      "Protocols for resolving conflicts are no longer needed",
+      "The team no longer has to share credit for its successes",
+      "Experts can join the team even if they live elsewhere"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Virtual teams make it possible to add special expertise even when the expert is not in the same area. They also need more communication planning, conflict protocols and shared credit, not less.",
+    "ref": "PMBOK 8, Guide section 5, Virtual teams",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 317,
+        "label": "PMBOK 8, Guide section 5, Virtual teams"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A project manager forms a virtual team across three regions. According to the PMBOK Guide, what needs more attention than it would in a colocated team?",
+    "options": [
+      "Cutting the number of team members to lower communication costs",
+      "Replacing the kickoff meeting with written instructions only",
+      "Communication planning, such as clear expectations and conflict protocols",
+      "Reporting every member's working hours to the sponsor each week"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Communication planning becomes increasingly important in a virtual team: more time may be needed to set clear expectations, facilitate communication, develop protocols for resolving conflicts, include people in decisions, understand cultural differences and share credit.",
+    "ref": "PMBOK 8, Guide section 5, Virtual teams",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 317,
+        "label": "PMBOK 8, Guide section 5, Virtual teams"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A remote agile team spans eight time zones. The daily coordination meeting always falls late at night for the members in Asia. What should the team facilitator do?",
+    "options": [
+      "Keep the time, because most members find it convenient",
+      "Rotate the meeting time so the inconvenience is shared",
+      "Excuse the members in Asia from the meeting for good",
+      "Ask the members in Asia to work head office hours"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Successful remote teams promote inclusion by rotating time zones, using accessible formats and inviting all voices. Highly distributed teams can also use asynchronous updates.",
+    "ref": "Agile Practice Guide, 4.7.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 76,
+        "label": "Agile Practice Guide, 4.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "In a hybrid-location team, members who come to the office are praised far more often than remote members, although their results are similar. What is this called?",
+    "options": [
+      "Groupthink",
+      "Scope creep",
+      "Proximity bias",
+      "Storming"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The Agile Practice Guide lists proximity bias among the challenges of remote work: it may affect recognition and advancement for remote team members.",
+    "ref": "Agile Practice Guide, 4.7.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 76,
+        "label": "Agile Practice Guide, 4.7.3"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "According to the Agile Practice Guide, how are remote teams measured?",
+    "options": [
+      "By the outcomes they deliver",
+      "By the hours they are logged in",
+      "By how often they visit the office",
+      "By how many messages they send"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Remote work shifts the focus away from tracking hours or physical presence: teams are measured by the outcomes they deliver, and trust replaces in-office observation.",
+    "ref": "Agile Practice Guide, 4.7.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 76,
+        "label": "Agile Practice Guide, 4.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A database specialist is assigned half time to each of two projects. What does the Agile Practice Guide warn about this?",
+    "options": [
+      "The specialist will give each project exactly half a full-time effort",
+      "Splitting time does no harm if both projects use the same tools",
+      "Part-time assignments remove the need to agree expectations",
+      "Task-switching leaves the specialist only 20% to 40% on each"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "When a person multitasks between two projects, task-switching costs mean they are somewhere between 20% and 40% dedicated to each, not 50%. Part-time assignments create risks, so expectations must be set with everyone.",
+    "ref": "Agile Practice Guide, 4.7.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 74,
+        "label": "Agile Practice Guide, 4.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "A junior scheduler hopes to become a project manager over the next few years and asks a senior colleague for regular guidance and shared experience. Which tool fits best?",
+    "options": [
+      "Coaching",
+      "Mentoring",
+      "Team building",
+      "Colocation"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Mentoring shares knowledge, skills or experience with someone developing their own, and is a long-term, ongoing relationship. Coaching is more about helping a person solve a specific problem or reach a specific goal.",
+    "ref": "PMBOK 8, Guide section 5, Coaching and mentoring",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 256,
+        "label": "PMBOK 8, Guide section 5, Coaching and mentoring"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "At a retrospective, the team lists twelve ideas for improvement. What does the Agile Practice Guide advise?",
+    "options": [
+      "Choose the few the team can finish next, and measure their effect",
+      "Start all twelve at once so that no good idea is lost",
+      "Send the list to the sponsor to choose the improvements",
+      "Keep the list for the lessons learned meeting at the end"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Limit the action items to the team's capacity: trying to improve too many things at once and finishing none is much worse than completing a few. The team decides how to measure each improvement and checks the outcome later.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are practices of successful remote teams in the Agile Practice Guide?",
+    "type": "multi",
+    "options": [
+      "Set clear communication norms about availability and tool use",
+      "Track each member's online hours to confirm they are present",
+      "Use video in meetings when possible to support connection",
+      "Celebrate team and individual progress",
+      "Hold every meeting during head office hours",
+      "Drop team rituals so that more time goes to work"
+    ],
+    "answers": [
+      0,
+      2,
+      3
+    ],
+    "approach": "agile",
+    "explanation": "The core practices include clear communication norms, video in meetings when possible, rituals such as check-ins or virtual coffee chats, celebrating progress, work-life boundaries and inclusion by rotating time zones. Remote teams are measured by outcomes, not hours.",
+    "ref": "Agile Practice Guide, 4.7.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 76,
+        "label": "Agile Practice Guide, 4.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO statements about the Tuckman ladder are correct?",
+    "type": "multi",
+    "options": [
+      "A team can regress to an earlier stage",
+      "Members learn to trust one another in norming",
+      "Adjourning takes place at the start of the project",
+      "Every team spends the same time in each stage",
+      "High-performing teams always skip storming"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Teams may get stuck in a stage or regress to an earlier one. In norming, members adjust their work habits and learn to trust one another. Adjourning comes at the end, and stage duration depends on team dynamics, size and leadership.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are hygiene factors in Herzberg's model?",
+    "type": "multi",
+    "options": [
+      "Salary",
+      "Company policies",
+      "Achievement",
+      "Growth",
+      "Advancement"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Herzberg's hygiene factors relate to the conditions of work, such as company policies, salary and the physical environment. Achievement, growth and advancement are motivational factors, which relate to the content of the work.",
+    "ref": "PMBOK 8, Guide section 5, Motivation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 286,
+        "label": "PMBOK 8, Guide section 5, Motivation"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "A team uses Six Thinking Hats to discuss a design decision. Match each hat with the kind of thinking it stands for.",
+    "type": "match",
+    "left": [
+      "White hat",
+      "Red hat",
+      "Black hat",
+      "Green hat"
+    ],
+    "right": [
+      "Facts and information",
+      "Feelings and emotions",
+      "A negative point of view",
+      "New ideas"
+    ],
+    "approach": "hybrid",
+    "explanation": "In Six Thinking Hats, the blue hat facilitates and considers the big picture, white considers facts and information, red shows feelings and emotions, black takes a negative point of view, yellow focuses on positive aspects and green generates new ideas.",
+    "ref": "PMBOK 8, Guide section 5, Six Thinking Hats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 303,
+        "label": "PMBOK 8, Guide section 5, Six Thinking Hats"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about the stages of the Tuckman ladder.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Members meet and learn their formal roles in the",
+        "choices": [
+          "storming stage",
+          "forming stage",
+          "adjourning stage"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Work habits adjust and trust grows in the",
+        "choices": [
+          "norming stage",
+          "forming stage",
+          "performing stage"
+        ],
+        "answer": 0
+      },
+      {
+        "text": "The team works as an interdependent, well-organized unit in the",
+        "choices": [
+          "norming stage",
+          "adjourning stage",
+          "performing stage"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Staff are released as deliverables are completed in the",
+        "choices": [
+          "storming stage",
+          "adjourning stage",
+          "forming stage"
+        ],
+        "answer": 1
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Forming: members meet and learn their roles. Storming: the team tackles the work and decisions. Norming: habits adjust and trust grows. Performing: an interdependent, well-organized unit. Adjourning: the work is completed and staff are released.",
+    "ref": "PMBOK 8, Guide section 5, Tuckman ladder",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 316,
+        "label": "PMBOK 8, Guide section 5, Tuckman ladder"
+      }
+    ]
+  }
+]

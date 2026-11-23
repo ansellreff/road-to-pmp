@@ -1,6 +1,6 @@
 # PMP: plan and progress
 
-Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP Sessions 2 (the exam engine) and 3 (modules 1.1 to 1.3) are done; next is PMP Session 4, modules 1.4 to 1.6.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
+Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP Sessions 2 (the exam engine), 3 (modules 1.1 to 1.3) and 4 (modules 1.4 to 1.6) are done; next is PMP Session 5, modules 1.7 to 1.9.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
 
 ## Status log
 
@@ -13,6 +13,7 @@ Project Management Professional. Started 2026-10-11 and paused the same day unti
 | 2026-10-15 | **PMP Session 2 done: the exam engine.** Multiple response, pull-down list, case set and graphic-based questions work in quizzes, practice and both exam modes; real exam mode runs in sections (PMP: three of 60, two breaks); every PMP question will carry an approach tag, and the result page scores predictive against agile and hybrid. A small test course, served only on this PC, proves it all with click tests. CAPM was guarded throughout and is unchanged: its 159 files match their fingerprints and 11 of its screens are pixel-identical to the morning's pictures. | Next: PMP Session 3, modules 1.1 to 1.3, starting in plan mode |
 | 2026-10-15 | **PMP Session 3 done: the first three People modules.** 1.1 A Shared Vision, 1.2 Conflict and Ground Rules, 1.3 Leading the Team: one lesson section per outline enabler, 91 questions (every one tagged predictive, agile or hybrid; 40% predictive), 75 flashcards. Search now stays within the course you are in. CAPM checked unchanged. One CAPM finding is recorded for your decision (CAPM issue 197). | Next: PMP Session 4, modules 1.4 to 1.6, starting in plan mode |
 | 23 Nov 2026 | **Guideline milestone G1 done: version 1.0.** The project now follows your general guideline (`CLAUDE-Ansell.md`, answers in `GUIDELINE-study.md`). In the app: **Help** in the top bar with the Guide (one part per feature) and What's new, and the version and build at the bottom of every page. Behind it: `CHANGELOG.md` as the only place a version is written, a release step (`release.bat`) that checks everything and tags the version, `test.bat`, `tools/check_live.py`, a secret scan in the upload check, a search for invisible characters, pinned Python libraries, and the brief, decisions, settings, accounts and troubleshooting files. The website moved to https://road-to-pmp.vercel.app. CAPM unchanged; all 30 click tests pass. | **You:** Supabase sign-in addresses, then `upload.bat` (see the closing report). Next: PMP Session 4, modules 1.4 to 1.6 |
+| 23 Nov 2026 | **PMP Session 4 done: modules 1.4 to 1.6.** 1.4 Team Performance, 1.5 Identifying and Analyzing Stakeholders, 1.6 Engaging Stakeholders: 90 questions (including the first PMP point-and-click question and a second case set), 75 flashcards. People task 4 is now fully taught, task 5 half. Your decision: 1.4 is a full module. Part of version 1.0 (same day, not yet uploaded). CAPM unchanged. | Next: PMP Session 5, modules 1.7 to 1.9, starting in plan mode |
 
 ## Roadmap
 
@@ -24,7 +25,8 @@ PMP counts its own sessions from 1. (Until 2026-10-11 these were numbered 32 to 
 | ✅ | 2 | **The exam engine.** Multiple response, pull-down lists, case sets, graphic-based questions, the approach tag, exams in three sections with two breaks; a test course for the click tests; CAPM guarded and unchanged |
 | ✅ | 3 | PMP Domain 1, People: modules 1.1 to 1.3 (People tasks 1 to 3) |
 | ✅ | G1 | **Guideline milestone.** Version 1.0: Help page (guide and What's new), version on every page, release step, the guideline's tracking files |
-| ⬜ | 4 and 5 | PMP Domain 1, People: modules 1.4 to 1.9 |
+| ✅ | 4 | PMP Domain 1, People: modules 1.4 to 1.6 (People tasks 3, 4 and 5) |
+| ⬜ | 5 | PMP Domain 1, People: modules 1.7 to 1.9 |
 | ⬜ | 6 to 10 | PMP Domain 2, Process: modules 2.1 to 2.15 |
 | ⬜ | 11 to 13 | PMP Domain 3, Business Environment: modules 3.1 to 3.10 |
 | ⬜ | 14 | PMP mock exams: four of 180 questions, the fourth unseen; PMP in the study plan, readiness and weak spots |
@@ -56,6 +58,7 @@ The plan you approved on 2026-10-11 is kept in Claude's plans folder on this PC.
 | Marking of multiple response (2026-10-15) | All or nothing, like matching |
 | Proving the engine before PMP questions exist (2026-10-15) | A small test course, served only on this PC |
 | CAPM during PMP work (2026-10-15) | Closed; nothing in PMP may change or break it |
+| Module 1.4, Team Performance (23 Nov 2026) | **A full module, in the mock exams.** The outline names none of its topics (motivation, Tuckman, emotional intelligence, virtual teams, recognition, Six Thinking Hats), but PMBOK 8 lists every one as a tool of the Lead the Team process, which has the same name as People task 3, and the instructor gives that process two long lectures. This widens "the outline rule" for PMP: a tool the Eighth Edition names for the process matching a task counts as part of that task |
 
 ### Sources
 
@@ -143,9 +146,9 @@ Plus one page outside the question bank: how to answer situational questions.
 |---|---|---|---|
 | People 1, Develop a common vision | Shared vision with key stakeholders; promote it; keep it current; find the root cause of a misunderstanding of it | 1.1 | Covered: one section per enabler (building, promoting, keeping current, root cause of a misunderstanding) |
 | People 2, Manage conflicts | Conflict sources; context; agreed resolution strategy; communicate conflict principles; environment for ground rules; rectify violations | 1.2 | Covered: one section per enabler, plus psychological safety |
-| People 3, Lead the project team | Team expectations; empower; solve problems; voice of the team; varied experiences, skills, perspectives; leadership style; roles and responsibilities | 1.3, 1.4 | Covered: one section per enabler (expectations, empowerment, problems, voice of the team, diversity, style, roles) |
-| People 4, Engage stakeholders | Identify; analyze; tailor communication; execute the engagement plan; align needs, expectations and objectives; build trust and influence | 1.5, 1.6 | Not written |
-| People 5, Align stakeholder expectations | Categorize stakeholders; identify expectations; facilitate discussions; mentoring opportunities | 1.5, 1.7 | Not written |
+| People 3, Lead the project team | Team expectations; empower; solve problems; voice of the team; varied experiences, skills, perspectives; leadership style; roles and responsibilities | 1.3, 1.4 | Covered: one section per enabler in 1.3 (expectations, empowerment, problems, voice of the team, diversity, style, roles); 1.4 adds the Lead the Team tools (Tuckman, motivation, recognition, emotional and cultural intelligence, virtual teams, coaching and training, assessments, retrospectives, Six Thinking Hats) |
+| People 4, Engage stakeholders | Identify; analyze; tailor communication; execute the engagement plan; align needs, expectations and objectives; build trust and influence | 1.5, 1.6 | Covered: identify and analyze in 1.5; tailor communication, execute the plan, align, trust and influence in 1.6 (plus planning and monitoring engagement) |
+| People 5, Align stakeholder expectations | Categorize stakeholders; identify expectations; facilitate discussions; mentoring opportunities | 1.5, 1.7 | Half: categorize and identify expectations in 1.5. Facilitating discussions and mentoring opportunities follow in 1.7 |
 | People 6, Manage stakeholder expectations | Internal and external customer expectations; align outcomes; monitor satisfaction and respond | 1.7 | Not written |
 | People 7, Help ensure knowledge transfer | Identify critical knowledge; gather it; foster the environment | 1.8 | Not written |
 | People 8, Plan and manage communication | Communication strategy; transparency and collaboration; feedback loop; reporting requirements; reports for sponsors and stakeholders; reporting and governance | 1.9 | Not written |
@@ -239,3 +242,17 @@ Matching, hot spot (PMP's "point and click") and comic strip came from CAPM.
 - **Not used:** the five "levels of conflict" taught in CAPM module 3.4. No book in your folder contains that model (see CAPM issue 197).
 - **Search** now stays within the course whose pages you are on, as you decided: on a CAPM page it finds only CAPM, on a PMP page only PMP; from the home page, the dashboard or the search page with "Search every course", both.
 - **CAPM guards:** `check_capm_frozen.py` passes; the 11 CAPM pictures are pixel-identical to PMP Session 2's; the CAPM click tests pass unchanged.
+
+## PMP Session 4: People modules 1.4 to 1.6, as built
+
+| Module | Lesson sections | Questions | Flashcards |
+|---|---|---|---|
+| 1.4 Team Performance | The Lead the Team tools; Tuckman ladder; motivation (Herzberg, Pink, McClelland, Theory X, Y and Z); recognition and rewards; emotional and cultural intelligence; colocated, remote and virtual teams; coaching, mentoring, training, team building; assessing team performance; retrospectives, critical thinking, Six Thinking Hats; predictive and agile | 30 (25 single answer, 3 multiple response, 1 matching, 1 pull-down list) | 25 |
+| 1.5 Identifying and Analyzing Stakeholders | Who stakeholders are; identifying them; the stakeholder register; analyzing them (stakes, attitudes); categorizing (grids, cube, salience, directions of influence, onion diagram); finding expectations (personas); predictive and agile | 30 (25 single answer, 3 multiple response, 1 matching, 1 point and click on the power/interest grid) | 25 |
+| 1.6 Engaging Stakeholders: Trust and Influence | Planning engagement; engagement levels and the assessment matrix; tailoring communication; carrying out the plan; monitoring engagement; aligning needs, expectations and objectives; trust and influence; predictive and agile | 30 (23 single answer, 3 multiple response, 1 matching, a case set of 3 on a city's parking permits) | 25 |
+
+- **Sources read for this session:** PMBOK Guide, Eighth Edition: Guide 2.5 to 2.5.5 (Stakeholders performance domain, Figures 2-31 to 2-38, Table 2-9), 2.6.2.4 and Figure 2-44 (Lead the Team); section 4 (stakeholder register, stakeholder engagement plan); section 5 (active listening, coaching and mentoring, colocation, communication styles assessment, critical thinking, cultural awareness, emotional intelligence, individual and team assessments, influencing, leadership, motivation, networking, organizational cultural intelligence, political awareness, recognition and rewards, retrospectives, Six Thinking Hats, stakeholder analysis, stakeholder engagement assessment matrix, stakeholder mapping/representation, team building, training, Tuckman ladder, virtual collaboration tools, virtual teams); Standard 3.6. Agile Practice Guide, second edition: 4.4.2, 4.7 to 4.7.5 (remote and hybrid-location teams), 5.2.6, 5.2.7, 6.3.3 (reteaming). The PMI Guide to Business Analysis: 5.1.2, 5.2, 5.2.1.4, 5.2.2.2 (personas), 5.2.2.4 (stakeholder matrix, onion diagram). The Project Management Answer Book, chapter 13, Q14 (the four grid strategies). PMBOK Guide, Sixth Edition, 9.4.2.5 (a reward works only if the person values it).
+- **The approach tag:** 38 predictive, 20 agile, 32 hybrid (42% predictive). With Session 3, the People domain so far is 74 of 181 predictive (41%).
+- **Quality rules:** the right answer was first the longest in 10 of 25 questions in 1.4; distractors were lengthened until it was 5, 5 and 6 in the three modules. Right answers are spread evenly over A to D. No question repeats one from CAPM; the grid questions use new situations.
+- **Not taught:** Maslow's hierarchy of needs. The Eighth Edition names Maslow only for Theory Z, so the lesson follows the book.
+- **CAPM guards:** `check_capm_frozen.py` passes; CAPM's click tests pass unchanged.

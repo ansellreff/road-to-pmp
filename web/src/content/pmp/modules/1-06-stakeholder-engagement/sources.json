@@ -1,0 +1,117 @@
+[
+  {
+    "book": "agile",
+    "page": 67,
+    "label": "Agile Practice Guide, 4.4.2"
+  },
+  {
+    "book": "agile",
+    "page": 85,
+    "label": "Agile Practice Guide, 5.2.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 69,
+    "label": "PMBOK 8, Standard 3.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 173,
+    "label": "PMBOK 8, Guide 2.5.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 176,
+    "label": "PMBOK 8, Guide 2.5.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 177,
+    "label": "PMBOK 8, Guide 2.5.2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 177,
+    "label": "PMBOK 8, Guide 2.5.2.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 177,
+    "label": "PMBOK 8, Guide Figure 2-34"
+  },
+  {
+    "book": "pmbok8",
+    "page": 178,
+    "label": "PMBOK 8, Guide 2.5.2.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 179,
+    "label": "PMBOK 8, Guide 2.5.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 179,
+    "label": "PMBOK 8, Guide Figure 2-36"
+  },
+  {
+    "book": "pmbok8",
+    "page": 181,
+    "label": "PMBOK 8, Guide 2.5.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 181,
+    "label": "PMBOK 8, Guide Figure 2-38"
+  },
+  {
+    "book": "pmbok8",
+    "page": 182,
+    "label": "PMBOK 8, Guide 2.5.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 183,
+    "label": "PMBOK 8, Guide 2.5.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 246,
+    "label": "PMBOK 8, Guide section 4, Stakeholder engagement plan"
+  },
+  {
+    "book": "pmbok8",
+    "page": 250,
+    "label": "PMBOK 8, Guide section 5, Active listening"
+  },
+  {
+    "book": "pmbok8",
+    "page": 260,
+    "label": "PMBOK 8, Guide section 5, Communication styles assessment"
+  },
+  {
+    "book": "pmbok8",
+    "page": 267,
+    "label": "PMBOK 8, Guide section 5, Cultural awareness"
+  },
+  {
+    "book": "pmbok8",
+    "page": 278,
+    "label": "PMBOK 8, Guide section 5, Influencing"
+  },
+  {
+    "book": "pmbok8",
+    "page": 288,
+    "label": "PMBOK 8, Guide section 5, Networking"
+  },
+  {
+    "book": "pmbok8",
+    "page": 290,
+    "label": "PMBOK 8, Guide section 5, Political awareness"
+  },
+  {
+    "book": "pmbok8",
+    "page": 305,
+    "label": "PMBOK 8, Guide section 5, Stakeholder engagement assessment matrix"
+  }
+]

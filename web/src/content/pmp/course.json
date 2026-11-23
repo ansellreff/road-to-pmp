@@ -12,9 +12,9 @@
         { "id": "1-01-shared-vision", "title": "A Shared Vision", "ready": true, "tasks": [1] },
         { "id": "1-02-conflict-ground-rules", "title": "Conflict and Ground Rules", "ready": true, "tasks": [2] },
         { "id": "1-03-leading-the-team", "title": "Leading the Team: Styles, Servant Leadership, Empowerment, Roles", "ready": true, "tasks": [3] },
-        { "id": "1-04-team-performance", "title": "Team Performance: Motivation, Emotional Intelligence, Virtual Teams, Problem Solving", "ready": false, "tasks": [3] },
-        { "id": "1-05-stakeholder-analysis", "title": "Identifying and Analyzing Stakeholders", "ready": false, "tasks": [4, 5] },
-        { "id": "1-06-stakeholder-engagement", "title": "Engaging Stakeholders: Trust and Influence", "ready": false, "tasks": [4] },
+        { "id": "1-04-team-performance", "title": "Team Performance: Motivation, Emotional Intelligence, Virtual Teams, Problem Solving", "ready": true, "tasks": [3] },
+        { "id": "1-05-stakeholder-analysis", "title": "Identifying and Analyzing Stakeholders", "ready": true, "tasks": [4, 5] },
+        { "id": "1-06-stakeholder-engagement", "title": "Engaging Stakeholders: Trust and Influence", "ready": true, "tasks": [4] },
         { "id": "1-07-expectations", "title": "Aligning and Managing Expectations; Mentoring", "ready": false, "tasks": [5, 6] },
         { "id": "1-08-knowledge-transfer", "title": "Knowledge Transfer", "ready": false, "tasks": [7] },
         { "id": "1-09-communication-reporting", "title": "Communication and Reporting", "ready": false, "tasks": [8] }

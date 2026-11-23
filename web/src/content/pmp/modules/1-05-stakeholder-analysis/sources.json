@@ -1,0 +1,87 @@
+[
+  {
+    "book": "agile",
+    "page": 67,
+    "label": "Agile Practice Guide, 4.4.2"
+  },
+  {
+    "book": "agile",
+    "page": 85,
+    "label": "Agile Practice Guide, 5.2.6"
+  },
+  {
+    "book": "answerbook",
+    "page": 386,
+    "label": "The Project Management Answer Book, Chapter 13, Q14"
+  },
+  {
+    "book": "baguide",
+    "page": 158,
+    "label": "The PMI Guide to Business Analysis, 5.1.2"
+  },
+  {
+    "book": "baguide",
+    "page": 160,
+    "label": "The PMI Guide to Business Analysis, 5.2"
+  },
+  {
+    "book": "baguide",
+    "page": 162,
+    "label": "The PMI Guide to Business Analysis, 5.2.1.4"
+  },
+  {
+    "book": "baguide",
+    "page": 162,
+    "label": "The PMI Guide to Business Analysis, 5.2.2.2"
+  },
+  {
+    "book": "baguide",
+    "page": 164,
+    "label": "The PMI Guide to Business Analysis, 5.2.2.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 172,
+    "label": "PMBOK 8, Guide 2.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 173,
+    "label": "PMBOK 8, Guide 2.5.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 173,
+    "label": "PMBOK 8, Guide Figure 2-31"
+  },
+  {
+    "book": "pmbok8",
+    "page": 176,
+    "label": "PMBOK 8, Guide 2.5.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 176,
+    "label": "PMBOK 8, Guide Figure 2-33"
+  },
+  {
+    "book": "pmbok8",
+    "page": 181,
+    "label": "PMBOK 8, Guide 2.5.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 246,
+    "label": "PMBOK 8, Guide section 4, Stakeholder register"
+  },
+  {
+    "book": "pmbok8",
+    "page": 304,
+    "label": "PMBOK 8, Guide section 5, Stakeholder analysis"
+  },
+  {
+    "book": "pmbok8",
+    "page": 305,
+    "label": "PMBOK 8, Guide section 5, Stakeholder mapping/representation"
+  }
+]

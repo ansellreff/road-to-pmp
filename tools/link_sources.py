@@ -285,9 +285,10 @@ def resolve(part: str) -> tuple[str, int] | None:
         name = named.group(2).strip()
         # An entry starts its own line. Only if there is none, accept a bulleted sub-entry
         # (some tools, such as "Interpersonal skills", are listed inside another entry).
+        # A trademarked name is printed with its sign before the full stop: "Six Thinking Hats®."
         for prefix in (r"^", r"^[^A-Za-z\n]+"):
             for candidate in (name, name.split(" and ")[0]):
-                page = find_line(book, rf"{prefix}{re.escape(candidate)}\.", *listing, flags=0)
+                page = find_line(book, rf"{prefix}{re.escape(candidate)}[®™]?\.", *listing, flags=0)
                 if page:
                     return book, page
 

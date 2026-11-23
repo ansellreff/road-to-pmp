@@ -6,7 +6,8 @@ Each version of Road to PMP, newest first, with what you will notice.
 
 - **Help** in the top bar: a guide to every part of the app, and this list of changes.
 - The version number at the bottom of every page, with links to What's new and the guide.
-- **PMP course started:** modules 1.1 to 1.3 of the People domain, with 91 quiz questions and 75 flashcards.
+- **PMP course started:** modules 1.1 to 1.6 of the People domain, with 181 quiz questions and 150 flashcards. New today: 1.4 Team Performance, 1.5 Identifying and Analyzing Stakeholders, 1.6 Engaging Stakeholders.
+- **Formulas** in the top bar now shows only for a certification that has a formula sheet.
 - **PMP mock exams are ready for the real format:** questions with more than one right answer, pull-down lists,
   case sets (several questions on one situation), questions about a drawing, and the exam in 3 sections with
   breaks.
