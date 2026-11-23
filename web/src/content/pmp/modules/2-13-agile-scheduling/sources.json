@@ -1,0 +1,117 @@
+[
+  {
+    "book": "agile",
+    "page": 81,
+    "label": "Agile Practice Guide, 5.2.1"
+  },
+  {
+    "book": "agile",
+    "page": 82,
+    "label": "Agile Practice Guide, 5.2.2"
+  },
+  {
+    "book": "agile",
+    "page": 83,
+    "label": "Agile Practice Guide, 5.2.3"
+  },
+  {
+    "book": "agile",
+    "page": 84,
+    "label": "Agile Practice Guide, 5.2.4"
+  },
+  {
+    "book": "agile",
+    "page": 92,
+    "label": "Agile Practice Guide, 5.5"
+  },
+  {
+    "book": "agile",
+    "page": 93,
+    "label": "Agile Practice Guide, 5.5.1"
+  },
+  {
+    "book": "agile",
+    "page": 93,
+    "label": "Agile Practice Guide, 5.5.2"
+  },
+  {
+    "book": "estimating",
+    "page": 35,
+    "label": "Practice Standard for Project Estimating, 2.6.2"
+  },
+  {
+    "book": "estimating",
+    "page": 63,
+    "label": "Practice Standard for Project Estimating, 4.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 154,
+    "label": "PMBOK 8, Guide 2.3.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 158,
+    "label": "PMBOK 8, Guide 2.3.2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 160,
+    "label": "PMBOK 8, Guide 2.3.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 162,
+    "label": "PMBOK 8, Guide 2.3.3.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 251,
+    "label": "PMBOK 8, Guide section 5, Agile release planning"
+  },
+  {
+    "book": "pmbok8",
+    "page": 252,
+    "label": "PMBOK 8, Guide Figure 5-1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 255,
+    "label": "PMBOK 8, Guide section 5, Burndown chart"
+  },
+  {
+    "book": "pmbok8",
+    "page": 255,
+    "label": "PMBOK 8, Guide section 5, Burnup chart"
+  },
+  {
+    "book": "pmbok8",
+    "page": 274,
+    "label": "PMBOK 8, Guide section 5, Earned value (EV) analysis"
+  },
+  {
+    "book": "pmbok8",
+    "page": 280,
+    "label": "PMBOK 8, Guide section 5, Iteration burndown chart"
+  },
+  {
+    "book": "pmbok8",
+    "page": 316,
+    "label": "PMBOK 8, Guide section 5, Velocity"
+  },
+  {
+    "book": "pmbok8",
+    "page": 317,
+    "label": "PMBOK 8, Guide section 5, Visual controls"
+  },
+  {
+    "book": "pmbok8",
+    "page": 379,
+    "label": "PMBOK 8, Glossary (story point)"
+  },
+  {
+    "book": "scheduling",
+    "page": 46,
+    "label": "Practice Standard for Scheduling, 2.6"
+  }
+]

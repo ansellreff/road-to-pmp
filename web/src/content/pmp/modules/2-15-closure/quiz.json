@@ -1,0 +1,681 @@
+[
+  {
+    "id": "q1",
+    "q": "A release of an agile product has just shipped, but the project continues for another year. Does Close Project or Phase apply now?",
+    "options": [
+      "No, it applies only at the very end of the project",
+      "Yes, it applies to releases and iterations too",
+      "Only if the release failed its acceptance",
+      "Only for the contracts used in the release"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Close Project or Phase finalizes activities for projects, phases, releases, iterations or contracts. In adaptive approaches it centers on wrapping up the release or iteration.",
+    "ref": "PMBOK 8, Guide 2.1.6.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 136,
+        "label": "PMBOK 8, Guide 2.1.6.9"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "The final deliverable is accepted, but two supplier invoices are still being booked to another cost center. What must happen before the project accounts are closed?",
+    "approach": "predictive",
+    "explanation": "Exit criteria include verifying that all costs have been charged to the project, then closing project accounts.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "options": [
+      "Nothing, since closure can go ahead as soon as it is accepted",
+      "Ask finance to write off the invoices",
+      "Leave the project accounts open for a year",
+      "Make sure all costs are charged to the project"
+    ],
+    "answer": 3,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Before a new system is handed to operations, what does a transition readiness assessment check?",
+    "options": [
+      "The organization's ability and interest to use it",
+      "The development team's velocity in the last iteration",
+      "The vendor's payment history",
+      "The number of change requests raised"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "A readiness assessment determines the ability and interest of the organization to transition to the future state, and identifies gaps in readiness as risks, with responses.",
+    "ref": "The PMI Guide to Business Analysis, 5.5.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 186,
+        "label": "The PMI Guide to Business Analysis, 5.5.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "The readiness assessment finds that the service desk has not been trained on the new system. Where should the response be planned?",
+    "options": [
+      "In the risk register only, as an accepted risk",
+      "In the lessons learned register",
+      "In the transition plan, with training",
+      "In the final report, as a variance"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The transition plan builds on the readiness assessment and includes operational procedures, training collateral, service-level agreements, rollout material and contingency plans.",
+    "ref": "The PMI Guide to Business Analysis, 5.5.3.2",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 186,
+        "label": "The PMI Guide to Business Analysis, 5.5.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "In an adaptive project with small, frequent releases, how might transition work be planned, according to the business analysis guide?",
+    "options": [
+      "Only as a separate formal plan after the very last release",
+      "As transition stories, or in the definition of done",
+      "It is not needed in adaptive projects",
+      "By the sponsor alone, after closure"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "For small incremental releases, there are transition tasks in a story or separate transition stories; transition may also be part of the definition of done, or a reserved block of time or iteration.",
+    "ref": "The PMI Guide to Business Analysis, 5.5.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 186,
+        "label": "The PMI Guide to Business Analysis, 5.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "At closure, a risk that the new system may fail under peak load is still open. What should the project manager do?",
+    "options": [
+      "Delete it, as the project is ending",
+      "Keep it in the archived project file only",
+      "Wait for it to happen before acting",
+      "Accept it or transition it to operations"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Close Project or Phase identifies outstanding risks that should be accepted or transitioned to operations.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "The supplier's work is accepted, but its warranty claim on one component is still open. What must happen before the contract is closed?",
+    "options": [
+      "Finalize the claim and any warranties",
+      "Close the contract and leave the claim",
+      "Pass the claim on to the next project",
+      "Cancel the warranty to speed up closure"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Contract completion includes confirming formal acceptance, finalizing open claims, guarantees and warranties, updating records, paying all invoices and archiving information.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Who gives the seller formal written notice that the contract has been completed?",
+    "options": [
+      "The lead developer on the project team",
+      "The seller's own account manager",
+      "The buyer's procurement administrator",
+      "The sponsor of the next project"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The buyer, usually through its authorized procurement administrator, provides the seller with formal written notice that the contract has been completed.",
+    "ref": "PMBOK 6, 12.3.3.1",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 483,
+        "label": "PMBOK 6, 12.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "At closure, only half of the planned benefits have appeared so far. What should the final report say about them?",
+    "approach": "predictive",
+    "explanation": "If the benefits are not met at the close of the project, the final report indicates the degree to which they were achieved and an estimate for future benefits realization.",
+    "ref": "PMBOK 8, Guide section 4, Final report",
+    "options": [
+      "That benefits are not the project's concern at all",
+      "The degree achieved and an estimate for the rest",
+      "Nothing, as benefits are reported later",
+      "That the project failed completely"
+    ],
+    "answer": 1,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 226,
+        "label": "PMBOK 8, Guide section 4, Final report"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "After the project closes, who is accountable for monitoring, recording and reporting the realized benefits?",
+    "options": [
+      "The project's lead tester",
+      "The procurement administrator",
+      "The scrum master",
+      "The benefits owner"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The benefits management plan names a benefits owner: the person accountable for monitoring, recording and reporting realized benefits throughout the timeframe established in the plan.",
+    "ref": "PMBOK 8, Guide section 4, Benefits management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 220,
+        "label": "PMBOK 8, Guide section 4, Benefits management plan"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The PMBOK Guide adds one closure procedure for projects that may end before completion. What is it?",
+    "options": [
+      "Investigating and documenting why it ended",
+      "Skipping closure, as nothing was delivered",
+      "Transferring the team at once without records",
+      "Keeping the budget open in case it restarts"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The process includes establishing procedures to investigate and document the reasons a project may have been terminated before completion.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Which of these belongs in the final report?",
+    "options": [
+      "The team's personal performance ratings",
+      "The detailed daily task list",
+      "Reasons for cost and schedule variances",
+      "The vendor's internal cost data"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The final report summarizes performance: scope, quality, cost and schedule objectives with actual results and reasons for variances, validation of the result, benefits and business needs met, and risks and issues.",
+    "ref": "PMBOK 8, Guide section 4, Final report",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 226,
+        "label": "PMBOK 8, Guide section 4, Final report"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Closure is near, and the project still holds rented test equipment until the end of the month. What should the project manager do?",
+    "approach": "predictive",
+    "explanation": "Exit criteria include reallocating or releasing project facilities, equipment and other resources, and addressing excess materials.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "options": [
+      "Keep it in case some new project needs it later",
+      "Release it so it stops charging the project",
+      "Give it to a team member to keep",
+      "Wait for operations to request it"
+    ],
+    "answer": 1,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Two developers leave next week for another project, before closure is finished. What should happen before they go?",
+    "approach": "hybrid",
+    "explanation": "Closure includes managing knowledge sharing and transfer and documenting lessons learned, before personnel are reassigned or released.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "options": [
+      "Nothing, as they can leave at any time",
+      "They should first rewrite all of the project documentation",
+      "Their access should stay open indefinitely",
+      "Their knowledge should be shared and recorded"
+    ],
+    "answer": 3,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "At the close of a two-year project, the lessons learned register holds only three entries, all written in the last week. What went wrong?",
+    "options": [
+      "It should have been updated throughout",
+      "It should be written only at closure",
+      "Lessons are not needed for successful projects",
+      "Only the sponsor may add lessons"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The lessons learned register is created early in the project and then used and updated in many processes throughout, by the people involved in the work.",
+    "ref": "PMBOK 8, Guide section 4, Lessons learned register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Lessons learned register"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "At closure, the team has ideas to improve the company's change control procedure. What should happen to them?",
+    "approach": "predictive",
+    "explanation": "Closure collects suggestions for improving or updating organizational policies and procedures and forwards them to the appropriate unit; outputs include organizational process asset updates.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "options": [
+      "Keep them in the team's private chat channel for later",
+      "Apply them to the project that is closing",
+      "Forward them to the unit that owns the procedure",
+      "Discard them, as the project is over"
+    ],
+    "answer": 2,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "An agile team finishes a release. What does closing the release include, according to the PMBOK Guide?",
+    "approach": "agile",
+    "explanation": "In adaptive approaches, closure includes knowledge-sharing sessions and retrospectives on the iteration or release, and a discussion of outstanding risks.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.2",
+    "options": [
+      "Rewriting the original project charter",
+      "A retrospective and knowledge-sharing sessions",
+      "Freezing the backlog for the next year",
+      "Removing the product owner from the team at once"
+    ],
+    "answer": 1,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 138,
+        "label": "PMBOK 8, Guide 2.1.6.9.2"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Before an iteration is closed, what must the team confirm?",
+    "options": [
+      "The burndown reached zero on the last day",
+      "The sponsor attended every daily meeting",
+      "All change requests were rejected",
+      "Prioritized items are done and accepted"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Completing a release or iteration means confirming that prioritized backlog items are finished, acceptance criteria are met, and deliverables are reviewed and accepted by stakeholders.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 138,
+        "label": "PMBOK 8, Guide 2.1.6.9.2"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Closure must verify obligations beyond the contract. Which set does the PMBOK Guide name?",
+    "options": [
+      "Contractual, regulatory, legal, social and environmental",
+      "Only those signed by the sponsor",
+      "Only the internal quality checklist",
+      "Only those the customer complains about"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Additional closure activities include verifying that all contractual, regulatory, legal, social and environmental obligations have been met, and measuring stakeholder satisfaction.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Why should the stakeholder who will approve the deliverables be involved early in the project?",
+    "options": [
+      "So that formal closure can be skipped",
+      "To replace the project's quality team",
+      "To give feedback on quality along the way",
+      "To sign the charter instead of the sponsor"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The authorized stakeholder who approves the deliverables should be involved early and give feedback on their quality, so the team can assess quality and recommend changes.",
+    "ref": "PMBOK 8, Guide section 4, Accepted deliverables",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 218,
+        "label": "PMBOK 8, Guide section 4, Accepted deliverables"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "What is the purpose of the final product, service or result transition?",
+    "options": [
+      "To restart the whole project in a new phase",
+      "To hand the result to the group that will run it",
+      "To return all the unused budget to the sponsor",
+      "To record the team's lessons learned"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Once delivered, the product, service or result may be handed over to a different group or organization that will operate, maintain and support it; at phase end, the intermediate result goes to the next phase.",
+    "ref": "PMBOK 8, Guide section 4, Final product, service, or result transition",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 225,
+        "label": "PMBOK 8, Guide section 4, Final product, service, or result transition"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which data analysis techniques does the Close Project or Phase process use?",
+    "options": [
+      "Earned value analysis and make-or-buy analysis",
+      "Pareto charts and fishbone diagrams",
+      "Planning poker and affinity grouping",
+      "Document, regression, trend and variance analysis"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Figure 2-12 lists expert judgment, data analysis (document, regression, trend and variance analysis) and meetings.",
+    "ref": "PMBOK 8, Guide 2.1.6.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 136,
+        "label": "PMBOK 8, Guide 2.1.6.9"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "What should the project manager do before handing the app to the operations team?",
+    "case": "library-app",
+    "options": [
+      "Hand it over now, since operations can learn on the job",
+      "Assess readiness and plan training and support hours",
+      "Keep the app with the project team for a year",
+      "Ask the vendor to run operations instead"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Validating readiness for transition comes first: a readiness assessment finds the gaps (no training, no agreed support hours), and the transition plan covers training, service levels and contingency.",
+    "ref": "The PMI Guide to Business Analysis, 5.5",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 180,
+        "label": "The PMI Guide to Business Analysis, 5.5"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "What must happen with the vendor before its contract is closed?",
+    "case": "library-app",
+    "options": [
+      "Settle the open claim and pay the final invoice",
+      "Close the contract now, since the claim can wait",
+      "Withhold payment until the claim is dropped",
+      "Refer the claim to court at once"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Contract completion requires finalizing open claims, paying all invoices due to external sources, updating records and archiving. Negotiation is the preferred way to settle the claim; court is the last option.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which document will summarize whether the app met the library's business needs and how the open issues were handled?",
+    "case": "library-app",
+    "options": [
+      "The team charter",
+      "The issue log",
+      "The final report",
+      "The risk register"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The final report summarizes project performance, including how the result achieved the business needs and the risks or issues encountered and how they were addressed.",
+    "ref": "PMBOK 8, Guide section 4, Final report",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 226,
+        "label": "PMBOK 8, Guide section 4, Final report"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are exit criteria for closing a predictive project?",
+    "type": "multi",
+    "options": [
+      "Deliverables formally accepted by the customer",
+      "All costs charged to the project",
+      "Project personnel reassigned or released",
+      "A new project charter approved",
+      "The backlog frozen for a year",
+      "All lessons deleted after the final report"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Exit criteria include updated documents and resolved issues, value delivered with a plan to maintain it, formal acceptance, costs charged, accounts closed, people and resources released, and final reports prepared.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO does a transition plan cover, according to the business analysis guide?",
+    "type": "multi",
+    "options": [
+      "Training material for the users",
+      "Contingency plans for the rollout",
+      "The project charter",
+      "The bidder conference minutes",
+      "The team's velocity history"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Transition planning includes information to support operational procedures, training collateral, service-level agreements, rollout collateral, coordination with other releases and contingency plans.",
+    "ref": "The PMI Guide to Business Analysis, 5.5.4",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 186,
+        "label": "The PMI Guide to Business Analysis, 5.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO happen when an adaptive release is closed?",
+    "type": "multi",
+    "options": [
+      "A retrospective on the release",
+      "Open risks moved to later releases or operations",
+      "A new business case for every story",
+      "Freezing all future backlog changes",
+      "Rebaselining the critical path"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Adaptive closure includes retrospectives and knowledge sharing, and discussing outstanding risks to accept or transition to later iterations, releases, clients and operations.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 138,
+        "label": "PMBOK 8, Guide 2.1.6.9.2"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each closure area with its activity.",
+    "type": "match",
+    "left": [
+      "Procurement",
+      "Financials",
+      "Resources",
+      "Knowledge"
+    ],
+    "right": [
+      "Settle claims and pay all invoices",
+      "Charge all costs and close the accounts",
+      "Release people, equipment and facilities",
+      "Document lessons learned and archive records"
+    ],
+    "approach": "predictive",
+    "explanation": "These are the closing activities the outline names: final lessons learned and retrospectives, procurement, financials and resources.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about closure.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Checking the organization's ability and interest to adopt the result is a",
+        "choices": [
+          "final report",
+          "readiness assessment",
+          "quality audit"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Formal written notice that a contract is complete is given by the",
+        "choices": [
+          "seller",
+          "sponsor",
+          "buyer"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Records and lessons kept for future projects are",
+        "choices": [
+          "organizational process asset updates",
+          "change requests",
+          "work performance data"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Readiness is checked before transition; the buyer closes the contract formally; archived knowledge updates the organizational process assets.",
+    "ref": "PMBOK 8, Guide 2.1.6.9",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 136,
+        "label": "PMBOK 8, Guide 2.1.6.9"
+      }
+    ]
+  }
+]

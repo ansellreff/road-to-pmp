@@ -1,0 +1,681 @@
+[
+  {
+    "id": "q1",
+    "q": "The sponsor wants one process that shows the project's current state, the actions taken on performance issues, and cost and schedule forecasts. Which process is it?",
+    "options": [
+      "Manage Project Execution",
+      "Monitor and Control Project Performance",
+      "Assess and Implement Changes",
+      "Manage Project Knowledge"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Its key benefits: stakeholders understand the current state, recognize actions taken on performance issues, and gain visibility of future status with cost and schedule forecasts.",
+    "ref": "PMBOK 8, Guide 2.1.6.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 131,
+        "label": "PMBOK 8, Guide 2.1.6.7"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "While monitoring, the project manager finds a decision that would improve the value proposition but would change the cost baseline. What should happen?",
+    "options": [
+      "Make the change now and tell the sponsor later",
+      "Ignore it, since baselines never change",
+      "Ask the team to vote on the change",
+      "Raise it through integrated change control"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The process assesses whether decisions might enhance the value proposition. If a beneficial decision results in a change to a baseline, integrated change control should be used.",
+    "ref": "PMBOK 8, Guide 2.1.6.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 131,
+        "label": "PMBOK 8, Guide 2.1.6.7"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Which of these is a leading indicator of project performance?",
+    "approach": "predictive",
+    "explanation": "Leading indicators give early warning: stakeholders who are not available or engaged, a missing risk process, or poorly defined success criteria. Completed deliverables, variances and resources consumed are lagging indicators.",
+    "ref": "PMBOK 8, Guide 2.1.5.1",
+    "options": [
+      "Key stakeholders are not attending reviews",
+      "Deliverables completed during the last month",
+      "The cost variance at the status date",
+      "Resources consumed so far"
+    ],
+    "answer": 0,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 119,
+        "label": "PMBOK 8, Guide 2.1.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "The team tracks 25 metrics, but no one looks at most of them. What should the project manager do?",
+    "options": [
+      "Add more metrics to cover every risk",
+      "Report all 25 metrics to the sponsor weekly",
+      "Keep the actionable ones and drop the rest",
+      "Stop measuring and rely on judgment"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Measurement takes time that could go to other work, so teams should measure only what is relevant and make metrics actionable. The Agile Practice Guide also advises decommissioning low-value metrics.",
+    "ref": "PMBOK 8, Guide 2.1.6.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 131,
+        "label": "PMBOK 8, Guide 2.1.6.7"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A team's quality goal reads: 'Improve testing soon.' Which SMART criteria does it fail?",
+    "options": [
+      "It is neither achievable nor realistic enough",
+      "It is not specific, measurable or time-bound",
+      "It is not related to the project's scope",
+      "It is not approved by the sponsor"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "SMART goals are specific, measurable, achievable, realistic and time-bound. 'Improve testing soon' names no measure, no target and no date.",
+    "ref": "PMBOK 8, Guide 2.1.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 119,
+        "label": "PMBOK 8, Guide 2.1.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Developers learn they are measured only on the number of deliverables they produce. Output rises, but customer satisfaction falls. Which pitfall is this?",
+    "options": [
+      "Confirmation bias",
+      "Vanity metric",
+      "Correlation versus causation",
+      "Hawthorne effect"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The Hawthorne effect: the very act of measuring something influences behavior. Measuring only output encourages volume rather than deliverables that bring higher customer satisfaction.",
+    "ref": "PMBOK 8, Guide 2.1.6.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A sponsor notices that projects behind schedule are often over budget, and concludes that the delays cause the overruns. Which pitfall may this be?",
+    "approach": "predictive",
+    "explanation": "Two variables moving together does not mean one causes the other. Other factors, such as estimating skill, change management or active risk management, may explain both.",
+    "ref": "PMBOK 8, Guide 2.1.6.7.1",
+    "options": [
+      "Correlation taken for causation",
+      "Demoralization",
+      "The Hawthorne effect of measuring",
+      "Vanity metric"
+    ],
+    "answer": 0,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "The spending trend shows the project will pass its +10% budget threshold next month. What should the project manager do?",
+    "options": [
+      "Wait until the threshold is actually crossed",
+      "Widen the threshold to +20%",
+      "Act now to address the expected variance",
+      "Stop reporting spend until it settles"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Ideally, teams should not wait until a threshold is breached. If a breach can be forecast from a trend or new information, the team can address the expected variance proactively.",
+    "ref": "PMBOK 7, Guide 2.7.5",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 208,
+        "label": "PMBOK 7, Guide 2.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Who decides which artifacts a project uses, according to the PMBOK Guide?",
+    "options": [
+      "The PMO, with one fixed set for all projects",
+      "The project manager and team, tailoring them",
+      "The sponsor, at the kickoff meeting only",
+      "The vendor of the scheduling software"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The delivery approach, product and organization influence which artifacts fit, but the project manager and team are ultimately responsible for selecting and tailoring the artifacts for their project.",
+    "ref": "PMBOK 7, Guide 4.7",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 287,
+        "label": "PMBOK 7, Guide 4.7"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "In the Seventh Edition's grouping of common artifacts, where does the risk register belong?",
+    "options": [
+      "Strategy artifacts",
+      "Hierarchy charts",
+      "Baselines",
+      "Logs and registers"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Logs and registers include the assumption log, backlog, change log, issue log, lessons learned register, risk-adjusted backlog, risk register and stakeholder register.",
+    "ref": "PMBOK 7, Guide 4.6",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 279,
+        "label": "PMBOK 7, Guide 4.6"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Several versions of the test plan circulate, and nobody is sure which one is current. Which plan should set how artifacts are tracked and their changes recorded?",
+    "options": [
+      "The configuration management plan",
+      "The resource management plan",
+      "The benefits management plan",
+      "The stakeholder engagement plan"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The configuration management plan holds the procedures to track project artifacts and control changes to them: which items are under configuration control, and how changes are recorded and reported.",
+    "ref": "PMBOK 8, Guide section 4, Configuration management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 223,
+        "label": "PMBOK 8, Guide section 4, Configuration management plan"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A team wants everyone in the building to see the work done, the work left and the top risks, without logging into a tool. What should it use?",
+    "options": [
+      "A monthly status report sent by email",
+      "A password-protected dashboard",
+      "An information radiator on the wall",
+      "The PMIS archive"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "An information radiator is a visible, physical display posted where people can see it easily, rather than in a reporting tool. It is easy to update and often low tech, high touch.",
+    "ref": "PMBOK 8, Guide section 5, Information radiators",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 278,
+        "label": "PMBOK 8, Guide section 5, Information radiators"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "The steering committee wants one page showing status in red, amber and green, with drill-down into the detail. What should the project manager provide?",
+    "approach": "predictive",
+    "explanation": "Dashboards collect information electronically, give high-level summaries with drill-down, and often use stoplight (red-amber-green) charts, bar and pie charts, and control charts.",
+    "ref": "PMBOK 8, Guide section 5, Project dashboards",
+    "options": [
+      "A task board on the team's wall",
+      "A project dashboard",
+      "A burndown chart",
+      "The full issue log"
+    ],
+    "answer": 1,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 295,
+        "label": "PMBOK 8, Guide section 5, Project dashboards"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "What should a dashboard show for a measure that is outside its threshold?",
+    "options": [
+      "Nothing, since red speaks for itself",
+      "A new threshold that makes it green",
+      "Only the name of the person at fault",
+      "A short text explaining it"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "A text explanation can be used for any measures outside the established thresholds, so readers understand the cause and the action.",
+    "ref": "PMBOK 8, Guide section 5, Project dashboards",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 295,
+        "label": "PMBOK 8, Guide section 5, Project dashboards"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "The same project information goes to the board, the team and a regulator. How should the reporting be done?",
+    "options": [
+      "Adapt level, format and detail to each group",
+      "Send the full detailed report to everyone",
+      "Report only to the board",
+      "Let each group ask for whatever it wants later"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Project information is distributed to many groups and should be adapted to an appropriate level, format and detail for each, prepared regularly or on an exception basis.",
+    "ref": "PMBOK 8, Guide section 5, Project reporting",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 296,
+        "label": "PMBOK 8, Guide section 5, Project reporting"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Throughput has been stable at about 10 items a week, and 120 items remain. The sponsor asks how long the rest will take and how confident the team is. What should the team report?",
+    "approach": "agile",
+    "explanation": "Sponsors need to know when significant scope might be finished and how confidently. Stable throughput with an up-to-date item count allows a forecast with a range, not a guaranteed date.",
+    "ref": "Agile Practice Guide, 5.5.5",
+    "options": [
+      "Exactly 12 weeks, as a firm commitment",
+      "About 10 weeks, if the team works overtime",
+      "About 12 weeks, with a range from past throughput",
+      "Unknown until every item has been estimated in hours"
+    ],
+    "answer": 2,
+    "links": [
+      {
+        "book": "agile",
+        "page": 95,
+        "label": "Agile Practice Guide, 5.5.5"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Which of these is an outcome-oriented measure, as the Agile Practice Guide suggests?",
+    "options": [
+      "Number of stories started this week",
+      "Usage of released capabilities",
+      "Hours logged per developer",
+      "Meetings held per iteration"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Outcome measures include customer satisfaction, business value delivered, adoption and usage analytics of released capabilities, and time to learn.",
+    "ref": "Agile Practice Guide, 5.5.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 94,
+        "label": "Agile Practice Guide, 5.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "What does the Agile Practice Guide advise about metrics that no longer influence any decision?",
+    "options": [
+      "Keep them for the historical record",
+      "Report them only to the sponsor",
+      "Collect them less often",
+      "Decommission them"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Its measurement guidelines: start small and evolve, visualize openly, review and act, and decommission low-value metrics that no longer influence decisions.",
+    "ref": "Agile Practice Guide, 5.5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 95,
+        "label": "Agile Practice Guide, 5.5.4"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Which output of Monitor and Control Project Performance compiles work performance information for decisions and communication?",
+    "approach": "predictive",
+    "explanation": "Work performance reports are the physical or electronic representations of work performance information, compiled to generate decisions, actions or awareness.",
+    "ref": "PMBOK 8, Guide section 4, Work performance reports",
+    "options": [
+      "Work performance reports",
+      "Work performance data from the team",
+      "Accepted deliverables",
+      "Team charter"
+    ],
+    "answer": 0,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 249,
+        "label": "PMBOK 8, Guide section 4, Work performance reports"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which of these is a lagging indicator?",
+    "options": [
+      "Items in progress in the backlog",
+      "Poorly defined success criteria",
+      "Schedule variance at the status date",
+      "A missing risk management process overall"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Lagging indicators measure deliverables or events after the fact: deliverables completed, schedule or cost variance, resources consumed. The others are leading indicators.",
+    "ref": "PMBOK 8, Guide 2.1.5.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 119,
+        "label": "PMBOK 8, Guide 2.1.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which category of metrics includes defects found, measures of performance and technical performance measures?",
+    "options": [
+      "Business value",
+      "Deliverable metrics",
+      "Stakeholder metrics",
+      "Forecasts"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Deliverable metrics depend on what is delivered: information on errors or defects, measures of performance, and technical performance measures.",
+    "ref": "PMBOK 7, Guide 2.7.2",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 193,
+        "label": "PMBOK 7, Guide 2.7.2"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Goals are set so high that the team misses them every month, and morale is falling. Which measurement pitfall is this?",
+    "options": [
+      "Vanity metric",
+      "Confirmation bias",
+      "Hawthorne effect",
+      "Demoralization"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Unachievable measures and goals lower morale as the team keeps failing. Stretch goals are acceptable, but people also want their work recognized.",
+    "ref": "PMBOK 8, Guide 2.1.6.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "What do the clinic managers' reports suggest about the five months of green status?",
+    "case": "clinic-records",
+    "options": [
+      "The dashboard is accurate; the managers exaggerate",
+      "Status may be green outside and red inside",
+      "The rollout should be stopped at once",
+      "Only the software team's metrics matter"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "A 'watermelon' project is green outside and red inside: surrogate measures hide problems. Empirical measures, such as whether staff can actually use the system, show the true state.",
+    "ref": "Agile Practice Guide, 5.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 92,
+        "label": "Agile Practice Guide, 5.5"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Which measurement pitfall does the 'training sessions held' metric show?",
+    "case": "clinic-records",
+    "options": [
+      "Vanity metric",
+      "Correlation versus causation",
+      "Demoralization",
+      "Confirmation bias"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A vanity metric shows data but gives no useful information for decisions. Sessions held says nothing about whether staff can use the system; a measure of capability or usage would.",
+    "ref": "PMBOK 8, Guide 2.1.6.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "What should the project manager do about the rollout plan versions in four different tools?",
+    "case": "clinic-records",
+    "options": [
+      "Email every version to each clinic",
+      "Let each clinic choose the version it likes best",
+      "Keep one controlled version where all can reach it",
+      "Delete all versions and write a new plan"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Artifacts should be tracked under configuration management and be accessible: information is useful only if it is timely, accessible and easy to absorb.",
+    "ref": "PMBOK 8, Guide section 4, Configuration management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 223,
+        "label": "PMBOK 8, Guide section 4, Configuration management plan"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO are measurement pitfalls named in the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Hawthorne effect",
+      "Vanity metric",
+      "Earned value",
+      "Leading indicator",
+      "Rolling wave planning"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "The pitfalls are the Hawthorne effect, vanity metrics, demoralization, misusing the metrics, confirmation bias, and correlation versus causation.",
+    "ref": "PMBOK 8, Guide 2.1.6.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 133,
+        "label": "PMBOK 8, Guide 2.1.6.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are tools and techniques of Monitor and Control Project Performance?",
+    "type": "multi",
+    "options": [
+      "Project dashboards",
+      "Information radiators",
+      "Earned value analysis",
+      "Make-or-buy analysis",
+      "Bidder conference",
+      "Resource smoothing"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-9 lists expert judgment, data analysis (alternatives, cost-benefit, earned value, root cause, trend, variance), voting, meetings, project dashboards, visual controls and information radiators.",
+    "ref": "PMBOK 8, Guide 2.1.6.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 131,
+        "label": "PMBOK 8, Guide 2.1.6.7"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are outputs of the Monitor and Control Project Performance process?",
+    "approach": "predictive",
+    "explanation": "Figure 2-9 lists work performance reports, change requests, and updates to the project management plan and documents (cost and schedule forecasts, issue log, lessons learned register, risk register).",
+    "ref": "PMBOK 8, Guide 2.1.6.7",
+    "type": "multi",
+    "options": [
+      "Work performance reports",
+      "Change requests",
+      "Project charter",
+      "Team charter",
+      "Bid documents"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 131,
+        "label": "PMBOK 8, Guide 2.1.6.7"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each artifact with its category in the Seventh Edition.",
+    "type": "match",
+    "left": [
+      "Business case",
+      "Issue log",
+      "Work breakdown structure",
+      "Status report"
+    ],
+    "right": [
+      "Strategy artifacts",
+      "Logs and registers",
+      "Hierarchy charts",
+      "Reports"
+    ],
+    "approach": "predictive",
+    "explanation": "Other categories are plans, baselines, visual data and information, agreements and contracts, and other artifacts. The team tailors which ones it uses.",
+    "ref": "PMBOK 7, Guide 4.6",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 279,
+        "label": "PMBOK 7, Guide 4.6"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about status and artifacts.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "An indicator that warns of a problem before it shows in the results is a",
+        "choices": [
+          "lagging indicator",
+          "leading indicator",
+          "vanity metric"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "A visible wall chart that anyone can read without a tool is an",
+        "choices": [
+          "project dashboard",
+          "issue log",
+          "information radiator"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Procedures to track artifacts and control their changes are in the",
+        "choices": [
+          "configuration management plan",
+          "risk register",
+          "team charter"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Leading indicators allow prevention; information radiators make status visible; configuration management keeps artifacts controlled.",
+    "ref": "PMBOK 8, Guide 2.1.5.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 119,
+        "label": "PMBOK 8, Guide 2.1.5.1"
+      }
+    ]
+  }
+]

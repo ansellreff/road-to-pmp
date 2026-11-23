@@ -115,3 +115,13 @@ Every problem met while building the PMP course, newest group last. Section name
 | PMP-62 | The extracted text of the EVM standard's Table 4-2 (causes of variance) ran the four cells together, so the cells could not be told apart. | Read that page's layout directly from the PDF with the PDF library already in the project's `.venv`. The lesson's table matches the book. | Module 2.10, "Acting on variances" |
 | PMP-63 | A 2.12 question ("which activity would delay the project?") had two right answers, because activity A is also on the critical path. Found while checking a warning about a "none of them" option. | The question now asks only about B, C and D, and the "none" option was replaced. | Module 2.12, question 12 |
 | PMP-64 | Session 9 is 78% predictive; Domain 2 so far is 54% (194 of 360), above the 40% aim. | Session 10's agile scheduling module leans agile. The exam builder keeps each mock exam near 40% in any case. | "PMP Session 9 as built" |
+| PMP-65 | The first Session 9 release stopped: two search click tests look for "Total float and free float" and found two results, CAPM's lesson section and a new 2.12 flashcard with the same title. | CAPM's tests must not change, so the 2.12 flashcard was renamed "Total float versus free float". All click tests pass. | Module 2.12 flashcards |
+
+### PMP Session 10 (modules 2.13 to 2.15)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| PMP-66 | The Agile Practice Guide, Second Edition, no longer recommends tracking velocity outside the team or using it to forecast at scale or set targets, while the PMBOK Guide and the estimating standard still use velocity for planning, and exam questions use velocity forecasts. | 2.13 teaches velocity as a team-specific planning aid with the release forecast, and adds an edition note on the misuse the Agile Practice Guide warns about, with flow metrics as the alternative. | Module 2.13, "Velocity and capacity" |
+| PMP-67 | Two 2.13 questions were near-repeats of CAPM questions, and one 2.14 question repeated a PMP 1.9 question word for word (the checker caught that one). | All three rewritten. | Modules 2.13 and 2.14 |
+| PMP-68 | The right answer was the longest option in 8 of 25 questions in 2.14 and 9 of 25 in 2.15 (the checker's limit is 35%). | Wrong options lengthened; now 3 in each. | Modules 2.14 and 2.15 |
+| PMP-69 | Domain 2 as a whole is 52% predictive (235 of 450), above the 40% aim, because resources, procurement, finance, earned value, quality and schedule are predictive subjects. | Accepted for the question bank; the exam builder keeps each mock exam near 40%. Domain 3 can lean agile where its subjects allow. | "PMP Session 10 as built" |

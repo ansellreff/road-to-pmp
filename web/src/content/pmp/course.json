@@ -37,9 +37,9 @@
         { "id": "2-10-earned-value", "title": "Earned Value and Financial Reporting", "ready": true, "tasks": [6, 9] },
         { "id": "2-11-quality", "title": "Quality, Cost of Quality and Continuous Improvement", "ready": true, "tasks": [7] },
         { "id": "2-12-schedule", "title": "Schedule: Estimating and the Critical Path", "ready": true, "tasks": [8] },
-        { "id": "2-13-agile-scheduling", "title": "Agile Scheduling: Story Points, Velocity, Release Plans", "ready": false, "tasks": [8] },
-        { "id": "2-14-status", "title": "Evaluating Status: Metrics and Artifacts", "ready": false, "tasks": [9] },
-        { "id": "2-15-closure", "title": "Closure and Transition", "ready": false, "tasks": [10] }
+        { "id": "2-13-agile-scheduling", "title": "Agile Scheduling: Story Points, Velocity, Release Plans", "ready": true, "tasks": [8] },
+        { "id": "2-14-status", "title": "Evaluating Status: Metrics and Artifacts", "ready": true, "tasks": [9] },
+        { "id": "2-15-closure", "title": "Closure and Transition", "ready": true, "tasks": [10] }
       ]
     },
     {

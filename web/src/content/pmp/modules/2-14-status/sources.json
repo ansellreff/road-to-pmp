@@ -1,0 +1,117 @@
+[
+  {
+    "book": "agile",
+    "page": 92,
+    "label": "Agile Practice Guide, 5.5"
+  },
+  {
+    "book": "agile",
+    "page": 94,
+    "label": "Agile Practice Guide, 5.5.3"
+  },
+  {
+    "book": "agile",
+    "page": 95,
+    "label": "Agile Practice Guide, 5.5.4"
+  },
+  {
+    "book": "agile",
+    "page": 95,
+    "label": "Agile Practice Guide, 5.5.5"
+  },
+  {
+    "book": "pmbok7",
+    "page": 190,
+    "label": "PMBOK 7, Guide 2.7.1"
+  },
+  {
+    "book": "pmbok7",
+    "page": 193,
+    "label": "PMBOK 7, Guide 2.7.2"
+  },
+  {
+    "book": "pmbok7",
+    "page": 201,
+    "label": "PMBOK 7, Guide 2.7.3"
+  },
+  {
+    "book": "pmbok7",
+    "page": 208,
+    "label": "PMBOK 7, Guide 2.7.5"
+  },
+  {
+    "book": "pmbok7",
+    "page": 231,
+    "label": "PMBOK 7, Guide 3.3.5"
+  },
+  {
+    "book": "pmbok7",
+    "page": 279,
+    "label": "PMBOK 7, Guide 4.6"
+  },
+  {
+    "book": "pmbok7",
+    "page": 287,
+    "label": "PMBOK 7, Guide 4.7"
+  },
+  {
+    "book": "pmbok8",
+    "page": 119,
+    "label": "PMBOK 8, Guide 2.1.5.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 119,
+    "label": "PMBOK 8, Guide 2.1.5.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 119,
+    "label": "PMBOK 8, Guide 2.1.5.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 131,
+    "label": "PMBOK 8, Guide 2.1.6.7"
+  },
+  {
+    "book": "pmbok8",
+    "page": 133,
+    "label": "PMBOK 8, Guide 2.1.6.7.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 223,
+    "label": "PMBOK 8, Guide section 4, Configuration management plan"
+  },
+  {
+    "book": "pmbok8",
+    "page": 249,
+    "label": "PMBOK 8, Guide section 4, Work performance reports"
+  },
+  {
+    "book": "pmbok8",
+    "page": 278,
+    "label": "PMBOK 8, Guide section 5, Information radiators"
+  },
+  {
+    "book": "pmbok8",
+    "page": 295,
+    "label": "PMBOK 8, Guide section 5, Project dashboards"
+  },
+  {
+    "book": "pmbok8",
+    "page": 296,
+    "label": "PMBOK 8, Guide section 5, Project management information system (PMIS)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 296,
+    "label": "PMBOK 8, Guide section 5, Project reporting"
+  },
+  {
+    "book": "pmbok8",
+    "page": 317,
+    "label": "PMBOK 8, Guide section 5, Visual controls"
+  }
+]

@@ -1,0 +1,679 @@
+[
+  {
+    "id": "q1",
+    "q": "In the Eighth Edition, what does agile release planning typically produce?",
+    "options": [
+      "The tasks for the next two weeks, in hours each",
+      "A 3-to-6-month timeline and the number of iterations",
+      "Every single user story for the product's whole life",
+      "The daily plan of each team member"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Agile release planning gives a high-level summary timeline of the release (typically 3 to 6 months), based on the roadmap and vision, and determines the number of iterations or sprints.",
+    "ref": "PMBOK 8, Guide section 5, Agile release planning",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Agile release planning"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which artifact does the product owner replan as the team delivers and new information emerges, to show the expected sequence of deliverables over time?",
+    "options": [
+      "The iteration burndown",
+      "The team charter",
+      "The definition of done",
+      "The product roadmap"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Product owners may produce a product roadmap showing the anticipated sequence of deliverables over time, and replan it based on what the team produces and emerging information.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A new manager asks the team to estimate in hours so that dates can be promised to customers. The team prefers story points. What is the strongest reason?",
+    "approach": "agile",
+    "explanation": "Story points reflect relative effort or complexity, because teams are better at comparing work items than at predicting precise durations; estimating hours is more time-consuming and less reliable in dynamic environments. A non-numerical unit also stops the estimate being read as a firm commitment.",
+    "ref": "PMBOK 8, Guide section 5, Agile release planning",
+    "options": [
+      "Relative sizes are quicker and more reliable here",
+      "Story points can be compared across every team in the company",
+      "Hours are not allowed in agile approaches",
+      "Points let managers set firm delivery dates"
+    ],
+    "answer": 0,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 251,
+        "label": "PMBOK 8, Guide section 5, Agile release planning"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "In planning poker, two members show 3 and three members show 13 for the same story. What should happen next?",
+    "options": [
+      "Take the average and move on",
+      "The product owner decides on the final number",
+      "The lowest and highest explain, then all re-vote",
+      "Use 13, since it is the safest estimate"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "When cards differ, the team discusses the outliers: the lowest and highest estimators explain their reasons, then everyone reselects until the estimates converge.",
+    "ref": "Practice Standard for Project Estimating, 4.3",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 63,
+        "label": "Practice Standard for Project Estimating, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A new team must size 150 backlog items in one afternoon. Which technique fits best?",
+    "options": [
+      "Bottom-up estimating in hours",
+      "Affinity grouping",
+      "Three-point estimating",
+      "Parametric estimating"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "When there are many items to estimate, affinity grouping places like-sized items together on a wall. It is simple and fast, and several hundred items can be estimated in a short time.",
+    "ref": "Practice Standard for Project Estimating, 4.3",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 63,
+        "label": "Practice Standard for Project Estimating, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "A manager wants to compare two teams by velocity: one averages 40 points per iteration, the other 25. What should the project manager explain?",
+    "options": [
+      "The 40-point team is clearly the more productive one",
+      "The 25-point team needs more people",
+      "Velocities can be compared after about a month",
+      "Each team's points differ, so they can't be compared"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Velocity is specific to each team and cannot be used to compare their efficiency. Treating story points as interchangeable across teams ignores differences in sizing scales and definitions of done.",
+    "ref": "Practice Standard for Project Estimating, 2.6.2",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 35,
+        "label": "Practice Standard for Project Estimating, 2.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A release backlog holds 180 story points. The team's last three velocities were 22, 18 and 20. How many iterations should it plan for the release?",
+    "options": [
+      "9",
+      "8",
+      "10",
+      "12"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Average velocity = (22 + 18 + 20) / 3 = 20. Iterations = 180 / 20 = 9. Velocity normalizes over several iterations, so the team plans from its average.",
+    "ref": "Practice Standard for Project Estimating, 2.6.2",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 35,
+        "label": "Practice Standard for Project Estimating, 2.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "A team averages 30 points per iteration, but the next one includes a two-day company event and a public holiday. The product owner still asks for 30 points. What should the team do?",
+    "approach": "hybrid",
+    "explanation": "When people are unavailable, the team cannot finish as much as in the previous period. With reduced capacity, it plans only for work that meets that capacity, and discusses this openly with the product owner.",
+    "ref": "Agile Practice Guide, 5.2.3",
+    "options": [
+      "Commit to 30 points as usual",
+      "Commit to 40 points to catch up later",
+      "Plan only for its reduced capacity",
+      "Cancel the iteration until all return"
+    ],
+    "answer": 2,
+    "links": [
+      {
+        "book": "agile",
+        "page": 83,
+        "label": "Agile Practice Guide, 5.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "In iteration planning, the stories the product owner wants add up to more than the team can complete. What happens?",
+    "options": [
+      "The team works overtime so that they all fit in",
+      "Lower-priority stories go back to the backlog",
+      "The iteration is made one week longer",
+      "The scrum master assigns the extra work"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "If the estimates do not fit, the lower-priority features go back into the product backlog until the workload is small enough for the team to commit.",
+    "ref": "Practice Standard for Scheduling, 2.6",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 46,
+        "label": "Practice Standard for Scheduling, 2.6"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "In a flow-based agile team, how does the daily coordination meeting usually run?",
+    "options": [
+      "Each member answers three questions in turn",
+      "The manager assigns the day's tasks to everyone",
+      "The team reviews only the iteration burndown",
+      "The team walks the board from right to left"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Flow-based agile focuses on throughput: the team assesses the board from right to left, asking what is needed to advance work and whether there are bottlenecks. The three questions are typical of iteration-based agile.",
+    "ref": "Agile Practice Guide, 5.2.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 84,
+        "label": "Agile Practice Guide, 5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The product owner adds 40 points of new scope halfway through a release. Which chart shows this most clearly?",
+    "options": [
+      "A burnup chart, as the total-scope line rises",
+      "The ideal line of the iteration burndown chart",
+      "The kanban board's WIP limits",
+      "The release's cumulative cost curve"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "A burnup chart tracks the total work as a line across the top and the completed work rising from zero. Added scope shows as the top line moving up.",
+    "ref": "PMBOK 8, Guide section 5, Burnup chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burnup chart"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "At the end of day 5, how does the iteration compare with the ideal line, and what should the team do?",
+    "diagram": "burndown-figure",
+    "options": [
+      "Ahead of the ideal line, so add more work now",
+      "Exactly on the ideal line; carry on as planned",
+      "Behind the ideal line; look for what is slowing work",
+      "This cannot be seen on the chart until day 10"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The ideal line falls from 50 to 0 over 10 days, so it is at 25 after day 5; the team still has 33 points. An iteration burndown shows variance against the ideal so the team can act during the iteration.",
+    "ref": "PMBOK 8, Guide section 5, Iteration burndown chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 280,
+        "label": "PMBOK 8, Guide section 5, Iteration burndown chart"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which flow metric measures the time from when a customer request is made until it is delivered?",
+    "options": [
+      "Cycle time",
+      "Lead time",
+      "Throughput",
+      "Queue length"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Lead time runs from the request to delivery and highlights system-wide delays. Cycle time runs from when work on an item starts until it is finished.",
+    "ref": "Agile Practice Guide, 5.5.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Items wait longer and longer in the team's 'Review' column, although developers finish their part quickly. Which metric shows this best?",
+    "options": [
+      "Velocity",
+      "Story points",
+      "Team capacity",
+      "Queue length"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Queue length counts the items waiting in each workflow state. Growing queues signal bottlenecks and hidden delays; trimming them shortens lead time.",
+    "ref": "Agile Practice Guide, 5.5.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Why does the Agile Practice Guide prefer empirical measures, such as finished features, to percent complete?",
+    "options": [
+      "Percent done can stay green until late surprises",
+      "Finished features are easier to count by hand",
+      "Percent complete is not allowed in agile",
+      "Empirical measures need no team input"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Surrogate measures like percent done often do not reflect reality: a 'watermelon' project is green outside and red inside until shortly before release. Finished work gives real data for forecasts.",
+    "ref": "Agile Practice Guide, 5.5",
+    "links": [
+      {
+        "book": "agile",
+        "page": 92,
+        "label": "Agile Practice Guide, 5.5"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A director makes velocity a performance target for the team. What is the likely result, according to the Agile Practice Guide?",
+    "options": [
+      "Better forecasts at the portfolio level",
+      "Faster delivery at the same quality",
+      "Inflated estimates or lower quality",
+      "Fewer meetings for the team"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "When velocity becomes a target, teams may inflate estimates, split work unnaturally or sacrifice quality. The guide no longer recommends using velocity to assess performance or set targets.",
+    "ref": "Agile Practice Guide, 5.5.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "In a hybrid project, a regulator's audit date is a fixed milestone. How should the agile team's releases relate to it?",
+    "options": [
+      "Ignore the date, since agile has no deadlines",
+      "Plan releases to deliver what the milestone needs",
+      "Convert all of the work to a critical path schedule",
+      "Ask the regulator to accept a later date"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "In a hybrid approach, the high-level schedule sets key milestones with predictive techniques, and adaptive streams plan their iterations inside that framework.",
+    "ref": "PMBOK 8, Guide 2.3.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 160,
+        "label": "PMBOK 8, Guide 2.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "What is the main difference between a scrum board and a kanban board?",
+    "options": [
+      "A scrum board shows no workflow states",
+      "A kanban board is cleared after each sprint",
+      "Only scrum boards may limit the WIP",
+      "A kanban board limits items per column"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Both show workflow stages, but a kanban board sets the maximum number of items allowed in each column and keeps flowing; a scrum board is cleared after each iteration.",
+    "ref": "Practice Standard for Scheduling, 2.6",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 46,
+        "label": "Practice Standard for Scheduling, 2.6"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A kanban team has no iterations. How can it forecast when 50 more items will be done?",
+    "options": [
+      "From its stable throughput per week",
+      "From the sponsor's preferred date",
+      "From the velocity of another team",
+      "It cannot forecast without sprints"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Throughput is the count of items finished per period; stable throughput lets teams forecast with statistics and spot sudden drops.",
+    "ref": "Agile Practice Guide, 5.5.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "How much of the backlog should be written before an agile project's work starts?",
+    "options": [
+      "Every story, written and sized before work",
+      "Only the stories of the first iteration",
+      "Enough for the first release and next iteration",
+      "None, as the backlog grows only during work"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "There is no need to create all stories up front: only enough to understand the first release in broad brushstrokes, and then sufficient items for the next iteration.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Why does the scheduling standard warn against too much up-front planning in agile projects?",
+    "options": [
+      "Agile teams are not allowed to plan anything",
+      "It creates a detailed but inaccurate plan",
+      "Planning belongs only to the sponsor",
+      "It removes the need for iterations"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Too little up-front planning risks oversight and rework; too much increases the risk of a very detailed, inaccurate plan. The aim is enough planning to minimize duplication and rework.",
+    "ref": "Practice Standard for Scheduling, 2.6",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 46,
+        "label": "Practice Standard for Scheduling, 2.6"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Backlog refinement takes the team three hours every week. What may this indicate, according to the Agile Practice Guide?",
+    "options": [
+      "The team is refining just about the right amount",
+      "The iterations are too short",
+      "The release plan is complete",
+      "Overpreparation, or missing skills"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Teams often aim for no more than 1 hour per week of refinement. More may mean the product owner is overpreparing or the team lacks critical skills to evaluate the work.",
+    "ref": "Agile Practice Guide, 5.2.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 82,
+        "label": "Agile Practice Guide, 5.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A sponsor asks the agile team for an earned value report. How can story points be used?",
+    "options": [
+      "PV is points planned to a date; EV is points done",
+      "EV is the hours the team has recorded so far",
+      "Story points can never be used in earned value analysis",
+      "PV is the business value of each feature"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "In adaptive approaches, PV is the story points planned up to a date, EV the points of stories done by then, and AC the team's cost, usually from working hours.",
+    "ref": "PMBOK 8, Guide section 5, Earned value (EV) analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 274,
+        "label": "PMBOK 8, Guide section 5, Earned value (EV) analysis"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Which unit could a team use for relative estimating, according to the estimating standard?",
+    "options": [
+      "Dollars per delivered feature",
+      "Hours per task",
+      "T-shirt sizes such as S, M and L",
+      "Calendar weeks"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Relative estimating uses proxies such as T-shirt sizes, often mapped to Fibonacci numbers, so the estimates are not mistaken for quantitative ones in dollars or days.",
+    "ref": "Practice Standard for Project Estimating, 4.3",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 63,
+        "label": "Practice Standard for Project Estimating, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Why does a team keep its iterations the same length throughout the project?",
+    "options": [
+      "To match the sponsor's reporting dates",
+      "To establish a cadence",
+      "To make velocity comparable across teams",
+      "To avoid having a backlog"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Iterations are generally 1 to 4 weeks long, and the team keeps the duration throughout the project to establish a cadence.",
+    "ref": "Practice Standard for Scheduling, 2.6",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 46,
+        "label": "Practice Standard for Scheduling, 2.6"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO are flow metrics in the Agile Practice Guide?",
+    "type": "multi",
+    "options": [
+      "Throughput",
+      "Cycle time",
+      "Story points",
+      "Planning poker",
+      "Release plan"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Table 5-4 lists throughput, cycle time, lead time, work in process, escaped defects and rework, and queue length.",
+    "ref": "Agile Practice Guide, 5.5.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 93,
+        "label": "Agile Practice Guide, 5.5.2"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are steps of planning poker?",
+    "type": "multi",
+    "options": [
+      "Each member picks a card privately",
+      "All cards are revealed at the same time",
+      "The lowest and highest estimators explain",
+      "The manager sets the final value",
+      "Cards are shown one at a time in rank order",
+      "The average is always taken"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "agile",
+    "explanation": "Members select cards privately, reveal them together, discuss the outliers (lowest and highest explain), and re-vote until the estimates converge.",
+    "ref": "Practice Standard for Project Estimating, 4.3",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 63,
+        "label": "Practice Standard for Project Estimating, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO statements about velocity are correct?",
+    "type": "multi",
+    "options": [
+      "It is specific to each team",
+      "It normalizes over several iterations",
+      "It measures the business value delivered",
+      "It should be a management target",
+      "It compares teams' productivity"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Velocity is the sum of relative estimates completed in an iteration, specific to the team and normalized over several iterations. It is not business value and should not be a target or a comparison.",
+    "ref": "Practice Standard for Project Estimating, 2.6.2",
+    "links": [
+      {
+        "book": "estimating",
+        "page": 35,
+        "label": "Practice Standard for Project Estimating, 2.6.2"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each planning level with what it holds.",
+    "type": "match",
+    "left": [
+      "Product vision",
+      "Product roadmap",
+      "Release plan",
+      "Iteration plan"
+    ],
+    "right": [
+      "Why the product exists",
+      "The expected sequence of deliverables over time",
+      "The number of iterations over 3 to 6 months",
+      "The stories and tasks of the current timebox"
+    ],
+    "approach": "agile",
+    "explanation": "Figure 5-1: the vision drives the roadmap, the roadmap drives release plans, the release plan sets the iterations, and iteration plans schedule feature development.",
+    "ref": "PMBOK 8, Guide Figure 5-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 252,
+        "label": "PMBOK 8, Guide Figure 5-1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about agile tracking.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Work remaining against the time left is shown by a",
+        "choices": [
+          "burnup chart",
+          "burndown chart",
+          "cumulative flow diagram"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Time from when work on an item starts until it is finished is",
+        "choices": [
+          "lead time",
+          "throughput",
+          "cycle time"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "The sum of story points accepted in an iteration is",
+        "choices": [
+          "velocity",
+          "capacity",
+          "queue length"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "agile",
+    "explanation": "A burnup shows work completed; lead time starts at the request; capacity is what the team can take on.",
+    "ref": "PMBOK 8, Guide section 5, Burndown chart",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 255,
+        "label": "PMBOK 8, Guide section 5, Burndown chart"
+      }
+    ]
+  }
+]

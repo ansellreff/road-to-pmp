@@ -33,5 +33,15 @@
     "id": "bank-kiosks",
     "title": "Self-service kiosks for a bank",
     "text": "A bank is rolling out self-service kiosks to 120 branches. A vendor builds them to the bank's specifications, and each kiosk passes the vendor's tests before it is shipped.\n\nSince launch, customers in 30 branches have reported card-reader faults, and technicians are visiting the branches to repair them. A PMO audit has also found that the team skipped the agreed security test for the last two shipments to save time."
+  },
+  {
+    "id": "clinic-records",
+    "title": "Patient records for 40 clinics",
+    "text": "A health ministry is rolling out a new patient-records system to 40 clinics. The software team works in two-week iterations; the rollout to the clinics follows a fixed plan. The monthly dashboard to the steering committee has been green for five months.\n\nThe main metric on the dashboard is the number of training sessions held, which is well above target. Two clinic managers now say that their staff cannot use the system, and that they cannot find the latest rollout plan: versions sit in four different tools."
+  },
+  {
+    "id": "library-app",
+    "title": "Handing over a library's lending app",
+    "text": "A city library's project to launch a new lending app is ending. The app passed acceptance, and the vendor's final invoice is waiting for payment. One vendor claim for extra integration work is still open.\n\nThe operations team that will support the app has not been trained, and its support hours have not been agreed. The library's business case expected the app to double online loans within a year."
   }
 ]
