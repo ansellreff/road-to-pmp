@@ -166,4 +166,7 @@ into the in-app guide in G1, and the plan now links to the guide.
 - B. Delete it.
 - C. Leave it where it is.
 
-**Answer:**
+**Answer:**A. 
+
+
+My review (23 Nov 2026): A. `tools/section_sources_d1.py` moved to `tools/archive/`; nothing else used it. You also confirmed `docs/BRIEF.md`.

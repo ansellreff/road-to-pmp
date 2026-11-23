@@ -1,7 +1,6 @@
 # Brief
 
-Written on 23 Nov 2026 from the existing plan, to follow the guideline (chapter 5). **Please check it**: if anything is
-wrong, change it here or tell me.
+Written on 23 Nov 2026 from the existing plan, to follow the guideline (chapter 5). **Confirmed by you on 23 Nov 2026.**
 
 | Question | Answer |
 |---|---|
