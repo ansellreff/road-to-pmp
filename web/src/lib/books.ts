@@ -2,7 +2,7 @@ import { callSignedIn } from './sync'
 import { SUPABASE_URL } from './syncConfig'
 
 // Opening a book on the website. The PDFs are in a private storage place in your Supabase
-// project (supabase/books.sql), readable only by an account on its list of readers.
+// project (supabase/books.sql), readable by any signed-in account and by nobody signed out.
 //
 // Each book gets a private link that works for 7 days. The link is kept in this browser and used
 // again, so the browser can reuse its own copy of the book instead of downloading it again. Only a
@@ -45,9 +45,10 @@ export interface BookLink {
 }
 
 /** A sentence a person can act on, for a refusal from the project. */
-export function bookError(message: string, email?: string): string {
+export function bookError(message: string): string {
+  if (/sign in first|not signed in/i.test(message)) return 'You must sign in first to open the books. Sign in on the home page, then click the link again.'
   if (/not a book reader/i.test(message)) {
-    return `This account${email ? ` (${email})` : ''} may not open the books: it is not on the readers list in Supabase. Add it with the line in docs/ACCOUNTS.md, "One-time setup of the online books", step 2.`
+    return 'The online books still use the earlier readers list. Run the new supabase/books.sql in the Supabase SQL editor once (see docs/ACCOUNTS.md).'
   }
   if (/monthly limit reached/i.test(message)) {
     const next = new Date()

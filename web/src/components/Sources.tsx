@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { bookError, bookLink, WARN_BYTES } from '../lib/books'
 import { books, loadSources, type SourceLink } from '../lib/content'
 import { useSync } from '../lib/sync'
-import { column, link, note, section, subTitle } from '../lib/ui'
+import { btnPrimary, column, link, note, section, subTitle } from '../lib/ui'
+import MessageDialog from './MessageDialog'
 import { useLoaded } from '../lib/useLoaded'
 
 // On this PC the local dev server serves the PDFs from your PMI Learning Material folder (see
@@ -16,6 +18,7 @@ const gigabytes = (bytes: number) => (bytes / 1_000_000_000).toFixed(1)
 function OpenBook({ source, short = false }: { source: SourceLink; short?: boolean }) {
   const sync = useSync()
   const [message, setMessage] = useState<{ text: string; error: boolean }>()
+  const [askSignIn, setAskSignIn] = useState(false)
   const title = books[source.book]?.title ?? source.book
   const label = short ? `Open the PDF at page ${source.page}` : `Open ${title} at PDF page ${source.page}`
   if (onThisPc) {
@@ -27,9 +30,25 @@ function OpenBook({ source, short = false }: { source: SourceLink; short?: boole
   }
   if (!sync.email) {
     return (
-      <span className="text-muted">
-        {short ? '' : `${title}, `}PDF page {source.page}
-      </span>
+      <>
+        <button type="button" onClick={() => setAskSignIn(true)} className={`${link} text-left`}>
+          {label}
+        </button>
+        {askSignIn && (
+          <MessageDialog
+            title="Sign in first"
+            onClose={() => setAskSignIn(false)}
+            action={
+              <Link to="/#sync" className={btnPrimary}>
+                Go to sign in
+              </Link>
+            }
+          >
+            You must sign in first to open the books. Sign in on the home page with your email, then click the link
+            again.
+          </MessageDialog>
+        )}
+      </>
     )
   }
 
@@ -51,7 +70,7 @@ function OpenBook({ source, short = false }: { source: SourceLink; short?: boole
       }
     } catch (error) {
       tab?.close()
-      setMessage({ text: bookError((error as Error).message, sync.email), error: true })
+      setMessage({ text: bookError((error as Error).message), error: true })
     }
   }
 
@@ -75,7 +94,7 @@ function sourcesNote(signedIn: boolean): string {
   if (signedIn) {
     return 'Each link opens the PDF from your private online copy in a new tab, at the page where that section starts. The first time on a device, the whole book downloads.'
   }
-  return 'Sign in on the home page to open the PDFs here. Without signing in, they open only when you run the platform on your own PC.'
+  return 'Each link opens the PDF at the page where that section starts, once you are signed in on the home page.'
 }
 
 /** One source: its text reference, with the link on the line below. */

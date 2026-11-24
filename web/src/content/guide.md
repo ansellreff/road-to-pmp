@@ -183,8 +183,8 @@ to it.
    - on the website, from your private online copy, once you are signed in on the home page.
 
 **Rules and limits.**
-- On the website, only the account on the readers list can open the books. Signed out, the book and page show as
-  plain text.
+- On the website, any signed-in account can open the books. Signed out, a link opens a small window, **Sign in
+  first**, with a button that goes to the sign-in on the home page.
 - The first time a book opens on a device, the whole book downloads. Each link stays valid for 7 days on that
   device, so opening the same book again within the week costs nothing extra.
 - **Monthly stop:** the online books stop at 4 GB of downloads a month, 1 GB under the free plan's 5 GB, so Supabase

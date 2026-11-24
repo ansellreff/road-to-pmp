@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
 import { cancelSignIn, confirmCode, requestSignIn, setPassword, signInWithPassword, signOut, syncNow, useSync } from '../lib/sync'
 import { btnPrimary, btnQuiet, input, note, section, subTitle } from '../lib/ui'
 import Icon from './Icon'
@@ -10,9 +11,14 @@ export default function SyncPanel() {
   const [code, setCode] = useState('')
   const [password, setPasswordText] = useState('')
   const busy = sync.status === 'syncing'
+  // "Go to sign in" (from a book link) arrives as /#sync: bring this panel into view.
+  const { hash } = useLocation()
+  useEffect(() => {
+    if (hash === '#sync') document.getElementById('sync')?.scrollIntoView({ block: 'start' })
+  }, [hash])
 
   return (
-    <section className={section}>
+    <section id="sync" className={`${section} scroll-mt-24`}>
       <h2 className={subTitle}>Sync between your devices</h2>
 
       {sync.email ? (

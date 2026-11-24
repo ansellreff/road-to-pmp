@@ -8,8 +8,8 @@ Each version of Road to PMP, newest first, with what you will notice.
   path, velocity and WSJF, communication channels, EMV and decision trees, and the Eighth Edition's principles,
   domains, focus areas and 40 processes. Each line links to its lesson.
 - **Book links on the website:** once you are signed in, **Open the PDF at page …** opens your book at that page
-  on the website too, also on your phone, from a private online copy only your account can read (after a one-time
-  setup in Supabase). Signed out, the page number shows as text.
+  on the website too, also on your phone, from a private online copy (after a one-time setup in Supabase). Signed
+  out, a link opens a small window asking you to sign in first.
 - Module 2.9 now shows both published ranges for later cost estimates (−5% to +10%, and −10% to +15%) with their
   books.
 
