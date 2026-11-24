@@ -1,0 +1,681 @@
+[
+  {
+    "id": "q1",
+    "q": "Who may submit a change request on a project, according to the PMBOK Guide?",
+    "options": [
+      "Only the project manager, after review",
+      "Any stakeholder, from inside or outside",
+      "Only members of the change control board",
+      "Only the sponsor, in writing"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Any stakeholder may request a change, and change requests may be initiated internally or externally to the project.",
+    "ref": "PMBOK 8, Guide section 4, Change requests",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Change requests"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Testing finds a weld that does not meet its specification. Which type of change request is needed to fix it?",
+    "options": [
+      "Preventive action",
+      "Corrective action",
+      "Update",
+      "Defect repair"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "A defect repair is an intentional activity to modify a nonconforming product or product component.",
+    "ref": "PMBOK 6, 4.3.3.4",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 118,
+        "label": "PMBOK 6, 4.3.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Productivity has been behind plan for three weeks. The team proposes extra pair work to bring performance back in line with the plan. Which type of change is this?",
+    "options": [
+      "Corrective action",
+      "Defect repair",
+      "Update",
+      "Configuration audit"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A corrective action realigns the performance of the project work with the project management plan. A preventive action would keep future performance aligned before it slips.",
+    "ref": "PMBOK 6, 4.3.3.4",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 118,
+        "label": "PMBOK 6, 4.3.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Before the baselines are approved, the team keeps refining the scope. How are these changes handled in a predictive project?",
+    "options": [
+      "Each one needs a formal CCB decision",
+      "They must be rejected until execution",
+      "They are not formally controlled yet",
+      "They go straight into the change log as approved"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "In predictive approaches, changes are not formally controlled until baselines are established. Once a baseline exists, all changes go through the formal process.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A customer phones the project manager asking for a change to a baselined deliverable. What should happen first?",
+    "options": [
+      "Make the change, since the customer asked",
+      "Document it in writing as a change request",
+      "Refuse, since it was not written down",
+      "Ask the team to estimate it informally and start"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Changes can be initiated verbally, but they should be documented in writing and entered into the change or configuration management system.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "What should a change request typically include before it can be approved?",
+    "options": [
+      "Only the requester's name and the date",
+      "The final design of the changed product",
+      "The sponsor's signature in advance",
+      "Estimated schedule and cost impacts"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Change requests should typically include information on the estimated schedule and cost impacts before they can be approved.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A change request must wait two weeks for the next CCB meeting. What should the project manager do in the meantime?",
+    "options": [
+      "Continue the planned work and analyze the impact",
+      "Stop all of the project's work until the board decides",
+      "Start the change to save time",
+      "Withdraw the request to avoid delay"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "While awaiting the CCB's decision, project managers continue to execute planned tasks while analyzing the impact and risks of accepting or rejecting the change.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which document establishes the change control board and documents the extent of its authority?",
+    "options": [
+      "The team charter",
+      "The communications management plan",
+      "The change management plan",
+      "The requirements traceability matrix"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "The change management plan establishes the CCB (also known as a steering committee), documents its authority, roles and responsibilities, and describes how the change control system will work.",
+    "ref": "PMBOK 8, Guide section 4, Change management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Change management plan"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Which plan specifies which project artifacts are under configuration control, so that changing them needs a formal request?",
+    "options": [
+      "The quality management plan and checklist",
+      "The configuration management plan",
+      "The resource management plan",
+      "The benefits management plan"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The configuration management plan specifies which artifacts are subject to configuration control; changes to these require a formal change request.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "The CCB has approved a change to the product. What may still be needed before the work starts?",
+    "options": [
+      "A completely new project charter for the change",
+      "A vote of the whole project team",
+      "A new competitive bid for the work",
+      "Sponsor approval, if not on the board"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Depending on the change, customer or sponsor approval may be required after CCB approval, unless the customer or sponsor is a CCB member.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "In an adaptive project, a stakeholder proposes a new feature. What happens to the proposal?",
+    "options": [
+      "It is added to the backlog and prioritized",
+      "It needs a formal CCB approval first",
+      "It is rejected until the next release",
+      "The team builds it in the current iteration at once"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "A proposed change is recorded as a product backlog item; an impact analysis evaluates its effect and sets its priority. There is usually no formal approval process.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide 2.1.6.8.2"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "The product owner gives a proposed change a low priority. What does that mean in an adaptive project?",
+    "options": [
+      "The change is formally rejected",
+      "The change must go to the CCB",
+      "The change is effectively deferred",
+      "The team must build it next iteration"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "A lower priority essentially means the change is deferred. Not adding it to the backlog, or removing it, means it is rejected.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide 2.1.6.8.2"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Where is the current status of every submitted change recorded?",
+    "options": [
+      "The issue log",
+      "The change log",
+      "The risk register",
+      "The lessons learned register"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The change log is a comprehensive list of changes submitted during the project, with their current status; the disposition of every change request is recorded there.",
+    "ref": "PMBOK 8, Guide section 4, Change log",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 221,
+        "label": "PMBOK 8, Guide section 4, Change log"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "The CCB rejects a change requested by a regional manager. What should the project manager do?",
+    "options": [
+      "Keep the decision quiet to avoid conflict",
+      "Implement part of the change anyway",
+      "Ask the CCB to vote again next week",
+      "Record it and tell the regional manager why"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Deferred or rejected change requests are communicated to the person or group who requested them, and the disposition is recorded in the change log.",
+    "ref": "PMBOK 8, Guide section 4, Approved change requests",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 219,
+        "label": "PMBOK 8, Guide section 4, Approved change requests"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which process implements approved change requests?",
+    "options": [
+      "Manage Project Execution",
+      "Close Project or Phase",
+      "Identify Stakeholders",
+      "Develop Schedule"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Approved change requests are implemented via the Manage Project Execution process, which also implements corrective and preventive actions and defect repairs.",
+    "ref": "PMBOK 8, Guide section 4, Approved change requests",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 219,
+        "label": "PMBOK 8, Guide section 4, Approved change requests"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "An approved change adds a new deliverable. What may it also require?",
+    "options": [
+      "Nothing, as approval is the last step",
+      "Removing it from the change log",
+      "New estimates, schedule and risk assessments",
+      "A brand-new project manager just for the change"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Approved change requests may require new or updated cost estimates, schedule adjustments, resource requirements and risk assessments, and updates to the plan and documents.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Two months after a change was implemented, what should the project manager check?",
+    "options": [
+      "That the old change log has been deleted",
+      "That the change gave the desired result",
+      "That the requester has paid for it",
+      "That no one remembers the old plan"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Changes are made to improve the original plan; their results should be monitored to ensure they yield the desired results.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "After an approved scope change, which records should be updated?",
+    "options": [
+      "Only the team's task board on the wall",
+      "Only the final report at closure",
+      "Nothing until the project closes",
+      "The plan, baselines and affected documents"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Outputs of Assess and Implement Changes include project management plan updates (any component, including baselines) and project document updates such as the change log.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Why is the schedule model updated with every approved change?",
+    "options": [
+      "So it shows all of the current known scope",
+      "So the original baseline is deleted",
+      "So the critical path never changes",
+      "So variances no longer appear in reports"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The schedule model is updated with approved changes so it represents 100% of the current known scope and the current project management plan.",
+    "ref": "Practice Standard for Scheduling, 3.3.4",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 84,
+        "label": "Practice Standard for Scheduling, 3.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Without anyone deciding, small additions keep entering the scope while time and budget stay the same. What is this?",
+    "options": [
+      "Fast tracking",
+      "Rolling wave planning",
+      "Scope creep",
+      "Resource leveling"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Scope creep is the uncontrolled expansion of product or project scope without adjustments to time, cost and resources. A change control system combats it.",
+    "ref": "PMBOK 8, Glossary (scope creep)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 378,
+        "label": "PMBOK 8, Glossary (scope creep)"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A proposed change has a large cost but would bring a large benefit. Which technique helps decide whether it is worth it?",
+    "options": [
+      "A burndown chart",
+      "Cost-benefit analysis",
+      "Planning poker",
+      "A RACI chart for the team"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Assess and Implement Changes uses data analysis such as alternatives analysis and cost-benefit analysis, and decision-making techniques, to decide on changes.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "The sponsor, who chairs the CCB, tells the team to add a feature directly and skip the board. What should the project manager do?",
+    "options": [
+      "Add it straight away, since the sponsor decides",
+      "Refuse and escalate to the PMO",
+      "Ask the team to vote on it",
+      "Raise a change request so its impact is analyzed"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Once a baseline exists, all changes go through the formal process, with impact analysis and a documented decision. This protects the baseline and gives the sponsor the information to decide.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "What should the project manager do about the rooftop bar?",
+    "case": "hotel-renovation",
+    "options": [
+      "Let the foreman continue, since a director asked for it",
+      "Stop the ordering, raise a change request and analyze it",
+      "Refuse the bar, since the scope is baselined",
+      "Build it and adjust the baseline afterwards"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The renovation is baselined, so the new scope needs a written change request, an impact analysis and a decision by the CCB or designated person before any work or ordering continues.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "How should the front desk's request for a group-booking feature be handled?",
+    "case": "hotel-renovation",
+    "options": [
+      "As a backlog item prioritized by the product owner",
+      "As a formal change request to the renovation's CCB",
+      "Built at once by the team, as it is small",
+      "Rejected until the renovation ends"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "The booking app is built with an adaptive approach: the request becomes a product backlog item, and impact analysis and the product owner's priority decide when, or whether, it is built.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide 2.1.6.8.2"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "The CCB approves the rooftop bar. What should happen next?",
+    "case": "hotel-renovation",
+    "options": [
+      "Start building at once, before updating anything",
+      "Close the change log entry without a note",
+      "Update the baselines and plan, then implement",
+      "Ask the director to manage the bar alone"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Approved changes may need new estimates, schedule adjustments and risk assessments; the plan, baselines and change log are updated, and the change is implemented through Manage Project Execution.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are possible decisions on a change request in a predictive project?",
+    "type": "multi",
+    "options": [
+      "Approved",
+      "Rejected",
+      "Deferred",
+      "Ignored",
+      "Self-approved by the requester",
+      "Hidden from stakeholders"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "hybrid",
+    "explanation": "Each documented change request is approved, deferred or rejected by a designated person or the CCB; more information may also be requested.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are outputs of the Assess and Implement Changes process?",
+    "type": "multi",
+    "options": [
+      "Approved change requests",
+      "Change log updates",
+      "Team charter",
+      "Product roadmap",
+      "Bid documents"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-10 lists approved change requests, project management plan updates (any component) and project document updates (change log).",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO pairs of areas does impact analysis of a change examine, according to the example flow for project changes?",
+    "type": "multi",
+    "options": [
+      "Schedule and finance",
+      "Risk and stakeholders",
+      "The team's holiday plans",
+      "The vendor's profit margin",
+      "The office seating layout"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Figure 2-11 shows impact analysis across scope, finance, schedule, resources, stakeholders and risk before the decision.",
+    "ref": "PMBOK 8, Guide Figure 2-11",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide Figure 2-11"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each type of change request with an example.",
+    "type": "match",
+    "left": [
+      "Corrective action",
+      "Preventive action",
+      "Defect repair",
+      "Update"
+    ],
+    "right": [
+      "Extra pair work to get back on plan",
+      "Training before a risky task starts",
+      "Fixing a weld that failed its test",
+      "Adding a new idea to the design document"
+    ],
+    "approach": "predictive",
+    "explanation": "Corrective actions realign performance with the plan; preventive actions keep future performance aligned; defect repairs modify nonconforming products; updates reflect modified or added content.",
+    "ref": "PMBOK 6, 4.3.3.4",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 118,
+        "label": "PMBOK 6, 4.3.3.4"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about change control.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "The group that reviews, approves, defers or rejects changes is the",
+        "choices": [
+          "project team",
+          "change control board",
+          "PMO"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "In adaptive projects, changes are managed mainly through",
+        "choices": [
+          "the CCB",
+          "formal change requests",
+          "the backlog"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Uncontrolled scope growth without more time or money is",
+        "choices": [
+          "scope creep",
+          "fast tracking",
+          "crashing"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "The CCB decides on changes in predictive projects; backlog management replaces formal change requests in adaptive ones; scope creep is what change control prevents.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 134,
+        "label": "PMBOK 8, Guide 2.1.6.8.1"
+      }
+    ]
+  }
+]

@@ -131,3 +131,11 @@ Every problem met while building the PMP course, newest group last. Section name
 | # | Issue | How it was handled | Where to look |
 |---|---|---|---|
 | PMP-70 | I had treated questions close to CAPM as a fault and rewritten 20 of them (PMP-59, PMP-67). You never made that a rule: CAPM is the foundation for PMP, and PMP may reuse CAPM questions or lesson content. | Recorded as your decision. `tools/check_content.py` now keeps two lists: a question repeated **inside one course** is still a quality warning; a PMP question **close to a CAPM question** is listed only for information ("i" lines with `--report`, 14 today). The questions already rewritten stay as they are, as they are correct. | "Decisions you made"; `tools/check_content.py` |
+
+### PMP Session 11 (modules 3.1 to 3.3)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| PMP-71 | Compliance (Business task 2) has no single home in the Eighth Edition; it is spread over governance, the environment, the quality and sustainability principles, risk and AI. | 3.2 is built from those passages plus the risk practice guide, the business analysis guide and the Agile Practice Guide. The **table of compliance categories** is my own grouping of the categories those sources name (security, health and safety, sustainability, regulatory, standards, policy, contractual); each row rests on a cited source. | Module 3.2, "Classifying compliance categories" |
+| PMP-72 | The Eighth Edition lists corrective action, preventive action, defect repair and update as kinds of change request but does not define them. | Definitions taken from the Sixth Edition (4.3.3.4), which uses the same four names. | Module 3.3, "Change in the Eighth Edition" |
+| PMP-73 | "Escalate only beyond your authority or threshold, along the agreed path" is not one sentence in the books. | Built from PMBOK 8 2.1.4 (when escalation is useful), the control thresholds in the management plans, and the PMI Code (approach a conflict directly first; follow the organization's rules). | Module 3.1, "Escalation paths and thresholds" |

@@ -1,0 +1,97 @@
+[
+  {
+    "book": "evm",
+    "page": 107,
+    "label": "The Standard for Earned Value Management, 4.4.3.3"
+  },
+  {
+    "book": "evm",
+    "page": 113,
+    "label": "The Standard for Earned Value Management, 4.6.2"
+  },
+  {
+    "book": "evm",
+    "page": 115,
+    "label": "The Standard for Earned Value Management, 4.6.3"
+  },
+  {
+    "book": "pmbok6",
+    "page": 118,
+    "label": "PMBOK 6, 4.3.3.4"
+  },
+  {
+    "book": "pmbok7",
+    "page": 177,
+    "label": "PMBOK 7, Guide 2.6.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 126,
+    "label": "PMBOK 8, Guide 2.1.6.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 133,
+    "label": "PMBOK 8, Guide 2.1.6.8"
+  },
+  {
+    "book": "pmbok8",
+    "page": 134,
+    "label": "PMBOK 8, Guide 2.1.6.8.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 135,
+    "label": "PMBOK 8, Guide 2.1.6.8.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 135,
+    "label": "PMBOK 8, Guide Figure 2-11"
+  },
+  {
+    "book": "pmbok8",
+    "page": 219,
+    "label": "PMBOK 8, Guide section 4, Approved change requests"
+  },
+  {
+    "book": "pmbok8",
+    "page": 221,
+    "label": "PMBOK 8, Guide section 4, Change log"
+  },
+  {
+    "book": "pmbok8",
+    "page": 221,
+    "label": "PMBOK 8, Guide section 4, Change management plan"
+  },
+  {
+    "book": "pmbok8",
+    "page": 221,
+    "label": "PMBOK 8, Guide section 4, Change requests"
+  },
+  {
+    "book": "pmbok8",
+    "page": 223,
+    "label": "PMBOK 8, Guide section 4, Configuration management plan"
+  },
+  {
+    "book": "pmbok8",
+    "page": 256,
+    "label": "PMBOK 8, Guide section 5, Change control tools"
+  },
+  {
+    "book": "pmbok8",
+    "page": 279,
+    "label": "PMBOK 8, Guide section 5, Integrated change control"
+  },
+  {
+    "book": "pmbok8",
+    "page": 378,
+    "label": "PMBOK 8, Glossary (scope creep)"
+  },
+  {
+    "book": "scheduling",
+    "page": 84,
+    "label": "Practice Standard for Scheduling, 3.3.4"
+  }
+]

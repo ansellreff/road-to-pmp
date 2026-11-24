@@ -47,9 +47,9 @@
       "title": "Business Environment",
       "weight": 26,
       "modules": [
-        { "id": "3-01-governance", "title": "Governance, Ethics, Success Metrics and Escalation", "ready": false, "tasks": [1] },
-        { "id": "3-02-compliance", "title": "Compliance: Security, Safety, Regulation, Sustainability", "ready": false, "tasks": [2] },
-        { "id": "3-03-change-control", "title": "Change Control", "ready": false, "tasks": [3] },
+        { "id": "3-01-governance", "title": "Governance, Ethics, Success Metrics and Escalation", "ready": true, "tasks": [1] },
+        { "id": "3-02-compliance", "title": "Compliance: Security, Safety, Regulation, Sustainability", "ready": true, "tasks": [2] },
+        { "id": "3-03-change-control", "title": "Change Control", "ready": true, "tasks": [3] },
         { "id": "3-04-impediments-issues", "title": "Impediments and Issues", "ready": false, "tasks": [4] },
         { "id": "3-05-risk-identify-analyze", "title": "Risk: Identifying and Analyzing", "ready": false, "tasks": [5] },
         { "id": "3-06-risk-responses", "title": "Risk: Responses and Monitoring", "ready": false, "tasks": [5] },

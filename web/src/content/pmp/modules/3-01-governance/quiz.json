@@ -1,0 +1,678 @@
+[
+  {
+    "id": "q1",
+    "q": "A new project manager asks where a project's governance comes from. What is the best answer?",
+    "approach": "hybrid",
+    "explanation": "Project governance is shaped by the performing organization's governance model and by stakeholders such as customers and regulators. It applies to predictive, adaptive and hybrid projects.",
+    "ref": "PMBOK 8, Guide 2.1",
+    "options": [
+      "It is invented fresh by each new project team, on its own",
+      "From the organization's governance and its stakeholders",
+      "It is set only by the project's main contractor",
+      "It applies only to predictive projects"
+    ],
+    "answer": 1,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Halfway through, a project has already delivered the value it was set up for, under budget. The board closes it early. Which governance scenario is this?",
+    "options": [
+      "Early termination for negative cause",
+      "Project contraction",
+      "Replanning",
+      "Early termination for positive cause"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Early termination for positive cause: the project or phase closes before using its planned schedule or budget because the desired value impact has been achieved.",
+    "ref": "PMBOK 8, Guide 2.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "An agile team governs itself, but its members' decisions are starting to pull in different directions. What does the PMBOK Guide suggest?",
+    "options": [
+      "Common measurable objectives with leading indicators",
+      "Replace it at once with a heavy structured model",
+      "Let each member decide alone",
+      "Remove all feedback to save time"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "A key challenge of self-governance is fragmented decision-making. Clear, measurable common objectives, supported by leading indicators and feedback mechanisms, help self-governed teams align.",
+    "ref": "PMBOK 8, Guide 2.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 116,
+        "label": "PMBOK 8, Guide 2.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Which of these is one of the three core components of effective project governance?",
+    "options": [
+      "A large governance board for every project",
+      "Detailed daily time sheets for all team members",
+      "Signaling mechanisms such as leading indicators",
+      "A fixed template for every project report"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Effective governance needs target metrics aligned with strategy, signaling mechanisms for those metrics (typically leading indicators), and feedback mechanisms for decision-makers.",
+    "ref": "PMBOK 8, Guide 2.1.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 118,
+        "label": "PMBOK 8, Guide 2.1.3"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A PMO proposes to judge project governance by the percentage of team members who finished a training class. What is the weakness?",
+    "approach": "hybrid",
+    "explanation": "Governance metrics should measure how well projects achieve their target outcomes, not input metrics such as resource utilization, compliance with a set of standards, or training completed.",
+    "ref": "PMBOK 8, Guide 2.1.3",
+    "options": [
+      "Training should never be measured at all",
+      "It measures an input, not an outcome",
+      "Percentages cannot be reported to a board",
+      "Only the sponsor may set metrics"
+    ],
+    "answer": 1,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 118,
+        "label": "PMBOK 8, Guide 2.1.3"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "The project uses the company's risk register template and its change control procedure. What are these?",
+    "options": [
+      "Enterprise environmental factors",
+      "Project deliverables",
+      "Work performance data",
+      "Organizational process assets"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Templates and procedures such as change control are organizational process assets in the group 'policies, processes and procedures'.",
+    "ref": "PMBOK 8, Standard 2.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 43,
+        "label": "PMBOK 8, Standard 2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Who updates the organizational knowledge repositories, such as lessons learned and performance metrics, during a project?",
+    "options": [
+      "The project, throughout its life",
+      "Only the PMO, after the project has closed",
+      "No one, since they are fixed",
+      "The external auditors"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Knowledge repositories are updated throughout the project with project information. Policies, processes and procedures, by contrast, are usually set outside the project.",
+    "ref": "PMBOK 8, Standard 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 42,
+        "label": "PMBOK 8, Standard 2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "The team wants to change the company's standard procurement procedure to suit its project. What applies?",
+    "options": [
+      "The team may change it as it wishes",
+      "The sponsor may override it with a quick verbal OK",
+      "It changes only through organizational policy",
+      "Procedures do not apply to projects"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Policies, processes and procedures are usually established by the PMO or another function and can be updated only by following organizational policies; some organizations allow teams to tailor templates and checklists.",
+    "ref": "PMBOK 8, Standard 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 42,
+        "label": "PMBOK 8, Standard 2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A vendor bidding for the project's contract offers the project manager expensive concert tickets. What should the project manager do?",
+    "options": [
+      "Accept, as long as the bid is judged fairly",
+      "Decline and follow the gift policy",
+      "Accept and share them with the team",
+      "Ask the other bidders for similar gifts"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Fairness requires decisions free of competing self-interest; contracts are not awarded based on personal considerations. Following the organization's policies is a mandatory responsibility standard.",
+    "ref": "PMI Code of Ethics, 4.3",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 13,
+        "label": "PMI Code of Ethics, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A firm owned by the project manager's brother-in-law submits a bid. What does the Code require first?",
+    "options": [
+      "Reject the firm's bid at once, without review",
+      "Score the bid quietly but fairly",
+      "Award it if it is the cheapest",
+      "Disclose it and stay out of the decision"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "We disclose real or potential conflicts of interest and refrain from the decision until we have made full disclosure, have an approved mitigation plan, and have the stakeholders' consent.",
+    "ref": "PMI Code of Ethics, 4.3",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 13,
+        "label": "PMI Code of Ethics, 4.3"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The sponsor asks the project manager to leave a two-month delay out of the board report 'until it is fixed'. What should the project manager do?",
+    "approach": "hybrid",
+    "explanation": "Honesty forbids half-truths and withholding information that would make statements misleading. We provide accurate information in a timely manner and share bad news, even when it is poorly received.",
+    "ref": "PMI Code of Ethics, 5.3",
+    "options": [
+      "Report the delay accurately, with a plan",
+      "Leave it out, as the sponsor asks",
+      "Report only the parts of the work that are on time",
+      "Resign from the project at once"
+    ],
+    "answer": 0,
+    "links": [
+      {
+        "book": "ethics",
+        "page": 15,
+        "label": "PMI Code of Ethics, 5.3"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "A team member tells the project manager that a colleague falsified test results. What does the Code require?",
+    "options": [
+      "Ignore it unless a customer complains",
+      "Warn the colleague privately and move on",
+      "Report it to the appropriate management",
+      "Post it in the team's chat channel"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "We report unethical or illegal conduct to appropriate management and, if necessary, to those affected; complaints must be substantiated by facts.",
+    "ref": "PMI Code of Ethics, 2.3",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 9,
+        "label": "PMI Code of Ethics, 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "After raising a safety concern in good faith, an engineer is moved off the team as a punishment. Which part of the Code is broken?",
+    "options": [
+      "Fairness: equal access to information for all",
+      "Responsibility: no retaliation for good-faith concerns",
+      "Honesty: no half-truths",
+      "Respect: respect for property rights"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "We do not retaliate against persons for raising good-faith ethical concerns; retaliatory conduct is subject to disciplinary action.",
+    "ref": "PMI Code of Ethics, 2.3",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 9,
+        "label": "PMI Code of Ethics, 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which of these is a mandatory standard of the Code, rather than an aspirational one?",
+    "options": [
+      "We strive to be inclusive leaders",
+      "We seek to understand the truth",
+      "We listen actively to others",
+      "We negotiate in good faith"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Negotiating in good faith is a mandatory respect standard. The others are aspirational: conduct we strive for, not firm requirements subject to discipline.",
+    "ref": "PMI Code of Ethics, 3.3",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 11,
+        "label": "PMI Code of Ethics, 3.3"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "The final report shows the project finished on time and on budget, but customers rarely use the product. How should its success be judged?",
+    "options": [
+      "Project management succeeded; the outcome did not",
+      "A full success, since every constraint was met",
+      "A full failure, since money was spent",
+      "Success cannot be judged after closure"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Success has two dimensions: project management efficiency (cost, scope, time, quality) and project outcomes (realizing the intended value). Here only the first was achieved.",
+    "ref": "PMBOK 8, Standard 2.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 39,
+        "label": "PMBOK 8, Standard 2.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Where are the measurable project objectives and related success criteria first recorded?",
+    "options": [
+      "The lessons learned register",
+      "The issue log",
+      "The project charter",
+      "The team charter"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Table 4-1 lists measurable project objectives and related success criteria among the elements of the project charter.",
+    "ref": "PMBOK 8, Guide Table 4-1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 234,
+        "label": "PMBOK 8, Guide Table 4-1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A proposed success metric reads: 'Customers should like the new app.' What should the project manager do?",
+    "options": [
+      "Accept it, as satisfaction can never be measured",
+      "Make it SMART: a rating target by a date",
+      "Replace it with the project's budget",
+      "Leave the metrics to the vendor"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Metrics should be specific, measurable, achievable, realistic and time-bound, for example an average customer rating to reach by a set date.",
+    "ref": "PMBOK 8, Guide 2.1.5.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 119,
+        "label": "PMBOK 8, Guide 2.1.5.3"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "In which situation does the PMBOK Guide say escalation is especially useful?",
+    "options": [
+      "When the team wants to avoid making decisions",
+      "Only in agile, self-governing teams",
+      "Whenever a team member disagrees",
+      "When authority sits outside the team"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Escalation is useful in hierarchical organizations where decision authority includes people outside the team, or where higher-ranking people can remove persistent obstacles or resolve conflicts.",
+    "ref": "PMBOK 8, Guide 2.1.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 118,
+        "label": "PMBOK 8, Guide 2.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "A lender funds a building in stages and, at set points, reviews whether the next round of funding still makes business sense. Which governance component is this?",
+    "options": [
+      "Investment control",
+      "Self-governance",
+      "Benefits realization",
+      "Rolling wave planning"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Investment control gives formal stewardship of funds, often with defined decision points in the design and build phases, as in lender-financed construction.",
+    "ref": "PMBOK 8, Guide 2.1.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 118,
+        "label": "PMBOK 8, Guide 2.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A cost overrun is still within the project manager's agreed control threshold. What should the project manager do?",
+    "approach": "hybrid",
+    "explanation": "Control thresholds set the variance allowed before action outside the project is needed. Within the threshold, the project manager acts and reports as usual.",
+    "ref": "PMBOK 8, Guide section 4, Financial management plan",
+    "options": [
+      "Escalate it at once to the whole governance board",
+      "Hide it until the next phase",
+      "Handle it at project level and report it",
+      "Ask the team to vote on it"
+    ],
+    "answer": 2,
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 226,
+        "label": "PMBOK 8, Guide section 4, Financial management plan"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A change would exceed the project manager's authority. Two board members are friends of the project manager. What should happen?",
+    "options": [
+      "Ask the friends to approve it informally",
+      "Take it through the agreed escalation path",
+      "Split it into small changes under the limit",
+      "Make the change and report it later"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Governance defines roles and decision-making authority; changes beyond the project manager's authority follow the agreed path. Splitting or informal approval would also break the Code's fairness standards.",
+    "ref": "PMBOK 8, Guide 2.1.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 118,
+        "label": "PMBOK 8, Guide 2.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "In guided self-governance, what limits an agile team's decisions?",
+    "options": [
+      "The PMO approves every task",
+      "Nothing at all, as the team is fully free",
+      "Daily approval from the sponsor",
+      "Agreed boundaries and guardrails"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Agile teams manage their work with light governance and clearly set boundaries and guardrails, deciding their own processes, priorities and problem-solving approaches.",
+    "ref": "PMBOK 8, Guide 2.1.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 138,
+        "label": "PMBOK 8, Guide 2.1.7"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "A portfolio board wants a metric showing whether its project prioritization decisions were effective. Which example does the PMBOK Guide give?",
+    "options": [
+      "Return on investment",
+      "Hours logged per team member",
+      "Number of meetings held",
+      "Pages of documentation"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Example governance metrics include indicators of how effective prioritization decisions are, such as ROI; indicators of due-date performance; and whether the baseline carries the highest value.",
+    "ref": "PMBOK 8, Guide 2.1.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 118,
+        "label": "PMBOK 8, Guide 2.1.3"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "When governance is set up for a project, what should be identified, according to the PMBOK Guide?",
+    "options": [
+      "Only the end users of the product",
+      "The vendors' sales and marketing teams",
+      "Control boards, committees and their members",
+      "The team members' families"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Tailoring governance requires identifying the control boards, committees and other stakeholders that are part of the project, and defining the status reporting requirements.",
+    "ref": "PMBOK 8, Guide 2.1.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 138,
+        "label": "PMBOK 8, Guide 2.1.7"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "How does the PMBOK Guide say governance should be tailored to the approach?",
+    "options": [
+      "Comprehensive for adaptive work, light for predictive",
+      "Light for adaptive, comprehensive for large predictive",
+      "The same weight for every project",
+      "None at all for hybrid projects"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Governance can be lightweight for adaptive methods, moderate or combined for hybrid projects, and comprehensive for large predictive portfolios, programs and projects.",
+    "ref": "PMBOK 8, Guide 2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO are values of the PMI Code of Ethics and Professional Conduct?",
+    "type": "multi",
+    "options": [
+      "Respect",
+      "Fairness",
+      "Efficiency",
+      "Loyalty",
+      "Profitability"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "The four values are responsibility, respect, fairness and honesty.",
+    "ref": "PMI Code of Ethics, 1.4",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 6,
+        "label": "PMI Code of Ethics, 1.4"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are organizational process assets of the type 'policies, processes and procedures'?",
+    "type": "multi",
+    "options": [
+      "Change control procedures",
+      "Risk register templates",
+      "Preapproved supplier lists",
+      "Marketplace conditions",
+      "Government regulations",
+      "Currency exchange rates"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Change control procedures, templates and preapproved supplier lists are OPAs. Marketplace conditions, regulations and exchange rates are external enterprise environmental factors.",
+    "ref": "PMBOK 8, Standard 2.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 43,
+        "label": "PMBOK 8, Standard 2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO measure the success of project outcomes rather than of project management?",
+    "type": "multi",
+    "options": [
+      "Return on investment achieved",
+      "New customers acquired",
+      "Delivered within budget",
+      "Finished on schedule",
+      "Scope delivered as planned"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Outcome success covers strategic objectives such as ROI, new customers, being first to market and sustainability goals. Budget, schedule and scope measure project management efficiency.",
+    "ref": "PMBOK 8, Standard 2.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 39,
+        "label": "PMBOK 8, Standard 2.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each governance scenario with its description.",
+    "type": "match",
+    "left": [
+      "Project initiation",
+      "Project replanning",
+      "Expansion or contraction",
+      "Early termination, negative cause"
+    ],
+    "right": [
+      "A worthwhile venture is launched",
+      "A plan revision that needs review",
+      "Constraints change to keep the value",
+      "Closed early, as the value is no longer achievable"
+    ],
+    "approach": "predictive",
+    "explanation": "Table 2-2 also lists early termination for positive cause, when the value has already been achieved. In every case, the value proposition is the main factor.",
+    "ref": "PMBOK 8, Guide 2.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about the PMI Code of Ethics.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Disclosing a conflict of interest is part of",
+        "choices": [
+          "honesty",
+          "fairness",
+          "respect"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Reporting illegal conduct to management is part of",
+        "choices": [
+          "fairness",
+          "respect",
+          "responsibility"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Avoiding half-truths and misleading omissions is part of",
+        "choices": [
+          "honesty",
+          "respect",
+          "responsibility"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Conflicts of interest are under fairness; reporting violations under responsibility; not deceiving under honesty.",
+    "ref": "PMI Code of Ethics, 4.3",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 13,
+        "label": "PMI Code of Ethics, 4.3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,681 @@
+[
+  {
+    "id": "q1",
+    "q": "A project to develop a new medical device is starting. What should come first for compliance?",
+    "options": [
+      "Wait until the regulator inspects the finished device and sends findings",
+      "Confirm the requirements with legal and compliance experts",
+      "Let each developer decide which rules apply to their part",
+      "Add compliance work after the first release is out"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Confirming compliance requirements is the first enabler. Governance roles such as legal and compliance officers give insight into regulations, auditing obligations and required processes; involve them early.",
+    "ref": "The PMI Guide to Business Analysis, 3.3.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 94,
+        "label": "The PMI Guide to Business Analysis, 3.3.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which of these is an external enterprise environmental factor that brings compliance requirements to a project?",
+    "options": [
+      "The company's change control procedure",
+      "The project's risk register template",
+      "The PMO's lessons learned repository",
+      "Local data protection laws"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "External EEFs include legal restrictions such as laws on security and data protection, government or industry standards, and public health and safety regulations. The others are organizational process assets.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Both the company's own procurement rules and a national safety regulation apply to the project. How do they differ?",
+    "options": [
+      "The law is external; the rules change via policy",
+      "Both can be changed by the sponsor at any time",
+      "Neither applies if the contract says otherwise",
+      "The internal rules always override the regulation in full"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Regulations are external enterprise environmental factors the organization cannot change. Internal policies and procedures are organizational process assets, updated only by following organizational policy.",
+    "ref": "PMBOK 8, Standard 2.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 43,
+        "label": "PMBOK 8, Standard 2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "Why does the project manager classify the project's compliance requirements into categories?",
+    "options": [
+      "To reduce the number of requirements the team must meet",
+      "To let the team skip the minor categories of rules completely",
+      "To see who owns each, how it is checked and its severity",
+      "Because the regulator always requires a fixed list"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Classifying compliance categories (security, health and safety, sustainability, regulatory, standards, policy, contractual) shows ownership, the way each is checked, and how serious a breach would be.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A team will store patients' health records in a new app. Which compliance category is most directly involved?",
+    "options": [
+      "Contractual service levels",
+      "Security and data privacy",
+      "Organizational templates",
+      "Workmanship standards"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Sensitive personal data falls under laws on security and data protection; it must be secured and collected under a privacy policy.",
+    "ref": "PMBOK 8, Appendix X3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.3"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Midway through, the environmental standards for the project's product change, updating its compliance requirements. How should this be treated?",
+    "options": [
+      "As a change to the project's stakeholder register",
+      "As a quality defect in a deliverable",
+      "As a lesson learned from a past project",
+      "As a threat to compliance, managed as a risk"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "In the risk practice guide's wind turbine case, changed environmental standards updated the compliance requirements; the risk of noncompliance was treated and then revisited.",
+    "ref": "Risk Management: A Practice Guide, 7.3.3",
+    "links": [
+      {
+        "book": "riskguide",
+        "page": 115,
+        "label": "Risk Management: A Practice Guide, 7.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "To save two days, a supervisor proposes skipping the required pressure test on a pipeline section. What should the project manager do?",
+    "options": [
+      "Keep the test and look for time elsewhere",
+      "Skip it, since the welds looked fine on inspection",
+      "Skip it now and test the section next year instead",
+      "Ask the team to vote on whether to skip it"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Required safety tests are compliance obligations. The Code requires acting in the best interests of public health and safety and upholding the rules that govern the work; schedule pressure is a threat to compliance, not a reason to skip.",
+    "ref": "PMI Code of Ethics, 2.3",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 9,
+        "label": "PMI Code of Ethics, 2.3"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "No one on the team understands the new export regulations that apply to the product. What does the risk practice guide suggest?",
+    "options": [
+      "Proceed and learn the rules later from any audit findings",
+      "Remove the product from the project's scope at once",
+      "Involve experts with regulatory compliance knowledge",
+      "Ask the sponsor to accept all compliance risks"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Risk analysis teams should include regulatory compliance competence; external experts or consultants with specialized regulatory knowledge can be advantageous.",
+    "ref": "Risk Management: A Practice Guide, 7.2.2",
+    "links": [
+      {
+        "book": "riskguide",
+        "page": 108,
+        "label": "Risk Management: A Practice Guide, 7.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "An agile team works in a regulated industry. How can it build compliance into its everyday work?",
+    "options": [
+      "Leave compliance to one final audit after all releases",
+      "Include required compliance in the definition of done",
+      "Ignore regulation, since agile values working software",
+      "Stop using iterations until all rules are documented"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Where additional documentation or conformance checks are needed, documentation or rigorous test results can be part of what the team delivers; the DoD may include required regulatory compliance being complete.",
+    "ref": "Agile Practice Guide, X2.3.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 161,
+        "label": "Agile Practice Guide, X2.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Compliance reviews at large gates keep delaying an agile program. What does the Agile Practice Guide suggest?",
+    "options": [
+      "Add more gates so that each review is smaller and slower",
+      "Remove compliance reviews from the program entirely",
+      "Hold one big review at the very end of the program",
+      "Involve compliance roles early, in small check-ins"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "For governance overload: bring audit, security and compliance roles into backlog reviews early, replace large-gate reviews with small, frequent check-ins on completed increments, and automate evidence capture.",
+    "ref": "Agile Practice Guide, 5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 89,
+        "label": "Agile Practice Guide, 5.4"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which tool determines whether project activities comply with organizational and project policies, processes and procedures?",
+    "options": [
+      "An audit",
+      "A burndown chart",
+      "A product roadmap",
+      "A make-or-buy analysis"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "An audit is a structured, independent process used to determine whether project activities comply with organizational and project policies, processes and procedures.",
+    "ref": "PMBOK 8, Guide section 5, Audits",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 253,
+        "label": "PMBOK 8, Guide section 5, Audits"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "The team uses an AI tool to summarize customer complaints that contain personal data. What should the project manager make sure of?",
+    "options": [
+      "The AI's output is used without any human review",
+      "The data is shared widely so the tool gives better results",
+      "Data is secured and handled under a privacy policy",
+      "Customers are not told how their data is used"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "AI uses data sets that can be sensitive and regulated by privacy laws, so the data must be secured and collected with a privacy policy in place; use should be transparent and a human accountable.",
+    "ref": "PMBOK 8, Appendix X3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.3"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Which compliance-related reason does the Standard list among the conditions under which a project may end?",
+    "options": [
+      "A team member's planned vacation",
+      "Legal, regulatory or compliance issues",
+      "A change in the meeting schedule",
+      "A new version of the project template"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A project usually ends when objectives are met or cannot be met, resources run out, the need disappears, or it is terminated for other reasons such as legal, regulatory or compliance issues.",
+    "ref": "PMBOK 8, Standard 1.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 29,
+        "label": "PMBOK 8, Standard 1.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A product fails a safety regulation after launch and must be recalled. In cost of quality terms, what is the recall?",
+    "options": [
+      "A prevention cost",
+      "An appraisal cost",
+      "A cost of conformance to the rules",
+      "An external failure cost"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Failures found after the product reaches the customer are external failure costs: liabilities, warranty work, returns, lost business. They are part of the cost of nonconformance.",
+    "ref": "PMBOK 8, Guide section 5, Cost of quality (CoQ)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Cost of quality (CoQ)"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Two compliance requirements compete for limited effort. A breach of one would stop the product's sale; a breach of the other would need a minor form. How should effort be allocated?",
+    "options": [
+      "More effort where a breach would be most severe",
+      "Equal effort, since all rules have equal weight",
+      "Most effort on the requirement easiest to meet",
+      "No effort until an auditor raises a finding"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Analyzing the consequences of noncompliance, like a risk, shows where effort matters most. Both requirements must still be met.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "The business case for a new building says nothing about sustainability. What should the project manager do?",
+    "options": [
+      "Ignore it, since it is not in the formal documents",
+      "Add sustainability goals without asking anyone",
+      "Raise them, and seek the sponsor's confirmation",
+      "Leave them to the operations team after handover"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Sustainability goals should be included in formal documents such as the business case and confirmed by the sponsor. If they are not, the project manager should still encourage discussion of their impact.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Where should compliance activities, such as assessing the CO2 emissions of project work, appear in the plan?",
+    "options": [
+      "Only in the final report after closure",
+      "In the WBS or the backlog",
+      "In the team charter's ground rules",
+      "Nowhere, as they belong to operations"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Table 2-6: the WBS or backlog should include activities to manage sustainability, such as assessing and managing CO2 emissions or the impact on local biodiversity.",
+    "ref": "PMBOK 8, Guide 2.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 151,
+        "label": "PMBOK 8, Guide 2.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A project would remove trees on its site. Following the sustainability pyramid, which response is the most desirable?",
+    "options": [
+      "Pay a fee to a fund that offsets the loss",
+      "Replant the area afterwards",
+      "Remove fewer trees than planned",
+      "Redesign to avoid removing trees"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "The pyramid, from most to least desirable: avoid negative outcomes altogether, minimize them, restore their impacts, compensate or offset them.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "When does the Standard say compliance can be monitored on a project?",
+    "options": [
+      "During planning, execution and closure",
+      "Only at the final acceptance meeting",
+      "Only when the regulator visits the site",
+      "Only during the first phase"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Sustainability-related KPIs may be included in the charter, business case or contracts, and compliance can be monitored during project planning, execution and closure.",
+    "ref": "PMBOK 8, Standard 3.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 73,
+        "label": "PMBOK 8, Standard 3.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which of these is a measurable way to check how far the project complies?",
+    "options": [
+      "The sponsor's personal impression",
+      "The number of meetings held",
+      "Open audit findings and compliance KPIs",
+      "The length of the requirements document"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Measurable criteria such as KPIs, quality metrics and audit findings on nonconformities show the extent of compliance.",
+    "ref": "PMBOK 8, Guide section 4, Quality metrics",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 234,
+        "label": "PMBOK 8, Guide section 4, Quality metrics"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Before the project closes, which obligations must it verify as met?",
+    "options": [
+      "Only those that the customer has complained about so far",
+      "Contractual, regulatory, legal, social and environmental",
+      "Only the internal reporting templates",
+      "Only the obligations in the team charter"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Closure verifies that all contractual, regulatory, legal, social and environmental obligations have been met.",
+    "ref": "PMBOK 8, Guide 2.1.6.9.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 137,
+        "label": "PMBOK 8, Guide 2.1.6.9.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A subcontractor's work must meet the same safety rules as the project's own work. How can the project make sure of this?",
+    "options": [
+      "Trust the subcontractor's own word on all safety",
+      "Put the rules in the contract and inspect the work",
+      "Exclude safety from the subcontractor's scope",
+      "Check only after an accident has happened"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The rules belong in the procurement agreement; inspections are structured reviews of the contractor's work, and audit rights are written into the contract.",
+    "ref": "PMBOK 6, 12.3.2.4",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 483,
+        "label": "PMBOK 6, 12.3.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "How should the project treat the new labeling regulation?",
+    "case": "food-line",
+    "options": [
+      "Ignore it, as it takes effect only after work starts",
+      "Add it to the requirements and manage it as a risk",
+      "Ask the contractor to decide whether it applies",
+      "Delay the line until the rule changes again"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "A new regulation is a compliance requirement and a threat to compliance: add it to the requirements, assess it, and manage it in the risk register.",
+    "ref": "Risk Management: A Practice Guide, 7.3.3",
+    "links": [
+      {
+        "book": "riskguide",
+        "page": 115,
+        "label": "Risk Management: A Practice Guide, 7.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "What should happen to the contractor's proposal to skip the hygiene inspection of one machine?",
+    "case": "food-line",
+    "options": [
+      "Accept it to meet the trade-fair date",
+      "Accept it if the contractor signs a written waiver first",
+      "Reject it; the inspection is a legal requirement",
+      "Let the sales team decide because of the trade fair"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Food safety rules are external compliance requirements that a waiver cannot remove. Noncompliance could stop the line and harm public health; the date must be protected another way.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "How can the project best measure its water-use commitment?",
+    "case": "food-line",
+    "options": [
+      "A KPI for water use per unit, checked through the project",
+      "The sponsor's impression at the handover meeting",
+      "Counting the meetings held about water",
+      "A single reading after the line has been running for a year"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Sustainability-related KPIs can be written into the charter, business case or contracts, and compliance monitored during planning, execution and closure.",
+    "ref": "PMBOK 8, Standard 3.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 73,
+        "label": "PMBOK 8, Standard 3.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO are external sources of compliance requirements?",
+    "type": "multi",
+    "options": [
+      "Government regulations",
+      "Industry standards",
+      "The PMO's templates",
+      "The project's change control procedure",
+      "The team charter"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Government or industry standards and regulations are external enterprise environmental factors. Templates and procedures are internal organizational process assets; the team charter is the team's own agreement.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are threats to compliance?",
+    "type": "multi",
+    "options": [
+      "Rules that change in the middle of the project",
+      "No regulatory expertise on the team",
+      "Skipping tests under schedule pressure",
+      "A definition of done that includes compliance",
+      "Auditors involved early in backlog reviews",
+      "Evidence captured automatically"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "hybrid",
+    "explanation": "Changing standards, missing compliance competence and shortcuts under pressure threaten compliance. The other three are methods that support it.",
+    "ref": "Risk Management: A Practice Guide, 7.2.2",
+    "links": [
+      {
+        "book": "riskguide",
+        "page": 108,
+        "label": "Risk Management: A Practice Guide, 7.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO practices does the Agile Practice Guide suggest for compliance in agile work?",
+    "type": "multi",
+    "options": [
+      "Bring compliance roles into backlog reviews early",
+      "Automate evidence capture where practical",
+      "Hold only one large review at the very end",
+      "Keep compliance out of the definition of done",
+      "Remove all documentation from the work"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Bring audit, security and compliance roles in early, use small frequent check-ins and concise checklists, and automate evidence capture; the DoD may include compliance.",
+    "ref": "Agile Practice Guide, 5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 89,
+        "label": "Agile Practice Guide, 5.4"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each compliance category with an example.",
+    "type": "match",
+    "left": [
+      "Security and data privacy",
+      "Health and safety",
+      "Sustainability",
+      "Contractual"
+    ],
+    "right": [
+      "Protecting customers' personal data",
+      "Protective equipment on the site",
+      "Cutting the line's energy use",
+      "Meeting an agreed service level"
+    ],
+    "approach": "predictive",
+    "explanation": "Other categories are regulatory and legal requirements, industry and quality standards, and organizational policies.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about compliance.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "In the sustainability pyramid, the most desirable response to a negative impact is to",
+        "choices": [
+          "compensate for it",
+          "avoid it",
+          "restore it"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "A law that applies to the project is one of the",
+        "choices": [
+          "organizational process assets",
+          "team charter rules",
+          "enterprise environmental factors"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Compliance can be monitored during",
+        "choices": [
+          "planning, execution and closure",
+          "closure only",
+          "the first phase only"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Avoid comes first in the pyramid; laws are external enterprise environmental factors; compliance is monitored throughout.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  }
+]

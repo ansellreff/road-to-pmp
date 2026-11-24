@@ -43,5 +43,15 @@
     "id": "library-app",
     "title": "Handing over a library's lending app",
     "text": "A city library's project to launch a new lending app is ending. The app passed acceptance, and the vendor's final invoice is waiting for payment. One vendor claim for extra integration work is still open.\n\nThe operations team that will support the app has not been trained, and its support hours have not been agreed. The library's business case expected the app to double online loans within a year."
+  },
+  {
+    "id": "food-line",
+    "title": "A new food production line",
+    "text": "A food company is building a new production line. National food safety rules apply to every machine, and the company has publicly committed to cut the line's water use by 30% compared with the old line.\n\nThe contractor installing the equipment proposes to skip the hygiene inspection of one machine so the line can be shown at a trade fair. A new labeling regulation will take effect two months before the line is due to open."
+  },
+  {
+    "id": "hotel-renovation",
+    "title": "Renovating a hotel",
+    "text": "A hotel is being renovated to a fixed plan, with approved scope, schedule and cost baselines. A change control board meets every two weeks. The owner's marketing director has asked the site foreman directly to add a rooftop bar, and the foreman has already started ordering materials.\n\nAt the same time, an agile team is building the hotel's new booking app in two-week iterations. The front desk has asked for a group-booking feature."
   }
 ]
