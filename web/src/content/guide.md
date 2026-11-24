@@ -299,8 +299,8 @@ The same choices are in **Settings**, under **Display**.
 2. Choose what to change:
    - **Display:** theme (Light, Dark) and text size (Normal, Large, Larger);
    - **Account and sync:** who is signed in, and a button to sign in or open your account;
-   - **Books on this device:** **Save all books on this device**, how many are saved, and **Remove the books from
-     this device**;
+   - **Books on this device:** **Save all books on this device**, how many are saved, and the list of saved books:
+     tick the ones to remove (or **Tick all**), then press **Remove the ticked books**;
    - **Your saved progress:** **Download backup**, **Restore from backup** and **Delete all progress**;
    - **Certifications and exam days:** mark a certification as passed or take the mark off, and see each exam day.
 
@@ -309,7 +309,8 @@ The same choices are in **Settings**, under **Display**.
   stops it; the books saved so far stay.
 - Each book saved counts once towards the month's 4 GB of book downloads.
 - On this PC the books open from your PMI Learning Material folder, so there is nothing to save.
-- **Delete all progress** and **Remove the books from this device** ask first.
+- **Delete all progress** and removing books ask first. A removed book stays online and is saved again the next
+  time you open it.
 - The exam day is set in the **Study plan**.
 
 **Example.** At home on Wi-Fi, sign in on your phone, open **Settings** and press **Save all books on this device**.

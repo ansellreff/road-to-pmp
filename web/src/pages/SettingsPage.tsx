@@ -100,6 +100,69 @@ function Account() {
   )
 }
 
+/** The books saved on this device, each with a tick box, and a button that removes the ticked ones. */
+function SavedList({ saved, onRemoved }: { saved: Record<string, number>; onRemoved: (text: string) => void }) {
+  const [chosen, setChosen] = useState<string[]>([])
+  const [asking, setAsking] = useState(false)
+  const list = Object.keys(books).filter((book) => book in saved)
+  // A book removed elsewhere (or by signing out) drops out of the choice too.
+  const ticked = chosen.filter((book) => list.includes(book))
+  if (list.length === 0) return null
+  const all = ticked.length === list.length
+  const toggle = (book: string) => setChosen(ticked.includes(book) ? ticked.filter((b) => b !== book) : [...ticked, book])
+  const names = ticked.map((book) => books[book].title)
+
+  return (
+    <fieldset className="mt-5">
+      <legend className="font-medium">The saved books: tick the ones to remove</legend>
+      <ul className="mt-2">
+        {list.map((book) => (
+          <li key={book}>
+            <label className="flex min-h-11 cursor-pointer items-center gap-3">
+              <input type="checkbox" checked={ticked.includes(book)} onChange={() => toggle(book)} className="h-5 w-5 shrink-0 accent-plan" />
+              <span>
+                {books[book].title} <span className="text-muted">({megabytes(saved[book])} MB)</span>
+              </span>
+            </label>
+          </li>
+        ))}
+      </ul>
+      <div className="mt-3 flex flex-wrap gap-2">
+        <button type="button" onClick={() => setChosen(all ? [] : list)} className={btnQuiet}>
+          {all ? 'Untick all' : 'Tick all'}
+        </button>
+        <button type="button" onClick={() => setAsking(true)} disabled={ticked.length === 0} className={btnDanger}>
+          {ticked.length ? `Remove the ${ticked.length === 1 ? 'ticked book' : `${ticked.length} ticked books`}` : 'Remove the ticked books'}
+        </button>
+      </div>
+      {asking && (
+        <MessageDialog
+          title={ticked.length === 1 ? 'Remove this book from this device?' : `Remove ${ticked.length} books from this device?`}
+          onClose={() => setAsking(false)}
+          action={
+            <button
+              type="button"
+              className={btnDanger}
+              onClick={async () => {
+                setAsking(false)
+                await removeBooks(ticked)
+                setChosen([])
+                onRemoved(
+                  `Removed from this device: ${names.join(', ')}. ${ticked.length === 1 ? 'It is' : 'They are'} still online, and saved again when opened.`,
+                )
+              }}
+            >
+              {ticked.length === 1 ? 'Remove the book' : 'Remove the books'}
+            </button>
+          }
+        >
+          {names.join(', ')}. Removed from this device only: your progress stays, and the online copies too.
+        </MessageDialog>
+      )}
+    </fieldset>
+  )
+}
+
 interface Saving {
   index: number
   count: number
@@ -113,7 +176,6 @@ function Books() {
   const [saved, setSaved] = useState<Record<string, number> | null>(null)
   const [saving, setSaving] = useState<Saving | null>(null)
   const [message, setMessage] = useState('')
-  const [asking, setAsking] = useState(false)
   const stop = useRef<AbortController | null>(null)
 
   useEffect(() => {
@@ -129,7 +191,13 @@ function Books() {
   useEffect(() => () => stop.current?.abort(), [])
 
   if (onThisPc) {
-    return <p>On this PC every book opens straight from your PMI Learning Material folder, so there is nothing to save.</p>
+    return (
+      <>
+        <p>On this PC every book opens straight from your PMI Learning Material folder, so there is nothing to save.</p>
+        {saved && <SavedList saved={saved} onRemoved={setMessage} />}
+        {message && <p className="mt-3 text-sm">{message}</p>}
+      </>
+    )
   }
   if (!sync.email) {
     return (
@@ -195,11 +263,6 @@ function Books() {
           <button type="button" onClick={saveAll} disabled={saved === null || missing.length === 0} className={btnPrimary}>
             {missing.length === all.length ? 'Save all books on this device' : 'Save the other books on this device'}
           </button>
-          {done.length > 0 && (
-            <button type="button" onClick={() => setAsking(true)} className={btnDanger}>
-              Remove the books from this device
-            </button>
-          )}
         </div>
       )}
       {message && <p className="mt-3 text-sm">{message}</p>}
@@ -207,39 +270,7 @@ function Books() {
         All {all.length} books together are about {ALL_BOOKS_MB} MB. Each book saved counts once towards the month's 4 GB of
         book downloads, which keeps the project in Supabase's free plan. Signing out removes the saved books.
       </p>
-      {done.length > 0 && (
-        <details className="mt-3">
-          <summary className={`${link} cursor-pointer text-sm`}>The saved books</summary>
-          <ul className="mt-2 space-y-1 text-sm">
-            {done.map((book) => (
-              <li key={book}>
-                {books[book].title} <span className="text-muted">({megabytes(saved?.[book] ?? 0)} MB)</span>
-              </li>
-            ))}
-          </ul>
-        </details>
-      )}
-      {asking && (
-        <MessageDialog
-          title="Remove the books from this device?"
-          onClose={() => setAsking(false)}
-          action={
-            <button
-              type="button"
-              className={btnDanger}
-              onClick={async () => {
-                setAsking(false)
-                await removeBooks()
-                setMessage('The books were removed from this device. They are still online, and open again when you are signed in.')
-              }}
-            >
-              Remove the books
-            </button>
-          }
-        >
-          The {done.length} saved books are removed from this device only. Your progress stays, and the online copies too.
-        </MessageDialog>
-      )}
+      {saved && !saving && <SavedList saved={saved} onRemoved={setMessage} />}
     </>
   )
 }

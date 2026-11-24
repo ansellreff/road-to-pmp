@@ -9,7 +9,8 @@ Each version of Road to PMP, newest first, with what you will notice.
   here from the bottom of the home page. **Delete all progress** now asks in a window of the app.
 - **Books open faster on the website:** the first time a book opens on a device it is saved there, with a line
   showing how far it has got; after that it opens at once. **Save all books on this device** in Settings saves all
-  19 (about 160 MB) in one go, and they can be removed again. Signing out removes them.
+  19 (about 160 MB) in one go. To remove books, tick the ones you choose in the list (or **Tick all**). Signing out
+  removes them all.
 
 - **PMP formula sheet:** open **Formulas** on any PMP page for earned value, estimates and budget, the critical
   path, velocity and WSJF, communication channels, EMV and decision trees, and the Eighth Edition's principles,

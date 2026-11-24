@@ -122,8 +122,12 @@ export function megabytes(bytes: number): string {
   return mb < 10 ? mb.toFixed(1) : String(Math.round(mb))
 }
 
-/** Removes every book saved on this device (Settings), and tells the open pages. */
-export async function removeBooks(): Promise<void> {
-  await removeSavedBooks()
+/** Removes the chosen books from this device (Settings), or every book when none are named, and tells the open pages. */
+export async function removeBooks(chosen?: string[]): Promise<void> {
+  if (!chosen) await removeSavedBooks()
+  else if (available()) {
+    const cache = await caches.open(BOOK_CACHE)
+    for (const book of chosen) await cache.delete(key(book))
+  }
   changed()
 }

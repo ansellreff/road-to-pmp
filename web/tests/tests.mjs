@@ -871,21 +871,45 @@ export const tests = {
     await page.getByRole('main').getByRole('link', { name: 'Settings', exact: true }).waitFor()
   },
 
-  async 'books on this device: a saved book is found again and can be removed'(page) {
+  async 'books on this device: a saved book is found again, and the ticked books can be removed'(page) {
     await page.goto('/settings')
+    // Two books saved the way the reader saves them on the website.
     const result = await page.evaluate(async () => {
       const store = await import('/src/lib/bookStore.ts')
-      const pdf = await (await fetch('/books/scrum.pdf')).blob()
       const cache = await caches.open('road-to-pmi-books')
-      await cache.put('/saved-books/scrum.pdf', new Response(pdf, { headers: { 'Content-Length': String(pdf.size) } }))
+      const sizes = {}
+      for (const book of ['scrum', 'ethics']) {
+        const pdf = await (await fetch(`/books/${book}.pdf`)).blob()
+        await cache.put(`/saved-books/${book}.pdf`, new Response(pdf, { headers: { 'Content-Length': String(pdf.size) } }))
+        sizes[book] = pdf.size
+      }
       const listed = await store.savedBooks()
       const data = await store.savedBook('scrum')
-      await store.removeBooks()
-      return { size: pdf.size, listed, read: data?.byteLength ?? 0, after: Object.keys(await store.savedBooks()).length, missing: (await store.savedBook('scrum')) === undefined }
+      return { sizes, listed, read: data?.byteLength ?? 0 }
     })
-    expect(result.size > 1000 && result.listed.scrum === result.size, 'the saved book was not listed with its size')
-    expect(result.read === result.size, 'the saved book could not be read back whole')
-    expect(result.after === 0 && result.missing, 'removing the books left one behind')
+    expect(result.sizes.scrum > 1000 && result.listed.scrum === result.sizes.scrum, 'the saved book was not listed with its size')
+    expect(result.read === result.sizes.scrum, 'the saved book could not be read back whole')
+    // Settings lists both with a tick box; removing the ticked one keeps the other.
+    await page.reload()
+    const list = page.getByRole('group', { name: 'The saved books: tick the ones to remove' })
+    await list.getByRole('checkbox').nth(1).waitFor()
+    expect((await list.getByRole('checkbox').count()) === 2, 'Settings does not list the two saved books')
+    expect(await button(page, 'Remove the ticked books').isDisabled(), 'Remove was possible with nothing ticked')
+    await list.getByRole('checkbox', { name: /Scrum/ }).check()
+    await button(page, 'Remove the ticked book').click()
+    await page.getByRole('dialog', { name: 'Remove this book from this device?' }).getByRole('button', { name: 'Remove the book' }).click()
+    await see(page, 'Removed from this device: ')
+    await page.waitForFunction(async () => {
+      const keys = (await (await caches.open('road-to-pmi-books')).keys()).map((r) => new URL(r.url).pathname)
+      return keys.length === 1 && keys[0] === '/saved-books/ethics.pdf'
+    })
+    expect((await list.getByRole('checkbox').count()) === 1, 'the removed book is still listed')
+    // Tick all, then remove: nothing is left.
+    await button(page, 'Tick all').click()
+    await button(page, 'Remove the ticked book').click()
+    await page.getByRole('dialog', { name: 'Remove this book from this device?' }).getByRole('button', { name: 'Remove the book' }).click()
+    await page.waitForFunction(async () => (await (await caches.open('road-to-pmi-books')).keys()).length === 0)
+    expect((await list.count()) === 0, 'the list stayed after the last book was removed')
   },
 
   async 'PMP formula sheet: opens from the top bar on a PMP page and links to the lesson'(page) {

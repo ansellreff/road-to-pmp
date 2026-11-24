@@ -11,7 +11,7 @@ these are compared before and after.
 | Text size | **Settings**, Display; also top right: the three **A** buttons | Normal, large, larger | Normal | This browser only; not synced |
 | Exam day | **Study plan** (shown in **Settings**, Certifications and exam days) | Any date | None (no plan) | Your progress, so it is in backups and sync |
 | Passed certifications | **Settings**, Certifications and exam days; also each certification's page | Passed, not passed | Not passed | Your progress, so it is in backups and sync |
-| Books on this device | **Settings**, Books on this device (website only, signed in) | Save all, remove all; a book opened is saved by itself | None saved | This browser only; removed on sign out |
+| Books on this device | **Settings**, Books on this device (website only, signed in) | Save all; remove the ticked books; a book opened is saved by itself | None saved | This browser only; removed on sign out |
 | Backup and restore | **Settings**, Your saved progress (was at the bottom of the home page) | Download, restore, delete all | | A file you keep |
 
 The certification you opened last is remembered by itself, so the menus follow it. It is not a setting.
