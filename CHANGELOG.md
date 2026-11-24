@@ -7,6 +7,15 @@ Each version of Road to PMP, newest first, with what you will notice.
 - **PMP formula sheet:** open **Formulas** on any PMP page for earned value, estimates and budget, the critical
   path, velocity and WSJF, communication channels, EMV and decision trees, and the Eighth Edition's principles,
   domains, focus areas and 40 processes. Each line links to its lesson.
+- **Sign in at the top right** of every page, where websites usually put it. Signed in, it reads **Account** and
+  opens sync, the password and sign out. It is no longer at the bottom of the home page.
+- **On a phone the top bar is one row:** the magnifier opens search, the half-filled circle opens text size and theme.
+  Pages keep more of the screen, and the first visit loads faster.
+- **Dashboard:** one certification at a time, with tabs for CAPM and PMP; it opens on the one you are studying.
+- **Study plan:** the exam day shows as 3 Jan 2027 like every date in the app; type it or pick it from the calendar.
+- **Book reader:** search inside a book, select and copy text, pinch to zoom on a phone, finer zoom steps, a button
+  back to the source page, and the last page read is remembered per book.
+- Windows such as **Sign in first** dim the page behind them more clearly in the dark theme.
 - **Softer theme switch:** Dark and Light now fade into each other over half a second instead of flashing.
 - **Book reader:** the top bar and the page controls stay at the top while you scroll through a book, so the menu
   and the page box are always at hand. On a phone the page controls fit on one row.

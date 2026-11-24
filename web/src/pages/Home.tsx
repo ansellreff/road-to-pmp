@@ -4,7 +4,6 @@ import ExamBlueprint from '../components/ExamBlueprint'
 import Icon, { type IconName } from '../components/Icon'
 import Milestone from '../components/Milestone'
 import Ring from '../components/Ring'
-import SyncPanel from '../components/SyncPanel'
 import { allModules, certifications, courses, findModule, getExams, getSheet, startedCourses, type Course } from '../lib/content'
 import { buildPlan, formatDay, planMockExams } from '../lib/plan'
 import { readiness } from '../lib/readiness'
@@ -48,7 +47,6 @@ export default function Home() {
       ))}
 
       <CertificationPath progress={progress} />
-      <SyncPanel />
       <Backup />
     </div>
   )

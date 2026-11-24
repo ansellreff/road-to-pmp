@@ -29,6 +29,13 @@ export async function seed(page, change) {
   )
 }
 
+/** Open the account window at the top right (sign in, sync, sign out), unless it is open already. */
+async function account(page) {
+  if (await page.getByRole('dialog').count()) return
+  await page.getByRole('button', { name: /^(Sign in or create an account|Your account, signed in as)/ }).click()
+  await page.getByRole('dialog').waitFor()
+}
+
 /** An answer option, by its letter. */
 export const option = (page, letter) => page.getByRole('button', { name: new RegExp(`^${letter} `) })
 /** Waits until that option is the selected one (real exam mode). */
@@ -743,8 +750,44 @@ export const tests = {
     await tab.getByRole('button', { name: 'Next page' }).click()
     await tab.waitForFunction(() => document.querySelector('#reader-page')?.value === '313')
     await tab.getByRole('button', { name: 'Make pages larger', exact: true }).click()
-    await tab.getByText('125%').waitFor()
+    await tab.getByText('125%').first().waitFor()
     await tab.close()
+  },
+
+  async 'study plan date as "3 Jan 2027"; dashboard tabs; compact top bar and sign-in on a phone'(page) {
+    // The exam day is shown the way every date is written, and a typed day in words is understood.
+    await page.goto('/plan')
+    const field = page.getByLabel('Exam day').first()
+    await field.fill('3 Jan 2030')
+    await see(page, 'Days to the exam')
+    expect((await saved(page)).examDates.capm === '2030-01-03', 'the exam day typed in words was not saved')
+    await page.getByRole('heading', { name: 'Study plan' }).click()
+    expect((await field.inputValue()) === '3 Jan 2030', `the exam day shows as ${await field.inputValue()}`)
+    await field.fill('31 Feb 2030')
+    await page.getByRole('heading', { name: 'Study plan' }).click()
+    await see(page, 'Type a day such as 3 Jan 2027, or use the calendar.')
+    // The dashboard shows one certification at a time, with a tab for each.
+    await page.goto('/dashboard')
+    await page.getByRole('tab', { name: 'CAPM', selected: true }).waitFor()
+    await page.getByRole('tab', { name: 'PMP' }).click()
+    await page.getByRole('tabpanel', { name: 'PMP' }).getByText('Readiness estimate').waitFor()
+    // On a phone the top bar is one row of buttons; search and the display settings open on their own row.
+    await page.setViewportSize({ width: 390, height: 844 })
+    await page.goto('/')
+    const search = page.getByRole('combobox', { name: 'Search lessons and flashcards' })
+    expect(!(await search.isVisible()), 'the search box takes a row on a phone before it is asked for')
+    await page.getByRole('button', { name: 'Search', exact: true }).click()
+    await search.waitFor()
+    expect(await search.evaluate((el) => el === document.activeElement), 'opening search did not put the cursor in the box')
+    await page.getByRole('button', { name: 'Text size and theme' }).click()
+    await page.getByRole('button', { name: 'Larger text' }).waitFor()
+    const height = await page.locator('header').evaluate((el) => el.getBoundingClientRect().height)
+    await page.getByRole('button', { name: 'Text size and theme' }).click()
+    const closed = await page.locator('header').evaluate((el) => el.getBoundingClientRect().height)
+    expect(closed < 130 && closed < height, `the closed top bar is ${closed}px high on a phone`)
+    // Sign in sits at the top right and opens the account window.
+    await page.getByRole('button', { name: 'Sign in or create an account' }).click()
+    await page.getByRole('dialog', { name: 'Sign in' }).getByLabel('Email address').waitFor()
   },
 
   async 'PMP formula sheet: opens from the top bar on a PMP page and links to the lesson'(page) {
@@ -883,6 +926,7 @@ export const tests = {
 
     // A wrong code is refused with a clear message; the right one signs in and uploads.
     await page.goto('/')
+    await account(page)
     await page.getByLabel('Email address').fill('learner@example.com')
     await button(page, 'Send the sign-in email').click()
     await page.getByLabel('Code from the email').fill('000000')
@@ -905,6 +949,7 @@ export const tests = {
     pageB.setDefaultTimeout(8000)
     try {
       await pageB.goto('/')
+      await account(pageB)
       await pageB.getByLabel('Email', { exact: true }).fill('learner@example.com')
       await pageB.getByLabel('Password', { exact: true }).fill('wrong password')
       await button(pageB, 'Sign in with the password').click()
@@ -913,6 +958,7 @@ export const tests = {
       await button(pageB, 'Sign in with the password').click()
       await see(pageB, 'Signed in as learner@example.com')
       await page.reload()
+      await account(page)
       await see(page, 'Signed in as learner@example.com')
       await pageB.waitForFunction(([key, lesson]) => JSON.parse(localStorage.getItem(key) ?? '{}').lessons?.[lesson], [KEY, L1])
 
@@ -923,8 +969,10 @@ export const tests = {
       await button(pageB, 'Mark lesson as completed').click()
       await online(remote, (d) => d.lessons[L1] && d.lessons[L2] && d.lessons[L3], 'lessons 1.1, 1.2 and 1.3 merged')
       await page.goto('/')
+      await account(page)
       await button(page, 'Sync now').click()
       await pageB.goto('/')
+      await account(pageB)
       await button(pageB, 'Sync now').click()
       for (const device of [page, pageB]) {
         await device.waitForFunction(
@@ -950,6 +998,7 @@ export const tests = {
       await see(pageB, 'Signed out. Your progress stays on this device.')
       expect(remote.logouts?.join() === 'local', 'signing out on one device would have signed out the others')
       await page.goto('/')
+      await account(page)
       await button(page, 'Sync now').click()
       await see(page, 'Signed in as learner@example.com')
       const before = remote.uploads

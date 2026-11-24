@@ -46,7 +46,7 @@ export interface BookLink {
 
 /** A sentence a person can act on, for a refusal from the project. */
 export function bookError(message: string): string {
-  if (/sign in first|not signed in/i.test(message)) return 'You must sign in first to open the books. Sign in on the home page, then click the link again.'
+  if (/sign in first|not signed in/i.test(message)) return 'You must sign in first to open the books. Press Sign in at the top right, then click the link again.'
   if (/not a book reader/i.test(message)) {
     return 'The online books still use the earlier readers list. Run the new supabase/books.sql in the Supabase SQL editor once (see docs/ACCOUNTS.md).'
   }

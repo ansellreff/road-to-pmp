@@ -113,7 +113,7 @@ every day.
 
 **How to use it.**
 1. Open **Study plan** in the top bar.
-2. Enter your **Exam day**.
+2. Enter your **Exam day**: type it (for example 3 Jan 2027) or press the calendar button beside the box.
 3. The schedule shows what to study each day, and the days kept for final review.
 
 **Rules and limits.**
@@ -131,7 +131,8 @@ every day.
 practise and the modules to revisit.
 
 **How to use it.**
-1. Open **Dashboard** in the top bar.
+1. Open **Dashboard** in the top bar. It opens on the certification you are studying; the tabs **CAPM** and **PMP**
+   switch between them.
 2. Read **Progress by exam domain** to see where you are weakest.
 3. Use **Practice these questions** or **Modules to revisit** to work on that domain.
 
@@ -163,7 +164,7 @@ to it.
 **What it does.** Finds where a term is taught, in the lessons and the flashcards of the certification you are in.
 
 **How to use it.**
-1. Type in the search box at the top. Suggestions appear as you type.
+1. Type in the search box at the top (on a phone, press the magnifier first). Suggestions appear as you type.
 2. Choose one to open that lesson section or flashcard, or press Enter to see every result.
 
 **Rules and limits.**
@@ -180,13 +181,17 @@ to it.
 2. In a quiz, each explanation names its source.
 3. Click **Open the PDF at page …**. The **book reader** opens in a new tab, at that page:
    - on this PC (**start.bat**), with the book from your PMI Learning Material folder;
-   - on the website, with your private online copy, once you are signed in on the home page.
+   - on the website, with your private online copy, once you are signed in (**Sign in**, at the top right).
 4. In the reader, scroll through the book, type a page number and press Enter, or use **Previous page** and **Next
-   page**. **−** and **+** make the pages smaller or larger.
+   page**. **−** and **+** make the pages smaller or larger; on a phone you can also pinch with two fingers.
+5. **Search** finds words in the whole book: type them, press **Find**, and the arrows go from page to page; the
+   words are marked in yellow. Select text on a page to copy it.
+6. When you have moved away from the source page, the button with the arrow and its number takes you back.
 
 **Rules and limits.**
 - On the website, any signed-in account can open the books. Signed out, a link opens a small window, **Sign in
-  first**, with a button that goes to the sign-in on the home page.
+  first**, with a **Sign in** button.
+- Opening a book without a page (for example from your browser's history) continues where you last read it.
 - The first time a book opens on a device, the whole book downloads. Each link stays valid for 7 days on that
   device, so opening the same book again within the week costs nothing extra.
 - **Monthly stop:** the online books stop at 4 GB of downloads a month, 1 GB under the free plan's 5 GB, so Supabase
@@ -216,12 +221,14 @@ PDF at page 312** opens the PMBOK Guide at that table, on this PC or, signed in,
 **Example.** Before you reinstall your browser, press **Download backup**. Afterwards, **Restore from backup** brings
 everything back.
 
-## Sync between your devices
+## Sign in and sync between your devices
 
-**What it does.** Keeps your progress the same on your PC and your phone, through a free online account.
+**What it does.** Keeps your progress the same on your PC and your phone, through a free online account, and lets
+you open the books on the website.
 
 **How to use it.**
-1. On the home page, under **Sync between your devices**, enter your email and press **Send the sign-in email**.
+1. Press **Sign in** at the top right of any page (on a phone: the person icon). Enter your email and press **Send the
+   sign-in email**. A new email creates your account.
 2. Open the link in the email on that device, or type the code from the email and press **Sign in**.
 3. On a device that is signed in, save a password under **Password for your other devices**.
 4. On every other device, use **Sign in with the password**.
@@ -233,6 +240,8 @@ everything back.
 - The free email service sends only a few emails an hour. If one does not arrive, wait before asking again.
 - The free online account is paused after about a week without use. Studying most days keeps it awake.
 - Theme and text size are kept per device and are not synced.
+- Signed in, the button at the top right reads **Account** and opens **Sync now**, the password and **Sign out on
+  this device**. A red dot on it means the last sync failed; open it to read why.
 - **Sign out on this device** stops syncing and leaves your progress on the device.
 
 **Example.** You answer a quiz on your phone on the train. At home you open the site on your PC and the result is
@@ -243,7 +252,8 @@ already there.
 **What it does.** Makes the text larger and switches between a light and a dark screen.
 
 **How to use it.**
-1. At the top right, press one of the three **A** buttons: normal, large or larger text.
+1. At the top right, press one of the three **A** buttons: normal, large or larger text. On a phone, press the
+   half-filled circle first to show them.
 2. Press **Dark** or **Light** to switch the theme.
 
 **Rules and limits.**

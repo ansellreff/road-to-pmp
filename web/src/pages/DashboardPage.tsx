@@ -8,6 +8,7 @@ import { getExams, startedCourses, loadExamQuestions, type Course, type Exam, ty
 import { bandFor, domainScores, examKey, formatDuration, moduleLosses, type ModuleLoss } from '../lib/exam'
 import { dueCount, isKnown, setAttemptDomains, studyStreak, today, useProgress, type ExamAttempt, type Progress } from '../lib/progress'
 import { milestones } from '../lib/milestones'
+import { setCourseId, usePrefs } from '../lib/prefs'
 import { formatDate } from '../lib/plan'
 import { MOCK_SHARE, readiness } from '../lib/readiness'
 import { answerTotals, domainStats, moduleNumber, percent, type DomainStats, type ModuleStats } from '../lib/stats'
@@ -19,6 +20,9 @@ const ACTIVITY_DAYS = 14
 
 export default function DashboardPage() {
   const progress = useProgress()
+  // One certification at a time: the one you are studying (opened last), with a tab for each other one.
+  const { courseId } = usePrefs()
+  const course = startedCourses.find((c) => c.id === courseId) ?? startedCourses[0]
   return (
     <div className="space-y-14">
       <section>
@@ -28,9 +32,31 @@ export default function DashboardPage() {
         </div>
         <Activity progress={progress} />
       </section>
-      {startedCourses.map((course) => (
-        <CourseDashboard key={course.id} course={course} progress={progress} />
-      ))}
+      {course && startedCourses.length > 1 && (
+        <section>
+          {/* The tabs take the place of the certification's heading; the one shown is underlined. */}
+          <div role="tablist" aria-label="Certification" className="flex gap-8 border-b-2 border-ink">
+            {startedCourses.map((c) => (
+              <button
+                key={c.id}
+                type="button"
+                role="tab"
+                aria-selected={c.id === course.id}
+                onClick={() => setCourseId(c.id)}
+                className={`title press -mb-0.5 min-h-12 border-b-4 px-1 text-2xl sm:text-3xl ${
+                  c.id === course.id ? 'border-plan text-ink' : 'border-transparent text-muted hover:text-ink'
+                }`}
+              >
+                {c.title}
+              </button>
+            ))}
+          </div>
+          <div role="tabpanel" aria-label={course.title} className="pt-6">
+            <CourseDashboard key={course.id} course={course} progress={progress} inTabs />
+          </div>
+        </section>
+      )}
+      {course && startedCourses.length === 1 && <CourseDashboard course={course} progress={progress} />}
     </div>
   )
 }
@@ -79,7 +105,7 @@ function Activity({ progress }: { progress: Progress }) {
           return (
             <li key={day} className="flex-1 text-center">
               <span
-                title={`${formatDate(date)}:${active ? 'studied' : 'no study'}`}
+                title={`${formatDate(date)}: ${active ? 'studied' : 'no study'}`}
                 className={`block h-6 rounded-[2px] ${active ? 'bg-plan' : 'bg-line'} ${
                   i === ACTIVITY_DAYS - 1 ? 'ring-2 ring-ink ring-offset-2 ring-offset-paper' : ''
                 }`}
@@ -95,7 +121,8 @@ function Activity({ progress }: { progress: Progress }) {
   )
 }
 
-function CourseDashboard({ course, progress }: { course: Course; progress: Progress }) {
+/** One certification's part of the dashboard. inTabs: shown under the certification tabs, which act as its heading. */
+function CourseDashboard({ course, progress, inTabs = false }: { course: Course; progress: Progress; inTabs?: boolean }) {
   const domains = course.domains.map((d) => domainStats(course, d, progress))
   const missed = domains.reduce((sum, d) => sum + d.missed, 0)
   const revisit = domains
@@ -105,8 +132,8 @@ function CourseDashboard({ course, progress }: { course: Course; progress: Progr
     .slice(0, 8)
 
   return (
-    <section className={section}>
-      <h2 className={sectionTitle}>{course.title}</h2>
+    <section className={inTabs ? '' : section}>
+      {!inTabs && <h2 className={sectionTitle}>{course.title}</h2>}
 
       <ReadinessPanel course={course} progress={progress} />
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { openAccount } from '../lib/account'
 import { books, loadSources, type SourceLink } from '../lib/content'
 import { useSync } from '../lib/sync'
 import { btnPrimary, column, link, note, section, subTitle } from '../lib/ui'
@@ -15,6 +15,11 @@ const onThisPc = import.meta.env.DEV
 function OpenBook({ source, short = false }: { source: SourceLink; short?: boolean }) {
   const sync = useSync()
   const [askSignIn, setAskSignIn] = useState(false)
+  // From the "Sign in first" window straight to the account window of the top bar.
+  const signInNow = () => {
+    setAskSignIn(false)
+    openAccount()
+  }
   const title = books[source.book]?.title ?? source.book
   const label = short ? `Open the PDF at page ${source.page}` : `Open ${title} at PDF page ${source.page}`
   if (onThisPc || sync.email) {
@@ -34,12 +39,12 @@ function OpenBook({ source, short = false }: { source: SourceLink; short?: boole
           title="Sign in first"
           onClose={() => setAskSignIn(false)}
           action={
-            <Link to="/#sync" className={btnPrimary}>
-              Go to sign in
-            </Link>
+            <button type="button" onClick={signInNow} className={btnPrimary}>
+              Sign in
+            </button>
           }
         >
-          You must sign in first to open the books. Sign in on the home page with your email, then click the link again.
+          You must sign in first to open the books. Press Sign in, here or at the top right, then click the link again.
         </MessageDialog>
       )}
     </>
@@ -52,7 +57,7 @@ function sourcesNote(signedIn: boolean): string {
   if (signedIn) {
     return 'Each link opens the book reader in a new tab, at the page where that section starts, with the PDF from your private online copy.'
   }
-  return 'Each link opens the PDF at the page where that section starts, once you are signed in on the home page.'
+  return 'Each link opens the PDF at the page where that section starts, once you are signed in (Sign in, at the top right).'
 }
 
 /** One source: its text reference, with the link on the line below. */

@@ -5,7 +5,7 @@ import App from './App'
 import './index.css'
 import { startSync } from './lib/sync'
 
-// Sync is optional and does nothing until you sign in on the home page.
+// Sync is optional and does nothing until you sign in (Sign in, at the top right of every page).
 startSync()
 
 createRoot(document.getElementById('root')!).render(

@@ -39,7 +39,7 @@ Makes the source links open your books on the website too, for every signed-in a
 3. Open **Storage** in the left menu, then the bucket **books** (it shows a lock: private). Press **Upload files**, go to
    `D:\Claude Project\Road to PMI PMP\.cache\books-upload`, select all 19 PDFs (Ctrl+A), and press **Open**. Wait
    until all 19 are listed. Keep the file names as they are (for example `pmbok8.pdf`).
-4. On the website, sign in on the home page, open any lesson and click **Open the PDF at page …**.
+4. On the website, press **Sign in** at the top right, open any lesson and click **Open the PDF at page …**.
 
 The folder `.cache\books-upload` is a copy made for this upload. Once the books open on the website, it can be
 deleted (ask Claude to). To replace a book later, upload it again with the same name.

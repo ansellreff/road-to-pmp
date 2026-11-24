@@ -56,9 +56,12 @@ export default function SearchBox() {
   const [active, setActive] = useState(0)
   const [entries, setEntries] = useState<SearchEntry[]>(moduleEntries)
 
-  // Fetch the search file in the background once the page is idle, so typing is answered at once.
+  // Fetch the search file in the background once the page is idle, so typing is answered at once. On a phone,
+  // where the box is hidden behind the search button, it is fetched only when the box is opened (onFocus).
   useEffect(() => {
-    const load = () => loadSearchIndex().then(setEntries)
+    const load = () => {
+      if (box.current?.offsetParent !== null) void loadSearchIndex().then(setEntries)
+    }
     const idle = window.requestIdleCallback?.(load, { timeout: 3000 }) ?? window.setTimeout(load, 1200)
     return () => (window.cancelIdleCallback ? window.cancelIdleCallback(idle) : window.clearTimeout(idle))
   }, [])

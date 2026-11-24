@@ -1,9 +1,11 @@
+import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import Icon from '../components/Icon'
 import Milestone from '../components/Milestone'
 import { Figures, Notice, PageHeader } from '../components/Page'
 import { getExams, startedCourses, type Course, type ModuleMeta } from '../lib/content'
 import { examKey } from '../lib/exam'
-import { addDays, buildPlan, daysBetween, formatDay, planMockExams, type PlanItem, type StudyPlan } from '../lib/plan'
+import { addDays, buildPlan, daysBetween, formatDate, formatDay, planMockExams, type PlanItem, type StudyPlan } from '../lib/plan'
 import { dueByDay, moduleCompletion, moduleKey, setExamDate, today, useProgress, type Progress } from '../lib/progress'
 import { moduleNumber, percent, remainingModules } from '../lib/stats'
 import { toast } from '../lib/toast'
@@ -27,6 +29,85 @@ export default function PlanPage() {
   )
 }
 
+const MONTHS = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec']
+
+/** A typed day as "2027-01-03", from "2027-01-03" or "3 Jan 2027" (month in full or short); undefined if it is no real day. */
+function parseDay(text: string): string | undefined {
+  const t = text.trim().toLowerCase()
+  const iso = /^(\d{4})-(\d{1,2})-(\d{1,2})$/.exec(t)
+  const written = /^(\d{1,2})\s+([a-z]{3})[a-z]*\.?,?\s+(\d{4})$/.exec(t)
+  const [y, m, d] = iso ? [+iso[1], +iso[2], +iso[3]] : written ? [+written[3], MONTHS.indexOf(written[2]) + 1, +written[1]] : [0, 0, 0]
+  const date = new Date(y, m - 1, d)
+  if (!y || date.getFullYear() !== y || date.getMonth() !== m - 1 || date.getDate() !== d) return undefined
+  return `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`
+}
+
+const shownDay = (day: string) => (day ? formatDate(new Date(`${day}T00:00`)) : '')
+
+/**
+ * The exam day, shown as "3 Jan 2027" like every date in the app. Type it (3 Jan 2027, or 2027-01-03) or pick it
+ * from the browser's calendar with the button beside it.
+ */
+function ExamDayField({ id, value, min, onChange }: { id: string; value: string; min: string; onChange: (day: string) => void }) {
+  const [text, setText] = useState<string>()
+  const [problem, setProblem] = useState('')
+  const calendar = useRef<HTMLInputElement>(null)
+  const save = (day: string) => {
+    if (day < min) return setProblem('Choose a day after today.')
+    setProblem('')
+    if (day !== value) {
+      onChange(day)
+      toast('Exam day saved')
+    }
+  }
+  return (
+    <div>
+      <label htmlFor={id} className="block text-sm font-medium">
+        Exam day
+      </label>
+      <div className="relative mt-1 flex items-center gap-2">
+        <input
+          id={id}
+          value={text ?? shownDay(value)}
+          placeholder="e.g. 3 Jan 2027"
+          autoComplete="off"
+          aria-describedby={problem ? `${id}-problem` : undefined}
+          onFocus={() => setText(shownDay(value))}
+          onChange={(event) => {
+            setText(event.target.value)
+            const day = parseDay(event.target.value)
+            if (day) save(day)
+          }}
+          onBlur={() => {
+            if (text?.trim() && !parseDay(text)) setProblem('Type a day such as 3 Jan 2027, or use the calendar.')
+            setText(undefined)
+          }}
+          className={`${input} w-44`}
+        />
+        <button type="button" onClick={() => calendar.current?.showPicker?.()} className={btnQuiet} aria-label="Pick on a calendar" title="Pick on a calendar">
+          <Icon name="plan" size={18} />
+        </button>
+        {/* The browser's own calendar, opened by the button; it is never shown itself. */}
+        <input
+          ref={calendar}
+          type="date"
+          tabIndex={-1}
+          aria-hidden="true"
+          value={value}
+          min={min}
+          onChange={(event) => event.target.value && save(event.target.value)}
+          className="pointer-events-none absolute size-px opacity-0"
+        />
+      </div>
+      {problem && (
+        <p id={`${id}-problem`} role="alert" className="mt-1 text-sm text-critical">
+          {problem}
+        </p>
+      )}
+    </div>
+  )
+}
+
 function CoursePlan({ course, progress }: { course: Course; progress: Progress }) {
   const now = today()
   const examDate = progress.examDates[course.id] ?? ''
@@ -39,22 +120,7 @@ function CoursePlan({ course, progress }: { course: Course; progress: Progress }
       <h2 className={sectionTitle}>{course.title}</h2>
 
       <div className="mt-5 flex flex-wrap items-end gap-3">
-        <div>
-          <label htmlFor={inputId} className="block text-sm font-medium">
-            Exam day
-          </label>
-          <input
-            id={inputId}
-            type="date"
-            value={examDate}
-            min={addDays(now, 1)}
-            onChange={(e) => {
-              setExamDate(course.id, e.target.value)
-              if (e.target.value) toast('Exam day saved')
-            }}
-            className={`${input} mt-1`}
-          />
-        </div>
+        <ExamDayField id={inputId} value={examDate} min={addDays(now, 1)} onChange={(day) => setExamDate(course.id, day)} />
         {examDate && (
           <button
             className={btnQuiet}

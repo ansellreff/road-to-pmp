@@ -1,26 +1,20 @@
-import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { useState } from 'react'
 import { cancelSignIn, confirmCode, requestSignIn, setPassword, signInWithPassword, signOut, syncNow, useSync } from '../lib/sync'
-import { btnPrimary, btnQuiet, input, note, section, subTitle } from '../lib/ui'
+import { btnPrimary, btnQuiet, input, note } from '../lib/ui'
 import Icon from './Icon'
 
-/** Sign in to keep progress the same on every device. Optional; without it nothing leaves this browser. */
+/**
+ * Sign in to keep progress the same on every device, and to open the books on the website. Optional; without
+ * it nothing leaves this browser. Shown in the account window of the top bar (AccountButton).
+ */
 export default function SyncPanel() {
   const sync = useSync()
   const [email, setEmail] = useState('')
   const [code, setCode] = useState('')
   const [password, setPasswordText] = useState('')
   const busy = sync.status === 'syncing'
-  // "Go to sign in" (from a book link) arrives as /#sync: bring this panel into view.
-  const { hash } = useLocation()
-  useEffect(() => {
-    if (hash === '#sync') document.getElementById('sync')?.scrollIntoView({ block: 'start' })
-  }, [hash])
-
   return (
-    <section id="sync" className={`${section} scroll-mt-24`}>
-      <h2 className={subTitle}>Sync between your devices</h2>
-
+    <div>
       {sync.email ? (
         <>
           <p className={`${note} mt-1 max-w-2xl`}>
@@ -104,8 +98,9 @@ export default function SyncPanel() {
       ) : (
         <>
           <p className={`${note} mt-1 max-w-2xl`}>
-            Sign in to keep your progress the same on your PC and your phone. You can be signed in on all your devices
-            at once. The first time, you get an email with a link, which works once, on the device where you open it.
+            Sign in to keep your progress the same on your PC and your phone, and to open the books on the website. You
+            can be signed in on all your devices at once. The first time, you get an email with a link, which works once,
+            on the device where you open it; it also creates your account if you do not have one yet.
             After that you can choose a password and use it on your other devices. Without signing in, everything
             stays in this browser as before.
           </p>
@@ -184,6 +179,6 @@ export default function SyncPanel() {
           {sync.lastSync && sync.status === 'idle' ? ` Last synced at ${new Date(sync.lastSync).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}.` : ''}
         </p>
       )}
-    </section>
+    </div>
   )
 }
