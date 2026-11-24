@@ -18,7 +18,8 @@ PMP: [PMP-PLAN.md](PMP-PLAN.md), "Decisions you made").
 | 9 Oct 2026 | **PMBOK Guide 8th edition is the primary reference**, with "edition notes" where the 7th edition differs | The 7th edition | The current edition; module 1.11 bridges the 7th-edition terms the exam may still use |
 | 10 Oct 2026 | Only you upload, by double-clicking `upload.bat` | Claude uploads | The upload needs your GitHub sign-in, and you decide when the website changes |
 | 11 Oct 2026 | One plan file and one issues file per certification, with session and issue numbers starting at 1 for each | One file for everything | You asked for it; the single file had grown to 1,205 lines |
-| 13 Oct 2026 | CAPM is closed: its content may not change (`tools/check_capm_frozen.py`) | | Finished as planned; later work must not break it |
+| 13 Oct 2026 | CAPM is closed: its content may not change (`tools/check_capm_frozen.py`, since 24 Nov 2026 `tools/check_frozen.py`) | | Finished as planned; later work must not break it |
+| 24 Nov 2026 | PMP is closed too, after your final review and a bug check of the website (PMP-95). One check, `tools/check_frozen.py`, guards both courses' content files | Keep PMP open; a second check script | Your decision. One check for all closed courses (guideline, chapter 12) |
 
 ## Following the guideline (23 Nov 2026)
 

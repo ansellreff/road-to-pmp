@@ -73,7 +73,7 @@ def main() -> None:
     except OSError:
         stop("the app is not running, so the click tests cannot run. Double-click start.bat, then try again.")
 
-    run("CAPM unchanged", [PYTHON, "tools/check_capm_frozen.py"])
+    run("CAPM and PMP unchanged", [PYTHON, "tools/check_frozen.py"])
     run("Content", [PYTHON, "tools/check_content.py"])
     run("Invisible characters", [PYTHON, "tools/check_invisible.py"])
     run("Colour contrast", [PYTHON, "tools/check_contrast.py"])

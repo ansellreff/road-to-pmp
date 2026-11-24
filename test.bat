@@ -7,7 +7,7 @@ set "npm_config_cache=%ROOT%.tools\npm-cache"
 cd /d "%ROOT%"
 set "PY=%ROOT%.venv\Scripts\python.exe"
 
-"%PY%" tools\check_capm_frozen.py || goto failed
+"%PY%" tools\check_frozen.py || goto failed
 "%PY%" tools\check_content.py || goto failed
 "%PY%" tools\check_invisible.py || goto failed
 "%PY%" tools\check_contrast.py || goto failed

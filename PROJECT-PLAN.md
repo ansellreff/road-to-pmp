@@ -38,7 +38,7 @@ How they are kept:
 | | Certification | State | Next |
 |---|---|---|---|
 | ✅ | CAPM | **Finished as planned** (13 Oct 2026). 39 modules, 1,274 questions including matching, hot spot and comic strip, 1,339 flashcards, 6 mock exams, 19 lesson drawings. What stays open, and why, is listed at the end of `docs/CAPM-PLAN.md`. | None planned |
-| ✅ | PMP | **Finished as planned** (24 Nov 2026), not yet frozen. 34 modules, 1,021 questions including multiple response, case sets, matching, pull-down lists, graphic-based and hot spot, 850 flashcards, 4 mock exams of 180 questions, a formula sheet. What stays open, and why, is listed at the end of `docs/PMP-PLAN.md`. | Your review of Sessions 7 to 15; then freeze PMP if you want |
+| ✅ | PMP | **Finished as planned and closed** (24 Nov 2026, after your review). 34 modules, 1,021 questions including multiple response, case sets, matching, pull-down lists, graphic-based and hot spot, 850 flashcards, 4 mock exams of 180 questions, a formula sheet. What stays open, and why, is listed at the end of `docs/PMP-PLAN.md`. | None planned |
 | ⬜ | PMI-ACP | Not started | Needs its Exam Content Outline in the materials folder |
 | ⬜ | PMI-SP | Not started | Needs its Exam Content Outline in the materials folder |
 
@@ -61,7 +61,7 @@ All project-wide decisions, with the options and reasons, are in [docs/DECISIONS
 - **Token saving:** one module per session. Book text is extracted once to a local cache so each session reads only the pages it needs.
 - **Web research:** only for specific facts. If a source is blocked or paywalled, Claude asks instead of forcing access.
 - **Pace:** slow and verified. Each session ends with a review before moving on.
-- **A closed certification stays closed.** CAPM was closed on 13 Oct 2026. Work on another certification must not change or break it: `tools/check_capm_frozen.py` must pass, and CAPM's click tests must pass unchanged, before every commit.
+- **A closed certification stays closed.** CAPM was closed on 13 Oct 2026 and PMP on 24 Nov 2026. Work on another certification must not change or break them: `tools/check_frozen.py` must pass, and their click tests must pass unchanged, before every commit. A closed certification reopens only when you ask.
 
 ## Running the project
 

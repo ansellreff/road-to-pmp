@@ -14,8 +14,8 @@ status and how to run it: [PROJECT-PLAN.md](PROJECT-PLAN.md).
 **Special rules**
 - The per-certification plan and issues files take the place of the guideline's `docs/milestones/` and
   `docs/ISSUES.md` (see [docs/GUIDELINE-study.md](docs/GUIDELINE-study.md), Q1).
-- CAPM is closed (13 Oct 2026). `tools/check_capm_frozen.py` and CAPM's click tests must pass unchanged before every
-  commit.
+- CAPM (13 Oct 2026) and PMP (24 Nov 2026) are closed. `tools/check_frozen.py` and their click tests must pass
+  unchanged before every commit. A closed certification reopens only at the owner's request.
 - Only the owner uploads, by double-clicking `upload.bat`. Website: https://road-to-pmp.vercel.app.
 - **Release:** the version number is written only in `CHANGELOG.md` (one version per day). The user guide is
   `web/src/content/guide.md`; its first line names the version. Write both, commit, run `tools/release.py`; after the

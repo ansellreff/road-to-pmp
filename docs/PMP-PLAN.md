@@ -1,6 +1,6 @@
 # PMP: plan and progress
 
-Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP is finished as planned (24 Nov 2026): all 15 sessions are done. Final counts and what stays open are in the last section, "Session 15: PMP finished". PMP is not frozen yet: that waits for your review.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
+Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP is finished as planned (24 Nov 2026): all 15 sessions are done. Final counts and what stays open are in the last section, "Session 15: PMP finished". PMP was closed on 24 Nov 2026, after your review and a final bug check (PMP-95): its content may not change.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
 
 ## Status log
 
@@ -25,6 +25,7 @@ Project Management Professional. Started 2026-10-11 and paused the same day unti
 | 24 Nov 2026 | **PMP Session 13 done: modules 3.7 to 3.10. Domain 3 (Business Environment) is complete, and so are all 34 PMP modules.** 3.7 Continuous Improvement and Lessons Learned, 3.8 Organizational Change and Culture, 3.9 The External Business Environment, 3.10 Artificial Intelligence in Projects: 120 questions (two new case sets, on a bank merger and an e-scooter service), 100 flashcards. Business tasks 6, 7 and 8 are taught; every task of the outline is covered. Still version 1.1. CAPM unchanged. **Sessions 12 and 13 in one go are finished.** | Your review; then Session 14, PMP mock exams, after your go-ahead |
 | 24 Nov 2026 | You uploaded Sessions 11 to 13 (the website runs build 736f49d, checked). **PMP Session 14 done: the PMP mock exams.** Four exams of 180 questions (59 / 74 / 47 by domain, 41% predictive, every module in every exam, 3 or 4 case sets each); Mock exam 4 is kept for last, so its questions left the module quizzes (23 to 26 questions remain in each). The exam builder was fixed first to spread exams evenly (PMP-80). The study plan, readiness estimate and weak spots now include PMP; two wrong texts for PMP were fixed (PMP-81, PMP-82). Still version 1.1. CAPM unchanged. | Your go-ahead for Session 15: formula sheet, accuracy check, final report |
 | 24 Nov 2026 | You uploaded Session 14 (the website ran build 119fee3, checked) and asked to fix all the errors and the dates, then do the last session. **Fixes:** every PMP mock exam now has the same mix of question types (PMP-84); dates read "20 Nov 2026" everywhere (PMP-83); released as build 0964fe2. **PMP Session 15 done: PMP finished.** The PMP formula sheet (34 entries in 6 groups, every one linked to its lesson). The accuracy check against the three references in your folder found one citation problem, now fixed (PMP-85), and nothing wrong otherwise. Final report below. Still version 1.1. CAPM unchanged. | Your review of Sessions 7 to 15; then, if you want, freeze PMP like CAPM |
+| 24 Nov 2026 | You uploaded build 9db7240 (checked) and ran the new `books.sql`. **Final bug check on the website** (PMP-95): 28 page types of both courses on a PC and on a phone, both themes, the signed-out book link and the reader; nothing to fix. **CAPM and PMP closed** at your request: `tools/check_frozen.py` (replacing `check_capm_frozen.py`) checks 159 CAPM and 140 PMP content files before every release, and the click tests of both must pass. The phone app is on hold (decision log). | None. A closed course reopens only when you ask |
 
 ## Roadmap
 
@@ -467,7 +468,8 @@ now cited correctly, with both figures shown.
 
 **What "finished" means here.** Everything planned for PMP is built, checked by the tools above, committed and
 released. It does not mean the course has been proven against the real exam, which nobody outside PMI can do. PMP
-is **not frozen**: you still review Sessions 7 to 15, and freezing it like CAPM is offered after that.
+was **closed on 24 Nov 2026** after your review, like CAPM: `tools/check_frozen.py` fails if any of its 140 content
+files changes.
 
 ### Open items, each closed or left open
 
