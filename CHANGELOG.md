@@ -7,6 +7,9 @@ Each version of Road to PMP, newest first, with what you will notice.
 - **PMP formula sheet:** open **Formulas** on any PMP page for earned value, estimates and budget, the critical
   path, velocity and WSJF, communication channels, EMV and decision trees, and the Eighth Edition's principles,
   domains, focus areas and 40 processes. Each line links to its lesson.
+- **Softer theme switch:** Dark and Light now fade into each other over half a second instead of flashing.
+- **Book reader:** the top bar and the page controls stay at the top while you scroll through a book, so the menu
+  and the page box are always at hand. On a phone the page controls fit on one row.
 - **Book reader:** **Open the PDF at page …** now opens the book in the app's own reader, in a new tab, at that
   page, on your PC and on the website alike, also on your phone. Turn pages, type a page number, or make the pages
   larger. No more downloads instead of a book.

@@ -339,6 +339,25 @@ body {
     0 0 14px color-mix(in srgb, var(--glow) 25%, transparent);
 }
 
+/* Switching between light and dark (setTheme in lib/prefs.ts): the old page fades softly into the new one,
+   instead of a flash. Where the browser cannot cross-fade the page, the colours ease over instead. */
+html.theme-fade::view-transition-old(root),
+html.theme-fade::view-transition-new(root) {
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+html.theme-ease,
+html.theme-ease *,
+html.theme-ease *::before,
+html.theme-ease *::after {
+  transition:
+    background-color 500ms ease-in-out,
+    color 500ms ease-in-out,
+    border-color 500ms ease-in-out,
+    fill 500ms ease-in-out,
+    stroke 500ms ease-in-out !important;
+}
+
 /* No motion for people whose device asks for less of it. */
 @media (prefers-reduced-motion: reduce) {
   *,

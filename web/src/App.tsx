@@ -1,5 +1,5 @@
-import { lazy, Suspense } from 'react'
-import { Link, Route, Routes } from 'react-router-dom'
+import { lazy, Suspense, useEffect, useRef } from 'react'
+import { Link, Route, Routes, useLocation } from 'react-router-dom'
 import DisplayControls from './components/DisplayControls'
 import Milestone from './components/Milestone'
 import NotFound from './components/NotFound'
@@ -30,9 +30,21 @@ const ReaderPage = lazy(() => import('./pages/ReaderPage'))
 export const shell = 'mx-auto w-full max-w-7xl px-4 sm:px-6'
 
 export default function App() {
+  // In the book reader the top bar stays at the top while you scroll, so the menu is always at hand.
+  // Its height is kept in --header-h, so the reader's own controls can sit right below it.
+  const reading = useLocation().pathname.startsWith('/read/')
+  const header = useRef<HTMLElement>(null)
+  useEffect(() => {
+    const element = header.current
+    if (!element) return
+    const observer = new ResizeObserver(() => document.documentElement.style.setProperty('--header-h', `${element.offsetHeight}px`))
+    observer.observe(element)
+    return () => observer.disconnect()
+  }, [])
+
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="relative z-30 border-b border-ink bg-surface print:hidden">
+      <header ref={header} className={`${reading ? 'sticky top-0' : 'relative'} z-30 border-b border-ink bg-surface print:hidden`}>
         {/* Name, search and display controls on the first row; the page links on their own row below. */}
         <div className={`${shell} flex flex-wrap items-center gap-x-6 gap-y-2 pt-2.5`}>
           <Link to="/" className="title flex items-center gap-2 py-1 text-xl">

@@ -59,7 +59,30 @@ function save(next: Prefs, key: string, value: string) {
   listeners.forEach((l) => l())
 }
 
-export const setTheme = (theme: Theme) => save({ ...state, theme }, THEME_KEY, theme)
+/** How long the change between light and dark takes; matches the .theme-fade rules in index.css. */
+const FADE_MS = 500
+
+/**
+ * Change the theme with a soft cross-fade instead of a flash, which is easier on the eyes. Browsers that can
+ * cross-fade the whole page do that; others ease the colours. A device that asks for less motion switches at once.
+ */
+export function setTheme(theme: Theme) {
+  const change = () => save({ ...state, theme }, THEME_KEY, theme)
+  const root = document.documentElement
+  if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return change()
+  const page = document as Document & { startViewTransition?: (update: () => void) => { finished: Promise<void> } }
+  if (page.startViewTransition) {
+    root.classList.add('theme-fade')
+    page
+      .startViewTransition(change)
+      .finished.catch(() => undefined)
+      .finally(() => root.classList.remove('theme-fade'))
+    return
+  }
+  root.classList.add('theme-ease')
+  change()
+  window.setTimeout(() => root.classList.remove('theme-ease'), FADE_MS + 50)
+}
 export const setTextSize = (textSize: TextSize) => save({ ...state, textSize }, TEXT_KEY, textSize)
 export function setCourseId(courseId: string) {
   if (state.courseId !== courseId) save({ ...state, courseId }, COURSE_KEY, courseId)

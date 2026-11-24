@@ -249,6 +249,8 @@ already there.
 **Rules and limits.**
 - Both choices are kept in this browser only.
 - Until you choose a theme, the app follows your device's own setting.
+- The switch fades softly over half a second, so the screen does not flash. If your device is set to reduce
+  motion, it switches at once.
 
 **Example.** For a long evening session, choose the larger **A** and **Dark**.
 

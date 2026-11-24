@@ -102,7 +102,17 @@ function Viewer({ doc, start }: { doc: PDFDocumentProxy; start: number }) {
   const [typed, setTyped] = useState(String(start))
   const [near, setNear] = useState<Set<number>>(() => new Set([start]))
   const scrolled = useRef(false)
+  const bar = useRef<HTMLDivElement>(null)
   const pages = doc.numPages
+
+  /** Scroll so the page starts just below the top bar and the reader's controls, which both stay in place. */
+  function showPage(n: number) {
+    const element = document.getElementById(`page-${n}`)
+    if (!element) return
+    const header = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 0
+    const covered = header + (bar.current?.offsetHeight ?? 0) + 8
+    window.scrollTo({ top: element.getBoundingClientRect().top + window.scrollY - covered })
+  }
   const scale = base && width ? (width / base.w) * ZOOMS[zoom] : 0
 
   // The size of a page, taken from the page asked for; most books use one page size throughout.
@@ -126,7 +136,7 @@ function Viewer({ doc, start }: { doc: PDFDocumentProxy; start: number }) {
   useEffect(() => {
     if (!scale || scrolled.current) return
     scrolled.current = true
-    document.getElementById(`page-${start}`)?.scrollIntoView({ block: 'start' })
+    showPage(start)
   }, [scale, start])
 
   // Which pages are near the screen (drawn), and which one is in the middle of it (shown as current).
@@ -170,14 +180,21 @@ function Viewer({ doc, start }: { doc: PDFDocumentProxy; start: number }) {
   function go(n: number) {
     const page = Math.min(pages, Math.max(1, n))
     setTyped(String(page))
-    document.getElementById(`page-${page}`)?.scrollIntoView({ block: 'start' })
+    showPage(page)
   }
 
   return (
     <div className="mt-4">
-      <div className="sticky top-0 z-20 -mx-4 flex flex-wrap items-center gap-2 border-b border-line bg-paper/95 px-4 py-2 backdrop-blur sm:-mx-6 sm:px-6">
-        <button type="button" onClick={() => go(current - 1)} disabled={current <= 1} className={btnQuiet}>
-          Previous page
+      <div
+        ref={bar}
+        style={{ top: 'var(--header-h, 0px)' }}
+        className="sticky z-20 -mx-4 flex flex-wrap items-center gap-1.5 border-b sm:gap-2 border-line bg-paper/95 px-4 py-2 backdrop-blur sm:-mx-6 sm:px-6"
+      >
+        <button type="button" onClick={() => go(current - 1)} disabled={current <= 1} className={btnQuiet} aria-label="Previous page">
+          <span aria-hidden="true" className="sm:hidden">
+            ‹
+          </span>
+          <span className="hidden sm:inline">Previous page</span>
         </button>
         <form
           onSubmit={(event) => {
@@ -186,7 +203,7 @@ function Viewer({ doc, start }: { doc: PDFDocumentProxy; start: number }) {
           }}
           className="flex items-center gap-2"
         >
-          <label htmlFor="reader-page" className="text-sm text-muted">
+          <label htmlFor="reader-page" className="sr-only text-sm text-muted sm:not-sr-only">
             Page
           </label>
           <input
@@ -195,18 +212,21 @@ function Viewer({ doc, start }: { doc: PDFDocumentProxy; start: number }) {
             value={typed}
             onChange={(event) => setTyped(event.target.value.replace(/\D/g, ''))}
             onBlur={() => setTyped(String(current))}
-            className={`${input} w-20 text-center tabular-nums`}
+            className={`${input} w-16 text-center tabular-nums sm:w-20`}
           />
           <span className="text-sm text-muted tabular-nums">of {pages}</span>
         </form>
-        <button type="button" onClick={() => go(current + 1)} disabled={current >= pages} className={btnQuiet}>
-          Next page
+        <button type="button" onClick={() => go(current + 1)} disabled={current >= pages} className={btnQuiet} aria-label="Next page">
+          <span aria-hidden="true" className="sm:hidden">
+            ›
+          </span>
+          <span className="hidden sm:inline">Next page</span>
         </button>
         <span className="ml-auto flex items-center gap-2">
           <button type="button" onClick={() => setZoom((z) => Math.max(0, z - 1))} disabled={zoom === 0} className={btnQuiet} aria-label="Make pages smaller">
             −
           </button>
-          <span className="w-14 text-center text-sm tabular-nums" aria-live="polite">
+          <span className="w-11 text-center text-sm tabular-nums sm:w-14" aria-live="polite">
             {Math.round(ZOOMS[zoom] * 100)}%
           </span>
           <button type="button" onClick={() => setZoom((z) => Math.min(ZOOMS.length - 1, z + 1))} disabled={zoom === ZOOMS.length - 1} className={btnQuiet} aria-label="Make pages larger">
