@@ -1,0 +1,678 @@
+[
+  {
+    "id": "q1",
+    "q": "A key supplier may fail, so the company buys insurance that pays out if it does. Which strategy is this?",
+    "options": [
+      "Mitigate",
+      "Transfer",
+      "Avoid",
+      "Accept"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Transfer shifts ownership and impact of a threat to a third party, often for a risk premium, through insurance, bonds, warranties, guarantees or agreements.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "To eliminate a high-probability, high-impact threat, the team removes the risky feature from the scope. Which strategy is this?",
+    "options": [
+      "Mitigate",
+      "Transfer",
+      "Enhance",
+      "Avoid"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Avoidance eliminates the threat, reducing its probability to zero, for example by removing its cause, changing the strategy or reducing scope.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "The team adds a backup server so that a failure of the main server would cause little harm. Which strategy is this?",
+    "options": [
+      "Mitigate, by reducing the impact",
+      "Avoid, by removing the cause entirely",
+      "Transfer, by shifting ownership",
+      "Exploit, by ensuring the outcome happens"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Mitigation reduces probability and/or impact; designing redundancy into a system reduces the impact of a failure of the original component.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A threat would affect the company's whole product line, and the response is far beyond the project manager's authority. What should happen?",
+    "options": [
+      "Accept it passively and review it monthly",
+      "Mitigate it inside the project budget, whatever the cost",
+      "Escalate it to the level that owns those objectives",
+      "Remove it from the risk register to save time"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Escalation fits when a threat is outside the project's scope or the response exceeds the project manager's authority. Threats are escalated to the level that matches the objectives affected.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "After escalating a threat to the portfolio, what is still the project manager's duty?",
+    "options": [
+      "Keep monitoring it weekly within the project",
+      "Make sure the right party accepts ownership",
+      "Add a contingency reserve to the project",
+      "Delete it from the risk register entirely"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The project manager notifies the right person and makes sure ownership is accepted. Escalated threats are not monitored further by the team but may stay in the register for information.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "A low-priority threat cannot be addressed cost-effectively, so the team sets aside two weeks and 20,000 in case it occurs. Which strategy is this?",
+    "options": [
+      "Passive acceptance",
+      "Mitigation",
+      "Transfer",
+      "Active acceptance"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The most common active acceptance strategy is a contingency reserve of time, money or resources. Passive acceptance means only periodic review.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "An opportunity to finish early is high priority, so the company assigns its most talented engineers to make sure it happens. Which strategy is this?",
+    "options": [
+      "Exploit",
+      "Enhance",
+      "Share",
+      "Accept"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Exploit ensures a high-priority opportunity definitely happens (probability to 100%), for example by assigning the most talented resources.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for opportunities",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 307,
+        "label": "PMBOK 8, Guide section 5, Strategies for opportunities"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "The company cannot capture an opportunity on its own, so it forms a joint venture with a partner. Which strategy is this?",
+    "options": [
+      "Exploit",
+      "Transfer",
+      "Share",
+      "Escalate"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Sharing transfers ownership of an opportunity to a third party best able to capture it, who shares the benefit: partnerships, special-purpose companies, joint ventures.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for opportunities",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 307,
+        "label": "PMBOK 8, Guide section 5, Strategies for opportunities"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "The team adds resources to an activity to raise the chance of finishing it early. Which strategy is this?",
+    "options": [
+      "Exploit, making it completely certain",
+      "Enhance, raising probability or impact",
+      "Share, with a third party",
+      "Mitigate, reducing the size of a threat"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Enhance increases the probability and/or impact of an opportunity; adding resources to finish early is the Guide's example. Exploit would make it certain.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for opportunities",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 307,
+        "label": "PMBOK 8, Guide section 5, Strategies for opportunities"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "Overall project risk is far outside the agreed thresholds and cannot be brought back within them. What does the PMBOK Guide say may happen?",
+    "options": [
+      "The thresholds are removed for the project",
+      "The team works overtime until risk falls",
+      "The risk report is no longer produced",
+      "The project may be canceled"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Avoidance at overall project level removes high-risk scope; where the project cannot be brought back within its thresholds, it may be canceled, the most extreme avoidance.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for overall project risk",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for overall project risk"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The plan says: 'If the main supplier misses two deliveries, switch to the alternate supplier.' What is this?",
+    "options": [
+      "A contingent response strategy",
+      "A passive acceptance strategy",
+      "A risk audit",
+      "A secondary risk created by the plan"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Contingent response strategies (contingency or fallback plans) are carried out only if specific trigger conditions occur, such as engaging an alternate supplier when the preferred one cannot perform.",
+    "ref": "PMBOK 8, Guide section 5, Contingent response strategies",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 262,
+        "label": "PMBOK 8, Guide section 5, Contingent response strategies"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Hiring a second supplier to reduce delivery risk creates a new risk: quality differences between the two suppliers. What is this new risk called?",
+    "options": [
+      "A residual risk",
+      "An emergent risk",
+      "A secondary risk",
+      "An unknown-unknown"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Secondary risks arise as a direct outcome of implementing a risk response. Residual risks remain after the responses.",
+    "ref": "PMBOK 6, 11.5.3.3",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 437,
+        "label": "PMBOK 6, 11.5.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "After all planned responses, some risk of delay remains, and the sponsor accepts it. What is this?",
+    "options": [
+      "A secondary risk",
+      "A residual risk",
+      "A trigger",
+      "An issue"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Residual risks are expected to remain after planned responses have been taken, along with those deliberately accepted.",
+    "ref": "PMBOK 6, 11.5.3.3",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 437,
+        "label": "PMBOK 6, 11.5.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Risk responses were agreed three months ago, but none of the actions has been taken. Which process has been neglected?",
+    "options": [
+      "Plan Risk Management for the project",
+      "Identify Risks",
+      "Perform Risk Analysis",
+      "Implement Risk Responses"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Implement Risk Responses ensures that agreed-upon risk responses are executed as planned.",
+    "ref": "PMBOK 8, Guide 2.7.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 203,
+        "label": "PMBOK 8, Guide 2.7.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A risk owner is slow to carry out an agreed response. Which interpersonal skill does Implement Risk Responses list?",
+    "options": [
+      "Influencing",
+      "Decomposition",
+      "Benchmarking",
+      "Crashing"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Figure 2-52 lists expert judgment, influencing and the PMIS as tools of Implement Risk Responses.",
+    "ref": "PMBOK 8, Guide 2.7.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 203,
+        "label": "PMBOK 8, Guide 2.7.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Customer data could be exposed through an untested interface. Which response mitigates this security risk?",
+    "options": [
+      "Accept it and wait for an incident report",
+      "Escalate it to the marketing team",
+      "Run security tests before go-live",
+      "Remove the risk from the register"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Mitigation reduces probability or impact; conducting more tests is one of the Guide's mitigation examples. Sensitive data must also be secured under a privacy policy.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Which tool compares the project's actual technical results, such as transaction times, with the planned targets?",
+    "options": [
+      "Reserve analysis",
+      "Technical performance analysis",
+      "Sensitivity analysis",
+      "SWOT analysis of the team's strengths"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Technical performance analysis compares technical accomplishments with the schedule of technical achievement; deviations can indicate threats or opportunities.",
+    "ref": "PMBOK 8, Guide section 5, Technical performance analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 310,
+        "label": "PMBOK 8, Guide section 5, Technical performance analysis"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Halfway through, half the contingency reserve has been used but most risks remain open. Which tool shows whether the rest is enough?",
+    "options": [
+      "A RACI chart",
+      "Planning poker",
+      "A prompt list",
+      "Reserve analysis"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Reserve analysis evaluates the remaining risk and reserves to decide whether the reserve is sufficient for the remaining risk.",
+    "ref": "PMBOK 8, Guide section 5, Reserve analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 297,
+        "label": "PMBOK 8, Guide section 5, Reserve analysis"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "What does a risk audit examine?",
+    "options": [
+      "The effectiveness of the risk management process",
+      "The accuracy of the project's earned value figures",
+      "The team's adherence to coding standards",
+      "Each supplier's financial statements"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "A risk audit considers the effectiveness of the risk management process, at the frequency defined in the risk management plan.",
+    "ref": "PMBOK 8, Guide section 5, Audits",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 253,
+        "label": "PMBOK 8, Guide section 5, Audits"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Who is responsible for making sure risk audits are performed at the frequency set in the risk management plan?",
+    "options": [
+      "The external auditor",
+      "The product owner",
+      "The project manager",
+      "Each team member individually"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The project manager is responsible for ensuring risk audits are performed at an appropriate frequency; they may be part of review meetings or separate.",
+    "ref": "PMBOK 8, Guide section 5, Audits",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 253,
+        "label": "PMBOK 8, Guide section 5, Audits"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "What does a risk review do?",
+    "options": [
+      "It closes every risk at the end of the whole project",
+      "It analyzes existing risks and identifies new ones",
+      "It replaces the risk register with a report",
+      "It approves changes to the cost baseline"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "A risk review (also called a risk reassessment) analyzes the status of existing risks and identifies new risks.",
+    "ref": "PMBOK 8, Glossary (risk review)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 378,
+        "label": "PMBOK 8, Glossary (risk review)"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "How can an agile team show stakeholders that its risk exposure is falling over the iterations?",
+    "options": [
+      "By hiding the risk register from them",
+      "By reporting its velocity only",
+      "By using a fixed risk report template",
+      "With a burndown of risk exposure"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Burn charts are visual controls; a burndown chart can show the amount of risk exposure that has been reduced.",
+    "ref": "PMBOK 8, Guide section 5, Visual controls",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 317,
+        "label": "PMBOK 8, Guide section 5, Visual controls"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Monitoring shows threats were prevented early, so little contingency reserve has been used. What does this show, according to Table 2-11?",
+    "options": [
+      "Contingency reserves are being used effectively",
+      "The reserve estimate was certainly wrong from the start",
+      "Risk management is no longer needed",
+      "The reserve should be spent anyway"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Table 2-11: contingency reserves are used effectively when teams proactively prevent threats, limiting the use of contingency.",
+    "ref": "PMBOK 8, Guide 2.7.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 207,
+        "label": "PMBOK 8, Guide 2.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "Where does each risk's owner, agreed response and current status appear?",
+    "options": [
+      "The team charter",
+      "The project charter",
+      "The risk register",
+      "The stakeholder engagement plan"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The risk register records the outputs of all risk processes, including owners, responses and current risk status.",
+    "ref": "PMBOK 8, Guide section 4, Risk register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 242,
+        "label": "PMBOK 8, Guide section 4, Risk register"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Sustainability risk: the cheapest timber comes from unmanaged forests. Following the sustainability pyramid, which response is most desirable?",
+    "options": [
+      "Buy it and pay to offset the harm",
+      "Choose certified timber to avoid the harm",
+      "Buy it and replant a forest later",
+      "Buy less of it to minimize the harm"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The pyramid ranks responses from avoid (most desirable) to minimize, restore and compensate. Choosing sources with the least environmental impact avoids the harm.",
+    "ref": "PMBOK 8, Standard 3.7",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 71,
+        "label": "PMBOK 8, Standard 3.7"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are strategies for threats?",
+    "type": "multi",
+    "options": [
+      "Avoid",
+      "Transfer",
+      "Mitigate",
+      "Exploit",
+      "Enhance",
+      "Share"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Threats: escalate, avoid, transfer, mitigate, accept. Exploit, enhance and share are for opportunities.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are strategies for opportunities?",
+    "type": "multi",
+    "options": [
+      "Exploit",
+      "Enhance",
+      "Avoid",
+      "Transfer",
+      "Mitigate"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Opportunities: escalate, exploit, share, enhance, accept. Avoid, transfer and mitigate are for threats.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for opportunities",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 307,
+        "label": "PMBOK 8, Guide section 5, Strategies for opportunities"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are tools and techniques of Monitor Risks?",
+    "type": "multi",
+    "options": [
+      "Technical performance analysis",
+      "Audits",
+      "Prompt lists",
+      "SWOT analysis",
+      "Planning poker"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Figure 2-53 lists technical performance analysis, reserve analysis, audits and meetings. Prompt lists and SWOT belong to Identify Risks.",
+    "ref": "PMBOK 8, Guide 2.7.2.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 203,
+        "label": "PMBOK 8, Guide 2.7.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each risk response strategy with an example.",
+    "type": "match",
+    "left": [
+      "Transfer",
+      "Mitigate",
+      "Exploit",
+      "Share"
+    ],
+    "right": [
+      "Buying insurance",
+      "Building a prototype first",
+      "Assigning the best engineers",
+      "Forming a joint venture"
+    ],
+    "approach": "predictive",
+    "explanation": "Transfer and mitigate are threat strategies; exploit and share are opportunity strategies.",
+    "ref": "PMBOK 8, Guide section 5, Strategies for threats",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 308,
+        "label": "PMBOK 8, Guide section 5, Strategies for threats"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about risk responses.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "A response carried out only when a trigger occurs is a",
+        "choices": [
+          "passive acceptance",
+          "contingent response",
+          "risk audit"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Risk that remains after the planned responses is a",
+        "choices": [
+          "secondary risk",
+          "emergent risk",
+          "residual risk"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Setting aside a contingency reserve for a threat is",
+        "choices": [
+          "active acceptance",
+          "avoidance",
+          "transfer"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Contingent responses wait for triggers; residual risk remains after responses; a contingency reserve is active acceptance.",
+    "ref": "PMBOK 8, Guide section 5, Contingent response strategies",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 262,
+        "label": "PMBOK 8, Guide section 5, Contingent response strategies"
+      }
+    ]
+  }
+]

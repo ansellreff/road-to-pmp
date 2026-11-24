@@ -1,0 +1,681 @@
+[
+  {
+    "id": "q1",
+    "q": "Which of these, written for the risk register, follows the cause, event and consequence structure?",
+    "options": [
+      "IT security is a big worry for the whole team",
+      "Untested controls may let attackers in, delaying go-live",
+      "The team should test all controls before go-live",
+      "Security incidents happened on other projects too"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "A structured risk statement separates the cause (untested controls), the uncertain event (attackers get in) and the effect on objectives (go-live delayed).",
+    "ref": "PMBOK 8, Guide section 4, Risk register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 242,
+        "label": "PMBOK 8, Guide section 4, Risk register"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "A new law may cut the price of a key material by 20% during the project. How should this be recorded?",
+    "options": [
+      "As an issue in the issue log",
+      "As a threat with a negative impact",
+      "As an assumption that needs no further action",
+      "As an opportunity in the risk register"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "A risk with a positive effect on objectives, such as cost savings, is an opportunity. Risks, positive and negative, are recorded in the risk register.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Stakeholder A accepts a ±10% variance on cost; stakeholder B accepts only ±3%. What does this show?",
+    "options": [
+      "B has a lower risk appetite than A",
+      "A has a lower risk appetite than B",
+      "Both have the same risk appetite overall",
+      "Thresholds say nothing about risk appetite at all"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A risk threshold reflects risk appetite: a narrower threshold around an objective reflects a lower appetite than a wider one.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "When should the Plan Risk Management process begin?",
+    "options": [
+      "After the first risk has occurred",
+      "During project closure, for lessons",
+      "When the project is conceived",
+      "Only once the scope baseline is approved by the sponsor"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Plan Risk Management should begin when a project is conceived and be completed early in the project.",
+    "ref": "PMBOK 8, Guide 2.7.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 200,
+        "label": "PMBOK 8, Guide 2.7.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Where are the protocols for applying contingency and management reserves to risks established?",
+    "options": [
+      "In the issue log",
+      "In the risk management plan",
+      "In the lessons learned register",
+      "In the stakeholder engagement plan for the project"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "The funding element of the risk management plan identifies funds for risk activities and establishes protocols for applying contingency and management reserves.",
+    "ref": "PMBOK 8, Guide section 4, Risk management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 239,
+        "label": "PMBOK 8, Guide section 4, Risk management plan"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "The organization groups potential risk sources into technical, management, commercial and external, each broken into finer levels. What is this?",
+    "options": [
+      "A work breakdown structure",
+      "A probability and impact matrix",
+      "A stakeholder cube",
+      "A risk breakdown structure"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "A risk breakdown structure is a hierarchical representation of potential sources of risk; Figure 4-5 shows technical, management, commercial and external risk at level 1.",
+    "ref": "PMBOK 8, Guide section 4, Risk management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 239,
+        "label": "PMBOK 8, Guide section 4, Risk management plan"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A small internal project needs only a simple risk process. How many levels might its probability and impact scales have?",
+    "options": [
+      "Three levels, for a simple process",
+      "Five levels, as every project must always use",
+      "Ten levels, for extra precision",
+      "No levels at all"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The number of levels reflects the degree of detail: typically five for a more detailed approach and usually three for a simple process.",
+    "ref": "PMBOK 8, Guide section 4, Risk management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 239,
+        "label": "PMBOK 8, Guide section 4, Risk management plan"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "The team uses PESTLE to look for sources of overall project risk. What kind of tool is this?",
+    "options": [
+      "A quantitative risk model",
+      "A decision tree",
+      "A prompt list",
+      "A response strategy for threats"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "A prompt list is a predetermined list of risk categories that helps idea generation. PESTLE, TECOP and VUCA suit sources of overall project risk; the lowest RBS level suits individual risks.",
+    "ref": "PMBOK 8, Guide section 5, Prompt lists",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 296,
+        "label": "PMBOK 8, Guide section 5, Prompt lists"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "The schedule assumes a key expert is available all year, but the expert also supports two other projects. Which technique would expose this risk?",
+    "options": [
+      "Earned value analysis",
+      "Assumption and constraint analysis",
+      "Resource smoothing",
+      "A tornado diagram of the project's cost drivers"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Assumption and constraint analysis explores the validity of assumptions; threats come from assumptions that are inaccurate, unstable, inconsistent or incomplete.",
+    "ref": "PMBOK 8, Guide section 5, Assumption and constraint analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 252,
+        "label": "PMBOK 8, Guide section 5, Assumption and constraint analysis"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "In a risk workshop, a stakeholder says only that 'the project feels rushed'. What should the team do?",
+    "options": [
+      "Record it as a high risk at once",
+      "Ignore it, since it is only a feeling",
+      "Move it straight into the issue log as a problem to fix",
+      "Explore it to find any genuine risk behind it"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Identify Risks distinguishes genuine risks from non-risks such as concerns and issues. Exploring the concern may reveal a real risk, for example an unrealistic schedule.",
+    "ref": "PMBOK 8, Guide 2.7.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which item recorded in the risk register indicates that a risk is about to occur?",
+    "options": [
+      "The risk trigger",
+      "The risk category",
+      "The WBS reference",
+      "The short risk title"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Risk triggers are events or conditions that indicate a risk is about to occur.",
+    "ref": "PMBOK 8, Guide section 4, Risk register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 242,
+        "label": "PMBOK 8, Guide section 4, Risk register"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "What does the risk report contain that the risk register does not?",
+    "options": [
+      "The full list of team members and their roles",
+      "The project's daily task assignments",
+      "Sources of overall project risk and summary data",
+      "The contract terms with each supplier"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The risk report presents sources of overall project risk with summary information on individual risks: numbers of threats and opportunities, distribution by category, metrics and trends.",
+    "ref": "PMBOK 8, Guide section 4, Risk report",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 243,
+        "label": "PMBOK 8, Guide section 4, Risk report"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Risk 1 is rated probability 0.7 and impact 0.2; risk 2 is rated 0.3 and 0.6. Which has the higher probability-impact score?",
+    "options": [
+      "Risk 1, scoring 0.14",
+      "Risk 2, scoring 0.18",
+      "They score the same, 0.9",
+      "Risk 1, scoring 0.9"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Numeric probability and impact values can be multiplied: 0.7 × 0.2 = 0.14 and 0.3 × 0.6 = 0.18, so risk 2 ranks higher.",
+    "ref": "PMBOK 8, Guide section 5, Probability and impact matrix",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 292,
+        "label": "PMBOK 8, Guide section 5, Probability and impact matrix"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "In a risk workshop, two stakeholders rate the same risk's impact very differently. What should the facilitator do?",
+    "options": [
+      "Average the two ratings and move on to the next risk",
+      "Take the rating of the more senior person",
+      "Drop the risk from the register",
+      "Explore why the views differ and record assumptions"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Differences in the levels of probability and impact perceived by stakeholders are expected and should be explored; the assumptions justifying the levels are recorded.",
+    "ref": "PMBOK 8, Guide section 5, Risk probability and impact assessment",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 300,
+        "label": "PMBOK 8, Guide section 5, Risk probability and impact assessment"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "A risk has low probability and low impact. What does the PMBOK Guide suggest?",
+    "options": [
+      "Keep it on a watch list in the register",
+      "Delete it from the register immediately",
+      "Assign a full-time owner to it",
+      "Escalate it to the portfolio level for a decision"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Risks with low probability and impact may be included within the risk register as part of a watch list for future monitoring.",
+    "ref": "PMBOK 8, Guide section 5, Risk probability and impact assessment",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 300,
+        "label": "PMBOK 8, Guide section 5, Risk probability and impact assessment"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Several risks share one root cause: an inexperienced subcontractor. What is the benefit of categorizing them together?",
+    "options": [
+      "The risks no longer need owners",
+      "The project can skip quantitative analysis",
+      "A generic response can address the group",
+      "The risks move out of the register into a separate file"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Risks can be categorized by common root causes; grouping focuses effort on the areas of highest exposure and allows generic responses for groups of related risks.",
+    "ref": "PMBOK 8, Guide section 5, Risk categorization",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 300,
+        "label": "PMBOK 8, Guide section 5, Risk categorization"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "The sponsor asks how likely the project is to finish by a set date, considering all risks together. Which technique fits?",
+    "options": [
+      "A probability and impact matrix",
+      "Monte Carlo simulation",
+      "SWOT analysis",
+      "A prompt list such as PESTLE"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Simulation models the combined effect of risks and uncertainty; Monte Carlo analysis gives a probability distribution, such as a 10% chance of finishing by one date and 90% by another.",
+    "ref": "PMBOK 8, Guide section 5, Simulation",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 302,
+        "label": "PMBOK 8, Guide section 5, Simulation"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which display ranks the risks that most influence a project outcome, from strongest to weakest?",
+    "options": [
+      "A burndown chart",
+      "A risk breakdown structure",
+      "A RACI matrix",
+      "A tornado diagram"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Sensitivity analysis is typically shown as a tornado diagram, with items ordered by descending strength of correlation with the outcome.",
+    "ref": "PMBOK 8, Guide section 5, Sensitivity analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 302,
+        "label": "PMBOK 8, Guide section 5, Sensitivity analysis"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Option X has a 50% chance of earning 100,000 and a 50% chance of losing 20,000. Option Y has a 70% chance of earning 60,000 and a 30% chance of earning 10,000. Which has the higher EMV?",
+    "options": [
+      "Y, with an EMV of 45,000",
+      "X, with an EMV of 40,000",
+      "X, with an EMV of 50,000",
+      "Y, with an EMV of 42,000"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "X: 0.5 × 100,000 + 0.5 × −20,000 = 40,000. Y: 0.7 × 60,000 + 0.3 × 10,000 = 45,000. A decision tree chooses the branch with the better EMV.",
+    "ref": "PMBOK 8, Guide section 5, Decision tree analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 268,
+        "label": "PMBOK 8, Guide section 5, Decision tree analysis"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "A threat has a 25% probability and would cost 80,000 if it occurred. What is its expected monetary value?",
+    "options": [
+      "−80,000",
+      "−60,000",
+      "−20,000",
+      "20,000"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "EMV = probability × impact = 0.25 × −80,000 = −20,000. Threats carry negative values, opportunities positive ones.",
+    "ref": "PMBOK 8, Glossary (expected monetary value)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 372,
+        "label": "PMBOK 8, Glossary (expected monetary value)"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "How does the PMBOK Guide suggest an agile team tailor its risk assessment?",
+    "options": [
+      "Assess risks once, in the initial planning phase",
+      "Assess risks at the start of each sprint",
+      "Leave risk assessment to the PMO",
+      "Assess risks only after a failure has happened in a release"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "In the agile example, the team assesses risks at the beginning of each sprint, reviews them with stakeholders at the end of each iteration, and uses risk-adjusted backlogs.",
+    "ref": "PMBOK 8, Guide 2.7.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 206,
+        "label": "PMBOK 8, Guide 2.7.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which statement about quantitative risk analysis is correct?",
+    "options": [
+      "It is required on every project",
+      "It replaces qualitative analysis",
+      "It is done only once, at the start",
+      "It is not always required"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Quantitative risk analysis may not always be required; when it is, it is conducted throughout the project, alongside qualitative analysis.",
+    "ref": "PMBOK 8, Guide 2.7.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "Which item from the first workshop is written as a usable risk?",
+    "case": "offshore-wind",
+    "options": [
+      "Weather",
+      "The team is worried",
+      "Vessels may be booked by competitors, delaying installation",
+      "All 40 items exactly as they were listed"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "A usable risk statement names a cause, an uncertain event and its effect. 'Weather' and 'the team is worried' are vague topics or concerns that need exploring.",
+    "ref": "PMBOK 8, Guide section 4, Risk register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 242,
+        "label": "PMBOK 8, Guide section 4, Risk register"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "How should the new turbine model be treated?",
+    "case": "offshore-wind",
+    "options": [
+      "As an opportunity in the risk register",
+      "As a threat to the cost baseline",
+      "As an issue to resolve now",
+      "As out of scope for risk management entirely"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "An uncertain event that could reduce costs is an opportunity. It is identified, analyzed and given a response like any threat.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "What does the board's ±5% cost limit represent?",
+    "case": "offshore-wind",
+    "options": [
+      "A risk trigger",
+      "A risk threshold showing a low appetite",
+      "A contingency reserve",
+      "A management reserve set aside for unknowns"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A risk threshold is the acceptable variation around an objective and reflects risk appetite; a narrow ±5% shows a low appetite.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are elements of a risk management plan?",
+    "type": "multi",
+    "options": [
+      "Risk categories",
+      "Funding for risk activities",
+      "Definitions of probability and impact",
+      "The issue log",
+      "The team charter",
+      "The final report"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "hybrid",
+    "explanation": "The plan may include risk strategy, methodology, roles, funding, timing, risk categories, stakeholder risk appetite, and definitions of probability and impact.",
+    "ref": "PMBOK 8, Guide section 4, Risk management plan",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 239,
+        "label": "PMBOK 8, Guide section 4, Risk management plan"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are tools and techniques of Identify Risks in the Eighth Edition?",
+    "type": "multi",
+    "options": [
+      "Prompt lists",
+      "SWOT analysis",
+      "Monte Carlo simulation",
+      "Tornado diagrams",
+      "Decision tree analysis"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Figure 2-49 lists brainstorming, checklists, interviews, root cause, assumption and constraint, SWOT and document analysis, facilitation, prompt lists, meetings and AI. The others are analysis techniques.",
+    "ref": "PMBOK 8, Guide 2.7.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are quantitative risk analysis techniques?",
+    "type": "multi",
+    "options": [
+      "Simulation",
+      "Sensitivity analysis",
+      "Brainstorming",
+      "Checklists",
+      "Prompt lists"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-50 lists simulations, sensitivity analysis, decision tree analysis and influence diagrams among the data analysis techniques of Perform Risk Analysis.",
+    "ref": "PMBOK 8, Guide 2.7.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each risk classification with its meaning.",
+    "type": "match",
+    "left": [
+      "Known-known",
+      "Known-unknown",
+      "Unknown-known",
+      "Unknown-unknown"
+    ],
+    "right": [
+      "Facts managed as scope",
+      "A classic risk",
+      "A hidden fact",
+      "An emergent risk"
+    ],
+    "approach": "predictive",
+    "explanation": "Figure 2-46: known-knowns are not risks; known-unknowns can be estimated; unknown-knowns exist outside the team; unknown-unknowns are emergent and need resilience and management reserve.",
+    "ref": "PMBOK 8, Guide Figure 2-46",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 198,
+        "label": "PMBOK 8, Guide Figure 2-46"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about risk.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "The degree of uncertainty accepted in anticipation of a reward is the risk",
+        "choices": [
+          "threshold",
+          "appetite",
+          "exposure"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "The aggregate potential impact of all risks at a point in time is risk",
+        "choices": [
+          "appetite",
+          "threshold",
+          "exposure"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Probability multiplied by monetary impact is the",
+        "choices": [
+          "expected monetary value",
+          "risk threshold",
+          "risk trigger"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Appetite is the willingness; a threshold measures it; exposure is the total potential impact; EMV puts a money value on a risk.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  }
+]

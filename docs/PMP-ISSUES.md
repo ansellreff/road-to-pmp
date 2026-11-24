@@ -139,3 +139,11 @@ Every problem met while building the PMP course, newest group last. Section name
 | PMP-71 | Compliance (Business task 2) has no single home in the Eighth Edition; it is spread over governance, the environment, the quality and sustainability principles, risk and AI. | 3.2 is built from those passages plus the risk practice guide, the business analysis guide and the Agile Practice Guide. The **table of compliance categories** is my own grouping of the categories those sources name (security, health and safety, sustainability, regulatory, standards, policy, contractual); each row rests on a cited source. | Module 3.2, "Classifying compliance categories" |
 | PMP-72 | The Eighth Edition lists corrective action, preventive action, defect repair and update as kinds of change request but does not define them. | Definitions taken from the Sixth Edition (4.3.3.4), which uses the same four names. | Module 3.3, "Change in the Eighth Edition" |
 | PMP-73 | "Escalate only beyond your authority or threshold, along the agreed path" is not one sentence in the books. | Built from PMBOK 8 2.1.4 (when escalation is useful), the control thresholds in the management plans, and the PMI Code (approach a conflict directly first; follow the organization's rules). | Module 3.1, "Escalation paths and thresholds" |
+
+### PMP Session 12 (modules 3.4 to 3.6)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| PMP-74 | The source linker could not find a PMBOK 8 glossary term followed by its abbreviation ("expected monetary value (EMV)"), so that link opened the first glossary page. | `tools/link_sources.py` now allows the abbreviation. No other link changed (checked with git and the link audit). | `tools/link_sources.py` |
+| PMP-75 | Residual and secondary risks, still asked on the exam, are not in the Eighth Edition. | Taken from the Sixth Edition (11.5.3.3). | Module 3.6 |
+| PMP-76 | The link audit lists two CAPM glossary links (assumption, baseline) as "on a fallback page". They are correct: both terms are on the first glossary page, which the audit mistakes for a fallback. | No change, as CAPM is frozen; noted so the warning is not chased again. | `tools/audit_links.py` output |

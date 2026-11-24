@@ -1,0 +1,681 @@
+[
+  {
+    "id": "q1",
+    "q": "A supplier's late delivery is stopping the team's work today. How should the project manager classify this?",
+    "options": [
+      "A risk, since it might affect the schedule later",
+      "An issue, since it is happening now",
+      "An assumption to record in the assumption log",
+      "A lesson learned for the next project only"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "An issue is a current condition that has already occurred and may need immediate action. A risk is uncertain and in the future.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which document records the project's issues, with their owners, priorities and target resolution dates?",
+    "options": [
+      "The risk register",
+      "The assumption log",
+      "The stakeholder register",
+      "The issue log"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The issue log is the project document where information about issues is recorded and monitored.",
+    "ref": "PMBOK 8, Guide section 4, Issue log",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Issue log"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "An identified risk, that the main crane may break down, has just occurred. A response was planned. What should the project manager do?",
+    "options": [
+      "Treat it as an issue and carry out the planned response",
+      "Leave it in the risk register as a future threat",
+      "Wait for the risk review at the end of the month",
+      "Close the risk register entry and do nothing else at all"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "A risk that occurs is no longer uncertain: it becomes an issue. Implement Risk Responses executes the agreed response and updates the issue log and risk register.",
+    "ref": "PMBOK 8, Guide 2.7.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 203,
+        "label": "PMBOK 8, Guide 2.7.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A developer has been blocked for three days waiting for test data from another department. What should the team's supportive leader do?",
+    "options": [
+      "Tell the developer to work around the rules for now",
+      "Take over the developer's other tasks personally",
+      "Work with that department to remove the blocker",
+      "Wait for the next retrospective to discuss the delay at length"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Supportive leaders remove organizational impediments, working with departments whose processes slow the team, so the team can keep delivering.",
+    "ref": "Agile Practice Guide, 4.3.1.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 63,
+        "label": "Agile Practice Guide, 4.3.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Every finished increment then waits six weeks in another department's release queue. What does the Agile Practice Guide expect the leader to do?",
+    "options": [
+      "Ask the team to slow down to match the release queue",
+      "Work with that department to streamline the process",
+      "Stop delivering increments until the queue clears up completely",
+      "Release the product without the department's approval"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Lengthy release processes are bottlenecks; the supportive leader partners with others to review their processes and can change or remove these organizational impediments.",
+    "ref": "Agile Practice Guide, 4.3.1.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 63,
+        "label": "Agile Practice Guide, 4.3.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "How do team members typically raise impediments in iteration-based agile?",
+    "options": [
+      "In a written report to the sponsor each month",
+      "Only in the retrospective at the end of the iteration",
+      "By email to the PMO, which assigns an owner",
+      "In the daily meeting: 'What are my impediments?'"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "In iteration-based agile, everyone answers what they completed, what they plan to complete, and what their impediments (or risks or problems) are.",
+    "ref": "Agile Practice Guide, 5.2.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 84,
+        "label": "Agile Practice Guide, 5.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "The team's impediments are discussed but never written down, and several get forgotten. What should the project manager introduce?",
+    "options": [
+      "A visible impediment list with severity and actions",
+      "A rule that only the leader may mention impediments in meetings",
+      "A monthly report of impediments to the board",
+      "A ban on discussing impediments in daily meetings"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Visual controls can include an impediment list showing each impediment, its severity and the actions being taken to resolve it.",
+    "ref": "PMBOK 8, Guide section 5, Visual controls",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 317,
+        "label": "PMBOK 8, Guide section 5, Visual controls"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Team members hide blocked work because they fear being blamed. What is the underlying problem?",
+    "options": [
+      "The team has too many tasks on its board",
+      "The iterations are too long for the work",
+      "Low psychological safety in the team",
+      "The product owner is not prioritizing the backlog well"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "With psychological safety, team members raise impediments immediately, ask for help and swarm on blocked work without fear of blame.",
+    "ref": "Agile Practice Guide, 4.2.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 58,
+        "label": "Agile Practice Guide, 4.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Three impediments compete for the project manager's time. How should they be handled?",
+    "options": [
+      "In the order in which they were reported to the team",
+      "By priority, based on their impact on objectives",
+      "All at the same time, with equal effort on each",
+      "The cheapest one to fix first, whatever its impact on the project"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Evaluate each impediment's impact and prioritize; the issue log records a priority for each issue so the most damaging get attention first.",
+    "ref": "PMBOK 6, 4.3.3.3",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 118,
+        "label": "PMBOK 6, 4.3.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "A recurring build failure blocks the team every week, and fixing it takes a day each time. What should the team do?",
+    "options": [
+      "Keep fixing it each week as it appears",
+      "Accept it as a normal part of the work",
+      "Ask the sponsor for more developers to absorb the delay",
+      "Find and remove the root cause of the failure"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Root cause analysis determines the basic reason for a problem; when all root causes are removed, the problem does not recur.",
+    "ref": "PMBOK 8, Guide section 5, Root cause analysis",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 301,
+        "label": "PMBOK 8, Guide section 5, Root cause analysis"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "The team cannot size a story because the technical approach is unknown. Which intervention fits?",
+    "options": [
+      "Timebox a spike to learn what is needed",
+      "Assign the story to the most senior developer to just build it",
+      "Skip the story and never return to it",
+      "Ask the sponsor to choose the approach"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "When a team struggles with obstacles, the Agile Practice Guide suggests empowering impediment escalation, timeboxing spikes and swarming on systemic blockers.",
+    "ref": "Agile Practice Guide, 5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 89,
+        "label": "Agile Practice Guide, 5.4"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Which of these impediments is most clearly one the team cannot remove on its own?",
+    "options": [
+      "A missing unit test in the code",
+      "Two members disagreeing on a design detail",
+      "A company policy requiring a monthly approval",
+      "A story that needs splitting into smaller parts"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Organizational processes such as approvals, finance, change control boards and audits are organizational impediments; a leader works with those owners to change them.",
+    "ref": "Agile Practice Guide, 4.3.1.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 63,
+        "label": "Agile Practice Guide, 4.3.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Resolving an issue needs extra budget beyond the project manager's authority. What should happen?",
+    "options": [
+      "Approve the budget personally to save time",
+      "Escalate it along the agreed path",
+      "Leave it unresolved until the next phase",
+      "Ask the team to vote on the extra budget at its next meeting"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Escalation is useful where decision authority lies outside the team or with higher-ranking people who can remove persistent obstacles.",
+    "ref": "PMBOK 8, Guide 2.1.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 118,
+        "label": "PMBOK 8, Guide 2.1.4"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "In larger agile delivery settings, what does the Agile Practice Guide say project managers may often do?",
+    "options": [
+      "Assign the tasks to each team member every single morning",
+      "Replace the product owners on every team",
+      "Write all of the user stories for the teams",
+      "Escalate and remove organization-level impediments"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "Project managers may move into external-facing coordination roles: aligning teams and dependencies, escalating and removing organization-level impediments, and guiding teams through enterprise processes.",
+    "ref": "Agile Practice Guide, 4.3.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 65,
+        "label": "Agile Practice Guide, 4.3.2"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Which data does the Sixth Edition list for an issue in the issue log?",
+    "options": [
+      "Priority, assignee, target date and final solution",
+      "Probability, impact, trigger and the risk owner",
+      "Story points, velocity and iteration number",
+      "Contract type, fee and the agreed payment schedule"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The issue log may include issue type, who raised it and when, description, priority, who is assigned, target resolution date, status and final solution.",
+    "ref": "PMBOK 6, 4.3.3.3",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 118,
+        "label": "PMBOK 6, 4.3.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Ambiguity about a requirement is slowing the team, but it has not become a risk. What does the PMBOK Guide suggest?",
+    "options": [
+      "Add it to the risk register as a high risk",
+      "Escalate it to the sponsor at once",
+      "Resolve it through collaborative problem-solving",
+      "Ignore it until it becomes an issue later in the project"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Ambiguous and uncertain situations do not always escalate into risks; as information arrives and experts get involved, they can often be resolved through collaborative problem-solving.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Which processes update the issue log as risks turn into issues?",
+    "options": [
+      "Develop Schedule and Estimate Costs",
+      "Implement Risk Responses and Monitor Risks",
+      "Plan Scope Management and Define Scope",
+      "Identify Stakeholders and Plan Communications Management"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Figures 2-52 and 2-53 list issue log updates among the outputs of Implement Risk Responses and Monitor Risks.",
+    "ref": "PMBOK 8, Guide 2.7.2.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 203,
+        "label": "PMBOK 8, Guide 2.7.2.6"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A retrospective produces twelve action items to remove impediments. What is a good next step?",
+    "options": [
+      "Assign all twelve to the scrum master",
+      "Drop all of them, as there are too many",
+      "Wait until the next project to act on any of them",
+      "Pick the most important and follow through"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "A team may end up with many action items to remove impediments; it chooses the most important to act on and follows through.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Two stakeholders disagree on how an issue should be resolved. What should the project manager do first?",
+    "options": [
+      "Bring them together to work on the approach",
+      "Pick the solution of the more senior one",
+      "Escalate it straight to the board",
+      "Leave the issue open until they agree on their own, however long it takes"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The enabler is to collaborate with relevant stakeholders on an approach. The Code also asks us to approach those in a conflict directly first.",
+    "ref": "PMI Code of Ethics, 3.2",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 10,
+        "label": "PMI Code of Ethics, 3.2"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "For how long does the issue log stay in use on a project?",
+    "options": [
+      "Only during the initiating phase",
+      "Only until the first issue is resolved",
+      "Throughout the project, updated by monitoring",
+      "Only in projects that use an agile approach for delivery"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Issues may happen at any time; the issue log is updated as a result of monitoring and controlling throughout the life cycle.",
+    "ref": "PMBOK 6, 4.3.3.3",
+    "links": [
+      {
+        "book": "pmbok6",
+        "page": 118,
+        "label": "PMBOK 6, 4.3.3.3"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which Agile Practice Guide suggestion helps with unexpected or unforeseen delays?",
+    "options": [
+      "Add more work in process to keep everyone busy",
+      "Visualize blockers and limit work in process",
+      "Lengthen feedback loops to reduce interruptions",
+      "Stop holding daily coordination meetings for a while"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "For unexpected delays: visualize blockers, run delay diagnostics, limit WIP and shorten feedback loops.",
+    "ref": "Agile Practice Guide, 5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 89,
+        "label": "Agile Practice Guide, 5.4"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "A negative risk has occurred. What is the scheduling standard's term for the response to it?",
+    "options": [
+      "A contingency reserve",
+      "A risk threshold",
+      "A risk trigger",
+      "A workaround"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "A workaround is a response to a negative risk that has occurred. A trigger signals that a risk is about to occur; a reserve is time or money, not a response.",
+    "ref": "Practice Standard for Scheduling, Glossary (workaround)",
+    "links": [
+      {
+        "book": "scheduling",
+        "page": 208,
+        "label": "Practice Standard for Scheduling, Glossary (workaround)"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "How should the steel delay now be handled?",
+    "case": "bridge-repair",
+    "options": [
+      "As an issue, carrying out the second-supplier plan",
+      "As a new risk to analyze at the next review",
+      "As a lesson learned for future bridges",
+      "As a change request to reduce the bridge's scope and size"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The identified risk has occurred, so it is now an issue; the planned contingency response is carried out and the issue log and risk register are updated.",
+    "ref": "PMBOK 8, Guide 2.7.2.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 203,
+        "label": "PMBOK 8, Guide 2.7.2.5"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "What should the project manager do about the safety permit?",
+    "case": "bridge-repair",
+    "options": [
+      "Tell the crew to start work without the permit",
+      "Contact the traffic department to clear the blocker",
+      "Wait until the department contacts the project",
+      "Move the night crew permanently to another city project"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The permit is an impediment the crew cannot remove; the leader works with the department that owns the process. Working without a required permit would break compliance.",
+    "ref": "Agile Practice Guide, 4.3.1.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 63,
+        "label": "Agile Practice Guide, 4.3.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "How should the disagreement about the pour sequence be resolved?",
+    "case": "bridge-repair",
+    "options": [
+      "Let the foreman decide alone, since the crew does the pour work",
+      "Escalate it to the city council at once",
+      "Bring both together with the facts to agree an approach",
+      "Postpone the pour until the project ends"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Collaborate with the relevant stakeholders on an approach; subject matter experts and the facts turn disagreement into a decision. Escalate only if it is beyond the project's authority.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO describe an issue rather than a risk?",
+    "type": "multi",
+    "options": [
+      "It has already occurred",
+      "It may need immediate action",
+      "It may or may not happen",
+      "It is written as cause, event and consequence",
+      "It is assessed by its probability"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "An issue has occurred or is occurring and may need immediate action or management attention. Uncertainty, probability and the cause-event-consequence structure describe risks.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are ways a supportive leader removes or reduces impediments, according to the Agile Practice Guide?",
+    "type": "multi",
+    "options": [
+      "Working with departments to streamline slow processes",
+      "Exposing bottlenecks so the teams can resolve them",
+      "Escalating organization-level impediments",
+      "Doing the team's technical work for it",
+      "Making the team's decisions for it",
+      "Hiding impediments from stakeholders"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "agile",
+    "explanation": "Leaders facilitate (expose bottlenecks so teams resolve them), remove organizational impediments, and in larger settings escalate organization-level impediments. They do not make decisions others are responsible for.",
+    "ref": "Agile Practice Guide, 4.3.1.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 63,
+        "label": "Agile Practice Guide, 4.3.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO belong in an impediment list on a visual control?",
+    "type": "multi",
+    "options": [
+      "The severity of each impediment",
+      "The actions being taken to resolve it",
+      "The team members' salaries",
+      "The project's full budget",
+      "The vendor's contract terms"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "An impediment list shows a description of each impediment, its severity, and the actions being taken to resolve it.",
+    "ref": "PMBOK 8, Guide section 5, Visual controls",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 317,
+        "label": "PMBOK 8, Guide section 5, Visual controls"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each situation with a fitting intervention.",
+    "type": "match",
+    "left": [
+      "Unknown technical approach",
+      "Slow approval in another department",
+      "A defect that keeps coming back",
+      "A decision beyond the project manager's authority"
+    ],
+    "right": [
+      "Timebox a spike",
+      "The leader works with that department",
+      "Root cause analysis",
+      "Escalate along the agreed path"
+    ],
+    "approach": "hybrid",
+    "explanation": "The team solves what it can (spikes, root causes); leaders remove organizational impediments; escalation handles what is beyond the project's authority.",
+    "ref": "Agile Practice Guide, 5.4",
+    "links": [
+      {
+        "book": "agile",
+        "page": 89,
+        "label": "Agile Practice Guide, 5.4"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about impediments and issues.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "An obstacle that prevents the team from reaching its objectives is an",
+        "choices": [
+          "assumption",
+          "impediment",
+          "opportunity"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "A current condition that may affect one or more objectives is an",
+        "choices": [
+          "opportunity",
+          "assumption",
+          "issue"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "A response to a negative risk that has occurred is a",
+        "choices": [
+          "workaround",
+          "contingency reserve",
+          "risk trigger"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Impediments block the team; issues have already happened; workarounds respond to risks that have occurred.",
+    "ref": "PMBOK 8, Glossary (impediment)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 373,
+        "label": "PMBOK 8, Glossary (impediment)"
+      }
+    ]
+  }
+]

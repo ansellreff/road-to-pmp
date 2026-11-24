@@ -53,5 +53,15 @@
     "id": "hotel-renovation",
     "title": "Renovating a hotel",
     "text": "A hotel is being renovated to a fixed plan, with approved scope, schedule and cost baselines. A change control board meets every two weeks. The owner's marketing director has asked the site foreman directly to add a rooftop bar, and the foreman has already started ordering materials.\n\nAt the same time, an agile team is building the hotel's new booking app in two-week iterations. The front desk has asked for a group-booking feature."
+  },
+  {
+    "id": "bridge-repair",
+    "title": "Repairing a road bridge",
+    "text": "A city is repairing a road bridge to a fixed plan. The risk register lists 'steel delivery delayed', with a planned response: switch to a second, pre-qualified supplier. This week the steel supplier announced a three-week delay.\n\nThe night crew has also been waiting two days for a safety permit that only the city's traffic department can issue. Meanwhile, the crew foreman and the design engineer disagree about the order in which the next concrete pours should be made."
+  },
+  {
+    "id": "offshore-wind",
+    "title": "Planning an offshore wind farm",
+    "text": "An energy company is planning an offshore wind farm. Its board will accept a variance of no more than ±5% on the project's cost.\n\nThe team's first risk workshop produced 40 items, including 'weather', 'the team is worried', and 'vessels for turbine installation may be booked by competitors, delaying installation by months'. A specialist adds that a new turbine model could cut maintenance costs by 15% if it is certified in time."
   }
 ]

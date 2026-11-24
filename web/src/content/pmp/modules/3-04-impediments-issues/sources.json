@@ -1,0 +1,102 @@
+[
+  {
+    "book": "agile",
+    "page": 58,
+    "label": "Agile Practice Guide, 4.2.3"
+  },
+  {
+    "book": "agile",
+    "page": 63,
+    "label": "Agile Practice Guide, 4.3.1.1"
+  },
+  {
+    "book": "agile",
+    "page": 63,
+    "label": "Agile Practice Guide, 4.3.1.2"
+  },
+  {
+    "book": "agile",
+    "page": 65,
+    "label": "Agile Practice Guide, 4.3.2"
+  },
+  {
+    "book": "agile",
+    "page": 84,
+    "label": "Agile Practice Guide, 5.2.4"
+  },
+  {
+    "book": "agile",
+    "page": 86,
+    "label": "Agile Practice Guide, 5.2.7"
+  },
+  {
+    "book": "agile",
+    "page": 89,
+    "label": "Agile Practice Guide, 5.4"
+  },
+  {
+    "book": "ethics",
+    "page": 10,
+    "label": "PMI Code of Ethics, 3.2"
+  },
+  {
+    "book": "pmbok6",
+    "page": 118,
+    "label": "PMBOK 6, 4.3.3.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 118,
+    "label": "PMBOK 8, Guide 2.1.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 197,
+    "label": "PMBOK 8, Guide 2.7.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 203,
+    "label": "PMBOK 8, Guide 2.7.2.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 203,
+    "label": "PMBOK 8, Guide 2.7.2.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 203,
+    "label": "PMBOK 8, Guide 2.7.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 228,
+    "label": "PMBOK 8, Guide section 4, Issue log"
+  },
+  {
+    "book": "pmbok8",
+    "page": 292,
+    "label": "PMBOK 8, Guide section 5, Problem-solving"
+  },
+  {
+    "book": "pmbok8",
+    "page": 301,
+    "label": "PMBOK 8, Guide section 5, Root cause analysis"
+  },
+  {
+    "book": "pmbok8",
+    "page": 317,
+    "label": "PMBOK 8, Guide section 5, Visual controls"
+  },
+  {
+    "book": "pmbok8",
+    "page": 373,
+    "label": "PMBOK 8, Glossary (impediment)"
+  },
+  {
+    "book": "scheduling",
+    "page": 208,
+    "label": "Practice Standard for Scheduling, Glossary (workaround)"
+  }
+]

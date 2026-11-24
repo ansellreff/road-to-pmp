@@ -265,7 +265,8 @@ def resolve(part: str) -> tuple[str, int] | None:
     if only_glossary and "glossary" in regions:
         term = re.search(r"\(([^)]+)\)", part)  # "Glossary (risk mitigation)" opens that term's page
         if term:
-            page = find_line(book, rf"^{re.escape(term.group(1))}\. ", *regions["glossary"])
+            # The term may be followed by its abbreviation: "expected monetary value (EMV). ..."
+            page = find_line(book, rf"^{re.escape(term.group(1))}(?: \([^)]*\))?\. ", *regions["glossary"])
             if page:
                 return book, page
         return book, regions["glossary"][0]
