@@ -8,7 +8,7 @@ Each version of Road to PMP, newest first, with what you will notice.
 - **PMP modules 2.7 to 2.9:** Resources, Procurement (contracts, negotiation, claims), and Finance (estimates, budget and reserves), with 90 questions, a new case set and 75 flashcards.
 - **PMP modules 2.10 to 2.12:** Earned Value and Financial Reporting, Quality (cost of quality, audits, continuous improvement), and Schedule (dependencies, critical path, compression, baselines), with 90 questions, a new case set and 75 flashcards.
 - **PMP modules 2.13 to 2.15:** Agile Scheduling (story points, velocity, release plans, flow metrics), Evaluating Status (metrics, measurement pitfalls, artifacts, dashboards), and Closure and Transition, with 90 questions, two new case sets and 75 flashcards. **The PMP Process domain is complete:** PMP now has 24 of 34 modules, 721 questions and 600 flashcards.
-- **PMP Business Environment domain started:** 3.1 Governance, Ethics, Success Metrics and Escalation, 3.2 Compliance, 3.3 Change Control, with 90 questions, three new case sets and 75 flashcards. PMP now has 27 of 34 modules, 811 questions and 675 flashcards.
+- **PMP Business Environment domain started:** 3.1 Governance, Ethics, Success Metrics and Escalation, 3.2 Compliance, 3.3 Change Control, with 90 questions, two new case sets and 75 flashcards. PMP now has 27 of 34 modules, 811 questions and 675 flashcards.
 - Some PMP questions in 2.8 to 2.11 and 2.13 that were too close to CAPM questions were rewritten as new situations.
 
 ## 1.0 · 23 Nov 2026 · Help page, version number and the first PMP modules
