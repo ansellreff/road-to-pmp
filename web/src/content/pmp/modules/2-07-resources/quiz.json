@@ -123,7 +123,8 @@
         "page": 276,
         "label": "PMBOK 8, Guide section 5, Green human resource management"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q7",
@@ -249,7 +250,8 @@
         "page": 187,
         "label": "PMBOK 8, Guide 2.6.2.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q13",
@@ -522,7 +524,8 @@
         "page": 193,
         "label": "PMBOK 8, Guide 2.6.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -550,7 +553,8 @@
         "page": 187,
         "label": "PMBOK 8, Guide 2.6.2.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q27",
@@ -629,7 +633,8 @@
         "page": 185,
         "label": "PMBOK 8, Guide 2.6.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q30",

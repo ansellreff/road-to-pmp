@@ -58,7 +58,7 @@ export default function ExamsPage() {
         page. When it runs out, the exam is submitted with the answers given so far.
       </p>
       <p className={`${note} mt-2`}>
-        Beside multiple choice, the real exam has matching, hot spot and comic strip questions.{' '}
+        Beside multiple choice, the real exam has {course.exam.types ?? 'matching, hot spot and comic strip'} questions.{' '}
         <Link to={`/${course.id}/question-types`} className={link}>
           Try one of each
         </Link>{' '}

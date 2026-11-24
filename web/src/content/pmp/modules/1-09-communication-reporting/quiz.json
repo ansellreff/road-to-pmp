@@ -39,7 +39,8 @@
         "page": 222,
         "label": "PMBOK 8, Guide section 4, Communications management plan"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q3",
@@ -207,7 +208,8 @@
         "page": 258,
         "label": "PMBOK 8, Guide section 5, Communication models"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q11",
@@ -270,7 +272,8 @@
         "page": 179,
         "label": "PMBOK 8, Guide 2.5.2.7"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q14",
@@ -417,7 +420,8 @@
         "page": 249,
         "label": "PMBOK 8, Guide section 4, Work performance reports"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q21",
@@ -523,7 +527,8 @@
         "page": 115,
         "label": "PMBOK 8, Guide 2.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q26",
@@ -603,7 +608,8 @@
         "page": 95,
         "label": "Agile Practice Guide, 5.5.4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q29",
@@ -630,7 +636,8 @@
         "page": 257,
         "label": "PMBOK 8, Guide section 5, Communication methods"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q30",

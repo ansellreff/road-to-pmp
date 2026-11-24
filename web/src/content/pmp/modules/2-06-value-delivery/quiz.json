@@ -39,7 +39,8 @@
         "page": 36,
         "label": "PMBOK 8, Standard 2.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q3",
@@ -480,7 +481,8 @@
         "page": 81,
         "label": "Agile Practice Guide, 5.2.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q24",
@@ -611,7 +613,8 @@
         "page": 81,
         "label": "Agile Practice Guide, 5.2.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q29",
@@ -633,7 +636,8 @@
         "page": 87,
         "label": "Agile Practice Guide, 5.2.8"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q30",
@@ -655,6 +659,7 @@
         "page": 220,
         "label": "PMBOK 8, Guide section 4, Benefits management plan"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

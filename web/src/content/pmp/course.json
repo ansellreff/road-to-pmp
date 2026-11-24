@@ -2,7 +2,7 @@
   "id": "pmp",
   "title": "PMP",
   "subtitle": "Project Management Professional",
-  "exam": { "questions": 180, "minutes": 240, "sections": 3, "breakMinutes": 10, "approach": { "predictive": 40 } },
+  "exam": { "questions": 180, "minutes": 240, "sections": 3, "breakMinutes": 10, "approach": { "predictive": 40 }, "types": "multiple response, matching, hot spot, pull-down list, case set and graphic-based" },
   "domains": [
     {
       "id": "d1",

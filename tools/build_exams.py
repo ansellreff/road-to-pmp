@@ -37,6 +37,25 @@ def split(total: int, sizes: list[int]) -> list[int]:
     return shares
 
 
+def shares_per_exam(total: int, sizes: list[int], count: int) -> list[list[int]]:
+    """For each of count exams, how many of total questions each group gives: in proportion to its size.
+
+    The places left after rounding down go to the groups with the largest remainders, taken in turn,
+    so no group gives the extra question to every exam.
+    """
+    exact = [total * s / sum(sizes) for s in sizes]
+    base = [int(x) for x in exact]
+    extra = total - sum(base)
+    order = sorted(range(len(sizes)), key=lambda i: exact[i] - base[i], reverse=True)
+    result = []
+    for e in range(count):
+        shares = list(base)
+        for k in range(extra):
+            shares[order[(e * extra + k) % len(sizes)]] += 1
+        result.append(shares)
+    return result
+
+
 def option_order(question: dict, letter: int, rng: random.Random) -> list[int]:
     """The order in which an exam shows a question's options: order[shown position] = position in the file.
 
@@ -234,9 +253,11 @@ def add_exam(course_id: str, mixed: bool = False) -> None:
 def build_sectioned(folder: Path, count: int) -> None:
     """Build the mock exams of a course that uses PMP's rules: sections, case sets and the approach tag.
 
-    Each exam follows the domain weights. A case set is taken whole and placed inside one section,
-    so no break splits it. The predictive share of each exam is held near the course's target
-    (within 3 points, or one question on a very small exam). With more than one exam, the last is
+    Each exam follows the domain weights and takes from every module of a domain in proportion to its
+    size. The case sets are shared out over the exams. A case set is taken whole and placed inside one
+    section, so no break splits it. The predictive share of each exam is held near the course's target
+    (swaps within a module aim for one question; it must be within 3 points, or one question on a very
+    small exam). With more than one exam, the last is
     kept unseen, as for CAPM. CAPM's exams are built by build() and add_exam() and do not come here.
     """
     course = json.loads((folder / "course.json").read_text(encoding="utf-8"))
@@ -255,50 +276,69 @@ def build_sectioned(folder: Path, count: int) -> None:
     by_id = {(m, q["id"]): q for m, qs in quizzes.items() for q in qs}
     predictive = lambda unit: sum(1 for key in unit if by_id[key].get("approach") == "predictive")
 
-    # Units: a single question, or every question of one case.
+    # Units: a single question, or every question of one case. Each exam takes from every module of a
+    # domain in proportion to its size, and the case sets are shared out so every exam has some.
     exams: list[list[list[tuple[str, str]]]] = [[] for _ in range(count)]
+    spare: dict[str, list] = {}
+    next_exam = 0
     for domain, quota in zip(course["domains"], quotas):
-        units = []
-        for module in domain["modules"]:
-            cases: dict[str, list] = {}
-            for q in quizzes[module["id"]]:
+        names = [m["id"] for m in domain["modules"] if quizzes[m["id"]]]
+        need = shares_per_exam(quota, [len(quizzes[n]) for n in names], count)
+        singles: dict[str, list] = {}
+        cases: list[list[tuple[str, str]]] = []
+        for name in names:
+            grouped: dict[str, list] = {}
+            for q in quizzes[name]:
                 if q.get("case"):
-                    cases.setdefault(q["case"], []).append((module["id"], q["id"]))
+                    grouped.setdefault(q["case"], []).append((name, q["id"]))
                 else:
-                    units.append([(module["id"], q["id"])])
-            units += cases.values()
-        rng.shuffle(units)
-        for exam in reversed(exams):
-            room = quota
-            for unit in list(units):
-                if len(unit) <= room:
-                    exam.append(unit)
-                    units.remove(unit)
-                    room -= len(unit)
-                if not room:
-                    break
-            if room:
-                sys.exit(f"{domain['id']}: not enough questions for {count} exam(s) of {size}")
-        # The questions left over in this domain can be swapped in to balance the approach.
+                    singles.setdefault(name, []).append([(name, q["id"])])
+            cases += grouped.values()
+            rng.shuffle(singles.setdefault(name, []))
+        rng.shuffle(cases)
+        # Case sets go round the exams, carrying on from the last domain, so the totals stay level.
+        for unit in cases:
+            e = next_exam % count
+            next_exam += 1
+            m = names.index(unit[0][0])
+            short = len(unit) - need[e][m]
+            # A case larger than its module's share takes the difference from the module with the most room.
+            for _ in range(max(0, short)):
+                donor = max((i for i in range(len(names)) if i != m), key=lambda i: need[e][i], default=None)
+                if donor is None or need[e][donor] == 0:
+                    sys.exit(f"{domain['id']}: a case set of {len(unit)} does not fit Mock exam {e + 1}")
+                need[e][donor] -= 1
+                need[e][m] += 1
+            exams[e].append(unit)
+            need[e][m] -= len(unit)
+        # The unseen exam (the last) is filled first, as before.
+        for e in reversed(range(count)):
+            for m, name in enumerate(names):
+                if len(singles[name]) < need[e][m]:
+                    sys.exit(f"{domain['id']}: {name} has too few questions for {count} exam(s) of {size}")
+                exams[e] += [singles[name].pop() for _ in range(need[e][m])]
+        for name in names:
+            spare[name] = singles[name]
+
+    # Hold each exam near the predictive target by swapping a question for a spare one of the same module,
+    # so the spread over the modules does not change.
+    if target is not None:
+        goal = size * target / 100
         for exam in exams:
-            exam_domain = [u for u in exam if u[0][0] in {m["id"] for m in domain["modules"]}]
-            spare = [u for u in units if len(u) == 1]
-            if target is None:
-                continue
-            for _ in range(len(exam_domain) * 2):
-                total = sum(predictive(u) for e in [exam] for u in e)
-                gap = total - size * target / 100
-                if abs(gap) <= tolerance or len(sum(exam, [])) < size:
+            while abs(sum(predictive(u) for u in exam) - goal) > 1:
+                want = 0 if sum(predictive(u) for u in exam) > goal else 1
+                positions = [i for i, u in enumerate(exam) if len(u) == 1 and predictive(u) != want]
+                rng.shuffle(positions)
+                for i in positions:
+                    module = exam[i][0][0]
+                    into = next((u for u in spare[module] if predictive(u) == want), None)
+                    if into:
+                        spare[module].remove(into)
+                        spare[module].append(exam[i])
+                        exam[i] = into
+                        break
+                else:
                     break
-                want = 0 if gap > 0 else 1
-                out = next((u for u in exam_domain if len(u) == 1 and predictive(u) != want), None)
-                into = next((u for u in spare if predictive(u) == want), None)
-                if not out or not into:
-                    break
-                exam[exam.index(out)] = into
-                exam_domain[exam_domain.index(out)] = into
-                spare.remove(into)
-                spare.append(out)
 
     result = []
     for number, units in enumerate(exams, start=1):

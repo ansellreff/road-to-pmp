@@ -186,7 +186,8 @@
         "page": 353,
         "label": "PMBOK 8, Appendix X4.5"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q10",
@@ -249,7 +250,8 @@
         "page": 354,
         "label": "PMBOK 8, Appendix X4.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q13",
@@ -270,7 +272,8 @@
         "page": 354,
         "label": "PMBOK 8, Appendix X4.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q14",
@@ -396,7 +399,8 @@
         "page": 158,
         "label": "Agile Practice Guide, Agile Procurement and Contracts"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q20",
@@ -459,7 +463,8 @@
         "page": 234,
         "label": "The Project Management Answer Book, Chapter 9, Q4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q23",

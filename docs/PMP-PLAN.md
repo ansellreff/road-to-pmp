@@ -1,6 +1,6 @@
 # PMP: plan and progress
 
-Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP Sessions 2 (the exam engine), 3 to 5 (Domain 1, People, complete) and 6 (modules 2.1 to 2.3) are done; next is PMP Session 7, modules 2.4 to 2.6.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
+Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP Sessions 1 to 14 are done: all 34 modules (1,021 questions, 850 flashcards) and four mock exams. Next is PMP Session 15: the formula sheet, the accuracy check and the final report.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
 
 ## Status log
 
@@ -23,6 +23,7 @@ Project Management Professional. Started 2026-10-11 and paused the same day unti
 | 24 Nov 2026 | Your answers: PMP may reuse CAPM questions and content (the checker now lists near copies for information only, PMP-70); 2.4 confirmed a full module; "please proceed" (you review Sessions 7 to 10 later). **PMP Session 11 done: modules 3.1 to 3.3, the start of Domain 3 (Business Environment).** 3.1 Governance, Ethics, Success Metrics and Escalation, 3.2 Compliance, 3.3 Change Control: 90 questions (two new case sets, on a food production line and a hotel renovation), 75 flashcards. Business tasks 1, 2 and 3 are taught. Still version 1.1. CAPM unchanged. | Your go-ahead for Session 12, modules 3.4 to 3.6 (impediments and issues, risk) |
 | 24 Nov 2026 | You uploaded version 1.1 (the website runs build 1f53f69) and set the Supabase Site URL. **Sessions 12 and 13 in one go, at your request** (exception recorded in DECISIONS.md). **PMP Session 12 done: modules 3.4 to 3.6.** 3.4 Impediments and Issues, 3.5 Risk: Identifying and Analyzing, 3.6 Risk: Responses and Monitoring: 90 questions (two new case sets, on a bridge repair and an offshore wind farm; EMV and decision-tree calculations), 75 flashcards. Business tasks 4 and 5 are taught. Still version 1.1. CAPM unchanged. | Session 13, modules 3.7 to 3.10, follows at once |
 | 24 Nov 2026 | **PMP Session 13 done: modules 3.7 to 3.10. Domain 3 (Business Environment) is complete, and so are all 34 PMP modules.** 3.7 Continuous Improvement and Lessons Learned, 3.8 Organizational Change and Culture, 3.9 The External Business Environment, 3.10 Artificial Intelligence in Projects: 120 questions (two new case sets, on a bank merger and an e-scooter service), 100 flashcards. Business tasks 6, 7 and 8 are taught; every task of the outline is covered. Still version 1.1. CAPM unchanged. **Sessions 12 and 13 in one go are finished.** | Your review; then Session 14, PMP mock exams, after your go-ahead |
+| 24 Nov 2026 | You uploaded Sessions 11 to 13 (the website runs build 736f49d, checked). **PMP Session 14 done: the PMP mock exams.** Four exams of 180 questions (59 / 74 / 47 by domain, 41% predictive, every module in every exam, 3 or 4 case sets each); Mock exam 4 is kept for last, so its questions left the module quizzes (23 to 26 questions remain in each). The exam builder was fixed first to spread exams evenly (PMP-80). The study plan, readiness estimate and weak spots now include PMP; two wrong texts for PMP were fixed (PMP-81, PMP-82). Still version 1.1. CAPM unchanged. | Your go-ahead for Session 15: formula sheet, accuracy check, final report |
 
 ## Roadmap
 
@@ -44,7 +45,7 @@ PMP counts its own sessions from 1. (Until 2026-10-11 these were numbered 32 to 
 | ✅ | 11 | PMP Domain 3, Business Environment: modules 3.1 to 3.3 (Business tasks 1, 2 and 3) |
 | ✅ | 12 | PMP Domain 3, Business Environment: modules 3.4 to 3.6 (Business tasks 4 and 5) |
 | ✅ | 13 | PMP Domain 3, Business Environment: modules 3.7 to 3.10 (Business tasks 6, 7 and 8). Domain 3 and all 34 modules complete |
-| ⬜ | 14 | PMP mock exams: four of 180 questions, the fourth unseen; PMP in the study plan, readiness and weak spots |
+| ✅ | 14 | PMP mock exams: four of 180 questions, the fourth kept for last; PMP in the study plan, readiness and weak spots |
 | ⬜ | 15 | PMP formula sheet; accuracy check against the reference list; final report |
 
 Every content session ends with the source linker, the content checker, the link audit, the example check, the build, the click tests and the publish check, then a tracker update, a commit and a report of issues and fixes. Since PMP Session 2 it also runs `tools/check_capm_frozen.py`: CAPM is closed, and a PMP session must not change it. Since G1 every session that changes the app also writes its entry in `CHANGELOG.md`, updates the guide where a feature changed, and runs `tools/release.py`.
@@ -382,4 +383,40 @@ Matching, hot spot (PMP's "point and click") and comic strip came from CAPM.
 - **Sources read:** PMBOK Guide, Eighth Edition: Standard 1.3.1, 2.1.1, 2.2, 2.2.1, 2.2.2, 3.5, 3.8; Guide 2.1.6.6, 2.1.6.9, 2.2.3, 2.7.2.2, 2.7.3 to 2.7.5; section 4 (lessons learned register, OPA updates); section 5 (after-action reviews, artificial intelligence, checklists, continuous improvement, in-progress postmortems, information and knowledge management, process improvement, retrospective meetings, storytelling); Appendix X3 (X3.1 to X3.3); glossary (lessons learned). PMBOK Guide, Seventh Edition: Standard 2.4.2, 3.12; Guide 4.2.4 (change models). Agile Practice Guide: 5.2.1, 5.2.7, 6.1 to 6.2.1. Risk Management: A Practice Guide: 3.2.2. The PMI Guide to Business Analysis: 4.2.3.1. PMI Code of Ethics: 2.2.
 - **The approach tag:** 48 predictive, 13 agile, 59 hybrid (40% predictive). **Domain 3 as a whole:** 123 of 300 predictive (41%).
 - **Quality rules:** the right answer is the longest option in 2, 1, 5 and 3 questions. Two false "catch-all" warnings (options beginning "All of") were reworded.
+- **CAPM guards:** `check_capm_frozen.py` passes; CAPM's click tests pass unchanged.
+
+## PMP Session 14: the PMP mock exams, as built
+
+Built with `tools/build_exams.py pmp --rebuild --exams 4` into `web/src/content/pmp/exams.json`. No new questions.
+
+| Exam | Domains (People / Process / Business) | Predictive | Case sets | Other question types | Modules |
+|---|---|---|---|---|---|
+| Mock exam 1 | 59 / 74 / 47 | 73 (41%) | 4 (12 questions) | 15 multiple response, 6 pull-down, 1 matching, 1 graphic-based | 34, 4 to 7 each |
+| Mock exam 2 | 59 / 74 / 47 | 73 (41%) | 4 (12) | 21 multiple response, 7 matching, 4 pull-down, 2 hot spot, 1 graphic-based | 34, 4 to 7 each |
+| Mock exam 3 | 59 / 74 / 47 | 73 (41%) | 4 (12) | 17 multiple response, 8 pull-down, 6 matching, 2 graphic-based | 34, 4 to 7 each |
+| Mock exam 4 (kept for last) | 59 / 74 / 47 | 73 (41%) | 3 (9) | 18 multiple response, 6 matching, 2 pull-down, 1 graphic-based | 34, 4 to 7 each |
+
+- **The builder** (`build_sectioned`) was changed after a trial run showed an uneven spread (PMP-80). It now:
+  - takes from every module of a domain in proportion to its size, with the leftover places rotating between exams;
+  - shares the 15 case sets out in turn (4, 4, 4, 3);
+  - swaps questions within the same module to hold each exam within one question of 40% predictive.
+  As before, a case set stays whole inside one section, and the answer letters are spread over A to D. The test
+  course still builds with it. CAPM's builders were not touched.
+- **Mock exam 4 is kept for last:** its 180 questions are marked `examOnly` and leave the module quizzes, which now
+  show 23 to 26 questions each (the checker's minimum is 10). 301 questions are in no exam and stay in the quizzes.
+- **Study plan, readiness estimate and weak spots:** these needed no change, because they work from any course's
+  exams. They were checked in the browser. The study plan puts the four exams in the final review, with mock exam 4
+  two days before the exam. The readiness estimate counts PMP mock results. The weak spots list PMP modules.
+- **Fixes found while checking:**
+  - the study plan said "3 hours" for every mock exam (PMP-81);
+  - the mock exams page named CAPM's question types for PMP (PMP-82).
+  - Dates written in the browser's own style (PMP-83) are left for your decision.
+- **Guide:** Mock exams gains the "kept for last" exam, PMP's case sets and approach score, and each course's
+  question types.
+- **Click test:** the new test "PMP mock exams" checks:
+  - four exams, PMP's question types and 4 hours;
+  - real mode opening at "Question 1 of 180. Section 1 of 3";
+  - four exams in the study plan;
+  - readiness from a PMP mock result (60%);
+  - weak spots.
 - **CAPM guards:** `check_capm_frozen.py` passes; CAPM's click tests pass unchanged.

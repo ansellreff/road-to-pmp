@@ -39,7 +39,8 @@
         "page": 65,
         "label": "Agile Practice Guide, 4.3.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q3",
@@ -60,7 +61,8 @@
         "page": 52,
         "label": "PMBOK 8, Standard 2.5.1.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q4",
@@ -81,7 +83,8 @@
         "page": 69,
         "label": "PMBOK 8, Standard 3.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q5",
@@ -102,7 +105,8 @@
         "page": 62,
         "label": "Agile Practice Guide, 4.3.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q6",
@@ -375,7 +379,8 @@
         "page": 48,
         "label": "Agile Practice Guide, First Edition, 4.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q19",
@@ -555,7 +560,8 @@
         "page": 69,
         "label": "PMBOK 8, Standard 3.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q27",

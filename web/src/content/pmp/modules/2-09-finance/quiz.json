@@ -123,7 +123,8 @@
         "page": 227,
         "label": "PMBOK 8, Guide section 4, Funding strategy"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q7",
@@ -291,7 +292,8 @@
         "page": 297,
         "label": "PMBOK 8, Guide section 5, Reserve analysis"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q15",
@@ -375,7 +377,8 @@
         "page": 231,
         "label": "PMBOK 8, Guide section 4, Project funding requirements"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q19",
@@ -501,7 +504,8 @@
         "page": 171,
         "label": "PMBOK 8, Guide 2.4.3.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q25",
@@ -576,7 +580,8 @@
         "page": 169,
         "label": "PMBOK 8, Guide 2.4.2.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q28",

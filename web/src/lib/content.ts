@@ -38,6 +38,8 @@ export interface Course {
     breakMinutes?: number
     /** The exam's share of predictive questions, in percent; the rest are agile or hybrid. PMP only. */
     approach?: { predictive: number }
+    /** The real exam's question types beside multiple choice, as a phrase. CAPM's when not given. */
+    types?: string
   }
   domains: Domain[]
   /** A course for the click tests only. It is served by the local test server and never built into the site. */

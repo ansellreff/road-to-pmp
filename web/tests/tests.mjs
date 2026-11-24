@@ -777,6 +777,35 @@ export const tests = {
     expect((await page.getByText('Not taken yet').count()) === 1, 'more mock exams are scheduled than fit')
   },
 
+  async 'PMP mock exams: four of 180 in three sections, in the study plan, the readiness estimate and the weak spots'(page) {
+    await page.goto('/pmp/exams')
+    await see(page, 'Mock exam 4')
+    await see(page, 'the real exam has multiple response, matching, hot spot, pull-down list, case set and graphic-based questions.')
+    expect((await page.getByRole('button', { name: 'Start in real exam mode' }).count()) === 4, 'PMP does not list four mock exams')
+    await page.getByRole('button', { name: 'Start in real exam mode' }).first().click()
+    await see(page, 'Question 1 of 180. Section 1 of 3: 0 of 60 answered')
+    expect((await saved(page)).exams['pmp/mock-1']?.run?.mode === 'real', 'PMP Mock exam 1 did not start in real exam mode')
+
+    // The study plan: an exam day 40 days away puts all four in the final review; the last is the unseen one.
+    const day = (n) => new Date(Date.now() + n * 86_400_000).toLocaleDateString('en-CA')
+    await seed(page, { examDates: { pmp: day(40) } })
+    await page.goto('/plan')
+    await see(page, 'Final review, 7 days.')
+    await see(page, 'in real exam mode. Its questions are new to you.')
+    await see(page, ', 4 hours')
+    expect((await page.getByText('Not taken yet').count()) === 4, 'the study plan does not list four PMP mock exams')
+
+    // One finished mock exam, every domain right as saved: PMP readiness = 0.6 x 1 + 0.4 x 0 = 60%.
+    // No answer was given, so the weak spots list the modules of the exam.
+    const domains = [59, 74, 47].map((total) => ({ right: total, total }))
+    const attempt = { mode: 'real', date: '2026-11-20T10:00:00.000Z', seconds: 12000, timedOut: false, picks: Array(180).fill(null), flags: [], right: 180, total: 180, domains }
+    await seed(page, { exams: { 'pmp/mock-1': { attempts: [attempt] } } })
+    await page.goto('/dashboard')
+    await page.getByText('60%', { exact: true }).first().waitFor()
+    await see(page, 'Weak spots from your mock exams')
+    await page.getByText(/^\d+ lost$/).first().waitFor()
+  },
+
   async 'milestones, messages and daily goal: announced once, never during a mock exam'(page) {
     await page.goto('/capm/1-01-project-basics')
     await button(page, 'Mark lesson as completed').click()

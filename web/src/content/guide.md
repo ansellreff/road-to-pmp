@@ -96,7 +96,12 @@ stays on the list.
 - The break in real exam mode does not use exam time and ends by itself.
 - **Stop without a result** discards that run.
 - No question appears in two mock exams.
-- To try matching, hot spot and comic strip questions first, use **Try one of each** on the mock exams page.
+- One mock exam of each course is **kept for last** (CAPM 5, PMP 4): its questions are in no module quiz, so it shows
+  how you do on questions you have never met.
+- PMP mock exams include case sets (three questions on one situation, never split by a break), and the result also
+  shows your score on predictive questions against agile and hybrid ones.
+- To try the real exam's other question types first (CAPM: matching, hot spot, comic strip; PMP: multiple response,
+  matching, hot spot, pull-down list, case set, graphic-based), use **Try one of each** on the mock exams page.
 
 **Example.** The PMP mock exam has 180 questions in 240 minutes, in 3 sections with a 10-minute break after the
 first two.

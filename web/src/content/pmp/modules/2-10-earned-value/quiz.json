@@ -18,7 +18,8 @@
         "page": 274,
         "label": "PMBOK 8, Guide section 5, Earned value (EV) analysis"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q2",
@@ -186,7 +187,8 @@
         "page": 311,
         "label": "PMBOK 8, Guide section 5, To-complete performance index (TCPI)"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q10",
@@ -375,7 +377,8 @@
         "page": 115,
         "label": "The Standard for Earned Value Management, 4.6.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q19",
@@ -438,7 +441,8 @@
         "page": 104,
         "label": "The Standard for Earned Value Management, 4.4.3.2"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q22",
@@ -677,6 +681,7 @@
         "page": 312,
         "label": "PMBOK 8, Guide Table 5-1"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

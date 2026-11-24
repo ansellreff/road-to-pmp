@@ -81,7 +81,8 @@
         "page": 129,
         "label": "PMBOK 8, Guide 2.1.6.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q5",
@@ -144,7 +145,8 @@
         "page": 280,
         "label": "PMBOK 8, Guide section 5, Knowledge management"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q8",
@@ -291,7 +293,8 @@
         "page": 279,
         "label": "PMBOK 8, Guide section 5, In-progress postmortems"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q15",
@@ -333,7 +336,8 @@
         "page": 278,
         "label": "PMBOK 8, Guide section 5, Information management"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q17",
@@ -375,7 +379,8 @@
         "page": 129,
         "label": "PMBOK 8, Guide 2.1.6.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q19",
@@ -501,7 +506,8 @@
         "page": 85,
         "label": "Agile Practice Guide, 5.2.5"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q25",
@@ -550,7 +556,8 @@
         "page": 130,
         "label": "PMBOK 8, Guide Figure 2-8"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q27",

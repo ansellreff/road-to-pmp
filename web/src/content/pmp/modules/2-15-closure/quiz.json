@@ -186,7 +186,8 @@
         "page": 226,
         "label": "PMBOK 8, Guide section 4, Final report"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q10",
@@ -396,7 +397,8 @@
         "page": 137,
         "label": "PMBOK 8, Guide 2.1.6.9.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q20",
@@ -417,7 +419,8 @@
         "page": 218,
         "label": "PMBOK 8, Guide section 4, Accepted deliverables"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q21",
@@ -459,7 +462,8 @@
         "page": 136,
         "label": "PMBOK 8, Guide 2.1.6.9"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q23",
@@ -579,7 +583,8 @@
         "page": 186,
         "label": "The PMI Guide to Business Analysis, 5.5.4"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q28",

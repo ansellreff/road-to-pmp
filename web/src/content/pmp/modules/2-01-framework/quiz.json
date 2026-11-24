@@ -102,7 +102,8 @@
         "page": 38,
         "label": "PMBOK 8, Standard 2.1.1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q6",
@@ -270,7 +271,8 @@
         "page": 69,
         "label": "PMBOK 8, Standard 3.6"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q14",
@@ -438,7 +440,8 @@
         "page": 95,
         "label": "PMBOK 8, Standard 4.5.3"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q22",
@@ -459,7 +462,8 @@
         "page": 114,
         "label": "PMBOK 8, Guide Table 2-1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q23",
@@ -480,7 +484,8 @@
         "page": 114,
         "label": "PMBOK 8, Guide Table 2-1"
       }
-    ]
+    ],
+    "examOnly": true
   },
   {
     "id": "q24",

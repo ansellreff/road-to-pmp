@@ -233,7 +233,7 @@ function PlanDetail({ course, progress, plan, examDate, now }: DetailProps) {
                   ? ', in real exam mode. Its questions are new to you.'
                   : exam.mixed
                     ? ', in real exam mode. It has the question types of the real exam.'
-                    : ', 3 hours'}
+                    : `, ${course.exam.minutes / 60} hours`}
               </span>
             </span>
             <span className={`text-sm sm:text-right ${attempts.length ? 'font-semibold text-done' : 'text-muted'}`}>
