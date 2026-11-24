@@ -178,15 +178,23 @@ to it.
 **How to use it.**
 1. In a lesson, the source is written under each section heading.
 2. In a quiz, each explanation names its source.
-3. On this PC, click a source to open the book at that page in a new tab.
+3. Click **Open the PDF at page …** to open the book at that page in a new tab:
+   - on this PC (**start.bat**), from your PMI Learning Material folder;
+   - on the website, from your private online copy, once you are signed in on the home page.
 
 **Rules and limits.**
-- The book links work only when the app runs on this PC (**start.bat**). The books are licensed to you personally and
-  are never uploaded, so on the website the same place shows the book and page as plain text.
+- On the website, only the account on the readers list can open the books. Signed out, the book and page show as
+  plain text.
+- The first time a book opens on a device, the whole book downloads. Each link stays valid for 7 days on that
+  device, so opening the same book again within the week costs nothing extra.
+- **Monthly stop:** the online books stop at 4 GB of downloads a month, 1 GB under the free plan's 5 GB, so Supabase
+  never restricts the project (sync included). From 3 GB, opening a book shows the month's total. At 4 GB the links
+  pause until the 1st of the next month; books opened in the last 7 days still open, and on this PC every book opens
+  as usual.
 - "PDF page" is the page number your PDF viewer shows, not the number printed on the page.
 
-**Example.** A lesson section shows "PMBOK 8, Guide section 5, Leadership". On this PC, clicking it opens the
-PMBOK Guide where that section starts.
+**Example.** In module 2.10, "Variances and indices" shows "Source: PMBOK 8, Guide Table 5-1". Clicking **Open the
+PDF at page 312** opens the PMBOK Guide at that table, on this PC or, signed in, on your phone.
 
 ## Your saved progress: backup and restore
 

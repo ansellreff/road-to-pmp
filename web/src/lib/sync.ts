@@ -107,7 +107,7 @@ async function call(path: string, options: { method?: string; body?: unknown; to
   const data = text ? JSON.parse(text) : null
   if (!response.ok) {
     const detail: string = data?.msg ?? data?.message ?? data?.error_description ?? data?.error ?? `error ${response.status}`
-    if (response.status === 404 && path.startsWith('/rest/')) {
+    if (response.status === 404 && path.startsWith('/rest/v1/progress')) {
       throw new SyncError('The online table for progress does not exist yet. Run supabase/setup.sql in the Supabase SQL editor once.')
     }
     if (response.status === 429) throw new SyncError('Too many sign-in emails were requested. Wait a few minutes and try again.')
@@ -203,6 +203,12 @@ export function signOut() {
   // "local" ends the sign-in on this device only; your other devices stay signed in.
   if (token) void call('/auth/v1/logout?scope=local', { method: 'POST', token }).catch(() => undefined)
   save({})
+  // The book links made for this account (see books.ts) leave with it.
+  try {
+    localStorage.removeItem('road-to-pmi-book-links')
+  } catch {
+    // nothing saved
+  }
   show({ email: undefined, status: 'off', message: 'Signed out. Your progress stays on this device.', lastSync: undefined })
 }
 
@@ -226,6 +232,11 @@ async function token(): Promise<string> {
     }
     throw error
   }
+}
+
+/** A request to the Supabase project as the signed-in person (used for the online books). */
+export async function callSignedIn(path: string, options: { method?: string; body?: unknown } = {}) {
+  return call(path, { ...options, token: await token() })
 }
 
 let running: Promise<void> | undefined
