@@ -71,7 +71,10 @@ def main() -> None:
             problems.append(f"{name}: a password file (.env) is never uploaded")
         # The search file is built from the lessons and flashcards of every course, so it grows with the
         # content; it gets a larger allowance. Every file is still searched for private details below.
-        limit = SEARCH_INDEX_MAX_BYTES if "_virtual_search-index" in name else MAX_BYTES
+        # The PDF.js worker of the book reader (pages/ReaderPage.tsx) is program code of about 1.2 MB and gets the
+        # same allowance; it is still searched for private details below, and a PDF is blocked by its ending.
+        large = "_virtual_search-index" in name or Path(name).name.startswith("pdf.worker.min-")
+        limit = SEARCH_INDEX_MAX_BYTES if large else MAX_BYTES
         if path.stat().st_size > limit:
             problems.append(f"{name}: {path.stat().st_size / 1_000_000:.1f} MB, larger than expected for this project")
         original = path.read_bytes().decode("utf-8", errors="ignore")
