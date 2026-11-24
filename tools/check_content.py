@@ -4,6 +4,7 @@ Usage: python tools/check_content.py [--report]
 Exits with code 1 if any problem is found. Warnings (quiz quality) do not fail the
 check; --report lists each one.
 """
+import difflib
 import json
 import re
 import sys
@@ -28,6 +29,8 @@ APPROACHES = ("predictive", "agile", "hybrid")
 
 # Questions a module quiz must keep after some are reserved for the unseen mock exam.
 MIN_MODULE_QUIZ = 10
+# How alike two question texts must be to count as a near copy (0 to 1, from difflib).
+NEAR_COPY = 0.85
 CATCH_ALL = re.compile(r"^(all|none|both) of (the|these)|^both [a-d] and [a-d]\b|all of the above|none of the above", re.IGNORECASE)
 
 
@@ -61,8 +64,24 @@ def check_markup(path: Path, lesson: str, problems: list[str]) -> None:
             problems.append(f"{path}: unbalanced ** on line {i + 1}")
 
 
-def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[str, str], course: dict | None = None, cases: set | None = None) -> int:
-    """course and cases are given for the courses that use PMP's rules: case sets, the approach tag, a test course."""
+def near_copy(key: str, earlier: list[tuple[str, set[str], str]]) -> str | None:
+    """The question of an earlier course that this one nearly copies, if any. Information only:
+    a later course (PMP) may build on an earlier one (CAPM), so a near copy is allowed."""
+    words = set(key.split())
+    for other, other_words, where in earlier:
+        # Cheap word-overlap filter first; the exact comparison only for likely pairs.
+        if not words or len(words & other_words) / len(words | other_words) < 0.5:
+            continue
+        if difflib.SequenceMatcher(None, key, other).ratio() >= NEAR_COPY:
+            return where
+    return None
+
+
+def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[str, str], course: dict | None = None, cases: set | None = None,
+               notes: list[str] | None = None, earlier: list | None = None) -> int:
+    """course and cases are given for the courses that use PMP's rules: case sets, the approach tag, a test course.
+    seen holds this course's questions (a repeat inside a course is a warning); earlier holds other courses'
+    questions, and a near copy of one is listed in notes, for information only."""
     course = course or {}
     test_only = bool(course.get("testOnly"))
     needs_approach = bool(course.get("exam", {}).get("approach"))
@@ -82,6 +101,10 @@ def check_quiz(path: Path, problems: list[str], warnings: list[str], seen: dict[
         if key in seen:
             warnings.append(f"{path.parent.name} [{q.get('id')}]: same question as {seen[key]}")
         seen.setdefault(key, f"{path.parent.name} [{q.get('id')}]")
+        if notes is not None and earlier:
+            match = near_copy(key, earlier)
+            if match:
+                notes.append(f"{path.parent.name} [{q.get('id')}]: close to {match}")
     plain = [q for q in questions if not q.get("type")]
     if plain and longest / len(plain) > LONGEST_LIMIT:
         warnings.append(
@@ -310,7 +333,9 @@ def check_cards(path: Path, problems: list[str]) -> int:
 def main() -> None:
     problems: list[str] = []
     warnings: list[str] = []
-    seen: dict[str, str] = {}
+    notes: list[str] = []
+    # Questions of the courses already checked (CAPM before PMP): text, its words, and where it is.
+    earlier: list[tuple[str, set[str], str]] = []
     # --content <folder> checks the courses in another folder, such as the click tests' web/tests/lab-course.
     root = Path(sys.argv[sys.argv.index("--content") + 1]) if "--content" in sys.argv else CONTENT
     for course_file in sorted(root.glob("*/course.json")):
@@ -327,6 +352,7 @@ def main() -> None:
             problems.append(f"{course_file}: domain weights add up to {weight}, not 100")
 
         ready, questions, cards = 0, 0, 0
+        seen: dict[str, str] = {}
         for m in modules:
             folder = course_file.parent / "modules" / m["id"]
             if not m["ready"]:
@@ -359,13 +385,20 @@ def main() -> None:
                             if ref and ref not in linked:
                                 problems.append(f"{folder}/lesson.md: source not linked (run tools/link_sources.py): {ref}")
             if (folder / "quiz.json").is_file():
-                questions += check_quiz(folder / "quiz.json", problems, warnings, seen, course, cases)
+                questions += check_quiz(folder / "quiz.json", problems, warnings, seen, course, cases, notes, earlier)
             if (folder / "flashcards.json").is_file():
                 cards += check_cards(folder / "flashcards.json", problems)
         check_sheet(course_file, problems)
         exams = check_exams(course_file, course, problems)
         print(f"{course['id']}: {ready} of {len(modules)} modules ready, {questions} questions, {cards} flashcards{exams}")
+        earlier += [(key, set(key.split()), f"{course['id'].upper()} {where}") for key, where in seen.items()]
 
+    if notes:
+        # Not a fault: a later course may reuse an earlier course's questions. Listed so it is a known choice.
+        print(f"{len(notes)} question(s) close to another course's question (information only)" + ("" if "--report" in sys.argv else "; --report lists them"))
+        if "--report" in sys.argv:
+            for n in notes:
+                print(" i", n)
     if warnings:
         print(f"{len(warnings)} quiz quality warning(s)" + ("" if "--report" in sys.argv else " (run with --report to list them)"))
         if "--report" in sys.argv:

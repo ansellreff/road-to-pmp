@@ -70,6 +70,8 @@ The plan you approved on 2026-10-11 is kept in Claude's plans folder on this PC.
 | CAPM during PMP work (2026-10-15) | Closed; nothing in PMP may change or break it |
 | Module 2.1, The Framework (23 Nov 2026) | **A full module, in the mock exams.** The outline names none of the six principles, seven domains, five focus areas or 40 processes, but they are the structure of the Eighth Edition, the instructor spends about two hours on principles and domains and 45% of the course on the processes, and situational answers often rest on a principle. Mapped to Process task 1 |
 | Module 1.4, Team Performance (23 Nov 2026) | **A full module, in the mock exams.** The outline names none of its topics (motivation, Tuckman, emotional intelligence, virtual teams, recognition, Six Thinking Hats), but PMBOK 8 lists every one as a tool of the Lead the Team process, which has the same name as People task 3, and the instructor gives that process two long lectures. This widens "the outline rule" for PMP: a tool the Eighth Edition names for the process matching a task counts as part of that task |
+| Module 2.4, Agile in Practice (24 Nov 2026) | **A full module, in the mock exams.** The outline does not name Scrum, XP, Kanban or the scaling frameworks, but PMBOK 8 names them as the adaptive approaches, and they serve "recommend a development approach", "recommend an execution strategy" and "evaluate delivery options" (PMP-48) |
+| Questions and content close to CAPM (24 Nov 2026) | **Allowed.** CAPM is the foundation for PMP, so PMP may reuse or build on CAPM questions and lesson content. The content checker lists PMP questions that are close to a CAPM question for information only (PMP-70) |
 
 ### Sources
 
