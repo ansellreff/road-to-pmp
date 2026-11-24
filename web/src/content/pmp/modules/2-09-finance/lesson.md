@@ -43,7 +43,7 @@ The first enabler of Process task 6 is to **analyze project financial needs**.
 
 ## Estimating costs
 
-@source PMBOK 8, Guide 2.4.2.2; PMBOK 8, Guide section 4, Cost estimates; PMBOK 8, Guide section 5, Analogous estimating; PMBOK 8, Guide section 5, Parametric estimating; PMBOK 8, Guide section 5, Bottom-up estimating; PMBOK 8, Guide section 5, Multipoint estimating; Practice Standard for Project Estimating, 2.4
+@source PMBOK 8, Guide 2.4.2.2; PMBOK 8, Guide section 4, Cost estimates; PMBOK 8, Guide section 5, Analogous estimating; PMBOK 8, Guide section 5, Parametric estimating; PMBOK 8, Guide section 5, Bottom-up estimating; PMBOK 8, Guide section 5, Multipoint estimating; Practice Standard for Project Estimating, 2.4; PMBOK 6, 7.2
 
 **Estimate Costs** is performed periodically. Its outputs are **cost estimates**, the **basis of estimates** and document updates.
 
@@ -58,7 +58,9 @@ The first enabler of Process task 6 is to **analyze project financial needs**.
 
 Other tools: reserve analysis, **cost of quality**, the PMIS and voting. Cost estimates cover all charged resources (labor, materials, equipment, services, facilities) and special categories such as **inflation**, the **cost of financing** and contingency. They consider trade-offs such as **make versus buy** and **buy versus lease**.
 
-**Accuracy improves over time.** A rough order of magnitude (ROM) estimate at the start may be **−25% to +75%**; later, a definitive estimate may narrow to **−5% to +10%**.
+**Accuracy improves over time.** A rough order of magnitude (ROM) estimate at the start may be **−25% to +75%**; later, a definitive estimate may narrow to **−5% to +10%** (the Sixth Edition's figures).
+
+> **Edition note.** The Eighth Edition gives no ranges. The Practice Standard for Project Estimating has the same ROM range but says later estimates "could narrow to a range of −10%/+15%". Remember the ROM range and the rule behind both: the range narrows as information grows.
 
 ## Quantifying risk and contingency allocations
 

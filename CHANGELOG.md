@@ -2,7 +2,13 @@
 
 Each version of Road to PMP, newest first, with what you will notice.
 
-## 1.1 · 24 Nov 2026 · All PMP modules and the PMP mock exams
+## 1.1 · 24 Nov 2026 · The PMP course complete: modules, mock exams and formula sheet
+
+- **PMP formula sheet:** open **Formulas** on any PMP page for earned value, estimates and budget, the critical
+  path, velocity and WSJF, communication channels, EMV and decision trees, and the Eighth Edition's principles,
+  domains, focus areas and 40 processes. Each line links to its lesson.
+- Module 2.9 now shows both published ranges for later cost estimates (−5% to +10%, and −10% to +15%) with their
+  books.
 
 - **PMP mock exams:** four full exams of 180 questions in 4 hours, in 3 sections with two breaks, each with case
   sets and every module of each domain. Mock exam 4 is kept for last: its questions are in no module quiz.

@@ -38,7 +38,7 @@ How they are kept:
 | | Certification | State | Next |
 |---|---|---|---|
 | ✅ | CAPM | **Finished as planned** (13 Oct 2026). 39 modules, 1,274 questions including matching, hot spot and comic strip, 1,339 flashcards, 6 mock exams, 19 lesson drawings. What stays open, and why, is listed at the end of `docs/CAPM-PLAN.md`. | None planned |
-| 🟡 | PMP | **Being built.** Sessions 1 (sources, map), 2 (exam engine), 3 to 5 (Domain 1, People, complete) and 6 to 10 (Domain 2, Process, complete) and 11 to 13 (Domain 3, Business Environment, complete) are done: **all 34 modules are written**, with 1,021 questions and 850 flashcards. Session 14 (four PMP mock exams of 180 questions, the fourth kept for last) is done. Guideline milestone G1 (version 1.0: Help page, version number, release step) is done too. | Session 15: formula sheet, accuracy check, final report, after your go-ahead |
+| ✅ | PMP | **Finished as planned** (24 Nov 2026), not yet frozen. 34 modules, 1,021 questions including multiple response, case sets, matching, pull-down lists, graphic-based and hot spot, 850 flashcards, 4 mock exams of 180 questions, a formula sheet. What stays open, and why, is listed at the end of `docs/PMP-PLAN.md`. | Your review of Sessions 7 to 15; then freeze PMP if you want |
 | ⬜ | PMI-ACP | Not started | Needs its Exam Content Outline in the materials folder |
 | ⬜ | PMI-SP | Not started | Needs its Exam Content Outline in the materials folder |
 
@@ -47,7 +47,7 @@ How they are kept:
 Study for and pass PMI certifications using my own platform, in this order:
 
 1. CAPM (Certified Associate in Project Management): finished as planned on 13 Oct 2026
-2. **PMP** (Project Management Professional): current focus
+2. **PMP** (Project Management Professional): finished as planned on 24 Nov 2026, waiting for your review
 3. PMI-ACP (Agile Certified Practitioner)
 4. PMI-SP (Scheduling Professional)
 

@@ -12,7 +12,7 @@
   { "id": "c11", "front": "Parametric estimating", "back": "An algorithm on historical data and parameters, such as cost per square meter." },
   { "id": "c12", "front": "Bottom-up estimating", "back": "Estimates the lowest-level work and aggregates it up the WBS; the most detailed." },
   { "id": "c13", "front": "Triangular three-point estimate", "back": "(Optimistic + Most likely + Pessimistic) / 3." },
-  { "id": "c14", "front": "Estimate accuracy ranges", "back": "Rough order of magnitude: −25% to +75%. Definitive: −5% to +10%." },
+  { "id": "c14", "front": "Estimate accuracy ranges", "back": "Rough order of magnitude: −25% to +75%. Definitive: −5% to +10% (Sixth Edition; the estimating standard says −10% to +15%)." },
   { "id": "c15", "front": "Reserve analysis", "back": "Checks whether the schedule and budget reserve is sufficient for the remaining risk." },
   { "id": "c16", "front": "Contingency reserve", "back": "For identified risks (known-unknowns); usually inside the cost baseline; may be used, reduced or eliminated as risks pass." },
   { "id": "c17", "front": "Management reserve", "back": "For unforeseen work within scope (unknown-unknowns); outside the cost baseline; usually released by senior management." },

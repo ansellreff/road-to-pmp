@@ -734,6 +734,17 @@ export const tests = {
     await inView(page, 'Indices: CPI and SPI')
   },
 
+  async 'PMP formula sheet: opens from the top bar on a PMP page and links to the lesson'(page) {
+    await page.goto('/pmp/2-10-earned-value')
+    await page.getByRole('link', { name: 'Formulas', exact: true }).first().click()
+    await page.waitForURL(/\/pmp\/sheet/)
+    await see(page, 'CPI = EV ÷ AC')
+    await see(page, 'Channels = N × (N − 1) ÷ 2')
+    await see(page, 'Integrate Sustainability Within All Project Areas')
+    await page.getByRole('link', { name: /Forecasting: EAC, ETC, VAC and TCPI/ }).first().click()
+    await inView(page, 'Forecasting: EAC, ETC, VAC and TCPI')
+  },
+
   async 'readiness estimate: worked out from quizzes and mock exams'(page) {
     // One perfect quiz out of the 12 in Domain 1: quizzes there stand at 1/12, so 0.36 x 1/12 = 3%.
     const quizzes = { 'capm/1-01-project-basics': { best: 10, last: 10, total: 10, attempts: 1, date: '2026-10-01T10:00:00.000Z' } }

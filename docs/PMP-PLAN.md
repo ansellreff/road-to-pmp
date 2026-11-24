@@ -1,6 +1,6 @@
 # PMP: plan and progress
 
-Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP Sessions 1 to 14 are done: all 34 modules (1,021 questions, 850 flashcards) and four mock exams. Next is PMP Session 15: the formula sheet, the accuracy check and the final report.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
+Project Management Professional. Started 2026-10-11 and paused the same day until CAPM was finished; CAPM was closed on 2026-10-13 and PMP resumed on 2026-10-15. **PMP is finished as planned (24 Nov 2026): all 15 sessions are done. Final counts and what stays open are in the last section, "Session 15: PMP finished". PMP is not frozen yet: that waits for your review.** Problems and fixes are in [PMP-ISSUES.md](PMP-ISSUES.md); the project overview is [../PROJECT-PLAN.md](../PROJECT-PLAN.md).
 
 ## Status log
 
@@ -24,6 +24,7 @@ Project Management Professional. Started 2026-10-11 and paused the same day unti
 | 24 Nov 2026 | You uploaded version 1.1 (the website runs build 1f53f69) and set the Supabase Site URL. **Sessions 12 and 13 in one go, at your request** (exception recorded in DECISIONS.md). **PMP Session 12 done: modules 3.4 to 3.6.** 3.4 Impediments and Issues, 3.5 Risk: Identifying and Analyzing, 3.6 Risk: Responses and Monitoring: 90 questions (two new case sets, on a bridge repair and an offshore wind farm; EMV and decision-tree calculations), 75 flashcards. Business tasks 4 and 5 are taught. Still version 1.1. CAPM unchanged. | Session 13, modules 3.7 to 3.10, follows at once |
 | 24 Nov 2026 | **PMP Session 13 done: modules 3.7 to 3.10. Domain 3 (Business Environment) is complete, and so are all 34 PMP modules.** 3.7 Continuous Improvement and Lessons Learned, 3.8 Organizational Change and Culture, 3.9 The External Business Environment, 3.10 Artificial Intelligence in Projects: 120 questions (two new case sets, on a bank merger and an e-scooter service), 100 flashcards. Business tasks 6, 7 and 8 are taught; every task of the outline is covered. Still version 1.1. CAPM unchanged. **Sessions 12 and 13 in one go are finished.** | Your review; then Session 14, PMP mock exams, after your go-ahead |
 | 24 Nov 2026 | You uploaded Sessions 11 to 13 (the website runs build 736f49d, checked). **PMP Session 14 done: the PMP mock exams.** Four exams of 180 questions (59 / 74 / 47 by domain, 41% predictive, every module in every exam, 3 or 4 case sets each); Mock exam 4 is kept for last, so its questions left the module quizzes (23 to 26 questions remain in each). The exam builder was fixed first to spread exams evenly (PMP-80). The study plan, readiness estimate and weak spots now include PMP; two wrong texts for PMP were fixed (PMP-81, PMP-82). Still version 1.1. CAPM unchanged. | Your go-ahead for Session 15: formula sheet, accuracy check, final report |
+| 24 Nov 2026 | You uploaded Session 14 (the website ran build 119fee3, checked) and asked to fix all the errors and the dates, then do the last session. **Fixes:** every PMP mock exam now has the same mix of question types (PMP-84); dates read "20 Nov 2026" everywhere (PMP-83); released as build 0964fe2. **PMP Session 15 done: PMP finished.** The PMP formula sheet (34 entries in 6 groups, every one linked to its lesson). The accuracy check against the three references in your folder found one citation problem, now fixed (PMP-85), and nothing wrong otherwise. Final report below. Still version 1.1. CAPM unchanged. | Your review of Sessions 7 to 15; then, if you want, freeze PMP like CAPM |
 
 ## Roadmap
 
@@ -46,7 +47,7 @@ PMP counts its own sessions from 1. (Until 2026-10-11 these were numbered 32 to 
 | ✅ | 12 | PMP Domain 3, Business Environment: modules 3.4 to 3.6 (Business tasks 4 and 5) |
 | ✅ | 13 | PMP Domain 3, Business Environment: modules 3.7 to 3.10 (Business tasks 6, 7 and 8). Domain 3 and all 34 modules complete |
 | ✅ | 14 | PMP mock exams: four of 180 questions, the fourth kept for last; PMP in the study plan, readiness and weak spots |
-| ⬜ | 15 | PMP formula sheet; accuracy check against the reference list; final report |
+| ✅ | 15 | PMP formula sheet; accuracy check against the reference list; final report. **PMP finished** |
 
 Every content session ends with the source linker, the content checker, the link audit, the example check, the build, the click tests and the publish check, then a tracker update, a commit and a report of issues and fixes. Since PMP Session 2 it also runs `tools/check_capm_frozen.py`: CAPM is closed, and a PMP session must not change it. Since G1 every session that changes the app also writes its entry in `CHANGELOG.md`, updates the guide where a feature changed, and runs `tools/release.py`.
 
@@ -423,3 +424,66 @@ request the builder now spreads them evenly too (PMP-84). Mock exam dates now re
   - readiness from a PMP mock result (60%);
   - weak spots.
 - **CAPM guards:** `check_capm_frozen.py` passes; CAPM's click tests pass unchanged.
+
+## Session 15: PMP finished
+
+### The PMP formula sheet
+
+`web/src/content/pmp/sheet.json`, opened with **Formulas** in the top bar on any PMP page. It has 34 entries in six
+groups: earned value (13), estimates and budget (5), schedule (3), agile (5), communication and risk (4), and lists
+worth memorising (4: the 6 principles, 7 performance domains, 5 focus areas and 40 processes). Every entry links to
+the lesson section that teaches it, with that section's book pages. The checker confirms each section exists and
+has a source, and the 25 worked examples are recalculated by `check_examples.py`. A click test opens the sheet from a
+PMP lesson and follows a link back.
+
+### The accuracy check
+
+Three of the ten references are in your folder: the PMBOK Guide (6th, 7th and 8th editions), the Agile Practice
+Guide (both editions) and Wysocki. The check was limited to one session, as planned:
+
+| Check | What was read | Result |
+|---|---|---|
+| a. Key points | The key points of all 34 modules (about 200 statements). About 15 specific figures, ranges, quotations and named models were looked up in the books: iterations of 1 to 4 weeks, "strongly benefit from a hybrid approach", the project manager assigned "before planning begins", scope as "the most important component", the RAF model, release plans of 3 to 6 months, the ±5% risk threshold, the four steps of Develop Schedule, the ROM range and others | All found as written except one: the definitive estimate range (PMP-85, fixed) |
+| b. Counts and lists | Every count phrase in the 34 lessons (144 kinds) was listed. The 40 processes, checked one by one against Table 2-1 (PMBOK 8, page 114), and the domain and focus area counts all match. Also checked: the principle names and the three mindset dimensions (Standard 3.1 to 3.8), Tuckman's five stages, the escalate and exploit strategies, teams of three to nine, DSDM's eight principles, Scrum of Scrums two to three times a week, small groups of three to six, five levels of probability and impact | All match |
+| c. Topics from other sources | Contract types and the PERT formula: Wysocki agrees (pages 186 and 277). Residual and secondary risk: also in PMI's risk practice guide and risk standard. Change models (ADKAR, Kotter, Satir, Bridges): only in the Seventh Edition, which is still a PMBOK Guide; left as PMP-77 says | No change needed |
+| d. Agile Practice Guide, first edition | Servant against supportive leadership (an edition note already there; "purpose, people, process" is in both editions), velocity (an edition note already there), daily coordination meetings | No change needed |
+
+Nothing in the lessons was found to be **wrong**. One figure was cited to a book that gives a different figure; it is
+now cited correctly, with both figures shown.
+
+### Final counts
+
+| | |
+|---|---|
+| Modules | 34, in the three domains of the July 2026 exam outline |
+| Exam outline | All 26 tasks, and every enabler of each, covered (coverage table above) |
+| Questions | 1,021: 805 single answer, 102 multiple response, 45 in 15 case sets, 34 matching, 26 pull-down list, 6 graphic-based, 3 hot spot. Approach: 471 predictive (46%), 213 agile, 337 hybrid |
+| Flashcards | 850 |
+| Mock exams | 4 of 180 questions in 3 sections; no question in two exams; each 59 / 74 / 47 by domain, 41% predictive, 3 or 4 case sets, 5 matching, 5 pull-down and 17 or 18 multiple response; Mock exam 4 kept for last |
+| Module quizzes | Each shows 23 to 26 questions |
+| Formula sheet | 34 entries in 6 groups |
+| Source links | 1,079 distinct links (both courses), every one on its page |
+| Checks | Content, links, worked examples (208 calculations, both courses), invisible characters, contrast, publish check, rule checks and all click tests: all pass. CAPM unchanged |
+
+**What "finished" means here.** Everything planned for PMP is built, checked by the tools above, committed and
+released. It does not mean the course has been proven against the real exam, which nobody outside PMI can do. PMP
+is **not frozen**: you still review Sessions 7 to 15, and freezing it like CAPM is offered after that.
+
+### Open items, each closed or left open
+
+| Item | State |
+|---|---|
+| Your review of Sessions 7 to 15 | **Open, yours.** Sessions 1 to 6 were built one at a time with your review; 7 to 13 were built in one go at your request |
+| Freezing PMP like CAPM (a fingerprint record and a check before every commit) | **Offered** after your review |
+| Seven of the ten references (Kerzner, Garton and McCulloch, Cleland and Ireland, Schwalbe, Rubin, Larson, Kendrick) | **Left open:** not in your folder (PMP-86). Add any PDF and it becomes a source |
+| Wysocki | **Left open in part:** used for the topics in check c, not read page by page |
+| The 1,021 questions, re-read against the books | **Left open.** Written from the lessons, which were checked; calculations are rechecked by script |
+| Whether the questions resemble the real exam's wording and difficulty | **Left open.** The real questions are not public |
+| PMI's marking of multiple response and matching, and the share of each question type | **Left open.** Not published. Here: all or nothing, with the types spread evenly over the mock exams |
+| Hot spot questions | **Left open:** 3 in the bank, 2 in the mock exams. The outline lists point and click among the test-centre types |
+| Predictive share of the bank: 46% (Domain 2: 52%, PMP-69) | **Closed for the exams:** each mock exam is held at 41% |
+| 18 PMP questions close to CAPM questions | **Closed by your decision** (PMP-70): allowed, listed for information |
+| Four links on a book's fallback page | **Checked and left:** all four are CAPM's, two of them correct glossary links (PMP-76) |
+| Edition of the Agile Practice Guide on the reference list | **Assumed second edition**, with first-edition notes where they differ |
+| A fifth PMP mock exam | **Not possible now:** People has 35 questions in no exam, and an exam needs 59 |
+| The study plan's exam day box shows the browser's own date format | **Left as it is** (PMP-83): the plan repeats the day as "Sun, 3 Jan 2027" |

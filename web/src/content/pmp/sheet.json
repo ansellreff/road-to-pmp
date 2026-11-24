@@ -1,0 +1,69 @@
+[
+  {
+    "title": "Earned value",
+    "intro": "Every formula starts with EV. A variance subtracts, an index divides. A negative variance or an index below 1.0 is bad news. The examples use BAC 200,000, PV 100,000, EV 80,000 and AC 90,000.",
+    "entries": [
+      { "name": "Planned value, earned value, actual cost", "formula": "PV: budget of the scheduled work. EV: budget of the work actually done. AC: cost actually incurred.", "reading": "BAC is the sum of all budgets for the work. Total PV is the performance measurement baseline.", "module": "2-10-earned-value", "section": "Earned value management and the baseline" },
+      { "name": "Cost variance", "formula": "CV = EV − AC", "reading": "Negative: over planned cost. Positive: under.", "example": "80,000 − 90,000 = −10,000", "module": "2-10-earned-value", "section": "Variances and indices" },
+      { "name": "Schedule variance", "formula": "SV = EV − PV", "reading": "Negative: behind schedule. Positive: ahead.", "example": "80,000 − 100,000 = −20,000", "module": "2-10-earned-value", "section": "Variances and indices" },
+      { "name": "Cost performance index", "formula": "CPI = EV ÷ AC", "reading": "Below 1.0: over planned cost. Each dollar spent earns CPI dollars of work.", "example": "80,000 ÷ 90,000 = 0.89", "module": "2-10-earned-value", "section": "Variances and indices" },
+      { "name": "Schedule performance index", "formula": "SPI = EV ÷ PV", "reading": "Below 1.0: behind schedule", "example": "80,000 ÷ 100,000 = 0.8", "module": "2-10-earned-value", "section": "Variances and indices" },
+      { "name": "Estimate at completion, current CPI continues", "formula": "EAC = BAC ÷ CPI", "reading": "The typical case", "example": "200,000 ÷ 0.889 = 225,000", "module": "2-10-earned-value", "section": "Forecasting: EAC, ETC, VAC and TCPI" },
+      { "name": "Estimate at completion, rest at the planned rate", "formula": "EAC = AC + (BAC − EV)", "reading": "The variance was a one-off", "example": "90,000 + (200,000 − 80,000) = 210,000", "module": "2-10-earned-value", "section": "Forecasting: EAC, ETC, VAC and TCPI" },
+      { "name": "Estimate at completion, plan no longer valid", "formula": "EAC = AC + bottom-up ETC", "reading": "Reestimate the remaining work", "module": "2-10-earned-value", "section": "Forecasting: EAC, ETC, VAC and TCPI" },
+      { "name": "Estimate at completion, CPI and SPI both count", "formula": "EAC = AC + [(BAC − EV) ÷ (CPI × SPI)]", "reading": "Cost and schedule performance both affect the remaining work", "example": "90,000 + 120,000 ÷ (0.889 × 0.8) = 258,750", "module": "2-10-earned-value", "section": "Forecasting: EAC, ETC, VAC and TCPI" },
+      { "name": "Estimate to complete", "formula": "ETC = EAC − AC, or a bottom-up reestimate", "reading": "The cost to finish the remaining work", "example": "225,000 − 90,000 = 135,000", "module": "2-10-earned-value", "section": "Forecasting: EAC, ETC, VAC and TCPI" },
+      { "name": "Variance at completion", "formula": "VAC = BAC − EAC", "reading": "Negative: the project will end over budget", "example": "200,000 − 225,000 = −25,000", "module": "2-10-earned-value", "section": "Forecasting: EAC, ETC, VAC and TCPI" },
+      { "name": "To-complete performance index", "formula": "TCPI = (BAC − EV) ÷ (BAC − AC), or ÷ (EAC − AC) once an EAC is approved", "reading": "Work remaining ÷ funds remaining. Above 1.0: harder to complete.", "example": "(200,000 − 80,000) ÷ (200,000 − 90,000) = 1.09", "module": "2-10-earned-value", "section": "Forecasting: EAC, ETC, VAC and TCPI" },
+      { "name": "Earned value in agile", "formula": "EV = completed story points × cost per point; PV = planned story points × cost per point", "reading": "No partial credit: a story counts only when the customer accepts it", "example": "390 × 3,500 = 1,365,000", "module": "2-10-earned-value", "section": "EVM in agile and hybrid projects" }
+    ]
+  },
+  {
+    "title": "Estimates and budget",
+    "entries": [
+      { "name": "Three-point estimate, triangular", "formula": "(O + M + P) ÷ 3", "reading": "Simple average of optimistic, most likely and pessimistic. Used with little historical data.", "example": "(6 + 9 + 18) ÷ 3 = 11", "module": "2-12-schedule", "section": "Estimating durations with benchmarks and history" },
+      { "name": "Three-point estimate, beta (PERT)", "formula": "(O + 4M + P) ÷ 6", "reading": "Weighted average: the most likely value counts four times", "example": "(6 + 4 × 9 + 18) ÷ 6 = 10", "module": "2-12-schedule", "section": "Estimating durations with benchmarks and history" },
+      { "name": "Three-point cost estimate", "formula": "(O + M + P) ÷ 3", "reading": "The same formula for costs", "example": "(80,000 + 100,000 + 150,000) ÷ 3 = 110,000", "module": "2-09-finance", "section": "Estimating costs" },
+      { "name": "Cost baseline and project budget", "formula": "Work estimates + contingency reserve = cost baseline; cost baseline + management reserve = project budget", "reading": "Contingency is for known risks, inside the baseline. Management reserve is for unknown-unknowns, outside it.", "example": "400,000 + 40,000 = 440,000; 440,000 + 30,000 = 470,000", "module": "2-09-finance", "section": "Building the budget and planning spend tracking" },
+      { "name": "Estimate accuracy", "formula": "Rough order of magnitude: −25% to +75%. Definitive: −5% to +10%.", "reading": "Accuracy improves as more is known. The definitive range is the Sixth Edition's; the estimating standard gives −10% to +15% for later estimates.", "module": "2-09-finance", "section": "Estimating costs" }
+    ]
+  },
+  {
+    "title": "Schedule",
+    "intro": "These formulas start the project on day 1, as the lesson does. Courses that start on day 0 drop the − 1 and + 1.",
+    "entries": [
+      { "name": "Early finish (forward pass)", "formula": "EF = ES + duration − 1", "reading": "The earliest an activity can finish", "module": "2-12-schedule", "section": "Creating the schedule: the critical path" },
+      { "name": "Late start (backward pass)", "formula": "LS = LF − duration + 1", "reading": "The latest an activity can start without delaying the project", "example": "13 − 3 + 1 = 11", "module": "2-12-schedule", "section": "Creating the schedule: the critical path" },
+      { "name": "Total float", "formula": "Total float = LS − ES = LF − EF", "reading": "Zero on the critical path, the longest path. Negative float: a constraint forces dates earlier than the logic allows.", "example": "11 − 6 = 5", "module": "2-12-schedule", "section": "Creating the schedule: the critical path" }
+    ]
+  },
+  {
+    "title": "Agile",
+    "entries": [
+      { "name": "Average velocity", "formula": "Points of accepted stories ÷ number of iterations", "reading": "Plan from the average of recent iterations. Specific to one team: never compare teams.", "example": "(28 + 32 + 30) ÷ 3 = 30", "module": "2-13-agile-scheduling", "section": "Release forecasting" },
+      { "name": "Iterations needed", "formula": "Remaining story points ÷ average velocity, rounded up", "reading": "When scope is added, the forecast moves out", "example": "240 ÷ 30 = 8", "module": "2-13-agile-scheduling", "section": "Release forecasting" },
+      { "name": "Flow metrics", "formula": "Lead time: request to delivery. Cycle time: start of work to finish. Throughput: items finished per period.", "reading": "Lead time includes the wait before work starts. Limiting WIP exposes bottlenecks.", "module": "2-13-agile-scheduling", "section": "Tracking progress: burn charts and flow metrics" },
+      { "name": "Weighted shortest job first", "formula": "WSJF = (business value + time criticality + risk reduction) ÷ size", "reading": "The highest score goes first", "example": "(8 + 5 + 3) ÷ 4 = 4", "module": "2-06-value-delivery", "section": "Prioritizing work by value and feedback" },
+      { "name": "Cost of delay divided by duration", "formula": "CD3 = cost of delay ÷ duration", "reading": "Prioritizes by time sensitivity and economic impact", "module": "2-06-value-delivery", "section": "Prioritizing work by value and feedback" }
+    ]
+  },
+  {
+    "title": "Communication and risk",
+    "entries": [
+      { "name": "Communication channels", "formula": "Channels = N × (N − 1) ÷ 2", "reading": "N is the number of people, including the project manager. Read whether the question asks for the total or the number added.", "example": "10 × 9 ÷ 2 = 45", "module": "1-09-communication-reporting", "section": "Communication channels" },
+      { "name": "Probability-impact score", "formula": "Score = probability × impact", "reading": "The highest scores get attention first", "example": "0.5 × 0.4 = 0.2", "module": "3-05-risk-identify-analyze", "section": "Qualitative risk analysis" },
+      { "name": "Expected monetary value", "formula": "EMV = probability × impact", "reading": "Threats negative, opportunities positive", "example": "0.3 × −50,000 = −15,000", "module": "3-05-risk-identify-analyze", "section": "Quantitative risk analysis" },
+      { "name": "Decision tree", "formula": "EMV of each option = the sum of probability × outcome over its branches", "reading": "Choose the option with the larger EMV. In the lesson's example, upgrading (46) beats building a new plant (36).", "example": "0.60 × 70 + 0.40 × 10 = 46", "module": "3-05-risk-identify-analyze", "section": "Quantitative risk analysis" }
+    ]
+  },
+  {
+    "title": "Lists worth memorising",
+    "intro": "The Eighth Edition's own framework. Module 2.1 explains each one.",
+    "entries": [
+      { "name": "6 principles", "items": ["Adopt a Holistic View", "Focus on Value", "Embed Quality Into Processes and Deliverables", "Be an Accountable Leader", "Integrate Sustainability Within All Project Areas", "Build an Empowered Culture"], "module": "2-01-framework", "section": "The six principles" },
+      { "name": "7 performance domains", "items": ["Governance", "Scope", "Schedule", "Finance", "Stakeholders", "Resources", "Risk"], "reading": "No weighting or order; they run at the same time", "module": "2-01-framework", "section": "The seven performance domains" },
+      { "name": "5 focus areas, with their number of processes", "items": ["Initiating (2)", "Planning (19)", "Executing (8)", "Monitoring and Controlling (10)", "Closing (1)"], "reading": "Not phases and not strictly in order", "module": "2-01-framework", "section": "Where the 40 processes sit" },
+      { "name": "40 processes by domain", "items": ["Governance 9", "Scope 6", "Schedule 3", "Finance 4", "Stakeholders 7", "Resources 5", "Risk 6"], "reading": "The full table is in the lesson. The processes are a reference for tailoring, not a prescribed method.", "module": "2-01-framework", "section": "Where the 40 processes sit" }
+    ]
+  }
+]

@@ -152,10 +152,11 @@ to it.
 
 **Rules and limits.**
 - Nothing on the sheet is new: each line comes from a lesson.
-- So far only CAPM has a sheet. PMP gets one when its formula modules are written.
+- CAPM and PMP each have their own sheet. **Formulas** opens the sheet of the certification you are in.
+- The PMP sheet follows the Eighth Edition: 6 principles, 7 performance domains, 5 focus areas and 40 processes.
 
-**Example.** "Cost performance index" in the CAPM sheet shows the formula, how to read it, and a link to the lesson
-section where it is taught.
+**Example.** "Cost performance index" in the PMP sheet shows CPI = EV ÷ AC, how to read it, a worked example
+(80,000 ÷ 90,000 = 0.89) and a link to the lesson section where it is taught.
 
 ## Search
 

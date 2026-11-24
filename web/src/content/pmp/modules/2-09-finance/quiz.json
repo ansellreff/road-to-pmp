@@ -200,7 +200,7 @@
     ],
     "answer": 0,
     "approach": "predictive",
-    "explanation": "A ROM estimate in the start-up phase may be in the range of −25% to +75%. Later, with more information, a definitive estimate may narrow to −5% to +10%.",
+    "explanation": "A ROM estimate in the start-up phase may be in the range of −25% to +75%. Later, with more information, estimates narrow, for example to −10%/+15%. (The Sixth Edition's definitive estimate is −5% to +10%.)",
     "ref": "Practice Standard for Project Estimating, 2.4",
     "links": [
       {
