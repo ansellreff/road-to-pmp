@@ -804,6 +804,8 @@ export const tests = {
     await page.getByText('60%', { exact: true }).first().waitFor()
     await see(page, 'Weak spots from your mock exams')
     await page.getByText(/^\d+ lost$/).first().waitFor()
+    // Dates are written one way in every browser.
+    await see(page, '20 Nov 2026, real exam mode')
   },
 
   async 'milestones, messages and daily goal: announced once, never during a mock exam'(page) {

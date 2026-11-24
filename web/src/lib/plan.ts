@@ -17,6 +17,11 @@ export function daysBetween(from: string, to: string): number {
   return Math.round((parseDay(to).getTime() - parseDay(from).getTime()) / 86_400_000)
 }
 
+/** "20 Nov 2026": the one way a saved moment (a quiz, an exam) is dated, the same in every browser. */
+export function formatDate(moment: string | number | Date): string {
+  return new Date(moment).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
+}
+
 /** "Mon 12 Oct", with the year added when it is not the current one. */
 export function formatDay(day: string, today: string): string {
   const sameYear = day.slice(0, 4) === today.slice(0, 4)

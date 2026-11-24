@@ -294,8 +294,7 @@
         "page": 93,
         "label": "Agile Practice Guide, 5.5.2"
       }
-    ],
-    "examOnly": true
+    ]
   },
   {
     "id": "q15",
@@ -679,6 +678,7 @@
         "page": 255,
         "label": "PMBOK 8, Guide section 5, Burndown chart"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

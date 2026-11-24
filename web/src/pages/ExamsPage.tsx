@@ -3,6 +3,7 @@ import NotFound from '../components/NotFound'
 import { breakMs, examSections, getCourse, getExams, type Course, type Exam } from '../lib/content'
 import { elapsedMs, examKey, examLimitMs, formatClock, formatDuration, lastAttempt } from '../lib/exam'
 import { abandonExam, moduleKey, startExam, useProgress, type ExamMode, type Progress } from '../lib/progress'
+import { formatDate } from '../lib/plan'
 import { percent } from '../lib/stats'
 import Icon from '../components/Icon'
 import { PageHeader } from '../components/Page'
@@ -167,7 +168,7 @@ function ExamRow({ course, exam, progress }: { course: Course; exam: Exam; progr
                 </Link>
                 <span className="text-muted">
                   {' '}
-                  in {formatDuration(attempt.seconds)}, on {new Date(attempt.date).toLocaleDateString()}
+                  in {formatDuration(attempt.seconds)}, on {formatDate(attempt.date)}
                 </span>
               </li>
             )

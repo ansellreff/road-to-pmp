@@ -391,10 +391,13 @@ Built with `tools/build_exams.py pmp --rebuild --exams 4` into `web/src/content/
 
 | Exam | Domains (People / Process / Business) | Predictive | Case sets | Other question types | Modules |
 |---|---|---|---|---|---|
-| Mock exam 1 | 59 / 74 / 47 | 73 (41%) | 4 (12 questions) | 15 multiple response, 6 pull-down, 1 matching, 1 graphic-based | 34, 4 to 7 each |
-| Mock exam 2 | 59 / 74 / 47 | 73 (41%) | 4 (12) | 21 multiple response, 7 matching, 4 pull-down, 2 hot spot, 1 graphic-based | 34, 4 to 7 each |
-| Mock exam 3 | 59 / 74 / 47 | 73 (41%) | 4 (12) | 17 multiple response, 8 pull-down, 6 matching, 2 graphic-based | 34, 4 to 7 each |
-| Mock exam 4 (kept for last) | 59 / 74 / 47 | 73 (41%) | 3 (9) | 18 multiple response, 6 matching, 2 pull-down, 1 graphic-based | 34, 4 to 7 each |
+| Mock exam 1 | 59 / 74 / 47 | 73 (41%) | 4 (12 questions) | 18 multiple response, 5 matching, 5 pull-down, 1 hot spot, 1 graphic-based | 34, 4 to 7 each |
+| Mock exam 2 | 59 / 74 / 47 | 73 (41%) | 4 (12) | 18 multiple response, 5 matching, 5 pull-down, 1 hot spot, 1 graphic-based | 34, 4 to 7 each |
+| Mock exam 3 | 59 / 74 / 47 | 73 (41%) | 4 (12) | 17 multiple response, 5 matching, 5 pull-down, 2 graphic-based | 34, 4 to 7 each |
+| Mock exam 4 (kept for last) | 59 / 74 / 47 | 73 (41%) | 3 (9) | 18 multiple response, 5 matching, 5 pull-down, 1 graphic-based | 34, 4 to 7 each |
+
+The question types were first spread by chance (Mock exam 1 had 1 matching question, the others 6 or 7); at your
+request the builder now spreads them evenly too (PMP-84). Mock exam dates now read "20 Nov 2026" (PMP-83).
 
 - **The builder** (`build_sectioned`) was changed after a trial run showed an uneven spread (PMP-80). It now:
   - takes from every module of a domain in proportion to its size, with the leftover places rotating between exams;

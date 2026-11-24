@@ -1,7 +1,6 @@
 import { clearCards, clearQuiz, knownCount, moduleKey, setLessonDone, useProgress } from '../lib/progress'
+import { formatDate } from '../lib/plan'
 import { btnQuiet, column, note, section, subTitle } from '../lib/ui'
-
-const formatDate = (iso: string) => new Date(iso).toLocaleDateString(undefined, { dateStyle: 'medium' })
 
 /** Shows what is saved for one module and lets the learner undo any of it. */
 export default function ModuleProgress({ courseId, moduleId }: { courseId: string; moduleId: string }) {

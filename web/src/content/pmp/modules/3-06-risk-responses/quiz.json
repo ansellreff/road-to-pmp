@@ -504,8 +504,7 @@
         "page": 242,
         "label": "PMBOK 8, Guide section 4, Risk register"
       }
-    ],
-    "examOnly": true
+    ]
   },
   {
     "id": "q25",
@@ -678,6 +677,7 @@
         "page": 262,
         "label": "PMBOK 8, Guide section 5, Contingent response strategies"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

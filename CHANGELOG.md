@@ -8,6 +8,9 @@ Each version of Road to PMP, newest first, with what you will notice.
   sets and every module of each domain. Mock exam 4 is kept for last: its questions are in no module quiz.
   The PMP mock exams appear in your study plan, the readiness estimate and the weak spots on the dashboard.
 - The study plan now shows each mock exam's real length (PMP: 4 hours).
+- Each PMP mock exam now has the same mix of question types (5 matching, 5 pull-down list, about 18 multiple
+  response).
+- Dates of quizzes and mock exams are written the same way everywhere, for example 20 Nov 2026.
 
 - **PMP modules 2.4 to 2.6:** Agile in Practice (Scrum, XP, Kanban, Lean and scaling), Scope (requirements, WBS and backlog), and Value-Based Delivery, with 90 questions and 75 flashcards.
 - **PMP modules 2.7 to 2.9:** Resources, Procurement (contracts, negotiation, claims), and Finance (estimates, budget and reserves), with 90 questions, a new case set and 75 flashcards.

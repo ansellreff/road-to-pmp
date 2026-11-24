@@ -254,7 +254,7 @@ def build_sectioned(folder: Path, count: int) -> None:
     """Build the mock exams of a course that uses PMP's rules: sections, case sets and the approach tag.
 
     Each exam follows the domain weights and takes from every module of a domain in proportion to its
-    size. The case sets are shared out over the exams. A case set is taken whole and placed inside one
+    size. The case sets, and each other question type, are shared out evenly over the exams. A case set is taken whole and placed inside one
     section, so no break splits it. The predictive share of each exam is held near the course's target
     (swaps within a module aim for one question; it must be within 3 points, or one question on a very
     small exam). With more than one exam, the last is
@@ -339,6 +339,28 @@ def build_sectioned(folder: Path, count: int) -> None:
                         break
                 else:
                     break
+
+    # Spread each question type evenly over the exams: a question of that type in the exam with the most
+    # changes places with a plain question of the same module and approach in the exam with the fewest.
+    # Module spread and predictive share stay as they are.
+    kind = lambda key: by_id[key].get("type") or ("graphic" if by_id[key].get("diagram") else None)
+    for name in ("match", "hotspot", "dropdown", "multi", "graphic"):
+        for _ in range(size):
+            counts = [sum(1 for u in exam if len(u) == 1 and kind(u[0]) == name) for exam in exams]
+            hi, lo = counts.index(max(counts)), counts.index(min(counts))
+            if counts[hi] - counts[lo] <= 1:
+                break
+            swapped = False
+            for i in [i for i, u in enumerate(exams[hi]) if len(u) == 1 and kind(u[0]) == name]:
+                module, p = exams[hi][i][0][0], predictive(exams[hi][i])
+                j = next((j for j, v in enumerate(exams[lo]) if len(v) == 1 and v[0][0] == module
+                          and kind(v[0]) is None and predictive(v) == p), None)
+                if j is not None:
+                    exams[hi][i], exams[lo][j] = exams[lo][j], exams[hi][i]
+                    swapped = True
+                    break
+            if not swapped:
+                break
 
     result = []
     for number, units in enumerate(exams, start=1):

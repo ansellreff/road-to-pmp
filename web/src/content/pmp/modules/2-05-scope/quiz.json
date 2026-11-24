@@ -252,8 +252,7 @@
         "page": 268,
         "label": "PMBOK 8, Guide section 5, Decomposition"
       }
-    ],
-    "examOnly": true
+    ]
   },
   {
     "id": "q13",
@@ -679,6 +678,7 @@
         "page": 144,
         "label": "PMBOK 8, Guide 2.2.2"
       }
-    ]
+    ],
+    "examOnly": true
   }
 ]

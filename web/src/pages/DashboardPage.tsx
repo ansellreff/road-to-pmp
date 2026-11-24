@@ -8,6 +8,7 @@ import { getExams, startedCourses, loadExamQuestions, type Course, type Exam, ty
 import { bandFor, domainScores, examKey, formatDuration, moduleLosses, type ModuleLoss } from '../lib/exam'
 import { dueCount, isKnown, setAttemptDomains, studyStreak, today, useProgress, type ExamAttempt, type Progress } from '../lib/progress'
 import { milestones } from '../lib/milestones'
+import { formatDate } from '../lib/plan'
 import { MOCK_SHARE, readiness } from '../lib/readiness'
 import { answerTotals, domainStats, moduleNumber, percent, type DomainStats, type ModuleStats } from '../lib/stats'
 import { btnPrimary, btnQuiet, domainBg, link, listTitle, note, section, sectionTitle, subTitle } from '../lib/ui'
@@ -78,7 +79,7 @@ function Activity({ progress }: { progress: Progress }) {
           return (
             <li key={day} className="flex-1 text-center">
               <span
-                title={`${date.toLocaleDateString(undefined, { dateStyle: 'medium' })}: ${active ? 'studied' : 'no study'}`}
+                title={`${formatDate(date)}:${active ? 'studied' : 'no study'}`}
                 className={`block h-6 rounded-[2px] ${active ? 'bg-plan' : 'bg-line'} ${
                   i === ACTIVITY_DAYS - 1 ? 'ring-2 ring-ink ring-offset-2 ring-offset-paper' : ''
                 }`}
@@ -434,7 +435,7 @@ function ResultRow({ course, exam, attempt, number }: { course: Course; exam: Ex
           {exam.title}
         </Link>
         <span className="block text-sm text-muted">
-          {new Date(attempt.date).toLocaleDateString()}, {attempt.mode === 'practice' ? 'practice mode' : 'real exam mode'},{' '}
+          {formatDate(attempt.date)}, {attempt.mode === 'practice' ? 'practice mode' : 'real exam mode'},{' '}
           {formatDuration(attempt.seconds)}
         </span>
       </td>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { findModule, type Course, type Exam, type ExamQuestion } from '../lib/content'
 import { BANDS, bandFor, domainScores, formatDuration, moduleLosses } from '../lib/exam'
 import { ExamTiming, InsightTitle, WeakModules } from './ExamInsights'
+import { formatDate } from '../lib/plan'
 import type { ExamAttempt } from '../lib/progress'
 import { moduleNumber, percent } from '../lib/stats'
 import { btnPrimary, btnQuiet, column, link, listTitle, note, subTitle } from '../lib/ui'
@@ -89,7 +90,7 @@ export default function ExamResult(props: {
     <div className={column}>
       <PageHeader back={{ to: `/${course.id}/exams`, label: 'Mock exams' }} title={`${exam.title}: your result`} />
       <p className={`${note} mt-2`}>
-        {attempt.mode === 'practice' ? 'Practice mode' : 'Real exam mode'}, {new Date(attempt.date).toLocaleDateString()},{' '}
+        {attempt.mode === 'practice' ? 'Practice mode' : 'Real exam mode'}, {formatDate(attempt.date)},{' '}
         {formatDuration(attempt.seconds)} of {formatDuration(course.exam.minutes * 60)} used
       </p>
 
