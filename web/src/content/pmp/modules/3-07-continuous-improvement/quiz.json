@@ -1,0 +1,678 @@
+[
+  {
+    "id": "q1",
+    "q": "A new project is starting. When should the team look at lessons learned from similar past projects?",
+    "options": [
+      "At closure, to compare results with them",
+      "At the start, to plan and identify risks",
+      "Only if a serious problem happens later on in the project",
+      "Never, since each project is unique"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Lessons learned from previous projects can be used in the current project; the lessons learned register is an input to planning processes such as Identify Risks and Estimate Costs.",
+    "ref": "PMBOK 8, Guide section 4, Lessons learned register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Lessons learned register"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Which document records the situation, impacts, recommendations and proposed actions of each lesson during the project?",
+    "options": [
+      "The issue log for the project",
+      "The change log",
+      "The risk report",
+      "The lessons learned register"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The lessons learned register may include the category and description of the situation, its impacts, recommendations and proposed actions.",
+    "ref": "PMBOK 8, Guide section 4, Lessons learned register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Lessons learned register"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "When is the lessons learned register first created?",
+    "options": [
+      "Early, in Manage Project Knowledge",
+      "Only at the end, in Close Project or Phase",
+      "When the first audit takes place",
+      "After the final report has been accepted by the sponsor"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "The register is created as an output of Manage Project Knowledge early in the project, then used and updated in many processes throughout.",
+    "ref": "PMBOK 8, Guide section 4, Lessons learned register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Lessons learned register"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "During an 18-month project, the team writes down no lessons until the final week. What has been lost?",
+    "options": [
+      "Nothing, since final lessons are always complete",
+      "The lessons can no longer be archived",
+      "Lessons could have improved this project too",
+      "The sponsor will refuse the final report later"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Managing knowledge is more than obtaining lessons at the end. Captured throughout, lessons improve the current project as well as future ones.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "Which four questions structure an after-action review?",
+    "options": [
+      "Who, what, where and when did it happen?",
+      "What was planned, what happened, why, what can we learn?",
+      "What did it cost, who paid, who approved, who signed?",
+      "Which risks, which owners, which triggers, which reserves?"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "AARs ask: what was supposed to happen, what actually happened, why were there differences, and what can we learn?",
+    "ref": "PMBOK 8, Guide section 5, After-action reviews (AARs)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 250,
+        "label": "PMBOK 8, Guide section 5, After-action reviews (AARs)"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "A project wants to review its performance at several stages instead of only at the end. Which technique fits?",
+    "options": [
+      "A post-implementation audit only",
+      "A final postmortem",
+      "A bidder conference",
+      "In-progress postmortems"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "In-progress postmortems are structured reviews at various stages of the life cycle, unlike traditional postmortems at the end, so problems are solved in time.",
+    "ref": "PMBOK 8, Guide section 5, In-progress postmortems",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 279,
+        "label": "PMBOK 8, Guide section 5, In-progress postmortems"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A senior engineer's know-how is hard to write down. Which techniques help pass it on?",
+    "options": [
+      "Storytelling and work shadowing",
+      "A longer lessons learned template",
+      "A change request to the PMO",
+      "A larger risk register with more fields"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Tacit knowledge is hard to codify; storytelling is effective for transferring it, and knowledge management tools such as work shadowing connect people.",
+    "ref": "PMBOK 8, Guide section 5, Storytelling",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 306,
+        "label": "PMBOK 8, Guide section 5, Storytelling"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Why does the Agile Practice Guide call the retrospective possibly the most important agile practice?",
+    "options": [
+      "It sets the team's velocity target",
+      "It replaces the sprint review",
+      "It lets the team learn about and improve its process",
+      "It lets managers rate each team member's performance"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The retrospective allows the team to learn about, improve and adapt its process: at regular intervals it reflects on how to become more effective.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "A retrospective produces fifteen improvement ideas. What does the Agile Practice Guide advise?",
+    "options": [
+      "Start all fifteen at once in the next iteration",
+      "Limit actions to what the team can finish",
+      "Give all of them to the scrum master",
+      "Wait for the next release to choose any"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Limit action items to the team's capacity; trying to improve too much at once and finishing nothing is much worse than completing fewer items.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "How does a team know whether an improvement from its retrospective worked?",
+    "options": [
+      "By asking the sponsor's opinion",
+      "By counting the action items",
+      "By repeating the same retrospective twice",
+      "By measuring the agreed outcome later"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "When the team selects improvements, it decides how to measure the outcomes, then measures them in the next period to validate success or failure.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "In a retrospective, one member blames a colleague for a missed deadline. What should the facilitator do?",
+    "options": [
+      "Refocus on learning, not blame",
+      "Record the blame in the minutes",
+      "End the retrospective at once",
+      "Ask the team to vote on who was at fault in the end"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "A retrospective is not about blame; it needs a psychologically safe space where everyone can speak candidly without fear of blame or retaliation.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Which of these is a continuous improvement approach named in the PMBOK Guide?",
+    "options": [
+      "Critical path method",
+      "Earned value analysis",
+      "Plan-do-check-act",
+      "Rolling wave planning"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Continuous improvement can use PDCA, Lean, Total Quality Management, Six Sigma, the Five Focusing Steps and similar methods.",
+    "ref": "PMBOK 8, Guide section 5, Continuous improvement",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Continuous improvement"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "The company's risk checklist still lists a technology the company no longer uses. What should happen?",
+    "options": [
+      "Keep it, since checklists never change",
+      "Review the checklist and archive obsolete items",
+      "Stop using checklists altogether",
+      "Add a note about it to the project's issue log only"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Checklists should be reviewed from time to time to add new information and remove or archive obsolete information.",
+    "ref": "PMBOK 8, Guide section 5, Checklists",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 256,
+        "label": "PMBOK 8, Guide section 5, Checklists"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "A team finds a better way to run its code reviews. How can the improvement be made to last?",
+    "options": [
+      "Hope that everyone remembers it later",
+      "Mention it once in the daily meeting",
+      "Keep it a secret from all of the other teams",
+      "Update the working agreements and plan"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Process improvement changes the process itself; recording it in the plan and the team's working agreements keeps it in place, and sharing it adds to organizational learning.",
+    "ref": "PMBOK 8, Guide section 5, Process improvement",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 293,
+        "label": "PMBOK 8, Guide section 5, Process improvement"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "Who usually owns and changes the organization's project templates and procedures?",
+    "options": [
+      "The PMO or another function, through policy",
+      "Each project team, freely, as it wishes",
+      "The project's external vendor",
+      "The sponsor of whichever project is running now"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Policies, processes and procedures are usually established by the PMO or another function outside the project and updated only by following organizational policies.",
+    "ref": "PMBOK 8, Standard 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 42,
+        "label": "PMBOK 8, Standard 2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Which organizational process assets does the project team itself update throughout the project?",
+    "options": [
+      "The company's whole procurement policy",
+      "The PMO's standard project templates",
+      "The organizational knowledge repositories",
+      "The national regulations"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Knowledge repositories (financial performance, lessons learned, metrics, issues and defects) are updated throughout the project with project information.",
+    "ref": "PMBOK 8, Standard 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 42,
+        "label": "PMBOK 8, Standard 2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Midway through, the team finds that the company's estimating template misses a common cost item. What should the project manager do?",
+    "options": [
+      "Quietly edit the company template for everyone",
+      "Tell the template's owner and suggest the change",
+      "Ignore it, since templates belong to the PMO",
+      "Stop using estimates until it is fixed"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Templates change through organizational policy, so improvement suggestions go to the owning unit; the project can record the gap as a lesson and handle it in its own estimates.",
+    "ref": "PMBOK 8, Standard 2.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 42,
+        "label": "PMBOK 8, Standard 2.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which processes list organizational process asset updates among their outputs?",
+    "options": [
+      "Develop Schedule, Estimate Costs and Develop Budget",
+      "Plan Scope Management and Define Scope",
+      "Identify Stakeholders and Acquire Resources",
+      "Manage Project Knowledge and Close Project or Phase"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Figures 2-8 and 2-12 list OPA updates among the outputs of Manage Project Knowledge and Close Project or Phase.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "What is a community of practice for?",
+    "options": [
+      "Sharing knowledge among people with common interests",
+      "Approving or rejecting changes to the project's baselines",
+      "Auditing the project's financial records",
+      "Selecting vendors for procurement"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Communities of practice (or interest) are knowledge management tools that connect people to share tacit knowledge and create new knowledge.",
+    "ref": "PMBOK 8, Guide section 5, Knowledge management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 280,
+        "label": "PMBOK 8, Guide section 5, Knowledge management"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Besides the end of an iteration, when might a team hold a retrospective?",
+    "options": [
+      "Only at the very end of the whole project",
+      "Only when the sponsor requests one",
+      "When the team is stuck and work is not flowing",
+      "Never outside the agreed iteration schedule at all"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "Teams may retrospect after a release, when weeks have passed, when the team appears stuck and work is not flowing, or at any milestone.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which kind of knowledge do information management tools share best?",
+    "options": [
+      "Tacit knowledge held in experts' minds",
+      "Simple, codified explicit knowledge",
+      "Personal intuition and experience",
+      "Unwritten team norms and habits"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Information management tools are effective for sharing simple, unambiguous, codified explicit knowledge, such as lessons learned entries and library services.",
+    "ref": "PMBOK 8, Guide section 5, Information management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 278,
+        "label": "PMBOK 8, Guide section 5, Information management"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which of these belongs in a lessons learned entry, according to the PMBOK Guide?",
+    "options": [
+      "The names of the people who made the mistakes",
+      "The team's salaries and bonuses",
+      "The vendor's private cost data",
+      "Impacts, recommendations and proposed actions"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The register may include the category and description of the situation, impacts, recommendations and proposed actions.",
+    "ref": "PMBOK 8, Guide section 4, Lessons learned register",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 228,
+        "label": "PMBOK 8, Guide section 4, Lessons learned register"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "How does a continuous improvement mindset benefit the organization, according to the Standard?",
+    "options": [
+      "It grows maturity across the whole organization",
+      "It removes the need for any project planning at all",
+      "It guarantees every project is on schedule",
+      "It replaces quality control on deliverables"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "A continuous improvement mindset optimizes processes, boosts efficiency and enhances maturity growth for the whole organization.",
+    "ref": "PMBOK 8, Standard 3.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 66,
+        "label": "PMBOK 8, Standard 3.5"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "How do quality audits contribute to continuous improvement?",
+    "options": [
+      "By assigning blame for defects to individuals",
+      "By approving the project's final budget",
+      "By sharing good practices from similar projects",
+      "By replacing the lessons learned register entirely"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Quality audit objectives include sharing good practices from similar projects, helping improve processes, and adding contributions to the lessons learned repository.",
+    "ref": "PMBOK 8, Guide section 5, Audits",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 253,
+        "label": "PMBOK 8, Guide section 5, Audits"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "How can GenAI tools support retrospectives, according to the Agile Practice Guide?",
+    "options": [
+      "By deciding the team's improvements for it",
+      "By anonymizing notes and tracking actions",
+      "By rating each member's contribution",
+      "By replacing the facilitator entirely"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "GenAI tools can read notes and boards, anonymize text, suggest small experiments and track actions over time.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are tools and techniques of Manage Project Knowledge?",
+    "type": "multi",
+    "options": [
+      "After-action reviews",
+      "Storytelling",
+      "Retrospective meetings",
+      "Earned value analysis",
+      "Make-or-buy analysis",
+      "Critical path method"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "hybrid",
+    "explanation": "Figure 2-8 lists expert judgment, knowledge and information management, after-action reviews, in-progress postmortems, storytelling, retrospective meetings and interpersonal skills.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are continuous improvement approaches named in the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Six Sigma",
+      "Lean",
+      "Fast tracking",
+      "Crashing",
+      "Rolling wave planning"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "PDCA, Lean, Total Quality Management, Six Sigma and the Five Focusing Steps are named; the others are scheduling techniques.",
+    "ref": "PMBOK 8, Guide section 5, Continuous improvement",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 263,
+        "label": "PMBOK 8, Guide section 5, Continuous improvement"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are knowledge management tools that connect people with each other?",
+    "type": "multi",
+    "options": [
+      "Communities of practice",
+      "Work shadowing",
+      "Library services",
+      "Web searches",
+      "Codified register entries"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Knowledge management connects people (networking, communities of practice, shadowing, forums). Library services, searches and codified entries are information management.",
+    "ref": "PMBOK 8, Guide section 5, Knowledge management",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 280,
+        "label": "PMBOK 8, Guide section 5, Knowledge management"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each technique with how it works.",
+    "type": "match",
+    "left": [
+      "Retrospective",
+      "After-action review",
+      "In-progress postmortem",
+      "Storytelling"
+    ],
+    "right": [
+      "The team reflects at least each iteration",
+      "Planned versus actual, why, and lessons",
+      "A structured review at various stages",
+      "Narratives that pass on tacit knowledge"
+    ],
+    "approach": "hybrid",
+    "explanation": "All four feed the lessons learned register and continuous improvement; retrospectives are frequent, AARs follow milestones, postmortems run in progress, stories carry tacit knowledge.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about continuous improvement.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Knowledge gained during a project to improve future performance is called",
+        "choices": [
+          "work performance data",
+          "lessons learned",
+          "change requests"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "OPAs that the project updates throughout are the",
+        "choices": [
+          "policies",
+          "templates",
+          "knowledge repositories"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Plan-do-check-act is a",
+        "choices": [
+          "continuous improvement approach",
+          "risk response",
+          "scheduling method"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "predictive",
+    "explanation": "Lessons learned improve future work; the project updates knowledge repositories; PDCA is a continuous improvement cycle.",
+    "ref": "PMBOK 8, Glossary (lessons learned)",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 374,
+        "label": "PMBOK 8, Glossary (lessons learned)"
+      }
+    ]
+  }
+]

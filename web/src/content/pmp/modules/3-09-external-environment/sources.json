@@ -1,0 +1,97 @@
+[
+  {
+    "book": "agile",
+    "page": 81,
+    "label": "Agile Practice Guide, 5.2.1"
+  },
+  {
+    "book": "agile",
+    "page": 103,
+    "label": "Agile Practice Guide, 6.1.1"
+  },
+  {
+    "book": "baguide",
+    "page": 118,
+    "label": "The PMI Guide to Business Analysis, 4.2.3.1"
+  },
+  {
+    "book": "pmbok7",
+    "page": 45,
+    "label": "PMBOK 7, Standard 2.4.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 29,
+    "label": "PMBOK 8, Standard 1.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 38,
+    "label": "PMBOK 8, Standard 2.1.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 40,
+    "label": "PMBOK 8, Standard 2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 41,
+    "label": "PMBOK 8, Standard 2.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 115,
+    "label": "PMBOK 8, Guide 2.1.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 135,
+    "label": "PMBOK 8, Guide 2.1.6.8.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 135,
+    "label": "PMBOK 8, Guide Figure 2-11"
+  },
+  {
+    "book": "pmbok8",
+    "page": 149,
+    "label": "PMBOK 8, Guide 2.2.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 197,
+    "label": "PMBOK 8, Guide 2.7.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 201,
+    "label": "PMBOK 8, Guide 2.7.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 203,
+    "label": "PMBOK 8, Guide 2.7.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 206,
+    "label": "PMBOK 8, Guide 2.7.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 207,
+    "label": "PMBOK 8, Guide 2.7.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 296,
+    "label": "PMBOK 8, Guide section 5, Prompt lists"
+  },
+  {
+    "book": "riskguide",
+    "page": 41,
+    "label": "Risk Management: A Practice Guide, 3.2.2"
+  }
+]

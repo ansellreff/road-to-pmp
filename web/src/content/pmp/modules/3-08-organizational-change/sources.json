@@ -1,0 +1,67 @@
+[
+  {
+    "book": "agile",
+    "page": 102,
+    "label": "Agile Practice Guide, 6.1"
+  },
+  {
+    "book": "agile",
+    "page": 103,
+    "label": "Agile Practice Guide, 6.1.1"
+  },
+  {
+    "book": "agile",
+    "page": 104,
+    "label": "Agile Practice Guide, 6.1.2"
+  },
+  {
+    "book": "agile",
+    "page": 105,
+    "label": "Agile Practice Guide, 6.1.3"
+  },
+  {
+    "book": "agile",
+    "page": 105,
+    "label": "Agile Practice Guide, 6.2"
+  },
+  {
+    "book": "agile",
+    "page": 105,
+    "label": "Agile Practice Guide, 6.2.1"
+  },
+  {
+    "book": "pmbok7",
+    "page": 85,
+    "label": "PMBOK 7, Standard 3.12"
+  },
+  {
+    "book": "pmbok7",
+    "page": 255,
+    "label": "PMBOK 7, Guide 4.2.4"
+  },
+  {
+    "book": "pmbok8",
+    "page": 29,
+    "label": "PMBOK 8, Standard 1.3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 41,
+    "label": "PMBOK 8, Standard 2.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 76,
+    "label": "PMBOK 8, Standard 3.8"
+  },
+  {
+    "book": "pmbok8",
+    "page": 115,
+    "label": "PMBOK 8, Guide 2.1.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 133,
+    "label": "PMBOK 8, Guide 2.1.6.8"
+  }
+]

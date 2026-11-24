@@ -1,0 +1,681 @@
+[
+  {
+    "id": "q1",
+    "q": "Which of these is an external enterprise environmental factor?",
+    "options": [
+      "The company's project templates",
+      "Currency exchange rates",
+      "The PMO's lessons learned repository",
+      "The project's own risk register"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Financial considerations such as exchange rates, interest rates, inflation, tariffs and taxes are external EEFs. Templates and repositories are organizational process assets.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "Where does the Standard place an organization's system for value delivery?",
+    "options": [
+      "Outside any organizational environment entirely, on its own",
+      "Only in the external environment",
+      "Above both environments, unaffected by either one",
+      "In the internal environment, within the external one"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "A system for value delivery is part of the organization's internal environment, which exists within the larger external environment: the economy, competition, legislative constraints.",
+    "ref": "PMBOK 8, Standard 2.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 38,
+        "label": "PMBOK 8, Standard 2.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "A team wants a structured way to look for political, economic, sociocultural, technological, legal and environmental changes. Which tool fits?",
+    "options": [
+      "PESTLE",
+      "WSJF",
+      "RACI",
+      "EVM"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "PESTLE is a prompt list suited to identifying sources of overall project risk; TECOP and VUCA are other examples.",
+    "ref": "PMBOK 8, Guide section 5, Prompt lists",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 296,
+        "label": "PMBOK 8, Guide section 5, Prompt lists"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "In a SWOT analysis, which parts look at the external environment?",
+    "options": [
+      "Strengths and weaknesses",
+      "Weaknesses and threats",
+      "Opportunities and threats",
+      "Strengths and opportunities"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Externally, SWOT identifies opportunities to seize and threats in the market or external environment; strengths and weaknesses are internal.",
+    "ref": "The PMI Guide to Business Analysis, 4.2.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 118,
+        "label": "The PMI Guide to Business Analysis, 4.2.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A new national data protection law will affect the product halfway through the project. What should the project manager do first?",
+    "options": [
+      "Ignore it until an auditor raises it",
+      "Analyze its impact on scope, schedule and cost",
+      "Stop the project until the law is final",
+      "Ask the team to vote on whether to comply with it at all"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Assess the impact of the external change across scope, finance, schedule, resources, stakeholders and risk before deciding, then act through the right channel.",
+    "ref": "PMBOK 8, Guide Figure 2-11",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide Figure 2-11"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "In a predictive project, how is a scope change needed because of a new regulation handled?",
+    "options": [
+      "The team changes the scope directly as needed",
+      "The sponsor approves it by phone",
+      "It waits for the next project",
+      "Through a change request and change control"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Once baselines exist, changes go through a formal change request with impact analysis and a decision by the designated person or CCB.",
+    "ref": "PMBOK 8, Guide Figure 2-11",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide Figure 2-11"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "In an agile project, a competitor's new feature creates a new customer need. How is it handled?",
+    "options": [
+      "Added to the backlog and prioritized by value",
+      "Sent to the change control board for a vote",
+      "Ignored until the current release is finished",
+      "Built at once by pausing all other work in the team"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "In adaptive approaches, a change is recorded as a product backlog item; impact analysis and the product owner's priority decide when it is built.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide 2.1.6.8.2"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "A new regulation takes effect in four months, and missing it would stop sales. Which prioritization idea explains putting it near the top of the backlog?",
+    "options": [
+      "Velocity",
+      "Story points",
+      "Cost of delay",
+      "Lead time"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Cost of delay prioritizes by time-sensitivity and economic impact; a fixed legal deadline with a large impact has a high cost of delay.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "After a market collapse, the product the project is building is no longer needed. What does the Standard say may happen?",
+    "options": [
+      "The project must continue to protect the budget",
+      "The project may end, as the need no longer exists",
+      "The scope must double to find new customers",
+      "Nothing, since external factors do not affect projects"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A project usually ends when, due to changes in strategy, priorities or the external environment, the need for the project no longer exists.",
+    "ref": "PMBOK 8, Standard 1.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 29,
+        "label": "PMBOK 8, Standard 1.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "In a highly dynamic market, what does the PMBOK Guide suggest for scope management?",
+    "options": [
+      "Freeze the scope at the start to protect it",
+      "Avoid all contact with customers until the end",
+      "Add a large management reserve instead",
+      "Iterative feedback so scope can adjust"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "In dynamic environments, scope management should be flexible, with iterative feedback mechanisms that allow scope adjustments in response to real-time external inputs.",
+    "ref": "PMBOK 8, Guide 2.2.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 149,
+        "label": "PMBOK 8, Guide 2.2.3"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Which check result for the Risk domain (Table 2-11) relates to the external environment?",
+    "options": [
+      "The team is aware of the project's wider context",
+      "The team's velocity is stable each iteration",
+      "Every defect has been closed on time",
+      "The budget is spent evenly every month"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "One outcome is awareness of the environment, including technical, social, political, market and economic contexts, incorporated when evaluating uncertainty, risks and responses.",
+    "ref": "PMBOK 8, Guide 2.7.5",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 207,
+        "label": "PMBOK 8, Guide 2.7.5"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "New tariffs may raise the price of a key component, but the increase has not happened yet. How should this be recorded?",
+    "options": [
+      "As an issue in the issue log",
+      "As a lesson learned",
+      "As a threat in the risk register",
+      "As a change already approved by the board"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "An uncertain future event with a negative effect is a threat, recorded in the risk register. It becomes an issue only once it occurs.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "Who are critical sources of information about external risks and uncertainty, according to the PMBOK Guide?",
+    "options": [
+      "Only the project's own developers",
+      "Stakeholders such as customers and regulators",
+      "Only the competitors' sales staff",
+      "The PMO's template designers and their managers"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Stakeholders are critical sources of information regarding risks and uncertainty; they provide insights and help manage uncertainty.",
+    "ref": "PMBOK 8, Guide 2.7.4",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 206,
+        "label": "PMBOK 8, Guide 2.7.4"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "Which of these is a geopolitical factor that could affect a project?",
+    "options": [
+      "The team's choice of task board software",
+      "A new estimating template from the PMO",
+      "The sponsor's leadership style",
+      "Trade sanctions affecting a supplier country"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "External factors include geopolitical events and constraints, which can disrupt supply chains. The other options are internal.",
+    "ref": "Risk Management: A Practice Guide, 3.2.2",
+    "links": [
+      {
+        "book": "riskguide",
+        "page": 41,
+        "label": "Risk Management: A Practice Guide, 3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "How can the project prepare for a major external disruption, such as a regional emergency?",
+    "options": [
+      "Scenario planning aligned with business continuity",
+      "Waiting until it actually happens before making any plan",
+      "Removing all risks from the register",
+      "Doubling the team size permanently in advance"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Resilience planning prepares for major disruptions with scenario planning, aligned with the organization's business continuity or emergency response plan.",
+    "ref": "PMBOK 8, Guide 2.7.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 203,
+        "label": "PMBOK 8, Guide 2.7.3"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "How does an agile team keep its plans aligned with a changing market?",
+    "options": [
+      "By freezing the roadmap for the year",
+      "By ignoring market data until release",
+      "By replanning the roadmap with new information",
+      "By adding all requests at the top of the backlog"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The product owner replans the roadmap based on what the team produces and emerging information.",
+    "ref": "Agile Practice Guide, 5.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 81,
+        "label": "Agile Practice Guide, 5.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "A supplier's country faces new export restrictions. Which external factor named by the risk practice guide is this?",
+    "options": [
+      "Internal staffing changes",
+      "Geopolitical events",
+      "Team velocity",
+      "Scope creep"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "External factors include regulatory requirements or mandates, market conditions, supply chain disruptions, cyberattacks, geopolitical events and environmental risks.",
+    "ref": "Risk Management: A Practice Guide, 3.2.2",
+    "links": [
+      {
+        "book": "riskguide",
+        "page": 41,
+        "label": "Risk Management: A Practice Guide, 3.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "A new technology could cut the project's costs by 20% if it were adopted. How should it be treated?",
+    "options": [
+      "As an issue to resolve today",
+      "As a threat to the cost baseline",
+      "As out of scope for the project",
+      "As an opportunity to analyze"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "A positive uncertain effect, such as cost savings from new technology, is an opportunity to identify, analyze and respond to.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Which financial factors are external enterprise environmental factors?",
+    "options": [
+      "Exchange rates, interest rates and inflation",
+      "The project's own approved cost baseline",
+      "The team's expense claims",
+      "The PMO's standard budget templates for projects"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "External financial considerations include currency exchange rates, interest rates, inflation rates, tariffs, taxes and geographic location.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Why should the external environment be reviewed continually rather than only at the start?",
+    "options": [
+      "Because the PMO requires monthly reports",
+      "Because risks identified at the start never change",
+      "Because new risks emerge as the environment changes",
+      "Because the team usually has spare time in every week"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Risk identification is iterative: not all risks can be identified at the outset, and new ones emerge as the project and its environment evolve.",
+    "ref": "PMBOK 8, Guide 2.7.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "An external change appears in the middle of an iteration in an agile project. What usually happens to it?",
+    "options": [
+      "It immediately replaces all of the current iteration's work",
+      "It goes into the backlog for the product owner to order",
+      "It waits for the end of the whole project",
+      "It is sent to the PMO for approval first"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Changes are recorded as backlog items and prioritized; the product owner orders the backlog for upcoming iterations.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide 2.1.6.8.2"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Which tool helps the team see both the external opportunities and the external threats to a business need?",
+    "options": [
+      "A burndown chart",
+      "A RACI matrix",
+      "A control chart",
+      "A SWOT diagram"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "A SWOT diagram shows opportunities in the external environment to seize and threats that could impede success, alongside internal strengths and weaknesses.",
+    "ref": "The PMI Guide to Business Analysis, 4.2.3.1",
+    "links": [
+      {
+        "book": "baguide",
+        "page": 118,
+        "label": "The PMI Guide to Business Analysis, 4.2.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "How should the team handle the new rider insurance law?",
+    "case": "scooter-sharing",
+    "options": [
+      "Wait until it takes effect, then decide",
+      "Add it to the backlog with a high priority",
+      "Ignore it, since it is a national matter",
+      "Pause all delivery until the law is final"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The law is an external change with a fixed deadline: add the needed work to the backlog, analyze its impact, and give it a priority that meets the date.",
+    "ref": "PMBOK 8, Guide 2.1.6.8.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 135,
+        "label": "PMBOK 8, Guide 2.1.6.8.2"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "How should the competitor's cheaper scooters be considered?",
+    "case": "scooter-sharing",
+    "options": [
+      "As a market change to assess against the business case",
+      "As a team issue to fix in the next sprint retrospective",
+      "As a reason to stop the project at once",
+      "As irrelevant, since the city owns the service"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Marketplace conditions are external factors; check whether the value proposition still holds and adjust scope or priorities through governance.",
+    "ref": "PMBOK 8, Guide 2.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "The tariff-driven rise in battery prices has not yet hit the project's purchases. What should the project manager do?",
+    "case": "scooter-sharing",
+    "options": [
+      "Record it as an issue already occurring",
+      "Wait until the higher invoices actually arrive",
+      "Record it as a threat and plan a response",
+      "Cancel the battery order"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "It is an uncertain future effect, so it is a threat: record it in the risk register and plan a response, for example buying early or finding other suppliers.",
+    "ref": "PMBOK 8, Guide 2.7.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 197,
+        "label": "PMBOK 8, Guide 2.7.1"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are external enterprise environmental factors?",
+    "type": "multi",
+    "options": [
+      "Marketplace conditions",
+      "Legal restrictions",
+      "Emerging technologies",
+      "Project templates",
+      "Lessons learned repository",
+      "Change control procedures"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Marketplace conditions, legal restrictions and emerging technologies are external EEFs. Templates, repositories and procedures are organizational process assets.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO prompt lists suit surveying sources of overall project risk?",
+    "type": "multi",
+    "options": [
+      "PESTLE",
+      "TECOP",
+      "MoSCoW",
+      "RACI",
+      "WBS"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "PESTLE, TECOP and VUCA are strategic frameworks suited to sources of overall project risk.",
+    "ref": "PMBOK 8, Guide section 5, Prompt lists",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 296,
+        "label": "PMBOK 8, Guide section 5, Prompt lists"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are strategic drivers of change from outside the team, according to the Agile Practice Guide?",
+    "type": "multi",
+    "options": [
+      "Market and competitive pressure",
+      "Compliance and policy mandates",
+      "Accelerated delivery",
+      "Shifts in ways of working",
+      "Team velocity"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Strategic drivers include market and competitive pressure, compliance and policy mandates, technology and operating model shifts, and closing value gaps.",
+    "ref": "Agile Practice Guide, 6.1.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 103,
+        "label": "Agile Practice Guide, 6.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each external factor with an example.",
+    "type": "match",
+    "left": [
+      "Marketplace conditions",
+      "Legal restrictions",
+      "Financial considerations",
+      "Physical environment"
+    ],
+    "right": [
+      "A competitor's new product",
+      "A new data protection law",
+      "A rise in interest rates",
+      "Severe weather at the site"
+    ],
+    "approach": "predictive",
+    "explanation": "Other external factors are social and cultural influences, academic research, standards, emerging technologies and public health rules.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about the external environment.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Conditions the team does not control that affect the project are",
+        "choices": [
+          "organizational process assets",
+          "enterprise environmental factors",
+          "work packages"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "In an agile project, an external change usually becomes a",
+        "choices": [
+          "change request",
+          "CCB decision",
+          "backlog item"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Surveying political, economic and legal change can use",
+        "choices": [
+          "PESTLE",
+          "earned value",
+          "a RACI chart"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "External factors are EEFs; agile changes enter the backlog; PESTLE prompts a broad survey.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  }
+]

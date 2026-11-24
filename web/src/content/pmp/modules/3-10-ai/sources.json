@@ -1,0 +1,67 @@
+[
+  {
+    "book": "agile",
+    "page": 86,
+    "label": "Agile Practice Guide, 5.2.7"
+  },
+  {
+    "book": "agile",
+    "page": 103,
+    "label": "Agile Practice Guide, 6.1.1"
+  },
+  {
+    "book": "ethics",
+    "page": 7,
+    "label": "PMI Code of Ethics, 2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 41,
+    "label": "PMBOK 8, Standard 2.2.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 129,
+    "label": "PMBOK 8, Guide 2.1.6.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 201,
+    "label": "PMBOK 8, Guide 2.7.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 203,
+    "label": "PMBOK 8, Guide 2.7.3"
+  },
+  {
+    "book": "pmbok8",
+    "page": 252,
+    "label": "PMBOK 8, Guide section 5, Artificial intelligence (AI)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 342,
+    "label": "PMBOK 8, Appendix X3.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 343,
+    "label": "PMBOK 8, Appendix X3.1.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 344,
+    "label": "PMBOK 8, Appendix X3.1.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 344,
+    "label": "PMBOK 8, Appendix X3.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 344,
+    "label": "PMBOK 8, Appendix X3.3"
+  }
+]

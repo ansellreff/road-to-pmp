@@ -1,0 +1,681 @@
+[
+  {
+    "id": "q1",
+    "q": "How does the Standard describe a project's purpose from a business perspective?",
+    "options": [
+      "To keep the organization's operations unchanged",
+      "To move the organization from one state to another",
+      "To produce documents that satisfy the PMO",
+      "To spend the approved budget within the fiscal year"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "A project's purpose is to move an organization from its current state to a future state, sometimes through a transition state, achieving value as defined by key stakeholders.",
+    "ref": "PMBOK 8, Standard 1.3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 29,
+        "label": "PMBOK 8, Standard 1.3.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What is the difference between change management and project change control?",
+    "options": [
+      "They are simply two different names for the very same process",
+      "Change control helps people adopt new ways of working",
+      "Change management approves changes to the baselines",
+      "Change management helps people move to a future state"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Change management transitions individuals, groups and organizations to a future state where they realize benefits. Change control approves or rejects modifications to documents, deliverables or baselines.",
+    "ref": "PMBOK 7, Standard 3.12",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 85,
+        "label": "PMBOK 7, Standard 3.12"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "Where does organizational culture appear among the influences on a project?",
+    "options": [
+      "As an internal enterprise environmental factor",
+      "As one of the PMO's organizational process asset templates",
+      "As an external regulation",
+      "As a project deliverable"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Organizational culture, structure and governance (vision, values, norms, leadership styles, hierarchy) are enterprise environmental factors internal to the organization.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "A project leader wants to understand where the organization puts its emphasis. What does the Agile Practice Guide suggest?",
+    "options": [
+      "Read the annual report and decide alone",
+      "Ask only senior management for a ranking",
+      "Discuss priorities and place them on sliding scales",
+      "Copy the culture assessment from another company entirely"
+    ],
+    "answer": 2,
+    "approach": "agile",
+    "explanation": "The leader starts a conversation about priorities with stakeholders, team members and senior management, records them as positions on sliding scales (speed or stability, flexibility or predictability), and picks fitting techniques.",
+    "ref": "Agile Practice Guide, 6.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 105,
+        "label": "Agile Practice Guide, 6.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A government program and a digital bank start similar projects. What does the Agile Practice Guide suggest about their likely cultures?",
+    "options": [
+      "Both will favor speed above all else",
+      "The bank may favor speed; the program, stability",
+      "Both will favor stability above all else",
+      "Culture makes no difference to technique choice in projects"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "A digital banking project has a greater bias for speed, whereas a government program may have a greater bias for generalization and stability.",
+    "ref": "Agile Practice Guide, 6.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 105,
+        "label": "Agile Practice Guide, 6.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "Which of these is a roadblock to organizational agility, according to the Agile Practice Guide?",
+    "options": [
+      "Executives willing to change",
+      "Mature talent management",
+      "Cross-functional teams with competency centers",
+      "Leaders rewarded for local efficiency"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Roadblocks include departmental silos, short-term procurement pricing, leaders rewarded for local efficiencies rather than end-to-end flow, narrow specialists, and people spread over too many projects.",
+    "ref": "Agile Practice Guide, 6.1.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 104,
+        "label": "Agile Practice Guide, 6.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "Halfway through, the company reorganizes, and the project's sponsor moves to another division. What should the project manager do first?",
+    "options": [
+      "Confirm the new sponsor and the project's alignment",
+      "Continue as if nothing has changed at all",
+      "Stop the project until the reorganization ends",
+      "Ask the old sponsor to keep approving changes informally"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Reorganizations are drivers of change. Evaluate the impact: who now sponsors and decides, and whether the project is still aligned and worth doing; then update stakeholders and plans.",
+    "ref": "Agile Practice Guide, 6.1.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 103,
+        "label": "Agile Practice Guide, 6.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "A new company strategy makes part of the project's scope much less valuable. What should happen?",
+    "options": [
+      "Deliver the full scope as originally planned anyway",
+      "Remove the scope quietly without telling anyone",
+      "Raise it with governance to replan or reduce scope",
+      "Wait until closure and mention it in the final report"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "The value proposition guides governance decisions; scenarios include replanning and expansion or contraction. Scope changes go through change control.",
+    "ref": "PMBOK 8, Guide 2.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 115,
+        "label": "PMBOK 8, Guide 2.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "The team delivers increments every two weeks, but the users' departments cannot absorb changes that fast. Which driver of change management is this?",
+    "options": [
+      "Compliance mandates",
+      "Accelerated delivery",
+      "Market pressure",
+      "Closing value gaps"
+    ],
+    "answer": 1,
+    "approach": "agile",
+    "explanation": "Accelerated delivery is an internal driver: frequent increments can outpace the receiving organization's readiness, so adoption lags and value is delayed.",
+    "ref": "Agile Practice Guide, 6.1.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 103,
+        "label": "Agile Practice Guide, 6.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "In the ADKAR model, which step comes right after Awareness?",
+    "options": [
+      "Knowledge",
+      "Ability",
+      "Reinforcement",
+      "Desire"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "ADKAR: Awareness (why), Desire (wanting to support it), Knowledge (how), Ability (practice and help), Reinforcement.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "Staff have been trained in a new system but still struggle to use it on the job. Which ADKAR step needs support?",
+    "options": [
+      "Ability: hands-on practice and access to help",
+      "Awareness: why the change is needed",
+      "Desire: wanting to take part",
+      "Reinforcement: rewards, recognition and measurement"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Knowledge comes from training; Ability supports it with hands-on practice and access to expertise and help as needed.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "Which of these is a step in Kotter's 8-step process for leading change?",
+    "options": [
+      "Freeze the current state",
+      "Late status quo",
+      "Create short-term wins",
+      "The neutral zone"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Kotter's steps: create urgency, form a coalition, create a vision, communicate it, remove obstacles, create short-term wins, build on the change, anchor it in the culture.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "In the Satir change model, at which stage is performance at its lowest?",
+    "options": [
+      "Late status quo",
+      "Chaos",
+      "Practice and integration",
+      "New status quo"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "In chaos, people are in unfamiliar territory and performance drops to its lowest level, before a transforming idea helps them recover.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "According to Bridges' transition model, what is the difference between change and transition?",
+    "options": [
+      "They mean the same thing in practice",
+      "Transition happens first, then the change",
+      "Change is psychological; transition is situational",
+      "Change is situational; transition is psychological"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Change is situational and happens whether or not people transition through it; transition is the psychological process of gradually accepting the new situation.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "What may happen in Bridges' neutral zone?",
+    "options": [
+      "Productivity may drop, or people may become creative",
+      "People fully embrace the change at once, without doubts",
+      "The change has not been introduced yet",
+      "The project formally closes"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "In the neutral zone the change is happening: some feel frustration and anxiety and productivity may drop; others become creative and passionate about new ways of working.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "Users of a new system are resisting it. Which approach does the PMBOK Guide recommend?",
+    "options": [
+      "Force adoption through a management order",
+      "Ignore the resistance, as it fades with time",
+      "Engage them with two-way communication",
+      "Replace the resistant users with new staff members"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Effective change management uses a motivational rather than forceful strategy; engagement and two-way communication help adoption and may reveal valid concerns.",
+    "ref": "PMBOK 7, Standard 3.12",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 85,
+        "label": "PMBOK 7, Standard 3.12"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "The organization is launching five major changes in the same quarter, and staff morale is falling. What is the main risk?",
+    "options": [
+      "Scope creep",
+      "Change saturation and resistance",
+      "Gold plating",
+      "A negative schedule variance on one task"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Attempting too many changes in too short a time leads to resistance through change saturation; adapt the pace to the stakeholders' change appetite and ability to absorb it.",
+    "ref": "PMBOK 7, Standard 3.12",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 85,
+        "label": "PMBOK 7, Standard 3.12"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "After a new process goes live, some teams drift back to the old way of working. What should have been planned?",
+    "options": [
+      "A much larger initial training budget only",
+      "A ban on the old process",
+      "Fewer communications",
+      "Activities to reinforce the change"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "To foster benefits realization, the project may include activities to reinforce the change after implementation so people do not return to the initial state.",
+    "ref": "PMBOK 7, Standard 3.12",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 85,
+        "label": "PMBOK 7, Standard 3.12"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "How can an agile team manage the introduction of new working practices, according to the Agile Practice Guide?",
+    "options": [
+      "As a backlog of changes tried as experiments",
+      "Every practice at once, on a single fixed cutover date",
+      "Only after senior managers retire",
+      "Through a single long training course"
+    ],
+    "answer": 0,
+    "approach": "agile",
+    "explanation": "Treat the change process as an agile project with a backlog of changes, prioritized by value, each tried as an experiment and tracked on a kanban board.",
+    "ref": "Agile Practice Guide, 6.1.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 105,
+        "label": "Agile Practice Guide, 6.1.3"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which metric can show how well an organizational change is being taken up?",
+    "options": [
+      "Story points per developer",
+      "Cost performance index",
+      "Adoption rate",
+      "Number of meetings held"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Organizational change can use Kanban metrics such as change lead time, adoption rate and throughput to monitor the rate of change.",
+    "ref": "Agile Practice Guide, 6.1.3",
+    "links": [
+      {
+        "book": "agile",
+        "page": 105,
+        "label": "Agile Practice Guide, 6.1.3"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "Which leader action helps make an organization more compatible with agile, according to the Agile Practice Guide?",
+    "options": [
+      "Introducing all practices at once by decree",
+      "Visible and active executive sponsorship",
+      "Rewarding local efficiency in departments",
+      "Keeping changes secret until they are complete"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Approaches include visible and active executive sponsorship, communication and coaching, progressive pacing, incremental introduction, and leading by example.",
+    "ref": "Agile Practice Guide, 6.1.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 104,
+        "label": "Agile Practice Guide, 6.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "Why does the Agile Practice Guide position change management as a value enabler?",
+    "options": [
+      "It reduces the number of stakeholders",
+      "It replaces project management entirely",
+      "It removes the need for benefits tracking",
+      "It drives adoption, outcomes and benefits"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Change management connects delivery to results by driving adoption, outcomes and lasting benefits realization; it starts in strategic planning and continues into operations.",
+    "ref": "Agile Practice Guide, 6.1.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 103,
+        "label": "Agile Practice Guide, 6.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "What should the project manager do about the new sponsor?",
+    "case": "bank-merger",
+    "options": [
+      "Keep reporting to the old sponsor until closure",
+      "Meet the new sponsor to confirm goals and alignment",
+      "Wait for the new sponsor to make contact first",
+      "Ask the team to decide whether to inform the sponsor"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "The merger is an organizational change: confirm the project's alignment and decision paths with the new sponsor, and update the stakeholder register and engagement plan.",
+    "ref": "Agile Practice Guide, 6.1.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 103,
+        "label": "Agile Practice Guide, 6.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "How should the project respond to the merged bank's culture?",
+    "case": "bank-merger",
+    "options": [
+      "Ignore it, since the team already works in sprints",
+      "Switch at once to a fully predictive plan for all work",
+      "Assess its priorities and adapt the approach to fit",
+      "Ask the board to change its culture first"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Understanding the forces that shape the context lets leaders choose the right conversations, trade-offs and techniques, for example more visible milestones within iterative delivery.",
+    "ref": "Agile Practice Guide, 6.2.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 105,
+        "label": "Agile Practice Guide, 6.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Using ADKAR, what do the smaller bank's branch staff need first?",
+    "case": "bank-merger",
+    "options": [
+      "Awareness of why the change is happening",
+      "Reinforcement through rewards",
+      "Ability through much more hands-on practice time",
+      "Knowledge of the new screens"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "The staff were never told why the change is happening, so Awareness, the first ADKAR step, comes before Desire, Knowledge, Ability and Reinforcement.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which TWO are internal drivers of change management in agile environments, according to the Agile Practice Guide?",
+    "type": "multi",
+    "options": [
+      "Accelerated delivery",
+      "Shifts in ways of working",
+      "Compliance mandates",
+      "Market pressure",
+      "Technology shifts"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "predictive",
+    "explanation": "The two common internal drivers are accelerated delivery and shifts in ways of working. Market pressure, compliance mandates and technology shifts are strategic drivers from outside the team.",
+    "ref": "Agile Practice Guide, 6.1.1",
+    "links": [
+      {
+        "book": "agile",
+        "page": 103,
+        "label": "Agile Practice Guide, 6.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which THREE are elements of PMI's Managing Change in Organizations framework?",
+    "type": "multi",
+    "options": [
+      "Formulate change",
+      "Plan change",
+      "Sustain change",
+      "Freeze change",
+      "Hide change",
+      "Outsource change"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "The five elements are formulate change, plan change, implement change, manage transition and sustain change, connected by feedback loops.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO are change-friendly characteristics of an organization, according to the Agile Practice Guide?",
+    "type": "multi",
+    "options": [
+      "Executives willing to change",
+      "Mature talent management",
+      "Departmental silos",
+      "People on too many projects at once",
+      "Short-term pricing in procurement"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "agile",
+    "explanation": "Change-friendly characteristics include executive willingness to change and talent management maturity. The other three are roadblocks.",
+    "ref": "Agile Practice Guide, 6.1.2",
+    "links": [
+      {
+        "book": "agile",
+        "page": 104,
+        "label": "Agile Practice Guide, 6.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each change model with its key idea.",
+    "type": "match",
+    "left": [
+      "ADKAR",
+      "Kotter's 8 steps",
+      "Satir",
+      "Bridges"
+    ],
+    "right": [
+      "Five steps an individual goes through",
+      "Top-down, starting with urgency",
+      "Chaos before a new status quo",
+      "Endings, neutral zone, new beginning"
+    ],
+    "approach": "predictive",
+    "explanation": "PMI's Managing Change in Organizations framework is the fifth model in the Seventh Edition's sampling.",
+    "ref": "PMBOK 7, Guide 4.2.4",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 255,
+        "label": "PMBOK 7, Guide 4.2.4"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about organizational change.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Organizational culture is an internal",
+        "choices": [
+          "organizational process asset",
+          "enterprise environmental factor",
+          "project deliverable"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Too much change in too short a time causes",
+        "choices": [
+          "scope creep",
+          "gold plating",
+          "change saturation"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Moving people from the current to the future state is supported by",
+        "choices": [
+          "change management",
+          "change control",
+          "configuration management"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "Culture is an internal EEF; pace change to avoid saturation; change management, not change control, supports people through the transition.",
+    "ref": "PMBOK 7, Standard 3.12",
+    "links": [
+      {
+        "book": "pmbok7",
+        "page": 85,
+        "label": "PMBOK 7, Standard 3.12"
+      }
+    ]
+  }
+]

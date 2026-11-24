@@ -1,0 +1,107 @@
+[
+  {
+    "book": "agile",
+    "page": 86,
+    "label": "Agile Practice Guide, 5.2.7"
+  },
+  {
+    "book": "pmbok8",
+    "page": 42,
+    "label": "PMBOK 8, Standard 2.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 66,
+    "label": "PMBOK 8, Standard 3.5"
+  },
+  {
+    "book": "pmbok8",
+    "page": 129,
+    "label": "PMBOK 8, Guide 2.1.6.6"
+  },
+  {
+    "book": "pmbok8",
+    "page": 137,
+    "label": "PMBOK 8, Guide 2.1.6.9.1"
+  },
+  {
+    "book": "pmbok8",
+    "page": 138,
+    "label": "PMBOK 8, Guide 2.1.6.9.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 167,
+    "label": "PMBOK 8, Guide 2.4.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 201,
+    "label": "PMBOK 8, Guide 2.7.2.2"
+  },
+  {
+    "book": "pmbok8",
+    "page": 228,
+    "label": "PMBOK 8, Guide section 4, Lessons learned register"
+  },
+  {
+    "book": "pmbok8",
+    "page": 229,
+    "label": "PMBOK 8, Guide section 4, Organizational process asset (OPA) updates"
+  },
+  {
+    "book": "pmbok8",
+    "page": 250,
+    "label": "PMBOK 8, Guide section 5, After-action reviews (AARs)"
+  },
+  {
+    "book": "pmbok8",
+    "page": 250,
+    "label": "PMBOK 8, Guide section 5, Retrospective meetings"
+  },
+  {
+    "book": "pmbok8",
+    "page": 253,
+    "label": "PMBOK 8, Guide section 5, Audits"
+  },
+  {
+    "book": "pmbok8",
+    "page": 256,
+    "label": "PMBOK 8, Guide section 5, Checklists"
+  },
+  {
+    "book": "pmbok8",
+    "page": 263,
+    "label": "PMBOK 8, Guide section 5, Continuous improvement"
+  },
+  {
+    "book": "pmbok8",
+    "page": 278,
+    "label": "PMBOK 8, Guide section 5, Information management"
+  },
+  {
+    "book": "pmbok8",
+    "page": 279,
+    "label": "PMBOK 8, Guide section 5, In-progress postmortems"
+  },
+  {
+    "book": "pmbok8",
+    "page": 280,
+    "label": "PMBOK 8, Guide section 5, Knowledge management"
+  },
+  {
+    "book": "pmbok8",
+    "page": 293,
+    "label": "PMBOK 8, Guide section 5, Process improvement"
+  },
+  {
+    "book": "pmbok8",
+    "page": 306,
+    "label": "PMBOK 8, Guide section 5, Storytelling"
+  },
+  {
+    "book": "pmbok8",
+    "page": 374,
+    "label": "PMBOK 8, Glossary (lessons learned)"
+  }
+]

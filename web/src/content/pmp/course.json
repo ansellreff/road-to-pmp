@@ -53,10 +53,10 @@
         { "id": "3-04-impediments-issues", "title": "Impediments and Issues", "ready": true, "tasks": [4] },
         { "id": "3-05-risk-identify-analyze", "title": "Risk: Identifying and Analyzing", "ready": true, "tasks": [5] },
         { "id": "3-06-risk-responses", "title": "Risk: Responses and Monitoring", "ready": true, "tasks": [5] },
-        { "id": "3-07-continuous-improvement", "title": "Continuous Improvement and Lessons Learned", "ready": false, "tasks": [6] },
-        { "id": "3-08-organizational-change", "title": "Organizational Change and Culture", "ready": false, "tasks": [7] },
-        { "id": "3-09-external-environment", "title": "The External Business Environment", "ready": false, "tasks": [8] },
-        { "id": "3-10-ai", "title": "Artificial Intelligence in Projects", "ready": false, "tasks": [8] }
+        { "id": "3-07-continuous-improvement", "title": "Continuous Improvement and Lessons Learned", "ready": true, "tasks": [6] },
+        { "id": "3-08-organizational-change", "title": "Organizational Change and Culture", "ready": true, "tasks": [7] },
+        { "id": "3-09-external-environment", "title": "The External Business Environment", "ready": true, "tasks": [8] },
+        { "id": "3-10-ai", "title": "Artificial Intelligence in Projects", "ready": true, "tasks": [8] }
       ]
     }
   ]

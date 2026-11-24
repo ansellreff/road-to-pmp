@@ -147,3 +147,11 @@ Every problem met while building the PMP course, newest group last. Section name
 | PMP-74 | The source linker could not find a PMBOK 8 glossary term followed by its abbreviation ("expected monetary value (EMV)"), so that link opened the first glossary page. | `tools/link_sources.py` now allows the abbreviation. No other link changed (checked with git and the link audit). | `tools/link_sources.py` |
 | PMP-75 | Residual and secondary risks, still asked on the exam, are not in the Eighth Edition. | Taken from the Sixth Edition (11.5.3.3). | Module 3.6 |
 | PMP-76 | The link audit lists two CAPM glossary links (assumption, baseline) as "on a fallback page". They are correct: both terms are on the first glossary page, which the audit mistakes for a fallback. | No change, as CAPM is frozen; noted so the warning is not chased again. | `tools/audit_links.py` output |
+
+### PMP Session 13 (modules 3.7 to 3.10)
+
+| # | Issue | How it was handled | Where to look |
+|---|---|---|---|
+| PMP-77 | The Eighth Edition has no change models (ADKAR, Kotter, Satir, Bridges), which exam questions on organizational change still use. | Taken from the Seventh Edition (4.2.4), with culture assessment from the Agile Practice Guide (6.2.1). | Module 3.8, "Change models" |
+| PMP-78 | Business task 8 (external environment) is split over two modules, as planned: 3.9 covers all external changes; 3.10 covers AI, the main technology change, mostly from PMBOK 8 Appendix X3. | Both modules map to task 8; 3.10 links each section back to its enablers (survey, assess impact, review). | Modules 3.9 and 3.10 |
+| PMP-79 | The checker's "catch-all option" warning also caught two ordinary options that begin with "All of" ("All of them at once…", "All of the defects…"). | Reworded; the warning itself is useful and was left as it is. | Modules 3.8 and 3.9 |

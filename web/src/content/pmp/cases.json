@@ -63,5 +63,15 @@
     "id": "offshore-wind",
     "title": "Planning an offshore wind farm",
     "text": "An energy company is planning an offshore wind farm. Its board will accept a variance of no more than ±5% on the project's cost.\n\nThe team's first risk workshop produced 40 items, including 'weather', 'the team is worried', and 'vessels for turbine installation may be booked by competitors, delaying installation by months'. A specialist adds that a new turbine model could cut maintenance costs by 15% if it is certified in time."
+  },
+  {
+    "id": "bank-merger",
+    "title": "A project caught in a bank merger",
+    "text": "Two regional banks have merged. A project to move both banks' customers onto one online banking platform started before the merger, with a team working in two-week sprints.\n\nThe new board has appointed a different sponsor, and the merged bank's culture favors stability and detailed plans. Branch staff from the smaller bank say that no one has told them why the change is happening, and they are reluctant to use the new system."
+  },
+  {
+    "id": "scooter-sharing",
+    "title": "A city e-scooter sharing service",
+    "text": "A city is in the third month of building an e-scooter sharing service with an agile team. The business case expects 2,000 daily rides within a year.\n\nA national law requiring rider insurance has just been announced and takes effect in four months. A competitor has launched cheaper scooters in the same city, and new tariffs are expected to raise the price of the batteries the project still has to buy."
   }
 ]

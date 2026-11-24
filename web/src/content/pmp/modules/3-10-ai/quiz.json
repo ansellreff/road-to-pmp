@@ -1,0 +1,678 @@
+[
+  {
+    "id": "q1",
+    "q": "Which list runs from the broadest AI term to the narrowest?",
+    "options": [
+      "Generative AI, deep learning, machine learning, AI",
+      "AI, machine learning, deep learning, generative AI",
+      "Machine learning, AI, generative AI, deep learning",
+      "Deep learning, AI, machine learning, generative AI"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Machine learning is a subfield of AI; deep learning is an advanced type of machine learning; generative AI is a subset of deep learning.",
+    "ref": "PMBOK 8, Appendix X3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 342,
+        "label": "PMBOK 8, Appendix X3.1"
+      }
+    ]
+  },
+  {
+    "id": "q2",
+    "q": "What does generative AI apply to create new text, speech, pictures and video?",
+    "options": [
+      "Earned value models",
+      "Critical path calculations",
+      "Monte Carlo simulation only",
+      "Large language models"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "GenAI is a subset of deep learning that applies large language models (LLMs) to generate new data.",
+    "ref": "PMBOK 8, Appendix X3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 342,
+        "label": "PMBOK 8, Appendix X3.1"
+      }
+    ]
+  },
+  {
+    "id": "q3",
+    "q": "The team wants every weekly status report drafted automatically from project data, with only a quick check. Which AI strategy is this?",
+    "options": [
+      "Automation",
+      "Assistance",
+      "Augmentation",
+      "Delegation to the vendor"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Low-complexity tasks needing little human intervention, such as report generation, document analysis and call summaries, can be automated.",
+    "ref": "PMBOK 8, Appendix X3.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 343,
+        "label": "PMBOK 8, Appendix X3.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q4",
+    "q": "An AI tool drafts the first version of the project's risk register. What should the project manager do with it?",
+    "options": [
+      "Publish it at once, since AI is accurate",
+      "Delete it and start again by hand",
+      "Review and refine it before use",
+      "Send it to the sponsor without reading it"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "At the assistance level, first results are not complete without further analysis and refinement; a project professional reviews them for accuracy and completeness.",
+    "ref": "PMBOK 8, Appendix X3.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 343,
+        "label": "PMBOK 8, Appendix X3.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q5",
+    "q": "A portfolio manager uses AI as a brainstorming partner, over many iterations, to balance projects for the best return. Which strategy is this?",
+    "options": [
+      "Automation",
+      "Augmentation",
+      "Assistance",
+      "Configuration"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Augmentation enhances and explores capabilities on strategic, complex tasks, such as balancing a portfolio to maximize ROI, with AI as a brainstorming partner.",
+    "ref": "PMBOK 8, Appendix X3.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 343,
+        "label": "PMBOK 8, Appendix X3.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q6",
+    "q": "According to the PMBOK Guide, how does the need for human intervention change with task complexity?",
+    "options": [
+      "It falls as tasks become more complex",
+      "It stays the same for every task",
+      "It disappears once AI is trained",
+      "It rises as tasks become more complex"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "The more complex the task, the more human intervention is required for high-quality outcomes; tasks are classified by complexity and need for supervision.",
+    "ref": "PMBOK 8, Appendix X3.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 343,
+        "label": "PMBOK 8, Appendix X3.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q7",
+    "q": "A free AI tool may use whatever the team enters to retrain its model. Why might the project prefer a paid version?",
+    "options": [
+      "It can stop project data being used for retraining",
+      "It never makes any mistakes in its answers",
+      "It removes the need for any kind of human review at all",
+      "It is required by every regulator"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Paid versions allow users to restrict the use of their data to retrain models, ensuring privacy and protecting intellectual property.",
+    "ref": "PMBOK 8, Appendix X3.1.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.1.2"
+      }
+    ]
+  },
+  {
+    "id": "q8",
+    "q": "Which governance use case does Table X3-1 describe?",
+    "options": [
+      "AI replaces the sponsor's decisions",
+      "AI signs contracts on behalf of the buyer's company",
+      "AI monitors progress against baselines in real time",
+      "AI chairs the change control board"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Real-time monitoring: AI tools continuously monitor progress against planned baselines and alert on deviations, enabling timely corrective action.",
+    "ref": "PMBOK 8, Appendix X3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.2"
+      }
+    ]
+  },
+  {
+    "id": "q9",
+    "q": "Critical path analysis shows the project on track, but an AI tool warns that similar projects slipped at this point. What is this use case?",
+    "options": [
+      "Dynamic scheduling",
+      "Early warning signaling",
+      "Automated reporting",
+      "Stakeholder sentiment analysis"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Even when critical path analysis, burndown charts or cumulative flow diagrams look fine, AI can use pattern recognition from similar projects to signal risk of falling behind.",
+    "ref": "PMBOK 8, Appendix X3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.2"
+      }
+    ]
+  },
+  {
+    "id": "q10",
+    "q": "An AI tool analyzes emails and survey comments to gauge how stakeholders feel about the project. What is this?",
+    "options": [
+      "Earned value analysis",
+      "Resource leveling",
+      "A bidder conference",
+      "Sentiment analysis"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Stakeholder sentiment analysis is one of the AI use cases; natural language processing supports sentiment analysis.",
+    "ref": "PMBOK 8, Appendix X3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.2"
+      }
+    ]
+  },
+  {
+    "id": "q11",
+    "q": "In which process does the Eighth Edition list artificial intelligence among the tools and techniques?",
+    "options": [
+      "Identify Risks",
+      "Close Project or Phase",
+      "Validate Scope",
+      "Plan Sourcing Strategy"
+    ],
+    "answer": 0,
+    "approach": "predictive",
+    "explanation": "Figure 2-49 lists artificial intelligence among the tools of Identify Risks; AI can analyze historical data and benchmarks to identify risks.",
+    "ref": "PMBOK 8, Guide 2.7.2.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 201,
+        "label": "PMBOK 8, Guide 2.7.2.2"
+      }
+    ]
+  },
+  {
+    "id": "q12",
+    "q": "An AI system that screens job applicants rejects most applicants from one region. Which concern is this?",
+    "options": [
+      "Copyright",
+      "Sustainability",
+      "Bias",
+      "Transparency"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "AI systems can be biased if trained on biased data or if their algorithms introduce bias.",
+    "ref": "PMBOK 8, Appendix X3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.3"
+      }
+    ]
+  },
+  {
+    "id": "q13",
+    "q": "How does the PMBOK Guide suggest reducing the risk of bias in AI systems?",
+    "options": [
+      "Use one single, uniform and unchanging data set",
+      "Diversify data and test periodically for bias",
+      "Avoid testing to save money",
+      "Let only one team build the system"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Mitigations include diversifying training data sets, periodic tests focused on bias, and involving different teams in development.",
+    "ref": "PMBOK 8, Appendix X3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.3"
+      }
+    ]
+  },
+  {
+    "id": "q14",
+    "q": "An AI tool recommends cancelling a vendor contract. Who is accountable for the decision?",
+    "options": [
+      "The AI tool's developer",
+      "The AI system itself",
+      "No one at all, since the decision was automated",
+      "A clearly defined human decision-maker"
+    ],
+    "answer": 3,
+    "approach": "predictive",
+    "explanation": "Ultimately, a human should be accountable for each decision, and this accountability should be clearly defined.",
+    "ref": "PMBOK 8, Appendix X3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.3"
+      }
+    ]
+  },
+  {
+    "id": "q15",
+    "q": "An AI summary of meeting notes includes a decision that was never made. What does this show?",
+    "options": [
+      "Hallucination: AI output must be validated",
+      "Scope creep in the project",
+      "A secondary risk created by procurement work",
+      "Gold plating by the team"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "AI risks include hallucinations; information from AI should be checked and validated, as it may be biased, incorrect or irrelevant.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q16",
+    "q": "A team pastes confidential customer contracts into a public AI tool. Which risk does the PMBOK Guide warn about?",
+    "options": [
+      "Over-reliance on checklists",
+      "Too many retrospectives",
+      "Exposing sensitive information",
+      "A lower velocity"
+    ],
+    "answer": 2,
+    "approach": "hybrid",
+    "explanation": "Significant AI risks include unintentionally exposing sensitive information; projects should have responsible AI policies.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q17",
+    "q": "Given the risks of AI in managing knowledge, what does the PMBOK Guide say projects should have?",
+    "options": [
+      "A ban on all digital tools",
+      "Responsible AI policies",
+      "A larger management reserve",
+      "Daily AI audits by the sponsor"
+    ],
+    "answer": 1,
+    "approach": "predictive",
+    "explanation": "Because of risks such as exposing sensitive information and hallucinations, projects should have responsible AI policies to manage the related knowledge.",
+    "ref": "PMBOK 8, Guide 2.1.6.6",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 129,
+        "label": "PMBOK 8, Guide 2.1.6.6"
+      }
+    ]
+  },
+  {
+    "id": "q18",
+    "q": "Which part of the PMI Code of Ethics covers the deployment of AI?",
+    "options": [
+      "Fairness: equal access to information for all bidders",
+      "Respect: negotiating in good faith",
+      "Honesty: no half-truths",
+      "Responsibility: leadership and deployment of technology"
+    ],
+    "answer": 3,
+    "approach": "hybrid",
+    "explanation": "Under responsibility: we are responsible for our leadership, management and deployment of technology, including AI and other emerging technologies.",
+    "ref": "PMI Code of Ethics, 2.2",
+    "links": [
+      {
+        "book": "ethics",
+        "page": 7,
+        "label": "PMI Code of Ethics, 2.2"
+      }
+    ]
+  },
+  {
+    "id": "q19",
+    "q": "Why should the team consider sustainability before using AI for a task?",
+    "options": [
+      "Each request uses electricity, water and other resources",
+      "AI tools are always slower than people at every task",
+      "Regulators ban AI in most projects",
+      "AI cannot produce text"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Each request submitted to AI consumes electricity, water and other resources, which should be considered when deciding to use it.",
+    "ref": "PMBOK 8, Appendix X3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.3"
+      }
+    ]
+  },
+  {
+    "id": "q20",
+    "q": "Which statement about transparency in AI use is correct?",
+    "options": [
+      "How decisions are made should be kept secret",
+      "Only the developers ever need to know how data is used",
+      "Data use and decision-making should be shared openly",
+      "Transparency applies only to paid tools"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "How data is used and handled, how the algorithms work and how decisions are made should be shared transparently with end users and impacted parties.",
+    "ref": "PMBOK 8, Appendix X3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.3"
+      }
+    ]
+  },
+  {
+    "id": "q21",
+    "q": "A competitor launches an AI feature that makes part of the project's product less attractive. How should the project manager treat this?",
+    "options": [
+      "Ignore it, as technology is not a project matter",
+      "Assess it as an external change affecting scope",
+      "Copy the feature without any analysis",
+      "Stop the project immediately"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "Emerging technologies and marketplace conditions are external factors; survey and assess their impact on scope or the backlog, and act through governance.",
+    "ref": "PMBOK 8, Standard 2.2.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 41,
+        "label": "PMBOK 8, Standard 2.2.1"
+      }
+    ]
+  },
+  {
+    "id": "q22",
+    "q": "How can GenAI support an agile team's retrospectives, according to the Agile Practice Guide?",
+    "options": [
+      "By choosing the team's improvements for it alone",
+      "By rating each member's performance",
+      "By replacing the facilitator",
+      "By anonymizing notes and tracking actions"
+    ],
+    "answer": 3,
+    "approach": "agile",
+    "explanation": "GenAI tools can read notes and boards, anonymize text, suggest small experiments and track actions over time.",
+    "ref": "Agile Practice Guide, 5.2.7",
+    "links": [
+      {
+        "book": "agile",
+        "page": 86,
+        "label": "Agile Practice Guide, 5.2.7"
+      }
+    ]
+  },
+  {
+    "id": "q23",
+    "q": "The schedule must keep adjusting to changing resource availability and milestone dates. Which AI use case fits?",
+    "options": [
+      "Dynamic scheduling",
+      "Sentiment analysis",
+      "Copyright review",
+      "Automated meeting minutes"
+    ],
+    "answer": 0,
+    "approach": "hybrid",
+    "explanation": "Dynamic scheduling: AI optimizes schedules considering dependencies, resource availability and milestones, adjusting to internal and external changes.",
+    "ref": "PMBOK 8, Appendix X3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.2"
+      }
+    ]
+  },
+  {
+    "id": "q24",
+    "q": "What brought AI into the mainstream for most professionals, according to the PMBOK Guide?",
+    "options": [
+      "The end of all AI regulation",
+      "The rise of fixed-price contracts in all industries",
+      "Advances such as large language models",
+      "Larger project management offices"
+    ],
+    "answer": 2,
+    "approach": "predictive",
+    "explanation": "Advances such as large language models expanded AI's applicability and simplified its adoption, making it accessible with minimal manual intervention.",
+    "ref": "PMBOK 8, Appendix X3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 342,
+        "label": "PMBOK 8, Appendix X3.1"
+      }
+    ]
+  },
+  {
+    "id": "q25",
+    "q": "Which risk use case does Table X3-1 describe?",
+    "options": [
+      "AI accepts all project risks on behalf of the sponsor",
+      "AI identifies and assesses risks from historical data",
+      "AI removes the need for a risk register",
+      "AI signs the risk management plan"
+    ],
+    "answer": 1,
+    "approach": "hybrid",
+    "explanation": "AI can analyze historical project data and industry benchmarks to identify risks and assess their likelihood and impact, supporting early risk planning.",
+    "ref": "PMBOK 8, Appendix X3.2",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.2"
+      }
+    ]
+  },
+  {
+    "id": "q26",
+    "q": "Which THREE are AI adoption strategies described in the PMBOK Guide?",
+    "type": "multi",
+    "options": [
+      "Automation",
+      "Assistance",
+      "Augmentation",
+      "Avoidance",
+      "Acceptance",
+      "Abdication"
+    ],
+    "answers": [
+      0,
+      1,
+      2
+    ],
+    "approach": "predictive",
+    "explanation": "Tasks are classified by complexity and need for supervision into automation, assistance and augmentation.",
+    "ref": "PMBOK 8, Appendix X3.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 343,
+        "label": "PMBOK 8, Appendix X3.1.1"
+      }
+    ]
+  },
+  {
+    "id": "q27",
+    "q": "Which TWO are ethical concerns the PMBOK Guide lists for AI?",
+    "type": "multi",
+    "options": [
+      "Bias",
+      "Privacy",
+      "Velocity",
+      "Float",
+      "Lead time"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "The concerns listed are bias, privacy, accountability, reliability, safety, transparency, copyright and sustainability.",
+    "ref": "PMBOK 8, Appendix X3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.3"
+      }
+    ]
+  },
+  {
+    "id": "q28",
+    "q": "Which TWO actions reduce privacy risk when using AI?",
+    "type": "multi",
+    "options": [
+      "Secure the data and follow a privacy policy",
+      "Choose tools that do not reuse project data",
+      "Paste all data into any free tool",
+      "Share personal data widely to improve results",
+      "Skip review of AI outputs"
+    ],
+    "answers": [
+      0,
+      1
+    ],
+    "approach": "hybrid",
+    "explanation": "Sensitive data must be secured and collected under a privacy policy; paid tools can restrict the use of data for retraining.",
+    "ref": "PMBOK 8, Appendix X3.3",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 344,
+        "label": "PMBOK 8, Appendix X3.3"
+      }
+    ]
+  },
+  {
+    "id": "q29",
+    "q": "Match each AI term with its meaning.",
+    "type": "match",
+    "left": [
+      "Machine learning",
+      "Deep learning",
+      "Generative AI",
+      "Natural language processing"
+    ],
+    "right": [
+      "Trains models on data to predict outputs",
+      "Multilayered neural networks, large data sets",
+      "Creates new text, images and audio",
+      "Processes human language, as in chatbots"
+    ],
+    "approach": "predictive",
+    "explanation": "ML is a subfield of AI; DL is advanced ML; GenAI is a subset of DL using LLMs; NLP builds software that processes natural language.",
+    "ref": "PMBOK 8, Appendix X3.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 342,
+        "label": "PMBOK 8, Appendix X3.1"
+      }
+    ]
+  },
+  {
+    "id": "q30",
+    "q": "Complete each statement about AI adoption strategies.",
+    "type": "dropdown",
+    "blanks": [
+      {
+        "text": "Report generation with little human input is",
+        "choices": [
+          "augmentation",
+          "automation",
+          "assistance"
+        ],
+        "answer": 1
+      },
+      {
+        "text": "Drafting a risk register for a person to review and refine is",
+        "choices": [
+          "automation",
+          "augmentation",
+          "assistance"
+        ],
+        "answer": 2
+      },
+      {
+        "text": "Using AI as a brainstorming partner on strategic choices is",
+        "choices": [
+          "augmentation",
+          "assistance",
+          "automation"
+        ],
+        "answer": 0
+      }
+    ],
+    "approach": "hybrid",
+    "explanation": "The more complex the task, the more the strategy moves from automation to assistance to augmentation, and the more human involvement it needs.",
+    "ref": "PMBOK 8, Appendix X3.1.1",
+    "links": [
+      {
+        "book": "pmbok8",
+        "page": 343,
+        "label": "PMBOK 8, Appendix X3.1.1"
+      }
+    ]
+  }
+]
