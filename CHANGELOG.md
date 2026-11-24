@@ -7,9 +7,11 @@ Each version of Road to PMP, newest first, with what you will notice.
 - **PMP formula sheet:** open **Formulas** on any PMP page for earned value, estimates and budget, the critical
   path, velocity and WSJF, communication channels, EMV and decision trees, and the Eighth Edition's principles,
   domains, focus areas and 40 processes. Each line links to its lesson.
-- **Book links on the website:** once you are signed in, **Open the PDF at page …** opens your book at that page
-  on the website too, also on your phone, from a private online copy (after a one-time setup in Supabase). Signed
-  out, a link opens a small window asking you to sign in first.
+- **Book reader:** **Open the PDF at page …** now opens the book in the app's own reader, in a new tab, at that
+  page, on your PC and on the website alike, also on your phone. Turn pages, type a page number, or make the pages
+  larger. No more downloads instead of a book.
+- **Book links on the website:** once you are signed in, the books open on the website too, from a private online
+  copy (after a one-time setup in Supabase). Signed out, a link opens a small window asking you to sign in first.
 - Module 2.9 now shows both published ranges for later cost estimates (−5% to +10%, and −10% to +15%) with their
   books.
 

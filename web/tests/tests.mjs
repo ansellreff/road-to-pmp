@@ -734,6 +734,19 @@ export const tests = {
     await inView(page, 'Indices: CPI and SPI')
   },
 
+  async 'book reader: a source link opens the book in a new tab at its page, with page and zoom controls'(page) {
+    await page.goto('/pmp/2-10-earned-value')
+    const [tab] = await Promise.all([page.context().waitForEvent('page'), page.getByRole('link', { name: 'Open the PDF at page 312' }).first().click()])
+    await tab.waitForURL(/\/read\/pmbok8\?page=312$/)
+    await tab.locator('#page-312 canvas').waitFor({ timeout: 60000 })
+    expect((await tab.locator('#reader-page').inputValue()) === '312', 'the reader did not open at page 312')
+    await tab.getByRole('button', { name: 'Next page' }).click()
+    await tab.waitForFunction(() => document.querySelector('#reader-page')?.value === '313')
+    await tab.getByRole('button', { name: 'Larger' }).click()
+    await tab.getByText('125%').waitFor()
+    await tab.close()
+  },
+
   async 'PMP formula sheet: opens from the top bar on a PMP page and links to the lesson'(page) {
     await page.goto('/pmp/2-10-earned-value')
     await page.getByRole('link', { name: 'Formulas', exact: true }).first().click()

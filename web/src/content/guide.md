@@ -178,9 +178,11 @@ to it.
 **How to use it.**
 1. In a lesson, the source is written under each section heading.
 2. In a quiz, each explanation names its source.
-3. Click **Open the PDF at page …** to open the book at that page in a new tab:
-   - on this PC (**start.bat**), from your PMI Learning Material folder;
-   - on the website, from your private online copy, once you are signed in on the home page.
+3. Click **Open the PDF at page …**. The **book reader** opens in a new tab, at that page:
+   - on this PC (**start.bat**), with the book from your PMI Learning Material folder;
+   - on the website, with your private online copy, once you are signed in on the home page.
+4. In the reader, scroll through the book, type a page number and press Enter, or use **Previous page** and **Next
+   page**. **−** and **+** make the pages smaller or larger.
 
 **Rules and limits.**
 - On the website, any signed-in account can open the books. Signed out, a link opens a small window, **Sign in

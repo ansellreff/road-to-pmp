@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import DisplayControls from './components/DisplayControls'
 import Milestone from './components/Milestone'
@@ -20,6 +21,10 @@ import SheetPage from './pages/SheetPage'
 import HelpPage from './pages/HelpPage'
 import release from 'virtual:release'
 import { link } from './lib/ui'
+import { Waiting } from './components/Page'
+
+// The book reader carries a PDF library, so it loads only when a book is opened.
+const ReaderPage = lazy(() => import('./pages/ReaderPage'))
 
 /** The width every page shares, so the top bar and the content line up. */
 export const shell = 'mx-auto w-full max-w-7xl px-4 sm:px-6'
@@ -56,6 +61,14 @@ export default function App() {
           <Route path="/practice" element={<PracticePage />} />
           <Route path="/plan" element={<PlanPage />} />
           <Route path="/search" element={<SearchPage />} />
+          <Route
+            path="/read/:book"
+            element={
+              <Suspense fallback={<Waiting>Opening the book reader</Waiting>}>
+                <ReaderPage />
+              </Suspense>
+            }
+          />
           <Route path="/:courseId" element={<CoursePage />} />
           <Route path="/:courseId/sheet" element={<SheetPage />} />
           <Route path="/:courseId/exams" element={<ExamsPage />} />

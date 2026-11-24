@@ -1,88 +1,46 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { bookError, bookLink, WARN_BYTES } from '../lib/books'
 import { books, loadSources, type SourceLink } from '../lib/content'
 import { useSync } from '../lib/sync'
 import { btnPrimary, column, link, note, section, subTitle } from '../lib/ui'
 import MessageDialog from './MessageDialog'
 import { useLoaded } from '../lib/useLoaded'
 
-// On this PC the local dev server serves the PDFs from your PMI Learning Material folder (see
-// vite.config.ts). On the website they come from your private online storage (see lib/books.ts),
-// once you are signed in with the account on its readers list.
+// A source link opens the book reader (pages/ReaderPage.tsx) in a new tab, at the source's page. On
+// this PC the reader takes the book from your PMI Learning Material folder; on the website from your
+// private online copy (lib/books.ts), which needs you to be signed in.
 const onThisPc = import.meta.env.DEV
 
-const gigabytes = (bytes: number) => (bytes / 1_000_000_000).toFixed(1)
-
-/** A link that opens the book's PDF at the source's page, or plain text where the PDFs are not available. */
+/** A link that opens the book at the source's page in the reader, or asks to sign in first. */
 function OpenBook({ source, short = false }: { source: SourceLink; short?: boolean }) {
   const sync = useSync()
-  const [message, setMessage] = useState<{ text: string; error: boolean }>()
   const [askSignIn, setAskSignIn] = useState(false)
   const title = books[source.book]?.title ?? source.book
   const label = short ? `Open the PDF at page ${source.page}` : `Open ${title} at PDF page ${source.page}`
-  if (onThisPc) {
+  if (onThisPc || sync.email) {
     return (
-      <a href={`/books/${source.book}.pdf#page=${source.page}`} target="_blank" rel="noreferrer" className={link}>
+      <a href={`/read/${source.book}?page=${source.page}`} target="_blank" rel="noreferrer" className={link}>
         {label}
       </a>
     )
   }
-  if (!sync.email) {
-    return (
-      <>
-        <button type="button" onClick={() => setAskSignIn(true)} className={`${link} text-left`}>
-          {label}
-        </button>
-        {askSignIn && (
-          <MessageDialog
-            title="Sign in first"
-            onClose={() => setAskSignIn(false)}
-            action={
-              <Link to="/#sync" className={btnPrimary}>
-                Go to sign in
-              </Link>
-            }
-          >
-            You must sign in first to open the books. Sign in on the home page with your email, then click the link
-            again.
-          </MessageDialog>
-        )}
-      </>
-    )
-  }
-
-  async function open() {
-    setMessage(undefined)
-    // The tab opens at once, inside the click, so the browser does not block it; the book follows.
-    const tab = window.open('about:blank', '_blank')
-    try {
-      const found = await bookLink(source.book)
-      const url = `${found.url}#page=${source.page}`
-      if (tab) {
-        tab.opener = null
-        tab.location.href = url
-      } else {
-        window.location.href = url
-      }
-      if (found.used !== undefined && found.cap !== undefined && found.used > WARN_BYTES) {
-        setMessage({ text: `Book downloads this month: ${gigabytes(found.used)} of ${gigabytes(found.cap)} GB.`, error: false })
-      }
-    } catch (error) {
-      tab?.close()
-      setMessage({ text: bookError((error as Error).message), error: true })
-    }
-  }
-
   return (
     <>
-      <button type="button" onClick={() => void open()} className={`${link} text-left`}>
+      <button type="button" onClick={() => setAskSignIn(true)} className={`${link} text-left`}>
         {label}
       </button>
-      {message && (
-        <span role={message.error ? 'alert' : 'status'} className={`mt-1 block ${message.error ? 'text-critical' : 'text-muted'}`}>
-          {message.text}
-        </span>
+      {askSignIn && (
+        <MessageDialog
+          title="Sign in first"
+          onClose={() => setAskSignIn(false)}
+          action={
+            <Link to="/#sync" className={btnPrimary}>
+              Go to sign in
+            </Link>
+          }
+        >
+          You must sign in first to open the books. Sign in on the home page with your email, then click the link again.
+        </MessageDialog>
       )}
     </>
   )
@@ -90,9 +48,9 @@ function OpenBook({ source, short = false }: { source: SourceLink; short?: boole
 
 /** What the source links do here, in one sentence. */
 function sourcesNote(signedIn: boolean): string {
-  if (onThisPc) return 'Each link opens the PDF from your PMI Learning Material folder in a new tab, at the page where that section starts.'
+  if (onThisPc) return 'Each link opens the book reader in a new tab, at the page where that section starts, with the PDF from your PMI Learning Material folder.'
   if (signedIn) {
-    return 'Each link opens the PDF from your private online copy in a new tab, at the page where that section starts. The first time on a device, the whole book downloads.'
+    return 'Each link opens the book reader in a new tab, at the page where that section starts, with the PDF from your private online copy.'
   }
   return 'Each link opens the PDF at the page where that section starts, once you are signed in on the home page.'
 }
