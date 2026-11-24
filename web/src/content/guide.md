@@ -117,6 +117,8 @@ pages while you work on the next one.
 2. Press **I passed this exam**, then **Mark as passed**.
 3. To bring it back, open the same page and press **Not passed yet: show it again**.
 
+Both buttons are also in **Settings**, under **Certifications and exam days**.
+
 **Rules and limits.**
 - Nothing is marked until you press the button: a certification is never hidden by itself.
 - A marked certification is left out of the home page, the study plan and the dashboard tabs. Its modules, quizzes,
@@ -212,12 +214,14 @@ to it.
 - On the website, any signed-in account can open the books. Signed out, a link opens a small window, **Sign in
   first**, with a **Sign in** button.
 - Opening a book without a page (for example from your browser's history) continues where you last read it.
-- The first time a book opens on a device, the whole book downloads. Each link stays valid for 7 days on that
-  device, so opening the same book again within the week costs nothing extra.
+- **Saved on your device:** on the website, the first time a book opens on a device, the whole book is fetched
+  once and saved on that device; a line shows how far it has got. After that it opens at once from the device,
+  with no download. To save every book in one go, use **Settings**, **Books on this device**.
+- Signing out removes the saved books from that device.
 - **Monthly stop:** the online books stop at 4 GB of downloads a month, 1 GB under the free plan's 5 GB, so Supabase
-  never restricts the project (sync included). From 3 GB, opening a book shows the month's total. At 4 GB the links
-  pause until the 1st of the next month; books opened in the last 7 days still open, and on this PC every book opens
-  as usual.
+  never restricts the project (sync included). Each book counts once per device when it is saved. From 3 GB, saving
+  a book shows the month's total. At 4 GB new books pause until the 1st of the next month; books already saved on
+  a device still open, and on this PC every book opens as usual.
 - "PDF page" is the page number your PDF viewer shows, not the number printed on the page.
 
 **Example.** In module 2.10, "Variances and indices" shows "Source: PMBOK 8, Guide Table 5-1". Clicking **Open the
@@ -228,7 +232,7 @@ PDF at page 312** opens the PMBOK Guide at that table, on this PC or, signed in,
 **What it does.** Saves your progress automatically in the browser, and lets you keep or move a copy as a file.
 
 **How to use it.**
-1. On the home page, under **Your saved progress**, press **Download backup** to save a copy.
+1. Open **Settings** in the top bar. Under **Your saved progress**, press **Download backup** to save a copy.
 2. On another device or browser, press **Restore from backup** and choose that file.
 
 **Rules and limits.**
@@ -276,6 +280,8 @@ already there.
    half-filled circle first to show them.
 2. Press **Dark** or **Light** to switch the theme.
 
+The same choices are in **Settings**, under **Display**.
+
 **Rules and limits.**
 - Both choices are kept in this browser only.
 - Until you choose a theme, the app follows your device's own setting.
@@ -283,6 +289,31 @@ already there.
   motion, it switches at once.
 
 **Example.** For a long evening session, choose the larger **A** and **Dark**.
+
+## Settings
+
+**What it does.** Everything you can set up in the app, on one page.
+
+**How to use it.**
+1. Open **Settings** in the top bar (on a phone, swipe the row of page links to reach it).
+2. Choose what to change:
+   - **Display:** theme (Light, Dark) and text size (Normal, Large, Larger);
+   - **Account and sync:** who is signed in, and a button to sign in or open your account;
+   - **Books on this device:** **Save all books on this device**, how many are saved, and **Remove the books from
+     this device**;
+   - **Your saved progress:** **Download backup**, **Restore from backup** and **Delete all progress**;
+   - **Certifications and exam days:** mark a certification as passed or take the mark off, and see each exam day.
+
+**Rules and limits.**
+- Saving all books needs you to be signed in. All 19 books together are about 160 MB, so use Wi-Fi. **Stop saving**
+  stops it; the books saved so far stay.
+- Each book saved counts once towards the month's 4 GB of book downloads.
+- On this PC the books open from your PMI Learning Material folder, so there is nothing to save.
+- **Delete all progress** and **Remove the books from this device** ask first.
+- The exam day is set in the **Study plan**.
+
+**Example.** At home on Wi-Fi, sign in on your phone, open **Settings** and press **Save all books on this device**.
+Later, every source link opens its book at once, even on a slow connection.
 
 ## Version number and what's new
 

@@ -4,6 +4,13 @@ Each version of Road to PMP, newest first, with what you will notice.
 
 ## 1.1 · 24 Nov 2026 · The PMP course complete: modules, mock exams and formula sheet
 
+- **Settings:** a new page in the top bar with everything you can set up: theme and text size, your account, the
+  books on this device, backups of your progress, and certifications marked as passed. The backup buttons moved
+  here from the bottom of the home page. **Delete all progress** now asks in a window of the app.
+- **Books open faster on the website:** the first time a book opens on a device it is saved there, with a line
+  showing how far it has got; after that it opens at once. **Save all books on this device** in Settings saves all
+  19 (about 160 MB) in one go, and they can be removed again. Signing out removes them.
+
 - **PMP formula sheet:** open **Formulas** on any PMP page for earned value, estimates and budget, the critical
   path, velocity and WSJF, communication channels, EMV and decision trees, and the Eighth Edition's principles,
   domains, focus areas and 40 processes. Each line links to its lesson.

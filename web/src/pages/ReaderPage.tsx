@@ -1,15 +1,17 @@
 import { useEffect, useRef, useState, type CSSProperties } from 'react'
-import { useParams, useSearchParams } from 'react-router-dom'
+import { Link, useParams, useSearchParams } from 'react-router-dom'
 import type { PDFDocumentProxy, RenderTask, TextLayer } from 'pdfjs-dist'
 import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url'
 import NotFound from '../components/NotFound'
 import Icon from '../components/Icon'
-import { PageHeader, Waiting } from '../components/Page'
+import { Meter, PageHeader, Waiting } from '../components/Page'
 import { openAccount } from '../lib/account'
-import { bookError, bookLink, WARN_BYTES } from '../lib/books'
+import { onThisPc } from '../lib/bookCache'
+import { bookError, WARN_BYTES } from '../lib/books'
+import { megabytes, saveBook, savedBook, type Progress } from '../lib/bookStore'
 import { books } from '../lib/content'
 import { useSync } from '../lib/sync'
-import { btnPrimary, btnQuiet, input, note } from '../lib/ui'
+import { btnPrimary, btnQuiet, input, link, note } from '../lib/ui'
 import './reader.css'
 
 // The book reader: a page of the app that draws a PDF itself (with PDF.js), opened at the page a
@@ -20,7 +22,6 @@ import './reader.css'
 // Words can be selected and copied, and found with "Search in this book". The last page read in each
 // book is remembered in this browser, for the next time the book is opened without a page.
 
-const onThisPc = import.meta.env.DEV
 const ZOOMS = [0.5, 0.75, 1, 1.25, 1.5, 2, 2.5, 3]
 const FIT = 2
 /** Pages this far outside the screen are drawn in advance, and dropped again when further away. */
@@ -29,7 +30,7 @@ const LAST_PAGES = 'road-to-pmi-reader-pages'
 /** The reader's buttons: square on a phone, so the controls fit on one row. */
 const tool = `${btnQuiet} max-sm:min-w-11 max-sm:px-0`
 
-type Loading = { state: 'loading' } | { state: 'error'; text: string; signIn?: boolean } | { state: 'ready'; doc: PDFDocumentProxy; month?: string }
+type Loading = { state: 'loading'; saving?: Progress } |{ state: 'error'; text: string; signIn?: boolean } | { state: 'ready'; doc: PDFDocumentProxy; month?: string }
 
 function lastPages(): Record<string, number> {
   try {
@@ -70,19 +71,26 @@ export default function ReaderPage() {
     setLoad({ state: 'loading' })
     void (async () => {
       try {
-        let url = `/books/${book}.pdf`
         let month: string | undefined
+        let data: ArrayBuffer | undefined
         if (!onThisPc) {
-          const found = await bookLink(book)
-          url = found.url
-          if (found.used !== undefined && found.cap !== undefined && found.used > WARN_BYTES) {
-            month = `Book downloads this month: ${(found.used / 1e9).toFixed(1)} of ${(found.cap / 1e9).toFixed(1)} GB.`
+          // The copy saved on this device; the first time, the whole book is fetched once and saved.
+          data = await savedBook(book)
+          if (!data) {
+            const saved = await saveBook(book, (saving) => {
+              if (!cancelled) setLoad({ state: 'loading', saving })
+            })
+            data = saved.data
+            if (saved.used !== undefined && saved.cap !== undefined && saved.used > WARN_BYTES) {
+              month = `Book downloads this month: ${(saved.used / 1e9).toFixed(1)} of ${(saved.cap / 1e9).toFixed(1)} GB.`
+            }
           }
         }
+        if (cancelled) return
         const pdfjs = await import('pdfjs-dist')
         pdfjs.GlobalWorkerOptions.workerSrc = workerUrl
-        // Only the parts of the file that are needed are fetched, where the server allows it.
-        doc = await pdfjs.getDocument({ url, disableAutoFetch: true }).promise
+        // On your PC only the parts of the file that are needed are read.
+        doc = await pdfjs.getDocument(data ? { data } : { url: `/books/${book}.pdf`, disableAutoFetch: true }).promise
         if (cancelled) void doc.destroy()
         else setLoad({ state: 'ready', doc, month })
       } catch (error) {
@@ -104,7 +112,7 @@ export default function ReaderPage() {
           shows, not the one printed on the page. Select text to copy it.
         </p>
       </PageHeader>
-      {load.state === 'loading' && <Waiting>Opening the book. The first time on a device, the book downloads; this can take a moment.</Waiting>}
+      {load.state === 'loading' && (load.saving ? <SavingLine saving={load.saving} /> : <Waiting>Opening the book.</Waiting>)}
       {load.state === 'error' && (
         <div role="alert" className="card mt-4 max-w-xl p-5">
           <p>{load.text}</p>
@@ -121,6 +129,23 @@ export default function ReaderPage() {
           <Viewer key={book} book={book} doc={load.doc} start={Math.min(start, load.doc.numPages)} source={source} />
         </>
       )}
+    </div>
+  )
+}
+
+/** The first opening on a device: how much of the book has arrived. */
+function SavingLine({ saving }: { saving: Progress }) {
+  const { received, total } = saving
+  return (
+    <div className="mt-4 max-w-xl" role="status">
+      <p>
+        Saving the book on this device, the first time only: {megabytes(received)}
+        {total ? ` of ${megabytes(total)}` : ''} MB. Next time it opens at once.
+      </p>
+      {total > 0 && <Meter value={received / total} className="mt-2 h-2.5" />}
+      <p className={`${note} mt-2`}>
+        To save every book in one go, use <Link to="/settings" className={link}>Settings</Link>.
+      </p>
     </div>
   )
 }

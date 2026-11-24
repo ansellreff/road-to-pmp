@@ -834,6 +834,60 @@ export const tests = {
     await see(page, '5 minutes left. Check the questions you flagged or left unanswered.')
   },
 
+  async 'settings: one page for display, account, books, backups and passed certifications'(page) {
+    await page.goto('/')
+    await page.getByRole('link', { name: 'Settings', exact: true }).first().click()
+    await page.waitForURL(/\/settings$/)
+    const main = page.getByRole('main')
+    // Display: the same settings as the top bar, kept in this browser.
+    await main.getByRole('group', { name: 'Theme' }).getByRole('button', { name: 'Dark', exact: true }).click()
+    await page.getByRole('button', { name: 'Switch to the light theme' }).waitFor()
+    await main.getByRole('group', { name: 'Text size' }).getByRole('button', { name: 'Larger', exact: true }).click()
+    expect((await page.getByRole('button', { name: 'Larger text' }).getAttribute('aria-pressed')) === 'true', 'the text size did not change')
+    // Account, books on this PC, and the backup buttons moved from the home page.
+    await main.getByRole('button', { name: 'Sign in', exact: true }).first().waitFor()
+    await see(page, 'On this PC every book opens straight from your PMI Learning Material folder')
+    await main.getByRole('button', { name: 'Download backup' }).waitFor()
+    await main.getByRole('button', { name: 'Restore from backup' }).waitFor()
+    // Delete all progress asks first; Close keeps everything.
+    await page.goto('/capm/1-01-project-basics')
+    await button(page, 'Mark lesson as completed').click()
+    await page.goto('/settings')
+    await main.getByRole('button', { name: 'Delete all progress' }).click()
+    await page.getByRole('dialog', { name: 'Delete all progress?' }).getByRole('button', { name: 'Close' }).click()
+    expect(Boolean((await saved(page)).lessons['capm/1-01-project-basics']), 'closing the question deleted the progress')
+    // A certification can be marked as passed here, and the mark taken off again.
+    const capm = main.getByRole('listitem').filter({ hasText: 'CAPM' })
+    await capm.getByRole('button', { name: 'I passed this exam' }).click()
+    await page.getByRole('dialog', { name: 'Mark CAPM as passed?' }).getByRole('button', { name: 'Mark as passed' }).click()
+    await capm.getByText('Marked as passed on').waitFor()
+    expect(Boolean((await saved(page)).passed?.capm), 'the passed mark was not saved')
+    await capm.getByRole('button', { name: 'Not passed yet: show it again' }).click()
+    await capm.getByText('Studying').waitFor()
+    expect(!(await saved(page)).passed?.capm, 'the passed mark did not come off')
+    // The home page links here instead of holding the backup buttons.
+    await page.goto('/')
+    expect((await page.getByRole('button', { name: 'Download backup' }).count()) === 0, 'the backup buttons are still on the home page')
+    await page.getByRole('main').getByRole('link', { name: 'Settings', exact: true }).waitFor()
+  },
+
+  async 'books on this device: a saved book is found again and can be removed'(page) {
+    await page.goto('/settings')
+    const result = await page.evaluate(async () => {
+      const store = await import('/src/lib/bookStore.ts')
+      const pdf = await (await fetch('/books/scrum.pdf')).blob()
+      const cache = await caches.open('road-to-pmi-books')
+      await cache.put('/saved-books/scrum.pdf', new Response(pdf, { headers: { 'Content-Length': String(pdf.size) } }))
+      const listed = await store.savedBooks()
+      const data = await store.savedBook('scrum')
+      await store.removeBooks()
+      return { size: pdf.size, listed, read: data?.byteLength ?? 0, after: Object.keys(await store.savedBooks()).length, missing: (await store.savedBook('scrum')) === undefined }
+    })
+    expect(result.size > 1000 && result.listed.scrum === result.size, 'the saved book was not listed with its size')
+    expect(result.read === result.size, 'the saved book could not be read back whole')
+    expect(result.after === 0 && result.missing, 'removing the books left one behind')
+  },
+
   async 'PMP formula sheet: opens from the top bar on a PMP page and links to the lesson'(page) {
     await page.goto('/pmp/2-10-earned-value')
     await page.getByRole('link', { name: 'Formulas', exact: true }).first().click()

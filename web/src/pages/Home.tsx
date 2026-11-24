@@ -1,4 +1,3 @@
-import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ExamBlueprint from '../components/ExamBlueprint'
 import Icon, { type IconName } from '../components/Icon'
@@ -9,11 +8,8 @@ import { buildPlan, formatDay, planMockExams } from '../lib/plan'
 import { readiness } from '../lib/readiness'
 import {
   dueCount,
-  exportProgress,
-  importProgress,
   moduleCompletion,
   moduleKey,
-  resetProgress,
   DEFAULT_GOAL,
   setGoal,
   studyCourses,
@@ -24,7 +20,7 @@ import {
 } from '../lib/progress'
 import { courseCompletion, courseMissed, moduleNumber, nextModule, nextStep, percent, remainingModules } from '../lib/stats'
 import { toast } from '../lib/toast'
-import { btnDanger, btnPrimary, btnQuiet, domainBg, link, note, pageTitle, section, sectionTitle, subTitle } from '../lib/ui'
+import { btnPrimary, btnQuiet, domainBg, link, note, pageTitle, section, sectionTitle, subTitle } from '../lib/ui'
 
 /** The home page: what to do now, how you stand, what is planned for today; reference below. */
 export default function Home() {
@@ -60,7 +56,13 @@ export default function Home() {
       )}
 
       <CertificationPath progress={progress} />
-      <Backup />
+      <p className={`${note} -mt-6`}>
+        Backups of your progress, the books on this device, text size and theme: all in{' '}
+        <Link to="/settings" className={link}>
+          Settings
+        </Link>
+        .
+      </p>
     </div>
   )
 }
@@ -393,74 +395,6 @@ function CertificationPath({ progress }: { progress: Progress }) {
           )
         })}
       </ol>
-    </section>
-  )
-}
-
-function Backup() {
-  const fileInput = useRef<HTMLInputElement>(null)
-  const [message, setMessage] = useState('')
-
-  function download() {
-    const blob = new Blob([exportProgress()], { type: 'application/json' })
-    const a = document.createElement('a')
-    a.href = URL.createObjectURL(blob)
-    a.download = `road-to-pmp-progress-${new Date().toISOString().slice(0, 10)}.json`
-    a.click()
-    URL.revokeObjectURL(a.href)
-    setMessage('Backup downloaded.')
-    toast('Backup downloaded')
-  }
-
-  async function upload(file: File | undefined) {
-    if (!file) return
-    try {
-      importProgress(await file.text())
-      setMessage('Progress restored from backup.')
-      toast('Progress restored from backup')
-    } catch (e) {
-      setMessage(e instanceof Error ? e.message : 'That file could not be read. Choose a backup downloaded from this page.')
-    }
-    if (fileInput.current) fileInput.current.value = ''
-  }
-
-  function reset() {
-    if (window.confirm('Delete all progress saved in this browser? This cannot be undone.')) {
-      resetProgress()
-      setMessage('All progress deleted.')
-    }
-  }
-
-  return (
-    <section className={section}>
-      <h2 className={subTitle}>Your saved progress</h2>
-      <p className={`${note} mt-1 max-w-2xl`}>
-        Progress saves automatically in this browser and stays after you close it. A backup file is a copy you keep
-        yourself; it also moves progress to another device without signing in.
-      </p>
-      <div className="mt-4 flex flex-wrap gap-2">
-        <button className={btnQuiet} onClick={download}>
-          Download backup
-        </button>
-        <button className={btnQuiet} onClick={() => fileInput.current?.click()}>
-          Restore from backup
-        </button>
-        <button className={btnDanger} onClick={reset}>
-          Delete all progress
-        </button>
-        <input
-          ref={fileInput}
-          type="file"
-          accept="application/json"
-          className="hidden"
-          onChange={(e) => upload(e.target.files?.[0])}
-        />
-      </div>
-      {message && (
-        <p className="mt-3 text-sm" role="status">
-          {message}
-        </p>
-      )}
     </section>
   )
 }

@@ -37,6 +37,17 @@ function keep(book: string, link: SavedLink) {
   }
 }
 
+/** Forgets a saved link that stopped working, so the next opening makes a new one. */
+export function forgetLink(book: string) {
+  try {
+    const links = load()
+    delete links[book]
+    localStorage.setItem(KEY, JSON.stringify(links))
+  } catch {
+    // nothing saved
+  }
+}
+
 export interface BookLink {
   url: string
   /** Bytes counted this month, when a new link was made. */

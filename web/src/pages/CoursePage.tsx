@@ -1,69 +1,16 @@
-import { useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import ExamBlueprint from '../components/ExamBlueprint'
 import Icon, { type IconName } from '../components/Icon'
-import MessageDialog from '../components/MessageDialog'
 import NotFound from '../components/NotFound'
+import PassedButton from '../components/PassedButton'
 import NotOnExamNote, { ExamStar } from '../components/NotOnExam'
 import { PageHeader } from '../components/Page'
 import Ring from '../components/Ring'
 import { getCourse, getExams, getSheet, type Course, type ModuleMeta } from '../lib/content'
 import { formatDate } from '../lib/plan'
-import { knownCount, moduleCompletion, moduleKey, setPassed, useProgress, type Progress } from '../lib/progress'
+import { knownCount, moduleCompletion, moduleKey, useProgress, type Progress } from '../lib/progress'
 import { domainCompletion, nextStep, percent } from '../lib/stats'
-import { toast } from '../lib/toast'
-import { btnPrimary, btnQuiet, domainBg, domainText, sectionTitle } from '../lib/ui'
-
-/**
- * "I passed this exam": hides the certification from the home page, the study plan and the dashboard, after a
- * confirmation. Nothing is deleted, and the mark can be taken off again here.
- */
-function PassedButton({ course, passed }: { course: Course; passed: boolean }) {
-  const [asking, setAsking] = useState(false)
-  if (passed) {
-    return (
-      <button
-        type="button"
-        className={btnQuiet}
-        onClick={() => {
-          setPassed(course.id, false)
-          toast(`${course.title} is shown again on your study pages`)
-        }}
-      >
-        Not passed yet: show it again
-      </button>
-    )
-  }
-  return (
-    <>
-      <button type="button" className={btnQuiet} onClick={() => setAsking(true)}>
-        <Icon name="trophy" className="mr-2" />I passed this exam
-      </button>
-      {asking && (
-        <MessageDialog
-          title={`Mark ${course.title} as passed?`}
-          onClose={() => setAsking(false)}
-          action={
-            <button
-              type="button"
-              className={btnPrimary}
-              onClick={() => {
-                setPassed(course.id, true)
-                setAsking(false)
-                toast(`${course.title} marked as passed`)
-              }}
-            >
-              Mark as passed
-            </button>
-          }
-        >
-          It will no longer appear on the home page, in the study plan or on the dashboard. Its modules, quizzes, mock
-          exams and your progress all stay, and you can take the mark off on this page at any time.
-        </MessageDialog>
-      )}
-    </>
-  )
-}
+import { btnQuiet, domainBg, domainText, sectionTitle } from '../lib/ui'
 
 export default function CoursePage() {
   const { courseId } = useParams()

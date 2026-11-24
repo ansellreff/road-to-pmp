@@ -59,6 +59,7 @@ export default function TopMenu() {
         <PageLink to="/dashboard" icon="dashboard" label="Dashboard" />
         {getSheet(course.id).length > 0 && <PageLink to={`/${course.id}/sheet`} icon="formula" label="Formulas" />}
         <PageLink to="/help" icon="help" label="Help" />
+        <PageLink to="/settings" icon="settings" label="Settings" />
       </div>
       {open === 'modules' && <ModulesPanel course={course} progress={progress} />}
       {open === 'practice' && <PracticePanel course={course} progress={progress} />}

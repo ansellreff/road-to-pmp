@@ -27,6 +27,7 @@ const ReviewPage = lazy(() => import('./pages/ReviewPage'))
 const SearchPage = lazy(() => import('./pages/SearchPage'))
 const SheetPage = lazy(() => import('./pages/SheetPage'))
 const HelpPage = lazy(() => import('./pages/HelpPage'))
+const SettingsPage = lazy(() => import('./pages/SettingsPage'))
 const ReaderPage = lazy(() => import('./pages/ReaderPage'))
 
 /** The width every page shares, so the top bar and the content line up. */
@@ -112,6 +113,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/help" element={<HelpPage />} />
           <Route path="/help/:tab" element={<HelpPage />} />
+          <Route path="/settings" element={<SettingsPage />} />
           <Route path="/review" element={<ReviewPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/practice" element={<PracticePage />} />

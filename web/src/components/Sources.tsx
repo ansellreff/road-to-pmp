@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { openAccount } from '../lib/account'
+import { onThisPc } from '../lib/bookCache'
 import { books, loadSources, type SourceLink } from '../lib/content'
 import { useSync } from '../lib/sync'
 import { btnPrimary, column, link, note, section, subTitle } from '../lib/ui'
@@ -9,7 +10,6 @@ import { useLoaded } from '../lib/useLoaded'
 // A source link opens the book reader (pages/ReaderPage.tsx) in a new tab, at the source's page. On
 // this PC the reader takes the book from your PMI Learning Material folder; on the website from your
 // private online copy (lib/books.ts), which needs you to be signed in.
-const onThisPc = import.meta.env.DEV
 
 /** A link that opens the book at the source's page in the reader, or asks to sign in first. */
 function OpenBook({ source, short = false }: { source: SourceLink; short?: boolean }) {

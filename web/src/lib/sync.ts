@@ -1,4 +1,5 @@
 import { useSyncExternalStore } from 'react'
+import { removeSavedBooks } from './bookCache'
 import { mergeProgress } from './merge'
 import { getProgress, onProgressChange, replaceProgress, type Progress } from './progress'
 import { SUPABASE_ANON_KEY, SUPABASE_URL } from './syncConfig'
@@ -209,6 +210,8 @@ export function signOut() {
   } catch {
     // nothing saved
   }
+  // So do the books saved on this device: they are for signed-in accounts only.
+  void removeSavedBooks().catch(() => undefined)
   show({ email: undefined, status: 'off', message: 'Signed out. Your progress stays on this device.', lastSync: undefined })
 }
 
