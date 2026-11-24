@@ -203,13 +203,13 @@ function Viewer({ doc, start }: { doc: PDFDocumentProxy; start: number }) {
           Next page
         </button>
         <span className="ml-auto flex items-center gap-2">
-          <button type="button" onClick={() => setZoom((z) => Math.max(0, z - 1))} disabled={zoom === 0} className={btnQuiet} aria-label="Smaller">
+          <button type="button" onClick={() => setZoom((z) => Math.max(0, z - 1))} disabled={zoom === 0} className={btnQuiet} aria-label="Make pages smaller">
             −
           </button>
           <span className="w-14 text-center text-sm tabular-nums" aria-live="polite">
             {Math.round(ZOOMS[zoom] * 100)}%
           </span>
-          <button type="button" onClick={() => setZoom((z) => Math.min(ZOOMS.length - 1, z + 1))} disabled={zoom === ZOOMS.length - 1} className={btnQuiet} aria-label="Larger">
+          <button type="button" onClick={() => setZoom((z) => Math.min(ZOOMS.length - 1, z + 1))} disabled={zoom === ZOOMS.length - 1} className={btnQuiet} aria-label="Make pages larger">
             +
           </button>
         </span>

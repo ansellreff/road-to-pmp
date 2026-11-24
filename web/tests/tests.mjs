@@ -742,7 +742,7 @@ export const tests = {
     expect((await tab.locator('#reader-page').inputValue()) === '312', 'the reader did not open at page 312')
     await tab.getByRole('button', { name: 'Next page' }).click()
     await tab.waitForFunction(() => document.querySelector('#reader-page')?.value === '313')
-    await tab.getByRole('button', { name: 'Larger' }).click()
+    await tab.getByRole('button', { name: 'Make pages larger', exact: true }).click()
     await tab.getByText('125%').waitFor()
     await tab.close()
   },
