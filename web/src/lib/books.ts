@@ -45,9 +45,9 @@ export interface BookLink {
 }
 
 /** A sentence a person can act on, for a refusal from the project. */
-export function bookError(message: string): string {
+export function bookError(message: string, email?: string): string {
   if (/not a book reader/i.test(message)) {
-    return 'This account may not open the books. Only the account on the readers list can (see the guide, "Sources and book links").'
+    return `This account${email ? ` (${email})` : ''} may not open the books: it is not on the readers list in Supabase. Add it with the line in docs/ACCOUNTS.md, "One-time setup of the online books", step 2.`
   }
   if (/monthly limit reached/i.test(message)) {
     const next = new Date()

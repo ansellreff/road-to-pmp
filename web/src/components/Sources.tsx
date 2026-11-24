@@ -51,7 +51,7 @@ function OpenBook({ source, short = false }: { source: SourceLink; short?: boole
       }
     } catch (error) {
       tab?.close()
-      setMessage({ text: bookError((error as Error).message), error: true })
+      setMessage({ text: bookError((error as Error).message, sync.email), error: true })
     }
   }
 

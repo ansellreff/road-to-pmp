@@ -83,5 +83,9 @@ create policy "books: readers make links" on storage.objects for select to authe
 
 -- LAST STEP, once: add yourself as the reader. Copy the line below without the two dashes,
 -- put your sign-in email between the quotes, and run it on its own. Your email stays in your
--- Supabase project; it is not written in this file.
--- insert into public.book_readers (user_id) select id from auth.users where email = 'your sign-in email' on conflict do nothing;
+-- Supabase project; it is not written in this file. Capitals do not matter.
+-- insert into public.book_readers (user_id) select id from auth.users where lower(email) = lower('your sign-in email') on conflict do nothing;
+--
+-- To check: this lists every account in the project and whether it is a reader. The SQL editor
+-- says "Success. No rows returned" after an insert even when nothing was added, so check here.
+-- select u.email, (r.user_id is not null) as reader from auth.users u left join public.book_readers r on r.user_id = u.id;

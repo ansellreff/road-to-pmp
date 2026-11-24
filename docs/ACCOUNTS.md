@@ -31,8 +31,11 @@ Makes the source links open your books on the website too, for your account only
 1. Go to supabase.com, open your project, then **SQL Editor** → **New query**. Open `supabase/books.sql` from the
    project folder in Notepad, copy all of it, paste it, and press **Run**. It should say "Success. No rows returned".
 2. Still in the SQL Editor, start a new query and paste this line, with your sign-in email between the quotes, then
-   press **Run**. It should say "Success" with 1 row:
-   `insert into public.book_readers (user_id) select id from auth.users where email = 'your sign-in email' on conflict do nothing;`
+   press **Run** (capitals do not matter):
+   `insert into public.book_readers (user_id) select id from auth.users where lower(email) = lower('your sign-in email') on conflict do nothing;`
+   It says "Success. No rows returned" even when nothing was added, so check with this query in a new tab: it lists
+   every account and whether it is a reader. Your sign-in email must show **true** under "reader".
+   `select u.email, (r.user_id is not null) as reader from auth.users u left join public.book_readers r on r.user_id = u.id;`
 3. Open **Storage** in the left menu, then the bucket **books** (it shows a lock: private). Press **Upload files**, go to
    `D:\Claude Project\Road to PMI PMP\.cache\books-upload`, select all 19 PDFs (Ctrl+A), and press **Open**. Wait
    until all 19 are listed. Keep the file names as they are (for example `pmbok8.pdf`).
