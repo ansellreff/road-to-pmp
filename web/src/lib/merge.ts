@@ -48,6 +48,7 @@ export function mergeProgress(newer: Progress, older: Progress): Progress {
     examDates: { ...older.examDates, ...newer.examDates },
     exams: join(newer.exams, older.exams, exam),
     reading: { ...older.reading, ...newer.reading },
+    passed: newer.passed || older.passed ? { ...older.passed, ...newer.passed } : undefined,
     milestonesShown:
       newer.milestonesShown || older.milestonesShown
         ? [...new Set([...(older.milestonesShown ?? []), ...(newer.milestonesShown ?? [])])]

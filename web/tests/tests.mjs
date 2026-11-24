@@ -790,6 +790,50 @@ export const tests = {
     await page.getByRole('dialog', { name: 'Sign in' }).getByLabel('Email address').waitFor()
   },
 
+  async 'passed: a certification marked as passed leaves the study pages, keeps its progress, and can come back'(page) {
+    await page.goto('/capm/1-01-project-basics')
+    await button(page, 'Mark lesson as completed').click()
+    await page.goto('/capm')
+    await button(page, 'I passed this exam').click()
+    await page.getByRole('dialog', { name: 'Mark CAPM as passed?' }).getByRole('button', { name: 'Mark as passed' }).click()
+    await see(page, 'Marked as passed on')
+    expect(Boolean((await saved(page)).passed?.capm), 'the passed mark was not saved')
+    // Not on the home page, the study plan or the dashboard tabs; still on the certification path.
+    await page.goto('/')
+    await see(page, 'Marked as passed, so not shown here: CAPM.')
+    expect((await page.getByText('Start here: CAPM').count()) === 0 && (await page.getByText(/CAPM module 1\.\d/).count()) === 0, 'CAPM is still on the home page')
+    await see(page, 'Passed · ')
+    await page.goto('/plan')
+    expect((await page.getByRole('heading', { name: 'CAPM', exact: true }).count()) === 0, 'CAPM is still in the study plan')
+    await page.goto('/dashboard')
+    expect((await page.getByRole('tab').count()) === 0, 'the dashboard still has certification tabs')
+    // Its progress is untouched, and the mark comes off again.
+    expect(Boolean((await saved(page)).lessons['capm/1-01-project-basics']), 'marking as passed changed the progress')
+    await page.goto('/capm')
+    await button(page, 'Not passed yet: show it again').click()
+    await page.goto('/plan')
+    await page.getByRole('heading', { name: 'CAPM', exact: true }).waitFor()
+  },
+
+  async 'mock exam: a quiet reminder at 30 and at 5 minutes left, once each'(page) {
+    // A PMP exam (240 minutes) started so that 30 minutes and 2 seconds are left.
+    const limit = 240 * 60_000
+    const run = (left) => ({ mode: 'practice', startedAt: `NOW-${limit - left}`, picks: Array(180).fill(null), flags: [] })
+    await seed(page, { exams: { 'pmp/mock-1': { run: run(30 * 60_000 + 2000), attempts: [] } } })
+    await page.goto('/pmp/exams/mock-1')
+    await page.getByRole('timer', { name: 'Time left' }).waitFor()
+    expect((await page.getByText('minutes left. Check the questions').count()) === 0, 'the reminder showed before 30 minutes were left')
+    await see(page, '30 minutes left. Check the questions you flagged or left unanswered.')
+    await button(page, 'Hide').click()
+    expect((await page.getByText('30 minutes left.').count()) === 0, 'Hide did not close the reminder')
+    // Opened again later, below 30 minutes: no repeat of the 30-minute reminder; the 5-minute one comes on time.
+    await seed(page, { exams: { 'pmp/mock-1': { run: run(5 * 60_000 + 2000), attempts: [] } } })
+    await page.goto('/pmp/exams/mock-1')
+    await page.getByRole('timer', { name: 'Time left' }).waitFor()
+    expect((await page.getByText('30 minutes left.').count()) === 0, 'the 30-minute reminder came back after a reload')
+    await see(page, '5 minutes left. Check the questions you flagged or left unanswered.')
+  },
+
   async 'PMP formula sheet: opens from the top bar on a PMP page and links to the lesson'(page) {
     await page.goto('/pmp/2-10-earned-value')
     await page.getByRole('link', { name: 'Formulas', exact: true }).first().click()
@@ -950,7 +994,8 @@ export const tests = {
     try {
       await pageB.goto('/')
       await account(pageB)
-      await pageB.getByLabel('Email', { exact: true }).fill('learner@example.com')
+      await pageB.getByRole('tab', { name: 'Use my password' }).click()
+      await pageB.getByLabel('Email address').fill('learner@example.com')
       await pageB.getByLabel('Password', { exact: true }).fill('wrong password')
       await button(pageB, 'Sign in with the password').click()
       await see(pageB, 'That email and password do not match.')

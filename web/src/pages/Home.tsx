@@ -16,6 +16,7 @@ import {
   resetProgress,
   DEFAULT_GOAL,
   setGoal,
+  studyCourses,
   studyStreak,
   today,
   useProgress,
@@ -28,23 +29,35 @@ import { btnDanger, btnPrimary, btnQuiet, domainBg, link, note, pageTitle, secti
 /** The home page: what to do now, how you stand, what is planned for today; reference below. */
 export default function Home() {
   const progress = useProgress()
+  // A certification you marked as passed is left out here; its page and progress stay as they were.
+  const study = studyCourses(startedCourses, progress)
+  const hidden = courses.filter((c) => !study.includes(c) && progress.passed?.[c.id])
   return (
     <div className="space-y-12">
       <h1 className={pageTitle}>Your study today</h1>
 
-      {startedCourses.map((course) => (
+      {study.map((course) => (
         <Continue key={course.id} course={course} progress={progress} />
       ))}
 
       <Tiles progress={progress} />
 
-      {startedCourses.map((course) => (
+      {study.map((course) => (
         <Today key={course.id} course={course} progress={progress} />
       ))}
 
-      {courses.map((course) => (
-        <CourseSummary key={course.id} course={course} progress={progress} />
-      ))}
+      {courses
+        .filter((course) => !hidden.includes(course))
+        .map((course) => (
+          <CourseSummary key={course.id} course={course} progress={progress} />
+        ))}
+
+      {hidden.length > 0 && (
+        <p className={`${note} -mt-6`}>
+          Marked as passed, so not shown here: {hidden.map((c) => c.title).join(', ')}. Its modules and progress are kept; open
+          it from your certification path below to study it again or take the mark off.
+        </p>
+      )}
 
       <CertificationPath progress={progress} />
       <Backup />
@@ -373,7 +386,9 @@ function CertificationPath({ progress }: { progress: Progress }) {
               <span className="title mt-2 block text-lg sm:text-xl">
                 {course ? <Link to={`/${course.id}`}>{step.name}</Link> : step.name}
               </span>
-              <span className="block text-sm text-muted">{course ? `${percent(done)} complete` : 'Planned'}</span>
+              <span className="block text-sm text-muted">
+                {course ? (progress.passed?.[course.id] ? `Passed · ${percent(done)} complete` : `${percent(done)} complete`) : 'Planned'}
+              </span>
             </li>
           )
         })}

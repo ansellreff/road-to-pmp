@@ -12,6 +12,7 @@ export default function SyncPanel() {
   const [email, setEmail] = useState('')
   const [code, setCode] = useState('')
   const [password, setPasswordText] = useState('')
+  const [way, setWay] = useState<'link' | 'password'>('link')
   const busy = sync.status === 'syncing'
   return (
     <div>
@@ -98,17 +99,38 @@ export default function SyncPanel() {
       ) : (
         <>
           <p className={`${note} mt-1 max-w-2xl`}>
-            Sign in to keep your progress the same on your PC and your phone, and to open the books on the website. You
-            can be signed in on all your devices at once. The first time, you get an email with a link, which works once,
-            on the device where you open it; it also creates your account if you do not have one yet.
-            After that you can choose a password and use it on your other devices. Without signing in, everything
-            stays in this browser as before.
+            Sign in to keep your progress the same on your PC and your phone, and to open the books on the website. A new
+            email creates your account. You can be signed in on all your devices at once. Without signing in, everything
+            stays in this browser.
           </p>
+          {/* Two ways in, one email: a link by email (the first time, and on any device), or a password chosen earlier. */}
+          <div role="tablist" aria-label="How to sign in" className="mt-5 flex gap-6 border-b border-line">
+            {(
+              [
+                ['link', 'Email me a link'],
+                ['password', 'Use my password'],
+              ] as const
+            ).map(([id, label]) => (
+              <button
+                key={id}
+                type="button"
+                role="tab"
+                aria-selected={way === id}
+                onClick={() => setWay(id)}
+                className={`press -mb-px min-h-11 border-b-2 px-1 font-medium ${way === id ? 'border-plan text-plan' : 'border-transparent text-muted hover:text-ink'}`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
           <form
+            role="tabpanel"
+            aria-label={way === 'link' ? 'Email me a link' : 'Use my password'}
             className="mt-4 flex flex-wrap items-end gap-2"
             onSubmit={(event) => {
               event.preventDefault()
-              void requestSignIn(email.trim())
+              if (way === 'link') void requestSignIn(email.trim())
+              else void signInWithPassword(email.trim(), password)
             }}
           >
             <div>
@@ -119,57 +141,37 @@ export default function SyncPanel() {
                 id="sync-email"
                 type="email"
                 required
-                autoComplete="email"
+                autoComplete={way === 'link' ? 'email' : 'username'}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 className={`${input} mt-1 w-72 max-w-full`}
               />
             </div>
+            {way === 'password' && (
+              <div>
+                <label htmlFor="sync-password" className="block text-sm font-medium">
+                  Password
+                </label>
+                <input
+                  id="sync-password"
+                  type="password"
+                  required
+                  autoComplete="current-password"
+                  value={password}
+                  onChange={(e) => setPasswordText(e.target.value)}
+                  className={`${input} mt-1 w-56 max-w-full`}
+                />
+              </div>
+            )}
             <button className={btnPrimary} disabled={busy}>
-              Send the sign-in email
+              {way === 'link' ? 'Send the sign-in email' : 'Sign in with the password'}
             </button>
           </form>
-
-          <h3 className="mt-7 text-sm font-semibold">Already chose a password on another device?</h3>
-          <form
-            className="mt-2 flex flex-wrap items-end gap-2"
-            onSubmit={(event) => {
-              event.preventDefault()
-              void signInWithPassword(email.trim(), password)
-            }}
-          >
-            <div>
-              <label htmlFor="sync-password-email" className="block text-sm font-medium">
-                Email
-              </label>
-              <input
-                id="sync-password-email"
-                type="email"
-                required
-                autoComplete="username"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className={`${input} mt-1 w-72 max-w-full`}
-              />
-            </div>
-            <div>
-              <label htmlFor="sync-password" className="block text-sm font-medium">
-                Password
-              </label>
-              <input
-                id="sync-password"
-                type="password"
-                required
-                autoComplete="current-password"
-                value={password}
-                onChange={(e) => setPasswordText(e.target.value)}
-                className={`${input} mt-1 w-56 max-w-full`}
-              />
-            </div>
-            <button className={btnQuiet} disabled={busy}>
-              Sign in with the password
-            </button>
-          </form>
+          <p className={`${note} mt-2 max-w-2xl`}>
+            {way === 'link'
+              ? 'The email has a link and a 6-digit code. The link works once, on the device where you open it.'
+              : 'Choose the password first on a device that is signed in: Account, then Password for your other devices.'}
+          </p>
         </>
       )}
 

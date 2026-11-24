@@ -96,6 +96,11 @@ export interface Progress {
   goal?: number
   /** Milestones already announced. Undefined until the first check, so old progress is not announced all at once. */
   milestonesShown?: string[]
+  /**
+   * Certifications you marked as passed (course id: the day you marked it). They are left out of the home page, the
+   * study plan and the dashboard tabs; nothing else changes, and the mark can be taken off. Older saves have none.
+   */
+  passed?: Record<string, string>
 }
 
 /** The daily goal used until the learner chooses one. */
@@ -232,6 +237,20 @@ export function setReading(key: string, sectionId: string) {
 }
 
 /** Set the planned exam day for a course, or remove it with an empty value. */
+/** Mark a certification as passed (it is then hidden from the study pages), or take the mark off. */
+export function setPassed(courseId: string, passed: boolean) {
+  const marks = { ...state.passed }
+  if (passed) marks[courseId] = today()
+  else delete marks[courseId]
+  commit({ ...state, passed: Object.keys(marks).length ? marks : undefined })
+}
+
+/** The certifications to study: started, and not marked as passed. If every one is marked, all of them. */
+export function studyCourses<T extends { id: string }>(started: T[], progress: Progress): T[] {
+  const open = started.filter((c) => !progress.passed?.[c.id])
+  return open.length ? open : started
+}
+
 export function setExamDate(courseId: string, day: string) {
   const examDates = { ...state.examDates }
   if (day) examDates[courseId] = day

@@ -7,6 +7,10 @@ Each version of Road to PMP, newest first, with what you will notice.
 - **PMP formula sheet:** open **Formulas** on any PMP page for earned value, estimates and budget, the critical
   path, velocity and WSJF, communication channels, EMV and decision trees, and the Eighth Edition's principles,
   domains, focus areas and 40 processes. Each line links to its lesson.
+- **Mock exams:** a quiet reminder at 30 and at 5 minutes left.
+- **I passed this exam:** on a certification's page you can mark it as passed, so it leaves your home page, study
+  plan and dashboard; its progress stays, and the mark can be taken off. Nothing is marked unless you press it.
+- **Simpler sign-in:** one email box, with **Email me a link** or **Use my password**.
 - **Sign in at the top right** of every page, where websites usually put it. Signed in, it reads **Account** and
   opens sync, the password and sign out. It is no longer at the bottom of the home page.
 - **On a phone the top bar is one row:** the magnifier opens search, the half-filled circle opens text size and theme.

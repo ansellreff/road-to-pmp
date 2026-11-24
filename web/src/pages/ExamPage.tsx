@@ -99,23 +99,66 @@ function LoadedExam({ course, exam }: { course: Course; exam: Exam }) {
   )
 }
 
+/** When a gentle reminder of the time left appears, in minutes. */
+const WARN_AT = [30, 5]
+/** How long the reminder stays before it fades by itself. */
+const WARNING_MS = 15_000
+
+/**
+ * A quiet reminder when the clock passes 30 and 5 minutes left, as the real exam's own clock invites you to check.
+ * It appears once per moment, under the clock, and goes away by itself; it is not shown again after a reload.
+ */
+function useTimeWarning(leftMs: number): [string | undefined, () => void] {
+  const before = useRef<number>(undefined)
+  const [warning, setWarning] = useState<string>()
+  useEffect(() => {
+    const previous = before.current
+    before.current = leftMs
+    if (previous === undefined) return
+    const crossed = WARN_AT.find((minutes) => previous > minutes * 60_000 && leftMs <= minutes * 60_000)
+    if (crossed) setWarning(`${crossed} minutes left. Check the questions you flagged or left unanswered.`)
+  }, [leftMs])
+  useEffect(() => {
+    if (!warning) return
+    const timer = window.setTimeout(() => setWarning(undefined), WARNING_MS)
+    return () => window.clearTimeout(timer)
+  }, [warning])
+  return [warning, () => setWarning(undefined)]
+}
+
 /** Exam name, mode and the time left. The clock turns red in the last ten minutes. */
 function ExamHeader({ exam, mode, leftMs, detail }: { exam: Exam; mode: string; leftMs: number; detail: string }) {
+  const [warning, hide] = useTimeWarning(leftMs)
   return (
-    <div className="sticky top-0 z-10 -mx-4 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 border-b-2 border-ink bg-paper px-4 py-3 sm:-mx-6 sm:px-6">
-      <div>
-        <h1 className={subTitle}>
-          {exam.title} <span className="text-base font-normal text-muted">{mode}</span>
-        </h1>
-        <p className="text-sm text-muted">{detail}</p>
+    <div className="sticky top-0 z-10 -mx-4 border-b-2 border-ink bg-paper px-4 py-3 sm:-mx-6 sm:px-6">
+      <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+        <div>
+          <h1 className={subTitle}>
+            {exam.title} <span className="text-base font-normal text-muted">{mode}</span>
+          </h1>
+          <p className="text-sm text-muted">{detail}</p>
+        </div>
+        <p
+          className={`title text-3xl tabular-nums ${leftMs < 10 * 60 * 1000 ? 'text-critical' : ''}`}
+          role="timer"
+          aria-label="Time left"
+        >
+          {formatClock(leftMs)}
+        </p>
       </div>
-      <p
-        className={`title text-3xl tabular-nums ${leftMs < 10 * 60 * 1000 ? 'text-critical' : ''}`}
-        role="timer"
-        aria-label="Time left"
-      >
-        {formatClock(leftMs)}
-      </p>
+      <div role="status" aria-live="polite">
+        {warning && (
+          <p className="mt-2 flex flex-wrap items-center justify-between gap-2 rounded-md border border-milestone bg-milestone-soft px-3 py-2 text-sm">
+            <span className="flex items-center gap-2">
+              <Icon name="clock" size={16} className="text-milestone" />
+              {warning}
+            </span>
+            <button type="button" onClick={hide} className="press font-medium underline underline-offset-4">
+              Hide
+            </button>
+          </p>
+        )}
+      </div>
     </div>
   )
 }

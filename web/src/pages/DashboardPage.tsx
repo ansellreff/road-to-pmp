@@ -6,7 +6,7 @@ import { Figures, Meter, PageHeader } from '../components/Page'
 import Ring from '../components/Ring'
 import { getExams, startedCourses, loadExamQuestions, type Course, type Exam, type ExamQuestion } from '../lib/content'
 import { bandFor, domainScores, examKey, formatDuration, moduleLosses, type ModuleLoss } from '../lib/exam'
-import { dueCount, isKnown, setAttemptDomains, studyStreak, today, useProgress, type ExamAttempt, type Progress } from '../lib/progress'
+import { dueCount, isKnown, setAttemptDomains, studyCourses, studyStreak, today, useProgress, type ExamAttempt, type Progress } from '../lib/progress'
 import { milestones } from '../lib/milestones'
 import { setCourseId, usePrefs } from '../lib/prefs'
 import { formatDate } from '../lib/plan'
@@ -22,7 +22,9 @@ export default function DashboardPage() {
   const progress = useProgress()
   // One certification at a time: the one you are studying (opened last), with a tab for each other one.
   const { courseId } = usePrefs()
-  const course = startedCourses.find((c) => c.id === courseId) ?? startedCourses[0]
+  // Certifications marked as passed get no tab.
+  const shown = studyCourses(startedCourses, progress)
+  const course = shown.find((c) => c.id === courseId) ?? shown[0]
   return (
     <div className="space-y-14">
       <section>
@@ -32,11 +34,11 @@ export default function DashboardPage() {
         </div>
         <Activity progress={progress} />
       </section>
-      {course && startedCourses.length > 1 && (
+      {course && shown.length > 1 && (
         <section>
           {/* The tabs take the place of the certification's heading; the one shown is underlined. */}
           <div role="tablist" aria-label="Certification" className="flex gap-8 border-b-2 border-ink">
-            {startedCourses.map((c) => (
+            {shown.map((c) => (
               <button
                 key={c.id}
                 type="button"
@@ -56,7 +58,7 @@ export default function DashboardPage() {
           </div>
         </section>
       )}
-      {course && startedCourses.length === 1 && <CourseDashboard course={course} progress={progress} />}
+      {course && shown.length === 1 && <CourseDashboard course={course} progress={progress} />}
     </div>
   )
 }

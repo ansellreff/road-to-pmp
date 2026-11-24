@@ -93,6 +93,7 @@ stays on the list.
 - The clock starts when you start and keeps running when you close the page. You can close the page and continue
   later, but the time keeps passing.
 - When the time is up, the exam is submitted with the answers given so far.
+- At 30 and at 5 minutes left, a quiet reminder appears under the clock for a few seconds (**Hide** closes it).
 - The break in real exam mode does not use exam time and ends by itself.
 - **Stop without a result** discards that run.
 - No question appears in two mock exams.
@@ -105,6 +106,25 @@ stays on the list.
 
 **Example.** The PMP mock exam has 180 questions in 240 minutes, in 3 sections with a 10-minute break after the
 first two.
+
+## Passed a certification
+
+**What it does.** Once you have passed an exam, you can mark it, so its certification stops appearing on your study
+pages while you work on the next one.
+
+**How to use it.**
+1. Open the certification's page (for example **CAPM** under **Your certification path** on the home page).
+2. Press **I passed this exam**, then **Mark as passed**.
+3. To bring it back, open the same page and press **Not passed yet: show it again**.
+
+**Rules and limits.**
+- Nothing is marked until you press the button: a certification is never hidden by itself.
+- A marked certification is left out of the home page, the study plan and the dashboard tabs. Its modules, quizzes,
+  mock exams and all your progress stay, and its page and lessons open as before.
+- The mark is part of your progress, so it is synced and kept in backups.
+
+**Example.** After you pass CAPM, mark it as passed: the home page then shows only PMP, and the certification path
+reads "Passed" under CAPM.
 
 ## Study plan
 
@@ -227,11 +247,11 @@ everything back.
 you open the books on the website.
 
 **How to use it.**
-1. Press **Sign in** at the top right of any page (on a phone: the person icon). Enter your email and press **Send the
-   sign-in email**. A new email creates your account.
+1. Press **Sign in** at the top right of any page (on a phone: the person icon). Enter your email address and, under
+   **Email me a link**, press **Send the sign-in email**. A new email creates your account.
 2. Open the link in the email on that device, or type the code from the email and press **Sign in**.
-3. On a device that is signed in, save a password under **Password for your other devices**.
-4. On every other device, use **Sign in with the password**.
+3. On a device that is signed in, open **Account** and save a password under **Password for your other devices**.
+4. On every other device: **Sign in**, then **Use my password**, your email and the password.
 
 **Rules and limits.**
 - Until you sign in, nothing leaves your browser.

@@ -6,7 +6,7 @@ import { Figures, Notice, PageHeader } from '../components/Page'
 import { getExams, startedCourses, type Course, type ModuleMeta } from '../lib/content'
 import { examKey } from '../lib/exam'
 import { addDays, buildPlan, daysBetween, formatDate, formatDay, planMockExams, type PlanItem, type StudyPlan } from '../lib/plan'
-import { dueByDay, moduleCompletion, moduleKey, setExamDate, today, useProgress, type Progress } from '../lib/progress'
+import { dueByDay, moduleCompletion, moduleKey, setExamDate, studyCourses, today, useProgress, type Progress } from '../lib/progress'
 import { moduleNumber, percent, remainingModules } from '../lib/stats'
 import { toast } from '../lib/toast'
 import { btnQuiet, input, link, listTitle, note, section, sectionTitle } from '../lib/ui'
@@ -22,7 +22,7 @@ export default function PlanPage() {
         Set the day of your exam. The modules you have not finished are spread evenly over the days before it, with the
         last days kept free for review. The plan adjusts itself every day to what is still left.
       </PageHeader>
-      {startedCourses.map((course) => (
+      {studyCourses(startedCourses, progress).map((course) => (
         <CoursePlan key={course.id} course={course} progress={progress} />
       ))}
     </div>
