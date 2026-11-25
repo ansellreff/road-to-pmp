@@ -293,10 +293,19 @@ export default function Quiz({ courseId, moduleId }: { courseId: string; moduleI
         <div className="grid grid-cols-2 gap-2 sm:flex">
           <button onClick={() => go(run.at - 1)} disabled={run.at === 0} className={btnQuiet}>
             <Icon name="previous" className="mr-2" />
-            Previous<span className="max-sm:sr-only"> question</span>
+            {/* One span around the words: inside a flex button, a space at the start of its own item is dropped. */}
+            <span>
+              Previous<span className="max-sm:sr-only"> question</span>
+            </span>
           </button>
           <button onClick={next} className={btnPrimary}>
-            {last ? 'Finish quiz' : <>Next<span className="max-sm:sr-only"> question</span></>}
+            {last ? (
+              'Finish quiz'
+            ) : (
+              <span>
+                Next<span className="max-sm:sr-only"> question</span>
+              </span>
+            )}
             <Icon name="next" className="ml-2" />
           </button>
         </div>
