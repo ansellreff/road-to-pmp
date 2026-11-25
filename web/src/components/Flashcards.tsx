@@ -6,6 +6,7 @@ import { useLoaded } from '../lib/useLoaded'
 import Keys from './Keys'
 import FlipCard, { cardStatus, DeckStrip, describeDue, RateButtons, StatusCounts, type CardStatus } from './FlipCard'
 import { Notice, Waiting } from './Page'
+import { CardSourceLine } from './Sources'
 
 // After a card is rated it stays for a moment, so the change of its colour is seen, then the next one comes.
 const SHOW_RATING_MS = 650
@@ -89,6 +90,7 @@ export default function Flashcards({ courseId, moduleId }: { courseId: string; m
             footer={`Card ${position + 1} of ${deck.length}. Select the card to turn it over.`}
             status={cardStatus(cardState)}
           />
+          <CardSourceLine courseId={courseId} moduleId={moduleId} cardId={card.id} turned={flipped} />
           <p className="mt-4 text-sm text-muted">
             {!cardState
               ? 'Not rated yet. Turn it over, then say whether you knew it.'

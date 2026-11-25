@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { openAccount } from '../lib/account'
 import { onThisPc } from '../lib/bookCache'
-import { books, loadSources, type SourceLink } from '../lib/content'
+import { books, loadCardSources, type SourceLink } from '../lib/content'
 import { useSync } from '../lib/sync'
-import { btnPrimary, column, link, note, section, subTitle } from '../lib/ui'
+import { btnPrimary, link, note } from '../lib/ui'
+import { slug } from './LessonContents'
 import MessageDialog from './MessageDialog'
 import { useLoaded } from '../lib/useLoaded'
 
@@ -51,15 +53,6 @@ function OpenBook({ source, short = false }: { source: SourceLink; short?: boole
   )
 }
 
-/** What the source links do here, in one sentence. */
-function sourcesNote(signedIn: boolean): string {
-  if (onThisPc) return 'Each link opens the book reader in a new tab, at the page where that section starts, with the PDF from your PMI Learning Material folder.'
-  if (signedIn) {
-    return 'Each link opens the book reader in a new tab, at the page where that section starts, with the PDF from your private online copy.'
-  }
-  return 'Each link opens the PDF at the page where that section starts, once you are signed in (Sign in, at the top right).'
-}
-
 /** One source: its text reference, with the link on the line below. */
 export function SourceItem({ source }: { source: SourceLink }) {
   return (
@@ -102,22 +95,30 @@ export function SectionSources({ refs, sources }: { refs: string; sources: Sourc
   )
 }
 
-/** The list of book sections a whole module is drawn from. */
-export default function ModuleSources({ courseId, moduleId }: { courseId: string; moduleId: string }) {
-  const sources = useLoaded(() => loadSources(courseId, moduleId))
-  const sync = useSync()
-  if (!sources?.length) return null
+/**
+ * Under a flashcard: the book source of the lesson section it comes from, with its link, and a link to that
+ * section. Shown once the card is turned, so it never gives the answer away. Render it with a key per module:
+ * the module's links load once.
+ */
+export function CardSourceLine({ courseId, moduleId, cardId, turned }: { courseId: string; moduleId: string; cardId: string; turned: boolean }) {
+  const links = useLoaded(() => loadCardSources(courseId, moduleId))
+  const found = links?.[cardId]
+  if (!found) return null
+  if (!turned) return <p className={`${note} mt-4`}>Turn the card to see where it comes from.</p>
   return (
-    <section className={`${section} ${column} mt-16`}>
-      <h2 className={subTitle}>Sources for this module</h2>
-      <p className={`${note} mt-1`}>{sourcesNote(Boolean(sync.email))}</p>
-      <ul className="mt-3 space-y-3 text-sm">
-        {sources.map((source) => (
-          <li key={source.label}>
-            <SourceItem source={source} />
-          </li>
-        ))}
-      </ul>
-    </section>
+    <div className="mt-4 space-y-1 border-l-2 border-plan pl-3 font-ui text-sm leading-normal">
+      {found.source && (
+        <p>
+          <span className="text-muted">Source: </span>
+          {found.source.label}. <OpenBook source={found.source} short />
+        </p>
+      )}
+      <p>
+        <span className="text-muted">In the lesson: </span>
+        <Link to={`/${courseId}/${moduleId}#${slug(found.section)}`} className={link}>
+          {found.section}
+        </Link>
+      </p>
+    </div>
   )
 }

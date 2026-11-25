@@ -330,6 +330,25 @@ def check_cards(path: Path, problems: list[str]) -> int:
     return len(cards)
 
 
+def check_card_links(course_id: str, folder: Path, card_links: dict, problems: list[str]) -> None:
+    """Every flashcard has its lesson section and, where linked, its book source (tools/link_cards.py)."""
+    cards = json.loads((folder / "flashcards.json").read_text(encoding="utf-8"))
+    lesson = (folder / "lesson.md").read_text(encoding="utf-8")
+    headings = {h.replace("*", "").replace("`", "").strip() for h in re.findall(r"^## (.+)$", lesson, re.MULTILINE)}
+    linked = {s["label"] for s in json.loads((folder / "sources.json").read_text(encoding="utf-8"))} \
+        if (folder / "sources.json").is_file() else set()
+    mine = card_links.get(folder.name, {})
+    for card in cards:
+        link = mine.get(card["id"])
+        where = f"{course_id}/{folder.name} [{card['id']}]"
+        if not link:
+            problems.append(f"{where}: flashcard has no source link (run tools/link_cards.py)")
+        elif link["section"] not in headings:
+            problems.append(f"{where}: flashcard links to a lesson section that does not exist: {link['section']}")
+        elif link.get("ref") and link["ref"] not in linked:
+            problems.append(f"{where}: flashcard source is not a linked source of the lesson: {link['ref']}")
+
+
 def main() -> None:
     problems: list[str] = []
     warnings: list[str] = []
@@ -353,6 +372,8 @@ def main() -> None:
 
         ready, questions, cards = 0, 0, 0
         seen: dict[str, str] = {}
+        links_file = root / "card-links" / f"{course['id']}.json"
+        card_links = json.loads(links_file.read_text(encoding="utf-8")) if links_file.is_file() else {}
         for m in modules:
             folder = course_file.parent / "modules" / m["id"]
             if not m["ready"]:
@@ -388,6 +409,8 @@ def main() -> None:
                 questions += check_quiz(folder / "quiz.json", problems, warnings, seen, course, cases, notes, earlier)
             if (folder / "flashcards.json").is_file():
                 cards += check_cards(folder / "flashcards.json", problems)
+                if not test_only and (folder / "lesson.md").is_file():
+                    check_card_links(course["id"], folder, card_links, problems)
         check_sheet(course_file, problems)
         exams = check_exams(course_file, course, problems)
         print(f"{course['id']}: {ready} of {len(modules)} modules ready, {questions} questions, {cards} flashcards{exams}")

@@ -10,7 +10,6 @@ import NotOnExamNote, { ExamStar } from '../components/NotOnExam'
 import { PageHeader } from '../components/Page'
 import Quiz from '../components/Quiz'
 import WithSidePanel from '../components/SidePanel'
-import ModuleSources from '../components/Sources'
 import { findModule, getCourse } from '../lib/content'
 import { moduleKey, setLastOpened } from '../lib/progress'
 import { moduleNeighbours, moduleNumber } from '../lib/stats'
@@ -57,8 +56,7 @@ export default function ModulePage() {
   const footer = (
     <>
       <StepNav {...steps[tab]} />
-      {/* The lesson shows each source under its own section, so the full list is only for the other tabs. */}
-      {tab !== 'lesson' && <ModuleSources courseId={course.id} moduleId={module.id} />}
+      {/* No list of sources here: each lesson section, quiz explanation and flashcard carries its own. */}
       <ModuleProgress courseId={course.id} moduleId={module.id} />
     </>
   )
@@ -115,8 +113,8 @@ export default function ModulePage() {
               </>
             }
           >
-            {tab === 'quiz' && <Quiz courseId={course.id} moduleId={module.id} />}
-            {tab === 'flashcards' && <Flashcards courseId={course.id} moduleId={module.id} />}
+            {tab === 'quiz' && <Quiz key={module.id} courseId={course.id} moduleId={module.id} />}
+            {tab === 'flashcards' && <Flashcards key={module.id} courseId={course.id} moduleId={module.id} />}
             {footer}
           </WithSidePanel>
         )}

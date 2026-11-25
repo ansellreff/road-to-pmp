@@ -19,6 +19,8 @@ PMP: [PMP-PLAN.md](PMP-PLAN.md), "Decisions you made").
 | 10 Oct 2026 | Only you upload, by double-clicking `upload.bat` | Claude uploads | The upload needs your GitHub sign-in, and you decide when the website changes |
 | 11 Oct 2026 | One plan file and one issues file per certification, with session and issue numbers starting at 1 for each | One file for everything | You asked for it; the single file had grown to 1,205 lines |
 | 13 Oct 2026 | CAPM is closed: its content may not change (`tools/check_capm_frozen.py`, since 24 Nov 2026 `tools/check_frozen.py`) | | Finished as planned; later work must not break it |
+| 25 Nov 2026 | **Flashcard sources added to the closed courses, at your request** (PMP-99): the links live in `web/src/content/card-links/`, made by `tools/link_cards.py`, so no locked file changes and `tools/check_frozen.py` still passes | Reopen CAPM and PMP and add a source to each card file | You asked for it; the lock protects the content you studied, and the cards, lessons and quizzes stay exactly as they were |
+| 25 Nov 2026 | A module quiz in progress is kept on the device, not synced (PMP-98). Its results (scores and answers) sync as before | Sync the quiz in progress too | Simpler and safe: a half-finished quiz is rarely moved between devices, and nothing in the synced progress changes |
 | 24 Nov 2026 | PMP is closed too, after your final review and a bug check of the website (PMP-95). One check, `tools/check_frozen.py`, guards both courses' content files | Keep PMP open; a second check script | Your decision. One check for all closed courses (guideline, chapter 12) |
 
 ## Following the guideline (23 Nov 2026)

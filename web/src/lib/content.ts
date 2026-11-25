@@ -333,6 +333,27 @@ export async function loadSources(courseId: string, moduleId: string): Promise<S
   return load ? load() : []
 }
 
+/** Where a flashcard comes from: its lesson section, and that section's book source (tools/link_cards.py). */
+export interface CardSource {
+  section: string
+  source?: SourceLink
+}
+
+// One file per course, kept apart from the course folders (CAPM and PMP are closed).
+const cardLinkFiles = import.meta.glob<Record<string, Record<string, { section: string; ref?: string }>>>('../content/card-links/*.json', {
+  import: 'default',
+})
+
+/** Each card's source in one module, by card id. A course without the file (the click tests' course) has none. */
+export async function loadCardSources(courseId: string, moduleId: string): Promise<Record<string, CardSource>> {
+  const load = cardLinkFiles[`../content/card-links/${courseId}.json`]
+  if (!load) return {}
+  const [all, sources] = await Promise.all([load(), loadSources(courseId, moduleId)])
+  return Object.fromEntries(
+    Object.entries(all[moduleId] ?? {}).map(([id, link]) => [id, { section: link.section, source: sources.find((s) => s.label === link.ref) }]),
+  )
+}
+
 export async function loadCards(courseId: string, moduleId: string): Promise<Card[]> {
   const load = cardFiles[path(courseId, moduleId, 'flashcards.json')]
   return load ? load() : []

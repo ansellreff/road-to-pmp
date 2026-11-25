@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Keys from '../components/Keys'
 import FlipCard, { cardStatus, describeDue, RateButtons } from '../components/FlipCard'
 import { Notice, PageHeader, Waiting } from '../components/Page'
+import { CardSourceLine } from '../components/Sources'
 import { allModules, courses, loadCards, type Card } from '../lib/content'
 import { isDue, moduleKey, rateCard, useProgress } from '../lib/progress'
 import { moduleNumber } from '../lib/stats'
@@ -11,6 +12,8 @@ import { useLoaded } from '../lib/useLoaded'
 
 interface ReviewItem {
   key: string
+  courseId: string
+  moduleId: string
   from: string
   to: string
   card: Card
@@ -25,6 +28,8 @@ async function loadEveryCard(): Promise<ReviewItem[]> {
           const cards = await loadCards(course.id, m.id)
           return cards.map((card) => ({
             key: moduleKey(course.id, m.id),
+            courseId: course.id,
+            moduleId: m.id,
             from: `${course.title} ${moduleNumber(course, m.id)} ${m.title}`,
             to: `/${course.id}/${m.id}`,
             card,
@@ -104,6 +109,7 @@ export default function ReviewPage() {
               status={cardStatus(progress.cards[item.key]?.[item.card.id])}
             />
           </div>
+          <CardSourceLine key={item.key} courseId={item.courseId} moduleId={item.moduleId} cardId={item.card.id} turned={flipped} />
           <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
             <p className="text-sm text-muted">
               From{' '}

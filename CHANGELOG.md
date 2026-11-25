@@ -2,6 +2,20 @@
 
 Each version of Road to PMP, newest first, with what you will notice.
 
+## 1.2 · 25 Nov 2026 · Quizzes that wait for you, and a source on every flashcard
+
+- **Module quizzes wait for you:** go to the lesson, another page or another day, and the quiz opens again at the
+  same question.
+- **Move freely in a quiz:** **Previous question**, **Next question** to skip one, and a question map with a box
+  per question (green right, red wrong, plain not answered) to go to any of them.
+- **Not sure: come back later** marks a question. Before you finish, a window lists the questions not answered yet,
+  with **Go to question …** or **Finish anyway**. **Finish the quiz now** is always there.
+- **After a quiz:** show all your answers, only the missed ones or only those marked not sure, and **Try the … you
+  missed again**. A new attempt asks the questions in a new order.
+- **Every flashcard shows where it comes from:** turn a card to see its book source with **Open the PDF at page …**
+  and the lesson section that teaches it, in the module and in **Review flashcards**. The list of sources at the
+  bottom of the Quiz and Flashcards tabs is gone, because each question and card now carries its own.
+
 ## 1.1 · 24 Nov 2026 · The PMP course complete: modules, mock exams and formula sheet
 
 - **Settings:** a new page in the top bar with everything you can set up: theme and text size, your account, the

@@ -912,6 +912,64 @@ export const tests = {
     expect((await list.count()) === 0, 'the list stayed after the last book was removed')
   },
 
+  async 'module quiz: waits while you leave, skips with "not sure", and reminds you before finishing'(page) {
+    await page.goto('/capm/1-01-project-basics/quiz')
+    await see(page, 'Question 1 of')
+    const total = Number((await page.getByText(/Question 1 of \d+/).textContent()).match(/of (\d+)/)[1])
+    await answerAny(page)
+    await button(page, 'Next question').click()
+    // Question 2: marked "not sure" and skipped without an answer.
+    await see(page, `Question 2 of ${total}`)
+    await button(page, 'Not sure: come back later').click()
+    expect((await button(page, 'Not sure: come back later').getAttribute('aria-pressed')) === 'true', 'the not sure mark did not show')
+    await button(page, 'Next question').click()
+    await see(page, `Question 3 of ${total}`)
+    // The quiz waits on the Lesson tab and through a reload.
+    await page.getByRole('link', { name: 'Lesson', exact: true }).first().click()
+    await page.getByRole('link', { name: 'Quiz', exact: true }).first().click()
+    await see(page, `Question 3 of ${total}`)
+    await page.reload()
+    await see(page, `Question 3 of ${total}`)
+    // The map goes to any question; an answered one shows its answer again.
+    await button(page, 'Question 2, not answered, not sure').click()
+    await see(page, `Question 2 of ${total}`)
+    await button(page, 'Previous question').click()
+    await see(page, `Question 1 of ${total}`)
+    await see(page, /^(Correct\.|Not correct\. .+)$/)
+    // Finishing early: a reminder names what is left, and leads back to it.
+    await button(page, 'Finish the quiz now').click()
+    const ask = page.getByRole('dialog', { name: `${total - 1} questions are not answered yet` })
+    await ask.getByText('1 of them marked not sure').waitFor()
+    await ask.getByRole('button', { name: 'Go to question 2' }).click()
+    await see(page, `Question 2 of ${total}`)
+    await button(page, 'Finish the quiz now').click()
+    await page.getByRole('dialog').getByRole('button', { name: 'Finish anyway' }).click()
+    await see(page, new RegExp(`\\d of ${total} correct`))
+    expect((await saved(page)).quizzes['capm/1-01-project-basics']?.total === total, 'the quiz result was not saved')
+    // The results can show only the "not sure" questions, and the missed ones can be tried again.
+    await page.getByRole('button', { name: 'Not sure (1)' }).click()
+    await see(page, 'You marked this one not sure.')
+    await page.getByRole('button', { name: /^Try the \d+ you missed again$/ }).click()
+    await see(page, 'Trying the missed questions again')
+  },
+
+  async 'flashcards: a turned card shows its book source and its lesson section, also in Review'(page) {
+    await page.goto('/pmp/2-10-earned-value/flashcards')
+    await see(page, 'Turn the card to see where it comes from.')
+    expect((await page.getByText('Sources for this module').count()) === 0, 'the list of sources is still at the bottom')
+    await page.getByRole('button', { name: /^Show the answer side/ }).click()
+    await see(page, 'PMBOK 8, Guide section 5, Earned value (EV) analysis.')
+    await page.getByRole('link', { name: 'Open the PDF at page 274' }).waitFor()
+    await page.getByRole('link', { name: 'Earned value management and the baseline' }).click()
+    await page.waitForURL(/\/pmp\/2-10-earned-value#earned-value-management-and-the-baseline$/)
+    await inView(page, 'Earned value management and the baseline')
+    // In Review, a card that is due shows the same line once turned.
+    await seed(page, { cards: { 'pmp/2-10-earned-value': { c1: { box: 0, due: '2026-01-01' } } } })
+    await page.goto('/review')
+    await page.getByRole('button', { name: /^Show the answer side/ }).click()
+    await page.getByRole('link', { name: 'Earned value management and the baseline' }).waitFor()
+  },
+
   async 'PMP formula sheet: opens from the top bar on a PMP page and links to the lesson'(page) {
     await page.goto('/pmp/2-10-earned-value')
     await page.getByRole('link', { name: 'Formulas', exact: true }).first().click()

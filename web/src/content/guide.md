@@ -1,4 +1,4 @@
-Guide for version 1.1 · 24 Nov 2026
+Guide for version 1.2 · 25 Nov 2026
 
 This guide explains every part of Road to PMP. Each part says what it does, how to use it, its rules and limits,
 and gives an example. The list of parts is on the right (on a phone: the **Contents** button at the bottom).
@@ -30,19 +30,35 @@ yourself, and flashcards to remember the key terms.
 1. Open **Modules** in the top bar and choose a module.
 2. Read the **Lesson**. The list on the right shows the sections; the one you are reading is marked. At the end,
    press **Mark lesson as completed**.
-3. Open the **Quiz** tab. Answer each question and read the explanation. At the end you see your score and
-   **Your answers**.
+3. Open the **Quiz** tab. Answer each question and read the explanation, then press **Next question**.
+   - Not ready to answer? Press **Not sure: come back later** (or N), then **Next question** to skip it.
+   - **Previous question**, and the numbered boxes of the question map (on a phone: **Question map**), go to any
+     question. Green is right, red wrong, plain not answered; a yellow corner marks "not sure".
+   - **Finish quiz** on the last question, or **Finish the quiz now** at any time. If questions are left, a window
+     lists them, with **Go to question …** and **Finish anyway**.
+   - At the end you see your score and **Your answers**: show **All**, only the **Missed** ones or only those marked
+     **Not sure**.
 4. Open the **Flashcards** tab. Think of the answer, turn the card, and press **I know this** or **Still learning**.
+   Under a turned card you see where it comes from: its book source with **Open the PDF at page …**, and **In the
+   lesson:** the section that teaches it.
 5. The button at the bottom of each step leads to the next one, and after the flashcards to the next module.
 
 **Rules and limits.**
 - A lesson remembers the last section you reached and offers **Continue from** next time.
-- **Take the quiz again** keeps both your best and your latest score.
+- **A quiz waits for you:** go to the lesson, another page or another day, and it opens again at the same question.
+  It is kept on this device.
+- An answered question stays answered: you can read it again, but not change it, because its answer was shown.
+- A question left unanswered at the end counts as not correct.
+- **Take the quiz again** keeps both your best and your latest score. The first attempt follows the module's order;
+  each attempt after that has a new order, so you remember answers, not positions.
+- **Try the … you missed again** asks only the questions you got wrong or left out. It does not change your quiz
+  score.
 - Under **Your progress in this module** you can undo any mark: remove the completed mark, clear the quiz score,
   or reset the flashcards.
 
-**Example.** You finish a quiz with two questions wrong. Those two are kept for **Practice missed questions**, and
-the module shows your score.
+**Example.** On question 7 you are not sure, so you mark it and skip it. Before you finish, the window reminds you
+of question 7; you answer it and finish. Two answers were wrong: they are kept for **Practice missed questions**,
+and **Try the 2 you missed again** asks them once more straight away.
 
 ## Review flashcards
 
@@ -51,7 +67,8 @@ modules.
 
 **How to use it.**
 1. On the home page, or under **Practice** in the top bar, choose **Review flashcards**.
-2. Rate each card. The page counts how many are left in this session.
+2. Rate each card. The page counts how many are left in this session. A turned card shows its book source and
+   its lesson section, as in the module.
 
 **Rules and limits.**
 - A card you know comes back after 1 day, then 3, 7, 14 and 30 days.
@@ -200,7 +217,8 @@ to it.
 
 **How to use it.**
 1. In a lesson, the source is written under each section heading.
-2. In a quiz, each explanation names its source.
+2. In a quiz, each explanation names its source. A flashcard shows its source once you turn it, with a link to
+   the lesson section it comes from.
 3. Click **Open the PDF at page …**. The **book reader** opens in a new tab, at that page:
    - on this PC (**start.bat**), with the book from your PMI Learning Material folder;
    - on the website, with your private online copy, once you are signed in (**Sign in**, at the top right).

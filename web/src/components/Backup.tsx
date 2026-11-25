@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import { exportProgress, importProgress, resetProgress } from '../lib/progress'
+import { clearRuns } from '../lib/quizRun'
 import { toast } from '../lib/toast'
 import { btnDanger, btnQuiet, note } from '../lib/ui'
 import MessageDialog from './MessageDialog'
@@ -66,6 +67,7 @@ export default function Backup() {
               className={btnDanger}
               onClick={() => {
                 resetProgress()
+                clearRuns()
                 setAsking(false)
                 setMessage('All progress deleted.')
               }}
