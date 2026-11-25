@@ -903,13 +903,15 @@ export const tests = {
       const keys = (await (await caches.open('road-to-pmi-books')).keys()).map((r) => new URL(r.url).pathname)
       return keys.length === 1 && keys[0] === '/saved-books/ethics.pdf'
     })
+    // The list redraws a moment after the removal: wait for the second box to go, then count.
+    await list.getByRole('checkbox').nth(1).waitFor({ state: 'detached' })
     expect((await list.getByRole('checkbox').count()) === 1, 'the removed book is still listed')
     // Tick all, then remove: nothing is left.
     await button(page, 'Tick all').click()
     await button(page, 'Remove the ticked book').click()
     await page.getByRole('dialog', { name: 'Remove this book from this device?' }).getByRole('button', { name: 'Remove the book' }).click()
     await page.waitForFunction(async () => (await (await caches.open('road-to-pmi-books')).keys()).length === 0)
-    expect((await list.count()) === 0, 'the list stayed after the last book was removed')
+    await list.waitFor({ state: 'detached' })
   },
 
   async 'module quiz: waits while you leave, skips with "not sure", and reminds you before finishing'(page) {
