@@ -261,11 +261,19 @@ export default function Quiz({ courseId, moduleId }: { courseId: string; moduleI
   return (
     <div className={column}>
       {map}
-      <div className="mt-3 flex flex-wrap justify-between gap-x-4 text-sm text-muted">
-        <span>
-          Question {run.at + 1} of {total}
-        </span>
-        <span>{run.retry ? 'Trying the missed questions again' : previous && `Your best score: ${previous.best} of ${previous.total}`}</span>
+      {/* Where you are on the left; ending the quiz early on the right, away from the buttons that move on. */}
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-x-4 gap-y-2 text-sm text-muted">
+        <div className="flex flex-wrap gap-x-4 gap-y-1">
+          <span>
+            Question {run.at + 1} of {total}
+          </span>
+          <span>{run.retry ? 'Trying the missed questions again' : previous && `Your best score: ${previous.best} of ${previous.total}`}</span>
+        </div>
+        {!last && (
+          <button onClick={() => finish()} className={btnQuiet}>
+            Finish the quiz now
+          </button>
+        )}
       </div>
       <QuestionView
         key={question.id}
@@ -279,31 +287,31 @@ export default function Quiz({ courseId, moduleId }: { courseId: string; moduleI
         onNotSure={toggleNotSure}
         lively
       />
-      <div className="mt-6 flex flex-wrap items-center gap-2">
-        <button onClick={() => go(run.at - 1)} disabled={run.at === 0} className={btnQuiet}>
-          <Icon name="previous" className="mr-2" />
-          Previous question
-        </button>
-        <button onClick={next} className={btnPrimary}>
-          {last ? 'Finish quiz' : 'Next question'}
-          <Icon name="next" className="ml-2" />
-        </button>
+      {/* Moving on stays together on the left; the "not sure" mark sits on its own on the right. */}
+      {/* On a phone: Previous and Next side by side with short words, the "not sure" mark full width below. */}
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
+        <div className="grid grid-cols-2 gap-2 sm:flex">
+          <button onClick={() => go(run.at - 1)} disabled={run.at === 0} className={btnQuiet}>
+            <Icon name="previous" className="mr-2" />
+            Previous<span className="max-sm:sr-only"> question</span>
+          </button>
+          <button onClick={next} className={btnPrimary}>
+            {last ? 'Finish quiz' : <>Next<span className="max-sm:sr-only"> question</span></>}
+            <Icon name="next" className="ml-2" />
+          </button>
+        </div>
         <button
           type="button"
           onClick={toggleNotSure}
           aria-pressed={notSure}
           className={`${btnQuiet} ${notSure ? 'border-milestone bg-milestone-soft' : ''}`}
         >
-          <Icon name="flag" className="mr-2" />
+          {/* The name stays the same; pressed, it turns yellow with a tick, like the corner on its box. */}
+          <Icon name={notSure ? 'check' : 'flag'} className="mr-2" />
           Not sure: come back later
         </button>
-        {!last && (
-          <button onClick={() => finish()} className={`${btnQuiet} sm:ml-auto`}>
-            Finish the quiz now
-          </button>
-        )}
       </div>
-      {picked === null && <p className={`${note} mt-3`}>Not ready to answer? Press Next question to skip it and come back later.</p>}
+      {picked === null && <p className={`${note} mt-3`}>Not ready to answer? Press Next to skip it and come back later.</p>}
       {asking && (
         <MessageDialog
           title={open.length === 1 ? '1 question is not answered yet' : `${open.length} questions are not answered yet`}
